@@ -1,0 +1,293 @@
+{
+  "fiscal_year": 2024,
+  "record_count": 26,
+  "total_employees": 1475,
+  "records": [
+    {
+      "company": "Lockheed Martin",
+      "employees": 57,
+      "notice_date": null,
+      "effective_date": "2024-06-30",
+      "county": "Los Angeles County",
+      "address": "1011 Lockheed Way Palmdale CA 93599",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    },
+    {
+      "company": "Delta Apparel, Inc.",
+      "employees": 5,
+      "notice_date": null,
+      "effective_date": "2024-08-29",
+      "county": "Orange County",
+      "address": "201 Main Street Huntington Beach CA 92648",
+      "layoff_type": "Closure Permanent",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    },
+    {
+      "company": "Cargill Meat Solutions Corporation",
+      "employees": 20,
+      "notice_date": null,
+      "effective_date": "2024-09-01",
+      "county": "Fresno County",
+      "address": "3115 South Fig Avenue Fresno CA 93706",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    },
+    {
+      "company": "Circus Dog Productions, Inc.",
+      "employees": 36,
+      "notice_date": null,
+      "effective_date": "2024-08-30",
+      "county": "Los Angeles County",
+      "address": "5433 Laurel Canyon Blvd. Valley Village CA 91607",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    },
+    {
+      "company": "Henry Avocado Corporation",
+      "employees": 8,
+      "notice_date": null,
+      "effective_date": "2024-08-31",
+      "county": "San Diego County",
+      "address": "13501 Muutama Road Valley Center CA 92082",
+      "layoff_type": "Closure Permanent",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    },
+    {
+      "company": "Henry Avocado Corporation",
+      "employees": 19,
+      "notice_date": null,
+      "effective_date": "2024-08-31",
+      "county": "San Diego County",
+      "address": "2355 E Lincoln Ave Escondido CA 92027",
+      "layoff_type": "Closure Permanent",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    },
+    {
+      "company": "Constellation Brands, Inc.",
+      "employees": 6,
+      "notice_date": null,
+      "effective_date": "2024-08-31",
+      "county": "Mendocino County",
+      "address": "2399 N State St Ukiah CA 95482",
+      "layoff_type": "Closure Permanent",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    },
+    {
+      "company": "Western Specialty Contractors",
+      "employees": 8,
+      "notice_date": null,
+      "effective_date": "2024-08-31",
+      "county": "Alameda County",
+      "address": "1501 Wicks Blvd San Leandro CA 94577",
+      "layoff_type": "Closure Permanent",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    },
+    {
+      "company": "F&E Aircraft Maintenance dba FEAM Aero, LLC",
+      "employees": 26,
+      "notice_date": null,
+      "effective_date": "2024-09-05",
+      "county": "San Bernardino County",
+      "address": "1490 S. Vineyard Ave Ste D Ontario CA 91761",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    },
+    {
+      "company": "Refratechnik North America, Inc.",
+      "employees": 8,
+      "notice_date": null,
+      "effective_date": "2024-09-01",
+      "county": "San Bernardino County",
+      "address": "14549 Manzanita Dr. Fontana CA 92335",
+      "layoff_type": "Closure Permanent",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    },
+    {
+      "company": "Motorcar Parts of America, Inc.",
+      "employees": 94,
+      "notice_date": null,
+      "effective_date": "2024-06-27",
+      "county": "Los Angeles County",
+      "address": "2929 California Street Torrance CA 90503",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    },
+    {
+      "company": "Hybrid Promotions, LLC dba Hybrid Apparel",
+      "employees": 24,
+      "notice_date": null,
+      "effective_date": "2024-09-06",
+      "county": "Orange County",
+      "address": "5701 Skylab Drive Huntington Beach CA 92647",
+      "layoff_type": "Layoff Temporary",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    },
+    {
+      "company": "Novartis Pharmaceuticals Corporation",
+      "employees": 29,
+      "notice_date": null,
+      "effective_date": "2024-09-06",
+      "county": "San Diego County",
+      "address": "10210 Campus Point Dr. #350 San Diego CA 92121",
+      "layoff_type": "Closure Permanent",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    },
+    {
+      "company": "Intuit Inc.",
+      "employees": 384,
+      "notice_date": null,
+      "effective_date": "2024-09-09",
+      "county": "Santa Clara County",
+      "address": "2700 Coast Ave. Mountain View CA 94043",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    },
+    {
+      "company": "Hybrid Promotions, LLC dba Hybrid Apparel",
+      "employees": 22,
+      "notice_date": null,
+      "effective_date": "2024-09-06",
+      "county": "San Diego County",
+      "address": "6060 Business Center Ct San Diego CA 92154",
+      "layoff_type": "Closure Permanent",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    },
+    {
+      "company": "Intuit Inc.",
+      "employees": 215,
+      "notice_date": null,
+      "effective_date": "2024-09-09",
+      "county": "San Diego County",
+      "address": "7535 Torrey Santa Fe Rd San Diego CA 92129",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    },
+    {
+      "company": "Sang-Hai Corporation",
+      "employees": 56,
+      "notice_date": null,
+      "effective_date": "2024-12-04",
+      "county": "Amador County",
+      "address": "1000 Castle Oaks Dr. Ione CA 95640",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    },
+    {
+      "company": "TRM Gamma Aerospace Acquisition, LLC",
+      "employees": 24,
+      "notice_date": null,
+      "effective_date": "2024-09-09",
+      "county": "San Bernardino County",
+      "address": "1461 S Balboa Avenue Ontario CA 91761",
+      "layoff_type": "Closure Permanent",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    },
+    {
+      "company": "US Foods, Inc.",
+      "employees": 97,
+      "notice_date": null,
+      "effective_date": "2024-09-14",
+      "county": "San Diego County",
+      "address": "1201 Park Center Drive Vista CA 92081",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    },
+    {
+      "company": "TuSimple, Inc.",
+      "employees": 1,
+      "notice_date": null,
+      "effective_date": "2024-09-10",
+      "county": "San Diego County",
+      "address": "9191 Towne Centre Drive San Diego CA 92122",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    },
+    {
+      "company": "City National Bank",
+      "employees": 6,
+      "notice_date": null,
+      "effective_date": "2024-09-13",
+      "county": "Los Angeles County",
+      "address": "350 S. Grand Avenue Los Angeles CA 90003",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    },
+    {
+      "company": "City National Bank",
+      "employees": 2,
+      "notice_date": null,
+      "effective_date": "2024-09-13",
+      "county": "Los Angeles County",
+      "address": "555 S. Flower Street Los Angeles CA 90012",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    },
+    {
+      "company": "Rodan & Fields, LLC",
+      "employees": 78,
+      "notice_date": null,
+      "effective_date": "2024-09-13",
+      "county": "Contra Costa County",
+      "address": "3001 Bishop Drive, Suite 450 San Ramon CA 94583",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    },
+    {
+      "company": "UKG Inc.",
+      "employees": 195,
+      "notice_date": null,
+      "effective_date": "2024-09-09",
+      "county": "Orange County",
+      "address": "5 Hutton Centre Dr # 1100 Santa Ana CA 92707",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    },
+    {
+      "company": "UKG Inc.",
+      "employees": 12,
+      "notice_date": null,
+      "effective_date": "2024-09-09",
+      "county": "San Francisco County",
+      "address": "55 2nd St Suite #2300 San Francisco CA 94105",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    },
+    {
+      "company": "Exabeam, Inc.",
+      "employees": 43,
+      "notice_date": null,
+      "effective_date": "2024-09-16",
+      "county": "San Mateo County",
+      "address": "1051 E Hillsdale Blvd 4th Floor Foster City CA 94404",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2024,
+      "source": "pdf"
+    }
+  ]
+}

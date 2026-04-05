@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-04-04T06:51:03.322597Z",
+  "charts": [
+    {
+      "id": "1_timeline_scatter",
+      "title": "Layoff Timeline",
+      "desc": "Employees affected by effective date, sized and coloured by county.",
+      "status": "ok"
+    },
+    {
+      "id": "2_monthly_bar",
+      "title": "Monthly Totals",
+      "desc": "Total employees laid off per month with 3-month moving average.",
+      "status": "ok"
+    },
+    {
+      "id": "3_rolling_trend",
+      "title": "Rolling Trend",
+      "desc": "Daily layoffs, 30-day rolling average, and cumulative total.",
+      "status": "ok"
+    },
+    {
+      "id": "4_top_companies",
+      "title": "Top Companies",
+      "desc": "Top 25 companies by cumulative employees affected.",
+      "status": "ok"
+    },
+    {
+      "id": "5_county_heatmap",
+      "title": "County Heatmap",
+      "desc": "Layoffs by county and month \u2014 heat intensity = employees.",
+      "status": "ok"
+    },
+    {
+      "id": "6_treemap",
+      "title": "Treemap",
+      "desc": "Proportional breakdown by company and layoff type.",
+      "status": "ok"
+    },
+    {
+      "id": "7_yoy_bar",
+      "title": "Year-over-Year",
+      "desc": "Annual employees affected and notice count from 2014 to present.",
+      "status": "ok"
+    },
+    {
+      "id": "8_multiyear_trend",
+      "title": "Multi-Year Trend",
+      "desc": "Monthly layoff pattern overlaid across all years for seasonal comparison.",
+      "status": "ok"
+    }
+  ],
+  "total_records": 1099,
+  "total_employees": 61514,
+  "date_range_start": "2025-01-05",
+  "date_range_end": "2026-12-30",
+  "last_updated": "2026-04-04T00:24:12.340391Z"
+}

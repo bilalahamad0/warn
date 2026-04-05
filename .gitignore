@@ -1,0 +1,14 @@
+# Secrets — never commit
+.env
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+*.egg-info/
+dist/
+build/
+
+# Raw downloads caching (keep file.xlsx for diff purposes)
+# output/ is committed for GitHub Pages

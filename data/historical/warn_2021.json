@@ -1,0 +1,194 @@
+{
+  "fiscal_year": 2021,
+  "record_count": 17,
+  "total_employees": 494,
+  "records": [
+    {
+      "company": "Hotel Managers Group at the DoubleTree Hotel",
+      "employees": 63,
+      "notice_date": null,
+      "effective_date": "2021-07-31",
+      "county": "Alameda County",
+      "address": "39900 Balentine Drive Newark CA 94560",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2021,
+      "source": "pdf"
+    },
+    {
+      "company": "IAP Worldwide Services Inc.",
+      "employees": 108,
+      "notice_date": null,
+      "effective_date": "2021-07-29",
+      "county": "Fresno County",
+      "address": "5168 E. Dakota Ave. Fresno CA 93727",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2021,
+      "source": "pdf"
+    },
+    {
+      "company": "Farmgirl Flowers",
+      "employees": 72,
+      "notice_date": null,
+      "effective_date": "2021-06-29",
+      "county": "Santa Cruz County",
+      "address": "481 San Andreas Road Watsonville CA\n95076",
+      "layoff_type": "Closure Permanent",
+      "fiscal_year": 2021,
+      "source": "pdf"
+    },
+    {
+      "company": "Francis Ford Coppola Presents, LLC",
+      "employees": 90,
+      "notice_date": null,
+      "effective_date": "2021-08-02",
+      "county": "Sonoma County",
+      "address": "300 Via Archimedes Geyserville CA 95441",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2021,
+      "source": "pdf"
+    },
+    {
+      "company": "Perspecta Inc. dba Peraton Inc.",
+      "employees": 1,
+      "notice_date": null,
+      "effective_date": "2021-06-30",
+      "county": "Imperial County",
+      "address": "1605 third St. Bldg 214 El Centro CA 92243",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2021,
+      "source": "pdf"
+    },
+    {
+      "company": "Perspecta Inc. dba Peraton Inc.",
+      "employees": 1,
+      "notice_date": null,
+      "effective_date": "2021-06-30",
+      "county": "Kern County",
+      "address": "Bldg 98004 E. Moyer Ave. Rm 7 Ridgecrest\nCA 93555",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2021,
+      "source": "pdf"
+    },
+    {
+      "company": "Perspecta Inc. dba Peraton Inc.",
+      "employees": 5,
+      "notice_date": null,
+      "effective_date": "2021-06-30",
+      "county": "Kings County",
+      "address": "730 Enterprise Avenue Lemoore CA 93246",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2021,
+      "source": "pdf"
+    },
+    {
+      "company": "Perspecta Inc. dba Peraton Inc.",
+      "employees": 1,
+      "notice_date": null,
+      "effective_date": "2021-06-30",
+      "county": "Monterey County",
+      "address": "7 Grace Hopper Ave. Monterey CA 93943",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2021,
+      "source": "pdf"
+    },
+    {
+      "company": "Perspecta Inc. dba Peraton Inc.",
+      "employees": 3,
+      "notice_date": null,
+      "effective_date": "2021-06-30",
+      "county": "Orange County",
+      "address": "800 Seal Beach Blvd. Bldg 123 Seal Beach\nCA 90740",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2021,
+      "source": "pdf"
+    },
+    {
+      "company": "Perspecta Inc. dba Peraton Inc.",
+      "employees": 2,
+      "notice_date": null,
+      "effective_date": "2021-06-30",
+      "county": "Riverside County",
+      "address": "1999 Fourth St. Bldg 509 Norco CA 92860",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2021,
+      "source": "pdf"
+    },
+    {
+      "company": "Perspecta Inc. dba Peraton Inc.",
+      "employees": 1,
+      "notice_date": null,
+      "effective_date": "2021-06-30",
+      "county": "Riverside County",
+      "address": "17101 Haecock Avenue Moreno CA 92551",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2021,
+      "source": "pdf"
+    },
+    {
+      "company": "Chick-fil-A, Inc.",
+      "employees": 110,
+      "notice_date": null,
+      "effective_date": "2021-09-04",
+      "county": "San Bernardino County",
+      "address": "4350 Ontario Mills Parkway Ontario CA\n91764",
+      "layoff_type": "Closure Temporary",
+      "fiscal_year": 2021,
+      "source": "pdf"
+    },
+    {
+      "company": "Perspecta Inc. dba Peraton Inc.",
+      "employees": 1,
+      "notice_date": null,
+      "effective_date": "2021-06-30",
+      "county": "San Bernardino County",
+      "address": "MCAGCC Bldg 1431 Twentynine Palms CA\n92277",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2021,
+      "source": "pdf"
+    },
+    {
+      "company": "Perspecta Inc. dba Peraton Inc.",
+      "employees": 10,
+      "notice_date": null,
+      "effective_date": "2021-06-30",
+      "county": "San Diego County",
+      "address": "140 Sylvester Rd. San Diego CA 92106",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2021,
+      "source": "pdf"
+    },
+    {
+      "company": "Perspecta Inc. dba Peraton Inc.",
+      "employees": 17,
+      "notice_date": null,
+      "effective_date": "2021-06-30",
+      "county": "San Diego County",
+      "address": "1482 Read Rd. San Diego CA 92135",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2021,
+      "source": "pdf"
+    },
+    {
+      "company": "Perspecta Inc. dba Peraton Inc.",
+      "employees": 7,
+      "notice_date": null,
+      "effective_date": "2021-06-30",
+      "county": "San Diego County",
+      "address": "3380 Sturtevant Rd. San Diego CA 92136",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2021,
+      "source": "pdf"
+    },
+    {
+      "company": "Perspecta Inc. dba Peraton Inc.",
+      "employees": 2,
+      "notice_date": null,
+      "effective_date": "2021-06-30",
+      "county": "San Diego County",
+      "address": "3970 Sherman St. San Diego CA 92110",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2021,
+      "source": "pdf"
+    }
+  ]
+}

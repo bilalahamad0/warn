@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- Job label — must be unique system-wide -->
+  <key>Label</key>
+  <string>com.bilalahamad.warn</string>
+
+  <!-- Full command to run -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Library/Developer/CommandLineTools/usr/bin/python3</string>
+    <string>/ABSOLUTE/PATH/TO/warn/warn_publish.py</string>
+  </array>
+
+  <!-- Run at 6:00 AM and 6:00 PM Pacific Time (UTC+7 in summer) -->
+  <key>StartCalendarInterval</key>
+  <array>
+    <dict>
+      <key>Hour</key>   <integer>6</integer>
+      <key>Minute</key> <integer>0</integer>
+    </dict>
+    <dict>
+      <key>Hour</key>   <integer>18</integer>
+      <key>Minute</key> <integer>0</integer>
+    </dict>
+  </array>
+
+  <!-- Working directory -->
+  <key>WorkingDirectory</key>
+  <string>/ABSOLUTE/PATH/TO/warn</string>
+
+  <!-- Logs -->
+  <key>StandardOutPath</key>
+  <string>/ABSOLUTE/PATH/TO/warn/data/warn_cron.log</string>
+  <key>StandardErrorPath</key>
+  <string>/ABSOLUTE/PATH/TO/warn/data/warn_cron_err.log</string>
+
+  <!-- Retry on failure -->
+  <key>KeepAlive</key>
+  <false/>
+
+  <!-- Run immediately if a scheduled run was missed (e.g. laptop was asleep) -->
+  <key>RunAtLoad</key>
+  <false/>
+</dict>
+</plist>

@@ -1,0 +1,194 @@
+{
+  "fiscal_year": 2019,
+  "record_count": 17,
+  "total_employees": 851,
+  "records": [
+    {
+      "company": "Harbor Bay Club, Inc",
+      "employees": 80,
+      "notice_date": null,
+      "effective_date": "2020-06-09",
+      "county": "Alameda County",
+      "address": "",
+      "layoff_type": "Layoff Temporary",
+      "fiscal_year": 2019,
+      "source": "pdf"
+    },
+    {
+      "company": "MD2 Industries, LLC",
+      "employees": 109,
+      "notice_date": null,
+      "effective_date": "2020-03-20",
+      "county": "Los Angeles County",
+      "address": "",
+      "layoff_type": "Closure Temporary",
+      "fiscal_year": 2019,
+      "source": "pdf"
+    },
+    {
+      "company": "NBCUniversal Media, LLC - Digital Lab Unit",
+      "employees": 28,
+      "notice_date": null,
+      "effective_date": "2020-08-21",
+      "county": "Los Angeles County",
+      "address": "",
+      "layoff_type": "Layoff Temporary",
+      "fiscal_year": 2019,
+      "source": "pdf"
+    },
+    {
+      "company": "House of Blues Anaheim",
+      "employees": 8,
+      "notice_date": null,
+      "effective_date": "2020-06-22",
+      "county": "Orange County",
+      "address": "",
+      "layoff_type": "Closure Temporary",
+      "fiscal_year": 2019,
+      "source": "pdf"
+    },
+    {
+      "company": "ADESA California, LLC dba ADESA/AFC Los Angeles",
+      "employees": 71,
+      "notice_date": null,
+      "effective_date": "2020-08-01",
+      "county": "Riverside County",
+      "address": "",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2019,
+      "source": "pdf"
+    },
+    {
+      "company": "K&N Engineering, Inc.",
+      "employees": 44,
+      "notice_date": null,
+      "effective_date": "2020-06-17",
+      "county": "Riverside County",
+      "address": "",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2019,
+      "source": "pdf"
+    },
+    {
+      "company": "Benchmark Arrowhead, LLC dba Lake Arrowhead Resort and Spa",
+      "employees": 114,
+      "notice_date": null,
+      "effective_date": "2020-07-28",
+      "county": "San Bernardino County",
+      "address": "",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2019,
+      "source": "pdf"
+    },
+    {
+      "company": "HOWMET Aerospace",
+      "employees": 75,
+      "notice_date": null,
+      "effective_date": "2020-07-06",
+      "county": "San Bernardino County",
+      "address": "",
+      "layoff_type": "Layoff Temporary",
+      "fiscal_year": 2019,
+      "source": "pdf"
+    },
+    {
+      "company": "Bahia Resort Hotel",
+      "employees": 47,
+      "notice_date": null,
+      "effective_date": "2020-06-16",
+      "county": "San Diego County",
+      "address": "",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2019,
+      "source": "pdf"
+    },
+    {
+      "company": "Catamaran Resort Hotel and Spa",
+      "employees": 46,
+      "notice_date": null,
+      "effective_date": "2020-06-16",
+      "county": "San Diego County",
+      "address": "",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2019,
+      "source": "pdf"
+    },
+    {
+      "company": "The Lodge Torrey Pines",
+      "employees": 84,
+      "notice_date": null,
+      "effective_date": "2020-06-16",
+      "county": "San Diego County",
+      "address": "",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2019,
+      "source": "pdf"
+    },
+    {
+      "company": "Bahia Resort Hotel",
+      "employees": 33,
+      "notice_date": null,
+      "effective_date": "2020-06-18",
+      "county": "San Diego County",
+      "address": "",
+      "layoff_type": "Layoff Temporary",
+      "fiscal_year": 2019,
+      "source": "pdf"
+    },
+    {
+      "company": "Catamaran Resort Hotel and Spa",
+      "employees": 33,
+      "notice_date": null,
+      "effective_date": "2020-06-18",
+      "county": "San Diego County",
+      "address": "",
+      "layoff_type": "Layoff Temporary",
+      "fiscal_year": 2019,
+      "source": "pdf"
+    },
+    {
+      "company": "The Lodge Torrey Pines",
+      "employees": 37,
+      "notice_date": null,
+      "effective_date": "2020-06-18",
+      "county": "San Diego County",
+      "address": "",
+      "layoff_type": "Layoff Temporary",
+      "fiscal_year": 2019,
+      "source": "pdf"
+    },
+    {
+      "company": "SmartCareMD",
+      "employees": 38,
+      "notice_date": null,
+      "effective_date": "2020-03-30",
+      "county": "San Diego County",
+      "address": "",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2019,
+      "source": "pdf"
+    },
+    {
+      "company": "Nitto, Inc.",
+      "employees": 3,
+      "notice_date": null,
+      "effective_date": "2020-08-29",
+      "county": "Santa Clara County",
+      "address": "",
+      "layoff_type": "Closure Permanent",
+      "fiscal_year": 2019,
+      "source": "pdf"
+    },
+    {
+      "company": "Live Nation Worldwide, Inc",
+      "employees": 1,
+      "notice_date": null,
+      "effective_date": "2020-06-30",
+      "county": "Santa Clara County",
+      "address": "",
+      "layoff_type": "Layoff Temporary",
+      "fiscal_year": 2019,
+      "source": "pdf"
+    }
+  ]
+}

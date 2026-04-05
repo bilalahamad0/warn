@@ -1,0 +1,161 @@
+{
+  "fiscal_year": 2020,
+  "record_count": 14,
+  "total_employees": 1394,
+  "records": [
+    {
+      "company": "Bay Club Santa Monica",
+      "employees": 82,
+      "notice_date": null,
+      "effective_date": "2020-06-07",
+      "county": "Los Angeles County",
+      "address": "",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2020,
+      "source": "pdf"
+    },
+    {
+      "company": "Weber Metals, Inc",
+      "employees": 169,
+      "notice_date": null,
+      "effective_date": "2020-08-21",
+      "county": "Los Angeles County",
+      "address": "",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2020,
+      "source": "pdf"
+    },
+    {
+      "company": "Bay Club Rolling Hills",
+      "employees": 64,
+      "notice_date": null,
+      "effective_date": "2020-06-07",
+      "county": "Los Angeles County",
+      "address": "",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2020,
+      "source": "pdf"
+    },
+    {
+      "company": "Bay Club Redondo Beach",
+      "employees": 102,
+      "notice_date": null,
+      "effective_date": "2020-06-07",
+      "county": "Los Angeles County",
+      "address": "",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2020,
+      "source": "pdf"
+    },
+    {
+      "company": "Bay Club Ross Valley",
+      "employees": 51,
+      "notice_date": null,
+      "effective_date": "2020-06-07",
+      "county": "Marin County",
+      "address": "",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2020,
+      "source": "pdf"
+    },
+    {
+      "company": "StoneTree Golf Club",
+      "employees": 32,
+      "notice_date": null,
+      "effective_date": "2020-06-07",
+      "county": "Marin County",
+      "address": "",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2020,
+      "source": "pdf"
+    },
+    {
+      "company": "Hyatt Regency Sacramento",
+      "employees": 203,
+      "notice_date": null,
+      "effective_date": "2020-03-20",
+      "county": "Sacramento County",
+      "address": "",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2020,
+      "source": "pdf"
+    },
+    {
+      "company": "Granite Summit, Inc",
+      "employees": 60,
+      "notice_date": null,
+      "effective_date": "2020-06-17",
+      "county": "San Bernardino County",
+      "address": "",
+      "layoff_type": "Layoff Type Unknown",
+      "fiscal_year": 2020,
+      "source": "pdf"
+    },
+    {
+      "company": "Pali Camp",
+      "employees": 71,
+      "notice_date": null,
+      "effective_date": "2020-06-17",
+      "county": "San Bernardino County",
+      "address": "",
+      "layoff_type": "Layoff Type Unknown",
+      "fiscal_year": 2020,
+      "source": "pdf"
+    },
+    {
+      "company": "Pali Institute, Inc",
+      "employees": 35,
+      "notice_date": null,
+      "effective_date": "2020-06-17",
+      "county": "San Bernardino County",
+      "address": "",
+      "layoff_type": "Layoff Type Unknown",
+      "fiscal_year": 2020,
+      "source": "pdf"
+    },
+    {
+      "company": "Pali Mountain Conference Center, Inc",
+      "employees": 17,
+      "notice_date": null,
+      "effective_date": "2020-06-17",
+      "county": "San Bernardino County",
+      "address": "",
+      "layoff_type": "Layoff Type Unknown",
+      "fiscal_year": 2020,
+      "source": "pdf"
+    },
+    {
+      "company": "Bay Club San Francisco",
+      "employees": 146,
+      "notice_date": null,
+      "effective_date": "2020-06-07",
+      "county": "San Francisco County",
+      "address": "",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2020,
+      "source": "pdf"
+    },
+    {
+      "company": "Bay Club SF Tennis",
+      "employees": 64,
+      "notice_date": null,
+      "effective_date": "2020-06-07",
+      "county": "San Francisco County",
+      "address": "",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2020,
+      "source": "pdf"
+    },
+    {
+      "company": "Bay Club Redwood Shores",
+      "employees": 298,
+      "notice_date": null,
+      "effective_date": "2020-06-07",
+      "county": "San Mateo County",
+      "address": "",
+      "layoff_type": "Layoff Permanent",
+      "fiscal_year": 2020,
+      "source": "pdf"
+    }
+  ]
+}
