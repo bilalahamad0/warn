@@ -25,7 +25,7 @@ import plotly.io as pio
 
 BASE_DIR = Path(__file__).parent
 DATA_DIR = BASE_DIR / "data"
-OUTPUT_DIR = BASE_DIR / "output"
+OUTPUT_DIR = BASE_DIR / "docs"
 CHARTS_DIR = OUTPUT_DIR / "charts"
 CHARTS_DIR.mkdir(parents=True, exist_ok=True)
 

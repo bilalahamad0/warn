@@ -30,12 +30,12 @@ import warn_notify
 import warn_history
 
 BASE_DIR = Path(__file__).parent
-OUTPUT_DIR = BASE_DIR / "output"
+OUTPUT_DIR = BASE_DIR / "docs"
 CHARTS_DIR = OUTPUT_DIR / "charts"
 DATA_DIR = BASE_DIR / "data"
 SITE_DATA = OUTPUT_DIR / "data.json"
 INDEX_HTML = OUTPUT_DIR / "index.html"
-TEMPLATE = BASE_DIR / "output" / "index_template.html"
+TEMPLATE = BASE_DIR / "docs" / "index_template.html"
 
 LOG_FORMAT = "%(asctime)s [%(levelname)s] %(message)s"
 logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
@@ -108,7 +108,7 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
         </div>"""
 
     # Read the HTML template and inject
-    template_path = BASE_DIR / "output" / "_template.html"
+    template_path = BASE_DIR / "docs" / "_template.html"
     html = SITE_HTML_TEMPLATE.format(
         total_records=total_records,
         total_employees=total_employees,
@@ -158,7 +158,7 @@ def git_commit_push(message: str = None) -> bool:
         return result.returncode == 0
 
     log.info("Staging changes …")
-    run_git(["add", "data/", "output/", "file.xlsx",
+    run_git(["add", "data/", "docs/", "file.xlsx",
              "requirements.txt", "warn_monitor.py", "warn_charts.py",
              "warn_diff.py", "warn_publish.py", "README.md"])
 

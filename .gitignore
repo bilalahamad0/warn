@@ -11,4 +11,4 @@ dist/
 build/
 
 # Raw downloads caching (keep file.xlsx for diff purposes)
-# output/ is committed for GitHub Pages
+# docs/ is committed for GitHub Pages

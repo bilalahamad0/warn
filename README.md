@@ -84,7 +84,7 @@ launchctl load ~/Library/LaunchAgents/com.bilalahamad.warn.plist
 launchctl unload ~/Library/LaunchAgents/com.bilalahamad.warn.plist
 
 # View logs
-tail -f data/warn_cron.log
+tail - Branch: `main`, Folder: `/docs`
 ```
 
 ---
@@ -99,7 +99,7 @@ EDD WARN XLSX  ───► warn_monitor.py ──► data/warn_latest.json
                   (PDF 2014-2024)        (8 Plotly charts)
                           │                      │
                           ▼                      ▼
-                  warn_diff.py           output/charts/*.html
+                  warn_diff.py           docs/charts/*.html
                   (change detect)                │
                           │                      │
                   data/diff_report.md            │
@@ -110,7 +110,7 @@ EDD WARN XLSX  ───► warn_monitor.py ──► data/warn_latest.json
                                  │
                           ┌──────┴──────┐
                           ▼             ▼
-                  output/index.html   warn_notify.py
+                   docs/index.html    warn_notify.py
                    (GitHub Pages)     (Email Alerts)
 ```
 
@@ -123,8 +123,8 @@ EDD WARN XLSX  ───► warn_monitor.py ──► data/warn_latest.json
 | `data/meta.json` | ETag, hash, last-checked timestamp |
 | `data/changelog.jsonl` | Append-only record of every change detected |
 | `data/diff_report.md` | Human-readable summary of the latest change |
-| `output/index.html` | Published premium interactive dashboard |
-| `output/data.json` | Publicly accessible JSON API of current notices |
+| `docs/index.html` | Published premium interactive dashboard |
+| `docs/data.json` | Publicly accessible JSON API of current notices |
 
 ---
 
