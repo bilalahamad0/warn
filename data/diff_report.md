@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-04-04 00:24:12 UTC
+**Generated:** 2026-04-07 06:24:50 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -16,35 +16,49 @@
 ## 📁 File vs Git Comparison
 
 - **Local `file.xlsx` hash:** `6ba31155df7296f1b20472e66f812a56`
-- **Committed hash:**          `29e6a4fde9da867275e0f4c81f5aed18`
-- 🔴 **Local file differs from committed version**
+- **Committed hash:**          `6ba31155df7296f1b20472e66f812a56`
+- ✅ Local file matches committed version
 
 **Git status:**
 ```
-M file.xlsx
-?? .env.example
-?? .gitignore
-?? README.md
-?? automation/
-?? data/
-?? graph_2024-09-09_22:35:28.png
-?? output/
-?? requirements.txt
-?? warn_charts.py
-?? warn_diff.py
-?? warn_monitor.py
-?? warn_publish.py
+M data/changelog.jsonl
+ M data/charts_manifest.json
+ M data/diff_report.md
+ M data/warn_all_years.json
+ M data/warn_latest.json
+ M data/warn_snapshot.json
+ M docs/charts/1_timeline_scatter.html
+ M docs/charts/2_monthly_bar.html
+ M docs/charts/3_rolling_trend.html
+ M docs/charts/4_top_companies.html
+ M docs/charts/5_county_heatmap.html
+ M docs/charts/6_treemap.html
+ M docs/charts/7_yoy_bar.html
+ M docs/charts/8_multiyear_trend.html
+ M docs/data.json
+ M docs/index.html
+ M warn_charts.py
+ M warn_monitor.py
+?? data/warn_cron.log
+?? data/warn_cron_err.log
+?? docs/charts/2_monthly_bar.png
+?? docs/charts/3_rolling_trend.png
+?? docs/charts/4_top_companies.png
+?? docs/charts/5_county_heatmap.png
+?? docs/charts/7_yoy_bar.png
+?? docs/charts/8_multiyear_trend.png
 ```
 
 **Recent commits:**
 ```
-61290bf Removed unnecessary comments
-e192fb3 First commit to add the file that generates a plot containing info about layoffs in CA in 2023-24
-d769409 first commit: developed source file to plot warn graph
+c6398f7 refactor: rename output to docs for GitHub Pages compatibility
+45efbee initial: automated CA WARN monitor (clean release)
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-04-07T06:24:50.799233Z` — +0 added, -0 removed, 0 employees (new)
+- `2026-04-07T06:09:15.749641Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-04-04T00:24:12.336030Z` — +1099 added, -0 removed, 61,514 employees (new)
 - `2026-04-03T18:03:24.761113Z` — +1099 added, -0 removed, 61,514 employees (new)

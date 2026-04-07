@@ -85,6 +85,20 @@ def load_data() -> pd.DataFrame:
     df["effective_date"] = pd.to_datetime(df["effective_date"], errors="coerce")
     df["notice_date"] = pd.to_datetime(df.get("notice_date"), errors="coerce")
     df["employees"] = pd.to_numeric(df["employees"], errors="coerce").fillna(0).astype(int)
+
+    # Clean company names (group Amazon LAX 35 -> Amazon)
+    def clean_company(name: str) -> str:
+        name = str(name).strip()
+        # Common cleanup patterns: "Amazon LAX 35", "Company, Inc. (12345)"
+        # 1. Remove trailing codes like LAX, SFO, SNA, SJC + numbers
+        name = re.split(r'\s+(LAX|SFO|SNA|SJC|OAK|SAN|BUR|LGB|SMF|ONT|SCK|FAT|MRY|SBS|SCZ)\s*\d*', name, flags=re.I)[0]
+        # 2. Remove trailing parentheticals or numbers in parentheses
+        name = re.sub(r'\s+\(\d+\)\s*$', '', name).strip()
+        # 3. Specific manual groupings if needed
+        if "Amazon" in name: return "Amazon"
+        return name
+
+    df["company_clean"] = df["company"].apply(clean_company)
     return df, payload
 
 
@@ -110,11 +124,15 @@ def _save_chart(fig: go.Figure, name: str, save_png: bool = True) -> str:
 def chart_timeline_scatter(df: pd.DataFrame, save_png: bool = True) -> go.Figure:
     log.info("Chart 1: Timeline scatter …")
     df_plot = df.dropna(subset=["effective_date"]).copy()
-    df_plot["label"] = (
-        df_plot["company"] + "<br>"
-        + df_plot["employees"].astype(str) + " employees"
-        + "<br>" + df_plot["effective_date"].dt.strftime("%b %d, %Y")
-        + ("<br>" + df_plot["county"]).where(df_plot["county"].str.strip() != "", "")
+
+    # Pre-calculate hover content to ensure robust mapping
+    df_plot["date_str"] = df_plot["effective_date"].dt.strftime("%b %d, %Y")
+    df_plot["hover_text"] = (
+        "<b>" + df_plot["company"] + "</b><br>" +
+        "County: " + df_plot["county"] + "<br>" +
+        "Effective Date: " + df_plot["date_str"] + "<br>" +
+        "Employees Affected: " + df_plot["employees"].map("{:,}".format) + "<br>" +
+        "City: " + df_plot["city"]
     )
 
     fig = px.scatter(
@@ -125,12 +143,15 @@ def chart_timeline_scatter(df: pd.DataFrame, save_png: bool = True) -> go.Figure
         size="employees",
         size_max=40,
         hover_name="company",
-        hover_data={"employees": True, "effective_date": True, "county": True, "city": True},
+        custom_data=["hover_text"],
         title="<b>WARN Notices — Employees by Effective Date</b>",
-        labels={"effective_date": "Effective Date", "employees": "Employees Affected",
-                "county": "County"},
+        labels={"effective_date": "Effective Date", "employees": "Employees Affected", "county": "County"},
     )
-    fig.update_traces(marker=dict(opacity=0.75, line=dict(width=0.5, color="white")))
+    # Use custom_data to override the px default hover which can be flaky
+    fig.update_traces(
+        hovertemplate="%{customdata[0]}<extra></extra>",
+        marker=dict(opacity=0.75, line=dict(width=0.5, color="white"))
+    )
     _apply_theme(fig)
     fig.update_layout(
         title_font_size=18,
@@ -250,16 +271,17 @@ def chart_rolling_trend(df: pd.DataFrame, save_png: bool = True) -> go.Figure:
 def chart_top_companies(df: pd.DataFrame, top_n: int = 25, save_png: bool = True) -> go.Figure:
     log.info(f"Chart 4: Top-{top_n} companies …")
     top = (
-        df.groupby("company")["employees"]
+        df.groupby("company_clean")["employees"]
         .sum()
         .nlargest(top_n)
         .reset_index()
         .sort_values("employees")
-    )
+    ).rename(columns={"company_clean": "company"})
 
     # Colour gradient
     colors = px.colors.sequential.Blues[3:]
-    color_list = [colors[int(i / top_n * (len(colors) - 1))] for i in range(top_n)]
+    color_range = len(colors)
+    color_list = [colors[int(i / top_n * (color_range - 1))] for i in range(len(top))]
 
     fig = go.Figure(go.Bar(
         x=top["employees"],
@@ -272,10 +294,10 @@ def chart_top_companies(df: pd.DataFrame, top_n: int = 25, save_png: bool = True
     ))
     _apply_theme(fig, margin=dict(l=250, r=80, t=70, b=50))
     fig.update_layout(
-        title=dict(text=f"<b>Top {top_n} Companies by Total Employees Affected</b>", font_size=18),
+        title=dict(text=f"<b>Top {top_n} Filtered Companies by Total Employees Affected</b>", font_size=18),
         xaxis_title="Total Employees Affected",
         yaxis_title="",
-        height=max(500, top_n * 26),
+        height=max(500, len(top) * 26),
     )
     fig.update_yaxes(tickfont=dict(size=11))
     _save_chart(fig, "4_top_companies", save_png)

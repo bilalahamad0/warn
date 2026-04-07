@@ -343,7 +343,8 @@ def detect_changes(new_df: pd.DataFrame) -> dict:
             "total_employees_new": sum(r.get("employees", 0) for r in new_records),
         }
 
-    old_records = json.loads(SNAPSHOT_FILE.read_text())
+    old_payload = json.loads(SNAPSHOT_FILE.read_text())
+    old_records = old_payload.get("records", [])
 
     # Build lookup keys
     def key(r):
