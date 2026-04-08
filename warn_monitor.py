@@ -10,21 +10,18 @@ Usage:
     python3 warn_monitor.py --force       # ignore ETag, always re-download
 """
 
-import os
-import sys
 import json
 import hashlib
 import logging
 import argparse
 import re
-from datetime import datetime, date
+from datetime import datetime, date, timezone
 from pathlib import Path
 
 from typing import Optional
 
 import requests
 import pandas as pd
-import numpy as np
 
 # ---------------------------------------------------------------------------
 # Config
@@ -34,7 +31,9 @@ BASE_DIR = Path(__file__).parent
 DATA_DIR = BASE_DIR / "data"
 DATA_DIR.mkdir(exist_ok=True)
 
-WARN_XLSX_URL = "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx"
+WARN_XLSX_URL = (
+    "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx"
+)
 LOCAL_XLSX = BASE_DIR / "file.xlsx"
 META_FILE = DATA_DIR / "meta.json"
 SNAPSHOT_FILE = DATA_DIR / "warn_snapshot.json"
@@ -48,6 +47,7 @@ log = logging.getLogger("warn_monitor")
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
+
 
 def _file_hash(path: Path) -> str:
     """MD5 of a file, used for change detection."""
@@ -104,6 +104,7 @@ def _safe_date(val) -> Optional[str]:
 # Download
 # ---------------------------------------------------------------------------
 
+
 def download_xlsx(force: bool = False):
     """
     Download WARN XLSX with ETag caching.
@@ -130,13 +131,15 @@ def download_xlsx(force: bool = False):
     new_hash = _file_hash(LOCAL_XLSX)
     old_hash = meta.get("file_hash", "")
 
-    meta.update({
-        "etag": resp.headers.get("ETag", ""),
-        "last_modified": resp.headers.get("Last-Modified", ""),
-        "file_hash": new_hash,
-        "last_checked": datetime.utcnow().isoformat() + "Z",
-        "url": WARN_XLSX_URL,
-    })
+    meta.update(
+        {
+            "etag": resp.headers.get("ETag", ""),
+            "last_modified": resp.headers.get("Last-Modified", ""),
+            "file_hash": new_hash,
+            "last_checked": datetime.now(timezone.utc).isoformat() + "Z",
+            "url": WARN_XLSX_URL,
+        }
+    )
     _save_meta(meta)
 
     changed = new_hash != old_hash
@@ -150,6 +153,7 @@ def download_xlsx(force: bool = False):
 # ---------------------------------------------------------------------------
 # Parse
 # ---------------------------------------------------------------------------
+
 
 def _detect_sheet_format(xls: pd.ExcelFile) -> str:
     """Return the correct sheet name for the WARN data."""
@@ -191,16 +195,20 @@ def _parse_sheet1(df: pd.DataFrame) -> pd.DataFrame:
         emp = _safe_int(row.get(col_map.get("employees", ""), None))
         if emp is None:
             continue
-        rows.append({
-            "company": company,
-            "notice_date": _safe_date(row.get(col_map.get("notice_date"), None)),
-            "effective_date": _safe_date(row.get(col_map.get("effective_date"), None)),
-            "employees": emp,
-            "county": str(row.get(col_map.get("county", ""), "")).strip(),
-            "city": str(row.get(col_map.get("city", ""), "")).strip(),
-            "layoff_type": str(row.get(col_map.get("layoff_type", ""), "")).strip(),
-            "address": str(row.get(col_map.get("address", ""), "")).strip(),
-        })
+        rows.append(
+            {
+                "company": company,
+                "notice_date": _safe_date(row.get(col_map.get("notice_date"), None)),
+                "effective_date": _safe_date(
+                    row.get(col_map.get("effective_date"), None)
+                ),
+                "employees": emp,
+                "county": str(row.get(col_map.get("county", ""), "")).strip(),
+                "city": str(row.get(col_map.get("city", ""), "")).strip(),
+                "layoff_type": str(row.get(col_map.get("layoff_type", ""), "")).strip(),
+                "address": str(row.get(col_map.get("address", ""), "")).strip(),
+            }
+        )
     return pd.DataFrame(rows)
 
 
@@ -215,7 +223,7 @@ def _parse_detailed_sheet(df_raw: pd.DataFrame) -> pd.DataFrame:
             break
 
     if header_row is not None:
-        df = df_raw.iloc[header_row + 1:].copy()
+        df = df_raw.iloc[header_row + 1 :].copy()
         df.columns = df_raw.iloc[header_row].values
         df = df.reset_index(drop=True)
     else:
@@ -270,16 +278,24 @@ def _parse_detailed_sheet(df_raw: pd.DataFrame) -> pd.DataFrame:
         emp = _safe_int(row.get(emp_col, None)) if emp_col else None
         if emp is None:
             continue
-        rows.append({
-            "company": company,
-            "notice_date": _safe_date(row.get(col_indices.get("notice_date"), None)),
-            "effective_date": _safe_date(row.get(col_indices.get("effective_date"), None)),
-            "employees": emp,
-            "county": str(row.get(col_indices.get("county", ""), "")).strip(),
-            "city": str(row.get(col_indices.get("city", ""), "")).strip(),
-            "layoff_type": str(row.get(col_indices.get("layoff_type", ""), "")).strip(),
-            "address": str(row.get(col_indices.get("address", ""), "")).strip(),
-        })
+        rows.append(
+            {
+                "company": company,
+                "notice_date": _safe_date(
+                    row.get(col_indices.get("notice_date"), None)
+                ),
+                "effective_date": _safe_date(
+                    row.get(col_indices.get("effective_date"), None)
+                ),
+                "employees": emp,
+                "county": str(row.get(col_indices.get("county", ""), "")).strip(),
+                "city": str(row.get(col_indices.get("city", ""), "")).strip(),
+                "layoff_type": str(
+                    row.get(col_indices.get("layoff_type", ""), "")
+                ).strip(),
+                "address": str(row.get(col_indices.get("address", ""), "")).strip(),
+            }
+        )
     return pd.DataFrame(rows)
 
 
@@ -309,21 +325,27 @@ def parse_warn_xlsx(xlsx_path: str) -> pd.DataFrame:
     # Merge duplicate company entries on same effective date
     if "effective_date" in df.columns:
         df = (
-            df.groupby(["company", "effective_date", "county", "city", "layoff_type"], dropna=False)
+            df.groupby(
+                ["company", "effective_date", "county", "city", "layoff_type"],
+                dropna=False,
+            )
             .agg({"employees": "sum", "notice_date": "first", "address": "first"})
             .reset_index()
         )
 
     df = df.sort_values("effective_date", na_position="last").reset_index(drop=True)
 
-    log.info(f"Parsed {len(df)} WARN records spanning "
-             f"{df['effective_date'].min()} → {df['effective_date'].max()}")
+    log.info(
+        f"Parsed {len(df)} WARN records spanning "
+        f"{df['effective_date'].min()} → {df['effective_date'].max()}"
+    )
     return df
 
 
 # ---------------------------------------------------------------------------
 # Diff / change detection
 # ---------------------------------------------------------------------------
+
 
 def _df_to_records(df: pd.DataFrame) -> list[dict]:
     return json.loads(df.to_json(orient="records", date_format="iso"))
@@ -369,11 +391,13 @@ def detect_changes(new_df: pd.DataFrame) -> dict:
 def _log_change(diff: dict, dry_run: bool = False):
     """Append change event to the changelog."""
     entry = {
-        "timestamp": datetime.utcnow().isoformat() + "Z",
+        "timestamp": datetime.now(timezone.utc).isoformat() + "Z",
         **diff,
     }
     if diff["new_count"] > 0 or diff["removed_count"] > 0:
-        log.info(f"Changes: +{diff['new_count']} new, -{diff['removed_count']} removed records")
+        log.info(
+            f"Changes: +{diff['new_count']} new, -{diff['removed_count']} removed records"
+        )
     else:
         log.info("No data changes detected.")
 
@@ -386,6 +410,7 @@ def _log_change(diff: dict, dry_run: bool = False):
 # Persist
 # ---------------------------------------------------------------------------
 
+
 def save_latest(df: pd.DataFrame, dry_run: bool = False):
     """Save current data as latest + rotate snapshot."""
     records = _df_to_records(df)
@@ -394,7 +419,7 @@ def save_latest(df: pd.DataFrame, dry_run: bool = False):
         "total_employees": int(df["employees"].sum()),
         "date_range_start": df["effective_date"].min(),
         "date_range_end": df["effective_date"].max(),
-        "last_updated": datetime.utcnow().isoformat() + "Z",
+        "last_updated": datetime.now(timezone.utc).isoformat() + "Z",
         "source_url": WARN_XLSX_URL,
         "records": records,
     }
@@ -413,12 +438,13 @@ def save_latest(df: pd.DataFrame, dry_run: bool = False):
 # Main
 # ---------------------------------------------------------------------------
 
+
 def run(dry_run: bool = False, force: bool = False) -> dict:
     """
     Full monitor run. Returns a result dict with stats + diff.
     """
     log.info("=" * 60)
-    log.info(f"WARN Monitor — {datetime.utcnow().isoformat()}Z")
+    log.info(f"WARN Monitor — {datetime.now(timezone.utc).isoformat()}Z")
     log.info("=" * 60)
 
     # 1. Download

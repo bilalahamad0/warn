@@ -21,36 +21,38 @@ import logging
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
-from datetime import datetime
-from typing import Optional
+from datetime import datetime, timezone
+from typing import List
 
 try:
     from dotenv import load_dotenv
+
     load_dotenv(Path(__file__).parent / ".env")
 except ImportError:
     pass
 
 log = logging.getLogger("warn_notify")
 
-GMAIL_USER     = os.environ.get("GMAIL_USER", "")
+GMAIL_USER = os.environ.get("GMAIL_USER", "")
 GMAIL_APP_PASS = os.environ.get("GMAIL_APP_PASSWORD", "")
-NOTIFY_EMAIL   = os.environ.get("NOTIFY_EMAIL", "")
+NOTIFY_EMAIL = os.environ.get("NOTIFY_EMAIL", "")
 
-WARN_URL       = "https://edd.ca.gov/en/jobs_and_training/layoff_services_warn"
-DASHBOARD_URL  = "https://bilalahamad0.github.io/warn/"
+WARN_URL = "https://edd.ca.gov/en/jobs_and_training/layoff_services_warn"
+DASHBOARD_URL = "https://bilalahamad0.github.io/warn/"
 
 # ---------------------------------------------------------------------------
 # HTML email template
 # ---------------------------------------------------------------------------
 
+
 def _build_html(diff: dict, summary: dict) -> str:
-    new_count   = diff.get("new_count", 0)
-    rem_count   = diff.get("removed_count", 0)
-    new_emp     = diff.get("total_employees_new", 0)
-    new_entries = diff.get("new_entries", [])[:10]   # top 10 in email
-    total_rec   = summary.get("total_records", 0)
-    total_emp   = summary.get("total_employees", 0)
-    now         = datetime.utcnow().strftime("%B %d, %Y at %H:%M UTC")
+    new_count = diff.get("new_count", 0)
+    rem_count = diff.get("removed_count", 0)
+    new_emp = diff.get("total_employees_new", 0)
+    new_entries = diff.get("new_entries", [])[:10]  # top 10 in email
+    total_rec = summary.get("total_records", 0)
+    total_emp = summary.get("total_employees", 0)
+    now = datetime.now(timezone.utc).strftime("%B %d, %Y at %H:%M UTC")
 
     rows_html = ""
     for r in new_entries:
@@ -70,7 +72,8 @@ def _build_html(diff: dict, summary: dict) -> str:
     if rem_count > 0:
         removed_note = f'<p style="color:#f78166">⚠️ {rem_count} previously filed notices were removed/amended in this update.</p>'
 
-    return f"""<!DOCTYPE html>
+    return f"""\
+<!DOCTYPE html>
 <html lang="en">
 <head><meta charset="UTF-8"><title>WARN Alert</title></head>
 <body style="margin:0;padding:0;background:#0d1117;font-family:Inter,system-ui,sans-serif;color:#e6edf3">
@@ -140,7 +143,9 @@ def _build_html(diff: dict, summary: dict) -> str:
         <tr>
           <td style="padding:20px 32px;border-top:1px solid #21262d;font-size:12px;color:#8b949e">
             You're receiving this because you set up WARN monitoring at
-            <a href="{DASHBOARD_URL}" style="color:#58a6ff">{DASHBOARD_URL}</a>.
+            <a href="{DASHBOARD_URL}" style="color:#58a6ff">
+              {DASHBOARD_URL}
+            </a>.
             Data source: California Employment Development Department.
           </td>
         </tr>
@@ -154,8 +159,8 @@ def _build_html(diff: dict, summary: dict) -> str:
 
 def _build_text(diff: dict, summary: dict) -> str:
     new_count = diff.get("new_count", 0)
-    new_emp   = diff.get("total_employees_new", 0)
-    entries   = diff.get("new_entries", [])[:10]
+    new_emp = diff.get("total_employees_new", 0)
+    entries = diff.get("new_entries", [])[:10]
     lines = [
         "California WARN Alert",
         "=" * 40,
@@ -167,8 +172,8 @@ def _build_text(diff: dict, summary: dict) -> str:
         lines.append("New entries (top 10):")
         for r in entries:
             lines.append(
-                f"  {r.get('company','?')} — {r.get('employees',0):,} employees — "
-                f"{r.get('effective_date','?')} — {r.get('county','?')}"
+                f"  {r.get('company', '?')} — {r.get('employees', 0):,} employees — "
+                f"{r.get('effective_date', '?')} — {r.get('county', '?')}"
             )
     lines += ["", f"Dashboard: {DASHBOARD_URL}", f"Source: {WARN_URL}"]
     return "\n".join(lines)
@@ -177,6 +182,7 @@ def _build_text(diff: dict, summary: dict) -> str:
 # ---------------------------------------------------------------------------
 # Send
 # ---------------------------------------------------------------------------
+
 
 def send_email(diff: dict, summary: dict) -> bool:
     """
@@ -202,11 +208,11 @@ def send_email(diff: dict, summary: dict) -> bool:
 
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
-    msg["From"]    = f"WARN Monitor <{GMAIL_USER}>"
-    msg["To"]      = NOTIFY_EMAIL
+    msg["From"] = f"WARN Monitor <{GMAIL_USER}>"
+    msg["To"] = NOTIFY_EMAIL
 
-    msg.attach(MIMEText(_build_text(diff, summary),  "plain"))
-    msg.attach(MIMEText(_build_html(diff, summary),  "html"))
+    msg.attach(MIMEText(_build_text(diff, summary), "plain"))
+    msg.attach(MIMEText(_build_html(diff, summary), "html"))
 
     try:
         log.info(f"Sending alert email to {NOTIFY_EMAIL} …")
@@ -238,7 +244,10 @@ def notify_if_changes(diff: dict, summary: dict) -> bool:
 
 if __name__ == "__main__":
     import argparse
-    logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
+
+    logging.basicConfig(
+        level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s"
+    )
     parser = argparse.ArgumentParser()
     parser.add_argument("--test", action="store_true", help="Send a test email")
     args = parser.parse_args()
@@ -249,9 +258,24 @@ if __name__ == "__main__":
             "removed_count": 0,
             "total_employees_new": 450,
             "new_entries": [
-                {"company": "Acme Corp",        "employees": 200, "effective_date": "2026-05-01", "county": "Santa Clara County"},
-                {"company": "Globex Inc",         "employees": 150, "effective_date": "2026-05-15", "county": "Los Angeles County"},
-                {"company": "Initech Solutions",  "employees": 100, "effective_date": "2026-06-01", "county": "San Francisco County"},
+                {
+                    "company": "Acme Corp",
+                    "employees": 200,
+                    "effective_date": "2026-05-01",
+                    "county": "Santa Clara County",
+                },
+                {
+                    "company": "Globex Inc",
+                    "employees": 150,
+                    "effective_date": "2026-05-15",
+                    "county": "Los Angeles County",
+                },
+                {
+                    "company": "Initech Solutions",
+                    "employees": 100,
+                    "effective_date": "2026-06-01",
+                    "county": "San Francisco County",
+                },
             ],
         }
         test_summary = {"total_records": 1102, "total_employees": 61964}

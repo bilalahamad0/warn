@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-04-08 13:02:09 UTC
+**Generated:** 2026-04-08 23:04:00 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -21,19 +21,32 @@
 
 **Git status:**
 ```
-M data/changelog.jsonl
- M data/warn_cron_err.log
- M data/warn_latest.json
- M data/warn_snapshot.json
+D .coverage
+ M .flake8
+ M data/diff_report.md
+ M data/warn_all_years.json
+ M tests/test_structure.py
+ M warn_charts.py
+ M warn_diff.py
+ M warn_history.py
+ M warn_main.py
+ M warn_main_v2.py
+ M warn_monitor.py
+ M warn_notify.py
+ M warn_publish.py
+?? tests/conftest.py
+?? tests/test_monitor.py
+?? tests/test_notify.py
+?? tests/test_publish.py
 ```
 
 **Recent commits:**
 ```
+bf489bc chore: setup flake8 and pytest for code review pipeline
+77f0491 auto: WARN update 2026-04-08 13:29 UTC
 54ee759 auto: WARN update 2026-04-08 01:00 UTC
 74c7c5c auto: WARN update 2026-04-07 13:51 UTC
 19917b2 fix: resolve chart hover labels, group company entities, and fix monitor crash
-c6398f7 refactor: rename output to docs for GitHub Pages compatibility
-45efbee initial: automated CA WARN monitor (clean release)
 ```
 
 ---

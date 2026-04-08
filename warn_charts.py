@@ -13,7 +13,7 @@ import json
 import logging
 import argparse
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 import re
 
 import pandas as pd
@@ -73,9 +73,11 @@ def _apply_theme(fig: go.Figure, margin: dict = None) -> go.Figure:
     fig.update_yaxes(**AXIS_DEFAULTS)
     return fig
 
+
 # ---------------------------------------------------------------------------
 # Data loading
 # ---------------------------------------------------------------------------
+
 
 def load_data() -> pd.DataFrame:
     if not LATEST_FILE.exists():
@@ -84,18 +86,25 @@ def load_data() -> pd.DataFrame:
     df = pd.DataFrame(payload["records"])
     df["effective_date"] = pd.to_datetime(df["effective_date"], errors="coerce")
     df["notice_date"] = pd.to_datetime(df.get("notice_date"), errors="coerce")
-    df["employees"] = pd.to_numeric(df["employees"], errors="coerce").fillna(0).astype(int)
+    df["employees"] = (
+        pd.to_numeric(df["employees"], errors="coerce").fillna(0).astype(int)
+    )
 
     # Clean company names (group Amazon LAX 35 -> Amazon)
     def clean_company(name: str) -> str:
         name = str(name).strip()
         # Common cleanup patterns: "Amazon LAX 35", "Company, Inc. (12345)"
         # 1. Remove trailing codes like LAX, SFO, SNA, SJC + numbers
-        name = re.split(r'\s+(LAX|SFO|SNA|SJC|OAK|SAN|BUR|LGB|SMF|ONT|SCK|FAT|MRY|SBS|SCZ)\s*\d*', name, flags=re.I)[0]
+        name = re.split(
+            r"\s+(LAX|SFO|SNA|SJC|OAK|SAN|BUR|LGB|SMF|ONT|SCK|FAT|MRY|SBS|SCZ)\s*\d*",
+            name,
+            flags=re.I,
+        )[0]
         # 2. Remove trailing parentheticals or numbers in parentheses
-        name = re.sub(r'\s+\(\d+\)\s*$', '', name).strip()
+        name = re.sub(r"\s+\(\d+\)\s*$", "", name).strip()
         # 3. Specific manual groupings if needed
-        if "Amazon" in name: return "Amazon"
+        if "Amazon" in name:
+            return "Amazon"
         return name
 
     df["company_clean"] = df["company"].apply(clean_company)
@@ -121,6 +130,7 @@ def _save_chart(fig: go.Figure, name: str, save_png: bool = True) -> str:
 # Chart 1 — Timeline scatter (employees vs effective_date, coloured by county)
 # ---------------------------------------------------------------------------
 
+
 def chart_timeline_scatter(df: pd.DataFrame, save_png: bool = True) -> go.Figure:
     log.info("Chart 1: Timeline scatter …")
     df_plot = df.dropna(subset=["effective_date"]).copy()
@@ -128,11 +138,20 @@ def chart_timeline_scatter(df: pd.DataFrame, save_png: bool = True) -> go.Figure
     # Pre-calculate hover content to ensure robust mapping
     df_plot["date_str"] = df_plot["effective_date"].dt.strftime("%b %d, %Y")
     df_plot["hover_text"] = (
-        "<b>" + df_plot["company"] + "</b><br>" +
-        "County: " + df_plot["county"] + "<br>" +
-        "Effective Date: " + df_plot["date_str"] + "<br>" +
-        "Employees Affected: " + df_plot["employees"].map("{:,}".format) + "<br>" +
-        "City: " + df_plot["city"]
+        "<b>"
+        + df_plot["company"]
+        + "</b><br>"
+        + "County: "
+        + df_plot["county"]
+        + "<br>"
+        + "Effective Date: "
+        + df_plot["date_str"]
+        + "<br>"
+        + "Employees Affected: "
+        + df_plot["employees"].map("{:,}".format)
+        + "<br>"
+        + "City: "
+        + df_plot["city"]
     )
 
     fig = px.scatter(
@@ -145,12 +164,16 @@ def chart_timeline_scatter(df: pd.DataFrame, save_png: bool = True) -> go.Figure
         hover_name="company",
         custom_data=["hover_text"],
         title="<b>WARN Notices — Employees by Effective Date</b>",
-        labels={"effective_date": "Effective Date", "employees": "Employees Affected", "county": "County"},
+        labels={
+            "effective_date": "Effective Date",
+            "employees": "Employees Affected",
+            "county": "County",
+        },
     )
     # Use custom_data to override the px default hover which can be flaky
     fig.update_traces(
         hovertemplate="%{customdata[0]}<extra></extra>",
-        marker=dict(opacity=0.75, line=dict(width=0.5, color="white"))
+        marker=dict(opacity=0.75, line=dict(width=0.5, color="white")),
     )
     _apply_theme(fig)
     fig.update_layout(
@@ -167,41 +190,44 @@ def chart_timeline_scatter(df: pd.DataFrame, save_png: bool = True) -> go.Figure
 # Chart 2 — Monthly bar chart (total employees per month)
 # ---------------------------------------------------------------------------
 
+
 def chart_monthly_bar(df: pd.DataFrame, save_png: bool = True) -> go.Figure:
     log.info("Chart 2: Monthly bar chart …")
     df_m = df.dropna(subset=["effective_date"]).copy()
     df_m["month"] = df_m["effective_date"].dt.to_period("M")
-    monthly = (
-        df_m.groupby("month")["employees"]
-        .sum()
-        .reset_index()
-    )
+    monthly = df_m.groupby("month")["employees"].sum().reset_index()
     monthly["month_str"] = monthly["month"].astype(str)
     monthly["employees"] = monthly["employees"].astype(int)
 
     fig = go.Figure()
-    fig.add_trace(go.Bar(
-        x=monthly["month_str"],
-        y=monthly["employees"],
-        name="Employees Affected",
-        marker_color=ACCENT,
-        marker_line_width=0,
-        hovertemplate="<b>%{x}</b><br>Employees: %{y:,}<extra></extra>",
-    ))
+    fig.add_trace(
+        go.Bar(
+            x=monthly["month_str"],
+            y=monthly["employees"],
+            name="Employees Affected",
+            marker_color=ACCENT,
+            marker_line_width=0,
+            hovertemplate="<b>%{x}</b><br>Employees: %{y:,}<extra></extra>",
+        )
+    )
 
     # Add 3-month moving average
     monthly["ma3"] = monthly["employees"].rolling(3, min_periods=1).mean()
-    fig.add_trace(go.Scatter(
-        x=monthly["month_str"],
-        y=monthly["ma3"],
-        name="3-Month MA",
-        line=dict(color=ACCENT2, width=2, dash="dash"),
-        hovertemplate="<b>3-Month MA</b><br>%{x}: %{y:,.0f}<extra></extra>",
-    ))
+    fig.add_trace(
+        go.Scatter(
+            x=monthly["month_str"],
+            y=monthly["ma3"],
+            name="3-Month MA",
+            line=dict(color=ACCENT2, width=2, dash="dash"),
+            hovertemplate="<b>3-Month MA</b><br>%{x}: %{y:,.0f}<extra></extra>",
+        )
+    )
 
     _apply_theme(fig)
     fig.update_layout(
-        title=dict(text="<b>Monthly Layoffs — Total Employees Affected</b>", font_size=18),
+        title=dict(
+            text="<b>Monthly Layoffs — Total Employees Affected</b>", font_size=18
+        ),
         xaxis_title="Month",
         yaxis_title="Employees Affected",
         barmode="group",
@@ -214,6 +240,7 @@ def chart_monthly_bar(df: pd.DataFrame, save_png: bool = True) -> go.Figure:
 # ---------------------------------------------------------------------------
 # Chart 3 — Rolling 30-day trend + cumulative
 # ---------------------------------------------------------------------------
+
 
 def chart_rolling_trend(df: pd.DataFrame, save_png: bool = True) -> go.Figure:
     log.info("Chart 3: Rolling trend …")
@@ -230,32 +257,47 @@ def chart_rolling_trend(df: pd.DataFrame, save_png: bool = True) -> go.Figure:
 
     fig = make_subplots(specs=[[{"secondary_y": True}]])
 
-    fig.add_trace(go.Scatter(
-        x=daily["date"], y=daily["employees"],
-        name="Daily",
-        fill="tozeroy",
-        fillcolor=f"rgba(88, 166, 255, 0.15)",
-        line=dict(color=ACCENT, width=1),
-        hovertemplate="<b>%{x|%b %d, %Y}</b><br>Daily: %{y:,}<extra></extra>",
-    ), secondary_y=False)
+    fig.add_trace(
+        go.Scatter(
+            x=daily["date"],
+            y=daily["employees"],
+            name="Daily",
+            fill="tozeroy",
+            fillcolor=f"rgba(88, 166, 255, 0.15)",
+            line=dict(color=ACCENT, width=1),
+            hovertemplate="<b>%{x|%b %d, %Y}</b><br>Daily: %{y:,}<extra></extra>",
+        ),
+        secondary_y=False,
+    )
 
-    fig.add_trace(go.Scatter(
-        x=daily["date"], y=daily["rolling30"],
-        name="30-Day Rolling Avg",
-        line=dict(color=ACCENT2, width=2.5),
-        hovertemplate="<b>30-Day Avg</b><br>%{x|%b %d}: %{y:,.0f}<extra></extra>",
-    ), secondary_y=False)
+    fig.add_trace(
+        go.Scatter(
+            x=daily["date"],
+            y=daily["rolling30"],
+            name="30-Day Rolling Avg",
+            line=dict(color=ACCENT2, width=2.5),
+            hovertemplate="<b>30-Day Avg</b><br>%{x|%b %d}: %{y:,.0f}<extra></extra>",
+        ),
+        secondary_y=False,
+    )
 
-    fig.add_trace(go.Scatter(
-        x=daily["date"], y=daily["cumulative"],
-        name="Cumulative Total",
-        line=dict(color=ACCENT3, width=1.5, dash="dot"),
-        hovertemplate="<b>Cumulative</b><br>%{x|%b %d}: %{y:,}<extra></extra>",
-    ), secondary_y=True)
+    fig.add_trace(
+        go.Scatter(
+            x=daily["date"],
+            y=daily["cumulative"],
+            name="Cumulative Total",
+            line=dict(color=ACCENT3, width=1.5, dash="dot"),
+            hovertemplate="<b>Cumulative</b><br>%{x|%b %d}: %{y:,}<extra></extra>",
+        ),
+        secondary_y=True,
+    )
 
     _apply_theme(fig)
     fig.update_layout(
-        title=dict(text="<b>Layoff Trend — Daily, 30-Day Average & Cumulative</b>", font_size=18),
+        title=dict(
+            text="<b>Layoff Trend — Daily, 30-Day Average & Cumulative</b>",
+            font_size=18,
+        ),
         yaxis_title="Employees / Day",
         yaxis2_title="Cumulative Employees",
     )
@@ -268,7 +310,10 @@ def chart_rolling_trend(df: pd.DataFrame, save_png: bool = True) -> go.Figure:
 # Chart 4 — Top-N companies (horizontal bar)
 # ---------------------------------------------------------------------------
 
-def chart_top_companies(df: pd.DataFrame, top_n: int = 25, save_png: bool = True) -> go.Figure:
+
+def chart_top_companies(
+    df: pd.DataFrame, top_n: int = 25, save_png: bool = True
+) -> go.Figure:
     log.info(f"Chart 4: Top-{top_n} companies …")
     top = (
         df.groupby("company_clean")["employees"]
@@ -283,18 +328,23 @@ def chart_top_companies(df: pd.DataFrame, top_n: int = 25, save_png: bool = True
     color_range = len(colors)
     color_list = [colors[int(i / top_n * (color_range - 1))] for i in range(len(top))]
 
-    fig = go.Figure(go.Bar(
-        x=top["employees"],
-        y=top["company"],
-        orientation="h",
-        marker_color=color_list,
-        text=top["employees"].map("{:,}".format),
-        textposition="outside",
-        hovertemplate="<b>%{y}</b><br>Total Employees: %{x:,}<extra></extra>",
-    ))
+    fig = go.Figure(
+        go.Bar(
+            x=top["employees"],
+            y=top["company"],
+            orientation="h",
+            marker_color=color_list,
+            text=top["employees"].map("{:,}".format),
+            textposition="outside",
+            hovertemplate="<b>%{y}</b><br>Total Employees: %{x:,}<extra></extra>",
+        )
+    )
     _apply_theme(fig, margin=dict(l=250, r=80, t=70, b=50))
     fig.update_layout(
-        title=dict(text=f"<b>Top {top_n} Filtered Companies by Total Employees Affected</b>", font_size=18),
+        title=dict(
+            text=f"<b>Top {top_n} Filtered Companies by Total Employees Affected</b>",
+            font_size=18,
+        ),
         xaxis_title="Total Employees Affected",
         yaxis_title="",
         height=max(500, len(top) * 26),
@@ -308,6 +358,7 @@ def chart_top_companies(df: pd.DataFrame, top_n: int = 25, save_png: bool = True
 # Chart 5 — County heatmap (month × county)
 # ---------------------------------------------------------------------------
 
+
 def chart_county_heatmap(df: pd.DataFrame, save_png: bool = True) -> go.Figure:
     log.info("Chart 5: County heatmap …")
     df_c = df.dropna(subset=["effective_date"]).copy()
@@ -316,35 +367,40 @@ def chart_county_heatmap(df: pd.DataFrame, save_png: bool = True) -> go.Figure:
     if df_c.empty:
         log.warning("No county data — skipping heatmap.")
         fig = go.Figure()
-        fig.update_layout(title="County heatmap: no county data available", **BASE_LAYOUT)
+        fig.update_layout(
+            title="County heatmap: no county data available", **BASE_LAYOUT
+        )
         _save_chart(fig, "5_county_heatmap", save_png)
         return fig
 
     df_c["month"] = df_c["effective_date"].dt.to_period("M").astype(str)
     pivot = df_c.pivot_table(
-        index="county", columns="month", values="employees",
-        aggfunc="sum", fill_value=0
+        index="county", columns="month", values="employees", aggfunc="sum", fill_value=0
     )
 
     # Keep top 20 counties by total
     top_counties = pivot.sum(axis=1).nlargest(20).index
     pivot = pivot.loc[top_counties]
 
-    fig = go.Figure(go.Heatmap(
-        z=pivot.values,
-        x=list(pivot.columns),
-        y=list(pivot.index),
-        colorscale="Blues",
-        hoverongaps=False,
-        hovertemplate="County: <b>%{y}</b><br>Month: <b>%{x}</b><br>Employees: <b>%{z:,}</b><extra></extra>",
-        colorbar=dict(
-            title=dict(text="Employees", font=dict(color=TEXT_COLOR)),
-            tickfont=dict(color=TEXT_COLOR),
-        ),
-    ))
+    fig = go.Figure(
+        go.Heatmap(
+            z=pivot.values,
+            x=list(pivot.columns),
+            y=list(pivot.index),
+            colorscale="Blues",
+            hoverongaps=False,
+            hovertemplate="County: <b>%{y}</b><br>Month: <b>%{x}</b><br>Employees: <b>%{z:,}</b><extra></extra>",
+            colorbar=dict(
+                title=dict(text="Employees", font=dict(color=TEXT_COLOR)),
+                tickfont=dict(color=TEXT_COLOR),
+            ),
+        )
+    )
     _apply_theme(fig)
     fig.update_layout(
-        title=dict(text="<b>County × Month Heatmap — Employees Affected</b>", font_size=18),
+        title=dict(
+            text="<b>County × Month Heatmap — Employees Affected</b>", font_size=18
+        ),
         xaxis_title="Month",
         yaxis_title="County",
         height=max(500, len(pivot) * 28 + 120),
@@ -358,17 +414,14 @@ def chart_county_heatmap(df: pd.DataFrame, save_png: bool = True) -> go.Figure:
 # Chart 6 — Treemap (company × layoff type, sized by employees)
 # ---------------------------------------------------------------------------
 
+
 def chart_treemap(df: pd.DataFrame, save_png: bool = True) -> go.Figure:
     log.info("Chart 6: Treemap …")
     df_t = df.copy()
     df_t["layoff_type"] = df_t.get("layoff_type", pd.Series(["Unknown"] * len(df_t)))
     df_t["layoff_type"] = df_t["layoff_type"].fillna("Unknown").replace("", "Unknown")
 
-    agg = (
-        df_t.groupby(["layoff_type", "company"])["employees"]
-        .sum()
-        .reset_index()
-    )
+    agg = df_t.groupby(["layoff_type", "company"])["employees"].sum().reset_index()
     # Limit to top 80 companies for readability
     top80 = df_t.groupby("company")["employees"].sum().nlargest(80).index
     agg = agg[agg["company"].isin(top80)]
@@ -405,36 +458,55 @@ def chart_treemap(df: pd.DataFrame, save_png: bool = True) -> go.Figure:
 # Chart 7 — Year-over-year comparison bar (historical)
 # ---------------------------------------------------------------------------
 
+
 def chart_yoy_bar(yearly_summary: list, save_png: bool = True) -> go.Figure:
     log.info("Chart 7: Year-over-year bar …")
     if not yearly_summary:
         fig = go.Figure()
         _apply_theme(fig)
-        fig.update_layout(title=dict(text="<b>Year-over-Year: No historical data yet</b>", font_size=18))
+        fig.update_layout(
+            title=dict(
+                text="<b>Year-over-Year: No historical data yet</b>", font_size=18
+            )
+        )
         _save_chart(fig, "7_yoy_bar", save_png)
         return fig
 
-    years  = [s["label"]     for s in yearly_summary]
-    emps   = [s["employees"] for s in yearly_summary]
-    recs   = [s["records"]   for s in yearly_summary]
+    years = [s["label"] for s in yearly_summary]
+    emps = [s["employees"] for s in yearly_summary]
+    recs = [s["records"] for s in yearly_summary]
     colors = [ACCENT if s["source"] == "xlsx" else ACCENT2 for s in yearly_summary]
 
     fig = make_subplots(specs=[[{"secondary_y": True}]])
-    fig.add_trace(go.Bar(
-        x=years, y=emps, name="Employees Affected",
-        marker_color=colors, marker_line_width=0,
-        hovertemplate="<b>%{x}</b><br>Employees: %{y:,}<extra></extra>",
-    ), secondary_y=False)
-    fig.add_trace(go.Scatter(
-        x=years, y=recs, name="Notice Count",
-        line=dict(color=ACCENT3, width=2.5),
-        marker=dict(size=7),
-        hovertemplate="<b>%{x}</b><br>Notices: %{y:,}<extra></extra>",
-    ), secondary_y=True)
+    fig.add_trace(
+        go.Bar(
+            x=years,
+            y=emps,
+            name="Employees Affected",
+            marker_color=colors,
+            marker_line_width=0,
+            hovertemplate="<b>%{x}</b><br>Employees: %{y:,}<extra></extra>",
+        ),
+        secondary_y=False,
+    )
+    fig.add_trace(
+        go.Scatter(
+            x=years,
+            y=recs,
+            name="Notice Count",
+            line=dict(color=ACCENT3, width=2.5),
+            marker=dict(size=7),
+            hovertemplate="<b>%{x}</b><br>Notices: %{y:,}<extra></extra>",
+        ),
+        secondary_y=True,
+    )
 
     _apply_theme(fig)
     fig.update_layout(
-        title=dict(text="<b>Year-over-Year — Employees Affected & Notice Count (2014–Present)</b>", font_size=18),
+        title=dict(
+            text="<b>Year-over-Year — Employees Affected & Notice Count (2014–Present)</b>",
+            font_size=18,
+        ),
         xaxis_title="Fiscal Year",
         yaxis_title="Employees Affected",
         yaxis2_title="Number of Notices",
@@ -450,54 +522,77 @@ def chart_yoy_bar(yearly_summary: list, save_png: bool = True) -> go.Figure:
 # Chart 8 — Multi-year trend line (monthly, all years overlaid)
 # ---------------------------------------------------------------------------
 
+
 def chart_multiyear_trend(records_all: list, save_png: bool = True) -> go.Figure:
     log.info("Chart 8: Multi-year trend …")
     if not records_all:
         fig = go.Figure()
         _apply_theme(fig)
-        fig.update_layout(title=dict(text="<b>Multi-Year Trend: No historical data yet</b>", font_size=18))
+        fig.update_layout(
+            title=dict(
+                text="<b>Multi-Year Trend: No historical data yet</b>", font_size=18
+            )
+        )
         _save_chart(fig, "8_multiyear_trend", save_png)
         return fig
 
     df_all = pd.DataFrame(records_all)
     df_all["effective_date"] = pd.to_datetime(df_all["effective_date"], errors="coerce")
-    df_all["employees"] = pd.to_numeric(df_all["employees"], errors="coerce").fillna(0).astype(int)
+    df_all["employees"] = (
+        pd.to_numeric(df_all["employees"], errors="coerce").fillna(0).astype(int)
+    )
     df_all = df_all.dropna(subset=["effective_date"])
 
     # Normalise to month-of-year so we can compare across years
     df_all["month_of_year"] = df_all["effective_date"].dt.month
     df_all["year"] = df_all["effective_date"].dt.year
     month_pivot = (
-        df_all.groupby(["year", "month_of_year"])["employees"]
-        .sum().reset_index()
+        df_all.groupby(["year", "month_of_year"])["employees"].sum().reset_index()
     )
 
-    month_labels = ["Jan","Feb","Mar","Apr","May","Jun",
-                    "Jul","Aug","Sep","Oct","Nov","Dec"]
+    month_labels = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+    ]
 
     color_seq = px.colors.qualitative.Plotly
     fig = go.Figure()
     all_years = sorted(month_pivot["year"].unique())
     for i, yr in enumerate(all_years):
         sub = month_pivot[month_pivot["year"] == yr].sort_values("month_of_year")
-        is_current = (yr == max(all_years))
-        fig.add_trace(go.Scatter(
-            x=sub["month_of_year"].map(lambda m: month_labels[m - 1]),
-            y=sub["employees"],
-            name=str(yr),
-            mode="lines+markers",
-            line=dict(
-                color=ACCENT if is_current else color_seq[i % len(color_seq)],
-                width=3 if is_current else 1.5,
-                dash="solid" if is_current else "dot",
-            ),
-            marker=dict(size=5 if is_current else 3),
-            hovertemplate=f"<b>{yr}</b><br>%{{x}}: %{{y:,}} employees<extra></extra>",
-        ))
+        is_current = yr == max(all_years)
+        fig.add_trace(
+            go.Scatter(
+                x=sub["month_of_year"].map(lambda m: month_labels[m - 1]),
+                y=sub["employees"],
+                name=str(yr),
+                mode="lines+markers",
+                line=dict(
+                    color=ACCENT if is_current else color_seq[i % len(color_seq)],
+                    width=3 if is_current else 1.5,
+                    dash="solid" if is_current else "dot",
+                ),
+                marker=dict(size=5 if is_current else 3),
+                hovertemplate=f"<b>{yr}</b><br>%{{x}}: %{{y:,}} employees<extra></extra>",
+            )
+        )
 
     _apply_theme(fig)
     fig.update_layout(
-        title=dict(text="<b>Multi-Year Monthly Comparison — Employees Affected by Month</b>", font_size=18),
+        title=dict(
+            text="<b>Multi-Year Monthly Comparison — Employees Affected by Month</b>",
+            font_size=18,
+        ),
         xaxis_title="Month",
         yaxis_title="Employees Affected",
         showlegend=True,
@@ -511,22 +606,46 @@ def chart_multiyear_trend(records_all: list, save_png: bool = True) -> go.Figure
 # ---------------------------------------------------------------------------
 
 CHART_META = [
-    {"id": "1_timeline_scatter", "title": "Layoff Timeline",
-     "desc": "Employees affected by effective date, sized and coloured by county."},
-    {"id": "2_monthly_bar",      "title": "Monthly Totals",
-     "desc": "Total employees laid off per month with 3-month moving average."},
-    {"id": "3_rolling_trend",    "title": "Rolling Trend",
-     "desc": "Daily layoffs, 30-day rolling average, and cumulative total."},
-    {"id": "4_top_companies",    "title": "Top Companies",
-     "desc": "Top 25 companies by cumulative employees affected."},
-    {"id": "5_county_heatmap",   "title": "County Heatmap",
-     "desc": "Layoffs by county and month — heat intensity = employees."},
-    {"id": "6_treemap",          "title": "Treemap",
-     "desc": "Proportional breakdown by company and layoff type."},
-    {"id": "7_yoy_bar",          "title": "Year-over-Year",
-     "desc": "Annual employees affected and notice count from 2014 to present."},
-    {"id": "8_multiyear_trend",  "title": "Multi-Year Trend",
-     "desc": "Monthly layoff pattern overlaid across all years for seasonal comparison."},
+    {
+        "id": "1_timeline_scatter",
+        "title": "Layoff Timeline",
+        "desc": "Employees affected by effective date, sized and coloured by county.",
+    },
+    {
+        "id": "2_monthly_bar",
+        "title": "Monthly Totals",
+        "desc": "Total employees laid off per month with 3-month moving average.",
+    },
+    {
+        "id": "3_rolling_trend",
+        "title": "Rolling Trend",
+        "desc": "Daily layoffs, 30-day rolling average, and cumulative total.",
+    },
+    {
+        "id": "4_top_companies",
+        "title": "Top Companies",
+        "desc": "Top 25 companies by cumulative employees affected.",
+    },
+    {
+        "id": "5_county_heatmap",
+        "title": "County Heatmap",
+        "desc": "Layoffs by county and month — heat intensity = employees.",
+    },
+    {
+        "id": "6_treemap",
+        "title": "Treemap",
+        "desc": "Proportional breakdown by company and layoff type.",
+    },
+    {
+        "id": "7_yoy_bar",
+        "title": "Year-over-Year",
+        "desc": "Annual employees affected and notice count from 2014 to present.",
+    },
+    {
+        "id": "8_multiyear_trend",
+        "title": "Multi-Year Trend",
+        "desc": "Monthly layoff pattern overlaid across all years for seasonal comparison.",
+    },
 ]
 
 
@@ -542,7 +661,9 @@ def run(save_png: bool = True) -> list:
         combined = json.loads(combined_file.read_text())
         yearly_summary = combined.get("yearly_summary", [])
         all_records = combined.get("records", [])
-        log.info(f"Historical data: {len(all_records):,} records across {len(yearly_summary)} years")
+        log.info(
+            f"Historical data: {len(all_records):,} records across {len(yearly_summary)} years"
+        )
     else:
         log.info("No historical data yet — run warn_history.py to generate it")
 
@@ -551,14 +672,14 @@ def run(save_png: bool = True) -> list:
         return fn(df, sp)
 
     chart_fns = [
-        chart_timeline_scatter,                                        # 1
-        chart_monthly_bar,                                             # 2
-        chart_rolling_trend,                                           # 3
-        lambda d, sp: chart_top_companies(d, save_png=sp),            # 4
-        chart_county_heatmap,                                          # 5
-        chart_treemap,                                                 # 6
-        lambda d, sp: chart_yoy_bar(yearly_summary, save_png=sp),     # 7
-        lambda d, sp: chart_multiyear_trend(all_records, save_png=sp),# 8
+        chart_timeline_scatter,  # 1
+        chart_monthly_bar,  # 2
+        chart_rolling_trend,  # 3
+        lambda d, sp: chart_top_companies(d, save_png=sp),  # 4
+        chart_county_heatmap,  # 5
+        chart_treemap,  # 6
+        lambda d, sp: chart_yoy_bar(yearly_summary, save_png=sp),  # 7
+        lambda d, sp: chart_multiyear_trend(all_records, save_png=sp),  # 8
     ]
 
     results = []
@@ -572,7 +693,7 @@ def run(save_png: bool = True) -> list:
 
     # Save manifest
     manifest = {
-        "generated_at": datetime.utcnow().isoformat() + "Z",
+        "generated_at": datetime.now(timezone.utc).isoformat() + "Z",
         "charts": results,
         "total_records": payload.get("total_records", 0),
         "total_employees": payload.get("total_employees", 0),

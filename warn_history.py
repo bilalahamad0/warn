@@ -15,7 +15,7 @@ import argparse
 import json
 import logging
 import re
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
@@ -23,10 +23,10 @@ import requests
 import pdfplumber
 import pandas as pd
 
-BASE_DIR   = Path(__file__).parent
-DATA_DIR   = BASE_DIR / "data"
-HIST_DIR   = DATA_DIR / "historical"
-CACHE_DIR  = HIST_DIR / "pdfs"
+BASE_DIR = Path(__file__).parent
+DATA_DIR = BASE_DIR / "data"
+HIST_DIR = DATA_DIR / "historical"
+CACHE_DIR = HIST_DIR / "pdfs"
 HIST_DIR.mkdir(parents=True, exist_ok=True)
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -61,6 +61,7 @@ PDF_CATALOGUE = {
 # Download
 # ---------------------------------------------------------------------------
 
+
 def _download_pdf(year: int, force: bool = False) -> Optional[Path]:
     url = PDF_CATALOGUE.get(year)
     if not url:
@@ -74,8 +75,7 @@ def _download_pdf(year: int, force: bool = False) -> Optional[Path]:
 
     log.info(f"  [{year}] Downloading {url} …")
     try:
-        resp = requests.get(url, timeout=120,
-                            headers={"User-Agent": "WARNMonitor/2.0"})
+        resp = requests.get(url, timeout=120, headers={"User-Agent": "WARNMonitor/2.0"})
         resp.raise_for_status()
         pdf_path.write_bytes(resp.content)
         log.info(f"  [{year}] Saved {len(resp.content) // 1024} KB")
@@ -88,6 +88,7 @@ def _download_pdf(year: int, force: bool = False) -> Optional[Path]:
 # ---------------------------------------------------------------------------
 # Parse helpers
 # ---------------------------------------------------------------------------
+
 
 def _safe_int(val) -> Optional[int]:
     try:
@@ -122,13 +123,13 @@ def _fix_company(name: str) -> str:
 # ---------------------------------------------------------------------------
 
 HEADER_KEYWORDS = {
-    "county":   ["county", "parish"],
-    "notice":   ["notice", "received"],
-    "effective":["effective"],
-    "company":  ["company", "employer"],
-    "employees":["employee", "no.", "number", "laid"],
-    "address":  ["address"],
-    "type":     ["layoff", "closure", "type"],
+    "county": ["county", "parish"],
+    "notice": ["notice", "received"],
+    "effective": ["effective"],
+    "company": ["company", "employer"],
+    "employees": ["employee", "no.", "number", "laid"],
+    "address": ["address"],
+    "type": ["layoff", "closure", "type"],
     "industry": ["industry"],
 }
 
@@ -169,15 +170,39 @@ def _extract_table_from_page(page) -> list[dict]:
             if emp is None or emp < 1:
                 continue
 
-            rows.append({
-                "company":        company,
-                "employees":      emp,
-                "notice_date":    _safe_date(row[col_map.get("notice", col_map.get("effective", 0))]) if col_map.get("notice") else None,
-                "effective_date": _safe_date(row[col_map["effective"]]) if "effective" in col_map else None,
-                "county":         str(row[col_map["county"]]).strip() if "county" in col_map else "",
-                "address":        str(row[col_map.get("address", 0)]).strip() if "address" in col_map else "",
-                "layoff_type":    str(row[col_map.get("type", 0)]).strip() if "type" in col_map else "",
-            })
+            rows.append(
+                {
+                    "company": company,
+                    "employees": emp,
+                    "notice_date": (
+                        _safe_date(
+                            row[col_map.get("notice", col_map.get("effective", 0))]
+                        )
+                        if col_map.get("notice")
+                        else None
+                    ),
+                    "effective_date": (
+                        _safe_date(row[col_map["effective"]])
+                        if "effective" in col_map
+                        else None
+                    ),
+                    "county": (
+                        str(row[col_map["county"]]).strip()
+                        if "county" in col_map
+                        else ""
+                    ),
+                    "address": (
+                        str(row[col_map.get("address", 0)]).strip()
+                        if "address" in col_map
+                        else ""
+                    ),
+                    "layoff_type": (
+                        str(row[col_map.get("type", 0)]).strip()
+                        if "type" in col_map
+                        else ""
+                    ),
+                }
+            )
     return rows
 
 
@@ -207,17 +232,24 @@ def parse_pdf(pdf_path: Path, fiscal_year: int) -> list[dict]:
 # Save per-year JSON
 # ---------------------------------------------------------------------------
 
+
 def _year_file(year: int) -> Path:
     return HIST_DIR / f"warn_{year}.json"
 
 
 def _save_year(year: int, records: list[dict]):
-    _year_file(year).write_text(json.dumps({
-        "fiscal_year": year,
-        "record_count": len(records),
-        "total_employees": sum(r.get("employees", 0) for r in records),
-        "records": records,
-    }, indent=2, default=str))
+    _year_file(year).write_text(
+        json.dumps(
+            {
+                "fiscal_year": year,
+                "record_count": len(records),
+                "total_employees": sum(r.get("employees", 0) for r in records),
+                "records": records,
+            },
+            indent=2,
+            default=str,
+        )
+    )
 
 
 def _load_year(year: int) -> list[dict]:
@@ -230,6 +262,7 @@ def _load_year(year: int) -> list[dict]:
 # ---------------------------------------------------------------------------
 # Merge with live XLSX data
 # ---------------------------------------------------------------------------
+
 
 def merge_with_live() -> dict:
     """
@@ -244,13 +277,15 @@ def merge_with_live() -> dict:
         recs = _load_year(year)
         c = len(recs)
         e = sum(r.get("employees", 0) for r in recs)
-        yearly_summary.append({
-            "fiscal_year": year,
-            "label": f"FY {year}-{str(year+1)[2:]}",
-            "records": c,
-            "employees": e,
-            "source": "pdf",
-        })
+        yearly_summary.append(
+            {
+                "fiscal_year": year,
+                "label": f"FY {year}-{str(year+1)[2:]}",
+                "records": c,
+                "employees": e,
+                "source": "pdf",
+            }
+        )
         all_records.extend(recs)
 
     # Live XLSX (current year)
@@ -263,30 +298,35 @@ def merge_with_live() -> dict:
             r["source"] = "xlsx"
         c = len(live_recs)
         e = sum(r.get("employees", 0) for r in live_recs)
-        yearly_summary.append({
-            "fiscal_year": "current",
-            "label": "FY 2025-26 (Live)",
-            "records": c,
-            "employees": e,
-            "source": "xlsx",
-        })
+        yearly_summary.append(
+            {
+                "fiscal_year": "current",
+                "label": "FY 2025-26 (Live)",
+                "records": c,
+                "employees": e,
+                "source": "xlsx",
+            }
+        )
         all_records.extend(live_recs)
 
     combined = {
-        "generated_at": datetime.utcnow().isoformat() + "Z",
+        "generated_at": datetime.now(timezone.utc).isoformat() + "Z",
         "total_records": len(all_records),
         "total_employees": sum(r.get("employees", 0) for r in all_records),
         "yearly_summary": yearly_summary,
         "records": all_records,
     }
     COMBINED_FILE.write_text(json.dumps(combined, indent=2, default=str))
-    log.info(f"Combined dataset: {len(all_records):,} records across {len(yearly_summary)} years")
+    log.info(
+        f"Combined dataset: {len(all_records):,} records across {len(yearly_summary)} years"
+    )
     return combined
 
 
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
+
 
 def run(force: bool = False, year: Optional[int] = None) -> dict:
     years = [year] if year else sorted(PDF_CATALOGUE.keys())
@@ -306,17 +346,25 @@ def run(force: bool = False, year: Optional[int] = None) -> dict:
         if records:
             _save_year(y, records)
         else:
-            log.warning(f"Year {y}: no records extracted from PDF — may be scanned image")
+            log.warning(
+                f"Year {y}: no records extracted from PDF — may be scanned image"
+            )
 
     return merge_with_live()
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="WARN Historical PDF Parser")
-    parser.add_argument("--force", action="store_true", help="Force re-download of all PDFs")
-    parser.add_argument("--year",  type=int, help="Process a single fiscal year (e.g. 2022)")
+    parser.add_argument(
+        "--force", action="store_true", help="Force re-download of all PDFs"
+    )
+    parser.add_argument(
+        "--year", type=int, help="Process a single fiscal year (e.g. 2022)"
+    )
     args = parser.parse_args()
     result = run(force=args.force, year=args.year)
     for s in result["yearly_summary"]:
         print(f"  {s['label']}: {s['records']:,} records, {s['employees']:,} employees")
-    print(f"\nTotal: {result['total_records']:,} records, {result['total_employees']:,} employees")
+    print(
+        f"\nTotal: {result['total_records']:,} records, {result['total_employees']:,} employees"
+    )

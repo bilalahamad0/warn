@@ -20,7 +20,7 @@ import argparse
 import os
 import shutil
 import subprocess
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 import warn_monitor
@@ -46,6 +46,7 @@ log = logging.getLogger("warn_publish")
 # Site builder
 # ---------------------------------------------------------------------------
 
+
 def _read_chart_div(chart_id: str) -> str:
     """Read Plotly div from charts dir."""
     path = CHARTS_DIR / f"{chart_id}.html"
@@ -65,13 +66,9 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
     """Build the full index.html by embedding Plotly divs."""
     log.info("Building index.html …")
 
-    chart_divs = {
-        cm["id"]: _read_chart_div(cm["id"])
-        for cm in warn_charts.CHART_META
-    }
+    chart_divs = {cm["id"]: _read_chart_div(cm["id"]) for cm in warn_charts.CHART_META}
 
     diff = monitor_result.get("diff", {})
-    # summary = monitor_result.get("summary", {})
     new_count = diff.get("new_count", 0)
     new_employees = diff.get("total_employees_new", 0)
     total_records = _format_number(manifest.get("total_records", 0))
@@ -118,7 +115,7 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
         new_banner=new_banner,
         chart_tabs=chart_tabs_html,
         chart_panes=chart_panes_html,
-        generated_at=datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"),
+        generated_at=datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
     )
 
     INDEX_HTML.write_text(html, encoding="utf-8")
@@ -135,6 +132,7 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
 # Git push
 # ---------------------------------------------------------------------------
 
+
 def git_commit_push(message: str = None) -> bool:
     """Stage changed files, commit, and push."""
     token = os.environ.get("GITHUB_TOKEN", "")
@@ -144,28 +142,47 @@ def git_commit_push(message: str = None) -> bool:
         if env_file.exists():
             for line in env_file.read_text().splitlines():
                 if line.startswith("GITHUB_TOKEN="):
-                    token = line.split("=", 1)[1].strip().strip('"\'')
+                    token = line.split("=", 1)[1].strip().strip("\"'")
 
-    msg = message or f"auto: WARN update {datetime.utcnow().strftime('%Y-%m-%d %H:%M')} UTC"
+    msg = (
+        message
+        or f"auto: WARN update {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M')} UTC"
+    )
 
     def run_git(args):
         result = subprocess.run(
-            ["git"] + args, cwd=str(BASE_DIR),
-            capture_output=True, text=True, timeout=30
+            ["git"] + args,
+            cwd=str(BASE_DIR),
+            capture_output=True,
+            text=True,
+            timeout=30,
         )
         if result.returncode != 0:
             log.warning(f"git {' '.join(args)} stderr: {result.stderr.strip()}")
         return result.returncode == 0
 
     log.info("Staging changes …")
-    run_git(["add", "data/", "docs/", "file.xlsx",
-             "requirements.txt", "warn_monitor.py", "warn_charts.py",
-             "warn_diff.py", "warn_publish.py", "README.md"])
+    run_git(
+        [
+            "add",
+            "data/",
+            "docs/",
+            "file.xlsx",
+            "requirements.txt",
+            "warn_monitor.py",
+            "warn_charts.py",
+            "warn_diff.py",
+            "warn_publish.py",
+            "README.md",
+        ]
+    )
 
     # Check if there's anything to commit
     status_result = subprocess.run(
-        ["git", "status", "--porcelain"], cwd=str(BASE_DIR),
-        capture_output=True, text=True
+        ["git", "status", "--porcelain"],
+        cwd=str(BASE_DIR),
+        capture_output=True,
+        text=True,
     )
     if not status_result.stdout.strip():
         log.info("Nothing to commit — working tree clean.")
@@ -182,22 +199,28 @@ def git_commit_push(message: str = None) -> bool:
     if token:
         remote_url_result = subprocess.run(
             ["git", "remote", "get-url", "origin"],
-            cwd=str(BASE_DIR), capture_output=True, text=True
+            cwd=str(BASE_DIR),
+            capture_output=True,
+            text=True,
         )
         original_url = remote_url_result.stdout.strip()
         if "github.com" in original_url and "https://" in original_url:
-            auth_url = original_url.replace(
-                "https://", f"https://{token}@"
+            auth_url = original_url.replace("https://", f"https://{token}@")
+            subprocess.run(
+                ["git", "remote", "set-url", "origin", auth_url],
+                cwd=str(BASE_DIR),
+                capture_output=True,
             )
-            subprocess.run(["git", "remote", "set-url", "origin", auth_url],
-                           cwd=str(BASE_DIR), capture_output=True)
 
     push_ok = run_git(["push", "origin", "main"])
 
     # Restore original URL if we modified it
     if token and "github.com" in original_url:
-        subprocess.run(["git", "remote", "set-url", "origin", original_url],
-                       cwd=str(BASE_DIR), capture_output=True)
+        subprocess.run(
+            ["git", "remote", "set-url", "origin", original_url],
+            cwd=str(BASE_DIR),
+            capture_output=True,
+        )
 
     if push_ok:
         log.info("✓ Pushed successfully.")
@@ -216,7 +239,10 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>California WARN Layoff Monitor</title>
-  <meta name="description" content="Live monitoring and analysis of California WARN layoff notices from the Employment Development Department." />
+      <meta
+        name="description"
+        content="Live monitoring and analysis of California WARN layoff notices from the Employment Development Department."
+      />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
@@ -372,7 +398,10 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
     footer a {{ color: var(--accent); text-decoration: none; }}
 
     /* ── Animations ── */
-    @keyframes fadeIn {{ from {{ opacity: 0; transform: translateY(8px); }} to {{ opacity: 1; transform: none; }} }}
+    @keyframes fadeIn {{
+      from {{ opacity: 0; transform: translateY(8px); }}
+      to {{ opacity: 1; transform: none; }}
+    }}
 
     /* ── Responsive ── */
     @media (max-width: 640px) {{
@@ -390,12 +419,18 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
       <div class="brand-icon">📋</div>
       <div>
         <h1>California WARN Layoff Monitor</h1>
-        <div class="subtitle">Employment Development Department · Real-time Tracking</div>
+        <div class="subtitle">
+          Employment Development Department · Real-time Tracking
+        </div>
       </div>
     </div>
     <div class="header-meta">
       Last updated: <strong>{last_updated}</strong><br/>
-      <a href="https://edd.ca.gov/en/jobs_and_training/layoff_services_warn" target="_blank" rel="noopener">
+      <a
+        href="https://edd.ca.gov/en/jobs_and_training/layoff_services_warn"
+        target="_blank"
+        rel="noopener"
+      >
         Source: CA EDD WARN
       </a>
     </div>
@@ -439,7 +474,14 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
 
 <footer>
   Built by <a href="https://bilalahamad.com" target="_blank">bilalahamad.com</a> ·
-  Data from <a href="https://edd.ca.gov/en/jobs_and_training/layoff_services_warn" target="_blank">California EDD</a> ·
+  Data from
+  <a
+    href="https://edd.ca.gov/en/jobs_and_training/layoff_services_warn"
+    target="_blank"
+  >
+    California EDD
+  </a>
+  ·
   <a href="https://github.com/bilalahamad0/warn" target="_blank">GitHub</a> ·
   Generated {generated_at}
 </footer>
@@ -466,9 +508,10 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
 # Main
 # ---------------------------------------------------------------------------
 
+
 def run(no_push: bool = False, force: bool = False, skip_history: bool = False):
     log.info("=" * 70)
-    log.info(f"WARN Publisher — {datetime.utcnow().isoformat()}Z")
+    log.info(f"WARN Publisher — {datetime.now(timezone.utc).isoformat()}Z")
     log.info("=" * 70)
 
     # Step 1: Monitor
@@ -500,8 +543,12 @@ def run(no_push: bool = False, force: bool = False, skip_history: bool = False):
         manifest = json.loads((DATA_DIR / "charts_manifest.json").read_text())
     except Exception as e:
         log.error(f"Chart generation failed: {e}")
-        manifest = {"charts": [], "total_records": 0, "total_employees": 0,
-                    "last_updated": datetime.utcnow().isoformat() + "Z"}
+        manifest = {
+            "charts": [],
+            "total_records": 0,
+            "total_employees": 0,
+            "last_updated": datetime.now(timezone.utc).isoformat() + "Z",
+        }
 
     # Step 5: Build site
     log.info("Step 5/5: Building site …")
@@ -529,8 +576,10 @@ def run(no_push: bool = False, force: bool = False, skip_history: bool = False):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="WARN Full Pipeline Publisher")
-    parser.add_argument("--no-push",       action="store_true", help="Skip git push")
-    parser.add_argument("--force",          action="store_true", help="Force re-download")
-    parser.add_argument("--skip-history",   action="store_true", help="Skip historical PDF update")
+    parser.add_argument("--no-push", action="store_true", help="Skip git push")
+    parser.add_argument("--force", action="store_true", help="Force re-download")
+    parser.add_argument(
+        "--skip-history", action="store_true", help="Skip historical PDF update"
+    )
     args = parser.parse_args()
     run(no_push=args.no_push, force=args.force, skip_history=args.skip_history)

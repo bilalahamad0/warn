@@ -14,7 +14,7 @@ import hashlib
 import json
 import subprocess
 from typing import Optional
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 BASE_DIR = Path(__file__).parent
@@ -28,6 +28,7 @@ LOCAL_XLSX = BASE_DIR / "file.xlsx"
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
+
 
 def _file_hash(path: Path) -> Optional[str]:
     if not path.exists():
@@ -82,6 +83,7 @@ def _load_json_records(path: Path) -> list[dict]:
 # Data diff
 # ---------------------------------------------------------------------------
 
+
 def diff_data() -> dict:
     """Compare LATEST vs SNAPSHOT and return structured diff."""
     latest = _load_json_records(LATEST_FILE)
@@ -109,8 +111,12 @@ def diff_data() -> dict:
         "snapshot_count": len(snapshot),
         "added_records": len(added),
         "removed_records": len(removed),
-        "added_entries": sorted(added, key=lambda r: r.get("employees", 0), reverse=True)[:20],
-        "removed_entries": sorted(removed, key=lambda r: r.get("employees", 0), reverse=True)[:20],
+        "added_entries": sorted(
+            added, key=lambda r: r.get("employees", 0), reverse=True
+        )[:20],
+        "removed_entries": sorted(
+            removed, key=lambda r: r.get("employees", 0), reverse=True
+        )[:20],
         "employees_latest": latest_total,
         "employees_snapshot": snapshot_total,
         "employees_delta": latest_total - snapshot_total,
@@ -121,16 +127,22 @@ def diff_data() -> dict:
 # File diff vs git
 # ---------------------------------------------------------------------------
 
+
 def diff_file_vs_git() -> dict:
     local_hash = _file_hash(LOCAL_XLSX)
     committed_hash = _git_show_hash("file.xlsx")
-    changed = (local_hash != committed_hash) if (local_hash and committed_hash) else None
+    changed = (
+        (local_hash != committed_hash) if (local_hash and committed_hash) else None
+    )
 
     # git status summary
     try:
         status_result = subprocess.run(
             ["git", "status", "--short"],
-            cwd=str(BASE_DIR), capture_output=True, text=True, timeout=10,
+            cwd=str(BASE_DIR),
+            capture_output=True,
+            text=True,
+            timeout=10,
         )
         git_status = status_result.stdout.strip()
     except Exception:
@@ -149,6 +161,7 @@ def diff_file_vs_git() -> dict:
 # Changelog summary
 # ---------------------------------------------------------------------------
 
+
 def changelog_summary() -> list[dict]:
     if not CHANGELOG_FILE.exists():
         return []
@@ -165,8 +178,9 @@ def changelog_summary() -> list[dict]:
 # Report
 # ---------------------------------------------------------------------------
 
+
 def generate_report() -> str:
-    now = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
     data_diff = diff_data()
     file_diff = diff_file_vs_git()
     changelog = changelog_summary()
@@ -250,7 +264,9 @@ def generate_report() -> str:
             new_c = entry.get("new_count", 0)
             rem_c = entry.get("removed_count", 0)
             emp = entry.get("total_employees_new", 0)
-            lines.append(f"- `{ts}` — +{new_c} added, -{rem_c} removed, {emp:,} employees (new)")
+            lines.append(
+                f"- `{ts}` — +{new_c} added, -{rem_c} removed, {emp:,} employees (new)"
+            )
     else:
         lines.append("*No changelog entries yet.*")
 
