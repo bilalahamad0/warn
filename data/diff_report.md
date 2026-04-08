@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-04-08 23:04:00 UTC
+**Generated:** 2026-04-08 23:32:41 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -22,31 +22,15 @@
 **Git status:**
 ```
 D .coverage
- M .flake8
- M data/diff_report.md
- M data/warn_all_years.json
- M tests/test_structure.py
- M warn_charts.py
- M warn_diff.py
- M warn_history.py
- M warn_main.py
- M warn_main_v2.py
- M warn_monitor.py
- M warn_notify.py
- M warn_publish.py
-?? tests/conftest.py
-?? tests/test_monitor.py
-?? tests/test_notify.py
-?? tests/test_publish.py
 ```
 
 **Recent commits:**
 ```
+39def53 fix: add missing pytest-cov dependency for CI
+8517a95 refactor: rename GITHUB_TOKEN to GH_REPO_TOKEN to allow custom secret naming
+6516beb ci: add twice-daily WARN monitor workflow
+8212b22 refactor: apply strict PEP 8 compliance and implement logic testing suite
 bf489bc chore: setup flake8 and pytest for code review pipeline
-77f0491 auto: WARN update 2026-04-08 13:29 UTC
-54ee759 auto: WARN update 2026-04-08 01:00 UTC
-74c7c5c auto: WARN update 2026-04-07 13:51 UTC
-19917b2 fix: resolve chart hover labels, group company entities, and fix monitor crash
 ```
 
 ---

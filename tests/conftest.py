@@ -38,7 +38,7 @@ def sample_warn_data():
 @pytest.fixture
 def mock_env(monkeypatch):
     """Mock essential environment variables."""
-    monkeypatch.setenv("GITHUB_TOKEN", "fake_token")
+    monkeypatch.setenv("GH_REPO_TOKEN", "fake_token")
     monkeypatch.setenv("GMAIL_USER", "test@gmail.com")
     monkeypatch.setenv("GMAIL_APP_PASSWORD", "test_pass")
     monkeypatch.setenv("NOTIFY_EMAIL", "notify@example.com")
