@@ -237,7 +237,7 @@ def notify_if_changes(diff: dict, summary: dict) -> bool:
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
-    import argparse, json
+    import argparse
     logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
     parser = argparse.ArgumentParser()
     parser.add_argument("--test", action="store_true", help="Send a test email")

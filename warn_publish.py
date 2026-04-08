@@ -71,7 +71,7 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
     }
 
     diff = monitor_result.get("diff", {})
-    summary = monitor_result.get("summary", {})
+    # summary = monitor_result.get("summary", {})
     new_count = diff.get("new_count", 0)
     new_employees = diff.get("total_employees_new", 0)
     total_records = _format_number(manifest.get("total_records", 0))
@@ -108,7 +108,7 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
         </div>"""
 
     # Read the HTML template and inject
-    template_path = BASE_DIR / "docs" / "_template.html"
+    # template_path = BASE_DIR / "docs" / "_template.html"
     html = SITE_HTML_TEMPLATE.format(
         total_records=total_records,
         total_employees=total_employees,
@@ -495,7 +495,8 @@ def run(no_push: bool = False, force: bool = False, skip_history: bool = False):
     # Step 4: Charts
     log.info("Step 4/5: Generating charts …")
     try:
-        chart_results = warn_charts.run(save_png=True)
+        # chart_results = warn_charts.run(save_png=True)
+        warn_charts.run(save_png=True)
         manifest = json.loads((DATA_DIR / "charts_manifest.json").read_text())
     except Exception as e:
         log.error(f"Chart generation failed: {e}")
