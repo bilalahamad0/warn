@@ -30,7 +30,7 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           # These were installed manually in the local venv, so we add them here too
-          pip install black pytest-mock
+          pip install black pytest-mock pytest-cov
 
       - name: Run logic tests
         env:
