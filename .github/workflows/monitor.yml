@@ -1,0 +1,57 @@
+name: WARN Monitor & Dashboard Update
+
+on:
+  schedule:
+    # Runs at 00:00 and 12:00 UTC every day
+    - cron: '0 0,12 * * *'
+  workflow_dispatch:
+    # Allows manual triggering from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          # These were installed manually in the local venv, so we add them here too
+          pip install black pytest-mock
+
+      - name: Run logic tests
+        env:
+          PYTHONPATH: .
+        run: |
+          pytest --cov=.
+
+      - name: Run WARN Update Pipeline
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Use python3 warn_publish.py to run the full pipeline
+          python3 warn_publish.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/ docs/ snapshot.json  # Add tracked data files
+          git commit -m "auto: WARN data update [skip ci]" || echo "No changes to commit"
+          git push
