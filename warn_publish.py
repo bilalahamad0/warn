@@ -135,13 +135,13 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
 
 def git_commit_push(message: str = None) -> bool:
     """Stage changed files, commit, and push."""
-    token = os.environ.get("GITHUB_TOKEN", "")
+    token = os.getenv("GH_REPO_TOKEN")
     if not token:
         # Try .env
         env_file = BASE_DIR / ".env"
         if env_file.exists():
             for line in env_file.read_text().splitlines():
-                if line.startswith("GITHUB_TOKEN="):
+                if line.startswith("GH_REPO_TOKEN="):
                     token = line.split("=", 1)[1].strip().strip("\"'")
 
     msg = (
