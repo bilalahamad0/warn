@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-04-08 23:32:41 UTC
+**Generated:** 2026-04-08 23:57:00 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -21,21 +21,29 @@
 
 **Git status:**
 ```
-D .coverage
+M .coverage
+ M data/changelog.jsonl
+ M data/diff_report.md
+ M data/warn_all_years.json
+ M data/warn_latest.json
+ M data/warn_snapshot.json
 ```
 
 **Recent commits:**
 ```
-39def53 fix: add missing pytest-cov dependency for CI
-8517a95 refactor: rename GITHUB_TOKEN to GH_REPO_TOKEN to allow custom secret naming
-6516beb ci: add twice-daily WARN monitor workflow
-8212b22 refactor: apply strict PEP 8 compliance and implement logic testing suite
-bf489bc chore: setup flake8 and pytest for code review pipeline
+107b1e0 fix: expose secrets to test step and revert test bypass for genuine verification
+ce1c902 fix: correctly patch module-level globals in notify tests
+8293c98 ci: finalize monitor workflow with clean output
+c580612 auto: WARN data update [skip ci]
+0107187 chore: harden CI workflow and add environment debugging
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-04-08T23:57:00.768351+00:00Z` — +0 added, -0 removed, 0 employees (new)
+- `2026-04-08T23:41:06.231308+00:00Z` — +0 added, -0 removed, 0 employees (new)
+- `2026-04-08T23:41:03.993953+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-04-08T13:02:09.180753Z` — +41 added, -0 removed, 1,499 employees (new)
 - `2026-04-08T01:00:02.582525Z` — +41 added, -0 removed, 1,499 employees (new)
 - `2026-04-07T13:12:34.150325Z` — +0 added, -0 removed, 0 employees (new)
