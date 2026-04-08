@@ -28,14 +28,11 @@ def test_send_email_success(mock_smtp, sample_warn_data, mock_env):
     }
     summary = {"total_records": 1000}
     
-    # Mock SMTP instance and module-level environment variables
+    # Mock SMTP instance
     mock_inst = MagicMock()
     mock_smtp.return_value.__enter__.return_value = mock_inst
     
-    # Patch the global variables because they are loaded at import time
-    with patch("warn_notify.GMAIL_USER", "test@gmail.com"), \
-         patch("warn_notify.GMAIL_APP_PASS", "test_pass"):
-        success = warn_notify.send_email(diff, summary)
+    success = warn_notify.send_email(diff, summary)
     
     assert success is True
     assert mock_inst.login.called

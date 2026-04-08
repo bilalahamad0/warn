@@ -36,6 +36,9 @@ jobs:
       - name: Run logic tests
         env:
           PYTHONPATH: .
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
         run: |
           # Ensure directories exist for the structure tests
           mkdir -p data/historical/pdfs docs/charts
