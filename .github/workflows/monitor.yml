@@ -2,8 +2,10 @@ name: WARN Monitor & Dashboard Update
 
 on:
   schedule:
+    # Runs at 00:00 and 12:00 UTC every day
     - cron: '0 0,12 * * *'
   workflow_dispatch:
+    # Allows manual triggering from the Actions tab
 
 permissions:
   contents: write
@@ -24,55 +26,41 @@ jobs:
           python-version: '3.12'
           cache: 'pip'
 
-      - name: 0. Debug Environment & Setup
-        run: |
-          echo "Python version:"
-          python --version
-          echo "Creating directory structure..."
-          mkdir -p data/historical/pdfs docs/charts
-          echo "Listing current directory:"
-          ls -R
-          echo "Checking secret availability (masking value)..."
-          if [ -z "${{ secrets.GH_REPO_TOKEN }}" ]; then
-            echo "::error::GH_REPO_TOKEN is MISSING! Please check your Repository Secrets."
-            exit 1
-          else
-            echo "GH_REPO_TOKEN detected."
-          fi
-
-      - name: 1. Install dependencies
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          # Core testing and formatting tools
           pip install black pytest-mock pytest-cov python-dotenv
 
-      - name: 2. Run logic tests (Allow failure to see results)
+      - name: Run logic tests
         env:
           PYTHONPATH: .
         run: |
+          # Ensure directories exist for the structure tests
+          mkdir -p data/historical/pdfs docs/charts
           pytest -v --cov=.
-        continue-on-error: true
 
-      - name: 3. Monitor (Scrape)
+      - name: Run WARN Update Pipeline
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+          GH_REPO_TOKEN: ${{ secrets.GH_REPO_TOKEN }}
         run: |
-          python3 warn_monitor.py
-      
-      - name: 4. Charts (Generate)
-        run: |
-          python3 warn_charts.py --no-png
-      
-      - name: 5. Publish (Build Site)
-        run: |
+          # We run the consolidated publish script
+          # --no-push allows the Action to handle Git operations safely
           python3 warn_publish.py --no-push
 
-      - name: 6. Commit and push changes
+      - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          git add data/*.json docs/*.html data/*.jsonl || true
+          # Add all data and docs updates
+          git add data/ docs/
           
-          # Only commit if there are actual changes
+          # Only commit/push if there are actual data changes
           if ! git diff --cached --quiet; then
             git commit -m "auto: WARN data update [skip ci]"
             git push
