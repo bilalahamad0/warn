@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-04-08 23:57:00 UTC
+**Generated:** 2026-04-09 01:10:18 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -31,16 +31,17 @@ M .coverage
 
 **Recent commits:**
 ```
+e95d521 auto: WARN data update [skip ci]
 107b1e0 fix: expose secrets to test step and revert test bypass for genuine verification
 ce1c902 fix: correctly patch module-level globals in notify tests
 8293c98 ci: finalize monitor workflow with clean output
 c580612 auto: WARN data update [skip ci]
-0107187 chore: harden CI workflow and add environment debugging
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-04-09T01:10:18.102464+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-04-08T23:57:00.768351+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-04-08T23:41:06.231308+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-04-08T23:41:03.993953+00:00Z` — +0 added, -0 removed, 0 employees (new)
@@ -50,4 +51,3 @@ c580612 auto: WARN data update [skip ci]
 - `2026-04-07T06:24:50.799233Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-04-07T06:09:15.749641Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-04-04T00:24:12.336030Z` — +1099 added, -0 removed, 61,514 employees (new)
-- `2026-04-03T18:03:24.761113Z` — +1099 added, -0 removed, 61,514 employees (new)
