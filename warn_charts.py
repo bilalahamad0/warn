@@ -321,20 +321,26 @@ def chart_top_companies(
         .nlargest(top_n)
         .reset_index()
         .sort_values("employees")
+        .reset_index(drop=True)
     ).rename(columns={"company_clean": "company"})
 
     # Colour gradient
     colors = px.colors.sequential.Blues[3:]
     color_range = len(colors)
-    color_list = [colors[int(i / top_n * (color_range - 1))] for i in range(len(top))]
+    n = len(top)
+    color_list = [colors[int(i / max(n - 1, 1) * (color_range - 1))] for i in range(n)]
+
+    emp_vals = top["employees"].tolist()
+    company_vals = top["company"].tolist()
+    text_vals = [f"{v:,}" for v in emp_vals]
 
     fig = go.Figure(
         go.Bar(
-            x=top["employees"],
-            y=top["company"],
+            x=emp_vals,
+            y=company_vals,
             orientation="h",
             marker_color=color_list,
-            text=top["employees"].map("{:,}".format),
+            text=text_vals,
             textposition="outside",
             hovertemplate="<b>%{y}</b><br>Total Employees: %{x:,}<extra></extra>",
         )
@@ -511,6 +517,15 @@ def chart_yoy_bar(yearly_summary: list, save_png: bool = True) -> go.Figure:
         yaxis_title="Employees Affected",
         yaxis2_title="Number of Notices",
         showlegend=True,
+        annotations=[
+            dict(
+                text="⚠ Pre-2025 data from partial PDF extracts — notice counts are incomplete",
+                xref="paper", yref="paper",
+                x=0, y=-0.18, showarrow=False,
+                font=dict(size=11, color="#888888"),
+                align="left",
+            )
+        ],
     )
     fig.update_xaxes(tickangle=-30)
     fig.update_yaxes(gridcolor=GRID_COLOR, secondary_y=True)
@@ -602,6 +617,218 @@ def chart_multiyear_trend(records_all: list, save_png: bool = True) -> go.Figure
 
 
 # ---------------------------------------------------------------------------
+# Chart 9 — Industry breakdown (bar chart from XLSX Related Industry field)
+# ---------------------------------------------------------------------------
+
+
+def chart_industry_breakdown(df: pd.DataFrame, save_png: bool = True) -> go.Figure:
+    log.info("Chart 9: Industry breakdown …")
+    df_i = df.copy()
+
+    # Use XLSX industry field when available; otherwise infer from company name
+    INDUSTRY_KEYWORDS = {
+        "Technology": ["amazon", "google", "meta", "apple", "intel", "ibm", "microsoft",
+                       "nvidia", "cisco", "oracle", "salesforce", "tech", "software",
+                       "semiconductor", "ai ", " ai,", "data", "digital", "cyber"],
+        "Healthcare": ["hospital", "health", "medical", "pharma", "clinic", "care",
+                       "biotech", "bio ", "therapeutics", "labs", "laboratory"],
+        "Retail": ["retail", "store", "market", "shop", "walmart", "target", "costco",
+                   "grocery", "food", "restaurant", "cafe", "hotel", "hilton"],
+        "Manufacturing": ["manufactur", "factory", "plant", "production", "assembly",
+                          "aerospace", "defense", "automotive", "auto ", "motor"],
+        "Finance": ["bank", "financial", "insurance", "capital", "fund", "invest",
+                    "mortgage", "credit", "loan"],
+        "Education": ["university", "college", "school", "education", "academic",
+                      "institute", "learning"],
+        "Government/Non-profit": ["county", "city of", "state of", "public", "nonprofit",
+                                  "foundation", "agency"],
+    }
+
+    def classify(row):
+        # Prefer XLSX industry field
+        ind = str(row.get("industry", "")).strip()
+        if ind and ind not in ("nan", ""):
+            # Map EDD industry codes to readable names
+            ind_lower = ind.lower()
+            if any(k in ind_lower for k in ["tech", "information", "software", "computer"]):
+                return "Technology"
+            if any(k in ind_lower for k in ["health", "hospital", "medical", "pharma"]):
+                return "Healthcare"
+            if any(k in ind_lower for k in ["retail", "food service", "restaurant", "hotel", "accommodation"]):
+                return "Retail"
+            if any(k in ind_lower for k in ["manufactur", "aerospace", "defense"]):
+                return "Manufacturing"
+            if any(k in ind_lower for k in ["finance", "bank", "insurance", "real estate"]):
+                return "Finance"
+            if any(k in ind_lower for k in ["education", "school", "university", "college"]):
+                return "Education"
+            if any(k in ind_lower for k in ["government", "public admin", "nonprofit"]):
+                return "Government/Non-profit"
+            return ind[:40]  # Use XLSX value as-is if not mapped
+        # Fall back to company-name inference
+        name = str(row.get("company_clean", row.get("company", ""))).lower()
+        for sector, keywords in INDUSTRY_KEYWORDS.items():
+            if any(kw in name for kw in keywords):
+                return sector
+        return "Other"
+
+    df_i["sector"] = df_i.apply(classify, axis=1)
+    agg = df_i.groupby("sector")["employees"].sum().sort_values(ascending=False)
+    total = agg.sum()
+
+    sectors = agg.index.tolist()
+    values = agg.values.tolist()
+    pcts = [v / total * 100 for v in values]
+
+    SECTOR_COLORS = {
+        "Technology": "#4C8EDA",
+        "Healthcare": "#5CB85C",
+        "Retail": "#F0AD4E",
+        "Manufacturing": "#9B59B6",
+        "Finance": "#E74C3C",
+        "Education": "#1ABC9C",
+        "Government/Non-profit": "#95A5A6",
+        "Other": "#607080",
+    }
+    color_list = [SECTOR_COLORS.get(s, ACCENT) for s in sectors]
+
+    fig = go.Figure(
+        go.Bar(
+            x=sectors,
+            y=values,
+            marker_color=color_list,
+            text=[f"{v:,}<br>({p:.1f}%)" for v, p in zip(values, pcts)],
+            textposition="outside",
+            hovertemplate="<b>%{x}</b><br>Employees: %{y:,}<extra></extra>",
+        )
+    )
+    _apply_theme(fig)
+    fig.update_layout(
+        title=dict(text="<b>Employees Affected by Industry Sector</b>", font_size=18),
+        xaxis_title="Industry Sector",
+        yaxis_title="Total Employees Affected",
+        height=500,
+    )
+    _save_chart(fig, "9_industry_breakdown", save_png)
+    return fig
+
+
+# ---------------------------------------------------------------------------
+# Chart 10 — Notice lead time histogram
+# ---------------------------------------------------------------------------
+
+
+def chart_lead_time_histogram(df: pd.DataFrame, save_png: bool = True) -> go.Figure:
+    log.info("Chart 10: Lead time histogram …")
+    df_lt = df.dropna(subset=["notice_date", "effective_date"]).copy()
+    df_lt["lead_days"] = (
+        df_lt["effective_date"] - df_lt["notice_date"]
+    ).dt.days
+    df_lt = df_lt[(df_lt["lead_days"] >= 0) & (df_lt["lead_days"] <= 365)]
+
+    if df_lt.empty:
+        fig = go.Figure()
+        _apply_theme(fig)
+        fig.update_layout(title="Lead Time: insufficient date data", **BASE_LAYOUT)
+        _save_chart(fig, "10_lead_time", save_png)
+        return fig
+
+    median_days = int(df_lt["lead_days"].median())
+    mean_days = df_lt["lead_days"].mean()
+    pct_compliant = (df_lt["lead_days"] >= 60).mean() * 100
+
+    fig = go.Figure(
+        go.Histogram(
+            x=df_lt["lead_days"],
+            nbinsx=40,
+            marker_color=ACCENT,
+            marker_line_color=ACCENT2,
+            marker_line_width=0.5,
+            hovertemplate="Lead time: %{x} days<br>Count: %{y}<extra></extra>",
+        )
+    )
+    # 60-day compliance line
+    fig.add_vline(
+        x=60, line_dash="dash", line_color=ACCENT3, line_width=2,
+        annotation_text="60-day WARN requirement",
+        annotation_position="top right",
+        annotation_font_color=ACCENT3,
+    )
+    fig.add_vline(
+        x=median_days, line_dash="dot", line_color="#aaaaaa", line_width=1.5,
+        annotation_text=f"Median: {median_days}d",
+        annotation_position="top left",
+        annotation_font_color="#aaaaaa",
+    )
+    _apply_theme(fig)
+    fig.update_layout(
+        title=dict(
+            text=f"<b>Notice Lead Time Distribution — {pct_compliant:.0f}% Filed ≥60 Days in Advance</b>",
+            font_size=18,
+        ),
+        xaxis_title="Days from Notice Date to Effective Date",
+        yaxis_title="Number of Notices",
+        height=450,
+    )
+    _save_chart(fig, "10_lead_time", save_png)
+    return fig
+
+
+# ---------------------------------------------------------------------------
+# Chart 11 — County comparison bar (top 10 counties)
+# ---------------------------------------------------------------------------
+
+
+def chart_county_bar(df: pd.DataFrame, save_png: bool = True) -> go.Figure:
+    log.info("Chart 11: County bar …")
+    df_c = df[df["county"].str.strip() != ""].copy()
+
+    if df_c.empty:
+        fig = go.Figure()
+        _apply_theme(fig)
+        fig.update_layout(title="County data not available", **BASE_LAYOUT)
+        _save_chart(fig, "11_county_bar", save_png)
+        return fig
+
+    # Shorten "Los Angeles County" → "Los Angeles"
+    df_c["county_short"] = df_c["county"].str.replace(
+        r"\s*(County|Parish)\s*$", "", regex=True
+    ).str.strip()
+
+    agg = (
+        df_c.groupby("county_short")
+        .agg(employees=("employees", "sum"), notices=("company", "count"))
+        .nlargest(10, "employees")
+        .sort_values("employees")
+        .reset_index()
+    )
+
+    fig = go.Figure(
+        go.Bar(
+            x=agg["employees"].tolist(),
+            y=agg["county_short"].tolist(),
+            orientation="h",
+            marker_color=ACCENT,
+            text=[f"{v:,}" for v in agg["employees"].tolist()],
+            textposition="outside",
+            customdata=agg["notices"].tolist(),
+            hovertemplate=(
+                "<b>%{y}</b><br>Employees: %{x:,}<br>Notices: %{customdata}<extra></extra>"
+            ),
+        )
+    )
+    _apply_theme(fig, margin=dict(l=130, r=80, t=70, b=50))
+    fig.update_layout(
+        title=dict(text="<b>Top 10 Counties by Employees Affected</b>", font_size=18),
+        xaxis_title="Total Employees Affected",
+        yaxis_title="",
+        height=460,
+    )
+    _save_chart(fig, "11_county_bar", save_png)
+    return fig
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -646,6 +873,21 @@ CHART_META = [
         "title": "Multi-Year Trend",
         "desc": "Monthly layoff pattern overlaid across all years for seasonal comparison.",
     },
+    {
+        "id": "9_industry_breakdown",
+        "title": "Industry Breakdown",
+        "desc": "Employees affected by industry sector.",
+    },
+    {
+        "id": "10_lead_time",
+        "title": "Notice Lead Time",
+        "desc": "Distribution of days from notice filing to effective date vs 60-day WARN requirement.",
+    },
+    {
+        "id": "11_county_bar",
+        "title": "Top Counties",
+        "desc": "Top 10 counties by total employees affected.",
+    },
 ]
 
 
@@ -680,6 +922,9 @@ def run(save_png: bool = True) -> list:
         chart_treemap,  # 6
         lambda d, sp: chart_yoy_bar(yearly_summary, save_png=sp),  # 7
         lambda d, sp: chart_multiyear_trend(all_records, save_png=sp),  # 8
+        chart_industry_breakdown,  # 9
+        chart_lead_time_histogram,  # 10
+        chart_county_bar,  # 11
     ]
 
     results = []
