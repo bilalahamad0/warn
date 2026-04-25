@@ -48,7 +48,6 @@ log = logging.getLogger("warn_publish")
 
 
 def _read_chart_div(chart_id: str) -> str:
-    """Read Plotly div from charts dir."""
     path = CHARTS_DIR / f"{chart_id}.html"
     if path.exists():
         return path.read_text()
@@ -62,10 +61,135 @@ def _format_number(n) -> str:
         return str(n)
 
 
+def _compute_kpis() -> dict:
+    """Compute extra KPI metrics from warn_latest.json."""
+    defaults = {
+        "avg_lead_days": "N/A",
+        "largest_company": "N/A",
+        "largest_employees": "N/A",
+        "top_county": "N/A",
+        "top_county_employees": "N/A",
+    }
+    latest = DATA_DIR / "warn_latest.json"
+    if not latest.exists():
+        return defaults
+
+    payload = json.loads(latest.read_text())
+    records = payload.get("records", [])
+    if not records:
+        return defaults
+
+    # Average notice lead time
+    lead_times = []
+    for r in records:
+        nd = str(r.get("notice_date") or "")[:10]
+        ed = str(r.get("effective_date") or "")[:10]
+        if len(nd) == 10 and len(ed) == 10:
+            try:
+                from datetime import date as _date
+                n = datetime.strptime(nd, "%Y-%m-%d").date()
+                e = datetime.strptime(ed, "%Y-%m-%d").date()
+                diff = (e - n).days
+                if 0 < diff < 730:
+                    lead_times.append(diff)
+            except ValueError:
+                pass
+    avg_lead = f"{round(sum(lead_times) / len(lead_times))}d" if lead_times else "N/A"
+
+    # Largest single layoff
+    largest = max(records, key=lambda r: r.get("employees", 0), default={})
+
+    # Top county by employees
+    county_totals: dict = {}
+    for r in records:
+        county = str(r.get("county") or "").strip()
+        if county:
+            county_totals[county] = county_totals.get(county, 0) + (r.get("employees") or 0)
+    top_county = max(county_totals, key=lambda k: county_totals[k]) if county_totals else "N/A"
+
+    return {
+        "avg_lead_days": avg_lead,
+        "largest_company": largest.get("company", "N/A"),
+        "largest_employees": _format_number(largest.get("employees", 0)),
+        "top_county": top_county,
+        "top_county_employees": _format_number(county_totals.get(top_county, 0)),
+    }
+
+
+def _build_recent_table() -> str:
+    """Build HTML table of the 50 most recent WARN notices."""
+    latest = DATA_DIR / "warn_latest.json"
+    if not latest.exists():
+        return "<p style='color:var(--muted)'>No data available.</p>"
+
+    payload = json.loads(latest.read_text())
+    records = payload.get("records", [])
+    sorted_recs = sorted(
+        records,
+        key=lambda r: str(r.get("notice_date") or ""),
+        reverse=True,
+    )[:50]
+
+    rows = ""
+    for r in sorted_recs:
+        company = str(r.get("company") or "").replace("<", "&lt;").replace(">", "&gt;")
+        county = str(r.get("county") or "").replace(" County", "").replace(" Parish", "")
+        employees = _format_number(r.get("employees", 0))
+        notice = str(r.get("notice_date") or "")[:10]
+        effective = str(r.get("effective_date") or "")[:10]
+        layoff_type = str(r.get("layoff_type") or "")
+        industry = str(r.get("industry") or "")
+        rows += (
+            f"<tr>"
+            f"<td>{company}</td>"
+            f"<td>{county}</td>"
+            f"<td class='num'>{employees}</td>"
+            f"<td>{notice}</td>"
+            f"<td>{effective}</td>"
+            f"<td>{layoff_type}</td>"
+            f"<td>{industry}</td>"
+            f"</tr>\n"
+        )
+
+    return f"""<table id="notices-table" class="notices-table">
+      <thead><tr>
+        <th>Company</th>
+        <th>County</th>
+        <th class="num">Employees</th>
+        <th>Notice Date</th>
+        <th>Effective Date</th>
+        <th>Type</th>
+        <th>Industry</th>
+      </tr></thead>
+      <tbody>{rows}</tbody>
+    </table>"""
+
+
+def _build_chart_tabs_panes(chart_ids: list, chart_divs: dict, meta_by_id: dict) -> tuple:
+    """Return (tabs_html, panes_html) for a given list of chart IDs."""
+    tabs = ""
+    panes = ""
+    for i, cid in enumerate(chart_ids):
+        cm = meta_by_id.get(cid, {"id": cid, "title": cid, "desc": ""})
+        active = "active" if i == 0 else ""
+        tabs += (
+            f'<button class="chart-tab {active}" data-target="pane-{cid}">'
+            f'{cm["title"]}</button>\n'
+        )
+        panes += (
+            f'<div class="chart-pane {active}" id="pane-{cid}">'
+            f'<p class="chart-desc">{cm["desc"]}</p>'
+            f'<div class="chart-container">{chart_divs[cid]}</div>'
+            f'</div>\n'
+        )
+    return tabs, panes
+
+
 def build_site(manifest: dict, monitor_result: dict) -> str:
     """Build the full index.html by embedding Plotly divs."""
     log.info("Building index.html …")
 
+    meta_by_id = {cm["id"]: cm for cm in warn_charts.CHART_META}
     chart_divs = {cm["id"]: _read_chart_div(cm["id"]) for cm in warn_charts.CHART_META}
 
     diff = monitor_result.get("diff", {})
@@ -77,35 +201,36 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
     date_start = str(manifest.get("date_range_start", ""))[:10]
     date_end = str(manifest.get("date_range_end", ""))[:10]
 
+    kpis = _compute_kpis()
+
     new_banner = ""
     if new_count > 0:
-        new_banner = f"""
-        <div class="new-banner">
-          <span class="badge-new">NEW</span>
-          <strong>{new_count} new WARN notice{"s" if new_count > 1 else ""}</strong>
-          affecting <strong>{_format_number(new_employees)} employees</strong>
-          since last check.
-        </div>"""
-
-    chart_tabs_html = ""
-    chart_panes_html = ""
-    for i, cm in enumerate(warn_charts.CHART_META):
-        active_tab = "active" if i == 0 else ""
-        active_pane = "active" if i == 0 else ""
-        chart_tabs_html += (
-            f'<button class="chart-tab {active_tab}" data-target="pane-{cm["id"]}">'
-            f'{cm["title"]}</button>\n'
+        new_banner = (
+            f'<div class="new-banner">'
+            f'<span class="badge-new">NEW</span>'
+            f'<strong>{new_count} new WARN notice{"s" if new_count > 1 else ""}</strong>'
+            f' affecting <strong>{_format_number(new_employees)} employees</strong>'
+            f" since last check.</div>"
         )
-        chart_panes_html += f"""
-        <div class="chart-pane {active_pane}" id="pane-{cm['id']}">
-          <p class="chart-desc">{cm['desc']}</p>
-          <div class="chart-container">
-            {chart_divs[cm['id']]}
-          </div>
-        </div>"""
 
-    # Read the HTML template and inject
-    # template_path = BASE_DIR / "docs" / "_template.html"
+    # Section: Impact
+    impact_tabs, impact_panes = _build_chart_tabs_panes(
+        ["9_industry_breakdown", "4_top_companies", "11_county_bar"],
+        chart_divs, meta_by_id,
+    )
+    # Section: Trends
+    trend_tabs, trend_panes = _build_chart_tabs_panes(
+        ["1_timeline_scatter", "2_monthly_bar", "3_rolling_trend", "7_yoy_bar", "8_multiyear_trend"],
+        chart_divs, meta_by_id,
+    )
+    # Section: Details
+    detail_tabs, detail_panes = _build_chart_tabs_panes(
+        ["10_lead_time", "5_county_heatmap", "6_treemap"],
+        chart_divs, meta_by_id,
+    )
+
+    recent_table = _build_recent_table()
+
     html = SITE_HTML_TEMPLATE.format(
         total_records=total_records,
         total_employees=total_employees,
@@ -113,14 +238,23 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
         date_start=date_start,
         date_end=date_end,
         new_banner=new_banner,
-        chart_tabs=chart_tabs_html,
-        chart_panes=chart_panes_html,
+        avg_lead_days=kpis["avg_lead_days"],
+        largest_company=kpis["largest_company"],
+        largest_employees=kpis["largest_employees"],
+        top_county=kpis["top_county"],
+        top_county_employees=kpis["top_county_employees"],
+        impact_tabs=impact_tabs,
+        impact_panes=impact_panes,
+        trend_tabs=trend_tabs,
+        trend_panes=trend_panes,
+        detail_tabs=detail_tabs,
+        detail_panes=detail_panes,
+        recent_table=recent_table,
         generated_at=datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
     )
 
     INDEX_HTML.write_text(html, encoding="utf-8")
 
-    # Copy data.json for public access
     if (DATA_DIR / "warn_latest.json").exists():
         shutil.copy(DATA_DIR / "warn_latest.json", SITE_DATA)
 
@@ -239,10 +373,7 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>California WARN Layoff Monitor</title>
-      <meta
-        name="description"
-        content="Live monitoring and analysis of California WARN layoff notices from the Employment Development Department."
-      />
+  <meta name="description" content="Live monitoring and analysis of California WARN layoff notices from the Employment Development Department." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
@@ -255,6 +386,8 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
       --accent2: #f78166;
       --accent3: #3fb950;
       --accent4: #d29922;
+      --accent5: #bc8cff;
+      --accent6: #39d0d8;
       --text: #e6edf3;
       --muted: #8b949e;
       --glass: rgba(22,27,34,0.7);
@@ -268,8 +401,6 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
       min-height: 100vh;
       overflow-x: hidden;
     }}
-
-    /* ── Background mesh ── */
     body::before {{
       content: '';
       position: fixed; inset: 0; z-index: -1;
@@ -281,7 +412,7 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
 
     /* ── Header ── */
     header {{
-      padding: 2rem 2rem 1rem;
+      padding: 1.25rem 2rem;
       border-bottom: 1px solid var(--border);
       backdrop-filter: blur(8px);
       background: var(--glass);
@@ -289,49 +420,69 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
     }}
     .header-inner {{
       max-width: 1400px; margin: 0 auto;
-      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem;
     }}
     .brand {{ display: flex; align-items: center; gap: 0.75rem; }}
     .brand-icon {{
-      width: 40px; height: 40px; border-radius: 10px;
+      width: 38px; height: 38px; border-radius: 10px;
       background: linear-gradient(135deg, var(--accent), var(--accent2));
-      display: grid; place-items: center; font-size: 1.2rem;
+      display: grid; place-items: center; font-size: 1.1rem; flex-shrink: 0;
     }}
-    h1 {{ font-size: 1.4rem; font-weight: 700; }}
-    .subtitle {{ font-size: 0.8rem; color: var(--muted); }}
-    .header-meta {{ font-size: 0.78rem; color: var(--muted); text-align: right; }}
+    h1 {{ font-size: 1.3rem; font-weight: 700; }}
+    .subtitle {{ font-size: 0.75rem; color: var(--muted); }}
+    .header-right {{ display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }}
+    .search-wrap {{ position: relative; }}
+    .search-wrap input {{
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-family: inherit;
+      font-size: 0.82rem;
+      padding: 0.4rem 0.75rem 0.4rem 2rem;
+      width: 220px;
+      transition: border-color 0.2s;
+      outline: none;
+    }}
+    .search-wrap input:focus {{ border-color: var(--accent); }}
+    .search-wrap input::placeholder {{ color: var(--muted); }}
+    .search-icon {{
+      position: absolute; left: 0.55rem; top: 50%; transform: translateY(-50%);
+      color: var(--muted); font-size: 0.85rem; pointer-events: none;
+    }}
+    .header-meta {{ font-size: 0.75rem; color: var(--muted); text-align: right; white-space: nowrap; }}
     .header-meta a {{ color: var(--accent); text-decoration: none; }}
     .header-meta a:hover {{ text-decoration: underline; }}
 
-    /* ── Main layout ── */
-    main {{ max-width: 1400px; margin: 0 auto; padding: 2rem; }}
+    /* ── Main ── */
+    main {{ max-width: 1400px; margin: 0 auto; padding: 1.5rem 2rem; }}
 
     /* ── New banner ── */
     .new-banner {{
       background: linear-gradient(90deg, rgba(63,185,80,0.15), rgba(63,185,80,0.05));
       border: 1px solid rgba(63,185,80,0.3);
-      border-radius: 10px; padding: 0.85rem 1.25rem;
-      margin-bottom: 1.5rem;
+      border-radius: 10px; padding: 0.75rem 1.25rem;
+      margin-bottom: 1.25rem;
       display: flex; align-items: center; gap: 0.75rem;
       animation: fadeIn 0.5s ease;
     }}
     .badge-new {{
       background: var(--accent3); color: #000;
-      padding: 0.2rem 0.5rem; border-radius: 4px;
-      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em;
+      padding: 0.18rem 0.45rem; border-radius: 4px;
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em;
     }}
 
     /* ── KPI cards ── */
     .kpi-grid {{
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1rem; margin-bottom: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 1rem; margin-bottom: 1.75rem;
     }}
     .kpi-card {{
       background: var(--glass);
       border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 1.2rem 1.4rem;
+      padding: 1.1rem 1.25rem;
       backdrop-filter: blur(8px);
       transition: transform 0.2s, border-color 0.2s;
       position: relative; overflow: hidden;
@@ -344,70 +495,113 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
     .kpi-card:nth-child(2)::before {{ background: var(--accent2); }}
     .kpi-card:nth-child(3)::before {{ background: var(--accent3); }}
     .kpi-card:nth-child(4)::before {{ background: var(--accent4); }}
-    .kpi-card:hover {{ transform: translateY(-2px); border-color: var(--accent); }}
-    .kpi-label {{ font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.4rem; }}
-    .kpi-value {{ font-size: 2rem; font-weight: 700; line-height: 1; }}
-    .kpi-sub {{ font-size: 0.75rem; color: var(--muted); margin-top: 0.3rem; }}
+    .kpi-card:nth-child(5)::before {{ background: var(--accent5); }}
+    .kpi-card:nth-child(6)::before {{ background: var(--accent6); }}
+    .kpi-card:hover {{ transform: translateY(-2px); border-color: rgba(88,166,255,0.4); }}
+    .kpi-label {{ font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.35rem; }}
+    .kpi-value {{ font-size: 1.85rem; font-weight: 700; line-height: 1; }}
+    .kpi-value.sm {{ font-size: 1rem; padding-top: 0.3rem; }}
+    .kpi-sub {{ font-size: 0.72rem; color: var(--muted); margin-top: 0.3rem; }}
 
-    /* ── Charts section ── */
-    .charts-section {{
+    /* ── Section cards ── */
+    .section-card {{
       background: var(--glass);
       border: 1px solid var(--border);
       border-radius: 16px;
-      padding: 1.5rem;
+      padding: 1.4rem 1.5rem;
       backdrop-filter: blur(8px);
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }}
-    .charts-section h2 {{
-      font-size: 1rem; font-weight: 600;
-      color: var(--muted); margin-bottom: 1rem;
-      text-transform: uppercase; letter-spacing: 0.08em;
+    .section-header {{
+      display: flex; align-items: baseline; gap: 0.6rem;
+      margin-bottom: 1.1rem;
     }}
+    .section-header h2 {{
+      font-size: 0.78rem; font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase; letter-spacing: 0.1em;
+    }}
+    .section-tag {{
+      font-size: 0.65rem; color: var(--muted);
+      border: 1px solid var(--border); border-radius: 4px;
+      padding: 0.1rem 0.4rem;
+    }}
+
+    /* ── Chart tabs ── */
     .chart-tabs {{
-      display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;
-      border-bottom: 1px solid var(--border); padding-bottom: 1rem;
+      display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border); padding-bottom: 0.85rem;
     }}
     .chart-tab {{
       background: none; border: 1px solid var(--border);
-      color: var(--muted); padding: 0.45rem 1rem;
+      color: var(--muted); padding: 0.38rem 0.9rem;
       border-radius: 8px; cursor: pointer;
-      font-size: 0.82rem; font-family: inherit;
-      transition: all 0.2s;
+      font-size: 0.8rem; font-family: inherit;
+      transition: all 0.18s;
     }}
     .chart-tab:hover {{ border-color: var(--accent); color: var(--text); }}
     .chart-tab.active {{
       background: rgba(88,166,255,0.12);
       border-color: var(--accent); color: var(--accent); font-weight: 500;
     }}
-    .chart-pane {{ display: none; animation: fadeIn 0.3s ease; }}
+    .chart-pane {{ display: none; animation: fadeIn 0.25s ease; }}
     .chart-pane.active {{ display: block; }}
-    .chart-desc {{ font-size: 0.82rem; color: var(--muted); margin-bottom: 1rem; }}
-    .chart-container {{ width: 100%; min-height: 500px; }}
+    .chart-desc {{ font-size: 0.8rem; color: var(--muted); margin-bottom: 0.85rem; }}
+    .chart-container {{ width: 100%; min-height: 480px; }}
     .chart-container .plotly-graph-div {{ width: 100% !important; }}
     .chart-error {{
       background: rgba(247,129,102,0.1); border: 1px solid rgba(247,129,102,0.3);
       border-radius: 8px; padding: 1rem; color: var(--accent2); font-size: 0.85rem;
     }}
 
+    /* ── Notices table ── */
+    .table-controls {{
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 0.85rem; gap: 0.75rem; flex-wrap: wrap;
+    }}
+    .table-count {{ font-size: 0.78rem; color: var(--muted); }}
+    .notices-table {{
+      width: 100%; border-collapse: collapse;
+      font-size: 0.82rem;
+    }}
+    .notices-table th {{
+      text-align: left; padding: 0.55rem 0.75rem;
+      font-size: 0.7rem; font-weight: 600;
+      color: var(--muted); text-transform: uppercase; letter-spacing: 0.07em;
+      border-bottom: 1px solid var(--border);
+      cursor: pointer; user-select: none; white-space: nowrap;
+    }}
+    .notices-table th:hover {{ color: var(--accent); }}
+    .notices-table th .sort-arrow {{ margin-left: 0.25rem; opacity: 0.4; }}
+    .notices-table th.sorted .sort-arrow {{ opacity: 1; color: var(--accent); }}
+    .notices-table td {{
+      padding: 0.5rem 0.75rem;
+      border-bottom: 1px solid rgba(33,38,45,0.6);
+      vertical-align: middle;
+    }}
+    .notices-table td.num {{ text-align: right; font-variant-numeric: tabular-nums; }}
+    .notices-table tr:hover td {{ background: rgba(88,166,255,0.05); }}
+    .notices-table tr.hidden {{ display: none; }}
+    .table-wrap {{ overflow-x: auto; }}
+
     /* ── Footer ── */
     footer {{
       border-top: 1px solid var(--border);
-      padding: 1.5rem 2rem; text-align: center;
-      font-size: 0.78rem; color: var(--muted);
+      padding: 1.25rem 2rem; text-align: center;
+      font-size: 0.75rem; color: var(--muted);
     }}
     footer a {{ color: var(--accent); text-decoration: none; }}
 
-    /* ── Animations ── */
     @keyframes fadeIn {{
-      from {{ opacity: 0; transform: translateY(8px); }}
+      from {{ opacity: 0; transform: translateY(6px); }}
       to {{ opacity: 1; transform: none; }}
     }}
 
-    /* ── Responsive ── */
     @media (max-width: 640px) {{
       main {{ padding: 1rem; }}
-      .kpi-value {{ font-size: 1.5rem; }}
+      .kpi-value {{ font-size: 1.45rem; }}
       h1 {{ font-size: 1.1rem; }}
+      .search-wrap input {{ width: 160px; }}
     }}
   </style>
 </head>
@@ -419,20 +613,20 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
       <div class="brand-icon">📋</div>
       <div>
         <h1>California WARN Layoff Monitor</h1>
-        <div class="subtitle">
-          Employment Development Department · Real-time Tracking
-        </div>
+        <div class="subtitle">Employment Development Department · Real-time Tracking</div>
       </div>
     </div>
-    <div class="header-meta">
-      Last updated: <strong>{last_updated}</strong><br/>
-      <a
-        href="https://edd.ca.gov/en/jobs_and_training/layoff_services_warn"
-        target="_blank"
-        rel="noopener"
-      >
-        Source: CA EDD WARN
-      </a>
+    <div class="header-right">
+      <div class="search-wrap">
+        <span class="search-icon">🔍</span>
+        <input type="search" id="global-search" placeholder="Search company or county…" autocomplete="off" />
+      </div>
+      <div class="header-meta">
+        Updated: <strong>{last_updated}</strong><br/>
+        <a href="https://edd.ca.gov/en/jobs_and_training/layoff_services_warn" target="_blank" rel="noopener">CA EDD WARN</a>
+        &nbsp;·&nbsp;
+        <a href="https://github.com/bilalahamad0/warn" target="_blank" rel="noopener">GitHub</a>
+      </div>
     </div>
   </div>
 </header>
@@ -440,9 +634,10 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
 <main>
   {new_banner}
 
+  <!-- KPI Cards -->
   <div class="kpi-grid">
     <div class="kpi-card">
-      <div class="kpi-label">Total WARN Notices</div>
+      <div class="kpi-label">WARN Notices</div>
       <div class="kpi-value">{total_records}</div>
       <div class="kpi-sub">Unique filings</div>
     </div>
@@ -452,53 +647,149 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
       <div class="kpi-sub">Cumulative total</div>
     </div>
     <div class="kpi-card">
-      <div class="kpi-label">Date Range</div>
-      <div class="kpi-value" style="font-size:1rem;padding-top:0.4rem">{date_start}</div>
-      <div class="kpi-sub">through {date_end}</div>
+      <div class="kpi-label">Avg Lead Time</div>
+      <div class="kpi-value">{avg_lead_days}</div>
+      <div class="kpi-sub">Notice → effective date</div>
     </div>
     <div class="kpi-card">
-      <div class="kpi-label">Data Source</div>
-      <div class="kpi-value" style="font-size:1rem;padding-top:0.4rem">EDD</div>
-      <div class="kpi-sub">Auto-updated twice daily</div>
+      <div class="kpi-label">Largest Layoff</div>
+      <div class="kpi-value sm">{largest_company}</div>
+      <div class="kpi-sub">{largest_employees} employees</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Top County</div>
+      <div class="kpi-value sm">{top_county}</div>
+      <div class="kpi-sub">{top_county_employees} employees</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Date Range</div>
+      <div class="kpi-value sm">{date_start}</div>
+      <div class="kpi-sub">through {date_end}</div>
     </div>
   </div>
 
-  <div class="charts-section">
-    <h2>📈 Interactive Charts</h2>
-    <div class="chart-tabs">
-      {chart_tabs}
+  <!-- Section: IMPACT -->
+  <div class="section-card">
+    <div class="section-header">
+      <h2>Impact</h2>
+      <span class="section-tag">Who &amp; Where</span>
     </div>
-    {chart_panes}
+    <div class="chart-tabs" data-section="impact">
+      {impact_tabs}
+    </div>
+    {impact_panes}
+  </div>
+
+  <!-- Section: TRENDS -->
+  <div class="section-card">
+    <div class="section-header">
+      <h2>Trends</h2>
+      <span class="section-tag">Over Time</span>
+    </div>
+    <div class="chart-tabs" data-section="trends">
+      {trend_tabs}
+    </div>
+    {trend_panes}
+  </div>
+
+  <!-- Section: DETAILS -->
+  <div class="section-card">
+    <div class="section-header">
+      <h2>Details</h2>
+      <span class="section-tag">Deep Dive</span>
+    </div>
+    <div class="chart-tabs" data-section="details">
+      {detail_tabs}
+    </div>
+    {detail_panes}
+  </div>
+
+  <!-- Recent Notices Table -->
+  <div class="section-card">
+    <div class="section-header">
+      <h2>Recent Notices</h2>
+      <span class="section-tag">Last 50</span>
+    </div>
+    <div class="table-controls">
+      <div class="table-count" id="table-count"></div>
+    </div>
+    <div class="table-wrap">
+      {recent_table}
+    </div>
   </div>
 </main>
 
 <footer>
   Built by <a href="https://bilalahamad.com" target="_blank">bilalahamad.com</a> ·
-  Data from
-  <a
-    href="https://edd.ca.gov/en/jobs_and_training/layoff_services_warn"
-    target="_blank"
-  >
-    California EDD
-  </a>
-  ·
-  <a href="https://github.com/bilalahamad0/warn" target="_blank">GitHub</a> ·
+  Data: <a href="https://edd.ca.gov/en/jobs_and_training/layoff_services_warn" target="_blank">CA EDD</a> ·
   Generated {generated_at}
 </footer>
 
 <script>
-  // Tab switching
-  document.querySelectorAll('.chart-tab').forEach(btn => {{
-    btn.addEventListener('click', () => {{
-      const target = btn.dataset.target;
-      document.querySelectorAll('.chart-tab').forEach(b => b.classList.remove('active'));
-      document.querySelectorAll('.chart-pane').forEach(p => p.classList.remove('active'));
-      btn.classList.add('active');
-      document.getElementById(target).classList.add('active');
-      // Trigger Plotly resize
-      setTimeout(() => window.dispatchEvent(new Event('resize')), 50);
+(function () {{
+  // ── Tab switching (scoped per section) ──
+  document.querySelectorAll('.chart-tabs').forEach(tabGroup => {{
+    tabGroup.querySelectorAll('.chart-tab').forEach(btn => {{
+      btn.addEventListener('click', () => {{
+        tabGroup.querySelectorAll('.chart-tab').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const target = document.getElementById(btn.dataset.target);
+        if (!target) return;
+        // hide all panes that are siblings of the same parent section
+        target.parentElement.querySelectorAll('.chart-pane').forEach(p => p.classList.remove('active'));
+        target.classList.add('active');
+        setTimeout(() => window.dispatchEvent(new Event('resize')), 50);
+      }});
     }});
   }});
+
+  // ── Table sort ──
+  const table = document.getElementById('notices-table');
+  if (table) {{
+    let sortCol = -1, sortAsc = true;
+    table.querySelectorAll('th').forEach((th, ci) => {{
+      th.innerHTML += ' <span class="sort-arrow">▲</span>';
+      th.addEventListener('click', () => {{
+        const asc = sortCol === ci ? !sortAsc : true;
+        sortCol = ci; sortAsc = asc;
+        table.querySelectorAll('th').forEach(h => h.classList.remove('sorted'));
+        th.classList.add('sorted');
+        th.querySelector('.sort-arrow').textContent = asc ? '▲' : '▼';
+        const tbody = table.querySelector('tbody');
+        const rows = [...tbody.querySelectorAll('tr')];
+        rows.sort((a, b) => {{
+          const av = a.cells[ci]?.textContent.replace(/,/g,'') || '';
+          const bv = b.cells[ci]?.textContent.replace(/,/g,'') || '';
+          const an = parseFloat(av), bn = parseFloat(bv);
+          const cmp = !isNaN(an) && !isNaN(bn) ? an - bn : av.localeCompare(bv);
+          return asc ? cmp : -cmp;
+        }});
+        rows.forEach(r => tbody.appendChild(r));
+      }});
+    }});
+  }}
+
+  // ── Global search (filters table rows) ──
+  const searchInput = document.getElementById('global-search');
+  const countEl = document.getElementById('table-count');
+  function updateCount() {{
+    if (!table) return;
+    const total = table.querySelectorAll('tbody tr').length;
+    const visible = table.querySelectorAll('tbody tr:not(.hidden)').length;
+    if (countEl) countEl.textContent = visible < total ? `${{visible}} of ${{total}} shown` : `${{total}} notices`;
+  }}
+  if (searchInput && table) {{
+    searchInput.addEventListener('input', () => {{
+      const q = searchInput.value.trim().toLowerCase();
+      table.querySelectorAll('tbody tr').forEach(row => {{
+        const text = row.textContent.toLowerCase();
+        row.classList.toggle('hidden', q.length > 0 && !text.includes(q));
+      }});
+      updateCount();
+    }});
+    updateCount();
+  }}
+}})();
 </script>
 </body>
 </html>"""

@@ -101,7 +101,8 @@ def _safe_int(val) -> Optional[int]:
 def _safe_date(val_str: str) -> Optional[str]:
     if not val_str or str(val_str).strip() in ("", "nan", "None"):
         return None
-    text = str(val_str).strip()
+    # Strip internal spaces from spaced-digit PDF artifacts: "0 6 / 1 8 / 2 0 14" → "06/18/2014"
+    text = re.sub(r"\s+", "", str(val_str)).strip()
     for fmt in ("%m/%d/%Y", "%m/%d/%y", "%Y-%m-%d", "%m-%d-%Y"):
         try:
             return datetime.strptime(text, fmt).strftime("%Y-%m-%d")

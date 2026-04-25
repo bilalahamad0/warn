@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T01:21:15.858310+00:00Z",
+  "generated_at": "2026-04-25T10:20:18.999620+00:00Z",
   "charts": [
     {
       "id": "1_timeline_scatter",
@@ -48,11 +48,29 @@
       "title": "Multi-Year Trend",
       "desc": "Monthly layoff pattern overlaid across all years for seasonal comparison.",
       "status": "ok"
+    },
+    {
+      "id": "9_industry_breakdown",
+      "title": "Industry Breakdown",
+      "desc": "Employees affected by industry sector.",
+      "status": "ok"
+    },
+    {
+      "id": "10_lead_time",
+      "title": "Notice Lead Time",
+      "desc": "Distribution of days from notice filing to effective date vs 60-day WARN requirement.",
+      "status": "ok"
+    },
+    {
+      "id": "11_county_bar",
+      "title": "Top Counties",
+      "desc": "Top 10 counties by total employees affected.",
+      "status": "ok"
     }
   ],
   "total_records": 1140,
   "total_employees": 63013,
   "date_range_start": "2025-01-05",
   "date_range_end": "2026-12-30",
-  "last_updated": "2026-04-25T01:20:57.350459+00:00Z"
+  "last_updated": "2026-04-25T10:20:11.962907+00:00Z"
 }

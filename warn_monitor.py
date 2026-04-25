@@ -186,6 +186,8 @@ def _parse_sheet1(df: pd.DataFrame) -> pd.DataFrame:
             col_map["layoff_type"] = col
         elif "address" in lc:
             col_map["address"] = col
+        elif "industry" in lc:
+            col_map["industry"] = col
 
     rows = []
     for _, row in df.iterrows():
@@ -207,6 +209,7 @@ def _parse_sheet1(df: pd.DataFrame) -> pd.DataFrame:
                 "city": str(row.get(col_map.get("city", ""), "")).strip(),
                 "layoff_type": str(row.get(col_map.get("layoff_type", ""), "")).strip(),
                 "address": str(row.get(col_map.get("address", ""), "")).strip(),
+                "industry": str(row.get(col_map.get("industry", ""), "")).strip(),
             }
         )
     return pd.DataFrame(rows)
@@ -253,16 +256,22 @@ def _parse_detailed_sheet(df_raw: pd.DataFrame) -> pd.DataFrame:
             col_indices["layoff_type"] = col
         elif "address" in col_s:
             col_indices["address"] = col
+        elif "industry" in col_s:
+            col_indices["industry"] = col
 
-    # Fallback to positional: Unnamed: 1=notice, 3=effective, 4=company, 6=employees
+    # Fallback to positional (Detailed WARN Report sheet layout):
+    # 0=County/Parish, 1=Notice Date, 2=Processed Date, 3=Effective Date,
+    # 4=Company, 5=Layoff/Closure, 6=No. Of Employees, 7=Address, 8=Related Industry
     if not col_indices:
         positional = {
+            "county": cols[0] if len(cols) > 0 else None,
             "notice_date": cols[1] if len(cols) > 1 else None,
             "effective_date": cols[3] if len(cols) > 3 else None,
             "company": cols[4] if len(cols) > 4 else None,
+            "layoff_type": cols[5] if len(cols) > 5 else None,
             "employees": cols[6] if len(cols) > 6 else None,
-            "county": cols[7] if len(cols) > 7 else None,
-            "city": cols[8] if len(cols) > 8 else None,
+            "address": cols[7] if len(cols) > 7 else None,
+            "industry": cols[8] if len(cols) > 8 else None,
         }
         col_indices = {k: v for k, v in positional.items() if v}
 
@@ -294,6 +303,7 @@ def _parse_detailed_sheet(df_raw: pd.DataFrame) -> pd.DataFrame:
                     row.get(col_indices.get("layoff_type", ""), "")
                 ).strip(),
                 "address": str(row.get(col_indices.get("address", ""), "")).strip(),
+                "industry": str(row.get(col_indices.get("industry", ""), "")).strip(),
             }
         )
     return pd.DataFrame(rows)
@@ -324,12 +334,15 @@ def parse_warn_xlsx(xlsx_path: str) -> pd.DataFrame:
 
     # Merge duplicate company entries on same effective date
     if "effective_date" in df.columns:
+        agg_dict = {"employees": "sum", "notice_date": "first", "address": "first"}
+        if "industry" in df.columns:
+            agg_dict["industry"] = "first"
         df = (
             df.groupby(
                 ["company", "effective_date", "county", "city", "layoff_type"],
                 dropna=False,
             )
-            .agg({"employees": "sum", "notice_date": "first", "address": "first"})
+            .agg(agg_dict)
             .reset_index()
         )
 
