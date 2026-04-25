@@ -113,7 +113,13 @@ def load_data() -> pd.DataFrame:
 
 def _save_chart(fig: go.Figure, name: str, save_png: bool = True) -> str:
     html_path = CHARTS_DIR / f"{name}.html"
-    div_str = fig.to_html(full_html=False, include_plotlyjs=False)
+    div_str = fig.to_html(
+        full_html=False,
+        include_plotlyjs=False,
+        config={"responsive": True, "displaylogo": False},
+        default_width="100%",
+        default_height="600px",
+    )
     html_path.write_text(div_str)
     if save_png:
         try:
