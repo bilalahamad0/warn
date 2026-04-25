@@ -113,7 +113,13 @@ def load_data() -> pd.DataFrame:
 
 def _save_chart(fig: go.Figure, name: str, save_png: bool = True) -> str:
     html_path = CHARTS_DIR / f"{name}.html"
-    div_str = fig.to_html(full_html=False, include_plotlyjs=False)
+    div_str = fig.to_html(
+        full_html=False,
+        include_plotlyjs=False,
+        config={"responsive": True, "displaylogo": False},
+        default_width="100%",
+        default_height="600px",
+    )
     html_path.write_text(div_str)
     if save_png:
         try:
@@ -199,24 +205,25 @@ def chart_monthly_bar(df: pd.DataFrame, save_png: bool = True) -> go.Figure:
     monthly["month_str"] = monthly["month"].astype(str)
     monthly["employees"] = monthly["employees"].astype(int)
 
+    x_vals = monthly["month_str"].tolist()
+    y_vals = monthly["employees"].tolist()
+    ma3 = monthly["employees"].rolling(3, min_periods=1).mean().tolist()
+
     fig = go.Figure()
     fig.add_trace(
         go.Bar(
-            x=monthly["month_str"],
-            y=monthly["employees"],
+            x=x_vals,
+            y=y_vals,
             name="Employees Affected",
             marker_color=ACCENT,
             marker_line_width=0,
             hovertemplate="<b>%{x}</b><br>Employees: %{y:,}<extra></extra>",
         )
     )
-
-    # Add 3-month moving average
-    monthly["ma3"] = monthly["employees"].rolling(3, min_periods=1).mean()
     fig.add_trace(
         go.Scatter(
-            x=monthly["month_str"],
-            y=monthly["ma3"],
+            x=x_vals,
+            y=ma3,
             name="3-Month MA",
             line=dict(color=ACCENT2, width=2, dash="dash"),
             hovertemplate="<b>3-Month MA</b><br>%{x}: %{y:,.0f}<extra></extra>",
@@ -428,9 +435,9 @@ def chart_treemap(df: pd.DataFrame, save_png: bool = True) -> go.Figure:
     df_t["layoff_type"] = df_t["layoff_type"].fillna("Unknown").replace("", "Unknown")
 
     agg = df_t.groupby(["layoff_type", "company"])["employees"].sum().reset_index()
-    # Limit to top 80 companies for readability
     top80 = df_t.groupby("company")["employees"].sum().nlargest(80).index
     agg = agg[agg["company"].isin(top80)]
+    agg = agg.reset_index(drop=True)
 
     fig = px.treemap(
         agg,
@@ -438,12 +445,14 @@ def chart_treemap(df: pd.DataFrame, save_png: bool = True) -> go.Figure:
         values="employees",
         color="employees",
         color_continuous_scale="Blues",
-        hover_data={"employees": ":,"},
         title="<b>Layoff Treemap — Company Size by Employees Affected</b>",
     )
+    # Pre-format employee counts as strings to avoid Plotly format-spec bugs in treemaps
     fig.update_traces(
+        customdata=[f"{int(v):,}" for v in fig.data[0].values],
         textinfo="label+value",
-        hovertemplate="<b>%{label}</b><br>Employees: %{value:,}<extra></extra>",
+        texttemplate="%{label}<br>%{value}",
+        hovertemplate="<b>%{label}</b><br>Employees: %{customdata}<extra></extra>",
         textfont=dict(size=12),
         marker=dict(pad=dict(t=20)),
     )
@@ -478,34 +487,58 @@ def chart_yoy_bar(yearly_summary: list, save_png: bool = True) -> go.Figure:
         _save_chart(fig, "7_yoy_bar", save_png)
         return fig
 
-    years = [s["label"] for s in yearly_summary]
-    emps = [s["employees"] for s in yearly_summary]
-    recs = [s["records"] for s in yearly_summary]
-    colors = [ACCENT if s["source"] == "xlsx" else ACCENT2 for s in yearly_summary]
+    # Separate live (xlsx) vs incomplete PDF years
+    pdf_years = [s for s in yearly_summary if s["source"] == "pdf"]
+    live_years = [s for s in yearly_summary if s["source"] == "xlsx"]
 
     fig = make_subplots(specs=[[{"secondary_y": True}]])
-    fig.add_trace(
-        go.Bar(
-            x=years,
-            y=emps,
-            name="Employees Affected",
-            marker_color=colors,
-            marker_line_width=0,
-            hovertemplate="<b>%{x}</b><br>Employees: %{y:,}<extra></extra>",
-        ),
-        secondary_y=False,
-    )
-    fig.add_trace(
-        go.Scatter(
-            x=years,
-            y=recs,
-            name="Notice Count",
-            line=dict(color=ACCENT3, width=2.5),
-            marker=dict(size=7),
-            hovertemplate="<b>%{x}</b><br>Notices: %{y:,}<extra></extra>",
-        ),
-        secondary_y=True,
-    )
+
+    # PDF bars — muted/gray to signal incompleteness
+    if pdf_years:
+        fig.add_trace(
+            go.Bar(
+                x=[s["label"] for s in pdf_years],
+                y=[s["employees"] for s in pdf_years],
+                name="Employees (PDF sample — incomplete)",
+                marker_color="rgba(139,148,158,0.4)",
+                marker_line_color="rgba(139,148,158,0.7)",
+                marker_line_width=1,
+                hovertemplate=(
+                    "<b>%{x}</b><br>Employees (partial PDF): %{y:,}"
+                    "<br><i>⚠ Incomplete — EDD PDFs capture only a fraction of annual notices</i>"
+                    "<extra></extra>"
+                ),
+            ),
+            secondary_y=False,
+        )
+
+    # Live XLSX bar — bright accent
+    if live_years:
+        fig.add_trace(
+            go.Bar(
+                x=[s["label"] for s in live_years],
+                y=[s["employees"] for s in live_years],
+                name="Employees Affected (Live XLSX)",
+                marker_color=ACCENT,
+                marker_line_width=0,
+                hovertemplate="<b>%{x}</b><br>Employees: %{y:,}<extra></extra>",
+            ),
+            secondary_y=False,
+        )
+
+    # Notice count line — live only (PDF counts are meaningless)
+    if live_years:
+        fig.add_trace(
+            go.Scatter(
+                x=[s["label"] for s in live_years],
+                y=[s["records"] for s in live_years],
+                name="Notice Count (Live)",
+                line=dict(color=ACCENT3, width=2.5),
+                marker=dict(size=10),
+                hovertemplate="<b>%{x}</b><br>Notices: %{y:,}<extra></extra>",
+            ),
+            secondary_y=True,
+        )
 
     _apply_theme(fig)
     fig.update_layout(
@@ -516,16 +549,21 @@ def chart_yoy_bar(yearly_summary: list, save_png: bool = True) -> go.Figure:
         xaxis_title="Fiscal Year",
         yaxis_title="Employees Affected",
         yaxis2_title="Number of Notices",
+        barmode="overlay",
         showlegend=True,
         annotations=[
             dict(
-                text="⚠ Pre-2025 data from partial PDF extracts — notice counts are incomplete",
+                text=(
+                    "⚠ Gray bars = partial PDF extracts (EDD PDFs capture only ~3–5% of actual annual notices). "
+                    "Only FY 2025-26 (blue) reflects complete data."
+                ),
                 xref="paper", yref="paper",
-                x=0, y=-0.18, showarrow=False,
-                font=dict(size=11, color="#888888"),
+                x=0, y=-0.22, showarrow=False,
+                font=dict(size=11, color="#8b949e"),
                 align="left",
             )
         ],
+        margin=dict(l=60, r=30, t=70, b=100),
     )
     fig.update_xaxes(tickangle=-30)
     fig.update_yaxes(gridcolor=GRID_COLOR, secondary_y=True)
@@ -702,13 +740,15 @@ def chart_industry_breakdown(df: pd.DataFrame, save_png: bool = True) -> go.Figu
             hovertemplate="<b>%{x}</b><br>Employees: %{y:,}<extra></extra>",
         )
     )
-    _apply_theme(fig)
+    _apply_theme(fig, margin=dict(l=60, r=30, t=120, b=160))
     fig.update_layout(
         title=dict(text="<b>Employees Affected by Industry Sector</b>", font_size=18),
         xaxis_title="Industry Sector",
         yaxis_title="Total Employees Affected",
-        height=500,
+        height=560,
+        yaxis=dict(range=[0, max(values) * 1.25]),
     )
+    fig.update_xaxes(tickangle=-35)
     _save_chart(fig, "9_industry_breakdown", save_png)
     return fig
 

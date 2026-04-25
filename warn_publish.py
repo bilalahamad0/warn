@@ -116,11 +116,16 @@ def _compute_kpis() -> dict:
     }
 
 
-def _build_recent_table() -> str:
-    """Build HTML table of the 50 most recent WARN notices."""
+def _build_recent_table() -> tuple:
+    """Build the full notices table HTML and the filter-controls HTML.
+
+    Returns (controls_html, table_html, total_count).
+    Loads ALL records, sorted newest-first by notice date.
+    Pagination + per-column filters are wired client-side.
+    """
     latest = DATA_DIR / "warn_latest.json"
     if not latest.exists():
-        return "<p style='color:var(--muted)'>No data available.</p>"
+        return ("", "<p style='color:var(--muted)'>No data available.</p>", 0)
 
     payload = json.loads(latest.read_text())
     records = payload.get("records", [])
@@ -128,41 +133,95 @@ def _build_recent_table() -> str:
         records,
         key=lambda r: str(r.get("notice_date") or ""),
         reverse=True,
-    )[:50]
+    )
 
-    rows = ""
+    counties = sorted({
+        str(r.get("county") or "").replace(" County", "").replace(" Parish", "").strip()
+        for r in records
+        if r.get("county")
+    })
+    industries = sorted({str(r.get("industry") or "").strip() for r in records if r.get("industry")})
+    types = sorted({str(r.get("layoff_type") or "").strip() for r in records if r.get("layoff_type")})
+
+    def _opt(values):
+        return "".join(f'<option value="{v}">{v}</option>' for v in values if v)
+
+    controls_html = f"""
+    <div class="filter-row">
+      <input type="search" id="filter-company" class="filter-input" placeholder="Company name…" autocomplete="off"/>
+      <select id="filter-county" class="filter-input">
+        <option value="">All counties</option>{_opt(counties)}
+      </select>
+      <select id="filter-industry" class="filter-input">
+        <option value="">All industries</option>{_opt(industries)}
+      </select>
+      <select id="filter-type" class="filter-input">
+        <option value="">All types</option>{_opt(types)}
+      </select>
+      <input type="date" id="filter-date-from" class="filter-input" title="Notice date from" />
+      <input type="date" id="filter-date-to" class="filter-input" title="Notice date to" />
+      <button type="button" id="filter-reset" class="filter-reset">Reset</button>
+    </div>
+    <div class="table-controls">
+      <div class="pager-left">
+        <label class="pager-label">Show
+          <select id="page-size">
+            <option value="50" selected>50</option>
+            <option value="100">100</option>
+            <option value="150">150</option>
+            <option value="200">200</option>
+            <option value="0">All</option>
+          </select>
+          per page
+        </label>
+      </div>
+      <div class="table-count" id="table-count"></div>
+      <div class="pager-right">
+        <button type="button" id="page-prev" class="pager-btn">‹ Prev</button>
+        <span id="page-info" class="pager-info">Page 1</span>
+        <button type="button" id="page-next" class="pager-btn">Next ›</button>
+      </div>
+    </div>"""
+
+    rows = []
     for r in sorted_recs:
         company = str(r.get("company") or "").replace("<", "&lt;").replace(">", "&gt;")
-        county = str(r.get("county") or "").replace(" County", "").replace(" Parish", "")
-        employees = _format_number(r.get("employees", 0))
+        county = str(r.get("county") or "").replace(" County", "").replace(" Parish", "").strip()
+        employees = r.get("employees", 0)
+        emp_str = _format_number(employees)
         notice = str(r.get("notice_date") or "")[:10]
         effective = str(r.get("effective_date") or "")[:10]
         layoff_type = str(r.get("layoff_type") or "")
         industry = str(r.get("industry") or "")
-        rows += (
-            f"<tr>"
+        rows.append(
+            f'<tr data-company="{company.lower()}" data-county="{county}" '
+            f'data-industry="{industry}" data-type="{layoff_type}" '
+            f'data-notice="{notice}" data-employees="{employees}">'
             f"<td>{company}</td>"
             f"<td>{county}</td>"
-            f"<td class='num'>{employees}</td>"
+            f"<td class='num'>{emp_str}</td>"
             f"<td>{notice}</td>"
             f"<td>{effective}</td>"
             f"<td>{layoff_type}</td>"
             f"<td>{industry}</td>"
-            f"</tr>\n"
+            f"</tr>"
         )
 
-    return f"""<table id="notices-table" class="notices-table">
-      <thead><tr>
-        <th>Company</th>
-        <th>County</th>
-        <th class="num">Employees</th>
-        <th>Notice Date</th>
-        <th>Effective Date</th>
-        <th>Type</th>
-        <th>Industry</th>
-      </tr></thead>
-      <tbody>{rows}</tbody>
-    </table>"""
+    table_html = (
+        '<table id="notices-table" class="notices-table">'
+        '<thead><tr>'
+        '<th data-key="company">Company</th>'
+        '<th data-key="county">County</th>'
+        '<th class="num" data-key="employees">Employees</th>'
+        '<th data-key="notice">Notice Date</th>'
+        '<th data-key="effective">Effective Date</th>'
+        '<th data-key="type">Type</th>'
+        '<th data-key="industry">Industry</th>'
+        '</tr></thead>'
+        f'<tbody>{"".join(rows)}</tbody>'
+        '</table>'
+    )
+    return (controls_html, table_html, len(sorted_recs))
 
 
 def _build_chart_tabs_panes(chart_ids: list, chart_divs: dict, meta_by_id: dict) -> tuple:
@@ -223,13 +282,13 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
         ["1_timeline_scatter", "2_monthly_bar", "3_rolling_trend", "7_yoy_bar", "8_multiyear_trend"],
         chart_divs, meta_by_id,
     )
-    # Section: Details
+    # Section: Details (Treemap first, then Lead Time, then County Heatmap)
     detail_tabs, detail_panes = _build_chart_tabs_panes(
-        ["10_lead_time", "5_county_heatmap", "6_treemap"],
+        ["6_treemap", "10_lead_time", "5_county_heatmap"],
         chart_divs, meta_by_id,
     )
 
-    recent_table = _build_recent_table()
+    recent_controls, recent_table, recent_total = _build_recent_table()
 
     html = SITE_HTML_TEMPLATE.format(
         total_records=total_records,
@@ -249,7 +308,9 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
         trend_panes=trend_panes,
         detail_tabs=detail_tabs,
         detail_panes=detail_panes,
+        recent_controls=recent_controls,
         recent_table=recent_table,
+        recent_total=recent_total,
         generated_at=datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
     )
 
@@ -372,7 +433,7 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>California WARN Layoff Monitor</title>
+  <title>California Live Layoff Monitoring Dashboard</title>
   <meta name="description" content="Live monitoring and analysis of California WARN layoff notices from the Employment Development Department." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -555,10 +616,65 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
     }}
 
     /* ── Notices table ── */
+    .filter-row {{
+      display: grid;
+      grid-template-columns: 2fr 1.3fr 1.6fr 1fr 1fr 1fr auto;
+      gap: 0.5rem;
+      margin-bottom: 0.85rem;
+    }}
+    @media (max-width: 900px) {{
+      .filter-row {{ grid-template-columns: 1fr 1fr; }}
+    }}
+    .filter-input {{
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-family: inherit;
+      font-size: 0.8rem;
+      padding: 0.42rem 0.65rem;
+      outline: none;
+      transition: border-color 0.2s;
+      min-width: 0;
+    }}
+    .filter-input:focus {{ border-color: var(--accent); }}
+    .filter-input::placeholder {{ color: var(--muted); }}
+    .filter-reset {{
+      background: rgba(247,129,102,0.1);
+      border: 1px solid rgba(247,129,102,0.4);
+      color: var(--accent2);
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 0.78rem;
+      padding: 0.42rem 0.85rem;
+      cursor: pointer;
+      transition: all 0.15s;
+    }}
+    .filter-reset:hover {{ background: rgba(247,129,102,0.2); }}
     .table-controls {{
       display: flex; align-items: center; justify-content: space-between;
       margin-bottom: 0.85rem; gap: 0.75rem; flex-wrap: wrap;
+      padding: 0.5rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
     }}
+    .pager-label {{ font-size: 0.78rem; color: var(--muted); display: inline-flex; align-items: center; gap: 0.4rem; }}
+    .pager-label select {{
+      background: rgba(255,255,255,0.05); border: 1px solid var(--border);
+      color: var(--text); border-radius: 6px; padding: 0.2rem 0.4rem;
+      font-family: inherit; font-size: 0.78rem;
+    }}
+    .pager-right {{ display: flex; align-items: center; gap: 0.5rem; }}
+    .pager-info {{ font-size: 0.78rem; color: var(--muted); min-width: 95px; text-align: center; }}
+    .pager-btn {{
+      background: rgba(88,166,255,0.08);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 6px;
+      font-family: inherit; font-size: 0.78rem;
+      padding: 0.3rem 0.7rem; cursor: pointer;
+      transition: all 0.15s;
+    }}
+    .pager-btn:hover:not(:disabled) {{ border-color: var(--accent); color: var(--accent); }}
+    .pager-btn:disabled {{ opacity: 0.4; cursor: not-allowed; }}
     .table-count {{ font-size: 0.78rem; color: var(--muted); }}
     .notices-table {{
       width: 100%; border-collapse: collapse;
@@ -612,7 +728,7 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
     <div class="brand">
       <div class="brand-icon">📋</div>
       <div>
-        <h1>California WARN Layoff Monitor</h1>
+        <h1>California Live Layoff Monitoring Dashboard</h1>
         <div class="subtitle">Employment Development Department · Real-time Tracking</div>
       </div>
     </div>
@@ -708,11 +824,9 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
   <div class="section-card">
     <div class="section-header">
       <h2>Recent Notices</h2>
-      <span class="section-tag">Last 50</span>
+      <span class="section-tag">{recent_total} total</span>
     </div>
-    <div class="table-controls">
-      <div class="table-count" id="table-count"></div>
-    </div>
+    {recent_controls}
     <div class="table-wrap">
       {recent_table}
     </div>
@@ -727,6 +841,14 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
 
 <script>
 (function () {{
+  // ── Plotly resize helper ──
+  function resizeChartsIn(container) {{
+    if (!container || !window.Plotly) return;
+    container.querySelectorAll('.plotly-graph-div').forEach(div => {{
+      try {{ Plotly.Plots.resize(div); }} catch (e) {{}}
+    }});
+  }}
+
   // ── Tab switching (scoped per section) ──
   document.querySelectorAll('.chart-tabs').forEach(tabGroup => {{
     tabGroup.querySelectorAll('.chart-tab').forEach(btn => {{
@@ -735,60 +857,155 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
         btn.classList.add('active');
         const target = document.getElementById(btn.dataset.target);
         if (!target) return;
-        // hide all panes that are siblings of the same parent section
         target.parentElement.querySelectorAll('.chart-pane').forEach(p => p.classList.remove('active'));
         target.classList.add('active');
-        setTimeout(() => window.dispatchEvent(new Event('resize')), 50);
+        setTimeout(() => resizeChartsIn(target), 60);
       }});
     }});
   }});
 
-  // ── Table sort ──
+  // After load, force a resize on all visible charts (handles initial render in hidden tabs)
+  window.addEventListener('load', () => {{
+    setTimeout(() => {{
+      document.querySelectorAll('.chart-pane').forEach(p => resizeChartsIn(p));
+    }}, 200);
+  }});
+
+  // ── Notices table: pagination + filter + sort ──
   const table = document.getElementById('notices-table');
-  if (table) {{
-    let sortCol = -1, sortAsc = true;
-    table.querySelectorAll('th').forEach((th, ci) => {{
-      th.innerHTML += ' <span class="sort-arrow">▲</span>';
-      th.addEventListener('click', () => {{
-        const asc = sortCol === ci ? !sortAsc : true;
-        sortCol = ci; sortAsc = asc;
-        table.querySelectorAll('th').forEach(h => h.classList.remove('sorted'));
-        th.classList.add('sorted');
-        th.querySelector('.sort-arrow').textContent = asc ? '▲' : '▼';
-        const tbody = table.querySelector('tbody');
-        const rows = [...tbody.querySelectorAll('tr')];
-        rows.sort((a, b) => {{
-          const av = a.cells[ci]?.textContent.replace(/,/g,'') || '';
-          const bv = b.cells[ci]?.textContent.replace(/,/g,'') || '';
-          const an = parseFloat(av), bn = parseFloat(bv);
-          const cmp = !isNaN(an) && !isNaN(bn) ? an - bn : av.localeCompare(bv);
-          return asc ? cmp : -cmp;
-        }});
-        rows.forEach(r => tbody.appendChild(r));
-      }});
+  if (!table) return;
+
+  const tbody = table.querySelector('tbody');
+  const allRows = [...tbody.querySelectorAll('tr')];
+  let filteredRows = allRows.slice();
+  let currentPage = 1;
+  let pageSize = 50;
+  let sortCol = -1, sortAsc = true;
+
+  const fCompany = document.getElementById('filter-company');
+  const fCounty = document.getElementById('filter-county');
+  const fIndustry = document.getElementById('filter-industry');
+  const fType = document.getElementById('filter-type');
+  const fFrom = document.getElementById('filter-date-from');
+  const fTo = document.getElementById('filter-date-to');
+  const resetBtn = document.getElementById('filter-reset');
+  const pageSizeEl = document.getElementById('page-size');
+  const prevBtn = document.getElementById('page-prev');
+  const nextBtn = document.getElementById('page-next');
+  const pageInfo = document.getElementById('page-info');
+  const countEl = document.getElementById('table-count');
+  const globalSearch = document.getElementById('global-search');
+
+  function applyFilters() {{
+    const qCompany = (fCompany?.value || '').trim().toLowerCase();
+    const qGlobal = (globalSearch?.value || '').trim().toLowerCase();
+    const qCounty = fCounty?.value || '';
+    const qIndustry = fIndustry?.value || '';
+    const qType = fType?.value || '';
+    const qFrom = fFrom?.value || '';
+    const qTo = fTo?.value || '';
+
+    filteredRows = allRows.filter(row => {{
+      const d = row.dataset;
+      if (qCompany && !d.company.includes(qCompany)) return false;
+      if (qGlobal && !row.textContent.toLowerCase().includes(qGlobal)) return false;
+      if (qCounty && d.county !== qCounty) return false;
+      if (qIndustry && d.industry !== qIndustry) return false;
+      if (qType && d.type !== qType) return false;
+      if (qFrom && d.notice && d.notice < qFrom) return false;
+      if (qTo && d.notice && d.notice > qTo) return false;
+      return true;
     }});
+    currentPage = 1;
+    render();
   }}
 
-  // ── Global search (filters table rows) ──
-  const searchInput = document.getElementById('global-search');
-  const countEl = document.getElementById('table-count');
-  function updateCount() {{
-    if (!table) return;
-    const total = table.querySelectorAll('tbody tr').length;
-    const visible = table.querySelectorAll('tbody tr:not(.hidden)').length;
-    if (countEl) countEl.textContent = visible < total ? `${{visible}} of ${{total}} shown` : `${{total}} notices`;
+  function render() {{
+    // Hide every row, then show the current page slice
+    allRows.forEach(r => r.style.display = 'none');
+    const totalFiltered = filteredRows.length;
+    const totalAll = allRows.length;
+    const size = pageSize === 0 ? totalFiltered : pageSize;
+    const totalPages = size === 0 ? 1 : Math.max(1, Math.ceil(totalFiltered / size));
+    if (currentPage > totalPages) currentPage = totalPages;
+    if (currentPage < 1) currentPage = 1;
+    const start = (currentPage - 1) * (pageSize === 0 ? totalFiltered : pageSize);
+    const end = pageSize === 0 ? totalFiltered : start + pageSize;
+    const slice = filteredRows.slice(start, end);
+    slice.forEach(r => r.style.display = '');
+
+    // Reorder DOM to match filtered+sorted order (within current page)
+    slice.forEach(r => tbody.appendChild(r));
+
+    if (countEl) {{
+      if (totalFiltered === 0) {{
+        countEl.textContent = 'No matches';
+      }} else if (totalFiltered === totalAll) {{
+        countEl.textContent = `${{totalAll.toLocaleString()}} notices`;
+      }} else {{
+        countEl.textContent = `${{totalFiltered.toLocaleString()}} of ${{totalAll.toLocaleString()}} matched`;
+      }}
+    }}
+    if (pageInfo) {{
+      const showStart = totalFiltered === 0 ? 0 : start + 1;
+      const showEnd = Math.min(end, totalFiltered);
+      pageInfo.textContent = pageSize === 0
+        ? `Showing all ${{totalFiltered.toLocaleString()}}`
+        : `${{showStart.toLocaleString()}}–${{showEnd.toLocaleString()}} / ${{totalFiltered.toLocaleString()}}`;
+    }}
+    if (prevBtn) prevBtn.disabled = currentPage <= 1;
+    if (nextBtn) nextBtn.disabled = currentPage >= totalPages;
   }}
-  if (searchInput && table) {{
-    searchInput.addEventListener('input', () => {{
-      const q = searchInput.value.trim().toLowerCase();
-      table.querySelectorAll('tbody tr').forEach(row => {{
-        const text = row.textContent.toLowerCase();
-        row.classList.toggle('hidden', q.length > 0 && !text.includes(q));
+
+  // Sortable headers
+  table.querySelectorAll('th').forEach((th, ci) => {{
+    th.innerHTML += ' <span class="sort-arrow">▲</span>';
+    th.addEventListener('click', () => {{
+      const asc = sortCol === ci ? !sortAsc : true;
+      sortCol = ci; sortAsc = asc;
+      table.querySelectorAll('th').forEach(h => h.classList.remove('sorted'));
+      th.classList.add('sorted');
+      th.querySelector('.sort-arrow').textContent = asc ? '▲' : '▼';
+      filteredRows.sort((a, b) => {{
+        const av = a.cells[ci]?.textContent.replace(/,/g, '') || '';
+        const bv = b.cells[ci]?.textContent.replace(/,/g, '') || '';
+        const an = parseFloat(av), bn = parseFloat(bv);
+        const cmp = !isNaN(an) && !isNaN(bn) ? an - bn : av.localeCompare(bv);
+        return asc ? cmp : -cmp;
       }});
-      updateCount();
+      render();
     }});
-    updateCount();
+  }});
+
+  // Wire filter inputs
+  [fCompany, fCounty, fIndustry, fType, fFrom, fTo].forEach(el => {{
+    if (el) el.addEventListener('input', applyFilters);
+    if (el) el.addEventListener('change', applyFilters);
+  }});
+  if (globalSearch) {{
+    globalSearch.addEventListener('input', () => {{
+      if (fCompany) fCompany.value = globalSearch.value;
+      applyFilters();
+    }});
   }}
+  if (resetBtn) {{
+    resetBtn.addEventListener('click', () => {{
+      [fCompany, fCounty, fIndustry, fType, fFrom, fTo].forEach(el => {{ if (el) el.value = ''; }});
+      if (globalSearch) globalSearch.value = '';
+      applyFilters();
+    }});
+  }}
+  if (pageSizeEl) {{
+    pageSizeEl.addEventListener('change', () => {{
+      pageSize = parseInt(pageSizeEl.value, 10) || 0;
+      currentPage = 1;
+      render();
+    }});
+  }}
+  if (prevBtn) prevBtn.addEventListener('click', () => {{ currentPage--; render(); }});
+  if (nextBtn) nextBtn.addEventListener('click', () => {{ currentPage++; render(); }});
+
+  render();
 }})();
 </script>
 </body>
