@@ -1,41 +1,16 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-04-24 12:57:25 UTC
+**Generated:** 2026-04-25 01:20:57 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 1,202 | 1,140 | +0/+62 |
-| Total employees | 65,709 | 63,013 | -2,696 |
+| Total records | 1,140 | 1,140 | +0/+0 |
+| Total employees | 63,013 | 63,013 | +0 |
 
 ### ✅ No new entries.
-
-### ❌ Removed Entries (62 records)
-
-| Company | Employees | Effective Date |
-|---------|-----------|----------------|
-| Snap Inc. | 247 | 2026-04-16 |
-| eBay Inc. | 198 | 2026-09-30 |
-| ODS Technologies LP and Betfair Interactive US LLC | 174 | 2026-06-30 |
-| The Primary School | 147 | 2026-06-12 |
-| Sony Pictures Entertainment Inc. | 133 | 2026-06-12 |
-| Ample Joy ABA Consulting Services, LLC | 100 | 2026-02-02 |
-| Chen-Tech Industries LLC | 98 | 2026-04-02 |
-| Guayabito Farms, LLC | 98 | 2026-06-06 |
-| Next Stop Logistics Inc. | 80 | 2026-04-16 |
-| Freudenberg Medical LLC | 80 | 2026-06-24 |
-| Premier Berry Farms, LLC | 74 | 2026-06-06 |
-| Snap Inc. | 73 | 2026-04-16 |
-| Noa Technologies, Inc. | 69 | 2026-06-01 |
-| Ventura Coastal | 69 | 2026-06-15 |
-| Gossamer Bio, Inc. | 65 | 2026-05-15 |
-| JPMorgan Chase | 53 | 2026-05-21 |
-| Sumisho Air Lease Corporation | 53 | 2026-06-08 |
-| Redding Cement Plant | 53 | 2026-06-15 |
-| Disney Entertainment Operations LLC | 53 | 2026-06-20 |
-| Wellpath and CFMG - Placer Jail - Auburn | 50 | 2026-06-30 |
 
 ---
 ## 📁 File vs Git Comparison
@@ -56,16 +31,17 @@ M .coverage
 
 **Recent commits:**
 ```
+1111526 auto: WARN data update [skip ci]
 91a74f6 auto: WARN data update [skip ci]
 417b8c0 auto: WARN data update [skip ci]
 dde8b32 auto: WARN data update [skip ci]
 23fedfa auto: WARN data update [skip ci]
-1129b44 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-04-25T01:20:57.346803+00:00Z` — +0 added, -62 removed, 0 employees (new)
 - `2026-04-24T12:57:25.126200+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-04-24T01:27:40.321990+00:00Z` — +62 added, -0 removed, 2,696 employees (new)
 - `2026-04-23T12:58:43.268777+00:00Z` — +0 added, -0 removed, 0 employees (new)
@@ -75,4 +51,3 @@ dde8b32 auto: WARN data update [skip ci]
 - `2026-04-21T12:58:34.724873+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-04-21T01:24:28.298412+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-04-20T13:03:59.837160+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-04-20T01:27:31.899012+00:00Z` — +0 added, -0 removed, 0 employees (new)
