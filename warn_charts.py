@@ -435,9 +435,9 @@ def chart_treemap(df: pd.DataFrame, save_png: bool = True) -> go.Figure:
     df_t["layoff_type"] = df_t["layoff_type"].fillna("Unknown").replace("", "Unknown")
 
     agg = df_t.groupby(["layoff_type", "company"])["employees"].sum().reset_index()
-    # Limit to top 80 companies for readability
     top80 = df_t.groupby("company")["employees"].sum().nlargest(80).index
     agg = agg[agg["company"].isin(top80)]
+    agg = agg.reset_index(drop=True)
 
     fig = px.treemap(
         agg,
@@ -445,12 +445,14 @@ def chart_treemap(df: pd.DataFrame, save_png: bool = True) -> go.Figure:
         values="employees",
         color="employees",
         color_continuous_scale="Blues",
-        hover_data={"employees": ":,"},
         title="<b>Layoff Treemap — Company Size by Employees Affected</b>",
     )
+    # Pre-format employee counts as strings to avoid Plotly format-spec bugs in treemaps
     fig.update_traces(
+        customdata=[f"{int(v):,}" for v in fig.data[0].values],
         textinfo="label+value",
-        hovertemplate="<b>%{label}</b><br>Employees: %{value:,}<extra></extra>",
+        texttemplate="%{label}<br>%{value}",
+        hovertemplate="<b>%{label}</b><br>Employees: %{customdata}<extra></extra>",
         textfont=dict(size=12),
         marker=dict(pad=dict(t=20)),
     )
