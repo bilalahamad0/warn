@@ -450,8 +450,8 @@ def chart_treemap(df: pd.DataFrame, save_png: bool = True) -> go.Figure:
     # Pre-format employee counts as strings to avoid Plotly format-spec bugs in treemaps
     fig.update_traces(
         customdata=[f"{int(v):,}" for v in fig.data[0].values],
-        textinfo="label+value",
-        texttemplate="%{label}<br>%{value}",
+        textinfo="label+text",
+        texttemplate="%{label}<br>%{customdata}",
         hovertemplate="<b>%{label}</b><br>Employees: %{customdata}<extra></extra>",
         textfont=dict(size=12),
         marker=dict(pad=dict(t=20)),
