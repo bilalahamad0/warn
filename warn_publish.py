@@ -559,6 +559,25 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
       display: flex; align-items: center; justify-content: space-between;
       margin-bottom: 0.85rem; gap: 0.75rem; flex-wrap: wrap;
     }}
+    .table-search-wrap {{ position: relative; }}
+    .table-search-wrap input {{
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-family: inherit;
+      font-size: 0.82rem;
+      padding: 0.4rem 0.75rem 0.4rem 2rem;
+      width: 280px;
+      transition: border-color 0.2s;
+      outline: none;
+    }}
+    .table-search-wrap input:focus {{ border-color: var(--accent); }}
+    .table-search-wrap input::placeholder {{ color: var(--muted); }}
+    .table-search-wrap .search-icon {{
+      position: absolute; left: 0.55rem; top: 50%; transform: translateY(-50%);
+      color: var(--muted); font-size: 0.85rem; pointer-events: none;
+    }}
     .table-count {{ font-size: 0.78rem; color: var(--muted); }}
     .notices-table {{
       width: 100%; border-collapse: collapse;
@@ -711,6 +730,10 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
       <span class="section-tag">Last 50</span>
     </div>
     <div class="table-controls">
+      <div class="table-search-wrap">
+        <span class="search-icon">🔍</span>
+        <input type="search" id="table-filter" placeholder="Filter by company, county, industry…" autocomplete="off" />
+      </div>
       <div class="table-count" id="table-count"></div>
     </div>
     <div class="table-wrap">
@@ -735,10 +758,17 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
         btn.classList.add('active');
         const target = document.getElementById(btn.dataset.target);
         if (!target) return;
-        // hide all panes that are siblings of the same parent section
         target.parentElement.querySelectorAll('.chart-pane').forEach(p => p.classList.remove('active'));
         target.classList.add('active');
-        setTimeout(() => window.dispatchEvent(new Event('resize')), 50);
+        // Use Plotly.Plots.resize on each graph div in the newly visible pane
+        // (window resize event is unreliable for hidden-div Plotly charts)
+        setTimeout(() => {{
+          target.querySelectorAll('.plotly-graph-div').forEach(div => {{
+            if (window.Plotly && div.id) {{
+              try {{ Plotly.Plots.resize(div); }} catch(e) {{}}
+            }}
+          }});
+        }}, 80);
       }});
     }});
   }});
@@ -765,30 +795,46 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
           return asc ? cmp : -cmp;
         }});
         rows.forEach(r => tbody.appendChild(r));
+        updateCount();
       }});
     }});
   }}
 
-  // ── Global search (filters table rows) ──
-  const searchInput = document.getElementById('global-search');
+  // ── Table filter (dedicated input + header search both drive the same filter) ──
+  const tableFilter = document.getElementById('table-filter');
+  const globalSearch = document.getElementById('global-search');
   const countEl = document.getElementById('table-count');
-  function updateCount() {{
+
+  function filterTable(q) {{
     if (!table) return;
-    const total = table.querySelectorAll('tbody tr').length;
-    const visible = table.querySelectorAll('tbody tr:not(.hidden)').length;
-    if (countEl) countEl.textContent = visible < total ? `${{visible}} of ${{total}} shown` : `${{total}} notices`;
-  }}
-  if (searchInput && table) {{
-    searchInput.addEventListener('input', () => {{
-      const q = searchInput.value.trim().toLowerCase();
-      table.querySelectorAll('tbody tr').forEach(row => {{
-        const text = row.textContent.toLowerCase();
-        row.classList.toggle('hidden', q.length > 0 && !text.includes(q));
-      }});
-      updateCount();
+    const lq = q.trim().toLowerCase();
+    table.querySelectorAll('tbody tr').forEach(row => {{
+      row.classList.toggle('hidden', lq.length > 0 && !row.textContent.toLowerCase().includes(lq));
     }});
     updateCount();
   }}
+
+  function updateCount() {{
+    if (!table || !countEl) return;
+    const total = table.querySelectorAll('tbody tr').length;
+    const visible = table.querySelectorAll('tbody tr:not(.hidden)').length;
+    countEl.textContent = visible < total ? `${{visible}} of ${{total}} shown` : `${{total}} notices`;
+  }}
+
+  if (tableFilter) {{
+    tableFilter.addEventListener('input', () => {{
+      if (globalSearch) globalSearch.value = tableFilter.value;
+      filterTable(tableFilter.value);
+    }});
+  }}
+  if (globalSearch) {{
+    globalSearch.addEventListener('input', () => {{
+      if (tableFilter) tableFilter.value = globalSearch.value;
+      filterTable(globalSearch.value);
+    }});
+  }}
+
+  updateCount();
 }})();
 </script>
 </body>
