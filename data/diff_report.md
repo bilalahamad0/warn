@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-04-27 13:16:02 UTC
+**Generated:** 2026-04-28 01:52:09 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -31,16 +31,17 @@ M .coverage
 
 **Recent commits:**
 ```
+5eb073e auto: WARN data update [skip ci]
 311d1d2 auto: WARN data update [skip ci]
 c7f26bd auto: WARN data update [skip ci]
 3f38f98 auto: WARN data update [skip ci]
 cba713a Fix treemap labels: use text attribute, not customdata in texttemplate (#5)
-0af4c7c Fix treemap static labels showing %{value} placeholder (#4)
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-04-28T01:52:09.751427+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-04-27T13:16:02.978016+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-04-27T01:31:04.332548+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-04-26T12:39:51.932719+00:00Z` — +0 added, -0 removed, 0 employees (new)
@@ -50,4 +51,3 @@ cba713a Fix treemap labels: use text attribute, not customdata in texttemplate (
 - `2026-04-24T12:57:25.126200+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-04-24T01:27:40.321990+00:00Z` — +62 added, -0 removed, 2,696 employees (new)
 - `2026-04-23T12:58:43.268777+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-04-23T01:28:20.926687+00:00Z` — +0 added, -54 removed, 0 employees (new)
