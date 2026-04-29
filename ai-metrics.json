@@ -1,0 +1,34 @@
+{
+  "projectId": "warn",
+  "lastUpdated": "2026-04-28",
+  "aiContribution": 88,
+  "agents": [
+    {
+      "name": "Antigravity",
+      "provider": "Google DeepMind",
+      "period": "Apr 2026",
+      "models": ["Gemini 2.5 Flash", "Gemini 2.5 Pro"],
+      "tokens": 100000,
+      "role": "Foundation & pipeline architecture"
+    },
+    {
+      "name": "Cursor",
+      "provider": "Anthropic",
+      "period": "Apr 2026 – Present",
+      "models": ["Claude Sonnet 4"],
+      "tokens": 100000,
+      "role": "Dashboard revamp, charts & code review"
+    }
+  ],
+  "totalTokens": 200000,
+  "totalCommits": 64,
+  "linesOfCode": 6000,
+  "devCycleDays": 2,
+  "manualEstimateDays": 10,
+  "impact": "Automated 100% of data ingestion and alerting",
+  "cycle": "2 days",
+  "beforeAI": "Manual Excel download, no monitoring",
+  "afterAI": "Fully automated pipeline, runs twice daily",
+  "tests": 13,
+  "testSuites": 5
+}
