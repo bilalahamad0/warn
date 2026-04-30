@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-04-30 01:53:33 UTC
+**Generated:** 2026-04-30 13:19:14 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -31,16 +31,17 @@ M .coverage
 
 **Recent commits:**
 ```
+7323521 auto: WARN data update [skip ci]
 4ce54c5 auto: WARN data update [skip ci]
 9442ad5 auto: WARN update 2026-04-29 13:01 UTC
 0a0ab12 feat: add ai-metrics.json sidecar for portfolio AI Lab dashboard
 927b110 auto: WARN data update [skip ci]
-0fe4231 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-04-30T13:19:14.314138+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-04-30T01:53:33.692008+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-04-29T13:20:40.409575+00:00Z` — +0 added, -76 removed, 0 employees (new)
 - `2026-04-29T13:00:07.645180+00:00Z` — +0 added, -0 removed, 0 employees (new)
@@ -50,4 +51,3 @@ M .coverage
 - `2026-04-27T13:16:02.978016+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-04-27T01:31:04.332548+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-04-26T12:39:51.932719+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-04-26T01:30:33.020421+00:00Z` — +0 added, -0 removed, 0 employees (new)
