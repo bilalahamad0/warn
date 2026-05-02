@@ -3346,3 +3346,442 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 2026-05-01 06:00:57,311 [ERROR] Gmail authentication failed. Make sure you're using an App Password, not your regular Gmail password. See: https://myaccount.google.com/apppasswords
 2026-05-01 06:00:57,312 [INFO] Git push …
 2026-05-01 06:00:57,312 [INFO] Staging changes …
+2026-05-01 06:00:57,513 [INFO] Committing: auto: WARN update 2026-05-01 13:00 UTC
+2026-05-01 06:00:57,641 [INFO] Pushing to origin/main …
+2026-05-01 06:00:58,363 [WARNING] git push origin main stderr: To https://github.com/bilalahamad0/warn.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/bilalahamad0/warn.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+2026-05-01 06:00:58,390 [ERROR] ✗ Push failed — check GITHUB_TOKEN and repo permissions.
+2026-05-01 06:00:58,390 [INFO] ✓ Publisher complete.
+2026-05-01 06:00:58,477 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 06:00:58,477 [INFO] shutil.rmtree worked.
+2026-05-01 06:00:58,477 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 06:00:58,477 [INFO] shutil.rmtree worked.
+/Users/bilalmac2/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:34: NotOpenSSLWarning: urllib3 v2.0 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+2026-05-01 18:00:01,828 [INFO] ======================================================================
+2026-05-01 18:00:01,828 [INFO] WARN Publisher — 2026-05-02T01:00:01.828207+00:00Z
+2026-05-01 18:00:01,828 [INFO] ======================================================================
+2026-05-01 18:00:01,828 [INFO] Step 1/5: Running monitor …
+2026-05-01 18:00:01,828 [INFO] ============================================================
+2026-05-01 18:00:01,828 [INFO] WARN Monitor — 2026-05-02T01:00:01.828657+00:00Z
+2026-05-01 18:00:01,828 [INFO] ============================================================
+2026-05-01 18:00:01,829 [INFO] Requesting WARN XLSX from EDD …
+2026-05-01 18:00:02,037 [INFO] EDD server: 304 Not Modified — data unchanged.
+2026-05-01 18:00:02,039 [INFO] Parsing /Users/bilalmac2/git_repo/warn/file.xlsx …
+2026-05-01 18:00:02,320 [INFO] Available sheets: ['Index', 'WARN Report Summary', 'Detailed WARN Report ', 'Call Center Relocations Summary', 'Call Center Relocations Report', 'Industry List']
+2026-05-01 18:00:02,321 [INFO] Using sheet: 'Detailed WARN Report '
+/Users/bilalmac2/Library/Python/3.9/lib/python/site-packages/openpyxl/worksheet/_reader.py:329: UserWarning: Data Validation extension is not supported and will be removed
+  warn(msg)
+2026-05-01 18:00:02,502 [INFO] Detailed sheet columns: ['County/Parish', 'Notice\nDate', 'Processed\nDate', 'Effective \nDate', 'Company', 'Layoff/\nClosure', 'No. Of\nEmployees', 'Address', 'Related Industry']
+2026-05-01 18:00:02,687 [INFO] Parsed 1224 WARN records spanning 2025-01-05 → 2026-12-30
+2026-05-01 18:00:02,703 [INFO] No data changes detected.
+2026-05-01 18:00:02,727 [INFO] Saved 1224 records to /Users/bilalmac2/git_repo/warn/data/warn_latest.json
+2026-05-01 18:00:02,727 [INFO] Monitor run complete.
+2026-05-01 18:00:02,728 [INFO] Step 2/5: Generating diff report …
+2026-05-01 18:00:02,939 [INFO] Step 3/5: Updating historical data …
+2026-05-01 18:00:02,939 [INFO] Year 2014: already parsed — skipping (use --force to re-parse)
+2026-05-01 18:00:02,939 [INFO] Year 2015: already parsed — skipping (use --force to re-parse)
+2026-05-01 18:00:02,939 [INFO] Year 2016: already parsed — skipping (use --force to re-parse)
+2026-05-01 18:00:02,939 [INFO] Year 2017: already parsed — skipping (use --force to re-parse)
+2026-05-01 18:00:02,939 [INFO] Year 2018: already parsed — skipping (use --force to re-parse)
+2026-05-01 18:00:02,939 [INFO] Year 2019: already parsed — skipping (use --force to re-parse)
+2026-05-01 18:00:02,939 [INFO] Year 2020: already parsed — skipping (use --force to re-parse)
+2026-05-01 18:00:02,940 [INFO] Year 2021: already parsed — skipping (use --force to re-parse)
+2026-05-01 18:00:02,940 [INFO] Year 2022: already parsed — skipping (use --force to re-parse)
+2026-05-01 18:00:02,940 [INFO] Year 2023: already parsed — skipping (use --force to re-parse)
+2026-05-01 18:00:02,940 [INFO] Year 2024: already parsed — skipping (use --force to re-parse)
+2026-05-01 18:00:02,973 [INFO] Combined dataset: 1,525 records across 12 years
+2026-05-01 18:00:02,974 [INFO] Step 4/5: Generating charts …
+2026-05-01 18:00:03,001 [INFO] Loaded 1224 records for charting.
+2026-05-01 18:00:03,006 [INFO] Historical data: 1,525 records across 12 years
+2026-05-01 18:00:03,006 [INFO] Chart 1: Timeline scatter …
+2026-05-01 18:00:04,035 [INFO] Chromium init'ed with kwargs {}
+2026-05-01 18:00:04,047 [INFO] Found chromium path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+2026-05-01 18:00:04,048 [INFO] Temp directory created: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmp21x05lv2.
+2026-05-01 18:00:04,049 [INFO] Opening browser.
+2026-05-01 18:00:04,050 [INFO] Temp directory created: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpnqx6bci_.
+2026-05-01 18:00:04,050 [INFO] Temporary directory at: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpnqx6bci_
+2026-05-01 18:00:11,941 [INFO] Conforming 1 to file:///var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmp21x05lv2/index.html
+2026-05-01 18:00:11,971 [INFO] Waiting on all navigates
+2026-05-01 18:00:13,189 [INFO] All navigates done, putting them all in queue.
+2026-05-01 18:00:13,190 [INFO] Getting tab from queue (has 1)
+2026-05-01 18:00:13,190 [INFO] Got 1CC9
+2026-05-01 18:00:13,191 [INFO] Processing bWARN_Notices__Employees_by_Effective_Dateb.png
+2026-05-01 18:00:13,191 [INFO] Sending big command for bWARN_Notices__Employees_by_Effective_Dateb.png.
+2026-05-01 18:00:15,086 [INFO] Sent big command for bWARN_Notices__Employees_by_Effective_Dateb.png.
+2026-05-01 18:00:15,094 [INFO] Reloading tab 1CC9 before return.
+2026-05-01 18:00:15,279 [INFO] Putting tab 1CC9 back (queue size: 0).
+2026-05-01 18:00:15,279 [INFO] Waiting for all cleanups to finish.
+2026-05-01 18:00:15,279 [INFO] Exiting Kaleido
+2026-05-01 18:00:15,279 [INFO] Closing browser.
+2026-05-01 18:00:15,282 [INFO] Closing browser.
+2026-05-01 18:00:15,283 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:15,283 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:15,283 [INFO] Cancelling tasks.
+2026-05-01 18:00:15,283 [INFO] Exiting Kaleido/Choreo
+2026-05-01 18:00:15,902 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:15,902 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:15,902 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:15,902 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:15,903 [INFO] Cancelling tasks.
+2026-05-01 18:00:15,903 [INFO] Exiting Kaleido/Choreo
+2026-05-01 18:00:15,906 [INFO]   → PNG: /Users/bilalmac2/git_repo/warn/docs/charts/1_timeline_scatter.png
+2026-05-01 18:00:15,906 [INFO]   → HTML div: /Users/bilalmac2/git_repo/warn/docs/charts/1_timeline_scatter.html
+2026-05-01 18:00:15,906 [INFO] Chart 2: Monthly bar chart …
+2026-05-01 18:00:15,950 [INFO] Chromium init'ed with kwargs {}
+2026-05-01 18:00:15,951 [INFO] Found chromium path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+2026-05-01 18:00:15,951 [INFO] Temp directory created: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpjq4v1l4k.
+2026-05-01 18:00:15,952 [INFO] Opening browser.
+2026-05-01 18:00:15,952 [INFO] Temp directory created: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmp1tmi5e3b.
+2026-05-01 18:00:15,952 [INFO] Temporary directory at: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmp1tmi5e3b
+2026-05-01 18:00:17,329 [INFO] Conforming 1 to file:///var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpjq4v1l4k/index.html
+2026-05-01 18:00:17,349 [INFO] Waiting on all navigates
+2026-05-01 18:00:18,906 [INFO] All navigates done, putting them all in queue.
+2026-05-01 18:00:18,908 [INFO] Getting tab from queue (has 1)
+2026-05-01 18:00:18,908 [INFO] Got 7C92
+2026-05-01 18:00:18,909 [INFO] Processing bMonthly_Layoffs__Total_Employees_Affectedb.png
+2026-05-01 18:00:18,909 [INFO] Sending big command for bMonthly_Layoffs__Total_Employees_Affectedb.png.
+2026-05-01 18:00:19,147 [INFO] Sent big command for bMonthly_Layoffs__Total_Employees_Affectedb.png.
+2026-05-01 18:00:19,150 [INFO] Reloading tab 7C92 before return.
+2026-05-01 18:00:19,295 [INFO] Putting tab 7C92 back (queue size: 0).
+2026-05-01 18:00:19,295 [INFO] Waiting for all cleanups to finish.
+2026-05-01 18:00:19,295 [INFO] Exiting Kaleido
+2026-05-01 18:00:19,295 [INFO] Closing browser.
+2026-05-01 18:00:19,307 [INFO] Closing browser.
+2026-05-01 18:00:19,309 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:19,309 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:19,309 [INFO] Cancelling tasks.
+2026-05-01 18:00:19,309 [INFO] Exiting Kaleido/Choreo
+2026-05-01 18:00:19,579 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:19,579 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:19,579 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:19,580 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:19,580 [INFO] Cancelling tasks.
+2026-05-01 18:00:19,580 [INFO] Exiting Kaleido/Choreo
+2026-05-01 18:00:19,581 [INFO]   → PNG: /Users/bilalmac2/git_repo/warn/docs/charts/2_monthly_bar.png
+2026-05-01 18:00:19,581 [INFO]   → HTML div: /Users/bilalmac2/git_repo/warn/docs/charts/2_monthly_bar.html
+2026-05-01 18:00:19,582 [INFO] Chart 3: Rolling trend …
+2026-05-01 18:00:19,636 [INFO] Chromium init'ed with kwargs {}
+2026-05-01 18:00:19,636 [INFO] Found chromium path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+2026-05-01 18:00:19,637 [INFO] Temp directory created: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpuvc08to1.
+2026-05-01 18:00:19,637 [INFO] Opening browser.
+2026-05-01 18:00:19,638 [INFO] Temp directory created: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmp3djaah3n.
+2026-05-01 18:00:19,638 [INFO] Temporary directory at: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmp3djaah3n
+2026-05-01 18:00:21,158 [INFO] Conforming 1 to file:///var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpuvc08to1/index.html
+2026-05-01 18:00:21,178 [INFO] Waiting on all navigates
+2026-05-01 18:00:22,578 [INFO] All navigates done, putting them all in queue.
+2026-05-01 18:00:22,580 [INFO] Getting tab from queue (has 1)
+2026-05-01 18:00:22,580 [INFO] Got 9E3B
+2026-05-01 18:00:22,580 [INFO] Processing bLayoff_Trend__Daily_30_Day_Average__Cumulativeb.png
+2026-05-01 18:00:22,580 [INFO] Sending big command for bLayoff_Trend__Daily_30_Day_Average__Cumulativeb.png.
+2026-05-01 18:00:22,920 [INFO] Sent big command for bLayoff_Trend__Daily_30_Day_Average__Cumulativeb.png.
+2026-05-01 18:00:22,924 [INFO] Reloading tab 9E3B before return.
+2026-05-01 18:00:23,054 [INFO] Putting tab 9E3B back (queue size: 0).
+2026-05-01 18:00:23,054 [INFO] Waiting for all cleanups to finish.
+2026-05-01 18:00:23,054 [INFO] Exiting Kaleido
+2026-05-01 18:00:23,054 [INFO] Closing browser.
+2026-05-01 18:00:23,057 [INFO] Closing browser.
+2026-05-01 18:00:23,058 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:23,059 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:23,059 [INFO] Cancelling tasks.
+2026-05-01 18:00:23,059 [INFO] Exiting Kaleido/Choreo
+2026-05-01 18:00:23,317 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:23,317 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:23,317 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:23,318 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:23,318 [INFO] Cancelling tasks.
+2026-05-01 18:00:23,318 [INFO] Exiting Kaleido/Choreo
+2026-05-01 18:00:23,319 [INFO]   → PNG: /Users/bilalmac2/git_repo/warn/docs/charts/3_rolling_trend.png
+2026-05-01 18:00:23,319 [INFO]   → HTML div: /Users/bilalmac2/git_repo/warn/docs/charts/3_rolling_trend.html
+2026-05-01 18:00:23,320 [INFO] Chart 4: Top-25 companies …
+2026-05-01 18:00:23,341 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:23,341 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:23,341 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:23,341 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:23,356 [INFO] Chromium init'ed with kwargs {}
+2026-05-01 18:00:23,357 [INFO] Found chromium path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+2026-05-01 18:00:23,357 [INFO] Temp directory created: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpr0u4rzge.
+2026-05-01 18:00:23,358 [INFO] Opening browser.
+2026-05-01 18:00:23,358 [INFO] Temp directory created: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpdp3ztuk2.
+2026-05-01 18:00:23,358 [INFO] Temporary directory at: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpdp3ztuk2
+2026-05-01 18:00:24,688 [INFO] Conforming 1 to file:///var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpr0u4rzge/index.html
+2026-05-01 18:00:24,709 [INFO] Waiting on all navigates
+2026-05-01 18:00:26,337 [INFO] All navigates done, putting them all in queue.
+2026-05-01 18:00:26,338 [INFO] Getting tab from queue (has 1)
+2026-05-01 18:00:26,338 [INFO] Got FACC
+2026-05-01 18:00:26,339 [INFO] Processing bTop_25_Filtered_Companies_by_Total_Employees_Affectedb.png
+2026-05-01 18:00:26,339 [INFO] Sending big command for bTop_25_Filtered_Companies_by_Total_Employees_Affectedb.png.
+2026-05-01 18:00:26,578 [INFO] Sent big command for bTop_25_Filtered_Companies_by_Total_Employees_Affectedb.png.
+2026-05-01 18:00:26,581 [INFO] Reloading tab FACC before return.
+2026-05-01 18:00:26,682 [INFO] Putting tab FACC back (queue size: 0).
+2026-05-01 18:00:26,682 [INFO] Waiting for all cleanups to finish.
+2026-05-01 18:00:26,682 [INFO] Exiting Kaleido
+2026-05-01 18:00:26,682 [INFO] Closing browser.
+2026-05-01 18:00:26,685 [INFO] Closing browser.
+2026-05-01 18:00:26,686 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:26,686 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:26,686 [INFO] Cancelling tasks.
+2026-05-01 18:00:26,686 [INFO] Exiting Kaleido/Choreo
+2026-05-01 18:00:26,917 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:26,917 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:26,917 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:26,917 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:26,918 [INFO] Cancelling tasks.
+2026-05-01 18:00:26,918 [INFO] Exiting Kaleido/Choreo
+2026-05-01 18:00:26,919 [INFO]   → PNG: /Users/bilalmac2/git_repo/warn/docs/charts/4_top_companies.png
+2026-05-01 18:00:26,919 [INFO]   → HTML div: /Users/bilalmac2/git_repo/warn/docs/charts/4_top_companies.html
+2026-05-01 18:00:26,919 [INFO] Chart 5: County heatmap …
+2026-05-01 18:00:26,961 [INFO] Chromium init'ed with kwargs {}
+2026-05-01 18:00:26,961 [INFO] Found chromium path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+2026-05-01 18:00:26,962 [INFO] Temp directory created: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpd4ld2fg0.
+2026-05-01 18:00:26,962 [INFO] Opening browser.
+2026-05-01 18:00:26,963 [INFO] Temp directory created: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmp43k854ht.
+2026-05-01 18:00:26,963 [INFO] Temporary directory at: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmp43k854ht
+2026-05-01 18:00:28,182 [INFO] Conforming 1 to file:///var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpd4ld2fg0/index.html
+2026-05-01 18:00:28,208 [INFO] Waiting on all navigates
+2026-05-01 18:00:29,404 [INFO] All navigates done, putting them all in queue.
+2026-05-01 18:00:29,405 [INFO] Getting tab from queue (has 1)
+2026-05-01 18:00:29,405 [INFO] Got 4889
+2026-05-01 18:00:29,406 [INFO] Processing bCounty__Month_Heatmap__Employees_Affectedb.png
+2026-05-01 18:00:29,406 [INFO] Sending big command for bCounty__Month_Heatmap__Employees_Affectedb.png.
+2026-05-01 18:00:29,612 [INFO] Sent big command for bCounty__Month_Heatmap__Employees_Affectedb.png.
+2026-05-01 18:00:29,615 [INFO] Reloading tab 4889 before return.
+2026-05-01 18:00:29,714 [INFO] Putting tab 4889 back (queue size: 0).
+2026-05-01 18:00:29,715 [INFO] Waiting for all cleanups to finish.
+2026-05-01 18:00:29,715 [INFO] Exiting Kaleido
+2026-05-01 18:00:29,715 [INFO] Closing browser.
+2026-05-01 18:00:29,719 [INFO] Closing browser.
+2026-05-01 18:00:29,720 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:29,720 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:29,720 [INFO] Cancelling tasks.
+2026-05-01 18:00:29,720 [INFO] Exiting Kaleido/Choreo
+2026-05-01 18:00:29,955 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:29,955 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:29,955 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:29,956 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:29,956 [INFO] Cancelling tasks.
+2026-05-01 18:00:29,956 [INFO] Exiting Kaleido/Choreo
+2026-05-01 18:00:29,958 [INFO]   → PNG: /Users/bilalmac2/git_repo/warn/docs/charts/5_county_heatmap.png
+2026-05-01 18:00:29,958 [INFO]   → HTML div: /Users/bilalmac2/git_repo/warn/docs/charts/5_county_heatmap.html
+2026-05-01 18:00:29,958 [INFO] Chart 6: Treemap …
+2026-05-01 18:00:29,976 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:29,976 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:30,042 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:30,042 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:30,100 [INFO] Chromium init'ed with kwargs {}
+2026-05-01 18:00:30,100 [INFO] Found chromium path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+2026-05-01 18:00:30,101 [INFO] Temp directory created: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmppeiems37.
+2026-05-01 18:00:30,101 [INFO] Opening browser.
+2026-05-01 18:00:30,102 [INFO] Temp directory created: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpsx93cxof.
+2026-05-01 18:00:30,102 [INFO] Temporary directory at: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpsx93cxof
+2026-05-01 18:00:31,458 [INFO] Conforming 1 to file:///var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmppeiems37/index.html
+2026-05-01 18:00:31,475 [INFO] Waiting on all navigates
+2026-05-01 18:00:32,667 [INFO] All navigates done, putting them all in queue.
+2026-05-01 18:00:32,668 [INFO] Getting tab from queue (has 1)
+2026-05-01 18:00:32,669 [INFO] Got AAAB
+2026-05-01 18:00:32,669 [INFO] Processing bLayoff_Treemap__Company_Size_by_Employees_Affectedb.png
+2026-05-01 18:00:32,669 [INFO] Sending big command for bLayoff_Treemap__Company_Size_by_Employees_Affectedb.png.
+2026-05-01 18:00:33,014 [INFO] Sent big command for bLayoff_Treemap__Company_Size_by_Employees_Affectedb.png.
+2026-05-01 18:00:33,019 [INFO] Reloading tab AAAB before return.
+2026-05-01 18:00:33,119 [INFO] Putting tab AAAB back (queue size: 0).
+2026-05-01 18:00:33,119 [INFO] Waiting for all cleanups to finish.
+2026-05-01 18:00:33,119 [INFO] Exiting Kaleido
+2026-05-01 18:00:33,119 [INFO] Closing browser.
+2026-05-01 18:00:33,121 [INFO] Closing browser.
+2026-05-01 18:00:33,122 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:33,122 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:33,122 [INFO] Cancelling tasks.
+2026-05-01 18:00:33,122 [INFO] Exiting Kaleido/Choreo
+2026-05-01 18:00:33,445 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:33,446 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:33,446 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:33,446 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:33,446 [INFO] Cancelling tasks.
+2026-05-01 18:00:33,446 [INFO] Exiting Kaleido/Choreo
+2026-05-01 18:00:33,447 [INFO]   → PNG: /Users/bilalmac2/git_repo/warn/docs/charts/6_treemap.png
+2026-05-01 18:00:33,447 [INFO]   → HTML div: /Users/bilalmac2/git_repo/warn/docs/charts/6_treemap.html
+2026-05-01 18:00:33,448 [INFO] Chart 7: Year-over-year bar …
+2026-05-01 18:00:33,491 [INFO] Chromium init'ed with kwargs {}
+2026-05-01 18:00:33,492 [INFO] Found chromium path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+2026-05-01 18:00:33,492 [INFO] Temp directory created: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpmbyntptz.
+2026-05-01 18:00:33,492 [INFO] Opening browser.
+2026-05-01 18:00:33,493 [INFO] Temp directory created: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpyesgeyrb.
+2026-05-01 18:00:33,493 [INFO] Temporary directory at: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpyesgeyrb
+2026-05-01 18:00:33,499 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:33,500 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:34,716 [INFO] Conforming 1 to file:///var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpmbyntptz/index.html
+2026-05-01 18:00:34,727 [INFO] Waiting on all navigates
+2026-05-01 18:00:35,921 [INFO] All navigates done, putting them all in queue.
+2026-05-01 18:00:35,922 [INFO] Getting tab from queue (has 1)
+2026-05-01 18:00:35,923 [INFO] Got 3635
+2026-05-01 18:00:35,923 [INFO] Processing bYear_over_Year__Employees_Affected__Notice_Count_2014Presentb.png
+2026-05-01 18:00:35,923 [INFO] Sending big command for bYear_over_Year__Employees_Affected__Notice_Count_2014Presentb.png.
+2026-05-01 18:00:36,112 [INFO] Sent big command for bYear_over_Year__Employees_Affected__Notice_Count_2014Presentb.png.
+2026-05-01 18:00:36,115 [INFO] Reloading tab 3635 before return.
+2026-05-01 18:00:36,216 [INFO] Putting tab 3635 back (queue size: 0).
+2026-05-01 18:00:36,216 [INFO] Waiting for all cleanups to finish.
+2026-05-01 18:00:36,216 [INFO] Exiting Kaleido
+2026-05-01 18:00:36,216 [INFO] Closing browser.
+2026-05-01 18:00:36,219 [INFO] Closing browser.
+2026-05-01 18:00:36,219 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:36,220 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:36,220 [INFO] Cancelling tasks.
+2026-05-01 18:00:36,220 [INFO] Exiting Kaleido/Choreo
+2026-05-01 18:00:36,439 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:36,439 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:36,439 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:36,440 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:36,440 [INFO] Cancelling tasks.
+2026-05-01 18:00:36,440 [INFO] Exiting Kaleido/Choreo
+2026-05-01 18:00:36,441 [INFO]   → PNG: /Users/bilalmac2/git_repo/warn/docs/charts/7_yoy_bar.png
+2026-05-01 18:00:36,441 [INFO]   → HTML div: /Users/bilalmac2/git_repo/warn/docs/charts/7_yoy_bar.html
+2026-05-01 18:00:36,441 [INFO] Chart 8: Multi-year trend …
+/Users/bilalmac2/git_repo/warn/warn_charts.py:593: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+  df_all["effective_date"] = pd.to_datetime(df_all["effective_date"], errors="coerce")
+2026-05-01 18:00:36,523 [INFO] Chromium init'ed with kwargs {}
+2026-05-01 18:00:36,524 [INFO] Found chromium path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+2026-05-01 18:00:36,524 [INFO] Temp directory created: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmp2gvubk61.
+2026-05-01 18:00:36,525 [INFO] Opening browser.
+2026-05-01 18:00:36,525 [INFO] Temp directory created: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpldaifgw3.
+2026-05-01 18:00:36,525 [INFO] Temporary directory at: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpldaifgw3
+2026-05-01 18:00:37,881 [INFO] Conforming 1 to file:///var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmp2gvubk61/index.html
+2026-05-01 18:00:37,891 [INFO] Waiting on all navigates
+2026-05-01 18:00:39,093 [INFO] All navigates done, putting them all in queue.
+2026-05-01 18:00:39,094 [INFO] Getting tab from queue (has 1)
+2026-05-01 18:00:39,094 [INFO] Got 06FC
+2026-05-01 18:00:39,095 [INFO] Processing bMulti_Year_Monthly_Comparison__Employees_Affected_by_Monthb.png
+2026-05-01 18:00:39,095 [INFO] Sending big command for bMulti_Year_Monthly_Comparison__Employees_Affected_by_Monthb.png.
+2026-05-01 18:00:39,276 [INFO] Sent big command for bMulti_Year_Monthly_Comparison__Employees_Affected_by_Monthb.png.
+2026-05-01 18:00:39,280 [INFO] Reloading tab 06FC before return.
+2026-05-01 18:00:39,380 [INFO] Putting tab 06FC back (queue size: 0).
+2026-05-01 18:00:39,380 [INFO] Waiting for all cleanups to finish.
+2026-05-01 18:00:39,381 [INFO] Exiting Kaleido
+2026-05-01 18:00:39,381 [INFO] Closing browser.
+2026-05-01 18:00:39,382 [INFO] Closing browser.
+2026-05-01 18:00:39,383 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:39,384 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:39,384 [INFO] Cancelling tasks.
+2026-05-01 18:00:39,384 [INFO] Exiting Kaleido/Choreo
+2026-05-01 18:00:39,574 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:39,574 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:39,574 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:39,574 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:39,574 [INFO] Cancelling tasks.
+2026-05-01 18:00:39,575 [INFO] Exiting Kaleido/Choreo
+2026-05-01 18:00:39,576 [INFO]   → PNG: /Users/bilalmac2/git_repo/warn/docs/charts/8_multiyear_trend.png
+2026-05-01 18:00:39,576 [INFO]   → HTML div: /Users/bilalmac2/git_repo/warn/docs/charts/8_multiyear_trend.html
+2026-05-01 18:00:39,576 [INFO] Chart 9: Industry breakdown …
+2026-05-01 18:00:39,620 [INFO] Chromium init'ed with kwargs {}
+2026-05-01 18:00:39,621 [INFO] Found chromium path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+2026-05-01 18:00:39,621 [INFO] Temp directory created: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpg54vkrnq.
+2026-05-01 18:00:39,621 [INFO] Opening browser.
+2026-05-01 18:00:39,622 [INFO] Temp directory created: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmp5k5jz9yt.
+2026-05-01 18:00:39,622 [INFO] Temporary directory at: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmp5k5jz9yt
+2026-05-01 18:00:40,838 [INFO] Conforming 1 to file:///var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpg54vkrnq/index.html
+2026-05-01 18:00:40,857 [INFO] Waiting on all navigates
+2026-05-01 18:00:42,040 [INFO] All navigates done, putting them all in queue.
+2026-05-01 18:00:42,042 [INFO] Getting tab from queue (has 1)
+2026-05-01 18:00:42,042 [INFO] Got D0A3
+2026-05-01 18:00:42,042 [INFO] Processing bEmployees_Affected_by_Industry_Sectorb.png
+2026-05-01 18:00:42,042 [INFO] Sending big command for bEmployees_Affected_by_Industry_Sectorb.png.
+2026-05-01 18:00:42,203 [INFO] Sent big command for bEmployees_Affected_by_Industry_Sectorb.png.
+2026-05-01 18:00:42,206 [INFO] Reloading tab D0A3 before return.
+2026-05-01 18:00:42,308 [INFO] Putting tab D0A3 back (queue size: 0).
+2026-05-01 18:00:42,308 [INFO] Waiting for all cleanups to finish.
+2026-05-01 18:00:42,308 [INFO] Exiting Kaleido
+2026-05-01 18:00:42,309 [INFO] Closing browser.
+2026-05-01 18:00:42,311 [INFO] Closing browser.
+2026-05-01 18:00:42,312 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:42,312 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:42,312 [INFO] Cancelling tasks.
+2026-05-01 18:00:42,312 [INFO] Exiting Kaleido/Choreo
+2026-05-01 18:00:42,580 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:42,580 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:42,580 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:42,580 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:42,580 [INFO] Cancelling tasks.
+2026-05-01 18:00:42,580 [INFO] Exiting Kaleido/Choreo
+2026-05-01 18:00:42,582 [INFO]   → PNG: /Users/bilalmac2/git_repo/warn/docs/charts/9_industry_breakdown.png
+2026-05-01 18:00:42,582 [INFO]   → HTML div: /Users/bilalmac2/git_repo/warn/docs/charts/9_industry_breakdown.html
+2026-05-01 18:00:42,583 [INFO] Chart 10: Lead time histogram …
+2026-05-01 18:00:42,596 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:42,596 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:42,597 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:42,597 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:42,632 [INFO] Chromium init'ed with kwargs {}
+2026-05-01 18:00:42,633 [INFO] Found chromium path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+2026-05-01 18:00:42,633 [INFO] Temp directory created: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpb6_uzl22.
+2026-05-01 18:00:42,634 [INFO] Opening browser.
+2026-05-01 18:00:42,634 [INFO] Temp directory created: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpwjvgm60c.
+2026-05-01 18:00:42,634 [INFO] Temporary directory at: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpwjvgm60c
+2026-05-01 18:00:43,990 [INFO] Conforming 1 to file:///var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmpb6_uzl22/index.html
+2026-05-01 18:00:44,012 [INFO] Waiting on all navigates
+2026-05-01 18:00:45,191 [INFO] All navigates done, putting them all in queue.
+2026-05-01 18:00:45,192 [INFO] Getting tab from queue (has 1)
+2026-05-01 18:00:45,192 [INFO] Got AFAB
+2026-05-01 18:00:45,193 [INFO] Processing bNotice_Lead_Time_Distribution__73_Filed_60_Days_in_Advanceb.png
+2026-05-01 18:00:45,193 [INFO] Sending big command for bNotice_Lead_Time_Distribution__73_Filed_60_Days_in_Advanceb.png.
+2026-05-01 18:00:45,324 [INFO] Sent big command for bNotice_Lead_Time_Distribution__73_Filed_60_Days_in_Advanceb.png.
+2026-05-01 18:00:45,326 [INFO] Reloading tab AFAB before return.
+2026-05-01 18:00:45,428 [INFO] Putting tab AFAB back (queue size: 0).
+2026-05-01 18:00:45,428 [INFO] Waiting for all cleanups to finish.
+2026-05-01 18:00:45,428 [INFO] Exiting Kaleido
+2026-05-01 18:00:45,428 [INFO] Closing browser.
+2026-05-01 18:00:45,432 [INFO] Closing browser.
+2026-05-01 18:00:45,433 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:45,433 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:45,433 [INFO] Cancelling tasks.
+2026-05-01 18:00:45,433 [INFO] Exiting Kaleido/Choreo
+2026-05-01 18:00:45,651 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:45,651 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:45,651 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:45,651 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:45,652 [INFO] Cancelling tasks.
+2026-05-01 18:00:45,652 [INFO] Exiting Kaleido/Choreo
+2026-05-01 18:00:45,653 [INFO]   → PNG: /Users/bilalmac2/git_repo/warn/docs/charts/10_lead_time.png
+2026-05-01 18:00:45,653 [INFO]   → HTML div: /Users/bilalmac2/git_repo/warn/docs/charts/10_lead_time.html
+2026-05-01 18:00:45,654 [INFO] Chart 11: County bar …
+2026-05-01 18:00:45,691 [INFO] Chromium init'ed with kwargs {}
+2026-05-01 18:00:45,691 [INFO] Found chromium path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+2026-05-01 18:00:45,692 [INFO] Temp directory created: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmp6tmaaz8j.
+2026-05-01 18:00:45,692 [INFO] Opening browser.
+2026-05-01 18:00:45,693 [INFO] Temp directory created: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmp2ufaqrb9.
+2026-05-01 18:00:45,693 [INFO] Temporary directory at: /var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmp2ufaqrb9
+2026-05-01 18:00:47,024 [INFO] Conforming 1 to file:///var/folders/2l/_mqykd2n143bpj9ts872cs5m0000gn/T/tmp6tmaaz8j/index.html
+2026-05-01 18:00:47,046 [INFO] Waiting on all navigates
+2026-05-01 18:00:48,209 [INFO] All navigates done, putting them all in queue.
+2026-05-01 18:00:48,210 [INFO] Getting tab from queue (has 1)
+2026-05-01 18:00:48,210 [INFO] Got C4D3
+2026-05-01 18:00:48,210 [INFO] Processing bTop_10_Counties_by_Employees_Affectedb.png
+2026-05-01 18:00:48,210 [INFO] Sending big command for bTop_10_Counties_by_Employees_Affectedb.png.
+2026-05-01 18:00:48,350 [INFO] Sent big command for bTop_10_Counties_by_Employees_Affectedb.png.
+2026-05-01 18:00:48,352 [INFO] Reloading tab C4D3 before return.
+2026-05-01 18:00:48,456 [INFO] Putting tab C4D3 back (queue size: 0).
+2026-05-01 18:00:48,456 [INFO] Waiting for all cleanups to finish.
+2026-05-01 18:00:48,456 [INFO] Exiting Kaleido
+2026-05-01 18:00:48,456 [INFO] Closing browser.
+2026-05-01 18:00:48,459 [INFO] Closing browser.
+2026-05-01 18:00:48,459 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:48,460 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:48,460 [INFO] Cancelling tasks.
+2026-05-01 18:00:48,460 [INFO] Exiting Kaleido/Choreo
+2026-05-01 18:00:48,670 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:48,671 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:48,671 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-01 18:00:48,671 [INFO] shutil.rmtree worked.
+2026-05-01 18:00:48,671 [INFO] Cancelling tasks.
+2026-05-01 18:00:48,671 [INFO] Exiting Kaleido/Choreo
+2026-05-01 18:00:48,673 [INFO]   → PNG: /Users/bilalmac2/git_repo/warn/docs/charts/11_county_bar.png
+2026-05-01 18:00:48,673 [INFO]   → HTML div: /Users/bilalmac2/git_repo/warn/docs/charts/11_county_bar.html
+2026-05-01 18:00:48,674 [INFO] Charts complete.
+2026-05-01 18:00:48,677 [INFO] Step 5/5: Building site …
+2026-05-01 18:00:48,677 [INFO] Building index.html …
+2026-05-01 18:00:48,726 [INFO] Site built → /Users/bilalmac2/git_repo/warn/docs/index.html
+2026-05-01 18:00:48,726 [INFO] Git push …
+2026-05-01 18:00:48,727 [INFO] Staging changes …
