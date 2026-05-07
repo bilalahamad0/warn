@@ -1,46 +1,16 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-05-06 13:27:36 UTC
+**Generated:** 2026-05-07 01:52:54 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 1,263 | 1,140 | +2/+125 |
-| Total employees | 67,796 | 63,013 | -4,783 |
+| Total records | 1,140 | 1,140 | +0/+0 |
+| Total employees | 63,013 | 63,013 | +0 |
 
-### ✅ New Entries (2 records)
-
-| Company | Employees | Effective Date | County |
-|---------|-----------|----------------|--------|
-| Bedabox, LLC (dba ShipMonk) | 124 | 2026-06-30 | San Bernardino County |
-| Consolidate Entertainment LLC | 63 | 2026-05-31 | San Diego County |
-
-### ❌ Removed Entries (125 records)
-
-| Company | Employees | Effective Date |
-|---------|-----------|----------------|
-| Snap Inc. | 247 | 2026-04-16 |
-| FreshRealm, Inc. | 228 | 2026-06-27 |
-| eBay Inc. | 198 | 2026-09-30 |
-| First Transit, Inc. | 194 | 2026-06-30 |
-| ODS Technologies LP and Betfair Interactive US LLC | 174 | 2026-06-30 |
-| First Student | 170 | 2026-07-01 |
-| The Primary School | 147 | 2026-06-12 |
-| Bedabox, LLC (dba ShipMonk) | 145 | 2026-06-30 |
-| Sony Pictures Entertainment Inc. | 133 | 2026-06-12 |
-| Propark Mobility | 123 | 2026-06-30 |
-| Altura Management Services | 113 | 2026-06-30 |
-| Gilead Sciences, Inc. | 108 | 2026-06-30 |
-| Ample Joy ABA Consulting Services, LLC | 100 | 2026-02-02 |
-| The Primary School (2086 Clarke Ave) | 100 | 2026-06-30 |
-| Chen-Tech Industries LLC | 98 | 2026-04-02 |
-| Guayabito Farms, LLC | 98 | 2026-06-06 |
-| Black Tiger Medical Transportation | 82 | 2026-05-29 |
-| Next Stop Logistics Inc. | 80 | 2026-04-16 |
-| Freudenberg Medical LLC | 80 | 2026-06-24 |
-| Premier Berry Farms, LLC | 74 | 2026-06-06 |
+### ✅ No new entries.
 
 ---
 ## 📁 File vs Git Comparison
@@ -61,16 +31,17 @@ M .coverage
 
 **Recent commits:**
 ```
+dde8348 auto: WARN data update [skip ci]
 a1f026e auto: WARN data update [skip ci]
 1181760 auto: WARN data update [skip ci]
 82109a9 auto: WARN data update [skip ci]
 f202f03 auto: WARN data update [skip ci]
-2d7e88d auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-05-07T01:52:54.201654+00:00Z` — +2 added, -125 removed, 187 employees (new)
 - `2026-05-06T13:27:36.697373+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-05-06T01:48:38.597386+00:00Z` — +125 added, -2 removed, 4,970 employees (new)
 - `2026-05-05T13:08:46.320424+00:00Z` — +0 added, -0 removed, 0 employees (new)
@@ -80,4 +51,3 @@ f202f03 auto: WARN data update [skip ci]
 - `2026-05-03T12:43:29.919957+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-05-03T01:48:33.373655+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-05-02T12:44:16.791104+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-05-02T01:44:57.271783+00:00Z` — +0 added, -84 removed, 0 employees (new)
