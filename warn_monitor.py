@@ -394,6 +394,7 @@ def detect_changes(new_df: pd.DataFrame) -> dict:
     return {
         "new_count": len(added),
         "removed_count": len(removed),
+        "new_keys": [key(r) for r in added],
         "new_entries": added[:50],
         "removed_entries": removed[:50],
         "total_employees_new": sum(r.get("employees", 0) for r in added),
@@ -430,8 +431,8 @@ def save_latest(df: pd.DataFrame, dry_run: bool = False):
     summary = {
         "total_records": len(records),
         "total_employees": int(df["employees"].sum()),
-        "date_range_start": df["effective_date"].min(),
-        "date_range_end": df["effective_date"].max(),
+        "date_range_start": df["notice_date"].dropna().min() if "notice_date" in df.columns else df["effective_date"].dropna().min(),
+        "date_range_end": df["notice_date"].dropna().max() if "notice_date" in df.columns else df["effective_date"].dropna().max(),
         "last_updated": datetime.now(timezone.utc).isoformat() + "Z",
         "source_url": WARN_XLSX_URL,
         "records": records,

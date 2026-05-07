@@ -8225,3 +8225,17 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 2026-05-06 20:02:29,324 [INFO] Site built → /Users/bilalmac2/git_repo/warn/docs/index.html
 2026-05-06 20:02:29,325 [INFO] Git push …
 2026-05-06 20:02:29,325 [INFO] Staging changes …
+2026-05-06 20:02:29,496 [INFO] Committing: auto: WARN update 2026-05-07 03:02 UTC
+2026-05-06 20:02:29,585 [INFO] Pushing to origin/main …
+2026-05-06 20:02:30,189 [WARNING] git push origin main stderr: To https://github.com/bilalahamad0/warn.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/bilalahamad0/warn.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+2026-05-06 20:02:30,215 [ERROR] ✗ Push failed — check GITHUB_TOKEN and repo permissions.
+2026-05-06 20:02:30,215 [INFO] ✓ Publisher complete.
+2026-05-06 20:02:30,282 [INFO] TemporaryDirectory.cleanup() worked.
+2026-05-06 20:02:30,282 [INFO] shutil.rmtree worked.

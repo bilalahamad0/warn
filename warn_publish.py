@@ -116,22 +116,32 @@ def _compute_kpis() -> dict:
     }
 
 
-def _build_recent_table() -> tuple:
+def _build_recent_table(new_keys: list = None) -> tuple:
     """Build the full notices table HTML and the filter-controls HTML.
 
     Returns (controls_html, table_html, total_count).
     Loads ALL records, sorted newest-first by notice date.
     Pagination + per-column filters are wired client-side.
     """
+    if new_keys is None:
+        new_keys = []
+        
     latest = DATA_DIR / "warn_latest.json"
     if not latest.exists():
         return ("", "<p style='color:var(--muted)'>No data available.</p>", 0)
 
     payload = json.loads(latest.read_text())
     records = payload.get("records", [])
+    
+    def get_key(r):
+        return f"{r.get('company','')}__{r.get('effective_date','')}__{r.get('employees','')}"
+        
+    for r in records:
+        r["_is_new"] = get_key(r) in new_keys
+        
     sorted_recs = sorted(
         records,
-        key=lambda r: str(r.get("notice_date") or ""),
+        key=lambda r: (r.get("_is_new", False), str(r.get("notice_date") or "")),
         reverse=True,
     )
 
@@ -185,19 +195,24 @@ def _build_recent_table() -> tuple:
 
     rows = []
     for r in sorted_recs:
-        company = str(r.get("company") or "").replace("<", "&lt;").replace(">", "&gt;")
-        county = str(r.get("county") or "").replace(" County", "").replace(" Parish", "").strip()
+        company = str(r.get("company") or "").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+        county = str(r.get("county") or "").replace(" County", "").replace(" Parish", "").strip().replace('"', "&quot;")
         employees = r.get("employees", 0)
         emp_str = _format_number(employees)
         notice = str(r.get("notice_date") or "")[:10]
         effective = str(r.get("effective_date") or "")[:10]
-        layoff_type = str(r.get("layoff_type") or "")
-        industry = str(r.get("industry") or "")
+        layoff_type = str(r.get("layoff_type") or "").replace('"', "&quot;")
+        industry = str(r.get("industry") or "").replace('"', "&quot;")
+        
+        company_display = company
+        if r.get("_is_new"):
+            company_display = f'<span class="badge-new" style="margin-right:6px">NEW</span>{company}'
+
         rows.append(
             f'<tr data-company="{company.lower()}" data-county="{county}" '
             f'data-industry="{industry}" data-type="{layoff_type}" '
             f'data-notice="{notice}" data-employees="{employees}">'
-            f"<td>{company}</td>"
+            f"<td>{company_display}</td>"
             f"<td>{county}</td>"
             f"<td class='num'>{emp_str}</td>"
             f"<td>{notice}</td>"
@@ -288,7 +303,7 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
         chart_divs, meta_by_id,
     )
 
-    recent_controls, recent_table, recent_total = _build_recent_table()
+    recent_controls, recent_table, recent_total = _build_recent_table(diff.get("new_keys", []))
 
     html = SITE_HTML_TEMPLATE.format(
         total_records=total_records,
