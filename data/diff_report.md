@@ -1,24 +1,16 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-05-08 13:06:34 UTC
+**Generated:** 2026-05-09 01:51:50 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 1,266 | 1,263 | +0/+3 |
-| Total employees | 68,100 | 67,796 | -304 |
+| Total records | 1,263 | 1,263 | +0/+0 |
+| Total employees | 67,796 | 67,796 | +0 |
 
 ### ✅ No new entries.
-
-### ❌ Removed Entries (3 records)
-
-| Company | Employees | Effective Date |
-|---------|-----------|----------------|
-| Geodis | 238 | 2026-07-03 |
-| FM Restaurants HQ, LLC | 56 | 2026-06-10 |
-| Eclipse Advantage, LLC | 10 | 2026-05-30 |
 
 ---
 ## 📁 File vs Git Comparison
@@ -39,16 +31,17 @@ M .coverage
 
 **Recent commits:**
 ```
+d0ff337 auto: WARN data update [skip ci]
 7b8914b auto: WARN data update [skip ci]
 6f67534 auto: WARN data update [skip ci]
 d9b085c auto: WARN update 2026-05-07 13:00 UTC
 1ea9ed3 Merge remote-tracking branch 'origin/main'
-76fb4b1 Update warn_monitor.py and warn_publish.py to highlight and sort newly added notices, and fix date range calculation
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-05-09T01:51:50.217219+00:00Z` — +0 added, -3 removed, 0 employees (new)
 - `2026-05-08T13:06:34.524248+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-05-08T01:57:52.528746+00:00Z` — +3 added, -0 removed, 304 employees (new)
 - `2026-05-07T13:26:33.457709+00:00Z` — +0 added, -0 removed, 0 employees (new)
@@ -58,4 +51,3 @@ d9b085c auto: WARN update 2026-05-07 13:00 UTC
 - `2026-05-06T13:00:06.148086+00:00Z` — +43 added, -4 removed, 1,204 employees (new)
 - `2026-05-06T01:12:22.710417+00:00Z` — +43 added, -4 removed, 1,204 employees (new)
 - `2026-05-05T13:09:33.704446+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-05-05T01:00:02.693560+00:00Z` — +0 added, -0 removed, 0 employees (new)
