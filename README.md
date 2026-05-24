@@ -54,6 +54,8 @@ cp .env.example .env
 # GMAIL_USER=your_email@gmail.com
 # GMAIL_APP_PASSWORD=your_16_char_google_app_password
 # NOTIFY_EMAIL=recipient@example.com
+# SIGNUP_ENDPOINT=...      (optional — enables the dashboard signup form)
+# SUBSCRIBERS_TOKEN=...    (optional — lets the pipeline email subscribers)
 ```
 
 ### 3. Run manually
@@ -86,6 +88,38 @@ launchctl unload ~/Library/LaunchAgents/com.bilalahamad.warn.plist
 # View logs
 tail - Branch: `main`, Folder: `/docs`
 ```
+
+---
+
+## 📬 Email Signups (optional)
+
+The dashboard has a **name + email signup form**. Visitors who subscribe get the
+same alert email the pipeline sends whenever new WARN notices appear, and the
+signup count doubles as a simple user-base metric.
+
+Because the dashboard is a static GitHub Pages site, signups are collected by a
+small **Google Apps Script Web App** that writes to a **Google Sheet** you own
+(no third-party service, free). The pipeline reads that list (using a shared
+token) and BCCs every subscriber.
+
+**Setup (~10 min):**
+
+1. Create a Google Sheet — this is your subscriber database.
+2. In it, open **Extensions ▸ Apps Script**, paste [`automation/subscribe.gs`](automation/subscribe.gs).
+3. **Project Settings ▸ Script properties** → add `LIST_TOKEN` = a long random string.
+4. **Deploy ▸ New deployment ▸ Web app** → *Execute as: Me*, *Who has access: Anyone* → copy the `/exec` URL.
+5. In your GitHub repo settings:
+   - **Variables** → add `SIGNUP_ENDPOINT` = the `/exec` URL (public; embedded in the form).
+   - **Secrets** → add `SUBSCRIBERS_TOKEN` = the same value as `LIST_TOKEN`.
+
+On the next pipeline run the form goes live and subscribers start receiving alerts.
+Until `SIGNUP_ENDPOINT` is set the form shows a "not configured yet" message, so
+nothing breaks if you skip this. The subscriber list lives only in your Sheet;
+emails are sent BCC so subscribers never see each other.
+
+> **Note:** Gmail limits a single message to ~100 recipients (free) / ~500
+> (Workspace) per day, so this suits a modest list. The pipeline batches BCCs to
+> stay under the per-message cap.
 
 ---
 

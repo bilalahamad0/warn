@@ -31,11 +31,16 @@ try:
 except ImportError:
     pass
 
+import warn_subscribers
+
 log = logging.getLogger("warn_notify")
 
 GMAIL_USER = os.environ.get("GMAIL_USER", "")
 GMAIL_APP_PASS = os.environ.get("GMAIL_APP_PASSWORD", "")
 NOTIFY_EMAIL = os.environ.get("NOTIFY_EMAIL", "")
+
+# Gmail caps recipients per message (~100 free / ~500 Workspace). Stay under it.
+MAX_BCC_PER_MESSAGE = 90
 
 WARN_URL = "https://edd.ca.gov/en/jobs_and_training/layoff_services_warn"
 DASHBOARD_URL = "https://bilalahamad0.github.io/warn/"
@@ -142,11 +147,12 @@ def _build_html(diff: dict, summary: dict) -> str:
         <!-- Footer -->
         <tr>
           <td style="padding:20px 32px;border-top:1px solid #21262d;font-size:12px;color:#8b949e">
-            You're receiving this because you set up WARN monitoring at
+            You're receiving this because you subscribed to California WARN alerts at
             <a href="{DASHBOARD_URL}" style="color:#58a6ff">
               {DASHBOARD_URL}
             </a>.
             Data source: California Employment Development Department.
+            <br/>To unsubscribe, reply to this email with "unsubscribe".
           </td>
         </tr>
 
@@ -175,7 +181,13 @@ def _build_text(diff: dict, summary: dict) -> str:
                 f"  {r.get('company', '?')} — {r.get('employees', 0):,} employees — "
                 f"{r.get('effective_date', '?')} — {r.get('county', '?')}"
             )
-    lines += ["", f"Dashboard: {DASHBOARD_URL}", f"Source: {WARN_URL}"]
+    lines += [
+        "",
+        f"Dashboard: {DASHBOARD_URL}",
+        f"Source: {WARN_URL}",
+        "",
+        'To unsubscribe, reply to this email with "unsubscribe".',
+    ]
     return "\n".join(lines)
 
 
@@ -184,9 +196,28 @@ def _build_text(diff: dict, summary: dict) -> str:
 # ---------------------------------------------------------------------------
 
 
+def _recipient_batches(to_addr: str, subscribers: List[str]) -> List[List[str]]:
+    """Split recipients into envelope batches under Gmail's per-message cap.
+
+    The owner (to_addr) is the visible To and is delivered once, in the first
+    batch. Subscribers are added as additional (BCC) envelope recipients, chunked
+    so no single message exceeds MAX_BCC_PER_MESSAGE recipients.
+    """
+    subs = [s for s in dict.fromkeys(subscribers) if s and s != to_addr]
+    if not subs:
+        return [[to_addr]] if to_addr else []
+    batches = []
+    for i in range(0, len(subs), MAX_BCC_PER_MESSAGE):
+        chunk = subs[i:i + MAX_BCC_PER_MESSAGE]
+        recips = ([to_addr] + chunk) if (i == 0 and to_addr) else list(chunk)
+        batches.append(recips)
+    return batches
+
+
 def send_email(diff: dict, summary: dict) -> bool:
     """
     Send a notification email if there are new entries.
+    Goes to NOTIFY_EMAIL (To) plus every signup subscriber (BCC).
     Returns True if sent successfully.
     """
     if not GMAIL_USER or not GMAIL_APP_PASS:
@@ -206,19 +237,39 @@ def send_email(diff: dict, summary: dict) -> bool:
         f"({diff.get('total_employees_new', 0):,} employees)"
     )
 
+    # Recipients: owner in To; signup subscribers BCC'd (privacy + Gmail caps).
+    to_addr = NOTIFY_EMAIL or GMAIL_USER
+    try:
+        subscribers = warn_subscribers.get_subscribers()
+    except Exception as e:
+        log.warning(f"Could not load subscribers (sending to owner only): {e}")
+        subscribers = []
+
+    batches = _recipient_batches(to_addr, subscribers)
+    if not batches:
+        log.warning("No recipients (NOTIFY_EMAIL unset, no subscribers) — skipping.")
+        return False
+
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
     msg["From"] = f"WARN Monitor <{GMAIL_USER}>"
-    msg["To"] = NOTIFY_EMAIL
+    msg["To"] = to_addr
+    msg["List-Unsubscribe"] = f"<mailto:{GMAIL_USER}?subject=unsubscribe>"
 
     msg.attach(MIMEText(_build_text(diff, summary), "plain"))
     msg.attach(MIMEText(_build_html(diff, summary), "html"))
+    raw = msg.as_string()
 
+    total = len({r for batch in batches for r in batch})
     try:
-        log.info(f"Sending alert email to {NOTIFY_EMAIL} …")
+        log.info(
+            f"Sending alert to {total} recipient(s) "
+            f"({len(subscribers)} subscriber(s)) in {len(batches)} batch(es) …"
+        )
         with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
             server.login(GMAIL_USER, GMAIL_APP_PASS)
-            server.sendmail(GMAIL_USER, NOTIFY_EMAIL, msg.as_string())
+            for batch in batches:
+                server.sendmail(GMAIL_USER, batch, raw)
         log.info("✓ Alert email sent.")
         return True
     except smtplib.SMTPAuthenticationError:

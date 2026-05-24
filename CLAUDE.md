@@ -49,8 +49,16 @@ EDD XLSX (online)
   → warn_charts.py    → docs/charts/*.html (8 self-contained Plotly divs)
   → warn_publish.py   → docs/index.html (GitHub Pages), docs/data.json (public API)
                       → warn_notify.py (Gmail alert if changes detected)
+                          ↳ warn_subscribers.py (fetch signup list → BCC subscribers)
                       → git commit + push
 ```
+
+**Email signups:** the dashboard form POSTs to a Google Apps Script Web App
+(`automation/subscribe.gs`) that stores `{timestamp, name, email}` in a Google
+Sheet. `warn_subscribers.py` reads that list (via `SUBSCRIBERS_TOKEN`) so
+`warn_notify.py` can BCC subscribers. The form endpoint (`SIGNUP_ENDPOINT`) is
+injected into `index.html` at build time; if unset, the form degrades to a
+"not configured" message. See README "Email Signups" for deployment.
 
 **Key data files** (under `data/`):
 - `warn_latest.json` — current WARN records from the live XLSX
@@ -64,6 +72,8 @@ EDD XLSX (online)
 **Environment** (copy `.env.example` → `.env`):
 - `GITHUB_TOKEN` — for git push in local runs
 - `GMAIL_USER`, `GMAIL_APP_PASSWORD`, `NOTIFY_EMAIL` — for email alerts
+- `SIGNUP_ENDPOINT` — Apps Script `/exec` URL for the signup form (public; a CI repo *variable*)
+- `SUBSCRIBERS_TOKEN` — shared secret to read the subscriber list (a CI *secret*)
 
 ## Testing
 

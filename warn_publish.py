@@ -305,7 +305,10 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
 
     recent_controls, recent_table, recent_total = _build_recent_table(diff.get("new_keys", []))
 
+    signup_endpoint = os.getenv("SIGNUP_ENDPOINT", "").strip()
+
     html = SITE_HTML_TEMPLATE.format(
+        signup_endpoint=signup_endpoint,
         total_records=total_records,
         total_employees=total_employees,
         last_updated=last_updated,
@@ -507,25 +510,6 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
     h1 {{ font-size: 1.3rem; font-weight: 700; }}
     .subtitle {{ font-size: 0.75rem; color: var(--muted); }}
     .header-right {{ display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }}
-    .search-wrap {{ position: relative; }}
-    .search-wrap input {{
-      background: rgba(255,255,255,0.05);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      color: var(--text);
-      font-family: inherit;
-      font-size: 0.82rem;
-      padding: 0.4rem 0.75rem 0.4rem 2rem;
-      width: 220px;
-      transition: border-color 0.2s;
-      outline: none;
-    }}
-    .search-wrap input:focus {{ border-color: var(--accent); }}
-    .search-wrap input::placeholder {{ color: var(--muted); }}
-    .search-icon {{
-      position: absolute; left: 0.55rem; top: 50%; transform: translateY(-50%);
-      color: var(--muted); font-size: 0.85rem; pointer-events: none;
-    }}
     .header-meta {{ font-size: 0.75rem; color: var(--muted); text-align: right; white-space: nowrap; }}
     .header-meta a {{ color: var(--accent); text-decoration: none; }}
     .header-meta a:hover {{ text-decoration: underline; }}
@@ -546,6 +530,53 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
       background: var(--accent3); color: #000;
       padding: 0.18rem 0.45rem; border-radius: 4px;
       font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em;
+    }}
+
+    /* ── Subscribe card ── */
+    .subscribe-card {{
+      background: linear-gradient(90deg, rgba(88,166,255,0.10), rgba(188,140,255,0.06));
+      border: 1px solid rgba(88,166,255,0.25);
+      border-radius: 14px;
+      padding: 1.1rem 1.4rem;
+      margin-bottom: 1.5rem;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 0.75rem 1.5rem; flex-wrap: wrap;
+      backdrop-filter: blur(8px);
+    }}
+    .subscribe-text {{ flex: 1 1 280px; min-width: 220px; }}
+    .subscribe-title {{ font-size: 1rem; font-weight: 600; margin-bottom: 0.2rem; }}
+    .subscribe-sub {{ font-size: 0.8rem; color: var(--muted); }}
+    .subscribe-sub #subscriber-count {{ color: var(--accent); font-weight: 500; }}
+    .subscribe-form {{ display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }}
+    .subscribe-input {{
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--border);
+      border-radius: 8px; color: var(--text);
+      font-family: inherit; font-size: 0.85rem;
+      padding: 0.5rem 0.75rem; outline: none;
+      transition: border-color 0.2s; min-width: 0;
+    }}
+    .subscribe-input:focus {{ border-color: var(--accent); }}
+    .subscribe-input::placeholder {{ color: var(--muted); }}
+    #sub-name {{ width: 150px; }}
+    #sub-email {{ width: 210px; }}
+    .subscribe-hp {{ position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }}
+    .subscribe-btn {{
+      background: linear-gradient(135deg, var(--accent), #388bfd);
+      border: none; color: #fff; font-family: inherit;
+      font-size: 0.85rem; font-weight: 600;
+      padding: 0.5rem 1.25rem; border-radius: 8px; cursor: pointer;
+      transition: opacity 0.15s, transform 0.15s; white-space: nowrap;
+    }}
+    .subscribe-btn:hover:not(:disabled) {{ opacity: 0.92; transform: translateY(-1px); }}
+    .subscribe-btn:disabled {{ opacity: 0.6; cursor: not-allowed; }}
+    .subscribe-msg {{ font-size: 0.8rem; flex-basis: 100%; min-height: 1.1em; }}
+    .subscribe-msg.ok {{ color: var(--accent3); }}
+    .subscribe-msg.err {{ color: var(--accent2); }}
+    @media (max-width: 560px) {{
+      .subscribe-form {{ width: 100%; }}
+      #sub-name, #sub-email {{ flex: 1 1 100%; width: 100%; }}
+      .subscribe-btn {{ flex: 1 1 100%; }}
     }}
 
     /* ── KPI cards ── */
@@ -732,7 +763,6 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
       main {{ padding: 1rem; }}
       .kpi-value {{ font-size: 1.45rem; }}
       h1 {{ font-size: 1.1rem; }}
-      .search-wrap input {{ width: 160px; }}
     }}
   </style>
 </head>
@@ -748,10 +778,6 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
       </div>
     </div>
     <div class="header-right">
-      <div class="search-wrap">
-        <span class="search-icon">🔍</span>
-        <input type="search" id="global-search" placeholder="Search company or county…" autocomplete="off" />
-      </div>
       <div class="header-meta">
         Updated: <strong>{last_updated}</strong><br/>
         <a href="https://edd.ca.gov/en/jobs_and_training/layoff_services_warn" target="_blank" rel="noopener">CA EDD WARN</a>
@@ -764,6 +790,21 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
 
 <main>
   {new_banner}
+
+  <!-- Email signup -->
+  <section class="subscribe-card" id="subscribe">
+    <div class="subscribe-text">
+      <h2 class="subscribe-title">📬 Get layoff alerts in your inbox</h2>
+      <p class="subscribe-sub">New California WARN notices, delivered when our twice-daily check finds them. <span id="subscriber-count"></span></p>
+    </div>
+    <form class="subscribe-form" id="subscribe-form" novalidate>
+      <input type="text" id="sub-name" class="subscribe-input" placeholder="Your name" autocomplete="name" aria-label="Your name" />
+      <input type="email" id="sub-email" class="subscribe-input" placeholder="you@example.com" autocomplete="email" aria-label="Email address" required />
+      <input type="text" id="sub-company-hp" class="subscribe-hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      <button type="submit" class="subscribe-btn" id="sub-submit">Subscribe</button>
+    </form>
+    <div class="subscribe-msg" id="subscribe-msg" role="status" aria-live="polite"></div>
+  </section>
 
   <!-- KPI Cards -->
   <div class="kpi-grid">
@@ -886,6 +927,63 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
     }}, 200);
   }});
 
+  // ── Email signup ──
+  var SIGNUP_ENDPOINT = "{signup_endpoint}";
+  var subForm = document.getElementById('subscribe-form');
+  var subMsg = document.getElementById('subscribe-msg');
+  var subName = document.getElementById('sub-name');
+  var subEmail = document.getElementById('sub-email');
+  var subBtn = document.getElementById('sub-submit');
+  var subHp = document.getElementById('sub-company-hp');
+  var subCount = document.getElementById('subscriber-count');
+
+  function setSubMsg(text, kind) {{
+    if (!subMsg) return;
+    subMsg.textContent = text;
+    subMsg.className = 'subscribe-msg' + (kind ? ' ' + kind : '');
+  }}
+  function validEmail(v) {{ return /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v); }}
+
+  if (SIGNUP_ENDPOINT && subCount) {{
+    fetch(SIGNUP_ENDPOINT)
+      .then(function (r) {{ return r.json(); }})
+      .then(function (d) {{
+        if (d && typeof d.count === 'number' && d.count > 0) {{
+          subCount.textContent = 'Join ' + d.count.toLocaleString() + ' others getting alerts.';
+        }}
+      }})
+      .catch(function () {{}});
+  }}
+
+  if (subForm) {{
+    subForm.addEventListener('submit', function (ev) {{
+      ev.preventDefault();
+      if (subHp && subHp.value) return;  // honeypot: silently drop bots
+      var nm = ((subName && subName.value) || '').trim();
+      var em = ((subEmail && subEmail.value) || '').trim();
+      if (!validEmail(em)) {{ setSubMsg('Please enter a valid email address.', 'err'); return; }}
+      if (!SIGNUP_ENDPOINT) {{ setSubMsg("Signups aren't configured yet — check back soon.", 'err'); return; }}
+      if (subBtn) {{ subBtn.disabled = true; subBtn.textContent = 'Subscribing…'; }}
+      setSubMsg('');
+      fetch(SIGNUP_ENDPOINT, {{
+        method: 'POST',
+        headers: {{ 'Content-Type': 'text/plain;charset=utf-8' }},
+        body: JSON.stringify({{ name: nm, email: em, source: 'dashboard' }})
+      }})
+        .then(function (r) {{ return r.json(); }})
+        .then(function (d) {{
+          if (d && d.ok) {{
+            setSubMsg(d.duplicate ? "You're already subscribed — thanks!" : "You're in! Watch your inbox for new WARN alerts.", 'ok');
+            subForm.reset();
+          }} else {{
+            setSubMsg('Something went wrong. Please try again later.', 'err');
+          }}
+        }})
+        .catch(function () {{ setSubMsg('Network error. Please try again later.', 'err'); }})
+        .finally(function () {{ if (subBtn) {{ subBtn.disabled = false; subBtn.textContent = 'Subscribe'; }} }});
+    }});
+  }}
+
   // ── Notices table: pagination + filter + sort ──
   const table = document.getElementById('notices-table');
   if (!table) return;
@@ -909,11 +1007,9 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
   const nextBtn = document.getElementById('page-next');
   const pageInfo = document.getElementById('page-info');
   const countEl = document.getElementById('table-count');
-  const globalSearch = document.getElementById('global-search');
 
   function applyFilters() {{
     const qCompany = (fCompany?.value || '').trim().toLowerCase();
-    const qGlobal = (globalSearch?.value || '').trim().toLowerCase();
     const qCounty = fCounty?.value || '';
     const qIndustry = fIndustry?.value || '';
     const qType = fType?.value || '';
@@ -923,7 +1019,6 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
     filteredRows = allRows.filter(row => {{
       const d = row.dataset;
       if (qCompany && !d.company.includes(qCompany)) return false;
-      if (qGlobal && !row.textContent.toLowerCase().includes(qGlobal)) return false;
       if (qCounty && d.county !== qCounty) return false;
       if (qIndustry && d.industry !== qIndustry) return false;
       if (qType && d.type !== qType) return false;
@@ -997,16 +1092,9 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
     if (el) el.addEventListener('input', applyFilters);
     if (el) el.addEventListener('change', applyFilters);
   }});
-  if (globalSearch) {{
-    globalSearch.addEventListener('input', () => {{
-      if (fCompany) fCompany.value = globalSearch.value;
-      applyFilters();
-    }});
-  }}
   if (resetBtn) {{
     resetBtn.addEventListener('click', () => {{
       [fCompany, fCounty, fIndustry, fType, fFrom, fTo].forEach(el => {{ if (el) el.value = ''; }});
-      if (globalSearch) globalSearch.value = '';
       applyFilters();
     }});
   }}

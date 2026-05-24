@@ -50,6 +50,10 @@ jobs:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
           GH_REPO_TOKEN: ${{ secrets.GH_REPO_TOKEN }}
+          # Signup form endpoint (public Apps Script URL) — repo variable, not secret
+          SIGNUP_ENDPOINT: ${{ vars.SIGNUP_ENDPOINT }}
+          # Shared token to read the subscriber list (matches Apps Script LIST_TOKEN)
+          SUBSCRIBERS_TOKEN: ${{ secrets.SUBSCRIBERS_TOKEN }}
         run: |
           # We run the consolidated publish script
           # --no-push allows the Action to handle Git operations safely
