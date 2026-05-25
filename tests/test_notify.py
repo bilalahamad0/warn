@@ -43,3 +43,41 @@ def test_send_email_no_changes():
     summary = {}
     success = warn_notify.send_email(diff, summary)
     assert success is False
+
+
+def test_recipient_batches_owner_only():
+    assert warn_notify._recipient_batches("owner@x.com", []) == [["owner@x.com"]]
+
+
+def test_recipient_batches_dedupes_owner():
+    batches = warn_notify._recipient_batches(
+        "owner@x.com", ["a@x.com", "owner@x.com", "b@x.com"]
+    )
+    assert batches == [["owner@x.com", "a@x.com", "b@x.com"]]
+
+
+def test_recipient_batches_chunks(monkeypatch):
+    monkeypatch.setattr(warn_notify, "MAX_BCC_PER_MESSAGE", 2)
+    batches = warn_notify._recipient_batches(
+        "owner@x.com", ["a@x.com", "b@x.com", "c@x.com"]
+    )
+    # First batch carries the owner + first 2 subs; second batch the remainder.
+    assert batches == [["owner@x.com", "a@x.com", "b@x.com"], ["c@x.com"]]
+
+
+@patch("warn_notify.warn_subscribers.get_subscribers", return_value=["sub@x.com"])
+@patch("warn_notify.smtplib.SMTP_SSL")
+def test_send_email_bccs_subscribers(mock_smtp, mock_subs, monkeypatch):
+    """New notices go to NOTIFY_EMAIL and BCC every signup subscriber."""
+    monkeypatch.setattr(warn_notify, "GMAIL_USER", "owner@gmail.com")
+    monkeypatch.setattr(warn_notify, "GMAIL_APP_PASS", "pass")
+    monkeypatch.setattr(warn_notify, "NOTIFY_EMAIL", "owner@gmail.com")
+    inst = MagicMock()
+    mock_smtp.return_value.__enter__.return_value = inst
+
+    diff = {"new_count": 1, "total_employees_new": 10, "new_entries": []}
+    assert warn_notify.send_email(diff, {"total_records": 1}) is True
+
+    # The BCC'd subscriber must be in the envelope recipients.
+    recipients = inst.sendmail.call_args[0][1]
+    assert "sub@x.com" in recipients

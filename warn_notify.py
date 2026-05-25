@@ -295,40 +295,51 @@ def notify_if_changes(diff: dict, summary: dict) -> bool:
 
 if __name__ == "__main__":
     import argparse
+    import sys
 
     logging.basicConfig(
         level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s"
     )
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--test", action="store_true", help="Send a test email")
+    parser = argparse.ArgumentParser(description="WARN email notifier")
+    parser.add_argument(
+        "--test", action="store_true", help="Send a sample alert email and exit"
+    )
     args = parser.parse_args()
 
-    if args.test:
-        test_diff = {
-            "new_count": 3,
-            "removed_count": 0,
-            "total_employees_new": 450,
-            "new_entries": [
-                {
-                    "company": "Acme Corp",
-                    "employees": 200,
-                    "effective_date": "2026-05-01",
-                    "county": "Santa Clara County",
-                },
-                {
-                    "company": "Globex Inc",
-                    "employees": 150,
-                    "effective_date": "2026-05-15",
-                    "county": "Los Angeles County",
-                },
-                {
-                    "company": "Initech Solutions",
-                    "employees": 100,
-                    "effective_date": "2026-06-01",
-                    "county": "San Francisco County",
-                },
-            ],
-        }
-        test_summary = {"total_records": 1102, "total_employees": 61964}
-        success = send_email(test_diff, test_summary)
-        print("✓ Test email sent." if success else "✗ Failed — check .env credentials.")
+    if not args.test:
+        parser.print_help()
+        sys.exit(0)
+
+    test_diff = {
+        "new_count": 3,
+        "removed_count": 0,
+        "total_employees_new": 450,
+        "new_entries": [
+            {
+                "company": "Acme Corp",
+                "employees": 200,
+                "effective_date": "2026-05-01",
+                "county": "Santa Clara County",
+            },
+            {
+                "company": "Globex Inc",
+                "employees": 150,
+                "effective_date": "2026-05-15",
+                "county": "Los Angeles County",
+            },
+            {
+                "company": "Initech Solutions",
+                "employees": 100,
+                "effective_date": "2026-06-01",
+                "county": "San Francisco County",
+            },
+        ],
+    }
+    test_summary = {"total_records": 1102, "total_employees": 61964}
+
+    success = send_email(test_diff, test_summary)
+    if success:
+        print("✓ Test email sent.")
+        sys.exit(0)
+    print("✗ Test email failed — check GMAIL_USER / GMAIL_APP_PASSWORD.")
+    sys.exit(1)

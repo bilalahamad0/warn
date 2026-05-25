@@ -67,25 +67,3 @@ def test_get_subscribers_not_ok_payload(mock_get, monkeypatch):
     mock_resp.json.return_value = {"ok": False, "error": "forbidden"}
     mock_get.return_value = mock_resp
     assert warn_subscribers.get_subscribers() == []
-
-
-def test_recipient_batches_owner_only():
-    import warn_notify
-    assert warn_notify._recipient_batches("owner@x.com", []) == [["owner@x.com"]]
-
-
-def test_recipient_batches_dedupes_owner():
-    import warn_notify
-    batches = warn_notify._recipient_batches(
-        "owner@x.com", ["a@x.com", "owner@x.com", "b@x.com"]
-    )
-    assert batches == [["owner@x.com", "a@x.com", "b@x.com"]]
-
-
-def test_recipient_batches_chunks(monkeypatch):
-    import warn_notify
-    monkeypatch.setattr(warn_notify, "MAX_BCC_PER_MESSAGE", 2)
-    subs = ["a@x.com", "b@x.com", "c@x.com"]
-    batches = warn_notify._recipient_batches("owner@x.com", subs)
-    # First batch carries the owner + first 2 subs; second batch the remainder.
-    assert batches == [["owner@x.com", "a@x.com", "b@x.com"], ["c@x.com"]]

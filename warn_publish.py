@@ -546,7 +546,6 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
     .subscribe-text {{ flex: 1 1 280px; min-width: 220px; }}
     .subscribe-title {{ font-size: 1rem; font-weight: 600; margin-bottom: 0.2rem; }}
     .subscribe-sub {{ font-size: 0.8rem; color: var(--muted); }}
-    .subscribe-sub #subscriber-count {{ color: var(--accent); font-weight: 500; }}
     .subscribe-form {{ display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }}
     .subscribe-input {{
       background: rgba(255,255,255,0.06);
@@ -795,7 +794,7 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
   <section class="subscribe-card" id="subscribe">
     <div class="subscribe-text">
       <h2 class="subscribe-title">📬 Get layoff alerts in your inbox</h2>
-      <p class="subscribe-sub">New California WARN notices, delivered when our twice-daily check finds them. <span id="subscriber-count"></span></p>
+      <p class="subscribe-sub">New California WARN notices, delivered straight to your inbox when our twice-daily check finds them.</p>
     </div>
     <form class="subscribe-form" id="subscribe-form" novalidate>
       <input type="text" id="sub-name" class="subscribe-input" placeholder="Your name" autocomplete="name" aria-label="Your name" />
@@ -935,7 +934,6 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
   var subEmail = document.getElementById('sub-email');
   var subBtn = document.getElementById('sub-submit');
   var subHp = document.getElementById('sub-company-hp');
-  var subCount = document.getElementById('subscriber-count');
 
   function setSubMsg(text, kind) {{
     if (!subMsg) return;
@@ -943,17 +941,6 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
     subMsg.className = 'subscribe-msg' + (kind ? ' ' + kind : '');
   }}
   function validEmail(v) {{ return /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v); }}
-
-  if (SIGNUP_ENDPOINT && subCount) {{
-    fetch(SIGNUP_ENDPOINT)
-      .then(function (r) {{ return r.json(); }})
-      .then(function (d) {{
-        if (d && typeof d.count === 'number' && d.count > 0) {{
-          subCount.textContent = 'Join ' + d.count.toLocaleString() + ' others getting alerts.';
-        }}
-      }})
-      .catch(function () {{}});
-  }}
 
   if (subForm) {{
     subForm.addEventListener('submit', function (ev) {{
