@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-05-25 02:12:48 UTC
+**Generated:** 2026-05-25 02:32:46 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -31,16 +31,17 @@ M .coverage
 
 **Recent commits:**
 ```
+589885c refactor: drop public signup count, harden notify CLI, remove test stub
+0016e78 auto: WARN data update [skip ci]
 62f8f63 docs: document signup env vars in .env.example
 98dd4eb feat: add email signup + subscriber alerts; drop redundant header search
 7118259 auto: WARN data update [skip ci]
-ec0865f chore: weekly AI metrics update [skip actions]
-e7a3d76 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-05-25T02:32:46.370844+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-05-25T02:12:48.578496+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-05-24T12:57:57.800489+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-05-24T02:05:28.773892+00:00Z` — +0 added, -0 removed, 0 employees (new)
@@ -50,4 +51,3 @@ e7a3d76 auto: WARN data update [skip ci]
 - `2026-05-22T02:09:16.430200+00:00Z` — +80 added, -1 removed, 4,354 employees (new)
 - `2026-05-21T14:38:31.260665+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-05-21T02:06:58.959274+00:00Z` — +1 added, -55 removed, 82 employees (new)
-- `2026-05-20T14:32:56.969312+00:00Z` — +0 added, -0 removed, 0 employees (new)
