@@ -1,8 +1,13 @@
 # 📋 California WARN Layoff Monitor
 
-[![Auto-Update](https://img.shields.io/badge/updates-twice_daily-brightgreen)](https://github.com/bilalahamad0/warn)
-[![Data Source](https://img.shields.io/badge/source-CA_EDD-blue)](https://edd.ca.gov/en/jobs_and_training/layoff_services_warn)
+[![WARN Monitor](https://github.com/bilalahamad0/warn/actions/workflows/monitor.yml/badge.svg)](https://github.com/bilalahamad0/warn/actions/workflows/monitor.yml)
+[![CodeQL](https://github.com/bilalahamad0/warn/actions/workflows/codeql.yml/badge.svg)](https://github.com/bilalahamad0/warn/actions/workflows/codeql.yml)
+[![Auto-Update](https://img.shields.io/badge/updates-twice_daily-brightgreen)](https://github.com/bilalahamad0/warn/actions/workflows/monitor.yml)
+[![Last Commit](https://img.shields.io/github/last-commit/bilalahamad0/warn)](https://github.com/bilalahamad0/warn/commits/main)
 [![Live Dashboard](https://img.shields.io/badge/dashboard-live-orange)](https://bilalahamad0.github.io/warn/)
+[![Data Source](https://img.shields.io/badge/source-CA_EDD-blue)](https://edd.ca.gov/en/jobs_and_training/layoff_services_warn)
+[![Python](https://img.shields.io/badge/python-3.12-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](#-license)
 
 An automated end-to-end pipeline that monitors California layoff notices (WARN Act filings) from the CA Employment Development Department, parses historical records (2014-present), detects changes, generates rich interactive charts, and publishes a live dashboard with email alerts.
 
@@ -24,18 +29,21 @@ Or embed on any website:
 
 ---
 
-## 📊 Charts Generated
+## 📊 Charts Generated (11)
 
 | # | Chart | Description |
 |---|-------|-------------|
-| 1 | **Timeline Scatter** | Employees affected by effective date, coloured by county |
-| 2 | **Monthly Bar + MA** | Total employees per month with 3-month moving average |
-| 3 | **Rolling Trend** | Daily, 30-day rolling average, and cumulative total |
-| 4 | **Top 25 Companies** | Biggest layoffs by total headcount |
-| 5 | **County Heatmap** | County × Month heat intensity matrix |
+| 1 | **Timeline Scatter** | Employees affected by effective date, sized and coloured by county |
+| 2 | **Monthly Totals** | Total employees per month with 3-month moving average |
+| 3 | **Rolling Trend** | Daily layoffs, 30-day rolling average, and cumulative total |
+| 4 | **Top 25 Companies** | Biggest layoffs by cumulative headcount |
+| 5 | **County Heatmap** | County × Month heat-intensity matrix |
 | 6 | **Treemap** | Proportional breakdown by company and layoff type |
 | 7 | **Year-over-Year** | **Historical** annual employees and notice count (2014-present) |
 | 8 | **Multi-Year Trend** | **Historical** seasonal overlay of monthly layoffs across all years |
+| 9 | **Industry Breakdown** | Employees affected by industry sector |
+| 10 | **Notice Lead Time** | Days from notice filing to effective date vs the 60-day WARN requirement |
+| 11 | **Top Counties** | Top 10 counties by total employees affected |
 
 ---
 
@@ -73,21 +81,47 @@ python3 warn_publish.py --force
 python3 warn_history.py
 ```
 
-### 4. Enable automated runs (macOS)
+### 4. Automated runs
+
+**GitHub Actions (recommended).** The [`monitor.yml`](.github/workflows/monitor.yml)
+workflow runs the full pipeline twice daily (00:00 and 12:00 UTC) and on demand
+from the **Actions** tab. It runs the test suite, executes `warn_publish.py --no-push`,
+then commits any data/chart changes as `"auto: WARN data update [skip ci]"`. Two
+companion workflows keep the repo healthy:
+[`codeql.yml`](.github/workflows/codeql.yml) (weekly security scanning) and
+[`update-ai-metrics.yml`](.github/workflows/update-ai-metrics.yml) (refreshes
+`ai-metrics.json`).
+
+Configure under **Settings ▸ Secrets and variables ▸ Actions**:
+
+| Kind | Name | Purpose |
+|------|------|---------|
+| Secret | `GH_REPO_TOKEN` | Push the auto-update commits |
+| Secret | `GMAIL_USER`, `GMAIL_APP_PASSWORD`, `NOTIFY_EMAIL` | Send alert emails |
+| Secret | `SUBSCRIBERS_TOKEN` | Read the subscriber list (matches Apps Script `LIST_TOKEN`) |
+| Variable | `SIGNUP_ENDPOINT` | Apps Script `/exec` URL embedded in the signup form |
+
+**Local cron (macOS launchd alternative).** Edit
+[`automation/com.bilalahamad.warn.plist`](automation/com.bilalahamad.warn.plist)
+first and replace `/ABSOLUTE/PATH/TO/warn` with your checkout path.
 
 ```bash
-# Copy the launchd plist
+# Copy the launchd plist (runs at 6 AM + 6 PM daily)
 cp automation/com.bilalahamad.warn.plist ~/Library/LaunchAgents/
-
-# Load it (runs at 6 AM + 6 PM daily)
 launchctl load ~/Library/LaunchAgents/com.bilalahamad.warn.plist
 
 # To stop:
 launchctl unload ~/Library/LaunchAgents/com.bilalahamad.warn.plist
 
 # View logs
-tail - Branch: `main`, Folder: `/docs`
+tail -f data/warn_cron.log data/warn_cron_err.log
 ```
+
+### 5. Publish (GitHub Pages)
+
+The dashboard is served from GitHub Pages — **Settings ▸ Pages**, Branch: `main`,
+Folder: `/docs`. Every pipeline run rewrites `docs/index.html` and `docs/data.json`,
+so the live site updates automatically once Pages is enabled.
 
 ---
 
@@ -130,7 +164,7 @@ EDD WARN XLSX  ───► warn_monitor.py ──► data/warn_latest.json
     (ETag cache)          │                      │
                           ▼                      ▼
                   warn_history.py        warn_charts.py
-                  (PDF 2014-2024)        (8 Plotly charts)
+                  (PDF 2014-2024)        (11 Plotly charts)
                           │                      │
                           ▼                      ▼
                   warn_diff.py           docs/charts/*.html
@@ -157,6 +191,7 @@ EDD WARN XLSX  ───► warn_monitor.py ──► data/warn_latest.json
 | `data/meta.json` | ETag, hash, last-checked timestamp |
 | `data/changelog.jsonl` | Append-only record of every change detected |
 | `data/diff_report.md` | Human-readable summary of the latest change |
+| `data/charts_manifest.json` | Chart metadata + dataset summary the dashboard reads |
 | `docs/index.html` | Published premium interactive dashboard |
 | `docs/data.json` | Publicly accessible JSON API of current notices |
 
