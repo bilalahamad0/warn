@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-05-27 19:24:36 UTC
+**Generated:** 2026-05-27 19:37:00 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -50,20 +50,31 @@
 
 **Git status:**
 ```
-M docs/data.json
+M data/charts_manifest.json
+ M data/warn_all_years.json
+ M docs/charts/10_lead_time.html
+ M docs/charts/11_county_bar.html
+ M docs/charts/1_timeline_scatter.html
+ M docs/charts/2_monthly_bar.html
+ M docs/charts/3_rolling_trend.html
+ M docs/charts/4_top_companies.html
+ M docs/charts/5_county_heatmap.html
+ M docs/charts/6_treemap.html
+ M docs/charts/7_yoy_bar.html
+ M docs/charts/8_multiyear_trend.html
+ M docs/charts/9_industry_breakdown.html
  M docs/index.html
- M warn_monitor.py
- M warn_publish.py
-?? data/warn_cumulative.json
+ M warn_charts.py
+ M warn_history.py
 ```
 
 **Recent commits:**
 ```
+5f06d95 fix: persist dropped WARN notices via cumulative store
 0c7582d auto: WARN data update [skip ci]
 d123e2a feat: add unique-visitor counter to dashboard footer
 f40ddfb feat: support comma-separated terms in company search
 ce055a2 auto: WARN data update [skip ci]
-cf0cece auto: WARN data update [skip ci]
 ```
 
 ---

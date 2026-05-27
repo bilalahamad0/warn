@@ -31,6 +31,10 @@ HIST_DIR.mkdir(parents=True, exist_ok=True)
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
 COMBINED_FILE = DATA_DIR / "warn_all_years.json"
+# Prefer the cumulative store for the live portion so the unified dataset keeps
+# notices that a later EDD re-export drops from warn_latest.json.
+CUMULATIVE_FILE = DATA_DIR / "warn_cumulative.json"
+LATEST_FILE = DATA_DIR / "warn_latest.json"
 
 LOG_FORMAT = "%(asctime)s [%(levelname)s] %(message)s"
 logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
@@ -289,10 +293,10 @@ def merge_with_live() -> dict:
         )
         all_records.extend(recs)
 
-    # Live XLSX (current year)
-    latest_file = DATA_DIR / "warn_latest.json"
-    if latest_file.exists():
-        payload = json.loads(latest_file.read_text())
+    # Live data (current year) — cumulative store preferred, latest as fallback.
+    live_file = CUMULATIVE_FILE if CUMULATIVE_FILE.exists() else LATEST_FILE
+    if live_file.exists():
+        payload = json.loads(live_file.read_text())
         live_recs = payload.get("records", [])
         for r in live_recs:
             r["fiscal_year"] = "current"
