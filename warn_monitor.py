@@ -38,6 +38,7 @@ LOCAL_XLSX = BASE_DIR / "file.xlsx"
 META_FILE = DATA_DIR / "meta.json"
 SNAPSHOT_FILE = DATA_DIR / "warn_snapshot.json"
 LATEST_FILE = DATA_DIR / "warn_latest.json"
+CUMULATIVE_FILE = DATA_DIR / "warn_cumulative.json"
 CHANGELOG_FILE = DATA_DIR / "changelog.jsonl"
 
 LOG_FORMAT = "%(asctime)s [%(levelname)s] %(message)s"
@@ -448,6 +449,79 @@ def save_latest(df: pd.DataFrame, dry_run: bool = False):
     return summary
 
 
+def _record_key(r: dict) -> tuple:
+    """Stable identity for a single WARN notice line.
+
+    EDD's published XLSX occasionally drops recently-added notices when it is
+    re-exported, so identity must survive across files. County + notice_date
+    keep multi-site notices for the same company distinct.
+    """
+    return (
+        str(r.get("company", "")).strip().lower(),
+        str(r.get("county", "")).strip().lower(),
+        str(r.get("city", "")).strip().lower(),
+        str(r.get("notice_date", ""))[:10],
+        str(r.get("effective_date", ""))[:10],
+        str(r.get("employees", "")),
+    )
+
+
+def _summarise(records: list[dict]) -> dict:
+    """Build the standard summary envelope around a record list."""
+    notices = [
+        str(r.get("notice_date") or "")[:10] for r in records if r.get("notice_date")
+    ]
+    effs = [
+        str(r.get("effective_date") or "")[:10]
+        for r in records
+        if r.get("effective_date")
+    ]
+    dates = notices or effs
+    return {
+        "total_records": len(records),
+        "total_employees": int(sum(r.get("employees") or 0 for r in records)),
+        "date_range_start": min(dates) if dates else None,
+        "date_range_end": max(dates) if dates else None,
+        "last_updated": datetime.now(timezone.utc).isoformat() + "Z",
+        "source_url": WARN_XLSX_URL,
+        "records": records,
+    }
+
+
+def update_cumulative(records: list[dict], dry_run: bool = False) -> dict:
+    """Merge the latest records into the cumulative store (union of all
+    notices ever observed) and persist it.
+
+    The official EDD file is the source of truth for *current* contents, but
+    it is not append-only: a re-export can silently drop notices that were
+    published days earlier. The cumulative store guarantees that once a notice
+    has been seen it stays on the dashboard, so historical filings never vanish
+    between runs. The latest version of a record wins on conflict.
+    """
+    existing: dict[tuple, dict] = {}
+    if CUMULATIVE_FILE.exists():
+        payload = json.loads(CUMULATIVE_FILE.read_text())
+        for r in payload.get("records", []):
+            existing[_record_key(r)] = r
+
+    before = len(existing)
+    for r in records:
+        existing[_record_key(r)] = r
+    merged = list(existing.values())
+    added = len(merged) - before
+
+    summary = _summarise(merged)
+    if not dry_run:
+        CUMULATIVE_FILE.write_text(json.dumps(summary, indent=2, default=str))
+        log.info(
+            f"Cumulative store: {len(merged)} records "
+            f"(+{added} new, {len(records)} in latest file)"
+        )
+    else:
+        log.info(f"[DRY-RUN] Cumulative would hold {len(merged)} records.")
+    return summary
+
+
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
@@ -474,10 +548,15 @@ def run(dry_run: bool = False, force: bool = False) -> dict:
     # 4. Persist
     summary = save_latest(df, dry_run=dry_run)
 
+    # 5. Merge into the cumulative store so notices dropped by a later EDD
+    #    re-export are never lost from the dashboard.
+    cumulative = update_cumulative(summary["records"], dry_run=dry_run)
+
     result = {
         "file_changed": file_changed,
         "diff": diff,
         "summary": {k: v for k, v in summary.items() if k != "records"},
+        "cumulative": {k: v for k, v in cumulative.items() if k != "records"},
     }
     log.info("Monitor run complete.")
     return result
