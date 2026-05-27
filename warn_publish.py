@@ -37,6 +37,12 @@ SITE_DATA = OUTPUT_DIR / "data.json"
 INDEX_HTML = OUTPUT_DIR / "index.html"
 TEMPLATE = BASE_DIR / "docs" / "index_template.html"
 
+# The dashboard reads the cumulative store (union of every notice ever
+# observed) so notices dropped by a later EDD re-export stay visible. It
+# falls back to the latest download if the cumulative store is absent.
+CUMULATIVE_FILE = DATA_DIR / "warn_cumulative.json"
+LATEST_FILE = DATA_DIR / "warn_latest.json"
+
 LOG_FORMAT = "%(asctime)s [%(levelname)s] %(message)s"
 logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
 log = logging.getLogger("warn_publish")
@@ -61,8 +67,14 @@ def _format_number(n) -> str:
         return str(n)
 
 
+def _dashboard_source() -> Path:
+    """Return the dataset that backs the dashboard: the cumulative store if it
+    exists, otherwise the latest download."""
+    return CUMULATIVE_FILE if CUMULATIVE_FILE.exists() else LATEST_FILE
+
+
 def _compute_kpis() -> dict:
-    """Compute extra KPI metrics from warn_latest.json."""
+    """Compute extra KPI metrics from the dashboard dataset."""
     defaults = {
         "avg_lead_days": "N/A",
         "largest_company": "N/A",
@@ -70,11 +82,11 @@ def _compute_kpis() -> dict:
         "top_county": "N/A",
         "top_county_employees": "N/A",
     }
-    latest = DATA_DIR / "warn_latest.json"
-    if not latest.exists():
+    source = _dashboard_source()
+    if not source.exists():
         return defaults
 
-    payload = json.loads(latest.read_text())
+    payload = json.loads(source.read_text())
     records = payload.get("records", [])
     if not records:
         return defaults
@@ -125,12 +137,12 @@ def _build_recent_table(new_keys: list = None) -> tuple:
     """
     if new_keys is None:
         new_keys = []
-        
-    latest = DATA_DIR / "warn_latest.json"
-    if not latest.exists():
+
+    source = _dashboard_source()
+    if not source.exists():
         return ("", "<p style='color:var(--muted)'>No data available.</p>", 0)
 
-    payload = json.loads(latest.read_text())
+    payload = json.loads(source.read_text())
     records = payload.get("records", [])
     
     def get_key(r):
@@ -269,11 +281,17 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
     diff = monitor_result.get("diff", {})
     new_count = diff.get("new_count", 0)
     new_employees = diff.get("total_employees_new", 0)
-    total_records = _format_number(manifest.get("total_records", 0))
-    total_employees = _format_number(manifest.get("total_employees", 0))
-    last_updated = manifest.get("last_updated", "")[:10]
-    date_start = str(manifest.get("date_range_start", ""))[:10]
-    date_end = str(manifest.get("date_range_end", ""))[:10]
+
+    # Headline totals/date-range come from the cumulative dashboard dataset so
+    # they stay consistent with the table (which also reads the cumulative
+    # store), even when EDD's latest file drops notices.
+    source = _dashboard_source()
+    dash = json.loads(source.read_text()) if source.exists() else {}
+    total_records = _format_number(dash.get("total_records", manifest.get("total_records", 0)))
+    total_employees = _format_number(dash.get("total_employees", manifest.get("total_employees", 0)))
+    last_updated = (dash.get("last_updated") or manifest.get("last_updated", ""))[:10]
+    date_start = str(dash.get("date_range_start") or manifest.get("date_range_start", ""))[:10]
+    date_end = str(dash.get("date_range_end") or manifest.get("date_range_end", ""))[:10]
 
     kpis = _compute_kpis()
 
@@ -334,8 +352,8 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
 
     INDEX_HTML.write_text(html, encoding="utf-8")
 
-    if (DATA_DIR / "warn_latest.json").exists():
-        shutil.copy(DATA_DIR / "warn_latest.json", SITE_DATA)
+    if source.exists():
+        shutil.copy(source, SITE_DATA)
 
     log.info(f"Site built → {INDEX_HTML}")
     return str(INDEX_HTML)

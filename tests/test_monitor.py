@@ -51,8 +51,54 @@ def test_detect_changes_no_snapshot(sample_warn_data, tmp_path):
     # The monitor expects parsed data (lowercase columns)
     df = pd.DataFrame(sample_warn_data)
     df.columns = [c.lower().replace("no. of ", "").replace(" ", "_") for c in df.columns]
-    
+
     with patch("warn_monitor.SNAPSHOT_FILE", tmp_path / "missing.json"):
         diff = warn_monitor.detect_changes(df)
         assert diff["new_count"] == 2
         assert diff["total_employees_new"] == 150
+
+
+def _rec(company, county="LA", emp=10, notice="2026-01-01", eff="2026-03-01"):
+    return {
+        "company": company, "county": county, "city": "",
+        "notice_date": notice, "effective_date": eff, "employees": emp,
+    }
+
+
+def test_record_key_distinguishes_multisite():
+    # Same company + notice + effective date but different county/headcount
+    # are distinct notices and must not collapse together.
+    a = _rec("Meta", county="Alameda", emp=81)
+    b = _rec("Meta", county="San Mateo", emp=338)
+    assert warn_monitor._record_key(a) != warn_monitor._record_key(b)
+
+
+def test_update_cumulative_unions_dropped_records(tmp_path):
+    cum = tmp_path / "warn_cumulative.json"
+    with patch("warn_monitor.CUMULATIVE_FILE", cum):
+        # Run 1: two notices observed.
+        first = [_rec("Acme", emp=10), _rec("Globex", emp=20)]
+        warn_monitor.update_cumulative(first)
+
+        # Run 2: EDD re-export drops Globex and adds Initech.
+        second = [_rec("Acme", emp=10), _rec("Initech", emp=30)]
+        summary = warn_monitor.update_cumulative(second)
+
+    companies = {r["company"] for r in summary["records"]}
+    # Globex must survive even though it vanished from the latest file.
+    assert companies == {"Acme", "Globex", "Initech"}
+    assert summary["total_records"] == 3
+    assert summary["total_employees"] == 60
+
+
+def test_update_cumulative_latest_wins_on_conflict(tmp_path):
+    cum = tmp_path / "warn_cumulative.json"
+    with patch("warn_monitor.CUMULATIVE_FILE", cum):
+        warn_monitor.update_cumulative([_rec("Acme", emp=10)])
+        # Same key, corrected layoff_type — latest version should win.
+        updated = _rec("Acme", emp=10)
+        updated["layoff_type"] = "Closure Permanent"
+        summary = warn_monitor.update_cumulative([updated])
+
+    assert summary["total_records"] == 1
+    assert summary["records"][0]["layoff_type"] == "Closure Permanent"

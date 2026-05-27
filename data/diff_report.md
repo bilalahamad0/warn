@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-05-27 14:52:41 UTC
+**Generated:** 2026-05-27 19:24:36 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -50,21 +50,20 @@
 
 **Git status:**
 ```
-M .coverage
- M data/changelog.jsonl
- M data/diff_report.md
- M data/warn_all_years.json
- M data/warn_latest.json
- M data/warn_snapshot.json
+M docs/data.json
+ M docs/index.html
+ M warn_monitor.py
+ M warn_publish.py
+?? data/warn_cumulative.json
 ```
 
 **Recent commits:**
 ```
+0c7582d auto: WARN data update [skip ci]
 d123e2a feat: add unique-visitor counter to dashboard footer
 f40ddfb feat: support comma-separated terms in company search
 ce055a2 auto: WARN data update [skip ci]
 cf0cece auto: WARN data update [skip ci]
-9151cea docs: refresh README — 11 charts, GitHub Actions automation, more badges
 ```
 
 ---
