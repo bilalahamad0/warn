@@ -158,7 +158,7 @@ def _build_recent_table(new_keys: list = None) -> tuple:
 
     controls_html = f"""
     <div class="filter-row">
-      <input type="search" id="filter-company" class="filter-input" placeholder="Company name…" autocomplete="off"/>
+      <input type="search" id="filter-company" class="filter-input" placeholder="Company, e.g. meta, linkedin" autocomplete="off"/>
       <select id="filter-county" class="filter-input">
         <option value="">All counties</option>{_opt(counties)}
       </select>
@@ -997,6 +997,7 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
 
   function applyFilters() {{
     const qCompany = (fCompany?.value || '').trim().toLowerCase();
+    const companyTerms = qCompany.split(',').map(t => t.trim()).filter(Boolean);
     const qCounty = fCounty?.value || '';
     const qIndustry = fIndustry?.value || '';
     const qType = fType?.value || '';
@@ -1005,7 +1006,7 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
 
     filteredRows = allRows.filter(row => {{
       const d = row.dataset;
-      if (qCompany && !d.company.includes(qCompany)) return false;
+      if (companyTerms.length && !companyTerms.some(t => d.company.includes(t))) return false;
       if (qCounty && d.county !== qCounty) return false;
       if (qIndustry && d.industry !== qIndustry) return false;
       if (qType && d.type !== qType) return false;
