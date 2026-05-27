@@ -752,6 +752,8 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
       font-size: 0.75rem; color: var(--muted);
     }}
     footer a {{ color: var(--accent); text-decoration: none; }}
+    .visitor-counter {{ white-space: nowrap; }}
+    .visitor-counter strong {{ color: var(--accent); font-variant-numeric: tabular-nums; }}
 
     @keyframes fadeIn {{
       from {{ opacity: 0; transform: translateY(6px); }}
@@ -892,6 +894,7 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
   Built by <a href="https://bilalahamad.com" target="_blank">bilalahamad.com</a> ·
   Data: <a href="https://edd.ca.gov/en/jobs_and_training/layoff_services_warn" target="_blank">CA EDD</a> ·
   Generated {generated_at}
+  <span id="visitor-counter" class="visitor-counter" hidden> · 👁 <strong id="visitor-count">—</strong> visitors</span>
 </footer>
 
 <script>
@@ -970,6 +973,27 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
         .finally(function () {{ if (subBtn) {{ subBtn.disabled = false; subBtn.textContent = 'Subscribe'; }} }});
     }});
   }}
+
+  // ── Visitor counter (counts each browser once via localStorage) ──
+  (function () {{
+    var wrap = document.getElementById('visitor-counter');
+    var out = document.getElementById('visitor-count');
+    if (!wrap || !out || !SIGNUP_ENDPOINT) return;
+    var KEY = 'warn_visitor_counted';
+    var firstVisit = false;
+    try {{ firstVisit = !localStorage.getItem(KEY); }} catch (_e) {{ firstVisit = false; }}
+    var action = firstVisit ? 'hit' : 'views';
+    var sep = SIGNUP_ENDPOINT.indexOf('?') > -1 ? '&' : '?';
+    fetch(SIGNUP_ENDPOINT + sep + 'action=' + action)
+      .then(function (r) {{ return r.json(); }})
+      .then(function (d) {{
+        if (!d || typeof d.count !== 'number') return;
+        out.textContent = d.count.toLocaleString();
+        wrap.hidden = false;
+        if (firstVisit) {{ try {{ localStorage.setItem(KEY, '1'); }} catch (_e) {{}} }}
+      }})
+      .catch(function () {{ /* leave the counter hidden on failure */ }});
+  }})();
 
   // ── Notices table: pagination + filter + sort ──
   const table = document.getElementById('notices-table');
