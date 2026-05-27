@@ -140,7 +140,7 @@ def _build_recent_table(new_keys: list = None) -> tuple:
 
     source = _dashboard_source()
     if not source.exists():
-        return ("", "<p style='color:var(--muted)'>No data available.</p>", 0)
+        return ("", "<p style='color:var(--muted)'>No data available.</p>", "", 0)
 
     payload = json.loads(source.read_text())
     records = payload.get("records", [])
