@@ -131,7 +131,7 @@ def _compute_kpis() -> dict:
 def _build_recent_table(new_keys: list = None) -> tuple:
     """Build the full notices table HTML and the filter-controls HTML.
 
-    Returns (controls_html, table_html, total_count).
+    Returns (controls_html, table_html, bottom_controls_html, total_count).
     Loads ALL records, sorted newest-first by notice date.
     Pagination + per-column filters are wired client-side.
     """
@@ -168,6 +168,34 @@ def _build_recent_table(new_keys: list = None) -> tuple:
     def _opt(values):
         return "".join(f'<option value="{v}">{v}</option>' for v in values if v)
 
+    def _pager_bar(include_size: bool) -> str:
+        size_html = (
+            """
+      <div class="pager-left">
+        <label class="pager-label">Show
+          <select class="js-page-size">
+            <option value="50" selected>50</option>
+            <option value="100">100</option>
+            <option value="150">150</option>
+            <option value="200">200</option>
+            <option value="0">All</option>
+          </select>
+          per page
+        </label>
+      </div>"""
+            if include_size
+            else ""
+        )
+        return f"""
+    <div class="table-controls">{size_html}
+      <div class="table-count js-table-count"></div>
+      <div class="pager-right">
+        <button type="button" class="pager-btn js-page-prev">‹ Prev</button>
+        <span class="pager-info js-page-info">Page 1</span>
+        <button type="button" class="pager-btn js-page-next">Next ›</button>
+      </div>
+    </div>"""
+
     controls_html = f"""
     <div class="filter-row">
       <input type="search" id="filter-company" class="filter-input" placeholder="Company, e.g. meta, linkedin" autocomplete="off"/>
@@ -183,27 +211,9 @@ def _build_recent_table(new_keys: list = None) -> tuple:
       <input type="date" id="filter-date-from" class="filter-input" title="Notice date from" />
       <input type="date" id="filter-date-to" class="filter-input" title="Notice date to" />
       <button type="button" id="filter-reset" class="filter-reset">Reset</button>
-    </div>
-    <div class="table-controls">
-      <div class="pager-left">
-        <label class="pager-label">Show
-          <select id="page-size">
-            <option value="50" selected>50</option>
-            <option value="100">100</option>
-            <option value="150">150</option>
-            <option value="200">200</option>
-            <option value="0">All</option>
-          </select>
-          per page
-        </label>
-      </div>
-      <div class="table-count" id="table-count"></div>
-      <div class="pager-right">
-        <button type="button" id="page-prev" class="pager-btn">‹ Prev</button>
-        <span id="page-info" class="pager-info">Page 1</span>
-        <button type="button" id="page-next" class="pager-btn">Next ›</button>
-      </div>
-    </div>"""
+    </div>{_pager_bar(include_size=False)}"""
+
+    bottom_controls_html = _pager_bar(include_size=True)
 
     rows = []
     for r in sorted_recs:
@@ -248,7 +258,7 @@ def _build_recent_table(new_keys: list = None) -> tuple:
         f'<tbody>{"".join(rows)}</tbody>'
         '</table>'
     )
-    return (controls_html, table_html, len(sorted_recs))
+    return (controls_html, table_html, bottom_controls_html, len(sorted_recs))
 
 
 def _build_chart_tabs_panes(chart_ids: list, chart_divs: dict, meta_by_id: dict) -> tuple:
@@ -321,7 +331,7 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
         chart_divs, meta_by_id,
     )
 
-    recent_controls, recent_table, recent_total = _build_recent_table(diff.get("new_keys", []))
+    recent_controls, recent_table, recent_bottom_controls, recent_total = _build_recent_table(diff.get("new_keys", []))
 
     signup_endpoint = os.getenv("SIGNUP_ENDPOINT", "").strip()
 
@@ -346,6 +356,7 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
         detail_panes=detail_panes,
         recent_controls=recent_controls,
         recent_table=recent_table,
+        recent_table_controls=recent_bottom_controls,
         recent_total=recent_total,
         generated_at=datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
     )
@@ -905,6 +916,7 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
     <div class="table-wrap">
       {recent_table}
     </div>
+    {recent_table_controls}
   </div>
 </main>
 
@@ -1031,11 +1043,11 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
   const fFrom = document.getElementById('filter-date-from');
   const fTo = document.getElementById('filter-date-to');
   const resetBtn = document.getElementById('filter-reset');
-  const pageSizeEl = document.getElementById('page-size');
-  const prevBtn = document.getElementById('page-prev');
-  const nextBtn = document.getElementById('page-next');
-  const pageInfo = document.getElementById('page-info');
-  const countEl = document.getElementById('table-count');
+  const pageSizeEls = [...document.querySelectorAll('.js-page-size')];
+  const prevBtns = [...document.querySelectorAll('.js-page-prev')];
+  const nextBtns = [...document.querySelectorAll('.js-page-next')];
+  const pageInfos = [...document.querySelectorAll('.js-page-info')];
+  const countEls = [...document.querySelectorAll('.js-table-count')];
 
   function applyFilters() {{
     const qCompany = (fCompany?.value || '').trim().toLowerCase();
@@ -1077,24 +1089,21 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
     // Reorder DOM to match filtered+sorted order (within current page)
     slice.forEach(r => tbody.appendChild(r));
 
-    if (countEl) {{
-      if (totalFiltered === 0) {{
-        countEl.textContent = 'No matches';
-      }} else if (totalFiltered === totalAll) {{
-        countEl.textContent = `${{totalAll.toLocaleString()}} notices`;
-      }} else {{
-        countEl.textContent = `${{totalFiltered.toLocaleString()}} of ${{totalAll.toLocaleString()}} matched`;
-      }}
-    }}
-    if (pageInfo) {{
-      const showStart = totalFiltered === 0 ? 0 : start + 1;
-      const showEnd = Math.min(end, totalFiltered);
-      pageInfo.textContent = pageSize === 0
-        ? `Showing all ${{totalFiltered.toLocaleString()}}`
-        : `${{showStart.toLocaleString()}}–${{showEnd.toLocaleString()}} / ${{totalFiltered.toLocaleString()}}`;
-    }}
-    if (prevBtn) prevBtn.disabled = currentPage <= 1;
-    if (nextBtn) nextBtn.disabled = currentPage >= totalPages;
+    const countText = totalFiltered === 0
+      ? 'No matches'
+      : totalFiltered === totalAll
+        ? `${{totalAll.toLocaleString()}} notices`
+        : `${{totalFiltered.toLocaleString()}} of ${{totalAll.toLocaleString()}} matched`;
+    countEls.forEach(el => {{ el.textContent = countText; }});
+
+    const showStart = totalFiltered === 0 ? 0 : start + 1;
+    const showEnd = Math.min(end, totalFiltered);
+    const infoText = pageSize === 0
+      ? `Showing all ${{totalFiltered.toLocaleString()}}`
+      : `${{showStart.toLocaleString()}}–${{showEnd.toLocaleString()}} / ${{totalFiltered.toLocaleString()}}`;
+    pageInfos.forEach(el => {{ el.textContent = infoText; }});
+    prevBtns.forEach(b => {{ b.disabled = currentPage <= 1; }});
+    nextBtns.forEach(b => {{ b.disabled = currentPage >= totalPages; }});
   }}
 
   // Sortable headers
@@ -1128,15 +1137,16 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
       applyFilters();
     }});
   }}
-  if (pageSizeEl) {{
-    pageSizeEl.addEventListener('change', () => {{
-      pageSize = parseInt(pageSizeEl.value, 10) || 0;
+  pageSizeEls.forEach(sel => {{
+    sel.addEventListener('change', () => {{
+      pageSize = parseInt(sel.value, 10) || 0;
+      pageSizeEls.forEach(s => {{ s.value = sel.value; }});
       currentPage = 1;
       render();
     }});
-  }}
-  if (prevBtn) prevBtn.addEventListener('click', () => {{ currentPage--; render(); }});
-  if (nextBtn) nextBtn.addEventListener('click', () => {{ currentPage++; render(); }});
+  }});
+  prevBtns.forEach(b => b.addEventListener('click', () => {{ currentPage--; render(); }}));
+  nextBtns.forEach(b => b.addEventListener('click', () => {{ currentPage++; render(); }}));
 
   render();
 }})();
