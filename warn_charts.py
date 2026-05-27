@@ -30,6 +30,10 @@ CHARTS_DIR = OUTPUT_DIR / "charts"
 CHARTS_DIR.mkdir(parents=True, exist_ok=True)
 
 LATEST_FILE = DATA_DIR / "warn_latest.json"
+# Cumulative store (union of every notice ever observed) is the dashboard's
+# source of truth; charts read it so they never lose notices that a later EDD
+# re-export drops from warn_latest.json. Falls back to the latest download.
+CUMULATIVE_FILE = DATA_DIR / "warn_cumulative.json"
 CHART_MANIFEST = DATA_DIR / "charts_manifest.json"
 
 LOG_FORMAT = "%(asctime)s [%(levelname)s] %(message)s"
@@ -80,9 +84,10 @@ def _apply_theme(fig: go.Figure, margin: dict = None) -> go.Figure:
 
 
 def load_data() -> pd.DataFrame:
-    if not LATEST_FILE.exists():
-        raise FileNotFoundError(f"Run warn_monitor.py first — {LATEST_FILE} not found.")
-    payload = json.loads(LATEST_FILE.read_text())
+    source = CUMULATIVE_FILE if CUMULATIVE_FILE.exists() else LATEST_FILE
+    if not source.exists():
+        raise FileNotFoundError(f"Run warn_monitor.py first — {source} not found.")
+    payload = json.loads(source.read_text())
     df = pd.DataFrame(payload["records"])
     df["effective_date"] = pd.to_datetime(df["effective_date"], errors="coerce")
     df["notice_date"] = pd.to_datetime(df.get("notice_date"), errors="coerce")
