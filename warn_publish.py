@@ -282,16 +282,14 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
     new_count = diff.get("new_count", 0)
     new_employees = diff.get("total_employees_new", 0)
 
-    # Headline totals/date-range come from the cumulative dashboard dataset so
-    # they stay consistent with the table (which also reads the cumulative
-    # store), even when EDD's latest file drops notices.
-    source = _dashboard_source()
-    dash = json.loads(source.read_text()) if source.exists() else {}
-    total_records = _format_number(dash.get("total_records", manifest.get("total_records", 0)))
-    total_employees = _format_number(dash.get("total_employees", manifest.get("total_employees", 0)))
-    last_updated = (dash.get("last_updated") or manifest.get("last_updated", ""))[:10]
-    date_start = str(dash.get("date_range_start") or manifest.get("date_range_start", ""))[:10]
-    date_end = str(dash.get("date_range_end") or manifest.get("date_range_end", ""))[:10]
+    # charts_manifest.json is regenerated from the same cumulative store the
+    # charts read, so these headline totals already reflect every observed
+    # notice (not just the latest EDD download).
+    total_records = _format_number(manifest.get("total_records", 0))
+    total_employees = _format_number(manifest.get("total_employees", 0))
+    last_updated = manifest.get("last_updated", "")[:10]
+    date_start = str(manifest.get("date_range_start", ""))[:10]
+    date_end = str(manifest.get("date_range_end", ""))[:10]
 
     kpis = _compute_kpis()
 
@@ -352,6 +350,7 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
 
     INDEX_HTML.write_text(html, encoding="utf-8")
 
+    source = _dashboard_source()
     if source.exists():
         shutil.copy(source, SITE_DATA)
 
