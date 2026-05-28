@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-05-28 01:56:00 UTC
+**Generated:** 2026-05-28 15:25:03 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -32,16 +32,17 @@ M .coverage
 
 **Recent commits:**
 ```
+c9e5c4b auto: WARN data update [skip ci]
 4ab4c4c fix: return 4-tuple from _build_recent_table no-data path
 30e02c1 feat: show notices pagination controls below the table
 71011ec feat: drive charts and historical merge from the cumulative store
 660d9f6 fix: persist dropped WARN notices via cumulative store
-0c7582d auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-05-28T15:25:03.042079+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-05-28T01:56:00.875737+00:00Z` — +1 added, -89 removed, 82 employees (new)
 - `2026-05-27T14:52:41.660015+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-05-27T02:12:23.876205+00:00Z` — +89 added, -1 removed, 5,609 employees (new)
@@ -51,4 +52,3 @@ M .coverage
 - `2026-05-25T02:55:56.209709+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-05-25T02:32:46.370844+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-05-25T02:12:48.578496+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-05-24T12:57:57.800489+00:00Z` — +0 added, -0 removed, 0 employees (new)
