@@ -165,6 +165,11 @@ def _build_recent_table(new_keys: list = None) -> tuple:
     industries = sorted({str(r.get("industry") or "").strip() for r in records if r.get("industry")})
     types = sorted({str(r.get("layoff_type") or "").strip() for r in records if r.get("layoff_type")})
 
+    # Default date window: from the earliest notice in the dataset through today.
+    notice_dates = [str(r.get("notice_date") or "")[:10] for r in records if r.get("notice_date")]
+    date_from_default = min(notice_dates) if notice_dates else ""
+    date_to_default = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
     def _opt(values):
         return "".join(f'<option value="{v}">{v}</option>' for v in values if v)
 
@@ -208,8 +213,8 @@ def _build_recent_table(new_keys: list = None) -> tuple:
       <select id="filter-type" class="filter-input">
         <option value="">All types</option>{_opt(types)}
       </select>
-      <input type="date" id="filter-date-from" class="filter-input" title="Notice date from" />
-      <input type="date" id="filter-date-to" class="filter-input" title="Notice date to" />
+      <input type="date" id="filter-date-from" class="filter-input" title="Notice date from" value="{date_from_default}" data-default="{date_from_default}" />
+      <input type="date" id="filter-date-to" class="filter-input" title="Notice date to" value="{date_to_default}" data-default="{date_to_default}" />
       <button type="button" id="filter-reset" class="filter-reset">Reset</button>
     </div>{_pager_bar(include_size=False)}"""
 
@@ -1133,7 +1138,7 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
   }});
   if (resetBtn) {{
     resetBtn.addEventListener('click', () => {{
-      [fCompany, fCounty, fIndustry, fType, fFrom, fTo].forEach(el => {{ if (el) el.value = ''; }});
+      [fCompany, fCounty, fIndustry, fType, fFrom, fTo].forEach(el => {{ if (el) el.value = el.dataset.default || ''; }});
       applyFilters();
     }});
   }}
