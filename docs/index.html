@@ -469,8 +469,8 @@
       <select id="filter-type" class="filter-input">
         <option value="">All types</option><option value="Closure Not known at this time">Closure Not known at this time</option><option value="Closure Permanent">Closure Permanent</option><option value="Closure Temporary">Closure Temporary</option><option value="Layoff Not known at this time">Layoff Not known at this time</option><option value="Layoff Permanent">Layoff Permanent</option><option value="Layoff Temporary">Layoff Temporary</option>
       </select>
-      <input type="date" id="filter-date-from" class="filter-input" title="Notice date from" />
-      <input type="date" id="filter-date-to" class="filter-input" title="Notice date to" />
+      <input type="date" id="filter-date-from" class="filter-input" title="Notice date from" value="2025-01-29" data-default="2025-01-29" />
+      <input type="date" id="filter-date-to" class="filter-input" title="Notice date to" value="2026-05-28" data-default="2026-05-28" />
       <button type="button" id="filter-reset" class="filter-reset">Reset</button>
     </div>
     <div class="table-controls">
@@ -721,7 +721,7 @@
   });
   if (resetBtn) {
     resetBtn.addEventListener('click', () => {
-      [fCompany, fCounty, fIndustry, fType, fFrom, fTo].forEach(el => { if (el) el.value = ''; });
+      [fCompany, fCounty, fIndustry, fType, fFrom, fTo].forEach(el => { if (el) el.value = el.dataset.default || ''; });
       applyFilters();
     });
   }
