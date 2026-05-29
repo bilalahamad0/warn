@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-28T15:25:03.094495+00:00Z",
-  "total_records": 1653,
-  "total_employees": 94699,
+  "generated_at": "2026-05-29T02:04:18.368510+00:00Z",
+  "total_records": 1658,
+  "total_employees": 98370,
   "yearly_summary": [
     {
       "fiscal_year": 2014,
@@ -83,8 +83,8 @@
     {
       "fiscal_year": "current",
       "label": "FY 2025-26 (Live)",
-      "records": 1352,
-      "employees": 73405,
+      "records": 1357,
+      "employees": 77076,
       "source": "xlsx"
     }
   ],
@@ -20973,6 +20973,71 @@
       "notice_date": "2026-04-27",
       "address": "9090 Birch St.  Spring Valley CA 91977",
       "industry": "48-49 Transportation and Warehousing",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "Meta Platforms, Inc.",
+      "effective_date": "2026-07-22",
+      "county": "Santa Clara County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 313,
+      "notice_date": "2026-05-22",
+      "address": "1180 Discovery Way  Sunnyvale CA 94089",
+      "industry": "54 Professional Scientific and Technical Services",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "Meta Platforms, Inc.",
+      "effective_date": "2026-07-22",
+      "county": "San Mateo County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 2550,
+      "notice_date": "2026-05-22",
+      "address": "311 Airport Boulevard  Burlingame CA 94010",
+      "industry": "51 Information",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "Meta Platforms, Inc.",
+      "effective_date": "2026-07-22",
+      "county": "Los Angeles County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 74,
+      "notice_date": "2026-05-22",
+      "address": "12105 E Waterfront Drive  Playa Vista CA 90094",
+      "industry": "54 Professional Scientific and Technical Services",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "Transdev Services, Inc.",
+      "effective_date": "2026-07-31",
+      "county": "Yolo County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 84,
+      "notice_date": "2026-05-26",
+      "address": "352 Industrial Way  Woodland CA 95776",
+      "industry": "48-49 Transportation and Warehousing",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "KBR Services LLC",
+      "effective_date": "2026-08-01",
+      "county": "San Bernardino County",
+      "city": "",
+      "layoff_type": "Layoff Temporary",
+      "employees": 650,
+      "notice_date": "2026-05-24",
+      "address": "National Training Center, Bldg. 896, Langford Lake Road  Barstow CA 92311",
+      "industry": "81 Other Services Except Public Administration",
       "fiscal_year": "current",
       "source": "xlsx"
     }
