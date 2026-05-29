@@ -40,6 +40,11 @@ SNAPSHOT_FILE = DATA_DIR / "warn_snapshot.json"
 LATEST_FILE = DATA_DIR / "warn_latest.json"
 CUMULATIVE_FILE = DATA_DIR / "warn_cumulative.json"
 CHANGELOG_FILE = DATA_DIR / "changelog.jsonl"
+# Cumulative ledger of every notice we have ever alerted on. Change detection
+# for *alerts* keys off this, not a single prior run, because the EDD feed
+# intermittently flip-flops between two versions of the spreadsheet across
+# consecutive fetches (see detect_changes for the full rationale).
+NOTIFIED_FILE = DATA_DIR / "notified_keys.json"
 
 LOG_FORMAT = "%(asctime)s [%(levelname)s] %(message)s"
 logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
@@ -365,37 +370,114 @@ def _df_to_records(df: pd.DataFrame) -> list[dict]:
     return json.loads(df.to_json(orient="records", date_format="iso"))
 
 
-def detect_changes(new_df: pd.DataFrame) -> dict:
-    """Compare new data vs saved snapshot. Returns diff summary."""
-    new_records = _df_to_records(new_df)
+def _notice_key(r: dict) -> str:
+    """Stable identity for a single WARN notice (company + date + headcount)."""
+    return "__".join(
+        str(r.get(k, "")) for k in ("company", "effective_date", "employees")
+    )
 
-    if not SNAPSHOT_FILE.exists():
-        log.info("No snapshot found — treating all records as new.")
+
+def _load_notified_keys() -> set:
+    """Load the cumulative set of notice keys we have already alerted on."""
+    if not NOTIFIED_FILE.exists():
+        return set()
+    try:
+        data = json.loads(NOTIFIED_FILE.read_text())
+        keys = data.get("keys", []) if isinstance(data, dict) else data
+        return set(keys)
+    except Exception as e:
+        log.warning(f"Could not read {NOTIFIED_FILE.name} ({e}) — treating as empty.")
+        return set()
+
+
+def _save_notified_keys(keys: set) -> None:
+    """Persist the notified-keys ledger (sorted, for small/stable git diffs)."""
+    payload = {
+        "count": len(keys),
+        "last_updated": datetime.now(timezone.utc).isoformat() + "Z",
+        "keys": sorted(keys),
+    }
+    NOTIFIED_FILE.write_text(json.dumps(payload, indent=2))
+
+
+def record_notified_keys(keys) -> None:
+    """Add keys to the ledger so those notices never trigger another alert.
+
+    Called by warn_publish *after* an alert email is sent successfully, so a
+    failed send is retried on the next run rather than silently swallowed.
+    """
+    keys = [k for k in (keys or []) if k]
+    if not keys:
+        return
+    ledger = _load_notified_keys()
+    before = len(ledger)
+    ledger.update(keys)
+    added_n = len(ledger) - before
+    if added_n:
+        _save_notified_keys(ledger)
+        log.info(f"Recorded {added_n} new notice(s) to {NOTIFIED_FILE.name}.")
+
+
+def detect_changes(new_df: pd.DataFrame, dry_run: bool = False) -> dict:
+    """Identify genuinely NEW notices (never alerted on) and notices that
+    disappeared since the previous run.
+
+    'new' is measured against a *cumulative* ledger of every notice key we have
+    ever alerted on (``notified_keys.json``) — deliberately NOT a single prior
+    run. The EDD spreadsheet intermittently serves two different versions across
+    consecutive fetches (CDN/cache churn): the live record count repeatedly
+    jumps (e.g. 1263 → 1342) and reverts on the very next run. A naive
+    run-over-run diff therefore re-reports the same notices as "new" every time
+    the feed swings up — which is exactly what produced duplicate email alerts
+    on consecutive days. Keying off a cumulative ledger guarantees each unique
+    notice can trigger at most one alert, regardless of how the feed churns.
+
+    'removed' stays a plain comparison against the previous run's published data
+    (``warn_latest.json``, which ``save_latest`` has not yet rotated into the
+    snapshot when this runs). It is informational only and never raises an alert
+    on its own.
+    """
+    new_records = _df_to_records(new_df)
+    feed_keys = {_notice_key(r) for r in new_records}
+
+    # Previous run's published records, used only for the 'removed' note.
+    prev_records: list[dict] = []
+    if LATEST_FILE.exists():
+        try:
+            prev_records = json.loads(LATEST_FILE.read_text()).get("records", [])
+        except Exception:
+            prev_records = []
+
+    notified = _load_notified_keys()
+
+    if not notified:
+        # No ledger yet (fresh clone / first deploy). Treat everything currently
+        # known as already-seen so we don't alert for the entire backlog, and
+        # seed the ledger. Nothing is "new" on this baseline run.
+        baseline = feed_keys | {_notice_key(r) for r in prev_records}
+        if not dry_run:
+            _save_notified_keys(baseline)
+        log.info(
+            f"No notified-keys ledger yet — established baseline of {len(baseline)} "
+            "notice(s); suppressing alerts for this run."
+        )
         return {
-            "new_count": len(new_records),
+            "new_count": 0,
             "removed_count": 0,
-            "new_entries": new_records[:50],  # cap at 50 for display
+            "new_keys": [],
+            "new_entries": [],
             "removed_entries": [],
-            "total_employees_new": sum(r.get("employees", 0) for r in new_records),
+            "total_employees_new": 0,
+            "total_employees_removed": 0,
         }
 
-    old_payload = json.loads(SNAPSHOT_FILE.read_text())
-    old_records = old_payload.get("records", [])
-
-    # Build lookup keys
-    def key(r):
-        return f"{r.get('company','')}__{r.get('effective_date','')}__{r.get('employees','')}"
-
-    old_keys = {key(r) for r in old_records}
-    new_keys = {key(r) for r in new_records}
-
-    added = [r for r in new_records if key(r) not in old_keys]
-    removed = [r for r in old_records if key(r) not in new_keys]
+    added = [r for r in new_records if _notice_key(r) not in notified]
+    removed = [r for r in prev_records if _notice_key(r) not in feed_keys]
 
     return {
         "new_count": len(added),
         "removed_count": len(removed),
-        "new_keys": [key(r) for r in added],
+        "new_keys": [_notice_key(r) for r in added],
         "new_entries": added[:50],
         "removed_entries": removed[:50],
         "total_employees_new": sum(r.get("employees", 0) for r in added),
@@ -542,7 +624,7 @@ def run(dry_run: bool = False, force: bool = False) -> dict:
     df = parse_warn_xlsx(xlsx_path)
 
     # 3. Detect changes
-    diff = detect_changes(df)
+    diff = detect_changes(df, dry_run=dry_run)
     _log_change(diff, dry_run=dry_run)
 
     # 4. Persist

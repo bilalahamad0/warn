@@ -1210,12 +1210,17 @@ def run(no_push: bool = False, force: bool = False, skip_history: bool = False):
     log.info("Step 5/5: Building site …")
     build_site(manifest, monitor_result)
 
-    # Notify on changes
+    # Notify on changes. Only mark notices as "alerted" once the email actually
+    # sends — a failed send is then retried next run instead of being lost. This
+    # ledger is what stops the EDD feed's version churn from re-alerting the same
+    # notices on consecutive runs (see warn_monitor.detect_changes).
     diff = monitor_result.get("diff", {})
     summary = monitor_result.get("summary", {})
     if diff.get("new_count", 0) > 0:
         try:
-            warn_notify.notify_if_changes(diff, summary)
+            sent = warn_notify.notify_if_changes(diff, summary)
+            if sent:
+                warn_monitor.record_notified_keys(diff.get("new_keys", []))
         except Exception as e:
             log.warning(f"Email notification failed (non-fatal): {e}")
 

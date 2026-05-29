@@ -47,15 +47,82 @@ def test_parse_warn_xlsx(mock_excel_file, mock_read_excel, sample_warn_data):
     assert len(result_df) == 2
     assert "Test Company" in result_df["company"].values
 
-def test_detect_changes_no_snapshot(sample_warn_data, tmp_path):
-    # The monitor expects parsed data (lowercase columns)
+def _parsed_df(sample_warn_data):
+    """Mimic the monitor's parsed output (lowercase, underscored columns)."""
     df = pd.DataFrame(sample_warn_data)
     df.columns = [c.lower().replace("no. of ", "").replace(" ", "_") for c in df.columns]
+    return df
 
-    with patch("warn_monitor.SNAPSHOT_FILE", tmp_path / "missing.json"):
+
+def test_detect_changes_bootstrap_no_ledger(sample_warn_data, tmp_path):
+    """First ever run (no ledger): establish a baseline, alert nothing, seed ledger."""
+    df = _parsed_df(sample_warn_data)
+    ledger = tmp_path / "notified.json"
+    with patch("warn_monitor.NOTIFIED_FILE", ledger), \
+         patch("warn_monitor.LATEST_FILE", tmp_path / "missing-latest.json"):
         diff = warn_monitor.detect_changes(df)
-        assert diff["new_count"] == 2
-        assert diff["total_employees_new"] == 150
+        assert diff["new_count"] == 0
+        assert diff["new_entries"] == []
+        # Ledger seeded with both existing notices so they never alert later.
+        assert ledger.exists()
+        assert len(warn_monitor._load_notified_keys()) == 2
+
+
+def test_detect_changes_reports_only_unseen(sample_warn_data, tmp_path):
+    """With a ledger present, only notices whose keys are absent count as new."""
+    df = _parsed_df(sample_warn_data)
+    ledger = tmp_path / "notified.json"
+    with patch("warn_monitor.NOTIFIED_FILE", ledger), \
+         patch("warn_monitor.LATEST_FILE", tmp_path / "missing-latest.json"):
+        # Pre-seed with only "Another Co" — "Test Company" is unseen.
+        warn_monitor._save_notified_keys({"Another Co__2026-03-01__50"})
+        diff = warn_monitor.detect_changes(df)
+        assert diff["new_count"] == 1
+        assert diff["new_entries"][0]["company"] == "Test Company"
+        assert diff["total_employees_new"] == 100
+
+
+def test_no_duplicate_alert_on_feed_oscillation(tmp_path):
+    """Regression for the duplicate-email bug: a notice already alerted on must
+    NOT alert again when the EDD feed drops it and later serves it again."""
+    ledger = tmp_path / "notified.json"
+    latest = tmp_path / "latest.json"
+
+    def feed(*companies):
+        return pd.DataFrame([
+            {"company": c, "effective_date": "2026-06-01", "employees": 100,
+             "notice_date": "2026-05-01", "county": "X", "city": "Y",
+             "layoff_type": "Layoff", "address": "Z", "industry": "I"}
+            for c in companies
+        ])
+
+    with patch("warn_monitor.NOTIFIED_FILE", ledger), \
+         patch("warn_monitor.LATEST_FILE", latest):
+        warn_monitor._save_notified_keys({"A__2026-06-01__100", "B__2026-06-01__100"})
+
+        # Feed swings UP to include C → C is genuinely new, alerts once.
+        diff1 = warn_monitor.detect_changes(feed("A", "B", "C"))
+        assert diff1["new_count"] == 1
+        assert diff1["new_keys"] == ["C__2026-06-01__100"]
+        warn_monitor.record_notified_keys(diff1["new_keys"])  # recorded after send
+
+        # Feed reverts (C dropped) → no alert.
+        latest.write_text(json.dumps({"records": [
+            {"company": c, "effective_date": "2026-06-01", "employees": 100}
+            for c in ("A", "B", "C")
+        ]}))
+        assert warn_monitor.detect_changes(feed("A", "B"))["new_count"] == 0
+
+        # Feed swings UP again to include C → must NOT re-alert (the fix).
+        assert warn_monitor.detect_changes(feed("A", "B", "C"))["new_count"] == 0
+
+
+def test_record_notified_keys_accumulates(tmp_path):
+    ledger = tmp_path / "notified.json"
+    with patch("warn_monitor.NOTIFIED_FILE", ledger):
+        warn_monitor.record_notified_keys(["a__1__10"])
+        warn_monitor.record_notified_keys(["b__2__20", "a__1__10"])  # dup ignored
+        assert warn_monitor._load_notified_keys() == {"a__1__10", "b__2__20"}
 
 
 def _rec(company, county="LA", emp=10, notice="2026-01-01", eff="2026-03-01"):

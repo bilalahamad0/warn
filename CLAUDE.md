@@ -64,6 +64,7 @@ injected into `index.html` at build time; if unset, the form degrades to a
 - `warn_latest.json` — current WARN records from the live XLSX
 - `warn_all_years.json` — unified 2014-present dataset (live + historical PDFs)
 - `warn_snapshot.json` — previous run state used by `warn_diff.py` for comparison
+- `notified_keys.json` — cumulative ledger of every notice key already alerted on. `warn_monitor.detect_changes` keys "new" off this (not a single prior run) so the EDD feed's version churn — it intermittently flip-flops the record count across consecutive fetches — can't re-trigger emails for the same notices. Keys are recorded only after a successful send (`warn_publish` → `warn_monitor.record_notified_keys`).
 - `meta.json` — ETag + file hash + timestamps for cache invalidation
 - `changelog.jsonl` — append-only log of every detected change
 
