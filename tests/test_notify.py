@@ -69,9 +69,9 @@ def test_recipient_batches_chunks(monkeypatch):
 @patch("warn_notify.smtplib.SMTP_SSL")
 def test_send_email_bccs_subscribers(mock_smtp, mock_subs, monkeypatch):
     """New notices go to NOTIFY_EMAIL and BCC every signup subscriber."""
-    monkeypatch.setattr(warn_notify, "GMAIL_USER", "owner@gmail.com")
-    monkeypatch.setattr(warn_notify, "GMAIL_APP_PASS", "pass")
-    monkeypatch.setattr(warn_notify, "NOTIFY_EMAIL", "owner@gmail.com")
+    monkeypatch.setenv("GMAIL_USER", "owner@gmail.com")
+    monkeypatch.setenv("GMAIL_APP_PASSWORD", "pass")
+    monkeypatch.setenv("NOTIFY_EMAIL", "owner@gmail.com")
     inst = MagicMock()
     mock_smtp.return_value.__enter__.return_value = inst
 

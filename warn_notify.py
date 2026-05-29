@@ -35,12 +35,24 @@ import warn_subscribers
 
 log = logging.getLogger("warn_notify")
 
-GMAIL_USER = os.environ.get("GMAIL_USER", "")
-GMAIL_APP_PASS = os.environ.get("GMAIL_APP_PASSWORD", "")
-NOTIFY_EMAIL = os.environ.get("NOTIFY_EMAIL", "")
-
 # Gmail caps recipients per message (~100 free / ~500 Workspace). Stay under it.
 MAX_BCC_PER_MESSAGE = 90
+
+
+def _smtp_config() -> tuple:
+    """Resolve (gmail_user, gmail_app_password, notify_email) from the environment.
+
+    Read at call time rather than captured into module globals at import, so
+    values from .env (load_dotenv runs at import), CI-exported vars, and test
+    monkeypatching are always honoured — not frozen to whatever happened to be
+    set the moment this module was first imported.
+    """
+    return (
+        os.environ.get("GMAIL_USER", ""),
+        os.environ.get("GMAIL_APP_PASSWORD", ""),
+        os.environ.get("NOTIFY_EMAIL", ""),
+    )
+
 
 WARN_URL = "https://edd.ca.gov/en/jobs_and_training/layoff_services_warn"
 DASHBOARD_URL = "https://bilalahamad0.github.io/warn/"
@@ -220,7 +232,8 @@ def send_email(diff: dict, summary: dict) -> bool:
     Goes to NOTIFY_EMAIL (To) plus every signup subscriber (BCC).
     Returns True if sent successfully.
     """
-    if not GMAIL_USER or not GMAIL_APP_PASS:
+    gmail_user, gmail_pass, notify_email = _smtp_config()
+    if not gmail_user or not gmail_pass:
         log.warning(
             "GMAIL_USER / GMAIL_APP_PASSWORD not set — skipping email. "
             "Add them to .env to enable notifications."
@@ -238,7 +251,7 @@ def send_email(diff: dict, summary: dict) -> bool:
     )
 
     # Recipients: owner in To; signup subscribers BCC'd (privacy + Gmail caps).
-    to_addr = NOTIFY_EMAIL or GMAIL_USER
+    to_addr = notify_email or gmail_user
     try:
         subscribers = warn_subscribers.get_subscribers()
     except Exception as e:
@@ -252,9 +265,9 @@ def send_email(diff: dict, summary: dict) -> bool:
 
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
-    msg["From"] = f"WARN Monitor <{GMAIL_USER}>"
+    msg["From"] = f"WARN Monitor <{gmail_user}>"
     msg["To"] = to_addr
-    msg["List-Unsubscribe"] = f"<mailto:{GMAIL_USER}?subject=unsubscribe>"
+    msg["List-Unsubscribe"] = f"<mailto:{gmail_user}?subject=unsubscribe>"
 
     msg.attach(MIMEText(_build_text(diff, summary), "plain"))
     msg.attach(MIMEText(_build_html(diff, summary), "html"))
@@ -267,9 +280,9 @@ def send_email(diff: dict, summary: dict) -> bool:
             f"({len(subscribers)} subscriber(s)) in {len(batches)} batch(es) …"
         )
         with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
-            server.login(GMAIL_USER, GMAIL_APP_PASS)
+            server.login(gmail_user, gmail_pass)
             for batch in batches:
-                server.sendmail(GMAIL_USER, batch, raw)
+                server.sendmail(gmail_user, batch, raw)
         log.info("✓ Alert email sent.")
         return True
     except smtplib.SMTPAuthenticationError:
