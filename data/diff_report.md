@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-05-30 13:00:52 UTC
+**Generated:** 2026-05-31 02:14:07 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -30,16 +30,17 @@ M .coverage
 
 **Recent commits:**
 ```
+c170ce7 auto: WARN data update [skip ci]
 84257bf auto: WARN data update [skip ci]
 17385eb auto: WARN data update [skip ci]
 375b4ab test: isolate notify/publish tests from real data, network, and env
 11c9915 fix: stop duplicate WARN email alerts caused by feed version churn
-18db493 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-05-31T02:14:07.018423+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-05-30T13:00:52.931517+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-05-30T01:58:20.621227+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-05-29T14:36:55.377324+00:00Z` — +0 added, -93 removed, 0 employees (new)
@@ -49,4 +50,3 @@ M .coverage
 - `2026-05-27T14:52:41.660015+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-05-27T02:12:23.876205+00:00Z` — +89 added, -1 removed, 5,609 employees (new)
 - `2026-05-26T14:37:33.640404+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-05-26T02:04:49.713720+00:00Z` — +0 added, -0 removed, 0 employees (new)
