@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-06-02 02:34:07 UTC
+**Generated:** 2026-06-02 15:56:48 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -30,16 +30,17 @@ M .coverage
 
 **Recent commits:**
 ```
+237e903 docs: link the animated architecture page from dashboard + README
+f28c67f docs: add animated architecture/system-design/workflow page
+48a6c15 auto: WARN data update [skip ci]
 6ffcc18 auto: WARN data update [skip ci]
 577736d auto: WARN data update [skip ci]
-069213b auto: WARN data update [skip ci]
-75fed6f chore: weekly AI metrics update [skip actions]
-9388567 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-06-02T15:56:48.679388+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-06-02T02:34:07.707474+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-06-01T17:14:24.886598+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-06-01T02:35:23.318514+00:00Z` — +0 added, -0 removed, 0 employees (new)
@@ -49,4 +50,3 @@ M .coverage
 - `2026-05-30T01:58:20.621227+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-05-29T14:36:55.377324+00:00Z` — +0 added, -93 removed, 0 employees (new)
 - `2026-05-29T02:04:18.315746+00:00Z` — +93 added, -1 removed, 8,942 employees (new)
-- `2026-05-28T15:25:03.042079+00:00Z` — +0 added, -0 removed, 0 employees (new)
