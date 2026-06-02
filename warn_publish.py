@@ -928,6 +928,7 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
 <footer>
   Built by <a href="https://bilalahamad.com" target="_blank">bilalahamad.com</a> ·
   Data: <a href="https://edd.ca.gov/en/jobs_and_training/layoff_services_warn" target="_blank">CA EDD</a> ·
+  <a href="architecture.html">How it works</a> ·
   Generated {generated_at}
   <span id="visitor-counter" class="visitor-counter" hidden> · 👁 <strong id="visitor-count">—</strong> visitors</span>
 </footer>
