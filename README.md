@@ -5,6 +5,7 @@
 [![Auto-Update](https://img.shields.io/badge/updates-twice_daily-brightgreen)](https://github.com/bilalahamad0/warn/actions/workflows/monitor.yml)
 [![Last Commit](https://img.shields.io/github/last-commit/bilalahamad0/warn)](https://github.com/bilalahamad0/warn/commits/main)
 [![Live Dashboard](https://img.shields.io/badge/dashboard-live-orange)](https://bilalahamad0.github.io/warn/)
+[![Architecture](https://img.shields.io/badge/architecture-animated-blueviolet)](https://bilalahamad0.github.io/warn/architecture.html)
 [![Data Source](https://img.shields.io/badge/source-CA_EDD-blue)](https://edd.ca.gov/en/jobs_and_training/layoff_services_warn)
 [![Python](https://img.shields.io/badge/python-3.12-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](#-license)
@@ -15,7 +16,9 @@ An automated end-to-end pipeline that monitors California layoff notices (WARN A
 
 ## 🌐 Live Dashboard
 
-**[→ View Dashboard](https://bilalahamad0.github.io/warn/)**
+**[→ View Dashboard](https://bilalahamad0.github.io/warn/)** · **[→ How it works (animated architecture)](https://bilalahamad0.github.io/warn/architecture.html)**
+
+The [architecture page](https://bilalahamad0.github.io/warn/architecture.html) is an interactive, animated walk-through of the system: the layered architecture, the 5-stage pipeline (with a play-through), the data-flow / change-detection logic, and the twice-daily CI workflow.
 
 Or embed on any website:
 ```html
