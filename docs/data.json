@@ -1,9 +1,9 @@
 {
-  "total_records": 1418,
-  "total_employees": 77959,
+  "total_records": 1427,
+  "total_employees": 78437,
   "date_range_start": "2025-01-29",
-  "date_range_end": "2026-06-03",
-  "last_updated": "2026-06-09T14:20:00.797050+00:00Z",
+  "date_range_end": "2026-06-08",
+  "last_updated": "2026-06-10T02:11:33.810326+00:00Z",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "records": [
     {
@@ -15125,7 +15125,7 @@
       "effective_date": "2026-08-28",
       "county": "Los Angeles County",
       "city": "",
-      "layoff_type": "Closure Permanent",
+      "layoff_type": "Layoff Permanent",
       "employees": 7,
       "notice_date": "2026-06-01",
       "address": "450 East Huntington Drive  Arcadia CA 91006",
@@ -15532,7 +15532,7 @@
       "effective_date": "2026-07-31",
       "county": "Los Angeles County",
       "city": "",
-      "layoff_type": "Closure Permanent",
+      "layoff_type": "Layoff Permanent",
       "employees": 3,
       "notice_date": "2026-06-01",
       "address": "3565 Del Amo Boulevard  Torrance CA 90505",
@@ -15576,7 +15576,7 @@
       "effective_date": "2026-08-28",
       "county": "Los Angeles County",
       "city": "",
-      "layoff_type": "Closure Permanent",
+      "layoff_type": "Layoff Permanent",
       "employees": 1,
       "notice_date": "2026-06-01",
       "address": "420 W. Rowland Street  Covina CA 91723",
@@ -15598,11 +15598,110 @@
       "effective_date": "2026-10-03",
       "county": "Ventura County",
       "city": "",
-      "layoff_type": "Closure Permanent",
+      "layoff_type": "Layoff Permanent",
       "employees": 80,
       "notice_date": "2026-06-01",
       "address": "1901 North Solar Dr.  Oxnard CA 93036",
       "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "company": "Quizlet, Inc.",
+      "effective_date": "2026-06-05",
+      "county": "San Francisco County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 79,
+      "notice_date": "2026-06-03",
+      "address": "123 Townsend St, Suite 600  San Francisco CA 94107",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "company": "CAT Restaurant Management, LLC",
+      "effective_date": "2026-07-03",
+      "county": "Los Angeles County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 57,
+      "notice_date": "2026-05-01",
+      "address": "8171 Santa Monica Blvd  West Hollywood CA 90046",
+      "industry": "72 Accommodation and Food Services"
+    },
+    {
+      "company": "St. Vincent de Paul Society of Lane County, Inc.",
+      "effective_date": "2026-07-11",
+      "county": "San Joaquin County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 8,
+      "notice_date": "2026-06-03",
+      "address": "3837 Producers Dr. #500  Stockton CA 95206",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
+    },
+    {
+      "company": "Blue Diamond Growers",
+      "effective_date": "2026-08-07",
+      "county": "Sacramento County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 40,
+      "notice_date": "2026-06-05",
+      "address": "1802 C Street  Sacramento CA 95811",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "company": "Verily Health Inc.",
+      "effective_date": "2026-08-07",
+      "county": "San Mateo County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 58,
+      "notice_date": "2026-06-08",
+      "address": "999 Bayhill Dr.  San Bruno CA 94066",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "company": "Salesforce, Inc.",
+      "effective_date": "2026-08-07",
+      "county": "San Francisco County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 86,
+      "notice_date": "2026-06-08",
+      "address": "415 Mission Street  San Francisco CA 94105",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "company": "Dwyer Instruments, LLC",
+      "effective_date": "2026-08-07",
+      "county": "Los Angeles County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 53,
+      "notice_date": "2026-06-02",
+      "address": "2855 Metropolitan Place  Pomona CA 91767",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "company": "Morgan Advance Ceramics Inc.",
+      "effective_date": "2026-08-08",
+      "county": "Alameda County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 96,
+      "notice_date": "2026-06-05",
+      "address": "2425 Whipple Road  Hayward CA 94544",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "company": "HealthCare Partners Medical Group, P.C.",
+      "effective_date": "2026-08-28",
+      "county": "Los Angeles County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 1,
+      "notice_date": "2026-06-01",
+      "address": "1120 W Washington Blvd.  Los Angeles CA 90015",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
     }
   ]
 }
