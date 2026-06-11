@@ -1,45 +1,16 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-06-10 14:50:13 UTC
+**Generated:** 2026-06-11 02:34:17 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 1,422 | 1,263 | +1/+160 |
-| Total employees | 77,997 | 67,796 | -10,201 |
+| Total records | 1,263 | 1,263 | +0/+0 |
+| Total employees | 67,796 | 67,796 | +0 |
 
-### ✅ New Entries (1 records)
-
-| Company | Employees | Effective Date | County |
-|---------|-----------|----------------|--------|
-| Black Tiger Medical Transportation | 82 | 2026-05-29 | San Diego County |
-
-### ❌ Removed Entries (160 records)
-
-| Company | Employees | Effective Date |
-|---------|-----------|----------------|
-| Meta Platforms, Inc. | 2,550 | 2026-07-22 |
-| TeamOne | 725 | 2026-06-13 |
-| KBR Services LLC | 650 | 2026-08-01 |
-| Intuit Inc. | 493 | 2026-07-31 |
-| LinkedIn Corporation | 411 | 2026-07-13 |
-| Meta Platforms, Inc. | 313 | 2026-07-22 |
-| Intuit Inc. | 277 | 2026-07-31 |
-| Meta Platforms, Inc. | 252 | 2026-07-22 |
-| Geodis | 238 | 2026-07-03 |
-| Cloudflare, Inc. | 224 | 2026-05-15 |
-| Fresh Venture Foods, LLC | 185 | 2026-07-10 |
-| Flagship Facilities Services, LLC | 178 | 2026-07-19 |
-| Transdev | 126 | 2026-06-30 |
-| Credit Karma, LLC | 117 | 2026-07-31 |
-| Alain LeRoyLocke College Preparatory Academy (Green Dot Public Schools) | 113 | 2026-06-30 |
-| Liberty Healthcare Corporation | 113 | 2026-07-08 |
-| Canteen Vending Services | 110 | 2026-07-19 |
-| LinkedIn Corporation | 108 | 2026-07-13 |
-| GladUDid LLC (Chick-fil-A) | 98 | 2026-07-11 |
-| Morgan Advance Ceramics Inc. | 96 | 2026-08-08 |
+### ✅ No new entries.
 
 ---
 ## 📁 File vs Git Comparison
@@ -59,16 +30,17 @@ M .coverage
 
 **Recent commits:**
 ```
+cec0b53 auto: WARN data update [skip ci]
 2214dbb auto: WARN data update [skip ci]
 2946dda auto: WARN data update [skip ci]
 a3ae526 auto: WARN data update [skip ci]
 d59b9e8 auto: WARN data update [skip ci]
-dccc753 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-06-11T02:34:17.652512+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-06-10T14:50:13.330097+00:00Z` — +0 added, -160 removed, 0 employees (new)
 - `2026-06-10T02:11:33.790527+00:00Z` — +9 added, -1 removed, 478 employees (new)
 - `2026-06-09T14:20:00.778884+00:00Z` — +0 added, -0 removed, 0 employees (new)
@@ -78,4 +50,3 @@ dccc753 auto: WARN data update [skip ci]
 - `2026-06-07T13:18:04.911080+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-06-07T02:29:53.660194+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-06-06T13:05:28.734290+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-06-06T02:02:49.366333+00:00Z` — +0 added, -0 removed, 0 employees (new)
