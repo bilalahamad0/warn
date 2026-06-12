@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-11T15:32:10.808221+00:00Z",
-  "total_records": 1728,
-  "total_employees": 99731,
+  "generated_at": "2026-06-12T02:29:24.593331+00:00Z",
+  "total_records": 1732,
+  "total_employees": 99972,
   "yearly_summary": [
     {
       "fiscal_year": 2014,
@@ -83,8 +83,8 @@
     {
       "fiscal_year": "current",
       "label": "FY 2025-26 (Live)",
-      "records": 1427,
-      "employees": 78437,
+      "records": 1431,
+      "employees": 78678,
       "source": "xlsx"
     }
   ],
@@ -21948,6 +21948,58 @@
       "notice_date": "2026-06-01",
       "address": "1120 W Washington Blvd.  Los Angeles CA 90015",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "Ubisoft",
+      "effective_date": "2026-08-10",
+      "county": "San Francisco County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 93,
+      "notice_date": "2026-06-10",
+      "address": "300 Mission Street, 20th Floor  San Francisco CA 94105",
+      "industry": "51 Information",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "Veritone, Inc.",
+      "effective_date": "2026-08-10",
+      "county": "Orange County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 31,
+      "notice_date": "2026-06-10",
+      "address": "5291 California Ave., Ste. 350  Irvine CA 92617",
+      "industry": "54 Professional Scientific and Technical Services",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "ServiceNow, Inc.",
+      "effective_date": "2026-08-17",
+      "county": "San Diego County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 63,
+      "notice_date": "2026-06-10",
+      "address": "4801 Eastgate Mall  San Diego CA 92121",
+      "industry": "54 Professional Scientific and Technical Services",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "ServiceNow, Inc.",
+      "effective_date": "2026-08-17",
+      "county": "Santa Clara County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 54,
+      "notice_date": "2026-06-10",
+      "address": "2225 Lawson Lane  Santa Clara CA 95054",
+      "industry": "54 Professional Scientific and Technical Services",
       "fiscal_year": "current",
       "source": "xlsx"
     }
