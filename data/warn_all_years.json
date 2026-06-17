@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-16T16:21:06.476639+00:00Z",
-  "total_records": 1732,
-  "total_employees": 99972,
+  "generated_at": "2026-06-17T02:37:45.999372+00:00Z",
+  "total_records": 1735,
+  "total_employees": 100300,
   "yearly_summary": [
     {
       "fiscal_year": 2014,
@@ -83,8 +83,8 @@
     {
       "fiscal_year": "current",
       "label": "FY 2025-26 (Live)",
-      "records": 1431,
-      "employees": 78678,
+      "records": 1434,
+      "employees": 79006,
       "source": "xlsx"
     }
   ],
@@ -22000,6 +22000,45 @@
       "notice_date": "2026-06-10",
       "address": "2225 Lawson Lane  Santa Clara CA 95054",
       "industry": "54 Professional Scientific and Technical Services",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "Hy-Tek Intralogistics",
+      "effective_date": "2026-08-10",
+      "county": "San Bernardino County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 200,
+      "notice_date": "2026-06-11",
+      "address": "11500 Phelan Road  Hesperia CA 92344",
+      "industry": "42 Wholesale Trade",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "Uber Technologies, Inc.",
+      "effective_date": "2026-08-11",
+      "county": "San Francisco County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 3,
+      "notice_date": "2026-06-12",
+      "address": "1655 3rd Street  San Francisco CA 94158",
+      "industry": "48-49 Transportation and Warehousing",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "Leggett & Platt",
+      "effective_date": "2026-08-14",
+      "county": "San Bernardino County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 125,
+      "notice_date": "2026-06-15",
+      "address": "1671 S. Champagne Avenue  Ontario CA 91761",
+      "industry": "42 Wholesale Trade",
       "fiscal_year": "current",
       "source": "xlsx"
     }
