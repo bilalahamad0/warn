@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-18T14:43:51.610191+00:00Z",
-  "total_records": 1735,
-  "total_employees": 100300,
+  "generated_at": "2026-06-19T02:51:12.001142+00:00Z",
+  "total_records": 1737,
+  "total_employees": 100322,
   "yearly_summary": [
     {
       "fiscal_year": 2014,
@@ -83,8 +83,8 @@
     {
       "fiscal_year": "current",
       "label": "FY 2025-26 (Live)",
-      "records": 1434,
-      "employees": 79006,
+      "records": 1436,
+      "employees": 79028,
       "source": "xlsx"
     }
   ],
@@ -22039,6 +22039,32 @@
       "notice_date": "2026-06-15",
       "address": "1671 S. Champagne Avenue  Ontario CA 91761",
       "industry": "42 Wholesale Trade",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "United Natural Foods West",
+      "effective_date": "2026-08-17",
+      "county": "Los Angeles County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 11,
+      "notice_date": "2026-06-15",
+      "address": "5300 Sheila St.  Los Angeles CA 90040",
+      "industry": "42 Wholesale Trade",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "Lumileds LLC",
+      "effective_date": "2026-08-31",
+      "county": "Santa Clara County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 11,
+      "notice_date": "2026-06-17",
+      "address": "370 W. Trimble Rd  San Jose CA 95131",
+      "industry": "31-33 Manufacturing",
       "fiscal_year": "current",
       "source": "xlsx"
     }
