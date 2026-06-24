@@ -1217,11 +1217,12 @@ def run(no_push: bool = False, force: bool = False, skip_history: bool = False):
     # notices on consecutive runs (see warn_monitor.detect_changes).
     diff = monitor_result.get("diff", {})
     summary = monitor_result.get("summary", {})
-    if diff.get("new_count", 0) > 0:
+    if diff.get("new_count", 0) > 0 or diff.get("amendment_count", 0) > 0:
         try:
             sent = warn_notify.notify_if_changes(diff, summary)
             if sent:
                 warn_monitor.record_notified_keys(diff.get("new_keys", []))
+                warn_monitor.record_amended_keys(diff.get("amendment_keys", []))
         except Exception as e:
             log.warning(f"Email notification failed (non-fatal): {e}")
 

@@ -62,14 +62,45 @@ DASHBOARD_URL = "https://bilalahamad0.github.io/warn/"
 # ---------------------------------------------------------------------------
 
 
+def _fmt_emp(v) -> str:
+    """Format an employee count for display, tolerating None/non-int."""
+    try:
+        return f"{int(v):,}"
+    except (TypeError, ValueError):
+        return str(v) if v not in (None, "") else "?"
+
+
+def _describe_amendment(a: dict) -> str:
+    """Human description of what EDD changed in an amended notice."""
+    parts = []
+    old_eff, new_eff = a.get("old_effective_date"), a.get("new_effective_date")
+    if old_eff != new_eff:
+        parts.append(f"effective date {old_eff or '?'} → {new_eff or '?'}")
+    old_emp, new_emp = a.get("old_employees"), a.get("new_employees")
+    if old_emp != new_emp:
+        parts.append(f"headcount {_fmt_emp(old_emp)} → {_fmt_emp(new_emp)}")
+    return "; ".join(parts) or "details revised"
+
+
 def _build_html(diff: dict, summary: dict) -> str:
     new_count = diff.get("new_count", 0)
+    amend_count = diff.get("amendment_count", 0)
     rem_count = diff.get("removed_count", 0)
     new_emp = diff.get("total_employees_new", 0)
     new_entries = diff.get("new_entries", [])[:10]  # top 10 in email
+    amendments = diff.get("amendments", [])
     total_rec = summary.get("total_records", 0)
     total_emp = summary.get("total_employees", 0)
     now = datetime.now(timezone.utc).strftime("%B %d, %Y at %H:%M UTC")
+
+    # Left stat card adapts: headline new filings, or amendments when an update
+    # carries only revisions.
+    if new_count > 0:
+        stat_label, stat_value = "New Notices", f"+{new_count:,}"
+        stat_sub, stat_color = f"{new_emp:,} employees affected", "#3fb950"
+    else:
+        stat_label, stat_value = "Amended Notices", f"{amend_count:,}"
+        stat_sub, stat_color = "details revised", "#d29922"
 
     rows_html = ""
     for r in new_entries:
@@ -85,9 +116,44 @@ def _build_html(diff: dict, summary: dict) -> str:
     if new_count > 10:
         more_note = f'<p style="color:#8b949e;font-size:13px">… and {new_count - 10} more. View all on the dashboard.</p>'
 
+    # Amended notices — a known filing whose details EDD revised (most often its
+    # effective date). Each is reported at most once (see warn_monitor), so this
+    # no longer re-surfaces the same amendment on every feed swing.
+    amend_html = ""
+    if amendments:
+        amend_rows = ""
+        for a in amendments[:10]:
+            amend_rows += f"""
+        <tr>
+          <td style="padding:8px 12px;border-bottom:1px solid #21262d">{a.get('company','?')}</td>
+          <td style="padding:8px 12px;border-bottom:1px solid #21262d">{a.get('county','?')}</td>
+          <td style="padding:8px 12px;border-bottom:1px solid #21262d;color:#d29922">{_describe_amendment(a)}</td>
+        </tr>"""
+        amend_more = ""
+        if len(amendments) > 10:
+            amend_more = f'<p style="color:#8b949e;font-size:13px">… and {len(amendments) - 10} more amended.</p>'
+        amend_html = (
+            '<tr><td style="padding:0 32px 24px">'
+            '<h2 style="font-size:15px;margin:0 0 12px;color:#e6edf3">📝 Amended Notices</h2>'
+            '<table width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #21262d;border-radius:8px;overflow:hidden">'
+            '<thead><tr style="background:#0d1117">'
+            '<th style="padding:10px 12px;text-align:left;font-size:12px;color:#8b949e">Company</th>'
+            '<th style="padding:10px 12px;text-align:left;font-size:12px;color:#8b949e">County</th>'
+            '<th style="padding:10px 12px;text-align:left;font-size:12px;color:#8b949e">What changed</th>'
+            '</tr></thead><tbody>' + amend_rows + '</tbody></table>' + amend_more +
+            '</td></tr>'
+        )
+
+    # Genuine withdrawals only — a filing whose whole anchor vanished from the
+    # feed, not a revision (those are shown above as amendments).
     removed_note = ""
     if rem_count > 0:
-        removed_note = f'<p style="color:#f78166">⚠️ {rem_count} previously filed notices were removed/amended in this update.</p>'
+        plural = rem_count != 1
+        removed_note = (
+            f'<p style="color:#f78166">⚠️ {rem_count} previously filed '
+            f'notice{"s" if plural else ""} {"were" if plural else "was"} '
+            f"withdrawn from the official file in this update.</p>"
+        )
 
     return f"""\
 <!DOCTYPE html>
@@ -115,9 +181,9 @@ def _build_html(diff: dict, summary: dict) -> str:
             <table width="100%" cellpadding="0" cellspacing="12">
               <tr>
                 <td width="50%" style="background:#0d1117;border-radius:10px;padding:16px;border:1px solid #21262d">
-                  <div style="font-size:11px;color:#8b949e;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">New Notices</div>
-                  <div style="font-size:32px;font-weight:700;color:#3fb950">+{new_count:,}</div>
-                  <div style="font-size:12px;color:#8b949e">{new_emp:,} employees affected</div>
+                  <div style="font-size:11px;color:#8b949e;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">{stat_label}</div>
+                  <div style="font-size:32px;font-weight:700;color:{stat_color}">{stat_value}</div>
+                  <div style="font-size:12px;color:#8b949e">{stat_sub}</div>
                 </td>
                 <td width="50%" style="background:#0d1117;border-radius:10px;padding:16px;border:1px solid #21262d">
                   <div style="font-size:11px;color:#8b949e;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">Total on File</div>
@@ -134,6 +200,8 @@ def _build_html(diff: dict, summary: dict) -> str:
         {'<table width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #21262d;border-radius:8px;overflow:hidden"><thead><tr style="background:#0d1117"><th style="padding:10px 12px;text-align:left;font-size:12px;color:#8b949e">Company</th><th style="padding:10px 12px;text-align:right;font-size:12px;color:#8b949e">Employees</th><th style="padding:10px 12px;text-align:left;font-size:12px;color:#8b949e">Effective Date</th><th style="padding:10px 12px;text-align:left;font-size:12px;color:#8b949e">County</th></tr></thead><tbody>' + rows_html + '</tbody></table>' if new_entries else ''}
         {more_note}
         {'</td></tr>' if new_entries else ''}
+
+        {amend_html}
 
         {f'<tr><td style="padding:0 32px 24px">{removed_note}</td></tr>' if removed_note else ''}
 
@@ -177,12 +245,14 @@ def _build_html(diff: dict, summary: dict) -> str:
 
 def _build_text(diff: dict, summary: dict) -> str:
     new_count = diff.get("new_count", 0)
+    amend_count = diff.get("amendment_count", 0)
     new_emp = diff.get("total_employees_new", 0)
     entries = diff.get("new_entries", [])[:10]
     lines = [
         "California WARN Alert",
         "=" * 40,
         f"New notices: {new_count:,} ({new_emp:,} employees)",
+        f"Amended notices: {amend_count:,}",
         f"Total on file: {summary.get('total_records', 0):,}",
         "",
     ]
@@ -193,6 +263,17 @@ def _build_text(diff: dict, summary: dict) -> str:
                 f"  {r.get('company', '?')} — {r.get('employees', 0):,} employees — "
                 f"{r.get('effective_date', '?')} — {r.get('county', '?')}"
             )
+
+    amendments = diff.get("amendments", [])
+    if amendments:
+        lines.append("")
+        lines.append("Amended notices:")
+        for a in amendments[:10]:
+            lines.append(
+                f"  {a.get('company', '?')} ({a.get('county', '?')}) — "
+                f"{_describe_amendment(a)}"
+            )
+
     lines += [
         "",
         f"Dashboard: {DASHBOARD_URL}",
@@ -241,14 +322,23 @@ def send_email(diff: dict, summary: dict) -> bool:
         return False
 
     new_count = diff.get("new_count", 0)
-    if new_count == 0:
-        log.info("No new notices — skipping email notification.")
+    amend_count = diff.get("amendment_count", 0)
+    if new_count == 0 and amend_count == 0:
+        log.info("No new notices or amendments — skipping email notification.")
         return False
 
-    subject = (
-        f"🚨 WARN Alert: {new_count} new CA layoff notice{'s' if new_count > 1 else ''} "
-        f"({diff.get('total_employees_new', 0):,} employees)"
-    )
+    if new_count > 0:
+        subject = (
+            f"🚨 WARN Alert: {new_count} new CA layoff notice{'s' if new_count > 1 else ''} "
+            f"({diff.get('total_employees_new', 0):,} employees)"
+        )
+        if amend_count > 0:
+            subject += f" + {amend_count} amended"
+    else:
+        subject = (
+            f"📝 WARN Update: {amend_count} CA layoff "
+            f"notice{'s' if amend_count > 1 else ''} amended"
+        )
 
     # Recipients: owner in To; signup subscribers BCC'd (privacy + Gmail caps).
     to_addr = notify_email or gmail_user

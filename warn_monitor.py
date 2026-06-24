@@ -15,6 +15,7 @@ import hashlib
 import logging
 import argparse
 import re
+from collections import defaultdict
 from datetime import datetime, date, timezone
 from pathlib import Path
 
@@ -45,6 +46,14 @@ CHANGELOG_FILE = DATA_DIR / "changelog.jsonl"
 # intermittently flip-flops between two versions of the spreadsheet across
 # consecutive fetches (see detect_changes for the full rationale).
 NOTIFIED_FILE = DATA_DIR / "notified_keys.json"
+# Cumulative ledger of notices we have already reported as *amended*. The EDD
+# feed oscillates between two versions of the spreadsheet on consecutive fetches
+# (see detect_changes), so a single genuine amendment — e.g. an effective date
+# revised from one day to another — keeps looking "newly amended" on every swing.
+# Keying amendment alerts off this ledger guarantees each revision is reported
+# at most once, and identifies the canonical (post-amendment) version of a
+# notice so the cumulative store can evict the superseded one.
+AMENDED_FILE = DATA_DIR / "amended_keys.json"
 
 LOG_FORMAT = "%(asctime)s [%(levelname)s] %(message)s"
 logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
@@ -377,6 +386,22 @@ def _notice_key(r: dict) -> str:
     )
 
 
+def _anchor_key(r: dict) -> tuple:
+    """Identity of a *filing* that survives an EDD amendment.
+
+    Excludes the mutable fields (effective_date, employees) that EDD revises so
+    a notice whose effective date or headcount is later corrected still maps to
+    the same filing. company + county + city + notice_date anchors it; multi-site
+    notices for one company stay distinct via county/city.
+    """
+    return (
+        str(r.get("company", "")).strip().lower(),
+        str(r.get("county", "")).strip().lower(),
+        str(r.get("city", "")).strip().lower(),
+        str(r.get("notice_date", ""))[:10],
+    )
+
+
 def _load_notified_keys() -> set:
     """Load the cumulative set of notice keys we have already alerted on."""
     if not NOTIFIED_FILE.exists():
@@ -418,9 +443,51 @@ def record_notified_keys(keys) -> None:
         log.info(f"Recorded {added_n} new notice(s) to {NOTIFIED_FILE.name}.")
 
 
+def _load_amended_keys() -> set:
+    """Load the cumulative set of notice keys we have already alerted on as amended."""
+    if not AMENDED_FILE.exists():
+        return set()
+    try:
+        data = json.loads(AMENDED_FILE.read_text())
+        keys = data.get("keys", []) if isinstance(data, dict) else data
+        return set(keys)
+    except Exception as e:
+        log.warning(f"Could not read {AMENDED_FILE.name} ({e}) — treating as empty.")
+        return set()
+
+
+def _save_amended_keys(keys: set) -> None:
+    """Persist the amended-keys ledger (sorted, for small/stable git diffs)."""
+    payload = {
+        "count": len(keys),
+        "last_updated": datetime.now(timezone.utc).isoformat() + "Z",
+        "keys": sorted(keys),
+    }
+    AMENDED_FILE.write_text(json.dumps(payload, indent=2))
+
+
+def record_amended_keys(keys) -> None:
+    """Add keys to the amended ledger so those amendments are never re-reported.
+
+    Called by warn_publish *after* an alert email sends successfully, mirroring
+    record_notified_keys — a failed send is retried next run rather than lost.
+    """
+    keys = [k for k in (keys or []) if k]
+    if not keys:
+        return
+    ledger = _load_amended_keys()
+    before = len(ledger)
+    ledger.update(keys)
+    added_n = len(ledger) - before
+    if added_n:
+        _save_amended_keys(ledger)
+        log.info(f"Recorded {added_n} amended notice(s) to {AMENDED_FILE.name}.")
+
+
 def detect_changes(new_df: pd.DataFrame, dry_run: bool = False) -> dict:
-    """Identify genuinely NEW notices (never alerted on) and notices that
-    disappeared since the previous run.
+    """Classify how the feed changed vs the previous run into three buckets:
+    genuinely NEW filings, AMENDMENTS (a known filing whose details were
+    revised), and genuine REMOVALS (a filing withdrawn entirely).
 
     'new' is measured against a *cumulative* ledger of every notice key we have
     ever alerted on (``notified_keys.json``) — deliberately NOT a single prior
@@ -432,15 +499,25 @@ def detect_changes(new_df: pd.DataFrame, dry_run: bool = False) -> dict:
     on consecutive days. Keying off a cumulative ledger guarantees each unique
     notice can trigger at most one alert, regardless of how the feed churns.
 
-    'removed' stays a plain comparison against the previous run's published data
-    (``warn_latest.json``, which ``save_latest`` has not yet rotated into the
-    snapshot when this runs). It is informational only and never raises an alert
-    on its own.
+    'amendments' get the same oscillation-proof treatment. When EDD revises a
+    filing (most commonly its effective date), the revised line has a brand-new
+    ``_notice_key`` while its *anchor* (company + county + city + notice_date) is
+    unchanged. The naive run-over-run diff reports the old line as "removed" and
+    the new line as "new" on every feed swing — re-surfacing the same single
+    amendment indefinitely. Here, an anchor present in both the previous run and
+    the current feed with a changed notice_key is recognised as an amendment and
+    reported at most once, via ``amended_keys.json``. A guard against the revised
+    key already living in either ledger suppresses the feed's reversions.
+
+    'removed' is now restricted to filings whose *whole anchor* vanished from the
+    feed (a real withdrawal), never a mere revision. It is informational and does
+    not raise an alert on its own.
     """
     new_records = _df_to_records(new_df)
     feed_keys = {_notice_key(r) for r in new_records}
 
-    # Previous run's published records, used only for the 'removed' note.
+    # Previous run's published records (warn_latest.json, not yet rotated into
+    # the snapshot when this runs).
     prev_records: list[dict] = []
     if LATEST_FILE.exists():
         try:
@@ -464,24 +541,94 @@ def detect_changes(new_df: pd.DataFrame, dry_run: bool = False) -> dict:
         return {
             "new_count": 0,
             "removed_count": 0,
+            "amendment_count": 0,
             "new_keys": [],
+            "amendment_keys": [],
             "new_entries": [],
             "removed_entries": [],
+            "amendments": [],
+            "amend_superseded": [],
             "total_employees_new": 0,
             "total_employees_removed": 0,
         }
 
+    amended_ledger = _load_amended_keys()
+
+    # Anchor → records, for both sides, so a revised filing maps to its old self.
+    prev_by_anchor: dict = defaultdict(list)
+    for r in prev_records:
+        prev_by_anchor[_anchor_key(r)].append(r)
+    feed_by_anchor: dict = defaultdict(list)
+    for r in new_records:
+        feed_by_anchor[_anchor_key(r)].append(r)
+
+    amendments: list[dict] = []
+    amend_superseded: list[dict] = []  # old records to evict from the cumulative store
+    amend_new_keys: set = set()        # canonical post-amendment notice keys
+    for anchor, feed_recs in feed_by_anchor.items():
+        prev_recs = prev_by_anchor.get(anchor)
+        # Only an unambiguous 1:1 filing can be paired as an amendment; multi-site
+        # notices that share an anchor fall through to the new/removed paths.
+        if not prev_recs or len(feed_recs) != 1 or len(prev_recs) != 1:
+            continue
+        new_r, old_r = feed_recs[0], prev_recs[0]
+        new_k, old_k = _notice_key(new_r), _notice_key(old_r)
+        if new_k == old_k:
+            continue  # filing unchanged
+
+        # Report only a genuinely-unseen revision. If the revised key is already
+        # in either ledger this is the feed oscillating back to a state we have
+        # handled — surface nothing.
+        report = new_k not in notified and new_k not in amended_ledger
+        # The forward (canonical) version of an amendment is the one we report,
+        # or one we have already recorded as amended. Only then do we evict the
+        # superseded record — this keeps the cumulative store from flip-flopping
+        # while the feed oscillates.
+        canonical = report or new_k in amended_ledger
+        if canonical:
+            amend_superseded.append(old_r)
+            amend_new_keys.add(new_k)
+        if not report:
+            continue
+        amendments.append(
+            {
+                "company": new_r.get("company"),
+                "county": new_r.get("county"),
+                "city": new_r.get("city", ""),
+                "notice_date": new_r.get("notice_date"),
+                "effective_date": new_r.get("effective_date"),
+                "employees": new_r.get("employees"),
+                "old_effective_date": old_r.get("effective_date"),
+                "new_effective_date": new_r.get("effective_date"),
+                "old_employees": old_r.get("employees"),
+                "new_employees": new_r.get("employees"),
+                "key": new_k,
+            }
+        )
+
     added = [r for r in new_records if _notice_key(r) not in notified]
-    removed = [r for r in prev_records if _notice_key(r) not in feed_keys]
+    # Genuinely new filings exclude amendment new-sides (reported as amendments).
+    genuine_new = [r for r in added if _notice_key(r) not in amend_new_keys]
+    # Genuine removals = the filing's whole anchor disappeared from the feed (a
+    # real withdrawal), not merely a revised effective date or headcount.
+    genuine_removed = [r for r in prev_records if _anchor_key(r) not in feed_by_anchor]
+
+    # Record amendment new-keys in the notified ledger too, so a revised notice
+    # never later alerts as a brand-new filing.
+    new_keys = [_notice_key(r) for r in genuine_new] + sorted(amend_new_keys)
 
     return {
-        "new_count": len(added),
-        "removed_count": len(removed),
-        "new_keys": [_notice_key(r) for r in added],
-        "new_entries": added[:50],
-        "removed_entries": removed[:50],
-        "total_employees_new": sum(r.get("employees", 0) for r in added),
-        "total_employees_removed": sum(r.get("employees", 0) for r in removed),
+        "new_count": len(genuine_new),
+        "removed_count": len(genuine_removed),
+        "amendment_count": len(amendments),
+        "new_keys": new_keys,
+        "amendment_keys": [a["key"] for a in amendments],
+        "new_entries": genuine_new[:50],
+        "removed_entries": genuine_removed[:50],
+        "amendments": amendments[:50],
+        "amend_superseded": amend_superseded,
+        "total_employees_new": sum(r.get("employees", 0) for r in genuine_new),
+        "total_employees_removed": sum(r.get("employees", 0) for r in genuine_removed),
     }
 
 
@@ -489,11 +636,15 @@ def _log_change(diff: dict, dry_run: bool = False):
     """Append change event to the changelog."""
     entry = {
         "timestamp": datetime.now(timezone.utc).isoformat() + "Z",
-        **diff,
+        # amend_superseded is an internal threading field (full old records used
+        # to evict from the cumulative store) — keep it out of the changelog.
+        **{k: v for k, v in diff.items() if k != "amend_superseded"},
     }
-    if diff["new_count"] > 0 or diff["removed_count"] > 0:
+    if diff["new_count"] > 0 or diff["removed_count"] > 0 or diff.get("amendment_count", 0) > 0:
         log.info(
-            f"Changes: +{diff['new_count']} new, -{diff['removed_count']} removed records"
+            f"Changes: +{diff['new_count']} new, "
+            f"~{diff.get('amendment_count', 0)} amended, "
+            f"-{diff['removed_count']} removed records"
         )
     else:
         log.info("No data changes detected.")
@@ -570,7 +721,9 @@ def _summarise(records: list[dict]) -> dict:
     }
 
 
-def update_cumulative(records: list[dict], dry_run: bool = False) -> dict:
+def update_cumulative(
+    records: list[dict], dry_run: bool = False, superseded: list[dict] | None = None
+) -> dict:
     """Merge the latest records into the cumulative store (union of all
     notices ever observed) and persist it.
 
@@ -579,6 +732,11 @@ def update_cumulative(records: list[dict], dry_run: bool = False) -> dict:
     published days earlier. The cumulative store guarantees that once a notice
     has been seen it stays on the dashboard, so historical filings never vanish
     between runs. The latest version of a record wins on conflict.
+
+    ``superseded`` are the pre-amendment versions of notices EDD has revised
+    (from ``detect_changes``). Without eviction both the old and the revised
+    line would linger in the union — e.g. a notice whose effective date moved
+    would show up twice on the dashboard — so each superseded record is dropped.
     """
     existing: dict[tuple, dict] = {}
     if CUMULATIVE_FILE.exists():
@@ -589,6 +747,30 @@ def update_cumulative(records: list[dict], dry_run: bool = False) -> dict:
     before = len(existing)
     for r in records:
         existing[_record_key(r)] = r
+    evicted = 0
+    # Evict the pre-amendment versions detected this run (handles the run where
+    # an amendment is first seen, before it lands in the amended ledger).
+    for r in superseded or []:
+        if existing.pop(_record_key(r), None) is not None:
+            evicted += 1
+    # Then deterministically collapse any filing with a *recorded* amendment to
+    # its canonical (amended) version, so the EDD feed's version oscillation can
+    # never reintroduce a superseded line on a later union. Only anchors that
+    # actually have a recorded amendment are touched, so genuine multi-site
+    # filings sharing an anchor are left alone.
+    amended = _load_amended_keys()
+    if amended:
+        by_anchor: dict = defaultdict(list)
+        for k, r in existing.items():
+            by_anchor[_anchor_key(r)].append(k)
+        for keys in by_anchor.values():
+            if len(keys) < 2:
+                continue
+            canonical = [k for k in keys if _notice_key(existing[k]) in amended]
+            if canonical:
+                for k in keys:
+                    if k not in canonical and existing.pop(k, None) is not None:
+                        evicted += 1
     merged = list(existing.values())
     added = len(merged) - before
 
@@ -597,7 +779,7 @@ def update_cumulative(records: list[dict], dry_run: bool = False) -> dict:
         CUMULATIVE_FILE.write_text(json.dumps(summary, indent=2, default=str))
         log.info(
             f"Cumulative store: {len(merged)} records "
-            f"(+{added} new, {len(records)} in latest file)"
+            f"(+{added} new, -{evicted} superseded, {len(records)} in latest file)"
         )
     else:
         log.info(f"[DRY-RUN] Cumulative would hold {len(merged)} records.")
@@ -631,8 +813,13 @@ def run(dry_run: bool = False, force: bool = False) -> dict:
     summary = save_latest(df, dry_run=dry_run)
 
     # 5. Merge into the cumulative store so notices dropped by a later EDD
-    #    re-export are never lost from the dashboard.
-    cumulative = update_cumulative(summary["records"], dry_run=dry_run)
+    #    re-export are never lost from the dashboard. Evict pre-amendment
+    #    versions so a revised notice does not appear twice.
+    cumulative = update_cumulative(
+        summary["records"],
+        dry_run=dry_run,
+        superseded=diff.get("amend_superseded"),
+    )
 
     result = {
         "file_changed": file_changed,

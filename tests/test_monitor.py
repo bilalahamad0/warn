@@ -169,3 +169,203 @@ def test_update_cumulative_latest_wins_on_conflict(tmp_path):
 
     assert summary["total_records"] == 1
     assert summary["records"][0]["layoff_type"] == "Closure Permanent"
+
+
+# ---------------------------------------------------------------------------
+# Amendment detection
+# ---------------------------------------------------------------------------
+
+
+def test_anchor_key_survives_effective_date_revision():
+    """The anchor must be identical before/after an effective-date amendment so
+    the revised line maps back to the original filing."""
+    old = _rec("Black Tiger", county="San Diego", emp=82,
+               notice="2026-04-27", eff="2026-05-29")
+    new = _rec("Black Tiger", county="San Diego", emp=82,
+               notice="2026-04-27", eff="2026-06-28")
+    assert warn_monitor._anchor_key(old) == warn_monitor._anchor_key(new)
+    # But the notice key (which includes the effective date) differs.
+    assert warn_monitor._notice_key(old) != warn_monitor._notice_key(new)
+
+
+def _bt_feed(eff, emp=82):
+    return pd.DataFrame([{
+        "company": "Black Tiger", "effective_date": eff, "employees": emp,
+        "notice_date": "2026-04-27", "county": "San Diego", "city": "",
+        "layoff_type": "Layoff", "address": "Z", "industry": "I",
+    }])
+
+
+def _bt_latest(eff, emp=82):
+    return json.dumps({"records": [{
+        "company": "Black Tiger", "effective_date": eff, "employees": emp,
+        "notice_date": "2026-04-27", "county": "San Diego", "city": "",
+    }]})
+
+
+def test_detect_changes_reports_amendment_not_new_or_removed(tmp_path):
+    """An EDD revision of a filing's effective date is classified as an
+    amendment — not a new filing and not a withdrawal."""
+    ledger, amended, latest = (tmp_path / "n.json", tmp_path / "a.json", tmp_path / "l.json")
+    with patch("warn_monitor.NOTIFIED_FILE", ledger), \
+         patch("warn_monitor.AMENDED_FILE", amended), \
+         patch("warn_monitor.LATEST_FILE", latest):
+        warn_monitor._save_notified_keys({"Black Tiger__2026-05-29__82"})
+        latest.write_text(_bt_latest("2026-05-29"))
+
+        diff = warn_monitor.detect_changes(_bt_feed("2026-06-28"))
+        assert diff["new_count"] == 0
+        assert diff["removed_count"] == 0
+        assert diff["amendment_count"] == 1
+        a = diff["amendments"][0]
+        assert a["old_effective_date"] == "2026-05-29"
+        assert a["new_effective_date"] == "2026-06-28"
+        assert diff["amendment_keys"] == ["Black Tiger__2026-06-28__82"]
+        # The superseded old version is flagged for cumulative eviction, and the
+        # revised key joins new_keys so it never later alerts as a brand-new filing.
+        assert diff["amend_superseded"][0]["effective_date"] == "2026-05-29"
+        assert "Black Tiger__2026-06-28__82" in diff["new_keys"]
+
+
+def test_amendment_reported_only_once_across_feed_oscillation(tmp_path):
+    """Regression for the '1 previously filed notice removed/amended' noise: the
+    same amendment must be reported once, never again as the feed swings."""
+    ledger, amended, latest = (tmp_path / "n.json", tmp_path / "a.json", tmp_path / "l.json")
+    with patch("warn_monitor.NOTIFIED_FILE", ledger), \
+         patch("warn_monitor.AMENDED_FILE", amended), \
+         patch("warn_monitor.LATEST_FILE", latest):
+        warn_monitor._save_notified_keys({"Black Tiger__2026-05-29__82"})
+        latest.write_text(_bt_latest("2026-05-29"))
+
+        # First sight of the amendment → reported, then recorded as sent.
+        diff1 = warn_monitor.detect_changes(_bt_feed("2026-06-28"))
+        assert diff1["amendment_count"] == 1
+        warn_monitor.record_notified_keys(diff1["new_keys"])
+        warn_monitor.record_amended_keys(diff1["amendment_keys"])
+
+        # Feed oscillates BACK to the old date → reversion suppressed.
+        latest.write_text(_bt_latest("2026-06-28"))
+        rev = warn_monitor.detect_changes(_bt_feed("2026-05-29"))
+        assert rev["amendment_count"] == 0
+        assert rev["new_count"] == 0
+        assert rev["removed_count"] == 0
+
+        # Feed swings forward to the amended date AGAIN → must NOT re-report.
+        latest.write_text(_bt_latest("2026-05-29"))
+        again = warn_monitor.detect_changes(_bt_feed("2026-06-28"))
+        assert again["amendment_count"] == 0
+        # …but it still flags the stale version for eviction (self-healing dups).
+        assert again["amend_superseded"][0]["effective_date"] == "2026-05-29"
+
+
+def test_amendment_and_new_filing_disambiguated(tmp_path):
+    """A run carrying both a revision and a brand-new filing splits them cleanly."""
+    ledger, amended, latest = (tmp_path / "n.json", tmp_path / "a.json", tmp_path / "l.json")
+
+    def feed(rows):
+        return pd.DataFrame([{
+            "company": c, "effective_date": e, "employees": m, "notice_date": n,
+            "county": "X", "city": "", "layoff_type": "L", "address": "Z", "industry": "I",
+        } for (c, e, m, n) in rows])
+
+    with patch("warn_monitor.NOTIFIED_FILE", ledger), \
+         patch("warn_monitor.AMENDED_FILE", amended), \
+         patch("warn_monitor.LATEST_FILE", latest):
+        warn_monitor._save_notified_keys({"Acme__2026-06-01__50"})
+        latest.write_text(json.dumps({"records": [{
+            "company": "Acme", "effective_date": "2026-06-01", "employees": 50,
+            "notice_date": "2026-05-01", "county": "X", "city": ""}]}))
+
+        diff = warn_monitor.detect_changes(feed([
+            ("Acme", "2026-06-15", 50, "2026-05-01"),   # effective date revised
+            ("Globex", "2026-07-01", 30, "2026-05-10"),  # genuinely new filing
+        ]))
+        assert diff["new_count"] == 1
+        assert diff["new_entries"][0]["company"] == "Globex"
+        assert diff["amendment_count"] == 1
+        assert diff["amendments"][0]["company"] == "Acme"
+        assert set(diff["new_keys"]) == {"Globex__2026-07-01__30", "Acme__2026-06-15__50"}
+
+
+def test_detect_changes_genuine_removal_when_anchor_vanishes(tmp_path):
+    """A filing whose whole anchor disappears from the feed is a real removal."""
+    ledger, amended, latest = (tmp_path / "n.json", tmp_path / "a.json", tmp_path / "l.json")
+
+    def feed(*companies):
+        return pd.DataFrame([{
+            "company": c, "effective_date": "2026-06-01", "employees": 100,
+            "notice_date": "2026-05-01", "county": "X", "city": "",
+            "layoff_type": "L", "address": "Z", "industry": "I",
+        } for c in companies])
+
+    with patch("warn_monitor.NOTIFIED_FILE", ledger), \
+         patch("warn_monitor.AMENDED_FILE", amended), \
+         patch("warn_monitor.LATEST_FILE", latest):
+        warn_monitor._save_notified_keys({"A__2026-06-01__100", "B__2026-06-01__100"})
+        latest.write_text(json.dumps({"records": [
+            {"company": c, "effective_date": "2026-06-01", "employees": 100,
+             "notice_date": "2026-05-01", "county": "X", "city": ""}
+            for c in ("A", "B")]}))
+
+        diff = warn_monitor.detect_changes(feed("A"))  # B withdrawn entirely
+        assert diff["removed_count"] == 1
+        assert diff["removed_entries"][0]["company"] == "B"
+        assert diff["amendment_count"] == 0
+
+
+def test_record_amended_keys_accumulates(tmp_path):
+    led = tmp_path / "amended.json"
+    with patch("warn_monitor.AMENDED_FILE", led):
+        warn_monitor.record_amended_keys(["x__2026-06-28__5"])
+        warn_monitor.record_amended_keys(["y__2026-07-01__9", "x__2026-06-28__5"])
+        assert warn_monitor._load_amended_keys() == {
+            "x__2026-06-28__5", "y__2026-07-01__9"
+        }
+
+
+def test_update_cumulative_evicts_superseded_amendment(tmp_path):
+    """The pre-amendment version is dropped from the cumulative store so a
+    revised notice never shows up twice on the dashboard."""
+    cum = tmp_path / "warn_cumulative.json"
+    with patch("warn_monitor.CUMULATIVE_FILE", cum):
+        old = _rec("Black Tiger", county="San Diego", emp=82,
+                   notice="2026-04-27", eff="2026-05-29")
+        warn_monitor.update_cumulative([old])
+        new = _rec("Black Tiger", county="San Diego", emp=82,
+                   notice="2026-04-27", eff="2026-06-28")
+        summary = warn_monitor.update_cumulative([new], superseded=[old])
+
+    assert summary["total_records"] == 1
+    assert summary["records"][0]["effective_date"] == "2026-06-28"
+
+
+def test_update_cumulative_collapses_amended_via_ledger(tmp_path):
+    """Even when an oscillating feed reintroduces the superseded line, the
+    cumulative store keeps only the canonical (recorded-amended) version."""
+    cum = tmp_path / "warn_cumulative.json"
+    amended = tmp_path / "amended.json"
+    with patch("warn_monitor.CUMULATIVE_FILE", cum), \
+         patch("warn_monitor.AMENDED_FILE", amended):
+        warn_monitor._save_amended_keys({"Black Tiger__2026-06-28__82"})
+        old = _rec("Black Tiger", county="San Diego", emp=82,
+                   notice="2026-04-27", eff="2026-05-29")
+        new = _rec("Black Tiger", county="San Diego", emp=82,
+                   notice="2026-04-27", eff="2026-06-28")
+        summary = warn_monitor.update_cumulative([old, new])  # both lines present
+    assert summary["total_records"] == 1
+    assert summary["records"][0]["effective_date"] == "2026-06-28"
+
+
+def test_update_cumulative_leaves_unamended_multisite_alone(tmp_path):
+    """Two genuinely distinct filings that happen to share an anchor must NOT be
+    collapsed when neither is a recorded amendment."""
+    cum = tmp_path / "warn_cumulative.json"
+    amended = tmp_path / "amended.json"
+    with patch("warn_monitor.CUMULATIVE_FILE", cum), \
+         patch("warn_monitor.AMENDED_FILE", amended):
+        warn_monitor._save_amended_keys({"Unrelated__2026-06-28__5"})
+        a = _rec("Multi", county="LA", emp=10, notice="2026-04-01", eff="2026-06-01")
+        b = _rec("Multi", county="LA", emp=20, notice="2026-04-01", eff="2026-06-15")
+        summary = warn_monitor.update_cumulative([a, b])
+    # Same anchor, but no recorded amendment for it → both survive.
+    assert summary["total_records"] == 2
