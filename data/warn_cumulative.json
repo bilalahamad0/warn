@@ -1,9 +1,9 @@
 {
-  "total_records": 1460,
-  "total_employees": 80266,
+  "total_records": 1472,
+  "total_employees": 81258,
   "date_range_start": "2025-01-29",
-  "date_range_end": "2026-06-22",
-  "last_updated": "2026-06-25T14:01:10.732390+00:00Z",
+  "date_range_end": "2026-06-24",
+  "last_updated": "2026-06-26T02:09:55.779230+00:00Z",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "records": [
     {
@@ -16065,6 +16065,138 @@
       "notice_date": "2026-06-22",
       "address": "350 Bush St  San Francisco CA 94111",
       "industry": "51 Information"
+    },
+    {
+      "company": "Sangamo Therapeutics, Inc.",
+      "effective_date": "2026-06-22",
+      "county": "San Mateo County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 4,
+      "notice_date": "2026-06-22",
+      "address": "7000 Marina Blvd  Brisbane CA 94005",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "company": "Sangamo Therapeutics, Inc.",
+      "effective_date": "2026-06-22",
+      "county": "Contra Costa County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 47,
+      "notice_date": "2026-06-22",
+      "address": "501 Canal Blvd  Richmond CA 94804",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "company": "Cisco Systems, Inc.",
+      "effective_date": "2026-07-13",
+      "county": "Santa Clara County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 390,
+      "notice_date": "2026-06-16",
+      "address": "560 McCarthy Blvd.  Milpitas CA 95035",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "company": "Cisco Systems, Inc.",
+      "effective_date": "2026-07-13",
+      "county": "San Francisco County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 81,
+      "notice_date": "2026-06-16",
+      "address": "500 Terry A. Francois Blvd  San Francisco CA 94158",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "company": "ODS Technologies LP and Betfair Interactive US LLC",
+      "effective_date": "2026-08-04",
+      "county": "Los Angeles County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 28,
+      "notice_date": "2026-06-08",
+      "address": "6701 Center Drive West, Suite 160  Los Angeles CA 90045",
+      "industry": "51 Information"
+    },
+    {
+      "company": "Walmart",
+      "effective_date": "2026-08-21",
+      "county": "San Mateo County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 88,
+      "notice_date": "2026-06-19",
+      "address": "850 Cherry Avenue  San Bruno CA 94066",
+      "industry": "44-45 Retail Trade"
+    },
+    {
+      "company": "BILL Operations, LLC",
+      "effective_date": "2026-08-24",
+      "county": "Santa Clara County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 129,
+      "notice_date": "2026-06-24",
+      "address": "6220 America Center Drive, Suite 100  San Jose CA 95002",
+      "industry": "51 Information"
+    },
+    {
+      "company": "Frick Paper Company (Paper Mart)",
+      "effective_date": "2026-08-28",
+      "county": "Orange County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 78,
+      "notice_date": "2026-06-22",
+      "address": "2164 N. Batavia Street  Orange CA 92865",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "company": "Raytheon",
+      "effective_date": "2026-08-28",
+      "county": "Los Angeles County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 1,
+      "notice_date": "2026-06-24",
+      "address": "2000 E El Segundo Blvd  El Segundo CA 90245",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "company": "Corteva Agriscience",
+      "effective_date": "2026-08-28",
+      "county": "Contra Costa County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 1,
+      "notice_date": "2026-06-23",
+      "address": "901 Loveridge Road  Pittsburg CA 94565",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "company": "Nestle USA, Inc.",
+      "effective_date": "2026-08-31",
+      "county": "Stanislaus County",
+      "city": "",
+      "layoff_type": "Closure Temporary",
+      "employees": 57,
+      "notice_date": "2026-06-23",
+      "address": "736 Garner Rd.  Modesto CA 95357",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "company": "Valley Children's Hospital",
+      "effective_date": "2026-08-31",
+      "county": "Madera County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 88,
+      "notice_date": "2026-06-23",
+      "address": "9300 Valley Children's Place  Madera CA 93636",
+      "industry": "72 Accommodation and Food Services"
     }
   ]
 }
