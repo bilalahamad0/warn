@@ -1,45 +1,16 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-06-26 14:00:18 UTC
+**Generated:** 2026-06-27 02:04:39 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 1,467 | 1,263 | +1/+205 |
-| Total employees | 80,869 | 67,796 | -13,073 |
+| Total records | 1,263 | 1,263 | +0/+0 |
+| Total employees | 67,796 | 67,796 | +0 |
 
-### ✅ New Entries (1 records)
-
-| Company | Employees | Effective Date | County |
-|---------|-----------|----------------|--------|
-| Black Tiger Medical Transportation | 82 | 2026-05-29 | San Diego County |
-
-### ❌ Removed Entries (205 records)
-
-| Company | Employees | Effective Date |
-|---------|-----------|----------------|
-| Meta Platforms, Inc. | 2,550 | 2026-07-22 |
-| TeamOne | 725 | 2026-06-13 |
-| KBR Services LLC | 650 | 2026-08-01 |
-| Intuit Inc. | 493 | 2026-07-31 |
-| LinkedIn Corporation | 411 | 2026-07-13 |
-| Cisco Systems, Inc. | 390 | 2026-07-13 |
-| Meta Platforms, Inc. | 313 | 2026-07-22 |
-| Intuit Inc. | 277 | 2026-07-31 |
-| Meta Platforms, Inc. | 252 | 2026-07-22 |
-| Geodis | 238 | 2026-07-03 |
-| Cloudflare, Inc. | 224 | 2026-05-15 |
-| Hy-Tek Intralogistics | 200 | 2026-08-10 |
-| Fresh Venture Foods, LLC | 185 | 2026-07-10 |
-| Flagship Facilities Services, LLC | 178 | 2026-07-19 |
-| Chick-fil-A | 147 | 2026-08-15 |
-| Lucid Group, Inc. | 136 | 2026-08-21 |
-| BILL Operations, LLC | 129 | 2026-08-24 |
-| Keywords International Limited Group | 128 | 2026-08-22 |
-| Transdev | 126 | 2026-06-30 |
-| Leggett & Platt | 125 | 2026-08-14 |
+### ✅ No new entries.
 
 ---
 ## 📁 File vs Git Comparison
@@ -59,16 +30,17 @@ M .coverage
 
 **Recent commits:**
 ```
+6316f54 auto: WARN data update [skip ci]
 b0ce65f auto: WARN data update [skip ci]
 ed73806 auto: WARN data update [skip ci]
 627a6b1 auto: WARN data update [skip ci]
 2f6a1ff auto: WARN data update [skip ci]
-cb72592 Merge pull request #13 from bilalahamad0/fix/amendment-detection-email-noise
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-06-27T02:04:39.090946+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-06-26T14:00:18.882537+00:00Z` — +0 added, -204 removed, 0 employees (new)
 - `2026-06-26T02:09:55.757922+00:00Z` — +12 added, -0 removed, 992 employees (new)
 - `2026-06-25T14:01:10.713447+00:00Z` — +0 added, -0 removed, 0 employees (new)
@@ -78,4 +50,3 @@ cb72592 Merge pull request #13 from bilalahamad0/fix/amendment-detection-email-n
 - `2026-06-23T14:23:48.472930+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-06-23T02:06:05.363313+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-06-22T16:26:00.622426+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-06-22T02:40:02.821936+00:00Z` — +0 added, -0 removed, 0 employees (new)
