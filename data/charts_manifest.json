@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T02:05:07.086198+00:00Z",
+  "generated_at": "2026-06-27T13:07:03.459108+00:00Z",
   "charts": [
     {
       "id": "1_timeline_scatter",
@@ -72,5 +72,5 @@
   "total_employees": 81258,
   "date_range_start": "2025-01-29",
   "date_range_end": "2026-06-24",
-  "last_updated": "2026-06-27T02:04:39.110529+00:00Z"
+  "last_updated": "2026-06-27T13:06:32.395632+00:00Z"
 }
