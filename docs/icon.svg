@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+<defs>
+<linearGradient id="bgv" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b2230"/><stop offset="1" stop-color="#0d1117"/></linearGradient>
+<linearGradient id="dn" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#58a6ff"/><stop offset="0.55" stop-color="#f78166"/><stop offset="1" stop-color="#f04747"/></linearGradient>
+</defs>
+<rect width="1024" height="1024" fill="url(#bgv)"/>
+<rect x="218.0" y="580" width="64" height="180" rx="14" fill="#58a6ff" opacity="0.22"/><rect x="328.0" y="500" width="64" height="260" rx="14" fill="#39d0d8" opacity="0.22"/><rect x="438.0" y="550" width="64" height="210" rx="14" fill="#3fb950" opacity="0.22"/><rect x="548.0" y="460" width="64" height="300" rx="14" fill="#d29922" opacity="0.22"/><rect x="658.0" y="510" width="64" height="250" rx="14" fill="#bc8cff" opacity="0.22"/><rect x="768.0" y="430" width="64" height="330" rx="14" fill="#f78166" opacity="0.22"/>
+<line x1="200" y1="760" x2="824" y2="760" stroke="#30363d" stroke-width="6"/>
+<path d="M 210 320 L 400 470 L 540 400 L 700 620 L 812 700" fill="none" stroke="url(#dn)" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="210" cy="320" r="30" fill="#58a6ff"/>
+<path d="M 812 700 l -104 4 m 104 -4 l -4 -104" stroke="#f04747" stroke-width="42" stroke-linecap="round" fill="none"/>
+</svg>
