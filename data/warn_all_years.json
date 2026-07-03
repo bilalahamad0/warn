@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-02T13:27:07.361647+00:00Z",
-  "total_records": 1801,
-  "total_employees": 103261,
+  "generated_at": "2026-07-03T01:51:07.882970+00:00Z",
+  "total_records": 1809,
+  "total_employees": 103749,
   "yearly_summary": [
     {
       "fiscal_year": 2014,
@@ -83,8 +83,8 @@
     {
       "fiscal_year": "current",
       "label": "FY 2025-26 (Live)",
-      "records": 1500,
-      "employees": 81967,
+      "records": 1508,
+      "employees": 82455,
       "source": "xlsx"
     }
   ],
@@ -22896,6 +22896,110 @@
       "employees": 63,
       "notice_date": "2026-06-16",
       "address": "85 Willow Road  Menlo Park CA 94025",
+      "industry": "52 Finance and Insurance",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "Ballast Point Brewing Company",
+      "effective_date": "2026-06-29",
+      "county": "San Francisco County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 19,
+      "notice_date": "2026-06-29",
+      "address": "705 16th Street  San Francisco CA 94158",
+      "industry": "72 Accommodation and Food Services",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "Genentech, Inc.",
+      "effective_date": "2026-07-29",
+      "county": "San Mateo County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 103,
+      "notice_date": "2026-06-26",
+      "address": "1 DNA Way  South San Francisco CA 94080",
+      "industry": "54 Professional Scientific and Technical Services",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "Dignity Health (California Hospital Medical Center)",
+      "effective_date": "2026-08-03",
+      "county": "Los Angeles County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 82,
+      "notice_date": "2026-06-29",
+      "address": "1401 S. Grand Ave.  Los Angeles CA 90015",
+      "industry": "62 Healthcare and Social Assistance",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "Dignity Health (Bakersfield Memorial Hospital)",
+      "effective_date": "2026-08-03",
+      "county": "Kern County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 57,
+      "notice_date": "2026-06-29",
+      "address": "420 34th Street  Bakersfield CA 93301",
+      "industry": "62 Healthcare and Social Assistance",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "Athwal FDS Corporation",
+      "effective_date": "2026-08-30",
+      "county": "San Bernardino County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 35,
+      "notice_date": "2026-06-30",
+      "address": "932 West Mill Street  San Bernardino CA 92410",
+      "industry": "56 Administrative and Support and Waste Management and Remediation",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "Federal Express Corporation",
+      "effective_date": "2026-08-31",
+      "county": "San Diego County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 57,
+      "notice_date": "2026-06-30",
+      "address": "9192 Kearny Villa Court  San Diego CA 92123",
+      "industry": "48-49 Transportation and Warehousing",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "McDonald's Corporation",
+      "effective_date": "2026-09-01",
+      "county": "Los Angeles County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 2,
+      "notice_date": "2026-06-30",
+      "address": "17030 Green Drive  City of Industry CA 91745",
+      "industry": "72 Accommodation and Food Services",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "Fox Sports En Espanol LLC",
+      "effective_date": "2026-09-01",
+      "county": "Los Angeles County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 133,
+      "notice_date": "2026-06-30",
+      "address": "1440 S. Sepulveda Blvd  Los Angeles CA 90025",
       "industry": "51 Information",
       "fiscal_year": "current",
       "source": "xlsx"
