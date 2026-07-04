@@ -73,21 +73,45 @@ def _dashboard_source() -> Path:
     return CUMULATIVE_FILE if CUMULATIVE_FILE.exists() else LATEST_FILE
 
 
-def _compute_kpis() -> dict:
-    """Compute extra KPI metrics from the dashboard dataset."""
+def _strip_county(name) -> str:
+    """Normalise a county label to match the notices table (drop the suffix)."""
+    return str(name or "").replace(" County", "").replace(" Parish", "").strip()
+
+
+def _compute_kpis(records: list = None, date_from: str = None, date_to: str = None) -> dict:
+    """Compute the summary KPI metrics over an optional notice-date window.
+
+    When ``date_from``/``date_to`` (ISO ``YYYY-MM-DD``) are supplied, only
+    notices whose ``notice_date`` falls within the inclusive window are counted
+    — this backs the dashboard's default "current calendar year" summary view.
+    With no window every record is counted.
+
+    ``records`` may be passed in to avoid re-reading the dataset; otherwise the
+    cumulative dashboard store is loaded.
+    """
     defaults = {
+        "count": 0,
+        "employees_total": 0,
         "avg_lead_days": "N/A",
         "largest_company": "N/A",
         "largest_employees": "N/A",
         "top_county": "N/A",
         "top_county_employees": "N/A",
     }
-    source = _dashboard_source()
-    if not source.exists():
-        return defaults
+    if records is None:
+        source = _dashboard_source()
+        if not source.exists():
+            return defaults
+        records = json.loads(source.read_text()).get("records", [])
 
-    payload = json.loads(source.read_text())
-    records = payload.get("records", [])
+    if date_from or date_to:
+        lo = date_from or "0000-01-01"
+        hi = date_to or "9999-12-31"
+        records = [
+            r for r in records
+            if lo <= str(r.get("notice_date") or "")[:10] <= hi
+        ]
+
     if not records:
         return defaults
 
@@ -98,7 +122,6 @@ def _compute_kpis() -> dict:
         ed = str(r.get("effective_date") or "")[:10]
         if len(nd) == 10 and len(ed) == 10:
             try:
-                from datetime import date as _date
                 n = datetime.strptime(nd, "%Y-%m-%d").date()
                 e = datetime.strptime(ed, "%Y-%m-%d").date()
                 diff = (e - n).days
@@ -106,23 +129,43 @@ def _compute_kpis() -> dict:
                     lead_times.append(diff)
             except ValueError:
                 pass
-    avg_lead = f"{round(sum(lead_times) / len(lead_times))}d" if lead_times else "N/A"
+    # Round half-up (int(x + 0.5)) to match the client's JS Math.round, so the
+    # server-rendered value and the client recompute never disagree by a day.
+    avg_lead = (
+        f"{int(sum(lead_times) / len(lead_times) + 0.5)}d" if lead_times else "N/A"
+    )
 
-    # Largest single layoff
-    largest = max(records, key=lambda r: r.get("employees", 0), default={})
+    # Largest single layoff. The tiebreak — most employees, then latest notice,
+    # then company name — is order-independent so it matches the client, which
+    # iterates the notices table rather than the raw JSON order.
+    largest = max(
+        records,
+        key=lambda r: (
+            r.get("employees", 0) or 0,
+            str(r.get("notice_date") or "")[:10],
+            str(r.get("company") or ""),
+        ),
+        default={},
+    )
 
-    # Top county by employees
+    # Top county by employees (suffix stripped so it matches the notices table);
+    # ties broken by county name so the server and client agree.
     county_totals: dict = {}
     for r in records:
-        county = str(r.get("county") or "").strip()
+        county = _strip_county(r.get("county"))
         if county:
             county_totals[county] = county_totals.get(county, 0) + (r.get("employees") or 0)
-    top_county = max(county_totals, key=lambda k: county_totals[k]) if county_totals else "N/A"
+    top_county = (
+        max(county_totals, key=lambda k: (county_totals[k], k))
+        if county_totals else "N/A"
+    )
 
     return {
+        "count": len(records),
+        "employees_total": sum(r.get("employees") or 0 for r in records),
         "avg_lead_days": avg_lead,
-        "largest_company": largest.get("company", "N/A"),
-        "largest_employees": _format_number(largest.get("employees", 0)),
+        "largest_company": largest.get("company", "N/A") or "N/A",
+        "largest_employees": _format_number(largest.get("employees", 0) or 0),
         "top_county": top_county,
         "top_county_employees": _format_number(county_totals.get(top_county, 0)),
     }
@@ -236,9 +279,10 @@ def _build_recent_table(new_keys: list = None) -> tuple:
             company_display = f'<span class="badge-new" style="margin-right:6px">NEW</span>{company}'
 
         rows.append(
-            f'<tr data-company="{company.lower()}" data-county="{county}" '
+            f'<tr data-company="{company.lower()}" data-company-name="{company}" '
+            f'data-county="{county}" '
             f'data-industry="{industry}" data-type="{layoff_type}" '
-            f'data-notice="{notice}" data-employees="{employees}">'
+            f'data-notice="{notice}" data-effective="{effective}" data-employees="{employees}">'
             f"<td>{company_display}</td>"
             f"<td>{county}</td>"
             f"<td class='num'>{emp_str}</td>"
@@ -302,13 +346,39 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
     # store), even when EDD's latest file drops notices.
     source = _dashboard_source()
     dash = json.loads(source.read_text()) if source.exists() else {}
-    total_records = _format_number(dash.get("total_records", manifest.get("total_records", 0)))
-    total_employees = _format_number(dash.get("total_employees", manifest.get("total_employees", 0)))
+    records = dash.get("records", [])
     last_updated = (dash.get("last_updated") or manifest.get("last_updated", ""))[:10]
-    date_start = str(dash.get("date_range_start") or manifest.get("date_range_start", ""))[:10]
-    date_end = str(dash.get("date_range_end") or manifest.get("date_range_end", ""))[:10]
 
-    kpis = _compute_kpis()
+    # Default summary view: the current calendar year, Jan 1 → today. The KPI
+    # cards render these values server-side (so the page is correct without JS),
+    # and a client-side "Date Range" selector recomputes them for All time /
+    # prior years. See the KPI selector block in the page script.
+    today = datetime.now(timezone.utc).date()
+    cur_year = today.year
+    year_start = f"{cur_year}-01-01"
+    year_end = today.strftime("%Y-%m-%d")
+
+    kpis = _compute_kpis(records, year_start, year_end)
+    total_records = _format_number(kpis["count"])
+    total_employees = _format_number(kpis["employees_total"])
+
+    # Date-range <select> options: current year (YTD) first, then All time,
+    # then every prior year present in the data, newest first.
+    data_years = sorted({
+        str(r.get("notice_date") or "")[:4]
+        for r in records
+        if str(r.get("notice_date") or "")[:4].isdigit()
+    })
+    range_opts = [
+        f'<option value="ytd" selected>{cur_year} (Year to date)</option>',
+        '<option value="all">All time</option>',
+    ]
+    range_opts += [
+        f'<option value="{y}">{y}</option>'
+        for y in sorted((y for y in data_years if y != str(cur_year)), reverse=True)
+    ]
+    kpi_range_options = "\n        ".join(range_opts)
+    kpi_range_span = f"{year_start} → {year_end}"
 
     new_banner = ""
     if new_count > 0:
@@ -345,8 +415,8 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
         total_records=total_records,
         total_employees=total_employees,
         last_updated=last_updated,
-        date_start=date_start,
-        date_end=date_end,
+        kpi_range_options=kpi_range_options,
+        kpi_range_span=kpi_range_span,
         new_banner=new_banner,
         avg_lead_days=kpis["avg_lead_days"],
         largest_company=kpis["largest_company"],
@@ -650,6 +720,25 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
     .kpi-value {{ font-size: 1.85rem; font-weight: 700; line-height: 1; }}
     .kpi-value.sm {{ font-size: 1rem; padding-top: 0.3rem; }}
     .kpi-sub {{ font-size: 0.72rem; color: var(--muted); margin-top: 0.3rem; }}
+    .kpi-card-range {{ display: flex; flex-direction: column; }}
+    .kpi-range-select {{
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 0.32rem 0.5rem;
+      margin-top: 0.1rem;
+      outline: none;
+      cursor: pointer;
+      width: 100%;
+      max-width: 100%;
+      transition: border-color 0.2s;
+    }}
+    .kpi-range-select:focus {{ border-color: var(--accent); }}
+    .kpi-range-select option {{ background: var(--bg, #0d1117); color: var(--text); }}
 
     /* ── Section cards ── */
     .section-card {{
@@ -853,33 +942,35 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
   <div class="kpi-grid">
     <div class="kpi-card">
       <div class="kpi-label">WARN Notices</div>
-      <div class="kpi-value">{total_records}</div>
+      <div class="kpi-value" id="kpi-notices">{total_records}</div>
       <div class="kpi-sub">Unique filings</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">Employees Affected</div>
-      <div class="kpi-value">{total_employees}</div>
-      <div class="kpi-sub">Cumulative total</div>
+      <div class="kpi-value" id="kpi-employees">{total_employees}</div>
+      <div class="kpi-sub">Total affected</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">Avg Lead Time</div>
-      <div class="kpi-value">{avg_lead_days}</div>
+      <div class="kpi-value" id="kpi-lead">{avg_lead_days}</div>
       <div class="kpi-sub">Notice → effective date</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">Largest Layoff</div>
-      <div class="kpi-value sm">{largest_company}</div>
-      <div class="kpi-sub">{largest_employees} employees</div>
+      <div class="kpi-value sm" id="kpi-largest-co">{largest_company}</div>
+      <div class="kpi-sub"><span id="kpi-largest-emp">{largest_employees}</span> employees</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">Top County</div>
-      <div class="kpi-value sm">{top_county}</div>
-      <div class="kpi-sub">{top_county_employees} employees</div>
+      <div class="kpi-value sm" id="kpi-county">{top_county}</div>
+      <div class="kpi-sub"><span id="kpi-county-emp">{top_county_employees}</span> employees</div>
     </div>
-    <div class="kpi-card">
-      <div class="kpi-label">Date Range</div>
-      <div class="kpi-value sm">{date_start}</div>
-      <div class="kpi-sub">through {date_end}</div>
+    <div class="kpi-card kpi-card-range">
+      <div class="kpi-label"><label for="kpi-range">Date Range</label></div>
+      <select id="kpi-range" class="kpi-range-select" aria-label="Summary date range">
+        {kpi_range_options}
+      </select>
+      <div class="kpi-sub" id="kpi-range-span">{kpi_range_span}</div>
     </div>
   </div>
 
@@ -1037,6 +1128,95 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
         if (firstVisit) {{ try {{ localStorage.setItem(KEY, '1'); }} catch (_e) {{}} }}
       }})
       .catch(function () {{ /* leave the counter hidden on failure */ }});
+  }})();
+
+  // ── KPI date-range selector (Summary metrics by period) ──
+  (function () {{
+    const sel = document.getElementById('kpi-range');
+    const kt = document.getElementById('notices-table');
+    if (!sel || !kt || !kt.tBodies.length) return;
+
+    const recs = [...kt.tBodies[0].rows].map(r => ({{
+      company: r.dataset.companyName || '',
+      county: r.dataset.county || '',
+      employees: parseInt(r.dataset.employees, 10) || 0,
+      notice: (r.dataset.notice || '').slice(0, 10),
+      effective: (r.dataset.effective || '').slice(0, 10),
+    }}));
+
+    const el = {{
+      notices: document.getElementById('kpi-notices'),
+      employees: document.getElementById('kpi-employees'),
+      lead: document.getElementById('kpi-lead'),
+      largestCo: document.getElementById('kpi-largest-co'),
+      largestEmp: document.getElementById('kpi-largest-emp'),
+      county: document.getElementById('kpi-county'),
+      countyEmp: document.getElementById('kpi-county-emp'),
+      span: document.getElementById('kpi-range-span'),
+    }};
+    const fmt = n => (Number(n) || 0).toLocaleString('en-US');
+
+    function windowFor(val) {{
+      const now = new Date();
+      const today = now.toISOString().slice(0, 10);
+      if (val === 'all') {{
+        const ds = recs.map(r => r.notice).filter(Boolean).sort();
+        const earliest = ds.length ? ds[0] : today;
+        return {{ from: earliest, to: '9999-12-31', span: earliest + ' → ' + today }};
+      }}
+      if (val === 'ytd') {{
+        // Year from the same UTC basis as `today` (matches the server's UTC
+        // build) — mixing local getFullYear() with a UTC upper bound inverts
+        // the window across the New-Year boundary for users east of UTC.
+        const y = today.slice(0, 4);
+        return {{ from: y + '-01-01', to: today, span: y + '-01-01 → ' + today }};
+      }}
+      return {{ from: val + '-01-01', to: val + '-12-31', span: val + '-01-01 → ' + val + '-12-31' }};
+    }}
+
+    function apply() {{
+      const w = windowFor(sel.value);
+      const inRange = recs.filter(r => r.notice && r.notice >= w.from && r.notice <= w.to);
+
+      let employees = 0, leadSum = 0, leadN = 0, largest = null;
+      const ct = Object.create(null);
+      for (const r of inRange) {{
+        employees += r.employees;
+        if (r.notice.length === 10 && r.effective.length === 10) {{
+          const d = (Date.parse(r.effective) - Date.parse(r.notice)) / 86400000;
+          if (d > 0 && d < 730) {{ leadSum += d; leadN += 1; }}
+        }}
+        // Tiebreak mirrors the server: most employees, then latest notice,
+        // then company name — so the picked layoff is order-independent.
+        if (!largest
+            || r.employees > largest.employees
+            || (r.employees === largest.employees && r.notice > largest.notice)
+            || (r.employees === largest.employees && r.notice === largest.notice
+                && r.company > largest.company)) {{
+          largest = r;
+        }}
+        if (r.county) ct[r.county] = (ct[r.county] || 0) + r.employees;
+      }}
+
+      let topCounty = null, topVal = -1;
+      for (const c in ct) {{
+        if (ct[c] > topVal || (ct[c] === topVal && c > topCounty)) {{
+          topVal = ct[c]; topCounty = c;
+        }}
+      }}
+
+      if (el.notices) el.notices.textContent = fmt(inRange.length);
+      if (el.employees) el.employees.textContent = fmt(employees);
+      if (el.lead) el.lead.textContent = leadN ? Math.round(leadSum / leadN) + 'd' : 'N/A';
+      if (el.largestCo) el.largestCo.textContent = largest ? (largest.company || 'N/A') : 'N/A';
+      if (el.largestEmp) el.largestEmp.textContent = largest ? fmt(largest.employees) : 'N/A';
+      if (el.county) el.county.textContent = topCounty || 'N/A';
+      if (el.countyEmp) el.countyEmp.textContent = topCounty ? fmt(topVal) : 'N/A';
+      if (el.span) el.span.textContent = w.span;
+    }}
+
+    sel.addEventListener('change', apply);
+    apply();
   }})();
 
   // ── Notices table: pagination + filter + sort ──
