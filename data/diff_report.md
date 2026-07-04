@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-07-04 01:50:33 UTC
+**Generated:** 2026-07-04 12:57:14 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -30,16 +30,17 @@ M .coverage
 
 **Recent commits:**
 ```
+75e1f29 auto: WARN data update [skip ci]
 8c96f6f auto: WARN data update [skip ci]
 62edf79 auto: WARN data update [skip ci]
 0b3e0a2 auto: WARN data update [skip ci]
 dbb0154 Add home-screen / favicon icons for the dashboard (#14)
-0e7d291 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-07-04T12:57:14.542386+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-04T01:50:33.448787+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-03T13:39:35.850163+00:00Z` — +0 added, -239 removed, 0 employees (new)
 - `2026-07-03T01:51:07.748104+00:00Z` — +8 added, -0 removed, 488 employees (new)
@@ -49,4 +50,3 @@ dbb0154 Add home-screen / favicon icons for the dashboard (#14)
 - `2026-07-01T02:14:44.901771+00:00Z` — +28 added, -0 removed, 709 employees (new)
 - `2026-06-30T13:52:59.752874+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-06-30T02:10:24.894736+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-06-29T15:27:46.507973+00:00Z` — +0 added, -0 removed, 0 employees (new)
