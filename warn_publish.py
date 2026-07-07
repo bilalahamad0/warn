@@ -67,6 +67,21 @@ def _format_number(n) -> str:
         return str(n)
 
 
+# Month abbreviations shared with the client JS so the server-rendered summary
+# timeline and the client recompute format dates identically.
+_MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+           "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+
+def _fmt_human_date(iso: str) -> str:
+    """Format an ISO ``YYYY-MM-DD`` string as e.g. ``Jul 4, 2026``."""
+    try:
+        d = datetime.strptime(str(iso)[:10], "%Y-%m-%d").date()
+        return f"{_MONTHS[d.month - 1]} {d.day}, {d.year}"
+    except Exception:
+        return str(iso)
+
+
 def _dashboard_source() -> Path:
     """Return the dataset that backs the dashboard: the cumulative store if it
     exists, otherwise the latest download."""
@@ -380,6 +395,10 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
     kpi_range_options = "\n        ".join(range_opts)
     kpi_range_span = f"{year_start} → {year_end}"
 
+    # Plain-language timeline for the summary banner (default: current year).
+    summary_scope = "current year to date"
+    summary_dates = f"{_fmt_human_date(year_start)} – {_fmt_human_date(year_end)}"
+
     new_banner = ""
     if new_count > 0:
         new_banner = (
@@ -417,6 +436,8 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
         last_updated=last_updated,
         kpi_range_options=kpi_range_options,
         kpi_range_span=kpi_range_span,
+        summary_scope=summary_scope,
+        summary_dates=summary_dates,
         new_banner=new_banner,
         avg_lead_days=kpis["avg_lead_days"],
         largest_company=kpis["largest_company"],
@@ -690,6 +711,27 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
       .subscribe-btn {{ flex: 1 1 100%; }}
     }}
 
+    /* ── Summary timeline banner ── */
+    .summary-range-banner {{
+      display: flex; align-items: center; gap: 0.55rem;
+      background: rgba(88,166,255,0.08);
+      border: 1px solid rgba(88,166,255,0.25);
+      border-radius: 10px;
+      padding: 0.6rem 0.9rem;
+      margin-bottom: 1rem;
+      font-size: 0.9rem; color: var(--text);
+    }}
+    .summary-range-banner .srb-icon {{ font-size: 1.05rem; line-height: 1; }}
+    .summary-range-banner strong {{ color: var(--accent); font-weight: 600; }}
+    .summary-range-banner .srb-dates {{
+      color: var(--muted); font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }}
+    @media (max-width: 560px) {{
+      .summary-range-banner {{ font-size: 0.82rem; align-items: flex-start; }}
+      .summary-range-banner .srb-dates {{ white-space: normal; }}
+    }}
+
     /* ── KPI cards ── */
     .kpi-grid {{
       display: grid;
@@ -938,6 +980,13 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
     <div class="subscribe-msg" id="subscribe-msg" role="status" aria-live="polite"></div>
   </section>
 
+  <!-- Summary timeline banner -->
+  <div class="summary-range-banner" id="summary-range-banner">
+    <span class="srb-icon" aria-hidden="true">📅</span>
+    <span class="srb-text">Summary shows <strong id="srb-scope">{summary_scope}</strong>
+      <span class="srb-dates" id="srb-dates">{summary_dates}</span></span>
+  </div>
+
   <!-- KPI Cards -->
   <div class="kpi-grid">
     <div class="kpi-card">
@@ -1153,8 +1202,17 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
       county: document.getElementById('kpi-county'),
       countyEmp: document.getElementById('kpi-county-emp'),
       span: document.getElementById('kpi-range-span'),
+      srbScope: document.getElementById('srb-scope'),
+      srbDates: document.getElementById('srb-dates'),
     }};
     const fmt = n => (Number(n) || 0).toLocaleString('en-US');
+    const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    // Format 'YYYY-MM-DD' as 'Jul 4, 2026' — matches the server's _fmt_human_date.
+    const fmtDate = iso => {{
+      const p = String(iso).split('-');
+      return p.length === 3 ? MONTHS[(+p[1]) - 1] + ' ' + (+p[2]) + ', ' + p[0] : String(iso);
+    }};
 
     function windowFor(val) {{
       const now = new Date();
@@ -1162,16 +1220,19 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
       if (val === 'all') {{
         const ds = recs.map(r => r.notice).filter(Boolean).sort();
         const earliest = ds.length ? ds[0] : today;
-        return {{ from: earliest, to: '9999-12-31', span: earliest + ' → ' + today }};
+        return {{ from: earliest, to: '9999-12-31', span: earliest + ' → ' + today,
+                 scope: 'all available data', lo: earliest, hi: today }};
       }}
       if (val === 'ytd') {{
         // Year from the same UTC basis as `today` (matches the server's UTC
         // build) — mixing local getFullYear() with a UTC upper bound inverts
         // the window across the New-Year boundary for users east of UTC.
         const y = today.slice(0, 4);
-        return {{ from: y + '-01-01', to: today, span: y + '-01-01 → ' + today }};
+        return {{ from: y + '-01-01', to: today, span: y + '-01-01 → ' + today,
+                 scope: 'current year to date', lo: y + '-01-01', hi: today }};
       }}
-      return {{ from: val + '-01-01', to: val + '-12-31', span: val + '-01-01 → ' + val + '-12-31' }};
+      return {{ from: val + '-01-01', to: val + '-12-31', span: val + '-01-01 → ' + val + '-12-31',
+               scope: 'calendar year ' + val, lo: val + '-01-01', hi: val + '-12-31' }};
     }}
 
     function apply() {{
@@ -1213,6 +1274,8 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
       if (el.county) el.county.textContent = topCounty || 'N/A';
       if (el.countyEmp) el.countyEmp.textContent = topCounty ? fmt(topVal) : 'N/A';
       if (el.span) el.span.textContent = w.span;
+      if (el.srbScope) el.srbScope.textContent = w.scope;
+      if (el.srbDates) el.srbDates.textContent = fmtDate(w.lo) + ' – ' + fmtDate(w.hi);
     }}
 
     sel.addEventListener('change', apply);
