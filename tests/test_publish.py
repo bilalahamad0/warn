@@ -50,6 +50,14 @@ def test_strip_county():
     assert warn_publish._strip_county(None) == ""
 
 
+def test_fmt_human_date():
+    # Must match the client JS fmtDate ('Jul 4, 2026' — no leading zero on day).
+    assert warn_publish._fmt_human_date("2026-01-01") == "Jan 1, 2026"
+    assert warn_publish._fmt_human_date("2026-07-04") == "Jul 4, 2026"
+    assert warn_publish._fmt_human_date("2025-12-31") == "Dec 31, 2025"
+    assert warn_publish._fmt_human_date("garbage") == "garbage"
+
+
 # Records spanning two calendar years, used to exercise the KPI date window.
 _KPI_RECORDS = [
     {"company": "Alpha", "county": "Los Angeles County", "employees": 100,

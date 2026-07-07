@@ -138,6 +138,27 @@
       .subscribe-btn { flex: 1 1 100%; }
     }
 
+    /* ── Summary timeline banner ── */
+    .summary-range-banner {
+      display: flex; align-items: center; gap: 0.55rem;
+      background: rgba(88,166,255,0.08);
+      border: 1px solid rgba(88,166,255,0.25);
+      border-radius: 10px;
+      padding: 0.6rem 0.9rem;
+      margin-bottom: 1rem;
+      font-size: 0.9rem; color: var(--text);
+    }
+    .summary-range-banner .srb-icon { font-size: 1.05rem; line-height: 1; }
+    .summary-range-banner strong { color: var(--accent); font-weight: 600; }
+    .summary-range-banner .srb-dates {
+      color: var(--muted); font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+    @media (max-width: 560px) {
+      .summary-range-banner { font-size: 0.82rem; align-items: flex-start; }
+      .summary-range-banner .srb-dates { white-space: normal; }
+    }
+
     /* ── KPI cards ── */
     .kpi-grid {
       display: grid;
@@ -386,6 +407,13 @@
     <div class="subscribe-msg" id="subscribe-msg" role="status" aria-live="polite"></div>
   </section>
 
+  <!-- Summary timeline banner -->
+  <div class="summary-range-banner" id="summary-range-banner">
+    <span class="srb-icon" aria-hidden="true">📅</span>
+    <span class="srb-text">Summary shows <strong id="srb-scope">current year to date</strong>
+      <span class="srb-dates" id="srb-dates">Jan 1, 2026 – Jul 7, 2026</span></span>
+  </div>
+
   <!-- KPI Cards -->
   <div class="kpi-grid">
     <div class="kpi-card">
@@ -543,7 +571,7 @@
   Built by <a href="https://bilalahamad.com" target="_blank">bilalahamad.com</a> ·
   Data: <a href="https://edd.ca.gov/en/jobs_and_training/layoff_services_warn" target="_blank">CA EDD</a> ·
   <a href="architecture.html">How it works</a> ·
-  Generated 2026-07-07 01:58 UTC
+  Generated 2026-07-07 02:56 UTC
   <span id="visitor-counter" class="visitor-counter" hidden> · 👁 <strong id="visitor-count">—</strong> visitors</span>
 </footer>
 
@@ -580,7 +608,7 @@
   });
 
   // ── Email signup ──
-  var SIGNUP_ENDPOINT = "https://script.google.com/macros/s/AKfycbwXV4Qa8pXRuk8pB3YgESWPDuOo8GLYbXq_Hm5Ei-4aRLaejZJq_b1_X-OfDXJmWYjD/exec";
+  var SIGNUP_ENDPOINT = "";
   var subForm = document.getElementById('subscribe-form');
   var subMsg = document.getElementById('subscribe-msg');
   var subName = document.getElementById('sub-name');
@@ -668,8 +696,17 @@
       county: document.getElementById('kpi-county'),
       countyEmp: document.getElementById('kpi-county-emp'),
       span: document.getElementById('kpi-range-span'),
+      srbScope: document.getElementById('srb-scope'),
+      srbDates: document.getElementById('srb-dates'),
     };
     const fmt = n => (Number(n) || 0).toLocaleString('en-US');
+    const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    // Format 'YYYY-MM-DD' as 'Jul 4, 2026' — matches the server's _fmt_human_date.
+    const fmtDate = iso => {
+      const p = String(iso).split('-');
+      return p.length === 3 ? MONTHS[(+p[1]) - 1] + ' ' + (+p[2]) + ', ' + p[0] : String(iso);
+    };
 
     function windowFor(val) {
       const now = new Date();
@@ -677,16 +714,19 @@
       if (val === 'all') {
         const ds = recs.map(r => r.notice).filter(Boolean).sort();
         const earliest = ds.length ? ds[0] : today;
-        return { from: earliest, to: '9999-12-31', span: earliest + ' → ' + today };
+        return { from: earliest, to: '9999-12-31', span: earliest + ' → ' + today,
+                 scope: 'all available data', lo: earliest, hi: today };
       }
       if (val === 'ytd') {
         // Year from the same UTC basis as `today` (matches the server's UTC
         // build) — mixing local getFullYear() with a UTC upper bound inverts
         // the window across the New-Year boundary for users east of UTC.
         const y = today.slice(0, 4);
-        return { from: y + '-01-01', to: today, span: y + '-01-01 → ' + today };
+        return { from: y + '-01-01', to: today, span: y + '-01-01 → ' + today,
+                 scope: 'current year to date', lo: y + '-01-01', hi: today };
       }
-      return { from: val + '-01-01', to: val + '-12-31', span: val + '-01-01 → ' + val + '-12-31' };
+      return { from: val + '-01-01', to: val + '-12-31', span: val + '-01-01 → ' + val + '-12-31',
+               scope: 'calendar year ' + val, lo: val + '-01-01', hi: val + '-12-31' };
     }
 
     function apply() {
@@ -728,6 +768,8 @@
       if (el.county) el.county.textContent = topCounty || 'N/A';
       if (el.countyEmp) el.countyEmp.textContent = topCounty ? fmt(topVal) : 'N/A';
       if (el.span) el.span.textContent = w.span;
+      if (el.srbScope) el.srbScope.textContent = w.scope;
+      if (el.srbDates) el.srbDates.textContent = fmtDate(w.lo) + ' – ' + fmtDate(w.hi);
     }
 
     sel.addEventListener('change', apply);
