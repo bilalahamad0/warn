@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-07-07 01:58:25 UTC
+**Generated:** 2026-07-07 14:03:52 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -30,16 +30,17 @@ M .coverage
 
 **Recent commits:**
 ```
+52ebe69 Add a summary timeline banner stating the active KPI timeframe (#16)
+e569417 auto: WARN data update [skip ci]
 0b9aac6 auto: WARN data update [skip ci]
 2a8a550 auto: WARN data update [skip ci]
 9091af0 auto: WARN data update [skip ci]
-9349636 auto: WARN data update [skip ci]
-1b2eb5e Default Summary KPIs to current calendar year with a Date Range selector (#15)
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-07-07T14:03:52.508631+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-07T01:58:25.506938+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-06T14:55:18.874547+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-06T02:03:16.813813+00:00Z` — +0 added, -0 removed, 0 employees (new)
@@ -49,4 +50,3 @@ M .coverage
 - `2026-07-04T01:50:33.448787+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-03T13:39:35.850163+00:00Z` — +0 added, -239 removed, 0 employees (new)
 - `2026-07-03T01:51:07.748104+00:00Z` — +8 added, -0 removed, 488 employees (new)
-- `2026-07-02T13:27:07.220483+00:00Z` — +0 added, -0 removed, 0 employees (new)
