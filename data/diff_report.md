@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-07-04 12:57:14 UTC
+**Generated:** 2026-07-07 01:58:25 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -30,23 +30,23 @@ M .coverage
 
 **Recent commits:**
 ```
-75e1f29 auto: WARN data update [skip ci]
-8c96f6f auto: WARN data update [skip ci]
-62edf79 auto: WARN data update [skip ci]
-0b3e0a2 auto: WARN data update [skip ci]
-dbb0154 Add home-screen / favicon icons for the dashboard (#14)
+0b9aac6 auto: WARN data update [skip ci]
+2a8a550 auto: WARN data update [skip ci]
+9091af0 auto: WARN data update [skip ci]
+9349636 auto: WARN data update [skip ci]
+1b2eb5e Default Summary KPIs to current calendar year with a Date Range selector (#15)
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-07-07T01:58:25.506938+00:00Z` — +0 added, -0 removed, 0 employees (new)
+- `2026-07-06T14:55:18.874547+00:00Z` — +0 added, -0 removed, 0 employees (new)
+- `2026-07-06T02:03:16.813813+00:00Z` — +0 added, -0 removed, 0 employees (new)
+- `2026-07-05T13:05:01.255756+00:00Z` — +0 added, -0 removed, 0 employees (new)
+- `2026-07-05T01:56:32.110639+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-04T12:57:14.542386+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-04T01:50:33.448787+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-03T13:39:35.850163+00:00Z` — +0 added, -239 removed, 0 employees (new)
 - `2026-07-03T01:51:07.748104+00:00Z` — +8 added, -0 removed, 488 employees (new)
 - `2026-07-02T13:27:07.220483+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-07-02T02:06:51.099042+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-07-01T14:05:09.199757+00:00Z` — +0 added, -231 removed, 0 employees (new)
-- `2026-07-01T02:14:44.901771+00:00Z` — +28 added, -0 removed, 709 employees (new)
-- `2026-06-30T13:52:59.752874+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-06-30T02:10:24.894736+00:00Z` — +0 added, -0 removed, 0 employees (new)
