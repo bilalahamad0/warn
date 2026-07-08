@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-07T14:03:52.651790+00:00Z",
-  "total_records": 1809,
-  "total_employees": 103749,
+  "generated_at": "2026-07-08T01:28:32.292415+00:00Z",
+  "total_records": 1811,
+  "total_employees": 103787,
   "yearly_summary": [
     {
       "fiscal_year": 2014,
@@ -83,8 +83,8 @@
     {
       "fiscal_year": "current",
       "label": "FY 2025-26 (Live)",
-      "records": 1508,
-      "employees": 82455,
+      "records": 1510,
+      "employees": 82493,
       "source": "xlsx"
     }
   ],
@@ -23001,6 +23001,32 @@
       "notice_date": "2026-06-30",
       "address": "1440 S. Sepulveda Blvd  Los Angeles CA 90025",
       "industry": "51 Information",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "Blue Diamond Growers",
+      "effective_date": "2026-09-04",
+      "county": "Sacramento County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 31,
+      "notice_date": "2026-07-02",
+      "address": "1802 C Street  Sacramento CA 95811",
+      "industry": "31-33 Manufacturing",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "Kingdom Animalia, LLC (Hourglass Cosmetics)",
+      "effective_date": "2026-09-15",
+      "county": "Los Angeles County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 7,
+      "notice_date": "2026-07-02",
+      "address": "17110 South Main Street  Carson CA 90248",
+      "industry": "42 Wholesale Trade",
       "fiscal_year": "current",
       "source": "xlsx"
     }
