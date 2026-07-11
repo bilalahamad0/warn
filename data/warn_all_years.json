@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-10T13:55:27.854701+00:00Z",
-  "total_records": 1811,
-  "total_employees": 103787,
+  "generated_at": "2026-07-11T01:28:05.779894+00:00Z",
+  "total_records": 1815,
+  "total_employees": 104264,
   "yearly_summary": [
     {
       "fiscal_year": 2014,
@@ -83,8 +83,8 @@
     {
       "fiscal_year": "current",
       "label": "FY 2025-26 (Live)",
-      "records": 1510,
-      "employees": 82493,
+      "records": 1514,
+      "employees": 82970,
       "source": "xlsx"
     }
   ],
@@ -23027,6 +23027,58 @@
       "notice_date": "2026-07-02",
       "address": "17110 South Main Street  Carson CA 90248",
       "industry": "42 Wholesale Trade",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "Chevron",
+      "effective_date": "2026-09-01",
+      "county": "Contra Costa County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 180,
+      "notice_date": "2026-07-01",
+      "address": "5001 Executive Parkway, Suite 200  San Ramon CA 94583",
+      "industry": "42 Wholesale Trade",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "DHL Supply Chain",
+      "effective_date": "2026-09-03",
+      "county": "Orange County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 33,
+      "notice_date": "2026-07-02",
+      "address": "701A Sally Pl  Fullerton CA 92831",
+      "industry": "48-49 Transportation and Warehousing",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "Obsidian",
+      "effective_date": "2026-09-04",
+      "county": "Orange County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 52,
+      "notice_date": "2026-07-06",
+      "address": "100 Spectrum Center Dr.  Irvine CA 92618",
+      "industry": "71 Arts Entertainment and Recreation",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "company": "LeeMAH Electronics",
+      "effective_date": "2026-09-08",
+      "county": "San Mateo County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 212,
+      "notice_date": "2026-07-07",
+      "address": "155 South Hill Drive  Brisbane CA 94005",
+      "industry": "31-33 Manufacturing",
       "fiscal_year": "current",
       "source": "xlsx"
     }
