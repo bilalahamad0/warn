@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-07-15 13:07:47 UTC
+**Generated:** 2026-07-16 01:26:55 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -30,16 +30,17 @@ M .coverage
 
 **Recent commits:**
 ```
+c164999 auto: WARN data update [skip ci]
 7cafffe auto: WARN data update [skip ci]
 07d25fe auto: WARN data update [skip ci]
 a490c3a auto: WARN data update [skip ci]
 a38bec6 auto: WARN data update [skip ci]
-04c6bba auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-07-16T01:26:55.041627+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-15T13:07:47.901362+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-15T01:17:08.261047+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-14T13:04:05.452073+00:00Z` — +0 added, -0 removed, 0 employees (new)
@@ -49,4 +50,3 @@ a38bec6 auto: WARN data update [skip ci]
 - `2026-07-12T12:53:14.525704+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-12T01:29:40.646574+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-11T12:52:07.852992+00:00Z` — +0 added, -9 removed, 0 employees (new)
-- `2026-07-11T01:28:05.659089+00:00Z` — +4 added, -1263 removed, 477 employees (new)
