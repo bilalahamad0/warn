@@ -1,9 +1,9 @@
 {
-  "total_records": 1514,
-  "total_employees": 82970,
+  "total_records": 1529,
+  "total_employees": 83954,
   "date_range_start": "2025-01-29",
-  "date_range_end": "2026-07-07",
-  "last_updated": "2026-07-16T13:16:17.020431+00:00Z",
+  "date_range_end": "2026-07-15",
+  "last_updated": "2026-07-17T01:29:47.348834+00:00Z",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "records": [
     {
@@ -16625,7 +16625,7 @@
       "employees": 180,
       "notice_date": "2026-07-01",
       "address": "5001 Executive Parkway, Suite 200  San Ramon CA 94583",
-      "industry": "42 Wholesale Trade"
+      "industry": "21 Mining Quarrying Oil and Gas Exraction"
     },
     {
       "company": "DHL Supply Chain",
@@ -16659,6 +16659,171 @@
       "notice_date": "2026-07-07",
       "address": "155 South Hill Drive  Brisbane CA 94005",
       "industry": "31-33 Manufacturing"
+    },
+    {
+      "company": "Conduent",
+      "effective_date": "2026-08-28",
+      "county": "Orange County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 51,
+      "notice_date": "2026-06-26",
+      "address": "11165 Knott Avenue, Suite D  Cypress CA 90630",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "company": "6th Street Center for Youth (Youth for Change)",
+      "effective_date": "2026-08-31",
+      "county": "Butte County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 6,
+      "notice_date": "2026-07-10",
+      "address": "130 W. 6th Street  Chico CA 95928",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "company": "Red Lobster Restaurants LLC",
+      "effective_date": "2026-08-31",
+      "county": "Santa Barbara County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 37,
+      "notice_date": "2026-07-14",
+      "address": "1525 S. Bradley Road  Santa Maria CA 93454",
+      "industry": "72 Accommodation and Food Services"
+    },
+    {
+      "company": "GEODIS",
+      "effective_date": "2026-09-03",
+      "county": "San Bernardino County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 81,
+      "notice_date": "2026-07-06",
+      "address": "1950 Palmetto Ave.  Redlands CA 92374",
+      "industry": "48-49 Transportation and Warehousing"
+    },
+    {
+      "company": "The Vons Companies Inc.",
+      "effective_date": "2026-09-05",
+      "county": "Los Angeles County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 55,
+      "notice_date": "2026-07-07",
+      "address": "845 E. California St.  Pasadena CA 91106",
+      "industry": "44-45 Retail Trade"
+    },
+    {
+      "company": "OnPoint Logistics LLC",
+      "effective_date": "2026-09-07",
+      "county": "San Francisco County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 96,
+      "notice_date": "2026-07-09",
+      "address": "749 Toland Street  San Francisco CA 94124",
+      "industry": "48-49 Transportation and Warehousing"
+    },
+    {
+      "company": "Sentinel Restaurant & Hospitality Group LLC",
+      "effective_date": "2026-09-08",
+      "county": "Orange County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 113,
+      "notice_date": "2026-07-08",
+      "address": "627 Sleepy Hollow Ln  Laguna Beach CA 92651",
+      "industry": "72 Accommodation and Food Services"
+    },
+    {
+      "company": "Xpress Delivery LLC (DSJ9)",
+      "effective_date": "2026-09-09",
+      "county": "Alameda County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 80,
+      "notice_date": "2026-07-09",
+      "address": "5800 Coliseum Way  Oakland CA 94621",
+      "industry": "48-49 Transportation and Warehousing"
+    },
+    {
+      "company": "Udemy, Inc.",
+      "effective_date": "2026-09-11",
+      "county": "San Francisco County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 28,
+      "notice_date": "2026-07-14",
+      "address": "600 Harrison Street, 3rd Floor  San Francisco CA 94107",
+      "industry": "61 Educational Services"
+    },
+    {
+      "company": "Coursera, Inc.",
+      "effective_date": "2026-09-11",
+      "county": "Santa Clara County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 31,
+      "notice_date": "2026-07-14",
+      "address": "2440West El Camino Real, Suite 500  Mountain View CA 94040",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "company": "AWCS, LLC (Cottonwood Post-Acute Rehab",
+      "effective_date": "2026-09-11",
+      "county": "Yolo County",
+      "city": "",
+      "layoff_type": "Closure Temporary",
+      "employees": 158,
+      "notice_date": "2026-07-13",
+      "address": "625 Cottonwood St.  Woodland CA 95695",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "company": "Eargo, Inc.",
+      "effective_date": "2026-09-14",
+      "county": "Santa Clara County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 57,
+      "notice_date": "2026-07-15",
+      "address": "2665 North First Street, Suite 3000  San Jose CA 95134",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "company": "GMRI, Inc. dba Yard House",
+      "effective_date": "2026-09-14",
+      "county": "Orange County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 78,
+      "notice_date": "2026-07-14",
+      "address": "1875 Newport Blvd., A219  Costa Mesa CA 92627",
+      "industry": "72 Accommodation and Food Services"
+    },
+    {
+      "company": "GXO Logistics Worldwide, LLC",
+      "effective_date": "2026-09-18",
+      "county": "San Bernardino County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 46,
+      "notice_date": "2026-07-10",
+      "address": "7010 Cajon Blvd.  San Bernardino CA 92407",
+      "industry": "48-49 Transportation and Warehousing"
+    },
+    {
+      "company": "ELC Beauty LLC (Too Faced Cosmetics, LLC)",
+      "effective_date": "2026-09-30",
+      "county": "Orange County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 67,
+      "notice_date": "2026-07-14",
+      "address": "18231 W. McDurmott #100  Irvine CA 92614",
+      "industry": "44-45 Retail Trade"
     }
   ]
 }
