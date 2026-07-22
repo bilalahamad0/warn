@@ -1,9 +1,9 @@
 {
-  "total_records": 1529,
-  "total_employees": 83954,
+  "total_records": 1541,
+  "total_employees": 84875,
   "date_range_start": "2025-01-29",
-  "date_range_end": "2026-07-15",
-  "last_updated": "2026-07-21T13:13:40.820599+00:00Z",
+  "date_range_end": "2026-07-20",
+  "last_updated": "2026-07-22T01:26:38.745016+00:00Z",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "records": [
     {
@@ -16824,6 +16824,138 @@
       "notice_date": "2026-07-14",
       "address": "18231 W. McDurmott #100  Irvine CA 92614",
       "industry": "44-45 Retail Trade"
+    },
+    {
+      "company": "Aramark Campus, LLC",
+      "effective_date": "2026-07-31",
+      "county": "San Bernardino County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 94,
+      "notice_date": "2026-07-16",
+      "address": "1259 E Colton Avenue  Redlands CA 92374",
+      "industry": "72 Accommodation and Food Services"
+    },
+    {
+      "company": "NBCUniversal Media, LLC - 1360",
+      "effective_date": "2026-08-28",
+      "county": "Los Angeles County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 5,
+      "notice_date": "2026-07-17",
+      "address": "100 Universal City Plaza, Bldg. 1360  Universal City CA 91608",
+      "industry": "71 Arts Entertainment and Recreation"
+    },
+    {
+      "company": "NBCUniversal Media, LLC - 1460",
+      "effective_date": "2026-08-28",
+      "county": "Los Angeles County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 55,
+      "notice_date": "2026-07-17",
+      "address": "100 Universal City Plaza, Bldg. 1460  Universal City CA 91608",
+      "industry": "71 Arts Entertainment and Recreation"
+    },
+    {
+      "company": "NBCUniversal Media, LLC -1440",
+      "effective_date": "2026-08-28",
+      "county": "Los Angeles County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 87,
+      "notice_date": "2026-07-17",
+      "address": "100 Universal City Plaza, Bldg. 1440  Universal City CA 91608",
+      "industry": "71 Arts Entertainment and Recreation"
+    },
+    {
+      "company": "NBCUniversal Media, LLC - 1320",
+      "effective_date": "2026-08-28",
+      "county": "Los Angeles County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 3,
+      "notice_date": "2026-07-17",
+      "address": "100 Universal City Plaza, Bldg. 1320  Universal City CA 91608",
+      "industry": "71 Arts Entertainment and Recreation"
+    },
+    {
+      "company": "Queen City Staffing",
+      "effective_date": "2026-09-13",
+      "county": "Sonoma County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 49,
+      "notice_date": "2026-07-14",
+      "address": "2717 Giffen Avenue  Santa Rosa CA 95407",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
+    },
+    {
+      "company": "Wind & Sea Restaurant",
+      "effective_date": "2026-09-15",
+      "county": "Orange County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 198,
+      "notice_date": "2026-07-14",
+      "address": "34699 Golden Lantern  Dana Point CA 92629",
+      "industry": "72 Accommodation and Food Services"
+    },
+    {
+      "company": "Phillips 66",
+      "effective_date": "2026-09-16",
+      "county": "Los Angeles County",
+      "city": "",
+      "layoff_type": "Closure Permanent",
+      "employees": 5,
+      "notice_date": "2026-07-16",
+      "address": "1660 W. Anaheim Street  Wilmington CA 90744",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "company": "Ventura Coastal",
+      "effective_date": "2026-09-18",
+      "county": "Tulare County",
+      "city": "",
+      "layoff_type": "Layoff Temporary",
+      "employees": 71,
+      "notice_date": "2026-07-15",
+      "address": "531 W. Poplar Avenue  Tipton CA 93272",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "company": "Monterey Mushrooms, LLC",
+      "effective_date": "2026-09-20",
+      "county": "Santa Clara County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 253,
+      "notice_date": "2026-07-17",
+      "address": "642 Hale Ave.  Morgan Hill CA 95037",
+      "industry": "11 Agriculture Forestry Fishing Hunting"
+    },
+    {
+      "company": "DesigneRX Pharmaceuticals, Inc.",
+      "effective_date": "2026-09-21",
+      "county": "Solano County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 25,
+      "notice_date": "2026-07-20",
+      "address": "4941 Allison Parkway, Suite B  Vacaville CA 95688",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "company": "Magic Leap, Inc.",
+      "effective_date": "2026-10-01",
+      "county": "Santa Clara County",
+      "city": "",
+      "layoff_type": "Layoff Permanent",
+      "employees": 76,
+      "notice_date": "2026-07-17",
+      "address": "1376 Bordeaux Dr.  Sunnyvale CA 94089",
+      "industry": "54 Professional Scientific and Technical Services"
     }
   ]
 }
