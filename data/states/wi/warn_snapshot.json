@@ -1,9 +1,9 @@
 {
-  "total_records": 628,
-  "total_employees": 58981,
+  "total_records": 629,
+  "total_employees": 59040,
   "date_range_start": "2020-01-02",
-  "date_range_end": "2026-07-20",
-  "last_updated": "2026-07-21T20:52:11.705527+00:00Z",
+  "date_range_end": "2026-07-21",
+  "last_updated": "2026-07-23T09:24:16.911018+00:00Z",
   "source_url": "https://dwd.wisconsin.gov/dislocatedworker/warn/",
   "records": [
     {
@@ -7541,6 +7541,18 @@
       "city": "Shullsburg",
       "address": "",
       "industry": "Dairy Product Merch Whls"
+    },
+    {
+      "state": "WI",
+      "company": "Wisconsin Green, LLC",
+      "notice_date": "2026-07-21",
+      "effective_date": "2026-07-22",
+      "employees": 59,
+      "layoff_type": "Facility Closure",
+      "county": "Washington",
+      "city": "Washington",
+      "address": "",
+      "industry": "Corrugated & Solid Fiber Box Mfg"
     }
   ]
 }

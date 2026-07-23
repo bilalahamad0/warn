@@ -1,9 +1,9 @@
 {
-  "total_records": 930,
-  "total_employees": 51389,
+  "total_records": 931,
+  "total_employees": 51410,
   "date_range_start": "2011-01-13",
-  "date_range_end": "2026-07-17",
-  "last_updated": "2026-07-21T20:56:17.147575+00:00Z",
+  "date_range_end": "2026-07-22",
+  "last_updated": "2026-07-23T09:12:46.826339+00:00Z",
   "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
   "records": [
     {
@@ -872,18 +872,6 @@
     },
     {
       "state": "IA",
-      "company": "Wells Fargo",
-      "notice_date": "2026-07-07",
-      "effective_date": "2026-09-05",
-      "employees": 20,
-      "layoff_type": "Amendment - Additional Employees",
-      "county": "Polk",
-      "city": "West Des Moines",
-      "address": "800 S Jordan Creek Pkwy",
-      "industry": "Finance and Insurance"
-    },
-    {
-      "state": "IA",
       "company": "Great Souther Bank",
       "notice_date": "2026-06-30",
       "effective_date": "2026-10-01",
@@ -908,10 +896,22 @@
     },
     {
       "state": "IA",
+      "company": "Wells Fargo",
+      "notice_date": "2026-07-07",
+      "effective_date": "2026-09-05",
+      "employees": 20,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Polk",
+      "city": "West Des Moines",
+      "address": "800 S Jordan Creek Pkwy",
+      "industry": "Finance and Insurance"
+    },
+    {
+      "state": "IA",
       "company": "Independence Premium Foods",
       "notice_date": "2026-07-10",
       "effective_date": "2026-08-09",
-      "employees": 41,
+      "employees": 42,
       "layoff_type": "Mass Layoff",
       "county": "Buchanan",
       "city": "Independence",
@@ -941,6 +941,18 @@
       "city": "Centerville",
       "address": "1015 N 18th St Suite C",
       "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "IA",
+      "company": "Wells Fargo",
+      "notice_date": "2026-07-22",
+      "effective_date": "2026-09-19",
+      "employees": 20,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Polk",
+      "city": "West Des Moines",
+      "address": "800 S Jordan Creek Pkwy",
+      "industry": "Finance and Insurance"
     },
     {
       "state": "IA",

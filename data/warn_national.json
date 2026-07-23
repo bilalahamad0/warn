@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-23T09:24:19.423250+00:00Z",
+  "last_updated": "2026-07-23T13:49:29.274844+00:00Z",
   "states_live": 46,
-  "total_records": 32007,
-  "total_employees": 3866255,
+  "total_records": 32010,
+  "total_employees": 3866521,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -155,8 +155,8 @@
       "name": "Michigan",
       "agency": "Michigan Department of Labor and Economic Opportunity",
       "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
-      "total_records": 107,
-      "total_employees": 13712
+      "total_records": 109,
+      "total_employees": 13828
     },
     "MN": {
       "name": "Minnesota",
@@ -183,8 +183,8 @@
       "name": "North Carolina",
       "agency": "North Carolina Department of Commerce",
       "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
-      "total_records": 365,
-      "total_employees": 33815
+      "total_records": 366,
+      "total_employees": 33965
     },
     "ND": {
       "name": "North Dakota",
@@ -231301,7 +231301,7 @@
       "layoff_type": "Facility closure",
       "county": "Oakland",
       "city": "",
-      "address": "1955 Stephenson Highway, Troy, Michigan, 48083",
+      "address": "1955 Stephenson Highway, Troy, MI 48083",
       "industry": ""
     },
     {
@@ -232478,6 +232478,30 @@
       "county": "Oakland",
       "city": "",
       "address": "3701 Hamlin Road, Auburn Hills, MI 48326",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Menard Inc., d/b/a Menards",
+      "notice_date": null,
+      "effective_date": "2026-05-13",
+      "employees": 68,
+      "layoff_type": "Temporary layoff",
+      "county": "St. Joseph",
+      "city": "",
+      "address": "1001 Warner Drive, Three Rivers, MI 49093",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "General Shale, d/b/a Michigan Brick",
+      "notice_date": null,
+      "effective_date": "2026-04-27",
+      "employees": 48,
+      "layoff_type": "Facility closure",
+      "county": "Shiawassee",
+      "city": "Corunna",
+      "address": "",
       "industry": ""
     },
     {
@@ -246770,6 +246794,18 @@
       "county": "Wake",
       "city": "Raleigh",
       "address": "8924 Midway West Road",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Elevate Textiles, Inc.",
+      "notice_date": "2026-07-22",
+      "effective_date": "2026-12-31",
+      "employees": 150,
+      "layoff_type": "Closure Permanent",
+      "county": "Alamance",
+      "city": "Burlington",
+      "address": "906 Anthony Street",
       "industry": ""
     },
     {

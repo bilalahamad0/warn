@@ -1,9 +1,9 @@
 {
-  "total_records": 2355,
-  "total_employees": 353178,
+  "total_records": 2358,
+  "total_employees": 353348,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-07-21T05:34:14.741236+00:00Z",
+  "last_updated": "2026-07-23T09:20:46.440507+00:00Z",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -971,7 +971,7 @@
       "company": "JP Morgan Chase",
       "notice_date": null,
       "effective_date": "2026-07-08",
-      "employees": 172,
+      "employees": 173,
       "layoff_type": "",
       "county": "",
       "city": "Jersey City",
@@ -1023,6 +1023,42 @@
       "layoff_type": "",
       "county": "",
       "city": "Basking Ridge",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Prudential Insurance Company of America",
+      "notice_date": null,
+      "effective_date": "2026-09-18",
+      "employees": 89,
+      "layoff_type": "",
+      "county": "",
+      "city": "Newark",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Petvet Care Centers LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-08",
+      "employees": 18,
+      "layoff_type": "",
+      "county": "",
+      "city": "Egg Harbor Twp",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "BASF Corporation",
+      "notice_date": null,
+      "effective_date": "2026-11-01",
+      "employees": 62,
+      "layoff_type": "",
+      "county": "",
+      "city": "Florham Park",
       "address": "",
       "industry": ""
     },

@@ -1,188 +1,264 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-07-23 09:24:19 UTC
+**Generated:** 2026-07-23 13:49:28 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 1,263 | 36 | +36/+1237 |
-| Total employees | 67,796 | 2,560 | -65,236 |
+| Total records | 36 | 36 | +0/+0 |
+| Total employees | 2,560 | 2,560 | +0 |
 
-### ✅ New Entries (36 records)
-
-| Company | Employees | Effective Date | County |
-|---------|-----------|----------------|--------|
-| Monterey Mushrooms, LLC | 253 | 2026-09-20 | Santa Clara County |
-| LeeMAH Electronics | 212 | 2026-09-08 | San Mateo County |
-| Wind & Sea Restaurant | 198 | 2026-09-15 | Orange County |
-| Chevron | 180 | 2026-09-01 | Contra Costa County |
-| AWCS, LLC (Cottonwood Post-Acute Rehab | 158 | 2026-09-11 | Yolo County |
-| Sentinel Restaurant & Hospitality Group LLC | 113 | 2026-09-08 | Orange County |
-| Genentech, Inc. | 103 | 2026-07-29 | San Mateo County |
-| OnPoint Logistics LLC | 96 | 2026-09-07 | San Francisco County |
-| Aramark Campus, LLC | 94 | 2026-07-31 | San Bernardino County |
-| NBCUniversal Media, LLC -1440 | 87 | 2026-08-28 | Los Angeles County |
-| GEODIS | 81 | 2026-09-03 | San Bernardino County |
-| Xpress Delivery LLC (DSJ9) | 80 | 2026-09-09 | Alameda County |
-| GMRI, Inc. dba Yard House | 78 | 2026-09-14 | Orange County |
-| Magic Leap, Inc. | 76 | 2026-10-01 | Santa Clara County |
-| Ventura Coastal | 71 | 2026-09-18 | Tulare County |
-| ELC Beauty LLC (Too Faced Cosmetics, LLC) | 67 | 2026-09-30 | Orange County |
-| Eargo, Inc. | 57 | 2026-09-14 | Santa Clara County |
-| NBCUniversal Media, LLC - 1460 | 55 | 2026-08-28 | Los Angeles County |
-| The Vons Companies Inc. | 55 | 2026-09-05 | Los Angeles County |
-| Obsidian | 52 | 2026-09-04 | Orange County |
-
-### ❌ Removed Entries (1237 records)
-
-| Company | Employees | Effective Date |
-|---------|-----------|----------------|
-| Ojai Valley Inn | 773 | 2026-01-04 |
-| Del Monte Foods Corporation II Inc - Modesto | 765 | 2026-04-07 |
-| KBR Services LLC | 758 | 2026-05-06 |
-| Educational Testing Service (ETS) | 757 | 2025-12-31 |
-| Dreyer's Grand Ice Cream | 726 | 2025-11-23 |
-| Republic National Distributing Company (14402) | 561 | 2025-09-02 |
-| Jet Propulsion Laboratory (California Institute of Technology) | 543 | 2025-12-13 |
-| Thermal Structures, Inc. | 447 | 2025-11-24 |
-| Children's Hospital Los Angeles | 439 | 2025-10-28 |
-| Amazon | 433 | 2026-04-28 |
-| Intel Corporation | 427 | 2025-07-11 |
-| RGNext | 400 | 2025-11-30 |
-| Anthony International | 398 | 2026-03-31 |
-| Hilton San Diego Bayfront | 394 | 2025-12-13 |
-| Jabil Inc. | 393 | 2025-11-24 |
-| Swift Beef Company | 374 | 2026-02-02 |
-| Stanford University | 363 | 2025-09-30 |
-| Intuitive Surgical, Inc. | 331 | 2025-10-27 |
-| Republic National Distributing Company | 330 | 2025-09-02 |
-| HRL Laboratories | 329 | 2026-04-03 |
+### ✅ No new entries.
 
 ---
 ## 📁 File vs Git Comparison
 
 - **Local `file.xlsx` hash:** `2c73db1b759812982a57b17b77afa3c5`
-- **Committed hash:**          `9a3090b2bec8f72fe43a78d7d7ad5cf5`
-- 🔴 **Local file differs from committed version**
+- **Committed hash:**          `2c73db1b759812982a57b17b77afa3c5`
+- ✅ Local file matches committed version
 
 **Git status:**
 ```
-M CLAUDE.md
+M .coverage
  M data/changelog.jsonl
- M data/charts_manifest.json
- M data/diff_report.md
- M data/meta.json
+ M data/states/ak/changelog.jsonl
+ M data/states/ak/warn_cumulative.json
+ M data/states/ak/warn_latest.json
+ M data/states/ak/warn_snapshot.json
+ M data/states/al/changelog.jsonl
+ M data/states/al/warn_cumulative.json
+ M data/states/al/warn_latest.json
+ M data/states/al/warn_snapshot.json
+ M data/states/az/changelog.jsonl
+ M data/states/az/meta.json
+ M data/states/az/warn_cumulative.json
+ M data/states/az/warn_latest.json
+ M data/states/az/warn_snapshot.json
+ M data/states/co/changelog.jsonl
+ M data/states/co/meta.json
+ M data/states/co/warn_cumulative.json
+ M data/states/co/warn_latest.json
+ M data/states/co/warn_snapshot.json
+ M data/states/ct/changelog.jsonl
+ M data/states/ct/meta.json
+ M data/states/ct/warn_cumulative.json
+ M data/states/ct/warn_latest.json
+ M data/states/ct/warn_snapshot.json
+ M data/states/dc/changelog.jsonl
+ M data/states/dc/meta.json
+ M data/states/dc/warn_cumulative.json
+ M data/states/dc/warn_latest.json
+ M data/states/dc/warn_snapshot.json
+ M data/states/de/changelog.jsonl
+ M data/states/de/meta.json
+ M data/states/de/warn_cumulative.json
+ M data/states/de/warn_latest.json
+ M data/states/de/warn_snapshot.json
+ M data/states/fl/changelog.jsonl
+ M data/states/fl/warn_cumulative.json
+ M data/states/fl/warn_latest.json
+ M data/states/fl/warn_snapshot.json
+ M data/states/ga/changelog.jsonl
+ M data/states/ga/meta.json
+ M data/states/ga/warn_cumulative.json
+ M data/states/ga/warn_latest.json
+ M data/states/ga/warn_snapshot.json
+ M data/states/hi/changelog.jsonl
+ M data/states/hi/meta.json
+ M data/states/hi/warn_cumulative.json
+ M data/states/hi/warn_latest.json
+ M data/states/hi/warn_snapshot.json
+ M data/states/ia/changelog.jsonl
+ M data/states/ia/meta.json
+ M data/states/ia/warn_cumulative.json
+ M data/states/ia/warn_latest.json
+ M data/states/ia/warn_snapshot.json
+ M data/states/id/changelog.jsonl
+ M data/states/id/warn_cumulative.json
+ M data/states/id/warn_latest.json
+ M data/states/id/warn_snapshot.json
+ M data/states/il/changelog.jsonl
+ M data/states/il/meta.json
+ M data/states/il/raw_download
+ M data/states/il/warn_cumulative.json
+ M data/states/il/warn_latest.json
+ M data/states/il/warn_snapshot.json
+ M data/states/in/changelog.jsonl
+ M data/states/in/warn_cumulative.json
+ M data/states/in/warn_latest.json
+ M data/states/in/warn_snapshot.json
+ M data/states/ks/changelog.jsonl
+ M data/states/ks/meta.json
+ M data/states/ks/warn_cumulative.json
+ M data/states/ks/warn_latest.json
+ M data/states/ks/warn_snapshot.json
+ M data/states/ky/changelog.jsonl
+ M data/states/ky/meta.json
+ M data/states/ky/warn_cumulative.json
+ M data/states/ky/warn_latest.json
+ M data/states/ky/warn_snapshot.json
+ M data/states/la/changelog.jsonl
+ M data/states/la/meta.json
+ M data/states/la/warn_cumulative.json
+ M data/states/la/warn_latest.json
+ M data/states/la/warn_snapshot.json
+ M data/states/ma/changelog.jsonl
+ M data/states/ma/meta.json
+ M data/states/ma/warn_cumulative.json
+ M data/states/ma/warn_latest.json
+ M data/states/ma/warn_snapshot.json
+ M data/states/md/changelog.jsonl
+ M data/states/md/raw_download
+ M data/states/md/warn_cumulative.json
+ M data/states/md/warn_latest.json
+ M data/states/md/warn_snapshot.json
+ M data/states/me/changelog.jsonl
+ M data/states/me/meta.json
+ M data/states/me/warn_cumulative.json
+ M data/states/me/warn_latest.json
+ M data/states/me/warn_snapshot.json
+ M data/states/mi/changelog.jsonl
+ M data/states/mi/meta.json
+ M data/states/mi/raw_download
+ M data/states/mi/warn_cumulative.json
+ M data/states/mi/warn_latest.json
+ M data/states/mi/warn_snapshot.json
+ M data/states/mn/changelog.jsonl
+ M data/states/mn/meta.json
+ M data/states/mn/warn_cumulative.json
+ M data/states/mn/warn_latest.json
+ M data/states/mn/warn_snapshot.json
+ M data/states/ms/changelog.jsonl
+ M data/states/ms/warn_cumulative.json
+ M data/states/ms/warn_latest.json
+ M data/states/ms/warn_snapshot.json
+ M data/states/mt/changelog.jsonl
+ M data/states/mt/warn_cumulative.json
+ M data/states/mt/warn_latest.json
+ M data/states/mt/warn_snapshot.json
+ M data/states/nc/changelog.jsonl
+ M data/states/nc/meta.json
+ M data/states/nc/raw_download
+ M data/states/nc/warn_cumulative.json
+ M data/states/nc/warn_latest.json
+ M data/states/nc/warn_snapshot.json
+ M data/states/nd/changelog.jsonl
+ M data/states/nd/warn_cumulative.json
+ M data/states/nd/warn_latest.json
+ M data/states/nd/warn_snapshot.json
+ M data/states/ne/changelog.jsonl
+ M data/states/ne/meta.json
+ M data/states/ne/raw_download
+ M data/states/ne/warn_cumulative.json
+ M data/states/ne/warn_latest.json
+ M data/states/ne/warn_snapshot.json
+ M data/states/nj/changelog.jsonl
+ M data/states/nj/meta.json
+ M data/states/nj/warn_cumulative.json
+ M data/states/nj/warn_latest.json
+ M data/states/nj/warn_snapshot.json
+ M data/states/nm/changelog.jsonl
+ M data/states/nm/meta.json
+ M data/states/nm/warn_cumulative.json
+ M data/states/nm/warn_latest.json
+ M data/states/nm/warn_snapshot.json
+ M data/states/ny/changelog.jsonl
+ M data/states/ny/meta.json
+ M data/states/ny/warn_cumulative.json
+ M data/states/ny/warn_latest.json
+ M data/states/ny/warn_snapshot.json
+ M data/states/oh/changelog.jsonl
+ M data/states/oh/warn_cumulative.json
+ M data/states/oh/warn_latest.json
+ M data/states/oh/warn_snapshot.json
+ M data/states/ok/changelog.jsonl
+ M data/states/ok/meta.json
+ M data/states/ok/warn_cumulative.json
+ M data/states/ok/warn_latest.json
+ M data/states/ok/warn_snapshot.json
+ M data/states/or/changelog.jsonl
+ M data/states/or/latest.xlsx
+ M data/states/or/meta.json
+ M data/states/or/warn_cumulative.json
+ M data/states/or/warn_latest.json
+ M data/states/or/warn_snapshot.json
+ M data/states/pa/changelog.jsonl
+ M data/states/pa/meta.json
+ M data/states/pa/warn_cumulative.json
+ M data/states/pa/warn_latest.json
+ M data/states/pa/warn_snapshot.json
+ M data/states/ri/changelog.jsonl
+ M data/states/ri/warn_cumulative.json
+ M data/states/ri/warn_latest.json
+ M data/states/ri/warn_snapshot.json
+ M data/states/sc/changelog.jsonl
+ M data/states/sc/meta.json
+ M data/states/sc/warn_cumulative.json
+ M data/states/sc/warn_latest.json
+ M data/states/sc/warn_snapshot.json
+ M data/states/sd/changelog.jsonl
+ M data/states/sd/meta.json
+ M data/states/sd/warn_cumulative.json
+ M data/states/sd/warn_latest.json
+ M data/states/sd/warn_snapshot.json
+ M data/states/tn/changelog.jsonl
+ M data/states/tn/raw_download
+ M data/states/tn/warn_cumulative.json
+ M data/states/tn/warn_latest.json
+ M data/states/tn/warn_snapshot.json
+ M data/states/ut/changelog.jsonl
+ M data/states/ut/warn_cumulative.json
+ M data/states/ut/warn_latest.json
+ M data/states/ut/warn_snapshot.json
+ M data/states/va/changelog.jsonl
+ M data/states/va/meta.json
+ M data/states/va/warn_cumulative.json
+ M data/states/va/warn_latest.json
+ M data/states/va/warn_snapshot.json
+ M data/states/vt/changelog.jsonl
+ M data/states/vt/meta.json
+ M data/states/vt/warn_cumulative.json
+ M data/states/vt/warn_latest.json
+ M data/states/vt/warn_snapshot.json
+ M data/states/wa/changelog.jsonl
+ M data/states/wa/meta.json
+ M data/states/wa/warn_cumulative.json
+ M data/states/wa/warn_latest.json
+ M data/states/wa/warn_snapshot.json
+ M data/states/wi/changelog.jsonl
+ M data/states/wi/meta.json
+ M data/states/wi/warn_cumulative.json
+ M data/states/wi/warn_latest.json
+ M data/states/wi/warn_snapshot.json
+ M data/states/wv/changelog.jsonl
+ M data/states/wv/meta.json
+ M data/states/wv/warn_cumulative.json
+ M data/states/wv/warn_latest.json
+ M data/states/wv/warn_snapshot.json
  M data/warn_cumulative.json
  M data/warn_latest.json
  M data/warn_snapshot.json
- M docs/charts/10_lead_time.html
- M docs/charts/10_lead_time.png
- M docs/charts/11_county_bar.html
- M docs/charts/11_county_bar.png
- M docs/charts/1_timeline_scatter.html
- M docs/charts/1_timeline_scatter.png
- M docs/charts/2_monthly_bar.html
- M docs/charts/2_monthly_bar.png
- M docs/charts/3_rolling_trend.html
- M docs/charts/3_rolling_trend.png
- M docs/charts/4_top_companies.html
- M docs/charts/4_top_companies.png
- M docs/charts/5_county_heatmap.html
- M docs/charts/5_county_heatmap.png
- M docs/charts/6_treemap.html
- M docs/charts/6_treemap.png
- M docs/charts/7_yoy_bar.html
- M docs/charts/7_yoy_bar.png
- M docs/charts/8_multiyear_trend.html
- M docs/charts/8_multiyear_trend.png
- M docs/charts/9_industry_breakdown.html
- M docs/charts/9_industry_breakdown.png
- M docs/data.json
- M docs/index.html
- M file.xlsx
- M requirements.txt
- M tests/test_publish.py
- M warn_charts.py
- M warn_monitor.py
- M warn_publish.py
-?? .claude/
-?? EXPANSION_RESEARCH.md
-?? data/states/
-?? data/warn_national.json
-?? docs/charts/12_us_map.html
-?? docs/charts/12_us_map.png
-?? docs/charts/us_monthly.html
-?? docs/charts/us_top_companies.html
-?? docs/charts/us_top_states.html
-?? docs/us/
-?? tests/fixtures/
-?? tests/test_site_us.py
-?? tests/test_source_ak.py
-?? tests/test_source_al.py
-?? tests/test_source_az.py
-?? tests/test_source_co.py
-?? tests/test_source_ct.py
-?? tests/test_source_dc.py
-?? tests/test_source_de.py
-?? tests/test_source_fl.py
-?? tests/test_source_ga.py
-?? tests/test_source_hi.py
-?? tests/test_source_ia.py
-?? tests/test_source_id.py
-?? tests/test_source_il.py
-?? tests/test_source_in.py
-?? tests/test_source_ks.py
-?? tests/test_source_ky.py
-?? tests/test_source_la.py
-?? tests/test_source_ma.py
-?? tests/test_source_md.py
-?? tests/test_source_me.py
-?? tests/test_source_mi.py
-?? tests/test_source_mn.py
-?? tests/test_source_mo.py
-?? tests/test_source_ms.py
-?? tests/test_source_mt.py
-?? tests/test_source_nc.py
-?? tests/test_source_nd.py
-?? tests/test_source_ne.py
-?? tests/test_source_nj.py
-?? tests/test_source_nm.py
-?? tests/test_source_nv.py
-?? tests/test_source_ny.py
-?? tests/test_source_oh.py
-?? tests/test_source_ok.py
-?? tests/test_source_or.py
-?? tests/test_source_pa.py
-?? tests/test_source_ri.py
-?? tests/test_source_sc.py
-?? tests/test_source_sd.py
-?? tests/test_source_tn.py
-?? tests/test_source_tx.py
-?? tests/test_source_ut.py
-?? tests/test_source_va.py
-?? tests/test_source_vt.py
-?? tests/test_source_wa.py
-?? tests/test_source_wi.py
-?? tests/test_source_wv.py
-?? tests/test_sources.py
-?? warn_site_us.py
-?? warn_sources/
+ M docs/charts/us_monthly.html
+ M docs/charts/us_top_companies.html
+ M docs/charts/us_top_states.html
+ M docs/us/index.html
 ```
 
 **Recent commits:**
 ```
-5481adf auto: WARN data update [skip ci]
-3fb8f0b auto: WARN data update [skip ci]
-2461227 auto: WARN data update [skip ci]
-ad96ece auto: WARN data update [skip ci]
-f2d8c72 auto: WARN data update [skip ci]
+6e0ac1b feat: 50-state WARN expansion — 46 live sources, national dataset, US dashboard
+4ab98a4 auto: WARN data update [skip ci]
+a573f96 auto: WARN data update [skip ci]
+2c417d7 auto: WARN data update [skip ci]
+daa9a69 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-07-23T13:34:07.540528+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-23T09:09:15.606772+00:00Z` — +12 added, -1263 removed, 921 employees (new)
 - `2026-07-21T03:56:53.922876+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-21T03:50:37.805288+00:00Z` — +0 added, -0 removed, 0 employees (new)
@@ -192,4 +268,3 @@ f2d8c72 auto: WARN data update [skip ci]
 - `2026-07-19T01:27:50.430750+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-18T12:47:56.184152+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-18T01:21:10.141669+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-07-17T13:00:44.662483+00:00Z` — +0 added, -24 removed, 0 employees (new)

@@ -1,11 +1,47 @@
 {
-  "total_records": 104,
-  "total_employees": 12526,
+  "total_records": 107,
+  "total_employees": 13712,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-07-21T17:33:43.567137+00:00Z",
+  "last_updated": "2026-07-23T09:19:18.873528+00:00Z",
   "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
   "records": [
+    {
+      "state": "MI",
+      "company": "Compass Group USA, Inc. / Morrison Healthcare",
+      "notice_date": null,
+      "effective_date": "2026-07-24",
+      "employees": 311,
+      "layoff_type": "Layoff",
+      "county": "Bay, Clare, Genesee, Huron, Isabella, Macomb, Oakland, Tuscola",
+      "city": "",
+      "address": "1100 S. Van Dyke Road, Bad Axe, MI 48413; 1900 Columbus Ave., Bay City, MI 48708; 401 N. Hopper St., Caro, MI 48723; 401 S. Ballenger Highway, Flint, MI 48532; 1000 Harrington St., Mt. Clemens, MI 48043; 1221 South Drive, Mt. Pleasant, MI 48858; 50 Perry St., Pontiac, MI 48342; 1221 Pine Grove Ave., Port Huron, Michigan 48060",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Republic National Distributing Company (RNDC)",
+      "notice_date": null,
+      "effective_date": "2026-08-17",
+      "employees": 641,
+      "layoff_type": "Layoff",
+      "county": "Delta, Grand Traverse, Kent, Saginaw, Wayne",
+      "city": "",
+      "address": "2101 North 19 th St., Escanaba, MI 49829; 4495 Airwest Drive SE, Grand Rapids, MI 49512; 13000 Eckles Road, Livonia, MI 48150; 3460 E. Washington Road, Saginaw, MI 48601; 3055 Cass Road, Traverse City, MI 49684",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Fifth Third Bank",
+      "notice_date": null,
+      "effective_date": "2026-09-11",
+      "employees": 234,
+      "layoff_type": "Mass layoff",
+      "county": "Oakland",
+      "city": "",
+      "address": "3701 Hamlin Road, Auburn Hills, MI 48326",
+      "industry": ""
+    },
     {
       "state": "MI",
       "company": "Notions Marketing Corp.",
@@ -75,7 +111,7 @@
       "layoff_type": "Permanent closure",
       "county": "Ingham",
       "city": "",
-      "address": "735 E. Hazel St., Lansing, Michigan 48912",
+      "address": "735 E. Hazel St., Lansing, MI 48912",
       "industry": ""
     },
     {

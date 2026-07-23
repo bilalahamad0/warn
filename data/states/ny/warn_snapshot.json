@@ -1,9 +1,9 @@
 {
   "total_records": 174,
-  "total_employees": 9760,
+  "total_employees": 9379,
   "date_range_start": "2026-01-06",
-  "date_range_end": "2026-06-02",
-  "last_updated": "2026-07-21T05:30:45.569885+00:00Z",
+  "date_range_end": "2026-06-12",
+  "last_updated": "2026-07-23T09:21:06.393702+00:00Z",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -284,42 +284,6 @@
     },
     {
       "state": "NY",
-      "company": "Citibank, N.A.",
-      "notice_date": "2026-01-14",
-      "effective_date": "2026-04-14",
-      "employees": 552,
-      "layoff_type": "Layoff Permanent",
-      "county": "New York",
-      "city": "",
-      "address": "388 Greenwich Street New York, NY, 10013",
-      "industry": ""
-    },
-    {
-      "state": "NY",
-      "company": "Citigroup Global Markets, Inc.",
-      "notice_date": "2026-01-14",
-      "effective_date": "2026-04-14",
-      "employees": 46,
-      "layoff_type": "Layoff Permanent",
-      "county": "New York",
-      "city": "",
-      "address": "388 Greenwich Street New York, NY, 10013",
-      "industry": ""
-    },
-    {
-      "state": "NY",
-      "company": "Citigroup Technology, Inc.",
-      "notice_date": "2026-01-14",
-      "effective_date": "2026-04-18",
-      "employees": 2,
-      "layoff_type": "Layoff Permanent",
-      "county": "New York",
-      "city": "",
-      "address": "388 Greenwich Street New York, NY, 10013",
-      "industry": ""
-    },
-    {
-      "state": "NY",
       "company": "College Association at Delhi, Inc.- SUNY Delhi",
       "notice_date": "2026-04-01",
       "effective_date": "2026-06-30",
@@ -568,6 +532,18 @@
       "county": "Kings",
       "city": "",
       "address": "172 Montrose Ave. Brooklyn, NY, 11206",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "H&M Fashion USA, Inc.",
+      "notice_date": "2026-06-05",
+      "effective_date": "2026-09-04",
+      "employees": 76,
+      "layoff_type": "Layoff Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "110 5th Avenue, 11th floor New York, NY, 10011",
       "industry": ""
     },
     {
@@ -1604,6 +1580,18 @@
     },
     {
       "state": "NY",
+      "company": "Piedmont Airlines, Inc.",
+      "notice_date": "2026-06-12",
+      "effective_date": "2026-09-10",
+      "employees": 88,
+      "layoff_type": "Closure Permanent",
+      "county": "Onondaga",
+      "city": "",
+      "address": "1000 Col. Eileen Collins Blvd. Syracuse, NY, 13212",
+      "industry": ""
+    },
+    {
+      "state": "NY",
       "company": "Pinnacle Managing Co LLC",
       "notice_date": "2026-02-20",
       "effective_date": "2026-04-30",
@@ -1636,6 +1624,18 @@
       "county": "New York",
       "city": "",
       "address": "303 Lafayette St New York, NY, 10012",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Resideo, LLC. D/B/A ADI",
+      "notice_date": "2026-06-12",
+      "effective_date": "2026-09-15",
+      "employees": 55,
+      "layoff_type": "Closure Permanent",
+      "county": "Albany",
+      "city": "",
+      "address": "1217 West Yard Road Unit A Feura Bush, NY, 12067",
       "industry": ""
     },
     {

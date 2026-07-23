@@ -1,9 +1,9 @@
 {
-  "total_records": 847,
+  "total_records": 849,
   "total_employees": 87134,
   "date_range_start": "2015-01-02",
   "date_range_end": "2026-07-20",
-  "last_updated": "2026-07-21T21:03:12.683449+00:00Z",
+  "last_updated": "2026-07-23T09:09:36.172856+00:00Z",
   "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
   "records": [
     {
@@ -341,6 +341,30 @@
       "city": "",
       "address": "",
       "industry": "31-33: Manufacturing"
+    },
+    {
+      "state": "CO",
+      "company": "Travelport LP",
+      "notice_date": null,
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "CO",
+      "company": "Public Storage",
+      "notice_date": null,
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "",
+      "industry": ""
     },
     {
       "state": "CO",

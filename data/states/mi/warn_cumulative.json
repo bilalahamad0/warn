@@ -1,9 +1,9 @@
 {
-  "total_records": 107,
-  "total_employees": 13712,
+  "total_records": 109,
+  "total_employees": 13828,
   "date_range_start": "2024-11-29",
   "date_range_end": "2026-09-11",
-  "last_updated": "2026-07-23T09:19:18.875482+00:00Z",
+  "last_updated": "2026-07-23T13:44:10.167162+00:00Z",
   "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
   "records": [
     {
@@ -111,7 +111,7 @@
       "layoff_type": "Facility closure",
       "county": "Oakland",
       "city": "",
-      "address": "1955 Stephenson Highway, Troy, Michigan, 48083",
+      "address": "1955 Stephenson Highway, Troy, MI 48083",
       "industry": ""
     },
     {
@@ -1288,6 +1288,30 @@
       "county": "Oakland",
       "city": "",
       "address": "3701 Hamlin Road, Auburn Hills, MI 48326",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Menard Inc., d/b/a Menards",
+      "notice_date": null,
+      "effective_date": "2026-05-13",
+      "employees": 68,
+      "layoff_type": "Temporary layoff",
+      "county": "St. Joseph",
+      "city": "",
+      "address": "1001 Warner Drive, Three Rivers, MI 49093",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "General Shale, d/b/a Michigan Brick",
+      "notice_date": null,
+      "effective_date": "2026-04-27",
+      "employees": 48,
+      "layoff_type": "Facility closure",
+      "county": "Shiawassee",
+      "city": "Corunna",
+      "address": "",
       "industry": ""
     }
   ]
