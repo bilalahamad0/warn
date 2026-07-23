@@ -961,6 +961,8 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
     <div class="header-right">
       <div class="header-meta">
         Updated: <strong>{last_updated}</strong><br/>
+        <a href="us/">🇺🇸 US Dashboard</a>
+        &nbsp;·&nbsp;
         <a href="https://edd.ca.gov/en/jobs_and_training/layoff_services_warn" target="_blank" rel="noopener">CA EDD WARN</a>
         &nbsp;·&nbsp;
         <a href="https://github.com/bilalahamad0/warn" target="_blank" rel="noopener">GitHub</a>

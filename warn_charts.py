@@ -881,12 +881,16 @@ def chart_county_bar(df: pd.DataFrame, save_png: bool = True) -> go.Figure:
 
 NATIONAL_FILE = DATA_DIR / "warn_national.json"
 
-# Sequential scale from card background to accent, so the map sits on-theme.
+# Vivid multi-hue ramp (dark indigo → blue → cyan → warm yellow) tuned for the
+# dark theme: perceptually ordered, high-contrast, and zero stays near the
+# background so no-data states recede while active states pop.
 MAP_COLORSCALE = [
-    [0.0, CARD_BG],
-    [0.25, "#1b3a5c"],
-    [0.55, "#2f6cb0"],
-    [1.0, ACCENT],
+    [0.0, "#131c33"],
+    [0.15, "#26437c"],
+    [0.35, "#2f6fd0"],
+    [0.55, "#2fa8dd"],
+    [0.75, "#43d6b5"],
+    [1.0, "#f5d90a"],
 ]
 
 
@@ -921,7 +925,11 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
 
     years = sorted({y for y in (_record_year(r) for r in records) if y.isdigit()},
                    reverse=True)[:6]
-    year_options = ["All years"] + years
+    # Current year leads and is the default view; all-time and prior years
+    # stay one click away in the dropdown.
+    current_year = str(datetime.now(timezone.utc).year)
+    year_options = [y for y in [current_year] if y in years]
+    year_options += ["All years"] + [y for y in years if y != current_year]
 
     # Aggregate (year, state) -> employees / notices.
     def totals(year: str) -> dict:
@@ -949,20 +957,32 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
             a = agg.get(code, {"employees": 0, "notices": 0})
             z.append(a[metric])
             name = states_meta.get(code, {}).get("name", code)
+            # Several feeds omit headcounts; 0-with-notices means "not
+            # reported", never "nobody affected" — say so.
+            if a["notices"] and not a["employees"]:
+                emp_line = "employee counts not reported"
+            else:
+                emp_line = f"{a['employees']:,} employees affected"
             text.append(
-                f"<b>{name}</b><br>{a['employees']:,} employees affected"
-                f"<br>{a['notices']:,} notices"
+                f"<b>{name}</b><br>{emp_line}<br>{a['notices']:,} notices"
             )
         return z, text
 
-    z0, text0 = z_text("All years", "employees")
+    def z_cap(z: list) -> int:
+        """95th-percentile cap so one giant state can't wash out the ramp."""
+        positive = [v for v in z if v > 0]
+        if not positive:
+            return 1
+        return max(1, int(np.percentile(positive, 95)))
+
+    z0, text0 = z_text(year_options[0], "employees")
     fig = go.Figure(
         go.Choropleth(
             locations=all_codes,
             locationmode="USA-states",
             z=z0,
             zmin=0,
-            zmax=max(z0) or 1,
+            zmax=z_cap(z0),
             text=text0,
             hovertemplate="%{text}<extra></extra>",
             colorscale=MAP_COLORSCALE,
@@ -991,7 +1011,7 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
                     args=[{
                         "z": [z],
                         "zmin": 0,
-                        "zmax": max(z) or 1,
+                        "zmax": z_cap(z),
                         "text": [text],
                         "colorbar.title.text": colorbar_titles[mkey],
                     }],
@@ -1000,7 +1020,11 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
 
     # No in-figure title: the dashboard pane supplies the description, and the
     # metric/year dropdown occupies the title row.
-    live = len(states_meta)
+    # DC is a jurisdiction, not a state — count it separately so "N of 50"
+    # stays truthful.
+    live_states = len([c for c in states_meta if c != "DC"])
+    dc_suffix = " + DC" if "DC" in states_meta else ""
+    live = live_states
     fig.update_layout(
         updatemenus=[
             dict(
@@ -1014,8 +1038,9 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
         ],
         annotations=[
             dict(
-                text=(f"{live} of 50 states live — multi-state rollout in progress"
-                      if live < 50 else f"{live} states live"),
+                text=(f"{live} of 50 states{dc_suffix} live — AR, WY keep filings "
+                      "confidential; NH publishes no list; MO is bot-walled"
+                      if live < 50 else f"{live} states{dc_suffix} live"),
                 x=0.99, y=0.01, xref="paper", yref="paper",
                 xanchor="right", yanchor="bottom",
                 showarrow=False, font=dict(size=11, color="#8b949e"),

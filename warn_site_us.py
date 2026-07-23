@@ -153,60 +153,111 @@ def chart_us_monthly(df: pd.DataFrame, save_png: bool = False) -> go.Figure:
         legend=dict(orientation="h", y=1.08),
         barmode="overlay",
     )
+    # Mark the current month and shade months beyond it: states publish
+    # future effective dates, so bars to the right are scheduled layoffs,
+    # not observed history.
+    now_month = pd.Timestamp.now().to_period("M").to_timestamp()
+    x_end = monthly["event_date"].max()
+    if pd.notna(x_end) and x_end >= now_month:
+        fig.add_vrect(
+            x0=now_month, x1=x_end + pd.DateOffset(months=1),
+            fillcolor="rgba(247,129,102,0.07)", line_width=0,
+        )
+    fig.add_vline(x=now_month, line_dash="dot", line_color=ACCENT2, line_width=1.5)
+    fig.add_annotation(
+        x=now_month, y=1.04, yref="paper", xanchor="left",
+        text="current month → future-dated", showarrow=False,
+        font=dict(size=11, color=ACCENT2),
+    )
     fig = _apply_theme(fig)
     warn_charts._save_chart(fig, "us_monthly", save_png)
     return fig
 
 
+def _year_window(df: pd.DataFrame) -> pd.DataFrame:
+    """Rows whose event date falls in the current calendar year."""
+    year = datetime.now(timezone.utc).year
+    return df[df["event_date"].dt.year == year]
+
+
+def _year_toggle(fig: go.Figure, year_label: str) -> go.Figure:
+    """Two-trace figures: current year (default) vs all time."""
+    fig.update_layout(
+        updatemenus=[
+            dict(
+                buttons=[
+                    dict(label=year_label, method="update",
+                         args=[{"visible": [True, False]}]),
+                    dict(label="All time", method="update",
+                         args=[{"visible": [False, True]}]),
+                ],
+                direction="down",
+                x=0.99, y=1.12, xanchor="right", yanchor="top",
+                bgcolor="#161b22", bordercolor="#21262d",
+                font=dict(color="#e6edf3"),
+            )
+        ]
+    )
+    return fig
+
+
 def chart_us_top_states(df: pd.DataFrame, save_png: bool = False) -> go.Figure:
-    """States ranked by total employees affected (all time in dataset)."""
-    by_state = (
-        df.groupby("state")
-        .agg(employees=("employees", "sum"), notices=("employees", "size"))
-        .sort_values("employees", ascending=True)
-        .tail(15)
-        .reset_index()
-    )
-    fig = go.Figure(
-        go.Bar(
-            x=by_state["employees"],
-            y=by_state["state"],
-            orientation="h",
-            marker_color=ACCENT3,
-            customdata=by_state["notices"],
-            hovertemplate=(
-                "<b>%{y}</b><br>%{x:,} employees"
-                "<br>%{customdata:,} notices<extra></extra>"
-            ),
+    """States ranked by employees affected — current year default, all-time toggle."""
+    year = datetime.now(timezone.utc).year
+
+    def ranked(frame: pd.DataFrame) -> pd.DataFrame:
+        return (
+            frame.groupby("state")
+            .agg(employees=("employees", "sum"), notices=("employees", "size"))
+            .sort_values("employees", ascending=True)
+            .tail(15)
+            .reset_index()
         )
-    )
-    fig.update_layout(xaxis_title="Employees affected", yaxis_title="")
-    fig = _apply_theme(fig)
+
+    fig = go.Figure()
+    for frame, visible in ((_year_window(df), True), (df, False)):
+        r = ranked(frame)
+        fig.add_bar(
+            x=r["employees"], y=r["state"], orientation="h",
+            marker_color=ACCENT3, customdata=r["notices"], visible=visible,
+            hovertemplate=("<b>%{y}</b><br>%{x:,} employees"
+                           "<br>%{customdata:,} notices<extra></extra>"),
+        )
+    fig.update_layout(xaxis_title="Employees affected", yaxis_title="",
+                      showlegend=False)
+    fig = _year_toggle(_apply_theme(fig), str(year))
     warn_charts._save_chart(fig, "us_top_states", save_png)
     return fig
 
 
 def chart_us_top_companies(df: pd.DataFrame, save_png: bool = False) -> go.Figure:
-    """Top 20 employers nationally by cumulative employees affected."""
-    top = (
-        df.groupby("company")["employees"]
-        .sum()
-        .sort_values(ascending=True)
-        .tail(20)
-        .reset_index()
-    )
-    top["label"] = top["company"].str.slice(0, 40)
-    fig = go.Figure(
-        go.Bar(
-            x=top["employees"],
-            y=top["label"],
-            orientation="h",
-            marker_color=ACCENT,
+    """Top 20 employers by employees affected — current year default."""
+    year = datetime.now(timezone.utc).year
+
+    def ranked(frame: pd.DataFrame) -> pd.DataFrame:
+        top = (
+            frame.groupby("company")["employees"]
+            .sum()
+            .sort_values(ascending=True)
+            .tail(20)
+            .reset_index()
+        )
+        top["label"] = top["company"].str.slice(0, 40)
+        return top
+
+    fig = go.Figure()
+    for frame, visible in ((_year_window(df), True), (df, False)):
+        t = ranked(frame)
+        fig.add_bar(
+            x=t["employees"], y=t["label"], orientation="h",
+            marker_color=ACCENT, visible=visible,
             hovertemplate="<b>%{y}</b><br>%{x:,} employees<extra></extra>",
         )
+    fig.update_layout(xaxis_title="Employees affected", yaxis_title="",
+                      showlegend=False)
+    fig = _year_toggle(
+        _apply_theme(fig, margin=dict(l=220, r=30, t=40, b=60)), str(year)
     )
-    fig.update_layout(xaxis_title="Employees affected", yaxis_title="")
-    fig = _apply_theme(fig, margin=dict(l=220, r=30, t=40, b=60))
     warn_charts._save_chart(fig, "us_top_companies", save_png)
     return fig
 
@@ -216,7 +267,7 @@ def chart_us_top_companies(df: pd.DataFrame, save_png: bool = False) -> go.Figur
 # ---------------------------------------------------------------------------
 
 
-def _recent_rows(df: pd.DataFrame, limit: int = 100) -> str:
+def _recent_rows(df: pd.DataFrame, limit: int = 250) -> str:
     recent = (
         df[df["event_date"].notna()]
         .sort_values("event_date", ascending=False)
@@ -343,22 +394,30 @@ footer {{ color:var(--muted); font-size:12.5px; text-align:center;
 
   <section>
     <h2>States ranked</h2>
-    <div class="desc">Total employees affected per state, all data on file.
-      Coverage depth varies by state — see notes in the repo.</div>
+    <div class="desc">Employees affected per state — current year by
+      default; switch to all time with the dropdown. Coverage depth varies
+      by state.</div>
     <div class="chart">{states_div}</div>
   </section>
 
   <section>
     <h2>Top employers nationally</h2>
-    <div class="desc">Cumulative employees affected, all live states.</div>
+    <div class="desc">Employees affected by employer — current year by
+      default; all time via the dropdown.</div>
     <div class="chart">{companies_div}</div>
   </section>
 
   <section>
     <h2>Recent notices</h2>
-    <div class="desc">Latest 100 filings across all states.
+    <div class="desc">Latest 250 filings across all states — the full
+      {total_notices}-record dataset is served as
+      <a href="data.json">data.json</a> (kept out of the page for load speed).
       Filter: <select id="stfilter"><option value="">All states</option>
-      {state_options}</select></div>
+      {state_options}</select>
+      <input id="cofilter" type="search" placeholder="Search company…"
+        style="background:var(--card);color:var(--text);
+               border:1px solid var(--border);border-radius:6px;
+               padding:5px 8px;margin-left:8px"></div>
     <div style="overflow-x:auto"><table id="recent">
       <thead><tr><th>State</th><th>Company</th><th>Location</th>
         <th>Notice</th><th>Effective</th><th>Employees</th></tr></thead>
@@ -375,12 +434,17 @@ footer {{ color:var(--muted); font-size:12.5px; text-align:center;
   EXPANSION_RESEARCH.md</a>.
 </footer>
 <script>
-document.getElementById('stfilter').addEventListener('change', function () {{
-  var v = this.value;
+function applyFilters() {{
+  var st = document.getElementById('stfilter').value;
+  var q = document.getElementById('cofilter').value.toLowerCase();
   document.querySelectorAll('#recent tbody tr').forEach(function (tr) {{
-    tr.style.display = (!v || tr.dataset.state === v) ? '' : 'none';
+    var stOk = !st || tr.dataset.state === st;
+    var qOk = !q || tr.cells[1].textContent.toLowerCase().indexOf(q) !== -1;
+    tr.style.display = (stOk && qOk) ? '' : 'none';
   }});
-}});
+}}
+document.getElementById('stfilter').addEventListener('change', applyFilters);
+document.getElementById('cofilter').addEventListener('input', applyFilters);
 </script>
 </body>
 </html>
