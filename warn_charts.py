@@ -913,6 +913,17 @@ def _record_year(r: dict) -> str:
     return str(d)[:4]
 
 
+# Jurisdictions with no public WARN data, and why — rendered on the map as a
+# distinct muted fill with an explanatory hover. (Plotly choropleths do not
+# support hatch patterns; this is the closest native treatment.)
+UNAVAILABLE_STATES = {
+    "AR": ("Arkansas", "filings confidential by statute (Ark. Code § 11-10-314)"),
+    "WY": ("Wyoming", "filings confidential by statute (Wyo. Stat. § 9-2-2607)"),
+    "NH": ("New Hampshire", "state publishes no WARN list"),
+    "MO": ("Missouri", "feed bot-walled (Imperva); scraper ready and waiting"),
+}
+
+
 def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
     """US choropleth of WARN activity by state, filterable by metric and year.
 
@@ -999,7 +1010,28 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
         )
     )
 
-    # One dropdown covering every year × metric combination.
+    # Distinct "no public data" layer for the unavailable jurisdictions.
+    missing = {c: v for c, v in UNAVAILABLE_STATES.items() if c not in all_codes}
+    if missing:
+        fig.add_trace(
+            go.Choropleth(
+                locations=list(missing),
+                z=[1] * len(missing),
+                locationmode="USA-states",
+                colorscale=[[0, "#2b2233"], [1, "#2b2233"]],
+                showscale=False,
+                text=[
+                    f"<b>{name}</b><br>No public data — {reason}"
+                    for name, reason in missing.values()
+                ],
+                hovertemplate="%{text}<extra></extra>",
+                marker_line_color="#8b5a6b",
+                marker_line_width=1.4,
+            )
+        )
+
+    # One dropdown covering every year × metric combination. The restyle is
+    # scoped to trace 0 so it never clobbers the no-data overlay.
     buttons = []
     for year in year_options:
         for mkey, mlabel in metrics:
@@ -1014,7 +1046,7 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
                         "zmax": z_cap(z),
                         "text": [text],
                         "colorbar.title.text": colorbar_titles[mkey],
-                    }],
+                    }, [0]],
                 )
             )
 
@@ -1038,13 +1070,19 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
         ],
         annotations=[
             dict(
-                text=(f"{live} of 50 states{dc_suffix} live — AR, WY keep filings "
-                      "confidential; NH publishes no list; MO is bot-walled"
+                text=(f"{live} of 50 states{dc_suffix} live"
                       if live < 50 else f"{live} states{dc_suffix} live"),
                 x=0.99, y=0.01, xref="paper", yref="paper",
                 xanchor="right", yanchor="bottom",
                 showarrow=False, font=dict(size=11, color="#8b949e"),
-            )
+            ),
+            dict(
+                text=("<span style='color:#8b5a6b'>▉</span> no public data "
+                      "(hover for why)"),
+                x=0.01, y=0.01, xref="paper", yref="paper",
+                xanchor="left", yanchor="bottom",
+                showarrow=False, font=dict(size=11, color="#8b949e"),
+            ),
         ],
     )
     fig.update_geos(
@@ -1121,7 +1159,8 @@ CHART_META = [
     {
         "id": "12_us_map",
         "title": "US Map",
-        "desc": "WARN activity by state — pick a metric and year; states light up as their sources come online.",
+        "desc": ("WARN activity by state — pick a metric and year; "
+                 "states light up as their sources come online."),
     },
 ]
 

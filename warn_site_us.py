@@ -206,25 +206,32 @@ def chart_us_top_states(df: pd.DataFrame, save_png: bool = False) -> go.Figure:
     year = datetime.now(timezone.utc).year
 
     def ranked(frame: pd.DataFrame) -> pd.DataFrame:
+        # Every live state, not a top-N: the whole point of the chart is
+        # comparing all of them at once.
         return (
             frame.groupby("state")
             .agg(employees=("employees", "sum"), notices=("employees", "size"))
             .sort_values("employees", ascending=True)
-            .tail(15)
             .reset_index()
         )
 
     fig = go.Figure()
+    max_rows = 0
     for frame, visible in ((_year_window(df), True), (df, False)):
         r = ranked(frame)
+        max_rows = max(max_rows, len(r))
         fig.add_bar(
             x=r["employees"], y=r["state"], orientation="h",
             marker_color=ACCENT3, customdata=r["notices"], visible=visible,
             hovertemplate=("<b>%{y}</b><br>%{x:,} employees"
                            "<br>%{customdata:,} notices<extra></extra>"),
         )
-    fig.update_layout(xaxis_title="Employees affected", yaxis_title="",
-                      showlegend=False)
+    fig.update_layout(
+        xaxis_title="Employees affected", yaxis_title="",
+        showlegend=False,
+        # Tall enough that ~47 horizontal bars stay readable.
+        height=max(600, 22 * max_rows + 160),
+    )
     fig = _year_toggle(_apply_theme(fig), str(year))
     warn_charts._save_chart(fig, "us_top_states", save_png)
     return fig
@@ -267,33 +274,60 @@ def chart_us_top_companies(df: pd.DataFrame, save_png: bool = False) -> go.Figur
 # ---------------------------------------------------------------------------
 
 
-def _recent_rows(df: pd.DataFrame, limit: int = 250) -> str:
-    recent = (
-        df[df["event_date"].notna()]
-        .sort_values("event_date", ascending=False)
-        .head(limit)
+PAGE_SIZE = 250
+
+
+def _row_values(r) -> list:
+    nd = (
+        r["notice_date"].strftime("%Y-%m-%d")
+        if pd.notna(r["notice_date"])
+        else "—"
     )
+    ed = (
+        r["effective_date"].strftime("%Y-%m-%d")
+        if pd.notna(r["effective_date"])
+        else "—"
+    )
+    emp = _fmt(r["employees"]) if r["employees"] else "—"
+    place = str(r.get("city") or r.get("county") or "")
+    return [str(r["state"]), str(r.get("company", ""))[:60], place[:30], nd, ed, emp]
+
+
+def _recent_sorted(df: pd.DataFrame) -> pd.DataFrame:
+    return df[df["event_date"].notna()].sort_values("event_date", ascending=False)
+
+
+def _recent_rows(df: pd.DataFrame, limit: int = PAGE_SIZE) -> str:
     rows = []
-    for _, r in recent.iterrows():
-        nd = (
-            r["notice_date"].strftime("%Y-%m-%d")
-            if pd.notna(r["notice_date"])
-            else "—"
-        )
-        ed = (
-            r["effective_date"].strftime("%Y-%m-%d")
-            if pd.notna(r["effective_date"])
-            else "—"
-        )
-        emp = _fmt(r["employees"]) if r["employees"] else "—"
-        place = str(r.get("city") or r.get("county") or "")
+    for _, r in _recent_sorted(df).head(limit).iterrows():
+        st, co, place, nd, ed, emp = _row_values(r)
         rows.append(
-            f'<tr data-state="{r["state"]}"><td class="st">{r["state"]}</td>'
-            f'<td>{str(r.get("company", ""))[:60]}</td>'
-            f"<td>{place[:30]}</td><td>{nd}</td><td>{ed}</td>"
+            f'<tr data-state="{st}"><td class="st">{st}</td>'
+            f"<td>{co}</td><td>{place}</td><td>{nd}</td><td>{ed}</td>"
             f'<td class="num">{emp}</td></tr>'
         )
     return "\n".join(rows)
+
+
+def _write_pages(df: pd.DataFrame, out_dir: Path) -> int:
+    """Chunk the full dataset into static page files the table fetches lazily.
+
+    ~250 rows per page (~30 KB each) keeps the main page light while making
+    every record browsable without ever loading the whole dataset at once.
+    """
+    recent = _recent_sorted(df)
+    total_pages = max(1, -(-len(recent) // PAGE_SIZE))
+    pages_dir = out_dir / "pages"
+    pages_dir.mkdir(parents=True, exist_ok=True)
+    for i in range(total_pages):
+        chunk = recent.iloc[i * PAGE_SIZE:(i + 1) * PAGE_SIZE]
+        payload = {
+            "page": i + 1,
+            "total_pages": total_pages,
+            "rows": [_row_values(r) for _, r in chunk.iterrows()],
+        }
+        (pages_dir / f"{i + 1}.json").write_text(json.dumps(payload))
+    return total_pages
 
 
 # ---------------------------------------------------------------------------
@@ -345,6 +379,11 @@ td.num {{ text-align:right; font-variant-numeric:tabular-nums; }}
 td.st {{ color:var(--accent); font-weight:600; }}
 select {{ background:var(--card); color:var(--text);
           border:1px solid var(--border); border-radius:6px; padding:5px 8px; }}
+select option:disabled {{ color:#555c66; }}
+.pgbtn {{ background:var(--card); color:var(--accent);
+          border:1px solid var(--border); border-radius:6px;
+          padding:5px 12px; cursor:pointer; }}
+.pgbtn:hover {{ border-color:var(--accent); }}
 footer {{ color:var(--muted); font-size:12.5px; text-align:center;
           padding:26px; }}
 </style>
@@ -352,7 +391,7 @@ footer {{ color:var(--muted); font-size:12.5px; text-align:center;
 <body>
 <header>
   <h1>🇺🇸 US WARN Layoff Tracker</h1>
-  <span class="badge">{states_live} states live</span>
+  <span class="badge">{live_badge}</span>
   <span class="sub">unified WARN notices, updated twice daily</span>
   <span class="right">Updated {updated} ·
     <a href="../">California dashboard</a> ·
@@ -408,21 +447,34 @@ footer {{ color:var(--muted); font-size:12.5px; text-align:center;
   </section>
 
   <section>
-    <h2>Recent notices</h2>
-    <div class="desc">Latest 250 filings across all states — the full
-      {total_notices}-record dataset is served as
-      <a href="data.json">data.json</a> (kept out of the page for load speed).
+    <h2>All notices</h2>
+    <div class="desc">Every record, newest first, {page_size} per page —
+      pages load on demand so the site stays fast. Bulk access:
+      <a href="data.json">data.json</a>.
       Filter: <select id="stfilter"><option value="">All states</option>
-      {state_options}</select>
+      {state_options}
+      {unavailable_options}</select>
       <input id="cofilter" type="search" placeholder="Search company…"
         style="background:var(--card);color:var(--text);
                border:1px solid var(--border);border-radius:6px;
-               padding:5px 8px;margin-left:8px"></div>
+               padding:5px 8px;margin-left:8px">
+      <span id="filternote" style="color:var(--muted);font-size:12px"></span>
+    </div>
     <div style="overflow-x:auto"><table id="recent">
       <thead><tr><th>State</th><th>Company</th><th>Location</th>
         <th>Notice</th><th>Effective</th><th>Employees</th></tr></thead>
       <tbody>{recent_rows}</tbody>
     </table></div>
+    <div style="display:flex;gap:10px;align-items:center;margin-top:12px">
+      <button id="prevpg" class="pgbtn">← Prev</button>
+      <span id="pginfo">Page 1 of {total_pages}</span>
+      <button id="nextpg" class="pgbtn">Next →</button>
+      <span style="color:var(--muted);font-size:13px">Jump to:</span>
+      <input id="pgjump" type="number" min="1" max="{total_pages}" value="1"
+        style="width:70px;background:var(--card);color:var(--text);
+               border:1px solid var(--border);border-radius:6px;
+               padding:5px 8px">
+    </div>
   </section>
 </main>
 <footer>
@@ -434,15 +486,64 @@ footer {{ color:var(--muted); font-size:12.5px; text-align:center;
   EXPANSION_RESEARCH.md</a>.
 </footer>
 <script>
+var TOTAL_PAGES = {total_pages};
+var currentPage = 1;
+
 function applyFilters() {{
   var st = document.getElementById('stfilter').value;
   var q = document.getElementById('cofilter').value.toLowerCase();
+  var shown = 0;
   document.querySelectorAll('#recent tbody tr').forEach(function (tr) {{
     var stOk = !st || tr.dataset.state === st;
     var qOk = !q || tr.cells[1].textContent.toLowerCase().indexOf(q) !== -1;
-    tr.style.display = (stOk && qOk) ? '' : 'none';
+    var on = stOk && qOk;
+    tr.style.display = on ? '' : 'none';
+    if (on) shown++;
   }});
+  document.getElementById('filternote').textContent =
+    (st || q) ? shown + ' match(es) on this page — filters apply per page' : '';
 }}
+
+function renderRows(rows) {{
+  var tbody = document.querySelector('#recent tbody');
+  tbody.textContent = '';
+  rows.forEach(function (r) {{
+    var tr = document.createElement('tr');
+    tr.dataset.state = r[0];
+    r.forEach(function (v, i) {{
+      var td = document.createElement('td');
+      td.textContent = v;
+      if (i === 0) td.className = 'st';
+      if (i === 5) td.className = 'num';
+      tr.appendChild(td);
+    }});
+    tbody.appendChild(tr);
+  }});
+  applyFilters();
+}}
+
+function gotoPage(n) {{
+  n = Math.max(1, Math.min(TOTAL_PAGES, n));
+  fetch('pages/' + n + '.json')
+    .then(function (r) {{ return r.json(); }})
+    .then(function (p) {{
+      currentPage = p.page;
+      renderRows(p.rows);
+      document.getElementById('pginfo').textContent =
+        'Page ' + p.page + ' of ' + p.total_pages;
+      document.getElementById('pgjump').value = p.page;
+    }});
+}}
+
+document.getElementById('prevpg').addEventListener('click', function () {{
+  gotoPage(currentPage - 1);
+}});
+document.getElementById('nextpg').addEventListener('click', function () {{
+  gotoPage(currentPage + 1);
+}});
+document.getElementById('pgjump').addEventListener('change', function () {{
+  gotoPage(parseInt(this.value, 10) || 1);
+}});
 document.getElementById('stfilter').addEventListener('change', applyFilters);
 document.getElementById('cofilter').addEventListener('input', applyFilters);
 </script>
@@ -474,10 +575,25 @@ def build_us_site(
 
     codes = sorted(c for c in df["state"].unique() if len(c) == 2)
     state_options = "\n".join(f'<option value="{c}">{c}</option>' for c in codes)
+    # Jurisdictions with no public data appear greyed-out and unselectable,
+    # so their absence reads as deliberate rather than an oversight.
+    unavailable_options = "\n".join(
+        f"<option disabled>{code} — no public data</option>"
+        for code in sorted(warn_charts.UNAVAILABLE_STATES)
+        if code not in codes
+    )
 
+    total_pages = _write_pages(df, out_dir)
     updated = str(kpis["last_updated"])[:10]
+    n_live = kpis["states_live"]
+    live_badge = (
+        f"{n_live - 1} states + DC live"
+        if "DC" in payload.get("states", {})
+        else f"{n_live} states live"
+    )
     html = US_TEMPLATE.format(
         states_live=kpis["states_live"],
+        live_badge=live_badge,
         updated=updated,
         year=kpis["year"],
         year_notices=_fmt(kpis["year_notices"]),
@@ -494,7 +610,10 @@ def build_us_site(
         states_div=_chart_div("us_top_states"),
         companies_div=_chart_div("us_top_companies"),
         state_options=state_options,
+        unavailable_options=unavailable_options,
         recent_rows=_recent_rows(df),
+        page_size=PAGE_SIZE,
+        total_pages=total_pages,
     )
 
     out_dir.mkdir(parents=True, exist_ok=True)
