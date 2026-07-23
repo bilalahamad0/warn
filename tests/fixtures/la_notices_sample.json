@@ -1,0 +1,90 @@
+{
+ "source": "https://www.laworks.net/Downloads/Downloads_WFD.asp",
+ "files": 2,
+ "rows": [
+  {
+   "company_original": "Dr. Reddy’s Laboratories\n8800 Line Ave\nShreveport, LA 71106",
+   "date_notice": "1/7/25",
+   "date_action": "3/14/25",
+   "affected": "107",
+   "industry": "Manufacturing",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "General Dynamics Information\nTechnology\n2251 Lakeshore Drive\nNew Orleans",
+   "date_notice": "3/7/25",
+   "date_action": "5/14/25",
+   "affected": "77",
+   "industry": "Information Technology",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "IDEA Southern Louisiana\nIdea Innovation\n(7800 Innovation Park Drive,\nBaton Rouge, LA 70820)\nIdea Bridge\n(1500 N. Airway Drive,\nBaton Rouge, LA 70815)",
+   "date_notice": "4/7/25",
+   "date_action": "5/24/25",
+   "affected": "212",
+   "industry": "Education",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "Cornerstone Chemical Company\n10800 River Road\nWaggaman, LA 70094",
+   "date_notice": "5/5/25",
+   "date_action": "7/31/25\nto\n12/31/25",
+   "affected": "71",
+   "industry": "Petrochemical\nManufacturing",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "(*)UPS\n5700 Morrison Road\nNew Orleans, LA 70126",
+   "date_notice": "7/10/25",
+   "date_action": "9/8/25",
+   "affected": "177",
+   "industry": "Transportation and\nLogistics",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "Premier Health Consultants, LLC\n(Premier Health Urgent Care)",
+   "date_notice": "10/31/25",
+   "date_action": "12/31/25",
+   "affected": "140",
+   "industry": "Healthcare / Urgent Care\nServices",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "Westlake\nCorporation",
+   "address_original": "330 Belden Street\nLake Charles, LA 70601",
+   "date_notice": "12/15/25",
+   "date_action": "2/14/26",
+   "affected": "121",
+   "industry": "Petrochemical\nManufacturing",
+   "year": 2026,
+   "file": "WarnNotices2026.pdf"
+  },
+  {
+   "company_original": "McGlinchey\nStafford PLLC",
+   "address_original": "601 Poydras Street,\nSuite 1200\nNew Orleans, LA 70130",
+   "date_notice": "1/13/26",
+   "date_action": "3/16/26",
+   "affected": "101",
+   "industry": "Legal Services",
+   "year": 2026,
+   "file": "WarnNotices2026.pdf"
+  },
+  {
+   "company_original": "Denka Performance\nElastomer LLC",
+   "address_original": "560 Highway 44\nLaPlace, LA 70068",
+   "date_notice": "1/30/26",
+   "date_action": "4/1/26",
+   "affected": "45",
+   "industry": "Chemical\nManufacturing",
+   "year": 2026,
+   "file": "WarnNotices2026.pdf"
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+[
+ {
+  "Id": "a1Acs00000EvwC6EAJ",
+  "OESC_Employer_Name__c": "Surgical Specialties",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2003-07-21",
+  "Select_Local_Workforce_Board__c": "SouthernRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000EvwC7EAJ",
+  "OESC_Employer_Name__c": "HILTI",
+  "OESC_Employer_City__c": "TULSA",
+  "OESC_Employer_Zip_Code__c": "74146",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2003-04-03",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000EvwCqEAJ",
+  "OESC_Employer_Name__c": "Lockheed Martin",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2002-06-15",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3QTEAZ",
+  "OESC_Employer_Name__c": "Oral Roberts University",
+  "Launchpad__Layoff_Closure_Type__c": "Other",
+  "Launchpad__Notice_Date__c": "2009-10-12",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000bMHMfEAO",
+  "OESC_Employer_Name__c": "Macy's Distribution",
+  "OESC_Employer_City__c": "Owasso",
+  "OESC_Employer_Zip_Code__c": "74055",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2026-01-15",
+  "Select_Local_Workforce_Board__c": "Green Country",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000c2aBBEAY",
+  "OESC_Employer_Name__c": "Bright Horizons",
+  "OESC_Employer_City__c": "Watertown",
+  "OESC_Employer_Zip_Code__c": "02472",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2026-01-30",
+  "Select_Local_Workforce_Board__c": "Central",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000dXPHJEA4",
+  "OESC_Employer_Name__c": "Hopkins Mfg- Miami",
+  "OESC_Employer_City__c": "Miami",
+  "OESC_Employer_Zip_Code__c": "74354",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2026-02-23",
+  "Select_Local_Workforce_Board__c": "Green Country",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000eMKDxEAO",
+  "OESC_Employer_Name__c": "TTEC",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2026-01-26",
+  "Select_Local_Workforce_Board__c": "Central",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000EvxxIEAR",
+  "OESC_Employer_Name__c": "Sunoco",
+  "OESC_Employer_City__c": "Newtown",
+  "OESC_Employer_Zip_Code__c": "19073",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2004-08-10",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000FfakeAAA",
+  "OESC_Employer_Name__c": "",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2026-01-01",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000A&BdistEA",
+  "OESC_Employer_Name__c": "A&amp;B Distributors",
+  "OESC_Employer_City__c": "Tulsa",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "1899-05-05",
+  "RecordTypeId": "012cs000001OucAAAS"
+ }
+]

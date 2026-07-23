@@ -1,0 +1,124 @@
+{
+  "blobItems": [
+    {
+      "name": "rapid_response/warn_documents/2026/Conduent (Remote) 6-26-2026.pdf",
+      "modifiedDate": "2026-06-29T11:45:39+00:00",
+      "blobProperties": {
+        "warn_document_date": "2026-06-26",
+        "warn_document_received_date": "2026-06-28",
+        "affected_company": "Conduent Commercial Solutions, LLC",
+        "number_of_impacted_workers": "2",
+        "layoff_locations__": "Remote",
+        "layoff_dates": "8/28/2026",
+        "closing_dates_": "N/A",
+        "union": "N/A"
+      }
+    },
+    {
+      "name": "rapid_response/warn_documents/2026/Guida-Seibert Dairy Company (New Britain) 5-21-2026.pdf",
+      "modifiedDate": "2026-05-22T14:37:17+00:00",
+      "blobProperties": {
+        "warn_document_date": "2026-05-21",
+        "warn_document_received_date": "2026-05-21",
+        "affected_company": "Guida-Seibert Dairy Company",
+        "number_of_impacted_workers": "205",
+        "layoff_locations__": "New Britain",
+        "layoff_dates": "7/20/2026 - 8/31/2026",
+        "closing_dates_": "8/31/2026",
+        "union": "Not Indicated"
+      }
+    },
+    {
+      "name": "rapid_response/warn_documents/2025/Posigen (Shelton, Danbury, Wethersfield) 8-25-2025.pdf",
+      "modifiedDate": "2025-08-25T17:02:05+00:00",
+      "blobProperties": {
+        "warn_document_date": "2025-08-25",
+        "warn_document_received_date": "2025-08-25",
+        "affected_company": "PosiGen Developer LLC",
+        "number_of_impacted_workers": "78",
+        "layoff_locations__": "Shelton, Danbury, Wethersfield",
+        "layoff_dates": "August 24, 2024",
+        "title": "PosiGen Developer LLC"
+      }
+    },
+    {
+      "name": "rapid_response/warn_documents/2025/SimplyIOA LLC (Remote) 10-3-2025.pdf",
+      "modifiedDate": "2025-10-08T19:18:39+00:00",
+      "blobProperties": {
+        "warn_document_date": "2025-10-03",
+        "warn_document_received_date": "2025-10-07",
+        "affected_company": "SimplyIOA, LLC",
+        "number_of_impacted_workers": "66; #CT workers not indicated",
+        "layoff_locations__": "Remote",
+        "layoff_dates": "December 2, 2025",
+        "closing_dates_": "December 2, 2025",
+        "union": "No"
+      }
+    },
+    {
+      "name": "rapid_response/warn_documents/2026/Macy's Cheshire Fulfillment Center (Cheshire) 1-13-2026.pdf",
+      "modifiedDate": "2026-01-14T15:18:14+00:00",
+      "blobProperties": {
+        "warn_document_date": "2026-01-13",
+        "warn_document_received_date": "2026-01-13",
+        "affected_company": "Macys Cheshire Fulfillment Center",
+        "number_of_impacted_workers": "993",
+        "layoff_locations__": "Cheshire",
+        "layoff_dates": "3/14/2026 - 4/30/2027",
+        "closing_dates_": "8/29/2026",
+        "union": "N/A"
+      }
+    },
+    {
+      "name": "rapid_response/warn_documents/2026/Stanley Black & Decker (New Britain) 3-2-2026.pdf",
+      "modifiedDate": "2026-03-04T15:23:44+00:00",
+      "blobProperties": {
+        "warn_document_date": "2026-03-03",
+        "warn_document_received_date": "2026-03-04",
+        "affected_company": "Stanley Black and Decker",
+        "number_of_impacted_workers": "300",
+        "layoff_locations__": "New Britain",
+        "layoff_dates": "5/4/2026 - 4/14/2027",
+        "closing_dates_": "5/4/2026",
+        "union": "IAM, District 26, Locals 1433 and 1249",
+        "union_address": "Not Provided"
+      }
+    },
+    {
+      "name": "rapid_response/warn_documents/2025/Perkin Elmer (Shelton) 9-23-2025.pdf",
+      "modifiedDate": "2025-09-24T17:54:46+00:00",
+      "blobProperties": {
+        "warn_document_date": "2025-09-23",
+        "warn_document_received_date": "2025-09-23",
+        "affected_company": "PerkinElmer U.S. LLC",
+        "number_of_impacted_workers": "68",
+        "layoff_locations__": "Shelton",
+        "layoff_dates": "11/24/2025 - 4/1/2026",
+        "closing_dates_": "4/1/2026",
+        "title": "PerkinElmer WARN"
+      }
+    },
+    {
+      "name": "rapid_response/warn_documents/2025/PosiGen (Shelton) 11-14-2025.pdf",
+      "modifiedDate": "2025-11-20T12:46:44+00:00",
+      "blobProperties": {
+        "warn_document_date": "2025-11-14",
+        "warn_document_received_date": "2025-11-14",
+        "affected_company": "PosiGen Developer LLC",
+        "number_of_impacted_workers": "Not provided",
+        "layoff_locations__": "Shelton",
+        "layoff_dates": "11-23-2025 - 12-6-2025",
+        "closing_dates_": "12/6/2025",
+        "union": "N/A"
+      }
+    },
+    {
+      "name": "rapid_response/warn_documents/junk.pdf",
+      "modifiedDate": "2026-01-01T00:00:00+00:00",
+      "blobProperties": {
+        "affected_company": "  ",
+        "layoff_dates": "N/A"
+      }
+    }
+  ]
+}

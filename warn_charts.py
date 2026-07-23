@@ -876,6 +876,166 @@ def chart_county_bar(df: pd.DataFrame, save_png: bool = True) -> go.Figure:
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
+# Chart 12 — US map (multi-state choropleth, metric/year filterable)
+# ---------------------------------------------------------------------------
+
+NATIONAL_FILE = DATA_DIR / "warn_national.json"
+
+# Sequential scale from card background to accent, so the map sits on-theme.
+MAP_COLORSCALE = [
+    [0.0, CARD_BG],
+    [0.25, "#1b3a5c"],
+    [0.55, "#2f6cb0"],
+    [1.0, ACCENT],
+]
+
+
+def _national_records() -> tuple:
+    """Records + per-state metadata for the map, with a CA-only fallback."""
+    if NATIONAL_FILE.exists():
+        payload = json.loads(NATIONAL_FILE.read_text())
+        return payload.get("records", []), payload.get("states", {})
+    # Fallback: before the first aggregation run, treat the CA store as national.
+    source = CUMULATIVE_FILE if CUMULATIVE_FILE.exists() else LATEST_FILE
+    payload = json.loads(source.read_text())
+    records = payload.get("records", [])
+    for r in records:
+        r.setdefault("state", "CA")
+    return records, {"CA": {"name": "California"}}
+
+
+def _record_year(r: dict) -> str:
+    d = r.get("notice_date") or r.get("effective_date") or ""
+    return str(d)[:4]
+
+
+def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
+    """US choropleth of WARN activity by state, filterable by metric and year.
+
+    Driven by data/warn_national.json so new states appear automatically as
+    their sources come online — the chart itself is fully state-agnostic.
+    """
+    records, states_meta = _national_records()
+    if not records:
+        raise ValueError("No records available for US map.")
+
+    years = sorted({y for y in (_record_year(r) for r in records) if y.isdigit()},
+                   reverse=True)[:6]
+    year_options = ["All years"] + years
+
+    # Aggregate (year, state) -> employees / notices.
+    def totals(year: str) -> dict:
+        agg: dict = {}
+        for r in records:
+            if year != "All years" and _record_year(r) != year:
+                continue
+            st = (r.get("state") or "").upper()
+            if len(st) != 2:
+                continue
+            a = agg.setdefault(st, {"employees": 0, "notices": 0})
+            a["employees"] += int(r.get("employees") or 0)
+            a["notices"] += 1
+        return agg
+
+    metrics = [("employees", "Employees affected"), ("notices", "WARN notices")]
+    colorbar_titles = {"employees": "Employees", "notices": "Notices"}
+    all_codes = sorted({(r.get("state") or "").upper() for r in records
+                        if len((r.get("state") or "")) == 2})
+
+    def z_text(year: str, metric: str) -> tuple:
+        agg = totals(year)
+        z, text = [], []
+        for code in all_codes:
+            a = agg.get(code, {"employees": 0, "notices": 0})
+            z.append(a[metric])
+            name = states_meta.get(code, {}).get("name", code)
+            text.append(
+                f"<b>{name}</b><br>{a['employees']:,} employees affected"
+                f"<br>{a['notices']:,} notices"
+            )
+        return z, text
+
+    z0, text0 = z_text("All years", "employees")
+    fig = go.Figure(
+        go.Choropleth(
+            locations=all_codes,
+            locationmode="USA-states",
+            z=z0,
+            zmin=0,
+            zmax=max(z0) or 1,
+            text=text0,
+            hovertemplate="%{text}<extra></extra>",
+            colorscale=MAP_COLORSCALE,
+            marker_line_color=GRID_COLOR,
+            marker_line_width=0.8,
+            colorbar=dict(
+                title=dict(text="Employees", font=dict(color=TEXT_COLOR)),
+                tickfont=dict(color=TEXT_COLOR),
+                bgcolor="rgba(0,0,0,0)",
+                outlinecolor=GRID_COLOR,
+                thickness=14,
+                len=0.75,
+            ),
+        )
+    )
+
+    # One dropdown covering every year × metric combination.
+    buttons = []
+    for year in year_options:
+        for mkey, mlabel in metrics:
+            z, text = z_text(year, mkey)
+            buttons.append(
+                dict(
+                    label=f"{year} · {mlabel}",
+                    method="restyle",
+                    args=[{
+                        "z": [z],
+                        "zmin": 0,
+                        "zmax": max(z) or 1,
+                        "text": [text],
+                        "colorbar.title.text": colorbar_titles[mkey],
+                    }],
+                )
+            )
+
+    # No in-figure title: the dashboard pane supplies the description, and the
+    # metric/year dropdown occupies the title row.
+    live = len(states_meta)
+    fig.update_layout(
+        updatemenus=[
+            dict(
+                buttons=buttons,
+                direction="down",
+                x=0.01, y=1.12, xanchor="left", yanchor="top",
+                bgcolor=CARD_BG,
+                bordercolor=GRID_COLOR,
+                font=dict(color=TEXT_COLOR),
+            )
+        ],
+        annotations=[
+            dict(
+                text=(f"{live} of 50 states live — multi-state rollout in progress"
+                      if live < 50 else f"{live} states live"),
+                x=0.99, y=0.01, xref="paper", yref="paper",
+                xanchor="right", yanchor="bottom",
+                showarrow=False, font=dict(size=11, color="#8b949e"),
+            )
+        ],
+    )
+    fig.update_geos(
+        scope="usa",
+        bgcolor=DARK_BG,
+        lakecolor=DARK_BG,
+        landcolor=CARD_BG,
+        subunitcolor=GRID_COLOR,
+        showlakes=True,
+    )
+    fig = _apply_theme(fig)
+    _save_chart(fig, "12_us_map", save_png)
+    return fig
+
+
+# ---------------------------------------------------------------------------
 
 CHART_META = [
     {
@@ -933,6 +1093,11 @@ CHART_META = [
         "title": "Top Counties",
         "desc": "Top 10 counties by total employees affected.",
     },
+    {
+        "id": "12_us_map",
+        "title": "US Map",
+        "desc": "WARN activity by state — pick a metric and year; states light up as their sources come online.",
+    },
 ]
 
 
@@ -970,6 +1135,7 @@ def run(save_png: bool = True) -> list:
         chart_industry_breakdown,  # 9
         chart_lead_time_histogram,  # 10
         chart_county_bar,  # 11
+        chart_us_map,  # 12
     ]
 
     results = []

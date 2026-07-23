@@ -1,0 +1,332 @@
+{
+ "source": "https://www.laworks.net/Downloads/Downloads_WFD.asp",
+ "files": 2,
+ "rows": [
+  {
+   "company_original": "Dr. Reddy\u2019s Laboratories\n8800 Line Ave\nShreveport, LA 71106",
+   "date_notice": "1/7/25",
+   "date_action": "3/14/25",
+   "affected": "107",
+   "industry": "Manufacturing",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "International Paper Company\n4537 Hwy 480\nCampti, LA 71411",
+   "date_notice": "2/13/25",
+   "date_action": "4/13/25",
+   "affected": "481",
+   "industry": "Manufacturing",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "Boeing Company\n13800 Old Gentilly Rd\nNew Orleans, LA 70129",
+   "date_notice": "2/15/25",
+   "date_action": "4/18/25",
+   "affected": "89",
+   "industry": "Manufacturing",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "General Dynamics Information\nTechnology\n2251 Lakeshore Drive\nNew Orleans",
+   "date_notice": "3/7/25",
+   "date_action": "5/14/25",
+   "affected": "77",
+   "industry": "Information Technology",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "Southern Glazer's Wine and Spirits\nof Louisiana\n939 W. Pont Des Mouton Rd\nLafayette, LA 70507",
+   "date_notice": "3/14/25",
+   "date_action": "5/16/25",
+   "affected": "48",
+   "industry": "Sales and Distribution",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "IDEA Southern Louisiana\nIdea Innovation\n(7800 Innovation Park Drive,\nBaton Rouge, LA 70820)\nIdea Bridge\n(1500 N. Airway Drive,\nBaton Rouge, LA 70815)",
+   "date_notice": "4/7/25",
+   "date_action": "5/24/25",
+   "affected": "212",
+   "industry": "Education",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "IDEA Public Schools\n(IDEA Innovation & IDEA Bridge)\n7800 Innovation Park Drive\n& 1500 N. Airway Drive\nBaton Rouge, LA",
+   "date_notice": "4/7/25",
+   "date_action": "5/24/25",
+   "affected": "212",
+   "industry": "Elementary and\nSecondary Schools",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "Federal Express Corporation\n(BTRA Facility)\n10781 Coursey Boulevard\nBaton Rouge, LA 70804",
+   "date_notice": "4/30/25",
+   "date_action": "6/30/25",
+   "affected": "74",
+   "industry": "Couriers and Express\nDelivery Services",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "Cornerstone Chemical Company\n10800 River Road\nWaggaman, LA 70094",
+   "date_notice": "5/5/25",
+   "date_action": "7/31/25\nto\n12/31/25",
+   "affected": "71",
+   "industry": "Petrochemical\nManufacturing",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "Syncom Space Services\n13800 Old Gentilly Road\nBuilding 320\nNew Orleans, LA 70129",
+   "date_notice": "5/15/25",
+   "date_action": "6/30/25",
+   "affected": "296",
+   "industry": "Manufacturing",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "Sodexo\n1500 Sugar Bowl Drive\nNew Orleans, LA 70112",
+   "date_notice": "5/16/25",
+   "date_action": "7/14/25",
+   "affected": "881",
+   "industry": "Food and Beverage",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "Roux 61\n8322 Bluebonnet\nBaton Rouge, LA 70810",
+   "date_notice": "5/31/25",
+   "date_action": "5/31/25",
+   "affected": "50",
+   "industry": "Food and Beverage",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "Albertsons Baton Rouge #0709\n2950 College Drive\nBaton Rouge, LA 70808",
+   "date_notice": "6/11/25",
+   "date_action": "8/16/25",
+   "affected": "90",
+   "industry": "Food and Beverage",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "(*)UPS\n5700 Morrison Road\nNew Orleans, LA 70126",
+   "date_notice": "7/10/25",
+   "date_action": "9/8/25",
+   "affected": "177",
+   "industry": "Transportation and\nLogistics",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "SafeSource Direct L.L.C.\n200 St. Nazaire Rd.\nBroussard, LA, 70518\n142 Lake Talon Rd.\nBroussard, LA 70518",
+   "date_notice": "8/22/25",
+   "date_action": "10/21/25",
+   "affected": "541",
+   "industry": "Manufacturing",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "Smitty\u2019s Supply Inc\n63415 Hwy. 51 N\nRoseland, LA 70456",
+   "date_notice": "8/25/25",
+   "date_action": "8/22/25",
+   "affected": "450",
+   "industry": "Manufacturing",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "PosiGen Developer LLC\n145 James Drive East, Suite 300\nSt. Rose, LA 70087",
+   "date_notice": "8/25/25",
+   "date_action": "8/25/25",
+   "affected": "166",
+   "industry": "Renewable Energy",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "Premier Health Consultants, LLC\n(Premier Health Urgent Care)",
+   "date_notice": "10/31/25",
+   "date_action": "12/31/25",
+   "affected": "140",
+   "industry": "Healthcare / Urgent Care\nServices",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "SafeSource Direct, L.L.C. \u2013\nMMF PPE Manufacturing Facility",
+   "date_notice": "8/22/25",
+   "date_action": "10/21/25",
+   "affected": "87",
+   "industry": "PPE Manufacturing\n(Man-Made Fiber)",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "SafeSource Direct, L.L.C. \u2013\nMMF Facility (Second WARN)",
+   "date_notice": "9/16/25",
+   "date_action": "11/25/25",
+   "affected": "56",
+   "industry": "PPE Manufacturing\n(Man-Made Fiber)",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "SafeSource Direct, L.L.C. \u2013\nNitrile Plant Facility",
+   "date_notice": "8/22/25",
+   "date_action": "10/21/25",
+   "affected": "454",
+   "industry": "PPE / Chemical\nManufacturing",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "Ensco Offshore LLC \u2013\nDS-18 Drilling Rig",
+   "date_notice": "12/5/25",
+   "date_action": "2/10/26",
+   "affected": "75",
+   "industry": "Offshore Oil & Gas Drilling",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "The Service Companies, Inc.\n(Full Service Systems Corp.) \u2013\nHorseshoe Bossier City",
+   "date_notice": "12/2/25",
+   "date_action": "2/1/26",
+   "affected": "76",
+   "industry": "Hospitality / Facilities\nServices",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "General Dynamics Information\nTechnology (GDIT)",
+   "date_notice": "Not\nspecified",
+   "date_action": "11/14/25",
+   "affected": "103",
+   "industry": "IT Services / Federal\nContracting",
+   "year": 2025,
+   "file": "WarnNotices2025.pdf"
+  },
+  {
+   "company_original": "Westlake\nCorporation",
+   "address_original": "330 Belden Street\nLake Charles, LA 70601",
+   "date_notice": "12/15/25",
+   "date_action": "2/14/26",
+   "affected": "121",
+   "industry": "Petrochemical\nManufacturing",
+   "year": 2026,
+   "file": "WarnNotices2026.pdf"
+  },
+  {
+   "company_original": "McGlinchey\nStafford PLLC",
+   "address_original": "601 Poydras Street,\nSuite 1200\nNew Orleans, LA 70130",
+   "date_notice": "1/13/26",
+   "date_action": "3/16/26",
+   "affected": "101",
+   "industry": "Legal Services",
+   "year": 2026,
+   "file": "WarnNotices2026.pdf"
+  },
+  {
+   "company_original": "Denka Performance\nElastomer LLC",
+   "address_original": "560 Highway 44\nLaPlace, LA 70068",
+   "date_notice": "1/30/26",
+   "date_action": "4/1/26",
+   "affected": "45",
+   "industry": "Chemical\nManufacturing",
+   "year": 2026,
+   "file": "WarnNotices2026.pdf"
+  },
+  {
+   "company_original": "Stockhausen\nSuperabsorber LLC",
+   "address_original": "3606 LA-44\nGaryville, LA 70051",
+   "date_notice": "2/03/26",
+   "date_action": "4/03/26",
+   "affected": "64",
+   "industry": "Chemical\nManufacturing",
+   "year": 2026,
+   "file": "WarnNotices2026.pdf"
+  },
+  {
+   "company_original": "C2 Technologies",
+   "address_original": "7601 Lewisville Road,\nSuite 200\nMcLean, VA 22102",
+   "date_notice": "3/02/26",
+   "date_action": "3/06/26",
+   "affected": "1",
+   "industry": "Consulting",
+   "year": 2026,
+   "file": "WarnNotices2026.pdf"
+  },
+  {
+   "company_original": "C&S Wholesale\nServices LLC",
+   "address_original": "3925 Highway 190 West\nHammond, LA 70401",
+   "date_notice": "2/13/26",
+   "date_action": "4/18/26",
+   "affected": "288",
+   "industry": "Manufacturing",
+   "year": 2026,
+   "file": "WarnNotices2026.pdf"
+  },
+  {
+   "company_original": "Einstein Charter\nSchools",
+   "address_original": "5316 Michoud Boulevard\nNew Orleans, LA 70129",
+   "date_notice": "3/30/26",
+   "date_action": "5/30/26",
+   "affected": "81",
+   "industry": "Education",
+   "year": 2026,
+   "file": "WarnNotices2026.pdf"
+  },
+  {
+   "company_original": "Republic National\nDistributing Co",
+   "address_original": "809 Jefferson Highway\nNew Orleans, LA 70121",
+   "date_notice": "4/23/26",
+   "date_action": "6/21/26",
+   "affected": "242",
+   "industry": "All Other Misc.\nFood\nManufacturing",
+   "year": 2026,
+   "file": "WarnNotices2026.pdf"
+  },
+  {
+   "company_original": "Republic National\nDistributing Co",
+   "address_original": "210 Distribution Drive\nLafayette, LA 70507",
+   "date_notice": "4/23/26",
+   "date_action": "6/21/26",
+   "affected": "114",
+   "industry": "All Other Misc.\nFood\nManufacturing",
+   "year": 2026,
+   "file": "WarnNotices2026.pdf"
+  },
+  {
+   "company_original": "Hydro Extrusion\nUSA LLC",
+   "address_original": "142 Hydro Way\nDelhi, LA 71232",
+   "date_notice": "6/17/26",
+   "date_action": "3/31/27",
+   "affected": "226",
+   "industry": "Manufacturing \u2013\nOther Fabricated\nMetal Products",
+   "year": 2026,
+   "file": "WarnNotices2026.pdf"
+  },
+  {
+   "company_original": "Conduent\nCommercial\nSolutions",
+   "address_original": "100 Campus Drive\nFlorham Park, NJ 07932",
+   "date_notice": "6/26/26",
+   "date_action": "8/28/26",
+   "affected": "27",
+   "industry": "Business\nSupport\nServices",
+   "year": 2026,
+   "file": "WarnNotices2026.pdf"
+  }
+ ]
+}

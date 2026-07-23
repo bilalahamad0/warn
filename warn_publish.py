@@ -28,6 +28,9 @@ import warn_diff
 import warn_charts
 import warn_notify
 import warn_history
+import warn_sources
+import warn_site_us
+from warn_sources import aggregate as warn_aggregate
 
 BASE_DIR = Path(__file__).parent
 OUTPUT_DIR = BASE_DIR / "docs"
@@ -409,9 +412,9 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
             f" since last check.</div>"
         )
 
-    # Section: Impact
+    # Section: Impact (US map leads — the multi-state face of the dashboard)
     impact_tabs, impact_panes = _build_chart_tabs_panes(
-        ["9_industry_breakdown", "4_top_companies", "11_county_bar"],
+        ["12_us_map", "9_industry_breakdown", "4_top_companies", "11_county_bar"],
         chart_divs, meta_by_id,
     )
     # Section: Trends
@@ -511,6 +514,8 @@ def git_commit_push(message: str = None) -> bool:
             "warn_charts.py",
             "warn_diff.py",
             "warn_publish.py",
+            "warn_site_us.py",
+            "warn_sources/",
             "README.md",
         ]
     )
@@ -588,7 +593,9 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
   <meta name="apple-mobile-web-app-title" content="CA Layoffs" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+  <!-- Must match the plotly.py major that generates the chart divs: plotly.py 6
+       emits base64 "bdata" arrays that plotly.js 2.x cannot decode. -->
+  <script src="https://cdn.plot.ly/plotly-3.5.0.min.js"></script>
   <style>
     :root {{
       --bg: #0d1117;
@@ -1422,9 +1429,19 @@ def run(no_push: bool = False, force: bool = False, skip_history: bool = False):
     log.info(f"WARN Publisher — {datetime.now(timezone.utc).isoformat()}Z")
     log.info("=" * 70)
 
-    # Step 1: Monitor
-    log.info("Step 1/5: Running monitor …")
-    monitor_result = warn_monitor.run(force=force)
+    # Step 1: Monitor every registered state source (failure-isolated).
+    # California's result doubles as the headline monitor_result the site
+    # builder and notifier consume, exactly as before multi-state support.
+    log.info("Step 1/5: Running state sources …")
+    state_results = warn_sources.run_all(force=force)
+    monitor_result = state_results.get("ca") or {"diff": {}, "summary": {}}
+    monitor_result["states"] = {
+        code: {k: v for k, v in res.items() if k in ("state", "file_changed", "error")}
+        for code, res in state_results.items()
+    }
+    for code, res in state_results.items():
+        if res.get("error"):
+            log.warning(f"State source '{code}' failed (non-fatal): {res['error']}")
 
     # Step 2: Diff report
     log.info("Step 2/5: Generating diff report …")
@@ -1443,6 +1460,12 @@ def run(no_push: bool = False, force: bool = False, skip_history: bool = False):
     else:
         log.info("Step 3/5: Skipping historical data (--skip-history).")
 
+    # Step 3.5: National dataset (feeds the US map chart + cross-state stats).
+    try:
+        warn_aggregate.build_national()
+    except Exception as e:
+        log.warning(f"National aggregation failed (non-fatal): {e}")
+
     # Step 4: Charts
     log.info("Step 4/5: Generating charts …")
     try:
@@ -1458,24 +1481,33 @@ def run(no_push: bool = False, force: bool = False, skip_history: bool = False):
             "last_updated": datetime.now(timezone.utc).isoformat() + "Z",
         }
 
-    # Step 5: Build site
-    log.info("Step 5/5: Building site …")
+    # Step 5: Build sites — the original California dashboard (unchanged) and
+    # the standalone US-wide dashboard at docs/us/.
+    log.info("Step 5/5: Building sites …")
     build_site(manifest, monitor_result)
+    try:
+        warn_site_us.build_us_site()
+    except Exception as e:
+        log.warning(f"US dashboard build failed (non-fatal): {e}")
 
-    # Notify on changes. Only mark notices as "alerted" once the email actually
-    # sends — a failed send is then retried next run instead of being lost. This
-    # ledger is what stops the EDD feed's version churn from re-alerting the same
-    # notices on consecutive runs (see warn_monitor.detect_changes).
-    diff = monitor_result.get("diff", {})
-    summary = monitor_result.get("summary", {})
-    if diff.get("new_count", 0) > 0 or diff.get("amendment_count", 0) > 0:
-        try:
-            sent = warn_notify.notify_if_changes(diff, summary)
-            if sent:
-                warn_monitor.record_notified_keys(diff.get("new_keys", []))
-                warn_monitor.record_amended_keys(diff.get("amendment_keys", []))
-        except Exception as e:
-            log.warning(f"Email notification failed (non-fatal): {e}")
+    # Notify on changes, per state. Only mark notices as "alerted" once the
+    # email actually sends — a failed send is then retried next run instead of
+    # being lost. Each state's ledgers live with its source paths; this is what
+    # stops feed version churn from re-alerting the same notices on
+    # consecutive runs (see warn_monitor.detect_changes).
+    for source in warn_sources.all_sources():
+        res = state_results.get(source.code) or {}
+        diff = res.get("diff", {})
+        summary = res.get("summary", {})
+        if diff.get("new_count", 0) > 0 or diff.get("amendment_count", 0) > 0:
+            try:
+                sent = warn_notify.notify_if_changes(diff, summary)
+                if sent:
+                    source.record_alerted(diff)
+            except Exception as e:
+                log.warning(
+                    f"Email notification failed for {source.code.upper()} (non-fatal): {e}"
+                )
 
     # Git push
     if not no_push:

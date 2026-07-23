@@ -1,0 +1,195 @@
+{
+ "source": "https://www.in.gov/dwd/warn-notices/current-warn-notices/",
+ "rows": [
+  {
+   "Company": "Company",
+   "City": "City",
+   "Affected Workers": "Affected Workers",
+   "Notice Date": "Notice Date",
+   "LO/CL Date": "LO/CL Date",
+   "NAICS": "NAICS",
+   "Description of Work/Industry": "Description of Work/Industry",
+   "Notice Type": "Notice Type"
+  },
+  {
+   "Company": "Thyssenkrupp Presta North America",
+   "City": "Terre Haute",
+   "Affected Workers": "207",
+   "Notice Date": "6/30/2026",
+   "LO/CL Date": "3/31/2027",
+   "NAICS": "31-33",
+   "Description of Work/Industry": "Manufacturing",
+   "Notice Type": "CL"
+  },
+  {
+   "Company": "Conduent Commercial Solutions, LLC",
+   "City": "Statewide",
+   "Affected Workers": "7",
+   "Notice Date": "6/26/2026",
+   "LO/CL Date": "8/28/2026",
+   "NAICS": "541219-01",
+   "Description of Work/Industry": "Billing Services",
+   "Notice Type": "LO"
+  },
+  {
+   "Company": "Snyder’s-Lance, Inc d/b/a Campbell Snacks",
+   "City": "Jeffersonville",
+   "Affected Workers": "111",
+   "Notice Date": "6/18/2026",
+   "LO/CL Date": "9/15/2026",
+   "NAICS": "311919",
+   "Description of Work/Industry": "Other Snack Food Manufacturing",
+   "Notice Type": "CL"
+  },
+  {
+   "Company": "DFA Dairy Brands Ice Cream, LLC-Revised (9/15/21)",
+   "City": "Decatur",
+   "Affected Workers": "N/A",
+   "Notice Date": "N/A",
+   "LO/CL Date": "N/A",
+   "NAICS": "N/A",
+   "Description of Work/Industry": "N/A",
+   "Notice Type": "N/A"
+  },
+  {
+   "Company": "Subaru of Indiana Automotive, Inc.",
+   "City": "Lafayette",
+   "Affected Workers": "Entire Plant",
+   "Notice Date": "11/7/2022",
+   "LO/CL Date": "12/22/2022",
+   "NAICS": "811111",
+   "Description of Work/Industry": "General Automotive Repair",
+   "Notice Type": "LO"
+  },
+  {
+   "Company": "Polaris Boats, LLC",
+   "City": "Syracuse",
+   "Affected Workers": "100+",
+   "Notice Date": "4/13/2020",
+   "LO/CL Date": "7/14/2020",
+   "NAICS": "336611",
+   "Description of Work/Industry": "Ship Building and Repairing/td>",
+   "Notice Type": "CL"
+  },
+  {
+   "Company": "Bay Valley Foods LLC, Tree House Foods Occupations Affected",
+   "City": "Plymouth",
+   "Affected Workers": "Unknown",
+   "Notice Date": "8/31/2017",
+   "LO/CL Date": "10/30/2017 & 6/30/2018",
+   "NAICS": "311991",
+   "Description of Work/Industry": "Leading provider of shelf stable foods",
+   "Notice Type": "CL"
+  },
+  {
+   "Company": "Xanodyne Pharmaceuticals, Inc.",
+   "City": "Newport, KY",
+   "Affected Workers": "4 Hoosiers",
+   "Notice Date": "9/21/2010",
+   "LO/CL Date": "11/21/2010 - 3/15/2011",
+   "NAICS": "325412",
+   "Description of Work/Industry": "Pharmaceutical Preparation Manufacturing",
+   "Notice Type": "LO"
+  },
+  {
+   "Company": "Textron Specialized Vehicles",
+   "City": "Coatesville",
+   "Affected Workers": "107",
+   "Notice Date": "11/27/2018",
+   "LO/CL Date": "2019",
+   "NAICS": "336312",
+   "Description of Work/Industry": "Gasoline Engine and Engine Parts Manufacturing",
+   "Notice Type": "CL"
+  },
+  {
+   "Company": "Tenneco (formerly Federal Mogul)",
+   "City": "South Bend",
+   "Affected Workers": "271",
+   "Notice Date": "10/21/2020",
+   "LO/CL Date": "December 2020",
+   "NAICS": "336350",
+   "Description of Work/Industry": "Motor Vehicle Transmission and Power Train Parts Manufacturing",
+   "Notice Type": "LO"
+  },
+  {
+   "Company": "Avis Budget Car Rental, LLC",
+   "City": "Fort Wayne & Indianapolis",
+   "Affected Workers": "19",
+   "Notice Date": "8/28/2020",
+   "LO/CL Date": "April/June 2020",
+   "NAICS": "532111",
+   "Description of Work/Industry": "Passenger Car Rental",
+   "Notice Type": "LO"
+  },
+  {
+   "Company": "Georgia Gulf Corporation (Royal Outdoor Products facility)",
+   "City": "Milford",
+   "Affected Workers": "60",
+   "Notice Date": "12/14/2011",
+   "LO/CL Date": "Mid February 2012",
+   "NAICS": "326199",
+   "Description of Work/Industry": "All Other Plastics Product Manufacturing",
+   "Notice Type": "CL"
+  },
+  {
+   "Company": "ATI Alleheny Ludlum",
+   "City": "New Castle",
+   "Affected Workers": "115",
+   "Notice Date": "12/22/2008",
+   "LO/CL Date": "August to December 2008",
+   "NAICS": "31221",
+   "Description of Work/Industry": "Rolled Steel Shape",
+   "Notice Type": "LO"
+  },
+  {
+   "Company": "United States Steel Corporation Gary Works Plant",
+   "City": "Gary",
+   "Affected Workers": "323",
+   "Notice Date": "3/25/2015",
+   "LO/CL Date": "No closure date announced. Layoffs to commence 5/27/2015",
+   "NAICS": "331110",
+   "Description of Work/Industry": "Iron and Steel Mills and Ferroalloy Manufacturing",
+   "Notice Type": "CL"
+  },
+  {
+   "Company": "Talon Logistics",
+   "City": "Sellersburg",
+   "Affected Workers": "62",
+   "Notice Date": "8/25/2014",
+   "LO/CL Date": "9/22/2014-12/7/2014",
+   "NAICS": "493110",
+   "Description of Work/Industry": "General Warehousing and Storage",
+   "Notice Type": "LO"
+  },
+  {
+   "Company": "Margaret Mary Community Hospital (dba Margaret Mary Health)",
+   "City": "Batesville",
+   "Affected Workers": "55",
+   "Notice Date": "1/13/2026",
+   "LO/CL Date": "3/2/2026",
+   "NAICS": "622",
+   "Description of Work/Industry": "Hospitals",
+   "Notice Type": "TR"
+  },
+  {
+   "Company": "Navient Solutions LLC",
+   "City": "Fishers",
+   "Affected Workers": "128",
+   "Notice Date": "8/4/2025",
+   "LO/CL Date": "10/3/2025",
+   "NAICS": "52",
+   "Description of Work/Industry": "Finance and Insurance",
+   "Notice Type": "L/O"
+  },
+  {
+   "Company": "PF Chang's China Bistro (Indianapolis 1, Indianapolis 2, Fort Wayne)",
+   "City": "Indianapolis & Fort Wayne",
+   "Affected Workers": "225",
+   "Notice Date": "9/18/2020",
+   "LO/CL Date": "3/1/2020",
+   "NAICS": "722110",
+   "Description of Work/Industry": "Full Service Restaurants",
+   "Notice Type": "RH"
+  }
+ ]
+}

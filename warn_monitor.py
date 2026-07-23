@@ -73,14 +73,16 @@ def _file_hash(path: Path) -> str:
     return h.hexdigest()
 
 
-def _load_meta() -> dict:
-    if META_FILE.exists():
-        return json.loads(META_FILE.read_text())
+def _load_meta(meta_file: Optional[Path] = None) -> dict:
+    meta_file = meta_file if meta_file is not None else META_FILE
+    if meta_file.exists():
+        return json.loads(meta_file.read_text())
     return {}
 
 
-def _save_meta(meta: dict):
-    META_FILE.write_text(json.dumps(meta, indent=2, default=str))
+def _save_meta(meta: dict, meta_file: Optional[Path] = None):
+    meta_file = meta_file if meta_file is not None else META_FILE
+    meta_file.write_text(json.dumps(meta, indent=2, default=str))
 
 
 def _fix_company_name(name: str) -> str:
@@ -120,30 +122,42 @@ def _safe_date(val) -> Optional[str]:
 # ---------------------------------------------------------------------------
 
 
-def download_xlsx(force: bool = False):
+def download_xlsx(
+    force: bool = False,
+    *,
+    url: Optional[str] = None,
+    meta_file: Optional[Path] = None,
+    local_path: Optional[Path] = None,
+):
     """
-    Download WARN XLSX with ETag caching.
+    Download a WARN data file with ETag/Last-Modified caching.
     Returns (changed: bool, local_path: str).
+
+    Defaults resolve at call time to this module's CA constants, so the
+    historical single-state behavior (and tests that patch the globals) are
+    unchanged; warn_sources passes per-state paths through the keywords.
     """
-    meta = _load_meta()
+    url = url or WARN_XLSX_URL
+    local_path = local_path if local_path is not None else LOCAL_XLSX
+    meta = _load_meta(meta_file)
     headers = {"User-Agent": "WARNMonitor/2.0"}
     if not force and meta.get("etag"):
         headers["If-None-Match"] = meta["etag"]
     if not force and meta.get("last_modified"):
         headers["If-Modified-Since"] = meta["last_modified"]
 
-    log.info("Requesting WARN XLSX from EDD …")
-    resp = requests.get(WARN_XLSX_URL, headers=headers, timeout=60)
+    log.info(f"Requesting WARN data from {url} …")
+    resp = requests.get(url, headers=headers, timeout=60)
 
     if resp.status_code == 304:
-        log.info("EDD server: 304 Not Modified — data unchanged.")
-        return False, str(LOCAL_XLSX)
+        log.info("Server: 304 Not Modified — data unchanged.")
+        return False, str(local_path)
 
     resp.raise_for_status()
 
     # Write file
-    LOCAL_XLSX.write_bytes(resp.content)
-    new_hash = _file_hash(LOCAL_XLSX)
+    local_path.write_bytes(resp.content)
+    new_hash = _file_hash(local_path)
     old_hash = meta.get("file_hash", "")
 
     meta.update(
@@ -152,17 +166,17 @@ def download_xlsx(force: bool = False):
             "last_modified": resp.headers.get("Last-Modified", ""),
             "file_hash": new_hash,
             "last_checked": datetime.now(timezone.utc).isoformat() + "Z",
-            "url": WARN_XLSX_URL,
+            "url": url,
         }
     )
-    _save_meta(meta)
+    _save_meta(meta, meta_file)
 
     changed = new_hash != old_hash
     if changed:
         log.info(f"File changed (hash: {old_hash[:8]} → {new_hash[:8]})")
     else:
         log.info("File downloaded but content hash identical — no change.")
-    return changed, str(LOCAL_XLSX)
+    return changed, str(local_path)
 
 
 # ---------------------------------------------------------------------------
@@ -402,89 +416,88 @@ def _anchor_key(r: dict) -> tuple:
     )
 
 
-def _load_notified_keys() -> set:
-    """Load the cumulative set of notice keys we have already alerted on."""
-    if not NOTIFIED_FILE.exists():
+def _load_keys_file(path: Path) -> set:
+    """Load a cumulative key ledger, tolerating a missing or corrupt file."""
+    if not path.exists():
         return set()
     try:
-        data = json.loads(NOTIFIED_FILE.read_text())
+        data = json.loads(path.read_text())
         keys = data.get("keys", []) if isinstance(data, dict) else data
         return set(keys)
     except Exception as e:
-        log.warning(f"Could not read {NOTIFIED_FILE.name} ({e}) — treating as empty.")
+        log.warning(f"Could not read {path.name} ({e}) — treating as empty.")
         return set()
 
 
-def _save_notified_keys(keys: set) -> None:
-    """Persist the notified-keys ledger (sorted, for small/stable git diffs)."""
+def _save_keys_file(keys: set, path: Path) -> None:
+    """Persist a key ledger (sorted, for small/stable git diffs)."""
     payload = {
         "count": len(keys),
         "last_updated": datetime.now(timezone.utc).isoformat() + "Z",
         "keys": sorted(keys),
     }
-    NOTIFIED_FILE.write_text(json.dumps(payload, indent=2))
+    path.write_text(json.dumps(payload, indent=2))
 
 
-def record_notified_keys(keys) -> None:
+def _record_keys(keys, path: Path, what: str) -> None:
+    keys = [k for k in (keys or []) if k]
+    if not keys:
+        return
+    ledger = _load_keys_file(path)
+    before = len(ledger)
+    ledger.update(keys)
+    added_n = len(ledger) - before
+    if added_n:
+        _save_keys_file(ledger, path)
+        log.info(f"Recorded {added_n} {what} notice(s) to {path.name}.")
+
+
+def _load_notified_keys(notified_file: Optional[Path] = None) -> set:
+    """Load the cumulative set of notice keys we have already alerted on."""
+    return _load_keys_file(notified_file if notified_file is not None else NOTIFIED_FILE)
+
+
+def _save_notified_keys(keys: set, notified_file: Optional[Path] = None) -> None:
+    """Persist the notified-keys ledger (sorted, for small/stable git diffs)."""
+    _save_keys_file(keys, notified_file if notified_file is not None else NOTIFIED_FILE)
+
+
+def record_notified_keys(keys, notified_file: Optional[Path] = None) -> None:
     """Add keys to the ledger so those notices never trigger another alert.
 
     Called by warn_publish *after* an alert email is sent successfully, so a
     failed send is retried on the next run rather than silently swallowed.
     """
-    keys = [k for k in (keys or []) if k]
-    if not keys:
-        return
-    ledger = _load_notified_keys()
-    before = len(ledger)
-    ledger.update(keys)
-    added_n = len(ledger) - before
-    if added_n:
-        _save_notified_keys(ledger)
-        log.info(f"Recorded {added_n} new notice(s) to {NOTIFIED_FILE.name}.")
+    _record_keys(keys, notified_file if notified_file is not None else NOTIFIED_FILE, "new")
 
 
-def _load_amended_keys() -> set:
+def _load_amended_keys(amended_file: Optional[Path] = None) -> set:
     """Load the cumulative set of notice keys we have already alerted on as amended."""
-    if not AMENDED_FILE.exists():
-        return set()
-    try:
-        data = json.loads(AMENDED_FILE.read_text())
-        keys = data.get("keys", []) if isinstance(data, dict) else data
-        return set(keys)
-    except Exception as e:
-        log.warning(f"Could not read {AMENDED_FILE.name} ({e}) — treating as empty.")
-        return set()
+    return _load_keys_file(amended_file if amended_file is not None else AMENDED_FILE)
 
 
-def _save_amended_keys(keys: set) -> None:
+def _save_amended_keys(keys: set, amended_file: Optional[Path] = None) -> None:
     """Persist the amended-keys ledger (sorted, for small/stable git diffs)."""
-    payload = {
-        "count": len(keys),
-        "last_updated": datetime.now(timezone.utc).isoformat() + "Z",
-        "keys": sorted(keys),
-    }
-    AMENDED_FILE.write_text(json.dumps(payload, indent=2))
+    _save_keys_file(keys, amended_file if amended_file is not None else AMENDED_FILE)
 
 
-def record_amended_keys(keys) -> None:
+def record_amended_keys(keys, amended_file: Optional[Path] = None) -> None:
     """Add keys to the amended ledger so those amendments are never re-reported.
 
     Called by warn_publish *after* an alert email sends successfully, mirroring
     record_notified_keys — a failed send is retried next run rather than lost.
     """
-    keys = [k for k in (keys or []) if k]
-    if not keys:
-        return
-    ledger = _load_amended_keys()
-    before = len(ledger)
-    ledger.update(keys)
-    added_n = len(ledger) - before
-    if added_n:
-        _save_amended_keys(ledger)
-        log.info(f"Recorded {added_n} amended notice(s) to {AMENDED_FILE.name}.")
+    _record_keys(keys, amended_file if amended_file is not None else AMENDED_FILE, "amended")
 
 
-def detect_changes(new_df: pd.DataFrame, dry_run: bool = False) -> dict:
+def detect_changes(
+    new_df: pd.DataFrame,
+    dry_run: bool = False,
+    *,
+    latest_file: Optional[Path] = None,
+    notified_file: Optional[Path] = None,
+    amended_file: Optional[Path] = None,
+) -> dict:
     """Classify how the feed changed vs the previous run into three buckets:
     genuinely NEW filings, AMENDMENTS (a known filing whose details were
     revised), and genuine REMOVALS (a filing withdrawn entirely).
@@ -513,19 +526,21 @@ def detect_changes(new_df: pd.DataFrame, dry_run: bool = False) -> dict:
     feed (a real withdrawal), never a mere revision. It is informational and does
     not raise an alert on its own.
     """
+    latest_file = latest_file if latest_file is not None else LATEST_FILE
+
     new_records = _df_to_records(new_df)
     feed_keys = {_notice_key(r) for r in new_records}
 
     # Previous run's published records (warn_latest.json, not yet rotated into
     # the snapshot when this runs).
     prev_records: list[dict] = []
-    if LATEST_FILE.exists():
+    if latest_file.exists():
         try:
-            prev_records = json.loads(LATEST_FILE.read_text()).get("records", [])
+            prev_records = json.loads(latest_file.read_text()).get("records", [])
         except Exception:
             prev_records = []
 
-    notified = _load_notified_keys()
+    notified = _load_notified_keys(notified_file)
 
     if not notified:
         # No ledger yet (fresh clone / first deploy). Treat everything currently
@@ -533,7 +548,7 @@ def detect_changes(new_df: pd.DataFrame, dry_run: bool = False) -> dict:
         # seed the ledger. Nothing is "new" on this baseline run.
         baseline = feed_keys | {_notice_key(r) for r in prev_records}
         if not dry_run:
-            _save_notified_keys(baseline)
+            _save_notified_keys(baseline, notified_file)
         log.info(
             f"No notified-keys ledger yet — established baseline of {len(baseline)} "
             "notice(s); suppressing alerts for this run."
@@ -552,7 +567,7 @@ def detect_changes(new_df: pd.DataFrame, dry_run: bool = False) -> dict:
             "total_employees_removed": 0,
         }
 
-    amended_ledger = _load_amended_keys()
+    amended_ledger = _load_amended_keys(amended_file)
 
     # Anchor → records, for both sides, so a revised filing maps to its old self.
     prev_by_anchor: dict = defaultdict(list)
@@ -632,8 +647,9 @@ def detect_changes(new_df: pd.DataFrame, dry_run: bool = False) -> dict:
     }
 
 
-def _log_change(diff: dict, dry_run: bool = False):
+def _log_change(diff: dict, dry_run: bool = False, changelog_file: Optional[Path] = None):
     """Append change event to the changelog."""
+    changelog_file = changelog_file if changelog_file is not None else CHANGELOG_FILE
     entry = {
         "timestamp": datetime.now(timezone.utc).isoformat() + "Z",
         # amend_superseded is an internal threading field (full old records used
@@ -650,7 +666,7 @@ def _log_change(diff: dict, dry_run: bool = False):
         log.info("No data changes detected.")
 
     if not dry_run:
-        with open(CHANGELOG_FILE, "a") as f:
+        with open(changelog_file, "a") as f:
             f.write(json.dumps(entry, default=str) + "\n")
 
 
@@ -659,8 +675,17 @@ def _log_change(diff: dict, dry_run: bool = False):
 # ---------------------------------------------------------------------------
 
 
-def save_latest(df: pd.DataFrame, dry_run: bool = False):
+def save_latest(
+    df: pd.DataFrame,
+    dry_run: bool = False,
+    *,
+    latest_file: Optional[Path] = None,
+    snapshot_file: Optional[Path] = None,
+    source_url: Optional[str] = None,
+):
     """Save current data as latest + rotate snapshot."""
+    latest_file = latest_file if latest_file is not None else LATEST_FILE
+    snapshot_file = snapshot_file if snapshot_file is not None else SNAPSHOT_FILE
     records = _df_to_records(df)
     summary = {
         "total_records": len(records),
@@ -668,15 +693,15 @@ def save_latest(df: pd.DataFrame, dry_run: bool = False):
         "date_range_start": df["notice_date"].dropna().min() if "notice_date" in df.columns else df["effective_date"].dropna().min(),
         "date_range_end": df["notice_date"].dropna().max() if "notice_date" in df.columns else df["effective_date"].dropna().max(),
         "last_updated": datetime.now(timezone.utc).isoformat() + "Z",
-        "source_url": WARN_XLSX_URL,
+        "source_url": source_url or WARN_XLSX_URL,
         "records": records,
     }
     if not dry_run:
         # Rotate: latest → snapshot
-        if LATEST_FILE.exists():
-            SNAPSHOT_FILE.write_text(LATEST_FILE.read_text())
-        LATEST_FILE.write_text(json.dumps(summary, indent=2, default=str))
-        log.info(f"Saved {len(records)} records to {LATEST_FILE}")
+        if latest_file.exists():
+            snapshot_file.write_text(latest_file.read_text())
+        latest_file.write_text(json.dumps(summary, indent=2, default=str))
+        log.info(f"Saved {len(records)} records to {latest_file}")
     else:
         log.info(f"[DRY-RUN] Would save {len(records)} records.")
     return summary
@@ -699,7 +724,7 @@ def _record_key(r: dict) -> tuple:
     )
 
 
-def _summarise(records: list[dict]) -> dict:
+def _summarise(records: list[dict], source_url: Optional[str] = None) -> dict:
     """Build the standard summary envelope around a record list."""
     notices = [
         str(r.get("notice_date") or "")[:10] for r in records if r.get("notice_date")
@@ -716,13 +741,19 @@ def _summarise(records: list[dict]) -> dict:
         "date_range_start": min(dates) if dates else None,
         "date_range_end": max(dates) if dates else None,
         "last_updated": datetime.now(timezone.utc).isoformat() + "Z",
-        "source_url": WARN_XLSX_URL,
+        "source_url": source_url or WARN_XLSX_URL,
         "records": records,
     }
 
 
 def update_cumulative(
-    records: list[dict], dry_run: bool = False, superseded: list[dict] | None = None
+    records: list[dict],
+    dry_run: bool = False,
+    superseded: list[dict] | None = None,
+    *,
+    cumulative_file: Optional[Path] = None,
+    amended_file: Optional[Path] = None,
+    source_url: Optional[str] = None,
 ) -> dict:
     """Merge the latest records into the cumulative store (union of all
     notices ever observed) and persist it.
@@ -738,9 +769,11 @@ def update_cumulative(
     line would linger in the union — e.g. a notice whose effective date moved
     would show up twice on the dashboard — so each superseded record is dropped.
     """
+    cumulative_file = cumulative_file if cumulative_file is not None else CUMULATIVE_FILE
+
     existing: dict[tuple, dict] = {}
-    if CUMULATIVE_FILE.exists():
-        payload = json.loads(CUMULATIVE_FILE.read_text())
+    if cumulative_file.exists():
+        payload = json.loads(cumulative_file.read_text())
         for r in payload.get("records", []):
             existing[_record_key(r)] = r
 
@@ -758,7 +791,7 @@ def update_cumulative(
     # never reintroduce a superseded line on a later union. Only anchors that
     # actually have a recorded amendment are touched, so genuine multi-site
     # filings sharing an anchor are left alone.
-    amended = _load_amended_keys()
+    amended = _load_amended_keys(amended_file)
     if amended:
         by_anchor: dict = defaultdict(list)
         for k, r in existing.items():
@@ -774,9 +807,9 @@ def update_cumulative(
     merged = list(existing.values())
     added = len(merged) - before
 
-    summary = _summarise(merged)
+    summary = _summarise(merged, source_url=source_url)
     if not dry_run:
-        CUMULATIVE_FILE.write_text(json.dumps(summary, indent=2, default=str))
+        cumulative_file.write_text(json.dumps(summary, indent=2, default=str))
         log.info(
             f"Cumulative store: {len(merged)} records "
             f"(+{added} new, -{evicted} superseded, {len(records)} in latest file)"

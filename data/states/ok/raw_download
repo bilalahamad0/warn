@@ -1,0 +1,1911 @@
+[
+ {
+  "Id": "a1Acs00000EvwC6EAJ",
+  "OESC_Employer_Name__c": "Surgical Specialties",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2003-07-21",
+  "Select_Local_Workforce_Board__c": "SouthernRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000EvwC7EAJ",
+  "OESC_Employer_Name__c": "HILTI",
+  "OESC_Employer_City__c": "TULSA",
+  "OESC_Employer_Zip_Code__c": "74146",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2003-04-03",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000EvwC8EAJ",
+  "OESC_Employer_Name__c": "Quebecor World",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2002-01-07",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000EvwCXEAZ",
+  "OESC_Employer_Name__c": "Quebecor World",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2002-01-07",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000EvwCbEAJ",
+  "OESC_Employer_Name__c": "Oklahoma City University",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2002-04-10",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000EvwCcEAJ",
+  "OESC_Employer_Name__c": "K-Mart",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2001-07-05",
+  "Select_Local_Workforce_Board__c": "SouthernRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000EvwCoEAJ",
+  "OESC_Employer_Name__c": "Weyerhauser",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2002-06-04",
+  "Select_Local_Workforce_Board__c": "SouthEastRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000EvwCqEAJ",
+  "OESC_Employer_Name__c": "Lockheed Martin",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2002-06-15",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000EvwCsEAJ",
+  "OESC_Employer_Name__c": "Gulfstream Aerospace",
+  "OESC_Employer_City__c": "Savannah",
+  "OESC_Employer_Zip_Code__c": "31408",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2002-07-18",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000EvwD2EAJ",
+  "OESC_Employer_Name__c": "Gulfstream Aerospace",
+  "OESC_Employer_City__c": "Savannah",
+  "OESC_Employer_Zip_Code__c": "31408",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2002-03-26",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000EvwD3EAJ",
+  "OESC_Employer_Name__c": "Gulfstream Aerospace",
+  "OESC_Employer_City__c": "Savannah",
+  "OESC_Employer_Zip_Code__c": "31408",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2002-04-18",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000EvxwOEAR",
+  "OESC_Employer_Name__c": "Tyson Foods",
+  "OESC_Employer_City__c": "Noel",
+  "OESC_Employer_Zip_Code__c": "64854",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2003-01-10",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000EvxwdEAB",
+  "OESC_Employer_Name__c": "XEROX CORPORATION",
+  "OESC_Employer_City__c": "YUKON",
+  "OESC_Employer_Zip_Code__c": "73099",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2001-07-06",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000EvxwkEAB",
+  "OESC_Employer_Name__c": "Pilgrim's Pride",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2001-03-21",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000EvxwmEAB",
+  "OESC_Employer_Name__c": "UniFirst Corporation",
+  "OESC_Employer_City__c": "Broken Arrow",
+  "OESC_Employer_Zip_Code__c": "74013",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2001-04-27",
+  "Select_Local_Workforce_Board__c": "SouthEastRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000EvxwzEAB",
+  "OESC_Employer_Name__c": "Sykes",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2004-01-07",
+  "Select_Local_Workforce_Board__c": "SouthernRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000EvxxAEAR",
+  "OESC_Employer_Name__c": "Kwikset",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2004-04-19",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000EvxxIEAR",
+  "OESC_Employer_Name__c": "Sunoco",
+  "OESC_Employer_City__c": "Newtown",
+  "OESC_Employer_Zip_Code__c": "19073",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2004-08-10",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000EvxxQEAR",
+  "OESC_Employer_Name__c": "Corrections Corporation of America",
+  "OESC_Employer_City__c": "Holdenville",
+  "OESC_Employer_Zip_Code__c": "74848",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2005-05-10",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000EvxxYEAR",
+  "OESC_Employer_Name__c": "Johnson Controls",
+  "OESC_Employer_City__c": "Ponca City",
+  "OESC_Employer_Zip_Code__c": "74601",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2006-01-25",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000EvxxgEAB",
+  "OESC_Employer_Name__c": "Weyerhaeuser",
+  "OESC_Employer_City__c": "Idabel",
+  "OESC_Employer_Zip_Code__c": "74745",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2005-10-24",
+  "Select_Local_Workforce_Board__c": "SouthEastRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000EvxxkEAB",
+  "OESC_Employer_Name__c": "Eaton Corporation",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2006-04-07",
+  "Select_Local_Workforce_Board__c": "EastCentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3OsEAJ",
+  "OESC_Employer_Name__c": "General Motors",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2006-01-25",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3OtEAJ",
+  "OESC_Employer_Name__c": "APAC",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2006-09-23",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3OxEAJ",
+  "OESC_Employer_Name__c": "Eaton Corporation",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2006-09-07",
+  "Select_Local_Workforce_Board__c": "SouthCentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3PDEAZ",
+  "OESC_Employer_Name__c": "Albertsons",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2007-06-19",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3PEEAZ",
+  "OESC_Employer_Name__c": "Albertsons",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2007-06-19",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3PFEAZ",
+  "OESC_Employer_Name__c": "Albertsons",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2007-06-19",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3PMEAZ",
+  "OESC_Employer_Name__c": "First Data",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2007-07-30",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3PNEAZ",
+  "OESC_Employer_Name__c": "First Data",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2007-07-30",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3PTEAZ",
+  "OESC_Employer_Name__c": "Macy's",
+  "OESC_Employer_City__c": "Broken arrow",
+  "OESC_Employer_Zip_Code__c": "74011",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2007-12-28",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3PZEAZ",
+  "OESC_Employer_Name__c": "Hertz",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73132",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2008-05-07",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3PaEAJ",
+  "OESC_Employer_Name__c": "Georgia Pacific",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2008-06-16",
+  "Select_Local_Workforce_Board__c": "SouthCentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3PcEAJ",
+  "OESC_Employer_Name__c": "Hertz",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73132",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2008-05-07",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3PeEAJ",
+  "OESC_Employer_Name__c": "Hertz",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73132",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2008-05-07",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3PlEAJ",
+  "OESC_Employer_Name__c": "Xerox",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2008-11-05",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3PzEAJ",
+  "OESC_Employer_Name__c": "National Oilwell Varco",
+  "OESC_Employer_City__c": "McAlester",
+  "OESC_Employer_Zip_Code__c": "74501",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2009-02-03",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3Q2EAJ",
+  "OESC_Employer_Name__c": "Limco",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2009-02-09",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3Q5EAJ",
+  "OESC_Employer_Name__c": "Weyerhaeuser",
+  "OESC_Employer_City__c": "Idabel",
+  "OESC_Employer_Zip_Code__c": "74745",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2009-03-17",
+  "Select_Local_Workforce_Board__c": "SouthEastRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3Q7EAJ",
+  "OESC_Employer_Name__c": "American Woodmark",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2009-03-31",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3Q8EAJ",
+  "OESC_Employer_Name__c": "Tyson Foods, Inc.",
+  "OESC_Employer_City__c": "Holdenville",
+  "OESC_Employer_Zip_Code__c": "74848",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2009-03-27",
+  "Select_Local_Workforce_Board__c": "NorthCentral",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3Q9EAJ",
+  "OESC_Employer_Name__c": "John Zink",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2009-04-04",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3QCEAZ",
+  "OESC_Employer_Name__c": "Cameron",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2009-05-19",
+  "Select_Local_Workforce_Board__c": "NorthCentral",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3QDEAZ",
+  "OESC_Employer_Name__c": "Paragon",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2009-05-15",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3QGEAZ",
+  "OESC_Employer_Name__c": "Weyerhaeuser",
+  "OESC_Employer_City__c": "Idabel",
+  "OESC_Employer_Zip_Code__c": "74745",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2009-03-17",
+  "Select_Local_Workforce_Board__c": "SouthEastRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3QMEAZ",
+  "OESC_Employer_Name__c": "Paragon Industries",
+  "OESC_Employer_City__c": "Sapulpa",
+  "OESC_Employer_Zip_Code__c": "74066",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2009-05-13",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3QTEAZ",
+  "OESC_Employer_Name__c": "Oral Roberts University",
+  "Launchpad__Layoff_Closure_Type__c": "Other",
+  "Launchpad__Notice_Date__c": "2009-10-12",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3QVEAZ",
+  "OESC_Employer_Name__c": "Raytheon",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2010-01-15",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3QZEAZ",
+  "OESC_Employer_Name__c": "Zeledyne",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2010-01-27",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3QgEAJ",
+  "OESC_Employer_Name__c": "Corrections Corporation of America",
+  "OESC_Employer_City__c": "Holdenville",
+  "OESC_Employer_Zip_Code__c": "74848",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2010-03-08",
+  "Select_Local_Workforce_Board__c": "NorthCentral",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3QsEAJ",
+  "OESC_Employer_Name__c": "West Corporation",
+  "OESC_Employer_City__c": "Omaha",
+  "OESC_Employer_Zip_Code__c": "68154",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2009-08-12",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3QuEAJ",
+  "OESC_Employer_Name__c": "U.S. CELLULAR",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2010-06-07",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3QwEAJ",
+  "OESC_Employer_Name__c": "3M",
+  "OESC_Employer_City__c": "ARDMORE",
+  "OESC_Employer_Zip_Code__c": "73401",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2010-06-16",
+  "Select_Local_Workforce_Board__c": "SouthernRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3R2EAJ",
+  "OESC_Employer_Name__c": "Great Plains Correctional Facility",
+  "OESC_Employer_City__c": "Hinton",
+  "OESC_Employer_Zip_Code__c": "73047",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2010-08-18",
+  "Select_Local_Workforce_Board__c": "SouthCentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3R4EAJ",
+  "OESC_Employer_Name__c": "Lufthansa Technik",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2010-10-25",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3R6EAJ",
+  "OESC_Employer_Name__c": "Principal Financial Group",
+  "Launchpad__Layoff_Closure_Type__c": "Other",
+  "Launchpad__Notice_Date__c": "2010-10-22",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3R9EAJ",
+  "OESC_Employer_Name__c": "UNITED HEALTH Group",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73104",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2010-11-09",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3RAEAZ",
+  "OESC_Employer_Name__c": "IMATION",
+  "OESC_Employer_City__c": "WEATHERFORD",
+  "OESC_Employer_Zip_Code__c": "73096",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2011-01-19",
+  "Select_Local_Workforce_Board__c": "SouthWestRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3REEAZ",
+  "OESC_Employer_Name__c": "Zeledyne",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2011-05-31",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3RGEAZ",
+  "OESC_Employer_Name__c": "Mercury Marine",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2011-01-18",
+  "Select_Local_Workforce_Board__c": "NorthCentral",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3RKEAZ",
+  "OESC_Employer_Name__c": "Air Systems Components",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2011-03-21",
+  "Select_Local_Workforce_Board__c": "NorthCentral",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3RVEAZ",
+  "OESC_Employer_Name__c": "Terex Corporation",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2011-11-14",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3RaEAJ",
+  "OESC_Employer_Name__c": "TRACKER MARINE LLC %EXPERIAN EMPLOYER SERVICES",
+  "OESC_Employer_City__c": "LONDONDERRY",
+  "OESC_Employer_Zip_Code__c": "30533616",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2012-02-08",
+  "Select_Local_Workforce_Board__c": "SouthCentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3RcEAJ",
+  "OESC_Employer_Name__c": "Northrop Grumman",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2012-04-26",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3RfEAJ",
+  "OESC_Employer_Name__c": "Sitel",
+  "OESC_Employer_City__c": "Nashville",
+  "OESC_Employer_Zip_Code__c": "37203",
+  "Launchpad__Layoff_Closure_Type__c": "Other",
+  "Launchpad__Notice_Date__c": "2012-06-28",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3RgEAJ",
+  "OESC_Employer_Name__c": "American Airlines",
+  "OESC_Employer_City__c": "Fort Worth",
+  "OESC_Employer_Zip_Code__c": "76155",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2012-09-17",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3RlEAJ",
+  "OESC_Employer_Name__c": "Walgreens",
+  "OESC_Employer_City__c": "McAlester",
+  "OESC_Employer_Zip_Code__c": "74501",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2012-09-10",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3RnEAJ",
+  "OESC_Employer_Name__c": "Sykes",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2012-07-31",
+  "Select_Local_Workforce_Board__c": "NorthWestRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3RxEAJ",
+  "OESC_Employer_Name__c": "Sears",
+  "OESC_Employer_City__c": "Longwood",
+  "OESC_Employer_Zip_Code__c": "32750",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2013-01-30",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3RyEAJ",
+  "OESC_Employer_Name__c": "Chromalloy",
+  "OESC_Employer_City__c": "Tulsa",
+  "OESC_Employer_Zip_Code__c": "74152",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2013-01-18",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3S5EAJ",
+  "OESC_Employer_Name__c": "Raytheon",
+  "Launchpad__Layoff_Closure_Type__c": "Other",
+  "Launchpad__Notice_Date__c": "2013-03-13",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3S9EAJ",
+  "OESC_Employer_Name__c": "Alorica",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2013-04-03",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3SHEAZ",
+  "OESC_Employer_Name__c": "DISH - NLX",
+  "OESC_Employer_City__c": "Tulsa",
+  "OESC_Employer_Zip_Code__c": "74116",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2013-09-09",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3SJEAZ",
+  "OESC_Employer_Name__c": "US Foods",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2013-10-03",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3SKEAZ",
+  "OESC_Employer_Name__c": "Empire Castings",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2013-10-01",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3SLEAZ",
+  "OESC_Employer_Name__c": "Chesapeake Energy Corporation",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73118",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2013-10-08",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3SiEAJ",
+  "OESC_Employer_Name__c": "Cox Communications",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73132",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2014-03-03",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3SzEAJ",
+  "OESC_Employer_Name__c": "Simmons Foods",
+  "OESC_Employer_City__c": "Jay",
+  "OESC_Employer_Zip_Code__c": "74346",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2014-10-27",
+  "Select_Local_Workforce_Board__c": "SouthCentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3T0EAJ",
+  "OESC_Employer_Name__c": "Reasor's",
+  "OESC_Employer_City__c": "Tulsa",
+  "OESC_Employer_Zip_Code__c": "74146",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2014-09-08",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3TBEAZ",
+  "OESC_Employer_Name__c": "Sodexo",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73122",
+  "Launchpad__Layoff_Closure_Type__c": "Other",
+  "Launchpad__Notice_Date__c": "2015-02-02",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3TDEAZ",
+  "OESC_Employer_Name__c": "BAKER HUGHES INC THOMAS & COMPANY",
+  "OESC_Employer_City__c": "NASHVILLE",
+  "OESC_Employer_Zip_Code__c": "37228-1214",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2015-02-06",
+  "Select_Local_Workforce_Board__c": "SouthWestRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3TLEAZ",
+  "OESC_Employer_Name__c": "Hillcrest Hospital",
+  "Launchpad__Layoff_Closure_Type__c": "Other",
+  "Launchpad__Notice_Date__c": "2015-02-17",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3TPEAZ",
+  "OESC_Employer_Name__c": "United Airlines",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2015-03-10",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3TSEAZ",
+  "OESC_Employer_Name__c": "Halliburton Energy Services-Duncan Camp",
+  "OESC_Employer_City__c": "Duncan",
+  "OESC_Employer_Zip_Code__c": "73533",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2015-03-18",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3TbEAJ",
+  "OESC_Employer_Name__c": "SKF",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2015-05-19",
+  "Select_Local_Workforce_Board__c": "SouthWestRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3TmEAJ",
+  "OESC_Employer_Name__c": "Service King",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2015-09-09",
+  "Select_Local_Workforce_Board__c": "EastCentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3ToEAJ",
+  "OESC_Employer_Name__c": "Chesapeake",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2015-09-29",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3TtEAJ",
+  "OESC_Employer_Name__c": "Macy's",
+  "OESC_Employer_City__c": "Broken arrow",
+  "OESC_Employer_Zip_Code__c": "74011",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2016-01-06",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3TxEAJ",
+  "OESC_Employer_Name__c": "NOVITEX ENTERPRISE SOLUTIONS INC BADRINATH NAGA",
+  "OESC_Employer_City__c": "IRVING",
+  "OESC_Employer_Zip_Code__c": "75063-8234",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2016-01-26",
+  "Select_Local_Workforce_Board__c": "SouthCentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3U4EAJ",
+  "OESC_Employer_Name__c": "Devon Energy",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2016-02-19",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3U8EAJ",
+  "OESC_Employer_Name__c": "Hertz",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73132",
+  "Launchpad__Layoff_Closure_Type__c": "Other",
+  "Launchpad__Notice_Date__c": "2016-02-11",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3U9EAJ",
+  "OESC_Employer_Name__c": "Halliburton",
+  "OESC_Employer_City__c": "duncan",
+  "OESC_Employer_Zip_Code__c": "73536",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2016-05-23",
+  "Select_Local_Workforce_Board__c": "SouthCentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3UAEAZ",
+  "OESC_Employer_Name__c": "kenco plastics",
+  "OESC_Employer_City__c": "poteau",
+  "OESC_Employer_Zip_Code__c": "74953",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2016-04-28",
+  "Select_Local_Workforce_Board__c": "SouthernRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3UNEAZ",
+  "OESC_Employer_Name__c": "HCR ManorCare",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2016-07-11",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3UWEAZ",
+  "OESC_Employer_Name__c": "BAKER HUGHES INC THOMAS & COMPANY",
+  "OESC_Employer_City__c": "NASHVILLE",
+  "OESC_Employer_Zip_Code__c": "37228-1214",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2016-02-18",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3UcEAJ",
+  "OESC_Employer_Name__c": "Zelenka Farms",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2016-07-14",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3UeEAJ",
+  "OESC_Employer_Name__c": "Experience Works",
+  "OESC_Employer_City__c": "Wagoner",
+  "OESC_Employer_Zip_Code__c": "74477",
+  "Launchpad__Layoff_Closure_Type__c": "Other",
+  "Launchpad__Notice_Date__c": "2016-11-07",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3UiEAJ",
+  "OESC_Employer_Name__c": "Weatherford",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2016-12-02",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3UkEAJ",
+  "OESC_Employer_Name__c": "Weatherford",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2016-12-05",
+  "Select_Local_Workforce_Board__c": "NorthWestRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3UvEAJ",
+  "OESC_Employer_Name__c": "Linde Engineering North America",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2017-03-22",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3UxEAJ",
+  "OESC_Employer_Name__c": "HERC Rentals",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2017-04-04",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3V3EAJ",
+  "OESC_Employer_Name__c": "WalMart",
+  "OESC_Employer_City__c": "Altus",
+  "OESC_Employer_Zip_Code__c": "73521",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2017-06-20",
+  "Select_Local_Workforce_Board__c": "NorthWestRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3VMEAZ",
+  "OESC_Employer_Name__c": "ABM INDUSTRIES INC",
+  "OESC_Employer_City__c": "SUGAR LAND",
+  "OESC_Employer_Zip_Code__c": "77478-0014",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2024-01-19",
+  "Select_Local_Workforce_Board__c": "GreenCountryRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3VPEAZ",
+  "OESC_Employer_Name__c": "Airgas",
+  "OESC_Employer_City__c": "Lawton",
+  "OESC_Employer_Zip_Code__c": "73505",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2024-08-29",
+  "Select_Local_Workforce_Board__c": "GreenCountryRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3VREAZ",
+  "OESC_Employer_Name__c": "UPS",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2024-11-18",
+  "Select_Local_Workforce_Board__c": "Central (COWIB)",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3X7EAJ",
+  "OESC_Employer_Name__c": "Coca-Cola",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2018-01-22",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3XBEAZ",
+  "OESC_Employer_Name__c": "St. Gregory's University",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2017-11-28",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3XKEAZ",
+  "OESC_Employer_Name__c": "Laredo Petroleum",
+  "Launchpad__Layoff_Closure_Type__c": "Other",
+  "Launchpad__Notice_Date__c": "2019-04-08",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3XLEAZ",
+  "OESC_Employer_Name__c": "University of Oklahoma",
+  "Launchpad__Layoff_Closure_Type__c": "Other",
+  "Launchpad__Notice_Date__c": "2019-02-06",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3XMEAZ",
+  "OESC_Employer_Name__c": "BJ Services",
+  "OESC_Employer_City__c": "Yukon",
+  "OESC_Employer_Zip_Code__c": "73099",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2019-01-31",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3XPEAZ",
+  "OESC_Employer_Name__c": "Shadow Mountain Behavioral Health",
+  "OESC_Employer_City__c": "Tulsa",
+  "OESC_Employer_Zip_Code__c": "74133",
+  "Launchpad__Layoff_Closure_Type__c": "Other",
+  "Launchpad__Notice_Date__c": "2019-02-01",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3XWEAZ",
+  "OESC_Employer_Name__c": "University of Oklahoma",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2019-06-14",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3XYEAZ",
+  "OESC_Employer_Name__c": "Step Energy Services",
+  "OESC_Employer_City__c": "Spring",
+  "OESC_Employer_Zip_Code__c": "77380",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-03-31",
+  "Select_Local_Workforce_Board__c": "SouthernRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3XbEAJ",
+  "OESC_Employer_Name__c": "BAKER HUGHES INC THOMAS & COMPANY",
+  "OESC_Employer_City__c": "NASHVILLE",
+  "OESC_Employer_Zip_Code__c": "37228-1214",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-04-15",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3XdEAJ",
+  "OESC_Employer_Name__c": "Halliburton",
+  "OESC_Employer_City__c": "duncan",
+  "OESC_Employer_Zip_Code__c": "73536",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-04-15",
+  "Select_Local_Workforce_Board__c": "SouthCentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3XeEAJ",
+  "OESC_Employer_Name__c": "Halliburton",
+  "OESC_Employer_City__c": "duncan",
+  "OESC_Employer_Zip_Code__c": "73536",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-04-06",
+  "Select_Local_Workforce_Board__c": "SouthCentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3XiEAJ",
+  "OESC_Employer_Name__c": "JC Penney",
+  "OESC_Employer_City__c": "Ardmore",
+  "OESC_Employer_Zip_Code__c": "73401",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2020-02-10",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3XjEAJ",
+  "OESC_Employer_Name__c": "SandRidge Energy",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-02-04",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3XkEAJ",
+  "OESC_Employer_Name__c": "SandRidge Energy",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-04-17",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3XlEAJ",
+  "OESC_Employer_Name__c": "SandRidge Energy",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-04-16",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3XmEAJ",
+  "OESC_Employer_Name__c": "Cameron Drilling",
+  "OESC_Employer_City__c": "Moore",
+  "OESC_Employer_Zip_Code__c": "73160",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2020-04-23",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3XnEAJ",
+  "OESC_Employer_Name__c": "Halliburton",
+  "OESC_Employer_City__c": "duncan",
+  "OESC_Employer_Zip_Code__c": "73536",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2019-12-02",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3XpEAJ",
+  "OESC_Employer_Name__c": "Simmons Bank",
+  "OESC_Employer_City__c": "Chickasha",
+  "OESC_Employer_Zip_Code__c": "73018",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2019-10-10",
+  "Select_Local_Workforce_Board__c": "SouthCentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3XqEAJ",
+  "OESC_Employer_Name__c": "Energy Transfer",
+  "OESC_Employer_City__c": "Houston",
+  "OESC_Employer_Zip_Code__c": "77002",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-01-06",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3XwEAJ",
+  "OESC_Employer_Name__c": "Spirit AeroSystems",
+  "OESC_Employer_City__c": "Tulsa",
+  "OESC_Employer_Zip_Code__c": "74116",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-01-23",
+  "Select_Local_Workforce_Board__c": "SouthernRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3XxEAJ",
+  "OESC_Employer_Name__c": "METLIFE",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2019-07-31",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3XyEAJ",
+  "OESC_Employer_Name__c": "Capital One",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2019-07-10",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3XzEAJ",
+  "OESC_Employer_Name__c": "State Farm",
+  "OESC_Employer_City__c": "Watonga",
+  "OESC_Employer_Zip_Code__c": "73772",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2019-06-26",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3Y0EAJ",
+  "OESC_Employer_Name__c": "Siemens",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2019-05-23",
+  "Select_Local_Workforce_Board__c": "SouthCentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3Y1EAJ",
+  "OESC_Employer_Name__c": "CACI",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2019-04-29",
+  "Select_Local_Workforce_Board__c": "SouthCentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3Y4EAJ",
+  "OESC_Employer_Name__c": "Sitel",
+  "OESC_Employer_City__c": "Nashville",
+  "OESC_Employer_Zip_Code__c": "37203",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2019-10-21",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3Y6EAJ",
+  "OESC_Employer_Name__c": "Enterprise Holdings",
+  "OESC_Employer_City__c": "Edmond",
+  "OESC_Employer_Zip_Code__c": "73034",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-04-27",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3Y8EAJ",
+  "OESC_Employer_Name__c": "Hertz",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73132",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-04-28",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3Y9EAJ",
+  "OESC_Employer_Name__c": "Halliburton Energy Services, Inc. - Duncan Mfg.",
+  "OESC_Employer_City__c": "Duncan",
+  "OESC_Employer_Zip_Code__c": "73533",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-04-28",
+  "Select_Local_Workforce_Board__c": "SouthCentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YAEAZ",
+  "OESC_Employer_Name__c": "Apergy",
+  "OESC_Employer_City__c": "Claremore",
+  "OESC_Employer_Zip_Code__c": "74019",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2020-04-28",
+  "Select_Local_Workforce_Board__c": "SouthCentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YBEAZ",
+  "OESC_Employer_Name__c": "Regal Cinemas",
+  "OESC_Employer_City__c": "Broken Arrow",
+  "OESC_Employer_Zip_Code__c": "74011",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-04-29",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YCEAZ",
+  "OESC_Employer_Name__c": "Regal Cinemas",
+  "OESC_Employer_City__c": "Broken Arrow",
+  "OESC_Employer_Zip_Code__c": "74011",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-04-29",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YDEAZ",
+  "OESC_Employer_Name__c": "Regal Cinemas",
+  "OESC_Employer_City__c": "Broken Arrow",
+  "OESC_Employer_Zip_Code__c": "74011",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-04-29",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YJEAZ",
+  "OESC_Employer_Name__c": "Dillard's",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2020-05-13",
+  "Select_Local_Workforce_Board__c": "SouthCentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YMEAZ",
+  "OESC_Employer_Name__c": "SandRidge Energy",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-05-28",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YOEAZ",
+  "OESC_Employer_Name__c": "Enterprise Holdings",
+  "OESC_Employer_City__c": "Edmond",
+  "OESC_Employer_Zip_Code__c": "73034",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-06-22",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YPEAZ",
+  "OESC_Employer_Name__c": "Hitch Enterprises",
+  "OESC_Employer_City__c": "Guyman",
+  "OESC_Employer_Zip_Code__c": "73942",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2020-06-26",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YQEAZ",
+  "OESC_Employer_Name__c": "Skirvin Hilton",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73102",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-06-26",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YREAZ",
+  "OESC_Employer_Name__c": "CoorsTek",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73149",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2020-07-07",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YTEAZ",
+  "OESC_Employer_Name__c": "Mathis Home",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73107",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-03-25",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YUEAZ",
+  "OESC_Employer_Name__c": "Mathis Home",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73107",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-03-25",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YVEAZ",
+  "OESC_Employer_Name__c": "Mathis Home",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73107",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-03-25",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YWEAZ",
+  "OESC_Employer_Name__c": "Mathis Home",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73107",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-03-25",
+  "Select_Local_Workforce_Board__c": "SouthCentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YXEAZ",
+  "OESC_Employer_Name__c": "Cimarron Correctional Facility",
+  "OESC_Employer_City__c": "Cushing",
+  "OESC_Employer_Zip_Code__c": "74023",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2020-07-17",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YYEAZ",
+  "OESC_Employer_Name__c": "Delaware North",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-07-15",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YaEAJ",
+  "OESC_Employer_Name__c": "WalMart",
+  "OESC_Employer_City__c": "Altus",
+  "OESC_Employer_Zip_Code__c": "73521",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2020-07-22",
+  "Select_Local_Workforce_Board__c": "SouthCentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YbEAJ",
+  "OESC_Employer_Name__c": "Delaware North",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-06-30",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YcEAJ",
+  "OESC_Employer_Name__c": "Delaware North",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-06-30",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YfEAJ",
+  "OESC_Employer_Name__c": "NORDAM",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-04-02",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YnEAJ",
+  "OESC_Employer_Name__c": "Aimbridge Hospitality",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-03-21",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YoEAJ",
+  "OESC_Employer_Name__c": "Crescent Hotels and Resorts",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73163",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-05-01",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YpEAJ",
+  "OESC_Employer_Name__c": "Gathering Place",
+  "OESC_Employer_City__c": "Tulsa",
+  "OESC_Employer_Zip_Code__c": "74115",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-05-04",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YrEAJ",
+  "OESC_Employer_Name__c": "Enterprise Holdings",
+  "OESC_Employer_City__c": "Edmond",
+  "OESC_Employer_Zip_Code__c": "73034",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-05-05",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YsEAJ",
+  "OESC_Employer_Name__c": "Enterprise Holdings",
+  "OESC_Employer_City__c": "Edmond",
+  "OESC_Employer_Zip_Code__c": "73034",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-05-05",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YtEAJ",
+  "OESC_Employer_Name__c": "Enterprise Holdings",
+  "OESC_Employer_City__c": "Edmond",
+  "OESC_Employer_Zip_Code__c": "73034",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-05-05",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YwEAJ",
+  "OESC_Employer_Name__c": "Atrium Hospitality",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-05-13",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YxEAJ",
+  "OESC_Employer_Name__c": "Atrium Hospitality",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-05-13",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YyEAJ",
+  "OESC_Employer_Name__c": "Accurus Aerospace Corporation",
+  "OESC_Employer_City__c": "Tulsa",
+  "OESC_Employer_Zip_Code__c": "74103",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-05-15",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3YzEAJ",
+  "OESC_Employer_Name__c": "Enterprise Holdings",
+  "OESC_Employer_City__c": "Edmond",
+  "OESC_Employer_Zip_Code__c": "73034",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-05-05",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3Z0EAJ",
+  "OESC_Employer_Name__c": "GEFCO",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2020-08-03",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3Z1EAJ",
+  "OESC_Employer_Name__c": "Vetta Brands",
+  "OESC_Employer_City__c": "Norman",
+  "OESC_Employer_Zip_Code__c": "73071",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2020-08-17",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3Z3EAJ",
+  "OESC_Employer_Name__c": "Aramark",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73169",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-08-27",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3Z9EAJ",
+  "OESC_Employer_Name__c": "American Airlines",
+  "OESC_Employer_City__c": "Fort Worth",
+  "OESC_Employer_Zip_Code__c": "76155",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-07-15",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3ZBEAZ",
+  "OESC_Employer_Name__c": "Regal Cinemas",
+  "OESC_Employer_City__c": "Broken Arrow",
+  "OESC_Employer_Zip_Code__c": "74011",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2020-10-20",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3ZCEAZ",
+  "OESC_Employer_Name__c": "Regal Cinemas",
+  "OESC_Employer_City__c": "Broken Arrow",
+  "OESC_Employer_Zip_Code__c": "74011",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2020-10-20",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3ZDEAZ",
+  "OESC_Employer_Name__c": "IAP",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2020-12-01",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3ZEEAZ",
+  "OESC_Employer_Name__c": "Southwest Airlines",
+  "OESC_Employer_City__c": "Oklahoma CityOklahoma City",
+  "OESC_Employer_Zip_Code__c": "73159",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2020-12-04",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3ZGEAZ",
+  "OESC_Employer_Name__c": "A&B Distributors",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2020-05-07",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3ZKEAZ",
+  "OESC_Employer_Name__c": "Meta Special Aerospace",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73008",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2021-02-08",
+  "Select_Local_Workforce_Board__c": "CentralRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3ZPEAZ",
+  "OESC_Employer_Name__c": "Flowserve",
+  "OESC_Employer_City__c": "Dallas",
+  "OESC_Employer_Zip_Code__c": "75206",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2021-04-29",
+  "Select_Local_Workforce_Board__c": "TulsaRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3ZREAZ",
+  "OESC_Employer_Name__c": "Sodexo",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73122",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2021-05-13",
+  "Select_Local_Workforce_Board__c": "Central (COWIB)",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3ZUEAZ",
+  "OESC_Employer_Name__c": "Hiland Dairy",
+  "OESC_Employer_City__c": "Dodge City",
+  "OESC_Employer_Zip_Code__c": "67801",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2021-06-04",
+  "Select_Local_Workforce_Board__c": "GreenCountryRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3ZVEAZ",
+  "OESC_Employer_Name__c": "Odle Management Group",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2021-10-29",
+  "Select_Local_Workforce_Board__c": "GreenCountryRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3ZWEAZ",
+  "OESC_Employer_Name__c": "Bristow Medical Center",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2021-10-28",
+  "Select_Local_Workforce_Board__c": "GreenCountryRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3ZgEAJ",
+  "OESC_Employer_Name__c": "Superior Linen Service",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2022-05-18",
+  "Select_Local_Workforce_Board__c": "GreenCountryRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3ZiEAJ",
+  "OESC_Employer_Name__c": "Hire Right",
+  "OESC_Employer_City__c": "Tulsa",
+  "OESC_Employer_Zip_Code__c": "74134",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2022-07-01",
+  "Select_Local_Workforce_Board__c": "GreenCountryRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3ZjEAJ",
+  "OESC_Employer_Name__c": "Tetra Tech, Inc.",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73105",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2022-07-07",
+  "Select_Local_Workforce_Board__c": "Central (COWIB)",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3ZnEAJ",
+  "OESC_Employer_Name__c": "Odle Management Group",
+  "Launchpad__Layoff_Closure_Type__c": "Other",
+  "Launchpad__Notice_Date__c": "2022-08-31",
+  "Select_Local_Workforce_Board__c": "GreenCountryRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3ZsEAJ",
+  "OESC_Employer_Name__c": "Interceramic Inc.",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73107",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2023-02-23",
+  "Select_Local_Workforce_Board__c": "Central (COWIB)",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3ZtEAJ",
+  "OESC_Employer_Name__c": "Interceramic Inc.",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73107",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2023-02-23",
+  "Select_Local_Workforce_Board__c": "GreenCountryRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3ZuEAJ",
+  "OESC_Employer_Name__c": "First Transit",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73179",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2023-04-04",
+  "Select_Local_Workforce_Board__c": "GreenCountryRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3a0EAB",
+  "OESC_Employer_Name__c": "Avantive Solutions",
+  "OESC_Employer_City__c": "Tulsa",
+  "OESC_Employer_Zip_Code__c": "74134",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2023-06-12",
+  "Select_Local_Workforce_Board__c": "GreenCountryRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Ew3a4EAB",
+  "OESC_Employer_Name__c": "CORECIVIC OF TENNESSEE LLC THOMAS & COMPANY",
+  "OESC_Employer_City__c": "NASHVILLE",
+  "OESC_Employer_Zip_Code__c": "37228-5140",
+  "Launchpad__Layoff_Closure_Type__c": "Other",
+  "Launchpad__Notice_Date__c": "2023-07-31",
+  "Select_Local_Workforce_Board__c": "Central (COWIB)",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000FIzpBEAT",
+  "OESC_Employer_Name__c": "Mutual of Omaha",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2011-10-12",
+  "Select_Local_Workforce_Board__c": "NorthWestRegion",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000FIzpIEAT",
+  "OESC_Employer_Name__c": "BizJet",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2015-11-25",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000FIzpNEAT",
+  "OESC_Employer_Name__c": "Baker Hughes GE",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2018-01-25",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000SiS6vEAF",
+  "OESC_Employer_Name__c": "Cooks Venture Poultry",
+  "OESC_Employer_City__c": "Jay",
+  "OESC_Employer_Zip_Code__c": "74346",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2023-11-17",
+  "Select_Local_Workforce_Board__c": "Northeast",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000TO6y1EAD",
+  "OESC_Employer_Name__c": "LarKen Logistics LLC",
+  "OESC_Employer_City__c": "St. Peters",
+  "OESC_Employer_Zip_Code__c": "63376",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2025-09-03",
+  "Select_Local_Workforce_Board__c": "Central",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000TT0yPEAT",
+  "OESC_Employer_Name__c": "NuCera Solutions, LLC",
+  "OESC_Employer_City__c": "Barnsdall",
+  "OESC_Employer_Zip_Code__c": "77478",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2024-07-30",
+  "Select_Local_Workforce_Board__c": "Green Country",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000To1EjEAJ",
+  "OESC_Employer_Name__c": "Solo Cup Operating Corp",
+  "OESC_Employer_City__c": "Mason",
+  "OESC_Employer_Zip_Code__c": "48854",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2023-04-20",
+  "Select_Local_Workforce_Board__c": "Southern",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000ToV7xEAF",
+  "OESC_Employer_Name__c": "Novo Logistics",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2025-01-30",
+  "Select_Local_Workforce_Board__c": "Southern",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000TwXCbEAN",
+  "OESC_Employer_Name__c": "7-Eleven",
+  "Launchpad__Layoff_Closure_Type__c": "Other",
+  "Launchpad__Notice_Date__c": "2024-05-23",
+  "Select_Local_Workforce_Board__c": "Central",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Twa5eEAB",
+  "OESC_Employer_Name__c": "Ruan Transport Corporation",
+  "OESC_Employer_City__c": "Des Moines",
+  "OESC_Employer_Zip_Code__c": "50309",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2024-12-20",
+  "Select_Local_Workforce_Board__c": "Southern",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000TwbL3EAJ",
+  "OESC_Employer_Name__c": "WIT Services Co LLC",
+  "OESC_Employer_City__c": "Sapulpa",
+  "OESC_Employer_Zip_Code__c": "74066",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2024-10-22",
+  "Select_Local_Workforce_Board__c": "Green Country",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000TwepBEAR",
+  "OESC_Employer_Name__c": "Dollar Tree",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2024-05-24",
+  "Select_Local_Workforce_Board__c": "Southern",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000TwgnlEAB",
+  "OESC_Employer_Name__c": "Big Lots Durant DC",
+  "OESC_Employer_City__c": "Durant",
+  "OESC_Employer_Zip_Code__c": "74701",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2024-12-19",
+  "Select_Local_Workforce_Board__c": "Southern",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000TwvQDEAZ",
+  "OESC_Employer_Name__c": "Warehouse Specialist LLC",
+  "OESC_Employer_City__c": "Appleton",
+  "OESC_Employer_Zip_Code__c": "54913",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2024-01-10",
+  "Select_Local_Workforce_Board__c": "Green Country",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Twz5dEAB",
+  "OESC_Employer_Name__c": "Paragon Industries",
+  "OESC_Employer_City__c": "Sapulpa",
+  "OESC_Employer_Zip_Code__c": "74066",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2024-10-22",
+  "Select_Local_Workforce_Board__c": "Southern",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000Tx5RBEAZ",
+  "OESC_Employer_Name__c": "Sound Physicians of Oklahoma",
+  "OESC_Employer_City__c": "Tacoma",
+  "OESC_Employer_Zip_Code__c": "98402",
+  "Launchpad__Layoff_Closure_Type__c": "Other",
+  "Launchpad__Notice_Date__c": "2024-08-13",
+  "Select_Local_Workforce_Board__c": "Green Country",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000UZi3JEAT",
+  "OESC_Employer_Name__c": "Fellers",
+  "Launchpad__Layoff_Closure_Type__c": "Other",
+  "Launchpad__Notice_Date__c": "2025-09-26",
+  "Select_Local_Workforce_Board__c": "Green Country",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000UbK6XEAV",
+  "OESC_Employer_Name__c": "Jindal Films Americas LLC",
+  "OESC_Employer_City__c": "Shawnee",
+  "OESC_Employer_Zip_Code__c": "74804",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2025-09-25",
+  "Select_Local_Workforce_Board__c": "Central",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000V4FEjEAN",
+  "OESC_Employer_Name__c": "Paycom",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73142",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2025-10-01",
+  "Select_Local_Workforce_Board__c": "Central",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000YmV9CEAV",
+  "OESC_Employer_Name__c": "Kroger",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73131",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2025-12-03",
+  "Select_Local_Workforce_Board__c": "Central",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000ZRKBNEA5",
+  "OESC_Employer_Name__c": "Carrus Lakeside Hospital",
+  "OESC_Employer_City__c": "Sherman",
+  "OESC_Employer_Zip_Code__c": "75092",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2025-12-15",
+  "Select_Local_Workforce_Board__c": "Green Country",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000bMHMfEAO",
+  "OESC_Employer_Name__c": "Macy's Distribution",
+  "OESC_Employer_City__c": "Owasso",
+  "OESC_Employer_Zip_Code__c": "74055",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2026-01-15",
+  "Select_Local_Workforce_Board__c": "Green Country",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000c2aBBEAY",
+  "OESC_Employer_Name__c": "Bright Horizons",
+  "OESC_Employer_City__c": "Watertown",
+  "OESC_Employer_Zip_Code__c": "02472",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2026-01-30",
+  "Select_Local_Workforce_Board__c": "Central",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000dXPHJEA4",
+  "OESC_Employer_Name__c": "Hopkins Mfg- Miami",
+  "OESC_Employer_City__c": "Miami",
+  "OESC_Employer_Zip_Code__c": "74354",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2026-02-23",
+  "Select_Local_Workforce_Board__c": "Green Country",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000eMKDxEAO",
+  "OESC_Employer_Name__c": "TTEC",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2026-01-26",
+  "Select_Local_Workforce_Board__c": "Central",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000fGmXJEA0",
+  "OESC_Employer_Name__c": "CAE USA Inc",
+  "OESC_Employer_City__c": "Altus AFB",
+  "OESC_Employer_Zip_Code__c": "73523",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2026-03-25",
+  "Select_Local_Workforce_Board__c": "Green Country",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000fGymzEAC",
+  "OESC_Employer_Name__c": "VITAL ENERGY INC",
+  "OESC_Employer_City__c": "TULSA",
+  "OESC_Employer_Zip_Code__c": "74120-1567",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2026-03-13",
+  "Select_Local_Workforce_Board__c": "Green Country",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000k5U2zEAE",
+  "OESC_Employer_Name__c": "Arvest Bank",
+  "OESC_Employer_City__c": "Lowell",
+  "OESC_Employer_Zip_Code__c": "72745",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2026-05-04",
+  "Select_Local_Workforce_Board__c": "Central",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000msFhZEAU",
+  "OESC_Employer_Name__c": "CONDUENT PATIENT ACCESS SOLUTIONS",
+  "OESC_Employer_City__c": "FLORHAM PARK",
+  "OESC_Employer_Zip_Code__c": "79321208",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2026-06-26",
+  "Select_Local_Workforce_Board__c": "Central",
+  "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000oDYn3EAG",
+  "OESC_Employer_Name__c": "PepsiCo",
+  "OESC_Employer_City__c": "Purchase",
+  "OESC_Employer_Zip_Code__c": "10577",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2026-07-14",
+  "Select_Local_Workforce_Board__c": "Green Country",
+  "RecordTypeId": "012cs000001OucAAAS"
+ }
+]

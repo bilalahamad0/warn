@@ -1,0 +1,571 @@
+{
+  "card_window": [
+    "2022-01-01",
+    "2025-01-03"
+  ],
+  "cards": [
+    {
+      "Address": "1305 Terra Bella Avenue\nMountain View, CA 94043",
+      "Closure/Mass Layoff": "Terminations",
+      "Company": "Vimo, Inc. dba GetInsured",
+      "Contact Information": "Nicolla Banks\n605-681-4581",
+      "County": "Wetzel",
+      "Date of Notice": "12/20/24",
+      "Number Affected": "1",
+      "Projected Date": "12/6/24",
+      "Region": "5"
+    },
+    {
+      "Address": "31754 Coal River Rd.\nSylvester, WV 25193",
+      "Closure/Mass Layoff": "Idling",
+      "Company": "Elk Run Coal Company",
+      "Contact Information": "Jason Busey\n304-854-3377",
+      "County": "Boone",
+      "Date of Notice": "10/17/24",
+      "Number Affected": "66",
+      "Projected Date": "12/6/24",
+      "Region": "2"
+    },
+    {
+      "Address": "337 Industrial Park Rd.\nBeaver, WV\n3902 Camden Ave.\nParkersburg, WV 26101\n1500 W. Benedum Industrial Park Rd.\nBridgeport, WV 26330\n35 Edmond Rd.\nKearneysville, WV 25430\n53 W. Plum Rd.\nRidgeley, WV 26753",
+      "Closure/Mass Layoff": "Layoff",
+      "Company": "Cygnus Home Servies, LLC, d/b/a Yelloh",
+      "Contact Information": "Dana Panucci\n507-267-5505",
+      "County": "Raleigh, Wood, Harrison,\nJefferson, and Mineral",
+      "Date of Notice": "9/23/24",
+      "Number Affected": "54",
+      "Projected Date": "11/22/24",
+      "Region": "1, 4, 6, and 7"
+    },
+    {
+      "Address": "200 Lutz Avenue\nMartinsburg, WV 25404",
+      "Closure/Mass Layoff": "Closing",
+      "Company": "Stone Brook Community Services, LLC",
+      "Contact Information": "Ramond R. Ratke\nrratke@enCircleAll.org",
+      "County": "Berkeley",
+      "Date of Notice": "7/31/24",
+      "Number Affected": "52",
+      "Projected Date": "11/1/24",
+      "Region": "7"
+    },
+    {
+      "Address": "337 Industrial Park Road\nBeaver, WV",
+      "Closure/Mass Layoff": "Layoff",
+      "Company": "Cygnus Home Servies, LLC, d/b/a Yelloh",
+      "Contact Information": "Rachel M. Johnson\n507-607-0566",
+      "County": "Raleigh",
+      "Date of Notice": "7/16/24",
+      "Number Affected": "1",
+      "Projected Date": "9/14/24",
+      "Region": "1"
+    },
+    {
+      "Address": "214 S. Main St.\nMoorefield, WV",
+      "Closure/Mass Layoff": "Layoff",
+      "Company": "Packers Sanitation Services",
+      "Contact Information": "Samira Herrera\n608-568-2215",
+      "County": "Hardy",
+      "Date of Notice": "4/23/24",
+      "Number Affected": "88",
+      "Projected Date": "5/10/24",
+      "Region": "7"
+    },
+    {
+      "Address": "1 Moore Ave\nBuckhannon, WV 26062",
+      "Closure/Mass Layoff": "Closure",
+      "Company": "Novelis ALR Rolled Products",
+      "Contact Information": "Mary Baker\n304-266-4468",
+      "County": "Upshur",
+      "Date of Notice": "3/15/24",
+      "Number Affected": "79",
+      "Projected Date": "6/13/24",
+      "Region": "6"
+    },
+    {
+      "Address": "100 Pennsylvania Avenue\nWeirton, WV 26062",
+      "Closure/Mass Layoff": "Indefinite Idle",
+      "Company": "Cleveland Cliffs, Inc.",
+      "Contact Information": "Jim Dyckman\n513-240-7361",
+      "County": "Hancock",
+      "Date of Notice": "2/15/24",
+      "Number Affected": "885",
+      "Projected Date": "4/15/24",
+      "Region": "5"
+    },
+    {
+      "Address": "101 College Hill Drive\nPhilippi, WV 26416",
+      "Closure/Mass Layoff": "Closure",
+      "Company": "Alderson Broaddus University",
+      "Contact Information": "Chris Knotts\n304-457-6590",
+      "County": "Barbour",
+      "Date of Notice": "8/4/23",
+      "Number Affected": "145",
+      "Projected Date": "8/4/23 and 8/18/23",
+      "Region": "6"
+    },
+    {
+      "Address": "14272 Adolph Rd\nMill Creek, WV 26280",
+      "Closure/Mass Layoff": "Closure",
+      "Company": "Carter Roag Coal Company",
+      "Contact Information": "Brett Morris\n304-255-9030\nExt 7523",
+      "County": "Randolph",
+      "Date of Notice": "6/19/23",
+      "Number Affected": "271",
+      "Projected Date": "7/12/23-7/26/23\n8/19/23-9/1/23",
+      "Region": "6"
+    },
+    {
+      "Address": "100 Pennsylvania Avenue\nWeirton, WV 26062",
+      "Closure/Mass Layoff": "Mass layoff",
+      "Company": "Cleveland-Cliffs, Inc.",
+      "Contact Information": "Jim Dyckman\n513-240-7361",
+      "County": "Hancock",
+      "Date of Notice": "5/22/23",
+      "Number Affected": "300",
+      "Projected Date": "5/28/23",
+      "Region": "5"
+    },
+    {
+      "Address": "14272 Adolph Rd\nMill Creek, WV 26280",
+      "Closure/Mass Layoff": "Closure",
+      "Company": "Carter Roag Coal Company",
+      "Contact Information": "Brett Morris\n304-255-9030\nExt 7523",
+      "County": "Randolph",
+      "Date of Notice": "5/12/23",
+      "Number Affected": "271",
+      "Projected Date": "7/26/23-12/31/23",
+      "Region": "6"
+    },
+    {
+      "Address": "14272 Adolph Rd\nMill Creek, WV 26280",
+      "Closure/Mass Layoff": "Closure",
+      "Company": "Beech Mountain Railroad",
+      "Contact Information": "Brett Morris\n304-255-9030\nExt 7523",
+      "County": "Randolph",
+      "Date of Notice": "5/12/23",
+      "Number Affected": "4",
+      "Projected Date": "7/12/23 to 7/26/23",
+      "Region": "6"
+    },
+    {
+      "Address": "3030 Birch Drive\nHalf Moon Industrial Park\nWeirton, WV 26062",
+      "Closure/Mass Layoff": "Closure",
+      "Company": "Truvium Packaging",
+      "Contact Information": "Jennie Graytak\n312-282-7394",
+      "County": "Hancock",
+      "Date of Notice": "4/24/23",
+      "Number Affected": "66",
+      "Projected Date": "5/31/23",
+      "Region": "5"
+    },
+    {
+      "Address": "702 AFR Drive\nFairmont, WV 26554",
+      "Closure/Mass Layoff": "Mass Layoff",
+      "Company": "ND Paper",
+      "Contact Information": "Bob Fieck\n630-748-5720",
+      "County": "Marion",
+      "Date of Notice": "3/28/23",
+      "Number Affected": "90",
+      "Projected Date": "5/1/23",
+      "Region": "6"
+    },
+    {
+      "Address": "408 Coast Guard Drive\nKearneysville, WV 25530",
+      "Closure/Mass Layoff": "Mass Layoff",
+      "Company": "Guidehouse Digital, LLC",
+      "Contact Information": "Michael Lillie\n703-501-7156",
+      "County": "Jefferson",
+      "Date of Notice": "1/30/23",
+      "Number Affected": "110",
+      "Projected Date": "3/31/23",
+      "Region": "7"
+    },
+    {
+      "Address": "16945 Northcase Drive\nSuite 1300\nHouston, TX 77060",
+      "Closure/Mass Layoff": "Closure",
+      "Company": "HealthHelp Nurse Triage 24",
+      "Contact Information": "Sanya Sinclair\n281-582-1956",
+      "County": "McDowell and Hancock",
+      "Date of Notice": "1/23/23",
+      "Number Affected": "52",
+      "Projected Date": "3/24/23",
+      "Region": "1 and 5"
+    },
+    {
+      "Address": "Milepost 18 Northbound I-77\nPrinceton, WV 24740",
+      "Closure/Mass Layoff": "Closure",
+      "Company": "Applegreen",
+      "Contact Information": "Kami McKnight\n440-370-6131",
+      "County": "Mercer",
+      "Date of Notice": "9/30/22",
+      "Number Affected": "31",
+      "Projected Date": "1/31/23 to 2/1/23",
+      "Region": "1"
+    },
+    {
+      "Address": "500 Vankirk Drive\nBeckley, WV 25801",
+      "Closure/Mass Layoff": "Closure",
+      "Company": "Applegreen",
+      "Contact Information": "Kami McKnight\n440-370-6131",
+      "County": "Raleigh",
+      "Date of Notice": "9/30/22",
+      "Number Affected": "58",
+      "Projected Date": "1/31/23 to 2/1/23",
+      "Region": "1"
+    },
+    {
+      "Address": "Mile Marker 72 N\nBurnwell, WV 25803",
+      "Closure/Mass Layoff": "Closure",
+      "Company": "Applegreen",
+      "Contact Information": "Kami McKnight\n440-370-613",
+      "County": "Kanawha",
+      "Date of Notice": "9/30/22",
+      "Number Affected": "39",
+      "Projected Date": "1/31/23 to 2/1/23",
+      "Region": "3"
+    },
+    {
+      "Address": "1851 Main Street\nFollansbee, WV 26037",
+      "Closure/Mass Layoff": "Closing",
+      "Company": "Mountain State Carbon LLC",
+      "Contact Information": "James R. Dyckman\n513-240-7361",
+      "County": "Brooke",
+      "Date of Notice": "3/10/22",
+      "Number Affected": "265",
+      "Projected Date": "5/12/22",
+      "Region": "5"
+    },
+    {
+      "Address": "Katherine Johnson IV & V\n100 University Drive\nFairmont, WV 26554",
+      "Closure/Mass Layoff": "Mass Layoff",
+      "Company": "Science Application International Corporation",
+      "Contact Information": "Barbara A. Gooch\n256-924-8182",
+      "County": "Marion",
+      "Date of Notice": "3/1/22",
+      "Number Affected": "55",
+      "Projected Date": "4/30/22",
+      "Region": "6"
+    },
+    {
+      "Address": "",
+      "Closure/Mass Layoff": "Mass Layoff",
+      "Company": "Ready Responders, Inc.",
+      "Contact Information": "Stephanie Noriea\n985-778-8730",
+      "County": "",
+      "Date of Notice": "2/18/22",
+      "Number Affected": "1",
+      "Projected Date": "2/16/22",
+      "Region": ""
+    },
+    {
+      "Address": "75 Nielson Street\nWatsonville, CA 95076",
+      "Closure/Mass Layoff": "Mass Layoff",
+      "Company": "Watsonville Community Hospital",
+      "Contact Information": "Matko Vranjes\n831-763-6016",
+      "County": "Hancock",
+      "Date of Notice": "1/25/22",
+      "Number Affected": "1 WV Resident",
+      "Projected Date": "3/18/22 to 3/25/22",
+      "Region": "5"
+    }
+  ],
+  "consolidated_url": "https://workforcewv.org/wp-content/uploads/2025/01/WV-WARN-Notices-1-1-22-to-1-3-25.pdf",
+  "listing": [
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2026/07/WARN-Notice-State-West-Virginia-Conduent.pdf",
+      "title": "WARN Notice State – West Virginia Conduent",
+      "year": 2026
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2026/06/JeniusBank-WARN-6-4-26.pdf",
+      "title": "JeniusBank WARN 6-4-26",
+      "year": 2026
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2026/06/Greenbrier-Minerals-July-WARN.pdf",
+      "title": "Greenbrier Minerals July WARN",
+      "year": 2026
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2026/04/Mettiki_Supplemental_WARN_State_Notice_04_1_2026.pdf",
+      "title": "Mettiki_Supplemental_WARN_State_Notice_04_1_2026",
+      "year": 2026
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2026/02/Greenbrier-Minerals-WARN-2-13-26.pdf",
+      "title": "Greenbrier Minerals WARN 2-13-26",
+      "year": 2026
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2026/01/Mettitki-Coal-WARN-1-29-26.pdf",
+      "title": "Mettitki Coal WARN 1-29-26",
+      "year": 2026
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/08/WVU-Research-Corporation-WARN-8-21-25.pdf",
+      "title": "WVU Research Corporation WARN 8-21-25",
+      "year": 2025
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/06/Parkhurst-Dining-6-24-25.pdf",
+      "title": "Parkhurst Dining 6-24-25",
+      "year": 2025
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/06/Beckley-Mechanic-Shop-r1-WARN-6-4-25.pdf",
+      "title": "Beckley Mechanic Shop r1 WARN 6-4-25",
+      "year": 2025
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/06/CV2-Facility-r1-WARN-6-4-25.pdf",
+      "title": "CV2 Facility r1 WARN 6-4-25",
+      "year": 2025
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/06/CV2-Prep-Plant-r1-WARN-6-4-25.pdf",
+      "title": "CV2 Prep Plant r1 WARN 6-4-25",
+      "year": 2025
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/06/Delbarton-Prep-Plant-r2-WARN-6-4-25.pdf",
+      "title": "Delbarton Prep Plant r2 WARN 6-4-25",
+      "year": 2025
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/06/Eagle-Energy-r1-WARN-6-4-25.pdf",
+      "title": "Eagle Energy r1 WARN 6-4-25",
+      "year": 2025
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/06/Falcon-Facility-r2-WARN-6-4-25.pdf",
+      "title": "Falcon Facility r2 WARN 6-4-25",
+      "year": 2025
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/06/Page-Loadout-r1-WARN-6-4-25.pdf",
+      "title": "Page Loadout r1 WARN 6-4-25",
+      "year": 2025
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/06/Pine-Creek-Facility-r2-WARN-6-4-25.pdf",
+      "title": "Pine Creek Facility r2 WARN 6-4-25",
+      "year": 2025
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/06/Stella-Facility-r2-WARN-6-4-25.pdf",
+      "title": "Stella Facility r2 WARN 6-4-25",
+      "year": 2025
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/06/Management-Training-Corporations-WARN-6-3-25.pdf",
+      "title": "Management & Training Corporations WARN 6-3-25",
+      "year": 2025
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/06/Itmann-Mining-Company-WARN-6-2-25.pdf",
+      "title": "Itmann Mining Company WARN 6-2-25",
+      "year": 2025
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/05/Sodexo-WARN-5-12-25.pdf",
+      "title": "Sodexo WARN 5-12-25",
+      "year": 2025
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/05/Coalmac-WARN-5-15-25.pdf",
+      "title": "Coalmac WARN 5-15-25",
+      "year": 2025
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/04/Greenbrier-Minerals-WARN-4-28-25.pdf",
+      "title": "Greenbrier Minerals WARN 4-28-25",
+      "year": 2025
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/04/USCellular-WARN-3-26-25.pdf",
+      "title": "USCellular WARN 3-26-25",
+      "year": 2025
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/04/Novelis-Fairmont-3-31-25.pdf",
+      "title": "Novelis- Fairmont 3-31-25",
+      "year": 2025
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/03/Brinks-Home-WARN-3-17-25.pdf",
+      "title": "Brinks Home WARN 3-17-25",
+      "year": 2025
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/03/Clarvida-WARN-2-25-25.pdf",
+      "title": "Clarvida WARN 2-25-25",
+      "year": 2025
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Behavioral-Health-Link-WARN-2-19-25.pdf",
+      "title": "Behavioral Health Link WARN 2-19-25",
+      "year": 2025
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2024/07/Cygnus-Home-Services-Yelloh-WARN-7-16-24.pdf",
+      "title": "Cygnus Home Services -Yelloh WARN 7-16-24",
+      "year": 2025
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2024/08/Stonebrook-Group-Homes-WARN-8-1-24.pdf",
+      "title": "Stonebrook Group Homes WARN-8-1-24",
+      "year": 2025
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/01/WARN-VIMO-INC.pdf",
+      "title": "WARN VIMO INC",
+      "year": 2025
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Cleveland-Cliffs-WARN-Received.pdf",
+      "title": "Cleveland Cliffs WARN Received",
+      "year": 2024
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Cygnus-Home-Services-Yelloh-WARN-7-16-24.pdf",
+      "title": "Cygnus Home Services -Yelloh WARN 7-16-24",
+      "year": 2024
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Cygnus-Home-Service-Yelloh-9-23-24.pdf",
+      "title": "Cygnus Home Service-Yelloh 9-23-24",
+      "year": 2024
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Elk-Run-WARN-10-7-24.pdf",
+      "title": "Elk Run WARN 10-7-24",
+      "year": 2024
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Novellis-ALR-Rolled-Products-WARN-3-15-24.pdf",
+      "title": "Novellis ALR Rolled Products WARN 3-15-24",
+      "year": 2024
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Packers-Sanitation-Services-Inc-WARN-4-23-24.pdf",
+      "title": "Packers Sanitation Services Inc WARN 4-23-24",
+      "year": 2024
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Stonebrook-Group-Homes-WARN-8-1-24.pdf",
+      "title": "Stonebrook Group Homes WARN 8-1-24",
+      "year": 2024
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/ABU-Occupations-with-count.pdf",
+      "title": "ABU Occupations with count",
+      "year": 2023
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Alderson-Broaddus-University-WARN-8-4-23.pdf",
+      "title": "Alderson Broaddus University WARN 8-4-23",
+      "year": 2023
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Beech-Mountain-Rail-Road-WARN-5-12-23.pdf",
+      "title": "Beech Mountain Rail Road WARN 5-12-23",
+      "year": 2023
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Carter-Roag-Coal-Company-WARN5-12-23.pdf",
+      "title": "Carter Roag Coal Company WARN5-12-23",
+      "year": 2023
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Carter-Roag-WARN-Update-6-19-23.pdf",
+      "title": "Carter Roag WARN Update 6-19-23",
+      "year": 2023
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Cleveland-Cliffs-WARN-5-22-23.pdf",
+      "title": "Cleveland-Cliffs WARN 5-22-23",
+      "year": 2023
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Guidehouse-WARN-1-30-23.pdf",
+      "title": "Guidehouse WARN 1-30-23",
+      "year": 2023
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/HealthHelp-WARN-12323.pdf",
+      "title": "HealthHelp WARN 12323",
+      "year": 2023
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/ND-Paper-WARN-1-20-23.pdf",
+      "title": "ND Paper WARN 1-20-23",
+      "year": 2023
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Trivium-Packaging-WARN-4-24-23.pdf",
+      "title": "Trivium Packaging WARN 4-24-23",
+      "year": 2023
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Apple-Green-Burnwell-WARN-9-30-22.pdf",
+      "title": "Apple Green-Burnwell WARN 9-30-22",
+      "year": 2022
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Applegreen-Princeton-WARN-9-30-22.pdf",
+      "title": "Applegreen-Princeton WARN 9-30-22",
+      "year": 2022
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Appple-Green-Beckley-WARN-9-30-22.pdf",
+      "title": "Appple Green-Beckley WARN 9-30-22",
+      "year": 2022
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Kroger-Gassaway-10-28-22.pdf",
+      "title": "Kroger Gassaway 10-28-22",
+      "year": 2022
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Mountain-State-Carbon-WARN-3-10-22.pdf",
+      "title": "Mountain State Carbon WARN 3-10-22",
+      "year": 2022
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Ready-Responder-WARN-Notice-2-18-22.pdf",
+      "title": "Ready Responder WARN Notice 2-18-22",
+      "year": 2022
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Science-Application-International-Corporation-WARN-3-1-22.pdf",
+      "title": "Science Application International Corporation WARN 3-1-22",
+      "year": 2022
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Watsonville-Community-Hospital-1-21-22-WARN.pdf",
+      "title": "Watsonville Community Hospital 1-21-22 WARN",
+      "year": 2022
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Monongalia-County-Coal-Resources-WARN-6-4-2021.pdf",
+      "title": "Monongalia County Coal Resources WARN 6-4-2021",
+      "year": 2021
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Mylan-Pharmaceuticals-WARN-5-25-21-Update.pdf",
+      "title": "Mylan Pharmaceuticals WARN 5-25-21 Update",
+      "year": 2021
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Special-Metals-WARN-Notice-12-7-21.pdf",
+      "title": "Special Metals WARN Notice 12-7-21",
+      "year": 2021
+    },
+    {
+      "href": "https://workforcewv.org/wp-content/uploads/2025/02/Watsonville-Community-Hospital-WARN-11-26-21.pdf",
+      "title": "Watsonville Community Hospital WARN 11-26-21",
+      "year": 2021
+    }
+  ],
+  "source": "https://workforcewv.org/job-seeker/layoffs-downsizing/warn-listing/"
+}

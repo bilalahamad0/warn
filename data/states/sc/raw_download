@@ -1,0 +1,602 @@
+era,company,county,location,notice_date,layoff_closure_date,date,jobs,layoff_closure,naics,address,source
+legacy,Fast Lane of Rock Hill,,Rock Hill,,,2/25/2013,31,Closure,722511,,sc/2013.pdf
+legacy,SafeAuto InsuranceCompany,,Hemingway,,,3/19/2013,164,Closure,524210,,sc/2013.pdf
+legacy,Titanium Holdings,,Fort Mill,,,3/31/2013,95,Closure,551112,,sc/2013.pdf
+legacy,Bi-Lo,,Greenville,,,4/17/2013,130,Layoff,551114,,sc/2013.pdf
+legacy,"DSE Systems, Inc.",,Gaffney,,,5/31/2013,42,Layoff,332992,,sc/2013.pdf
+legacy,Mortgage Bank,,Florence,,,6/4/2013,573,Closure,522292,,sc/2013.pdf
+legacy,"Newman Technology SouthCarolina, Inc.",,Aiken,,,6/7/2013,214,Layoff,423120,,sc/2013.pdf
+legacy,"Jostens, Inc.",,Laurens,,,6/24/2013,63,Layoff,453998,,sc/2013.pdf
+legacy,"Spartanburg Steel Products,Inc.",,Spartanburg,,,7/1/2013,64,Layoff,332111,,sc/2013.pdf
+legacy,Sunland Logistics Solutions,,Greenville,,,7/1/2013,47,Layoff,493110,,sc/2013.pdf
+legacy,Sunland Staffing,,Greenville,,,7/1/2013,52,Layoff,561320,,sc/2013.pdf
+legacy,"Capitol ManagementServices, LP",,Greenville,,,07/29/2013,36,Closure,561440,,sc/2013.pdf
+legacy,"First Center, LLC",,Greenville,,,07/29/2013,85,Closure,519190,,sc/2013.pdf
+legacy,Joy Global,,Belton,,,8/1/2013,77,Closure,332111,,sc/2013.pdf
+legacy,Shaw Project ServicesGroup,,Aiken,,,8/6/2013,485,Layoff,541330,,sc/2013.pdf
+legacy,AREVA Federal ServicesLLC,,Aiken,,,8/6/2013,,Layoff,541330,,sc/2013.pdf
+legacy,Filtration Group,,York,,,8/16/2013,96,Layoff,333413,,sc/2013.pdf
+legacy,Palmetto GBA,,Columbia,,,8/23/2013,126,Layoff,524114,,sc/2013.pdf
+legacy,Stacy’s Greenhouses,,York,,,9/8/2013,656,Intent to Sell,111421,,sc/2013.pdf
+legacy,Stacy’s Greenhouses,,Pendleton,,,9/8/2013,61,Intent to Sell,111421,,sc/2013.pdf
+legacy,"Pepperidge Farm, Inc.",,Aiken,,,9/27/2013,115,Closure,722330,,sc/2013.pdf
+legacy,"International AutomotiveComponents, LLC",,Greenville,,,12/20/2013,164,Closure,326199,,sc/2013.pdf
+legacy,"General NutritionCompanies, Inc.",,Anderson,,,10/11/2013,50,Closure,493110,,sc/2013.pdf
+legacy,CGI Federal,,North Charleston,,,11/30/2013,88,Layoff,518210,,sc/2013.pdf
+legacy,Piggly Wiggly,,Summerville,,,03/31/2014,85,Closure,445110,,sc/2013.pdf
+legacy,Piggly Wiggly,,North Charleston,,,03/31/2014,64,Closure,445110,,sc/2013.pdf
+legacy,SCE&G,,Walterboro,,,12/31/2013,67,Closure,221112,,sc/2013.pdf
+legacy,Mortgage Bank,,Florence,,,,23,Closure,522292,,sc/2013.pdf
+legacy,"Caterpillar, Inc.",,Summerville,,,,250,Closure,333120,,sc/2013.pdf
+legacy,Harvey Industries DieCasting LLC,,Aiken,,,11/21/2013,150,Closure,331523,,sc/2013.pdf
+legacy,Heinz,,Florence,,,03/21/2014,198,Closure,311999,,sc/2013.pdf
+legacy,Carolina Furniture,,Sumter,,,01/06/2014,68,Layoff,33712,,sc/2014.pdf
+legacy,"American LaFrance, LLC",,Moncks Corner,,,02/04/2014,101,Closure,336120,,sc/2014.pdf
+legacy,Gannett Publishing Services,,Greenville,,,05/05/2014,117,Closure,511110,,sc/2014.pdf
+legacy,"Champion Laboratories,Inc. (Fram)",,York,,,07/18/2014,229,Closure,333318,,sc/2014.pdf
+legacy,Bi-Lo Holdings,,Orangeburg,,,05/31/2014,54,Closure,551114,,sc/2014.pdf
+legacy,"SSP America, Inc.",,Charleston,,,05/31/2014,63,Closure,722211,,sc/2014.pdf
+legacy,Metrolina Greenhouses,,Pendleton,,,05/31/2014,57,Closure,424930,,sc/2014.pdf
+legacy,Amcor Rigid Plastics,,Blythewood,,,06/09/2014,41,Layoff,326160,,sc/2014.pdf
+legacy,"Jostens, Inc",,Laurens,,,09/30/2014,67,Layoff,453998,,sc/2014.pdf
+legacy,Pepsi Beverages Company,,Columbia,,,05/12/2014,104,Layoff,312111,,sc/2014.pdf
+legacy,General Dynamics,,Ladson,,,07/01/2014,153,Layoff,336992,,sc/2014.pdf
+legacy,Caterpillar,,107 Fountain Inn,,,12/31/2014,235,Closing,333120,,sc/2014.pdf
+legacy,Caterpillar,,111 Fountain Inn,,,12/31/2014,120,Closing,333120,,sc/2014.pdf
+legacy,Nevamar,,Hampton,,,10/12/2014,236,Closing,326130,,sc/2014.pdf
+legacy,Mundy Maintenance,,Greenwood,,,10/26/2014,136,Layoff,313110,,sc/2014.pdf
+legacy,Belk,,Columbia,,,01/15/2015,92,Closure,452111,,sc/2014.pdf
+legacy,Faurecia,,Spartanburg,,,12/05/2014,99,Closure,336390,,sc/2014.pdf
+legacy,ResMed,,Spartanburg,,,06/30/2015,49,Closure,624190,,sc/2014.pdf
+legacy,Bank of America,,Columbia,,,01/31/2015,68,Layoff,522110,,sc/2014.pdf
+legacy,"HGM, Haile Gold Mine,Inc.",,Kershaw,,,02/13/2015,50,Layoff,212221,,sc/2014.pdf
+legacy,CB&I Shaw Constructors,,Jenkinsville,,,01/29/2015,176,Layoff,333120,,sc/2015.pdf
+legacy,Bank of America,,Columbia,,,01/31/2015,68,Layoff,522110,,sc/2015.pdf
+legacy,Tyonek Services Group,,Beaufort,,,03/31/2015,11,Layoff,488190,,sc/2015.pdf
+legacy,Milliken & Company,,Judson,,,04/13/2015,199,Layoff,313110,,sc/2015.pdf
+legacy,Jacobs,,Goose Creek,,,07/10/2015,60,Closure,541711,,sc/2015.pdf
+legacy,Sodexo,,Florence,,,06/30/2015,54,Closure,722310,,sc/2015.pdf
+legacy,Worthington,,Florence,,,06/01/2015,308,Closure,333120,,sc/2015.pdf
+legacy,UTI,,N. Charleston,,,07/31/2015,100,Closure,488510,,sc/2015.pdf
+legacy,Bose,,Blythewood,,,09/18/2015,300,Closure,454111,,sc/2015.pdf
+legacy,"DTZ, Inc.",,Orangeburg,,,06/30/2015,100,Closure,561210,,sc/2015.pdf
+legacy,Piedmont Health Group,,Greenwood,,,07/01/2015,129,Closure,621111,,sc/2015.pdf
+legacy,Wells Fargo & Co.,,Columbia,,,04/29/2015,51,Closure,522292,,sc/2015.pdf
+legacy,Honeywell,,Goose Creek,,,07/15/2015,337,Layoff,54133,,sc/2015.pdf
+legacy,Mohawk Industries,,Landrum,,,12/31//2015,150,Closure,314110,,sc/2015.pdf
+legacy,ArcelorMital,,Georgetown,,,07/24/2015,198,Closure,331110,,sc/2015.pdf
+legacy,ESAB,,Florence,,,03/31/2016,319,Closure,333992,,sc/2015.pdf
+legacy,Aiken/Barnwell CountiesCommunity Action Agcy.,,Aiken,,,06/30/2015,82,Closure,62411,,sc/2015.pdf
+legacy,Urban Outfitters,,Trenton,,,08/18/2015,327,Closure,452910,,sc/2015.pdf
+legacy,First Citizens,,Columbia,,,09/01/2015,77,Closure,522292,,sc/2015.pdf
+legacy,Pillar Hotels & Resorts,,Charleston,,,09/01/2015,52,Closure,721110,,sc/2015.pdf
+legacy,Sodexo,,Orangeburg,,,08/03/2015,94,Closure,722310,,sc/2015.pdf
+legacy,Hill-Rom Holdings Inc.,,Charleston,,,09/15/2015,70,Closure,339112,,sc/2015.pdf
+legacy,UTi,,Lugoff,,,08/24/2015,120,Closure,541611,,sc/2015.pdf
+legacy,CTS (Coyne TextileServices),,Greenville,,,10/31/2015,66,Closure,333318,,sc/2015.pdf
+legacy,UnitedHealth Group,,Duncan,,,10/31/2015,85,Layoff,524114,,sc/2015.pdf
+legacy,Wells Fargo & Co,,Fort Mill,,,11/15/2015,103,Closure,522292,,sc/2015.pdf
+legacy,Belk,,Union,,,01/15/2016,28,Closure,452111,,sc/2015.pdf
+legacy,Maxim Healthcare Services,,Columbia,,,12/15/2015,130,Closure,621610,,sc/2015.pdf
+legacy,Century Aluminum,,Mount Holly,,,12/22/2015,487,Closure,331318,,sc/2015.pdf
+legacy,Consumers Choice,,"Columbia,Greenville, NorthCharleston",,,11/30/2015,82,Closure,524210,,sc/2015.pdf
+legacy,"Frederick J. Hanna &Associates, PC",,Greenville,,,02/10/2016,,Closure,332991,,sc/2016.pdf
+legacy,ADS Logistics,,Gaffney,,,02/15/2016,105,Closure,488510,,sc/2016.pdf
+legacy,Husqvarna Group,,Orangeburg,,,03/06/2016,84,Layoff,333112,,sc/2016.pdf
+legacy,CHEP Recycled,,Simpsonville,,,01/16/2016,,Closure,321920,,sc/2016.pdf
+legacy,Century Aluminum,,Goose Creek,,,07/31/2016,250,Closure,331318,,sc/2016.pdf
+legacy,Dial America,,N. Charleston,,,01/11/2016,150,Layoff,561422,,sc/2016.pdf
+legacy,Dillard’s Inc.,,Aiken,,,03/20/2016,73,Closure,452111,,sc/2016.pdf
+legacy,Walmart,,Winnsboro,,,04/15/2016,165,Closure,452111,,sc/2016.pdf
+legacy,Wells Fargo,,Fort Mill,,,04/03/2016,66,Closure,522292,,sc/2016.pdf
+legacy,Honeywell,,Goose Creek,,,03/03/2016,180,Closure,541330,,sc/2016.pdf
+legacy,CoreLogic,,Columbia,,,05/16/2016,77,Closure,519190,,sc/2016.pdf
+legacy,Amarak,,Greenville,,,05/31/2016,172,Closure,561720,,sc/2016.pdf
+legacy,Wells Fargo,,Fort Mill,,,06/15/2016,1,Closure,522292,,sc/2016.pdf
+legacy,Baldor Electric,,Clio,,,06/09/2016,60,Closure,333999,,sc/2016.pdf
+legacy,Wells Fargo,,Fort Mill,,,07/16/2016,9,Closure,522292,,sc/2016.pdf
+legacy,Southern Season,,Mount Pleasant,,,07/02/2016,96,Closure,445299,,sc/2016.pdf
+legacy,Sealed Air,,Greenville,,,08/26/2016,62,Closure,333993,,sc/2016.pdf
+legacy,Spartan Foods,,Greenville,,,10/14/2016,123,Closure,311999,,sc/2016.pdf
+legacy,Citi,,Mount Pleasant,,,09/15/2016,28,Closure,541513,,sc/2016.pdf
+legacy,Wells Fargo,,Fort Mill,,,07/13/2016,6,Closure,522292,,sc/2016.pdf
+legacy,Baldor Electric,,Clio,,,09/19/2016,4,Closure,333999,,sc/2016.pdf
+legacy,JPS Composites,,Slater,,,09/30/2016,103,Closure,313210,,sc/2016.pdf
+legacy,SoPakCo,,Mullins,,,08/26/2016,116,Layoff,423990,,sc/2016.pdf
+legacy,Caterpillar,,Newberry,,,11/11/2016,10,Closure,335312,,sc/2016.pdf
+legacy,Hubbell,,Cowpens,,,12/01/2016,55,Closing,423610,,sc/2016.pdf
+legacy,WestRock,,Latta,,,11/01/2016,99,Closure,322219,,sc/2016.pdf
+legacy,Baldor Electric,,Clio,,,11/30/2016,7,Closure,333999,,sc/2016.pdf
+legacy,JPS Composites,,Slater,,,10/31/2016,69,Closure,313210,,sc/2016.pdf
+legacy,Stryker Communications,,N. Charleston,,,12/31/2016,88,Closure,339112,,sc/2016.pdf
+legacy,Impresa Aerospace,,Goose Creek,,,12/31/2016,20,Closure,332322,,sc/2016.pdf
+legacy,Amazon,,North Charleston,,,02/15/2017,149,Closure,454111,,sc/2016.pdf
+legacy,Apex Tool Group,,Sumter,,,03/31/2017,161,Layoff,332212,,sc/2017.pdf
+legacy,Coveris High Performance,,Anderson,,,04/06/2017,100,Closure,322220,,sc/2017.pdf
+legacy,Dayco,,Walterboro,,,06/30/2017,122,Closure,326220,,sc/2017.pdf
+legacy,Dupont,,Moncks Corner,,,06/30/2017,106,Closure,325320,,sc/2017.pdf
+legacy,Sodexo,,Columbia,,,06/30/2017,525,Closure,722310,,sc/2017.pdf
+legacy,Aramark,,Charleston,,,06/30/2017,151,Closure,561720,,sc/2017.pdf
+legacy,Staples,,Columbia,,,07/07/2017,221,Closure,42412,,sc/2017.pdf
+legacy,JCPenney,,Charleston,,,07/31/2017,58,Closure,452111,,sc/2017.pdf
+legacy,Resolute Forest Products,,CatawbaLancasterJonesville,,,07/31/2017,222,Closure,322121,,sc/2017.pdf
+legacy,Providence Health`,,Columbia,,,09/03/2017,112,Closure,722310,,sc/2017.pdf
+legacy,Faiveley Phase I,,Greenville,,,08/31/2017,1,Closure,482110,,sc/2017.pdf
+legacy,Duracell,,Lancaster,,,12/31/2018,345,Closure,335912,,sc/2017.pdf
+legacy,Durafiber,,Winnsboro,,,09/11/2017,240,Closure,322219,,sc/2017.pdf
+legacy,PMC Corp,,Clinton,,,09/29/2017,47,Layoff,541614,,sc/2017.pdf
+legacy,Fisher Barton,,Fountain Inn,,,09/15/2017,100,Closure,332119,,sc/2017.pdf
+legacy,BH Media Group,,Florence,,,09/10/2017,63,Layoff,511110,,sc/2017.pdf
+legacy,Fluor Corporation,,Jenkinsville,,,08/01/2017,4003,Layoff,541330,,sc/2017.pdf
+legacy,SCANA,,Jenkinsville,,,09/30/2017,617,Layoff,221118,,sc/2017.pdf
+legacy,"CBI Services, LLC",,Jenkinsville,,,07/31/2017,75,Layoff,332996,,sc/2017.pdf
+legacy,Westinghouse Electric,,Jenkinsville,,,08/31/2017,561,Closure,238210,,sc/2017.pdf
+legacy,Westinghouse Electric,,Rock Hill,,,8/31/2017,113,Layoff,238210,,sc/2017.pdf
+legacy,Kongsberg Automotive,,Easley,,,01/01/2018,97,Closure,332912,,sc/2017.pdf
+legacy,APEX Tool Group,,Sumter,,,11/03/2017,115,Layoff,332216,,sc/2017.pdf
+legacy,Faiveley Transport (PhaseII),,Greenville,,,11/05/2017,6,Closure,482110,,sc/2017.pdf
+legacy,Wells Fargo & Co,,Fort Mill,,,07/13/2017,120,Closure,522110,,sc/2017.pdf
+legacy,CB&I,,Laurens,,,03/20/2018,250,Closure,332996,,sc/2017.pdf
+legacy,Faiveley (Phase III),,Greenville,,,11/30/2017,6,Closure,482110,,sc/2017.pdf
+legacy,Faiveley (Final Phase),,Greenville,,,12/30/2017,11,Closure,482110,,sc/2017.pdf
+legacy,Cardinal LogisticsManagement,,Blythewood,,,01/08/2018,102,Layoff,488510,,sc/2017.pdf
+legacy,"On Demand Publishing,LLC (1)",,North Charleston,,,7/3/2018,58,Closure,511130,,sc/2018.pdf
+legacy,Dish,,Spartanburg,,,3/18/2018,60,Layoff,515210,,sc/2018.pdf
+legacy,Wellman (1),,Johnsonville,,,3/6/2018,92,Layoff,423930,,sc/2018.pdf
+legacy,Kongsberg Automotive,,Easley,,,3/17/2018,61,Closure,332912,,sc/2018.pdf
+legacy,Walmart,,Laurens,,,4/27/2018,86,Closure,423990,,sc/2018.pdf
+legacy,Reliable ManagementSolutions,,Lexington,,,3/31/2018,237,Closure,333924,,sc/2018.pdf
+legacy,Coats & Clark,,Greer,,,,61,Closure,423990,,sc/2018.pdf
+legacy,BAE Systems,,Summerville,,,9/27/2018,233,Layoff,541330,,sc/2018.pdf
+legacy,Lippert ComponentsManufacturing,,Chester,,,6/30/2018,134,Closure,238190,,sc/2018.pdf
+legacy,Family Medicine Centers ofSouth Carolina,,Columbia/Irmo/West Columbia,,,5/31/2018,114,Closure,621111,,sc/2018.pdf
+legacy,Sitel,,SC – statewide,,,4/6/2018,8,Layoff,541990,,sc/2018.pdf
+legacy,"Warehouse Services, Inc",,Graniteville,,,6/12/2018,180,Layoff,493110,,sc/2018.pdf
+legacy,ALICE Manufacturing,,Easley,,,7/16/2018,182,Closure,313210,,sc/2018.pdf
+legacy,GILDAN,,Hamer,,,7/27/2018,54,Closure,315210,,sc/2018.pdf
+legacy,ESAB Group,,Union,,,5/25/2018,63,Closure,811310,,sc/2018.pdf
+legacy,AFCO,,Anderson,,,12/31/2018,395,Closure,336390,,sc/2018.pdf
+legacy,KENCO,,Summerville,,,8/31/2018,100,Layoff,541614,,sc/2018.pdf
+legacy,Wells Fargo,,Fort Mill,,,8/20/2018,77,Layoff,522110,,sc/2018.pdf
+legacy,DHL,,Spartanburg,,,9/15/2018,576,Layoff,561990,,sc/2018.pdf
+legacy,SYKES,,Greenwood,,,9/13/2018,213,Closure,541910,,sc/2018.pdf
+legacy,Aramark,,Rock Hill,,,7/31/2018,182,Layoff,454390,,sc/2018.pdf
+legacy,Element TV Company,,Winnsboro,,,10/5/2018,126,Closure,443142,,sc/2018.pdf
+legacy,Verizon,,North Charleston,,,9/29/2018,92,Closure,517911,,sc/2018.pdf
+legacy,IHG,,North Charleston,,,11/2/2018,626,Closure,721110,,sc/2018.pdf
+legacy,BCBS,,Florence,,,11/7/2018,133,Layoff,524210,,sc/2018.pdf
+legacy,BCBS,,Surfside,,,11/7/2018,111,Layoff,524210,,sc/2018.pdf
+legacy,MPW Industrial Services,,Greer,,,12/1/2018,75,Closure,423110,,sc/2018.pdf
+legacy,"CB&I Project ServicesGroup, LLC",,Aiken,,,1/7/2019,502,Layoff,221113,,sc/2018.pdf
+legacy,Orano Federal Services,,Aiken,,,1/7/2019,114,Layoff,541330,,sc/2018.pdf
+legacy,Wells Fargo,,Fort Mill,,,1/15/2019,111,Layoff,522110,,sc/2018.pdf
+legacy,"CB&I Project ServicesGroup, LLC",,Aiken,,,2/4/2019,372,Layoff,221113,,sc/2018.pdf
+legacy,Orano Federal Services,,Aiken,,,2/4/2019,70,Layoff,541330,,sc/2018.pdf
+legacy,Saulsbury Industries,,Jenkensville,,,2/8/2019,110,Layoff,238210,,sc/2018.pdf
+legacy,Clarus Linen Systems,,Spartanburg,,,2/17/2019,88,Layoff,812331,,sc/2018.pdf
+legacy,CB&I Project ServicesGroup,,Aiken,,,3/4/2019,105,Layoff,221113,,sc/2019.pdf
+legacy,Orano Federal Services,,Aiken,,,3/4/2019,13,Layoff,541330,,sc/2019.pdf
+legacy,"Lowe’s Companies, Inc",,Charleston,,,3/25/2019,80,Closure,444130,,sc/2019.pdf
+legacy,CB&I Project ServicesGroup,,Aiken,,,4/1/2019,369,Layoff,221113,,sc/2019.pdf
+legacy,Orano Federal Services,,Aiken,,,4/1/2019,38,Layoff,541330,,sc/2019.pdf
+legacy,Invista,,Lugoff,,,4/12/2019,62,Layoff,314999,,sc/2019.pdf
+legacy,"Saulsbury Industries, Inc",,Jenkinsville,,,3/14/2019,80,Layoff,238210,,sc/2019.pdf
+legacy,VF Jeanswear Limited,,Greenville,,,4/13/2019,108,Closure,493110,,sc/2019.pdf
+legacy,Masonite Corporations,,Denmark,,,7/31/2019,95,Closure,321911,,sc/2019.pdf
+legacy,Spectrum Pharmaceuticals,,Bluffton,,,4/12/2019,1,Layoff,325412,,sc/2019.pdf
+legacy,"Thesys CAT, LLC",,Charleston,,,4/15/2019,41,Layoff,541511,,sc/2019.pdf
+legacy,The RADGroup,,Gaffney,,,4/16/2019,126,Closure,451130,,sc/2019.pdf
+legacy,Walmart,,Columbia,,,3/29/2019,,Closure,445110,,sc/2019.pdf
+legacy,CB&I Project ServicesGroup,,Aiken,,,4/1/2019,19,Layoff,221113,,sc/2019.pdf
+legacy,Hire Right,,Chapin,,,5/31/2019,15,Layoff,561611,,sc/2019.pdf
+legacy,Hire Right,,Columbia,,,5/31/2019,30,Closure,561611,,sc/2019.pdf
+legacy,"ACS Industries, Inc",,Manning,,,4/1/2019,31,Layoff,327910,,sc/2019.pdf
+legacy,HBD/Thermoid,,Elgin,,,6/1/2019,59,Closure,326220,,sc/2019.pdf
+legacy,Bon Secours Mercy Health,,Greenville,,,5/31/2019,60,Closure,622110,,sc/2019.pdf
+legacy,"Shaw Industries Group, Inc",,Central,,,4/26/2019,249,Closure,325211,,sc/2019.pdf
+legacy,"Plastic Omnium AutoExteriors, LLC",,Anderson,,,6/28/2019,290,Closure,336390,,sc/2019.pdf
+legacy,Vesuvius USA Corporation,,Dillon,,,7/31/2019,,Closure,327110,,sc/2019.pdf
+legacy,SCHAEFFLER,,Fort Mill,,,7/31/2020,189,Closure,336310,,sc/2019.pdf
+legacy,CB&I Project ServicesGroup,,Aiken,,,6/10/2019,7,Layoff,221113,,sc/2019.pdf
+legacy,Gear Design &Manfacturing –AAM Charleston,,North Charleston,,,8/01/2019,85,Closure,336350,,sc/2019.pdf
+legacy,"United Sporting CompaniesEllett Brothers, LLC",,Chapin,,,9/5/2019,173,Closure,451110,,sc/2019.pdf
+legacy,Invista,,Lugoff,,,9/2/2019,51,Closure,35220,,sc/2019.pdf
+legacy,"Shaw Industries Group, Inc",,Clinton,,,6/24/2019,113,Closure,314110,,sc/2019.pdf
+legacy,CB&I Project ServicesGroup,,Aiken,,,8/23/2019,29,Layoff,221113,,sc/2019.pdf
+legacy,Continental Powertrain,,Fountain Inn,,,12/13/2019,40,Closure,561990,,sc/2019.pdf
+legacy,AECOM (CTTR),,South Carolina,,,9/30/2019,10,Layoff,541330,,sc/2019.pdf
+legacy,Pain ManagementAssociates,,Statewide,,,08/20/2019,257,Closure,621498,,sc/2019.pdf
+legacy,TFE LogisticsCedar Crest Rd,,Spartanburg,,,10/30/2019,812,Layoff,424340,,sc/2019.pdf
+legacy,TFE LogisticsFalling Creek Rd,,Spartanburg,,,10/30/2019,663,Layoff,424330,,sc/2019.pdf
+legacy,NAPA,,Cayce,,,12/31/2019,46,Closure,441310,,sc/2019.pdf
+legacy,Hydro,,Belton,,,11/15/2019,172,Closure,331318,,sc/2019.pdf
+legacy,"Amcor Rigid PackagingUSA, LLC",,Blythewood,,,11/24/2019,39,Layoff,326199,,sc/2019.pdf
+legacy,TTEC Services Corporation,,UnitedStates/Statewide,,,10/5/2019,13,Layoff,561422,,sc/2019.pdf
+legacy,Hire Right,,Columbia,,,12/6/2019,38,Closure,561611,,sc/2019.pdf
+legacy,BKI,,Simpsonville,,,12/28/2019,80,Closure,423440,,sc/2019.pdf
+legacy,Georgia-Pacific WoodProducts LLC,,McCormick,,,12/21/2019,97,Closure,322121,,sc/2019.pdf
+legacy,Georgia-PacificAllendale Facility,,Fairfax,,,12/21/2019,142,Layoff,322121,,sc/2019.pdf
+legacy,Charter Communications,,Greenville,,,9/12/2019,80,Layoff,515210,,sc/2019.pdf
+legacy,"DSV Solutions, LLC",,Charleston,,,2/2/2020,69,Layoff,488510,,sc/2019.pdf
+legacy,Nippon Electric Glass,,Chester,,,2/14/2020,145,Closure,326199,,sc/2019.pdf
+legacy,GNC,,Anderson,,,3/1/2020,65,Closure,446191,,sc/2020.pdf
+legacy,Chef’s Pantry,,Easley,,,3/21/2020,240,Closure,333294,,sc/2020.pdf
+legacy,BOSCH,,Charleston,,,7/31/2021,430,Layoff,336320,,sc/2020.pdf
+legacy,AECOM,,South Carolina,,,3/14/2020,10,Closure,541330,,sc/2020.pdf
+legacy,WestRock,,North Charleston,,,3/9/2020,23,Closure,561910,,sc/2020.pdf
+legacy,Georgia-Pacific,,Darlington,,,4/1/2020,81,Closure,322291,,sc/2020.pdf
+legacy,"Rockland Industries, Inc",,Bamberg,,,2/24/2020,133,Closure,313310,,sc/2020.pdf
+legacy,Rite Aid DistributionCenter,,Spartanburg,,,3/19/2020,224,Closure,493110,,sc/2020.pdf
+legacy,WestRock,,North Charleston,,,5/8/2020,1,Closure,561910,,sc/2020.pdf
+legacy,"Strongarm, LLC",,Marion,,,4/1/2020,40,Layoff,336390,,sc/2020.pdf
+legacy,Kiawah Island Golf Resort,,Kiawah Island,,,4/4/2020,1090,Layoff,713910,,sc/2020.pdf
+legacy,Go Rentals,,Charleston/JohnsIsland,,,3/21/2020,275,Layoff,532111,,sc/2020.pdf
+legacy,EventHaus Rentals,,Hanahan,,,3/18/2020,18,Layoff,532289,,sc/2020.pdf
+legacy,ZF Transmissions,,Gray Court,,,3/20/2020,2300,Layoff,33611,,sc/2020.pdf
+legacy,Take 5 Change/DrivenBrands,,Charleston/Columbia,,,3/22/2020,12,Layoff,811191,,sc/2020.pdf
+legacy,Benteler,,Duncan,,,3/30/2020,296,Layoff,336390,,sc/2020.pdf
+legacy,ZF Chassis Systems,,Duncan,,,3/27/2020,250,Layoff,811113,,sc/2020.pdf
+legacy,Carolina Eye Associates,,Cheraw,,,3/20/2020,4,Layoff,621320,,sc/2020.pdf
+legacy,ALSCO,,Columbia,,,3/20/2020,3,Layoff,812331,,sc/2020.pdf
+legacy,Halls Chophouse(Charleston),,Charleston,,,3/18/2020,181,Layoff,722511,,sc/2020.pdf
+legacy,Collegiate Hotel Group,,Columbia,,,3/16/2020,59,Layoff,721110,,sc/2020.pdf
+legacy,America’s Auto Auction,,Greer,,,3/17/2020,,Layoff,423110,,sc/2020.pdf
+legacy,MAU,,Greer,,,3/29/2020,315,Layoff,339999,,sc/2020.pdf
+legacy,IHG Army Hotels,,Fort Jackson,,,4/3/2020,52,Layoff,721110,,sc/2020.pdf
+legacy,Ahern Rentals,,North Charleston,,,3/30/2020,1,Layoff,423820,,sc/2020.pdf
+legacy,MetaCoastal,,North Myrtle Beach,,,3/20/2020,12,Layoff,212313,,sc/2020.pdf
+legacy,C-H-Guenther & Son,,Prosperity,,,3/27/2020,120,Layoff,311812,,sc/2020.pdf
+legacy,SCHULTE Companies,,Columbia,,,3/16/2020,27,Layoff,332311,,sc/2020.pdf
+legacy,Advanced MechanicalServices,,Columbia,,,3/27/2020,53,Layoff,238220,,sc/2020.pdf
+legacy,Hamrick Mills,,Gaffney,,,3/30/2020,405,Layoff,313210,,sc/2020.pdf
+legacy,Grace Management Group,,Spartanburg,,,3/26/2020,72,Layoff,561110,,sc/2020.pdf
+legacy,Sunshine Fitness Mgmtdba Planet Fitness,,Statewide,,,4/5/2020,264,Layoff,713940,,sc/2020.pdf
+legacy,"Hooters of America, LLC",,Statewide,,,3/16/2020,283,Layoff,722511,,sc/2020.pdf
+legacy,Asbury Automotive Group(JLPV),,Greenville,,,4/3/2020,14,Layoff,441110,,sc/2020.pdf
+legacy,Asbury Automotive Groupdba Lexus of Greenville,,Greenville,,,4/3/2020,23,Layoff,441110,,sc/2020.pdf
+legacy,Asbury Automotive GroupToyoto/Scion,,Greenville,,,4/3/2020,36,Layoff,441110,,sc/2020.pdf
+legacy,Asbury Automotive GroupCrown Nissan,,Greenville,,,4/3/2020,23,Layoff,441110,,sc/2020.pdf
+legacy,MAU – BMW,,Greer,,,3/31/2020,744,Layoff,339999,,sc/2020.pdf
+legacy,MAU – BMW,,Greer,,,4/6/2020,359,Layoff,339999,,sc/2020.pdf
+legacy,"Cinemark USA, Inc",,SC,,,3/26/2020,118,Closure,512131,,sc/2020.pdf
+legacy,Halls on the Beach,,Folly Beach,,,3/18/2020,53,Layoff,722511,,sc/2020.pdf
+legacy,Halls Chophouse Columbia,,Columbia,,,3/18/2020,150,Layoff,722511,,sc/2020.pdf
+legacy,High Cotton,,Charleston,,,3/18/2020,81,Layoff,722511,,sc/2020.pdf
+legacy,Halls Signature Events,,Charleston,,,3/18/2020,27,Layoff,722511,,sc/2020.pdf
+legacy,Halls on Exchange,,Charleston,,,3/18/2020,83,Layoff,722511,,sc/2020.pdf
+legacy,Halls on the Creek,,Greenville,,,3/18/2020,132,Layoff,722511,,sc/2020.pdf
+legacy,Halls Chophouse Nexton,,Summerville,,,3/18/2020,151,Layoff,722511,,sc/2020.pdf
+legacy,Husqvarna ConsumerOutdoor,,Orangeburg,,,3/30/2020,850,Layoff,339999,,sc/2020.pdf
+legacy,Beach House Resort,,Hilton Head Island,,,3/23/2020,57,Layoff,721110,,sc/2020.pdf
+legacy,GITI Tire Manufacturing,,Richburg,,,4/4/2020,636,Layoff,326211,,sc/2020.pdf
+legacy,Palmetto Brewing,,Charleston,,,3/21/2020,9,Layoff,312120,,sc/2020.pdf
+legacy,Peak Workforce Solutions,,York,,,4/8/2020,38,Layoff,561311,,sc/2020.pdf
+legacy,Newbold Services,,Graniteville,,,4/8/2020,38,Layoff,561720,,sc/2020.pdf
+legacy,Peak Workforce Solutions,,Seneca,,,4/8/20/20,65,Layoff,561311,,sc/2020.pdf
+legacy,Newbold Services,,Gray Court,,,4/8/2020,32,Layoff,561720,,sc/2020.pdf
+legacy,IHG Army Hotels,,Fort Jackson,,,4/10/2020,70,Layoff,721110,,sc/2020.pdf
+legacy,Medieval TimesMedieval Knights,,Myrtle Beach,,,4/12/2020,131,Layoff,711110,,sc/2020.pdf
+legacy,Kravet Inc,,Anderson,,,4/8/2020,54,Layoff,424310,,sc/2020.pdf
+legacy,Peak Workforce Solutions,,Manning,,,4/8/2020,27,Layoff,561311,,sc/2020.pdf
+legacy,Fiber Industries LLC,,Darlington,,,4/6/2020,136,Layoff,335921,,sc/2020.pdf
+legacy,John Manville,,Spartanburg,,,4/10/2020,6,Layoff,327993,,sc/2020.pdf
+legacy,The YMCA,,Barnwell/Graniteville/North Augusta,,,4/24/2020,,Layoff,624190,,sc/2020.pdf
+legacy,Alupress,,Laurens,,,4/10/2020,125,Layoff,327420,,sc/2020.pdf
+legacy,Invista Sarl,,Lugoff,,,6/16/2020,71,Layoff,325220,,sc/2020.pdf
+legacy,HGC Port Royal LLC,,Hilton Head,,,3/25/2020,31,Layoff,713910,,sc/2020.pdf
+legacy,HGC Shipyard LLC,,Hilton Head,,,3/25/2020,25,Layoff,713910,,sc/2020.pdf
+legacy,HGC Oyster Reef,,Hilton Head,,,3/25/2020,17,Layoff,713910,,sc/2020.pdf
+legacy,Southern Specialty FinanceInc,,Statewide,,,5/1/2020,26,Layoff,522390,,sc/2020.pdf
+legacy,Peak Workforce Solutions,,Manning,,,4/15/2020,26,Layoff,561311,,sc/2020.pdf
+legacy,Peak Workforce Solutions,,Lake City,,,4/15/2020,39,Layoff,561311,,sc/2020.pdf
+legacy,TTX Company,,North Augusta,,,4/22/2020,80,Layoff,487210,,sc/2020.pdf
+legacy,Visionworks,,Greenville,,,4/4/2020,7,Layoff,446130,,sc/2020.pdf
+legacy,Visionworks,,Mrytle Beach,,,4/4/2020,5,Layoff,446130,,sc/2020.pdf
+legacy,Arauco NA,,Bennettsville,,,5/18/2020,126,Closure,321213,,sc/2020.pdf
+legacy,Liberty Steel GeorgetownInc,,Georgetown,,,5/15/2020,130,Layoff,423510,,sc/2020.pdf
+legacy,OS Restaurant ServicesLLC,,Statewide,,,04/27/2020,2476,Layoff,722511,,sc/2020.pdf
+legacy,Enterprise,,Columbia/Greer,,,4/30/2020,359,Layoff,532111,,sc/2020.pdf
+legacy,Hard Rock Cafe,,Myrtle Beach,,,4/13/2020,82,Layoff,722511,,sc/2020.pdf
+legacy,Charleston Embassy Suites,,Charleston,,,3/12/2020,140,Layoff,721110,,sc/2020.pdf
+legacy,Embassy SuitesBy Hilton,,Columbia,,,3/12/2020,117,Layoff,721110,,sc/2020.pdf
+legacy,Alsco,,Charleston,,,3/18/2020,36,Layoff,812331,,sc/2020.pdf
+legacy,Asbury dba Lexus ofGreenville,,Greenville,,,5/1/2020,2,Layoff,441110,,sc/2020.pdf
+legacy,Asbury dba JLPV ofGreenville,,Greenville,,,5/1/2020,2,Layoff,441110,,sc/2020.pdf
+legacy,Kravet Inc,,Anderson,,,5/1/2020,21,Layoff,424310,,sc/2020.pdf
+legacy,Hilton Greenville,,Greenville,,,3/14/2020,67,Layoff,721110,,sc/2020.pdf
+legacy,Interfor – Company Facility,,Georgetown,,,4/27/2020,114,Layoff,321113,,sc/2020.pdf
+legacy,Cox Automotive,,Darlington,,,5/17/2020,75,Layoff,423110,,sc/2020.pdf
+legacy,Greenville Embassy Suites,,Greenville,,,3/12/2020,137,Layoff,721110,,sc/2020.pdf
+legacy,TTX,,North Augusta,,,5/12/2020,97,Layoff,488210,,sc/2020.pdf
+legacy,Transdev,,Midlands,,,6/30/2020,147,Layoff,485113,,sc/2020.pdf
+legacy,Transport Care Services,,Midlands,,,6/30/2020,57,Layoff,485113,,sc/2020.pdf
+legacy,Mayville EngineeringCompany,,Greenwood,,,7/6/2020,165,Closure,332312,,sc/2020.pdf
+legacy,Preserve at Verdae,,Greenville,,,3/12/2020,52,Layoff,713910,,sc/2020.pdf
+legacy,Hotel Bennett,,Charleston,,,5/31/2020,153,Layoff,721110,,sc/2020.pdf
+legacy,James Hardie BuildingProducts Inc,,Summerville,,,7/3/2020,60,Closure,444110,,sc/2020.pdf
+legacy,North Charleston EmbassySuites,,North Charleston,,,3/12/2020,118,Layoff,721110,,sc/2020.pdf
+legacy,TC TranscontinentalPackaging,,Spartanburg,,,7/31/2020,106,Layoff,326111,,sc/2020.pdf
+legacy,Oppermann,,Anderson,,,8/1/2020,20,Closure,313220,,sc/2020.pdf
+legacy,The State Media Company,,Columbia,,,7/26/2020,135,Layoff,511110,,sc/2020.pdf
+legacy,Akebono BrakeCorporation,,West Columbia,,,8/1/2020,351,Closure,336390,,sc/2020.pdf
+legacy,Wild Dunes Resort,,Isle of Palms,,,6/15/2020,88,Layoff,721110,,sc/2020.pdf
+legacy,King Charles Inn,,Charleston,,,5/14/2020,50,Layoff,721110,,sc/2020.pdf
+legacy,Toray CMA,,Moore,,,6/7/2020,90,Layoff,325211,,sc/2020.pdf
+legacy,"Warehouse Services, Inc",,Woodruff,,,3/22/2020,79,Layoff,439110,,sc/2020.pdf
+legacy,"Warehouse Services, Inc",,Liberty,,,3/22/2020,89,Layoff,439110,,sc/2020.pdf
+legacy,Renaissance Charleston,,Charleston,,,3/21/2020,60,Layoff,721110,,sc/2020.pdf
+legacy,Wild Dunes Resort,,Isle of Palms,,,6/1/2020,70,Layoff,721110,,sc/2020.pdf
+legacy,Durham School Services,,Charleston County,,,6/30/2020,465,Layoff,485410,,sc/2020.pdf
+legacy,Flex,,West Columbia,,,8/31/2020,188,Layoff,334418,,sc/2020.pdf
+legacy,WestRock,,North Charleston,,,8/16/2020,21,Closure,561910,,sc/2020.pdf
+legacy,"Tyson Prepared Foods, Inc.",,Columbia,,,8/14/2020,146,Closure,541611,,sc/2020.pdf
+legacy,John Manville,,Spartanburg,,,6/16/2020,10,Layoff,327993,,sc/2020.pdf
+legacy,John Manville,,Spartanburg,,,5/15/2020,30,Layoff,327993,,sc/2020.pdf
+legacy,Amentum,,Statewide,,,8/28/2020,10,Layoff,541330,,sc/2020.pdf
+legacy,Renaissance CharlestonHistoric District Hotel,,Charleston,,,8/26/2020,60,Layoff,721110,,sc/2020.pdf
+legacy,Wyndham Mills House,,Charleston,,,7/1/2020,77,Layoff,721110,,sc/2020.pdf
+legacy,Hilton Grand Vacations,,Myrtle Beach,,,7/1/2020,112,Layoff,721110,,sc/2020.pdf
+legacy,Delaware North,,Charleston,,,7/1/2020,120,Layoff,722511,,sc/2020.pdf
+legacy,Beneteau Boat Plant,,Marion,,,9/16/2020,180,Closure,336612,,sc/2020.pdf
+legacy,DoubleTree by Hilton,,Myrtle Beach,,,7/22/2020,6,Layoff,721110,,sc/2020.pdf
+legacy,Shadwell Farm,,Camden,,,8/31/2020,50,Closure,713940,,sc/2020.pdf
+legacy,Cooper Standard,,Spartanburg,,,3/20/2020,520,Layoff,336390,,sc/2020.pdf
+legacy,ARD Logistics,,Ladson,,,9/30/2020,106,Layoff,488510,,sc/2020.pdf
+legacy,HMSHost,,Myrtle Beach,,,10/15/2020,3,Layoff,722513,,sc/2020.pdf
+legacy,Avis Budget Group,,Myrtle Beach,,,8/28/2020,3,Layoff,532111,,sc/2020.pdf
+legacy,Avis Budget Group,,North Charleston,,,8/28/2020,12,Layoff,532111,,sc/2020.pdf
+legacy,Avis Budget Group,,Greer,,,8/28/2020,19,Layoff,532111,,sc/2020.pdf
+legacy,Renaissance CharlestonHistoric District Hotel,,Charleston,,,9/22/2020,60,Layoff,721110,,sc/2020.pdf
+legacy,SYKES,,Kingstree,,,10/31/2020,99,Closure,561422,,sc/2020.pdf
+legacy,VISTANA MBMANAGEMENT INCSheraton BroadwayPlanation,,Myrtle Beach,,,11/13/2020,1,Layoff,721199,,sc/2020.pdf
+legacy,"VSE Myrtle Beach, LLCSheraton BroadwayPlanation",,Myrtle Beach,,,11/13/2020,67,Layoff,721199,,sc/2020.pdf
+legacy,PCA of America,,Newberry,,,11/16/2020,81,Closure,322130,,sc/2020.pdf
+legacy,Elevate Textiles,,Carlisle,,,11/15/2020,120,Closure,313310,,sc/2020.pdf
+legacy,Wild Dunes,,Isle of Palms,,,9/26/2020,24,Layoff,721110,,sc/2020.pdf
+legacy,P.F. Chang’s China Bistro,,Greenville,,,9/17/2020,75,Layoff,722511,,sc/2020.pdf
+legacy,P.F. Chang’s China Bistro,,Mt. Pleasant,,,9/17/2020,75,Layoff,722511,,sc/2020.pdf
+legacy,P.F. Chang’s China Bistro,,Myrtle Beach,,,9/17/2020,75,Layoff,722511,,sc/2020.pdf
+legacy,Sodexo – Lexington TwoDistrict Education Center,,West Columbia,,,9/21/2020,89,Layoff,722310,,sc/2020.pdf
+legacy,"VSE Myrtle Beach, LLCSheraton BroadwayPlantation",,Myrtle Beach,,,11/13/2020,69,Layoff,721199,,sc/2020.pdf
+legacy,Mann+Hummel,,Dillon,,,12/24/2020,196,Closure,336390,,sc/2020.pdf
+legacy,Century Aluminum,,Goose Creek,,,12/31/2020,289,Closure,331314,,sc/2020.pdf
+legacy,"ABM Janitorial, Inc",,Kershaw,,,11/1/2020,,Layoff,561720,,sc/2020.pdf
+legacy,Terex USA LLC,,Rock Hill,,,1/1/2021,144,Layoff,333924,,sc/2020.pdf
+legacy,Liberty Steel GeorgetownInc,,Georgetown,,,12/28/2020,104,Layoff,332111,,sc/2020.pdf
+legacy,"C & S Wholesale Services,Inc",,Greenville,,,1/8/2021,287,Layoff,445110,,sc/2020.pdf
+legacy,"Sodexo, Inc. – NewberryCollege",,Newberry,,,3/1/2020,51,Layoff,722310,,sc/2020.pdf
+legacy,DISH Network(RemanufacturingOperations),,Spartanburg,,,3/5/2021,150,Closure,515210,,sc/2020.pdf
+legacy,"VSE Myrtle Beach, LLCSheraton Broadway",,Myrtle Beach,,,1/22/2021,1,Layoff,721199,,sc/2020.pdf
+legacy,Cardinal Health,,Fort Mill,,,1/29/2021,66,Closure,423450,,sc/2020.pdf
+legacy,Mundy Service Corporation,,Gaston,,,3/31/2021,132,Layoff,811310,,sc/2020.pdf
+legacy,"LSC Communications US,LLC",,Spartanburg,,,2/18/2021,401,Closure,323111,,sc/2020.pdf
+legacy,"C & S Wholesale Services,Inc",,Greenville,,,2/19/2021,56,Layoff,445110,,sc/2020.pdf
+legacy,Cardinal Health,,Fort Mill,,,2/26/2021,66,Closure,423450,,sc/2020.pdf
+legacy,The Westin Hilton HeadIsland Resort & Spa,,Hilton Head Island,,,3/21/2020,276,Layoff,721110,,sc/2020.pdf
+legacy,Kingston Resorts,,Myrtle Beach,,,07/03/2021,94,Layoff,721110,,sc/2021.pdf
+legacy,Walmart,,Columbia,,,04/09/2021,332,Closure,452210,,sc/2021.pdf
+legacy,Cardinal Health,,Fort Mill,,,03/26/2021,29,Layoff,423450,,sc/2021.pdf
+legacy,"C & S Wholesales, Inc.",,Greenville,,,03/06/2021,93,Layoff,445110,,sc/2021.pdf
+legacy,"C & S Wholesales, Inc.",,Greenville,,,05/07/2021,366,Closure,445110,,sc/2021.pdf
+legacy,Cardinal Health,,Fort Mill,,,04/30/2021,4,Layoff,423450,,sc/2021.pdf
+legacy,Cardinal Health,,Fort Mill,,,05/21/2021,128,Layoff,423450,,sc/2021.pdf
+legacy,Marriott,,Columbia,,,03/18/2021,99,Layoff,721110,,sc/2021.pdf
+legacy,Kobelco ConstructionMachinery,,Moore,,,05/01/2021,102,Layoff,423810,,sc/2021.pdf
+legacy,Southeast Frozen Foods,,Gaston,,,03/24/2021,73,Closure,424420,,sc/2021.pdf
+legacy,Cardinal Health,,Fort Mill,,,06/18/2021,11,Layoff,423450,,sc/2021.pdf
+legacy,Cardinal Health,,Fort Mill,,,06/30/2021,22,Closure,423450,,sc/2021.pdf
+legacy,DAK Americas,,Moncks Corner,,,12/31/2021,200,Closure,325220,,sc/2021.pdf
+legacy,"WPM Holdings/WheelPros, LLC’s",,York,,,09/15/2021,121,Layoff,336390,,sc/2021.pdf
+legacy,"FUJIFILM ManufacturingU.S.A., Inc",,Greenwood,,,10/01/2021,420,Closure,333314,,sc/2021.pdf
+legacy,"Warehouse Services, Inc",,Greenville,,,8/8/2021,176,Layoff,493110,,sc/2021.pdf
+legacy,Frontier Communications,,Myrtle Beach,,,10/1/2021,63,Closure,561420,,sc/2021.pdf
+legacy,"Montage Palmetto Bluff,LLC",,Bluffton,,,01/01/2022,132,Closing,721110,,sc/2021.pdf
+legacy,"The Muffin Man, Inc",,Laurens,,,01/07/2022,215,Closing,311813,,sc/2021.pdf
+legacy,Montage Palmetto BluffPaint Box,,Bluffton,,,01/01/2022,7,Closing,721110,,sc/2021.pdf
+legacy,Watsonville CommunityHospital,,Columbia,,,07/14/2022,2,Closure,622110,,sc/2021.pdf
+legacy,Central Freight Lines,,Florence,,,12/17/2021,7,Closure,484121,,sc/2021.pdf
+legacy,Central Freight Lines,,Greenville,,,12/17/2021,20,Closure,484121,,sc/2021.pdf
+legacy,Central Freight Lines,,Lexington,,,12/17/2021,7,Closure,484121,,sc/2021.pdf
+legacy,Central Freight Lines,,Knightsville,,,12/17/2021,8,Closure,484121,,sc/2021.pdf
+modern,"DSV Solutions, LLC",Laurens,,1/5/2022,3/4/2022,,117,Permanent Layoff,,"101 Michelin Drive, Laurens, SC 29360",sc/2022.pdf
+modern,Boyd Corporation,Cherokee,,1/12/2022,3/15/2022,,34,Permanent Closure,,"595 Wilcox Avenue, Gaffney, SC 29341",sc/2022.pdf
+modern,Alorica Inc.,Greenville,,1/24/2022,3/25/2022,,174,Permanent Layoff,,"901 Holland Rd, Greenville, SC 29607",sc/2022.pdf
+modern,Utility Partners of America,Greenville,,2/18/2022,4/1/2022,,70,Permanent Layoff,,"1041 E. Butler Road, Greenville, South Carolina 29607",sc/2022.pdf
+modern,Belk Fulfillment Center,Union,,2/28/2022,4/30/2022,,310,Permanent Closure,,"Furman L. Fendley Hwy, Jonesville, SC 29353",sc/2022.pdf
+modern,Borden Dairy,Charleston,,3/31/2022,5/31/2022,,177,Permanent Closure,,"5001 LaCross Rd, North Charleston, SC 29406",sc/2022.pdf
+modern,Alorica Inc.,Greenville,,4/19/2022,6/18/2022,,12,Permanent Layoff,,"901 Holland Rd, Greenville, SC 29607",sc/2022.pdf
+modern,Startek,Horry,,5/17/2022,5/29/2022,,161,Permanent Layoff,,"310 Hinson Dr, Myrtle Beach, SC 29579",sc/2022.pdf
+modern,Avara Pharmaceutical Services,Aiken,,5/18/2022,7/18/2022,,93,Permanent Closure,,"65 Windham Blvd, Aiken, SC 29805.",sc/2022.pdf
+modern,FirstBank/Real Genius,Richland,,5/31/2022,7/15/2022,,35,Permanent Layoff,,"211 Commerce Street, Ste. 300, Nashville, TN 37201",sc/2022.pdf
+modern,Sodexo,Charleston,,6/2/2022,7/31/2022,,137,Permanent Closure,,"165 Ashley Avenue, Charleston, SC 29425",sc/2022.pdf
+modern,Sodexo,Charleston,,6/2/2022,7/31/2022,,63,Permanent Closure,,"25 Courtenay Drive, Charleston, SC 29425",sc/2022.pdf
+modern,Sodexo,Charleston,,6/2/2022,7/31/2022,,70,Permanent Closure,,"10 McClennan Banks, Charleston, SC 29425",sc/2022.pdf
+modern,CEVA Logistics,Chesterfield,,6/7/2022,8/6/2022,,131,Permanent Closure,,"2583 HWY 601 N Pageland, SC 29728",sc/2022.pdf
+modern,AeroPure LLC,Berkeley,,6/14/2022,8/15/2022,,2,Permanent Closure,,"1006-B Bankton Circle, Hanahan, SC 29410",sc/2022.pdf
+modern,"HireRight, Inc.",Lexington,,7/1/2022,9/1/2022,,57,Permanent Layoff,,"917 Chapin Road, P.O. BOX 353, Chapin, SC 29306",sc/2022.pdf
+modern,Watsonville Community Hospital,Richland,,7/11/2022,8/30/2022,,2,Permanent Closure,,"75 Nielson Street, Watsonville, CA 95076",sc/2022.pdf
+modern,"(NFI) National Distribution Centers, LLC",York,,7/18/2022,9/16/2022,,5,Permanent Layoff,,"845 Paragon Way, Rock Hill, SC 29730",sc/2022.pdf
+modern,Santa Cruz Nutritionals,Sumter,,7/26/2022,8/1/2022,,155,Permanent Layoff,,"2720 Southgate Drive, Sumter, SC 29154",sc/2022.pdf
+modern,"Communication Service for the Deaf, Inc.",Richland,,8/5/2022,9/30/2022,,95,Permanent Closure,,"9005 Two Notch Road Columbia, SC 29223",sc/2022.pdf
+modern,DHL Supply Chain,Greenville,,8/25/2022,11/4/2022,,250,Permanent Closure,,"220 GSP Logistics Pkwy, Ste 100, Greer, SC 29651",sc/2022.pdf
+modern,"U.S, Patriot Tactical (Galls, LLC)",Richland,,9/1/2022,10/28/2022,,74,Permanent Closure,,"131 Berkshire Dr. Columbia, SC 29223",sc/2022.pdf
+modern,BayFirst Financial,York,,9/23/2022,11/25/2022,,1,Permanent Closure,,"2520 Countryside Boulevard, Clearwater, FL 33763",sc/2022.pdf
+modern,"PreZero US Services, LLC.",Oconee,,9/27/2022,1/19/2023,,57,Permanent Closure,,"2333 Sandifer Boulevard, Westminster, SC 29693",sc/2022.pdf
+modern,Santa Cruz Nutritionals,Sumter,,9/29/2022,12/31/2022,,170,Permanent Closure,,"2720 Southgate Drive, Sumter, SC 29154",sc/2022.pdf
+modern,WB Frozen US LLC (Weston Foods US LLC),Cherokee,,10/3/2022,12/4/2022,,204,Permanent Closure,,"131 Corporate Drive, Gaffney, SC 29342",sc/2022.pdf
+modern,Kohler Co. - Vitreous Operations,Spartanburg,,10/12/2022,12/12/2022,,133,Permanent Closure,,"4000 South Pine Street, Spartanburg, South Carolina 29302",sc/2022.pdf
+modern,Lake City Community Hospital,Florence,,10/12/2022,12/31/2022,,222,Permanent Closure,,"258 N. Ron McNair Blvd, Lake City, SC 29560",sc/2022.pdf
+modern,Color-Fi (Gissing North America),Sumter,,10/27/2022,10/28/2022,,108,Permanent Closure,,"320 Neeley Street, Sumter, SC 29150",sc/2022.pdf
+modern,Southeast Service Coporation (SSC Service Solutions),Charleston,,10/31/2022,12/31/2022,,178,Permanent Layoff,,"7297 Peppermill Parkway, North Charleston, SC 29418",sc/2022.pdf
+modern,Williamsburg Regional Hospital,Williamsburg,,11/9/2022,1/17/2023,,267,Permanent Closure,,"500 Nelson Boulevard, Kingstree, SC 29556",sc/2022.pdf
+modern,"The Shyft Group, Inc.",Charleston,,11/15/2022,1/17/2023,,71,Permanent Closure,,"6555 Fain Street, North Charleston, SC 29406",sc/2022.pdf
+modern,Fiber Industries,Darlington,,11/30/2022,1/29/2023,,250,Permanent Layoff,,"1000 E. Mclver Road, Darlington, SC 29532",sc/2022.pdf
+modern,"ABM Industry Groups, LLC",Pickens,,12/14/2022,12/31/2022,,71,Permanent Layoff,,"105 Sikes Hall, Clemson, SC 29634",sc/2022.pdf
+modern,Renfro LLC,Laurens,,1/3/2023,3/5/2023,,100,Permanent Closure,,"1702 Springdale Drive, Clinton, South Carolina 29325",sc/2023.pdf
+modern,"Monitronics International, Inc. (dba Brinks Home)",York,,1/4/2023,3/5/2023,,1,Permanent Layoff,,"1990 Wittington Place, Dallas, Texas 75234",sc/2023.pdf
+modern,HealthHelp Nurse Triage 24,York,,1/23/2023,3/24/2023,,1,Permanent Closure,,"16945 Northcase Drive, Suite 1300, Houston, Texas 77060",sc/2023.pdf
+modern,"Footprint South Carolina, LLC",Chester,,1/26/2023,3/29/2023,,168,Permanent Closure,,"546 L&C Distribution Park, Richburg, South Carolina 29729",sc/2023.pdf
+modern,Parkdale Mills,Aiken,,1/30/2023,3/31/2023,,102,Permanent Closure,,"418 Ascauga Lake Road, Graniteville, South Carolina 29829",sc/2023.pdf
+modern,"Phenix Engineered Textiles, Inc.",Spartanburg,,2/10/2023,2/10/2023,,30,Permanent Layoff,,"300 Landrum Mill Road, Landrum, South Carolina 29356",sc/2023.pdf
+modern,"PeerStreet, Inc.",Richland,,2/15/2023,4/16/2023,,2,Permanent Layoff,,"2121 Park Place, Suite 250, El Segundo, California 90245",sc/2023.pdf
+modern,"Fraenkische USA, LP",Anderson,,2/16/2023,4/1/2023 - 12/31/2023,,164,Permanent Closure,,"416 A.M. Ellison Road, Anderson, South Carolina 29621",sc/2023.pdf
+modern,TELUS International,Charleston,,2/22/2023,3/6/2023,,266,Permanent Layoff,,"3450 Ingleside Boulevard, North Charleston, South Carolina 29456",sc/2023.pdf
+modern,DAK Americas PET Resins,Berkeley,,2/28/2023,3/1/2023,,125,Permanent Closure,,"3350 Cypress Gardens Road, Moncks Corner, South Carolina 29461",sc/2023.pdf
+modern,Radius Global Solutions LLC,Richland,,3/7/2023,4/3/2023,,1,Permanent Layoff,,"3320 W. Sahara Ave Ste 200, Las Vegas, Nevada 89102",sc/2023.pdf
+modern,Timken Gaffney Bearing Plant,Cherokee,,3/9/2023,5/4/2023 - 12/31/2023,,187,Permanent Closure,,"100 Timken Road, Gaffney, South Carolina 29340",sc/2023.pdf
+modern,Morrsion Healthcare,Greenville,,3/13/2023,5/7/2023,,72,Permanent Layoff,,"1 St. Francis Drive, Greenville, South Carolina 29601",sc/2023.pdf
+modern,Stanley Black & Decker,Chesterfield,,3/20/2023,5/19/2023 - 11/10/2023,,179,Permanent Closure,,"100 Stanley Road, Cheraw, South Carolina 29520",sc/2023.pdf
+modern,"Aspiration Partners, Inc.",York,,3/24/2023,5/26/2023 - 6/1/2023,,1,Permanent Layoff,,"4551 Glencoe Ave., Suite 300, Marina Del Rey, California 90292",sc/2023.pdf
+modern,Transdev Servces,Charleston,,4/5/2023,6/30/2023,,180,Permanent Layoff,,"3664 Leeds Ave, Charleston, South Carolina 29405",sc/2023.pdf
+modern,Cascades Tissue Group,Barnwell,,4/25/2023,7/28/2023,,138,Permanent Closure,,"285 Midfield Road, Barnwell, South Carolina 29812",sc/2023.pdf
+modern,"WestRock Services, LLC",Charleston,,5/2/2023,8/30/2023,,499,Permanent Closure,,"5600 Virginia Avenue, Charleston, South Carolina 29406",sc/2023.pdf
+modern,BD (C.R. Bard Inc.),Berkeley,,5/8/2023,2025,,274,Permanent Closure,,"428 Power House Road, Moncks Corner, South Carolina 29461",sc/2023.pdf
+modern,"Nielsen & Bainbridge, LLC",Berkeley,,5/8/2023,5/19/2023 - 7/14/2023,,108,Permanent Closure,,"6 Corporate Parkway, Goose Creek, South Carolina 29445",sc/2023.pdf
+modern,Sodexo,Newberry,,5/18/2023,5/31/2023,,90,Permanent Closure,,"2100 College St. Newberry, SC 29108",sc/2023.pdf
+modern,Transdev Fleet Services (First Vehicle Services),Beaufort,,5/22/2023,7/1/2023,,13,Permanent Closure,,"120 Shanklin Road, Beaufort, South Carolina 29906",sc/2023.pdf
+modern,Maysteel,Sumter,,6/27/2023,8/31/2023,,70,Permanent Closure,,"1485 Diebold Dr., Sumter, SC 29153",sc/2023.pdf
+modern,Caraustar Industrial &,CYoonrskumer Products G,,"roup7,/ 5In/2c0.23",9/3/2023 - 10/30/2023,,71,Permanent Closure,,"1379 McDow Dr., Rock Hill, SC 29732",sc/2023.pdf
+modern,PBS Radiology Busine,sSs uEmxpteerrts,,7/7/2023,9/6/2023,,1,Permanent Layoff,,"6980 Sierra Center Pkwy., Suite 90, Reno, NV 89502",sc/2023.pdf
+modern,Prisma Health,Richland,,7/13/2023,8/31/2023,,266,Permanent Layoff,,"300 E. McBee Ave. Suite 300, Greenville, SC 29601",sc/2023.pdf
+modern,Prisma Health,Greenville,,7/13/2023,8/31/2023,,215,Permanent Layoff,,"300 E. McBee Ave. Suite 300, Greenville, SC 29601",sc/2023.pdf
+modern,Prisma Health,Sumter,,7/13/2023,8/31/2023,,61,Permanent Layoff,,"300 E. McBee Ave. Suite 300, Greenville, SC 29601",sc/2023.pdf
+modern,Prisma Health,Oconee,,7/13/2023,8/31/2023,,41,Permanent Layoff,,"300 E. McBee Ave. Suite 300, Greenville, SC 29601",sc/2023.pdf
+modern,Prisma Health,Pickens,,7/13/2023,8/31/2023,,33,Permanent Layoff,,"300 E. McBee Ave. Suite 300, Greenville, SC 29601",sc/2023.pdf
+modern,Prisma Health,Greenville,,7/13/2023,8/31/2023,,29,Permanent Layoff,,"300 E. McBee Ave. Suite 300, Greenville, SC 29601",sc/2023.pdf
+modern,Prisma Health,Laurens,,7/13/2023,8/31/2023,,23,Permanent Layoff,,"300 E. McBee Ave. Suite 300, Greenville, SC 29601",sc/2023.pdf
+modern,Prisma Health,Greenville,,7/13/2023,8/31/2023,,11,Permanent Layoff,,"300 E. McBee Ave. Suite 300, Greenville, SC 29601",sc/2023.pdf
+modern,Prisma Health,Greenville,,7/13/2023,8/31/2023,,10,Permanent Layoff,,"300 E. McBee Ave. Suite 300, Greenville, SC 29601",sc/2023.pdf
+modern,Legacy Supply Chain S,"eCrvhiacrele IsIt o(""nLegacy"")",,8/28/2023,10/29/2023,,47,Permanent Closure,,"2200 Charleston Regional Pkwy. Charleston, SC 29492",sc/2023.pdf
+modern,Thiveworks Administra,"tSivtaet eSwerivdiec e- sM, LuLltiCple",,Co9u/n1t5ie/s2023,11/30/2023,,5,Permanent Layoff,,"1000 Jefferson Street, Suite 2C, Lynchburg, VA, 24504",sc/2023.pdf
+modern,Wells Fargo,Richland,,9/28/2023,6/30/2024,,525,Permanent Layoff,,"101 Greystone Blvd., Columbia, SC 29210",sc/2023.pdf
+modern,First Savings Bank,Statewide - Multiple,,Co9u/n2t9ie/s2023,11/30/2023,,1,Permanent Layoff,,"702 North Shore Drive, Suite 300, Jeffersonville, IN 47130",sc/2023.pdf
+modern,Ryder Integrated Logist,"iGcsr,e eInncv i(l""leRyder"")",,10/9/2023,12/31/2023,,185,Permanent Layoff,,"1000 Corporate Centre Dr., Franklin, TN 37067",sc/2023.pdf
+modern,"Cummins, Inc.",Charleston,,10/9/2023,12/15/2023 - 07/31/2024,,72,Permanent Closure,,"4500 Leeds Ave., Suite 500, North Charleston, SC 29405",sc/2023.pdf
+modern,"Rice Industries, LLC",Darlington,,10/13/2023,12/15/2023,,7,Permanent Closure,,"1651 Mineral Springs Road, Darlington, SC 29540",sc/2023.pdf
+modern,Innovative Fibers,Spartanburg,,10/17/2023,12/17/2023,,71,Permanent Closure,,"185 Littlejohn Street, Spartanburg, SC 29301",sc/2023.pdf
+modern,"Westlake Royal Stone,",LCLhCester,,10/17/2023,12/18/2023,,110,Permanent Closure,,"590 Ecology Lane, Chester, SC 29706",sc/2023.pdf
+modern,"Cygnus Home Service,","LCLhCar,l eds/bto/an Yelloh",,10/25/2023,12/15/2023,,5,Permanent Closure,,"3560 McLeod Mill Rd., Johns Island, SC 29455",sc/2023.pdf
+modern,"Cygnus Home Service,","LLLexCi,n dg/tbo/na Yelloh",,10/25/2023,12/15/2023,,6,Permanent Closure,,"297 Industrial Dr., Lexington, SC 29072",sc/2023.pdf
+modern,Tyson Foods,Richland,,11/8/2023,1/8/2024,,241,Permanent Closure,,"1970 Bluff Rd., Columbia, SC 29201",sc/2023.pdf
+modern,"Proterra, Inc.",Greenville,,11/27/2023,1/26/2024,,290,Permanent Closure,,"1 Whitlee Ct., Greenville, SC 29607",sc/2023.pdf
+modern,GDI Integrated Facility Services,Lexington,,1/4/2024,3/5/2024,,100,Permanent Layoff,,"4400 12th Street Extension, West Columbia, SC 29172",sc/2024.pdf
+modern,GDI Integrated Facility Services,Lexington,,1/4/2024,3/5/2024,,4,Permanent Layoff,,"222 Old Wire Rd., West Columbia, SC 29172",sc/2024.pdf
+modern,GDI Integrated Facility Services,Spartanburg,,1/4/2024,3/5/2024,,32,Permanent Layoff,,"402 John Dodd Rd., Spartanburg, SC 29303",sc/2024.pdf
+modern,Kohler Co.,Spartanburg,,1/8/2024,4/6/2024 - 4/19/2024,,71,Permanent Closure,,"4000 South Pine St., Spartanburg, SC 29302",sc/2024.pdf
+modern,MAHLE Behr,Charleston,,1/9/2024,12/31/2024,,466,Permanent Closure,,"4500 Leeds Ave., Charleston, SC 29405",sc/2024.pdf
+modern,Fruit of the Loom,Berkeley,,1/22/2024,3/22/2024,,119,Permanent Closure,,"1116 Business Park Rd., Summerville, SC 29483",sc/2024.pdf
+modern,Ascend Performance Materials,Greenwood,,1/22/2024,3/31/2024,,64,Permanent Layoff,,"1515 Highway 246 S., Greenwood, SC 29646",sc/2024.pdf
+modern,"Block, Inc.",Statewide - Multiple Counties,,1/30/2024,3/30/2024,,3,Permanent Layoff,,"1955 Broadway St., Ste 600, Oakland, CA 94612",sc/2024.pdf
+modern,"TTI Consumer Power Tools, Inc.",Cherokee,,2/29/2024,5/1/2024,,114,Permanent Closure,,"34 Commerce Dr., Gaffney, SC 29340 (HART facility)",sc/2024.pdf
+modern,Gentherm,Greenville,,3/1/2024,5/3/2024,,124,Permanent Closure,,"120 Ellcon Dr., Greenville, SC 29601",sc/2024.pdf
+modern,Stanley Black & Decker,York,,3/11/2024,5/10/2024 - 12/31/2024,,192,Permanent Closure,,"4260 Pleasant Rd., Fort Mill, SC 29708",sc/2024.pdf
+modern,BIC Corporation,Cherokee,,3/22/2024,5/24/2024 - 12/31/2024,,46,Permanent Closure,,"1 Commerce Dr., Gaffney, SC 29340",sc/2024.pdf
+modern,DAV-Force Inc.,Berkeley,,4/8/2024,6/7/2024,,94,Permanent Layoff,,"103 Guidance Rd., Goose Creek, SC 29445",sc/2024.pdf
+modern,Legacy Supply Chain Services II,Berkeley,,4/19/2024,6/19/2024 - 7/3/2024,,48,Permanent Closure,,"830 Drop Off Dr., Ste B, Summerville, SC 29486",sc/2024.pdf
+modern,Liberty Steel Group,Georgetown,,4/22/2024,6/23/2024 - 7/7/2024,,78,Temporary Layoff,,"420 S. Hazard St., Georgetown, SC 29440",sc/2024.pdf
+modern,Sodexo Inc. and Affiliates,Charleston,,4/30/2024,6/30/2024,,136,Permanent Layoff,,"10 Hammond Ave., Charleston, SC 29409",sc/2024.pdf
+modern,"Carolina Cotton Works, Inc.",Cherokee,,5/3/2024,7/2/2024,,120,Permanent Closure,,"14 Commerce Dr., Gaffney, SC 29340",sc/2024.pdf
+modern,T-Roc Global,Statewide - Multiple Counties,,5/3/2024,5/31/2024,,100,Permanent Layoff,,"800 S. Douglas Rd., Ste 450, Coral Gables, FL 33134",sc/2024.pdf
+modern,Charter Communications LLC,Greenville,,5/9/2024,7/8/2024,,74,Permanent Layoff,,"1511 S. Batesville Rd., Greer, SC 29650",sc/2024.pdf
+modern,"Elevate Textiles, Inc.",Dillon,,5/21/2024,7/31/2024,,53,Permanent Closure,,"2948 Faithful Rd., Hamer, SC 29547",sc/2024.pdf
+modern,"Able Care Transport, LLC",Pickens,,6/1/2024,6/29/2024,,3,Permanent Closure,,"117 Star View St., Easley, SC 29640",sc/2024.pdf
+modern,FedEx - USCA facility,Lexington,,6/5/2024,9/3/2024,,134,Permanent Closure,,"150 Queen Parkway, West Columbia, SC 29169",sc/2024.pdf
+modern,FedEx - FLOA facility,Florence,,6/6/2024,9/3/2024,,50,Permanent Closure,,"709 W. Lucas St., Florence, SC 29501",sc/2024.pdf
+modern,FedEx - MYRA facility,Horry,,6/6/2024,9/3/2024,,57,Permanent Closure,,"1600 Stockholder Ave., Myrtle Beach, SC 29577",sc/2024.pdf
+modern,"Shaw Industries Group, Inc.",Lexington,,6/6/2024,8/7/2024,,203,Permanent Layoff,,"4401 St. Andrews Rd., Columbia, SC 29210",sc/2024.pdf
+modern,Caterpillar,Sumter,,6/7/2024,8/9/2024 - 9/30/2024,,109,Permanent Closure,,"650 Jefferson Rd., Sumter, SC 29153",sc/2024.pdf
+modern,Novant Health,Lancaster,,6/25/2024,8/25/2024,,90,Permanent Layoff,,"6237 Carolina Commons Dr., Indian Land, SC 29707",sc/2024.pdf
+modern,Wells Fargo,Richland,,6/25/2024,8/25/2024,,254,Permanent Closure,,"101 Greystone Blvd., Columbia, SC 29210",sc/2024.pdf
+modern,"SI Group, Inc.",Orangeburg,,6/26/2024,9/1/2024 - 3/1/2025,,74,Permanent Layoff,,"725 Cannon Bridge Rd., Orangeburg, SC 29116",sc/2024.pdf
+modern,"Charter Communications, LLC",Greenville,,6/28/2024,8/27/2024,,132,Permanent Layoff,,"1511 S. Batesville Rd., Greer, SC 29650",sc/2024.pdf
+modern,"Delta Apparel, LLC",Beaufort,,7/1/2024,8/29/2024,,5,Permanent Closure,,"1256 Fording Island Rd., Suite 275, Bluffton, SC 29910",sc/2024.pdf
+modern,"Delta Apparel, LLC",Charleston,,7/1/2024,8/29/2024,,9,Permanent Closure,,"316 King St., Suite A, Charleston, SC 29401",sc/2024.pdf
+modern,"Delta Apparel, LLC",Greenville,,7/1/2024,8/29/2024,,7,Permanent Closure,,"201 W. McBee Ave., Greenville, SC 29601",sc/2024.pdf
+modern,"Delta Apparel, LLC",Horry,,7/1/2024,8/29/2024,,5,Permanent Closure,,"10835 Kings Rd., Suite 720, Myrtle Beach, SC 29572",sc/2024.pdf
+modern,Winn Management Group LLC,Beaufort,,7/24/2024,9/30/2024,,70,Permanent Layoff,,"640 Laurel Bay Rd., Beaufort, SC 29906",sc/2024.pdf
+modern,Amentum,Beaufort,,7/31/2024,9/2/2024,,62,Permanent Layoff,,"Geiger Blvd., Beaufort, SC 29906",sc/2024.pdf
+modern,DiscoverFresh Foods,Greenville,,8/1/2024,8/1/2024,,7,Permanent Layoff,,"600 S. Main St., Suite 300, Greenville, SC 29601",sc/2024.pdf
+modern,DiscoverFresh Foods,Pickens,,8/1/2024,8/1/2024,,53,Permanent Layoff,,"211 Pine Rd., Easley, SC 29642",sc/2024.pdf
+modern,Whole Foods Market,Beaufort,,8/2/2024,10/1/2024,,90,Permanent Closure,,"50 Shelter Cove Ln., Suite R, Hilton Head Island, SC 29928",sc/2024.pdf
+modern,Interfor,Dorchester,,8/19/2024,8/19/24 - 9/20/24,,88,Permanent Layoff,,"200 N Maple St., Summerville, SC 29483",sc/2024.pdf
+modern,"Charter Communications, LLC",Greenville,,8/28/2024,10/28/2024,,32,Permanent Layoff,,"1511 S. Batesville Rd., Greer, SC 29650",sc/2024.pdf
+modern,Lost Boys Interactive,York,,9/9/2024,9/9/2024,,1,Permanent Layoff,,"6417 Normandy Ln., Suite 201, Madison, WI 53719",sc/2024.pdf
+modern,Tervis Tumbler Company,Horry,,9/10/2024,11/11/24 - 12/20/24,,4,Permanent Layoff,,"1315 Celebrity Cir., Suite #111, Myrtle Beach, SC 29577",sc/2024.pdf
+modern,"McKesson Medical-Surgical, Inc.",York,,9/11/2024,11/18/2024,,13,Permanent Layoff,,"885 Paragon Way, Rock Hill, SC 29730",sc/2024.pdf
+modern,Ascend Performance Materials,Greenwood,,10/16/2024,12/6/2024,,208,Permanent Closure,,"1515 Highway 246 S., Greenwood, SC 29646",sc/2024.pdf
+modern,International Paper,Georgetown,,11/1/2024,1/5/2025,,675,Permanent Closure,,"700 S. Kaminski Street, Georgetown, SC 29440",sc/2024.pdf
+modern,Rich Products Corporation (Rich's),Laurens,,11/13/2024,01/31/25 - 02/28/25,,184,Permanent Closure,,"1405 S. Main St., Fountain Inn, SC 29644",sc/2024.pdf
+modern,The Boeing Company,Charleston,,11/15/2024,1/17/2025,,220,Permanent Layoff,,"5300/5400 International Blvd., North Charleston, SC 29418",sc/2024.pdf
+modern,PL Developments,Laurens,,11/21/2024,1/31/2025,,113,Permanent Closure,,"1874 SC-72 and 28966 SC-76 East, Clinton, SC 29325",sc/2024.pdf
+modern,Denkai America,Kershaw,,11/27/2024,1/31/2025,,60,Permanent Closure,,"29 Battleship Road, Ext., Camden, SC 29020",sc/2024.pdf
+modern,The Boeing Company,Charleston,,12/6/2024,2/21/2025,,67,Permanent Layoff,,"5400 International Blvd., North Charleston, SC 29418",sc/2024.pdf
+modern,"Natural Fiber Welding, Inc.",Greenville,,12/10/2024,2/8/2025,,1,Permanent Layoff,,"6533 N. Galena Road, Peoria, IL 61614",sc/2024.pdf
+modern,"McKesson Medical-Surgical, Inc.",York,,12/13/2024,3/3/2025,,179,Permanent Layoff,,"885 Paragon Way, Rock Hill, SC 29730",sc/2024.pdf
+modern,Atrium Hospitality,Richland,,12/18/2024,1/6/2025,,120,Permanent Closure,,"200 Stoneridge Dr., Columbia, SC 29210",sc/2024.pdf
+modern,"Vimo, Inc.",Statewide - Multiple Counties,,12/20/2024,2/19/2025,,9,Permanent Layoff,,"1305 Terra Bella Ave., Mountain View, CA 94043",sc/2024.pdf
+modern,D&A Consulting,Statewide - Multiple Counties,,12/30/2024,2/19/2025,,13,Permanent Layoff,,"1305 Terra Bella Ave., Mountain View, CA 94043",sc/2024.pdf
+modern,Tupperware,Williamsburg,,6/11/2024,9/28/2024 - 1/14/2025,,46,Permanent Layoff,,"248 Tupperware Rd., Hemingway, SC 29554",sc/2025.pdf
+modern,The Boeing Company,Charleston,,2/15/2025,4/4/2025 - 4/18/2025,,8,Permanent Layoff,,"5400 International Blvd., North Charleston, SC 29418",sc/2025.pdf
+modern,Yokohama TWS North America,Spartanburg,,2/18/2025,4/19/2025,,90,Permanent Closure,,"570 Trelleborg Dr., Spartanburg, SC 29301",sc/2025.pdf
+modern,ASRC Federal,Charleston,,2/27/2025,7/31/2025,,292,Permanent Layoff,,"2000 Bainbridge Ave., North Charleston, SC 29405",sc/2025.pdf
+modern,Tupperware,Williamsburg,,3/4/2025,4/4/2025 - 6/13/2025,,102,Permanent Closure,,"248 Tupperware Rd., Hemingway, SC 29554",sc/2025.pdf
+modern,Proterra Powered LLC,Greenville,,3/6/2025,3/6/2025,,85,Permanent Layoff,,"1605 Poplar Dr. Ext., Greer, SC 29651",sc/2025.pdf
+modern,Proterra Powered LLC,Greenville,,3/10/2025,3/10/2025,,7,Permanent Layoff,,"1605 Poplar Dr. Ext., Greer, SC 29651",sc/2025.pdf
+modern,MetoKote Corporation,Greenville,,4/1/2025,6/1/2025,,113,Permanent Closure,,"101 Milledge Rd., Greenville, SC 29605",sc/2025.pdf
+modern,Hood Container,Greenville,,4/15/2025,6/15/2025,,60,Permanent Closure,,"1224 Old Stage Rd., Simpsonville, SC 29681",sc/2025.pdf
+modern,Limestone University,Cherokee,,4/17/2025,4/30/2025,,478,Permanent Closure,,"1115 College Dr., Gaffney, SC 29340",sc/2025.pdf
+modern,"Ron Group, LLC (dba Blue Sky Specialty Pharmacy)",Charleston,,5/6/2025,6/19/2025 - 7/3/2025,,125,Permanent Layoff,,"1501 Belle Isle Ave., #150, Mt. Pleasant, SC 29464",sc/2025.pdf
+modern,Bicycle Corporation of America (Kent),Clarendon,,5/9/2025,6/25/2025,,64,Permanent Closure,,"1000 Bicycle Way, Manning, SC 29102",sc/2025.pdf
+modern,"Compass Group USA, Inc. (dba Chartwells)",Spartanburg,,5/14/2025,6/30/2025,,350,Permanent Layoff,,"7092B Howard St., Hearon Bus Ctr., Spartanburg, SC 29303",sc/2025.pdf
+modern,DAV-Force Inc.,Berkeley,,5/21/2025,8/1/2025 - 10/1/2025,,76,Permanent Layoff,,"103 Guidance Rd., Goose Creek, SC 29445",sc/2025.pdf
+modern,Sodexo,Dorchester,,5/21/2025,6/30/2025 - 7/3/2025,,210,Permanent Layoff,,"801 John McKissick Way, Summerville, SC 29483",sc/2025.pdf
+modern,"CACI, Inc.",Sumter,,6/2/2025,7/31/2025,,109,Permanent Layoff,,"846 Dryden Way, Shaw AFB, Sumter, SC 29152",sc/2025.pdf
+modern,CEF Solutions Inc.,Greenville,,6/11/2025,8/31/2025,,108,Permanent Layoff,,"1 Bridge Plaza North, Suite 910, Fort Lee, NJ 07024",sc/2025.pdf
+modern,"NSLC Darlington, Inc. (dba Canfor Southern Pine)",Darlington,,6/26/2025,8/25/2025,,120,Permanent Closure,,"110 Chesterfield Lumber Dr., Darlington, SC 29532",sc/2025.pdf
+modern,"Elliott Sawmilling Co., LLC (dba Canfor Southern Pine)",Hampton,,6/26/2025,8/25/2025,,170,Permanent Closure,,"4426 Steep Bottom Rd., Estill, SC 29918",sc/2025.pdf
+modern,"IG Design Group Americas, Inc.",Lexington,,6/26/2025,8/26/2025,,112,Permanent Closure,,"832 Summerland Ave., Batesburg-Leesville, SC 29006",sc/2025.pdf
+modern,Quality Built,Statewide - Mu,,ltiple 7C/7o/u2n0t2ie5s,7/3/2025,,3,Permanent Closure,,"633 S. Andrews Ave., Fort Lauderdale, FL 33301",sc/2025.pdf
+modern,"Sodexo, Inc. and Affiliates",York,,7/11/2025,7/31/2025,,177,Permanent Layoff,,"701 Oakland Ave., Rock Hill, SC 29733",sc/2025.pdf
+modern,Cooperative Health,Richland,,7/14/2025,9/12/2025,,80,Permanent Layoff,,"221 Dawson Rd., Columbia, SC 29223",sc/2025.pdf
+modern,KIRA Services,Beaufort,,7/15/2025,8/11/2025,,11,Permanent Layoff,,"Bldg 1078 2nd Ave., Beaufort, SC 29904",sc/2025.pdf
+modern,"WeDriveU, Inc.",Charleston,,7/29/2025,10/1/2025,,215,Permanent Closure,,"3664 Leeds Ave., North Charleston, SC 29405",sc/2025.pdf
+modern,Anchor Bar of Myrtle Beach,Horry,,8/18/2025,8/31/2025,,29,Permanent Closure,,"6401 N. Kings Highway Myrtle Beach, SC 29572",sc/2025.pdf
+modern,"IG Design Group Americas, Inc.",Lexington,,8/21/2025,10/10/2025 - 10/24/2025,,1,Permanent Closure,,"832 Summerland Ave., Batesburg-Leesville, SC 29006",sc/2025.pdf
+modern,PL Developments,Greenville,,08/29/205,10/30/2025,,114,Permanent Layoff,,"513 Old Griffin Rd., Piedmont, SC 29673",sc/2025.pdf
+modern,East Coast Migrant Head Start Project,Statewide - Mu,,ltipl1e 0C/1o7u/n2t0ie2s5,11/1/2025,,9,Temporary Layoff,,"2301 Sugar Bush Rd., Suite 400 Raleigh, NC 27612",sc/2025.pdf
+modern,Santee Print Works,Sumter,,10/20/2025,1/30/2026,,140,Permanent Closure,,"19 Progress St., Sumter, SC 29153",sc/2025.pdf
+modern,Atkore Plastics Southeast,York,,11/6/2025,1/6/2026 - 9/30/2026,,42,Permanent Layoff,,"2650 Bennett Rd., Fort Mill, SC 29715",sc/2025.pdf
+modern,Sodexo (HCA Grand Strand Medical),Horry,,11/10/2025,1/31/2026,,85,Permanent Layoff,,"809 82nd Pkwy., Myrtle Beach, SC 29572",sc/2025.pdf
+modern,"Best Dressed Chicken, Inc.",Saluda,,11/21/2025,1/20/2026,,4,Permanent Layoff,,"262 Speigner Rd., Ward, SC 29166",sc/2025.pdf
+modern,House of Raeford,Williamsburg,,12/1/2025,11/14/2025,,216,Temporary Layoff,,"1344 Battery Park Rd., Nesmith, SC 29580",sc/2025.pdf
+modern,"SC Industrial Holdings, LLC",Lexington,,12/1/2025,1/30/2026,,78,Temporary Closure,,"201 and 230 Metropolitan Dr., West Columbia, SC 29170",sc/2025.pdf
+modern,Railcrew Xpress,Statewide - Mu,,ltipl1e 2C/2o2u/n2t0ie2s5,2/27/2026,,58,Permanent Closure,,"101 Armour Rd., Suite B, North Kansas City, MO 64116",sc/2025.pdf
+modern,"WeDriveU, Inc.",Charleston,,12/28/2025,2/28/2026,,194,Permanent Closure,,"3664 Leeds Ave., North Charleston, SC 29405",sc/2025.pdf
+modern,Saddle Creek Logistics Services,Spartanburg,,1/2/2026,3/5/2026,,130,Permanent Layoff,,"21 Inland Pkwy, Duncan, SC 29651",sc/2026.pdf
+modern,SMBC MANUBANK (JeniusBank),Statewide - Mu,,ltiple 1C/8o/u2n0t2ie6s,3/10/2026,,3,Permanent Layoff,,"277 Park Avenue, New York, NY 10172",sc/2026.pdf
+modern,"eREV Supply Chain, LLC",Charleston,,1/14/2026,2/28/2026,,133,Permanent Layoff,,"4136 Carolina Commerce Pkwy, Charleston, SC 29456",sc/2026.pdf
+modern,DLH Solutions,Charleston,,1/15/2026,2/28/2026,,194,Permanent Layoff,,"4136 Carolina Commerce Pkwy, Charleston, SC 29456",sc/2026.pdf
+modern,James Hardie Building Products Inc.,Dorchester,,1/15/2026,3/16/2026,,78,Permanent Closure,,"152 Belgium Way, Summerville, SC 29483",sc/2026.pdf
+modern,Milliken (Cedar Hill Plant),Union,,2/11/2026,4/17/2026,,126,Permanent Closure,,"225 Bob Little Rd., Jonesville, SC 29353",sc/2026.pdf
+modern,International Paper Company,Georgetown,,2/18/2026,5/1/2026 - 12/31/2026,,126,Permanent Closure,,"1480 International Dr., Georgetown, SC 29440",sc/2026.pdf
+modern,Koppers Inc.,Florence,,2/20/2026,4/21/2026,,66,Permanent Layoff,,"280 N. Koppers Rd., Florence, SC 29506",sc/2026.pdf
+modern,"First Brands Group, LLC (AVM)",Marion,,2/23/2026,2/23/2026 - 5/31/2026,,64,Permanent Closure,,"3108 Hwy. 76, East Marion, SC 29571",sc/2026.pdf
+modern,"Parsec, LLC",Charleston,,2/23/2026,5/1/2026,,39,Permanent Closure,,"4350 Goer Drive North, Charleston, SC 29406",sc/2026.pdf
+modern,Charter Communications,Lexington,,3/5/2026,5/7/2026,,62,Permanent Closure,,"3347 Platt Springs Road, West Columbia, SC 29170",sc/2026.pdf
+modern,C2 Technologies,Richland,,3/2/2026,3/6/2026,,1,Permanent Layoff,,"7601 Lewinsville Road, Suite 200 in McLean, VA 22102",sc/2026.pdf
+modern,KPR US LLC,Kershaw,,3/10/2026,5/15/2026,,19,Permanent Closure,,"90 East Hampton St., Camden, SC 29020",sc/2026.pdf
+modern,Textron Systems Corporation,Berkeley,,3/23/2026,5/21/2026 - 8/14/2026,,58,Permanent Layoff,,"5 Alliance Dr., Goose Creek, SC 29445",sc/2026.pdf
+modern,KPR US LLC,Kershaw,,3/24/2026,5/29/2026,,23,Permanent Closure,,"90 East Hampton St., Camden, SC 29020",sc/2026.pdf
+modern,"ABM Industry Groups, LLC",Charleston,,4/7/2026,4/13/2026 - 7/7/2026,,122,Permanent Layoff,,"5400 International Blvd., N. Charleston, SC 29418",sc/2026.pdf
+modern,"Industrial Plastics Group, LLC",Pickens,,4/10/2026,4/10/2026,,74,Permanent Layoff,,"565 Cartee Rd., Liberty, SC 29657",sc/2026.pdf
+modern,"Republic National Distributing Company, LLC",Lexington,,4/23/2026,6/7/2026 - 7/5/2026,,451,Permanent Closure,,"410 Foster Brothers Drive, West Columbia, SC 29172",sc/2026.pdf
+modern,Univar Solutions USA LLC,Spartanburg,,4/21/2026,6/28/2026,,99,Permanent Layoff,,"1400 Highway 101 South, Greer, SC 29651",sc/2026.pdf
+modern,"thyssenkrupp Supply Chain Services, Inc.",Spartanburg,,5/4/2026,7/5/2026,,110,Permanent Layoff,,"320 Business Parkway, Suite F, Greer, SC 29349",sc/2026.pdf
+modern,Hengst Filtration,Kershaw,,5/6/2026,7/6/2026 - 9/30/2026,,77,Permanent Layoff,,"29 Hengst Blvd. and Heier Blvd., Camden, SC 29020",sc/2026.pdf
+modern,"ILPEA Industries, Inc.",Anderson,,5/8/2026,7/17/2026 - 7/31/2026,,43,Permanent Closure,,"435 E. Shockley Ferry Rd., Anderson, SC 29624",sc/2026.pdf
+modern,"Swiss Krono, LLC",Barnwell,,5/12/2026,7/11/2026 - 8/10/2026,,99,Permanent Layoff,,"810 Technology Dr., Barnwell, SC 29812",sc/2026.pdf
+modern,"Electrolux Consumer Products, Inc.",Anderson,,5/15/2026,7/18/2026 - 12/18/2026,,1255,Permanent Layoff,,"101 Masters Boulevard, Anderson, SC 29622",sc/2026.pdf
+modern,KPR US LLC,Kershaw,,6/1/2026,8/7/2026,,13,Permanent Closure,,"90 East Hampton St., Camden, SC 29020",sc/2026.pdf
+modern,"Conduent Commercial Solutions, LLC",Statewide - Mu,,ltiple6 C/2o6u/2n0ti2e6s,8/28/2026,,28,Permanent Layoff,,"100 Campus Dr., Florham Park, NJ 07932",sc/2026.pdf
+modern,KPR US LLC,Kershaw,,7/9/2026,11/1/2026,,3,Permanent Closure,,"90 East Hampton St., Camden, SC 29020",sc/2026.pdf
+modern,"ILPEA Industries, Inc.",Anderson,,7/15/2026,8/21/2026 - 10/1/2026,,14,Permanent Closure,,"435 E. Shockley Ferry Rd., Anderson, SC 29624",sc/2026.pdf

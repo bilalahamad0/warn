@@ -1,0 +1,18 @@
+company,city,industry,layoff_start,warn_act,warn_received,layoff_type,layoff_status,affected_workers,period,source_file
+Christopher & Banks 2021,Plymouth,Retail,1/1/2021,YES,1/25/2021,Closing,Small Layoff Services,361,2021-01,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+Godiva Chocolatier Inc-Minnetonka,Minnetonka,Retail,2/15/2021,NO,-,Closing,Small Layoff Services,4,2021-01,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+Minneapolis Airport Marriott Hotel,Bloomington,Accommodation,3/19/2021,YES,3/19/2021,Temporary Layoff,Small Layoff Services,82,2021-03,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+Amazon Warehouse-Shakopee 2023,Shakopee,Retail,3/31/2023,YES,,,Rapid Response in Progress,680,2023-01,plant-closing-mass-layoff-january-2023_tcm1045-565468.pdf
+Artic Cat/Textron-St Cloud 2025,St Cloud,Manufacturing,-,NO,-,Closing,RR in Progress,TBD,2024-12,plant-closing-mass-layoff-warn-report-december-2024_tcm1045-663574.pdf
+Green Plains- Fairmont 2024,Omaha,Manufacturing,1/17/2025,YES,,- Closing,Small Layoff Services,55,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+Central MN Mental Health,Waite Park,Health Care/Social Assist,1/1/2026,FALSE,,Workforce Reduction,Small Layoff Services,25,2025-10,plant-closing-mass-layoff-warn-october-2025_tcm1045-712065.pdf
+Mayo,Owatonna,Health Care/Social Assist,,FALSE,,Closing,Aversion/Retention,,2025-10,plant-closing-mass-layoff-warn-october-2025_tcm1045-712065.pdf
+3M- HQ 2023,Maplewood,Manufacturing,6/30/2023,YES,5/2/2023,Workforce Reduction,Rapid Response in Progress,"1,100",2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+HyLife Foods Windom 2023,Windom,Manufacturing,4/17/2023,YES,4/10/2023,Closing,Rapid Response in Progress,"1,007",2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+The Woods Gift Shop 2026,Maple Grove,Retail,1/9/2026,NO,,Closing,Small Layoff Services,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+IWCO Direct 2021,Little Falls,Manufacturing,11/1/2021,YES,8/23/2021,Closing,Rapid Response in Progress,330,2021-08,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+HibTac- Minorca 2025,Hibbing,Mining/Oil /Gas Extraction,3/28/2025,YES,3/20/2025,Temporary Layoff,RR in Progress,600,2025-03,plant-closing-mass-layoff-warn-march-2025_tcm1045-676637.pdf
+Day & Ross 2022,Minneapolis,Warehousing,5/27/2022,YES,4/5/2022,Transfer of Ownership,Rapid Response in Progress,79,2022-04,plant-closing-april-2022_tcm1045-527931.pdf
+Inbound Health 2025,Minneapolis,Health Care/Social Assist,12/1/2025,NO,,Closing,Small Layoff Services,1,2025-12,plant-closing-mass-layoff-warn-december-2025_tcm1045-720888.pdf
+Schram Haus Brewery 2025,Chaska,Dining Establishments,12/31/2025,NO,,Closing,Small Layoff Services,1,2025-12,plant-closing-mass-layoff-warn-december-2025_tcm1045-720888.pdf
+PRIMP Boutique Excelsior,Excelsior,Retail,10/25/2025,NO,,Closing,Small Layoff Services,1,2025-12,plant-closing-mass-layoff-warn-december-2025_tcm1045-720888.pdf

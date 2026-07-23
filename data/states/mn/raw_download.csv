@@ -1,0 +1,655 @@
+company,city,industry,layoff_start,warn_act,warn_received,layoff_type,layoff_status,affected_workers,period,source_file
+Godiva Chocolatier Inc-Minnetonka,Minnetonka,Retail,2/15/2021,NO,-,Closing,Small Layoff Services,4,2021-01,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+Godiva Chocolatier Inc-Bloomington,Bloomington,Retail,2/15/2021,NO,-,Closing,Small Layoff Services,5,2021-01,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+Silver King 2021,Plymouth,Manufacturing,12/31/2021,NO,-,Closing,Small Layoff Services,31,2021-01,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+Christopher & Banks 2021,Plymouth,Retail,1/1/2021,YES,1/25/2021,Closing,Small Layoff Services,361,2021-01,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+Commercial Plastics - Lakeville 2021,Lakeville,Utilities,2/15/2021,YES,1/6/2021,Closing,Small Layoff Services,122,2021-01,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+Aramark-3M Locations 2020,Cottage Grove,Dining Establishments,4/30/2021,YES,2/24/2021,Closing,Rapid Response in Progress,80,2021-02,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+Minneapolis Airport Marriott Hotel,Bloomington,Accommodation,3/19/2021,YES,3/19/2021,Temporary Layoff,Small Layoff Services,82,2021-03,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+"Total Card, Inc 1",Luverne,Finance & Insurance,3/31/2021,NO,-,Closing,TAA Investigation,22,2021-03,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+American Beverage Corp,Elk River,Manufacturing,4/26/2021,NO,-,Closing,Small Layoff Services,45,2021-03,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+Plastic Services & Products 2021,Faribault,Manufacturing,3/19/2021,NO,-,Closing,Small Layoff Services,5,2021-03,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+Positive Connections 2021,Chaska,Transportation,6/1/2021,YES,-,No Layoff,Aversion/Retention,92,2021-03,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+Eclipse Advantage 2021,Maple Grove,Other Services,5/28/2021,YES,4/6/2021,Closing,Small Layoff Services,208,2021-04,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+First Transit 2021,Burnsville,Transportation,5/1/2021,NO,4/13/2021,Closing,Small Layoff Services,5,2021-04,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+J&J Distributing 2021,St Paul,Wholesale,3/23/2021,NO,-,Closing,Small Layoff Services,66,2021-04,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+Baxter Healthcare 2021,Brooklyn Park,Manufacturing,4/30/2021,YES,6/24/2021,Workforce Reduction,Small Layoff Services,50,2021-06,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+First Student Robinsdale,New Hope,Transportation,6/30/2021,NO,-,Closing,Small Layoff Services,8,2021-06,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+Hennepin County Homeschool Closing 2020,Minnetonka,Health Care/Social Assist,TBD,NO,-,Closing,Aversion/Retention,TBD,2021-06,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+International Falls Journal,International Falls,-,6/24/2021,NO,-,Closing,Rapid Response in Progress,12,2021-06,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+Duluth Hills Youth and Family 2021,Duluth,Education,6/18/2021,NO,-,Closing,Small Layoff Services,99,2021-06,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+Juut SalonSpa 2021,Minneapolis,Other Services,6/14/2021,NO,-,Closing,Small Layoff Services,1,2021-06,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+East Bethel Hill Youth & Family Services 2021,Duluth,Education,6/11/2021,NO,-,Closing,Small Layoff Services,73,2021-06,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+Wedge Table - Nicollet 2021,Minneapolis,Dining Establishments,7/12/2021,NO,-,Closing,Small Layoff Services,1,2021-06,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+Birchwood Cafe 2021,Minneapolis,Dining Establishments,6/21/2021,NO,-,Closing,Small Layoff Services,18,2021-07,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+Hoya Optical 2021,Ramsey,Manufacturing,11/12/2021,NO,-,Closing,Rapid Response in Progress,7,2021-07,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+Coleman 2021,Sauk Rapids,Manufacturing,7/30/2021,YES,8/31/2021,Closing,New Project,133,2021-08,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+IWCO Direct 2021,Little Falls,Manufacturing,11/1/2021,YES,8/23/2021,Closing,Rapid Response in Progress,330,2021-08,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+American Beverage Corporation,Elk River,Manufacturing,9/20/2021,NO,-,Closing,Small Layoff Services,1,2021-09,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+Ramsey County 2021,St Paul,Government,10/15/2021,YES,-,Temporary Work,Small Layoff Services,100,2021-09,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+Buffalo Wings and Rings 2021,Mankato,Dining Establishments,10/17/2021,NO,-,Closing,Small Layoff Services,1,2021-10,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+Perkins-North Mankato 2021,North Mankato,Dining Establishments,10/10/2021,NO,-,Closing,Small Layoff Services,1,2021-10,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+Grizzly's 2021,Mankato,Dining Establishments,10/24/2021,NO,-,Closing,Small Layoff Services,40,2021-10,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+National Recoveries 2021,Arden Hills,Other Services,10/1/2021,YES,10/15/2021,Workforce Reduction,Small Layoff Services,60,2021-10,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+Emily's Bakery & Deli 2021,Hastings,Manufacturing,11/20/2021,NO,-,Closing,Small Layoff Services,1,2021-11,plant-closing-mass-layoff-2021_tcm1045-515051.pdf
+CVS Moorhead 2022,Moorhead,Retail,2/25/22,YES,-,Closing,Small Layoff Services,13,2022-01,plant-closing-mass-layoff-2022_tcm1045-559807.pdf
+Bed Bath & Beyond 2022,Duluth,Retail,3/1/22,NO,-,Closing,Small Layoff Services,10,2022-01,plant-closing-mass-layoff-2022_tcm1045-559807.pdf
+Bed Bath Beyond Eagan 2022,Eagan,Retail,2/28/22,NO,-,Closing,Small Layoff Services,15,2022-01,plant-closing-mass-layoff-2022_tcm1045-559807.pdf
+Twin City Gardens Nursing Home,Minneapolis,Health Care/Social Assist,1/10/22,NO,-,Closing,Small Layoff Services,61,2022-01,plant-closing-mass-layoff-2022_tcm1045-559807.pdf
+Stearns Bank North Branch 2022,North Branch,Finance & Insurance,TBD,NO,-,Closing,Rapid Response in Progress,TBD,2022-02,plant-closing-mass-layoff-february-2022_tcm1045-520972.pdf
+Lakeside Medical Ctr 2022,Pine City,Health Care/Social Assist,2/18/2022,NO,-,Closing,Small Layoff Services,44,2022-02,plant-closing-mass-layoff-february-2022_tcm1045-520972.pdf
+Bonngard's Family Meats 2022,Cottage Grove,Retail,2/5/2022,NO,-,Closing,Small Layoff Services,2,2022-02,plant-closing-mass-layoff-february-2022_tcm1045-520972.pdf
+Aramark Educational Services,Minneapolis,Dining Establishments,5/31/22,YES,3/23/22,Transfer of Ownership,Small Layoff Services,100,2022-03,plant-closing-mass-layoff-2022_tcm1045-559807.pdf
+JJ Taylor 2022,Minneapolis,Wholesale,5/30/22,YES,3/3/22,Transfer of Ownership,Small Layoff Services,20,2022-03,plant-closing-mass-layoff-2022_tcm1045-559807.pdf
+"Unifi Aviation, LLC",Atlanta,Transportation,4/1/22,YES,3/1/22,No Layoff,Aversion/Retention,58,2022-03,plant-closing-mass-layoff-2022_tcm1045-559807.pdf
+Ramsey County Care Center,Maplewood,Health Care/Social Assist,7/1/22,NO,-,Closing,Small Layoff Services,156,2022-03,plant-closing-mass-layoff-2022_tcm1045-559807.pdf
+CVS St Paul 2022,St Paul,Retail,4/1/22,NO,-,Closing,Small Layoff Services,3,2022-03,plant-closing-mass-layoff-2022_tcm1045-559807.pdf
+Tin Whiskers Brewing Co,St Paul,Dining Establishments,3/21/22,NO,-,Closing,Small Layoff Services,10,2022-03,plant-closing-mass-layoff-2022_tcm1045-559807.pdf
+Day & Ross 2022,Minneapolis,Warehousing,5/27/2022,YES,4/5/2022,Transfer of Ownership,Rapid Response in Progress,79,2022-04,plant-closing-april-2022_tcm1045-527931.pdf
+TE Connectivity 2022,Andover,Manufacturing,12/1/2022,NO,-,Closing,Rapid Response in Progress,120,2022-04,plant-closing-april-2022_tcm1045-527931.pdf
+Pleasant Manor-Faribault 2022,Faribault,Health Care/Social Assist,6/15/2022,NO,-,Closing,Small Layoff Services,20,2022-05,plant-closing-may2022_tcm1045-530080.pdf
+Sears Marshall 2022,Marshall,Retail,TBD,NO,-,Closing,Rapid Response in Progress,TBD,2022-05,plant-closing-may2022_tcm1045-530080.pdf
+Sears Litchfield 2022,Litchfield,Retail,6/30/2022,NO,-,Closing,Rapid Response in Progress,1,2022-05,plant-closing-may2022_tcm1045-530080.pdf
+Sears Cambridge 2022,Cambridge,Retail,8/31/2022,NO,-,Closing,Rapid Response in Progress,2,2022-05,plant-closing-may2022_tcm1045-530080.pdf
+Good Samaritan Society Nursing Home Winthrop,Winthrop,Health Care/Social Assist,8/31/2022,NO,-,Closing,Small Layoff Services,40,2022-06,plant-closing-june-2022_tcm1045-533710.pdf
+Midwest Specialized Transportation 2022,Rochester,Transportation,8/1/2022,YES,6/1/2022,Closing,Small Layoff Services,57,2022-06,plant-closing-june-2022_tcm1045-533710.pdf
+VSPOne Lab 2022,Saint Cloud,Retail,8/12/2022,No,-,Closing,Small Layoff Services,4,2022-07,plant-closing-mass-layoff-july2022_tcm1045-536331.pdf
+School Sisters of Notre Dame,Mankato,Education,10/10/2022,YES,8/10/2022,Closing,Small Layoff Services,104,2022-08,plant-closing-august-2022_tcm1045-539644.pdf
+Ball Corp 2022,St Paul,Manufacturing,3/3/2023,NO,-,Closing,Rapid Response in Progress,110,2022-08,plant-closing-august-2022_tcm1045-539644.pdf
+MN DFL 2022,St Paul,Government,11/15/2022,YES,-,Temporary Work,Small Layoff Services,40,2022-09,plant-closing-september-2022_tcm1045-543382.pdf
+Second Samuel Transport 2022,Mendota Heights,Transportation,11/8/2022,YES,9/16/2022,Closing,Rapid Response in Progress,64,2022-09,plant-closing-september-2022_tcm1045-543382.pdf
+WestRock - Saint Paul 2022,St Paul,Manufacturing,10/28/2022,NO,-,Closing,Rapid Response in Progress,130,2022-10,plant-closing-october-2022_tcm1045-546802.pdf
+Turck Inc 2022,Plymouth,Manufacturing,1/6/2023,YES,11/3/2022,Workforce Reduction,Rapid Response in Progress,134,2022-11,plant-closing-november2022_tcm1045-550267.pdf
+Nordstrom Rack IDS 2022,Minneapolis,Retail,11/18/2022,NO,-,Closing,Small Layoff Services,5,2022-11,plant-closing-november2022_tcm1045-550267.pdf
+Bright Health (2) 2022,Minneapolis,Finance & Insurance,1/27/2023,YES,11/8/2022,Workforce Reduction,Rapid Response in Progress,99,2022-11,plant-closing-november2022_tcm1045-550267.pdf
+Marshalls - Minneapolis,Minneapolis,Retail,1/14/23,NO,-,Closing,Small Layoff Services,45,2022-12,plant-closing-mass-layoff-december-2022_tcm1045-559742.pdf
+Pineview Nursing Home,Caledonia,Health Care/Social Assist,2/3/23,NO,-,Closing,Small Layoff Services,16,2022-12,plant-closing-mass-layoff-december-2022_tcm1045-559742.pdf
+Packer Sanitation Services Inc.,Worthington,Other Services,1/22/23,YES,12/13/22,Workforce Reduction,Rapid Response in Progress,121,2022-12,plant-closing-mass-layoff-december-2022_tcm1045-559742.pdf
+Amazon Warehouse-Shakopee 2023,Shakopee,Retail,3/31/2023,YES,,,Rapid Response in Progress,680,2023-01,plant-closing-mass-layoff-january-2023_tcm1045-565468.pdf
+GAP 2023,Bloomington,Retail,1/1/2023,NO,,,Small Layoff Services,1,2023-01,plant-closing-mass-layoff-january-2023_tcm1045-565468.pdf
+JCPenney Detroit Lakes 2023,Detroit Lakes,Retail,5/1/2023,NO,,,Small Layoff Services,10,2023-01,plant-closing-mass-layoff-january-2023_tcm1045-565468.pdf
+Shutterfly 2023,Shakopee,Manufacturing,3/29/2023,YES,,,Rapid Response in Progress,97,2023-01,plant-closing-mass-layoff-january-2023_tcm1045-565468.pdf
+Bright Health 2023,Minneapolis,Finance & Insurance,4/1/23,YES,2/1/23,Workforce Reduction,Rapid Response in Progress,42,2023-02,plant-closing-mass-layoff-warn-february-2023_tcm1045-567792.pdf
+Bed Bath & Beyond Minnetonka,Minnetonka,Retail,5/1/23,NO,-,Closing,Small Layoff Services,14,2023-02,plant-closing-mass-layoff-warn-february-2023_tcm1045-567792.pdf
+Bed Bath & Beyond Rochester,Rochester,Retail,5/1/23,NO,-,Closing,Small Layoff Services,12,2023-02,plant-closing-mass-layoff-warn-february-2023_tcm1045-567792.pdf
+Aldi - N Mpls 2023,Minneapolis,Retail,2/12/23,NO,-,Closing,Aversion/Retention,15,2023-02,plant-closing-mass-layoff-warn-february-2023_tcm1045-567792.pdf
+Bed Bath & Beyond Roseville,Roseville,Retail,5/1/23,NO,-,Closing,Small Layoff Services,13,2023-02,plant-closing-mass-layoff-warn-february-2023_tcm1045-567792.pdf
+Walgreens 2023,Minneapolis,Retail,2/13/23,NO,-,Closing,Aversion/Retention,16,2023-02,plant-closing-mass-layoff-warn-february-2023_tcm1045-567792.pdf
+Plastech Corp - Anoka 2023,Rush City,Manufacturing,4/14/23,YES,2/14/23,Closing,Rapid Response in Progress,71,2023-02,plant-closing-mass-layoff-warn-february-2023_tcm1045-567792.pdf
+HTI Tech- 2023,Hutchinson,Manufacturing,5/5/2023,YES,3/7/2023,Workforce Reduction,Rapid Response in Progress,30,2023-03,plant-closing-mass-layoff-warn-march2023_tcm1045-572472.pdf
+Active Sports 2023,Lincolnshire,Retail,5/1/2023,YES,3/3/2023,Closing,Rapid Response in Progress,90,2023-03,plant-closing-mass-layoff-warn-march2023_tcm1045-572472.pdf
+Target - Uptown/Mpls 2023,Minneapolis,Retail,5/13/2023,NO,3/21/2023,Closing,Small Layoff Services,45,2023-03,plant-closing-mass-layoff-warn-march2023_tcm1045-572472.pdf
+Walmart Brooklyn Center 2023,Bentonville,Retail,4/21/2023,YES,3/24/2023,Closing,Rapid Response in Progress,420,2023-03,plant-closing-mass-layoff-warn-march2023_tcm1045-572472.pdf
+3M- HQ 2023,Maplewood,Manufacturing,6/30/2023,YES,5/2/2023,Workforce Reduction,Rapid Response in Progress,"1,100",2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+Pescara 2023,Rochester,Dining Establishments,TBD,NO,-,Closing,Rapid Response in Progress,TBD,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+Olympak 2023,Grand Rapids,Manufacturing,7/1/2023,NO,-,Closing,Rapid Response in Progress,40,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+Powerbikes.com,St Louis Park,Retail,12/30/2022,NO,-,Closing,Small Layoff Services,25,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+P.F. Chang’s - Edina 2023,New York,Dining Establishments,4/1/2023,NO,-,Closing,Rapid Response in Progress,TBD,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+BLST Operating Co. - 2023,Eden Prairie,Information,3/31/2023,YES,3/31/2023,Workforce Reduction,Aversion/Retention,61,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+Applebee – 2023,Brooklyn Ctr,Dining Establishments,3/29/2023,NO,-,Closing,Aversion/Retention,39,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+Bon Vie Bistro & A Piece of Cake,St Paul,Dining Establishments,4/4/2023,NO,-,Closing,Small Layoff Services,0,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+Bap and Chicken - 2023,St Paul,Dining Establishments,4/22/2023,NO,-,Closing,Small Layoff Services,7,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+Eagle Street Grille - 2023,St Paul,Dining Establishments,3/22/2023,NO,-,Closing,Small Layoff Services,7,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+AT&T 2023,Minneapolis,Information,5/15/2023,NO,-,Closing,Small Layoff Services,1,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+Packers Sanitation 2023,Cold Spring,Other Services,5/30/2023,YES,4/10/2023,Workforce Reduction,Small Layoff Services,81,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+HyLife Foods Windom 2023,Windom,Manufacturing,4/17/2023,YES,4/10/2023,Closing,Rapid Response in Progress,"1,007",2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+Burger King - North Moorhead,South Ogden,Dining Establishments,4/10/2023,NO,-,Closing,Small Layoff Services,25,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+Burger King - Alexandria – 2023,South Ogden,Dining Establishments,4/12/2023,NO,-,Closing,Small Layoff Services,25,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+David's Bridal Oakdale 2023,Oakdale,Retail,6/12/2023,YES,4/17/2023,Closing,Rapid Response in Progress,TBD,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+Burger King - Fergus Falls - 2023,South Ogden,Dining Establishments,4/12/2023,NO,-,Closing,Small Layoff Services,25,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+Burger King - Redwood Falls,South Ogden,Dining Establishments,4/12/2023,NO,-,Closing,Small Layoff Services,25,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+Burger King - Long Prairie - 2023,South Ogden,Dining Establishments,4/12/2023,NO,-,Closing,Small Layoff Services,25,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+David's Bridal Duluth 2023,Duluth,Retail,6/12/2023,YES,4/17/2023,Closing,Rapid Response in Progress,TBD,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+Burger King - Litchfield – 2023,South Ogden,Dining Establishments,4/12/2023,NO,-,Closing,Small Layoff Services,25,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+Burger King - Montevideo - 2023,South Ogden,Dining Establishments,4/12/2023,NO,-,Closing,Small Layoff Services,25,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+It's Greek to Me Taverna E Parea,Minneapolis,Dining Establishments,3/23/2023,NO,-,Closing,Small Layoff Services,0,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+The Grateful Table – 2023,Roseville,Dining Establishments,3/27/2023,NO,-,Closing,Aversion/Retention,7,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+Walkin' Dog – 2023,Minneapolis,Dining Establishments,4/9/2023,NO,-,Closing,Small Layoff Services,1,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+David's Bridal Richfield 2023,Richfield,Retail,6/12/2023,YES,4/17/2023,Closing,Rapid Response in Progress,TBD,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+Burger King - East Grand Forks,South Ogden,Dining Establishments,4/12/2023,NO,-,Closing,Small Layoff Services,25,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+Burger King - Willmar - 2023,South Ogden,Dining Establishments,4/12/2023,NO,-,Closing,Small Layoff Services,25,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+David's Bridal Rochester 2023,Rochester,Retail,6/12/2023,YES,4/17/2023,Closing,Rapid Response in Progress,TBD,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+David's Bridal Maple Grove 2023,Maple Grove,Retail,6/12/2023,YES,4/17/2023,Closing,Rapid Response in Progress,TBD,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+D Michael B's Restaurant,Alexandria,Dining Establishments,4/20/2023,NO,-,Closing,Small Layoff Services,10,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+ProMedica Hospice 2023,Toledo,Health Care/Social Assist,5/17/2023,NO,-,Closing,Small Layoff Services,25,2023-04,plant-closing-mass-layoff-warn-april2023_tcm1045-576548.pdf
+House of Hope 2023,Mankato,Health Care/Social Assist,5/19/2023,NO,-,Closing,Small Layoff Services,23,2023-05,plant-closing-mass-layoff-warn-may-2023_tcm1045-579786.pdf
+Jenny Craig - Roseville 2023,Carlsbad,Health Care/Social Assist,4/17/2023,NO,-,Closing,Small Layoff Services,1,2023-05,plant-closing-mass-layoff-warn-may-2023_tcm1045-579786.pdf
+Jenny Craig - Shakopee 2023,Carlsbad,Health Care/Social Assist,4/17/2023,NO,-,Closing,Small Layoff Services,1,2023-05,plant-closing-mass-layoff-warn-may-2023_tcm1045-579786.pdf
+Tarsilla's Café 2023,Stewartville,Dining Establishments,4/17/2023,NO,-,Closing,No Layoff,5,2023-05,plant-closing-mass-layoff-warn-may-2023_tcm1045-579786.pdf
+KinhDo Restaurant -2023,Minneapolis,Dining Establishments,4/1/2023,NO,-,Closing,No Layoff,5,2023-05,plant-closing-mass-layoff-warn-may-2023_tcm1045-579786.pdf
+Jenny Craig - Burnsville 2023,Carlsbad,Health Care/Social Assist,4/17/2023,NO,-,Closing,Small Layoff Services,1,2023-05,plant-closing-mass-layoff-warn-may-2023_tcm1045-579786.pdf
+Jenny Craig - Minnetonka 2023,Carlsbad,Health Care/Social Assist,4/17/2023,NO,-,Closing,Small Layoff Services,1,2023-05,plant-closing-mass-layoff-warn-may-2023_tcm1045-579786.pdf
+3M's Wonewok- 2023,Park Rapids,Admin & Support Services,6/30/2023,NO,-,Closing,Rapid Response in Progress,40,2023-05,plant-closing-mass-layoff-warn-may-2023_tcm1045-579786.pdf
+Zoe's Bakery and Cafe,Minneapolis,Dining Establishments,4/17/2023,NO,-,Closing,No Layoff,0,2023-05,plant-closing-mass-layoff-warn-may-2023_tcm1045-579786.pdf
+Dunn Brothers Chaska,Chaska,Dining Establishments,5/5/2023,NO,-,Closing,Small Layoff Services,1,2023-05,plant-closing-mass-layoff-warn-may-2023_tcm1045-579786.pdf
+Granite City - Roseville,Golden Valley,Dining Establishments,5/15/2023,NO,-,Closing,Small Layoff Services,1,2023-05,plant-closing-mass-layoff-warn-may-2023_tcm1045-579786.pdf
+City of Maplewood DMV 2023,Maplewood,Government,5/8/2023,NO,-,Closing,Small Layoff Services,7,2023-05,plant-closing-mass-layoff-warn-may-2023_tcm1045-579786.pdf
+Bella Bridesmaids 2023,Minneapolis,Retail,6/1/2023,NO,,Closing,Small Layoff Services,1,2023-06,plant-closing-mass-layoff-warn-june-2023_tcm1045-583884.pdf
+Green Mill Restaurant & Bar 2023,Hastings,Dining Establishments,6/9/2023,NO,,Closing,Small Layoff Services,1,2023-06,plant-closing-mass-layoff-warn-june-2023_tcm1045-583884.pdf
+Taco John's - Moorhead 2023,Moorhead,Dining Establishments,6/1/2023,NO,,Closing,Small Layoff Services,1,2023-06,plant-closing-mass-layoff-warn-june-2023_tcm1045-583884.pdf
+Fasika Ethiopian Restaurant 2023,St Paul,Dining Establishments,6/1/2023,NO,,Closing,Small Layoff Services,1,2023-06,plant-closing-mass-layoff-warn-june-2023_tcm1045-583884.pdf
+Rocco Altobelli Salons and Day Spas,Rochester,Other Services,6/15/2023,NO,,Closing,Small Layoff Services,1,2023-06,plant-closing-mass-layoff-warn-june-2023_tcm1045-583884.pdf
+Hubert White - Minneapolis 2023,Minneapolis,Retail,6/15/2023,NO,,Closing,Small Layoff Services,1,2023-06,plant-closing-mass-layoff-warn-june-2023_tcm1045-583884.pdf
+Alary's Bar 2023,New Brighton,Dining Establishments,6/1/2023,NO,,Closing,Small Layoff Services,1,2023-06,plant-closing-mass-layoff-warn-june-2023_tcm1045-583884.pdf
+Chez Bojji - Rochester 2023,Rochester,Dining Establishments,6/16/2023,NO,,Closing,Small Layoff Services,1,2023-06,plant-closing-mass-layoff-warn-june-2023_tcm1045-583884.pdf
+Meadow Lane Healthcare 2023,Benson,Health Care/Social Assist,8/11/2023,NO,,Closing,Rapid Response in Progress,28,2023-06,plant-closing-mass-layoff-warn-june-2023_tcm1045-583884.pdf
+Dirks Furniture 2023,Olivia,Retail,6/22/2023,NO,,Closing,Small Layoff Services,1,2023-06,plant-closing-mass-layoff-warn-june-2023_tcm1045-583884.pdf
+Yellow Corp 2023,Burnsville,Transportation,7/30/2023,YES,8/1/2023,Closing,Rapid Response in Progress,320,2023-07,plant-closing-mass-layoff-warn-july-2023_tcm1045-586340.pdf
+FedEx Freight,Winona,Transportation,8/12/2023,NO,-,Closing,Rapid Response in Progress,30,2023-07,plant-closing-mass-layoff-warn-july-2023_tcm1045-586340.pdf
+Uptown Collab 2023,Minneapolis,Dining Establishments,7/1/2023,NO,-,Closing,Small Layoff Services,25,2023-07,plant-closing-mass-layoff-warn-july-2023_tcm1045-586340.pdf
+Fiddlehead Coffee Co. – Rochester,Rochester,Dining Establishments,7/1/2023,NO,-,Closing,Small Layoff Services,1,2023-07,plant-closing-mass-layoff-warn-july-2023_tcm1045-586340.pdf
+Fiddlehead Coffee Co – Bloomington,Rochester,Dining Establishments,7/1/2023,NO,-,Closing,Small Layoff Services,1,2023-07,plant-closing-mass-layoff-warn-july-2023_tcm1045-586340.pdf
+Trophy House,New Trier,Dining Establishments,7/1/2023,NO,-,Closing,Small Layoff Services,1,2023-07,plant-closing-mass-layoff-warn-july-2023_tcm1045-586340.pdf
+Crescendo,Albert Lea,Dining Establishments,7/1/2023,NO,-,Closing,Small Layoff Services,1,2023-07,plant-closing-mass-layoff-warn-july-2023_tcm1045-586340.pdf
+Anytime Fitness in Edina,Edina,Health Care/Social Assist,7/1/2023,NO,-,Closing,Small Layoff Services,1,2023-07,plant-closing-mass-layoff-warn-july-2023_tcm1045-586340.pdf
+Foxy Falafel,St Paul,Dining Establishments,7/1/2023,NO,-,Closing,Small Layoff Services,1,2023-07,plant-closing-mass-layoff-warn-july-2023_tcm1045-586340.pdf
+Ngon Bistro,St Paul,Dining Establishments,7/1/2023,NO,-,Closing,Small Layoff Services,1,2023-07,plant-closing-mass-layoff-warn-july-2023_tcm1045-586340.pdf
+YWCA Nicollet 2023,Minneapolis,Other Services,11/1/2023,NO,,Closing,Small Layoff Services,6,2023-08,plant-closing-mass-layoff-warn-august-2023_tcm1045-590869.pdf
+YWCA Hennepin 2023,Minneapolis,Other Services,11/1/2023,NO,,Closing,Small Layoff Services,6,2023-08,plant-closing-mass-layoff-warn-august-2023_tcm1045-590869.pdf
+Shutterfly 2023-2024,Shakopee,Manufacturing,10/9/2023,NO,,Closing,Rapid Response in Progress,246,2023-08,plant-closing-mass-layoff-warn-august-2023_tcm1045-590869.pdf
+Northern Brewer St. Paul 2023,St Paul,Retail,8/1/2023,NO,,Closing,Small Layoff Services,9,2023-08,plant-closing-mass-layoff-warn-august-2023_tcm1045-590869.pdf
+Coborns Pharmacy - Sauk Centre,Sauk Centre,Health Care/Social Assist,8/1/2023,NO,,Closing,Small Layoff Services,1,2023-08,plant-closing-mass-layoff-warn-august-2023_tcm1045-590869.pdf
+Northern Brewer St. Louis Park 2023,Roseville,Retail,8/1/2023,NO,,Closing,Small Layoff Services,9,2023-08,plant-closing-mass-layoff-warn-august-2023_tcm1045-590869.pdf
+Good Earth Restaurant- Roseville 2023,Roseville,Dining Establishments,7/1/2023,NO,,Closing,Small Layoff Services,1,2023-08,plant-closing-mass-layoff-warn-august-2023_tcm1045-590869.pdf
+Psycho Suzi's Motor Lounge 2023,Minneapolis,Dining Establishments,8/1/2023,NO,,Closing,Small Layoff Services,1,2023-08,plant-closing-mass-layoff-warn-august-2023_tcm1045-590869.pdf
+The Treasury,St Paul,Arts/Entertainment/Rec,8/16/2023,NO,,Closing,Aversion/Retention,35,2023-08,plant-closing-mass-layoff-warn-august-2023_tcm1045-590869.pdf
+Mazopiya,Prior Lake,Government,8/16/2023,NO,,Closing,Aversion/Retention,1,2023-08,plant-closing-mass-layoff-warn-august-2023_tcm1045-590869.pdf
+Nashville Coop - Rochester,Rochester,Dining Establishments,8/17/2023,NO,,Closing,Small Layoff Services,1,2023-08,plant-closing-mass-layoff-warn-august-2023_tcm1045-590869.pdf
+Outback Steakhouse - Burnsville,Burnsville,Dining Establishments,8/16/2023,NO,,Closing,Small Layoff Services,1,2023-08,plant-closing-mass-layoff-warn-august-2023_tcm1045-590869.pdf
+Midwest Mountaineering 2023,Minneapolis,Retail,10/1/2023,NO,,Closing,Small Layoff Services,40,2023-08,plant-closing-mass-layoff-warn-august-2023_tcm1045-590869.pdf
+La Terraza Mankato,Mankato,Dining Establishments,9/1/2023,NO,-,Closing,Aversion/Retention,1,2023-09,plant-closing-mass-layoff-warn-september-2023_tcm1045-594073.pdf
+Soul Bowl Richfield,Richfield,Dining Establishments,9/19/2023,NO,-,Closing,Small Layoff Services,1,2023-09,plant-closing-mass-layoff-warn-september-2023_tcm1045-594073.pdf
+KPFG 2023,Foley,Manufacturing,11/30/2023,YES,9/26/2023,Closing,Rapid Response in Progress,62,2023-09,plant-closing-mass-layoff-warn-september-2023_tcm1045-594073.pdf
+Hub Bike Co-op.,Minneapolis,Retail,9/1/2023,NO,-,Closing,Aversion/Retention,10,2023-09,plant-closing-mass-layoff-warn-september-2023_tcm1045-594073.pdf
+Dangerous Man Brewing,Minneapolis,Manufacturing,9/8/2023,NO,-,Closing,Small Layoff Services,28,2023-09,plant-closing-mass-layoff-warn-september-2023_tcm1045-594073.pdf
+MercyOne Clinic-Albert Lea,Albert Lea,Health Care/Social Assist,TBD,NO,-,Closing,Aversion/Retention,TBD,2023-09,plant-closing-mass-layoff-warn-september-2023_tcm1045-594073.pdf
+TJ Maxx,St Paul,Retail,9/18/2023,NO,-,Closing,Small Layoff Services,75,2023-09,plant-closing-mass-layoff-warn-september-2023_tcm1045-594073.pdf
+Best Wishes Floral 2023,Golden Valley,Agriculture,10/1/23,NO,-,Closing,Small Layoff Services,3,2023-10,plant-closing-mass-layoff-warn-october-2023_tcm1045-598556.pdf
+Community Memorial Hospital,Cloquet,Health Care/Social,Assist 11/1/23,NO,-,Closing,Rapid Response in Progress,30,2023-10,plant-closing-mass-layoff-warn-october-2023_tcm1045-598556.pdf
+Shakopee House 2023,Shakopee,Dining Establishments,9/1/23,NO,-,Closing,Small Layoff Services,1,2023-10,plant-closing-mass-layoff-warn-october-2023_tcm1045-598556.pdf
+Dairy Queen - DT Mpls,Minneapolis,Dining Establishments,10/1/23,NO,-,Closing,Small Layoff Services,1,2023-10,plant-closing-mass-layoff-warn-october-2023_tcm1045-598556.pdf
+Red Sauce Rebellion 2023,Excelsior,Dining Establishments,9/1/23,NO,-,Closing,Small Layoff Services,18,2023-10,plant-closing-mass-layoff-warn-october-2023_tcm1045-598556.pdf
+Northern Engraving Corp,Spring Grove,Manufacturing,12/1/23,NO,10/6/23,Closing,Rapid Response in Progress,75,2023-10,plant-closing-mass-layoff-warn-october-2023_tcm1045-598556.pdf
+Fire & Nice Alehouse 2023,Minneapolis,Dining Establishments,9/1/23,NO,-,Closing,Small Layoff Services,16,2023-10,plant-closing-mass-layoff-warn-october-2023_tcm1045-598556.pdf
+Camping World,Hermantown,Retail,10/20/23,NO,-,Closing,Small Layoff Services,30,2023-10,plant-closing-mass-layoff-warn-october-2023_tcm1045-598556.pdf
+Yelloh 2023,Marshall,Manufacturing,12/26/23,YES,10/25/23,Workforce Reduction,Rapid Response in Progress,35,2023-10,plant-closing-mass-layoff-warn-october-2023_tcm1045-598556.pdf
+"Campiello, Eden Prairie",Eden Prairie,Dining Establishments,10/23/23,NO,-,Closing,Small Layoff Services,40,2023-10,plant-closing-mass-layoff-warn-october-2023_tcm1045-598556.pdf
+Mayo Clinic Le Sueur 2023,Le Sueur,Health Care/Social,Assist 12/12/23,NO,-,Closing,Aversion/Retention,0,2023-10,plant-closing-mass-layoff-warn-october-2023_tcm1045-598556.pdf
+Creators Space 2023,St Paul,Retail,9/1/23,NO,-,Closing,Small Layoff Services,1,2023-10,plant-closing-mass-layoff-warn-october-2023_tcm1045-598556.pdf
+Caribou Coffee - 68 Snelling Ave S,St Paul,Dining Establishments,11/1/2023,NO,-,Closing,Small Layoff Services,1,2023-11,plant-closing-mass-layoff-warn-november-2023_tcm1045-602504.pdf
+Stalk & Spade (Wayzata) 2023,Wayzata,Dining Establishments,11/1/2023,NO,-,Closing,Small Layoff Services,1,2023-11,plant-closing-mass-layoff-warn-november-2023_tcm1045-602504.pdf
+Stalk & Spade (Edina) 2023,Edina,Dining Establishments,11/1/2023,NO,-,Closing,Small Layoff Services,1,2023-11,plant-closing-mass-layoff-warn-november-2023_tcm1045-602504.pdf
+Nana Gogo Toybrary 2023,Rochester,Education,11/1/2023,NO,-,Closing,Small Layoff Services,1,2023-11,plant-closing-mass-layoff-warn-november-2023_tcm1045-602504.pdf
+Advance Corporation,Cottage Grove,Manufacturing,11/30/2023,NO,-,Closing,Small Layoff Services,42,2023-11,plant-closing-mass-layoff-warn-november-2023_tcm1045-602504.pdf
+D'Amico & Sons -Roseville 2023,Roseville,Dining Establishments,10/1/2023,NO,-,Closing,Small Layoff Services,20,2023-11,plant-closing-mass-layoff-warn-november-2023_tcm1045-602504.pdf
+Clutch Brewing Company,St Paul,Other Services,11/1/2023,NO,-,Closing,Small Layoff Services,1,2023-11,plant-closing-mass-layoff-warn-november-2023_tcm1045-602504.pdf
+Caribou Coffee - Edina 2023,Minneapolis,Dining Establishments,11/8/2023,NO,-,Closing,Small Layoff Services,1,2023-11,plant-closing-mass-layoff-warn-november-2023_tcm1045-602504.pdf
+Papa Murphy’s - Owatonna 2023,Owatonna,Dining Establishments,10/20/2023,NO,-,Closing,Small Layoff Services,1,2023-11,plant-closing-mass-layoff-warn-november-2023_tcm1045-602504.pdf
+Stalk & Spade - (North Loop) 2023,Minneapolis,Dining Establishments,11/1/2023,NO,-,Closing,Small Layoff Services,1,2023-11,plant-closing-mass-layoff-warn-november-2023_tcm1045-602504.pdf
+Elevance Health 2023,Mendota Heights,Finance & Insurance,12/29/2023,YES,11/3,Workforce Reduction,Rapid Response in Progress,57,2023-11,plant-closing-mass-layoff-warn-november-2023_tcm1045-602504.pdf
+Petco in Mankato 2023,Mankato,Retail,12/1/2023,NO,NO,Closing,Small Layoff Services,13,2023-12,plant-closing-mass-layoff-warn-report-december2023_tcm1045-605571.pdf
+Zumbro Cafe 2023,Minneapolis,Dining Establishments,12/1/2023,NO,NO,Closing,Small Layoff Services,1,2023-12,plant-closing-mass-layoff-warn-report-december2023_tcm1045-605571.pdf
+Pottery Barn in St Paul 2023,St Paul,Retail,12/1/2023,NO,NO,Closing,Small Layoff Services,1,2023-12,plant-closing-mass-layoff-warn-report-december2023_tcm1045-605571.pdf
+Riteway Conveyors Inc,Lester Prairie,Manufacturing,11/20/2023,NO,NO,Closing,Small Layoff Services,16,2023-12,plant-closing-mass-layoff-warn-report-december2023_tcm1045-605571.pdf
+Lakes & Legends 2023,Minneapolis,Dining Establishments,12/1/2023,NO,NO,Closing,Small Layoff Services,24,2023-12,plant-closing-mass-layoff-warn-report-december2023_tcm1045-605571.pdf
+Smile Direct Club 2023,Minnetonka,Health Care/Social Assist,12/1/2023,NO,NO,Closing,Small Layoff Services,1,2023-12,plant-closing-mass-layoff-warn-report-december2023_tcm1045-605571.pdf
+Lava Burgers and Wings,Owatonna,Dining Establishments,11/1/2023,NO,NO,Closing,Small Layoff Services,1,2023-12,plant-closing-mass-layoff-warn-report-december2023_tcm1045-605571.pdf
+Tulips & Truffles Florist 2023,Rochester,Other Services,12/1/2023,NO,NO,Closing,Small Layoff Services,1,2023-12,plant-closing-mass-layoff-warn-report-december2023_tcm1045-605571.pdf
+Curly Girl Boutique 2023,Minneapolis,Retail,12/1/2023,NO,NO,Closing,Small Layoff Services,3,2023-12,plant-closing-mass-layoff-warn-report-december2023_tcm1045-605571.pdf
+Sherco Unit 2,Becker,Utilities,12/31/2023,NO,-,Closing,Aversion/Retention,0,2024-01,plant-closing-mass-layoff-warn-january-2024_tcm1045-608776.pdf
+Cabin Coffee Co.,St Charles,Other Services,12/1/2024,NO,-,Closing,Small Layoff Services,1,2024-01,plant-closing-mass-layoff-warn-january-2024_tcm1045-608776.pdf
+Cardinal Corner Inc,West St Paul,Retail,12/31/2023,NO,-,Closing,Aversion/Retention,11,2024-01,plant-closing-mass-layoff-warn-january-2024_tcm1045-608776.pdf
+"Lost Boys Interactive, LLC",Madison,Arts/Entertainment/Rec,3/15/2024,YES,1/16/2024,Workforce Reduction,Small Layoff Services,3,2024-01,plant-closing-mass-layoff-warn-january-2024_tcm1045-608776.pdf
+Crookston Inn,Crookston,Accommodation,12/31/2023,NO,-,Closing,Small Layoff Services,1,2024-01,plant-closing-mass-layoff-warn-january-2024_tcm1045-608776.pdf
+NorthStar Orthodontics -,Park Rapids,Manufacturing,12/31/2023,NO,-,Closing,Small Layoff Services,1,2024-01,plant-closing-mass-layoff-warn-january-2024_tcm1045-608776.pdf
+Roasted Bliss,Rochester,Dining Establishments,1/1/2024,NO,-,Closing,Small Layoff Services,1,2024-01,plant-closing-mass-layoff-warn-january-2024_tcm1045-608776.pdf
+Warrior Brewing Company,Duluth,Dining Establishments,1/18/2024,NO,-,Closing,Small Layoff Services,1,2024-01,plant-closing-mass-layoff-warn-january-2024_tcm1045-608776.pdf
+New London Cafe,Duluth,Dining Establishments,1/18/2024,NO,-,Closing,Small Layoff Services,4,2024-01,plant-closing-mass-layoff-warn-january-2024_tcm1045-608776.pdf
+Caribou Coffee Grand 1,St Paul,Dining Establishments,1/1/2024,NO,-,Closing,Small Layoff Services,1,2024-01,plant-closing-mass-layoff-warn-january-2024_tcm1045-608776.pdf
+Boardwalk Bar & Grill,East Grand Forks,Dining Establishments,1/1/2023,NO,-,Closing,Small Layoff Services,11,2024-01,plant-closing-mass-layoff-warn-january-2024_tcm1045-608776.pdf
+Essentia Health Fosston Delivery Services,Fosston,Health Care/Social Assist,1/31/2024,NO,-,Closing,Aversion/Retention,-,2024-01,plant-closing-mass-layoff-warn-january-2024_tcm1045-608776.pdf
+Salut Bar,Edina,Dining Establishments,1/8/2024,NO,-,Closing,Small Layoff Services,20,2024-01,plant-closing-mass-layoff-warn-january-2024_tcm1045-608776.pdf
+"First Draft MN, LLC.",Minneapolis,Dining Establishments,1/1/2024,NO,-,Closing,Small Layoff Services,1,2024-01,plant-closing-mass-layoff-warn-january-2024_tcm1045-608776.pdf
+Applebee's,Baxter,Dining Establishments,12/31/2023,NO,-,Closing,Small Layoff Services,1,2024-01,plant-closing-mass-layoff-warn-january-2024_tcm1045-608776.pdf
+JJ Legacy School,Minneapolis,Education,1/12/2024,NO,-,Closing,Small Layoff Services,25,2024-01,plant-closing-mass-layoff-warn-january-2024_tcm1045-608776.pdf
+Oxendale's Market,Bloomington,Retail,2/1/2024,NO,-,Closing,Small Layoff Services,16,2024-02,plant-closing-mass-layoff-warn-february-2024_tcm1045-613727.pdf
+US Bank Branch Blooming Prairie,Minneapolis,Finance & Insurance,5/1/2024,NO,-,Closing,Small Layoff Services,5,2024-02,plant-closing-mass-layoff-warn-february-2024_tcm1045-613727.pdf
+Coopers Chaska 2024,Chaska,Retail,3/2/2024,NO,-,Closing,Small Layoff Services,25,2024-02,plant-closing-mass-layoff-warn-february-2024_tcm1045-613727.pdf
+Mac's Bar and Grill,Mountain Iron,Dining Establishments,1/1/2024,NO,-,Closing,Small Layoff Services,1,2024-02,plant-closing-mass-layoff-warn-february-2024_tcm1045-613727.pdf
+Black Coffee and Waffle Bar,Minneapolis,Dining Establishments,2/15/2024,NO,-,Closing,Small Layoff Services,25,2024-02,plant-closing-mass-layoff-warn-february-2024_tcm1045-613727.pdf
+Dakota Junction 2024,Mound,Dining Establishments,2/1/2024,NO,-,Closing,Small Layoff Services,1,2024-02,plant-closing-mass-layoff-warn-february-2024_tcm1045-613727.pdf
+Loons Landing Brewery 2024,Savage,Other Services,2/1/2024,NO,-,Closing,Small Layoff Services,4,2024-02,plant-closing-mass-layoff-warn-february-2024_tcm1045-613727.pdf
+Vanilla Bean in Duluth 2024,Duluth,Dining Establishments,2/1/2024,NO,-,Closing,Small Layoff Services,4,2024-02,plant-closing-mass-layoff-warn-february-2024_tcm1045-613727.pdf
+Old Log Theatre 2024,Greenwood,Arts/Entertainment/Rec,2/20/2024,NO,-,Closing,Small Layoff Services,3,2024-02,plant-closing-mass-layoff-warn-february-2024_tcm1045-613727.pdf
+Apoy 2024,Minneapolis,Dining Establishments,2/27/2024,NO,-,Closing,Small Layoff Services,20,2024-02,plant-closing-mass-layoff-warn-february-2024_tcm1045-613727.pdf
+Tattersall Distilling 2024,Minneapolis,Manufacturing,2/26/2024,NO,-,Closing,Small Layoff Services,50,2024-02,plant-closing-mass-layoff-warn-february-2024_tcm1045-613727.pdf
+The Cowles Center,Minneapolis,Arts/Entertainment/Rec,2/1/2024,NO,-,Closing,Small Layoff Services,22,2024-02,plant-closing-mass-layoff-warn-february-2024_tcm1045-613727.pdf
+US Bank Branch Moorhead 2024,Minneapolis,Finance & Insurance,5/1/2024,NO,-,Closing,Small Layoff Services,8,2024-02,plant-closing-mass-layoff-warn-february-2024_tcm1045-613727.pdf
+St Catherine University ELC,St Paul,Education,2/20/2024,NO,-,Closing,Small Layoff Services,6,2024-02,plant-closing-mass-layoff-warn-february-2024_tcm1045-613727.pdf
+Pannekoeken Huis - St. Louis Park,Plymouth,Dining Establishments,2/1/2024,NO,-,Closing,Small Layoff Services,7,2024-02,plant-closing-mass-layoff-warn-february-2024_tcm1045-613727.pdf
+River's Edge Hospital Child Center,St Peter,Health Care/Social Assist,2/1/2024,NO,-,Closing,Small Layoff Services,1,2024-02,plant-closing-mass-layoff-warn-february-2024_tcm1045-613727.pdf
+Paper Source Inc - Minneapolis,Minneapolis,Admin & Support Services,2/28/2024,NO,-,Closing,Small Layoff Services,1,2024-02,plant-closing-mass-layoff-warn-february-2024_tcm1045-613727.pdf
+Archery Headquarters 2024,Rochester,"Forestry, Fishing, Hunting",2/1/2024,NO,-,Closing,Small Layoff Services,50,2024-02,plant-closing-mass-layoff-warn-february-2024_tcm1045-613727.pdf
+The Body Shop 2024,Bloomington,Retail,3/1/2024,NO,-,Closing,Small Layoff Services,1,2024-03,plant-closing-mass-layoff-warn-march-2024_tcm1045-620053.pdf
+KJ's Hideaway 2024,St Paul,Arts/Entertainment/Rec,3/11/2024,NO,-,Closing,Small Layoff Services,10,2024-03,plant-closing-mass-layoff-warn-march-2024_tcm1045-620053.pdf
+Tori 44 2024,Minneapolis,Dining Establishments,3/1/2024,NO,-,Closing,Small Layoff Services,50,2024-03,plant-closing-mass-layoff-warn-march-2024_tcm1045-620053.pdf
+Mike's Cafe & Pizzeria 2024,Esko,Dining Establishments,3/4/2024,NO,-,Closing,Small Layoff Services,2,2024-03,plant-closing-mass-layoff-warn-march-2024_tcm1045-620053.pdf
+Galactic Pizza 2024,Minneapolis,Dining Establishments,3/5/2024,NO,-,Closing,Small Layoff Services,22,2024-03,plant-closing-mass-layoff-warn-march-2024_tcm1045-620053.pdf
+Woodbury Dental Arts 2024,Woodbury,Health Care/Social Assist,3/1/2024,NO,-,Closing,Small Layoff Services,50,2024-03,plant-closing-mass-layoff-warn-march-2024_tcm1045-620053.pdf
+Ally's in BEMIDJI - 2024,Bemidji,Retail,3/1/2024,NO,-,Closing,Small Layoff Services,1,2024-03,plant-closing-mass-layoff-warn-march-2024_tcm1045-620053.pdf
+Coconut Whisk Café 2024,Minneapolis,Dining Establishments,3/1/2024,NO,-,Closing,Small Layoff Services,1,2024-03,plant-closing-mass-layoff-warn-march-2024_tcm1045-620053.pdf
+Northern Foundry 2024,Hibbing,Manufacturing,4/12/2024,YES,3/1/2024,Closing,Small Layoff Services,91,2024-03,plant-closing-mass-layoff-warn-march-2024_tcm1045-620053.pdf
+McCoy's Public House Restaurant 2024,St Louis Park,Dining Establishments,3/1/2024,NO,-,Closing,Small Layoff Services,38,2024-03,plant-closing-mass-layoff-warn-march-2024_tcm1045-620053.pdf
+Momento Restaurant + Bar 2024,St Paul,Professional Services,3/1/2024,NO,-,Closing,Small Layoff Services,19,2024-03,plant-closing-mass-layoff-warn-march-2024_tcm1045-620053.pdf
+Cafe Astoria,St Paul,Dining Establishments,3/18/2024,NO,-,Closing,Small Layoff Services,20,2024-03,plant-closing-mass-layoff-warn-march-2024_tcm1045-620053.pdf
+"Thai Pepper, West St.Paul 2024",St Paul,Dining Establishments,3/22/2024,NO,-,Closing,Small Layoff Services,1,2024-03,plant-closing-mass-layoff-warn-march-2024_tcm1045-620053.pdf
+4th Street Saloon 2024,Minneapolis,Arts/Entertainment/Rec,3/18/2024,NO,-,Closing,Small Layoff Services,1,2024-03,plant-closing-mass-layoff-warn-march-2024_tcm1045-620053.pdf
+Family Dollar Litchfield 2024,Litchfield,Retail,3/29/2024,NO,-,Closing,Small Layoff Services,25,2024-03,plant-closing-mass-layoff-warn-march-2024_tcm1045-620053.pdf
+Vegan East Cafe Lyndale site - 2024,Minneapolis,Dining Establishments,3/15/2024,NO,-,Closing,Small Layoff Services,1,2024-03,plant-closing-mass-layoff-warn-march-2024_tcm1045-620053.pdf
+Aramark at General Mills 2024,Golden Valley,Manufacturing,5/31/2024,YES,4/4/2024,Workforce Reduction,Aversion/Retention,56,2024-04,plant-closing-mass-layoff-warn-april-2024_tcm1045-623664.pdf
+Salvation Army thrift store - 2024,Austin,Admin & Support Services,4/1/2024,NO,-,Closing,Small Layoff Services,1,2024-04,plant-closing-mass-layoff-warn-april-2024_tcm1045-623664.pdf
+"Fool Me Once bar, 2024.",Minneapolis,Dining Establishments,4/29/2024,NO,-,Closing,Small Layoff Services,8,2024-04,plant-closing-mass-layoff-warn-april-2024_tcm1045-623664.pdf
+Proper 2024,Minneapolis,Retail,4/18/2024,NO,-,Closing,Small Layoff Services,1,2024-04,plant-closing-mass-layoff-warn-april-2024_tcm1045-623664.pdf
+Express - St. Cloud 2024,St Cloud,Retail,4/1/2024,NO,-,Closing,Small Layoff Services,1,2024-04,plant-closing-mass-layoff-warn-april-2024_tcm1045-623664.pdf
+UpWest - 2024,Bloomington,Retail,4/1/2024,NO,-,Closing,Small Layoff Services,1,2024-04,plant-closing-mass-layoff-warn-april-2024_tcm1045-623664.pdf
+Hark! Cafe 2024,Minneapolis,Dining Establishments,4/1/2024,NO,-,Closing,Small Layoff Services,1,2024-04,plant-closing-mass-layoff-warn-april-2024_tcm1045-623664.pdf
+Volunteer Braille Services 2024,Golden Valley,Admin & Support Services,4/25/2024,NO,-,Closing,Small Layoff Services,2,2024-04,plant-closing-mass-layoff-warn-april-2024_tcm1045-623664.pdf
+Ramen Shoten 2024,Minneapolis,Dining Establishments,4/1/2024,NO,-,Closing,Small Layoff Services,1,2024-04,plant-closing-mass-layoff-warn-april-2024_tcm1045-623664.pdf
+Haarslev Inc 2024,Perham,Manufacturing,-,NO,-,Closing,TAA Investigation,6,2024-04,plant-closing-mass-layoff-warn-april-2024_tcm1045-623664.pdf
+Ie - Italian Eatery and Un Dito 2024,Minneapolis,Dining Establishments,4/24/2024,NO,-,Closing,Small Layoff Services,53,2024-04,plant-closing-mass-layoff-warn-april-2024_tcm1045-623664.pdf
+A & Dubs,Duluth,Dining Establishments,4/11/2024,NO,-,Closing,Small Layoff Services,7,2024-04,plant-closing-mass-layoff-warn-april-2024_tcm1045-623664.pdf
+Timber Valley Grille,Milaca,Dining Establishments,3/1/2024,NO,-,Closing,Small Layoff Services,20,2024-04,plant-closing-mass-layoff-warn-april-2024_tcm1045-623664.pdf
+SW News Media 2024,Savage,Other Services,4/1/2024,NO,-,Closing,Small Layoff Services,20,2024-04,plant-closing-mass-layoff-warn-april-2024_tcm1045-623664.pdf
+Anytime Fitness - Barnesville,Barnesville,Health Care/Social Assist,4/1/2024,NO,-,Closing,Small Layoff Services,5,2024-04,plant-closing-mass-layoff-warn-april-2024_tcm1045-623664.pdf
+Crafts Direct,Waite Park,Retail,4/1/2024,NO,-,Closing,Small Layoff Services,50,2024-04,plant-closing-mass-layoff-warn-april-2024_tcm1045-623664.pdf
+Rue 21 2024,Warrendale,Retail,5/1/2024,NO,-,Closing,Small Layoff Services,144,2024-05,plant-closing-mass-layoff-warn-may-2024_tcm1045-626353.pdf
+Carbone's Pizza Inc Rochester,St Paul,Dining Establishments,5/1/2024,NO,-,Closing,Rapid Response in Progress,50,2024-05,plant-closing-mass-layoff-warn-may-2024_tcm1045-626353.pdf
+Yelloh! 2024,Marshall,Manufacturing,7/27/2024,YES,5/30/2024,Workforce Reduction,Rapid Response in Progress,44,2024-05,plant-closing-mass-layoff-warn-may-2024_tcm1045-626353.pdf
+Taco John's,Marshall,Dining Establishments,5/2/2024,NO,-,Closing,Small Layoff Services,20,2024-05,plant-closing-mass-layoff-warn-may-2024_tcm1045-626353.pdf
+Taco John's,Worthington,Dining Establishments,5/2/2024,NO,-,Closing,Small Layoff Services,200,2024-05,plant-closing-mass-layoff-warn-may-2024_tcm1045-626353.pdf
+Wuollet Bakery,Wayzata,Manufacturing,5/1/2024,NO,-,Closing,Small Layoff Services,1,2024-05,plant-closing-mass-layoff-warn-may-2024_tcm1045-626353.pdf
+Nortech Systems,Blue Earth,Manufacturing,8/1/2024,YES,5/16/2024,Closing,Rapid Response in Progress,59,2024-05,plant-closing-mass-layoff-warn-may-2024_tcm1045-626353.pdf
+Daddy-O's Cafe 2024,Elk River,Dining Establishments,5/16/2024,NO,-,Closing,Small Layoff Services,20,2024-05,plant-closing-mass-layoff-warn-may-2024_tcm1045-626353.pdf
+Cavallin Ford 2024,Pine City,Retail,5/24/2024,NO,-,Closing,Small Layoff Services,6,2024-05,plant-closing-mass-layoff-warn-may-2024_tcm1045-626353.pdf
+BRP Marine US,St Peter,Manufacturing,5/23/2024,YES,5/23/2024,Workforce Reduction,Rapid Response in Progress,106,2024-05,plant-closing-mass-layoff-warn-may-2024_tcm1045-626353.pdf
+Nordson Medical 2024 2nd,Brooklyn Park,Manufacturing,10/1/2024,YES,5/29/2024,Closing,Existing Project,36,2024-05,plant-closing-mass-layoff-warn-may-2024_tcm1045-626353.pdf
+El Loro Mexican Restaurant,Savage,Dining Establishments,5/1/2024,NO,-,Closing,Small Layoff Services,50,2024-05,plant-closing-mass-layoff-warn-may-2024_tcm1045-626353.pdf
+Protagonist Kitchen and Bar,Richfield,Dining Establishments,5/1/2024,NO,-,Closing,Small Layoff Services,2,2024-05,plant-closing-mass-layoff-warn-may-2024_tcm1045-626353.pdf
+Caribou Coffee 2024,Brooklyn Park,Dining Establishments,5/1/2024,NO,-,Closing,Suspend/Hold,-,2024-05,plant-closing-mass-layoff-warn-may-2024_tcm1045-626353.pdf
+Green-n-Fresh 2024,Rochester,Dining Establishments,5/1/2024,NO,-,Closing,Small Layoff Services,1,2024-05,plant-closing-mass-layoff-warn-may-2024_tcm1045-626353.pdf
+Copeland 2024,Eden Prairie,Manufacturing,6/30/2024,YES,5/1/2024,Closing,Rapid Response in Progress,91,2024-05,plant-closing-mass-layoff-warn-may-2024_tcm1045-626353.pdf
+Alphonsus Catholic School,Brooklyn Center,Education,5/31/2024,NO,-,Closing,Small Layoff Services,15,2024-05,plant-closing-mass-layoff-warn-may-2024_tcm1045-626353.pdf
+Dorothy Day House - 2024,Moorhead,Admin & Support Services,5/1/2024,NO,-,Closing,Small Layoff Services,2,2024-05,plant-closing-mass-layoff-warn-may-2024_tcm1045-626353.pdf
+Major Metro at Target Stores,Minneapolis,Retail,6/1/2024,YES,5/8/2024,Closing,Small Layoff Services,75,2024-05,plant-closing-mass-layoff-warn-may-2024_tcm1045-626353.pdf
+Litin’s Party Value,Minneapolis,Other Services,6/6/2024,NO,-,Closing,Rapid Response in Progress,1,2024-06,plant-closing-mass-layoff-warn-june-2024_tcm1045-631384.pdf
+Alamo Drafthouse Cinema 2024,Woodbury,Arts/Entertainment/Rec,6/1/2024,NO,-,Closing,Small Layoff Services,15,2024-06,plant-closing-mass-layoff-warn-june-2024_tcm1045-631384.pdf
+Charter Communications 2024,Rochester,Utilities,8/15/2024,NO,-,Closing,Rapid Response in Progress,330,2024-06,plant-closing-mass-layoff-warn-june-2024_tcm1045-631384.pdf
+Red Lobster Golden Valley 2024,Golden Valley,Dining Establishments,5/1/2024,NO,-,Closing,Small Layoff Services,1,2024-06,plant-closing-mass-layoff-warn-june-2024_tcm1045-631384.pdf
+Trade Winds Boutique 2024,St Paul,Retail,6/1/2024,NO,-,Closing,Small Layoff Services,5,2024-06,plant-closing-mass-layoff-warn-june-2024_tcm1045-631384.pdf
+Red Lobster Bloomington 2024,Bloomington,Dining Establishments,5/1/2024,NO,-,Closing,Small Layoff Services,1,2024-06,plant-closing-mass-layoff-warn-june-2024_tcm1045-631384.pdf
+Eli's Food & Cocktails 2024,Minneapolis,Dining Establishments,6/30/2024,NO,-,Closing,Small Layoff Services,5,2024-07,plant-closing-mass-layoff-warn-july-2024_tcm1045-640980.pdf
+She Said Butcher Shop 2024,Moorhead,Retail,7/8/2024,NO,-,Closing,Small Layoff Services,1,2024-07,plant-closing-mass-layoff-warn-july-2024_tcm1045-640980.pdf
+Camping World Madelia,Lincolnshire,Retail,7/8/2024,NO,-,Closing,Small Layoff Services,20,2024-07,plant-closing-mass-layoff-warn-july-2024_tcm1045-640980.pdf
+Rich Products Corporation,Fridley,Manufacturing,9/13/2024,NO,7/17/2024,Closing,Small Layoff Services,170,2024-07,plant-closing-mass-layoff-warn-july-2024_tcm1045-640980.pdf
+Coolibar 2024,St Louis Park,Manufacturing,7/9/2024,NO,-,Closing,Small Layoff Services,1,2024-07,plant-closing-mass-layoff-warn-july-2024_tcm1045-640980.pdf
+Thai Basil Stillwater 2024,Stillwater,Dining Establishments,7/7/2024,NO,-,Closing,Small Layoff Services,1,2024-07,plant-closing-mass-layoff-warn-july-2024_tcm1045-640980.pdf
+Primp Boutique Rochester,Rochester,Retail,7/11/2024,NO,-,Closing,Small Layoff Services,1,2024-07,plant-closing-mass-layoff-warn-july-2024_tcm1045-640980.pdf
+The Camden Collective 2024,Minneapolis,Health Care/Social Assist,6/29/2024,NO,-,Closing,Small Layoff Services,1,2024-07,plant-closing-mass-layoff-warn-july-2024_tcm1045-640980.pdf
+Syntegon 2024,Minneapolis,Manufacturing,7/24/2024,NO,-,Closing,Small Layoff Services,15,2024-07,plant-closing-mass-layoff-warn-july-2024_tcm1045-640980.pdf
+EQ 2024,Mendota Heights,Admin & Support Services,9/30/2024,YES,7/12/2024,Workforce Reduction,Small Layoff Services,55,2024-07,plant-closing-mass-layoff-warn-july-2024_tcm1045-640980.pdf
+Dunham's Bar,St Paul,Dining Establishments,8/25/2024,NO,-,Closing,Small Layoff Services,10,2024-07,plant-closing-mass-layoff-warn-july-2024_tcm1045-640980.pdf
+Brainerd Dispatch 2024,Brainerd,Manufacturing,9/30/2024,NO,-,Closing,Small Layoff Services,21,2024-07,plant-closing-mass-layoff-warn-july-2024_tcm1045-640980.pdf
+Herman's Bakery & Deli 2024,Cambridge,Manufacturing,7/31/2024,NO,-,Closing,Small Layoff Services,5,2024-07,plant-closing-mass-layoff-warn-july-2024_tcm1045-640980.pdf
+Finnegans Taproom 2024,Minneapolis,Manufacturing,8/31/2024,NO,-,Closing,Small Layoff Services,8,2024-07,plant-closing-mass-layoff-warn-july-2024_tcm1045-640980.pdf
+Rainbow Health,Minneapolis,Health Care/Social Assist,7/18/2024,NO,-,Closing,Small Layoff Services,55,2024-07,plant-closing-mass-layoff-warn-july-2024_tcm1045-640980.pdf
+Hutchinson Manufacturing,Hutchinson,Manufacturing,7/10/2024,NO,-,Closing,Small Layoff Services,60,2024-07,plant-closing-mass-layoff-warn-july-2024_tcm1045-640980.pdf
+Altony's Italian Café,Moorhead,Dining Establishments,7/12/2024,NO,-,Closing,Small Layoff Services,1,2024-07,plant-closing-mass-layoff-warn-july-2024_tcm1045-640980.pdf
+Gray Duck Tavern 2024,St Paul,Dining Establishments,7/16/2024,NO,-,Closing,Small Layoff Services,1,2024-07,plant-closing-mass-layoff-warn-july-2024_tcm1045-640980.pdf
+Beirut Restaurant & Catering,West St Paul,Dining Establishments,9/15/2024,NO,-,Closing,Small Layoff Services,11,2024-07,plant-closing-mass-layoff-warn-july-2024_tcm1045-640980.pdf
+Smith Foundry,Minneapolis,Manufacturing,8/15/2024,NO,-,Closing,Small Layoff Services,48,2024-07,plant-closing-mass-layoff-warn-july-2024_tcm1045-640980.pdf
+At Home,St Paul,Retail,9/1/2024,NO,-,Closing,Small Layoff Services,1,2024-07,plant-closing-mass-layoff-warn-july-2024_tcm1045-640980.pdf
+Black Water Lounge Duluth,Duluth,Dining Establishments,7/25/2024,NO,-,Closing,Small Layoff Services,1,2024-07,plant-closing-mass-layoff-warn-july-2024_tcm1045-640980.pdf
+Big Lots 2024,Albert Lea,Retail,7/25/2024,NO,-,Closing,Small Layoff Services,23,2024-07,plant-closing-mass-layoff-warn-july-2024_tcm1045-640980.pdf
+Minnesota Makers,Robbinsdale,Retail,8/24/2024,NO,-,Closing,Small Layoff Services,1,2024-07,plant-closing-mass-layoff-warn-july-2024_tcm1045-640980.pdf
+JCPenney - Willmar -2024,Willmar,Retail,8/1/2024,NO,-,Closing,Small Layoff Services,1,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+Cedar House- Waconia 2024,Faribault,Health Care/Social Assist,9/26/2024,NO,-,Closing,Small Layoff Services,7,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+The Pourhouse Minneapolis 2024,Minneapolis,Dining Establishments,7/28/2024,NO,-,Closing,Small Layoff Services,1,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+Legacy Toys MOA 2024,Bloomington,Retail,7/31/2024,NO,-,Closing,Small Layoff Services,1,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+Hub Bike 2024,Minneapolis,Retail,9/30/2024,NO,-,Closing,Small Layoff Services,16,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+Starbucks Eagan Outlet 2024,Eagan,Retail,7/15/2024,NO,-,Closing,Small Layoff Services,1,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+Agate Housing and Services 2024,Minneapolis,Admin & Support Services,8/11/2024,NO,-,Closing,Small Layoff Services,20,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+Noodles & Company Eagan 2024,Eagan,Dining Establishments,7/15/2024,NO,-,Closing,Small Layoff Services,1,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+Masu Sushi and Robata MOA 2024,Eagan,Wholesale,7/30/2024,NO,-,Closing,Small Layoff Services,1,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+JCPenney - Coon Rapids -2024,Coon Rapids,Retail,8/1/2024,NO,-,Closing,Small Layoff Services,1,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+507 (Pub)lic House Rochester 2024,Rochester,Dining Establishments,8/25/2024,NO,-,Closing,Small Layoff Services,1,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+Game Informer Magazine,Minneapolis,Retail,8/1/2024,NO,-,Closing,Small Layoff Services,13,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+Kim's 2024,Minneapolis,Dining Establishments,8/26/2024,NO,-,Closing,RR in Progress,40,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+DJ's Clothing Warehouse,Winona,Retail,12/31/2024,NO,-,Closing,Small Layoff Services,1,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+LL Flooring Chanhassen 2024,Richmond,Retail,9/30/2024,NO,-,Closing,Small Layoff Services,1,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+Quebracho Empanadas 2024,St Paul,Manufacturing,8/9/2024,NO,-,Closing,Small Layoff Services,1,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+North Suburban Center for the Arts 2024,Fridley,Education,7/31/2024,NO,-,Closing,Small Layoff Services,1,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+Capra's Sporting Goods 2024,Blaine,Retail,7/1/2024,NO,-,Closing,Small Layoff Services,1,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+Masu Sushi Apple Valley 2024,Eagan,Wholesale,7/30/2024,NO,-,Closing,Small Layoff Services,1,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+CineMagic Hollywood 12 Rochester 2024,Rochester,Arts/Entertainment/Rec,8/18/2024,NO,-,Closing,Small Layoff Services,1,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+Wasabi Duluth 2024,Duluth,Dining Establishments,1/1/2025,NO,-,Closing,RR in Progress,1,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+JCPenney - Eden Prairie-2024,Eden Prairie,Retail,4/17/2024,NO,-,Closing,Small Layoff Services,1,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+JCPenney - Maple Grove -2024,Maple Grove,Retail,8/1/2024,NO,-,Closing,Small Layoff Services,1,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+LL Flooring St Cloud 2024,Richmond,Retail,9/30/2024,NO,-,Closing,Small Layoff Services,3,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+Red Lobster Maple Grove 2024,Maple Grove,Dining Establishments,8/31/2024,NO,-,Closing,Small Layoff Services,35,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+Third Space Cafe Mpls 2024,Minneapolis,Dining Establishments,10/31/2024,NO,-,Closing,RR in Progress,1,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+Marien's Deli 2024,Lake City,Dining Establishments,8/23/2024,NO,-,Closing,Small Layoff Services,2,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+Salvation Army Owatonna 2024,Owatonna,Other Services,8/21/2024,NO,-,Closing,RR in Progress,1,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+Woody's Liquor Rochester 2024,Rochester,Retail,9/14/2024,NO,-,Closing,Small Layoff Services,2,2024-08,plant-closing-mass-layoff-warn-august-2024_tcm1045-643074.pdf
+B Social St Cloud 2024,St Cloud,Dining Establishments,9/24/2024,NO,-,Closing,Small Layoff Services,1,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+La La Ice Cream and Luncheonette,Minneapolis,Dining Establishments,10/4/2024,NO,-,Closing,Small Layoff Services,1,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Pop Culture Frozen Yogurt 2024,Arden Hills,Dining Establishments,9/22/2024,NO,-,Closing,Small Layoff Services,1,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Yelloh! Eagan 2024,Eagan,Manufacturing,11/22/2024,YES,9/23/2024,Closing,Small Layoff Services,30,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Axels Mendota 2024,Mendota,Dining Establishments,9/30/2024,NO,-,Closing,Small Layoff Services,1,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Yelloh! St Cloud 2024,St Cloud,Manufacturing,11/22/2024,YES,9/23/2024,Workforce Reduction,Small Layoff Services,2,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Yelloh! Eveleth 2024,Eveleth,Manufacturing,11/22/2024,YES,9/23/2024,Workforce Reduction,Small Layoff Services,1,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Yelloh! Zumbrota 2024,Zumbrota,Manufacturing,11/22/2024,YES,9/23/2024,Closing,Small Layoff Services,9,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Haskell's Woodbury 2024,Woodbury,Retail,9/19/2024,NO,-,Closing,Small Layoff Services,12,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+TGI Fridays St Louis Park 2024,St Louis Park,Dining Establishments,9/1/2024,NO,-,Closing,Small Layoff Services,1,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Beautifully Seen Boutique 2024,Owatonna,Other Services,6/4/2024,NO,-,Closing,Small Layoff Services,1,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Creative Lighting,St Paul,Retail,9/9/2024,NO,-,Closing,RR in Progress,1,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Yelloh! Marshall 2024,Marshall,Manufacturing,11/22/2024,YES,9/23/2024,Closing,Small Layoff Services,50,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Bridge Street Tavern 2024,Owatonna,Other Services,9/13/2024,NO,-,Closing,Small Layoff Services,1,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Wuollet Bakery Mpls 2024,Minneapolis,Dining Establishments,9/5/2024,NO,-,Closing,Small Layoff Services,1,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Curly Girlz Candy 2024,Owatonna,Retail,9/13/2024,NO,-,Closing,Small Layoff Services,1,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Bad Ass Coffee 2024,Rochester,Dining Establishments,9/13/2024,NO,-,Closing,Small Layoff Services,1,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+McDonalds's,St Paul,Dining Establishments,12/8/2024,NO,-,Closing,Small Layoff Services,40,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Urban Loft 2024,Owatonna,Retail,9/13/2024,NO,-,Closing,Small Layoff Services,1,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Barrio St Paul 2024,St Paul,Dining Establishments,9/6/2024,NO,-,Closing,Small Layoff Services,1,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Yelloh! Owatonna 2024,Owatonna,Manufacturing,11/22/2024,YES,9/23/2024,Workforce Reduction,Small Layoff Services,11,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+The Little Gnome Childcare,Spring Grove,Education,8/12/2024,NO,-,Closing,Small Layoff Services,1,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Yelloh! Truman 2024,Truman,Manufacturing,11/22/2024,YES,9/23/2024,Closing,Small Layoff Services,13,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Kyros 2024,Minneapolis,Health Care/Social Assist,9/19/2024,NO,-,Closing,Small Layoff Services,100,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+HUGE Improv Theater,Minneapolis,Arts/Entertainment/Rec,10/31/2024,NO,-,Closing,Small Layoff Services,20,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Yelloh! Bloomington 2024,Bloomington,Manufacturing,11/22/2024,YES,9/23/2024,Closing,Small Layoff Services,14,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Krazy Bling Boutique 2024,Owatonna,Retail,9/13/2024,NO,-,Closing,Small Layoff Services,1,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Cub Brooklyn Park South 2024,Brooklyn Park,Retail,TBD,NO,-,Closing,RR in Progress,83,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+LL Flooring Woodbury 2024,Richmond,Retail,11/27/2024,NO,-,Closing,Small Layoff Services,4,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Yelloh! Sauk Center 2024,Sauk Centre,Manufacturing,11/22/2024,YES,9/23/2024,Closing,Small Layoff Services,12,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Chicago's Taste Authority Mpls,Minneapolis,Dining Establishments,9/21/2024,NO,-,Closing,Small Layoff Services,1,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+A Plus Appliance St Paul 2024,St Paul,Retail,9/30/2024,NO,-,Closing,Small Layoff Services,3,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Love Works Academy,Minneapolis,Education,9/6/2024,NO,-,Closing,Small Layoff Services,30,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+TGI Fridays Edina 2024,Edina,Retail,9/1/2024,NO,-,Closing,Small Layoff Services,1,2024-09,plant-closing-mass-layoff-warn-september-2024_tcm1045-649544.pdf
+Taco Johns St Peter,St Peter,Dining Establishments,10/9/2024,NO,-,Closing,Small Layoff Services,1,2024-10,plant-closing-mass-layoff-warn-october-2024_tcm1045-653176.pdf
+Alchemy 365,St Paul,Retail,11/16/2024,NO,-,Closing,Small Layoff Services,4,2024-10,plant-closing-mass-layoff-warn-october-2024_tcm1045-653176.pdf
+ABC123 Childcare Center,Dilworth,Education,10/1/2024,NO,-,Closing,Small Layoff Services,1,2024-10,plant-closing-mass-layoff-warn-october-2024_tcm1045-653176.pdf
+Kaleo Inc,Richmond,Health Care/Social Assist,11/30/2024,YES,-,Workforce Reduction,Small Layoff Services,1,2024-10,plant-closing-mass-layoff-warn-october-2024_tcm1045-653176.pdf
+Whimzy Albert Lea,Albert Lea,Retail,11/16/2024,NO,-,Closing,Small Layoff Services,1,2024-10,plant-closing-mass-layoff-warn-october-2024_tcm1045-653176.pdf
+Fast Eddies Pizza Mpls,Minneapolis,Dining Establishments,10/29/2024,NO,-,Closing,Small Layoff Services,2,2024-10,plant-closing-mass-layoff-warn-october-2024_tcm1045-653176.pdf
+Petco - Brooklyn Park,Brooklyn Park,Retail,11/20/2024,NO,-,Closing,Small Layoff Services,18,2024-10,plant-closing-mass-layoff-warn-october-2024_tcm1045-653176.pdf
+Dunkin Donuts Rochester,Rochester,Dining Establishments,10/31/2024,NO,-,Closing,Small Layoff Services,1,2024-10,plant-closing-mass-layoff-warn-october-2024_tcm1045-653176.pdf
+Kidizen Minneapolis,Minneapolis,Retail,10/30/2024,NO,-,Closing,Small Layoff Services,1,2024-10,plant-closing-mass-layoff-warn-october-2024_tcm1045-653176.pdf
+Oberg Roofing,St Cloud,Construction,10/28/2024,NO,-,Closing,Small Layoff Services,1,2024-10,plant-closing-mass-layoff-warn-october-2024_tcm1045-653176.pdf
+American Freight - Coon Rapids 2024,Coon Rapids,Retail,11/22/2024,NO,-,Closing,Small Layoff Services,4,2024-11,plant-closing-mass-layoff-warn-report-november-2024_tcm1045-658578.pdf
+American Freight - St Paul 2024,St Paul,Retail,11/20/2024,NO,-,Closing,Small Layoff Services,5,2024-11,plant-closing-mass-layoff-warn-report-november-2024_tcm1045-658578.pdf
+Chalet Lounge Hermantown 2024,Hermantown,Accommodation,12/31/2024,NO,-,Closing,Small Layoff Services,8,2024-11,plant-closing-mass-layoff-warn-report-november-2024_tcm1045-658578.pdf
+Living Christ Early Learning Center,Chanhassen,Health Care/Social Assist,12/31/2024,NO,-,Closing,RR in Progress,12,2024-11,plant-closing-mass-layoff-warn-report-november-2024_tcm1045-658578.pdf
+American Freight - Burnsville 2024,Burnsville,Retail,11/20/2024,NO,-,Closing,Small Layoff Services,5,2024-11,plant-closing-mass-layoff-warn-report-november-2024_tcm1045-658578.pdf
+Number 12 Cider Minneapolis 2024,Minneapolis,Dining Establishments,12/31/2024,NO,-,Closing,Small Layoff Services,20,2024-11,plant-closing-mass-layoff-warn-report-november-2024_tcm1045-658578.pdf
+Arrow Ace- St.Peter 2024,St Peter,Retail,12/31/2024,NO,-,Closing,Small Layoff Services,10,2024-11,plant-closing-mass-layoff-warn-report-november-2024_tcm1045-658578.pdf
+Scoreboard Pizza Brooklyn Center 2024,Brooklyn Center,Dining Establishments,11/6/2024,NO,-,Closing,Small Layoff Services,1,2024-11,plant-closing-mass-layoff-warn-report-november-2024_tcm1045-658578.pdf
+Straightline Dance Fitness Mpls 2024,Minneapolis,Health Care/Social Assist,12/22/2024,NO,-,Closing,RR in Progress,1,2024-11,plant-closing-mass-layoff-warn-report-november-2024_tcm1045-658578.pdf
+Arrow Ace- Shakopee 2024,Shakopee,Retail,12/31/2024,NO,-,Closing,Small Layoff Services,10,2024-11,plant-closing-mass-layoff-warn-report-november-2024_tcm1045-658578.pdf
+James Sewell Ballet Mpls 2024,Minneapolis,Arts/Entertainment/Rec,3/1/2025,NO,-,Closing,Small Layoff Services,9,2024-11,plant-closing-mass-layoff-warn-report-november-2024_tcm1045-658578.pdf
+Catherwood Home Childcare Austin,Austin,-,12/6/2024,NO,-,Closing,RR in Progress,1,2024-11,plant-closing-mass-layoff-warn-report-november-2024_tcm1045-658578.pdf
+Ardent Mills 2024,Mankato,Manufacturing,1/16/2025,NO,-,Closing,Small Layoff Services,44,2024-11,plant-closing-mass-layoff-warn-report-november-2024_tcm1045-658578.pdf
+CareHealth America 2024,Blue Earth,Manufacturing,11/27/24,NO,-,Closing,Small Layoff Services,15,2024-12,plant-closing-mass-layoff-warn-report-december-2024_tcm1045-663574.pdf
+Black Sheep Pizza Mpls 2024,Minneapolis,Dining,11/30/24,NO,-,Closing,Small Layoff Services,1,2024-12,plant-closing-mass-layoff-warn-report-december-2024_tcm1045-663574.pdf
+Cargill 2025,Minnetonka,Agriculture,2/5/25,YES,12/3/24,Workforce Reduction,RR in Progress,475,2024-12,plant-closing-mass-layoff-warn-report-december-2024_tcm1045-663574.pdf
+Sonny + Dot Mankato 2024,Mankato,Retail,12/23/24,NO,-,Closing,Small Layoff Services,1,2024-12,plant-closing-mass-layoff-warn-report-december-2024_tcm1045-663574.pdf
+Vivian Rose Boutique,Mankato,Retail,1/1/25,NO,-,Closing,Small Layoff Services,1,2024-12,plant-closing-mass-layoff-warn-report-december-2024_tcm1045-663574.pdf
+Maurices MOA 2024,Bloomington,Retail,12/31/24,NO,-,Closing,Small Layoff Services,1,2024-12,plant-closing-mass-layoff-warn-report-december-2024_tcm1045-663574.pdf
+Maurices Blaine 2024,Duluth,Retail,12/20/24,NO,-,Closing,Small Layoff Services,1,2024-12,plant-closing-mass-layoff-warn-report-december-2024_tcm1045-663574.pdf
+Forever 21 - 2025,Bloomington,Retail,1/31/25,NO,-,Closing,Small Layoff Services,31,2024-12,plant-closing-mass-layoff-warn-report-december-2024_tcm1045-663574.pdf
+Red Dragon Restaurant,Minneapolis,Dining,12/31/24,NO,-,Closing,Small Layoff Services,1,2024-12,plant-closing-mass-layoff-warn-report-december-2024_tcm1045-663574.pdf
+Apple Valley Foods 2024,Chaska,Manufacturing,6/14/24,YES,12/5/24,Workforce Reduction,Small Layoff Services,22,2024-12,plant-closing-mass-layoff-warn-report-december-2024_tcm1045-663574.pdf
+Chinese Phoenix Express St Cloud,St Cloud,Dining,11/24/24,NO,-,Closing,Small Layoff Services,1,2024-12,plant-closing-mass-layoff-warn-report-december-2024_tcm1045-663574.pdf
+Brooklyn Restaurant and Bar,Brooklyn Park,Dining,12/21/24,NO,-,Closing,Aversion/Retention,0,2024-12,plant-closing-mass-layoff-warn-report-december-2024_tcm1045-663574.pdf
+Country Pleasures Cafe 2024,Kasson,Dining,12/31/24,NO,-,Closing,Small Layoff Services,1,2024-12,plant-closing-mass-layoff-warn-report-december-2024_tcm1045-663574.pdf
+Walgreens Mankato 2024,Mankato,Retail,1/30/25,NO,-,Closing,Aversion/Retention,0,2024-12,plant-closing-mass-layoff-warn-report-december-2024_tcm1045-663574.pdf
+Chaotic Good Brewing 2024,Kasson,Dining,12/23/24,NO,-,Closing,Small Layoff Services,1,2024-12,plant-closing-mass-layoff-warn-report-december-2024_tcm1045-663574.pdf
+Morning Glory's Bakery Cafe,Rosemount,Dining,11/30/24,NO,-,Closing,Small Layoff Services,1,2024-12,plant-closing-mass-layoff-warn-report-december-2024_tcm1045-663574.pdf
+Daily Dose Cafe Brooklyn Park,Brooklyn Park,Dining,12/31/24,NO,-,Closing,Aversion/Retention,0,2024-12,plant-closing-mass-layoff-warn-report-december-2024_tcm1045-663574.pdf
+Minnesota Makers Excelsior 2024,Excelsior,Retail,12/23/24,NO,-,Closing,Small Layoff Services,0,2024-12,plant-closing-mass-layoff-warn-report-december-2024_tcm1045-663574.pdf
+OfficeMax Savage 2024,Savage,Retail,12/15/24,NO,-,Closing,Small Layoff Services,5,2024-12,plant-closing-mass-layoff-warn-report-december-2024_tcm1045-663574.pdf
+Walgreens Savage 2024,Deerfield,Retail,1/22/25,NO,-,Closing,Aversion/Retention,0,2024-12,plant-closing-mass-layoff-warn-report-december-2024_tcm1045-663574.pdf
+Artic Cat/Textron-St Cloud 2025,St Cloud,Manufacturing,-,NO,-,Closing,RR in Progress,TBD,2024-12,plant-closing-mass-layoff-warn-report-december-2024_tcm1045-663574.pdf
+Artic Cat/Textron-TRF 2025,Thief River Falls,Manufacturing,-,NO,-,Closing,RR in Progress,TBD,2024-12,plant-closing-mass-layoff-warn-report-december-2024_tcm1045-663574.pdf
+La Vie Boutique Woodbury 2024,Woodbury,Retail,1/15/25,NO,-,Closing,Small Layoff Services,7,2024-12,plant-closing-mass-layoff-warn-report-december-2024_tcm1045-663574.pdf
+Alamo Annies Brownsdale 2024,Brownsdale,Dining,12/19/24,NO,-,Closing,Small Layoff Services,1,2024-12,plant-closing-mass-layoff-warn-report-december-2024_tcm1045-663574.pdf
+Dulonos Minneapolis 2024,Minneapolis,Dining Establishments,12/31/2024,NO,-,Closing,Small Layoff Services,1,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+Dakota Child and Family Clinic,Burnsville,Health Care/Social Assist,12/30/2024,NO,-,Closing,Small Layoff Services,12,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+Mothers Moorhead 2025,Moorhead,Retail,3/1/2025,NO,-,Closing,Small Layoff Services,1,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+CCFBank,Faribault,Admin & Support Services,2/3/2025,NO,-,Closing,Small Layoff Services,2,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+CVS Pharmacy - Brooklyn Center,Brooklyn Center,Retail,1/30/2025,NO,-,Closing,Aversion/Retention,12,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+Curiosi-Tea House 2025,North Mankato,Dining Establishments,3/31/2025,NO,-,Closing,Small Layoff Services,4,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+Robbinsdale Clinic 2025,Robbinsdale,Health Care/Social Assist,1/15/2025,NO,-,Closing,Small Layoff Services,2,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+Hope Dental Clinic St Paul 2024,St Paul,Health Care/Social Assist,12/26/2024,NO,-,Closing,Small Layoff Services,1,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+Macy's - Maplewood 2025,Maplewood,Retail,3/18/2025,YES,1/10/2025,Closing,Small Layoff Services,66,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+Sistah Co-Op Minneapolis 2025,Minneapolis,Retail,1/7/2025,NO,-,Closing,Small Layoff Services,1,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+CVS Pharmacy - Duluth,Duluth,Retail,1/28/2025,NO,-,Closing,Aversion/Retention,1,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+Poppy Fun Fashion St Paul 2025,St Paul,Retail,1/30/2025,NO,-,Closing,Small Layoff Services,1,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+CVS Pharmacy,Minneapolis,Retail,2/11/2025,NO,-,Closing,Aversion/Retention,1,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+Forge and Foundry Stillwater 2025,Stillwater,Manufacturing,1/18/2025,NO,-,Closing,Small Layoff Services,1,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+Macy's - Burnsville 2025,Burnsville,Retail,3/18/2025,NO,-,Closing,Small Layoff Services,40,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+Walgreens - Crystal,Crystal,Retail,2/20/2025,NO,-,Closing,Aversion/Retention,1,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+The Abundant Kitchen,Excelsior,Dining Establishments,2/22/2025,NO,-,Closing,Aversion/Retention,1,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+Chanhassen Brewing 2025,Chanhassen,Dining Establishments,2/1/2025,NO,-,Closing,Small Layoff Services,2,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+Eddie Bauer,Burnsville,Retail,1/29/2025,NO,-,Closing,Small Layoff Services,1,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+Staples Minnetonka 2025,Minnetonka,Retail,2/11/2025,NO,-,Closing,Small Layoff Services,10,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+The Machine Shed Lake Elmo 2025,Lake Elmo,Dining Establishments,1/20/2025,NO,-,Closing,RR in Progress,1,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+Digital River 2025,Minnetonka,Professional Services,3/31/2025,YES,-,Closing,RR in Progress,122,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+The Clover Rosemount 2025,Rosemount,Dining Establishments,1/31/2025,NO,-,Closing,Small Layoff Services,1,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+Wuollet Bakery Minneapolis 2025,Minneapolis,Manufacturing,1/25/2025,NO,-,Closing,Small Layoff Services,3,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+Breakfast Barn Millville 2025,Millville,Dining Establishments,1/25/2025,NO,-,Closing,Small Layoff Services,2,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+Irish on Grand 2025,St Paul,Retail,3/30/2025,NO,-,Closing,Small Layoff Services,1,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+Green Plains- Fairmont 2024,Omaha,Manufacturing,1/17/2025,YES,-,Closing,Small Layoff Services,55,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+Petek Trading Co St Paul 2025,St Paul,Retail,2/16/2025,NO,-,Closing,Small Layoff Services,1,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+BANK Restaurant Mpls 2025,Minneapolis,Accommodation,1/29/2025,NO,-,Closing,Small Layoff Services,1,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+Story & Teller Mpls 2025,Minneapolis,Retail,3/1/2025,NO,-,Closing,Small Layoff Services,1,2025-01,plant-closing-mass-layoff-warn-january-2025_tcm1045-669314.pdf
+Davanni's Chanhassen 2025,Plymouth,Dining Establishments,2/23/25,NO,-,Closing,Small Layoff Services,5,2025-02,plant-closing-mass-layoff-warn-february-2025_tcm1045-671220.pdf
+Paulie's Maple Grove 2025,Maple Grove,Dining Establishments,2/23/25,NO,-,Closing,Small Layoff Services,10,2025-02,plant-closing-mass-layoff-warn-february-2025_tcm1045-671220.pdf
+UMI Sushi Blaine 2025,Blaine,Dining Establishments,2/6/25,NO,-,Closing,Small Layoff Services,1,2025-02,plant-closing-mass-layoff-warn-february-2025_tcm1045-671220.pdf
+The Dock Stillwater 2025,Stillwater,Dining Establishments,2/23/25,NO,-,Closing,Small Layoff Services,1,2025-02,plant-closing-mass-layoff-warn-february-2025_tcm1045-671220.pdf
+Marco's Pizza Anoka 2025,Anoka,Dining Establishments,2/11/25,NO,-,Closing,Small Layoff Services,1,2025-02,plant-closing-mass-layoff-warn-february-2025_tcm1045-671220.pdf
+Back Shed Brewing Waite Park,Waite Park,Dining Establishments,3/1/25,NO,-,Closing,Small Layoff Services,2,2025-02,plant-closing-mass-layoff-warn-february-2025_tcm1045-671220.pdf
+The Garage Burnsville 2025,Burnsville,Arts/Entertainment/Rec,6/1/25,NO,-,Closing,Small Layoff Services,1,2025-02,plant-closing-mass-layoff-warn-february-2025_tcm1045-671220.pdf
+Hallie Q Brown St Paul 2025,St Paul,-,1/24/25,NO,-,Closing,Small Layoff Services,2,2025-02,plant-closing-mass-layoff-warn-february-2025_tcm1045-671220.pdf
+Nupa North Rochester 2025,Rochester,Dining Establishments,2/12/25,NO,-,Closing,Small Layoff Services,1,2025-02,plant-closing-mass-layoff-warn-february-2025_tcm1045-671220.pdf
+Kappa Toys MOA 2025,Bloomington,Retail,2/18/25,NO,-,Closing,Small Layoff Services,1,2025-02,plant-closing-mass-layoff-warn-february-2025_tcm1045-671220.pdf
+Noodles & Co Crystal 2025,Broomfield,Dining Establishments,2/12/25,NO,-,Closing,Small Layoff Services,1,2025-02,plant-closing-mass-layoff-warn-february-2025_tcm1045-671220.pdf
+True Value Mankato 2025,Mankato,Retail,4/2/25,NO,-,Closing,Small Layoff Services,41,2025-02,plant-closing-mass-layoff-warn-february-2025_tcm1045-671220.pdf
+Equiniti Trust Co 2025,Mendota Heights,Admin & Support Services,4/30/25,YES,2/28/25,Workforce Reduction,Small Layoff Services,8,2025-02,plant-closing-mass-layoff-warn-february-2025_tcm1045-671220.pdf
+The Shade Store 2025,Blackduck,Manufacturing,4/30/25,YES,2/27/25,Closing,RR in Progress,116,2025-02,plant-closing-mass-layoff-warn-february-2025_tcm1045-671220.pdf
+Next Innovations 2024,Walker,Manufacturing,2/18/25,NO,-,Closing,Small Layoff Services,3,2025-02,plant-closing-mass-layoff-warn-february-2025_tcm1045-671220.pdf
+Upsher-Smith 2025,Maple Grove,Manufacturing,4/6/25,YES,2/6/25,Workforce Reduction,RR in Progress,150,2025-02,plant-closing-mass-layoff-warn-february-2025_tcm1045-671220.pdf
+CNH 2025,Benson,Manufacturing,4/11/25,YES,2/7/25,Workforce Reduction,Small Layoff Services,175,2025-02,plant-closing-mass-layoff-warn-february-2025_tcm1045-671220.pdf
+Veyer 2025,Plymouth,Warehousing,4/28/2025,YES,2/28/2025,Closing,RR in Progress,60,2025-03,plant-closing-mass-layoff-warn-march-2025_tcm1045-676637.pdf
+Nuway- Duluth 2025,Minneapolis,Health Care/Social Assist,4/30/2025,YES,2/28/2025,Workforce Reduction,Small Layoff Services,13,2025-03,plant-closing-mass-layoff-warn-march-2025_tcm1045-676637.pdf
+Nuway - Waite Park 2025,Minneapolis,Health Care/Social Assist,4/30/2025,YES,2/28/2025,Workforce Reduction,RR in Progress,8,2025-03,plant-closing-mass-layoff-warn-march-2025_tcm1045-676637.pdf
+Nuway Alliance Rochester 2025,Rochester,Health Care/Social Assist,4/30/2025,NO,3/28/2025,Closing,Small Layoff Services,1,2025-03,plant-closing-mass-layoff-warn-march-2025_tcm1045-676637.pdf
+Nuway Alliance Mankato 2025,Mankato,Health Care/Social Assist,4/30/2025,NO,3/28/2025,Closing,Small Layoff Services,1,2025-03,plant-closing-mass-layoff-warn-march-2025_tcm1045-676637.pdf
+Lunds/Byerly's St. Paul 2025,St Paul,Retail,3/26/2025,NO,3/28/2025,Closing,Small Layoff Services,17,2025-03,plant-closing-mass-layoff-warn-march-2025_tcm1045-676637.pdf
+Athlos Academy St Cloud 2025,St Cloud,Education,6/30/2025,NO,-,Closing,Small Layoff Services,63,2025-03,plant-closing-mass-layoff-warn-march-2025_tcm1045-676637.pdf
+Downtown Smoke Shop 2025,St Paul,Retail,3/12/2025,NO,-,Closing,Small Layoff Services,0,2025-03,plant-closing-mass-layoff-warn-march-2025_tcm1045-676637.pdf
+Erickson Furniture 2025,Faribault,Retail,4/30/2025,NO,-,Closing,Small Layoff Services,4,2025-03,plant-closing-mass-layoff-warn-march-2025_tcm1045-676637.pdf
+Iron Door Pub Mpls 2025,Minneapolis,Dining Establishments,3/23/2025,NO,-,Closing,Small Layoff Services,1,2025-03,plant-closing-mass-layoff-warn-march-2025_tcm1045-676637.pdf
+HibTac- Minorca 2025,Hibbing,Mining/Oil /Gas Extraction,3/28/2025,YES,3/20/2025,Temporary Layoff,RR in Progress,600,2025-03,plant-closing-mass-layoff-warn-march-2025_tcm1045-676637.pdf
+Dollar General Mpls 2025,Minneapolis,Retail,4/13/2025,NO,-,Closing,Small Layoff Services,5,2025-03,plant-closing-mass-layoff-warn-march-2025_tcm1045-676637.pdf
+Forever 21 Rochester 2025,Rochester,Retail,6/1/2025,NO,-,Closing,Small Layoff Services,5,2025-03,plant-closing-mass-layoff-warn-march-2025_tcm1045-676637.pdf
+Trend Enterprises,New Brighton,Retail,3/27/2025,NO,-,Closing,Small Layoff Services,42,2025-03,plant-closing-mass-layoff-warn-march-2025_tcm1045-676637.pdf
+Salvation Army 2025,Fergus Falls,Other Services,5/1/2025,NO,-,Closing,Small Layoff Services,5,2025-03,plant-closing-mass-layoff-warn-march-2025_tcm1045-676637.pdf
+Wink World MOA 2025,Bloomington,Retail,3/23/2025,NO,-,Closing,Small Layoff Services,8,2025-03,plant-closing-mass-layoff-warn-march-2025_tcm1045-676637.pdf
+The Sportsman Guide Inc,South St Paul,Wholesale,7/18/25,YES,-,Workforce Reduction,Small Layoff Services,57,2025-04,plant-closing-mass-layoff-warn-april-2025_tcm1045-682782.pdf
+Teleflex 2025,Maple Grove,Manufacturing,7/1/25,YES,4/8/25,Closing,RR in Progress,101,2025-04,plant-closing-mass-layoff-warn-april-2025_tcm1045-682782.pdf
+Fortrex 2025,Austin,Manufacturing,5/3/25,YES,4/9/25,Workforce Reduction,Small Layoff Services,72,2025-04,plant-closing-mass-layoff-warn-april-2025_tcm1045-682782.pdf
+IV Media 2025-2,Eden Prairie,Retail,6/16/25,YES,4/21/25,Closing,Existing Project,72,2025-04,plant-closing-mass-layoff-warn-april-2025_tcm1045-682782.pdf
+Coborn's Park Rapids 2025,Park Rapids,Retail,5/15/25,NO,-,Closing,Small Layoff Services,35,2025-04,plant-closing-mass-layoff-warn-april-2025_tcm1045-682782.pdf
+Pinoli Minneapolis 2025,Minneapolis,Dining Establishments,4/19/25,NO,-,Closing,Small Layoff Services,3,2025-04,plant-closing-mass-layoff-warn-april-2025_tcm1045-682782.pdf
+Vellee Deli 2025,Minneapolis,Dining Establishments,4/20/25,NO,-,Closing,Small Layoff Services,1,2025-04,plant-closing-mass-layoff-warn-april-2025_tcm1045-682782.pdf
+Charleys Rochester 2025,Rochester,Real Estate & Rental,5/5/25,NO,-,Closing,Small Layoff Services,1,2025-04,plant-closing-mass-layoff-warn-april-2025_tcm1045-682782.pdf
+China Cafe Duluth 2025,Duluth,Dining Establishments,4/30/25,NO,-,Closing,Small Layoff Services,1,2025-04,plant-closing-mass-layoff-warn-april-2025_tcm1045-682782.pdf
+Smurfit Westrock,St Paul,Manufacturing,6/16/25,NO,-,Closing,RR in Progress,189,2025-05,plant-closing-mass-layoff-warn-may-2025_tcm1045-690491.pdf
+Apostle Supper Club St Paul,St Paul,Dining Establishments,6/1/25,NO,-,Closing,Small Layoff Services,1,2025-05,plant-closing-mass-layoff-warn-may-2025_tcm1045-690491.pdf
+Burning Brothers Brewing St Paul,St Paul,Dining Establishments,5/10/25,NO,-,Closing,Small Layoff Services,12,2025-05,plant-closing-mass-layoff-warn-may-2025_tcm1045-690491.pdf
+Chip's Clubhouse St Paul,St Paul,Dining Establishments,4/30/25,NO,-,Closing,Small Layoff Services,1,2025-05,plant-closing-mass-layoff-warn-may-2025_tcm1045-690491.pdf
+North Loop Galley Mpls,Minneapolis,Dining Establishments,5/10/25,NO,-,Closing,Small Layoff Services,1,2025-05,plant-closing-mass-layoff-warn-may-2025_tcm1045-690491.pdf
+Ace General Store Excelsior,Excelsior,Retail,6/1/25,NO,-,Closing,Small Layoff Services,1,2025-05,plant-closing-mass-layoff-warn-may-2025_tcm1045-690491.pdf
+Fellers LLC,Edina,Other Services,6/27/25,YES,5/5,Closing,Small Layoff Services,1,2025-05,plant-closing-mass-layoff-warn-may-2025_tcm1045-690491.pdf
+Falastin Deli,Duluth,Dining Establishments,5/10/25,NO,-,Closing,Small Layoff Services,1,2025-05,plant-closing-mass-layoff-warn-may-2025_tcm1045-690491.pdf
+Maverick's Wood Grill Champlin,Champlin,Dining Establishments,5/31/25,NO,-,Closing,Small Layoff Services,1,2025-05,plant-closing-mass-layoff-warn-may-2025_tcm1045-690491.pdf
+Apple Valley Foods,Chaska,Manufacturing,7/11/25,YES,5/13,Closing,RR in Progress,95,2025-05,plant-closing-mass-layoff-warn-may-2025_tcm1045-690491.pdf
+Cooks Bellecour,Minneapolis,Education,6/1/25,NO,-,Closing,Small Layoff Services,1,2025-05,plant-closing-mass-layoff-warn-may-2025_tcm1045-690491.pdf
+Hey Bear Cafe St Paul,St Paul,Dining Establishments,5/14/25,NO,-,Closing,Small Layoff Services,1,2025-05,plant-closing-mass-layoff-warn-may-2025_tcm1045-690491.pdf
+Lake Crystal Pharmacy,Lake Crystal,Health Care/Social Assist,5/28/25,NO,-,Closing,Small Layoff Services,1,2025-05,plant-closing-mass-layoff-warn-may-2025_tcm1045-690491.pdf
+MCs Garage Mankato,Mankato,Dining Establishments,5/10/25,NO,-,Closing,Small Layoff Services,1,2025-05,plant-closing-mass-layoff-warn-may-2025_tcm1045-690491.pdf
+801 Fish Mpls,Minneapolis,Dining Establishments,5/12/25,NO,-,Closing,Small Layoff Services,37,2025-05,plant-closing-mass-layoff-warn-may-2025_tcm1045-690491.pdf
+Transaxle St Paul,St Paul,Manufacturing,7/15/25,YES,-,Closing,Small Layoff Services,6,2025-05,plant-closing-mass-layoff-warn-may-2025_tcm1045-690491.pdf
+Pizza Shark Mpls,Minneapolis,Dining Establishments,5/14/25,NO,-,Closing,Small Layoff Services,1,2025-05,plant-closing-mass-layoff-warn-may-2025_tcm1045-690491.pdf
+Skyline Math/Science Academy,Minneapolis,Education,6/30/25,NO,-,Closing,Small Layoff Services,1,2025-05,plant-closing-mass-layoff-warn-may-2025_tcm1045-690491.pdf
+Center for Antiracism Research,Minneapolis,Education,5/30/25,NO,-,Closing,Small Layoff Services,3,2025-05,plant-closing-mass-layoff-warn-may-2025_tcm1045-690491.pdf
+BoxDrop Duluth,Duluth,Retail,6/30/25,NO,-,Closing,Small Layoff Services,1,2025-05,plant-closing-mass-layoff-warn-may-2025_tcm1045-690491.pdf
+Planned Parenthood,Manhattan,Health Care/Social Assist,6/12/25,NO,-,Closing,RR in Progress,66,2025-05,plant-closing-mass-layoff-warn-may-2025_tcm1045-690491.pdf
+The Leader-Record Gonvick,Gonvick,Manufacturing,5/27/25,NO,-,Closing,Small Layoff Services,3,2025-05,plant-closing-mass-layoff-warn-may-2025_tcm1045-690491.pdf
+Dan Kelly's Pub Mpls 2025,Minneapolis,Dining Establishments,5/31/25,NO,-,Closing,Small Layoff Services,1,2025-06,plant-closing-mass-layoff-warn-june-2025_tcm1045-695921.pdf
+OfficeMax Eagan 2025,Eagan,Retail,6/30/25,NO,-,Closing,Small Layoff Services,9,2025-06,plant-closing-mass-layoff-warn-june-2025_tcm1045-695921.pdf
+Treadle Yard Goods St Paul 2025,St Paul,Wholesale,5/31/25,NO,-,Closing,Small Layoff Services,1,2025-06,plant-closing-mass-layoff-warn-june-2025_tcm1045-695921.pdf
+Children's Center Montessori 2025,St Paul,Education,6/30/25,NO,-,Closing,Small Layoff Services,3,2025-06,plant-closing-mass-layoff-warn-june-2025_tcm1045-695921.pdf
+Children's Country Day School 2025,Mendota Heights,Education,9/1/25,NO,-,Closing,Small Layoff Services,19,2025-06,plant-closing-mass-layoff-warn-june-2025_tcm1045-695921.pdf
+J & E Companies 2025,Lakeville,Utilities,6/2/25,YES,-,Closing,Small Layoff Services,145,2025-06,plant-closing-mass-layoff-warn-june-2025_tcm1045-695921.pdf
+Edwards Dessert Kitchen 2025,Plymouth,Manufacturing,6/29/25,NO,-,Closing,Small Layoff Services,14,2025-06,plant-closing-mass-layoff-warn-june-2025_tcm1045-695921.pdf
+At Home - Rochester 2025,Rochester,Retail,9/30/25,NO,-,Closing,Small Layoff Services,10,2025-06,plant-closing-mass-layoff-warn-june-2025_tcm1045-695921.pdf
+Schmitt's Stride Rite Rochester 2025,Rochester,Retail,7/1/25,NO,-,Closing,Small Layoff Services,1,2025-06,plant-closing-mass-layoff-warn-june-2025_tcm1045-695921.pdf
+Running Room St Paul 2025,Edmonton,Retail,6/22/25,NO,-,Closing,Small Layoff Services,1,2025-06,plant-closing-mass-layoff-warn-june-2025_tcm1045-695921.pdf
+Ramen Kazama Como 2025,Minneapolis,Dining Establishments,5/1/25,,NO,Closing,Small Layoff Services,1,2025-07,plant-closing-mass-layoff-warn-july-2025_tcm1045-701890.pdf
+Northspan,Duluth,Other Services,6/27/25,,NO,Workforce Reduction,Small Layoff Services,2,2025-07,plant-closing-mass-layoff-warn-july-2025_tcm1045-701890.pdf
+Bailey Ray's Roadhouse,Santiago Township,Dining Establishments,6/30/25,,NO,Disaster,Small Layoff Services,1,2025-07,plant-closing-mass-layoff-warn-july-2025_tcm1045-701890.pdf
+Annie's Parlour Mpls,Minneapolis,Dining Establishments,7/1/25,,NO,Closing,Small Layoff Services,1,2025-07,plant-closing-mass-layoff-warn-july-2025_tcm1045-701890.pdf
+Bernatellos Pizza,Maple Lake,Dining Establishments,7/4/25,,NO,Workforce Reduction,Small Layoff Services,35,2025-07,plant-closing-mass-layoff-warn-july-2025_tcm1045-701890.pdf
+Science Museum St Paul,St Paul,Arts/Entertainment/Rec,7/9/25,,NO,Workforce Reduction,Small Layoff Services,43,2025-07,plant-closing-mass-layoff-warn-july-2025_tcm1045-701890.pdf
+Johnson Publishing,Fulda,Information,7/14/25,,NO,Closing,Small Layoff Services,1,2025-07,plant-closing-mass-layoff-warn-july-2025_tcm1045-701890.pdf
+Alloy Brewing Coon Rapids,Coon Rapids,Dining Establishments,7/15/25,,NO,Closing,Small Layoff Services,16,2025-07,plant-closing-mass-layoff-warn-july-2025_tcm1045-701890.pdf
+Best Buy Outlet Blaine,Richfield,Retail,7/15/25,,NO,Closing,Small Layoff Services,1,2025-07,plant-closing-mass-layoff-warn-july-2025_tcm1045-701890.pdf
+Gruber's Quilt Shop Waite,Waite Park,Retail,7/21/25,,NO,Closing,Small Layoff Services,1,2025-07,plant-closing-mass-layoff-warn-july-2025_tcm1045-701890.pdf
+PHaerigkh ts Bakery Columbia,Columbia Heights,Dining Establishments,8/1/25,,NO,Closing,Small Layoff Services,1,2025-07,plant-closing-mass-layoff-warn-july-2025_tcm1045-701890.pdf
+H94e iBguhbtsb les Mpls,Minneapolis,Dining Establishments,8/3/25,,NO,Closing,Small Layoff Services,1,2025-07,plant-closing-mass-layoff-warn-july-2025_tcm1045-701890.pdf
+LA Fitness Uptown,Minneapolis,Arts/Entertainment/Rec,8/20/25,,NO,Closing,Small Layoff Services,1,2025-07,plant-closing-mass-layoff-warn-july-2025_tcm1045-701890.pdf
+SNAP U of M Extension,Falcon Heights,Education,8/22/25,,NO,Workforce Reduction,Small Layoff Services,56,2025-07,plant-closing-mass-layoff-warn-july-2025_tcm1045-701890.pdf
+Bob's Appliances Rochester,Rochester,Retail,9/1/25,,NO,Closing,Small Layoff Services,0,2025-07,plant-closing-mass-layoff-warn-july-2025_tcm1045-701890.pdf
+Cafe Lurcat Mpls,Minneapolis,Dining Establishments,9/5/25,,NO,Closing,Small Layoff Services,1,2025-07,plant-closing-mass-layoff-warn-july-2025_tcm1045-701890.pdf
+Palmer's Bar Mpls,Minneapolis,Dining Establishments,9/14/25,,NO,Closing,Small Layoff Services,15,2025-07,plant-closing-mass-layoff-warn-july-2025_tcm1045-701890.pdf
+Cub & Supervalu,Baxter,Retail,9/15/25,,7/15/25,Closing,Small Layoff Services,235,2025-07,plant-closing-mass-layoff-warn-july-2025_tcm1045-701890.pdf
+Edina Grill,Edina,Dining Establishments,9/18/25,,NO,Closing,Small Layoff Services,1,2025-07,plant-closing-mass-layoff-warn-july-2025_tcm1045-701890.pdf
+Brooklyn Center Liquor,Brooklyn Center,Wholesale,12/30/25,,NO,Closing,Small Layoff Services,14,2025-07,plant-closing-mass-layoff-warn-july-2025_tcm1045-701890.pdf
+ASV/Yanmar 2025,Grand Rapids,Manufacturing,8/12/25,NO,,Workforce Reduction,,1,2025-08,plant-closing-mass-layoff-warn-august-2025_tcm1045-704281.pdf
+Cargil Salt,Savage,Manufacturing,8/6/25,NO,,Disaster,,11,2025-08,plant-closing-mass-layoff-warn-august-2025_tcm1045-704281.pdf
+Claire's Blaine 2025,Blaine,Retail,9/7/25,NO,,Closing,,2,2025-08,plant-closing-mass-layoff-warn-august-2025_tcm1045-704281.pdf
+Equiniti Trust Company,Mendota Heights,Admin & Support Services,11/14/25,YES,8/12/25,Workforce Reduction,,36,2025-08,plant-closing-mass-layoff-warn-august-2025_tcm1045-704281.pdf
+Lynhall No 3945 Edina 2025,Edina,Dining Establishments,8/24/25,NO,,Closing,,31,2025-08,plant-closing-mass-layoff-warn-august-2025_tcm1045-704281.pdf
+The Corner Bar Mpls 2025,Minneapolis,Dining Establishments,8/24/25,NO,,Closing,,1,2025-08,plant-closing-mass-layoff-warn-august-2025_tcm1045-704281.pdf
+Twin Cities Skaters Mpls 2025,Minneapolis,Arts/Entertainment/Rec,10/5/25,NO,,Closing,,1,2025-08,plant-closing-mass-layoff-warn-august-2025_tcm1045-704281.pdf
+Bub's Brewing Co Winona 2025,Winona,Dining Establishments,8/29/25,NO,,Closing,,12,2025-08,plant-closing-mass-layoff-warn-august-2025_tcm1045-704281.pdf
+Goonie's Comedy Club Rochester,Rochester,Arts/Entertainment/Rec,3/29/25,NO,,Closing,,0,2025-08,plant-closing-mass-layoff-warn-august-2025_tcm1045-704281.pdf
+Zeco Systems Inc 2025,Los Angeles,Other Services,10/4/25,YES,8/21/25,Workforce Reduction,,2,2025-08,plant-closing-mass-layoff-warn-august-2025_tcm1045-704281.pdf
+El Loro Waite Park 2025,Waite Park,Dining Establishments,8/20/25,NO,,Closing,,1,2025-08,plant-closing-mass-layoff-warn-august-2025_tcm1045-704281.pdf
+Leeann Chin,Rochester,Dining Establishments,8/25/25,NO,,Closing,,1,2025-08,plant-closing-mass-layoff-warn-august-2025_tcm1045-704281.pdf
+Matriarch Mpls 2025,Minneapolis,Dining Establishments,8/21/25,NO,,Closing,,1,2025-08,plant-closing-mass-layoff-warn-august-2025_tcm1045-704281.pdf
+Centrex Rehab,Bloomington,Health Care/Social Assist,11/7/2025,YES,9/3/2025,Closing,Small Layoff Services,311,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+At the Farm Waconia,Waconia,Agriculture,8/30/2025,NO,,Closing,Small Layoff Services,1,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+RC Detox/Withdrawal Mgt Div,St Paul,Government,10/6/2025,NO,,Closing,Small Layoff Services,43,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+United Transfusion Clinic,St Paul,Health Care/Social Assist,,NO,,Closing,Aversion/Retention,5,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+Seasons Hospice House,Rochester,Health Care/Social Assist,10/10/2025,NO,,Closing,Small Layoff Services,10,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+Barrio Edina 2025,Edina,Dining Establishments,10/1/2025,NO,,Closing,Small Layoff Services,20,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+UCare Mpls 2025,Minneapolis,Health Care/Social Assist,9/30/2025,NO,,Workforce Reduction,Small Layoff Services,144,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+Truterra Land O Lakes,Arden Hills,Manufacturing,8/27/2025,NO,,Workforce Reduction,Small Layoff Services,30,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+Milton's Crystal 2025,Crystal,Dining Establishments,10/31/2025,NO,,Closing,Small Layoff Services,1,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+Trio Plant Based,Minneapolis,Dining Establishments,10/31/2025,NO,,Closing,Small Layoff Services,1,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+Boelter Mankato 2025,Madison Lake,Construction,8/31/2025,NO,,Closing,Small Layoff Services,1,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+Celio Mpls 2025,Minneapolis,Dining Establishments,9/9/2025,NO,,Closing,Small Layoff Services,1,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+The Get Down Coffee Co,Minneapolis,Other Services,10/31/2025,NO,,Closing,Small Layoff Services,2,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+Consolidated Communications,Mankato,Information,9/17/2025,NO,,Closing,Small Layoff Services,1,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+Jostens 2025-2nd Layoff,Owatonna,Manufacturing,9/19/2025,NO,,Workforce Reduction,Small Layoff Services,5,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+Mayo-St. Peter 2025,St Peter,Health Care/Social Assist,10/31/2025,NO,,Closing,Small Layoff Services,25,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+ABM Janitorial 2025,Minneapolis,Admin & Support Services,9/30/2025,NO,,Workforce Reduction,Small Layoff Services,7,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+Mayo Clinic Wells 2025,Wells,Health Care/Social Assist,11/1/2025,NO,,Closing,Small Layoff Services,1,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+Illume Candles LLC,Maple Grove,Retail,12/1/2025,YES,9/16/2025,Closing,New Project,132,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+TOPS Products,Hastings,Manufacturing,10/2/2025,NO,,Workforce Reduction,Small Layoff Services,35,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+Allina Health - Chaska,Minneapolis,Health Care/Social Assist,2/1/2026,NO,,Closing,Small Layoff Services,1,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+Wells Fargo Duluth,Minneapolis,Finance & Insurance,12/3/2025,NO,,Closing,Small Layoff Services,1,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+Wuollet Bakery Uptown,Minneapolis,Dining Establishments,9/6/2025,NO,,Closing,Small Layoff Services,5,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+Market Bar-B-Que,Minneapolis,Dining Establishments,9/10/2025,NO,,Closing,Small Layoff Services,1,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+Petite León,Minneapolis,Dining Establishments,12/31/2025,NO,,Closing,Small Layoff Services,1,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+Cub Blaine East,Blaine,Retail,10/1/2025,NO,,Workforce Reduction,Small Layoff Services,1,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+Cubs Foods Oakdale,Oakdale,Retail,10/1/2025,NO,,Workforce Reduction,Small Layoff Services,10,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+U of M Morris McNair Program,Morris,Education,10/6/2025,NO,,Workforce Reduction,Small Layoff Services,4,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+Augsburg Univ. McNair Program,Minneapolis,Education,10/6/2025,NO,,Workforce Reduction,Small Layoff Services,5,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+Century College Trio Programs,Mahtomedi,Education,10/9/2025,NO,,Workforce Reduction,Small Layoff Services,7,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+KD Fine Jewlers,Rochester,Retail,12/31/2025,NO,,Closing,Small Layoff Services,3,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+Starbucks,Seattle,Dining Establishments,9/26/2025,NO,,Closing,Small Layoff Services,65,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+Taco JED,Rochester,Dining Establishments,10/18/2025,NO,,Closing,Small Layoff Services,1,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+Milkweed,Minneapolis,Dining Establishments,10/5/2025,NO,,Closing,Small Layoff Services,1,2025-09,plant-closing-mass-layoff-warn-september-2025_tcm1045-712064.pdf
+Central MN Mental Health,Waite Park,Health Care/Social Assist,1/1/2026,FALSE,,Workforce Reduction,Small Layoff Services,25,2025-10,plant-closing-mass-layoff-warn-october-2025_tcm1045-712065.pdf
+Aljon Tool,Plymouth,Construction,10/30/2025,FALSE,,Closing,Small Layoff Services,25,2025-10,plant-closing-mass-layoff-warn-october-2025_tcm1045-712065.pdf
+Gina Maria's Pizza,Eden Prairie,Dining Establishments,10/5/2025,FALSE,,Closing,Small Layoff Services,1,2025-10,plant-closing-mass-layoff-warn-october-2025_tcm1045-712065.pdf
+Gina Maria's Pizza,Chanhassen,Dining Establishments,10/5/2025,FALSE,,Closing,Small Layoff Services,1,2025-10,plant-closing-mass-layoff-warn-october-2025_tcm1045-712065.pdf
+Gina Maria's Pizza,Plymouth,Dining Establishments,10/16/2025,FALSE,,Closing,Small Layoff Services,1,2025-10,plant-closing-mass-layoff-warn-october-2025_tcm1045-712065.pdf
+Gina Maria's Pizza,Edina,Dining Establishments,10/16/2025,FALSE,,Closing,Small Layoff Services,1,2025-10,plant-closing-mass-layoff-warn-october-2025_tcm1045-712065.pdf
+Mayo,Owatonna,Health Care/Social Assist,,FALSE,,Closing,Aversion/Retention,,2025-10,plant-closing-mass-layoff-warn-october-2025_tcm1045-712065.pdf
+Taylor Corp,North Mankato,Manufacturing,10/17/2025,FALSE,,Workforce Reduction,Small Layoff Services,33,2025-10,plant-closing-mass-layoff-warn-october-2025_tcm1045-712065.pdf
+Mayo Belle Plaine Clinic,Belle Plaine,Health Care/Social Assist,,FALSE,,Closing,Aversion/Retention,,2025-10,plant-closing-mass-layoff-warn-october-2025_tcm1045-712065.pdf
+Mayo Northridge,North Mankato,Health Care/Social Assist,,FALSE,,Closing,Aversion/Retention,,2025-10,plant-closing-mass-layoff-warn-october-2025_tcm1045-712065.pdf
+Mayo Clinic Montgomery,Montgomery,Health Care/Social Assist,,FALSE,,Closing,Aversion/Retention,,2025-10,plant-closing-mass-layoff-warn-october-2025_tcm1045-712065.pdf
+Mayo Clinic Caledonia,Caledonia,Health Care/Social Assist,,FALSE,,Workforce Reduction,Aversion/Retention,,2025-10,plant-closing-mass-layoff-warn-october-2025_tcm1045-712065.pdf
+Hennen's Furniture,Willmar,Retail,12/15/2025,FALSE,,Closing,Small Layoff Services,12,2025-10,plant-closing-mass-layoff-warn-october-2025_tcm1045-712065.pdf
+Central Appliance Recycler,St Cloud,Manufacturing,11/14/2025,FALSE,,Closing,Small Layoff Services,1,2025-10,plant-closing-mass-layoff-warn-october-2025_tcm1045-712065.pdf
+Farmstead Bike Shop,Minneapolis,Retail,11/29/2025,FALSE,,Closing,Small Layoff Services,1,2025-10,plant-closing-mass-layoff-warn-october-2025_tcm1045-712065.pdf
+Cuyuna Regional Med Ctr,Crosby,Health Care/Social Assist,12/10/2025,FALSE,,Workforce Reduction,Small Layoff Services,19,2025-10,plant-closing-mass-layoff-warn-october-2025_tcm1045-712065.pdf
+Osteria,St Paul,Dining Establishments,10/18/2025,FALSE,,Closing,Small Layoff Services,1,2025-10,plant-closing-mass-layoff-warn-october-2025_tcm1045-712065.pdf
+Dependable Home Healthcare,St Paul,Health Care/Social Assist,1/3/2026,YES,11/4/2025,Closing,Small Layoff Services,406,2025-11,plant-closing-mass-layoff-warn-november-2025_tcm1045-720889.pdf
+Impulse Juice,Minneapolis,Dining Establishments,11/5/2025,NO,,Closing,Small Layoff Services,1,2025-11,plant-closing-mass-layoff-warn-november-2025_tcm1045-720889.pdf
+Rojo Mexican Grill,St Louis Park,Dining Establishments,11/11/2025,NO,,Closing,Small Layoff Services,1,2025-11,plant-closing-mass-layoff-warn-november-2025_tcm1045-720889.pdf
+Inbound Health 2025,Minneapolis,Health Care/Social Assist,12/1/2025,NO,,Closing,Small Layoff Services,1,2025-12,plant-closing-mass-layoff-warn-december-2025_tcm1045-720888.pdf
+Schram Haus Brewery 2025,Chaska,Dining Establishments,12/31/2025,NO,,Closing,Small Layoff Services,1,2025-12,plant-closing-mass-layoff-warn-december-2025_tcm1045-720888.pdf
+PRIMP Boutique Excelsior,Excelsior,Retail,10/25/2025,NO,,Closing,Small Layoff Services,1,2025-12,plant-closing-mass-layoff-warn-december-2025_tcm1045-720888.pdf
+PRIMP Boutique,White Bear Lake,Retail,12/10/2025,NO,,Closing,Small Layoff Services,1,2025-12,plant-closing-mass-layoff-warn-december-2025_tcm1045-720888.pdf
+House of Kirin 2025,Brooklyn Park,Dining Establishments,1/1/2026,NO,,Closing,Small Layoff Services,1,2025-12,plant-closing-mass-layoff-warn-december-2025_tcm1045-720888.pdf
+The Woods Gift Shop 2026,Maple Grove,Retail,1/9/2026,NO,,Closing,Small Layoff Services,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Love Pizza 2026,Golden Valley,Dining Establishments,1/9/2026,NO,,Workforce Reduction,Small Layoff Services,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+KidsCo Children's Museum 2026,Moorehead,Education,3/28/2026,NO,,Closing,Small Layoff Services,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Grande Sunrise Mexican Restaurant,West St Paul,Dining Establishments,1/15/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Zao Bakery & Café 2026,W St Paul,Dining Establishments,1/15/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Don Pablos-Fergus Falls 2026,Fergus Falls,Dining Establishments,1/15/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Catrina’s Skyway 2026,St Paul,Dining Establishments,1/15/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Casa Deli Restaurant Savage 2026,Savage,Dining Establishments,1/15/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Le Burger,Minneapolis,Dining Establishments,1/12/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Salsa A La Salsa,Minneapolis,Dining Establishments,1/12/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+El Sazon Tacos & More-Eagan 2026,Eagan,Dining Establishments,1/15/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Xelas by El Sazon-Stillwater 2026,Stillwater,Dining Establishments,1/15/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Wrecktangle Pizza,Minneapolis,Dining Establishments,1/12/2026,NO,,Workforce Reduction,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+La Loma Tamales,Minneapolis,Dining Establishments,1/12/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Mercado Central,Minneapolis,Retail,1/12/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Bravi's Craft Mexican Kitchen,Shakopee,Dining Establishments,1/12/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Mothership Pizza Paradise,Minneapolis,Dining Establishments,1/12/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Tortilleria La Mayzteca-Rochester 2026,Rochester,Dining Establishments,1/12/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Corona's Tacos 2026,Rochester,Dining Establishments,1/12/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Intercontinental St Paul Riverfront,St Paul,Accommodation,1/20/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Dancing Ganesha-St Louis Park 2026,St Louis Park,Dining Establishments,1/19/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Dancing Ganesha-Minneapolis 2026,Minneapolis,Dining Establishments,1/19/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Great Moon Buffet-Maplewood 2026,Maplewood,Dining Establishments,1/19/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Nachos Mexican Grill 2026,Hopkins,Dining Establishments,1/19/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Bichota Coffee,Minneapolis,Dining Establishments,1/12/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Pajarito 2026,St Paul,Dining Establishments,1/19/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Machete,Woodbury,Dining Establishments,1/20/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Maya Cuisine 2026,Minneapolis,Dining Establishments,1/20/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Pizzeria Lola,Minneapolis,Dining Establishments,1/19/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Treats Cereal Bar & Boba-Mpls 2026,Minneapolis,Dining Establishments,1/16/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Café Fiesta Bar 2026,Rochester,Dining Establishments,1/16/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Dragon Star Buffet 2026,Burnsville,Dining Establishments,1/16/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Marc Heu Patisserie Paris 2026,St Paul,Dining Establishments,1/16/2026,NO,,Workforce Reduction,Small Layoff Services,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+GameStop - Brooklyn Park 2026,Brooklyn Park,Retail,1/14/2026,NO,,Closing,Small Layoff Services,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+GameStop - Rochester,Rochester,Retail,1/14/2026,NO,,Closing,Small Layoff Services,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf
+Christos Greek Restaurant 2026,Minneapolis,Dining Establishments,1/24/2026,NO,,Temporary Layoff,Temporary Layoff/Closure,1,2026-01,plant-closing-mass-layoff-warn-2026-january_tcm1045-722872.pdf

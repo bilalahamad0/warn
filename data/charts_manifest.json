@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T01:46:07.668608+00:00Z",
+  "generated_at": "2026-07-23T09:24:55.505110+00:00Z",
   "charts": [
     {
       "id": "1_timeline_scatter",
@@ -66,11 +66,17 @@
       "title": "Top Counties",
       "desc": "Top 10 counties by total employees affected.",
       "status": "ok"
+    },
+    {
+      "id": "12_us_map",
+      "title": "US Map",
+      "desc": "WARN activity by state \u2014 pick a metric and year; states light up as their sources come online.",
+      "status": "ok"
     }
   ],
   "total_records": 1541,
   "total_employees": 84875,
   "date_range_start": "2025-01-29",
   "date_range_end": "2026-07-20",
-  "last_updated": "2026-07-23T01:45:35.225519+00:00Z"
+  "last_updated": "2026-07-23T09:09:15.614124+00:00Z"
 }

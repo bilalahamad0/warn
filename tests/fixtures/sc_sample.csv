@@ -1,0 +1,16 @@
+era,company,county,location,notice_date,layoff_closure_date,date,jobs,layoff_closure,naics,address,source
+legacy,Fast Lane of Rock Hill,,Rock Hill,,,2/25/2013,31,Closure,722511,,sc/2013.pdf
+legacy,AREVA Federal ServicesLLC,,Aiken,,,8/6/2013,,Layoff,541330,,sc/2013.pdf
+legacy,Bank of America,,Columbia,,,01/31/2015,68,Layoff,522110,,sc/2014.pdf
+legacy,Bank of America,,Columbia,,,01/31/2015,68,Layoff,522110,,sc/2015.pdf
+legacy,Mohawk Industries,,Landrum,,,12/31//2015,150,Closure,314110,,sc/2015.pdf
+legacy,"Hooters of America, LLC",,Statewide,,,3/16/2020,283,Layoff,722511,,sc/2020.pdf
+legacy,Peak Workforce Solutions,,Seneca,,,4/8/20/20,65,Layoff,561311,,sc/2020.pdf
+modern,"Fraenkische USA, LP",Anderson,,2/16/2023,4/1/2023 - 12/31/2023,,164,Permanent Closure,,"416 A.M. Ellison Road, Anderson, South Carolina 29621",sc/2023.pdf
+modern,Caraustar Industrial &,CYoonrskumer Products G,,"roup7,/ 5In/2c0.23",9/3/2023 - 10/30/2023,,71,Permanent Closure,,"1379 McDow Dr., Rock Hill, SC 29732",sc/2023.pdf
+modern,"Block, Inc.",Statewide - Multiple Counties,,1/30/2024,3/30/2024,,3,Permanent Layoff,,"1955 Broadway St., Ste 600, Oakland, CA 94612",sc/2024.pdf
+modern,Stanley Black & Decker,York,,3/11/2024,5/10/2024 - 12/31/2024,,192,Permanent Closure,,"4260 Pleasant Rd., Fort Mill, SC 29708",sc/2024.pdf
+modern,Interfor,Dorchester,,8/19/2024,8/19/24 - 9/20/24,,88,Permanent Layoff,,"200 N Maple St., Summerville, SC 29483",sc/2024.pdf
+modern,Quality Built,Statewide - Mu,,ltiple 7C/7o/u2n0t2ie5s,7/3/2025,,3,Permanent Closure,,"633 S. Andrews Ave., Fort Lauderdale, FL 33301",sc/2025.pdf
+modern,SMBC MANUBANK (JeniusBank),Statewide - Mu,,ltiple 1C/8o/u2n0t2ie6s,3/10/2026,,3,Permanent Layoff,,"277 Park Avenue, New York, NY 10172",sc/2026.pdf
+legacy,,,Nowhere,,,1/1/2019,5,Layoff,111111,,sc/2019.pdf

@@ -1,0 +1,368 @@
+year,county,warn_number,date_of_notice,received_date,effective_date,company,notice_type,layoff_kind,employees,address,city
+2022,Guilford County,202200001,1/21/2022,1/25/2022,12/31/2022,ADT Cybersecurity/SDI facility,Closure,Permanent,67,301 North Elm Street Suite 550,Greensboro
+2022,Cumberland County,202200002,1/31/2022,1/31/2022,3/31/2022,The Logistics Company,Layoff,Permanent,44,4710 Knox Street,Fort Bragg
+2022,N/A,202200003,2/16/2022,2/17/2022,4/18/2022,Eisai Inc,Closure,Permanent,8,200 Metro Boulevard,Nutley
+2022,Alamance County,202200004,2/16/2022,2/23/2022,6/30/2022,Gildan's Mebane Distribution Center,Closure,Permanent,128,7110 E Washington St. Ext,Mebane
+2022,Guilford County,202200005,2/28/2022,3/1/2022,5/15/2022,Graphik Dimension LLC.,Layoff,Permanent,58,2080 Brentwood Street,High Point
+2022,Guilford County,202200005,2/28/2022,3/1/2022,5/15/2022,Graphik Dimension LLC.,Layoff,Permanent,57,2103 Brentwood Street,High Point
+2022,Guilford County,202200006,3/7/2022,3/10/2022,6/30/2022,Keolis Transit America,Layoff,Permanent,222,223 W. Meadowview Road,Greensboro
+2022,N/A,202200007,2/18/2022,3/11/2022,2/16/2022,Ready Responders Inc.,Layoff,Permanent,2,1320 Magazine St. Ste 203,New Orleans
+2022,Wake County,202200008,3/15/2022,3/23/2022,5/16/2022,BASF Corporation,Closure,Permanent,107,3500 Paramount Parkway,Morrisville
+2022,Cleveland County,202200009,4/4/2022,4/7/2022,5/8/2022,Sodexo,Closure,Permanent,83,100 South Main Street,Boiling Springs
+2022,Gaston County,202200010,4/13/2022,4/18/2022,6/15/2022,"Chick-fil-A, Inc.",Closure,Permanent,117,3350 E. Franklin Blvd.,Gastonia
+2022,Granville County,202200012,4/14/2022,4/25/2022,8/2/2022,Sante Fe Natural Tobacco Company Inc.,Closure,Permanent,114,3220 Knotts Grove Road,Oxford
+2022,Wake County,202200014,5/5/2022,5/10/2022,7/5/2022,Ametek-ESP,Closure,Permanent,60,8001 Knightdale Blvd,Knightdale
+2022,Alamance County,202200013,5/9/2022,5/13/2022,7/9/2022,PrescientCo,Closure,Permanent,83,2125 Senator Ralph Scott Pkwy,Mebane
+2022,Union County,202200015,5/1/2022,5/18/2022,5/20/2022,Packers Sanitation Services Inc.,Layoff,Permanent,72,2023 Hasty St.,Monroe
+2022,Mecklenburg County,202200016,5/20/2022,5/24/2022,7/15/2022,First Bank/Real Genius,Layoff,Permanent,74,500 E Moorehead St. Ste 550,Charlotte
+2022,Union County,202200017,6/2/2022,6/3/2022,8/1/2022,Glenmark,Layoff,Permanent,77,4147 Goldmine Road,Monroe
+2022,Mecklenburg County,202200018,6/7/2022,6/10/2022,8/1/2022,Wyndham Capital Mortgage,Layoff,Permanent,48,4064 Colony Road,Charlotte
+2022,Cumberland County,202200019,6/16/2022,6/21/2022,6/30/2022,Vectrus Mission Solutions Corp,Closure,Permanent,122,RBC Bldg.2-1731Room 106,Fort Bragg
+2022,Pitt County,202200020,6/22/2022,6/27/2022,3/17/2023,"DENSO Manufacturing North Carolina, Inc. - Greenville, NC",Closure,Permanent,475,1125 Sugg Parkway,Greenville
+2022,Forsyth County,202200021,6/30/2022,7/1/2022,7/29/2022,United Furniture Industries,Layoff,Permanent,199,401 Hanes Mill Road,Winston-Salem
+2022,Guilford County,202200021,6/30/2022,7/1/2022,7/29/2022,United Furniture Industries,Layoff,Permanent,72,315 Kettering Road,High Point
+2022,Rowan County,202200022,7/14/2022,7/14/2022,9/30/2022,"Hitachi Metals North Carolina, Ltd.",Closure,Permanent,81,1 Hitachi Metals Drive,China Grove
+2022,Rowan County,202200023,6/30/2022,7/18/2022,11/18/2022,"Medline Industries, LP.",Closure,Permanent,97,3310 S. Main Street,Salisbury
+2022,Mecklenburg County,202200025,7/27/2022,7/27/2022,9/27/2022,"LGSTX Services, Inc.",Closure,Permanent,11,4100 Yorkmont Road,Charlotte
+2022,Mecklenburg County,202200024,7/27/2022,7/27/2022,9/27/2022,"LGSTX Cargo Services, Inc.",Closure,Permanent,143,4100 Yorkmont Drive,Charlotte
+2022,Mecklenburg County,202200026,8/2/2022,8/3/2022,10/1/2022,"Robinhood Markets, Inc.",Layoff,Permanent,82,650 South Tryon St.,Charlotte
+2022,Johnston County,202200027,8/2/2022,8/9/2022,11/30/2022,"Aramark Healthcare Support Services, LLC",Layoff,Permanent,105,509 N. Brightleaf Blvd.,Smithfield
+2022,Johnston County,202200027,8/2/2022,8/9/2022,11/30/2022,"Aramark Healthcare Support Services, LLC",Layoff,Permanent,49,2138 NC Hwy 42 W,Clayton
+2022,Pitt County,202200028,7/21/2022,8/10/2022,7/29/2022,ECU Health Medical Center,Closure,Permanent,61,995 Wellness Drive,Greenville
+2022,Rockingham,202200030,8/29/2022,8/29/2022,10/31/2022,UNC Rockingham Hospital,Layoff,Permanent,67,117 E King Hwy,Eden
+2022,Gaston County,202200029,8/25/2022,8/29/2022,10/28/2022,"Keter, US, Inc",Layoff,Permanent,68,2369 Charles Raper Jonas Hwy,Stanley
+2022,Henderson County,202200031,9/9/2022,9/12/2022,11/30/2022,"Coats American, Inc.",Closure,Permanent,51,1710 Brevard Road,Hendersonville
+2022,Cabarrus County,202200032,9/12/2022,9/14/2022,9/12/2022,Pink Energy,Closure,Permanent,250,"270 International Drive., NW",Concord
+2022,Mecklenburg County,202200033,9/12/2022,9/16/2022,9/12/2022,Pink Energy - Charlotte,Closure,Permanent,250,8711 University East Dr. Suite 300,Charlotte
+2022,Wake County,202200034,9/28/2022,9/28/2022,11/28/2022,Kepro,Layoff,Permanent,94,"2000 Centre Green Way., Suite 200",Cary
+2022,Iredell County,202200035,9/15/2022,9/29/2022,11/15/2022,Ashley Furniture Industries LLC,Closure,Permanent,111,607 Meacham Road,Statesville
+2022,Durham County,202200036,10/26/2022,10/26/2022,12/26/2022,Medicago USA Inc,Layoff,Permanent,62,7 Triangle Drive,Durham
+2022,Lee County,202200037,10/27/2022,10/27/2022,3/31/2023,"GKN Driveline North America, Inc.",Closure,Permanent,47,4901 Womack Road,Sanford
+2022,Iredell County,202200038,10/31/2022,10/31/2022,12/31/2022,American Merchandising Specialists Inc,Layoff,Permanent,115,"177 Barley Park Lane, PO Box 1101",Mooresville
+2022,Cumberland County,202200039,11/8/2022,11/8/2022,1/2/2023,MANN HUMMEL Purolator Filter LLC,Closure,Permanent,114,3200 Natal Street,Fayetteville
+2022,Forsyth County,202200040,12/2/2022,12/5/2022,1/31/2023,Hayward Industries Inc,Layoff,Permanent,57,1 Hayward Industrial Drive,Clemmons
+2023,N/A,202300001,1/4/2023,1/5/2023,3/5/2023,Monitronics International Inc. dba Brinks Home,Layoff,Permanent,4,1990 Wittington Place,Dallas TX
+2023,Forsyth County,202300002,1/30/2023,1/30/2023,9/8/2023,Collins Aerospace,Closure,Permanent,32,2598 Empire Drive,Winston Salem
+2023,Forsyth County,202300002,1/30/2023,1/30/2023,9/8/2023,Collins Aerospace,Closure,Permanent,173,2599 Empire Drive,Winston Salem
+2023,Rutherford County,202300003,1/31/2023,1/31/2023,5/31/2023,Milliken,Closure,Permanent,103,2080 NC 226,Bostic
+2023,Durham County,202300006,2/3/2023,2/6/2023,6/30/2023,Medicago USA Inc,Closure,Permanent,164,7 Triangle Drive,Durham
+2023,Cumberland County,202300004,2/7/2023,2/8/2023,7/7/2023,Gannett,Layoff,Permanent,56,458 Whitfield Street,Fayetteville
+2023,Forsyth County,202300005,2/8/2023,2/9/2023,4/21/2023,DFA Dairy Brands Fluid LLC,Layoff,Permanent,78,2221 Patterson Avenue,Winston Salem
+2023,N/A,202300007,2/15/2023,2/15/2023,4/16/2023,Peer Street Inc,Layoff,Permanent,42,2121 Park Place,El Segundo CA
+2023,N/A,202300008,12/28/2022,2/21/2023,2/26/2023,RUME Medical Group,Layoff,Permanent,2,18800 Delaware Street,Huntington Beach CA
+2023,N/A,202300009,2/16/2023,2/21/2023,2/17/2023,Critical Ideas Inc dba Chipper Cash,Layoff,Permanent,4,180 Montgomery Street,San Francisco CA
+2023,Gaston County,202300010,2/22/2023,2/24/2023,8/31/2023,Coats America Inc,Layoff,Permanent,97,300 Dickson Road,McAdenville
+2023,N/A,202300011,3/3/2023,3/6/2023,2/27/2023,ImmunityBio Inc,Layoff,Permanent,1,2040 E Mariposa Ave,El Segundo CA
+2023,Guilford County,202300012,3/9/2023,3/9/2023,10/31/2023,Precor Manufacturing LLC,Closure,Permanent,123,5704 Millstream Road,Whitsett
+2023,Gaston County,202300013,3/7/2023,3/13/2023,8/30/2023,Hunter Douglas Window Designs LLC,Closure,Permanent,135,201 Southridge Parkway,Bessemer City
+2023,Cabarrus County,202300014,3/10/2023,3/13/2023,5/11/2023,Krispy Kreme Doughnut Corporation,Closure,Permanent,102,315 Wilshire Avenue Southwest,Concord
+2023,Greene County,202300015,3/15/2023,3/15/2023,3/31/2024,Cornell Dubilier Electronics,Closure,Permanent,91,204 Carolina Drive,Snow Hill
+2023,Forsyth County,202300016,3/17/2023,3/17/2023,8/30/2023,Collins Aerospace,Layoff,Permanent,13,1455 Fairchild Road,Winston Salem
+2023,Forsyth County,202300016,3/17/2023,3/17/2023,8/30/2023,Collins Aerospace,Layoff,Permanent,5,190 Oak Plaza Boulevard,Winston Salem
+2023,Wake County,202300017,3/20/2023,3/20/2023,4/22/2023,Transdev Services Inc,Closure,Permanent,265,4104 Poole Road,Raleigh
+2023,Haywood County,202300018,3/23/2023,3/23/2023,3/9/2025,Pactiv Evergreen Inc. Canton Paper Mill,Closure,Permanent,900,175 Main Street,Canton
+2023,Haywood County,202300019,3/23/2023,3/23/2023,3/9/2025,Pactiv Evergreen Inc. Canton Paper Mill,Layoff,Permanent,150,81 Old Howell Road,Waynesville
+2023,Rutherford County,202300020,3/31/2023,3/31/2023,3/13/2023,FreightWorks LLC,Layoff,Permanent,180,668 Poors Ford Road,Rutherfordton
+2023,Gaston County,202300021,4/7/2023,4/11/2023,6/30/2023,Keter US Inc,Closure,Permanent,65,2369 Charles Raper Jonas Hwy,Stanley
+2023,New Hanover County,202300022,4/14/2023,4/17/2023,7/31/2023,David's Bridal LLC,Layoff,Permanent,1,6865 Monument Drive,Wilmington
+2023,Wake County,202300022,4/14/2023,4/17/2023,7/31/2023,David's Bridal LLC,Layoff,Permanent,1,4229 Louisburg Road,Raleigh
+2023,Buncombe County,202300022,4/14/2023,4/17/2023,7/31/2023,David's Bridal LLC,Layoff,Permanent,1,285 Tunnel Rd,Asheville
+2023,Cumberland County,202300022,4/14/2023,4/17/2023,7/31/2023,David's Bridal LLC,Layoff,Permanent,1,1920 Skibo Road,Fayetteville
+2023,Forsyth County,202300022,4/14/2023,4/17/2023,7/31/2023,David's Bridal LLC,Layoff,Permanent,1,125 Hanes Square Circle,Winston Salem
+2023,Guilford County,202300022,4/14/2023,4/17/2023,7/31/2023,David's Bridal LLC,Layoff,Permanent,1,4216 West Wendover Avenue,Greensboro
+2023,Mecklenburg County,202300022,4/14/2023,4/17/2023,7/31/2023,David's Bridal LLC,Layoff,Permanent,1,10420-D Centrum Parkway,Pineville
+2023,Mecklenburg County,202300022,4/14/2023,4/17/2023,7/31/2023,David's Bridal LLC,Layoff,Permanent,1,9717 Northlake Center Pkwy,Charlotte
+2023,Durham County,202300022,4/14/2023,4/17/2023,7/31/2023,David's Bridal LLC,Layoff,Permanent,1,6911 Fayetteville Rd,Durham
+2023,Pitt County,202300022,4/14/2023,4/17/2023,7/31/2023,David's Bridal LLC,Layoff,Permanent,1,3150 Evans Street,Greenville
+2023,Wake County,202300023,4/18/2023,4/19/2023,6/17/2023,Uptown Airport Group LLC,Closure,Permanent,66,The Raleigh Durham Airport Terminal 1,Morrisville
+2023,Wake County,202300024,4/20/2023,4/20/2023,10/31/2023,"Enzyvant Therapeutics, Inc.",Layoff,Permanent,23,"2000 Centre Green Way, Suite 350",Cary
+2023,Mecklenburg County,202300025,4/21/2023,4/24/2023,6/20/2023,FXI Inc,Closure,Permanent,59,18801 Old Statesville Road,Cornelius
+2023,Wake County,202300026,4/28/2023,4/28/2023,6/30/2023,MV Transportation Inc,Layoff,Permanent,146,1430 South Blount Street,Raleigh
+2023,Durham County,202300027,5/4/2023,5/4/2023,12/31/2023,Shutterfly LLC,Closure,Permanent,108,3871 S Alston Ave,Durham
+2023,Mecklenburg County,202300028,5/24/2023,5/24/2023,7/29/2023,CHEP Services LLC,Layoff,Permanent,116,5808 Long Creek Park Drive,Charlotte
+2023,Onslow County,202300029,5/24/2023,5/24/2023,9/30/2023,Vertex Aerospace LLC,Layoff,Permanent,57,MCAS New River Curtis Road,Jacksonville
+2023,Durham County,202300030,5/30/2023,5/30/2023,6/30/2023,Durham City Transit Company,Closure,Permanent,211,1905 Fay St,Durham
+2023,Wake County,202300031,6/12/2023,6/12/2023,8/11/2023,Sagent Pharmaceuticals,Layoff,Permanent,81,8900 Capital Blvd,Raleigh
+2023,Buncombe County,202300032,6/7/2023,6/14/2023,6/6/2023,PLI Holdings Inc,Layoff,Permanent,26,605 Sweeten Creek Industrial Park,Asheville
+2023,Buncombe County,202300032,6/7/2023,6/14/2023,6/6/2023,PLI Holdings Inc,Layoff,Permanent,25,575 Sweeten Creek Industrial Park,Asheville
+2023,N/A,202300033,6/14/2023,6/14/2023,6/14/2023,Bitwise Industries Inc,Layoff,Permanent,1,1701 18th Street,Bakersfield CA
+2023,Cumberland County,202300034,6/7/2023,6/21/2023,6/30/2023,Diversified Maintenance,Layoff,Permanent,55,6650 Ramsey Street,Fayetteville
+2023,Mecklenburg County,202300035,6/23/2023,6/26/2023,1/31/2024,IGM Resins USA Inc,Layoff,Permanent,58,3300 Westinghouse Blvd,Charlotte
+2023,Wilson County,202300036,6/21/2023,6/27/2023,7/17/2023,Ardagh Glass Inc,Layoff,Permanent,337,2201 Firestone Pkwy NE,Wilson
+2023,Mecklenburg County,202300037,6/26/2023,6/28/2023,9/7/2023,Snyder's Lance Inc.,Closure,Permanent,125,8600 Crump Road,Charlotte
+2023,N/A,202300038,7/7/2023,7/7/2023,9/6/2023,PBS West LLC,Layoff,Permanent,2,6980 Sierra Center Pkwy,Reno NV
+2023,Mecklenburg County,202300039,7/14/2023,7/17/2023,12/1/2023,Campbell Soup Company,Closure,Permanent,55,13515 Ballantyne Corporate Place,Charlotte
+2023,Wake County,202300040,7/21/2023,7/24/2023,9/30/2023,UNC Health Care System,Closure,Permanent,246,107 Sunnybrook Road,Raleigh
+2023,Mecklenburg County,202300041,7/30/2023,8/1/2023,7/30/2023,Yellow Corporation,Closure,Permanent,518,11010 Reames Road,Charlotte
+2023,Edgecombe County,202300041,7/30/2023,8/1/2023,7/30/2023,Yellow Corporation,Closure,Permanent,13,551 Jeffreys Road,Rocky Mount
+2023,Cumberland County,202300041,7/30/2023,8/1/2023,7/30/2023,Yellow Corporation,Closure,Permanent,6,1061 River Road,Fayetteville
+2023,Onslow County,202300041,7/30/2023,8/1/2023,7/30/2023,Yellow Corporation,Closure,Permanent,3,161 Center Street,Jacksonville
+2023,New Hanover County,202300041,7/30/2023,8/1/2023,7/30/2023,Yellow Corporation,Closure,Permanent,3,3511 US-421,Wilmington
+2023,Mecklenburg County,202300041,7/30/2023,8/1/2023,7/30/2023,Yellow Corporation,Closure,Permanent,118,5201 Sunset Road,Charlotte
+2023,Durham County,202300041,7/30/2023,8/1/2023,7/30/2023,Yellow Corporation,Closure,Permanent,24,3215 US 70,Durham
+2023,Forsyth County,202300041,7/30/2023,8/1/2023,7/30/2023,Yellow Corporation,Closure,Permanent,145,1255 NC Highway 66 S,Kernersville
+2023,Wake County,202300041,7/30/2023,8/1/2023,7/30/2023,Yellow Corporation,Closure,Permanent,55,1305 Kirkland Road,Raleigh
+2023,Durham County,202300042,8/2/2023,8/2/2023,12/31/2023,"Intuitive Surgical, Inc.",Closure,Permanent,72,1650 TW Alexander Drive,Durham
+2023,Martin County,202300043,8/3/2023,8/4/2023,10/5/2023,Williamston Hospital Corporation,Closure,Permanent,173,310 S McCaskey Road,Williamston
+2023,Martin County,202300045,8/3/2023,8/4/2023,10/5/2023,Williamston Clinic Corporation,Closure,Permanent,10,104 Medical Drive,Williamston
+2023,Martin County,202300045,8/3/2023,8/4/2023,10/5/2023,Williamston Clinic Corporation,Closure,Permanent,4,220 Green Street,Williamston
+2023,Martin County,202300045,8/3/2023,8/4/2023,10/5/2023,Williamston Clinic Corporation,Closure,Permanent,3,310 S McCaskey Road - Martin Specialty Clinics,Williamston
+2023,Martin County,202300045,8/3/2023,8/4/2023,10/5/2023,Williamston Clinic Corporation,Closure,Permanent,3,310 S McCaskey Road - Roanoke Surgical,Williamston
+2023,Martin County,202300045,8/3/2023,8/4/2023,10/5/2023,Williamston Clinic Corporation,Closure,Permanent,2,310 S McCaskey Road - Williamson Heart and Vascular,Williamston
+2023,Washington County,202300044,8/3/2023,8/4/2023,10/5/2023,Rural Health Clinic,Closure,Permanent,6,543 US Hwy 64W,Plymouth
+2023,Randolph County,202300046,8/7/2023,8/7/2023,8/21/2023,Klaussner Furniture Industries Inc,Closure,Permanent,15,4402 US Hwy 20 S,Asheboro
+2023,Randolph County,202300046,8/7/2023,8/7/2023,8/21/2023,Klaussner Furniture Industries Inc,Closure,Permanent,127,905 NC Hwy 49 S,Asheboro
+2023,Randolph County,202300046,8/7/2023,8/7/2023,8/21/2023,Klaussner Furniture Industries Inc,Closure,Permanent,26,2206 Dumont Street,Asheboro
+2023,Randolph County,202300046,8/7/2023,8/7/2023,8/21/2023,Klaussner Furniture Industries Inc,Closure,Permanent,556,405 Lewallen Road,Asheboro
+2023,Montgomery County,202300046,8/7/2023,8/7/2023,8/21/2023,Klaussner Furniture Industries Inc,Closure,Permanent,58,68 Industrial Road,Candor
+2023,Randolph County,202300046,8/7/2023,8/7/2023,8/21/2023,Klaussner Furniture Industries Inc,Closure,Permanent,64,4400 US Hwy 220 S,Asheboro
+2023,Randolph County,202300046,8/7/2023,8/7/2023,8/21/2023,Klaussner Furniture Industries Inc,Closure,Permanent,38,907 NC Hwy 49 S,Asheboro
+2023,Wake County,202300047,8/17/2023,8/18/2023,10/16/2023,Liberty Healthcare Corporation of North Carolina,Closure,Permanent,96,5540 Centerview Drive,Raleigh
+2023,Lincoln County,202300048,8/21/2023,8/25/2023,11/21/2023,Marker 3 Consulting LLC,Closure,Permanent,1,2704 Apache Trail,Denver
+2023,Alexander County,202300049,8/26/2023,8/28/2023,8/26/2023,The Mitchell Gold Co. d/b/a Mitchell Gold + Bob Williams,Closure,Permanent,46,375 Sharpe Lane,Hiddenite
+2023,Iredell County,202300049,8/26/2023,8/28/2023,8/26/2023,The Mitchell Gold Co. d/b/a Mitchell Gold + Bob Williams,Closure,Permanent,47,125 Lulu Lane,Statesville
+2023,Alexander County,202300049,8/26/2023,8/28/2023,8/26/2023,The Mitchell Gold Co. d/b/a Mitchell Gold + Bob Williams,Closure,Permanent,440,135 One Comfortable Place,Taylorsville
+2023,N/A,202300051,9/7/2023,9/7/2023,11/7/2023,Divvy Homes Inc.,Layoff,Permanent,1,300 Montgomery Street,San Francisco CA
+2023,Wake County,202300050,9/7/2023,9/11/2023,9/8/2023,Sage Therapeutics Inc,Layoff,Permanent,17,7751 Brier Creek Parkway,Raleigh
+2023,Robeson County,202300052,9/27/2023,9/27/2023,12/22/2023,Kayser-Roth Corporation,Layoff,Permanent,126,3707 W. Fifth Street,Lumberton
+2023,N/A,202300053,9/29/2023,9/29/2023,11/30/2023,First Savings Bank,Layoff,Permanent,5,702 North Shore Drive,Jeffersonville IN
+2023,Wake County,202300054,9/28/2023,10/4/2023,12/1/2023,Epic Games Inc,Layoff,Permanent,85,5511 Capital Center Drive,Raleigh
+2023,Wake County,202300054,9/28/2023,10/4/2023,12/1/2023,Epic Games Inc,Layoff,Permanent,85,620 Crossroads Blvd,Cary
+2023,Cleveland County,202300055,10/1/2023,10/6/2023,11/30/2023,"Coats American, Inc.",Layoff,Permanent,51,700 S. Railroad Avenue,Kings Mountain
+2023,Mecklenburg County,202300056,10/9/2023,10/9/2023,12/8/2023,Smithfield Packaged Meats Corp.,Closure,Permanent,107,4825 Hovis Road,Charlotte
+2023,Rowan County,202300057,10/10/2023,10/10/2023,12/8/2023,Gildan Yarn's,Closure,Permanent,258,2121 Heilig Road,Salisbury
+2023,Durham County,202300058,10/16/2023,10/17/2023,12/15/2023,"AgBiome, Inc.",Layoff,Permanent,123,104 TW Alexander Drive,Durham
+2023,Mecklenburg County,202300059,10/19/2023,10/19/2023,12/19/2023,Hood Container,Closure,Permanent,88,11135 Monroe Road,Matthews
+2023,Wake County,202300060,10/25/2023,10/25/2023,1/27/2024,Cygnus Home Service LLC dba Yelloh,Closure,Permanent,15,8851 Westgate Park Drive,Raleigh
+2023,Rowan County,202300060,10/25/2023,10/25/2023,1/27/2024,Cygnus Home Service LLC dba Yelloh,Closure,Permanent,9,420 Montclair Drive,Salisbury
+2023,Guilford County,202300061,10/13/2023,10/25/2023,12/31/2023,National Distribution Centers LLC,Closure,Permanent,217,4190 Eagle Hill Drive,High Point
+2023,Henderson County,202300062,10/25/2023,10/26/2023,12/31/2023,"Printpack, Inc.",Closure,Permanent,90,3510 Asheville Hwy,Hendersonville
+2023,Cumberland County,202300063,11/1/2023,11/1/2023,4/30/2024,Dansons Inc.,Layoff,Permanent,49,800 Technology Drive,Fayetteville
+2023,Columbus County,202300064,11/10/2023,11/10/2023,1/15/2024,National Spinning Co. Inc,Layoff,Permanent,100,240 Spinning Road,Whiteville
+2023,N/A,202300065,12/1/2023,12/1/2023,12/1/2023,FSC Edge Corp.,Closure,Permanent,1,13831 Chalco Valley Parkway,Omaha NE
+2023,Davie County,202300066,11/30/2023,12/6/2023,4/30/2024,CPP Global LLC,Closure,Permanent,52,111 CPP Global Drive,Mocksville
+2023,Granville County,202300067,12/11/2023,12/11/2023,7/1/2024,GATE Precast,Closure,Permanent,77,3600 Oxford Loop,Oxford
+2023,Wake County,202300068,12/13/2023,12/13/2023,1/31/2024,LSG Sky Chefs,Layoff,Permanent,57,2700 John Brantley Blvd,Morrisville
+2023,Pasquotank County,202300069,12/14/2023,12/14/2023,2/3/2024,Amentum,Closure,Permanent,92,1664 Weeksville Road,Elizabeth City
+2023,Mecklenburg County,202300070,12/22/2023,12/29/2023,3/17/2024,HMSHost,Closure,Permanent,91,5501 Josh Birmingham Parkway,Charlotte
+2024,Franklin County,202400001,1/2/2024,1/2/2024,3/29/2024,Team Manufacturing East West LLC,Closure,Permanent,107,35 Weather Street,Youngsville
+2024,Montgomery County,202400002,1/4/2024,1/4/2024,3/31/2024,PaperWorks,Closure,Permanent,74,5465 NC-73,Mount Gilead
+2024,Swain County,202400003,1/4/2024,1/4/2024,3/4/2024,The Service Companies,Closure,Permanent,88,777 Casino Drive,Cherokee
+2024,Mecklenburg County,202400004,1/9/2024,1/11/2024,3/31/2024,Graphic Packaging International LLC,Closure,Permanent,112,800 Westinghouse Blvd,Charlotte
+2024,N/A,202400005,1/11/2024,1/12/2024,3/15/2024,Lost Boys Interactive LLC,Layoff,Permanent,4,6417 Normandy Lane,Madison WI
+2024,Davidson County,202400006,1/17/2024,1/17/2024,8/30/2024,WestRock,Closure,Permanent,147,101 Lexington Parkway,Lexington
+2024,Mecklenburg County,202400007,1/18/2024,1/18/2024,7/28/2024,ASSA ABLOY Americas Residential Inc.,Closure,Permanent,87,15040 Choate Circle,Charlotte
+2024,Cumberland County,202400008,1/26/2024,1/26/2024,3/24/2024,Nitta Gelatin Inc,Closure,Permanent,68,4341 Production Drive,Fayetteville
+2024,Rockingham County,202400009,2/2/2024,2/5/2024,4/9/2024,"Global Textile Alliance, Inc.",Layoff,Permanent,95,2361 Holiday Loop Road,Reidsville
+2024,Forsyth County,202400010,2/5/2024,2/5/2024,4/5/2024,Hanesbrands Inc.,Layoff,Permanent,159,2655 Annapolis Drive,Winston Salem
+2024,Wilson County,202400011,2/5/2024,2/5/2024,10/4/2024,Eon Labs Inc.,Closure,Permanent,213,4700 Sandoz Drive,Wilson
+2024,N/A,202400012,1/30/2024,2/13/2024,3/30/2024,"Block, Inc.",Layoff,Permanent,7,1455 Market Street,San Francisco CA
+2024,Alamance County,202400013,2/13/2024,2/13/2024,4/27/2024,"McMichael Mills, Inc.",Closure,Permanent,81,2050B Willow Spring Lane,Burlington
+2024,Wayne County,202400014,2/13/2024,2/13/2024,4/30/2024,SunTree Snack Foods,Closure,Permanent,29,210 Dixie Trail,Goldsboro
+2024,Iredell County,202400015,2/22/2024,2/22/2024,4/22/2024,General Microcircuits Inc. - East West LLC,Closure,Permanent,11,1133 N. Main Street,Mooresville
+2024,Mecklenburg County,202400016,2/23/2024,2/26/2024,4/22/2024,Daifuku Services America Corporation,Closure,Permanent,34,10240 Old Dowd Road,Charlotte
+2024,Wake County,202400017,3/1/2024,3/1/2024,3/1/2024,The Body Shop,Closure,Permanent,63,5036 One World Way,Wake Forest
+2024,Cumberland County,202400018,3/7/2024,3/8/2024,3/1/2024,Jacobs Technology Inc.,Layoff,Permanent,240,1733 Son Tay Road,Fort Liberty
+2024,Person County,202400019,3/8/2024,3/8/2024,12/31/2024,GKN Driveline North America Inc.,Closure,Permanent,247,6400 Durham Road,Timberlake
+2024,Forsyth County,202400020,3/14/2024,3/14/2024,6/14/2024,Resource Label Group's Pharmaceutic Litho and Label Company,Closure,Permanent,74,3360 Lexington Road,Winston Salem
+2024,Catawba County,202400021,3/20/2024,3/20/2024,5/19/2024,RR Donnelley,Closure,Permanent,82,725 Reese Drive SW,Conover
+2024,Craven County,202400022,3/20/2024,3/20/2024,5/20/2024,Wirthwein New Bern Corp.,Layoff,Permanent,120,901 Industrial Drive,New Bern
+2024,Wake County,202400023,3/22/2024,3/25/2024,5/24/2024,UPS,Closure,Permanent,371,2101 Singleton Ind.,Raleigh
+2024,Guilford County,202400023,3/22/2024,3/25/2024,5/24/2024,UPS,Closure,Permanent,37,3005 Flagstone Street,Greensboro
+2024,Mecklenburg County,202400023,3/22/2024,3/25/2024,5/24/2024,UPS,Closure,Permanent,82,1815 W Pointe Dr,Charlotte
+2024,Wake County,202400024,3/27/2024,3/28/2024,5/28/2024,Charter Communications,Layoff,Permanent,67,4200 Paramount Parkway,Morrisville
+2024,Richmond County,202400025,4/9/2024,4/9/2024,6/28/2024,Big Rock Sports LLC,Closure,Permanent,81,148 Sportsman Dr.,Hamlet
+2024,Durham County,202400026,4/23/2024,4/23/2024,8/2/2024,Phononic Inc,Layoff,Permanent,54,801 Capitola Drive,Durham
+2024,Lincoln County,202400027,4/30/2024,4/30/2024,3/25/2024,Medline Industries LP,Closure,Permanent,220,917 E. Powell Drive,Lincolnton
+2024,N/A,202400028,5/3/2024,5/3/2024,5/31/2024,TRoc,Closure,Permanent,100,800 S. Douglas Rd,Coral Gables FL
+2024,Randolph County,202400029,5/9/2024,5/20/2024,7/23/2024,Graphic Packaging International LLC,Closure,Permanent,65,4139 US-311,Randleman
+2024,Catawba County,202400030,5/20/2024,5/20/2024,4/26/2025,HNI Workplace Furnishings LLC,Closure,Permanent,221,900 12th Street Drive NW,Hickory
+2024,Forsyth County,202400031,5/31/2024,5/31/2024,7/31/2024,"Transdev Services, Inc.",Closure,Permanent,184,1060 North Trade Street,Winston Salem
+2024,Wake County,202400032,5/31/2024,5/31/2024,8/2/2024,DHL eCommerce DBA DHL Global Mail,Closure,Permanent,120,3401 Greshman Lake Road,Raleigh
+2024,Cabarrus County,202400033,6/4/2024,6/7/2024,10/10/2025,"Stanley Black & Decker, Inc.",Closure,Permanent,224,1000 Stanley Dr.,Concord
+2024,Guilford County,202400034,5/20/2024,6/10/2024,7/25/2024,"Leggett & Platt, Incorporated",Closure,Permanent,158,1629 Blandwood Drive,High Point
+2024,Catawba County,202400035,6/12/2024,6/13/2024,9/3/2024,Federal Express Corporation,Closure,Permanent,69,1228 Commerce Street,Conover
+2024,Mecklenburg County,202400036,6/20/2024,6/20/2024,9/20/2024,Walmart,Layoff,Permanent,155,2118 Water Ridge Parkway,Charlotte
+2024,Forsyth County,202400037,6/25/2024,6/25/2024,8/25/2024,Novant Health,Layoff,Permanent,81,101 North Cherry Street,Winston Salem
+2024,Cumberland County,202400038,6/30/2024,6/30/2024,8/29/2024,"Delta Apparel, Inc.",Closure,Permanent,55,719 Dunn Road,Fayetteville
+2024,Robeson County,202400038,6/30/2024,6/30/2024,8/29/2024,"Delta Apparel, Inc.",Closure,Permanent,46,13750 Hwy. 301 South,Rowland
+2024,Cabarrus County,202400038,6/30/2024,6/30/2024,8/29/2024,"Delta Apparel, Inc.",Closure,Permanent,22,4735 Corporate Dr.,Concord
+2024,Cumberland County,202400038,6/30/2024,6/30/2024,8/29/2024,"Delta Apparel, Inc.",Closure,Permanent,101,1 Soffe Drive,Fayetteville
+2024,Craven County,202400039,7/18/2024,7/18/2024,9/16/2024,Weyerhaeuser,Closure,Permanent,73,1482 Weyerhaeuser Road,Vanceboro
+2024,Wilson County,202400040,7/24/2024,7/24/2024,11/22/2024,Placon Corporation,Closure,Permanent,70,2540 Wilco Blvd,Wilson
+2024,Lee County,202400041,7/24/2024,7/25/2024,7/31/2024,Pfizer,Closure,Permanent,150,4300 Oak Park Rd,Sanford
+2024,Nash County,202400041,7/24/2024,7/25/2024,7/31/2024,Pfizer,Closure,Permanent,60,4285 N Wesleyan Blvd,Rocky Mount
+2024,Guilford County,202400042,7/26/2024,7/26/2024,9/15/2024,UpStream Care Company,Layoff,Permanent,66,1100 Revolution Mill Drive,Greensboro
+2024,Craven County,202400043,7/24/2024,7/29/2024,9/30/2024,Winn Management Group LLC,Layoff,Permanent,74,102 Bern Street,Havelock
+2024,Onslow County,202400043,7/24/2024,7/29/2024,9/30/2024,Winn Management Group LLC,Layoff,Permanent,159,5401 Maryland Avenue,Camp Lejeune
+2024,Mecklenburg County,202400044,7/30/2024,7/30/2024,9/29/2024,Columbus McKinnon Corporation,Closure,Permanent,73,9415 Pioneer Ave,Charlotte
+2024,Cabarrus County,202400045,7/31/2024,8/5/2024,8/1/2024,"Avante Health, Inc.",Layoff,Permanent,4,1040 Derita Road,Concord
+2024,Cabarrus County,202400046,8/19/2024,8/19/2024,12/31/2024,Stewart-Haas Racing,Closure,Permanent,323,6001 Haas Way,Kannapolis
+2024,Iredell County,202400047,8/28/2024,8/28/2024,4/1/2025,Keystone Powdered Metal Company,Closure,Permanent,217,250 Old Murdock Road,Troutman
+2024,Wake County,202400049,8/29/2024,8/29/2024,1/6/2025,"HCL America, Inc.",Layoff,Permanent,57,11000 Regency Parkway,Cary
+2024,Onslow County,202400050,9/10/2024,9/10/2024,11/9/2024,J & J Snack Foods Corp.,Layoff,Permanent,78,312 Sound Road,Holly Ridge
+2024,Alamance County,202400051,8/30/2024,9/17/2024,10/31/2024,"Conn Appliances, Inc.",Closure,Permanent,46,1017 Corporate Drive,Mebane
+2024,Lee County,202400052,9/17/2024,9/23/2024,11/17/2024,Parkdale Mills,Closure,Permanent,74,1921 Boone Trail Rd,Sanford
+2024,Johnston County,202400053,9/25/2024,9/25/2024,11/30/2024,"West Logistics, LLC",Closure,Permanent,58,2080 Woodall Dairy Rd,Benson
+2024,N/A,202400055,9/30/2024,10/1/2024,11/30/2024,"Kaleo, Inc.",Layoff,Permanent,2,111 Virginia Street,Richmond VA
+2024,N/A,202400056,9/27/2024,10/1/2024,9/9/2024,"Midwest Transport, Inc.",Closure,Permanent,16,111385 N Trimble Road,Robinson IL
+2024,Granville County,202400057,10/9/2024,10/9/2024,10/18/2024,A.I.M Recon LLC,Closure,Permanent,59,100 Enterprise Court,Oxford
+2024,Iredell County,202400058,10/17/2024,10/18/2024,12/16/2024,International Paper Company,Closure,Permanent,74,930 Meacham Road,Statesville
+2024,Wake County,202400059,10/17/2024,10/23/2024,10/31/2024,"Sage Therapeutics, Inc.",Layoff,Permanent,14,7751 Brier Creek Parkway,Raleigh
+2024,Craven County,202400060,10/31/2024,10/31/2024,8/31/2025,Dradura USA Corp,Layoff,Permanent,119,197 Bosch Boulevard,New Bern
+2024,Cumberland County,202400061,10/31/2024,11/1/2024,12/31/2024,Aramark Healthcare Support Services LLC,Layoff,Permanent,233,1638 Owens Dr.,Fayetteville
+2024,Guilford County,202400062,11/1/2024,11/1/2024,1/31/2025,Hanesbrands Inc.,Closure,Permanent,75,4190 Eagle Hill Drive,High Point
+2024,Cabarrus County,202400063,11/4/2024,11/4/2024,3/31/2025,Tegra Global,Closure,Permanent,61,244 Manor AVE SW,Concord
+2024,Wake County,202400064,11/5/2024,11/5/2024,2/28/2025,Progress Software Corporation,Layoff,Permanent,199,621 Hillsborough Street,Raleigh
+2024,Pitt County,202400065,11/14/2024,11/14/2024,1/23/2025,Hyster-Yale Materials Handling Inc.,Layoff,Permanent,97,5200 M.L.K. Jr Hwy,Greenville
+2024,Burke County,202400066,11/15/2024,11/16/2024,11/22/2024,"E. J. Victor, Inc.",Layoff,Permanent,121,110 Wamsutta Mill Rd,Morganton
+2024,Iredell County,202400067,11/19/2024,11/25/2024,1/20/2025,Dura Supreme Cabinetry,Closure,Permanent,74,607 Meacham Rd,Statesville
+2024,Randolph County,202400068,11/19/2024,11/25/2024,9/25/2025,Norcraft Companies LP,Closure,Permanent,200,6163 Old 421 Rd,Liberty
+2024,Wake County,202400069,12/3/2024,12/3/2024,2/3/2025,Federal Express Corporation,Layoff,Permanent,218,4301 Atlantic Ave,Raleigh
+2024,Durham County,202400070,12/3/2024,12/3/2024,2/3/2025,Federal Express Corporation,Closure,Permanent,123,2311 Englert Drive,Durham
+2024,Vance County,202400071,12/4/2024,12/4/2024,3/17/2025,"Keeco, LLC",Closure,Permanent,119,100 Comfort Drive,Henderson
+2024,N/A,202400072,12/20/2024,12/20/2024,2/19/2025,"Vimo, Inc. dba GetInsured",Layoff,Permanent,23,1305 Terra Bella Ave,Mountain View CA
+2024,Rockingham County,202400073,12/23/2024,12/23/2024,1/31/2025,"Guy & O'Neill, Inc.",Closure,Permanent,102,129 S. Technology Drive,Reidsville
+2024,N/A,202400074,12/30/2024,12/31/2024,2/19/2025,"D&A Consulting Services, dba GetInsured",Layoff,Permanent,17,7908 Pointe Hollow Dr,Richmond VA
+2025,Durham County,202500001,1/6/2025,1/6/2025,12/15/2025,"Resilience US, Inc.",Layoff,Permanent,120,1733 TW Alexander Dr,Durham
+2025,Mecklenburg County,202500002,1/13/2025,1/13/2025,8/29/2025,Eaton,Closure,Permanent,76,5910 Long Creek Park Drive,Charlotte
+2025,Rockingham County,202500003,1/13/2025,1/13/2025,3/14/2025,"Press Glass, Inc.",Closure,Permanent,68,8901 US-220,Stoneville
+2025,Yadkin County,202500004,1/23/2025,1/23/2025,12/31/2025,PVH Corp.,Closure,Permanent,317,1000 PVH Quality Way,Jonesville
+2025,Davidson County,202500005,1/24/2025,1/24/2025,5/30/2025,Olon Industries Inc. (US),Closure,Permanent,53,67 Biesecker Road,Lexington
+2025,Randolph County,202500006,1/24/2025,1/27/2025,4/30/2025,Kayser-Roth Corporation,Closure,Permanent,116,515 W. Balfour St.,Asheboro
+2025,Mecklenburg County,202500007,1/27/2025,1/27/2025,3/31/2025,"Air General, Inc.",Closure,Permanent,99,4706 Yorkmont Road,Charlotte
+2025,Durham County,202500008,1/27/2025,1/28/2025,10/24/2025,"Charles River Laboratories, Inc.",Closure,Permanent,37,4025 Stirrup Creek Drive,Durham
+2025,Rowan County,202500009,1/31/2025,1/31/2025,4/1/2025,General Shale,Closure,Permanent,65,700 S. Long St.,East Spencer
+2025,Rockingham County,202500010,2/3/2025,2/3/2025,6/14/2025,"Unifi Manufacturing, Inc.",Closure,Permanent,91,805 Island Drive,Madison
+2025,Guilford County,202500011,2/3/2025,2/3/2025,4/4/2025,"Richloom Weaving, LLC",Closure,Permanent,54,1914 S. Elm Street,High Point
+2025,Mecklenburg County,202500012,2/5/2025,2/5/2025,6/13/2025,Walmart,Closure,Permanent,201,2118 Water Ridge Parkway,Charlotte
+2025,Anson County,202500013,2/11/2025,2/11/2025,4/11/2025,"Darling Ingredients, Inc.",Layoff,Permanent,51,656 Little Duncan Road,Wadesboro
+2025,N/A,202500014,2/17/2025,2/17/2025,3/25/2025,Behavioral Health Link,Closure,Permanent,2,1201 Peachtree St NE,Atlanta GA
+2025,Alexander County,202500015,2/24/2025,2/24/2025,12/31/2025,TIMKEN,Closure,Permanent,58,1095 McClain Rd,Hiddenite
+2025,Mecklenburg County,202500016,3/3/2025,3/4/2025,5/2/2025,UPS,Closure,Permanent,99,1815 W Pointe Drive,Charlotte
+2025,Orange County,202500017,3/10/2025,3/11/2025,1/5/2026,American Institutes of Research (AIR),Layoff,Permanent,19,100 Europa Drive,Chapel Hill
+2025,Robeson County,202500018,3/7/2025,3/17/2025,6/30/2025,"Sodexo, Inc and Affiliates",Closure,Permanent,156,1 University Drive,Pembroke
+2025,N/A,202500019,3/18/2025,3/19/2025,6/30/2025,BH Security LLC d/b/a Brinks Home,Layoff,Permanent,1,1278 Loop Rd,Lancaster PA
+2025,Guilford County,202500020,3/21/2025,3/21/2025,5/21/2025,"Panera, LLC",Closure,Permanent,80,4225 Tudor Lane,Greensboro
+2025,Forsyth County,202500021,3/25/2025,3/25/2025,5/30/2025,International Business Machines Corporation (IBM),Layoff,Permanent,72,1100 Reynolds Blvd,Winston Salem
+2025,Durham County,202500022,3/25/2025,3/25/2025,5/1/2025,RTI International,Layoff,Permanent,276,3040 East Cornwallis Road,Durham
+2025,Durham County,202500023,4/9/2025,4/9/2025,5/16/2025,Family Health International dba FHI 360,Layoff,Permanent,144,359 Blackwell Street,Durham
+2025,Cleveland County,202500024,4/1/2025,4/14/2025,12/31/2025,"Patrick Yarn Mill, Inc.",Closure,Permanent,171,501 York Road,Kings Mountain
+2025,Mecklenburg County,202500025,4/30/2025,5/2/2025,6/30/2025,"FCR, LLC",Layoff,Permanent,70,1007 Amble Drive,Charlotte
+2025,Wake County,202500026,5/16/2025,5/16/2025,7/29/2025,"Transaxle, LLC",Layoff,Permanent,9,1406 Management Way,Garner
+2025,Mecklenburg County,202500026,5/16/2025,5/16/2025,7/29/2025,"Transaxle, LLC",Layoff,Permanent,3,2527 Scott Futrell Drive,Charlotte
+2025,Cumberland County,202500027,5/29/2025,5/29/2025,7/31/2025,"Alpek Polyester USA, LLC",Closure,Permanent,90,3200 Cedar Creek Road,Fayetteville
+2025,Cumberland County,202500027,5/29/2025,5/29/2025,7/31/2025,"Alpek Polyester USA, LLC",Closure,Permanent,90,3216 Cedar Creek Road,Fayetteville
+2025,Moore County,202500028,5/8/2025,6/2/2025,7/8/2025,Health Alliance Medical Plans,Layoff,Permanent,50,1930 N. Poplar Street,Southern Pines
+2025,N/A,202500029,5/29/2025,6/2/2025,2/21/2026,Nordstrom,Layoff,Permanent,14,13531 East Caley Avenue,Centennial CO
+2025,Chatham County,202500030,6/9/2025,6/9/2025,8/9/2025,"Wolfspeed, Inc.",Layoff,Permanent,73,1000 Carolina Core Parkway,Siler City
+2025,Forsyth County,202500031,6/24/2025,6/26/2025,11/14/2025,Wells Fargo,Layoff,Permanent,196,809 West 4 1/2 Street,Winston Salem
+2025,Guilford County,202500032,6/30/2025,6/30/2025,9/1/2025,Federal Express Corporation,Closure,Permanent,164,6035 Old Oak Ridge Rd,Greensboro
+2025,Mecklenburg County,202500033,7/8/2025,7/10/2025,9/12/2025,Fellers LLC,Closure,Permanent,1,1010 Pressley Road,Charlotte
+2025,Gaston County,202500034,7/11/2025,7/11/2025,9/9/2025,Daimler Truck North America LLC,Layoff,Temporary,33,1803 Main Street,Mount Holly
+2025,Gaston County,202500034,7/11/2025,7/11/2025,9/9/2025,Daimler Truck North America LLC,Layoff,Temporary,540,1800 North Main Street,Mount Holly
+2025,Durham County,202500035,7/16/2025,7/17/2025,7/18/2025,"Sarepta Therapeutics, Inc.",Layoff,Permanent,21,701 West Main St.,Durham
+2025,Dare County,202500036,7/15/2025,7/18/2025,8/11/2025,KIRA Services and KIRA Training Services,Layoff,Permanent,59,1301 Navy Shell Road,Stumpy Point
+2025,Craven County,202500036,7/15/2025,7/18/2025,8/11/2025,KIRA Services and KIRA Training Services,Layoff,Permanent,2,4280 6th Ave MCAS,Cherry Point
+2025,Davidson County,202500037,8/13/2025,8/14/2025,11/2/2025,Howard Miller,Closure,Permanent,3,4339 Old Linwood Rd,Lexington
+2025,Guilford County,202500037,8/13/2025,8/14/2025,11/2/2025,Howard Miller,Closure,Permanent,39,1920 Jarrell St.,High Point
+2025,N/A,202500038,8/18/2025,8/18/2025,12/31/2025,"Zeco Systems, Inc.",Layoff,Permanent,3,767 S Alameda,Los Angeles CA
+2025,Franklin County,202500039,8/18/2025,8/18/2025,9/8/2025,N&S Locating Services dba S&N,Layoff,Permanent,126,12 Craftsman Drive,Youngsville
+2025,Johnston County,202500040,8/20/2025,8/22/2025,10/27/2025,McIntosh Box & Pallet Co.,Closure,Permanent,43,1700 Chicopee Road,Benson
+2025,Mecklenburg County,202500041,9/4/2025,9/4/2025,11/7/2025,Essendant,Closure,Permanent,58,10800 Withers Cove Park Dr.,Charlotte
+2025,Durham County,202500042,9/9/2025,9/10/2025,11/8/2025,CRC ED Treatment LLC,Closure,Permanent,90,176 Lassiter Homestead Rd,Durham
+2025,Buncombe County,202500043,9/18/2025,9/18/2025,11/18/2025,"Blue Ridge Power, LLC",Layoff,Permanent,169,105 Fairview Rd,Asheville
+2025,Cumberland County,202500044,9/18/2025,9/18/2025,11/18/2025,"Blue Ridge Power, LLC",Layoff,Permanent,348,1682 Middle River Loop,Fayetteville
+2025,Cleveland County,202500045,9/29/2025,9/29/2025,3/31/2026,"Solero Technologies Shelby, LLC",Layoff,Permanent,102,1100 Airport Road,Shelby
+2025,Durham County,202500046,9/17/2025,9/30/2025,9/26/2025,"CNC Logistics, Inc.",Closure,Permanent,75,1275 Person St.,Durham
+2025,Wilson County,202500047,9/30/2025,9/30/2025,12/1/2025,"Mativ Conwed, LLC",Closure,Permanent,50,2711 Commerce Road South,Wilson
+2025,Lenoir County,202500048,9/19/2025,10/1/2025,11/22/2025,Safeway Logistics LLC,Layoff,Permanent,72,1302 Enterprise Blvd,Kinston
+2025,Rowan County,202500049,10/3/2025,10/3/2025,12/19/2025,Packaging Corporation of America (PCA),Closure,Permanent,108,1302 North Salisbury Avenue,Salisbury
+2025,Chatham County,202500050,10/6/2025,10/6/2025,12/5/2025,Southern Veneer Specialty Products,Closure,Permanent,130,306 Corinth Road,Moncure
+2025,N/A,202500051,10/3/2025,10/6/2025,12/2/2025,"SimplyIOA, LLC",Closure,Permanent,2,1855 West State Road 434,Longwood FL
+2025,Mecklenburg County,202500052,10/8/2025,10/8/2025,6/1/2026,Royal Appliance Mfg. Co. dba TTI Floor Care North America,Closure,Permanent,172,8405 IBM Drive,Charlotte
+2025,Mecklenburg County,202500053,10/1/2025,10/9/2025,10/1/2025,wicks & whiskers llc,Layoff,Temporary,1,1800 Central Ave,Charlotte
+2025,Mecklenburg County,202500054,10/6/2025,10/16/2025,1/23/2026,"Baker & Taylor, LLC",Closure,Permanent,112,2810 Coliseum Centre Drive,Charlotte
+2025,Columbus County,202500055,10/17/2025,10/22/2025,11/1/2025,East Coast Migrant Head Start Project (ECMHSP),Closure,Temporary,29,84 Ao Inman Lane,Whiteville
+2025,Pender County,202500055,10/17/2025,10/22/2025,11/1/2025,East Coast Migrant Head Start Project (ECMHSP),Closure,Temporary,7,55 Old Blossom Ferry Road,Rocky Point
+2025,Nash County,202500055,10/17/2025,10/22/2025,11/1/2025,East Coast Migrant Head Start Project (ECMHSP),Closure,Temporary,19,4562 US Highway 264A,Bailey
+2025,Yadkin County,202500055,10/17/2025,10/22/2025,11/1/2025,East Coast Migrant Head Start Project (ECMHSP),Closure,Temporary,2,113 Maple Street,Boonville
+2025,Wilson County,202500055,10/17/2025,10/22/2025,11/1/2025,East Coast Migrant Head Start Project (ECMHSP),Closure,Temporary,6,506 Pender St. E,Wilson
+2025,Henderson County,202500055,10/17/2025,10/22/2025,11/1/2025,East Coast Migrant Head Start Project (ECMHSP),Closure,Temporary,14,2 Sugar Hill Drive,Hendersonville
+2025,Pitt County,202500055,10/17/2025,10/22/2025,11/1/2025,East Coast Migrant Head Start Project (ECMHSP),Closure,Temporary,21,7656 Highway 222 E,Fountain
+2025,Duplin County,202500055,10/17/2025,10/22/2025,11/1/2025,East Coast Migrant Head Start Project (ECMHSP),Closure,Temporary,47,2669 W NC 403 Highway,Faison
+2025,Johnston County,202500055,10/17/2025,10/22/2025,11/1/2025,East Coast Migrant Head Start Project (ECMHSP),Closure,Temporary,10,798 Veterans Parkway,Clayton
+2025,Harnett County,202500055,10/17/2025,10/22/2025,11/1/2025,East Coast Migrant Head Start Project (ECMHSP),Closure,Temporary,31,3201 Easy Street,Dunn
+2025,Harnett County,202500055,10/17/2025,10/22/2025,11/1/2025,East Coast Migrant Head Start Project (ECMHSP),Closure,Temporary,17,143 Fish Drive,Angier
+2025,Wake County,202500055,10/17/2025,10/22/2025,11/1/2025,East Coast Migrant Head Start Project (ECMHSP),Closure,Temporary,55,"2301 Sugar Bush Road, Suite 400",Raleigh
+2025,Gaston County,202500056,10/28/2025,10/28/2025,12/27/2025,"Mannington Mills, Inc.",Closure,Permanent,296,200 Saxony Dr.,McAdenville
+2025,Jackson County,202500057,10/29/2025,10/29/2025,12/31/2025,"Daniel RP Management, LLC",Layoff,Permanent,151,265 High Hampton Drive,Cashiers
+2025,Mecklenburg County,202500058,11/1/2025,11/1/2025,11/1/2025,Bags,Layoff,Permanent,56,5501 Josh Birmingham Parkway,Charlotte
+2025,Buncombe County,202500059,11/6/2025,11/7/2025,1/19/2026,"Pine Gate Renewables, LLC",Closure,Permanent,223,130 Roberts Street,Asheville
+2025,Scotland County,202500060,12/1/2025,12/1/2025,1/30/2026,Ryder,Closure,Permanent,91,18400 Fieldcrest Rd,Laurel Hill
+2025,Guilford County,202500061,12/1/2025,12/2/2025,2/28/2026,"10 Roads Express, LLC",Closure,Permanent,74,407 Norwalk St,Greensboro
+2025,Alamance County,202500062,12/2/2025,12/2/2025,2/1/2026,"Precision Concepts International, LLC",Closure,Permanent,59,1403A S. Third Street,Mebane
+2025,Guilford County,202500063,12/2/2025,12/5/2025,3/31/2027,"Qualicaps, Inc.",Closure,Permanent,91,6505 Franz Warner Parkway,Whitsett
+2025,Wake County,202500064,12/16/2025,12/16/2025,12/15/2025,"I Squared Logistics, LLC",Layoff,Permanent,160,1201 N. Greenfield Parkway,Garner
+2025,Wake County,202500065,12/22/2025,12/22/2025,2/27/2026,Railcrew Xpress (RCX),Closure,Permanent,2,860 Semart Drive,Raleigh
+2025,Edgecombe County,202500065,12/22/2025,12/22/2025,2/27/2026,Railcrew Xpress (RCX),Closure,Permanent,27,2501 SW Main Street,Rocky Mount
+2025,Richmond County,202500065,12/22/2025,12/22/2025,2/27/2026,Railcrew Xpress (RCX),Closure,Permanent,25,290 CSX Drive,Hamlet
+2025,Pitt County,202500065,12/22/2025,12/22/2025,2/27/2026,Railcrew Xpress (RCX),Closure,Permanent,2,1810 Staton Mill Road,Bethel
+2025,Cumberland County,202500065,12/22/2025,12/22/2025,2/27/2026,Railcrew Xpress (RCX),Closure,Permanent,7,914 North Street,Fayetteville
+2025,Brunswick County,202500065,12/22/2025,12/22/2025,2/27/2026,Railcrew Xpress (RCX),Closure,Permanent,4,407 Old Mill Road NE,Leland
+2025,Mecklenburg County,202500065,12/22/2025,12/22/2025,2/27/2026,Railcrew Xpress (RCX),Closure,Permanent,18,112 S. Ramsey Street,Charlotte
+2025,Rutherford County,202500065,12/22/2025,12/22/2025,2/27/2026,Railcrew Xpress (RCX),Closure,Permanent,2,279 Bostic Yard Road,Bostic
+2025,Catawba County,202500066,12/29/2025,12/30/2025,12/31/2025,Kroehler Furniture Co.,Closure,Permanent,275,1800 Conover Blvd E,Conover
+2026,New Hanover County,202600001,1/7/2026,1/7/2026,3/6/2026,"Avelo Airlines, Inc.",Closure,Permanent,82,1740 Airport Blvd.,Wilmington
+2026,Wake County,202600002,1/7/2026,1/7/2026,3/6/2026,"Avelo Airlines, Inc.",Closure,Permanent,78,2400 John Brantley Boulevard,Morrisville
+2026,Buncombe County,202600003,1/8/2026,1/8/2026,12/31/2027,Thermo Fisher Scientific,Closure,Permanent,423,275 Aiken Road,Asheville
+2026,N/A,202600004,1/8/2026,1/8/2026,8/3/2026,SMBC MANUBANK,Layoff,Permanent,9,277 Park Avenue,New York NY
+2026,Chatham County,202600005,1/12/2026,1/12/2026,2/6/2026,Fortrex,Layoff,Permanent,170,1101 East 3rd Street,Siler City
+2026,Stokes County,202600006,1/13/2026,1/15/2026,1/13/2026,Parkdale Mills,Closure,Permanent,72,1660 US 311 Hwy. North,Walnut Cove
+2026,Pitt County,202600007,1/19/2026,1/20/2026,3/31/2026,Access East,Layoff,Permanent,31,2100 Stantonsburg Road,Greenville
+2026,Forsyth County,202600008,1/20/2026,1/20/2026,3/23/2026,"CJ Logistics America, LLC",Closure,Permanent,99,200 Forum Parkway,Rural Hall
+2026,Gaston County,202600009,1/27/2026,1/27/2026,4/28/2026,"Firestone Fibers and Textiles, LLC",Layoff,Permanent,4,315 S. Dalton Street,Gastonia
+2026,Gaston County,202600009,1/27/2026,1/27/2026,4/28/2026,"Firestone Fibers and Textiles, LLC",Layoff,Permanent,77,100 Firestone Lane,Kings Mountain
+2026,Wake County,202600010,2/3/2026,2/3/2026,4/5/2026,"GMRI, Inc. dba Bahama Breeze",Closure,Permanent,75,3309 Wake Forest Drive,Raleigh
+2026,Wake County,202600011,2/3/2026,2/3/2026,6/27/2026,Wells Fargo,Layoff,Permanent,138,1100 Corporate Center Drive,Raleigh
+2026,Wake County,202600012,2/6/2026,2/6/2026,7/10/2026,"Avantor Fluid Handling, LLC",Closure,Permanent,54,606 Church St.,Morrisville
+2026,Union County,202600013,2/11/2026,2/11/2026,9/1/2026,LTI Holdings Inc. DBA Boyd,Closure,Permanent,63,300 Acme Dr.,Monroe
+2026,Mecklenburg County,202600014,2/13/2026,2/13/2026,5/1/2026,"Lowe's Companies, Inc.",Layoff,Permanent,49,100 W Worthington Avenue,Charlotte
+2026,Iredell County,202600014,2/13/2026,2/13/2026,5/1/2026,"Lowe's Companies, Inc.",Layoff,Permanent,178,1000 Lowe's Boulevard,Mooresville
+2026,Edgecombe County,202600015,2/19/2026,2/19/2026,4/19/2026,Corning Incorporated,Closure,Permanent,123,7708 US Hwy 64 Alt W,Tarboro
+2026,Durham County,202600016,2/24/2026,2/24/2026,5/1/2026,Merck Sharp & Dohme LLC,Layoff,Permanent,7,100 Rodolphe Street,Durham
+2026,Durham County,202600016,2/24/2026,2/24/2026,5/1/2026,Merck Sharp & Dohme LLC,Layoff,Permanent,147,5325 Old Oxford Road,Durham
+2026,Pitt County,202600017,2/16/2026,2/27/2026,4/30/2026,"Focus Services, LLC",Closure,Permanent,94,1130 Sugg Parkway,Greenville
+2026,Sampson County,202600018,3/2/2026,3/3/2026,3/20/2026,Fortrex,Closure,Permanent,121,424 E Railroad Street,Clinton
+2026,Guilford County,202600019,3/3/2026,3/3/2026,5/2/2026,Prepac Manufacturing US LLC,Layoff,Permanent,200,3031 Hendren Rd,Whitsett
+2026,Wake County,202600020,3/6/2026,3/6/2026,5/31/2026,Saks & Company LLC,Layoff,Permanent,43,7700 Old Wake Forest Road,Raleigh
+2026,N/A,202600021,3/2/2026,3/10/2026,3/6/2026,C2 Technologies,Layoff,Permanent,9,7601 Lewinsville Road,McLean VA
+2026,Mecklenburg County,202600022,3/11/2026,3/11/2026,5/17/2026,"Kenco Logistic Services, LLC",Layoff,Permanent,86,11907 General Drive,Charlotte
+2026,Hertford County,202600023,3/16/2026,3/16/2026,4/19/2026,Perdue Foods Feed Mill,Closure,Temporary,104,242 Perdue Road,Cofield
+2026,Mecklenburg County,202600024,3/16/2026,3/16/2026,8/12/2026,Family Dollar,Closure,Permanent,373,10401 Monroe Road,Matthews
+2026,Wake County,202600025,3/19/2026,3/19/2026,9/18/2026,"Red Storm Entertainment, Inc.",Layoff,Permanent,105,3001 Weston Pkwy,Cary
+2026,Mecklenburg County,202600026,3/20/2026,3/20/2026,6/30/2026,AmeriPark LLC and Republic Parking System LLC dba Reimagined Parking,Closure,Permanent,188,5601 Wilkinson Blvd,Charlotte
+2026,Wake County,202600027,3/24/2026,3/24/2026,3/27/2026,"Epic Games, Inc.",Layoff,Permanent,211,620 Crossroads Boulevard,Cary
+2026,Hertford County,202600028,3/19/2026,4/7/2026,5/1/2026,ECU Health Home Health and Hospice,Closure,Permanent,4,521 West Myers St,Ahoskie
+2026,Beaufort County,202600028,3/19/2026,4/7/2026,5/1/2026,ECU Health Home Health and Hospice,Closure,Permanent,10,1211 Highland Dr,Washington
+2026,Bertie County,202600028,3/19/2026,4/7/2026,5/1/2026,ECU Health Home Health and Hospice,Closure,Permanent,14,304 W. Granville St,Windsor
+2026,Pitt County,202600028,3/19/2026,4/7/2026,5/1/2026,ECU Health Home Health and Hospice,Closure,Permanent,35,920 Wellness Drive,Greenville
+2026,Duplin County,202600028,3/19/2026,4/7/2026,5/1/2026,ECU Health Home Health and Hospice,Closure,Permanent,37,401 North Main Street,Kenansville
+2026,Pitt County,202600028,3/19/2026,4/7/2026,5/1/2026,ECU Health Home Health and Hospice,Closure,Permanent,61,1005 WH Smith Blvd,Greenville
+2026,Davidson County,202600029,4/9/2026,4/9/2026,6/7/2026,Parkdale Mills,Closure,Permanent,68,100 Mill St,Lexington
+2026,Orange County,202600030,4/9/2026,4/9/2026,6/12/2026,Compass Group USA Inc. dba Chartwells,Layoff,Permanent,91,750 S. Merritt Mill Road,Chapel Hill
+2026,Vance County,202600031,4/20/2026,4/20/2026,12/31/2026,"Mars Petcare US, Inc.",Closure,Permanent,149,845 Commerce Drive,Henderson
+2026,Davidson County,202600032,4/29/2026,4/29/2026,7/1/2026,"Vitacost.com, Inc.",Closure,Permanent,130,130 Lexington Parkway,Lexington
+2026,Mecklenburg County,202600033,5/1/2026,5/1/2026,7/1/2026,"Lions Services, Inc.",Layoff,Permanent,107,4600 North Tryon Street,Charlotte
+2026,Wake County,202600034,6/2/2026,6/2/2026,7/31/2026,"Republic National Distributing Company, LLC",Closure,Permanent,14,7221 Becky Circle,Raleigh
+2026,Mecklenburg County,202600034,6/2/2026,6/2/2026,7/31/2026,"Republic National Distributing Company, LLC",Closure,Permanent,39,6701-H Northpark Blvd,Charlotte
+2026,Union County,202600035,6/1/2026,6/4/2026,8/14/2026,"Down-Lite International, Inc.",Closure,Permanent,113,201 Cuthbertson Street,Monroe
+2026,Forsyth County,202600036,6/5/2026,6/9/2026,12/31/2026,DHL Supply Chain,Closure,Permanent,81,540 Northridge Park Drive,Rural Hall
+2026,Wake County,202600037,6/10/2026,6/10/2026,8/10/2026,Ubisoft,Layoff,Permanent,17,3001 Weston Pkwy,Cary
+2026,N/A,202600038,6/15/2026,6/15/2026,8/17/2026,"Vestis Services, LLC",Layoff,Permanent,1,2680 Palumbo Drive,Lexington KY
+2026,Wake County,202600039,6/16/2026,6/16/2026,3/1/2027,"Asensus Surgical, Inc.",Layoff,Permanent,108,1001 Airport Blvd,Morrisville
+2026,Wilkes County,202600040,6/24/2026,6/24/2026,8/24/2026,Carolina West Wireless,Closure,Permanent,127,1435 US Highway 421 Business,Wilkesboro
+2026,N/A,202600041,6/26/2026,6/30/2026,8/28/2026,"Conduent Commercial Solutions, LLC",Layoff,Permanent,67,100 Campus Dr.,Florham Park NJ
+2026,Rowan County,202600042,7/1/2026,7/1/2026,7/1/2026,"Barrette Outdoor Living, Inc.",Layoff,Permanent,63,745 Mid S Drive,Salisbury
+2026,Cleveland County,202600043,7/6/2026,7/6/2026,9/30/2027,"Electric Glass Fiber America, LLC",Layoff,Permanent,282,940 Washburn Switch Road,Shelby
+2026,Wake County,202600044,7/6/2026,7/10/2026,9/6/2026,"Frito Lay, Inc.",Closure,Permanent,65,8924 Midway West Road,Raleigh
