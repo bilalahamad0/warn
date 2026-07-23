@@ -15,7 +15,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
-from . import all_sources
+from . import registered_sources
 from .base import DATA_DIR
 
 log = logging.getLogger("warn_sources")
@@ -39,7 +39,7 @@ def build_national(
 
     states: dict = {}
     records: list = []
-    for source in all_sources(data_dir):
+    for source in registered_sources(data_dir):
         store = (
             source.paths.cumulative
             if source.paths.cumulative.exists()

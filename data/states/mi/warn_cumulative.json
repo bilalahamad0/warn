@@ -1,9 +1,9 @@
 {
-  "total_records": 109,
-  "total_employees": 13828,
-  "date_range_start": "2024-11-29",
-  "date_range_end": "2026-09-11",
-  "last_updated": "2026-07-23T13:44:10.167162+00:00Z",
+  "total_records": 772,
+  "total_employees": 119391,
+  "date_range_start": "2016-01-07",
+  "date_range_end": "2024-11-15",
+  "last_updated": "2026-07-23T17:38:06.830408+00:00Z",
   "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
   "records": [
     {
@@ -1291,28 +1291,5989 @@
       "industry": ""
     },
     {
-      "state": "MI",
-      "company": "Menard Inc., d/b/a Menards",
-      "notice_date": null,
-      "effective_date": "2026-05-13",
-      "employees": 68,
-      "layoff_type": "Temporary layoff",
-      "county": "St. Joseph",
-      "city": "",
-      "address": "1001 Warner Drive, Three Rivers, MI 49093",
-      "industry": ""
+      "company": "GDI Services",
+      "notice_date": "2024-01-05",
+      "effective_date": null,
+      "employees": 114,
+      "layoff_type": "Layoff",
+      "city": "Caledonia",
+      "state": "MI"
     },
     {
-      "state": "MI",
-      "company": "General Shale, d/b/a Michigan Brick",
-      "notice_date": null,
-      "effective_date": "2026-04-27",
+      "company": "ROPES COURSES, INC.",
+      "notice_date": "2024-01-05",
+      "effective_date": null,
+      "employees": 10,
+      "layoff_type": "Layoff",
+      "city": "Allegan",
+      "state": "MI"
+    },
+    {
+      "company": "GDI Services",
+      "notice_date": "2024-01-08",
+      "effective_date": null,
+      "employees": 114,
+      "layoff_type": "Layoff",
+      "city": "Shelby Township",
+      "state": "MI"
+    },
+    {
+      "company": "GRAPHIC PACKAGING",
+      "notice_date": "2024-01-16",
+      "effective_date": null,
+      "employees": 111,
+      "layoff_type": "Facility Closing",
+      "city": "Wyoming",
+      "state": "MI"
+    },
+    {
+      "company": "UNITED PARCEL SERVICE GENERAL",
+      "notice_date": "2024-01-18",
+      "effective_date": null,
+      "employees": 162,
+      "layoff_type": "Facility Closing",
+      "city": "Livonia",
+      "state": "MI"
+    },
+    {
+      "company": "DETROIT CHASSIS LLC",
+      "notice_date": "2024-01-26",
+      "effective_date": null,
+      "employees": 64,
+      "layoff_type": "Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Eagle Staffing Solutions, LLC",
+      "notice_date": "2024-01-29",
+      "effective_date": null,
+      "employees": 126,
+      "layoff_type": "Layoff",
+      "city": "Wayne",
+      "state": "MI"
+    },
+    {
+      "company": "PECKHAM VOCATIONAL IND INC",
+      "notice_date": "2024-01-30",
+      "effective_date": null,
+      "employees": 21,
+      "layoff_type": "Facility Closing",
+      "city": "Charlotte",
+      "state": "MI"
+    },
+    {
+      "company": "Elevance Health",
+      "notice_date": "2024-02-02",
+      "effective_date": null,
+      "employees": 90,
+      "layoff_type": "Layoff",
+      "city": "Dearborn",
+      "state": "MI"
+    },
+    {
+      "company": "CEVA Logistics",
+      "notice_date": "2024-02-02",
+      "effective_date": null,
+      "employees": 80,
+      "layoff_type": "Layoff",
+      "city": "Romulus",
+      "state": "MI"
+    },
+    {
+      "company": "DECORATIVE PANELS",
+      "notice_date": "2024-02-22",
+      "effective_date": null,
+      "employees": 184,
+      "layoff_type": "Facility Closing",
+      "city": "Alpena",
+      "state": "MI"
+    },
+    {
+      "company": "TERNES PACKAGING-INDIANA, INC",
+      "notice_date": "2024-02-26",
+      "effective_date": null,
+      "employees": 190,
+      "layoff_type": "Facility Closing",
+      "city": "Pontiac",
+      "state": "MI"
+    },
+    {
+      "company": "Quality Metalcraft",
+      "notice_date": "2024-02-29",
+      "effective_date": null,
+      "employees": 80,
+      "layoff_type": "Layoff",
+      "city": "Livonia",
+      "state": "MI"
+    },
+    {
+      "company": "TUBELITE INC",
+      "notice_date": "2024-03-01",
+      "effective_date": null,
+      "employees": 106,
+      "layoff_type": "Facility Closing",
+      "city": "Walker",
+      "state": "MI"
+    },
+    {
+      "company": "MOOSEJAW LLC",
+      "notice_date": "2024-03-04",
+      "effective_date": null,
+      "employees": 55,
+      "layoff_type": "Facility Closing",
+      "city": "Madison Heights",
+      "state": "MI"
+    },
+    {
+      "company": "TRI STAR MOLDING INC",
+      "notice_date": "2024-03-11",
+      "effective_date": null,
+      "employees": 32,
+      "layoff_type": "Layoff",
+      "city": "Marcellus",
+      "state": "MI"
+    },
+    {
+      "company": "BAY COUNTY MEDICAL CARE",
+      "notice_date": "2024-03-12",
+      "effective_date": null,
+      "employees": 90,
+      "layoff_type": "Layoff",
+      "city": "Essexville",
+      "state": "MI"
+    },
+    {
+      "company": "OPUS PACKAGING - KALAMAZOO,",
+      "notice_date": "2024-03-21",
+      "effective_date": null,
+      "employees": 62,
+      "layoff_type": "Facility Closing",
+      "city": "Kalamazoo",
+      "state": "MI"
+    },
+    {
+      "company": "Logistics Insight Corp.",
+      "notice_date": "2024-03-22",
+      "effective_date": null,
+      "employees": 447,
+      "layoff_type": "Facility Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "UNIVERSAL DEDICATED OF",
+      "notice_date": "2024-03-22",
+      "effective_date": null,
+      "employees": 230,
+      "layoff_type": "Facility Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "DW-NATIONAL STANDARD-NILES LLC",
+      "notice_date": "2024-03-22",
+      "effective_date": null,
+      "employees": 84,
+      "layoff_type": "Facility Closing",
+      "city": "Niles",
+      "state": "MI"
+    },
+    {
+      "company": "TRITON INDUSTRIES INC",
+      "notice_date": "2024-03-27",
+      "effective_date": null,
+      "employees": 129,
+      "layoff_type": "Layoff",
+      "city": "Lansing",
+      "state": "MI"
+    },
+    {
+      "company": "Trinity Services Group, Inc.",
+      "notice_date": "2024-04-01",
+      "effective_date": null,
+      "employees": 132,
+      "layoff_type": "Facility Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "CONCORDIA UNIVERSITY",
+      "notice_date": "2024-04-01",
+      "effective_date": null,
+      "employees": 6,
+      "layoff_type": "Layoff",
+      "city": "Ann Arbor",
+      "state": "MI"
+    },
+    {
+      "company": "RXO Managed Transport, LLC",
+      "notice_date": "2024-04-02",
+      "effective_date": null,
+      "employees": 114,
+      "layoff_type": "Layoff",
+      "city": "Warren",
+      "state": "MI"
+    },
+    {
+      "company": "Volta Charging Industries, LLC",
+      "notice_date": "2024-04-02",
+      "effective_date": null,
+      "employees": 1,
+      "layoff_type": "Facility Closing",
+      "city": "San Francisco",
+      "state": "MI"
+    },
+    {
+      "company": "A2MAC1 LLC",
+      "notice_date": "2024-04-08",
+      "effective_date": null,
+      "employees": 70,
+      "layoff_type": "Facility Closing",
+      "city": "Belleville",
+      "state": "MI"
+    },
+    {
+      "company": "PHARMERICA LOGISTIC SERVICES",
+      "notice_date": "2024-04-13",
+      "effective_date": null,
+      "employees": 31,
+      "layoff_type": "Facility Closing",
+      "city": "Midland",
+      "state": "MI"
+    },
+    {
+      "company": "DEXTER STAMPING COMPANY, LLC",
+      "notice_date": "2024-04-19",
+      "effective_date": null,
+      "employees": 66,
+      "layoff_type": "Facility Closing",
+      "city": "Jackson",
+      "state": "MI"
+    },
+    {
+      "company": "MPS ALLEGAN, INC",
+      "notice_date": "2024-04-22",
+      "effective_date": null,
+      "employees": 2,
+      "layoff_type": "Layoff",
+      "city": "Lansing",
+      "state": "MI"
+    },
+    {
+      "company": "TRENDWAY CORP",
+      "notice_date": "2024-04-24",
+      "effective_date": null,
+      "employees": 117,
+      "layoff_type": "Facility Closing",
+      "city": "Holland",
+      "state": "MI"
+    },
+    {
+      "company": "CHARTER COMMUNICATIONS INC",
+      "notice_date": "2024-04-24",
+      "effective_date": null,
+      "employees": 240,
+      "layoff_type": "Facility Closing",
+      "city": "Walker",
+      "state": "MI"
+    },
+    {
+      "company": "First Student",
+      "notice_date": "2024-04-26",
+      "effective_date": null,
+      "employees": 34,
+      "layoff_type": "Facility Closing",
+      "city": "Linden",
+      "state": "MI"
+    },
+    {
+      "company": "MHS CONVEYOR CORP",
+      "notice_date": "2024-04-29",
+      "effective_date": null,
+      "employees": 104,
+      "layoff_type": "Facility Closing",
+      "city": "Statewide",
+      "state": "MI"
+    },
+    {
+      "company": "GEORGIA-PACIFIC LLC",
+      "notice_date": "2024-05-08",
+      "effective_date": null,
+      "employees": 113,
+      "layoff_type": "Facility Closing",
+      "city": "Milan",
+      "state": "MI"
+    },
+    {
+      "company": "PURE GREEN",
+      "notice_date": "2024-05-10",
+      "effective_date": null,
+      "employees": 61,
+      "layoff_type": "Facility Closing",
+      "city": "Au Gres",
+      "state": "MI"
+    },
+    {
+      "company": "SDH Education West LLC",
+      "notice_date": "2024-05-10",
+      "effective_date": null,
+      "employees": 145,
+      "layoff_type": "Facility Closing",
+      "city": "Lansing",
+      "state": "MI"
+    },
+    {
+      "company": "ABG OPERATING LLC",
+      "notice_date": "2024-05-24",
+      "effective_date": null,
+      "employees": 101,
+      "layoff_type": "Facility Closing",
+      "city": "Three Rivers",
+      "state": "MI"
+    },
+    {
+      "company": "OBVIO HEALTH USA, INC",
+      "notice_date": "2024-05-24",
+      "effective_date": null,
+      "employees": 1,
+      "layoff_type": "Layoff",
+      "city": "Remote",
+      "state": "MI"
+    },
+    {
+      "company": "CYGNUS HOME SERVICE LLC",
+      "notice_date": "2024-05-30",
+      "effective_date": null,
+      "employees": 52,
+      "layoff_type": "Facility Closing",
+      "city": "Statewide",
+      "state": "MI"
+    },
+    {
+      "company": "FLAGSTAR BANK FSB",
+      "notice_date": "2024-06-13",
+      "effective_date": null,
+      "employees": 60,
+      "layoff_type": "Layoff",
+      "city": "Jackson",
+      "state": "MI"
+    },
+    {
+      "company": "RITE AID HEADQUARTERS CORP",
+      "notice_date": "2024-06-17",
+      "effective_date": null,
+      "employees": 191,
+      "layoff_type": "Facility Closing",
+      "city": "Waterford",
+      "state": "MI"
+    },
+    {
+      "company": "ABC GROUP SALES AND",
+      "notice_date": "2024-06-24",
+      "effective_date": null,
+      "employees": 156,
+      "layoff_type": "Facility Closing",
+      "city": "Saline",
+      "state": "MI"
+    },
+    {
+      "company": "QIAGEN SCIENCES LLC",
+      "notice_date": "2024-06-25",
+      "effective_date": null,
+      "employees": 184,
+      "layoff_type": "Facility Closing",
+      "city": "Ann Arbor",
+      "state": "MI"
+    },
+    {
+      "company": "HEARTLAND STEEL PRODUCTS LLC",
+      "notice_date": "2024-07-22",
+      "effective_date": null,
+      "employees": 89,
+      "layoff_type": "Facility Closing",
+      "city": "Marysville",
+      "state": "MI"
+    },
+    {
+      "company": "BRIDGEWATER INTERIORS LLC",
+      "notice_date": "2024-07-29",
+      "effective_date": null,
+      "employees": 63,
+      "layoff_type": "Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Universal McCann Worldwide Inc",
+      "notice_date": "2024-07-31",
+      "effective_date": null,
+      "employees": 56,
+      "layoff_type": "Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "STEEL TECHNOLOGIES LLC",
+      "notice_date": "2024-08-06",
+      "effective_date": null,
+      "employees": 58,
+      "layoff_type": "Facility Closing",
+      "city": "Canton",
+      "state": "MI"
+    },
+    {
+      "company": "FCA, USA",
+      "notice_date": "2024-08-09",
+      "effective_date": null,
+      "employees": 1200,
+      "layoff_type": "Layoff",
+      "city": "Warren",
+      "state": "MI"
+    },
+    {
+      "company": "Universal McCann Worldwide Inc",
+      "notice_date": "2024-08-12",
+      "effective_date": null,
+      "employees": 123,
+      "layoff_type": "Layoff",
+      "city": "Birmingham",
+      "state": "MI"
+    },
+    {
+      "company": "PENSKE LOGISTICS LLC",
+      "notice_date": "2024-08-13",
+      "effective_date": null,
+      "employees": 132,
+      "layoff_type": "Facility Closing",
+      "city": "New Baltimore",
+      "state": "MI"
+    },
+    {
+      "company": "GENERAL MOTORS LLC",
+      "notice_date": "2024-08-20",
+      "effective_date": null,
+      "employees": 634,
+      "layoff_type": "Layoff",
+      "city": "Warren",
+      "state": "MI"
+    },
+    {
+      "company": "Logistics Insight Corp.",
+      "notice_date": "2024-08-23",
+      "effective_date": null,
+      "employees": 62,
+      "layoff_type": "Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Logistics Insight Corp.",
+      "notice_date": "2024-08-23",
+      "effective_date": null,
+      "employees": 30,
+      "layoff_type": "Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Emergent Biosolutions Inc",
+      "notice_date": "2024-08-26",
+      "effective_date": null,
+      "employees": 68,
+      "layoff_type": "Layoff",
+      "city": "Lansing",
+      "state": "MI"
+    },
+    {
+      "company": "FLAGSTAR BANK FSB",
+      "notice_date": "2024-09-04",
+      "effective_date": null,
+      "employees": 113,
+      "layoff_type": "Layoff",
+      "city": "Troy",
+      "state": "MI"
+    },
+    {
+      "company": "LOST BOYS INTERACTIVE, LLC",
+      "notice_date": "2024-09-09",
+      "effective_date": null,
+      "employees": 1,
+      "layoff_type": "Layoff",
+      "city": "Madison (Wisconsin)",
+      "state": "MI"
+    },
+    {
+      "company": "TERVIS TUMBLER",
+      "notice_date": "2024-09-10",
+      "effective_date": null,
+      "employees": 3,
+      "layoff_type": "Layoff",
+      "city": "Frankenmuth",
+      "state": "MI"
+    },
+    {
+      "company": "GKN DRIVELINE NORTH AMERICA",
+      "notice_date": "2024-09-12",
+      "effective_date": null,
+      "employees": 57,
+      "layoff_type": "Layoff",
+      "city": "Auburn Hills",
+      "state": "MI"
+    },
+    {
+      "company": "M-DEN INC",
+      "notice_date": "2024-09-23",
+      "effective_date": null,
+      "employees": 151,
+      "layoff_type": "Facility Closing",
+      "city": "Ann Arbor",
+      "state": "MI"
+    },
+    {
+      "company": "CONTRACTORS STEEL CO",
+      "notice_date": "2024-09-24",
+      "effective_date": null,
+      "employees": 94,
+      "layoff_type": "Facility Closing",
+      "city": "Belleville",
+      "state": "MI"
+    },
+    {
+      "company": "J & R SCHUGEL TRUCKING INC",
+      "notice_date": "2024-09-25",
+      "effective_date": null,
+      "employees": 1,
+      "layoff_type": "Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "CYGNUS HOME SERVICE LLC",
+      "notice_date": "2024-09-26",
+      "effective_date": null,
+      "employees": 95,
+      "layoff_type": "Layoff",
+      "city": "Statewide",
+      "state": "MI"
+    },
+    {
+      "company": "MIDWEST TRANSPORT INC",
+      "notice_date": "2024-09-30",
+      "effective_date": null,
+      "employees": 6,
+      "layoff_type": "Facility Closing",
+      "city": "Robinson (Illinois)",
+      "state": "MI"
+    },
+    {
+      "company": "Samaritas",
+      "notice_date": "2024-09-30",
+      "effective_date": null,
+      "employees": 52,
+      "layoff_type": "Layoff",
+      "city": "Muskegon",
+      "state": "MI"
+    },
+    {
+      "company": "KALEO, INC.",
+      "notice_date": "2024-09-30",
+      "effective_date": null,
+      "employees": 1,
+      "layoff_type": "Layoff",
+      "city": "Richmond (Virginia)",
+      "state": "MI"
+    },
+    {
+      "company": "SODECIA AUTOMOTIVE DETROIT",
+      "notice_date": "2024-10-14",
+      "effective_date": null,
+      "employees": 100,
+      "layoff_type": "Layoff",
+      "city": "Center Line",
+      "state": "MI"
+    },
+    {
+      "company": "MCLAREN BAY SPECIAL CARE",
+      "notice_date": "2024-10-24",
+      "effective_date": null,
+      "employees": 43,
+      "layoff_type": "Facility Closing",
+      "city": "Bay City",
+      "state": "MI"
+    },
+    {
+      "company": "Spencer/Butcher Group Assemble Rite Ltd.",
+      "notice_date": "2024-10-24",
+      "effective_date": null,
+      "employees": 95,
+      "layoff_type": "Layoff",
+      "city": "Sterling Heights",
+      "state": "MI"
+    },
+    {
+      "company": "VIBRACOUSTIC USA, INC.",
+      "notice_date": "2024-10-25",
+      "effective_date": null,
+      "employees": 25,
+      "layoff_type": "Layoff",
+      "city": "Sandusky",
+      "state": "MI"
+    },
+    {
+      "company": "Webasto Roof Systems USA Inc",
+      "notice_date": "2024-11-04",
+      "effective_date": null,
+      "employees": 156,
+      "layoff_type": "Layoff",
+      "city": "Plymouth",
+      "state": "MI"
+    },
+    {
+      "company": "LEO BURNETT DETROIT INC",
+      "notice_date": "2024-11-05",
+      "effective_date": null,
+      "employees": 79,
+      "layoff_type": "Facility Closing",
+      "city": "Troy",
+      "state": "MI"
+    },
+    {
+      "company": "Webasto Roof Systems USA Inc",
+      "notice_date": "2024-11-06",
+      "effective_date": null,
+      "employees": 62,
+      "layoff_type": "Layoff",
+      "city": "New Hudson",
+      "state": "MI"
+    },
+    {
+      "company": "FCA US LLC",
+      "notice_date": "2024-11-08",
+      "effective_date": null,
+      "employees": 398,
+      "layoff_type": "Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Pontiac General Hospital",
+      "notice_date": "2024-11-15",
+      "effective_date": null,
+      "employees": 150,
+      "layoff_type": "Layoff",
+      "city": "Pontiac",
+      "state": "MI"
+    },
+    {
+      "company": "General Motors Corporation",
+      "notice_date": "2024-11-15",
+      "effective_date": null,
+      "employees": 507,
+      "layoff_type": "Layoff",
+      "city": "Warren",
+      "state": "MI"
+    },
+    {
+      "company": "Concentrix Corporation",
+      "notice_date": "2023-01-03",
+      "effective_date": null,
+      "employees": 125,
+      "layoff_type": "Facility Closing",
+      "city": "Auburn Hills",
+      "state": "MI"
+    },
+    {
+      "company": "PROSPECT AIRPORT SERVICES INC",
+      "notice_date": "2023-01-06",
+      "effective_date": null,
+      "employees": 516,
+      "layoff_type": "Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Proper Group Holdings LLC",
+      "notice_date": "2023-01-06",
+      "effective_date": null,
+      "employees": 130,
+      "layoff_type": "Facility Closing",
+      "city": "Warren",
+      "state": "MI"
+    },
+    {
+      "company": "Clover Imaging LLC",
+      "notice_date": "2023-01-12",
+      "effective_date": null,
+      "employees": 82,
+      "layoff_type": "Layoff",
+      "city": "Ithaca",
+      "state": "MI"
+    },
+    {
+      "company": "MONITRONICS INTERNATIONAL INC",
+      "notice_date": "2023-01-13",
+      "effective_date": null,
+      "employees": 1,
+      "layoff_type": "Layoff",
+      "city": "Belleville",
+      "state": "MI"
+    },
+    {
+      "company": "Inteva Products, Inc.",
+      "notice_date": "2023-01-13",
+      "effective_date": null,
+      "employees": 149,
+      "layoff_type": "Layoff",
+      "city": "Adrian",
+      "state": "MI"
+    },
+    {
+      "company": "Concentrix Corporation",
+      "notice_date": "2023-01-23",
+      "effective_date": null,
+      "employees": 161,
+      "layoff_type": "Facility Closing",
+      "city": "Farmington",
+      "state": "MI"
+    },
+    {
+      "company": "MARSHALL EXCELSIOR CO INC",
+      "notice_date": "2023-01-30",
+      "effective_date": null,
+      "employees": 81,
+      "layoff_type": "Layoff",
+      "city": "Marshall",
+      "state": "MI"
+    },
+    {
+      "company": "FINLANDIA UNIVERSITY",
+      "notice_date": "2023-03-06",
+      "effective_date": null,
+      "employees": 137,
+      "layoff_type": "Facility Closing",
+      "city": "Hancock",
+      "state": "MI"
+    },
+    {
+      "company": "FUNCTION INC",
+      "notice_date": "2023-03-15",
+      "effective_date": null,
+      "employees": 68,
+      "layoff_type": "Facility Closing",
+      "city": "Caledonia",
+      "state": "MI"
+    },
+    {
+      "company": "YELLOW CORPORATION",
+      "notice_date": "2023-03-16",
+      "effective_date": null,
+      "employees": 105,
+      "layoff_type": "Facility Closing",
+      "city": "Taylor",
+      "state": "MI"
+    },
+    {
+      "company": "EYM KING OF MICHIGAN LLC",
+      "notice_date": "2023-03-23",
+      "effective_date": null,
+      "employees": 424,
+      "layoff_type": "Facility Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "RAPID FINANCIAL SERVICES LLC",
+      "notice_date": "2023-03-24",
+      "effective_date": null,
+      "employees": 51,
+      "layoff_type": "Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "SANDLER TRAVIS TRADE ADVISORY",
+      "notice_date": "2023-03-31",
+      "effective_date": null,
+      "employees": 82,
+      "layoff_type": "Facility Closing",
+      "city": "Southfield",
+      "state": "MI"
+    },
+    {
+      "company": "FLINT AND GENESEE CHAMBER OF",
+      "notice_date": "2023-04-03",
+      "effective_date": null,
+      "employees": 90,
+      "layoff_type": "Layoff",
+      "city": "Flint",
+      "state": "MI"
+    },
+    {
+      "company": "HOME POINT FINANCIAL",
+      "notice_date": "2023-04-11",
+      "effective_date": null,
+      "employees": 113,
+      "layoff_type": "Layoff",
+      "city": "Ann Arbor",
+      "state": "MI"
+    },
+    {
+      "company": "PHILLIE BRIDALS INC",
+      "notice_date": "2023-04-14",
+      "effective_date": null,
+      "employees": 217,
+      "layoff_type": "Facility Closing",
+      "city": "Statewide",
+      "state": "MI"
+    },
+    {
+      "company": "DAWSON MANUFACTURING COMPANY",
+      "notice_date": "2023-04-21",
+      "effective_date": null,
+      "employees": 90,
+      "layoff_type": "Facility Closing",
+      "city": "Benton Harbor",
+      "state": "MI"
+    },
+    {
+      "company": "LEAR CORP",
+      "notice_date": "2023-05-03",
+      "effective_date": null,
+      "employees": 332,
+      "layoff_type": "Facility Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "LEAR CORP",
+      "notice_date": "2023-05-03",
+      "effective_date": null,
+      "employees": 226,
+      "layoff_type": "Facility Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "LORDSTOWN MOTORS CORP",
+      "notice_date": "2023-05-09",
+      "effective_date": null,
+      "employees": 152,
+      "layoff_type": "Layoff",
+      "city": "Farmington",
+      "state": "MI"
+    },
+    {
+      "company": "ILLINOIS TOOL WORKS INC",
+      "notice_date": "2023-05-30",
+      "effective_date": null,
+      "employees": 171,
+      "layoff_type": "Facility Closing",
+      "city": "Holland",
+      "state": "MI"
+    },
+    {
+      "company": "TUBULAR METAL SYSTEMS LLC",
+      "notice_date": "2023-05-31",
+      "effective_date": null,
+      "employees": 65,
+      "layoff_type": "Facility Closing",
+      "city": "Pinconning",
+      "state": "MI"
+    },
+    {
+      "company": "Grouper Acquisition Company LLC",
+      "notice_date": "2023-06-02",
+      "effective_date": null,
+      "employees": 107,
+      "layoff_type": "Facility Closing",
+      "city": "Warren",
+      "state": "MI"
+    },
+    {
+      "company": "QUALITY SPRING/TOGO INC",
+      "notice_date": "2023-06-12",
+      "effective_date": null,
+      "employees": 90,
+      "layoff_type": "Facility Closing",
+      "city": "Coldwater",
+      "state": "MI"
+    },
+    {
+      "company": "AUTISM HOME SUPPORT SERVICES",
+      "notice_date": "2023-06-20",
+      "effective_date": null,
+      "employees": 116,
+      "layoff_type": "Layoff",
+      "city": "Northville",
+      "state": "MI"
+    },
+    {
+      "company": "HENRY FOX SALES COMPANY",
+      "notice_date": "2023-07-13",
+      "effective_date": null,
+      "employees": 114,
+      "layoff_type": "Facility Closing",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "WEST MICHIGAN MOLDING INC",
+      "notice_date": "2023-07-20",
+      "effective_date": null,
+      "employees": 134,
+      "layoff_type": "Facility Closing",
+      "city": "Grand Haven",
+      "state": "MI"
+    },
+    {
+      "company": "FCA US LLC",
+      "notice_date": "2023-07-20",
+      "effective_date": null,
+      "employees": 611,
+      "layoff_type": "Layoff",
+      "city": "Dundee",
+      "state": "MI"
+    },
+    {
+      "company": "Yellow Corporation",
+      "notice_date": "2023-08-01",
+      "effective_date": null,
+      "employees": 654,
+      "layoff_type": "Facility Closing",
+      "city": "Taylor",
+      "state": "MI"
+    },
+    {
+      "company": "MINNIE MARIE BAKERS, INC.",
+      "notice_date": "2023-08-03",
+      "effective_date": null,
+      "employees": 93,
+      "layoff_type": "Facility Closing",
+      "city": "Livonia",
+      "state": "MI"
+    },
+    {
+      "company": "Kelsey Hospital",
+      "notice_date": "2023-08-07",
+      "effective_date": null,
+      "employees": 108,
+      "layoff_type": "Facility Closing",
+      "city": "Lakeview",
+      "state": "MI"
+    },
+    {
+      "company": "ALEXANDER & HORNUNG INC",
+      "notice_date": "2023-08-16",
+      "effective_date": null,
+      "employees": 132,
+      "layoff_type": "Facility Closing",
+      "city": "Saint Clair Shores",
+      "state": "MI"
+    },
+    {
+      "company": "THRIVEWORKS ADMINISTRATIVE",
+      "notice_date": "2023-09-15",
+      "effective_date": null,
+      "employees": 78,
+      "layoff_type": "Layoff",
+      "city": "Lynchburg",
+      "state": "MI"
+    },
+    {
+      "company": "NEWCOR INC",
+      "notice_date": "2023-09-15",
+      "effective_date": null,
+      "employees": 293,
+      "layoff_type": "Layoff",
+      "city": "STATEWIDE",
+      "state": "MI"
+    },
+    {
+      "company": "EAGLE INDUSTRIES INC",
+      "notice_date": "2023-09-21",
+      "effective_date": null,
+      "employees": 60,
+      "layoff_type": "Layoff",
+      "city": "Wixom",
+      "state": "MI"
+    },
+    {
+      "company": "SODECIA AUTOMOTIVE DETROIT",
+      "notice_date": "2023-09-25",
+      "effective_date": null,
+      "employees": 143,
+      "layoff_type": "Layoff",
+      "city": "Center Line",
+      "state": "MI"
+    },
+    {
+      "company": "CASCADES ENVIROPAC HPM LLC",
+      "notice_date": "2023-09-28",
+      "effective_date": null,
+      "employees": 35,
+      "layoff_type": "Facility Closing",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "FIRST SAVINGS BANK",
+      "notice_date": "2023-10-02",
+      "effective_date": null,
+      "employees": 18,
+      "layoff_type": "Layoff",
+      "city": "Jeffersonville",
+      "state": "MI"
+    },
+    {
+      "company": "GREAT LAKES CASTINGS LLC",
+      "notice_date": "2023-10-03",
+      "effective_date": null,
+      "employees": 100,
+      "layoff_type": "Layoff",
+      "city": "Ludington",
+      "state": "MI"
+    },
+    {
+      "company": "DURA FREMONT LLC",
+      "notice_date": "2023-10-03",
+      "effective_date": null,
+      "employees": 25,
+      "layoff_type": "Layoff",
+      "city": "Fremont",
+      "state": "MI"
+    },
+    {
+      "company": "VENTRA EVART LLC",
+      "notice_date": "2023-10-03",
+      "effective_date": null,
+      "employees": 414,
+      "layoff_type": "Layoff",
+      "city": "Evart",
+      "state": "MI"
+    },
+    {
+      "company": "Meridian Lightweight Technologies Inc",
+      "notice_date": "2023-10-04",
+      "effective_date": null,
+      "employees": 25,
+      "layoff_type": "Layoff",
+      "city": "Eaton Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "ACCENTURE TECHNOLOGY",
+      "notice_date": "2023-10-09",
+      "effective_date": null,
+      "employees": 83,
+      "layoff_type": "Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "ST JAMES NURSING & PHYSICAL",
+      "notice_date": "2023-10-10",
+      "effective_date": null,
+      "employees": 34,
+      "layoff_type": "Facility Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "ANTOLIN",
+      "notice_date": "2023-10-13",
+      "effective_date": null,
+      "employees": 146,
+      "layoff_type": "Layoff",
+      "city": "East China",
+      "state": "MI"
+    },
+    {
+      "company": "FAITH PLASTICS LLC",
+      "notice_date": "2023-10-17",
+      "effective_date": null,
+      "employees": 10,
+      "layoff_type": "Layoff",
+      "city": "Marcellus",
+      "state": "MI"
+    },
+    {
+      "company": "Exela Technologies",
+      "notice_date": "2023-10-17",
+      "effective_date": null,
+      "employees": 44,
+      "layoff_type": "Facility Closing",
+      "city": "Livonia",
+      "state": "MI"
+    },
+    {
+      "company": "GENERAL MOTORS LLC",
+      "notice_date": "2023-10-24",
+      "effective_date": null,
+      "employees": 945,
+      "layoff_type": "Layoff",
+      "city": "Lake Orion",
+      "state": "MI"
+    },
+    {
+      "company": "RPT REALTy",
+      "notice_date": "2023-10-30",
+      "effective_date": null,
+      "employees": 99,
+      "layoff_type": "Layoff",
+      "city": "Southfield",
+      "state": "MI"
+    },
+    {
+      "company": "MORGAN OLSON CORP",
+      "notice_date": "2023-11-01",
+      "effective_date": null,
+      "employees": 183,
+      "layoff_type": "Layoff",
+      "city": "Sturgis",
+      "state": "MI"
+    },
+    {
+      "company": "LEPRINO FOODS COMPANY",
+      "notice_date": "2023-11-01",
+      "effective_date": null,
+      "employees": 114,
+      "layoff_type": "Layoff",
+      "city": "Remus",
+      "state": "MI"
+    },
+    {
+      "company": "MAGNA SEATING SYSTEMS OF",
+      "notice_date": "2023-11-06",
+      "effective_date": null,
+      "employees": 94,
+      "layoff_type": "Layoff",
+      "city": "Grosse Pointe",
+      "state": "MI"
+    },
+    {
+      "company": "DAKKOTA INTEGRATED SYSTEMS LLC",
+      "notice_date": "2023-11-08",
+      "effective_date": null,
       "employees": 48,
-      "layoff_type": "Facility closure",
-      "county": "Shiawassee",
-      "city": "Corunna",
-      "address": "",
-      "industry": ""
+      "layoff_type": "Facility Closing",
+      "city": "Sterling Heights",
+      "state": "MI"
+    },
+    {
+      "company": "BEENE GARTER HUMAN CAPITAL MGM",
+      "notice_date": "2023-11-14",
+      "effective_date": null,
+      "employees": 127,
+      "layoff_type": "Facility Closing",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "DANA THERMAL PRODUCTS LLC",
+      "notice_date": "2023-11-15",
+      "effective_date": null,
+      "employees": 204,
+      "layoff_type": "Facility Closing",
+      "city": "Saint Clair",
+      "state": "MI"
+    },
+    {
+      "company": "GEDIA MICHIGAN LLC",
+      "notice_date": "2023-11-28",
+      "effective_date": null,
+      "employees": 92,
+      "layoff_type": "Layoff",
+      "city": "Lake Orion",
+      "state": "MI"
+    },
+    {
+      "company": "DICK'S SPORTING GOODS, INC.",
+      "notice_date": "2023-12-04",
+      "effective_date": null,
+      "employees": 146,
+      "layoff_type": "Facility Closing",
+      "city": "Madison Heights",
+      "state": "MI"
+    },
+    {
+      "company": "THYSSENKRUPP SUPPLY CHAIN",
+      "notice_date": "2023-12-05",
+      "effective_date": null,
+      "employees": 64,
+      "layoff_type": "Facility Closing",
+      "city": "Sterling Heights",
+      "state": "MI"
+    },
+    {
+      "company": "GREEN PEAK INDUSTRIES,LLC",
+      "notice_date": "2023-12-06",
+      "effective_date": null,
+      "employees": 143,
+      "layoff_type": "Facility Closing",
+      "city": "Dimondale",
+      "state": "MI"
+    },
+    {
+      "company": "FCA US LLC",
+      "notice_date": "2023-12-07",
+      "effective_date": null,
+      "employees": 2453,
+      "layoff_type": "Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "General Motors Corporation",
+      "notice_date": "2023-12-07",
+      "effective_date": null,
+      "employees": 369,
+      "layoff_type": "Layoff",
+      "city": "Lansing",
+      "state": "MI"
+    },
+    {
+      "company": "GREAT MINDS PBC",
+      "notice_date": "2023-12-08",
+      "effective_date": null,
+      "employees": 79,
+      "layoff_type": "Facility Closing",
+      "city": "Farmington",
+      "state": "MI"
+    },
+    {
+      "company": "US Farathane, LLC",
+      "notice_date": "2023-12-11",
+      "effective_date": null,
+      "employees": 174,
+      "layoff_type": "Facility Closing",
+      "city": "Utica",
+      "state": "MI"
+    },
+    {
+      "company": "DP WORLD AMERICAS RO INC",
+      "notice_date": "2023-12-15",
+      "effective_date": null,
+      "employees": 104,
+      "layoff_type": "Layoff",
+      "city": "Temperance",
+      "state": "MI"
+    },
+    {
+      "company": "UST HEALTHPROOF INC.",
+      "notice_date": "2023-12-20",
+      "effective_date": null,
+      "employees": 54,
+      "layoff_type": "Facility Closing",
+      "city": "Southfield",
+      "state": "MI"
+    },
+    {
+      "company": "BrightDrop",
+      "notice_date": "2023-12-28",
+      "effective_date": null,
+      "employees": 1,
+      "layoff_type": "Layoff",
+      "city": "Warren",
+      "state": "MI"
+    },
+    {
+      "company": "Central Lake Armor Express Inc",
+      "notice_date": "2022-01-11",
+      "effective_date": null,
+      "employees": 72,
+      "layoff_type": "Facility Closing",
+      "city": "Central Lake",
+      "state": "MI"
+    },
+    {
+      "company": "Penske Logistics LLC",
+      "notice_date": "2022-01-25",
+      "effective_date": null,
+      "employees": 146,
+      "layoff_type": "Facility Closing",
+      "city": "Flint",
+      "state": "MI"
+    },
+    {
+      "company": "Lear Corporation",
+      "notice_date": "2022-01-28",
+      "effective_date": null,
+      "employees": 71,
+      "layoff_type": "Layoff",
+      "city": "Roscommon",
+      "state": "MI"
+    },
+    {
+      "company": "Peloton Inc",
+      "notice_date": "2022-02-18",
+      "effective_date": null,
+      "employees": 56,
+      "layoff_type": "Layoff",
+      "city": "Warren",
+      "state": "MI"
+    },
+    {
+      "company": "Assemble Rite LTD",
+      "notice_date": "2022-03-16",
+      "effective_date": null,
+      "employees": 250,
+      "layoff_type": "Facility Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Pretium Packaging LLC",
+      "notice_date": "2022-03-25",
+      "effective_date": null,
+      "employees": 53,
+      "layoff_type": "Facility Closing",
+      "city": "Ypsilanti",
+      "state": "MI"
+    },
+    {
+      "company": "Robinson Industries",
+      "notice_date": "2022-04-08",
+      "effective_date": null,
+      "employees": 94,
+      "layoff_type": "Layoff",
+      "city": "Coleman",
+      "state": "MI"
+    },
+    {
+      "company": "SodexoMAGIC",
+      "notice_date": "2022-04-08",
+      "effective_date": null,
+      "employees": 63,
+      "layoff_type": "Layoff",
+      "city": "Saginaw",
+      "state": "MI"
+    },
+    {
+      "company": "Mitsubishi Chemical - Performance Polymers Division",
+      "notice_date": "2022-04-13",
+      "effective_date": null,
+      "employees": 80,
+      "layoff_type": "Facility Closing",
+      "city": "Warren",
+      "state": "MI"
+    },
+    {
+      "company": "Palisades Power Plant",
+      "notice_date": "2022-04-13",
+      "effective_date": null,
+      "employees": 184,
+      "layoff_type": "Facility Closing",
+      "city": "Covert",
+      "state": "MI"
+    },
+    {
+      "company": "DHL Supply Chain (USA)",
+      "notice_date": "2022-04-14",
+      "effective_date": null,
+      "employees": 202,
+      "layoff_type": "Facility Closing",
+      "city": "Mount Clemens",
+      "state": "MI"
+    },
+    {
+      "company": "Fluid Routing Solutions LLC",
+      "notice_date": "2022-05-02",
+      "effective_date": null,
+      "employees": 60,
+      "layoff_type": "Layoff",
+      "city": "Big Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Michigan Public Health",
+      "notice_date": "2022-05-13",
+      "effective_date": null,
+      "employees": 67,
+      "layoff_type": "Layoff",
+      "city": "Okemos",
+      "state": "MI"
+    },
+    {
+      "company": "Penske Logistics LLC",
+      "notice_date": "2022-05-19",
+      "effective_date": null,
+      "employees": 426,
+      "layoff_type": "Layoff",
+      "city": "Romulus",
+      "state": "MI"
+    },
+    {
+      "company": "Dynamic BDC",
+      "notice_date": "2022-05-31",
+      "effective_date": null,
+      "employees": 175,
+      "layoff_type": "Layoff",
+      "city": "Troy",
+      "state": "MI"
+    },
+    {
+      "company": "Jervis B. Webb Company",
+      "notice_date": "2022-06-01",
+      "effective_date": null,
+      "employees": 126,
+      "layoff_type": "Layoff",
+      "city": "Harbor Springs/Boyne City",
+      "state": "MI"
+    },
+    {
+      "company": "Magna Powertrain",
+      "notice_date": "2022-06-10",
+      "effective_date": null,
+      "employees": 92,
+      "layoff_type": "Layoff",
+      "city": "Lansing",
+      "state": "MI"
+    },
+    {
+      "company": "Bon Appetit Management Co.",
+      "notice_date": "2022-07-19",
+      "effective_date": null,
+      "employees": 67,
+      "layoff_type": "Facility Closing",
+      "city": "Hillsdale",
+      "state": "MI"
+    },
+    {
+      "company": "Resonetics",
+      "notice_date": "2022-08-01",
+      "effective_date": null,
+      "employees": 91,
+      "layoff_type": "Facility Closing",
+      "city": "Mount Clemens",
+      "state": "MI"
+    },
+    {
+      "company": "North Lake Correctional Facility",
+      "notice_date": "2022-08-03",
+      "effective_date": null,
+      "employees": 89,
+      "layoff_type": "Facility Closing",
+      "city": "Baldwin",
+      "state": "MI"
+    },
+    {
+      "company": "MV Transportation",
+      "notice_date": "2022-08-10",
+      "effective_date": null,
+      "employees": 49,
+      "layoff_type": "Facility Closing",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "NBHX Trim Corporation",
+      "notice_date": "2022-08-26",
+      "effective_date": null,
+      "employees": 74,
+      "layoff_type": "Facility Closing",
+      "city": "Comstock Park",
+      "state": "MI"
+    },
+    {
+      "company": "Homepoint",
+      "notice_date": "2022-08-31",
+      "effective_date": null,
+      "employees": 217,
+      "layoff_type": "Layoff",
+      "city": "Ann Arbor",
+      "state": "MI"
+    },
+    {
+      "company": "Pink Energy",
+      "notice_date": "2022-09-12",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Facility Closing",
+      "city": "Troy",
+      "state": "MI"
+    },
+    {
+      "company": "Second Samuel Transport Inc.",
+      "notice_date": "2022-09-15",
+      "effective_date": null,
+      "employees": 145,
+      "layoff_type": "Facility Closing",
+      "city": "Statewide",
+      "state": "MI"
+    },
+    {
+      "company": "Dunn Paper",
+      "notice_date": "2022-09-23",
+      "effective_date": null,
+      "employees": 125,
+      "layoff_type": "Facility Closing",
+      "city": "Port Huron",
+      "state": "MI"
+    },
+    {
+      "company": "DETDSP",
+      "notice_date": "2022-09-27",
+      "effective_date": null,
+      "employees": 98,
+      "layoff_type": "Layoff",
+      "city": "Plymouth",
+      "state": "MI"
+    },
+    {
+      "company": "FCA US - Warren Truck Assembly Plant",
+      "notice_date": "2022-10-12",
+      "effective_date": null,
+      "employees": 1215,
+      "layoff_type": "Layoff",
+      "city": "Warren",
+      "state": "MI"
+    },
+    {
+      "company": "Wayne Metropolitan Community Action Agency",
+      "notice_date": "2022-10-26",
+      "effective_date": null,
+      "employees": 113,
+      "layoff_type": "Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Argo AI, LLC",
+      "notice_date": "2022-10-27",
+      "effective_date": null,
+      "employees": 173,
+      "layoff_type": "Facility Closing",
+      "city": "Allen Park",
+      "state": "MI"
+    },
+    {
+      "company": "Booking.Com",
+      "notice_date": "2022-10-31",
+      "effective_date": null,
+      "employees": 226,
+      "layoff_type": "Facility Closing",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Pace Industries Inc",
+      "notice_date": "2022-11-01",
+      "effective_date": null,
+      "employees": 389,
+      "layoff_type": "Facility Closing",
+      "city": "Muskegon",
+      "state": "MI"
+    },
+    {
+      "company": "Faurecia",
+      "notice_date": "2022-12-01",
+      "effective_date": null,
+      "employees": 268,
+      "layoff_type": "Facility Closing",
+      "city": "Highland Park",
+      "state": "MI"
+    },
+    {
+      "company": "Amerifirst Mortgage",
+      "notice_date": "2022-12-15",
+      "effective_date": null,
+      "employees": 59,
+      "layoff_type": "Layoff",
+      "city": "Portage",
+      "state": "MI"
+    },
+    {
+      "company": "Great Lakes Tissue Company",
+      "notice_date": "2022-12-22",
+      "effective_date": null,
+      "employees": 51,
+      "layoff_type": "Layoff",
+      "city": "Cheboygan",
+      "state": "MI"
+    },
+    {
+      "company": "The Dearborn Inn",
+      "notice_date": "2023-01-03",
+      "effective_date": null,
+      "employees": 133,
+      "layoff_type": "Layoff",
+      "city": "Dearborn",
+      "state": "MI"
+    },
+    {
+      "company": "Sky Chefs",
+      "notice_date": "2021-02-03",
+      "effective_date": null,
+      "employees": 334,
+      "layoff_type": "Facility Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Pitney Bowes Presort Services, Inc.",
+      "notice_date": "2021-02-09",
+      "effective_date": null,
+      "employees": 62,
+      "layoff_type": "Facility Closing",
+      "city": "Pontiac",
+      "state": "MI"
+    },
+    {
+      "company": "JD NORMAN INDUSTRIES",
+      "notice_date": "2021-03-08",
+      "effective_date": null,
+      "employees": 56,
+      "layoff_type": "Facility Closing",
+      "city": "Leslie",
+      "state": "MI"
+    },
+    {
+      "company": "SodexoMAGIC",
+      "notice_date": "2021-04-26",
+      "effective_date": null,
+      "employees": 6,
+      "layoff_type": "Facility Closing",
+      "city": "Saginaw",
+      "state": "MI"
+    },
+    {
+      "company": "Aramark Food & Supply Service",
+      "notice_date": "2021-05-06",
+      "effective_date": null,
+      "employees": 174,
+      "layoff_type": "Layoff",
+      "city": "Mount Pleasant",
+      "state": "MI"
+    },
+    {
+      "company": "FEDERAL MOGUL PISTON RINGS LLC",
+      "notice_date": "2021-05-11",
+      "effective_date": null,
+      "employees": 78,
+      "layoff_type": "Facility Closing",
+      "city": "Sparta",
+      "state": "MI"
+    },
+    {
+      "company": "Progenity, Inc",
+      "notice_date": "2021-06-04",
+      "effective_date": null,
+      "employees": 110,
+      "layoff_type": "Layoff",
+      "city": "Ann Arbor",
+      "state": "MI"
+    },
+    {
+      "company": "Metaldyne Powertrain Components, LLC",
+      "notice_date": "2021-06-30",
+      "effective_date": null,
+      "employees": 23,
+      "layoff_type": "Facility Closing",
+      "city": "Litchfield",
+      "state": "MI"
+    },
+    {
+      "company": "CHERRY CENTRAL COOPERATIVE INC",
+      "notice_date": "2021-07-02",
+      "effective_date": null,
+      "employees": 70,
+      "layoff_type": "Facility Closing",
+      "city": "Shelby",
+      "state": "MI"
+    },
+    {
+      "company": "Great Lakes Coca-Cola Distribution",
+      "notice_date": "2021-08-03",
+      "effective_date": null,
+      "employees": 131,
+      "layoff_type": "Facility Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "FIRST NATION GROUP, LLC",
+      "notice_date": "2021-10-07",
+      "effective_date": null,
+      "employees": 35,
+      "layoff_type": "Facility Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "McKesson",
+      "notice_date": "2021-10-19",
+      "effective_date": null,
+      "employees": 86,
+      "layoff_type": "Facility Closing",
+      "city": "Livonia",
+      "state": "MI"
+    },
+    {
+      "company": "Champion Bus Facility",
+      "notice_date": "2021-10-19",
+      "effective_date": null,
+      "employees": 102,
+      "layoff_type": "Facility Closing",
+      "city": "Imlay City",
+      "state": "MI"
+    },
+    {
+      "company": "CHANGE HEALTHCARE",
+      "notice_date": "2021-12-01",
+      "effective_date": null,
+      "employees": 108,
+      "layoff_type": "Layoff",
+      "city": "Clinton Township",
+      "state": "MI"
+    },
+    {
+      "company": "DST Industries, Inc.",
+      "notice_date": "2020-01-14",
+      "effective_date": null,
+      "employees": 122,
+      "layoff_type": "Plant Closing",
+      "city": "Romulus",
+      "state": "MI"
+    },
+    {
+      "company": "Cameron Valves & Process Systems",
+      "notice_date": "2020-01-21",
+      "effective_date": null,
+      "employees": 64,
+      "layoff_type": "Plant Closing",
+      "city": "Muskegon",
+      "state": "MI"
+    },
+    {
+      "company": "Syncreon",
+      "notice_date": "2020-01-24",
+      "effective_date": null,
+      "employees": 84,
+      "layoff_type": "Plant Closing",
+      "city": "Warren",
+      "state": "MI"
+    },
+    {
+      "company": "Latcha And Associates L.L.C.",
+      "notice_date": "2020-01-27",
+      "effective_date": null,
+      "employees": 66,
+      "layoff_type": "Mass Layoff",
+      "city": "Farmington Hills",
+      "state": "MI"
+    },
+    {
+      "company": "Hemisphere Design Works",
+      "notice_date": "2020-01-28",
+      "effective_date": null,
+      "employees": 42,
+      "layoff_type": "Plant Closing",
+      "city": "Muskegon",
+      "state": "MI"
+    },
+    {
+      "company": "Gill Industries Inc.",
+      "notice_date": "2020-01-29",
+      "effective_date": null,
+      "employees": 59,
+      "layoff_type": "Plant Closing",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "GM-UAW Center for Human Resources",
+      "notice_date": "2020-01-30",
+      "effective_date": null,
+      "employees": 71,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Exel, Inc. DBA DHL Supply Chain (USA)",
+      "notice_date": "2020-02-10",
+      "effective_date": null,
+      "employees": 144,
+      "layoff_type": "Plant Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Gerdau-Jackson",
+      "notice_date": "2020-02-10",
+      "effective_date": null,
+      "employees": 140,
+      "layoff_type": "Mass Layoff",
+      "city": "Jackson",
+      "state": "MI"
+    },
+    {
+      "company": "Bear Down Logistics Michigan, Inc.",
+      "notice_date": "2020-02-18",
+      "effective_date": null,
+      "employees": 110,
+      "layoff_type": "Plant Closing",
+      "city": "Walker",
+      "state": "MI"
+    },
+    {
+      "company": "Alticor",
+      "notice_date": "2020-02-19",
+      "effective_date": null,
+      "employees": 209,
+      "layoff_type": "Mass Layoff",
+      "city": "Ada",
+      "state": "MI"
+    },
+    {
+      "company": "Penske Logistics",
+      "notice_date": "2020-02-25",
+      "effective_date": null,
+      "employees": 121,
+      "layoff_type": "Plant Closing",
+      "city": "Coldwater",
+      "state": "MI"
+    },
+    {
+      "company": "Peterson Spring",
+      "notice_date": "2020-02-28",
+      "effective_date": null,
+      "employees": 60,
+      "layoff_type": "Plant Closing",
+      "city": "Madison Heights",
+      "state": "MI"
+    },
+    {
+      "company": "Shenandoah Growers, Inc.",
+      "notice_date": "2020-03-02",
+      "effective_date": null,
+      "employees": 78,
+      "layoff_type": "Plant Closing",
+      "city": "Shelbyville",
+      "state": "MI"
+    },
+    {
+      "company": "Art Van",
+      "notice_date": "2020-03-06",
+      "effective_date": null,
+      "employees": 979,
+      "layoff_type": "Plant Closing",
+      "city": "Statewide",
+      "state": "MI"
+    },
+    {
+      "company": "Walmart, Inc.",
+      "notice_date": "2020-03-05",
+      "effective_date": null,
+      "employees": 226,
+      "layoff_type": "Plant Closing",
+      "city": "Ypsilanti",
+      "state": "MI"
+    },
+    {
+      "company": "Alutiiq",
+      "notice_date": "2020-03-16",
+      "effective_date": null,
+      "employees": 117,
+      "layoff_type": "Plant Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "DTW North Partners LLC",
+      "notice_date": "2020-03-20",
+      "effective_date": null,
+      "employees": 85,
+      "layoff_type": "Plant Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "HBF APU JV II, LLC",
+      "notice_date": "2020-03-20",
+      "effective_date": null,
+      "employees": 313,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Worthington Specialty Processing",
+      "notice_date": "2020-03-19",
+      "effective_date": null,
+      "employees": 66,
+      "layoff_type": "Plant Closing",
+      "city": "Canton",
+      "state": "MI"
+    },
+    {
+      "company": "Marriott Auburn Hills Pontiac at Centerpoint",
+      "notice_date": "2020-03-23",
+      "effective_date": null,
+      "employees": 134,
+      "layoff_type": "Mass Layoff",
+      "city": "Pontiac",
+      "state": "MI"
+    },
+    {
+      "company": "Rusty Bucket Restaurant & Tavern",
+      "notice_date": "2020-03-23",
+      "effective_date": null,
+      "employees": 260,
+      "layoff_type": "Mass Layoff",
+      "city": "Various",
+      "state": "MI"
+    },
+    {
+      "company": "Cameron Mitchell Restaurants, LLC",
+      "notice_date": "2020-03-23",
+      "effective_date": null,
+      "employees": 100,
+      "layoff_type": "Mass Layoff",
+      "city": "Troy",
+      "state": "MI"
+    },
+    {
+      "company": "Mann+Hummel",
+      "notice_date": "2020-03-24",
+      "effective_date": null,
+      "employees": 377,
+      "layoff_type": "Mass Layoff",
+      "city": "Portage",
+      "state": "MI"
+    },
+    {
+      "company": "International Automotive Components (IAC)",
+      "notice_date": "2020-03-24",
+      "effective_date": null,
+      "employees": 311,
+      "layoff_type": "Plant Closing",
+      "city": "Mendon",
+      "state": "MI"
+    },
+    {
+      "company": "IAC Alma, LLC",
+      "notice_date": "2020-03-24",
+      "effective_date": null,
+      "employees": 91,
+      "layoff_type": "Mass Layoff",
+      "city": "Alma",
+      "state": "MI"
+    },
+    {
+      "company": "ZF Chassis Components",
+      "notice_date": "2020-03-24",
+      "effective_date": null,
+      "employees": 240,
+      "layoff_type": "Mass Layoff",
+      "city": "Lapeer",
+      "state": "MI"
+    },
+    {
+      "company": "Detroit Foundation Hotel",
+      "notice_date": "2020-03-26",
+      "effective_date": null,
+      "employees": 111,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Faith Plastics, Inc.",
+      "notice_date": "2020-03-26",
+      "effective_date": null,
+      "employees": 53,
+      "layoff_type": "Mass Layoff",
+      "city": "Marcellus",
+      "state": "MI"
+    },
+    {
+      "company": "Bluebell Mattress Company",
+      "notice_date": "2020-03-26",
+      "effective_date": null,
+      "employees": 80,
+      "layoff_type": "Plant Closing",
+      "city": "Roseville",
+      "state": "MI"
+    },
+    {
+      "company": "YMCA of Metropolitan Detroit",
+      "notice_date": "2020-03-26",
+      "effective_date": null,
+      "employees": 1318,
+      "layoff_type": "Mass Layoff",
+      "city": "Various",
+      "state": "MI"
+    },
+    {
+      "company": "Kirchhoff Automotive Tecumseh",
+      "notice_date": "2020-03-24",
+      "effective_date": null,
+      "employees": 338,
+      "layoff_type": "Mass Layoff",
+      "city": "Tecumseh",
+      "state": "MI"
+    },
+    {
+      "company": "ZF North America Inc.",
+      "notice_date": "2020-03-26",
+      "effective_date": null,
+      "employees": 60,
+      "layoff_type": "Mass Layoff",
+      "city": "Northville",
+      "state": "MI"
+    },
+    {
+      "company": "The Rapid",
+      "notice_date": "2020-03-24",
+      "effective_date": null,
+      "employees": 270,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Jacobsen/Daniels",
+      "notice_date": "2020-03-27",
+      "effective_date": null,
+      "employees": 5,
+      "layoff_type": "Mass Layoff",
+      "city": "Ypsilanti",
+      "state": "MI"
+    },
+    {
+      "company": "Fly Away Valet",
+      "notice_date": "2020-03-27",
+      "effective_date": null,
+      "employees": 24,
+      "layoff_type": "Mass Layoff",
+      "city": "Ypsilanti",
+      "state": "MI"
+    },
+    {
+      "company": "HMS Host",
+      "notice_date": "2020-03-26",
+      "effective_date": null,
+      "employees": 202,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Thetford Corporation",
+      "notice_date": "2020-03-26",
+      "effective_date": null,
+      "employees": 59,
+      "layoff_type": "Mass Layoff",
+      "city": "Dexter",
+      "state": "MI"
+    },
+    {
+      "company": "MNM Entertainment DBA Art and Jakes",
+      "notice_date": "2020-03-26",
+      "effective_date": null,
+      "employees": 300,
+      "layoff_type": "Mass Layoff",
+      "city": "Shelby Township",
+      "state": "MI"
+    },
+    {
+      "company": "Gazelle Sports Inc.",
+      "notice_date": "2020-03-26",
+      "effective_date": null,
+      "employees": 164,
+      "layoff_type": "Mass Layoff",
+      "city": "Kalamazoo",
+      "state": "MI"
+    },
+    {
+      "company": "Paper Source",
+      "notice_date": "2020-03-30",
+      "effective_date": null,
+      "employees": 27,
+      "layoff_type": "Mass Layoff",
+      "city": "Birmingham",
+      "state": "MI"
+    },
+    {
+      "company": "Trott Law, P.C.",
+      "notice_date": "2020-03-30",
+      "effective_date": null,
+      "employees": 52,
+      "layoff_type": "Mass Layoff",
+      "city": "Farmington Hills",
+      "state": "MI"
+    },
+    {
+      "company": "Convivial Brands",
+      "notice_date": "2020-03-26",
+      "effective_date": null,
+      "employees": 48,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Ken Garff Automotive, LLC",
+      "notice_date": "2020-03-31",
+      "effective_date": null,
+      "employees": 180,
+      "layoff_type": "Mass Layoff",
+      "city": "Various",
+      "state": "MI"
+    },
+    {
+      "company": "ZF Axle Drives Marysville",
+      "notice_date": "2020-03-30",
+      "effective_date": null,
+      "employees": 800,
+      "layoff_type": "Plant Closing",
+      "city": "Marysville",
+      "state": "MI"
+    },
+    {
+      "company": "Collegiate Hotel Group, LLC",
+      "notice_date": "2020-03-30",
+      "effective_date": null,
+      "employees": 113,
+      "layoff_type": "Mass Layoff",
+      "city": "Ann Arbor",
+      "state": "MI"
+    },
+    {
+      "company": "La Grasso Bros. Produce",
+      "notice_date": "2020-03-30",
+      "effective_date": null,
+      "employees": 77,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "On-Board Companies",
+      "notice_date": "2020-03-31",
+      "effective_date": null,
+      "employees": 56,
+      "layoff_type": "Mass Layoff",
+      "city": "Mt. Clemens",
+      "state": "MI"
+    },
+    {
+      "company": "Aludyne",
+      "notice_date": "2020-04-01",
+      "effective_date": null,
+      "employees": 115,
+      "layoff_type": "Plant Closing",
+      "city": "Warren",
+      "state": "MI"
+    },
+    {
+      "company": "Benteler Automotive",
+      "notice_date": "2020-03-31",
+      "effective_date": null,
+      "employees": 160,
+      "layoff_type": "Mass Layoff",
+      "city": "Holland",
+      "state": "MI"
+    },
+    {
+      "company": "Benteler Automotive",
+      "notice_date": "2020-03-30",
+      "effective_date": null,
+      "employees": 185,
+      "layoff_type": "Mass Layoff",
+      "city": "Galesburg",
+      "state": "MI"
+    },
+    {
+      "company": "Benteler Automotive",
+      "notice_date": "2020-03-31",
+      "effective_date": null,
+      "employees": 673,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Great Wolf Lodge",
+      "notice_date": "2020-04-01",
+      "effective_date": null,
+      "employees": 317,
+      "layoff_type": "Mass Layoff",
+      "city": "Traverse City",
+      "state": "MI"
+    },
+    {
+      "company": "Martin-Brower Company LLC",
+      "notice_date": "2020-04-01",
+      "effective_date": null,
+      "employees": 109,
+      "layoff_type": "Mass Layoff",
+      "city": "St. Johns",
+      "state": "MI"
+    },
+    {
+      "company": "Trico Products, LLC",
+      "notice_date": "2020-04-01",
+      "effective_date": null,
+      "employees": 108,
+      "layoff_type": "Mass Layoff",
+      "city": "Rochester Hills",
+      "state": "MI"
+    },
+    {
+      "company": "Fram Group Operations, LLC",
+      "notice_date": "2020-04-02",
+      "effective_date": null,
+      "employees": 35,
+      "layoff_type": "Mass Layoff",
+      "city": "Rochester Hills",
+      "state": "MI"
+    },
+    {
+      "company": "YMCA of Greater Grand Rapids",
+      "notice_date": "2020-03-30",
+      "effective_date": null,
+      "employees": 1297,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Barber Packaging",
+      "notice_date": "2020-04-03",
+      "effective_date": null,
+      "employees": 12,
+      "layoff_type": "Mass Layoff",
+      "city": "Bangor",
+      "state": "MI"
+    },
+    {
+      "company": "H&R Wood Specialties, Inc.",
+      "notice_date": "2020-04-03",
+      "effective_date": null,
+      "employees": 8,
+      "layoff_type": "Mass Layoff",
+      "city": "Gobles",
+      "state": "MI"
+    },
+    {
+      "company": "TriStar Molding, Inc",
+      "notice_date": "2020-04-03",
+      "effective_date": null,
+      "employees": 74,
+      "layoff_type": "Mass Layoff",
+      "city": "Marcellus",
+      "state": "MI"
+    },
+    {
+      "company": "Maxwell's International Inc",
+      "notice_date": "2020-04-03",
+      "effective_date": null,
+      "employees": 79,
+      "layoff_type": "Plant Closing",
+      "city": "Dearborn",
+      "state": "MI"
+    },
+    {
+      "company": "Maxwell's International Inc.",
+      "notice_date": "2020-04-03",
+      "effective_date": null,
+      "employees": 64,
+      "layoff_type": "Plant Closing",
+      "city": "Northville",
+      "state": "MI"
+    },
+    {
+      "company": "Maxwell's International Inc.",
+      "notice_date": "2020-04-03",
+      "effective_date": null,
+      "employees": 56,
+      "layoff_type": "Plant Closing",
+      "city": "Troy",
+      "state": "MI"
+    },
+    {
+      "company": "Spire Hospitality",
+      "notice_date": "2020-04-06",
+      "effective_date": null,
+      "employees": 65,
+      "layoff_type": "Mass Layoff",
+      "city": "Livonia",
+      "state": "MI"
+    },
+    {
+      "company": "Schulte Companies",
+      "notice_date": "2020-03-31",
+      "effective_date": null,
+      "employees": 50,
+      "layoff_type": "Mass Layoff",
+      "city": "Grandville",
+      "state": "MI"
+    },
+    {
+      "company": "DoubleTree Holland",
+      "notice_date": "2020-03-31",
+      "effective_date": null,
+      "employees": 55,
+      "layoff_type": "Mass Layoff",
+      "city": "Holland",
+      "state": "MI"
+    },
+    {
+      "company": "Fluid Routing Solutions",
+      "notice_date": "2020-04-06",
+      "effective_date": null,
+      "employees": 150,
+      "layoff_type": "Mass Layoff",
+      "city": "Big Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Embassy Suites Auburn Hills",
+      "notice_date": "2020-03-31",
+      "effective_date": null,
+      "employees": 47,
+      "layoff_type": "Mass Layoff",
+      "city": "Auburn Hills",
+      "state": "MI"
+    },
+    {
+      "company": "Fairfield Inn Muskegon",
+      "notice_date": "2020-03-31",
+      "effective_date": null,
+      "employees": 13,
+      "layoff_type": "Mass Layoff",
+      "city": "Muskegon",
+      "state": "MI"
+    },
+    {
+      "company": "Graduate Ann Arbor",
+      "notice_date": "2020-03-31",
+      "effective_date": null,
+      "employees": 106,
+      "layoff_type": "Mass Layoff",
+      "city": "Ann Arbor",
+      "state": "MI"
+    },
+    {
+      "company": "Hampton Inn Ann Arbor North",
+      "notice_date": "2020-03-31",
+      "effective_date": null,
+      "employees": 21,
+      "layoff_type": "Mass Layoff",
+      "city": "Ann Arbor",
+      "state": "MI"
+    },
+    {
+      "company": "Hampton Inn Grand Rapids",
+      "notice_date": "2020-03-31",
+      "effective_date": null,
+      "employees": 13,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Hampton Inn Muskegon",
+      "notice_date": "2020-03-31",
+      "effective_date": null,
+      "employees": 13,
+      "layoff_type": "Mass Layoff",
+      "city": "Muskegon",
+      "state": "MI"
+    },
+    {
+      "company": "Residence Inn Holland",
+      "notice_date": "2020-03-31",
+      "effective_date": null,
+      "employees": 13,
+      "layoff_type": "Mass Layoff",
+      "city": "Holland",
+      "state": "MI"
+    },
+    {
+      "company": "Springhill Suites Grand Rapids",
+      "notice_date": "2020-03-31",
+      "effective_date": null,
+      "employees": 20,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Flint West 14",
+      "notice_date": "2020-04-03",
+      "effective_date": null,
+      "employees": 38,
+      "layoff_type": "Plant Closing",
+      "city": "Flint",
+      "state": "MI"
+    },
+    {
+      "company": "Ann Arbor 20",
+      "notice_date": "2020-04-03",
+      "effective_date": null,
+      "employees": 73,
+      "layoff_type": "Plant Closing",
+      "city": "Ypsilanti",
+      "state": "MI"
+    },
+    {
+      "company": "Cinemark Taylor",
+      "notice_date": "2020-04-03",
+      "effective_date": null,
+      "employees": 51,
+      "layoff_type": "Plant Closing",
+      "city": "Taylor",
+      "state": "MI"
+    },
+    {
+      "company": "Double Tree Grand Rapids Airport",
+      "notice_date": "2020-04-06",
+      "effective_date": null,
+      "employees": 95,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Americhem",
+      "notice_date": "2020-04-06",
+      "effective_date": null,
+      "employees": 17,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Eagle Industries Inc.",
+      "notice_date": "2020-04-07",
+      "effective_date": null,
+      "employees": 225,
+      "layoff_type": "Plant Closing",
+      "city": "Wixom",
+      "state": "MI"
+    },
+    {
+      "company": "L.O. Eye Care",
+      "notice_date": "2020-04-07",
+      "effective_date": null,
+      "employees": 73,
+      "layoff_type": "Mass Layoff",
+      "city": "East Lansing",
+      "state": "MI"
+    },
+    {
+      "company": "Peak Workforce Solutions",
+      "notice_date": "2020-04-07",
+      "effective_date": null,
+      "employees": 30,
+      "layoff_type": "Mass Layoff",
+      "city": "Livonia",
+      "state": "MI"
+    },
+    {
+      "company": "General Linen and Uniform Service",
+      "notice_date": "2020-04-07",
+      "effective_date": null,
+      "employees": 62,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "SAS Automotive USA",
+      "notice_date": "2020-04-08",
+      "effective_date": null,
+      "employees": 293,
+      "layoff_type": "Mass Layoff",
+      "city": "Sterling Heights",
+      "state": "MI"
+    },
+    {
+      "company": "Vitro Automotive / Pittsburgh Glass Works, LLC",
+      "notice_date": "2020-04-08",
+      "effective_date": null,
+      "employees": 125,
+      "layoff_type": "Plant Closing",
+      "city": "Evart",
+      "state": "MI"
+    },
+    {
+      "company": "Prospect Airport Services, Inc",
+      "notice_date": "2020-04-09",
+      "effective_date": null,
+      "employees": 132,
+      "layoff_type": "Mass Layoff",
+      "city": "Romulus",
+      "state": "MI"
+    },
+    {
+      "company": "Precision Vehicle Solutions",
+      "notice_date": "2020-04-09",
+      "effective_date": null,
+      "employees": 180,
+      "layoff_type": "Mass Layoff",
+      "city": "Wayne",
+      "state": "MI"
+    },
+    {
+      "company": "Morbark",
+      "notice_date": "2020-04-09",
+      "effective_date": null,
+      "employees": 183,
+      "layoff_type": "Mass Layoff",
+      "city": "Winn",
+      "state": "MI"
+    },
+    {
+      "company": "Beasley Media Group, LLC",
+      "notice_date": "2020-04-09",
+      "effective_date": null,
+      "employees": 26,
+      "layoff_type": "Mass Layoff",
+      "city": "Ferndale",
+      "state": "MI"
+    },
+    {
+      "company": "Quality Air Heating and Cooling, Inc.",
+      "notice_date": "2020-04-10",
+      "effective_date": null,
+      "employees": 212,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Agrati, Inc.",
+      "notice_date": "2020-04-10",
+      "effective_date": null,
+      "employees": 15,
+      "layoff_type": "Mass Layoff",
+      "city": "Southfield",
+      "state": "MI"
+    },
+    {
+      "company": "Pace Industries, Inc.",
+      "notice_date": "2020-04-08",
+      "effective_date": null,
+      "employees": 456,
+      "layoff_type": "Mass Layoff",
+      "city": "Muskegon",
+      "state": "MI"
+    },
+    {
+      "company": "Yazaki North America, Inc.",
+      "notice_date": "2020-04-10",
+      "effective_date": null,
+      "employees": 56,
+      "layoff_type": "Mass Layoff",
+      "city": "Canton",
+      "state": "MI"
+    },
+    {
+      "company": "Yazaki North America, Inc.",
+      "notice_date": "2020-04-10",
+      "effective_date": null,
+      "employees": 622,
+      "layoff_type": "Mass Layoff",
+      "city": "Canton",
+      "state": "MI"
+    },
+    {
+      "company": "Yazaki North America, Inc.",
+      "notice_date": "2020-04-10",
+      "effective_date": null,
+      "employees": 45,
+      "layoff_type": "Mass Layoff",
+      "city": "Canton",
+      "state": "MI"
+    },
+    {
+      "company": "Yazaki North America",
+      "notice_date": "2020-04-10",
+      "effective_date": null,
+      "employees": 126,
+      "layoff_type": "Mass Layoff",
+      "city": "Petoskey",
+      "state": "MI"
+    },
+    {
+      "company": "ASC Industries, Inc.",
+      "notice_date": "2020-04-10",
+      "effective_date": null,
+      "employees": 5,
+      "layoff_type": "Mass Layoff",
+      "city": "Rochester Hills",
+      "state": "MI"
+    },
+    {
+      "company": "G2 Secure Staff, LLC",
+      "notice_date": "2020-04-13",
+      "effective_date": null,
+      "employees": 68,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Ameriwood Industries",
+      "notice_date": "2020-04-13",
+      "effective_date": null,
+      "employees": 79,
+      "layoff_type": "Plant Closing",
+      "city": "Dowagiac",
+      "state": "MI"
+    },
+    {
+      "company": "Pokagon Gaming Authority dba Four Winds Casinos",
+      "notice_date": "2020-04-13",
+      "effective_date": null,
+      "employees": 1489,
+      "layoff_type": "Mass Layoff",
+      "city": "New Buffalo",
+      "state": "MI"
+    },
+    {
+      "company": "Hooters of America, LLC",
+      "notice_date": "2020-04-13",
+      "effective_date": null,
+      "employees": 85,
+      "layoff_type": "Mass Layoff",
+      "city": "Atlanta",
+      "state": "MI"
+    },
+    {
+      "company": "Gill Industries, Inc.",
+      "notice_date": "2020-04-13",
+      "effective_date": null,
+      "employees": 64,
+      "layoff_type": "Mass Layoff",
+      "city": "Walker",
+      "state": "MI"
+    },
+    {
+      "company": "Samsung SDI America, Inc.",
+      "notice_date": "2020-04-13",
+      "effective_date": null,
+      "employees": 38,
+      "layoff_type": "Mass Layoff",
+      "city": "Auburn Hills",
+      "state": "MI"
+    },
+    {
+      "company": "Bear Down Logistics Walker East Facility",
+      "notice_date": "2020-04-13",
+      "effective_date": null,
+      "employees": 24,
+      "layoff_type": "Plant Closing",
+      "city": "Walker",
+      "state": "MI"
+    },
+    {
+      "company": "Schafer Woodworks Inc.",
+      "notice_date": "2020-04-14",
+      "effective_date": null,
+      "employees": 25,
+      "layoff_type": "Mass Layoff",
+      "city": "Tecumseh",
+      "state": "MI"
+    },
+    {
+      "company": "Wolverine Corporation",
+      "notice_date": "2020-04-15",
+      "effective_date": null,
+      "employees": 58,
+      "layoff_type": "Mass Layoff",
+      "city": "St. Joseph",
+      "state": "MI"
+    },
+    {
+      "company": "Wolverine Corporation",
+      "notice_date": "2020-04-15",
+      "effective_date": null,
+      "employees": 12,
+      "layoff_type": "Mass Layoff",
+      "city": "Stevensville",
+      "state": "MI"
+    },
+    {
+      "company": "The Tile Shop",
+      "notice_date": "2020-04-16",
+      "effective_date": null,
+      "employees": 55,
+      "layoff_type": "Mass Layoff",
+      "city": "Ottawa Lake",
+      "state": "MI"
+    },
+    {
+      "company": "AVIS Budget Car Rental, LLC",
+      "notice_date": "2020-04-17",
+      "effective_date": null,
+      "employees": 159,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Williams International, LLC.",
+      "notice_date": "2020-04-20",
+      "effective_date": null,
+      "employees": 224,
+      "layoff_type": "Mass Layoff",
+      "city": "Pontiac",
+      "state": "MI"
+    },
+    {
+      "company": "Williams International, LLC.",
+      "notice_date": "2020-04-20",
+      "effective_date": null,
+      "employees": 24,
+      "layoff_type": "Mass Layoff",
+      "city": "Commerce Township",
+      "state": "MI"
+    },
+    {
+      "company": "Marsh Plating Corp.",
+      "notice_date": "2020-04-20",
+      "effective_date": null,
+      "employees": 73,
+      "layoff_type": "Mass Layoff",
+      "city": "Ypsilanti",
+      "state": "MI"
+    },
+    {
+      "company": "Marsh Plating-Willow Run",
+      "notice_date": "2020-04-20",
+      "effective_date": null,
+      "employees": 15,
+      "layoff_type": "Mass Layoff",
+      "city": "Ypsilanti",
+      "state": "MI"
+    },
+    {
+      "company": "Finishing Services Inc.",
+      "notice_date": "2020-04-20",
+      "effective_date": null,
+      "employees": 9,
+      "layoff_type": "Mass Layoff",
+      "city": "Ypsilanti",
+      "state": "MI"
+    },
+    {
+      "company": "Avis Budget Car Rental, LLC",
+      "notice_date": "2020-04-20",
+      "effective_date": null,
+      "employees": 28,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Tilden Mining Company LLC",
+      "notice_date": "2020-04-21",
+      "effective_date": null,
+      "employees": 687,
+      "layoff_type": "Mass Layoff",
+      "city": "Ishpeming",
+      "state": "MI"
+    },
+    {
+      "company": "Founders Grand Rapids Taproom and Company Store",
+      "notice_date": "2020-04-21",
+      "effective_date": null,
+      "employees": 111,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Founders Detroit Taproom",
+      "notice_date": "2020-04-21",
+      "effective_date": null,
+      "employees": 52,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Dura Automotive Systems, LLC - Auburn Hills",
+      "notice_date": "2020-04-21",
+      "effective_date": null,
+      "employees": 212,
+      "layoff_type": "Plant Closing",
+      "city": "Auburn Hills",
+      "state": "MI"
+    },
+    {
+      "company": "Dura Automotive, LLC - Fremont",
+      "notice_date": "2020-04-21",
+      "effective_date": null,
+      "employees": 118,
+      "layoff_type": "Plant Closing",
+      "city": "Fremont",
+      "state": "MI"
+    },
+    {
+      "company": "Enterprise Holdings",
+      "notice_date": "2020-04-22",
+      "effective_date": null,
+      "employees": 114,
+      "layoff_type": "Mass Layoff",
+      "city": "Romulus",
+      "state": "MI"
+    },
+    {
+      "company": "Beaumont Health",
+      "notice_date": "2020-04-23",
+      "effective_date": null,
+      "employees": 2900,
+      "layoff_type": "Mass Layoff",
+      "city": "Southfield",
+      "state": "MI"
+    },
+    {
+      "company": "Visionworks, Inc. - Taylor",
+      "notice_date": "2020-04-23",
+      "effective_date": null,
+      "employees": 2,
+      "layoff_type": "Mass Layoff",
+      "city": "Taylor",
+      "state": "MI"
+    },
+    {
+      "company": "Visionworks, Inc. - Rochester Hills",
+      "notice_date": "2020-04-23",
+      "effective_date": null,
+      "employees": 4,
+      "layoff_type": "Mass Layoff",
+      "city": "Rochester Hills",
+      "state": "MI"
+    },
+    {
+      "company": "Visionworks, Inc. - Roseville",
+      "notice_date": "2020-04-23",
+      "effective_date": null,
+      "employees": 9,
+      "layoff_type": "Mass Layoff",
+      "city": "Roseville",
+      "state": "MI"
+    },
+    {
+      "company": "Visionworks, Inc. - Sterling Heights",
+      "notice_date": "2020-04-23",
+      "effective_date": null,
+      "employees": 5,
+      "layoff_type": "Mass Layoff",
+      "city": "Sterling Heights",
+      "state": "MI"
+    },
+    {
+      "company": "Visionworks, Inc. - Novi",
+      "notice_date": "2020-04-23",
+      "effective_date": null,
+      "employees": 5,
+      "layoff_type": "Mass Layoff",
+      "city": "Novi",
+      "state": "MI"
+    },
+    {
+      "company": "Visionworks, Inc. - Canton",
+      "notice_date": "2020-04-23",
+      "effective_date": null,
+      "employees": 3,
+      "layoff_type": "Mass Layoff",
+      "city": "Canton",
+      "state": "MI"
+    },
+    {
+      "company": "Visionworks, Inc. - Lake Orion",
+      "notice_date": "2020-04-23",
+      "effective_date": null,
+      "employees": 1,
+      "layoff_type": "Mass Layoff",
+      "city": "Lake Orion",
+      "state": "MI"
+    },
+    {
+      "company": "Visionworks, Inc. - Allen Park",
+      "notice_date": "2020-04-23",
+      "effective_date": null,
+      "employees": 3,
+      "layoff_type": "Mass Layoff",
+      "city": "Allen Park",
+      "state": "MI"
+    },
+    {
+      "company": "Visionworks, Inc. - Ann Arbor",
+      "notice_date": "2020-04-23",
+      "effective_date": null,
+      "employees": 4,
+      "layoff_type": "Mass Layoff",
+      "city": "Ann Arbor",
+      "state": "MI"
+    },
+    {
+      "company": "Visionworks, Inc. - Southfield",
+      "notice_date": "2020-04-23",
+      "effective_date": null,
+      "employees": 3,
+      "layoff_type": "Mass Layoff",
+      "city": "Southfield",
+      "state": "MI"
+    },
+    {
+      "company": "Punchbowl Social LLC",
+      "notice_date": "2020-04-23",
+      "effective_date": null,
+      "employees": 97,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Michigan Maple Block Company",
+      "notice_date": "2020-04-27",
+      "effective_date": null,
+      "employees": 56,
+      "layoff_type": "Plant Closing",
+      "city": "Petoskey",
+      "state": "MI"
+    },
+    {
+      "company": "Bloomin Brands, Inc.",
+      "notice_date": "2020-04-27",
+      "effective_date": null,
+      "employees": 2289,
+      "layoff_type": "Mass Layoff",
+      "city": "Various",
+      "state": "MI"
+    },
+    {
+      "company": "City of Grand Haven",
+      "notice_date": "2020-04-28",
+      "effective_date": null,
+      "employees": 74,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Haven",
+      "state": "MI"
+    },
+    {
+      "company": "ArcelorMittal",
+      "notice_date": "2020-04-28",
+      "effective_date": null,
+      "employees": 6,
+      "layoff_type": "Mass Layoff",
+      "city": "Southfield",
+      "state": "MI"
+    },
+    {
+      "company": "Country Fresh LLC",
+      "notice_date": "2020-04-29",
+      "effective_date": null,
+      "employees": 44,
+      "layoff_type": "Mass Layoff",
+      "city": "Livonia",
+      "state": "MI"
+    },
+    {
+      "company": "Hertz",
+      "notice_date": "2020-04-30",
+      "effective_date": null,
+      "employees": 104,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Aludyne",
+      "notice_date": "2020-04-30",
+      "effective_date": null,
+      "employees": 44,
+      "layoff_type": "Mass Layoff",
+      "city": "Benton Harbor",
+      "state": "MI"
+    },
+    {
+      "company": "Flint Group Packaging Inks North America Holdings",
+      "notice_date": "2020-04-30",
+      "effective_date": null,
+      "employees": 58,
+      "layoff_type": "Plant Closing",
+      "city": "Three Rivers",
+      "state": "MI"
+    },
+    {
+      "company": "AK Steel Dearborn Works",
+      "notice_date": "2020-05-04",
+      "effective_date": null,
+      "employees": 343,
+      "layoff_type": "Plant Closing",
+      "city": "Dearborn",
+      "state": "MI"
+    },
+    {
+      "company": "GPI Midwest LLC",
+      "notice_date": "2020-05-04",
+      "effective_date": null,
+      "employees": 100,
+      "layoff_type": "Plant Closing",
+      "city": "White Pigeon",
+      "state": "MI"
+    },
+    {
+      "company": "Busche Performance Group",
+      "notice_date": "2020-04-30",
+      "effective_date": null,
+      "employees": 89,
+      "layoff_type": "Mass Layoff",
+      "city": "Southfield",
+      "state": "MI"
+    },
+    {
+      "company": "Busche Aluminum Technologies Fruitport",
+      "notice_date": "2020-04-30",
+      "effective_date": null,
+      "employees": 362,
+      "layoff_type": "Mass Layoff",
+      "city": "Fruitport",
+      "state": "MI"
+    },
+    {
+      "company": "Great Lakes Specialty Finance Inc.",
+      "notice_date": "2020-05-05",
+      "effective_date": null,
+      "employees": 62,
+      "layoff_type": "Mass Layoff",
+      "city": "Statewide",
+      "state": "MI"
+    },
+    {
+      "company": "MGM Grand Detroit",
+      "notice_date": "2020-05-05",
+      "effective_date": null,
+      "employees": 1561,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Aludyne, Inc.",
+      "notice_date": "2020-05-05",
+      "effective_date": null,
+      "employees": 82,
+      "layoff_type": "Mass Layoff",
+      "city": "Montague",
+      "state": "MI"
+    },
+    {
+      "company": "Moiron",
+      "notice_date": "2020-05-07",
+      "effective_date": null,
+      "employees": 96,
+      "layoff_type": "Mass Layoff",
+      "city": "Sparta",
+      "state": "MI"
+    },
+    {
+      "company": "Embassy Suites by Hilton",
+      "notice_date": "2020-05-07",
+      "effective_date": null,
+      "employees": 65,
+      "layoff_type": "Mass Layoff",
+      "city": "Troy",
+      "state": "MI"
+    },
+    {
+      "company": "Marriott Detroit Southfield",
+      "notice_date": "2020-05-07",
+      "effective_date": null,
+      "employees": 61,
+      "layoff_type": "Mass Layoff",
+      "city": "Southfield",
+      "state": "MI"
+    },
+    {
+      "company": "Akwel Automotive - Cadillac",
+      "notice_date": "2020-05-08",
+      "effective_date": null,
+      "employees": 109,
+      "layoff_type": "Mass Layoff",
+      "city": "Cadillac",
+      "state": "MI"
+    },
+    {
+      "company": "Akwel Automotive - Novi",
+      "notice_date": "2020-05-08",
+      "effective_date": null,
+      "employees": 12,
+      "layoff_type": "Mass Layoff",
+      "city": "Novi",
+      "state": "MI"
+    },
+    {
+      "company": "Sara Lee Frozen Bakery, LLC",
+      "notice_date": "2020-05-11",
+      "effective_date": null,
+      "employees": 210,
+      "layoff_type": "Mass Layoff",
+      "city": "Traverse City",
+      "state": "MI"
+    },
+    {
+      "company": "Pettibone/Traverse Lift LLC",
+      "notice_date": "2020-05-08",
+      "effective_date": null,
+      "employees": 36,
+      "layoff_type": "Mass Layoff",
+      "city": "Baraga",
+      "state": "MI"
+    },
+    {
+      "company": "Atrium Hospitality",
+      "notice_date": "2020-05-11",
+      "effective_date": null,
+      "employees": 142,
+      "layoff_type": "Mass Layoff",
+      "city": "Southfield",
+      "state": "MI"
+    },
+    {
+      "company": "Cox Automotive",
+      "notice_date": "2020-05-11",
+      "effective_date": null,
+      "employees": 144,
+      "layoff_type": "Mass Layoff",
+      "city": "Carleton",
+      "state": "MI"
+    },
+    {
+      "company": "Norma Group, Inc,",
+      "notice_date": "2020-05-12",
+      "effective_date": null,
+      "employees": 82,
+      "layoff_type": "Plant Closing",
+      "city": "Auburn Hills",
+      "state": "MI"
+    },
+    {
+      "company": "Enterprise Holdings",
+      "notice_date": "2020-05-12",
+      "effective_date": null,
+      "employees": 32,
+      "layoff_type": "Mass Layoff",
+      "city": "Farmington Hills",
+      "state": "MI"
+    },
+    {
+      "company": "Marriott Detroit Livonia Hotel",
+      "notice_date": "2020-05-12",
+      "effective_date": null,
+      "employees": 60,
+      "layoff_type": "Mass Layoff",
+      "city": "Livonia",
+      "state": "MI"
+    },
+    {
+      "company": "Genesis Seating",
+      "notice_date": "2020-05-11",
+      "effective_date": null,
+      "employees": 203,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Davidson Plyforms",
+      "notice_date": "2020-05-11",
+      "effective_date": null,
+      "employees": 120,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Grand River Polishing",
+      "notice_date": "2020-05-18",
+      "effective_date": null,
+      "employees": 20,
+      "layoff_type": "Mass Layoff",
+      "city": "Spring Lake",
+      "state": "MI"
+    },
+    {
+      "company": "Gill Industries, Inc.",
+      "notice_date": "2020-05-18",
+      "effective_date": null,
+      "employees": 84,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Marriott Auburn Hills Pontiac at Centerpoint",
+      "notice_date": "2020-05-22",
+      "effective_date": null,
+      "employees": 101,
+      "layoff_type": "Mass Layoff",
+      "city": "Pontiac",
+      "state": "MI"
+    },
+    {
+      "company": "Aramark",
+      "notice_date": "2020-05-26",
+      "effective_date": null,
+      "employees": 83,
+      "layoff_type": "Mass Layoff",
+      "city": "Warren",
+      "state": "MI"
+    },
+    {
+      "company": "Walbro LLC",
+      "notice_date": "2020-05-27",
+      "effective_date": null,
+      "employees": 164,
+      "layoff_type": "Mass Layoff",
+      "city": "Cass City",
+      "state": "MI"
+    },
+    {
+      "company": "First Student",
+      "notice_date": "2020-05-28",
+      "effective_date": null,
+      "employees": 87,
+      "layoff_type": "Plant Closing",
+      "city": "Pontiac",
+      "state": "MI"
+    },
+    {
+      "company": "The Townsend Hotel",
+      "notice_date": "2020-05-28",
+      "effective_date": null,
+      "employees": 60,
+      "layoff_type": "Mass Layoff",
+      "city": "Birmingham",
+      "state": "MI"
+    },
+    {
+      "company": "Wireless Vision",
+      "notice_date": "2020-06-01",
+      "effective_date": null,
+      "employees": 37,
+      "layoff_type": "Mass Layoff",
+      "city": "Bloomfield Hills",
+      "state": "MI"
+    },
+    {
+      "company": "Westin Detroit Metropolitan Airport",
+      "notice_date": "2020-06-02",
+      "effective_date": null,
+      "employees": 197,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Detroit Marriott Troy",
+      "notice_date": "2020-06-03",
+      "effective_date": null,
+      "employees": 134,
+      "layoff_type": "Mass Layoff",
+      "city": "Troy",
+      "state": "MI"
+    },
+    {
+      "company": "Howmet Aerospace",
+      "notice_date": "2020-06-03",
+      "effective_date": null,
+      "employees": 625,
+      "layoff_type": "Mass Layoff",
+      "city": "Whitehall",
+      "state": "MI"
+    },
+    {
+      "company": "The Dearborn Inn",
+      "notice_date": "2020-06-04",
+      "effective_date": null,
+      "employees": 177,
+      "layoff_type": "Mass Layoff",
+      "city": "Dearborn",
+      "state": "MI"
+    },
+    {
+      "company": "The Westin Book Cadillac Detroit",
+      "notice_date": "2020-06-04",
+      "effective_date": null,
+      "employees": 227,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Courtyard by Mariott Detroit",
+      "notice_date": "2020-06-09",
+      "effective_date": null,
+      "employees": 54,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Marriott Detroit Renaissance Center",
+      "notice_date": "2020-06-09",
+      "effective_date": null,
+      "employees": 450,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Creative Dining Services, Inc.",
+      "notice_date": "2020-06-08",
+      "effective_date": null,
+      "employees": 123,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Greektown Casino Hotel",
+      "notice_date": "2020-06-15",
+      "effective_date": null,
+      "employees": 912,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "US Steel - Great Lakes Works",
+      "notice_date": "2020-06-08",
+      "effective_date": null,
+      "employees": 220,
+      "layoff_type": "Plant Closing",
+      "city": "Ecorse",
+      "state": "MI"
+    },
+    {
+      "company": "Glasstender, Inc.",
+      "notice_date": "2020-06-08",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Mass Layoff",
+      "city": "Saginaw",
+      "state": "MI"
+    },
+    {
+      "company": "Marriott Ypsilanti At Eagle Crest",
+      "notice_date": "2020-06-15",
+      "effective_date": null,
+      "employees": 125,
+      "layoff_type": "Mass Layoff",
+      "city": "Ypsilanti",
+      "state": "MI"
+    },
+    {
+      "company": "Jacobsen/Daniels",
+      "notice_date": "2020-06-15",
+      "effective_date": null,
+      "employees": 24,
+      "layoff_type": "Mass Layoff",
+      "city": "Ypsilanti",
+      "state": "MI"
+    },
+    {
+      "company": "Continental",
+      "notice_date": "2020-06-15",
+      "effective_date": null,
+      "employees": 72,
+      "layoff_type": "Mass Layoff",
+      "city": "Troy",
+      "state": "MI"
+    },
+    {
+      "company": "Continental",
+      "notice_date": "2020-06-15",
+      "effective_date": null,
+      "employees": 72,
+      "layoff_type": "Mass Layoff",
+      "city": "Van Buren",
+      "state": "MI"
+    },
+    {
+      "company": "Staples",
+      "notice_date": "2020-06-18",
+      "effective_date": null,
+      "employees": 61,
+      "layoff_type": "Mass Layoff",
+      "city": "Livonia",
+      "state": "MI"
+    },
+    {
+      "company": "B.F. Saul Company Hospitality Group",
+      "notice_date": "2020-06-15",
+      "effective_date": null,
+      "employees": 53,
+      "layoff_type": "Plant Closing",
+      "city": "Auburn Hills",
+      "state": "MI"
+    },
+    {
+      "company": "Jacobsen Daniels Enterprise, Inc.",
+      "notice_date": "2020-06-15",
+      "effective_date": null,
+      "employees": 6,
+      "layoff_type": "Mass Layoff",
+      "city": "Ypsilanti",
+      "state": "MI"
+    },
+    {
+      "company": "Swissport SA USA, LLC",
+      "notice_date": "2020-06-22",
+      "effective_date": null,
+      "employees": 55,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Adesa Flint",
+      "notice_date": "2020-06-25",
+      "effective_date": null,
+      "employees": 173,
+      "layoff_type": "Mass Layoff",
+      "city": "Flint",
+      "state": "MI"
+    },
+    {
+      "company": "Bon Appetit Management",
+      "notice_date": "2020-07-01",
+      "effective_date": null,
+      "employees": 129,
+      "layoff_type": "Mass Layoff",
+      "city": "Albion",
+      "state": "MI"
+    },
+    {
+      "company": "LG Electronics Vehicle Components USA, LLC",
+      "notice_date": "2020-07-02",
+      "effective_date": null,
+      "employees": 79,
+      "layoff_type": "Plant Closing",
+      "city": "Hazel Park",
+      "state": "MI"
+    },
+    {
+      "company": "McLaren Bay Region",
+      "notice_date": "2020-07-06",
+      "effective_date": null,
+      "employees": 74,
+      "layoff_type": "Mass Layoff",
+      "city": "Bay City",
+      "state": "MI"
+    },
+    {
+      "company": "Delaware North",
+      "notice_date": "2020-07-13",
+      "effective_date": null,
+      "employees": 1696,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Delta Airlines",
+      "notice_date": "2020-07-09",
+      "effective_date": null,
+      "employees": 246,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "MAPAL Inc.",
+      "notice_date": "2020-07-14",
+      "effective_date": null,
+      "employees": 50,
+      "layoff_type": "Mass Layoff",
+      "city": "Port Huron",
+      "state": "MI"
+    },
+    {
+      "company": "Hilton Garden Inn Hotel",
+      "notice_date": "2020-07-10",
+      "effective_date": null,
+      "employees": 39,
+      "layoff_type": "Mass Layoff",
+      "city": "Ann Arbor",
+      "state": "MI"
+    },
+    {
+      "company": "Paradies Lagardere",
+      "notice_date": "2020-07-16",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "TownePlace Suites Hotel",
+      "notice_date": "2020-07-10",
+      "effective_date": null,
+      "employees": 14,
+      "layoff_type": "Mass Layoff",
+      "city": "Ann Arbor",
+      "state": "MI"
+    },
+    {
+      "company": "Holiday Inn Grand Rapids Downtown",
+      "notice_date": "2020-07-13",
+      "effective_date": null,
+      "employees": 18,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Amway Grand Plaza Hotel",
+      "notice_date": "2020-07-14",
+      "effective_date": null,
+      "employees": 355,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "JW Marriott",
+      "notice_date": "2020-07-14",
+      "effective_date": null,
+      "employees": 144,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Courtyard by Marriott",
+      "notice_date": "2020-07-14",
+      "effective_date": null,
+      "employees": 50,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "AC Hotel",
+      "notice_date": "2020-07-14",
+      "effective_date": null,
+      "employees": 31,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Doubletree Suites",
+      "notice_date": "2020-07-22",
+      "effective_date": null,
+      "employees": 58,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Advance Local Media, LLC",
+      "notice_date": "2020-07-16",
+      "effective_date": null,
+      "employees": 71,
+      "layoff_type": "Plant Closing",
+      "city": "Walker",
+      "state": "MI"
+    },
+    {
+      "company": "Marley Precision",
+      "notice_date": "2020-07-24",
+      "effective_date": null,
+      "employees": 57,
+      "layoff_type": "Plant Closing",
+      "city": "Battle Creek",
+      "state": "MI"
+    },
+    {
+      "company": "Marelli Automotive Lighting",
+      "notice_date": "2020-07-27",
+      "effective_date": null,
+      "employees": 228,
+      "layoff_type": "Plant Closing",
+      "city": "Clarkston",
+      "state": "MI"
+    },
+    {
+      "company": "MotorCity Casino Hotel",
+      "notice_date": "2020-07-27",
+      "effective_date": null,
+      "employees": 2554,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Leadec Corp.",
+      "notice_date": "2020-07-20",
+      "effective_date": null,
+      "employees": 50,
+      "layoff_type": "Mass Layoff",
+      "city": "Romulus",
+      "state": "MI"
+    },
+    {
+      "company": "Spirit Airlines",
+      "notice_date": "2020-07-30",
+      "effective_date": null,
+      "employees": 190,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Infinity Primary Care",
+      "notice_date": "2020-07-30",
+      "effective_date": null,
+      "employees": 57,
+      "layoff_type": "Plant Closing",
+      "city": "Novi",
+      "state": "MI"
+    },
+    {
+      "company": "VitalCare and VitalCare HME",
+      "notice_date": "2020-07-27",
+      "effective_date": null,
+      "employees": 236,
+      "layoff_type": "Plant Closing",
+      "city": "Cheboygan",
+      "state": "MI"
+    },
+    {
+      "company": "Hudson Group",
+      "notice_date": "2020-08-03",
+      "effective_date": null,
+      "employees": 48,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Cooper Standard",
+      "notice_date": "2020-08-03",
+      "effective_date": null,
+      "employees": 197,
+      "layoff_type": "Mass Layoff",
+      "city": "Oscoda",
+      "state": "MI"
+    },
+    {
+      "company": "DTW Wine Bar",
+      "notice_date": "2020-08-11",
+      "effective_date": null,
+      "employees": 6,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Sky Chefs, Inc.",
+      "notice_date": "2020-08-11",
+      "effective_date": null,
+      "employees": 102,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Maritz",
+      "notice_date": "2020-08-13",
+      "effective_date": null,
+      "employees": 5,
+      "layoff_type": "Mass Layoff",
+      "city": "Southfield",
+      "state": "MI"
+    },
+    {
+      "company": "HMSHost",
+      "notice_date": "2020-08-18",
+      "effective_date": null,
+      "employees": 82,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Vetta, LLC",
+      "notice_date": "2020-08-21",
+      "effective_date": null,
+      "employees": 73,
+      "layoff_type": "Plant Closing",
+      "city": "Fowlerville",
+      "state": "MI"
+    },
+    {
+      "company": "Ascension Technologies",
+      "notice_date": "2020-08-24",
+      "effective_date": null,
+      "employees": 223,
+      "layoff_type": "Plant Closing",
+      "city": "Troy",
+      "state": "MI"
+    },
+    {
+      "company": "Aramark",
+      "notice_date": "2020-08-26",
+      "effective_date": null,
+      "employees": 196,
+      "layoff_type": "Mass Layoff",
+      "city": "Warren",
+      "state": "MI"
+    },
+    {
+      "company": "Orlans PC",
+      "notice_date": "2020-09-02",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Mass Layoff",
+      "city": "Troy",
+      "state": "MI"
+    },
+    {
+      "company": "UAW-Chrysler National Training Center",
+      "notice_date": "2020-09-01",
+      "effective_date": null,
+      "employees": 73,
+      "layoff_type": "Plant Closing",
+      "city": "Warren",
+      "state": "MI"
+    },
+    {
+      "company": "Dave & Buster's",
+      "notice_date": "2020-09-10",
+      "effective_date": null,
+      "employees": 111,
+      "layoff_type": "Mass Layoff",
+      "city": "Livonia",
+      "state": "MI"
+    },
+    {
+      "company": "Domtar",
+      "notice_date": "2020-09-23",
+      "effective_date": null,
+      "employees": 200,
+      "layoff_type": "Plant Closing",
+      "city": "Port Huron",
+      "state": "MI"
+    },
+    {
+      "company": "SP+ Corporation",
+      "notice_date": "2020-09-24",
+      "effective_date": null,
+      "employees": 95,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "P.F. Changs China Bistro",
+      "notice_date": "2020-09-21",
+      "effective_date": null,
+      "employees": 75,
+      "layoff_type": "Mass Layoff",
+      "city": "Rochester",
+      "state": "MI"
+    },
+    {
+      "company": "P.F. Changs China Bistro",
+      "notice_date": "2020-09-21",
+      "effective_date": null,
+      "employees": 75,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "P.F. Changs China Bistro",
+      "notice_date": "2020-09-21",
+      "effective_date": null,
+      "employees": 75,
+      "layoff_type": "Mass Layoff",
+      "city": "Troy",
+      "state": "MI"
+    },
+    {
+      "company": "P.F. Changs China Bistro",
+      "notice_date": "2020-09-21",
+      "effective_date": null,
+      "employees": 75,
+      "layoff_type": "Mass Layoff",
+      "city": "Clinton Township",
+      "state": "MI"
+    },
+    {
+      "company": "P.F. Changs China Bistro",
+      "notice_date": "2020-09-21",
+      "effective_date": null,
+      "employees": 75,
+      "layoff_type": "Mass Layoff",
+      "city": "Ann Arbor",
+      "state": "MI"
+    },
+    {
+      "company": "P.F. Changs China Bistro",
+      "notice_date": "2020-09-21",
+      "effective_date": null,
+      "employees": 75,
+      "layoff_type": "Mass Layoff",
+      "city": "Lansing",
+      "state": "MI"
+    },
+    {
+      "company": "P.F. Changs China Bistro",
+      "notice_date": "2020-09-21",
+      "effective_date": null,
+      "employees": 75,
+      "layoff_type": "Mass Layoff",
+      "city": "Livonia",
+      "state": "MI"
+    },
+    {
+      "company": "P.F. Changs China Bistro",
+      "notice_date": "2020-09-21",
+      "effective_date": null,
+      "employees": 75,
+      "layoff_type": "Mass Layoff",
+      "city": "Dearborn",
+      "state": "MI"
+    },
+    {
+      "company": "Federal Mogul - Tenneco",
+      "notice_date": "2020-09-17",
+      "effective_date": null,
+      "employees": 121,
+      "layoff_type": "Plant Closing",
+      "city": "Sparta",
+      "state": "MI"
+    },
+    {
+      "company": "Kroger Food Stores",
+      "notice_date": "2020-10-02",
+      "effective_date": null,
+      "employees": 73,
+      "layoff_type": "Plant Closing",
+      "city": "Sturgis",
+      "state": "MI"
+    },
+    {
+      "company": "Select Specialty Hospital",
+      "notice_date": "2020-10-06",
+      "effective_date": null,
+      "employees": 80,
+      "layoff_type": "Plant Closing",
+      "city": "Muskegon",
+      "state": "MI"
+    },
+    {
+      "company": "Lansing Entertainment and Public Facilities",
+      "notice_date": "2020-10-06",
+      "effective_date": null,
+      "employees": 24,
+      "layoff_type": "Mass Layoff",
+      "city": "Lansing",
+      "state": "MI"
+    },
+    {
+      "company": "Le Tote Inc.",
+      "notice_date": "2020-10-01",
+      "effective_date": null,
+      "employees": 46,
+      "layoff_type": "Plant Closing",
+      "city": "Novi",
+      "state": "MI"
+    },
+    {
+      "company": "TPL Transition Services/Globe Fire Sprinkler Corp.",
+      "notice_date": "2020-11-04",
+      "effective_date": null,
+      "employees": 154,
+      "layoff_type": "Plant Closing",
+      "city": "Standish",
+      "state": "MI"
+    },
+    {
+      "company": "Eastman Chemical Company",
+      "notice_date": "2020-11-16",
+      "effective_date": null,
+      "employees": 75,
+      "layoff_type": "Plant Closing",
+      "city": "Trenton",
+      "state": "MI"
+    },
+    {
+      "company": "Eurest (Compass Group USA, INC)",
+      "notice_date": "2020-11-16",
+      "effective_date": null,
+      "employees": 98,
+      "layoff_type": "Mass Layoff",
+      "city": "Auburn Hills",
+      "state": "MI"
+    },
+    {
+      "company": "Keihin Michigan Manufacturing",
+      "notice_date": "2020-11-23",
+      "effective_date": null,
+      "employees": 4,
+      "layoff_type": "Plant Closing",
+      "city": "Capac",
+      "state": "MI"
+    },
+    {
+      "company": "Bartech Staffing",
+      "notice_date": "2020-12-07",
+      "effective_date": null,
+      "employees": 70,
+      "layoff_type": "Mass Layoff",
+      "city": "Southfield",
+      "state": "MI"
+    },
+    {
+      "company": "Cameron Mitchell Restaurants, LLC",
+      "notice_date": "2020-12-07",
+      "effective_date": null,
+      "employees": 76,
+      "layoff_type": "Mass Layoff",
+      "city": "Troy",
+      "state": "MI"
+    },
+    {
+      "company": "Allied Universal",
+      "notice_date": "2020-12-08",
+      "effective_date": null,
+      "employees": 664,
+      "layoff_type": "Mass Layoff",
+      "city": "Statewide",
+      "state": "MI"
+    },
+    {
+      "company": "Tech Mahindra Americas Inc.",
+      "notice_date": "2020-12-15",
+      "effective_date": null,
+      "employees": 81,
+      "layoff_type": "Mass Layoff",
+      "city": "Lansing",
+      "state": "MI"
+    },
+    {
+      "company": "Rusty Bucket Restaurant & Tavern",
+      "notice_date": "2020-12-15",
+      "effective_date": null,
+      "employees": 74,
+      "layoff_type": "Mass Layoff",
+      "city": "Various",
+      "state": "MI"
+    },
+    {
+      "company": "Booking.com",
+      "notice_date": "2020-09-21",
+      "effective_date": null,
+      "employees": 63,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "NBHX Trim Corporation",
+      "notice_date": "2020-12-22",
+      "effective_date": null,
+      "employees": 76,
+      "layoff_type": "Mass Layoff",
+      "city": "Comstock Park",
+      "state": "MI"
+    },
+    {
+      "company": "Reprise Media",
+      "notice_date": "2019-01-10",
+      "effective_date": null,
+      "employees": 92,
+      "layoff_type": "Mass Layoff",
+      "city": "Birmingham",
+      "state": "MI"
+    },
+    {
+      "company": "Universal McCann Worldwide Inc",
+      "notice_date": "2019-01-10",
+      "effective_date": null,
+      "employees": 116,
+      "layoff_type": "Mass Layoff",
+      "city": "Birmingham",
+      "state": "MI"
+    },
+    {
+      "company": "Mediabrands Worldwide Inc",
+      "notice_date": "2019-01-10",
+      "effective_date": null,
+      "employees": 5,
+      "layoff_type": "Mass Layoff",
+      "city": "Birmingham",
+      "state": "MI"
+    },
+    {
+      "company": "WE Energies",
+      "notice_date": "2019-01-19",
+      "effective_date": null,
+      "employees": 89,
+      "layoff_type": "Plant Closing",
+      "city": "Marquette",
+      "state": "MI"
+    },
+    {
+      "company": "Tribus Services",
+      "notice_date": "2019-01-29",
+      "effective_date": null,
+      "employees": 87,
+      "layoff_type": "Plant Closing",
+      "city": "Lansing",
+      "state": "MI"
+    },
+    {
+      "company": "Tribus Services",
+      "notice_date": "2019-01-29",
+      "effective_date": null,
+      "employees": 97,
+      "layoff_type": "Plant Closing",
+      "city": "Waterford",
+      "state": "MI"
+    },
+    {
+      "company": "Trinity Health Senior Communities",
+      "notice_date": "2019-01-29",
+      "effective_date": null,
+      "employees": 115,
+      "layoff_type": "Plant Closing",
+      "city": "Ypsilanti",
+      "state": "MI"
+    },
+    {
+      "company": "Harsco Rail",
+      "notice_date": "2019-02-01",
+      "effective_date": null,
+      "employees": 151,
+      "layoff_type": "Plant Closing",
+      "city": "Ludington",
+      "state": "MI"
+    },
+    {
+      "company": "Ford Motor Co. - Flat Rock",
+      "notice_date": "2019-02-04",
+      "effective_date": null,
+      "employees": 3100,
+      "layoff_type": "Mass Layoff",
+      "city": "Flat Rock",
+      "state": "MI"
+    },
+    {
+      "company": "Monroe Bank & Trust",
+      "notice_date": "2019-02-04",
+      "effective_date": null,
+      "employees": 93,
+      "layoff_type": "Mass Layoff",
+      "city": "Monroe",
+      "state": "MI"
+    },
+    {
+      "company": "PPG Coating Services",
+      "notice_date": "2019-02-04",
+      "effective_date": null,
+      "employees": 46,
+      "layoff_type": "Plant Closing",
+      "city": "Livonia",
+      "state": "MI"
+    },
+    {
+      "company": "General Motors - Technical Center",
+      "notice_date": "2019-02-05",
+      "effective_date": null,
+      "employees": 1298,
+      "layoff_type": "Mass Layoff",
+      "city": "Warren",
+      "state": "MI"
+    },
+    {
+      "company": "Dorma USA, Inc",
+      "notice_date": "2019-02-06",
+      "effective_date": null,
+      "employees": 103,
+      "layoff_type": "Plant Closing",
+      "city": "Madison Heights",
+      "state": "MI"
+    },
+    {
+      "company": "Integrated Manufacturing & Assembly",
+      "notice_date": "2019-02-06",
+      "effective_date": null,
+      "employees": 175,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Dakkota Integrated Systems",
+      "notice_date": "2019-02-19",
+      "effective_date": null,
+      "employees": 106,
+      "layoff_type": "Mass Layoff",
+      "city": "Brownstown",
+      "state": "MI"
+    },
+    {
+      "company": "The RADGroup",
+      "notice_date": "2019-02-19",
+      "effective_date": null,
+      "employees": 9,
+      "layoff_type": "Mass Layoff",
+      "city": "Troy",
+      "state": "MI"
+    },
+    {
+      "company": "Amstore Corporation",
+      "notice_date": "2019-02-25",
+      "effective_date": null,
+      "employees": 145,
+      "layoff_type": "Plant Closing",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Target",
+      "notice_date": "2019-02-26",
+      "effective_date": null,
+      "employees": 136,
+      "layoff_type": "Plant Closing",
+      "city": "Sterling Heights",
+      "state": "MI"
+    },
+    {
+      "company": "Kerry Incorporated",
+      "notice_date": "2019-02-28",
+      "effective_date": null,
+      "employees": 107,
+      "layoff_type": "Plant Closing",
+      "city": "Kentwood",
+      "state": "MI"
+    },
+    {
+      "company": "AMI Livonia LLC",
+      "notice_date": "2019-03-12",
+      "effective_date": null,
+      "employees": 96,
+      "layoff_type": "Plant Closing",
+      "city": "Livonia",
+      "state": "MI"
+    },
+    {
+      "company": "Lapeer Industries Inc",
+      "notice_date": "2019-03-12",
+      "effective_date": null,
+      "employees": 160,
+      "layoff_type": "Mass Layoff",
+      "city": "Lapeer",
+      "state": "MI"
+    },
+    {
+      "company": "Vibra Hospital",
+      "notice_date": "2019-03-21",
+      "effective_date": null,
+      "employees": 89,
+      "layoff_type": "Plant Closing",
+      "city": "Lincoln Park",
+      "state": "MI"
+    },
+    {
+      "company": "Fifth Third Bank",
+      "notice_date": "2019-03-22",
+      "effective_date": null,
+      "employees": 87,
+      "layoff_type": "Mass Layoff",
+      "city": "Ann Arbor",
+      "state": "MI"
+    },
+    {
+      "company": "Thomson Shore",
+      "notice_date": "2019-03-25",
+      "effective_date": null,
+      "employees": 80,
+      "layoff_type": "Mass Layoff",
+      "city": "Dexter",
+      "state": "MI"
+    },
+    {
+      "company": "Kroger",
+      "notice_date": "2019-03-27",
+      "effective_date": null,
+      "employees": 91,
+      "layoff_type": "Plant Closing",
+      "city": "Mt Pleasant",
+      "state": "MI"
+    },
+    {
+      "company": "Detroit Renewable Power",
+      "notice_date": "2019-03-27",
+      "effective_date": null,
+      "employees": 166,
+      "layoff_type": "Plant Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "TreeHouse Private Brands",
+      "notice_date": "2019-03-28",
+      "effective_date": null,
+      "employees": 75,
+      "layoff_type": "Plant Closing",
+      "city": "Battle Creek",
+      "state": "MI"
+    },
+    {
+      "company": "Fiat Chrysler Automobiles (FCA)",
+      "notice_date": "2019-04-01",
+      "effective_date": null,
+      "employees": 703,
+      "layoff_type": "Plant Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Falcon Transport Company",
+      "notice_date": "2019-04-30",
+      "effective_date": null,
+      "employees": 84,
+      "layoff_type": "Plant Closing",
+      "city": "Romulus",
+      "state": "MI"
+    },
+    {
+      "company": "Amway",
+      "notice_date": "2019-05-03",
+      "effective_date": null,
+      "employees": 115,
+      "layoff_type": "Mass Layoff",
+      "city": "Ada",
+      "state": "MI"
+    },
+    {
+      "company": "Concerto of Michigan, Inc",
+      "notice_date": "2019-05-06",
+      "effective_date": null,
+      "employees": 75,
+      "layoff_type": "Plant Closing",
+      "city": "Kalamazoo",
+      "state": "MI"
+    },
+    {
+      "company": "Concerto of Michigan, Inc",
+      "notice_date": "2019-05-06",
+      "effective_date": null,
+      "employees": 10,
+      "layoff_type": "Plant Closing",
+      "city": "Center Line",
+      "state": "MI"
+    },
+    {
+      "company": "Concerto of Michigan, Inc",
+      "notice_date": "2019-05-02",
+      "effective_date": null,
+      "employees": 54,
+      "layoff_type": "Plant Closing",
+      "city": "Southfield",
+      "state": "MI"
+    },
+    {
+      "company": "General Motors",
+      "notice_date": "2019-05-23",
+      "effective_date": null,
+      "employees": 265,
+      "layoff_type": "Plant Closing",
+      "city": "Warren",
+      "state": "MI"
+    },
+    {
+      "company": "Durham School Services LP",
+      "notice_date": "2019-05-28",
+      "effective_date": null,
+      "employees": 86,
+      "layoff_type": "Plant Closing",
+      "city": "Ypsilanti",
+      "state": "MI"
+    },
+    {
+      "company": "Lord & Taylor",
+      "notice_date": "2019-06-05",
+      "effective_date": null,
+      "employees": 97,
+      "layoff_type": "Plant Closing",
+      "city": "Sterling Heights",
+      "state": "MI"
+    },
+    {
+      "company": "Lear Corporation",
+      "notice_date": "2019-06-10",
+      "effective_date": null,
+      "employees": 76,
+      "layoff_type": "Plant Closing",
+      "city": "Taylor",
+      "state": "MI"
+    },
+    {
+      "company": "Conifer Health Solutions;",
+      "notice_date": "2019-06-13",
+      "effective_date": null,
+      "employees": 65,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Concentrix Corporation",
+      "notice_date": "2019-06-26",
+      "effective_date": null,
+      "employees": 100,
+      "layoff_type": "Plant Closing",
+      "city": "Southfield",
+      "state": "MI"
+    },
+    {
+      "company": "Nordstrom",
+      "notice_date": "2019-07-01",
+      "effective_date": null,
+      "employees": 106,
+      "layoff_type": "Plant Closing",
+      "city": "Clinton Township",
+      "state": "MI"
+    },
+    {
+      "company": "Graham Packaging Company, LP",
+      "notice_date": "2019-07-03",
+      "effective_date": null,
+      "employees": 42,
+      "layoff_type": "Plant Closing",
+      "city": "Holland",
+      "state": "MI"
+    },
+    {
+      "company": "Community Development Institute Head Start",
+      "notice_date": "2019-07-24",
+      "effective_date": null,
+      "employees": 49,
+      "layoff_type": "Mass Layoff",
+      "city": "Garden City",
+      "state": "MI"
+    },
+    {
+      "company": "Alorica",
+      "notice_date": "2019-07-26",
+      "effective_date": null,
+      "employees": 130,
+      "layoff_type": "Mass Layoff",
+      "city": "Jackson",
+      "state": "MI"
+    },
+    {
+      "company": "A123 Systems LLC - Livonia",
+      "notice_date": "2019-07-30",
+      "effective_date": null,
+      "employees": 42,
+      "layoff_type": "Plant Closing",
+      "city": "Livonia",
+      "state": "MI"
+    },
+    {
+      "company": "Presbyterian Villages of Michigan",
+      "notice_date": "2019-08-05",
+      "effective_date": null,
+      "employees": 95,
+      "layoff_type": "Mass Layoff",
+      "city": "Southfield",
+      "state": "MI"
+    },
+    {
+      "company": "US Steel Corporation - Great Lakes Works",
+      "notice_date": "2019-08-05",
+      "effective_date": null,
+      "employees": 58,
+      "layoff_type": "Mass Layoff",
+      "city": "Ecorse",
+      "state": "MI"
+    },
+    {
+      "company": "Venchurs Inc",
+      "notice_date": "2019-08-16",
+      "effective_date": null,
+      "employees": 40,
+      "layoff_type": "Plant Closing",
+      "city": "Adrian",
+      "state": "MI"
+    },
+    {
+      "company": "Venchurs Vehicle Systems LLC",
+      "notice_date": "2019-08-16",
+      "effective_date": null,
+      "employees": 6,
+      "layoff_type": "Plant Closing",
+      "city": "Adrian",
+      "state": "MI"
+    },
+    {
+      "company": "Jack Entertainment",
+      "notice_date": "2019-09-09",
+      "effective_date": null,
+      "employees": 92,
+      "layoff_type": "Plant Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Nestle",
+      "notice_date": "2019-09-03",
+      "effective_date": null,
+      "employees": 57,
+      "layoff_type": "Plant Closing",
+      "city": "Plymouth",
+      "state": "MI"
+    },
+    {
+      "company": "Amway",
+      "notice_date": "2019-09-11",
+      "effective_date": null,
+      "employees": 166,
+      "layoff_type": "Mass Layoff",
+      "city": "Ada",
+      "state": "MI"
+    },
+    {
+      "company": "Barber Steel Foundry",
+      "notice_date": "2019-09-20",
+      "effective_date": null,
+      "employees": 61,
+      "layoff_type": "Plant Closing",
+      "city": "Rothbury",
+      "state": "MI"
+    },
+    {
+      "company": "Tower International",
+      "notice_date": "2019-10-02",
+      "effective_date": null,
+      "employees": 115,
+      "layoff_type": "Mass Layoff",
+      "city": "Livonia",
+      "state": "MI"
+    },
+    {
+      "company": "Alorica",
+      "notice_date": "2019-10-25",
+      "effective_date": null,
+      "employees": 67,
+      "layoff_type": "Plant Closing",
+      "city": "Jackson",
+      "state": "MI"
+    },
+    {
+      "company": "OakWood Worldwide (US) LP",
+      "notice_date": "2019-10-30",
+      "effective_date": null,
+      "employees": 3,
+      "layoff_type": "Mass Layoff",
+      "city": "Novi",
+      "state": "MI"
+    },
+    {
+      "company": "Hemisphere Design Works",
+      "notice_date": "2019-10-29",
+      "effective_date": null,
+      "employees": 68,
+      "layoff_type": "Plant Closing",
+      "city": "Muskegon",
+      "state": "MI"
+    },
+    {
+      "company": "Nestle",
+      "notice_date": "2019-11-06",
+      "effective_date": null,
+      "employees": 7,
+      "layoff_type": "Mass Layoff",
+      "city": "Kalamazoo",
+      "state": "MI"
+    },
+    {
+      "company": "AmCane Sugar",
+      "notice_date": "2019-11-12",
+      "effective_date": null,
+      "employees": 73,
+      "layoff_type": "Plant Closing",
+      "city": "Taylor",
+      "state": "MI"
+    },
+    {
+      "company": "P&F Systems",
+      "notice_date": "2019-11-21",
+      "effective_date": null,
+      "employees": 50,
+      "layoff_type": "Plant Closing",
+      "city": "Auburn Hills",
+      "state": "MI"
+    },
+    {
+      "company": "General Motors Detroit Hamtramck Assembly",
+      "notice_date": "2019-12-03",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Logistics Insight Corp.",
+      "notice_date": "2019-12-09",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Focus Hope Companies, Inc.",
+      "notice_date": "2019-12-16",
+      "effective_date": null,
+      "employees": 58,
+      "layoff_type": "Plant Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Motus One (ESI)",
+      "notice_date": "2019-12-26",
+      "effective_date": null,
+      "employees": 37,
+      "layoff_type": "Mass Layoff",
+      "city": "Troy",
+      "state": "MI"
+    },
+    {
+      "company": "U.S. Steel Corporation",
+      "notice_date": "2019-12-23",
+      "effective_date": null,
+      "employees": 1286,
+      "layoff_type": "Plant Closing",
+      "city": "Ecorse",
+      "state": "MI"
+    },
+    {
+      "company": "Sam's Club #8137",
+      "notice_date": "2018-01-11",
+      "effective_date": null,
+      "employees": 172,
+      "layoff_type": "Plant Closing",
+      "city": "Lansing",
+      "state": "MI"
+    },
+    {
+      "company": "Sam's Club #4812",
+      "notice_date": "2018-01-11",
+      "effective_date": null,
+      "employees": 158,
+      "layoff_type": "Plant Closing",
+      "city": "Farmington Hills",
+      "state": "MI"
+    },
+    {
+      "company": "Bosal Industries",
+      "notice_date": "2018-01-31",
+      "effective_date": null,
+      "employees": 142,
+      "layoff_type": "Mass Layoff",
+      "city": "Ypsilanti",
+      "state": "MI"
+    },
+    {
+      "company": "Elder-Beerman",
+      "notice_date": "2018-02-05",
+      "effective_date": null,
+      "employees": 10,
+      "layoff_type": "Plant Closing",
+      "city": "Adrian",
+      "state": "MI"
+    },
+    {
+      "company": "Carson's",
+      "notice_date": "2018-02-05",
+      "effective_date": null,
+      "employees": 50,
+      "layoff_type": "Plant Closing",
+      "city": "Benton Harbor",
+      "state": "MI"
+    },
+    {
+      "company": "Compass Group",
+      "notice_date": "2018-02-05",
+      "effective_date": null,
+      "employees": 396,
+      "layoff_type": "Plant Closing",
+      "city": "Statewide",
+      "state": "MI"
+    },
+    {
+      "company": "Integrated Manufacturing & Assembly",
+      "notice_date": "2018-03-05",
+      "effective_date": null,
+      "employees": 127,
+      "layoff_type": "Mass Layoff",
+      "city": "Highland Park",
+      "state": "MI"
+    },
+    {
+      "company": "Quest Diagnostics, Inc",
+      "notice_date": "2018-03-08",
+      "effective_date": null,
+      "employees": 57,
+      "layoff_type": "Plant Closing",
+      "city": "Troy",
+      "state": "MI"
+    },
+    {
+      "company": "Envoy",
+      "notice_date": "2018-03-14",
+      "effective_date": null,
+      "employees": 114,
+      "layoff_type": "Plant Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Live Nation - Filmore Detroit",
+      "notice_date": "2018-04-02",
+      "effective_date": null,
+      "employees": 180,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Younkers",
+      "notice_date": "2018-04-09",
+      "effective_date": null,
+      "employees": 70,
+      "layoff_type": "Plant Closing",
+      "city": "Grandville",
+      "state": "MI"
+    },
+    {
+      "company": "Carson's",
+      "notice_date": "2018-04-09",
+      "effective_date": null,
+      "employees": 204,
+      "layoff_type": "Plant Closing",
+      "city": "Livonia",
+      "state": "MI"
+    },
+    {
+      "company": "Carson's",
+      "notice_date": "2018-04-09",
+      "effective_date": null,
+      "employees": 130,
+      "layoff_type": "Plant Closing",
+      "city": "Rochester Hills",
+      "state": "MI"
+    },
+    {
+      "company": "Carson's",
+      "notice_date": "2018-04-09",
+      "effective_date": null,
+      "employees": 191,
+      "layoff_type": "Plant Closing",
+      "city": "Clinton Twp.",
+      "state": "MI"
+    },
+    {
+      "company": "Trinity Services Group, Inc.",
+      "notice_date": "2018-04-19",
+      "effective_date": null,
+      "employees": 307,
+      "layoff_type": "Plant Closing",
+      "city": "Statewide",
+      "state": "MI"
+    },
+    {
+      "company": "Izzyplus",
+      "notice_date": "2018-04-23",
+      "effective_date": null,
+      "employees": 72,
+      "layoff_type": "Plant Closing",
+      "city": "Spring Lake",
+      "state": "MI"
+    },
+    {
+      "company": "Carson's",
+      "notice_date": "2018-04-19",
+      "effective_date": null,
+      "employees": 10,
+      "layoff_type": "Plant Closing",
+      "city": "Fort Gratiot",
+      "state": "MI"
+    },
+    {
+      "company": "MB Financial Bank",
+      "notice_date": "2018-04-26",
+      "effective_date": null,
+      "employees": 406,
+      "layoff_type": "Plant Closing",
+      "city": "Ann Arbor",
+      "state": "MI"
+    },
+    {
+      "company": "MB Financial Bank",
+      "notice_date": "2018-04-26",
+      "effective_date": null,
+      "employees": 63,
+      "layoff_type": "Plant Closing",
+      "city": "Milford",
+      "state": "MI"
+    },
+    {
+      "company": "MB Financial Bank",
+      "notice_date": "2018-04-26",
+      "effective_date": null,
+      "employees": 25,
+      "layoff_type": "Plant Closing",
+      "city": "Farmington Hills",
+      "state": "MI"
+    },
+    {
+      "company": "MB Financial Bank",
+      "notice_date": "2018-04-26",
+      "effective_date": null,
+      "employees": 25,
+      "layoff_type": "Plant Closing",
+      "city": "Northville",
+      "state": "MI"
+    },
+    {
+      "company": "MB Financial Bank",
+      "notice_date": "2018-04-26",
+      "effective_date": null,
+      "employees": 25,
+      "layoff_type": "Plant Closing",
+      "city": "Southfield",
+      "state": "MI"
+    },
+    {
+      "company": "MB Financial Bank",
+      "notice_date": "2018-04-26",
+      "effective_date": null,
+      "employees": 25,
+      "layoff_type": "Plant Closing",
+      "city": "Taylor",
+      "state": "MI"
+    },
+    {
+      "company": "MB Financial Bank",
+      "notice_date": "2018-04-26",
+      "effective_date": null,
+      "employees": 25,
+      "layoff_type": "Plant Closing",
+      "city": "West Bloomfield",
+      "state": "MI"
+    },
+    {
+      "company": "New Center Community Services",
+      "notice_date": "2018-04-30",
+      "effective_date": null,
+      "employees": 66,
+      "layoff_type": "Plant Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Sodexo",
+      "notice_date": "2018-05-03",
+      "effective_date": null,
+      "employees": 34,
+      "layoff_type": "Plant Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Microline Technology Corporation",
+      "notice_date": "2018-05-22",
+      "effective_date": null,
+      "employees": 63,
+      "layoff_type": "Plant Closing",
+      "city": "Traverse City",
+      "state": "MI"
+    },
+    {
+      "company": "Edwards Brothers Malloy Printing",
+      "notice_date": "2018-06-04",
+      "effective_date": null,
+      "employees": 140,
+      "layoff_type": "Plant Closing",
+      "city": "Ann Arbor",
+      "state": "MI"
+    },
+    {
+      "company": "Edwards Brothers Malloy Printing",
+      "notice_date": "2018-06-04",
+      "effective_date": null,
+      "employees": 142,
+      "layoff_type": "Plant Closing",
+      "city": "Ann Arbor",
+      "state": "MI"
+    },
+    {
+      "company": "Gardens Alive! Farms",
+      "notice_date": "2018-06-04",
+      "effective_date": null,
+      "employees": 295,
+      "layoff_type": "Plant Closing",
+      "city": "Grand Haven",
+      "state": "MI"
+    },
+    {
+      "company": "SMART",
+      "notice_date": "2018-06-08",
+      "effective_date": null,
+      "employees": 318,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Country Fresh",
+      "notice_date": "2018-06-20",
+      "effective_date": null,
+      "employees": 85,
+      "layoff_type": "Plant Closing",
+      "city": "Livonia",
+      "state": "MI"
+    },
+    {
+      "company": "Teleperformance USA",
+      "notice_date": "2018-06-21",
+      "effective_date": null,
+      "employees": 91,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Dream Center Education Holdings, LLC",
+      "notice_date": "2018-06-29",
+      "effective_date": null,
+      "employees": 116,
+      "layoff_type": "Plant Closing",
+      "city": "Novi",
+      "state": "MI"
+    },
+    {
+      "company": "Kellogg",
+      "notice_date": "2018-07-30",
+      "effective_date": null,
+      "employees": 70,
+      "layoff_type": "Mass Layoff",
+      "city": "Battle Creek",
+      "state": "MI"
+    },
+    {
+      "company": "Charter Communications",
+      "notice_date": "2018-08-01",
+      "effective_date": null,
+      "employees": 51,
+      "layoff_type": "Mass Layoff",
+      "city": "Walker",
+      "state": "MI"
+    },
+    {
+      "company": "Charter Communications",
+      "notice_date": "2018-08-06",
+      "effective_date": null,
+      "employees": 60,
+      "layoff_type": "Mass Layoff",
+      "city": "Livonia",
+      "state": "MI"
+    },
+    {
+      "company": "American Red Cross",
+      "notice_date": "2018-08-27",
+      "effective_date": null,
+      "employees": 284,
+      "layoff_type": "Mass Layoff",
+      "city": "Statewide",
+      "state": "MI"
+    },
+    {
+      "company": "Polly's Country Market",
+      "notice_date": "2018-08-27",
+      "effective_date": null,
+      "employees": 49,
+      "layoff_type": "Plant Closing",
+      "city": "Dexter",
+      "state": "MI"
+    },
+    {
+      "company": "Great Lakes Coca-Cola",
+      "notice_date": "2018-09-07",
+      "effective_date": null,
+      "employees": 102,
+      "layoff_type": "Plant Closing",
+      "city": "Kalamazoo",
+      "state": "MI"
+    },
+    {
+      "company": "Menzies Aviation",
+      "notice_date": "2018-09-14",
+      "effective_date": null,
+      "employees": 189,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "LenderLive",
+      "notice_date": "2018-09-19",
+      "effective_date": null,
+      "employees": 56,
+      "layoff_type": "Plant Closing",
+      "city": "Madison Heights",
+      "state": "MI"
+    },
+    {
+      "company": "StateFarm",
+      "notice_date": "2018-10-04",
+      "effective_date": null,
+      "employees": 62,
+      "layoff_type": "Plant Closing",
+      "city": "Livonia",
+      "state": "MI"
+    },
+    {
+      "company": "Spectrum Industries Decorative Finishes, Inc",
+      "notice_date": "2018-10-08",
+      "effective_date": null,
+      "employees": 26,
+      "layoff_type": "Plant Closing",
+      "city": "Kentwood",
+      "state": "MI"
+    },
+    {
+      "company": "Ernest Industries",
+      "notice_date": "2018-10-16",
+      "effective_date": null,
+      "employees": 70,
+      "layoff_type": "Plant Closing",
+      "city": "Westland",
+      "state": "MI"
+    },
+    {
+      "company": "Professional Educational Services Group",
+      "notice_date": "2018-10-23",
+      "effective_date": null,
+      "employees": 18,
+      "layoff_type": "Plant Closing",
+      "city": "Caledonia",
+      "state": "MI"
+    },
+    {
+      "company": "Bays Bakery",
+      "notice_date": "2018-10-24",
+      "effective_date": null,
+      "employees": 50,
+      "layoff_type": "Plant Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Lowe's - Store #761",
+      "notice_date": "2018-11-05",
+      "effective_date": null,
+      "employees": 129,
+      "layoff_type": "Plant Closing",
+      "city": "Burton",
+      "state": "MI"
+    },
+    {
+      "company": "Lowe's - Store 669",
+      "notice_date": "2018-11-05",
+      "effective_date": null,
+      "employees": 107,
+      "layoff_type": "Plant Closing",
+      "city": "Flint",
+      "state": "MI"
+    },
+    {
+      "company": "Aunt Millie's",
+      "notice_date": "2018-11-05",
+      "effective_date": null,
+      "employees": 74,
+      "layoff_type": "Plant Closing",
+      "city": "Coldwater",
+      "state": "MI"
+    },
+    {
+      "company": "Hard Rock Cafe International",
+      "notice_date": "2018-11-27",
+      "effective_date": null,
+      "employees": 60,
+      "layoff_type": "Plant Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Alphi Manufacturing LLC",
+      "notice_date": "2018-11-29",
+      "effective_date": null,
+      "employees": 60,
+      "layoff_type": "Mass Layoff",
+      "city": "Jonesville",
+      "state": "MI"
+    },
+    {
+      "company": "Cracker Barrel Old Country Store",
+      "notice_date": "2018-11-30",
+      "effective_date": null,
+      "employees": 135,
+      "layoff_type": "Plant Closing",
+      "city": "Kalamazoo",
+      "state": "MI"
+    },
+    {
+      "company": "Alutiiq Professional Services",
+      "notice_date": "2018-12-04",
+      "effective_date": null,
+      "employees": 25,
+      "layoff_type": "Mass Layoff",
+      "city": "Flint",
+      "state": "MI"
+    },
+    {
+      "company": "RCO Engineering",
+      "notice_date": "2018-12-05",
+      "effective_date": null,
+      "employees": 68,
+      "layoff_type": "Mass Layoff",
+      "city": "Warren",
+      "state": "MI"
+    },
+    {
+      "company": "GM Detroit Hamtramck",
+      "notice_date": "2018-12-17",
+      "effective_date": null,
+      "employees": 620,
+      "layoff_type": "Plant Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "GM Detroit Hamtramck LOC",
+      "notice_date": "2018-12-17",
+      "effective_date": null,
+      "employees": 44,
+      "layoff_type": "Plant Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "GM Brownstown",
+      "notice_date": "2018-12-17",
+      "effective_date": null,
+      "employees": 50,
+      "layoff_type": "Mass Layoff",
+      "city": "Brownstown Township",
+      "state": "MI"
+    },
+    {
+      "company": "Adient USA LLC",
+      "notice_date": "2018-12-21",
+      "effective_date": null,
+      "employees": 212,
+      "layoff_type": "Plant Closing",
+      "city": "Charlotte",
+      "state": "MI"
+    },
+    {
+      "company": "Bosal Industries",
+      "notice_date": "2018-12-21",
+      "effective_date": null,
+      "employees": 58,
+      "layoff_type": "Mass Layoff",
+      "city": "Ypsilanti",
+      "state": "MI"
+    },
+    {
+      "company": "American Seating Company",
+      "notice_date": "2017-01-04",
+      "effective_date": null,
+      "employees": 80,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Macy's",
+      "notice_date": "2017-01-05",
+      "effective_date": null,
+      "employees": 70,
+      "layoff_type": "Plant Closing",
+      "city": "Statewide",
+      "state": "MI"
+    },
+    {
+      "company": "Sears",
+      "notice_date": "2017-01-05",
+      "effective_date": null,
+      "employees": 84,
+      "layoff_type": "Plant Closing",
+      "city": "Statewide",
+      "state": "MI"
+    },
+    {
+      "company": "Kmart",
+      "notice_date": "2017-01-05",
+      "effective_date": null,
+      "employees": 194,
+      "layoff_type": "Plant Closing",
+      "city": "Statewide",
+      "state": "MI"
+    },
+    {
+      "company": "Focus: HOPE Companies Inc.",
+      "notice_date": "2017-01-09",
+      "effective_date": null,
+      "employees": 120,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Weir Delta Industrial Valves",
+      "notice_date": "2017-01-11",
+      "effective_date": null,
+      "employees": 56,
+      "layoff_type": "Plant Closing",
+      "city": "Niles",
+      "state": "MI"
+    },
+    {
+      "company": "Kellogg's Detroit Distribution Center",
+      "notice_date": "2017-05-26",
+      "effective_date": null,
+      "employees": 211,
+      "layoff_type": "Plant Closing",
+      "city": "New Hudson",
+      "state": "MI"
+    },
+    {
+      "company": "Android",
+      "notice_date": "2017-01-25",
+      "effective_date": null,
+      "employees": 10,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Yanfeng",
+      "notice_date": "2017-01-26",
+      "effective_date": null,
+      "employees": 321,
+      "layoff_type": "Mass Layoff",
+      "city": "Monroe",
+      "state": "MI"
+    },
+    {
+      "company": "Inovalon, Inc.",
+      "notice_date": "2017-01-27",
+      "effective_date": null,
+      "employees": 118,
+      "layoff_type": "Plant Closing",
+      "city": "Lansing",
+      "state": "MI"
+    },
+    {
+      "company": "Alamo Drafthouse Cinema",
+      "notice_date": "2017-02-01",
+      "effective_date": null,
+      "employees": 109,
+      "layoff_type": "Plant Closing",
+      "city": "Kalamazoo",
+      "state": "MI"
+    },
+    {
+      "company": "International Specialty Tube",
+      "notice_date": "2017-02-03",
+      "effective_date": null,
+      "employees": 114,
+      "layoff_type": "Plant Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Penske Vehicle Services, Inc.",
+      "notice_date": "2017-02-06",
+      "effective_date": null,
+      "employees": 166,
+      "layoff_type": "Mass Layoff",
+      "city": "Statewide",
+      "state": "MI"
+    },
+    {
+      "company": "MC Sporting Goods",
+      "notice_date": "2017-02-08",
+      "effective_date": null,
+      "employees": 250,
+      "layoff_type": "Plant Closing",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Yanfeng",
+      "notice_date": "2017-02-17",
+      "effective_date": null,
+      "employees": 285,
+      "layoff_type": "Plant Closing",
+      "city": "Delta Twp.",
+      "state": "MI"
+    },
+    {
+      "company": "Inteva Products",
+      "notice_date": "2017-02-22",
+      "effective_date": null,
+      "employees": 160,
+      "layoff_type": "Mass Layoff",
+      "city": "Adrian",
+      "state": "MI"
+    },
+    {
+      "company": "Family Christian Bookstores",
+      "notice_date": "2017-02-24",
+      "effective_date": null,
+      "employees": 170,
+      "layoff_type": "Plant Closing",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "GM - Lansing Ass'y (Delta)",
+      "notice_date": "2017-03-06",
+      "effective_date": null,
+      "employees": 1146,
+      "layoff_type": "Mass Layoff",
+      "city": "Lansing",
+      "state": "MI"
+    },
+    {
+      "company": "Miner's Inc. (Super One Foods)",
+      "notice_date": "2017-03-07",
+      "effective_date": null,
+      "employees": 75,
+      "layoff_type": "Plant Closing",
+      "city": "Escanaba",
+      "state": "MI"
+    },
+    {
+      "company": "AT&T DSL Care Center",
+      "notice_date": "2017-03-15",
+      "effective_date": null,
+      "employees": 53,
+      "layoff_type": "Plant Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Civil & Environmental Consultants (CEC)",
+      "notice_date": "2017-03-16",
+      "effective_date": null,
+      "employees": 8,
+      "layoff_type": "Plant Closing",
+      "city": "Novi",
+      "state": "MI"
+    },
+    {
+      "company": "Suniva",
+      "notice_date": "2017-03-30",
+      "effective_date": null,
+      "employees": 59,
+      "layoff_type": "Mass Layoff",
+      "city": "Saginaw Twp.",
+      "state": "MI"
+    },
+    {
+      "company": "RevSpring",
+      "notice_date": "2017-03-31",
+      "effective_date": null,
+      "employees": 52,
+      "layoff_type": "Mass Layoff",
+      "city": "Wixom",
+      "state": "MI"
+    },
+    {
+      "company": "A123 Systems",
+      "notice_date": "2017-04-03",
+      "effective_date": null,
+      "employees": 55,
+      "layoff_type": "Mass Layoff",
+      "city": "Romulus",
+      "state": "MI"
+    },
+    {
+      "company": "A123 Systems",
+      "notice_date": "2017-04-03",
+      "effective_date": null,
+      "employees": 75,
+      "layoff_type": "Mass Layoff",
+      "city": "Livonia",
+      "state": "MI"
+    },
+    {
+      "company": "Sodexo",
+      "notice_date": "2017-04-03",
+      "effective_date": null,
+      "employees": 52,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "CEVA Logistics U.S.",
+      "notice_date": "2017-04-03",
+      "effective_date": null,
+      "employees": 188,
+      "layoff_type": "Mass Layoff",
+      "city": "Redford",
+      "state": "MI"
+    },
+    {
+      "company": "Dollar Express",
+      "notice_date": "2017-04-03",
+      "effective_date": null,
+      "employees": 185,
+      "layoff_type": "Plant Closing",
+      "city": "Statewide",
+      "state": "MI"
+    },
+    {
+      "company": "Linear AMS",
+      "notice_date": "2017-04-24",
+      "effective_date": null,
+      "employees": 40,
+      "layoff_type": "Mass Layoff",
+      "city": "Livonia",
+      "state": "MI"
+    },
+    {
+      "company": "First Student",
+      "notice_date": "2017-04-25",
+      "effective_date": null,
+      "employees": 61,
+      "layoff_type": "Plant Closing",
+      "city": "Flat Rock",
+      "state": "MI"
+    },
+    {
+      "company": "Woodward Academy",
+      "notice_date": "2017-05-01",
+      "effective_date": null,
+      "employees": 65,
+      "layoff_type": "Plant Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Sun Pharmaceutical Industries",
+      "notice_date": "2017-05-03",
+      "effective_date": null,
+      "employees": 25,
+      "layoff_type": "Mass Layoff",
+      "city": "Wixom",
+      "state": "MI"
+    },
+    {
+      "company": "Huntington Bank",
+      "notice_date": "2017-05-12",
+      "effective_date": null,
+      "employees": 115,
+      "layoff_type": "Plant Closing",
+      "city": "Holland",
+      "state": "MI"
+    },
+    {
+      "company": "Durham School Services",
+      "notice_date": "2017-05-04",
+      "effective_date": null,
+      "employees": 118,
+      "layoff_type": "Mass Layoff",
+      "city": "Southfield",
+      "state": "MI"
+    },
+    {
+      "company": "Comcast",
+      "notice_date": "2017-05-23",
+      "effective_date": null,
+      "employees": 72,
+      "layoff_type": "Plant Closing",
+      "city": "Wixom",
+      "state": "MI"
+    },
+    {
+      "company": "Durham School Services",
+      "notice_date": "2017-05-26",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Mass Layoff",
+      "city": "Romulus",
+      "state": "MI"
+    },
+    {
+      "company": "B&B Bachrach",
+      "notice_date": "2017-06-01",
+      "effective_date": null,
+      "employees": 5,
+      "layoff_type": "Plant Closing",
+      "city": "Auburn Hills",
+      "state": "MI"
+    },
+    {
+      "company": "Dematic",
+      "notice_date": "2017-07-03",
+      "effective_date": null,
+      "employees": 204,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "Fiat Chrysler Automobiles",
+      "notice_date": "2017-07-03",
+      "effective_date": null,
+      "employees": 82,
+      "layoff_type": "Plant Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Kindred Hospital",
+      "notice_date": "2017-07-20",
+      "effective_date": null,
+      "employees": 145,
+      "layoff_type": "Plant Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "DEX YP",
+      "notice_date": "2017-07-31",
+      "effective_date": null,
+      "employees": 108,
+      "layoff_type": "Plant Closing",
+      "city": "Madison Heights",
+      "state": "MI"
+    },
+    {
+      "company": "Adient USA",
+      "notice_date": "2017-07-31",
+      "effective_date": null,
+      "employees": 129,
+      "layoff_type": "Plant Closing",
+      "city": "Auburn Hills",
+      "state": "MI"
+    },
+    {
+      "company": "Molina Medical",
+      "notice_date": "2017-08-01",
+      "effective_date": null,
+      "employees": 120,
+      "layoff_type": "Plant Closing",
+      "city": "Dearborn",
+      "state": "MI"
+    },
+    {
+      "company": "Great Lakes Wine & Spirits",
+      "notice_date": "2017-08-14",
+      "effective_date": null,
+      "employees": 101,
+      "layoff_type": "Plant Closing",
+      "city": "Petoskey",
+      "state": "MI"
+    },
+    {
+      "company": "Dairy Fresh Foods (Detroit City Dairy)",
+      "notice_date": "2017-08-15",
+      "effective_date": null,
+      "employees": 180,
+      "layoff_type": "Plant Closing",
+      "city": "Taylor",
+      "state": "MI"
+    },
+    {
+      "company": "Genpact",
+      "notice_date": "2017-08-22",
+      "effective_date": null,
+      "employees": 104,
+      "layoff_type": "Plant Closing",
+      "city": "Farmington Hills",
+      "state": "MI"
+    },
+    {
+      "company": "Arvato Digital Services",
+      "notice_date": "2017-08-23",
+      "effective_date": null,
+      "employees": 72,
+      "layoff_type": "Plant Closing",
+      "city": "Farmington Hills",
+      "state": "MI"
+    },
+    {
+      "company": "People's Bank - National Mortgage Business Division",
+      "notice_date": "2017-09-18",
+      "effective_date": null,
+      "employees": 62,
+      "layoff_type": "Plant Closing",
+      "city": "Southfield",
+      "state": "MI"
+    },
+    {
+      "company": "Thrift Books - Detroit Processing Center",
+      "notice_date": "2017-10-04",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Plant Closing",
+      "city": "Riverview",
+      "state": "MI"
+    },
+    {
+      "company": "Home Rehabilitative Services of Michigan",
+      "notice_date": "2017-10-16",
+      "effective_date": null,
+      "employees": 113,
+      "layoff_type": "Plant Closing",
+      "city": "Commerce Twp.",
+      "state": "MI"
+    },
+    {
+      "company": "Automotive Components Carrier",
+      "notice_date": "2017-10-11",
+      "effective_date": null,
+      "employees": 60,
+      "layoff_type": "Plant Closing",
+      "city": "Flint",
+      "state": "MI"
+    },
+    {
+      "company": "Southwest Solutions",
+      "notice_date": "2017-10-31",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Zenith Education Group (Everest Institute)",
+      "notice_date": "2017-11-07",
+      "effective_date": null,
+      "employees": 70,
+      "layoff_type": "Plant Closing",
+      "city": "Southfield",
+      "state": "MI"
+    },
+    {
+      "company": "Yanfeng",
+      "notice_date": "2017-11-27",
+      "effective_date": null,
+      "employees": 345,
+      "layoff_type": "Mass Layoff",
+      "city": "Highland Park",
+      "state": "MI"
+    },
+    {
+      "company": "Datapak Services Corporation",
+      "notice_date": "2017-12-07",
+      "effective_date": null,
+      "employees": 61,
+      "layoff_type": "Plant Closing",
+      "city": "Howell",
+      "state": "MI"
+    },
+    {
+      "company": "Dematic",
+      "notice_date": "2016-01-07",
+      "effective_date": null,
+      "employees": 305,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "ViSalus, Inc.",
+      "notice_date": "2016-01-11",
+      "effective_date": null,
+      "employees": 87,
+      "layoff_type": "Mass Layoff",
+      "city": "Troy",
+      "state": "MI"
+    },
+    {
+      "company": "Minacs Group",
+      "notice_date": "2016-01-12",
+      "effective_date": null,
+      "employees": 385,
+      "layoff_type": "Mass Layoff",
+      "city": "Farmington Hills",
+      "state": "MI"
+    },
+    {
+      "company": "Sam's Club",
+      "notice_date": "2016-01-15",
+      "effective_date": null,
+      "employees": 122,
+      "layoff_type": "Plant Closing",
+      "city": "Waterford",
+      "state": "MI"
+    },
+    {
+      "company": "WalMart",
+      "notice_date": "2016-01-15",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Plant Closing",
+      "city": "Hartland",
+      "state": "MI"
+    },
+    {
+      "company": "McLaren Medical Group",
+      "notice_date": "2016-02-02",
+      "effective_date": null,
+      "employees": 63,
+      "layoff_type": "Mass Layoff",
+      "city": "Statewide",
+      "state": "MI"
+    },
+    {
+      "company": "Bronson Precision Products",
+      "notice_date": "2016-02-16",
+      "effective_date": null,
+      "employees": 125,
+      "layoff_type": "Plant Closing",
+      "city": "Bronson",
+      "state": "MI"
+    },
+    {
+      "company": "Grand Rapids Plastics",
+      "notice_date": "2016-02-26",
+      "effective_date": null,
+      "employees": 85,
+      "layoff_type": "Mass Layoff",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "MidMichigan Health - Gladwin Pines",
+      "notice_date": "2016-02-26",
+      "effective_date": null,
+      "employees": 85,
+      "layoff_type": "Plant Closing",
+      "city": "Gladwin",
+      "state": "MI"
+    },
+    {
+      "company": "MidMichigan Health - Stratford Village",
+      "notice_date": "2016-02-26",
+      "effective_date": null,
+      "employees": 143,
+      "layoff_type": "Plant Closing",
+      "city": "Midland",
+      "state": "MI"
+    },
+    {
+      "company": "Maslow Media Company",
+      "notice_date": "2016-03-03",
+      "effective_date": null,
+      "employees": 1,
+      "layoff_type": "Plant Closing",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "WKW Roof Rail Systems",
+      "notice_date": "2016-03-07",
+      "effective_date": null,
+      "employees": 160,
+      "layoff_type": "Plant Closing",
+      "city": "Battle Creek",
+      "state": "MI"
+    },
+    {
+      "company": "Fiat Chrysler Automobiles",
+      "notice_date": "2016-04-07",
+      "effective_date": null,
+      "employees": 505,
+      "layoff_type": "Mass Layoff",
+      "city": "Sterling Heights",
+      "state": "MI"
+    },
+    {
+      "company": "Cliffs Natural Resources",
+      "notice_date": "2016-04-14",
+      "effective_date": null,
+      "employees": 318,
+      "layoff_type": "Plant Closing",
+      "city": "Palmer",
+      "state": "MI"
+    },
+    {
+      "company": "Faurecia Interior Systems",
+      "notice_date": "2016-04-27",
+      "effective_date": null,
+      "employees": 217,
+      "layoff_type": "Mass Layoff",
+      "city": "Sterling Heights",
+      "state": "MI"
+    },
+    {
+      "company": "Precision Motor Transport Group, LLC",
+      "notice_date": "2016-04-27",
+      "effective_date": null,
+      "employees": 24,
+      "layoff_type": "Mass Layoff",
+      "city": "Okemos",
+      "state": "MI"
+    },
+    {
+      "company": "Faurecia Interior Systems",
+      "notice_date": "2016-04-29",
+      "effective_date": null,
+      "employees": 47,
+      "layoff_type": "Mass Layoff",
+      "city": "Fraser",
+      "state": "MI"
+    },
+    {
+      "company": "Faurecia Interior Systems",
+      "notice_date": "2016-04-29",
+      "effective_date": null,
+      "employees": 193,
+      "layoff_type": "Mass Layoff",
+      "city": "Fraser",
+      "state": "MI"
+    },
+    {
+      "company": "Sodexo",
+      "notice_date": "2016-05-03",
+      "effective_date": null,
+      "employees": 99,
+      "layoff_type": "Plant Closing",
+      "city": "Rochester",
+      "state": "MI"
+    },
+    {
+      "company": "Ryder",
+      "notice_date": "2016-05-03",
+      "effective_date": null,
+      "employees": 160,
+      "layoff_type": "Mass Layoff",
+      "city": "Trenton",
+      "state": "MI"
+    },
+    {
+      "company": "Enviro-Clean",
+      "notice_date": "2016-05-06",
+      "effective_date": null,
+      "employees": 94,
+      "layoff_type": "Mass Layoff",
+      "city": "Troy",
+      "state": "MI"
+    },
+    {
+      "company": "McLaren Flint Food & Nutrition Service",
+      "notice_date": "2016-05-16",
+      "effective_date": null,
+      "employees": 22,
+      "layoff_type": "Mass Layoff",
+      "city": "Flint",
+      "state": "MI"
+    },
+    {
+      "company": "Bosch Emissions Systems US (BESU)",
+      "notice_date": "2016-05-18",
+      "effective_date": null,
+      "employees": 150,
+      "layoff_type": "Plant Closing",
+      "city": "Kentwood",
+      "state": "MI"
+    },
+    {
+      "company": "Alphabroder",
+      "notice_date": "2016-05-27",
+      "effective_date": null,
+      "employees": 92,
+      "layoff_type": "Plant Closing",
+      "city": "Niles",
+      "state": "MI"
+    },
+    {
+      "company": "Xalt Energy",
+      "notice_date": "2016-06-01",
+      "effective_date": null,
+      "employees": 100,
+      "layoff_type": "Mass Layoff",
+      "city": "Midland",
+      "state": "MI"
+    },
+    {
+      "company": "Turning Point Youth Center",
+      "notice_date": "2016-06-01",
+      "effective_date": null,
+      "employees": 120,
+      "layoff_type": "Plant Closing",
+      "city": "St. Johns",
+      "state": "MI"
+    },
+    {
+      "company": "Frank W. Kerr",
+      "notice_date": "2016-06-16",
+      "effective_date": null,
+      "employees": 60,
+      "layoff_type": "Plant Closing",
+      "city": "Novi",
+      "state": "MI"
+    },
+    {
+      "company": "Dow Chemical Company",
+      "notice_date": "2016-06-28",
+      "effective_date": null,
+      "employees": 700,
+      "layoff_type": "Mass Layoff",
+      "city": "Midland",
+      "state": "MI"
+    },
+    {
+      "company": "Martinrea Hot Stamping",
+      "notice_date": "2016-07-01",
+      "effective_date": null,
+      "employees": 68,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Zelenka Farms",
+      "notice_date": "2016-07-12",
+      "effective_date": null,
+      "employees": 300,
+      "layoff_type": "Plant Closing",
+      "city": "Grand Haven",
+      "state": "MI"
+    },
+    {
+      "company": "PAE",
+      "notice_date": "2016-07-18",
+      "effective_date": null,
+      "employees": 58,
+      "layoff_type": "Mass Layoff",
+      "city": "Wayne",
+      "state": "MI"
+    },
+    {
+      "company": "Dialog Direct (Nova 1)",
+      "notice_date": "2016-08-19",
+      "effective_date": null,
+      "employees": 106,
+      "layoff_type": "Plant Closing",
+      "city": "Grand Rapids",
+      "state": "MI"
+    },
+    {
+      "company": "ADP, LLC",
+      "notice_date": "2016-09-27",
+      "effective_date": null,
+      "employees": 79,
+      "layoff_type": "Plant Closing",
+      "city": "Ann Arbor",
+      "state": "MI"
+    },
+    {
+      "company": "Midwest Medical Management Services",
+      "notice_date": "2016-09-27",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Mass Layoff",
+      "city": "Dearborn",
+      "state": "MI"
+    },
+    {
+      "company": "Midwest Medical Management Services",
+      "notice_date": "2016-09-27",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
+    },
+    {
+      "company": "Faurecia Automotive Seating",
+      "notice_date": "2016-10-10",
+      "effective_date": null,
+      "employees": 98,
+      "layoff_type": "Mass Layoff",
+      "city": "Sterling Heights",
+      "state": "MI"
+    },
+    {
+      "company": "Experience Works",
+      "notice_date": "2016-11-07",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Mass Layoff",
+      "city": "Statewide",
+      "state": "MI"
+    },
+    {
+      "company": "GM - Lansing Grand River Ass'y Plant",
+      "notice_date": "2016-11-09",
+      "effective_date": null,
+      "employees": 443,
+      "layoff_type": "Mass Layoff",
+      "city": "Lansing",
+      "state": "MI"
+    },
+    {
+      "company": "GM Subsystems Manufacturing, LLC",
+      "notice_date": "2016-11-09",
+      "effective_date": null,
+      "employees": 24,
+      "layoff_type": "Mass Layoff",
+      "city": "Lansing",
+      "state": "MI"
+    },
+    {
+      "company": "Comprehensive Logistics",
+      "notice_date": "2016-11-30",
+      "effective_date": null,
+      "employees": 144,
+      "layoff_type": "Plant Closing",
+      "city": "Lansing,",
+      "state": "MI"
+    },
+    {
+      "company": "GM - Detroit Hamtramck Assembly Plant",
+      "notice_date": "2016-12-19",
+      "effective_date": null,
+      "employees": 1270,
+      "layoff_type": "Mass Layoff",
+      "city": "Detroit",
+      "state": "MI"
     }
   ]
 }

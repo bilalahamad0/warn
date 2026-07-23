@@ -61,6 +61,16 @@ def all_sources(data_dir: Optional[Path] = None) -> list:
     return [cls(data_dir) for cls in SOURCES.values() if cls.enabled]
 
 
+def registered_sources(data_dir: Optional[Path] = None) -> list:
+    """Every registered source, including disabled ones.
+
+    ``enabled`` gates live *fetching* only — a disabled source (e.g. TX
+    behind its bot wall) can still hold backfilled historical data that the
+    national dataset and dashboards should surface.
+    """
+    return [cls(data_dir) for cls in SOURCES.values()]
+
+
 def run_all(
     dry_run: bool = False, force: bool = False, data_dir: Optional[Path] = None
 ) -> dict:

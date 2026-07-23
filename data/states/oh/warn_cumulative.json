@@ -1,9 +1,9 @@
 {
-  "total_records": 797,
-  "total_employees": 116883,
-  "date_range_start": "2017-01-09",
+  "total_records": 977,
+  "total_employees": 137364,
+  "date_range_start": "2015-01-05",
   "date_range_end": "2026-07-14",
-  "last_updated": "2026-07-23T13:46:14.829241+00:00Z",
+  "last_updated": "2026-07-23T17:37:01.043342+00:00Z",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
     {
@@ -9569,6 +9569,1626 @@
       "city": "Groveport",
       "address": "",
       "industry": ""
+    },
+    {
+      "company": "Fenner Dunlop",
+      "notice_date": "2015-12-28",
+      "effective_date": "2015-12-23",
+      "employees": 85,
+      "county": "Ottawa",
+      "city": "Port Clinton",
+      "state": "OH"
+    },
+    {
+      "company": "Enersys",
+      "notice_date": "2015-12-22",
+      "effective_date": "2016-02-19",
+      "employees": 95,
+      "county": "Cuyahoga",
+      "city": "Cleveland",
+      "state": "OH"
+    },
+    {
+      "company": "Exterran",
+      "notice_date": "2015-12-18",
+      "effective_date": "2016-01-14",
+      "employees": 68,
+      "county": "Mahoning",
+      "city": "Youngstown",
+      "state": "OH"
+    },
+    {
+      "company": "Concord Steel",
+      "notice_date": "2015-12-14",
+      "effective_date": "2015-12-31",
+      "employees": 11,
+      "county": "Trumbull",
+      "city": "Warren",
+      "state": "OH"
+    },
+    {
+      "company": "Titan Tire",
+      "notice_date": "2015-12-11",
+      "effective_date": "2016-02-08",
+      "employees": 130,
+      "county": "Williams",
+      "city": "Bryan",
+      "state": "OH"
+    },
+    {
+      "company": "Volvo Group North America LLC",
+      "notice_date": "2015-12-01",
+      "effective_date": "2015-12-31",
+      "employees": 121,
+      "county": "Delaware",
+      "city": "Lewis Center",
+      "state": "OH"
+    },
+    {
+      "company": "Chester Packaging LLC",
+      "notice_date": "2015-11-20",
+      "effective_date": "2016-01-31",
+      "employees": 79,
+      "county": "Hamilton",
+      "city": "Cincinnati",
+      "state": "OH"
+    },
+    {
+      "company": "Centrus Energy Corp",
+      "notice_date": "2015-11-16",
+      "effective_date": "2016-01-11",
+      "employees": 0,
+      "county": "Pike",
+      "city": "Piketon",
+      "state": "OH"
+    },
+    {
+      "company": "Hyundai Ideal Electric Co",
+      "notice_date": "2015-11-16",
+      "effective_date": "2015-01-11",
+      "employees": 107,
+      "county": "Richland",
+      "city": "Mansfield",
+      "state": "OH"
+    },
+    {
+      "company": "Accel Performance Group LLC",
+      "notice_date": "2015-11-16",
+      "effective_date": "2015-12-20",
+      "employees": 64,
+      "county": "Cuyahoga",
+      "city": "Cleveland",
+      "state": "OH"
+    },
+    {
+      "company": "Parker Hannifin Corporation",
+      "notice_date": "2015-11-03",
+      "effective_date": "2016-01-15",
+      "employees": 132,
+      "county": "Mahoning",
+      "city": "Youngstown",
+      "state": "OH"
+    },
+    {
+      "company": "Manitowoc (Cleveland Range)",
+      "notice_date": "2015-10-30",
+      "effective_date": "2015-12-26",
+      "employees": 219,
+      "county": "Cuyahoga",
+      "city": "Cleveland",
+      "state": "OH"
+    },
+    {
+      "company": "Thirty One Gifts LLC",
+      "notice_date": "2015-10-30",
+      "effective_date": "2016-01-16",
+      "employees": 242,
+      "county": "",
+      "city": "Johnstown/Licking Springfield/Clark",
+      "state": "OH"
+    },
+    {
+      "company": "3M Company",
+      "notice_date": "2015-10-30",
+      "effective_date": "2015-12-31",
+      "employees": 75,
+      "county": "Montgomery",
+      "city": "Brookville",
+      "state": "OH"
+    },
+    {
+      "company": "Exel INC",
+      "notice_date": "2015-10-30",
+      "effective_date": "2016-01-08",
+      "employees": 91,
+      "county": "Clark",
+      "city": "Springfield",
+      "state": "OH"
+    },
+    {
+      "company": "TTM Technologies Inc.",
+      "notice_date": "2015-10-20",
+      "effective_date": "2015-12-21",
+      "employees": 70,
+      "county": "Summit",
+      "city": "Cuyahoga Falls",
+      "state": "OH"
+    },
+    {
+      "company": "WestRock",
+      "notice_date": "2015-10-16",
+      "effective_date": "2015-12-15",
+      "employees": 229,
+      "county": "Coshocton",
+      "city": "Coshocton",
+      "state": "OH"
+    },
+    {
+      "company": "Terra Source Global",
+      "notice_date": "2015-10-08",
+      "effective_date": "2015-12-11",
+      "employees": 53,
+      "county": "Summit",
+      "city": "Cuyahoga Falls",
+      "state": "OH"
+    },
+    {
+      "company": "Demdaco",
+      "notice_date": "2015-10-07",
+      "effective_date": "2015-12-31",
+      "employees": 20,
+      "county": "Wood",
+      "city": "Bowling Green",
+      "state": "OH"
+    },
+    {
+      "company": "MetalTek International \u2010 Sandusky Division",
+      "notice_date": "2015-09-29",
+      "effective_date": "2015-09-29",
+      "employees": 16,
+      "county": "Erie",
+      "city": "Sandusky",
+      "state": "OH"
+    },
+    {
+      "company": "KBI \u2010 Kyklos Bearing International LLC",
+      "notice_date": "2015-09-21",
+      "effective_date": "2015-11-30",
+      "employees": 177,
+      "county": "Erie",
+      "city": "Sandusky",
+      "state": "OH"
+    },
+    {
+      "company": "Centrus Energy Corp",
+      "notice_date": "2015-09-22",
+      "effective_date": "2015-11-10",
+      "employees": 0,
+      "county": "Pike",
+      "city": "Piketon",
+      "state": "OH"
+    },
+    {
+      "company": "Stingray Pressure Pumping LLC",
+      "notice_date": "2015-09-08",
+      "effective_date": "2015-10-31",
+      "employees": 22,
+      "county": "Monroe",
+      "city": "Unknown",
+      "state": "OH"
+    },
+    {
+      "company": "Maxim Healthcare Services INC",
+      "notice_date": "2015-09-01",
+      "effective_date": "2015-10-01",
+      "employees": 94,
+      "county": "Belmont",
+      "city": "St. Clairsville",
+      "state": "OH"
+    },
+    {
+      "company": "Fluor BWXT",
+      "notice_date": "2015-08-31",
+      "effective_date": "2015-10-22",
+      "employees": 323,
+      "county": "Pike",
+      "city": "Piketon",
+      "state": "OH"
+    },
+    {
+      "company": "Omnicare Inc.",
+      "notice_date": "2015-08-27",
+      "effective_date": "2015-10-30",
+      "employees": 232,
+      "county": "Hamilton",
+      "city": "Cincinnati",
+      "state": "OH"
+    },
+    {
+      "company": "Coyne International Enterprises Corp.",
+      "notice_date": "2015-08-18",
+      "effective_date": "2015-10-31",
+      "employees": 0,
+      "county": "Cuyahoga",
+      "city": "Cleveland",
+      "state": "OH"
+    },
+    {
+      "company": "Aramark",
+      "notice_date": "2015-08-10",
+      "effective_date": "2015-10-16",
+      "employees": 371,
+      "county": "Cuyahoga",
+      "city": "Cleveland",
+      "state": "OH"
+    },
+    {
+      "company": "Pinnacle Workforce Logistics",
+      "notice_date": "2015-08-03",
+      "effective_date": "2015-08-15",
+      "employees": 56,
+      "county": "Delaware",
+      "city": "Delaware",
+      "state": "OH"
+    },
+    {
+      "company": "Aramark",
+      "notice_date": "2015-07-27",
+      "effective_date": "2015-09-30",
+      "employees": 432,
+      "county": "Hamilton",
+      "city": "Cincinnati",
+      "state": "OH"
+    },
+    {
+      "company": "HDT",
+      "notice_date": "2015-07-22",
+      "effective_date": "2015-09-30",
+      "employees": 69,
+      "county": "Cuyahoga",
+      "city": "Solon",
+      "state": "OH"
+    },
+    {
+      "company": "Litigation Management Inc",
+      "notice_date": "2015-07-09",
+      "effective_date": "2015-07-07",
+      "employees": 41,
+      "county": "Cuyahoga",
+      "city": "Mayfield Heights",
+      "state": "OH"
+    },
+    {
+      "company": "NOV",
+      "notice_date": "2015-07-07",
+      "effective_date": "2015-09-18",
+      "employees": 149,
+      "county": "Clark",
+      "city": "Springfield",
+      "state": "OH"
+    },
+    {
+      "company": "CITI",
+      "notice_date": "2015-07-02",
+      "effective_date": "2015-04-04",
+      "employees": 403,
+      "county": "Franklin",
+      "city": "Columbus",
+      "state": "OH"
+    },
+    {
+      "company": "Sodexo (at Bowling Green University)",
+      "notice_date": "2015-06-17",
+      "effective_date": "2015-07-11",
+      "employees": 60,
+      "county": "Wood",
+      "city": "Bowling Green",
+      "state": "OH"
+    },
+    {
+      "company": "Sodexo (at Franciscan University)",
+      "notice_date": "2015-06-17",
+      "effective_date": "2015-07-31",
+      "employees": 148,
+      "county": "Jefferson",
+      "city": "Steubenville",
+      "state": "OH"
+    },
+    {
+      "company": "Lorain National Bank",
+      "notice_date": "2015-06-15",
+      "effective_date": "2015-08-14",
+      "employees": 98,
+      "county": "Lorain",
+      "city": "Lorain",
+      "state": "OH"
+    },
+    {
+      "company": "Haverhill Chemicals LLC",
+      "notice_date": "2015-06-15",
+      "effective_date": "2015-08-10",
+      "employees": 164,
+      "county": "Scioto",
+      "city": "Haverhill",
+      "state": "OH"
+    },
+    {
+      "company": "The Service Companies Inc",
+      "notice_date": "2015-06-08",
+      "effective_date": "2015-07-31",
+      "employees": 86,
+      "county": "Cuyahoga",
+      "city": "Cleveland",
+      "state": "OH"
+    },
+    {
+      "company": "Community Development Institute Head Start",
+      "notice_date": "2015-06-08",
+      "effective_date": "2015-07-31",
+      "employees": 143,
+      "county": "Mahoning",
+      "city": "Youngstown",
+      "state": "OH"
+    },
+    {
+      "company": "Caremark RX LLC",
+      "notice_date": "2015-05-20",
+      "effective_date": "2015-07-18",
+      "employees": 76,
+      "county": "Cuyahoga",
+      "city": "Solon",
+      "state": "OH"
+    },
+    {
+      "company": "Hopkins Partners (at the Sheraton Cleveland Airport Hotel)",
+      "notice_date": "2015-05-19",
+      "effective_date": "2015-07-20",
+      "employees": 125,
+      "county": "Cuyahoga",
+      "city": "Cleveland",
+      "state": "OH"
+    },
+    {
+      "company": "Hydraulic Technologies",
+      "notice_date": "2015-05-13",
+      "effective_date": "2015-07-07",
+      "employees": 0,
+      "county": "Crawford",
+      "city": "Galion",
+      "state": "OH"
+    },
+    {
+      "company": "DecisionOne",
+      "notice_date": "2015-05-11",
+      "effective_date": "2015-05-13",
+      "employees": 75,
+      "county": "Franklin",
+      "city": "Grove City",
+      "state": "OH"
+    },
+    {
+      "company": "Renaissance Cleveland",
+      "notice_date": "2015-05-01",
+      "effective_date": "2015-06-30",
+      "employees": 282,
+      "county": "Cuyahoga",
+      "city": "Cleveland",
+      "state": "OH"
+    },
+    {
+      "company": "Volvo Group North America LLC",
+      "notice_date": "2015-04-21",
+      "effective_date": "2015-06-26",
+      "employees": 300,
+      "county": "Delaware",
+      "city": "Lewis Center",
+      "state": "OH"
+    },
+    {
+      "company": "Meritor",
+      "notice_date": "2015-04-20",
+      "effective_date": null,
+      "employees": 96,
+      "county": "Licking",
+      "city": "Heath",
+      "state": "OH"
+    },
+    {
+      "company": "Republic Storage Systems",
+      "notice_date": "2015-04-10",
+      "effective_date": "2015-04-10",
+      "employees": 270,
+      "county": "Stark",
+      "city": "Canton",
+      "state": "OH"
+    },
+    {
+      "company": "ExxonMobil Chemical Company",
+      "notice_date": "2015-04-06",
+      "effective_date": "2015-12-31",
+      "employees": 0,
+      "county": "Summit",
+      "city": "Akron",
+      "state": "OH"
+    },
+    {
+      "company": "ABM Healthcare Support Services",
+      "notice_date": "2015-04-02",
+      "effective_date": "2015-06-30",
+      "employees": 90,
+      "county": "Various",
+      "city": "Various",
+      "state": "OH"
+    },
+    {
+      "company": "Regency Hospital of Akron (Select Medical Corp)",
+      "notice_date": "2015-03-31",
+      "effective_date": "2015-05-29",
+      "employees": 85,
+      "county": "Summit",
+      "city": "Barberton",
+      "state": "OH"
+    },
+    {
+      "company": "Corrections Corporation of America (CCA)",
+      "notice_date": "2015-03-27",
+      "effective_date": "2015-05-30",
+      "employees": 185,
+      "county": "Mahoning",
+      "city": "Youngstown",
+      "state": "OH"
+    },
+    {
+      "company": "Worthington Industries",
+      "notice_date": "2015-03-24",
+      "effective_date": "2015-03-24",
+      "employees": 78,
+      "county": "Fairfield",
+      "city": "Bremen",
+      "state": "OH"
+    },
+    {
+      "company": "Worthington Industries",
+      "notice_date": "2015-03-24",
+      "effective_date": "2015-03-24",
+      "employees": 33,
+      "county": "Wayne",
+      "city": "Wooster",
+      "state": "OH"
+    },
+    {
+      "company": "AEP Generation Resources Inc Muskingum River Plant",
+      "notice_date": "2015-03-19",
+      "effective_date": "2015-05-31",
+      "employees": 62,
+      "county": "Washington",
+      "city": "Waterford (Beverly)",
+      "state": "OH"
+    },
+    {
+      "company": "The Tamarkin Company",
+      "notice_date": "2015-03-11",
+      "effective_date": "2015-05-09",
+      "employees": 196,
+      "county": "Mahoning",
+      "city": "Austintown",
+      "state": "OH"
+    },
+    {
+      "company": "WP Glimcher (Dayton and Fairfield Commons)",
+      "notice_date": "2015-03-04",
+      "effective_date": null,
+      "employees": 87,
+      "county": "Various",
+      "city": "Various",
+      "state": "OH"
+    },
+    {
+      "company": "WP Glimcher (Polaris)",
+      "notice_date": "2015-03-04",
+      "effective_date": null,
+      "employees": 45,
+      "county": "Franklin",
+      "city": "Columbus",
+      "state": "OH"
+    },
+    {
+      "company": "Bonne Bell, Inc.",
+      "notice_date": "2015-02-02",
+      "effective_date": "2015-03-29",
+      "employees": 91,
+      "county": "Cuyahoga",
+      "city": "Westlake",
+      "state": "OH"
+    },
+    {
+      "company": "Exel, Inc.",
+      "notice_date": "2015-01-26",
+      "effective_date": "2015-04-17",
+      "employees": 278,
+      "county": "Franklin",
+      "city": "Columbus",
+      "state": "OH"
+    },
+    {
+      "company": "Market Day LLC",
+      "notice_date": "2015-01-07",
+      "effective_date": "2015-03-07",
+      "employees": 107,
+      "county": "Various",
+      "city": "Various",
+      "state": "OH"
+    },
+    {
+      "company": "Macy's",
+      "notice_date": "2015-01-12",
+      "effective_date": "2015-03-16",
+      "employees": 109,
+      "county": "Franklin",
+      "city": "Columbus",
+      "state": "OH"
+    },
+    {
+      "company": "Trulite Glass Company LLC",
+      "notice_date": "2015-01-08",
+      "effective_date": "2015-03-08",
+      "employees": 70,
+      "county": "Licking",
+      "city": "Hebron",
+      "state": "OH"
+    },
+    {
+      "company": "United States Steel Corporation Lorain",
+      "notice_date": "2015-01-07",
+      "effective_date": "2015-03-08",
+      "employees": 636,
+      "county": "Lorain",
+      "city": "Lorain",
+      "state": "OH"
+    },
+    {
+      "company": "A. Schulman, Inc",
+      "notice_date": "2015-01-05",
+      "effective_date": "2015-03-02",
+      "employees": 67,
+      "county": "Williams",
+      "city": "Stryker",
+      "state": "OH"
+    },
+    {
+      "company": "Nationwide Mutual Insurance Company",
+      "notice_date": "2016-12-30",
+      "effective_date": "2017-03-01",
+      "employees": 29,
+      "county": "Cuyahoga",
+      "city": "Highland Hills",
+      "state": "OH"
+    },
+    {
+      "company": "Parker Hannifin Corp",
+      "notice_date": "2016-12-05",
+      "effective_date": "2017-01-23",
+      "employees": 19,
+      "county": "Mahoning",
+      "city": "Youngstown",
+      "state": "OH"
+    },
+    {
+      "company": "Wrayco LLC",
+      "notice_date": "2016-12-05",
+      "effective_date": "2017-01-31",
+      "employees": 79,
+      "county": "Summit",
+      "city": "Stow",
+      "state": "OH"
+    },
+    {
+      "company": "Alliance Casting Company LLC",
+      "notice_date": "2016-12-01",
+      "effective_date": "2017-01-31",
+      "employees": 435,
+      "county": "Stark",
+      "city": "Alliance",
+      "state": "OH"
+    },
+    {
+      "company": "Alliance Casting Company LLC",
+      "notice_date": "2016-12-01",
+      "effective_date": "2017-01-31",
+      "employees": 0,
+      "county": "Stark",
+      "city": "Alliance",
+      "state": "OH"
+    },
+    {
+      "company": "Transamerica Life Insurance Company",
+      "notice_date": "2016-12-01",
+      "effective_date": "2017-02-03",
+      "employees": 135,
+      "county": "Butler",
+      "city": "West Chester",
+      "state": "OH"
+    },
+    {
+      "company": "Limited Stores LLC",
+      "notice_date": "2016-11-29",
+      "effective_date": "2016-12-02",
+      "employees": 246,
+      "county": "Franklin",
+      "city": "New Albany",
+      "state": "OH"
+    },
+    {
+      "company": "Healthspan Partners North Point",
+      "notice_date": "2016-11-29",
+      "effective_date": "2016-11-29",
+      "employees": 58,
+      "county": "Cuyahoga",
+      "city": "Brooklyn Heights",
+      "state": "OH"
+    },
+    {
+      "company": "Comprehensive Logistics Inc.",
+      "notice_date": "2016-11-22",
+      "effective_date": "2017-01-23",
+      "employees": 0,
+      "county": "Mahoning",
+      "city": "Austintown",
+      "state": "OH"
+    },
+    {
+      "company": "First Solar Inc",
+      "notice_date": "2016-11-22",
+      "effective_date": "2016-11-17",
+      "employees": 459,
+      "county": "Wood",
+      "city": "Perrysburg",
+      "state": "OH"
+    },
+    {
+      "company": "Lordstown Seating Systems",
+      "notice_date": "2016-11-16",
+      "effective_date": "2017-01-20",
+      "employees": 126,
+      "county": "Trumbull",
+      "city": "Warren",
+      "state": "OH"
+    },
+    {
+      "company": "Frontier Communications Corporations",
+      "notice_date": "2016-11-16",
+      "effective_date": "2017-01-16",
+      "employees": 7,
+      "county": "Marion",
+      "city": "Marion",
+      "state": "OH"
+    },
+    {
+      "company": "Commercial Metal Forming",
+      "notice_date": "2016-11-14",
+      "effective_date": "2016-11-28",
+      "employees": 90,
+      "county": "Mahoning",
+      "city": "Youngstown",
+      "state": "OH"
+    },
+    {
+      "company": "General Motors LLC",
+      "notice_date": "2016-11-09",
+      "effective_date": "2017-01-23",
+      "employees": 1202,
+      "county": "Trumbull",
+      "city": "Warren",
+      "state": "OH"
+    },
+    {
+      "company": "Holloway",
+      "notice_date": "2016-11-07",
+      "effective_date": "2016-12-31",
+      "employees": 54,
+      "county": "Shelby",
+      "city": "Sidney",
+      "state": "OH"
+    },
+    {
+      "company": "Frontier Communications",
+      "notice_date": "2016-11-03",
+      "effective_date": "2017-01-03",
+      "employees": 247,
+      "county": "Marion",
+      "city": "Marion",
+      "state": "OH"
+    },
+    {
+      "company": "Carnival Foods & Pharmacy",
+      "notice_date": "2016-11-02",
+      "effective_date": "2016-12-30",
+      "employees": 55,
+      "county": "Fairfield",
+      "city": "Lancaster",
+      "state": "OH"
+    },
+    {
+      "company": "Alliance Casting Company LLC",
+      "notice_date": "2016-12-01",
+      "effective_date": "2017-01-31",
+      "employees": 46,
+      "county": "Pickaway",
+      "city": "Circleville",
+      "state": "OH"
+    },
+    {
+      "company": "Alliance Casting Company LLC",
+      "notice_date": "2016-12-01",
+      "effective_date": "2017-01-31",
+      "employees": 46,
+      "county": "Licking",
+      "city": "Heath",
+      "state": "OH"
+    },
+    {
+      "company": "Transamerica Life Insurance Company",
+      "notice_date": "2016-12-01",
+      "effective_date": "2017-02-03",
+      "employees": 147,
+      "county": "",
+      "city": "Total",
+      "state": "OH"
+    },
+    {
+      "company": "Spring Meadow Senior Community",
+      "notice_date": "2016-11-02",
+      "effective_date": "2017-01-01",
+      "employees": 122,
+      "county": "Lucas",
+      "city": "Holland",
+      "state": "OH"
+    },
+    {
+      "company": "Mondi Akrosil LLC",
+      "notice_date": "2016-11-02",
+      "effective_date": "2017-01-01",
+      "employees": 80,
+      "county": "Fairfield",
+      "city": "Lancaster",
+      "state": "OH"
+    },
+    {
+      "company": "Parker Hannifin Corp",
+      "notice_date": "2016-10-31",
+      "effective_date": "2016-12-24",
+      "employees": 13,
+      "county": "Mahoning",
+      "city": "Youngstown",
+      "state": "OH"
+    },
+    {
+      "company": "Kyklos Bearing International LLC",
+      "notice_date": "2016-10-28",
+      "effective_date": "2016-12-31",
+      "employees": 400,
+      "county": "Erie",
+      "city": "Sandusky",
+      "state": "OH"
+    },
+    {
+      "company": "Elmer's Products Inc",
+      "notice_date": "2016-10-26",
+      "effective_date": "2016-12-31",
+      "employees": 42,
+      "county": "Delaware",
+      "city": "Westerville",
+      "state": "OH"
+    },
+    {
+      "company": "Thermo Fisher Scientific",
+      "notice_date": "2016-10-17",
+      "effective_date": "2016-12-30",
+      "employees": 92,
+      "county": "Cuyahoga",
+      "city": "Cleveland",
+      "state": "OH"
+    },
+    {
+      "company": "Broadridge Financial Solutions",
+      "notice_date": "2016-10-24",
+      "effective_date": "2017-01-16",
+      "employees": 62,
+      "county": "Franklin",
+      "city": "Columbus",
+      "state": "OH"
+    },
+    {
+      "company": "Ohio Valley Coal Company Powhatan No. 6 Mine",
+      "notice_date": "2016-10-17",
+      "effective_date": "2016-12-11",
+      "employees": 492,
+      "county": "Belmont",
+      "city": "St. Clairsville",
+      "state": "OH"
+    },
+    {
+      "company": "Dental One",
+      "notice_date": "2016-10-13",
+      "effective_date": "2016-12-31",
+      "employees": 53,
+      "county": "Cuyahoga",
+      "city": "Independence",
+      "state": "OH"
+    },
+    {
+      "company": "Kmart Store #4910",
+      "notice_date": "2016-09-30",
+      "effective_date": "2016-12-04",
+      "employees": 112,
+      "county": "Lake",
+      "city": "Mentor",
+      "state": "OH"
+    },
+    {
+      "company": "Cast\u2010Fab Technologies",
+      "notice_date": "2016-09-27",
+      "effective_date": "2016-11-23",
+      "employees": 97,
+      "county": "Hamilton",
+      "city": "Cincinnati",
+      "state": "OH"
+    },
+    {
+      "company": "Hyundai Ideal Electric Co.",
+      "notice_date": "2016-09-27",
+      "effective_date": "2016-11-22",
+      "employees": 50,
+      "county": "Richland",
+      "city": "Mansfield",
+      "state": "OH"
+    },
+    {
+      "company": "Parker Hannifin Corp",
+      "notice_date": "2016-09-21",
+      "effective_date": "2016-11-18",
+      "employees": 7,
+      "county": "Mahoning",
+      "city": "Youngstown",
+      "state": "OH"
+    },
+    {
+      "company": "Executive Jet Management (Lunken Repair Shop)",
+      "notice_date": "2016-09-16",
+      "effective_date": "2016-12-02",
+      "employees": 80,
+      "county": "Hamilton",
+      "city": "Cincinnati",
+      "state": "OH"
+    },
+    {
+      "company": "The Service Companies (Jack Thistledown Racino)",
+      "notice_date": "2016-09-12",
+      "effective_date": "2016-11-11",
+      "employees": 96,
+      "county": "Cuyahoga",
+      "city": "North Randall",
+      "state": "OH"
+    },
+    {
+      "company": "Performance Technologies LLC",
+      "notice_date": "2016-09-06",
+      "effective_date": "2016-10-29",
+      "employees": 52,
+      "county": "Stark",
+      "city": "Canton",
+      "state": "OH"
+    },
+    {
+      "company": "Elmer's Products Inc",
+      "notice_date": "2016-09-06",
+      "effective_date": "2016-09-30",
+      "employees": 10,
+      "county": "Delaware",
+      "city": "Westerville",
+      "state": "OH"
+    },
+    {
+      "company": "General Mills Inc",
+      "notice_date": "2016-08-31",
+      "effective_date": "2016-10-31",
+      "employees": 182,
+      "county": "Marion",
+      "city": "Caledonia",
+      "state": "OH"
+    },
+    {
+      "company": "The Ohio Valley Coal Company",
+      "notice_date": "2016-08-22",
+      "effective_date": "2016-10-31",
+      "employees": 67,
+      "county": "Belmont",
+      "city": "St. Clairesville",
+      "state": "OH"
+    },
+    {
+      "company": "Parker Hannifin Corp",
+      "notice_date": "2016-08-15",
+      "effective_date": "2016-10-14",
+      "employees": 3,
+      "county": "Mahoning",
+      "city": "Youngstown",
+      "state": "OH"
+    },
+    {
+      "company": "3M Company",
+      "notice_date": "2016-08-12",
+      "effective_date": "2016-10-07",
+      "employees": 135,
+      "county": "Clermont",
+      "city": "Milford",
+      "state": "OH"
+    },
+    {
+      "company": "HCSG Labor Supply LLC",
+      "notice_date": "2016-08-09",
+      "effective_date": "2016-08-05",
+      "employees": 47,
+      "county": "Franklin",
+      "city": "Columbus",
+      "state": "OH"
+    },
+    {
+      "company": "Packers Sanitation Services Inc.",
+      "notice_date": "2016-08-03",
+      "effective_date": "2016-08-26",
+      "employees": 6,
+      "county": "Butler",
+      "city": "Hamilton",
+      "state": "OH"
+    },
+    {
+      "company": "UnitedHealth Group Optum",
+      "notice_date": "2016-08-01",
+      "effective_date": "2016-10-03",
+      "employees": 115,
+      "county": "Lorain",
+      "city": "Avon Lake",
+      "state": "OH"
+    },
+    {
+      "company": "Parker Hannifin Corp.",
+      "notice_date": "2016-07-26",
+      "effective_date": "2016-09-23",
+      "employees": 7,
+      "county": "Mahoning",
+      "city": "Youngstown",
+      "state": "OH"
+    },
+    {
+      "company": "InDyne",
+      "notice_date": "2016-07-19",
+      "effective_date": "2016-09-30",
+      "employees": 0,
+      "county": "Greene",
+      "city": "Wright\u2010Patterson Air Force Base",
+      "state": "OH"
+    },
+    {
+      "company": "Commercial Metal Forming",
+      "notice_date": "2016-07-15",
+      "effective_date": "2016-09-13",
+      "employees": 90,
+      "county": "Mahoning",
+      "city": "Youngstown",
+      "state": "OH"
+    },
+    {
+      "company": "Synchrony Bank Consumer Operations Contact Center",
+      "notice_date": "2016-07-12",
+      "effective_date": "2016-09-10",
+      "employees": 57,
+      "county": "Stark",
+      "city": "Canton",
+      "state": "OH"
+    },
+    {
+      "company": "HealthSpan Partners",
+      "notice_date": "2016-07-05",
+      "effective_date": "2016-08-31",
+      "employees": 15,
+      "county": "Cuyahoga",
+      "city": "Brooklyn Heights",
+      "state": "OH"
+    },
+    {
+      "company": "American Energy Corporation",
+      "notice_date": "2016-07-05",
+      "effective_date": "2016-08-29",
+      "employees": 439,
+      "county": "Monroe",
+      "city": "Beallsville",
+      "state": "OH"
+    },
+    {
+      "company": "American Natural Gas",
+      "notice_date": "2016-07-05",
+      "effective_date": "2016-08-29",
+      "employees": 17,
+      "county": "Gallia",
+      "city": "Gallipolis",
+      "state": "OH"
+    },
+    {
+      "company": "Murray American Energy",
+      "notice_date": "2016-07-05",
+      "effective_date": "2016-08-29",
+      "employees": 16,
+      "county": "Belmont",
+      "city": "St. Clairsville",
+      "state": "OH"
+    },
+    {
+      "company": "Ohio Valley Transloadling Company",
+      "notice_date": "2016-07-05",
+      "effective_date": "2016-08-29",
+      "employees": 9,
+      "county": "Belmont",
+      "city": "Powhatan Point",
+      "state": "OH"
+    },
+    {
+      "company": "American Mine Services",
+      "notice_date": "2016-07-05",
+      "effective_date": "2016-08-29",
+      "employees": 40,
+      "county": "Monroe",
+      "city": "Clarington",
+      "state": "OH"
+    },
+    {
+      "company": "Corporate Aviation Services",
+      "notice_date": "2016-07-05",
+      "effective_date": "2016-08-29",
+      "employees": 5,
+      "county": "Belmont",
+      "city": "St. Clairsville",
+      "state": "OH"
+    },
+    {
+      "company": "IntelliSource LLC",
+      "notice_date": "2016-06-22",
+      "effective_date": "2016-08-24",
+      "employees": 107,
+      "county": "Franklin",
+      "city": "Lockbourne",
+      "state": "OH"
+    },
+    {
+      "company": "IntelliStaff LLC",
+      "notice_date": "2016-06-22",
+      "effective_date": "2016-08-24",
+      "employees": 128,
+      "county": "Franklin",
+      "city": "Lockbourne",
+      "state": "OH"
+    },
+    {
+      "company": "Parker Hannifin Corp.",
+      "notice_date": "2016-06-22",
+      "effective_date": "2016-08-19",
+      "employees": 12,
+      "county": "Mahoning",
+      "city": "Youngstown",
+      "state": "OH"
+    },
+    {
+      "company": "HealthSpan Partners",
+      "notice_date": "2016-06-13",
+      "effective_date": "2016-07-31",
+      "employees": 15,
+      "county": "Cuyahoga",
+      "city": "Brooklyn Heights",
+      "state": "OH"
+    },
+    {
+      "company": "Hyundai Ideal Electric Company",
+      "notice_date": "2016-06-08",
+      "effective_date": "2016-08-12",
+      "employees": 50,
+      "county": "Richland",
+      "city": "Mansfield",
+      "state": "OH"
+    },
+    {
+      "company": "Republic Airways",
+      "notice_date": "2016-06-06",
+      "effective_date": "2016-06-20",
+      "employees": 161,
+      "county": "Franklin",
+      "city": "Columbus",
+      "state": "OH"
+    },
+    {
+      "company": "The Ohio Valley Coal Company Powhatan No. 6 Mine",
+      "notice_date": "2016-06-02",
+      "effective_date": "2016-08-01",
+      "employees": 40,
+      "county": "Belmont",
+      "city": "Alledonia",
+      "state": "OH"
+    },
+    {
+      "company": "Experience Works (Green Thumb)",
+      "notice_date": "2016-06-06",
+      "effective_date": "2016-07-01",
+      "employees": 6,
+      "county": "Allen",
+      "city": "Lima",
+      "state": "OH"
+    },
+    {
+      "company": "Sodexo (at Wittenberg University)",
+      "notice_date": "2016-06-06",
+      "effective_date": "2016-06-30",
+      "employees": 64,
+      "county": "Clark",
+      "city": "Springfield",
+      "state": "OH"
+    },
+    {
+      "company": "Pei Wei",
+      "notice_date": "2016-05-26",
+      "effective_date": "2016-05-31",
+      "employees": 71,
+      "county": "Various",
+      "city": "Various",
+      "state": "OH"
+    },
+    {
+      "company": "Olympus Building Services Inc.",
+      "notice_date": "2016-05-18",
+      "effective_date": "2016-06-30",
+      "employees": 115,
+      "county": "Franklin",
+      "city": "Columbus",
+      "state": "OH"
+    },
+    {
+      "company": "Sears Holdings",
+      "notice_date": "2016-05-16",
+      "effective_date": "2016-08-07",
+      "employees": 24,
+      "county": "Defiance",
+      "city": "Defiance",
+      "state": "OH"
+    },
+    {
+      "company": "Parker Hannifin",
+      "notice_date": "2016-05-16",
+      "effective_date": "2016-07-15",
+      "employees": 3,
+      "county": "Mahoning",
+      "city": "Youngstown",
+      "state": "OH"
+    },
+    {
+      "company": "McDonald's Corporation",
+      "notice_date": "2016-05-16",
+      "effective_date": "2016-07-15",
+      "employees": 70,
+      "county": "Franklin",
+      "city": "Columbus",
+      "state": "OH"
+    },
+    {
+      "company": "HealthSpan Partners",
+      "notice_date": "2016-05-16",
+      "effective_date": "2016-06-30",
+      "employees": 6,
+      "county": "Cuyahoga",
+      "city": "Brooklyn Heights",
+      "state": "OH"
+    },
+    {
+      "company": "RSR Partners LLC",
+      "notice_date": "2016-05-05",
+      "effective_date": "2016-07-04",
+      "employees": 30,
+      "county": "Wyandot",
+      "city": "Upper Sandusky",
+      "state": "OH"
+    },
+    {
+      "company": "Impact Community Action",
+      "notice_date": "2016-05-04",
+      "effective_date": "2016-06-30",
+      "employees": 16,
+      "county": "Franklin",
+      "city": "Columbus",
+      "state": "OH"
+    },
+    {
+      "company": "Plasti\u2010Kote Company Inc.",
+      "notice_date": "2016-05-04",
+      "effective_date": "2016-07-01",
+      "employees": 10,
+      "county": "Medina",
+      "city": "Medina",
+      "state": "OH"
+    },
+    {
+      "company": "American Modern Insurance Group",
+      "notice_date": "2016-05-02",
+      "effective_date": "2016-06-25",
+      "employees": 68,
+      "county": "Clermont",
+      "city": "Amelia",
+      "state": "OH"
+    },
+    {
+      "company": "KMART STORE #4745",
+      "notice_date": "2016-05-02",
+      "effective_date": "2016-07-24",
+      "employees": 131,
+      "county": "ASHTABULA",
+      "city": "ASHTABULA",
+      "state": "OH"
+    },
+    {
+      "company": "KMART STORE #3910",
+      "notice_date": "2016-05-02",
+      "effective_date": "2016-07-24",
+      "employees": 215,
+      "county": "LORAIN",
+      "city": "LORAIN",
+      "state": "OH"
+    },
+    {
+      "company": "Direct Energy",
+      "notice_date": "2016-04-28",
+      "effective_date": "2016-07-01",
+      "employees": 50,
+      "county": "Montgomery",
+      "city": "Miamisburg",
+      "state": "OH"
+    },
+    {
+      "company": "Sears Auto Center",
+      "notice_date": "2016-04-27",
+      "effective_date": "2016-07-31",
+      "employees": 6,
+      "county": "Ashtabula",
+      "city": "Ashtabula",
+      "state": "OH"
+    },
+    {
+      "company": "Columbus Castings",
+      "notice_date": "2016-04-20",
+      "effective_date": "2016-06-21",
+      "employees": 799,
+      "county": "Franklin",
+      "city": "Columbus",
+      "state": "OH"
+    },
+    {
+      "company": "Measurement Specialties INC (TE CONNECTIVITY)",
+      "notice_date": "2016-04-20",
+      "effective_date": "2016-06-30",
+      "employees": 10,
+      "county": "Greene",
+      "city": "Dayton",
+      "state": "OH"
+    },
+    {
+      "company": "Lamplight Inn of Maple Heights",
+      "notice_date": "2016-04-19",
+      "effective_date": "2016-07-14",
+      "employees": 54,
+      "county": "Cuyahoga",
+      "city": "Maple Heights",
+      "state": "OH"
+    },
+    {
+      "company": "Performance Technologies LLC",
+      "notice_date": "2016-04-18",
+      "effective_date": "2016-06-13",
+      "employees": 87,
+      "county": "Stark",
+      "city": "Canton",
+      "state": "OH"
+    },
+    {
+      "company": "Eaton Corporation",
+      "notice_date": "2016-04-14",
+      "effective_date": "2016-06-10",
+      "employees": 152,
+      "county": "Portage",
+      "city": "Aurora",
+      "state": "OH"
+    },
+    {
+      "company": "Pilot Thomas Logistics (Maxum Petroleum Operating Company)",
+      "notice_date": "2016-04-06",
+      "effective_date": "2016-04-12",
+      "employees": 58,
+      "county": "Stark",
+      "city": "Louisville",
+      "state": "OH"
+    },
+    {
+      "company": "University Park Nursing and Rehabilitation Center",
+      "notice_date": "2016-03-22",
+      "effective_date": null,
+      "employees": 35,
+      "county": "Summit",
+      "city": "Akron",
+      "state": "OH"
+    },
+    {
+      "company": "Parker Hannifin Corporation",
+      "notice_date": "2016-03-21",
+      "effective_date": "2016-05-13",
+      "employees": 2,
+      "county": "Mahoning",
+      "city": "Youngstown",
+      "state": "OH"
+    },
+    {
+      "company": "HealthSpan Partners",
+      "notice_date": "2016-03-21",
+      "effective_date": "2016-05-13",
+      "employees": 15,
+      "county": "Cuyahoga",
+      "city": "Brooklyn Heights",
+      "state": "OH"
+    },
+    {
+      "company": "Meijer Store #62",
+      "notice_date": "2016-03-15",
+      "effective_date": "2016-06-18",
+      "employees": 201,
+      "county": "Franklin",
+      "city": "Columbus",
+      "state": "OH"
+    },
+    {
+      "company": "Meggitt Aircraft Braking Systems Corporation",
+      "notice_date": "2016-03-11",
+      "effective_date": "2016-05-13",
+      "employees": 38,
+      "county": "Summit",
+      "city": "Akron",
+      "state": "OH"
+    },
+    {
+      "company": "St. Aloysius",
+      "notice_date": "2016-03-03",
+      "effective_date": "2016-03-01",
+      "employees": 38,
+      "county": "Butler",
+      "city": "Hamilton",
+      "state": "OH"
+    },
+    {
+      "company": "First Solar Inc",
+      "notice_date": "2016-11-22",
+      "effective_date": "2016-11-17",
+      "employees": 0,
+      "county": "Hamilton",
+      "city": "Cincinnati",
+      "state": "OH"
+    },
+    {
+      "company": "Shenker Inc.",
+      "notice_date": "2016-03-07",
+      "effective_date": "2016-05-01",
+      "employees": 151,
+      "county": "Franklin",
+      "city": "Groveport",
+      "state": "OH"
+    },
+    {
+      "company": "CVS Pharmacy Inc.",
+      "notice_date": "2016-03-01",
+      "effective_date": "2016-04-26",
+      "employees": 66,
+      "county": "Lucas",
+      "city": "Toledo",
+      "state": "OH"
+    },
+    {
+      "company": "Measurement Specialties Inc.",
+      "notice_date": "2016-02-29",
+      "effective_date": "2016-04-29",
+      "employees": 58,
+      "county": "Montgomery",
+      "city": "Dayton",
+      "state": "OH"
+    },
+    {
+      "company": "TTI Floor Care North America",
+      "notice_date": "2016-02-24",
+      "effective_date": "2016-05-09",
+      "employees": 0,
+      "county": "Stark",
+      "city": "North Canton",
+      "state": "OH"
+    },
+    {
+      "company": "Flowserve Corporation US Inc.",
+      "notice_date": "2016-02-18",
+      "effective_date": "2016-05-05",
+      "employees": 80,
+      "county": "Montgomery",
+      "city": "Dayton",
+      "state": "OH"
+    },
+    {
+      "company": "Elmer's Products Inc.",
+      "notice_date": "2016-02-17",
+      "effective_date": "2016-04-29",
+      "employees": 116,
+      "county": "Franklin",
+      "city": "Westerville",
+      "state": "OH"
+    },
+    {
+      "company": "Transamerica Life Insurance Company",
+      "notice_date": "2016-12-01",
+      "effective_date": "2017-02-03",
+      "employees": 4,
+      "county": "Franklin",
+      "city": "Columbus",
+      "state": "OH"
+    },
+    {
+      "company": "Buckeye Launderers and Cleaners",
+      "notice_date": "2016-02-16",
+      "effective_date": "2016-02-12",
+      "employees": 54,
+      "county": "Henry",
+      "city": "Napoleon",
+      "state": "OH"
+    },
+    {
+      "company": "Eaton Corporation",
+      "notice_date": "2016-02-11",
+      "effective_date": "2016-04-09",
+      "employees": 102,
+      "county": "Cuyahoga",
+      "city": "Berea",
+      "state": "OH"
+    },
+    {
+      "company": "IPSCO Tubular INC.",
+      "notice_date": "2016-02-08",
+      "effective_date": "2016-04-04",
+      "employees": 106,
+      "county": "Trumbull",
+      "city": "Brookfield",
+      "state": "OH"
+    },
+    {
+      "company": "Omnicare Inc.",
+      "notice_date": "2016-02-08",
+      "effective_date": "2016-05-27",
+      "employees": 13,
+      "county": "Hamilton",
+      "city": "Cincinnati",
+      "state": "OH"
+    },
+    {
+      "company": "Acrux Investigation Agency, LTD and Surmount Solutions Group",
+      "notice_date": "2016-02-04",
+      "effective_date": "2016-02-22",
+      "employees": 93,
+      "county": "Union",
+      "city": "Marysville",
+      "state": "OH"
+    },
+    {
+      "company": "Bakery Crafts",
+      "notice_date": "2016-02-01",
+      "effective_date": "2016-04-05",
+      "employees": 53,
+      "county": "Butler",
+      "city": "West Chester",
+      "state": "OH"
+    },
+    {
+      "company": "HealthSpan Partners",
+      "notice_date": "2016-02-01",
+      "effective_date": "2016-03-31",
+      "employees": 83,
+      "county": "Cuyahoga",
+      "city": "Brooklyn Heights",
+      "state": "OH"
+    },
+    {
+      "company": "Parker Hannifin",
+      "notice_date": "2016-02-01",
+      "effective_date": "2016-03-18",
+      "employees": 107,
+      "county": "Mahoning",
+      "city": "Youngstown",
+      "state": "OH"
+    },
+    {
+      "company": "HealthSpan Physicians LLC",
+      "notice_date": "2016-01-28",
+      "effective_date": "2016-03-31",
+      "employees": 115,
+      "county": "",
+      "city": "Parma/Cuyahoga and Cleveland Heights/Cuyahoga",
+      "state": "OH"
+    },
+    {
+      "company": "Walmart Bedford",
+      "notice_date": "2016-01-15",
+      "effective_date": "2016-04-15",
+      "employees": 351,
+      "county": "Cuyahoga",
+      "city": "Bedford",
+      "state": "OH"
+    },
+    {
+      "company": "Parking Solutions Inc.",
+      "notice_date": "2016-01-14",
+      "effective_date": null,
+      "employees": 44,
+      "county": "Franklin",
+      "city": "Columbus",
+      "state": "OH"
+    },
+    {
+      "company": "Professional Transportation Inc.",
+      "notice_date": "2016-01-13",
+      "effective_date": "2016-03-15",
+      "employees": 82,
+      "county": "Wood",
+      "city": "Walbridge",
+      "state": "OH"
+    },
+    {
+      "company": "Plasti\u2010Kote Company",
+      "notice_date": "2016-01-12",
+      "effective_date": "2016-04-30",
+      "employees": 98,
+      "county": "Medina",
+      "city": "Medina",
+      "state": "OH"
+    },
+    {
+      "company": "Macy's Akron",
+      "notice_date": "2016-01-12",
+      "effective_date": "2016-03-14",
+      "employees": 91,
+      "county": "Summit",
+      "city": "Akron",
+      "state": "OH"
+    },
+    {
+      "company": "Warren Steel Holdings LLC",
+      "notice_date": "2016-01-12",
+      "effective_date": "2016-01-09",
+      "employees": 162,
+      "county": "Trumbull",
+      "city": "Warren",
+      "state": "OH"
+    },
+    {
+      "company": "Republic Steel",
+      "notice_date": "2016-01-11",
+      "effective_date": "2016-03-08",
+      "employees": 242,
+      "county": "Lorain",
+      "city": "Lorain",
+      "state": "OH"
+    },
+    {
+      "company": "Eddie Bauer",
+      "notice_date": "2016-01-05",
+      "effective_date": "2016-03-07",
+      "employees": 315,
+      "county": "Franklin",
+      "city": "Groveport",
+      "state": "OH"
     }
   ]
 }
