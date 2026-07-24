@@ -964,8 +964,6 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
             a["notices"] += 1
         return agg
 
-    metrics = [("employees", "Employees affected"), ("notices", "WARN notices")]
-    colorbar_titles = {"employees": "Employees", "notices": "Notices"}
     all_codes = sorted({(r.get("state") or "").upper() for r in records
                         if len((r.get("state") or "")) == 2})
 
@@ -1019,35 +1017,47 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
             return 1
         return max(1, int(np.percentile(positive, 95)))
 
-    z0, text0 = z_text(default_year, "employees")
-    fig = go.Figure(
-        go.Choropleth(
-            locations=all_codes,
-            locationmode="USA-states",
-            z=z0,
-            zmin=0,
-            zmax=z_cap(z0),
-            text=text0,
-            hovertemplate="%{text}<extra></extra>",
-            colorscale=MAP_COLORSCALE,
-            marker_line_color=GRID_COLOR,
-            marker_line_width=0.8,
-            # Horizontal bar under the map: phones keep the full width for
-            # the geography instead of losing a side column.
-            colorbar=dict(
-                title=dict(text="Employees", font=dict(color=TEXT_COLOR),
-                           side="top"),
-                tickfont=dict(color=TEXT_COLOR),
-                bgcolor="rgba(0,0,0,0)",
-                outlinecolor=GRID_COLOR,
-                orientation="h",
-                thickness=12,
-                len=0.7,
-                x=0.5, xanchor="center",
-                y=-0.08, yanchor="top",
-            ),
+    def _colorbar(title: str) -> dict:
+        # Horizontal bar under the map: phones keep the full width for the
+        # geography instead of losing a side column.
+        return dict(
+            title=dict(text=title, font=dict(color=TEXT_COLOR), side="top"),
+            tickfont=dict(color=TEXT_COLOR),
+            bgcolor="rgba(0,0,0,0)",
+            outlinecolor=GRID_COLOR,
+            orientation="h",
+            thickness=12,
+            len=0.7,
+            x=0.5, xanchor="center",
+            y=-0.08, yanchor="top",
         )
-    )
+
+    # Two stacked data layers — employees (trace 0) and notices (trace 1) —
+    # so the metric toggle and the year dropdown stay independent: the toggle
+    # flips visibility, the dropdown restyles both layers' data.
+    z0, text0 = z_text(default_year, "employees")
+    zn0, _ = z_text(default_year, "notices")
+    fig = go.Figure()
+    for z_init, title, visible in (
+        (z0, "Employees", True),
+        (zn0, "Notices", False),
+    ):
+        fig.add_trace(
+            go.Choropleth(
+                locations=all_codes,
+                locationmode="USA-states",
+                z=z_init,
+                zmin=0,
+                zmax=z_cap(z_init),
+                text=text0,
+                visible=visible,
+                hovertemplate="%{text}<extra></extra>",
+                colorscale=MAP_COLORSCALE,
+                marker_line_color=GRID_COLOR,
+                marker_line_width=0.8,
+                colorbar=_colorbar(title),
+            )
+        )
 
     def missing_for(year: str) -> tuple:
         """Locations + hover text for the red 'no data' overlay in a view.
@@ -1094,44 +1104,60 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
         )
     )
 
-    # One dropdown covering every year × metric combination. Each button
-    # restyles both layers: the data fill (trace 0) and the no-data overlay
-    # (trace 1), so out-of-coverage states turn red per view.
-    buttons = []
+    # Year dropdown: one button per year, restyling all three layers —
+    # employees (0), notices (1), and the no-data overlay (2), so
+    # out-of-coverage states turn red per view. Metric choice is a separate
+    # radio-style toggle that only flips layer visibility.
+    year_buttons = []
     for year in year_options:
-        for mkey, mlabel in metrics:
-            z, text = z_text(year, mkey)
-            miss_locs, miss_text = missing_for(year)
-            buttons.append(
-                dict(
-                    label=f"{year} · {mlabel}",
-                    method="restyle",
-                    args=[{
-                        "z": [z, [1] * len(miss_locs)],
-                        "zmin": [0, 0],
-                        "zmax": [z_cap(z), 1],
-                        "text": [text, miss_text],
-                        "locations": [all_codes, miss_locs],
-                        "colorbar.title.text": colorbar_titles[mkey],
-                    }, [0, 1]],
-                )
+        ze, text = z_text(year, "employees")
+        zn, _ = z_text(year, "notices")
+        miss_locs, miss_text = missing_for(year)
+        year_buttons.append(
+            dict(
+                label=year,
+                method="restyle",
+                args=[{
+                    "z": [ze, zn, [1] * len(miss_locs)],
+                    "zmin": [0, 0, 0],
+                    "zmax": [z_cap(ze), z_cap(zn), 1],
+                    "text": [text, text, miss_text],
+                    "locations": [all_codes, all_codes, miss_locs],
+                }, [0, 1, 2]],
             )
+        )
+    metric_buttons = [
+        dict(label="Employees affected", method="restyle",
+             args=[{"visible": [True, False]}, [0, 1]]),
+        dict(label="WARN notices", method="restyle",
+             args=[{"visible": [False, True]}, [0, 1]]),
+    ]
 
     # No in-figure title: the dashboard pane supplies the description, and the
     # metric/year dropdown occupies the title row.
     fig.update_layout(
         updatemenus=[
+            # Metric radio (left) …
             dict(
-                buttons=buttons,
-                # Highlight the default view (current year · employees) even
-                # though "All years" heads the list.
-                active=year_options.index(default_year) * len(metrics),
-                direction="down",
+                type="buttons",
+                buttons=metric_buttons,
+                active=0,
+                direction="right",
                 x=0.01, y=1.12, xanchor="left", yanchor="top",
                 bgcolor=CARD_BG,
                 bordercolor=GRID_COLOR,
                 font=dict(color=TEXT_COLOR),
-            )
+            ),
+            # … and a clean years-only dropdown (right).
+            dict(
+                buttons=year_buttons,
+                active=year_options.index(default_year),
+                direction="down",
+                x=0.99, y=1.12, xanchor="right", yanchor="top",
+                bgcolor=CARD_BG,
+                bordercolor=GRID_COLOR,
+                font=dict(color=TEXT_COLOR),
+            ),
         ],
         # The page header badge already carries the states-live count; the
         # only in-chart annotation is the no-data key, placed below the
@@ -1221,7 +1247,7 @@ CHART_META = [
     {
         "id": "12_us_map",
         "title": "US Map",
-        "desc": ("WARN activity by state — pick a metric and year; "
+        "desc": ("WARN activity by state — toggle the metric, pick a year; "
                  "states light up as their sources come online."),
     },
 ]

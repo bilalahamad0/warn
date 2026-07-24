@@ -50,6 +50,19 @@ def build_national(
             continue
         state_records = _read_records(store)
         code = source.code.upper()
+        # Optional deep-history file: national-only records merged with
+        # _record_key dedup so live-era rows never double count.
+        if source.history_file is not None and source.history_file.exists():
+            import warn_monitor
+
+            have = {warn_monitor._record_key(r) for r in state_records}
+            extra = [
+                r for r in _read_records(source.history_file)
+                if warn_monitor._record_key(r) not in have
+            ]
+            if extra:
+                log.info(f"[{code}] +{len(extra)} history records (national only)")
+            state_records = state_records + extra
         for r in state_records:
             # Legacy records (pre-unified-schema) carry no state field.
             r.setdefault("state", code)

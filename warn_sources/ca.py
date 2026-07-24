@@ -25,6 +25,10 @@ class CaliforniaEDD(Source):
     agency = "California Employment Development Department"
     source_url = warn_monitor.WARN_XLSX_URL
     cadence = "twice-daily"
+    # Deep history (EDD fiscal-year report archives, parsed by
+    # scripts/backfill/ca.py) surfaces in the national dataset only; the CA
+    # dashboard and live pipeline stay exactly as they are.
+    history_file = DATA_DIR / "historical" / "ca_national_history.json"
 
     def make_paths(self, data_dir: Optional[Path] = None) -> StatePaths:
         d = data_dir if data_dir is not None else DATA_DIR

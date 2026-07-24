@@ -671,7 +671,7 @@ footer {{ color:var(--muted); font-size:12px; text-align:center;
 
   <section>
     <h2>WARN activity by state</h2>
-    <div class="desc">Pick a metric and year from the dropdown; hover a state
+    <div class="desc">Toggle the metric, pick a year; hover a state
       for details. States light up as their sources come online.</div>
     <div class="chart">{map_div}</div>
   </section>

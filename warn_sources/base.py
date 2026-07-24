@@ -102,6 +102,10 @@ class Source(ABC):
     source_url: str = ""      # canonical public URL of the feed
     cadence: str = "daily"    # informational: how often the state updates
     enabled: bool = True
+    # Optional extra records merged (deduplicated) into the NATIONAL dataset
+    # only — never into this state's own store or dashboard. Lets a state ship
+    # deep history without disturbing its live pipeline (see CA).
+    history_file: "Optional[Path]" = None
 
     def __init__(self, data_dir: Optional[Path] = None):
         self.paths = self.make_paths(data_dir)
