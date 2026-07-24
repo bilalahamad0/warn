@@ -1030,13 +1030,19 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
             colorscale=MAP_COLORSCALE,
             marker_line_color=GRID_COLOR,
             marker_line_width=0.8,
+            # Horizontal bar under the map: phones keep the full width for
+            # the geography instead of losing a side column.
             colorbar=dict(
-                title=dict(text="Employees", font=dict(color=TEXT_COLOR)),
+                title=dict(text="Employees", font=dict(color=TEXT_COLOR),
+                           side="top"),
                 tickfont=dict(color=TEXT_COLOR),
                 bgcolor="rgba(0,0,0,0)",
                 outlinecolor=GRID_COLOR,
-                thickness=14,
-                len=0.75,
+                orientation="h",
+                thickness=12,
+                len=0.7,
+                x=0.5, xanchor="center",
+                y=-0.08, yanchor="top",
             ),
         )
     )
@@ -1111,11 +1117,6 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
 
     # No in-figure title: the dashboard pane supplies the description, and the
     # metric/year dropdown occupies the title row.
-    # DC is a jurisdiction, not a state — count it separately so "N of 50"
-    # stays truthful.
-    live_states = len([c for c in states_meta if c != "DC"])
-    dc_suffix = " + DC" if "DC" in states_meta else ""
-    live = live_states
     fig.update_layout(
         updatemenus=[
             dict(
@@ -1127,19 +1128,16 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
                 font=dict(color=TEXT_COLOR),
             )
         ],
+        # The page header badge already carries the states-live count; the
+        # only in-chart annotation is the no-data key, placed below the
+        # horizontal colorbar so it never collides with Alaska or the
+        # dropdown on narrow screens.
         annotations=[
-            dict(
-                text=(f"{live} of 50 states{dc_suffix} live"
-                      if live < 50 else f"{live} states{dc_suffix} live"),
-                x=0.99, y=0.01, xref="paper", yref="paper",
-                xanchor="right", yanchor="bottom",
-                showarrow=False, font=dict(size=11, color="#8b949e"),
-            ),
             dict(
                 text=("<span style='color:#8b5a6b'>▉</span> no data for this "
                       "view (hover for why)"),
-                x=0.01, y=0.01, xref="paper", yref="paper",
-                xanchor="left", yanchor="bottom",
+                x=0.01, y=-0.2, xref="paper", yref="paper",
+                xanchor="left", yanchor="top",
                 showarrow=False, font=dict(size=11, color="#8b949e"),
             ),
         ],
@@ -1152,7 +1150,7 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
         subunitcolor=GRID_COLOR,
         showlakes=True,
     )
-    fig = _apply_theme(fig)
+    fig = _apply_theme(fig, margin=dict(l=10, r=10, t=50, b=90))
     _save_chart(fig, "12_us_map", save_png)
     return fig
 

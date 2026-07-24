@@ -390,7 +390,8 @@ def chart_us_top_companies(df: pd.DataFrame, save_png: bool = False) -> go.Figur
             .reset_index()
         )
         top = top[top["employees"] > 0]
-        top["label"] = top["company"].str.slice(0, 40)
+        # Short labels + automargin keep the plot usable on phone widths.
+        top["label"] = top["company"].str.slice(0, 26)
         return top
 
     frames = [(label, ranked(frame)) for label, frame in _year_frames(df)]
@@ -409,9 +410,10 @@ def chart_us_top_companies(df: pd.DataFrame, save_png: bool = False) -> go.Figur
     fig.update_layout(xaxis_title="Employees affected", yaxis_title="",
                       showlegend=False, hovermode="y unified")
     fig = _year_menu(
-        _apply_theme(fig, margin=dict(l=220, r=30, t=40, b=60)),
+        _apply_theme(fig, margin=dict(l=10, r=30, t=40, b=60)),
         [label for label, _ in frames],
     )
+    fig.update_yaxes(automargin=True)
     warn_charts._save_chart(fig, "us_top_companies", save_png)
     return fig
 
@@ -507,50 +509,82 @@ US_TEMPLATE = """<!DOCTYPE html>
 <title>US WARN Layoff Tracker</title>
 <script src="https://cdn.plot.ly/plotly-3.5.0.min.js"></script>
 <style>
+/* Mobile-first: base styles target phones; the media query below layers on
+   the desktop layout. */
 :root {{ --bg:#0d1117; --card:#161b22; --border:#21262d; --text:#e6edf3;
          --muted:#8b949e; --accent:#58a6ff; }}
 * {{ box-sizing:border-box; margin:0; padding:0; }}
+html {{ -webkit-text-size-adjust:100%; }}
 body {{ background:var(--bg); color:var(--text);
-        font:15px/1.5 Inter,system-ui,sans-serif; }}
+        font:14px/1.5 Inter,system-ui,sans-serif; }}
 a {{ color:var(--accent); text-decoration:none; }}
-header {{ position:sticky; top:0; z-index:10; background:rgba(13,17,23,.95);
-          border-bottom:1px solid var(--border); padding:14px 24px;
-          display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }}
-header h1 {{ font-size:20px; }}
-header .sub {{ color:var(--muted); font-size:13px; }}
-header .right {{ margin-left:auto; font-size:13px; color:var(--muted); }}
-main {{ max-width:1200px; margin:0 auto; padding:24px; }}
+header {{ position:sticky; top:0; z-index:10; background:rgba(13,17,23,.97);
+          border-bottom:1px solid var(--border); padding:10px 14px; }}
+header h1 {{ font-size:17px; display:inline; margin-right:8px; }}
+header .sub {{ display:block; color:var(--muted); font-size:12px;
+               margin-top:2px; }}
+header .right {{ display:block; font-size:12px; color:var(--muted);
+                 margin-top:4px; }}
+main {{ max-width:1200px; margin:0 auto; padding:12px; }}
 .badge {{ display:inline-block; background:#1f6feb33; color:var(--accent);
           border:1px solid #1f6feb66; border-radius:12px; padding:1px 10px;
-          font-size:12px; }}
-.kpis {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
-         gap:14px; margin:18px 0 26px; }}
+          font-size:12px; vertical-align:middle; }}
+.kpis {{ display:grid; grid-template-columns:repeat(2,1fr);
+         gap:10px; margin:14px 0 20px; }}
 .kpi {{ background:var(--card); border:1px solid var(--border);
-        border-radius:10px; padding:14px 16px; }}
-.kpi .label {{ font-size:11px; letter-spacing:.06em; text-transform:uppercase;
+        border-radius:10px; padding:12px 14px; }}
+.kpi .label {{ font-size:10px; letter-spacing:.06em; text-transform:uppercase;
                color:var(--muted); }}
-.kpi .value {{ font-size:26px; font-weight:700; margin-top:4px; }}
-.kpi .note {{ font-size:12px; color:var(--muted); }}
+.kpi .value {{ font-size:21px; font-weight:700; margin-top:4px;
+               overflow-wrap:anywhere; }}
+.kpi .note {{ font-size:11px; color:var(--muted); }}
 section {{ background:var(--card); border:1px solid var(--border);
-           border-radius:12px; padding:18px; margin-bottom:24px; }}
+           border-radius:12px; padding:12px; margin-bottom:16px; }}
 section h2 {{ font-size:15px; margin-bottom:4px; }}
-section .desc {{ color:var(--muted); font-size:13px; margin-bottom:10px; }}
-.chart {{ width:100%; overflow-x:auto; }}
-table {{ width:100%; border-collapse:collapse; font-size:13.5px; }}
-th,td {{ text-align:left; padding:7px 10px;
+section .desc {{ color:var(--muted); font-size:12.5px; margin-bottom:10px; }}
+.chart {{ width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; }}
+table {{ width:100%; border-collapse:collapse; font-size:12.5px;
+         min-width:560px; }}
+th,td {{ text-align:left; padding:6px 8px;
          border-bottom:1px solid var(--border); }}
 th {{ color:var(--muted); font-weight:600; }}
 td.num {{ text-align:right; font-variant-numeric:tabular-nums; }}
 td.st {{ color:var(--accent); font-weight:600; }}
-select {{ background:var(--card); color:var(--text);
-          border:1px solid var(--border); border-radius:6px; padding:5px 8px; }}
+select, input[type=search], input[type=number] {{
+  background:var(--card); color:var(--text); font-size:14px;
+  border:1px solid var(--border); border-radius:6px; padding:8px 10px;
+  width:100%; margin:4px 0; }}
 select option:disabled {{ color:#555c66; }}
 .pgbtn {{ background:var(--card); color:var(--accent);
           border:1px solid var(--border); border-radius:6px;
-          padding:5px 12px; cursor:pointer; }}
+          padding:10px 16px; cursor:pointer; min-height:42px;
+          font-size:14px; }}
 .pgbtn:hover {{ border-color:var(--accent); }}
-footer {{ color:var(--muted); font-size:12.5px; text-align:center;
-          padding:26px; }}
+.pager {{ display:flex; gap:8px; align-items:center; margin-top:12px;
+          flex-wrap:wrap; }}
+.pager input {{ width:80px; margin:0; }}
+footer {{ color:var(--muted); font-size:12px; text-align:center;
+          padding:20px 14px; }}
+
+@media (min-width: 720px) {{
+  body {{ font-size:15px; }}
+  header {{ padding:14px 24px; display:flex; align-items:baseline;
+            gap:14px; flex-wrap:wrap; }}
+  header h1 {{ font-size:20px; display:block; margin-right:0; }}
+  header .sub {{ display:inline; margin-top:0; font-size:13px; }}
+  header .right {{ display:block; margin-left:auto; margin-top:0;
+                   font-size:13px; }}
+  main {{ padding:24px; }}
+  .kpis {{ grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+           gap:14px; }}
+  .kpi .value {{ font-size:26px; }}
+  section {{ padding:18px; margin-bottom:24px; }}
+  table {{ font-size:13.5px; }}
+  th,td {{ padding:7px 10px; }}
+  select, input[type=search], input[type=number] {{
+    width:auto; margin:0; padding:5px 8px; display:inline-block; }}
+  .pgbtn {{ padding:5px 12px; min-height:0; }}
+}}
 </style>
 </head>
 <body>
@@ -567,7 +601,7 @@ footer {{ color:var(--muted); font-size:12.5px; text-align:center;
   <div class="kpis">
     <div class="kpi"><div class="label">{year} Notices</div>
       <div class="value">{year_notices}</div>
-      <div class="note">across {states_live} states</div></div>
+      <div class="note">across {live_short}</div></div>
     <div class="kpi"><div class="label">{year} Employees</div>
       <div class="value">{year_employees}</div>
       <div class="note">affected this year</div></div>
@@ -636,10 +670,7 @@ footer {{ color:var(--muted); font-size:12.5px; text-align:center;
       Filter: <select id="stfilter"><option value="">All states</option>
       {state_options}
       {unavailable_options}</select>
-      <input id="cofilter" type="search" placeholder="Search company…"
-        style="background:var(--card);color:var(--text);
-               border:1px solid var(--border);border-radius:6px;
-               padding:5px 8px;margin-left:8px">
+      <input id="cofilter" type="search" placeholder="Search company…">
       <span id="filternote" style="color:var(--muted);font-size:12px"></span>
     </div>
     <div style="overflow-x:auto"><table id="recent">
@@ -647,15 +678,12 @@ footer {{ color:var(--muted); font-size:12.5px; text-align:center;
         <th>Notice</th><th>Effective</th><th>Employees</th></tr></thead>
       <tbody>{recent_rows}</tbody>
     </table></div>
-    <div style="display:flex;gap:10px;align-items:center;margin-top:12px">
+    <div class="pager">
       <button id="prevpg" class="pgbtn">← Prev</button>
       <span id="pginfo">Page 1 of {total_pages}</span>
       <button id="nextpg" class="pgbtn">Next →</button>
       <span style="color:var(--muted);font-size:13px">Jump to:</span>
-      <input id="pgjump" type="number" min="1" max="{total_pages}" value="1"
-        style="width:70px;background:var(--card);color:var(--text);
-               border:1px solid var(--border);border-radius:6px;
-               padding:5px 8px">
+      <input id="pgjump" type="number" min="1" max="{total_pages}" value="1">
     </div>
   </section>
 </main>
@@ -781,14 +809,13 @@ def build_us_site(
     total_pages = page_counts["all"]
     updated = str(kpis["last_updated"])[:10]
     n_live = kpis["states_live"]
-    live_badge = (
-        f"{n_live - 1} states + DC live"
-        if "DC" in payload.get("states", {})
-        else f"{n_live} states live"
-    )
+    has_dc = "DC" in payload.get("states", {})
+    live_short = f"{n_live - 1} states + DC" if has_dc else f"{n_live} states"
+    live_badge = f"{live_short} live"
     html = US_TEMPLATE.format(
         states_live=kpis["states_live"],
         live_badge=live_badge,
+        live_short=live_short,
         updated=updated,
         year=kpis["year"],
         year_notices=_fmt(kpis["year_notices"]),
