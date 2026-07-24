@@ -174,22 +174,27 @@ def chart_us_monthly(df: pd.DataFrame, save_png: bool = False) -> go.Figure:
     return fig
 
 
-def _year_window(df: pd.DataFrame) -> pd.DataFrame:
-    """Rows whose event date falls in the current calendar year."""
-    year = datetime.now(timezone.utc).year
-    return df[df["event_date"].dt.year == year]
+def _year_frames(df: pd.DataFrame, max_years: int = 6) -> list:
+    """(label, frame) pairs: each recent year, newest first, then all time."""
+    years = sorted(
+        {int(y) for y in df["event_date"].dropna().dt.year.unique()},
+        reverse=True,
+    )[:max_years]
+    frames = [(str(y), df[df["event_date"].dt.year == y]) for y in years]
+    frames.append(("All time", df))
+    return frames
 
 
-def _year_toggle(fig: go.Figure, year_label: str) -> go.Figure:
-    """Two-trace figures: current year (default) vs all time."""
+def _year_menu(fig: go.Figure, labels: list) -> go.Figure:
+    """One-visible-trace-at-a-time dropdown over per-year traces."""
+    n = len(labels)
     fig.update_layout(
         updatemenus=[
             dict(
                 buttons=[
-                    dict(label=year_label, method="update",
-                         args=[{"visible": [True, False]}]),
-                    dict(label="All time", method="update",
-                         args=[{"visible": [False, True]}]),
+                    dict(label=lbl, method="update",
+                         args=[{"visible": [j == i for j in range(n)]}])
+                    for i, lbl in enumerate(labels)
                 ],
                 direction="down",
                 x=0.99, y=1.12, xanchor="right", yanchor="top",
@@ -202,8 +207,12 @@ def _year_toggle(fig: go.Figure, year_label: str) -> go.Figure:
 
 
 def chart_us_top_states(df: pd.DataFrame, save_png: bool = False) -> go.Figure:
-    """States ranked by employees affected — current year default, all-time toggle."""
-    year = datetime.now(timezone.utc).year
+    """States ranked by employees affected — dropdown over each recent year.
+
+    Every bar carries a visible value label ("n/r" when a state's feed
+    publishes no headcounts), and hover works row-wide so zero-length bars
+    still respond.
+    """
 
     def ranked(frame: pd.DataFrame) -> pd.DataFrame:
         # Every live state, not a top-N: the whole point of the chart is
@@ -215,31 +224,43 @@ def chart_us_top_states(df: pd.DataFrame, save_png: bool = False) -> go.Figure:
             .reset_index()
         )
 
+    frames = [(label, ranked(frame)) for label, frame in _year_frames(df)]
     fig = go.Figure()
     max_rows = 0
-    for frame, visible in ((_year_window(df), True), (df, False)):
-        r = ranked(frame)
+    for i, (label, r) in enumerate(frames):
         max_rows = max(max_rows, len(r))
         fig.add_bar(
             x=r["employees"], y=r["state"], orientation="h",
-            marker_color=ACCENT3, customdata=r["notices"], visible=visible,
+            name=label, marker_color=ACCENT3,
+            customdata=r["notices"], visible=(i == 0),
+            text=[f"{v:,.0f}" if v else "n/r" for v in r["employees"]],
+            textposition="outside",
+            textfont=dict(size=10, color="#8b949e"),
             hovertemplate=("<b>%{y}</b><br>%{x:,} employees"
-                           "<br>%{customdata:,} notices<extra></extra>"),
+                           "<br>%{customdata:,} notices<extra>%{fullData.name}"
+                           "</extra>"),
         )
     fig.update_layout(
         xaxis_title="Employees affected", yaxis_title="",
         showlegend=False,
+        # Row-wide hover: zero-length bars (unreported counts) still trigger.
+        hovermode="y unified",
         # Tall enough that ~47 horizontal bars stay readable.
         height=max(600, 22 * max_rows + 160),
+        annotations=[dict(
+            text="n/r = employee counts not reported by that state's feed",
+            x=0.99, y=0.0, xref="paper", yref="paper",
+            xanchor="right", yanchor="bottom",
+            showarrow=False, font=dict(size=11, color="#8b949e"),
+        )],
     )
-    fig = _year_toggle(_apply_theme(fig), str(year))
+    fig = _year_menu(_apply_theme(fig), [label for label, _ in frames])
     warn_charts._save_chart(fig, "us_top_states", save_png)
     return fig
 
 
 def chart_us_top_companies(df: pd.DataFrame, save_png: bool = False) -> go.Figure:
-    """Top 20 employers by employees affected — current year default."""
-    year = datetime.now(timezone.utc).year
+    """Top 20 employers by employees affected — dropdown over each recent year."""
 
     def ranked(frame: pd.DataFrame) -> pd.DataFrame:
         top = (
@@ -252,18 +273,20 @@ def chart_us_top_companies(df: pd.DataFrame, save_png: bool = False) -> go.Figur
         top["label"] = top["company"].str.slice(0, 40)
         return top
 
+    frames = [(label, ranked(frame)) for label, frame in _year_frames(df)]
     fig = go.Figure()
-    for frame, visible in ((_year_window(df), True), (df, False)):
-        t = ranked(frame)
+    for i, (label, t) in enumerate(frames):
         fig.add_bar(
             x=t["employees"], y=t["label"], orientation="h",
-            marker_color=ACCENT, visible=visible,
-            hovertemplate="<b>%{y}</b><br>%{x:,} employees<extra></extra>",
+            name=label, marker_color=ACCENT, visible=(i == 0),
+            hovertemplate=("<b>%{y}</b><br>%{x:,} employees"
+                           "<extra>%{fullData.name}</extra>"),
         )
     fig.update_layout(xaxis_title="Employees affected", yaxis_title="",
-                      showlegend=False)
-    fig = _year_toggle(
-        _apply_theme(fig, margin=dict(l=220, r=30, t=40, b=60)), str(year)
+                      showlegend=False, hovermode="y unified")
+    fig = _year_menu(
+        _apply_theme(fig, margin=dict(l=220, r=30, t=40, b=60)),
+        [label for label, _ in frames],
     )
     warn_charts._save_chart(fig, "us_top_companies", save_png)
     return fig
@@ -451,16 +474,16 @@ footer {{ color:var(--muted); font-size:12.5px; text-align:center;
 
   <section>
     <h2>States ranked</h2>
-    <div class="desc">Employees affected per state — current year by
-      default; switch to all time with the dropdown. Coverage depth varies
-      by state.</div>
+    <div class="desc">Employees affected per state — pick any recent year
+      or all time from the dropdown. Coverage depth varies by state;
+      "n/r" marks feeds that publish no headcounts.</div>
     <div class="chart">{states_div}</div>
   </section>
 
   <section>
     <h2>Top employers nationally</h2>
-    <div class="desc">Employees affected by employer — current year by
-      default; all time via the dropdown.</div>
+    <div class="desc">Employees affected by employer — pick any recent
+      year or all time from the dropdown.</div>
     <div class="chart">{companies_div}</div>
   </section>
 
