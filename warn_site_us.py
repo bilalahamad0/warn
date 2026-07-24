@@ -272,13 +272,15 @@ def chart_us_monthly_years(df: pd.DataFrame, save_png: bool = False) -> go.Figur
         yaxis_title="Employees affected",
         legend=dict(orientation="h", y=1.08),
         updatemenus=[dict(
+            type="buttons",
             buttons=[
                 dict(label="Cumulative (year to date)", method="update",
                      args=[{"visible": [False] * n + [True] * n}]),
                 dict(label="Monthly totals", method="update",
                      args=[{"visible": [True] * n + [False] * n}]),
             ],
-            direction="down",
+            active=0,
+            direction="right",
             x=0.01, y=1.32, xanchor="left", yanchor="top",
             bgcolor="#161b22", bordercolor="#21262d",
             font=dict(color="#e6edf3"),
