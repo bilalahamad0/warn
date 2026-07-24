@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T22:16:14.614084+00:00Z",
+  "generated_at": "2026-07-24T02:47:39.653336+00:00Z",
   "charts": [
     {
       "id": "1_timeline_scatter",
@@ -70,7 +70,7 @@
     {
       "id": "12_us_map",
       "title": "US Map",
-      "desc": "WARN activity by state \u2014 pick a metric and year; states light up as their sources come online.",
+      "desc": "WARN activity by state \u2014 toggle the metric, pick a year; states light up as their sources come online.",
       "status": "ok"
     }
   ],
