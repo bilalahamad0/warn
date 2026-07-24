@@ -130,12 +130,20 @@ def chart_us_monthly(df: pd.DataFrame, save_png: bool = False) -> go.Figure:
         .agg(employees=("employees", "sum"), notices=("employees", "size"))
         .reset_index()
     )
+
+    def _compact(v: int) -> str:
+        return f"{v / 1000:.1f}k" if v >= 1000 else f"{v:,.0f}"
+
     fig = go.Figure()
     fig.add_bar(
         x=monthly["event_date"],
         y=monthly["employees"],
         name="Employees affected",
         marker_color=ACCENT,
+        text=[_compact(v) for v in monthly["employees"]],
+        textposition="outside",
+        textfont=dict(size=9, color="#8b949e"),
+        cliponaxis=False,
         hovertemplate="%{x|%b %Y}<br>%{y:,} employees<extra></extra>",
     )
     fig.add_scatter(
@@ -282,6 +290,10 @@ def chart_us_top_companies(df: pd.DataFrame, save_png: bool = False) -> go.Figur
         fig.add_bar(
             x=t["employees"], y=t["label"], orientation="h",
             name=label, marker_color=ACCENT, visible=(i == 0),
+            text=[f"{v:,.0f}" for v in t["employees"]],
+            textposition="outside",
+            textfont=dict(size=10, color="#8b949e"),
+            cliponaxis=False,
             hovertemplate=("<b>%{y}</b><br>%{x:,} employees"
                            "<extra>%{fullData.name}</extra>"),
         )
