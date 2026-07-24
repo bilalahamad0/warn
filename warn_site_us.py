@@ -256,7 +256,7 @@ def chart_us_monthly_years(df: pd.DataFrame, save_png: bool = False) -> go.Figur
             fig.add_scatter(
                 x=_MONTHS, y=y_vals, name=str(year),
                 legendgroup=str(year),
-                visible=not cumulative,
+                visible=cumulative,
                 mode="lines+markers",
                 line=dict(
                     color=LINE_COLORS[i % len(LINE_COLORS)],
@@ -273,10 +273,10 @@ def chart_us_monthly_years(df: pd.DataFrame, save_png: bool = False) -> go.Figur
         legend=dict(orientation="h", y=1.08),
         updatemenus=[dict(
             buttons=[
-                dict(label="Monthly totals", method="update",
-                     args=[{"visible": [True] * n + [False] * n}]),
                 dict(label="Cumulative (year to date)", method="update",
                      args=[{"visible": [False] * n + [True] * n}]),
+                dict(label="Monthly totals", method="update",
+                     args=[{"visible": [True] * n + [False] * n}]),
             ],
             direction="down",
             x=0.01, y=1.32, xanchor="left", yanchor="top",
@@ -697,18 +697,23 @@ footer {{ color:var(--muted); font-size:12px; text-align:center;
 
   <section>
     <h2>States ranked</h2>
-    <div class="desc">Employees affected per state — pick any recent year
-      or all time from the dropdown. Coverage depth varies by state;
-      states without reported headcounts for the window are omitted.</div>
-    <div class="chart">{states_div}</div>
-  </section>
-
-  <section>
-    <h2>States over the years</h2>
-    <div class="desc">Year-by-year employees affected for the top 10
-      states — click legend entries to add or remove states from the
-      comparison.</div>
-    <div class="chart">{states_years_div}</div>
+    <div class="tabs">
+      <button class="tab active" data-pane="pane-ranking">Ranking</button>
+      <button class="tab" data-pane="pane-overyears">Over the years</button>
+    </div>
+    <div id="pane-ranking" class="pane active">
+      <div class="desc">Employees affected per state — pick any recent
+        year or all time from the dropdown. Coverage depth varies by
+        state; states without reported headcounts for the window are
+        omitted.</div>
+      <div class="chart">{states_div}</div>
+    </div>
+    <div id="pane-overyears" class="pane">
+      <div class="desc">Year-by-year employees affected for the top 10
+        states — click legend entries to add or remove states from the
+        comparison.</div>
+      <div class="chart">{states_years_div}</div>
+    </div>
   </section>
 
   <section>
