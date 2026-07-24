@@ -1041,43 +1041,71 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
         )
     )
 
-    # Distinct "no public data" layer for the unavailable jurisdictions.
-    missing = {c: v for c, v in UNAVAILABLE_STATES.items() if c not in all_codes}
-    if missing:
-        fig.add_trace(
-            go.Choropleth(
-                locations=list(missing),
-                z=[1] * len(missing),
-                locationmode="USA-states",
-                colorscale=[[0, "#2b2233"], [1, "#2b2233"]],
-                showscale=False,
-                text=[
-                    f"<b>{name}</b><br>No public data — {reason}"
-                    for name, reason in missing.values()
-                ],
-                hovertemplate="%{text}<extra></extra>",
-                marker_line_color="#8b5a6b",
-                marker_line_width=1.4,
-            )
-        )
+    def missing_for(year: str) -> tuple:
+        """Locations + hover text for the red 'no data' overlay in a view.
 
-    # One dropdown covering every year × metric combination. The restyle is
-    # scoped to trace 0 so it never clobbers the no-data overlay.
+        Always includes the never-published jurisdictions; year views also
+        pull in any state whose coverage window misses that year (e.g. TX
+        after 2019), so 'no data here' is visible at a glance, not only on
+        hover.
+        """
+        locs, texts = [], []
+        for code, (name, reason) in UNAVAILABLE_STATES.items():
+            if code not in all_codes:
+                locs.append(code)
+                texts.append(f"<b>{name}</b><br>No public data — {reason}")
+        if year != "All years":
+            agg = totals(year)
+            for code in all_codes:
+                if code in agg:
+                    continue
+                lo, hi = coverage.get(code, (None, None))
+                if lo is not None and not (lo <= int(year) <= hi):
+                    name = states_meta.get(code, {}).get("name", code)
+                    line = f"no data for {year} — coverage {lo}–{hi}"
+                    note = PARTIAL_COVERAGE_NOTES.get(code)
+                    if note:
+                        line += f"<br>{note}"
+                    locs.append(code)
+                    texts.append(f"<b>{name}</b><br>{line}")
+        return locs, texts
+
+    # Distinct "no data" layer, drawn on top so it wins over the base fill.
+    miss_locs0, miss_text0 = missing_for(year_options[0])
+    fig.add_trace(
+        go.Choropleth(
+            locations=miss_locs0,
+            z=[1] * len(miss_locs0),
+            locationmode="USA-states",
+            colorscale=[[0, "#2b2233"], [1, "#2b2233"]],
+            showscale=False,
+            text=miss_text0,
+            hovertemplate="%{text}<extra></extra>",
+            marker_line_color="#8b5a6b",
+            marker_line_width=1.4,
+        )
+    )
+
+    # One dropdown covering every year × metric combination. Each button
+    # restyles both layers: the data fill (trace 0) and the no-data overlay
+    # (trace 1), so out-of-coverage states turn red per view.
     buttons = []
     for year in year_options:
         for mkey, mlabel in metrics:
             z, text = z_text(year, mkey)
+            miss_locs, miss_text = missing_for(year)
             buttons.append(
                 dict(
                     label=f"{year} · {mlabel}",
                     method="restyle",
                     args=[{
-                        "z": [z],
-                        "zmin": 0,
-                        "zmax": z_cap(z),
-                        "text": [text],
+                        "z": [z, [1] * len(miss_locs)],
+                        "zmin": [0, 0],
+                        "zmax": [z_cap(z), 1],
+                        "text": [text, miss_text],
+                        "locations": [all_codes, miss_locs],
                         "colorbar.title.text": colorbar_titles[mkey],
-                    }, [0]],
+                    }, [0, 1]],
                 )
             )
 
@@ -1108,8 +1136,8 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
                 showarrow=False, font=dict(size=11, color="#8b949e"),
             ),
             dict(
-                text=("<span style='color:#8b5a6b'>▉</span> no public data "
-                      "(hover for why)"),
+                text=("<span style='color:#8b5a6b'>▉</span> no data for this "
+                      "view (hover for why)"),
                 x=0.01, y=0.01, xref="paper", yref="paper",
                 xanchor="left", yanchor="bottom",
                 showarrow=False, font=dict(size=11, color="#8b949e"),
