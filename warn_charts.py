@@ -1148,12 +1148,14 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
                 bordercolor=GRID_COLOR,
                 font=dict(color=TEXT_COLOR),
             ),
-            # … and a clean years-only dropdown (right).
+            # … and a clean years-only dropdown right after it. The pixel pad
+            # (not paper coords) keeps the same gap on phone and desktop.
             dict(
                 buttons=year_buttons,
                 active=year_options.index(default_year),
                 direction="down",
-                x=0.99, y=1.12, xanchor="right", yanchor="top",
+                x=0.01, y=1.12, xanchor="left", yanchor="top",
+                pad=dict(l=270),
                 bgcolor=CARD_BG,
                 bordercolor=GRID_COLOR,
                 font=dict(color=TEXT_COLOR),
