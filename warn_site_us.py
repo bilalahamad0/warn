@@ -197,7 +197,7 @@ def _year_menu(fig: go.Figure, labels: list) -> go.Figure:
                     for i, lbl in enumerate(labels)
                 ],
                 direction="down",
-                x=0.99, y=1.12, xanchor="right", yanchor="top",
+                x=0.01, y=1.12, xanchor="left", yanchor="top",
                 bgcolor="#161b22", bordercolor="#21262d",
                 font=dict(color="#e6edf3"),
             )
@@ -215,14 +215,16 @@ def chart_us_top_states(df: pd.DataFrame, save_png: bool = False) -> go.Figure:
     """
 
     def ranked(frame: pd.DataFrame) -> pd.DataFrame:
-        # Every live state, not a top-N: the whole point of the chart is
-        # comparing all of them at once.
-        return (
+        # Every state with reported headcounts in the window; states whose
+        # feeds published no counts for it are omitted (footnote says so)
+        # rather than shown as zero-length "n/r" bars.
+        r = (
             frame.groupby("state")
             .agg(employees=("employees", "sum"), notices=("employees", "size"))
             .sort_values("employees", ascending=True)
             .reset_index()
         )
+        return r[r["employees"] > 0]
 
     frames = [(label, ranked(frame)) for label, frame in _year_frames(df)]
     fig = go.Figure()
@@ -233,7 +235,7 @@ def chart_us_top_states(df: pd.DataFrame, save_png: bool = False) -> go.Figure:
             x=r["employees"], y=r["state"], orientation="h",
             name=label, marker_color=ACCENT3,
             customdata=r["notices"], visible=(i == 0),
-            text=[f"{v:,.0f}" if v else "n/r" for v in r["employees"]],
+            text=[f"{v:,.0f}" for v in r["employees"]],
             textposition="outside",
             textfont=dict(size=10, color="#8b949e"),
             hovertemplate=("<b>%{y}</b><br>%{x:,} employees"
@@ -243,12 +245,12 @@ def chart_us_top_states(df: pd.DataFrame, save_png: bool = False) -> go.Figure:
     fig.update_layout(
         xaxis_title="Employees affected", yaxis_title="",
         showlegend=False,
-        # Row-wide hover: zero-length bars (unreported counts) still trigger.
         hovermode="y unified",
         # Tall enough that ~47 horizontal bars stay readable.
         height=max(600, 22 * max_rows + 160),
         annotations=[dict(
-            text="n/r = employee counts not reported by that state's feed",
+            text=("states with notices but no reported headcounts are "
+                  "omitted — the map shows their notice counts"),
             x=0.99, y=0.0, xref="paper", yref="paper",
             xanchor="right", yanchor="bottom",
             showarrow=False, font=dict(size=11, color="#8b949e"),
@@ -270,6 +272,7 @@ def chart_us_top_companies(df: pd.DataFrame, save_png: bool = False) -> go.Figur
             .tail(20)
             .reset_index()
         )
+        top = top[top["employees"] > 0]
         top["label"] = top["company"].str.slice(0, 40)
         return top
 
@@ -476,7 +479,7 @@ footer {{ color:var(--muted); font-size:12.5px; text-align:center;
     <h2>States ranked</h2>
     <div class="desc">Employees affected per state — pick any recent year
       or all time from the dropdown. Coverage depth varies by state;
-      "n/r" marks feeds that publish no headcounts.</div>
+      states without reported headcounts for the window are omitted.</div>
     <div class="chart">{states_div}</div>
   </section>
 
