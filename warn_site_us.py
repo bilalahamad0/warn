@@ -737,17 +737,24 @@ footer {{ color:var(--muted); font-size:12px; text-align:center;
       <input id="cofilter" type="search" placeholder="Search company…">
       <span id="filternote" style="color:var(--muted);font-size:12px"></span>
     </div>
+    <div class="pager">
+      <button class="pgbtn pgprev">← Prev</button>
+      <span class="pginfo">Page 1 of {total_pages}</span>
+      <button class="pgbtn pgnext">Next →</button>
+      <span style="color:var(--muted);font-size:13px">Jump to:</span>
+      <input class="pgjump" type="number" min="1" max="{total_pages}" value="1">
+    </div>
     <div style="overflow-x:auto"><table id="recent">
       <thead><tr><th>State</th><th>Company</th><th>Location</th>
         <th>Notice</th><th>Effective</th><th>Employees</th></tr></thead>
       <tbody>{recent_rows}</tbody>
     </table></div>
     <div class="pager">
-      <button id="prevpg" class="pgbtn">← Prev</button>
-      <span id="pginfo">Page 1 of {total_pages}</span>
-      <button id="nextpg" class="pgbtn">Next →</button>
+      <button class="pgbtn pgprev">← Prev</button>
+      <span class="pginfo">Page 1 of {total_pages}</span>
+      <button class="pgbtn pgnext">Next →</button>
       <span style="color:var(--muted);font-size:13px">Jump to:</span>
-      <input id="pgjump" type="number" min="1" max="{total_pages}" value="1">
+      <input class="pgjump" type="number" min="1" max="{total_pages}" value="1">
     </div>
   </section>
 </main>
@@ -794,12 +801,18 @@ function renderRows(rows) {{
   applySearch();
 }}
 
+function setPagerText(text) {{
+  document.querySelectorAll('.pginfo').forEach(function (el) {{
+    el.textContent = text;
+  }});
+}}
+
 function gotoPage(n) {{
   var total = PAGE_COUNTS[currentSet] || 0;
   var label = currentSet === 'all' ? '' : ' — ' + currentSet + ' only';
   if (!total) {{
     renderRows([]);
-    document.getElementById('pginfo').textContent = 'No dated records' + label;
+    setPagerText('No dated records' + label);
     return;
   }}
   n = Math.max(1, Math.min(total, n));
@@ -808,22 +821,24 @@ function gotoPage(n) {{
     .then(function (p) {{
       currentPage = p.page;
       renderRows(p.rows);
-      document.getElementById('pginfo').textContent =
-        'Page ' + p.page + ' of ' + p.total_pages + label;
-      var jump = document.getElementById('pgjump');
-      jump.value = p.page;
-      jump.max = p.total_pages;
+      setPagerText('Page ' + p.page + ' of ' + p.total_pages + label);
+      document.querySelectorAll('.pgjump').forEach(function (jump) {{
+        jump.value = p.page;
+        jump.max = p.total_pages;
+      }});
     }});
 }}
 
-document.getElementById('prevpg').addEventListener('click', function () {{
-  gotoPage(currentPage - 1);
+document.querySelectorAll('.pgprev').forEach(function (b) {{
+  b.addEventListener('click', function () {{ gotoPage(currentPage - 1); }});
 }});
-document.getElementById('nextpg').addEventListener('click', function () {{
-  gotoPage(currentPage + 1);
+document.querySelectorAll('.pgnext').forEach(function (b) {{
+  b.addEventListener('click', function () {{ gotoPage(currentPage + 1); }});
 }});
-document.getElementById('pgjump').addEventListener('change', function () {{
-  gotoPage(parseInt(this.value, 10) || 1);
+document.querySelectorAll('.pgjump').forEach(function (j) {{
+  j.addEventListener('change', function () {{
+    gotoPage(parseInt(this.value, 10) || 1);
+  }});
 }});
 document.getElementById('stfilter').addEventListener('change', function () {{
   currentSet = this.value || 'all';
