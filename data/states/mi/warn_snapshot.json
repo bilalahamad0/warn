@@ -3,7 +3,7 @@
   "total_employees": 13712,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-07-23T09:19:18.873528+00:00Z",
+  "last_updated": "2026-07-23T13:44:10.165382+00:00Z",
   "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
   "records": [
     {
@@ -80,7 +80,7 @@
     },
     {
       "state": "MI",
-      "company": "Menard Inc. dba Menards",
+      "company": "Menard Inc., d/b/a Menards",
       "notice_date": null,
       "effective_date": "2026-05-13",
       "employees": 68,
@@ -128,6 +128,18 @@
     },
     {
       "state": "MI",
+      "company": "Spirit Airlines",
+      "notice_date": null,
+      "effective_date": "2026-05-02",
+      "employees": 643,
+      "layoff_type": "Permanent layoff",
+      "county": "Wayne",
+      "city": "",
+      "address": "2500 World Gateway Place, Detroit, MI 48242",
+      "industry": ""
+    },
+    {
+      "state": "MI",
       "company": "Fifth Third Bank",
       "notice_date": null,
       "effective_date": "2026-07-01",
@@ -147,19 +159,7 @@
       "layoff_type": "Facility closure",
       "county": "Oakland",
       "city": "",
-      "address": "1955 Stephenson Highway, Troy, Michigan, 48083",
-      "industry": ""
-    },
-    {
-      "state": "MI",
-      "company": "Spirit Airlines",
-      "notice_date": null,
-      "effective_date": "2026-05-02",
-      "employees": 643,
-      "layoff_type": "Permanent layoff",
-      "county": "Wayne",
-      "city": "",
-      "address": "2500 World Gateway Place, Detroit, MI 48242",
+      "address": "1955 Stephenson Highway, Troy, MI 48083",
       "industry": ""
     },
     {
@@ -248,18 +248,6 @@
     },
     {
       "state": "MI",
-      "company": "General Shale, DBA Michigan Brick",
-      "notice_date": null,
-      "effective_date": "2026-04-27",
-      "employees": 48,
-      "layoff_type": "Facility closure",
-      "county": "Shiawassee",
-      "city": "Corunna",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "First Brands Group, LLC",
       "notice_date": null,
       "effective_date": "2026-02-23",
@@ -268,6 +256,18 @@
       "county": "Oakland",
       "city": "",
       "address": "3255 West Hamlin Road, Rochester Hills, MI 48309",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "General Shale, d/b/a Michigan Brick",
+      "notice_date": null,
+      "effective_date": "2026-04-27",
+      "employees": 48,
+      "layoff_type": "Facility closure",
+      "county": "Shiawassee",
+      "city": "Corunna",
+      "address": "",
       "industry": ""
     },
     {
@@ -284,18 +284,6 @@
     },
     {
       "state": "MI",
-      "company": "Grouper Acquisition Company, Inc.",
-      "notice_date": null,
-      "effective_date": "2026-03-31",
-      "employees": 160,
-      "layoff_type": "Company closure",
-      "county": "Kalamazoo",
-      "city": "Galesburg",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "GMRI, Inc., DBA Bahama Breeze",
       "notice_date": null,
       "effective_date": "2026-04-05",
@@ -303,6 +291,18 @@
       "layoff_type": "Company closure",
       "county": "Wayne",
       "city": "Livonia",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Grouper Acquisition Company, Inc.",
+      "notice_date": null,
+      "effective_date": "2026-03-31",
+      "employees": 160,
+      "layoff_type": "Company closure",
+      "county": "Kalamazoo",
+      "city": "Galesburg",
       "address": "",
       "industry": ""
     },
@@ -392,6 +392,18 @@
     },
     {
       "state": "MI",
+      "company": "Oakland Stamping LLC, DBA AUTOKINITON",
+      "notice_date": null,
+      "effective_date": "2025-12-05",
+      "employees": 201,
+      "layoff_type": "Facility closure",
+      "county": "Wayne",
+      "city": "Detroit",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
       "company": "Factory ZERO Detroit-Hamtramck Assembly Center",
       "notice_date": null,
       "effective_date": "2026-01-05",
@@ -411,18 +423,6 @@
       "layoff_type": "Layoff",
       "county": "Kent",
       "city": "Wyoming",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "MI",
-      "company": "Oakland Stamping LLC, DBA AUTOKINITON",
-      "notice_date": null,
-      "effective_date": "2025-12-05",
-      "employees": 201,
-      "layoff_type": "Facility closure",
-      "county": "Wayne",
-      "city": "Detroit",
       "address": "",
       "industry": ""
     },
@@ -452,18 +452,6 @@
     },
     {
       "state": "MI",
-      "company": "Avancez",
-      "notice_date": null,
-      "effective_date": "2025-12-05",
-      "employees": 143,
-      "layoff_type": "Layoff",
-      "county": "Oakland",
-      "city": "Hazel Park",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "The Taubman Company LLC",
       "notice_date": null,
       "effective_date": "2026-01-09",
@@ -483,6 +471,18 @@
       "layoff_type": "Facility closure",
       "county": "Gladwin",
       "city": "Gladwin",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Avancez",
+      "notice_date": null,
+      "effective_date": "2025-12-05",
+      "employees": 143,
+      "layoff_type": "Layoff",
+      "county": "Oakland",
+      "city": "Hazel Park",
       "address": "",
       "industry": ""
     },
@@ -704,18 +704,6 @@
     },
     {
       "state": "MI",
-      "company": "Davalor Mold Company, LLC",
-      "notice_date": null,
-      "effective_date": "2025-10-03",
-      "employees": 45,
-      "layoff_type": "Layoff",
-      "county": "Macomb",
-      "city": "New Baltimore",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "NPR of America, Inc.",
       "notice_date": null,
       "effective_date": "2025-10-12",
@@ -723,6 +711,18 @@
       "layoff_type": "Company closure",
       "county": "Ottawa",
       "city": "Grand Haven",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Davalor Mold Company, LLC",
+      "notice_date": null,
+      "effective_date": "2025-10-03",
+      "employees": 45,
+      "layoff_type": "Layoff",
+      "county": "Macomb",
+      "city": "New Baltimore",
       "address": "",
       "industry": ""
     },
@@ -812,18 +812,6 @@
     },
     {
       "state": "MI",
-      "company": "Lansing Entertainment and Public Facilities Authority (LEPFA)",
-      "notice_date": null,
-      "effective_date": "2025-08-30",
-      "employees": 181,
-      "layoff_type": "Layoff",
-      "county": "Ingham",
-      "city": "Lansing",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "Plasan North America, Inc.",
       "notice_date": null,
       "effective_date": "2025-07-02",
@@ -867,6 +855,18 @@
       "layoff_type": "Layoff",
       "county": "Statewide",
       "city": "Statewide",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Lansing Entertainment and Public Facilities Authority (LEPFA)",
+      "notice_date": null,
+      "effective_date": "2025-08-30",
+      "employees": 181,
+      "layoff_type": "Layoff",
+      "county": "Ingham",
+      "city": "Lansing",
       "address": "",
       "industry": ""
     },
@@ -992,18 +992,6 @@
     },
     {
       "state": "MI",
-      "company": "Aramark Campus, LLC",
-      "notice_date": null,
-      "effective_date": "2025-06-30",
-      "employees": 137,
-      "layoff_type": "Layoff",
-      "county": "Wayne",
-      "city": "Detroit",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "Conagra Brands, Inc.",
       "notice_date": null,
       "effective_date": "2025-06-27",
@@ -1023,6 +1011,18 @@
       "layoff_type": "Layoff",
       "county": "Statewide",
       "city": "Statewide",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Aramark Campus, LLC",
+      "notice_date": null,
+      "effective_date": "2025-06-30",
+      "employees": 137,
+      "layoff_type": "Layoff",
+      "county": "Wayne",
+      "city": "Detroit",
       "address": "",
       "industry": ""
     },
@@ -1136,18 +1136,6 @@
     },
     {
       "state": "MI",
-      "company": "Jack Cooper LLC",
-      "notice_date": null,
-      "effective_date": "2025-02-08",
-      "employees": 119,
-      "layoff_type": "Closure",
-      "county": "Eaton",
-      "city": "Dimondale",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "Akasol, Inc.",
       "notice_date": null,
       "effective_date": "2025-04-14",
@@ -1155,6 +1143,18 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Jack Cooper LLC",
+      "notice_date": null,
+      "effective_date": "2025-02-08",
+      "employees": 119,
+      "layoff_type": "Closure",
+      "county": "Eaton",
+      "city": "Dimondale",
       "address": "",
       "industry": ""
     },

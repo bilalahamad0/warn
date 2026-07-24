@@ -3,7 +3,7 @@
   "total_employees": 13712,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-07-23T13:44:10.165382+00:00Z",
+  "last_updated": "2026-07-24T13:35:36.787463+00:00Z",
   "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
   "records": [
     {
@@ -284,18 +284,6 @@
     },
     {
       "state": "MI",
-      "company": "GMRI, Inc., DBA Bahama Breeze",
-      "notice_date": null,
-      "effective_date": "2026-04-05",
-      "employees": 66,
-      "layoff_type": "Company closure",
-      "county": "Wayne",
-      "city": "Livonia",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "Grouper Acquisition Company, Inc.",
       "notice_date": null,
       "effective_date": "2026-03-31",
@@ -303,6 +291,18 @@
       "layoff_type": "Company closure",
       "county": "Kalamazoo",
       "city": "Galesburg",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "GMRI, Inc., d/b/a Bahama Breeze",
+      "notice_date": null,
+      "effective_date": "2026-04-05",
+      "employees": 66,
+      "layoff_type": "Company closure",
+      "county": "Wayne",
+      "city": "Livonia",
       "address": "",
       "industry": ""
     },
@@ -392,18 +392,6 @@
     },
     {
       "state": "MI",
-      "company": "Oakland Stamping LLC, DBA AUTOKINITON",
-      "notice_date": null,
-      "effective_date": "2025-12-05",
-      "employees": 201,
-      "layoff_type": "Facility closure",
-      "county": "Wayne",
-      "city": "Detroit",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "Factory ZERO Detroit-Hamtramck Assembly Center",
       "notice_date": null,
       "effective_date": "2026-01-05",
@@ -423,6 +411,18 @@
       "layoff_type": "Layoff",
       "county": "Kent",
       "city": "Wyoming",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Oakland Stamping LLC, d/b/a AUTOKINITON",
+      "notice_date": null,
+      "effective_date": "2025-12-05",
+      "employees": 201,
+      "layoff_type": "Facility closure",
+      "county": "Wayne",
+      "city": "Detroit",
       "address": "",
       "industry": ""
     },
@@ -872,7 +872,7 @@
     },
     {
       "state": "MI",
-      "company": "TerrAscend Corp. (DBA: Gage Cannabis, Cookies, Lemonade and Pinnacle Emporium)",
+      "company": "TerrAscend Corp., d/b/a Gage Cannabis, Cookies, Lemonade and Pinnacle Emporium",
       "notice_date": null,
       "effective_date": "2025-08-31",
       "employees": 236,
@@ -884,7 +884,7 @@
     },
     {
       "state": "MI",
-      "company": "Oldcastle Building Envelope DBA Midwest Glass",
+      "company": "Oldcastle Building Envelope, d/b/a Midwest Glass",
       "notice_date": null,
       "effective_date": "2025-08-18",
       "employees": 124,
@@ -920,7 +920,7 @@
     },
     {
       "state": "MI",
-      "company": "GMRI, Inc. DBA Bahama Breeze",
+      "company": "GMRI, Inc., d/b/a Bahama Breeze",
       "notice_date": null,
       "effective_date": "2025-05-15",
       "employees": 70,

@@ -1,9 +1,9 @@
 {
-  "total_records": 367,
-  "total_employees": 33908,
+  "total_records": 368,
+  "total_employees": 34058,
   "date_range_start": "2022-01-25",
-  "date_range_end": "2026-07-10",
-  "last_updated": "2026-07-23T09:20:03.181371+00:00Z",
+  "date_range_end": "2026-07-22",
+  "last_updated": "2026-07-23T13:45:12.431476+00:00Z",
   "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
   "records": [
     {
@@ -4408,6 +4408,18 @@
       "county": "Wake",
       "city": "Raleigh",
       "address": "8924 Midway West Road",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Elevate Textiles, Inc.",
+      "notice_date": "2026-07-22",
+      "effective_date": "2026-12-31",
+      "employees": 150,
+      "layoff_type": "Closure Permanent",
+      "county": "Alamance",
+      "city": "Burlington",
+      "address": "906 Anthony Street",
       "industry": ""
     }
   ]

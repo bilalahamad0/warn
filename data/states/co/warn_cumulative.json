@@ -1,9 +1,9 @@
 {
-  "total_records": 843,
-  "total_employees": 85919,
+  "total_records": 846,
+  "total_employees": 86091,
   "date_range_start": "2015-01-02",
-  "date_range_end": "2026-07-20",
-  "last_updated": "2026-07-23T13:34:30.632839+00:00Z",
+  "date_range_end": "2026-07-22",
+  "last_updated": "2026-07-24T13:26:38.775581+00:00Z",
   "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
   "records": [
     {
@@ -10121,6 +10121,42 @@
       "city": "",
       "address": "",
       "industry": ""
+    },
+    {
+      "state": "CO",
+      "company": "Travelport LP",
+      "notice_date": "2026-07-21",
+      "effective_date": "2026-07-22",
+      "employees": 57,
+      "layoff_type": "Mass Layoff",
+      "county": "Denver",
+      "city": "",
+      "address": "",
+      "industry": "54,1512: Computer Systems Design Services, 511210: Software Publishing, 5615 - Travel & Reservation Services"
+    },
+    {
+      "state": "CO",
+      "company": "Public Storage",
+      "notice_date": "2026-07-22",
+      "effective_date": "2026-07-22",
+      "employees": 107,
+      "layoff_type": "Mass Layoff",
+      "county": "Arapahoe/Douglas",
+      "city": "",
+      "address": "",
+      "industry": "53,1130: Lessors of Miniwarehouses & Self Storage Units for Std Self Service customer rentals"
+    },
+    {
+      "state": "CO",
+      "company": "PetVet Operating",
+      "notice_date": "2026-07-10",
+      "effective_date": "2026-09-08",
+      "employees": 8,
+      "layoff_type": "Closure",
+      "county": "Larimer",
+      "city": "",
+      "address": "",
+      "industry": "54,1940: Veterinary Services"
     }
   ]
 }

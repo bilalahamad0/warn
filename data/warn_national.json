@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-24T02:47:38.543690+00:00Z",
+  "last_updated": "2026-07-24T13:41:02.526560+00:00Z",
   "states_live": 47,
-  "total_records": 58909,
-  "total_employees": 6396530,
+  "total_records": 58924,
+  "total_employees": 6397865,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -29,15 +29,15 @@
       "name": "California",
       "agency": "California Employment Development Department",
       "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
-      "total_records": 16130,
-      "total_employees": 1382139
+      "total_records": 16134,
+      "total_employees": 1382366
     },
     "CO": {
       "name": "Colorado",
       "agency": "Colorado Department of Labor and Employment",
       "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
-      "total_records": 843,
-      "total_employees": 85919
+      "total_records": 846,
+      "total_employees": 86091
     },
     "CT": {
       "name": "Connecticut",
@@ -155,8 +155,8 @@
       "name": "Michigan",
       "agency": "Michigan Department of Labor and Economic Opportunity",
       "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
-      "total_records": 772,
-      "total_employees": 119391
+      "total_records": 779,
+      "total_employees": 120204
     },
     "MN": {
       "name": "Minnesota",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1483,
-      "total_employees": 234425
+      "total_records": 1484,
+      "total_employees": 234548
     },
     "WI": {
       "name": "Wisconsin",
@@ -37954,6 +37954,54 @@
       "city": "",
       "address": "1376 Bordeaux Dr.  Sunnyvale CA 94089",
       "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "state": "CA",
+      "company": "CraftForce Services, Inc. (2330 Circadian Way)",
+      "notice_date": "2026-07-22",
+      "effective_date": "2026-09-20",
+      "employees": 51,
+      "layoff_type": "Closure Permanent",
+      "county": "Sonoma County",
+      "city": "",
+      "address": "2330 Circadian Way  Santa Rosa CA 95407",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
+    },
+    {
+      "state": "CA",
+      "company": "CraftForce Services, Inc. (2753 Giffen Avenue)",
+      "notice_date": "2026-07-22",
+      "effective_date": "2026-09-20",
+      "employees": 7,
+      "layoff_type": "Closure Permanent",
+      "county": "Sonoma County",
+      "city": "",
+      "address": "2753 Giffen Avenue  Santa Rosa CA 95407",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
+    },
+    {
+      "state": "CA",
+      "company": "New Leaf Community Markets, Inc.",
+      "notice_date": "2026-07-21",
+      "effective_date": "2026-09-20",
+      "employees": 61,
+      "layoff_type": "Closure Permanent",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "5667 Silver Creek Valley Road  San Jose CA 95138",
+      "industry": "44-45 Retail Trade"
+    },
+    {
+      "state": "CA",
+      "company": "Pixar",
+      "notice_date": "2026-07-21",
+      "effective_date": "2026-09-26",
+      "employees": 108,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "1200 Park Avenue  Emeryville CA 94608",
+      "industry": "71 Arts Entertainment and Recreation"
     },
     {
       "company": "Adventist Health St. Helena",
@@ -191846,6 +191894,42 @@
       "city": "",
       "address": "",
       "industry": ""
+    },
+    {
+      "state": "CO",
+      "company": "Travelport LP",
+      "notice_date": "2026-07-21",
+      "effective_date": "2026-07-22",
+      "employees": 57,
+      "layoff_type": "Mass Layoff",
+      "county": "Denver",
+      "city": "",
+      "address": "",
+      "industry": "54,1512: Computer Systems Design Services, 511210: Software Publishing, 5615 - Travel & Reservation Services"
+    },
+    {
+      "state": "CO",
+      "company": "Public Storage",
+      "notice_date": "2026-07-22",
+      "effective_date": "2026-07-22",
+      "employees": 107,
+      "layoff_type": "Mass Layoff",
+      "county": "Arapahoe/Douglas",
+      "city": "",
+      "address": "",
+      "industry": "53,1130: Lessors of Miniwarehouses & Self Storage Units for Std Self Service customer rentals"
+    },
+    {
+      "state": "CO",
+      "company": "PetVet Operating",
+      "notice_date": "2026-07-10",
+      "effective_date": "2026-09-08",
+      "employees": 8,
+      "layoff_type": "Closure",
+      "county": "Larimer",
+      "city": "",
+      "address": "",
+      "industry": "54,1940: Veterinary Services"
     },
     {
       "state": "CT",
@@ -390893,6 +390977,90 @@
       "layoff_type": "Mass Layoff",
       "city": "Detroit",
       "state": "MI"
+    },
+    {
+      "state": "MI",
+      "company": "Menard Inc., d/b/a Menards",
+      "notice_date": null,
+      "effective_date": "2026-05-13",
+      "employees": 68,
+      "layoff_type": "Temporary layoff",
+      "county": "St. Joseph",
+      "city": "",
+      "address": "1001 Warner Drive, Three Rivers, MI 49093",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "General Shale, d/b/a Michigan Brick",
+      "notice_date": null,
+      "effective_date": "2026-04-27",
+      "employees": 48,
+      "layoff_type": "Facility closure",
+      "county": "Shiawassee",
+      "city": "Corunna",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "GMRI, Inc., d/b/a Bahama Breeze",
+      "notice_date": null,
+      "effective_date": "2026-04-05",
+      "employees": 66,
+      "layoff_type": "Company closure",
+      "county": "Wayne",
+      "city": "Livonia",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Oakland Stamping LLC, d/b/a AUTOKINITON",
+      "notice_date": null,
+      "effective_date": "2025-12-05",
+      "employees": 201,
+      "layoff_type": "Facility closure",
+      "county": "Wayne",
+      "city": "Detroit",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "TerrAscend Corp., d/b/a Gage Cannabis, Cookies, Lemonade and Pinnacle Emporium",
+      "notice_date": null,
+      "effective_date": "2025-08-31",
+      "employees": 236,
+      "layoff_type": "Multiple facility closures",
+      "county": "Statewide, multiple locations",
+      "city": "Statewide, multiple locations",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Oldcastle Building Envelope, d/b/a Midwest Glass",
+      "notice_date": null,
+      "effective_date": "2025-08-18",
+      "employees": 124,
+      "layoff_type": "Facility closure",
+      "county": "Oakland",
+      "city": "Highland",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "GMRI, Inc., d/b/a Bahama Breeze",
+      "notice_date": null,
+      "effective_date": "2025-05-15",
+      "employees": 70,
+      "layoff_type": "Facility closure",
+      "county": "Oakland",
+      "city": "Troy",
+      "address": "",
+      "industry": ""
     },
     {
       "state": "MN",
@@ -628959,7 +629127,7 @@
       "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-07-23",
+      "effective_date": "2026-07-24",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",
@@ -647204,6 +647372,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Liberty Lake",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "No Meat Factory USA Inc",
+      "notice_date": "2026-07-22",
+      "effective_date": "2026-09-16",
+      "employees": 123,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Stanwood",
       "address": "",
       "industry": ""
     },

@@ -1,9 +1,9 @@
 {
-  "total_records": 772,
-  "total_employees": 119391,
+  "total_records": 779,
+  "total_employees": 120204,
   "date_range_start": "2016-01-07",
   "date_range_end": "2024-11-15",
-  "last_updated": "2026-07-23T17:38:06.830408+00:00Z",
+  "last_updated": "2026-07-24T13:35:36.791112+00:00Z",
   "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
   "records": [
     {
@@ -7274,6 +7274,90 @@
       "layoff_type": "Mass Layoff",
       "city": "Detroit",
       "state": "MI"
+    },
+    {
+      "state": "MI",
+      "company": "Menard Inc., d/b/a Menards",
+      "notice_date": null,
+      "effective_date": "2026-05-13",
+      "employees": 68,
+      "layoff_type": "Temporary layoff",
+      "county": "St. Joseph",
+      "city": "",
+      "address": "1001 Warner Drive, Three Rivers, MI 49093",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "General Shale, d/b/a Michigan Brick",
+      "notice_date": null,
+      "effective_date": "2026-04-27",
+      "employees": 48,
+      "layoff_type": "Facility closure",
+      "county": "Shiawassee",
+      "city": "Corunna",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "GMRI, Inc., d/b/a Bahama Breeze",
+      "notice_date": null,
+      "effective_date": "2026-04-05",
+      "employees": 66,
+      "layoff_type": "Company closure",
+      "county": "Wayne",
+      "city": "Livonia",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Oakland Stamping LLC, d/b/a AUTOKINITON",
+      "notice_date": null,
+      "effective_date": "2025-12-05",
+      "employees": 201,
+      "layoff_type": "Facility closure",
+      "county": "Wayne",
+      "city": "Detroit",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "TerrAscend Corp., d/b/a Gage Cannabis, Cookies, Lemonade and Pinnacle Emporium",
+      "notice_date": null,
+      "effective_date": "2025-08-31",
+      "employees": 236,
+      "layoff_type": "Multiple facility closures",
+      "county": "Statewide, multiple locations",
+      "city": "Statewide, multiple locations",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Oldcastle Building Envelope, d/b/a Midwest Glass",
+      "notice_date": null,
+      "effective_date": "2025-08-18",
+      "employees": 124,
+      "layoff_type": "Facility closure",
+      "county": "Oakland",
+      "city": "Highland",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "GMRI, Inc., d/b/a Bahama Breeze",
+      "notice_date": null,
+      "effective_date": "2025-05-15",
+      "employees": 70,
+      "layoff_type": "Facility closure",
+      "county": "Oakland",
+      "city": "Troy",
+      "address": "",
+      "industry": ""
     }
   ]
 }

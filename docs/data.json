@@ -1,9 +1,9 @@
 {
-  "total_records": 1541,
-  "total_employees": 84875,
+  "total_records": 1545,
+  "total_employees": 85102,
   "date_range_start": "2025-01-29",
-  "date_range_end": "2026-07-20",
-  "last_updated": "2026-07-23T13:34:07.550082+00:00Z",
+  "date_range_end": "2026-07-22",
+  "last_updated": "2026-07-24T13:26:16.669397+00:00Z",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "records": [
     {
@@ -18254,6 +18254,54 @@
       "city": "",
       "address": "1376 Bordeaux Dr.  Sunnyvale CA 94089",
       "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "state": "CA",
+      "company": "CraftForce Services, Inc. (2330 Circadian Way)",
+      "notice_date": "2026-07-22",
+      "effective_date": "2026-09-20",
+      "employees": 51,
+      "layoff_type": "Closure Permanent",
+      "county": "Sonoma County",
+      "city": "",
+      "address": "2330 Circadian Way  Santa Rosa CA 95407",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
+    },
+    {
+      "state": "CA",
+      "company": "CraftForce Services, Inc. (2753 Giffen Avenue)",
+      "notice_date": "2026-07-22",
+      "effective_date": "2026-09-20",
+      "employees": 7,
+      "layoff_type": "Closure Permanent",
+      "county": "Sonoma County",
+      "city": "",
+      "address": "2753 Giffen Avenue  Santa Rosa CA 95407",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
+    },
+    {
+      "state": "CA",
+      "company": "New Leaf Community Markets, Inc.",
+      "notice_date": "2026-07-21",
+      "effective_date": "2026-09-20",
+      "employees": 61,
+      "layoff_type": "Closure Permanent",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "5667 Silver Creek Valley Road  San Jose CA 95138",
+      "industry": "44-45 Retail Trade"
+    },
+    {
+      "state": "CA",
+      "company": "Pixar",
+      "notice_date": "2026-07-21",
+      "effective_date": "2026-09-26",
+      "employees": 108,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "1200 Park Avenue  Emeryville CA 94608",
+      "industry": "71 Arts Entertainment and Recreation"
     }
   ]
 }
