@@ -225,38 +225,64 @@ _MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
 
 
 def chart_us_monthly_years(df: pd.DataFrame, save_png: bool = False) -> go.Figure:
-    """Seasonal comparison: one line per year, employees by calendar month."""
+    """Seasonal comparison: one line per year, employees by calendar month.
+
+    A dropdown switches between monthly totals and cumulative year-to-date
+    lines (each month adding onto the last), for comparing how years built
+    up over time.
+    """
     dated = df[df["event_date"].notna()].copy()
     dated["year"] = dated["event_date"].dt.year
     dated["month"] = dated["event_date"].dt.month
-    years = sorted(dated["year"].unique(), reverse=True)[:6]
+    years = sorted(sorted(dated["year"].unique(), reverse=True)[:6])
     now = pd.Timestamp.now()
 
     fig = go.Figure()
-    for i, year in enumerate(sorted(years)):
-        ydf = dated[dated["year"] == year]
-        by_month = ydf.groupby("month")["employees"].sum()
-        # Months not yet reached in the current year stay blank, not zero.
-        last_month = now.month if year == now.year else 12
-        y_vals = [
-            int(by_month.get(m, 0)) if m <= last_month else None
-            for m in range(1, 13)
-        ]
-        is_current = year == now.year
-        fig.add_scatter(
-            x=_MONTHS, y=y_vals, name=str(year),
-            mode="lines+markers",
-            line=dict(
-                color=LINE_COLORS[i % len(LINE_COLORS)],
-                width=3.5 if is_current else 1.8,
-            ),
-            marker=dict(size=7 if is_current else 5),
-            hovertemplate="%{x} " + str(year) + "<br>%{y:,} employees"
-                          "<extra></extra>",
-        )
+    for cumulative in (False, True):
+        for i, year in enumerate(years):
+            ydf = dated[dated["year"] == year]
+            by_month = ydf.groupby("month")["employees"].sum()
+            # Months not yet reached in the current year stay blank, not zero.
+            last_month = now.month if year == now.year else 12
+            y_vals, running = [], 0
+            for m in range(1, 13):
+                if m > last_month:
+                    y_vals.append(None)
+                    continue
+                running += int(by_month.get(m, 0))
+                y_vals.append(running if cumulative else int(by_month.get(m, 0)))
+            is_current = year == now.year
+            suffix = " cumulative" if cumulative else ""
+            fig.add_scatter(
+                x=_MONTHS, y=y_vals, name=str(year),
+                legendgroup=str(year),
+                visible=not cumulative,
+                mode="lines+markers",
+                line=dict(
+                    color=LINE_COLORS[i % len(LINE_COLORS)],
+                    width=3.5 if is_current else 1.8,
+                ),
+                marker=dict(size=7 if is_current else 5),
+                hovertemplate=("%{x} " + str(year) + "<br>%{y:,} employees"
+                               + suffix + "<extra></extra>"),
+            )
+
+    n = len(years)
     fig.update_layout(
         yaxis_title="Employees affected",
-        legend=dict(orientation="h", y=1.1),
+        legend=dict(orientation="h", y=1.08),
+        updatemenus=[dict(
+            buttons=[
+                dict(label="Monthly totals", method="update",
+                     args=[{"visible": [True] * n + [False] * n}]),
+                dict(label="Cumulative (year to date)", method="update",
+                     args=[{"visible": [False] * n + [True] * n}]),
+            ],
+            direction="down",
+            x=0.01, y=1.32, xanchor="left", yanchor="top",
+            bgcolor="#161b22", bordercolor="#21262d",
+            font=dict(color="#e6edf3"),
+        )],
         annotations=[dict(
             text=f"{now.strftime('%b %Y')} is in progress",
             x=0.99, y=0.02, xref="paper", yref="paper",
@@ -264,7 +290,7 @@ def chart_us_monthly_years(df: pd.DataFrame, save_png: bool = False) -> go.Figur
             showarrow=False, font=dict(size=11, color="#8b949e"),
         )],
     )
-    fig = _apply_theme(fig)
+    fig = _apply_theme(fig, margin=dict(l=60, r=30, t=95, b=60))
     warn_charts._save_chart(fig, "us_monthly_years", save_png)
     return fig
 
@@ -563,6 +589,13 @@ select option:disabled {{ color:#555c66; }}
 .pager {{ display:flex; gap:8px; align-items:center; margin-top:12px;
           flex-wrap:wrap; }}
 .pager input {{ width:80px; margin:0; }}
+.tabs {{ display:flex; gap:8px; margin-bottom:10px; flex-wrap:wrap; }}
+.tab {{ background:var(--card); border:1px solid var(--border);
+        color:var(--muted); border-radius:6px; padding:8px 16px;
+        cursor:pointer; font-size:13.5px; }}
+.tab.active {{ color:var(--accent); border-color:var(--accent); }}
+.pane {{ display:none; }}
+.pane.active {{ display:block; }}
 footer {{ color:var(--muted); font-size:12px; text-align:center;
           padding:20px 14px; }}
 
@@ -625,17 +658,21 @@ footer {{ color:var(--muted); font-size:12px; text-align:center;
 
   <section>
     <h2>National monthly trend</h2>
-    <div class="desc">Employees affected per month across all live states,
-      last 24 months.</div>
-    <div class="chart">{monthly_div}</div>
-  </section>
-
-  <section>
-    <h2>Monthly comparison by year</h2>
-    <div class="desc">The same calendar months overlaid across recent
-      years — seasonal patterns and unusual months stand out. The current
-      year draws thicker.</div>
-    <div class="chart">{monthly_years_div}</div>
+    <div class="tabs">
+      <button class="tab active" data-pane="pane-timeline">Timeline</button>
+      <button class="tab" data-pane="pane-byyear">By year</button>
+    </div>
+    <div id="pane-timeline" class="pane active">
+      <div class="desc">Employees affected per month across all live
+        states, last 24 months.</div>
+      <div class="chart">{monthly_div}</div>
+    </div>
+    <div id="pane-byyear" class="pane">
+      <div class="desc">The same calendar months overlaid across recent
+        years — the current year draws thicker. Switch the dropdown to
+        cumulative year-to-date lines to compare how each year built up.</div>
+      <div class="chart">{monthly_years_div}</div>
+    </div>
   </section>
 
   <section>
@@ -766,6 +803,23 @@ document.getElementById('stfilter').addEventListener('change', function () {{
   gotoPage(1);
 }});
 document.getElementById('cofilter').addEventListener('input', applySearch);
+
+// Tab switching: charts rendered while hidden need a resize kick once shown.
+document.querySelectorAll('.tab').forEach(function (btn) {{
+  btn.addEventListener('click', function () {{
+    var section = btn.closest('section');
+    section.querySelectorAll('.tab').forEach(function (b) {{
+      b.classList.toggle('active', b === btn);
+    }});
+    section.querySelectorAll('.pane').forEach(function (p) {{
+      p.classList.toggle('active', p.id === btn.dataset.pane);
+    }});
+    var pane = document.getElementById(btn.dataset.pane);
+    pane.querySelectorAll('.plotly-graph-div').forEach(function (g) {{
+      if (window.Plotly) {{ Plotly.Plots.resize(g); }}
+    }});
+  }});
+}});
 </script>
 </body>
 </html>
