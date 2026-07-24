@@ -309,25 +309,43 @@ def _recent_rows(df: pd.DataFrame, limit: int = PAGE_SIZE) -> str:
     return "\n".join(rows)
 
 
-def _write_pages(df: pd.DataFrame, out_dir: Path) -> int:
-    """Chunk the full dataset into static page files the table fetches lazily.
+def _write_pages(df: pd.DataFrame, out_dir: Path) -> dict:
+    """Chunk the dataset into static page-file sets the table fetches lazily.
 
-    ~250 rows per page (~30 KB each) keeps the main page light while making
-    every record browsable without ever loading the whole dataset at once.
+    One set for everything (``pages/all/``) plus one per state
+    (``pages/IL/`` …), so selecting a state pages through that state's full
+    record list — every page full — instead of sieving global pages.
+    ~250 rows per file (~30 KB) keeps the main page light while making every
+    record browsable without ever loading the whole dataset at once.
+
+    Returns {set_name: page_count} for the client-side pager.
     """
+    import shutil
+
     recent = _recent_sorted(df)
-    total_pages = max(1, -(-len(recent) // PAGE_SIZE))
     pages_dir = out_dir / "pages"
-    pages_dir.mkdir(parents=True, exist_ok=True)
-    for i in range(total_pages):
-        chunk = recent.iloc[i * PAGE_SIZE:(i + 1) * PAGE_SIZE]
-        payload = {
-            "page": i + 1,
-            "total_pages": total_pages,
-            "rows": [_row_values(r) for _, r in chunk.iterrows()],
-        }
-        (pages_dir / f"{i + 1}.json").write_text(json.dumps(payload))
-    return total_pages
+    if pages_dir.exists():
+        shutil.rmtree(pages_dir)  # drop stale chunks from previous layouts
+
+    def write_set(name: str, frame: pd.DataFrame) -> int:
+        total = -(-len(frame) // PAGE_SIZE) if len(frame) else 0
+        set_dir = pages_dir / name
+        set_dir.mkdir(parents=True, exist_ok=True)
+        for i in range(total):
+            chunk = frame.iloc[i * PAGE_SIZE:(i + 1) * PAGE_SIZE]
+            payload = {
+                "page": i + 1,
+                "total_pages": total,
+                "rows": [_row_values(r) for _, r in chunk.iterrows()],
+            }
+            (set_dir / f"{i + 1}.json").write_text(json.dumps(payload))
+        return total
+
+    counts = {"all": write_set("all", recent)}
+    for st, frame in recent.groupby("state"):
+        if isinstance(st, str) and len(st) == 2:
+            counts[st] = write_set(st, frame)
+    return counts
 
 
 # ---------------------------------------------------------------------------
@@ -449,7 +467,8 @@ footer {{ color:var(--muted); font-size:12.5px; text-align:center;
   <section>
     <h2>All notices</h2>
     <div class="desc">Every record, newest first, {page_size} per page —
-      pages load on demand so the site stays fast. Bulk access:
+      pages load on demand so the site stays fast. Picking a state pages
+      through that state's full history. Bulk access:
       <a href="data.json">data.json</a>.
       Filter: <select id="stfilter"><option value="">All states</option>
       {state_options}
@@ -486,22 +505,20 @@ footer {{ color:var(--muted); font-size:12.5px; text-align:center;
   EXPANSION_RESEARCH.md</a>.
 </footer>
 <script>
-var TOTAL_PAGES = {total_pages};
+var PAGE_COUNTS = {page_counts};
+var currentSet = 'all';
 var currentPage = 1;
 
-function applyFilters() {{
-  var st = document.getElementById('stfilter').value;
+function applySearch() {{
   var q = document.getElementById('cofilter').value.toLowerCase();
   var shown = 0;
   document.querySelectorAll('#recent tbody tr').forEach(function (tr) {{
-    var stOk = !st || tr.dataset.state === st;
-    var qOk = !q || tr.cells[1].textContent.toLowerCase().indexOf(q) !== -1;
-    var on = stOk && qOk;
+    var on = !q || tr.cells[1].textContent.toLowerCase().indexOf(q) !== -1;
     tr.style.display = on ? '' : 'none';
     if (on) shown++;
   }});
   document.getElementById('filternote').textContent =
-    (st || q) ? shown + ' match(es) on this page — filters apply per page' : '';
+    q ? shown + ' match(es) on this page — search applies per page' : '';
 }}
 
 function renderRows(rows) {{
@@ -519,19 +536,28 @@ function renderRows(rows) {{
     }});
     tbody.appendChild(tr);
   }});
-  applyFilters();
+  applySearch();
 }}
 
 function gotoPage(n) {{
-  n = Math.max(1, Math.min(TOTAL_PAGES, n));
-  fetch('pages/' + n + '.json')
+  var total = PAGE_COUNTS[currentSet] || 0;
+  var label = currentSet === 'all' ? '' : ' — ' + currentSet + ' only';
+  if (!total) {{
+    renderRows([]);
+    document.getElementById('pginfo').textContent = 'No dated records' + label;
+    return;
+  }}
+  n = Math.max(1, Math.min(total, n));
+  fetch('pages/' + currentSet + '/' + n + '.json')
     .then(function (r) {{ return r.json(); }})
     .then(function (p) {{
       currentPage = p.page;
       renderRows(p.rows);
       document.getElementById('pginfo').textContent =
-        'Page ' + p.page + ' of ' + p.total_pages;
-      document.getElementById('pgjump').value = p.page;
+        'Page ' + p.page + ' of ' + p.total_pages + label;
+      var jump = document.getElementById('pgjump');
+      jump.value = p.page;
+      jump.max = p.total_pages;
     }});
 }}
 
@@ -544,8 +570,11 @@ document.getElementById('nextpg').addEventListener('click', function () {{
 document.getElementById('pgjump').addEventListener('change', function () {{
   gotoPage(parseInt(this.value, 10) || 1);
 }});
-document.getElementById('stfilter').addEventListener('change', applyFilters);
-document.getElementById('cofilter').addEventListener('input', applyFilters);
+document.getElementById('stfilter').addEventListener('change', function () {{
+  currentSet = this.value || 'all';
+  gotoPage(1);
+}});
+document.getElementById('cofilter').addEventListener('input', applySearch);
 </script>
 </body>
 </html>
@@ -583,7 +612,8 @@ def build_us_site(
         if code not in codes
     )
 
-    total_pages = _write_pages(df, out_dir)
+    page_counts = _write_pages(df, out_dir)
+    total_pages = page_counts["all"]
     updated = str(kpis["last_updated"])[:10]
     n_live = kpis["states_live"]
     live_badge = (
@@ -614,6 +644,7 @@ def build_us_site(
         recent_rows=_recent_rows(df),
         page_size=PAGE_SIZE,
         total_pages=total_pages,
+        page_counts=json.dumps(page_counts),
     )
 
     out_dir.mkdir(parents=True, exist_ok=True)
