@@ -408,16 +408,35 @@ def chart_us_top_companies(df: pd.DataFrame, save_png: bool = False) -> go.Figur
     """Top 20 employers by employees affected — dropdown over each recent year."""
 
     def ranked(frame: pd.DataFrame) -> pd.DataFrame:
-        top = (
-            frame.groupby("company")["employees"]
-            .sum()
-            .sort_values(ascending=True)
-            .tail(20)
-            .reset_index()
+        work = frame[frame["employees"] > 0].copy()
+        # Merge trivial name variants ("Meta Platforms, Inc." vs "…, Inc"):
+        # group on a normalized key, display the most common original form.
+        work["norm"] = (
+            work["company"].astype(str).str.strip()
+            .str.replace(r"\s+", " ", regex=True)
+            .str.rstrip(".,")
+            .str.casefold()
         )
-        top = top[top["employees"] > 0]
-        # Short labels + automargin keep the plot usable on phone widths.
-        top["label"] = top["company"].str.slice(0, 26)
+        top = (
+            work.groupby("norm")
+            .agg(
+                employees=("employees", "sum"),
+                company=("company", lambda s: s.value_counts().idxmax()),
+            )
+            .sort_values("employees", ascending=True)
+            .tail(20)
+            .reset_index(drop=True)
+        )
+        # Axis labels: ellipsized for width, made unique with invisible
+        # hair-spaces so plotly never merges two companies into one row.
+        labels, seen = [], set()
+        for name in top["company"]:
+            lbl = name if len(name) <= 32 else name[:31] + "…"
+            while lbl in seen:
+                lbl += " "
+            seen.add(lbl)
+            labels.append(lbl)
+        top["label"] = labels
         return top
 
     frames = [(label, ranked(frame)) for label, frame in _year_frames(df)]
@@ -426,11 +445,12 @@ def chart_us_top_companies(df: pd.DataFrame, save_png: bool = False) -> go.Figur
         fig.add_bar(
             x=t["employees"], y=t["label"], orientation="h",
             name=label, marker_color=ACCENT, visible=(i == 0),
+            customdata=t["company"],
             text=[f"{v:,.0f}" for v in t["employees"]],
             textposition="outside",
             textfont=dict(size=10, color="#8b949e"),
             cliponaxis=False,
-            hovertemplate=("<b>%{y}</b><br>%{x:,} employees"
+            hovertemplate=("<b>%{customdata}</b><br>%{x:,} employees"
                            "<extra>%{fullData.name}</extra>"),
         )
     fig.update_layout(xaxis_title="Employees affected", yaxis_title="",
