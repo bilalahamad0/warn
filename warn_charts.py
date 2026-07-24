@@ -923,6 +923,12 @@ UNAVAILABLE_STATES = {
     "MO": ("Missouri", "feed bot-walled (Imperva); scraper ready and waiting"),
 }
 
+# States with data but a known feed gap — appended to out-of-coverage hovers
+# so "no data for <year>" comes with its reason.
+PARTIAL_COVERAGE_NOTES = {
+    "TX": "live feed bot-walled (AWS WAF) — historical archive only",
+}
+
 
 def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
     """US choropleth of WARN activity by state, filterable by metric and year.
@@ -961,13 +967,38 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
     all_codes = sorted({(r.get("state") or "").upper() for r in records
                         if len((r.get("state") or "")) == 2})
 
+    # Each state's coverage window, so a year outside it reads as "no data",
+    # never as a genuine zero.
+    coverage: dict = {}
+    for r in records:
+        st = (r.get("state") or "").upper()
+        y = _record_year(r)
+        if len(st) == 2 and y.isdigit():
+            lo, hi = coverage.get(st, (9999, 0))
+            coverage[st] = (min(lo, int(y)), max(hi, int(y)))
+
     def z_text(year: str, metric: str) -> tuple:
         agg = totals(year)
         z, text = [], []
         for code in all_codes:
-            a = agg.get(code, {"employees": 0, "notices": 0})
-            z.append(a[metric])
             name = states_meta.get(code, {}).get("name", code)
+            a = agg.get(code)
+            if a is None and year != "All years":
+                # Nothing this year: distinguish a coverage gap from a
+                # genuinely quiet year.
+                z.append(0)
+                lo, hi = coverage.get(code, (None, None))
+                if lo is not None and not (lo <= int(year) <= hi):
+                    line = f"no data for {year} — coverage {lo}–{hi}"
+                    note = PARTIAL_COVERAGE_NOTES.get(code)
+                    if note:
+                        line += f"<br>{note}"
+                else:
+                    line = f"no WARN notices recorded in {year}"
+                text.append(f"<b>{name}</b><br>{line}")
+                continue
+            a = a or {"employees": 0, "notices": 0}
+            z.append(a[metric])
             # Several feeds omit headcounts; 0-with-notices means "not
             # reported", never "nobody affected" — say so.
             if a["notices"] and not a["employees"]:
