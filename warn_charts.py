@@ -942,11 +942,13 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
 
     years = sorted({y for y in (_record_year(r) for r in records) if y.isdigit()},
                    reverse=True)[:6]
-    # Current year leads and is the default view; all-time and prior years
-    # stay one click away in the dropdown.
+    # All-time heads the list; the current year is still the default view
+    # (selected via the menu's `active` index below).
     current_year = str(datetime.now(timezone.utc).year)
-    year_options = [y for y in [current_year] if y in years]
-    year_options += ["All years"] + [y for y in years if y != current_year]
+    year_options = ["All years"]
+    year_options += [y for y in [current_year] if y in years]
+    year_options += [y for y in years if y != current_year]
+    default_year = current_year if current_year in years else "All years"
 
     # Aggregate (year, state) -> employees / notices.
     def totals(year: str) -> dict:
@@ -1017,7 +1019,7 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
             return 1
         return max(1, int(np.percentile(positive, 95)))
 
-    z0, text0 = z_text(year_options[0], "employees")
+    z0, text0 = z_text(default_year, "employees")
     fig = go.Figure(
         go.Choropleth(
             locations=all_codes,
@@ -1077,7 +1079,7 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
         return locs, texts
 
     # Distinct "no data" layer, drawn on top so it wins over the base fill.
-    miss_locs0, miss_text0 = missing_for(year_options[0])
+    miss_locs0, miss_text0 = missing_for(default_year)
     fig.add_trace(
         go.Choropleth(
             locations=miss_locs0,
@@ -1121,6 +1123,9 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
         updatemenus=[
             dict(
                 buttons=buttons,
+                # Highlight the default view (current year · employees) even
+                # though "All years" heads the list.
+                active=year_options.index(default_year) * len(metrics),
                 direction="down",
                 x=0.01, y=1.12, xanchor="left", yanchor="top",
                 bgcolor=CARD_BG,
