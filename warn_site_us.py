@@ -214,6 +214,115 @@ def _year_menu(fig: go.Figure, labels: list) -> go.Figure:
     return fig
 
 
+# Qualitative palette for multi-line comparisons, tuned for the dark theme.
+LINE_COLORS = [
+    "#58a6ff", "#f78166", "#3fb950", "#d29922", "#bc8cff",
+    "#39c5cf", "#f85149", "#7ce38b", "#ffa657", "#79c0ff",
+]
+
+_MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+           "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+
+def chart_us_monthly_years(df: pd.DataFrame, save_png: bool = False) -> go.Figure:
+    """Seasonal comparison: one line per year, employees by calendar month."""
+    dated = df[df["event_date"].notna()].copy()
+    dated["year"] = dated["event_date"].dt.year
+    dated["month"] = dated["event_date"].dt.month
+    years = sorted(dated["year"].unique(), reverse=True)[:6]
+    now = pd.Timestamp.now()
+
+    fig = go.Figure()
+    for i, year in enumerate(sorted(years)):
+        ydf = dated[dated["year"] == year]
+        by_month = ydf.groupby("month")["employees"].sum()
+        # Months not yet reached in the current year stay blank, not zero.
+        last_month = now.month if year == now.year else 12
+        y_vals = [
+            int(by_month.get(m, 0)) if m <= last_month else None
+            for m in range(1, 13)
+        ]
+        is_current = year == now.year
+        fig.add_scatter(
+            x=_MONTHS, y=y_vals, name=str(year),
+            mode="lines+markers",
+            line=dict(
+                color=LINE_COLORS[i % len(LINE_COLORS)],
+                width=3.5 if is_current else 1.8,
+            ),
+            marker=dict(size=7 if is_current else 5),
+            hovertemplate="%{x} " + str(year) + "<br>%{y:,} employees"
+                          "<extra></extra>",
+        )
+    fig.update_layout(
+        yaxis_title="Employees affected",
+        legend=dict(orientation="h", y=1.1),
+        annotations=[dict(
+            text=f"{now.strftime('%b %Y')} is in progress",
+            x=0.99, y=0.02, xref="paper", yref="paper",
+            xanchor="right", yanchor="bottom",
+            showarrow=False, font=dict(size=11, color="#8b949e"),
+        )],
+    )
+    fig = _apply_theme(fig)
+    warn_charts._save_chart(fig, "us_monthly_years", save_png)
+    return fig
+
+
+def chart_us_states_years(df: pd.DataFrame, save_png: bool = False) -> go.Figure:
+    """Top states compared across years — one line per state.
+
+    Years outside a state's coverage window render as gaps, never as
+    misleading zeros. Legend entries toggle lines on/off.
+    """
+    dated = df[df["event_date"].notna()].copy()
+    dated["year"] = dated["event_date"].dt.year
+    years = sorted(dated["year"].unique(), reverse=True)[:10]
+    years = sorted(years)
+    window = dated[dated["year"].isin(years)]
+
+    top_states = (
+        window.groupby("state")["employees"].sum()
+        .sort_values(ascending=False).head(10).index.tolist()
+    )
+    coverage = dated.groupby("state")["year"].agg(["min", "max"])
+
+    fig = go.Figure()
+    for i, st in enumerate(top_states):
+        sdf = window[window["state"] == st]
+        by_year = sdf.groupby("year")["employees"].sum()
+        lo, hi = coverage.loc[st, "min"], coverage.loc[st, "max"]
+        y_vals = [
+            int(by_year.get(y, 0)) if lo <= y <= hi else None
+            for y in years
+        ]
+        fig.add_scatter(
+            x=years, y=y_vals, name=st,
+            mode="lines+markers",
+            connectgaps=False,
+            line=dict(color=LINE_COLORS[i % len(LINE_COLORS)], width=2),
+            marker=dict(size=6),
+            hovertemplate="<b>" + st + "</b> %{x}<br>%{y:,} employees"
+                          "<extra></extra>",
+        )
+    fig.update_layout(
+        yaxis_title="Employees affected",
+        xaxis=dict(dtick=1),
+        legend=dict(orientation="h", y=1.12),
+        height=520,
+        annotations=[dict(
+            text="top 10 states by volume — click legend entries to "
+                 "toggle; gaps = outside that state's coverage",
+            x=0.99, y=0.02, xref="paper", yref="paper",
+            xanchor="right", yanchor="bottom",
+            showarrow=False, font=dict(size=11, color="#8b949e"),
+        )],
+    )
+    fig = _apply_theme(fig)
+    warn_charts._save_chart(fig, "us_states_years", save_png)
+    return fig
+
+
 def chart_us_top_states(df: pd.DataFrame, save_png: bool = False) -> go.Figure:
     """States ranked by employees affected — dropdown over each recent year.
 
@@ -488,11 +597,27 @@ footer {{ color:var(--muted); font-size:12.5px; text-align:center;
   </section>
 
   <section>
+    <h2>Monthly comparison by year</h2>
+    <div class="desc">The same calendar months overlaid across recent
+      years — seasonal patterns and unusual months stand out. The current
+      year draws thicker.</div>
+    <div class="chart">{monthly_years_div}</div>
+  </section>
+
+  <section>
     <h2>States ranked</h2>
     <div class="desc">Employees affected per state — pick any recent year
       or all time from the dropdown. Coverage depth varies by state;
       states without reported headcounts for the window are omitted.</div>
     <div class="chart">{states_div}</div>
+  </section>
+
+  <section>
+    <h2>States over the years</h2>
+    <div class="desc">Year-by-year employees affected for the top 10
+      states — click legend entries to add or remove states from the
+      comparison.</div>
+    <div class="chart">{states_years_div}</div>
   </section>
 
   <section>
@@ -637,7 +762,9 @@ def build_us_site(
 
     # Charts (fragments in docs/charts/; the US map is chart 12 from warn_charts)
     chart_us_monthly(df)
+    chart_us_monthly_years(df)
     chart_us_top_states(df)
+    chart_us_states_years(df)
     chart_us_top_companies(df)
 
     codes = sorted(c for c in df["state"].unique() if len(c) == 2)
@@ -675,7 +802,9 @@ def build_us_site(
         total_employees=_fmt(kpis["total_employees"]),
         map_div=_chart_div("12_us_map"),
         monthly_div=_chart_div("us_monthly"),
+        monthly_years_div=_chart_div("us_monthly_years"),
         states_div=_chart_div("us_top_states"),
+        states_years_div=_chart_div("us_states_years"),
         companies_div=_chart_div("us_top_companies"),
         state_options=state_options,
         unavailable_options=unavailable_options,
