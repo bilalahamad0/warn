@@ -1,9 +1,9 @@
 {
-  "total_records": 36,
-  "total_employees": 2560,
+  "total_records": 40,
+  "total_employees": 2787,
   "date_range_start": "2026-06-26",
-  "date_range_end": "2026-07-20",
-  "last_updated": "2026-07-23T13:34:07.541369+00:00Z",
+  "date_range_end": "2026-07-22",
+  "last_updated": "2026-07-24T13:26:16.661221+00:00Z",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "records": [
     {
@@ -29,6 +29,18 @@
       "city": "",
       "address": "1259 E Colton Avenue  Redlands CA 92374",
       "industry": "72 Accommodation and Food Services"
+    },
+    {
+      "state": "CA",
+      "company": "NBCUniversal Media, LLC - 1320",
+      "notice_date": "2026-07-17",
+      "effective_date": "2026-08-28",
+      "employees": 3,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "100 Universal City Plaza, Bldg. 1320  Universal City CA 91608",
+      "industry": "71 Arts Entertainment and Recreation"
     },
     {
       "state": "CA",
@@ -80,18 +92,6 @@
     },
     {
       "state": "CA",
-      "company": "NBCUniversal Media, LLC - 1320",
-      "notice_date": "2026-07-17",
-      "effective_date": "2026-08-28",
-      "employees": 3,
-      "layoff_type": "Layoff Permanent",
-      "county": "Los Angeles County",
-      "city": "",
-      "address": "100 Universal City Plaza, Bldg. 1320  Universal City CA 91608",
-      "industry": "71 Arts Entertainment and Recreation"
-    },
-    {
-      "state": "CA",
       "company": "Athwal FDS Corporation",
       "notice_date": "2026-06-30",
       "effective_date": "2026-08-30",
@@ -128,18 +128,6 @@
     },
     {
       "state": "CA",
-      "company": "Chevron",
-      "notice_date": "2026-07-01",
-      "effective_date": "2026-09-01",
-      "employees": 180,
-      "layoff_type": "Layoff Permanent",
-      "county": "Contra Costa County",
-      "city": "",
-      "address": "5001 Executive Parkway, Suite 200  San Ramon CA 94583",
-      "industry": "21 Mining Quarrying Oil and Gas Exraction"
-    },
-    {
-      "state": "CA",
       "company": "McDonald's Corporation",
       "notice_date": "2026-06-30",
       "effective_date": "2026-09-01",
@@ -149,6 +137,18 @@
       "city": "",
       "address": "17030 Green Drive  City of Industry CA 91745",
       "industry": "72 Accommodation and Food Services"
+    },
+    {
+      "state": "CA",
+      "company": "Chevron",
+      "notice_date": "2026-07-01",
+      "effective_date": "2026-09-01",
+      "employees": 180,
+      "layoff_type": "Layoff Permanent",
+      "county": "Contra Costa County",
+      "city": "",
+      "address": "5001 Executive Parkway, Suite 200  San Ramon CA 94583",
+      "industry": "21 Mining Quarrying Oil and Gas Exraction"
     },
     {
       "state": "CA",
@@ -260,15 +260,15 @@
     },
     {
       "state": "CA",
-      "company": "Coursera, Inc.",
+      "company": "Udemy, Inc.",
       "notice_date": "2026-07-14",
       "effective_date": "2026-09-11",
-      "employees": 31,
+      "employees": 28,
       "layoff_type": "Layoff Permanent",
-      "county": "Santa Clara County",
+      "county": "San Francisco County",
       "city": "",
-      "address": "2440West El Camino Real, Suite 500  Mountain View CA 94040",
-      "industry": "54 Professional Scientific and Technical Services"
+      "address": "600 Harrison Street, 3rd Floor  San Francisco CA 94107",
+      "industry": "61 Educational Services"
     },
     {
       "state": "CA",
@@ -284,15 +284,15 @@
     },
     {
       "state": "CA",
-      "company": "Udemy, Inc.",
+      "company": "Coursera, Inc.",
       "notice_date": "2026-07-14",
       "effective_date": "2026-09-11",
-      "employees": 28,
+      "employees": 31,
       "layoff_type": "Layoff Permanent",
-      "county": "San Francisco County",
+      "county": "Santa Clara County",
       "city": "",
-      "address": "600 Harrison Street, 3rd Floor  San Francisco CA 94107",
-      "industry": "61 Educational Services"
+      "address": "2440West El Camino Real, Suite 500  Mountain View CA 94040",
+      "industry": "54 Professional Scientific and Technical Services"
     },
     {
       "state": "CA",
@@ -332,18 +332,6 @@
     },
     {
       "state": "CA",
-      "company": "Wind & Sea Restaurant",
-      "notice_date": "2026-07-14",
-      "effective_date": "2026-09-15",
-      "employees": 198,
-      "layoff_type": "Closure Permanent",
-      "county": "Orange County",
-      "city": "",
-      "address": "34699 Golden Lantern  Dana Point CA 92629",
-      "industry": "72 Accommodation and Food Services"
-    },
-    {
-      "state": "CA",
       "company": "Kingdom Animalia, LLC (Hourglass Cosmetics)",
       "notice_date": "2026-07-02",
       "effective_date": "2026-09-15",
@@ -356,6 +344,18 @@
     },
     {
       "state": "CA",
+      "company": "Wind & Sea Restaurant",
+      "notice_date": "2026-07-14",
+      "effective_date": "2026-09-15",
+      "employees": 198,
+      "layoff_type": "Closure Permanent",
+      "county": "Orange County",
+      "city": "",
+      "address": "34699 Golden Lantern  Dana Point CA 92629",
+      "industry": "72 Accommodation and Food Services"
+    },
+    {
+      "state": "CA",
       "company": "Phillips 66",
       "notice_date": "2026-07-16",
       "effective_date": "2026-09-16",
@@ -364,6 +364,18 @@
       "county": "Los Angeles County",
       "city": "",
       "address": "1660 W. Anaheim Street  Wilmington CA 90744",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Ventura Coastal",
+      "notice_date": "2026-07-15",
+      "effective_date": "2026-09-18",
+      "employees": 71,
+      "layoff_type": "Layoff Temporary",
+      "county": "Tulare County",
+      "city": "",
+      "address": "531 W. Poplar Avenue  Tipton CA 93272",
       "industry": "31-33 Manufacturing"
     },
     {
@@ -380,15 +392,39 @@
     },
     {
       "state": "CA",
-      "company": "Ventura Coastal",
-      "notice_date": "2026-07-15",
-      "effective_date": "2026-09-18",
-      "employees": 71,
-      "layoff_type": "Layoff Temporary",
-      "county": "Tulare County",
+      "company": "CraftForce Services, Inc. (2330 Circadian Way)",
+      "notice_date": "2026-07-22",
+      "effective_date": "2026-09-20",
+      "employees": 51,
+      "layoff_type": "Closure Permanent",
+      "county": "Sonoma County",
       "city": "",
-      "address": "531 W. Poplar Avenue  Tipton CA 93272",
-      "industry": "31-33 Manufacturing"
+      "address": "2330 Circadian Way  Santa Rosa CA 95407",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
+    },
+    {
+      "state": "CA",
+      "company": "CraftForce Services, Inc. (2753 Giffen Avenue)",
+      "notice_date": "2026-07-22",
+      "effective_date": "2026-09-20",
+      "employees": 7,
+      "layoff_type": "Closure Permanent",
+      "county": "Sonoma County",
+      "city": "",
+      "address": "2753 Giffen Avenue  Santa Rosa CA 95407",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
+    },
+    {
+      "state": "CA",
+      "company": "New Leaf Community Markets, Inc.",
+      "notice_date": "2026-07-21",
+      "effective_date": "2026-09-20",
+      "employees": 61,
+      "layoff_type": "Closure Permanent",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "5667 Silver Creek Valley Road  San Jose CA 95138",
+      "industry": "44-45 Retail Trade"
     },
     {
       "state": "CA",
@@ -413,6 +449,18 @@
       "city": "",
       "address": "4941 Allison Parkway, Suite B  Vacaville CA 95688",
       "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "state": "CA",
+      "company": "Pixar",
+      "notice_date": "2026-07-21",
+      "effective_date": "2026-09-26",
+      "employees": 108,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "1200 Park Avenue  Emeryville CA 94608",
+      "industry": "71 Arts Entertainment and Recreation"
     },
     {
       "state": "CA",

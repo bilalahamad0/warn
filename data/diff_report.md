@@ -1,36 +1,37 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-07-24 13:41:02 UTC
+**Generated:** 2026-07-25 01:58:55 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 36 | 40 | +4/+0 |
-| Total employees | 2,560 | 2,787 | +227 |
+| Total records | 40 | 36 | +0/+4 |
+| Total employees | 2,787 | 2,560 | -227 |
 
-### ✅ New Entries (4 records)
+### ✅ No new entries.
 
-| Company | Employees | Effective Date | County |
-|---------|-----------|----------------|--------|
-| Pixar | 108 | 2026-09-26 | Alameda County |
-| New Leaf Community Markets, Inc. | 61 | 2026-09-20 | Santa Clara County |
-| CraftForce Services, Inc. (2330 Circadian Way) | 51 | 2026-09-20 | Sonoma County |
-| CraftForce Services, Inc. (2753 Giffen Avenue) | 7 | 2026-09-20 | Sonoma County |
+### ❌ Removed Entries (4 records)
+
+| Company | Employees | Effective Date |
+|---------|-----------|----------------|
+| Pixar | 108 | 2026-09-26 |
+| New Leaf Community Markets, Inc. | 61 | 2026-09-20 |
+| CraftForce Services, Inc. (2330 Circadian Way) | 51 | 2026-09-20 |
+| CraftForce Services, Inc. (2753 Giffen Avenue) | 7 | 2026-09-20 |
 
 ---
 ## 📁 File vs Git Comparison
 
-- **Local `file.xlsx` hash:** `5c1749521e248b55d585b8c641267127`
+- **Local `file.xlsx` hash:** `2c73db1b759812982a57b17b77afa3c5`
 - **Committed hash:**          `2c73db1b759812982a57b17b77afa3c5`
-- 🔴 **Local file differs from committed version**
+- ✅ Local file matches committed version
 
 **Git status:**
 ```
 M .coverage
  M data/changelog.jsonl
- M data/meta.json
  M data/states/ak/changelog.jsonl
  M data/states/ak/warn_cumulative.json
  M data/states/ak/warn_latest.json
@@ -46,8 +47,6 @@ M .coverage
  M data/states/az/warn_snapshot.json
  M data/states/co/changelog.jsonl
  M data/states/co/meta.json
- M data/states/co/raw_download
- M data/states/co/sheet_2026.html
  M data/states/co/warn_cumulative.json
  M data/states/co/warn_latest.json
  M data/states/co/warn_snapshot.json
@@ -77,6 +76,7 @@ M .coverage
  M data/states/ga/warn_snapshot.json
  M data/states/hi/changelog.jsonl
  M data/states/hi/meta.json
+ M data/states/hi/raw_download
  M data/states/hi/warn_cumulative.json
  M data/states/hi/warn_latest.json
  M data/states/hi/warn_snapshot.json
@@ -145,12 +145,12 @@ M .coverage
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
- M data/states/mt/meta.json
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
  M data/states/nc/changelog.jsonl
  M data/states/nc/meta.json
+ M data/states/nc/raw_download
  M data/states/nc/warn_cumulative.json
  M data/states/nc/warn_latest.json
  M data/states/nc/warn_snapshot.json
@@ -160,7 +160,6 @@ M .coverage
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
- M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
@@ -197,7 +196,6 @@ M .coverage
  M data/states/or/warn_snapshot.json
  M data/states/pa/changelog.jsonl
  M data/states/pa/meta.json
- M data/states/pa/raw_download
  M data/states/pa/warn_cumulative.json
  M data/states/pa/warn_latest.json
  M data/states/pa/warn_snapshot.json
@@ -221,6 +219,7 @@ M .coverage
  M data/states/tn/warn_latest.json
  M data/states/tn/warn_snapshot.json
  M data/states/ut/changelog.jsonl
+ M data/states/ut/meta.json
  M data/states/ut/warn_cumulative.json
  M data/states/ut/warn_latest.json
  M data/states/ut/warn_snapshot.json
@@ -237,7 +236,6 @@ M .coverage
  M data/states/vt/warn_snapshot.json
  M data/states/wa/changelog.jsonl
  M data/states/wa/meta.json
- M data/states/wa/raw_download
  M data/states/wa/warn_cumulative.json
  M data/states/wa/warn_latest.json
  M data/states/wa/warn_snapshot.json
@@ -260,21 +258,21 @@ M .coverage
  M docs/charts/us_top_companies.html
  M docs/charts/us_top_states.html
  M docs/us/index.html
- M file.xlsx
 ```
 
 **Recent commits:**
 ```
+4eb7401 auto: WARN data update [skip ci]
 bcd5958 feat: California deep history 2014-2026 in the national dataset
 c6fda53 feat: page navigator above the All-notices table too
 1d35efd tweak: By-year mode dropdown becomes side-by-side radio buttons
 71cb370 tweak: year dropdown sits right after the metric radio (pixel pad, not paper coords)
-6c16452 feat: map metric radio + years-only dropdown; per-source history plumbing
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-07-25T01:43:02.893410+00:00Z` — +0 added, -4 removed, 0 employees (new)
 - `2026-07-24T13:26:16.660374+00:00Z` — +4 added, -0 removed, 227 employees (new)
 - `2026-07-23T13:34:07.540528+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-23T09:09:15.606772+00:00Z` — +12 added, -1263 removed, 921 employees (new)
@@ -284,4 +282,3 @@ c6fda53 feat: page navigator above the All-notices table too
 - `2026-07-20T01:52:38.922006+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-19T12:51:03.448616+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-19T01:27:50.430750+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-07-18T12:47:56.184152+00:00Z` — +0 added, -0 removed, 0 employees (new)

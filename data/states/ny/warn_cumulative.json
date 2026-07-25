@@ -1,9 +1,9 @@
 {
-  "total_records": 4762,
-  "total_employees": 415212,
+  "total_records": 4766,
+  "total_employees": 415486,
   "date_range_start": "2016-01-04",
-  "date_range_end": "2026-06-12",
-  "last_updated": "2026-07-24T13:37:34.936948+00:00Z",
+  "date_range_end": "2026-07-21",
+  "last_updated": "2026-07-25T01:55:22.196096+00:00Z",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -57149,6 +57149,54 @@
       "address": "",
       "industry": "",
       "state": "NY"
+    },
+    {
+      "state": "NY",
+      "company": "Apple Bank",
+      "notice_date": "2026-04-30",
+      "effective_date": "2026-08-31",
+      "employees": 26,
+      "layoff_type": "Layoff Permanent",
+      "county": "Westchester",
+      "city": "",
+      "address": "1075 Central Park Ave Scarsdale, NY, 10583",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Maximus, Inc.",
+      "notice_date": "2026-03-31",
+      "effective_date": "2026-06-30",
+      "employees": 176,
+      "layoff_type": "Layoff Permanent",
+      "county": "Monroe",
+      "city": "",
+      "address": "3750 Monroe Ave, Suite 700 Pittsford, NY, 14534",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Novanta Corporation",
+      "notice_date": "2026-07-21",
+      "effective_date": "2027-03-31",
+      "employees": 49,
+      "layoff_type": "Closure Permanent",
+      "county": "Onondaga",
+      "city": "",
+      "address": "7279 William Barry Boulevard North Syracuse, NY, 13212",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "NYY Steak LLC",
+      "notice_date": "2026-07-02",
+      "effective_date": "2026-09-30",
+      "employees": 23,
+      "layoff_type": "Closure Permanent",
+      "county": "Bronx",
+      "city": "",
+      "address": "1 E 161st St Bronx, NY, 10451",
+      "industry": ""
     }
   ]
 }

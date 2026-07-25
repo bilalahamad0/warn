@@ -1,9 +1,9 @@
 {
   "total_records": 368,
-  "total_employees": 34058,
+  "total_employees": 34068,
   "date_range_start": "2022-01-25",
   "date_range_end": "2026-07-22",
-  "last_updated": "2026-07-24T13:36:34.256060+00:00Z",
+  "last_updated": "2026-07-25T01:53:48.690750+00:00Z",
   "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
   "records": [
     {
@@ -3815,7 +3815,7 @@
       "company": "SMBC MANUBANK",
       "notice_date": "2026-01-08",
       "effective_date": "2026-08-03",
-      "employees": 9,
+      "employees": 19,
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "New York NY",
@@ -4342,7 +4342,7 @@
       "state": "NC",
       "company": "Asensus Surgical, Inc.",
       "notice_date": "2026-06-16",
-      "effective_date": "2027-03-01",
+      "effective_date": "2027-03-31",
       "employees": 108,
       "layoff_type": "Layoff Permanent",
       "county": "Wake",

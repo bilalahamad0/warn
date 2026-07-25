@@ -1,9 +1,9 @@
 {
-  "total_records": 1339,
-  "total_employees": 114124,
+  "total_records": 1340,
+  "total_employees": 114128,
   "date_range_start": "2010-01-07",
-  "date_range_end": "2026-07-20",
-  "last_updated": "2026-07-24T13:34:06.343247+00:00Z",
+  "date_range_end": "2026-07-24",
+  "last_updated": "2026-07-25T01:51:24.529325+00:00Z",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -16073,6 +16073,18 @@
       "city": "",
       "address": "11850 Pika Drive, Waldorf, MD",
       "industry": "423310"
+    },
+    {
+      "state": "MD",
+      "company": "RP Professional Services LLC",
+      "notice_date": "2026-07-24",
+      "effective_date": "2026-09-24",
+      "employees": 4,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Statewide",
+      "city": "",
+      "address": "44927 George Washington Blvd. Ashburn, VA 20147",
+      "industry": "541611"
     }
   ]
 }

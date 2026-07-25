@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-24T13:41:02.526560+00:00Z",
+  "last_updated": "2026-07-25T01:58:55.920283+00:00Z",
   "states_live": 47,
-  "total_records": 58924,
-  "total_employees": 6397865,
+  "total_records": 58930,
+  "total_employees": 6398167,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -78,7 +78,7 @@
       "name": "Hawaii",
       "agency": "Hawaii Workforce Development Council",
       "source_url": "https://labor.hawaii.gov/wdc/real-time-warn-updates/",
-      "total_records": 452,
+      "total_records": 453,
       "total_employees": 0
     },
     "IA": {
@@ -100,7 +100,7 @@
       "agency": "Illinois Department of Commerce and Economic Opportunity",
       "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
       "total_records": 4867,
-      "total_employees": 668656
+      "total_employees": 668670
     },
     "IN": {
       "name": "Indiana",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1339,
-      "total_employees": 114124
+      "total_records": 1340,
+      "total_employees": 114128
     },
     "ME": {
       "name": "Maine",
@@ -184,7 +184,7 @@
       "agency": "North Carolina Department of Commerce",
       "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
       "total_records": 366,
-      "total_employees": 33965
+      "total_employees": 33975
     },
     "ND": {
       "name": "North Dakota",
@@ -225,8 +225,8 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 4762,
-      "total_employees": 415212
+      "total_records": 4766,
+      "total_employees": 415486
     },
     "OH": {
       "name": "Ohio",
@@ -262024,6 +262024,18 @@
       "industry": ""
     },
     {
+      "state": "HI",
+      "company": "Bayer Research and Development Services",
+      "notice_date": "2026-07-22",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "IA",
       "company": "CNH Industrial America LLC",
       "notice_date": "2026-01-20",
@@ -279146,18 +279158,6 @@
       "city": "Matteson",
       "address": "21430 S Cicero Ave.",
       "industry": "Retail Trade"
-    },
-    {
-      "state": "IL",
-      "company": "Hyster-Yale Materials Handling, Inc.",
-      "notice_date": "2026-03-31",
-      "effective_date": null,
-      "employees": 76,
-      "layoff_type": "Layoff",
-      "county": "Vermilion County",
-      "city": "Danville",
-      "address": "1010 E Fairchild St",
-      "industry": "Wholesale Trade"
     },
     {
       "state": "IL",
@@ -333856,6 +333856,18 @@
       "industry": "Transportation and Warehousing"
     },
     {
+      "state": "IL",
+      "company": "Hyster-Yale Materials Handling, Inc.",
+      "notice_date": "2026-03-31",
+      "effective_date": null,
+      "employees": 90,
+      "layoff_type": "Layoff",
+      "county": "Vermilion County",
+      "city": "Danville",
+      "address": "1010 E Fairchild St",
+      "industry": "Wholesale Trade"
+    },
+    {
       "state": "IN",
       "company": "Thyssenkrupp Presta North America",
       "notice_date": "2026-06-30",
@@ -382834,6 +382846,18 @@
       "industry": "423310"
     },
     {
+      "state": "MD",
+      "company": "RP Professional Services LLC",
+      "notice_date": "2026-07-24",
+      "effective_date": "2026-09-24",
+      "employees": 4,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Statewide",
+      "city": "",
+      "address": "44927 George Washington Blvd. Ashburn, VA 20147",
+      "industry": "541611"
+    },
+    {
       "state": "ME",
       "company": "SMBC-Sumitomo Mitsui Banking Corporation",
       "notice_date": "2026-01-13",
@@ -404756,18 +404780,6 @@
     },
     {
       "state": "NC",
-      "company": "SMBC MANUBANK",
-      "notice_date": "2026-01-08",
-      "effective_date": "2026-08-03",
-      "employees": 9,
-      "layoff_type": "Layoff Permanent",
-      "county": "",
-      "city": "New York NY",
-      "address": "277 Park Avenue",
-      "industry": ""
-    },
-    {
-      "state": "NC",
       "company": "Fortrex",
       "notice_date": "2026-01-12",
       "effective_date": "2026-02-06",
@@ -405284,18 +405296,6 @@
     },
     {
       "state": "NC",
-      "company": "Asensus Surgical, Inc.",
-      "notice_date": "2026-06-16",
-      "effective_date": "2027-03-01",
-      "employees": 108,
-      "layoff_type": "Layoff Permanent",
-      "county": "Wake",
-      "city": "Morrisville",
-      "address": "1001 Airport Blvd",
-      "industry": ""
-    },
-    {
-      "state": "NC",
       "company": "Carolina West Wireless",
       "notice_date": "2026-06-24",
       "effective_date": "2026-08-24",
@@ -405364,6 +405364,30 @@
       "county": "Alamance",
       "city": "Burlington",
       "address": "906 Anthony Street",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "SMBC MANUBANK",
+      "notice_date": "2026-01-08",
+      "effective_date": "2026-08-03",
+      "employees": 19,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "New York NY",
+      "address": "277 Park Avenue",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Asensus Surgical, Inc.",
+      "notice_date": "2026-06-16",
+      "effective_date": "2027-03-31",
+      "employees": 108,
+      "layoff_type": "Layoff Permanent",
+      "county": "Wake",
+      "city": "Morrisville",
+      "address": "1001 Airport Blvd",
       "industry": ""
     },
     {
@@ -512705,6 +512729,54 @@
       "address": "",
       "industry": "",
       "state": "NY"
+    },
+    {
+      "state": "NY",
+      "company": "Apple Bank",
+      "notice_date": "2026-04-30",
+      "effective_date": "2026-08-31",
+      "employees": 26,
+      "layoff_type": "Layoff Permanent",
+      "county": "Westchester",
+      "city": "",
+      "address": "1075 Central Park Ave Scarsdale, NY, 10583",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Maximus, Inc.",
+      "notice_date": "2026-03-31",
+      "effective_date": "2026-06-30",
+      "employees": 176,
+      "layoff_type": "Layoff Permanent",
+      "county": "Monroe",
+      "city": "",
+      "address": "3750 Monroe Ave, Suite 700 Pittsford, NY, 14534",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Novanta Corporation",
+      "notice_date": "2026-07-21",
+      "effective_date": "2027-03-31",
+      "employees": 49,
+      "layoff_type": "Closure Permanent",
+      "county": "Onondaga",
+      "city": "",
+      "address": "7279 William Barry Boulevard North Syracuse, NY, 13212",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "NYY Steak LLC",
+      "notice_date": "2026-07-02",
+      "effective_date": "2026-09-30",
+      "employees": 23,
+      "layoff_type": "Closure Permanent",
+      "county": "Bronx",
+      "city": "",
+      "address": "1 E 161st St Bronx, NY, 10451",
+      "industry": ""
     },
     {
       "state": "OH",
@@ -629127,7 +629199,7 @@
       "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-07-24",
+      "effective_date": "2026-07-25",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",

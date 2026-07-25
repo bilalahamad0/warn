@@ -316,7 +316,7 @@ year,county,warn_number,date_of_notice,received_date,effective_date,company,noti
 2026,New Hanover County,202600001,1/7/2026,1/7/2026,3/6/2026,"Avelo Airlines, Inc.",Closure,Permanent,82,1740 Airport Blvd.,Wilmington
 2026,Wake County,202600002,1/7/2026,1/7/2026,3/6/2026,"Avelo Airlines, Inc.",Closure,Permanent,78,2400 John Brantley Boulevard,Morrisville
 2026,Buncombe County,202600003,1/8/2026,1/8/2026,12/31/2027,Thermo Fisher Scientific,Closure,Permanent,423,275 Aiken Road,Asheville
-2026,N/A,202600004,1/8/2026,1/8/2026,8/3/2026,SMBC MANUBANK,Layoff,Permanent,9,277 Park Avenue,New York NY
+2026,N/A,202600004,1/8/2026,1/8/2026,8/3/2026,SMBC MANUBANK,Layoff,Permanent,19,277 Park Avenue,New York NY
 2026,Chatham County,202600005,1/12/2026,1/12/2026,2/6/2026,Fortrex,Layoff,Permanent,170,1101 East 3rd Street,Siler City
 2026,Stokes County,202600006,1/13/2026,1/15/2026,1/13/2026,Parkdale Mills,Closure,Permanent,72,1660 US 311 Hwy. North,Walnut Cove
 2026,Pitt County,202600007,1/19/2026,1/20/2026,3/31/2026,Access East,Layoff,Permanent,31,2100 Stantonsburg Road,Greenville
@@ -360,7 +360,7 @@ year,county,warn_number,date_of_notice,received_date,effective_date,company,noti
 2026,Forsyth County,202600036,6/5/2026,6/9/2026,12/31/2026,DHL Supply Chain,Closure,Permanent,81,540 Northridge Park Drive,Rural Hall
 2026,Wake County,202600037,6/10/2026,6/10/2026,8/10/2026,Ubisoft,Layoff,Permanent,17,3001 Weston Pkwy,Cary
 2026,N/A,202600038,6/15/2026,6/15/2026,8/17/2026,"Vestis Services, LLC",Layoff,Permanent,1,2680 Palumbo Drive,Lexington KY
-2026,Wake County,202600039,6/16/2026,6/16/2026,3/1/2027,"Asensus Surgical, Inc.",Layoff,Permanent,108,1001 Airport Blvd,Morrisville
+2026,Wake County,202600039,6/16/2026,6/16/2026,3/31/2027,"Asensus Surgical, Inc.",Layoff,Permanent,108,1001 Airport Blvd,Morrisville
 2026,Wilkes County,202600040,6/24/2026,6/24/2026,8/24/2026,Carolina West Wireless,Closure,Permanent,127,1435 US Highway 421 Business,Wilkesboro
 2026,N/A,202600041,6/26/2026,6/30/2026,8/28/2026,"Conduent Commercial Solutions, LLC",Layoff,Permanent,67,100 Campus Dr.,Florham Park NJ
 2026,Rowan County,202600042,7/1/2026,7/1/2026,7/1/2026,"Barrette Outdoor Living, Inc.",Layoff,Permanent,63,745 Mid S Drive,Salisbury

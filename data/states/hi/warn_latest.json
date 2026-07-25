@@ -1,9 +1,9 @@
 {
-  "total_records": 453,
+  "total_records": 454,
   "total_employees": 0,
   "date_range_start": "2019-01-16",
-  "date_range_end": "2026-06-30",
-  "last_updated": "2026-07-24T13:29:42.143230+00:00Z",
+  "date_range_end": "2026-07-22",
+  "last_updated": "2026-07-25T01:46:43.292179+00:00Z",
   "source_url": "https://labor.hawaii.gov/wdc/real-time-warn-updates/",
   "records": [
     {
@@ -5206,6 +5206,18 @@
       "state": "HI",
       "company": "C&S Family of Companies",
       "notice_date": "2025-01-08",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "HI",
+      "company": "Bayer Research and Development Services",
+      "notice_date": "2026-07-22",
       "effective_date": null,
       "employees": 0,
       "layoff_type": "",

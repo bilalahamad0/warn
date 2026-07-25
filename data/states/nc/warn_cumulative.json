@@ -1,9 +1,9 @@
 {
   "total_records": 366,
-  "total_employees": 33965,
+  "total_employees": 33975,
   "date_range_start": "2022-01-25",
   "date_range_end": "2026-07-22",
-  "last_updated": "2026-07-24T13:36:34.260545+00:00Z",
+  "last_updated": "2026-07-25T01:53:48.694468+00:00Z",
   "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
   "records": [
     {
@@ -3788,18 +3788,6 @@
     },
     {
       "state": "NC",
-      "company": "SMBC MANUBANK",
-      "notice_date": "2026-01-08",
-      "effective_date": "2026-08-03",
-      "employees": 9,
-      "layoff_type": "Layoff Permanent",
-      "county": "",
-      "city": "New York NY",
-      "address": "277 Park Avenue",
-      "industry": ""
-    },
-    {
-      "state": "NC",
       "company": "Fortrex",
       "notice_date": "2026-01-12",
       "effective_date": "2026-02-06",
@@ -4316,18 +4304,6 @@
     },
     {
       "state": "NC",
-      "company": "Asensus Surgical, Inc.",
-      "notice_date": "2026-06-16",
-      "effective_date": "2027-03-01",
-      "employees": 108,
-      "layoff_type": "Layoff Permanent",
-      "county": "Wake",
-      "city": "Morrisville",
-      "address": "1001 Airport Blvd",
-      "industry": ""
-    },
-    {
-      "state": "NC",
       "company": "Carolina West Wireless",
       "notice_date": "2026-06-24",
       "effective_date": "2026-08-24",
@@ -4396,6 +4372,30 @@
       "county": "Alamance",
       "city": "Burlington",
       "address": "906 Anthony Street",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "SMBC MANUBANK",
+      "notice_date": "2026-01-08",
+      "effective_date": "2026-08-03",
+      "employees": 19,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "New York NY",
+      "address": "277 Park Avenue",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Asensus Surgical, Inc.",
+      "notice_date": "2026-06-16",
+      "effective_date": "2027-03-31",
+      "employees": 108,
+      "layoff_type": "Layoff Permanent",
+      "county": "Wake",
+      "city": "Morrisville",
+      "address": "1001 Airport Blvd",
       "industry": ""
     }
   ]
