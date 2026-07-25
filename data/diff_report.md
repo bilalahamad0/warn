@@ -1,25 +1,16 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-07-25 01:58:55 UTC
+**Generated:** 2026-07-25 13:27:07 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 40 | 36 | +0/+4 |
-| Total employees | 2,787 | 2,560 | -227 |
+| Total records | 36 | 36 | +0/+0 |
+| Total employees | 2,560 | 2,560 | +0 |
 
 ### ✅ No new entries.
-
-### ❌ Removed Entries (4 records)
-
-| Company | Employees | Effective Date |
-|---------|-----------|----------------|
-| Pixar | 108 | 2026-09-26 |
-| New Leaf Community Markets, Inc. | 61 | 2026-09-20 |
-| CraftForce Services, Inc. (2330 Circadian Way) | 51 | 2026-09-20 |
-| CraftForce Services, Inc. (2753 Giffen Avenue) | 7 | 2026-09-20 |
 
 ---
 ## 📁 File vs Git Comparison
@@ -76,7 +67,6 @@ M .coverage
  M data/states/ga/warn_snapshot.json
  M data/states/hi/changelog.jsonl
  M data/states/hi/meta.json
- M data/states/hi/raw_download
  M data/states/hi/warn_cumulative.json
  M data/states/hi/warn_latest.json
  M data/states/hi/warn_snapshot.json
@@ -145,12 +135,12 @@ M .coverage
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
+ M data/states/mt/meta.json
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
  M data/states/nc/changelog.jsonl
  M data/states/nc/meta.json
- M data/states/nc/raw_download
  M data/states/nc/warn_cumulative.json
  M data/states/nc/warn_latest.json
  M data/states/nc/warn_snapshot.json
@@ -175,7 +165,6 @@ M .coverage
  M data/states/nm/warn_snapshot.json
  M data/states/ny/changelog.jsonl
  M data/states/ny/meta.json
- M data/states/ny/raw_download
  M data/states/ny/warn_cumulative.json
  M data/states/ny/warn_latest.json
  M data/states/ny/warn_snapshot.json
@@ -219,13 +208,11 @@ M .coverage
  M data/states/tn/warn_latest.json
  M data/states/tn/warn_snapshot.json
  M data/states/ut/changelog.jsonl
- M data/states/ut/meta.json
  M data/states/ut/warn_cumulative.json
  M data/states/ut/warn_latest.json
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
- M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -262,16 +249,17 @@ M .coverage
 
 **Recent commits:**
 ```
+72e212e auto: WARN data update [skip ci]
 4eb7401 auto: WARN data update [skip ci]
 bcd5958 feat: California deep history 2014-2026 in the national dataset
 c6fda53 feat: page navigator above the All-notices table too
 1d35efd tweak: By-year mode dropdown becomes side-by-side radio buttons
-71cb370 tweak: year dropdown sits right after the metric radio (pixel pad, not paper coords)
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-07-25T13:11:12.546392+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-25T01:43:02.893410+00:00Z` — +0 added, -4 removed, 0 employees (new)
 - `2026-07-24T13:26:16.660374+00:00Z` — +4 added, -0 removed, 227 employees (new)
 - `2026-07-23T13:34:07.540528+00:00Z` — +0 added, -0 removed, 0 employees (new)
@@ -281,4 +269,3 @@ c6fda53 feat: page navigator above the All-notices table too
 - `2026-07-20T13:45:35.176553+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-20T01:52:38.922006+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-19T12:51:03.448616+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-07-19T01:27:50.430750+00:00Z` — +0 added, -0 removed, 0 employees (new)
