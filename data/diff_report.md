@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-07-26 02:11:26 UTC
+**Generated:** 2026-07-26 13:27:04 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -60,11 +60,6 @@ M .coverage
  M data/states/fl/warn_cumulative.json
  M data/states/fl/warn_latest.json
  M data/states/fl/warn_snapshot.json
- M data/states/ga/changelog.jsonl
- M data/states/ga/meta.json
- M data/states/ga/warn_cumulative.json
- M data/states/ga/warn_latest.json
- M data/states/ga/warn_snapshot.json
  M data/states/hi/changelog.jsonl
  M data/states/hi/meta.json
  M data/states/hi/warn_cumulative.json
@@ -121,6 +116,7 @@ M .coverage
  M data/states/me/warn_snapshot.json
  M data/states/mi/changelog.jsonl
  M data/states/mi/meta.json
+ M data/states/mi/raw_download
  M data/states/mi/warn_cumulative.json
  M data/states/mi/warn_latest.json
  M data/states/mi/warn_snapshot.json
@@ -134,6 +130,7 @@ M .coverage
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
+ M data/states/mt/meta.json
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
@@ -148,6 +145,7 @@ M .coverage
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
+ M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
@@ -206,13 +204,11 @@ M .coverage
  M data/states/tn/warn_latest.json
  M data/states/tn/warn_snapshot.json
  M data/states/ut/changelog.jsonl
- M data/states/ut/meta.json
  M data/states/ut/warn_cumulative.json
  M data/states/ut/warn_latest.json
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
- M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -249,16 +245,17 @@ M .coverage
 
 **Recent commits:**
 ```
+070769b auto: WARN data update [skip ci]
 daa63f6 auto: WARN data update [skip ci]
 72e212e auto: WARN data update [skip ci]
 4eb7401 auto: WARN data update [skip ci]
 bcd5958 feat: California deep history 2014-2026 in the national dataset
-c6fda53 feat: page navigator above the All-notices table too
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-07-26T13:08:21.745406+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-26T01:56:19.651295+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-25T13:11:12.546392+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-25T01:43:02.893410+00:00Z` — +0 added, -4 removed, 0 employees (new)
@@ -268,4 +265,3 @@ c6fda53 feat: page navigator above the All-notices table too
 - `2026-07-21T03:56:53.922876+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-21T03:50:37.805288+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-20T13:45:35.176553+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-07-20T01:52:38.922006+00:00Z` — +0 added, -0 removed, 0 employees (new)
