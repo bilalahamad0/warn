@@ -1,9 +1,9 @@
 {
   "total_records": 152,
-  "total_employees": 28326,
+  "total_employees": 28145,
   "date_range_start": "2019-01-04",
   "date_range_end": "2026-05-01",
-  "last_updated": "2026-07-27T02:12:04.669364+00:00Z",
+  "last_updated": "2026-07-27T15:01:06.519337+00:00Z",
   "source_url": "https://www.kansasworks.com/search/warn_lookups",
   "records": [
     {
@@ -76,18 +76,6 @@
       "county": "",
       "city": "Charlotte",
       "address": "100 W Worthington Avenue; Charlotte, North Carolina 28203",
-      "industry": ""
-    },
-    {
-      "state": "KS",
-      "company": "Vornado Air, LLC.",
-      "notice_date": "2026-01-30",
-      "effective_date": null,
-      "employees": 72,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Andover",
-      "address": "415 E. 13th ; Andover, Kansas 67002",
       "industry": ""
     },
     {
@@ -172,18 +160,6 @@
       "county": "",
       "city": "Wichita",
       "address": "1530 South Hoover; Wichita, Kansas 67209",
-      "industry": ""
-    },
-    {
-      "state": "KS",
-      "company": "Panera, LLC",
-      "notice_date": "2025-03-21",
-      "effective_date": null,
-      "employees": 59,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Lenexa",
-      "address": "14335 W. 100th Street; Lenexa, Kansas 66215",
       "industry": ""
     },
     {
@@ -1508,18 +1484,6 @@
     },
     {
       "state": "KS",
-      "company": "the Marriott Kansas City",
-      "notice_date": "2020-03-27",
-      "effective_date": null,
-      "employees": 50,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "KS",
       "company": "Sumner Community Hospital",
       "notice_date": "2020-03-12",
       "effective_date": null,
@@ -1824,6 +1788,42 @@
       "notice_date": "2019-01-04",
       "effective_date": null,
       "employees": 44,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "KS",
+      "company": "Vornado Air, LLC.",
+      "notice_date": "2026-01-30",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Andover",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "KS",
+      "company": "Panera, LLC",
+      "notice_date": "2025-03-21",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Lenexa",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "KS",
+      "company": "the Marriott Kansas City",
+      "notice_date": "2020-03-27",
+      "effective_date": null,
+      "employees": 0,
       "layoff_type": "WARN",
       "county": "",
       "city": "",

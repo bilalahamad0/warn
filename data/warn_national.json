@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-27T02:19:53.808436+00:00Z",
+  "last_updated": "2026-07-27T15:10:13.578806+00:00Z",
   "states_live": 47,
-  "total_records": 58930,
-  "total_employees": 6398167,
+  "total_records": 58931,
+  "total_employees": 6398048,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -114,7 +114,7 @@
       "agency": "Kansas Department of Commerce",
       "source_url": "https://www.kansasworks.com/search/warn_lookups",
       "total_records": 152,
-      "total_employees": 28326
+      "total_employees": 28145
     },
     "KY": {
       "name": "Kentucky",
@@ -183,8 +183,8 @@
       "name": "North Carolina",
       "agency": "North Carolina Department of Commerce",
       "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
-      "total_records": 366,
-      "total_employees": 33975
+      "total_records": 367,
+      "total_employees": 34037
     },
     "ND": {
       "name": "North Dakota",
@@ -346085,18 +346085,6 @@
     },
     {
       "state": "KS",
-      "company": "Vornado Air, LLC.",
-      "notice_date": "2026-01-30",
-      "effective_date": null,
-      "employees": 72,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Andover",
-      "address": "415 E. 13th ; Andover, Kansas 67002",
-      "industry": ""
-    },
-    {
-      "state": "KS",
       "company": "Gates Corporation \"Gates\"",
       "notice_date": "2025-10-02",
       "effective_date": null,
@@ -346177,18 +346165,6 @@
       "county": "",
       "city": "Wichita",
       "address": "1530 South Hoover; Wichita, Kansas 67209",
-      "industry": ""
-    },
-    {
-      "state": "KS",
-      "company": "Panera, LLC",
-      "notice_date": "2025-03-21",
-      "effective_date": null,
-      "employees": 59,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Lenexa",
-      "address": "14335 W. 100th Street; Lenexa, Kansas 66215",
       "industry": ""
     },
     {
@@ -347513,18 +347489,6 @@
     },
     {
       "state": "KS",
-      "company": "the Marriott Kansas City",
-      "notice_date": "2020-03-27",
-      "effective_date": null,
-      "employees": 50,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "KS",
       "company": "Sumner Community Hospital",
       "notice_date": "2020-03-12",
       "effective_date": null,
@@ -347829,6 +347793,42 @@
       "notice_date": "2019-01-04",
       "effective_date": null,
       "employees": 44,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "KS",
+      "company": "Vornado Air, LLC.",
+      "notice_date": "2026-01-30",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Andover",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "KS",
+      "company": "Panera, LLC",
+      "notice_date": "2025-03-21",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Lenexa",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "KS",
+      "company": "the Marriott Kansas City",
+      "notice_date": "2020-03-27",
+      "effective_date": null,
+      "employees": 0,
       "layoff_type": "WARN",
       "county": "",
       "city": "",
@@ -405388,6 +405388,18 @@
       "county": "Wake",
       "city": "Morrisville",
       "address": "1001 Airport Blvd",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "AVMAC LLC",
+      "notice_date": "2026-07-23",
+      "effective_date": "2026-08-23",
+      "employees": 62,
+      "layoff_type": "Layoff Permanent",
+      "county": "Onslow",
+      "city": "Jacksonville",
+      "address": "178 Curtis Road",
       "industry": ""
     },
     {

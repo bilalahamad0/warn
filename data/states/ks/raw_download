@@ -80,8 +80,8 @@
   "warn_type": "WARN",
   "record_number": "2297",
   "detail_page_url": "https://www.kansasworks.com/search/warn_lookups/2297",
-  "number_of_employees_affected": "72",
-  "address": "415 E. 13th ; Andover, Kansas 67002"
+  "number_of_employees_affected": "",
+  "address": ""
  },
  {
   "employer": "Gates Corporation \"Gates\"",
@@ -176,8 +176,8 @@
   "warn_type": "WARN",
   "record_number": "2275",
   "detail_page_url": "https://www.kansasworks.com/search/warn_lookups/2275",
-  "number_of_employees_affected": "59",
-  "address": "14335 W. 100th Street; Lenexa, Kansas 66215"
+  "number_of_employees_affected": "",
+  "address": ""
  },
  {
   "employer": "ORBIS Corporation",
@@ -1532,7 +1532,7 @@
   "warn_type": "WARN",
   "record_number": "2045",
   "detail_page_url": "https://www.kansasworks.com/search/warn_lookups/2045",
-  "number_of_employees_affected": "50",
+  "number_of_employees_affected": "",
   "address": ""
  },
  {

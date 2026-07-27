@@ -1,9 +1,9 @@
 {
-  "total_records": 366,
-  "total_employees": 33975,
+  "total_records": 367,
+  "total_employees": 34037,
   "date_range_start": "2022-01-25",
-  "date_range_end": "2026-07-22",
-  "last_updated": "2026-07-27T02:15:13.483294+00:00Z",
+  "date_range_end": "2026-07-23",
+  "last_updated": "2026-07-27T15:05:42.463331+00:00Z",
   "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
   "records": [
     {
@@ -4396,6 +4396,18 @@
       "county": "Wake",
       "city": "Morrisville",
       "address": "1001 Airport Blvd",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "AVMAC LLC",
+      "notice_date": "2026-07-23",
+      "effective_date": "2026-08-23",
+      "employees": 62,
+      "layoff_type": "Layoff Permanent",
+      "county": "Onslow",
+      "city": "Jacksonville",
+      "address": "178 Curtis Road",
       "industry": ""
     }
   ]

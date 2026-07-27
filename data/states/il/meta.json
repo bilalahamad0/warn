@@ -1,6 +1,6 @@
 {
-  "file_hash": "7ac3f0f0b32346de163963ba6878007c",
-  "last_checked": "2026-07-27T02:08:48.734479+00:00",
+  "file_hash": "0cf35df843539b219969681266368c92",
+  "last_checked": "2026-07-27T14:32:52.738609+00:00",
   "url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
   "bytes": 1197994
 }
