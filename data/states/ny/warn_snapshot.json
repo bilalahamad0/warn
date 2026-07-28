@@ -1,9 +1,9 @@
 {
-  "total_records": 178,
-  "total_employees": 9653,
+  "total_records": 180,
+  "total_employees": 9894,
   "date_range_start": "2026-01-06",
   "date_range_end": "2026-07-21",
-  "last_updated": "2026-07-27T15:06:45.485464+00:00Z",
+  "last_updated": "2026-07-28T01:50:28.778853+00:00Z",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -1652,6 +1652,18 @@
     },
     {
       "state": "NY",
+      "company": "Pomonok Home Services, Inc.",
+      "notice_date": "2026-07-09",
+      "effective_date": "2026-10-08",
+      "employees": 226,
+      "layoff_type": "Closure Permanent",
+      "county": "Queens",
+      "city": "",
+      "address": "61-34 188th Street Suite 219 Fresh Meadows, NY, 11365",
+      "industry": ""
+    },
+    {
+      "state": "NY",
       "company": "PT OPCO, LLC d/b/a Pink Taco",
       "notice_date": "2026-02-17",
       "effective_date": "2026-02-18",
@@ -1960,6 +1972,18 @@
       "county": "Queens",
       "city": "",
       "address": "35-10 156th Street Flushing, NY, 11354",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "The Bank of Nova Scotia",
+      "notice_date": "2026-02-11",
+      "effective_date": "2026-06-30",
+      "employees": 15,
+      "layoff_type": "Closure Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "250 Vesey Street New York, NY, 10281",
       "industry": ""
     },
     {

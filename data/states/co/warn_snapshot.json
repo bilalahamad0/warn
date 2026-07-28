@@ -1,9 +1,9 @@
 {
-  "total_records": 850,
-  "total_employees": 87306,
+  "total_records": 851,
+  "total_employees": 87374,
   "date_range_start": "2015-01-02",
-  "date_range_end": "2026-07-22",
-  "last_updated": "2026-07-27T14:29:18.050435+00:00Z",
+  "date_range_end": "2026-07-24",
+  "last_updated": "2026-07-28T01:38:00.789807+00:00Z",
   "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
   "records": [
     {
@@ -377,6 +377,18 @@
       "city": "",
       "address": "",
       "industry": "54,1940: Veterinary Services"
+    },
+    {
+      "state": "CO",
+      "company": "Public Storage Correction to 7/22/26 WARN",
+      "notice_date": "2026-07-24",
+      "effective_date": "2026-07-22",
+      "employees": 68,
+      "layoff_type": "Mass Layoff",
+      "county": "Arapahoe/Douglas",
+      "city": "",
+      "address": "",
+      "industry": "53,1130: Lessors of Miniwarehouses & Self Storage Units for Std Self Service customer rentals"
     },
     {
       "state": "CO",
