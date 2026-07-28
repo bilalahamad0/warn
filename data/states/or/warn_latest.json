@@ -3,7 +3,7 @@
   "total_employees": 186077,
   "date_range_start": "1988-11-28",
   "date_range_end": "2026-06-26",
-  "last_updated": "2026-07-27T15:07:09.301283+00:00Z",
+  "last_updated": "2026-07-28T01:50:53.051977+00:00Z",
   "source_url": "https://ccwd.hecc.oregon.gov/Layoff/WARN",
   "records": [
     {
@@ -3896,6 +3896,42 @@
     },
     {
       "state": "OR",
+      "company": "BOISE CASCADE ELGIN PLYWOOD MILL",
+      "notice_date": "2022-12-14",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Large Layoff - 10 or more workers",
+      "county": "",
+      "city": "ELGIN",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Rise Services, Inc.",
+      "notice_date": "2023-07-18",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Mesa, AZ",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Zeco Systems, Inc. dba Shell EV Chargin",
+      "notice_date": "2025-08-18",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Large Layoff - 10 or more workers",
+      "county": "",
+      "city": "Los Angeles, CA",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
       "company": "The Coca -Cola Company Odwalla's - Port",
       "notice_date": "2020-06-30",
       "effective_date": "2020-08-31",
@@ -4191,42 +4227,6 @@
       "layoff_type": "Temporary Layoff",
       "county": "",
       "city": "Tigard",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "OR",
-      "company": "BOISE CASCADE ELGIN PLYWOOD MILL",
-      "notice_date": "2022-12-14",
-      "effective_date": null,
-      "employees": 0,
-      "layoff_type": "Large Layoff - 10 or more workers",
-      "county": "",
-      "city": "ELGIN",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "OR",
-      "company": "Rise Services, Inc.",
-      "notice_date": "2023-07-18",
-      "effective_date": null,
-      "employees": 0,
-      "layoff_type": "Permanent closure",
-      "county": "",
-      "city": "Mesa, AZ",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "OR",
-      "company": "Zeco Systems, Inc. dba Shell EV Chargin",
-      "notice_date": "2025-08-18",
-      "effective_date": null,
-      "employees": 0,
-      "layoff_type": "Large Layoff - 10 or more workers",
-      "county": "",
-      "city": "Los Angeles, CA",
       "address": "",
       "industry": ""
     },

@@ -1,9 +1,9 @@
 {
-  "total_records": 1012,
-  "total_employees": 152176,
+  "total_records": 1014,
+  "total_employees": 152411,
   "date_range_start": "2008-07-10",
-  "date_range_end": "2026-06-30",
-  "last_updated": "2026-07-27T14:32:55.568404+00:00Z",
+  "date_range_end": "2026-07-21",
+  "last_updated": "2026-07-28T01:41:39.159368+00:00Z",
   "source_url": "https://www.in.gov/dwd/warn-notices/current-warn-notices/",
   "records": [
     {
@@ -12149,6 +12149,30 @@
       "city": "Franklin",
       "address": "",
       "industry": "Manufacturing"
+    },
+    {
+      "state": "IN",
+      "company": "Forest River, Inc.",
+      "notice_date": "2026-07-17",
+      "effective_date": "2026-09-17",
+      "employees": 105,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Bristol",
+      "address": "",
+      "industry": "RV (Recreational Vehicle) Parks and Campgrounds"
+    },
+    {
+      "state": "IN",
+      "company": "Owens Corning",
+      "notice_date": "2026-07-21",
+      "effective_date": "2026-09-19",
+      "employees": 130,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Walkerton",
+      "address": "",
+      "industry": "Wood Window and Door Manufacturing"
     }
   ]
 }

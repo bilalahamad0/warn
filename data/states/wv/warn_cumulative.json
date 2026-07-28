@@ -1,9 +1,9 @@
 {
-  "total_records": 55,
+  "total_records": 56,
   "total_employees": 2985,
   "date_range_start": "2021-05-25",
   "date_range_end": "2026-06-04",
-  "last_updated": "2026-07-27T15:10:13.252717+00:00Z",
+  "last_updated": "2026-07-28T01:54:03.777286+00:00Z",
   "source_url": "https://workforcewv.org/job-seeker/layoffs-downsizing/warn-listing/",
   "records": [
     {
@@ -658,6 +658,18 @@
       "state": "WV",
       "company": "Watsonville Community Hospital",
       "notice_date": "2021-11-26",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WV",
+      "company": "(Workforce) 2026 (revised)(signed)",
+      "notice_date": null,
       "effective_date": null,
       "employees": 0,
       "layoff_type": "",

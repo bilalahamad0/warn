@@ -12,6 +12,26 @@
    "Notice Type": "Notice Type"
   },
   {
+   "Company": "Forest River, Inc.",
+   "City": "Bristol",
+   "Affected Workers": "105",
+   "Notice Date": "7/17/2026",
+   "LO/CL Date": "9/17/2026",
+   "NAICS": "721211",
+   "Description of Work/Industry": "RV (Recreational Vehicle) Parks and Campgrounds",
+   "Notice Type": "CL"
+  },
+  {
+   "Company": "Owens Corning",
+   "City": "Walkerton",
+   "Affected Workers": "130",
+   "Notice Date": "7/21/2026",
+   "LO/CL Date": "9/19/2026",
+   "NAICS": "321911",
+   "Description of Work/Industry": "Wood Window and Door Manufacturing",
+   "Notice Type": "CL"
+  },
+  {
    "Company": "Thyssenkrupp Presta North America",
    "City": "Terre Haute",
    "Affected Workers": "207",
