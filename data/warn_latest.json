@@ -1,9 +1,9 @@
 {
-  "total_records": 52,
-  "total_employees": 3297,
+  "total_records": 36,
+  "total_employees": 2560,
   "date_range_start": "2026-06-26",
-  "date_range_end": "2026-07-27",
-  "last_updated": "2026-07-29T01:37:12.985658+00:00Z",
+  "date_range_end": "2026-07-20",
+  "last_updated": "2026-07-29T13:54:53.543264+00:00Z",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "records": [
     {
@@ -32,63 +32,27 @@
     },
     {
       "state": "CA",
-      "company": "Intel Corporation - SC-9",
-      "notice_date": "2026-07-24",
-      "effective_date": "2026-08-15",
-      "employees": 10,
+      "company": "NBCUniversal Media, LLC - 1360",
+      "notice_date": "2026-07-17",
+      "effective_date": "2026-08-28",
+      "employees": 5,
       "layoff_type": "Layoff Permanent",
-      "county": "Santa Clara County",
+      "county": "Los Angeles County",
       "city": "",
-      "address": "3601 Juliette Lane  Santa Clara CA 95054",
-      "industry": "54 Professional Scientific and Technical Services"
+      "address": "100 Universal City Plaza, Bldg. 1360  Universal City CA 91608",
+      "industry": "71 Arts Entertainment and Recreation"
     },
     {
       "state": "CA",
-      "company": "Intel Corporation - SC-12",
-      "notice_date": "2026-07-24",
-      "effective_date": "2026-08-15",
-      "employees": 67,
+      "company": "NBCUniversal Media, LLC - 1460",
+      "notice_date": "2026-07-17",
+      "effective_date": "2026-08-28",
+      "employees": 55,
       "layoff_type": "Layoff Permanent",
-      "county": "Santa Clara County",
+      "county": "Los Angeles County",
       "city": "",
-      "address": "3600 Juliette Lane  Santa Clara CA 95054",
-      "industry": "54 Professional Scientific and Technical Services"
-    },
-    {
-      "state": "CA",
-      "company": "Intel Corporation - Robert Noyce Building",
-      "notice_date": "2026-07-24",
-      "effective_date": "2026-08-15",
-      "employees": 24,
-      "layoff_type": "Layoff Permanent",
-      "county": "Santa Clara County",
-      "city": "",
-      "address": "2200 Mission College Blvd  Santa Clara CA 95054",
-      "industry": "54 Professional Scientific and Technical Services"
-    },
-    {
-      "state": "CA",
-      "company": "Intel Corporation - SC11",
-      "notice_date": "2026-07-24",
-      "effective_date": "2026-08-15",
-      "employees": 2,
-      "layoff_type": "Layoff Permanent",
-      "county": "Santa Clara County",
-      "city": "",
-      "address": "2191 Laurelwood Rd.  Santa Clara CA 95054",
-      "industry": "54 Professional Scientific and Technical Services"
-    },
-    {
-      "state": "CA",
-      "company": "Fortrex",
-      "notice_date": "2026-07-23",
-      "effective_date": "2026-08-21",
-      "employees": 91,
-      "layoff_type": "Layoff Permanent",
-      "county": "Imperial County",
-      "city": "",
-      "address": "57 Shank Road  Brawley CA 92227",
-      "industry": "56 Administrative and Support and Waste Management and Remediation"
+      "address": "100 Universal City Plaza, Bldg. 1460  Universal City CA 91608",
+      "industry": "71 Arts Entertainment and Recreation"
     },
     {
       "state": "CA",
@@ -104,42 +68,6 @@
     },
     {
       "state": "CA",
-      "company": "PD Systems",
-      "notice_date": "2026-07-27",
-      "effective_date": "2026-08-28",
-      "employees": 81,
-      "layoff_type": "Layoff Permanent",
-      "county": "Monterey County",
-      "city": "",
-      "address": "Fort Hunter Liggett, Building 3360 Hunter Liggett Road Jolon CA 93928",
-      "industry": "54 Professional Scientific and Technical Services"
-    },
-    {
-      "state": "CA",
-      "company": "NBCUniversal Media, LLC - 1320",
-      "notice_date": "2026-07-17",
-      "effective_date": "2026-08-28",
-      "employees": 3,
-      "layoff_type": "Layoff Permanent",
-      "county": "Los Angeles County",
-      "city": "",
-      "address": "100 Universal City Plaza, Bldg. 1320  Universal City CA 91608",
-      "industry": "71 Arts Entertainment and Recreation"
-    },
-    {
-      "state": "CA",
-      "company": "NBCUniversal Media, LLC - 1360",
-      "notice_date": "2026-07-17",
-      "effective_date": "2026-08-28",
-      "employees": 5,
-      "layoff_type": "Layoff Permanent",
-      "county": "Los Angeles County",
-      "city": "",
-      "address": "100 Universal City Plaza, Bldg. 1360  Universal City CA 91608",
-      "industry": "71 Arts Entertainment and Recreation"
-    },
-    {
-      "state": "CA",
       "company": "NBCUniversal Media, LLC -1440",
       "notice_date": "2026-07-17",
       "effective_date": "2026-08-28",
@@ -152,14 +80,14 @@
     },
     {
       "state": "CA",
-      "company": "NBCUniversal Media, LLC - 1460",
+      "company": "NBCUniversal Media, LLC - 1320",
       "notice_date": "2026-07-17",
       "effective_date": "2026-08-28",
-      "employees": 55,
+      "employees": 3,
       "layoff_type": "Layoff Permanent",
       "county": "Los Angeles County",
       "city": "",
-      "address": "100 Universal City Plaza, Bldg. 1460  Universal City CA 91608",
+      "address": "100 Universal City Plaza, Bldg. 1320  Universal City CA 91608",
       "industry": "71 Arts Entertainment and Recreation"
     },
     {
@@ -200,18 +128,6 @@
     },
     {
       "state": "CA",
-      "company": "McDonald's Corporation",
-      "notice_date": "2026-06-30",
-      "effective_date": "2026-09-01",
-      "employees": 2,
-      "layoff_type": "Closure Permanent",
-      "county": "Los Angeles County",
-      "city": "",
-      "address": "17030 Green Drive  City of Industry CA 91745",
-      "industry": "72 Accommodation and Food Services"
-    },
-    {
-      "state": "CA",
       "company": "Chevron",
       "notice_date": "2026-07-01",
       "effective_date": "2026-09-01",
@@ -224,15 +140,15 @@
     },
     {
       "state": "CA",
-      "company": "DHL Supply Chain",
-      "notice_date": "2026-07-02",
-      "effective_date": "2026-09-03",
-      "employees": 33,
+      "company": "McDonald's Corporation",
+      "notice_date": "2026-06-30",
+      "effective_date": "2026-09-01",
+      "employees": 2,
       "layoff_type": "Closure Permanent",
-      "county": "Orange County",
+      "county": "Los Angeles County",
       "city": "",
-      "address": "701A Sally Pl  Fullerton CA 92831",
-      "industry": "48-49 Transportation and Warehousing"
+      "address": "17030 Green Drive  City of Industry CA 91745",
+      "industry": "72 Accommodation and Food Services"
     },
     {
       "state": "CA",
@@ -248,15 +164,15 @@
     },
     {
       "state": "CA",
-      "company": "Blue Diamond Growers",
+      "company": "DHL Supply Chain",
       "notice_date": "2026-07-02",
-      "effective_date": "2026-09-04",
-      "employees": 31,
+      "effective_date": "2026-09-03",
+      "employees": 33,
       "layoff_type": "Closure Permanent",
-      "county": "Sacramento County",
+      "county": "Orange County",
       "city": "",
-      "address": "1802 C Street  Sacramento CA 95811",
-      "industry": "31-33 Manufacturing"
+      "address": "701A Sally Pl  Fullerton CA 92831",
+      "industry": "48-49 Transportation and Warehousing"
     },
     {
       "state": "CA",
@@ -269,6 +185,18 @@
       "city": "",
       "address": "100 Spectrum Center Dr.  Irvine CA 92618",
       "industry": "71 Arts Entertainment and Recreation"
+    },
+    {
+      "state": "CA",
+      "company": "Blue Diamond Growers",
+      "notice_date": "2026-07-02",
+      "effective_date": "2026-09-04",
+      "employees": 31,
+      "layoff_type": "Closure Permanent",
+      "county": "Sacramento County",
+      "city": "",
+      "address": "1802 C Street  Sacramento CA 95811",
+      "industry": "31-33 Manufacturing"
     },
     {
       "state": "CA",
@@ -332,15 +260,15 @@
     },
     {
       "state": "CA",
-      "company": "Udemy, Inc.",
+      "company": "Coursera, Inc.",
       "notice_date": "2026-07-14",
       "effective_date": "2026-09-11",
-      "employees": 28,
+      "employees": 31,
       "layoff_type": "Layoff Permanent",
-      "county": "San Francisco County",
+      "county": "Santa Clara County",
       "city": "",
-      "address": "600 Harrison Street, 3rd Floor  San Francisco CA 94107",
-      "industry": "61 Educational Services"
+      "address": "2440West El Camino Real, Suite 500  Mountain View CA 94040",
+      "industry": "54 Professional Scientific and Technical Services"
     },
     {
       "state": "CA",
@@ -356,15 +284,15 @@
     },
     {
       "state": "CA",
-      "company": "Coursera, Inc.",
+      "company": "Udemy, Inc.",
       "notice_date": "2026-07-14",
       "effective_date": "2026-09-11",
-      "employees": 31,
+      "employees": 28,
       "layoff_type": "Layoff Permanent",
-      "county": "Santa Clara County",
+      "county": "San Francisco County",
       "city": "",
-      "address": "2440West El Camino Real, Suite 500  Mountain View CA 94040",
-      "industry": "54 Professional Scientific and Technical Services"
+      "address": "600 Harrison Street, 3rd Floor  San Francisco CA 94107",
+      "industry": "61 Educational Services"
     },
     {
       "state": "CA",
@@ -404,18 +332,6 @@
     },
     {
       "state": "CA",
-      "company": "Kingdom Animalia, LLC (Hourglass Cosmetics)",
-      "notice_date": "2026-07-02",
-      "effective_date": "2026-09-15",
-      "employees": 7,
-      "layoff_type": "Closure Permanent",
-      "county": "Los Angeles County",
-      "city": "",
-      "address": "17110 South Main Street  Carson CA 90248",
-      "industry": "42 Wholesale Trade"
-    },
-    {
-      "state": "CA",
       "company": "Wind & Sea Restaurant",
       "notice_date": "2026-07-14",
       "effective_date": "2026-09-15",
@@ -428,6 +344,18 @@
     },
     {
       "state": "CA",
+      "company": "Kingdom Animalia, LLC (Hourglass Cosmetics)",
+      "notice_date": "2026-07-02",
+      "effective_date": "2026-09-15",
+      "employees": 7,
+      "layoff_type": "Closure Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "17110 South Main Street  Carson CA 90248",
+      "industry": "42 Wholesale Trade"
+    },
+    {
+      "state": "CA",
       "company": "Phillips 66",
       "notice_date": "2026-07-16",
       "effective_date": "2026-09-16",
@@ -436,18 +364,6 @@
       "county": "Los Angeles County",
       "city": "",
       "address": "1660 W. Anaheim Street  Wilmington CA 90744",
-      "industry": "31-33 Manufacturing"
-    },
-    {
-      "state": "CA",
-      "company": "Ventura Coastal",
-      "notice_date": "2026-07-15",
-      "effective_date": "2026-09-18",
-      "employees": 71,
-      "layoff_type": "Layoff Temporary",
-      "county": "Tulare County",
-      "city": "",
-      "address": "531 W. Poplar Avenue  Tipton CA 93272",
       "industry": "31-33 Manufacturing"
     },
     {
@@ -464,27 +380,15 @@
     },
     {
       "state": "CA",
-      "company": "CraftForce Services, Inc. (2330 Circadian Way)",
-      "notice_date": "2026-07-22",
-      "effective_date": "2026-09-20",
-      "employees": 51,
-      "layoff_type": "Closure Permanent",
-      "county": "Sonoma County",
+      "company": "Ventura Coastal",
+      "notice_date": "2026-07-15",
+      "effective_date": "2026-09-18",
+      "employees": 71,
+      "layoff_type": "Layoff Temporary",
+      "county": "Tulare County",
       "city": "",
-      "address": "2330 Circadian Way  Santa Rosa CA 95407",
-      "industry": "56 Administrative and Support and Waste Management and Remediation"
-    },
-    {
-      "state": "CA",
-      "company": "New Leaf Community Markets, Inc.",
-      "notice_date": "2026-07-21",
-      "effective_date": "2026-09-20",
-      "employees": 61,
-      "layoff_type": "Closure Permanent",
-      "county": "Santa Clara County",
-      "city": "",
-      "address": "5667 Silver Creek Valley Road  San Jose CA 95138",
-      "industry": "44-45 Retail Trade"
+      "address": "531 W. Poplar Avenue  Tipton CA 93272",
+      "industry": "31-33 Manufacturing"
     },
     {
       "state": "CA",
@@ -500,18 +404,6 @@
     },
     {
       "state": "CA",
-      "company": "CraftForce Services, Inc. (2753 Giffen Avenue)",
-      "notice_date": "2026-07-22",
-      "effective_date": "2026-09-20",
-      "employees": 7,
-      "layoff_type": "Closure Permanent",
-      "county": "Sonoma County",
-      "city": "",
-      "address": "2753 Giffen Avenue  Santa Rosa CA 95407",
-      "industry": "56 Administrative and Support and Waste Management and Remediation"
-    },
-    {
-      "state": "CA",
       "company": "DesigneRX Pharmaceuticals, Inc.",
       "notice_date": "2026-07-20",
       "effective_date": "2026-09-21",
@@ -521,90 +413,6 @@
       "city": "",
       "address": "4941 Allison Parkway, Suite B  Vacaville CA 95688",
       "industry": "54 Professional Scientific and Technical Services"
-    },
-    {
-      "state": "CA",
-      "company": "Uber Technologies, Inc. (1655 3rd Street)",
-      "notice_date": "2026-07-22",
-      "effective_date": "2026-09-21",
-      "employees": 26,
-      "layoff_type": "Layoff Permanent",
-      "county": "San Francisco County",
-      "city": "",
-      "address": "1655 3rd Street  San Francisco CA 94158",
-      "industry": "48-49 Transportation and Warehousing"
-    },
-    {
-      "state": "CA",
-      "company": "Uber Technologies, Inc. (1725 3rd St.)",
-      "notice_date": "2026-07-22",
-      "effective_date": "2026-09-21",
-      "employees": 1,
-      "layoff_type": "Layoff Permanent",
-      "county": "San Francisco County",
-      "city": "",
-      "address": "1725 3rd St.  San Francisco CA 94158",
-      "industry": "48-49 Transportation and Warehousing"
-    },
-    {
-      "state": "CA",
-      "company": "Uber Technologies, Inc. (Remote)",
-      "notice_date": "2026-07-22",
-      "effective_date": "2026-09-21",
-      "employees": 14,
-      "layoff_type": "Layoff Permanent",
-      "county": "San Francisco County",
-      "city": "",
-      "address": "1655 3rd Street (Remote)  San Francisco CA 94158",
-      "industry": "48-49 Transportation and Warehousing"
-    },
-    {
-      "state": "CA",
-      "company": "Pixar",
-      "notice_date": "2026-07-21",
-      "effective_date": "2026-09-26",
-      "employees": 108,
-      "layoff_type": "Layoff Permanent",
-      "county": "Alameda County",
-      "city": "",
-      "address": "1200 Park Avenue  Emeryville CA 94608",
-      "industry": "71 Arts Entertainment and Recreation"
-    },
-    {
-      "state": "CA",
-      "company": "O'Brien's Market Inc.",
-      "notice_date": "2026-07-27",
-      "effective_date": "2026-09-26",
-      "employees": 50,
-      "layoff_type": "Closure Permanent",
-      "county": "Stanislaus County",
-      "city": "",
-      "address": "839 W. Roseburg Avenue  Modesto CA 95350",
-      "industry": "44-45 Retail Trade"
-    },
-    {
-      "state": "CA",
-      "company": "O'Briens Market Inc.",
-      "notice_date": "2026-07-27",
-      "effective_date": "2026-09-27",
-      "employees": 67,
-      "layoff_type": "Closure Permanent",
-      "county": "Stanislaus County",
-      "city": "",
-      "address": "4120 Dale Road  Modesto CA 95356",
-      "industry": "44-45 Retail Trade"
-    },
-    {
-      "state": "CA",
-      "company": "Chick-fil-A & Fig",
-      "notice_date": "2026-07-24",
-      "effective_date": "2026-09-27",
-      "employees": 77,
-      "layoff_type": "Layoff Temporary",
-      "county": "Los Angeles County",
-      "city": "",
-      "address": "660 S Figueroa St., Ste. 100  Los Angeles CA 90017",
-      "industry": "72 Accommodation and Food Services"
     },
     {
       "state": "CA",

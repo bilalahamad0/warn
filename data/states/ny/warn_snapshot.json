@@ -1,9 +1,9 @@
 {
-  "total_records": 180,
-  "total_employees": 9894,
+  "total_records": 182,
+  "total_employees": 9994,
   "date_range_start": "2026-01-06",
   "date_range_end": "2026-07-21",
-  "last_updated": "2026-07-28T13:50:27.327139+00:00Z",
+  "last_updated": "2026-07-29T01:49:34.413024+00:00Z",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -160,6 +160,18 @@
       "county": "Westchester",
       "city": "",
       "address": "550 Chappaqua Road Briarcliff Manor, NY, 10510",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Brinker International Payroll Company, L.P.",
+      "notice_date": "2026-06-30",
+      "effective_date": "2026-09-28",
+      "employees": 57,
+      "layoff_type": "Closure Permanent",
+      "county": "Nassau",
+      "city": "",
+      "address": "600 Garden City Plaza Garden City, NY, 11530",
       "industry": ""
     },
     {
@@ -496,6 +508,18 @@
       "county": "Steuben",
       "city": "",
       "address": "6823 Industrial Park Road Bath, NY, 14810",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Flagship Logistics, LLC.",
+      "notice_date": "2026-05-28",
+      "effective_date": "2026-06-30",
+      "employees": 43,
+      "layoff_type": "Closure Permanent",
+      "county": "Steuben",
+      "city": "",
+      "address": "6823 Industrial Park Road North Bath, NY, 14810",
       "industry": ""
     },
     {
