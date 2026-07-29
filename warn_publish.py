@@ -12,6 +12,8 @@ Usage:
     python3 warn_publish.py               # full run
     python3 warn_publish.py --no-push     # build only, skip git push
     python3 warn_publish.py --force       # force re-download even if unchanged
+    python3 warn_publish.py --digest      # force last month's US digest
+    python3 warn_publish.py --no-digest   # skip the monthly digest step
 """
 
 import json
@@ -20,7 +22,7 @@ import argparse
 import os
 import shutil
 import subprocess
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import warn_monitor
@@ -1422,11 +1424,105 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
 
 
 # ---------------------------------------------------------------------------
+# Monthly US digest
+# ---------------------------------------------------------------------------
+
+# Which months' digests have already gone out. The pipeline runs twice daily,
+# so this ledger is what makes the digest exactly-once-per-month. Mirrors the
+# notified/amended ledger discipline in warn_monitor: a period is recorded ONLY
+# after a successful send, so a failed send simply retries on the next run.
+DIGEST_LEDGER_NAME = "digest_sent.json"
+
+
+def _digest_ledger_path() -> Path:
+    """Resolved at call time so DATA_DIR stays patchable (tests, alt roots)."""
+    return DATA_DIR / DIGEST_LEDGER_NAME
+
+
+def _previous_month(today=None) -> str:
+    """The just-completed calendar month as ``YYYY-MM`` (UTC)."""
+    d = today or datetime.now(timezone.utc).date()
+    last_of_prev = d.replace(day=1) - timedelta(days=1)
+    return f"{last_of_prev.year:04d}-{last_of_prev.month:02d}"
+
+
+def _load_digest_ledger() -> dict:
+    path = _digest_ledger_path()
+    if not path.exists():
+        return {"sent": []}
+    try:
+        data = json.loads(path.read_text())
+    except Exception as e:
+        log.warning(f"Digest ledger unreadable ({e}) — treating as empty.")
+        return {"sent": []}
+    if not isinstance(data, dict):
+        return {"sent": []}
+    data.setdefault("sent", [])
+    return data
+
+
+def _digest_already_sent(period: str) -> bool:
+    return period in (_load_digest_ledger().get("sent") or [])
+
+
+def _record_digest_sent(period: str) -> None:
+    """Mark ``period`` delivered. Called only after a successful send."""
+    data = _load_digest_ledger()
+    sent = [p for p in (data.get("sent") or []) if p]
+    if period not in sent:
+        sent.append(period)
+    data["sent"] = sorted(sent)
+    data["last_sent"] = period
+    data["last_sent_at"] = datetime.now(timezone.utc).isoformat() + "Z"
+    path = _digest_ledger_path()
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(data, indent=2))
+
+
+def _build_digest_payload(period: str) -> dict:
+    """Build the monthly digest for ``period`` (``YYYY-MM``) via warn_digest."""
+    import warn_digest
+
+    return warn_digest.build_monthly_digest(
+        year=int(period[:4]), month=int(period[5:7])
+    )
+
+
+def maybe_send_monthly_digest(records=None, force: bool = False,
+                              period: str = None) -> bool:
+    """Send the whole-US monthly digest at most once per calendar month.
+
+    Called on every pipeline run: it targets the just-completed month, so the
+    first run of a new month delivers it and every later run that month is a
+    ledger no-op. ``force`` re-sends regardless (manual ``--digest`` testing).
+    """
+    period = period or _previous_month()
+    if _digest_already_sent(period) and not force:
+        log.info(f"Monthly digest for {period} already sent — skipping.")
+        return False
+
+    log.info(f"Building monthly US digest for {period} …")
+    digest = _build_digest_payload(period)
+    if not digest:
+        log.warning(f"No digest payload for {period} — nothing to send.")
+        return False
+
+    sent = warn_notify.send_monthly_digest(digest, records=records)
+    if sent:
+        _record_digest_sent(period)
+        log.info(f"✓ Monthly digest for {period} sent.")
+    else:
+        log.warning(f"Monthly digest for {period} not sent — retrying next run.")
+    return sent
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
 
-def run(no_push: bool = False, force: bool = False, skip_history: bool = False):
+def run(no_push: bool = False, force: bool = False, skip_history: bool = False,
+        send_digest: bool = True, force_digest: bool = False):
     log.info("=" * 70)
     log.info(f"WARN Publisher — {datetime.now(timezone.utc).isoformat()}Z")
     log.info("=" * 70)
@@ -1492,24 +1588,49 @@ def run(no_push: bool = False, force: bool = False, skip_history: bool = False):
     except Exception as e:
         log.warning(f"US dashboard build failed (non-fatal): {e}")
 
-    # Notify on changes, per state. Only mark notices as "alerted" once the
-    # email actually sends — a failed send is then retried next run instead of
-    # being lost. Each state's ledgers live with its source paths; this is what
-    # stops feed version churn from re-alerting the same notices on
-    # consecutive runs (see warn_monitor.detect_changes).
+    # Subscriber preferences, fetched once for the whole run and threaded
+    # through every send — a run that alerts on N states must not hit the
+    # signup sheet N times.
+    subscriber_records = warn_notify.load_subscriber_records()
+
+    # Notify on changes, per state. Each alert reaches the operator plus only
+    # the subscribers who asked for that state. Only mark notices as "alerted"
+    # once the email actually sends — a failed send is then retried next run
+    # instead of being lost. Each state's ledgers live with its source paths;
+    # this is what stops feed version churn from re-alerting the same notices
+    # on consecutive runs (see warn_monitor.detect_changes).
     for source in warn_sources.all_sources():
         res = state_results.get(source.code) or {}
         diff = res.get("diff", {})
         summary = res.get("summary", {})
         if diff.get("new_count", 0) > 0 or diff.get("amendment_count", 0) > 0:
             try:
-                sent = warn_notify.notify_if_changes(diff, summary)
+                sent = warn_notify.notify_if_changes(
+                    diff,
+                    summary,
+                    state=source.code.upper(),
+                    records=subscriber_records,
+                )
                 if sent:
                     source.record_alerted(diff)
             except Exception as e:
                 log.warning(
-                    f"Email notification failed for {source.code.upper()} (non-fatal): {e}"
+                    f"Email notification failed for {source.code.upper()} "
+                    f"(non-fatal): {e}"
                 )
+
+    # Monthly whole-US digest — a ledger no-op except on the first run of a
+    # new calendar month. Non-fatal: a digest problem must never fail a run
+    # that already produced good data.
+    if send_digest:
+        try:
+            maybe_send_monthly_digest(
+                records=subscriber_records, force=force_digest
+            )
+        except Exception as e:
+            log.warning(f"Monthly digest failed (non-fatal): {e}")
+    else:
+        log.info("Skipping monthly digest (--no-digest).")
 
     # Git push
     if not no_push:
@@ -1529,5 +1650,19 @@ if __name__ == "__main__":
     parser.add_argument(
         "--skip-history", action="store_true", help="Skip historical PDF update"
     )
+    parser.add_argument(
+        "--digest",
+        action="store_true",
+        help="Force build+send of last month's US digest (ignores the ledger)",
+    )
+    parser.add_argument(
+        "--no-digest", action="store_true", help="Skip the monthly US digest step"
+    )
     args = parser.parse_args()
-    run(no_push=args.no_push, force=args.force, skip_history=args.skip_history)
+    run(
+        no_push=args.no_push,
+        force=args.force,
+        skip_history=args.skip_history,
+        send_digest=not args.no_digest,
+        force_digest=args.digest,
+    )

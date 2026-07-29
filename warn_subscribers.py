@@ -18,6 +18,7 @@ pipeline degrades gracefully.
 
 import os
 import logging
+import re
 from pathlib import Path
 
 try:
@@ -44,11 +45,42 @@ def _token() -> str:
     return os.environ.get("SUBSCRIBERS_TOKEN", "").strip()
 
 
-def get_subscribers(timeout: int = 20) -> list:
-    """Return a de-duplicated list of subscriber email addresses (lowercased).
+# Sentinel stored in the sheet's `states` column for the whole-US monthly
+# digest. It is not a state code, so it never routes per-notice alerts.
+DIGEST_CODE = "US"
 
-    Requires both the endpoint and the shared token. Returns [] if either is
-    missing or if the request/parse fails for any reason.
+# Subscribers who signed up before state preferences existed get California,
+# the jurisdiction the platform originally covered.
+DEFAULT_STATES = ("CA",)
+
+
+def _parse_prefs(raw) -> tuple:
+    """Split a sheet `states` cell into (state_codes, wants_digest).
+
+    Accepts comma/space/semicolon separated codes, case-insensitive. A blank
+    cell means the subscriber predates state preferences → DEFAULT_STATES.
+    """
+    text = str(raw or "").strip()
+    if not text:
+        return list(DEFAULT_STATES), False
+    tokens = [t.strip().upper() for t in re.split(r"[,;\s]+", text) if t.strip()]
+    digest = DIGEST_CODE in tokens
+    states = [t for t in tokens if t != DIGEST_CODE and len(t) == 2]
+    # Deduplicate, preserving order.
+    seen, ordered = set(), []
+    for st in states:
+        if st not in seen:
+            seen.add(st)
+            ordered.append(st)
+    return ordered, digest
+
+
+def get_subscriber_records(timeout: int = 20) -> list:
+    """Return subscriber dicts: {email, name, states, digest}.
+
+    ``states`` is the list of 2-letter codes that subscriber wants per-notice
+    alerts for; ``digest`` is True when they opted into the whole-US monthly
+    summary. Returns [] when unconfigured or on any error (never raises).
     """
     endpoint, token = _endpoint(), _token()
     if not endpoint or not token:
@@ -69,15 +101,48 @@ def get_subscribers(timeout: int = 20) -> list:
         log.warning("Subscriber endpoint did not return ok — check token/endpoint.")
         return []
 
-    seen, emails = set(), []
+    seen, records = set(), []
     for s in payload.get("subscribers", []):
-        em = str((s or {}).get("email", "")).strip().lower()
-        if em and "@" in em and em not in seen:
-            seen.add(em)
-            emails.append(em)
+        s = s or {}
+        em = str(s.get("email", "")).strip().lower()
+        if not em or "@" not in em or em in seen:
+            continue
+        seen.add(em)
+        states, digest = _parse_prefs(s.get("states"))
+        records.append(
+            {
+                "email": em,
+                "name": str(s.get("name", "")).strip(),
+                "states": states,
+                "digest": digest,
+            }
+        )
 
-    log.info(f"Loaded {len(emails)} subscriber(s).")
-    return emails
+    log.info(f"Loaded {len(records)} subscriber(s).")
+    return records
+
+
+def get_subscribers(timeout: int = 20) -> list:
+    """Return a de-duplicated list of subscriber email addresses (lowercased).
+
+    Kept for callers that do not care about per-state routing.
+    """
+    return [r["email"] for r in get_subscriber_records(timeout=timeout)]
+
+
+def subscribers_for_state(code: str, timeout: int = 20, records=None) -> list:
+    """Emails of subscribers who asked for alerts about one state."""
+    code = str(code or "").strip().upper()
+    if records is None:
+        records = get_subscriber_records(timeout=timeout)
+    return [r["email"] for r in records if code in r["states"]]
+
+
+def digest_subscribers(timeout: int = 20, records=None) -> list:
+    """Emails of subscribers who opted into the whole-US monthly digest."""
+    if records is None:
+        records = get_subscriber_records(timeout=timeout)
+    return [r["email"] for r in records if r["digest"]]
 
 
 def get_subscriber_count(timeout: int = 15) -> int:
@@ -98,7 +163,9 @@ if __name__ == "__main__":
     logging.basicConfig(
         level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s"
     )
-    subs = get_subscribers()
+    subs = get_subscriber_records()
     print(f"{len(subs)} subscriber(s):")
-    for e in subs:
-        print(f"  {e}")
+    for s in subs:
+        scope = ",".join(s["states"]) or "—"
+        digest = " +US-digest" if s["digest"] else ""
+        print(f"  {s['email']}  [{scope}{digest}]")

@@ -1,8 +1,14 @@
 import json
+from datetime import date
 from unittest.mock import patch
+
+import pytest
+
 import warn_publish
 
 
+@patch("warn_publish.warn_notify.load_subscriber_records", return_value=[])
+@patch("warn_publish.maybe_send_monthly_digest")
 @patch("warn_publish.git_commit_push")
 @patch("warn_publish.build_site")
 @patch("warn_publish.warn_charts.run")
@@ -12,7 +18,7 @@ import warn_publish
 @patch("warn_publish.warn_sources.run_all")
 def test_run_full_pipeline(
     mock_sources, mock_diff, mock_history, mock_national, mock_charts,
-    mock_site, mock_push, tmp_path
+    mock_site, mock_push, mock_digest, mock_subs, tmp_path
 ):
     """run() orchestrates every stage and honours no_push — without touching the
     real data/ directory, the network, or git.
@@ -44,6 +50,11 @@ def test_run_full_pipeline(
     assert mock_charts.called
     assert mock_site.called
     assert not mock_push.called
+
+    # The subscriber list is fetched exactly once per run and the digest step
+    # runs (as a ledger no-op) on every run.
+    assert mock_subs.call_count == 1
+    assert mock_digest.called
 
     # The CA result doubles as the headline monitor_result passed to build_site,
     # now annotated with the per-state status map.
@@ -155,3 +166,262 @@ def test_compute_kpis_top_county_tiebreak_is_order_independent():
     ]
     assert warn_publish._compute_kpis(recs)["top_county"] == "Butte"
     assert warn_publish._compute_kpis(list(reversed(recs)))["top_county"] == "Butte"
+
+
+# ---------------------------------------------------------------------------
+# Per-state alert routing through the pipeline
+# ---------------------------------------------------------------------------
+
+
+class _FakeSource:
+    """Stands in for a warn_sources.Source in the notify loop."""
+
+    def __init__(self, code):
+        self.code = code
+        self.alerted = []
+
+    def record_alerted(self, diff):
+        self.alerted.append(diff)
+
+
+def _run_notify_loop(state_results, sources, send_ok=True, tmp_path=None):
+    """Drive run()'s notify loop with everything else mocked out.
+
+    Returns the mocked notify_if_changes so callers can inspect routing.
+    """
+    (tmp_path / "charts_manifest.json").write_text(
+        json.dumps({"charts": [], "total_records": 0, "total_employees": 0})
+    )
+    records = [{"email": "a@x.com", "name": "", "states": ["CA"], "digest": True}]
+    with patch("warn_publish.warn_sources.run_all", return_value=state_results), \
+         patch("warn_publish.warn_sources.all_sources", return_value=sources), \
+         patch("warn_publish.warn_diff.generate_report"), \
+         patch("warn_publish.warn_history.run"), \
+         patch("warn_publish.warn_aggregate.build_national"), \
+         patch("warn_publish.warn_charts.run"), \
+         patch("warn_publish.warn_site_us.build_us_site"), \
+         patch("warn_publish.build_site"), \
+         patch("warn_publish.git_commit_push"), \
+         patch("warn_publish.maybe_send_monthly_digest"), \
+         patch("warn_publish.warn_notify.load_subscriber_records",
+               return_value=records) as mock_load, \
+         patch("warn_publish.warn_notify.notify_if_changes",
+               return_value=send_ok) as mock_notify, \
+         patch("warn_publish.DATA_DIR", tmp_path):
+        warn_publish.run(no_push=True)
+    return mock_notify, mock_load, records
+
+
+def test_run_passes_state_code_and_shared_records_to_notifier(tmp_path):
+    """Each state's alert is tagged with its own code and reuses one fetch."""
+    state_results = {
+        "ca": {"state": "CA", "diff": {"new_count": 2}, "summary": {"a": 1}},
+        "il": {"state": "IL", "diff": {"new_count": 1}, "summary": {"b": 2}},
+        "ny": {"state": "NY", "diff": {"new_count": 0, "amendment_count": 0},
+               "summary": {}},
+    }
+    sources = [_FakeSource("ca"), _FakeSource("il"), _FakeSource("ny")]
+    mock_notify, mock_load, records = _run_notify_loop(
+        state_results, sources, tmp_path=tmp_path
+    )
+
+    # NY had no changes, so only CA and IL were notified.
+    states = [c.kwargs["state"] for c in mock_notify.call_args_list]
+    assert states == ["CA", "IL"]
+    # One subscriber fetch for the whole run, threaded into every send.
+    assert mock_load.call_count == 1
+    for call in mock_notify.call_args_list:
+        assert call.kwargs["records"] is records
+    # Sends succeeded, so each state's alert ledger was recorded.
+    assert sources[0].alerted and sources[1].alerted
+    assert not sources[2].alerted
+
+
+def test_run_skips_ledger_when_a_state_send_fails(tmp_path):
+    state_results = {"ca": {"state": "CA", "diff": {"new_count": 2},
+                            "summary": {}}}
+    sources = [_FakeSource("ca")]
+    _run_notify_loop(state_results, sources, send_ok=False, tmp_path=tmp_path)
+    assert not sources[0].alerted
+
+
+# ---------------------------------------------------------------------------
+# Monthly digest ledger
+# ---------------------------------------------------------------------------
+
+
+@pytest.fixture
+def digest_dir(tmp_path, monkeypatch):
+    """Redirect the digest ledger at data/digest_sent.json into a tmp dir."""
+    monkeypatch.setattr(warn_publish, "DATA_DIR", tmp_path)
+    return tmp_path
+
+
+def test_previous_month_is_the_just_completed_one():
+    assert warn_publish._previous_month(date(2026, 7, 29)) == "2026-06"
+    assert warn_publish._previous_month(date(2026, 7, 1)) == "2026-06"
+    # Year boundary.
+    assert warn_publish._previous_month(date(2026, 1, 3)) == "2025-12"
+
+
+def test_digest_sends_once_per_month_and_again_the_next(digest_dir):
+    """The pipeline runs twice daily; the ledger makes the digest monthly."""
+    payload = {"subject": "s", "html": "<p>h</p>", "text": "t"}
+    with patch("warn_publish._build_digest_payload", return_value=payload), \
+         patch("warn_publish.warn_notify.send_monthly_digest",
+               return_value=True) as mock_send:
+        # First run of July delivers June's digest …
+        assert warn_publish.maybe_send_monthly_digest(period="2026-06") is True
+        # … and every later run that month is a no-op.
+        assert warn_publish.maybe_send_monthly_digest(period="2026-06") is False
+        assert warn_publish.maybe_send_monthly_digest(period="2026-06") is False
+        assert mock_send.call_count == 1
+
+        # A new month is a new period, so it goes out again.
+        assert warn_publish.maybe_send_monthly_digest(period="2026-07") is True
+        assert mock_send.call_count == 2
+
+    ledger = json.loads((digest_dir / "digest_sent.json").read_text())
+    assert ledger["sent"] == ["2026-06", "2026-07"]
+    assert ledger["last_sent"] == "2026-07"
+
+
+def test_failed_digest_send_leaves_ledger_untouched(digest_dir):
+    """A failed send must retry next run, not be silently swallowed."""
+    payload = {"subject": "s", "html": "<p>h</p>", "text": "t"}
+    with patch("warn_publish._build_digest_payload", return_value=payload), \
+         patch("warn_publish.warn_notify.send_monthly_digest",
+               return_value=False):
+        assert warn_publish.maybe_send_monthly_digest(period="2026-06") is False
+
+    assert not (digest_dir / "digest_sent.json").exists()
+    assert warn_publish._digest_already_sent("2026-06") is False
+
+    # Next run succeeds and the period is finally recorded.
+    with patch("warn_publish._build_digest_payload", return_value=payload), \
+         patch("warn_publish.warn_notify.send_monthly_digest",
+               return_value=True):
+        assert warn_publish.maybe_send_monthly_digest(period="2026-06") is True
+    assert warn_publish._digest_already_sent("2026-06") is True
+
+
+def test_force_digest_resends_an_already_sent_month(digest_dir):
+    """--digest is the manual-test escape hatch and ignores the ledger."""
+    payload = {"subject": "s", "html": "<p>h</p>", "text": "t"}
+    warn_publish._record_digest_sent("2026-06")
+    with patch("warn_publish._build_digest_payload", return_value=payload), \
+         patch("warn_publish.warn_notify.send_monthly_digest",
+               return_value=True) as mock_send:
+        assert warn_publish.maybe_send_monthly_digest(
+            period="2026-06", force=True
+        ) is True
+    assert mock_send.called
+    ledger = json.loads((digest_dir / "digest_sent.json").read_text())
+    assert ledger["sent"] == ["2026-06"]          # recorded once, not duplicated
+
+
+def test_empty_digest_payload_is_not_sent_or_recorded(digest_dir):
+    with patch("warn_publish._build_digest_payload", return_value=None), \
+         patch("warn_publish.warn_notify.send_monthly_digest") as mock_send:
+        assert warn_publish.maybe_send_monthly_digest(period="2026-06") is False
+    assert not mock_send.called
+    assert warn_publish._digest_already_sent("2026-06") is False
+
+
+def test_corrupt_digest_ledger_does_not_block_a_send(digest_dir):
+    (digest_dir / "digest_sent.json").write_text("{not json")
+    assert warn_publish._digest_already_sent("2026-06") is False
+    warn_publish._record_digest_sent("2026-06")
+    assert warn_publish._digest_already_sent("2026-06") is True
+
+
+def test_digest_defaults_to_the_previous_month(digest_dir):
+    payload = {"subject": "s", "html": "<p>h</p>", "text": "t"}
+    with patch("warn_publish._build_digest_payload",
+               return_value=payload) as mock_build, \
+         patch("warn_publish.warn_notify.send_monthly_digest",
+               return_value=True):
+        warn_publish.maybe_send_monthly_digest()
+    assert mock_build.call_args[0][0] == warn_publish._previous_month()
+
+
+def test_digest_failure_is_non_fatal_to_the_run(tmp_path):
+    """warn_digest blowing up must not fail a run that produced good data."""
+    (tmp_path / "charts_manifest.json").write_text(
+        json.dumps({"charts": [], "total_records": 0, "total_employees": 0})
+    )
+    with patch("warn_publish.warn_sources.run_all", return_value={}), \
+         patch("warn_publish.warn_sources.all_sources", return_value=[]), \
+         patch("warn_publish.warn_diff.generate_report"), \
+         patch("warn_publish.warn_history.run"), \
+         patch("warn_publish.warn_aggregate.build_national"), \
+         patch("warn_publish.warn_charts.run"), \
+         patch("warn_publish.warn_site_us.build_us_site"), \
+         patch("warn_publish.build_site"), \
+         patch("warn_publish.git_commit_push"), \
+         patch("warn_publish.warn_notify.load_subscriber_records",
+               return_value=[]), \
+         patch("warn_publish.maybe_send_monthly_digest",
+               side_effect=ImportError("no warn_digest")), \
+         patch("warn_publish.DATA_DIR", tmp_path):
+        warn_publish.run(no_push=True)      # must not raise
+
+
+def test_no_digest_flag_skips_the_step(tmp_path):
+    (tmp_path / "charts_manifest.json").write_text(
+        json.dumps({"charts": [], "total_records": 0, "total_employees": 0})
+    )
+    with patch("warn_publish.warn_sources.run_all", return_value={}), \
+         patch("warn_publish.warn_sources.all_sources", return_value=[]), \
+         patch("warn_publish.warn_diff.generate_report"), \
+         patch("warn_publish.warn_history.run"), \
+         patch("warn_publish.warn_aggregate.build_national"), \
+         patch("warn_publish.warn_charts.run"), \
+         patch("warn_publish.warn_site_us.build_us_site"), \
+         patch("warn_publish.build_site"), \
+         patch("warn_publish.git_commit_push"), \
+         patch("warn_publish.warn_notify.load_subscriber_records",
+               return_value=[]), \
+         patch("warn_publish.maybe_send_monthly_digest") as mock_digest, \
+         patch("warn_publish.DATA_DIR", tmp_path):
+        warn_publish.run(no_push=True, send_digest=False)
+    assert not mock_digest.called
+
+
+def test_build_digest_payload_passes_year_and_month(monkeypatch):
+    """The seam splits a YYYY-MM period into the digest's year/month keywords."""
+    import sys
+    import types
+
+    calls = []
+    mod = types.ModuleType("warn_digest")
+
+    def build(year, month, national_file=None):
+        calls.append((year, month))
+        return {"subject": "s"}
+
+    mod.build_monthly_digest = build
+    monkeypatch.setitem(sys.modules, "warn_digest", mod)
+
+    assert warn_publish._build_digest_payload("2026-06") == {"subject": "s"}
+    assert calls == [(2026, 6)]
+
+
+def test_build_digest_payload_matches_the_real_digest_signature():
+    """Guards the seam against drift in warn_digest.build_monthly_digest."""
+    import inspect
+
+    import warn_digest
+
+    params = inspect.signature(warn_digest.build_monthly_digest).parameters
+    assert "year" in params and "month" in params
+
+
+def test_maybe_send_digest_threads_records_to_the_notifier(digest_dir):
+    records = [{"email": "d@x.com", "name": "", "states": [], "digest": True}]
+    payload = {"subject": "s", "html": "<p>h</p>", "text": "t"}
+    with patch("warn_publish._build_digest_payload", return_value=payload), \
+         patch("warn_publish.warn_notify.send_monthly_digest",
+               return_value=True) as mock_send:
+        warn_publish.maybe_send_monthly_digest(records=records, period="2026-06")
+    assert mock_send.call_args.kwargs["records"] is records

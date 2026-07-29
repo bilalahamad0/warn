@@ -15,9 +15,17 @@ Usage:
 
 import json
 import logging
+import os
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
+
+try:  # SIGNUP_ENDPOINT lives in .env locally, in CI vars on Actions.
+    from dotenv import load_dotenv
+
+    load_dotenv(Path(__file__).parent / ".env")
+except ImportError:  # pragma: no cover - optional dependency
+    pass
 
 import pandas as pd
 import plotly.graph_objects as go
@@ -546,6 +554,62 @@ def _write_pages(df: pd.DataFrame, out_dir: Path) -> dict:
 
 
 # ---------------------------------------------------------------------------
+# Lazy search index
+# ---------------------------------------------------------------------------
+
+SEARCH_INDEX_NAME = "search_index.json"
+
+# Field separator inside an index row. Only `company` is allowed to contain it
+# (a handful of real filings do — "Bed Bath & Beyond | Buy Buy Baby Inc | …");
+# every other field is sanitised at build time so the client can locate the
+# trailing four fields by scanning back from the end of the string. Nothing is
+# dropped or invented: company text is stored verbatim.
+INDEX_SEP = "|"
+
+
+def _index_row(r) -> str:
+    """One record as a compact delimited string: ST|Company|Place|ND|ED|Emp.
+
+    Dates lose their dashes (``20260706``) and headcounts their separators;
+    the client re-formats both, so the rendered table is byte-identical to
+    what the pre-chunked page files show. Empty means "not reported" and
+    renders as an em dash, never a guessed value.
+    """
+    st, co, place, nd, ed, emp = _row_values(r)
+    nd = "" if nd == "—" else nd.replace("-", "")
+    ed = "" if ed == "—" else ed.replace("-", "")
+    emp = "" if emp == "—" else emp.replace(",", "")
+    fields = [st, co, place, nd, ed, emp]
+    return INDEX_SEP.join(
+        f if i == 1 else f.replace(INDEX_SEP, "/") for i, f in enumerate(fields)
+    )
+
+
+def _write_search_index(df: pd.DataFrame, out_dir: Path) -> dict:
+    """Write the single-file search index the table loads on first keystroke.
+
+    Rows are in the same order as ``pages/all/`` so a search result and a
+    normal page show the same record in the same form. The file is *not*
+    referenced by any tag on the page — it is fetched only when the visitor
+    actually types — so the no-search path costs exactly what it did before.
+
+    Returns ``{"records": n, "bytes": n}`` for logging.
+    """
+    recent = _recent_sorted(df)
+    rows = [_index_row(r) for _, r in recent.iterrows()]
+    payload = {
+        "page_size": PAGE_SIZE,
+        "total": len(rows),
+        "rows": rows,
+    }
+    out_dir.mkdir(parents=True, exist_ok=True)
+    path = out_dir / SEARCH_INDEX_NAME
+    text = json.dumps(payload, separators=(",", ":"))
+    path.write_text(text)
+    return {"records": len(rows), "bytes": len(text.encode("utf-8"))}
+
+
+# ---------------------------------------------------------------------------
 # Site
 # ---------------------------------------------------------------------------
 
@@ -621,6 +685,48 @@ select option:disabled {{ color:#555c66; }}
 footer {{ color:var(--muted); font-size:12px; text-align:center;
           padding:20px 14px; }}
 
+/* Email signup — full-width stacked controls on phones. */
+.sub-form {{ display:grid; gap:10px; }}
+.sub-row {{ display:grid; gap:10px; }}
+.sub-form input[type=text], .sub-form input[type=email] {{
+  background:var(--bg); color:var(--text); font-size:14px;
+  border:1px solid var(--border); border-radius:6px; padding:11px 12px;
+  width:100%; }}
+.sub-form input[type=text]:focus, .sub-form input[type=email]:focus {{
+  border-color:var(--accent); outline:none; }}
+.sub-hp {{ position:absolute; left:-9999px; width:1px; height:1px;
+           opacity:0; }}
+.sub-states {{ border:1px solid var(--border); border-radius:8px;
+               padding:10px 12px 12px; }}
+.sub-states legend {{ font-size:12px; color:var(--muted); padding:0 6px; }}
+.sub-actions {{ display:flex; gap:8px; margin-top:6px; }}
+.sub-mini {{ background:var(--card); color:var(--accent);
+             border:1px solid var(--border); border-radius:6px;
+             padding:6px 12px; font-size:12px; cursor:pointer; }}
+.sub-mini:hover {{ border-color:var(--accent); }}
+.sub-grid {{ display:grid; gap:6px; margin-top:8px; max-height:200px;
+             overflow-y:auto; -webkit-overflow-scrolling:touch;
+             grid-template-columns:repeat(auto-fill,minmax(66px,1fr)); }}
+.sub-st {{ display:flex; align-items:center; gap:6px; font-size:12.5px;
+           background:var(--bg); border:1px solid var(--border);
+           border-radius:6px; padding:8px; cursor:pointer;
+           min-height:38px; }}
+.sub-st input, .sub-digest input {{ accent-color:var(--accent);
+                                    width:15px; height:15px; }}
+.sub-digest {{ display:flex; gap:9px; align-items:flex-start;
+               background:var(--bg); border:1px solid var(--border);
+               border-radius:8px; padding:12px; font-size:13px;
+               cursor:pointer; }}
+.sub-digest span {{ display:block; color:var(--muted); font-size:11.5px;
+                    margin-top:2px; }}
+.sub-btn {{ background:var(--accent); color:#0d1117; border:0;
+            border-radius:8px; padding:12px 18px; font-size:14.5px;
+            font-weight:600; cursor:pointer; width:100%; min-height:44px; }}
+.sub-btn:disabled {{ opacity:.6; cursor:not-allowed; }}
+.sub-msg {{ font-size:12.5px; min-height:1.2em; color:var(--muted); }}
+.sub-msg.ok {{ color:#3fb950; }}
+.sub-msg.err {{ color:#f78166; }}
+
 @media (min-width: 720px) {{
   body {{ font-size:15px; }}
   header {{ padding:14px 24px; display:flex; align-items:baseline;
@@ -639,6 +745,10 @@ footer {{ color:var(--muted); font-size:12px; text-align:center;
   select, input[type=search], input[type=number] {{
     width:auto; margin:0; padding:5px 8px; display:inline-block; }}
   .pgbtn {{ padding:5px 12px; min-height:0; }}
+  .sub-row {{ grid-template-columns:1fr 1fr; }}
+  .sub-btn {{ width:auto; justify-self:start; }}
+  .sub-grid {{ grid-template-columns:repeat(auto-fill,minmax(72px,1fr));
+               max-height:none; }}
 }}
 </style>
 </head>
@@ -731,6 +841,8 @@ footer {{ color:var(--muted); font-size:12px; text-align:center;
       pages load on demand so the site stays fast. Picking a state pages
       through that state's full history. Bulk access:
       <a href="data.json">data.json</a>.
+      Searching a company scans every record in the dataset, not just the
+      page on screen — results page the same way.
       Filter: <select id="stfilter"><option value="">All states</option>
       {state_options}
       {unavailable_options}</select>
@@ -757,6 +869,40 @@ footer {{ color:var(--muted); font-size:12px; text-align:center;
       <input class="pgjump" type="number" min="1" max="{total_pages}" value="1">
     </div>
   </section>
+
+  <section id="subscribe">
+    <h2>📬 Get WARN alerts by email</h2>
+    <div class="desc">Pick the states you want per-notice alerts for. We
+      email you when our twice-daily check finds new notices there.</div>
+    <form class="sub-form" id="subscribe-form" novalidate>
+      <div class="sub-row">
+        <input type="text" id="sub-name" placeholder="Your name"
+               autocomplete="name" aria-label="Your name">
+        <input type="email" id="sub-email" placeholder="you@example.com"
+               autocomplete="email" aria-label="Email address" required>
+      </div>
+      <input type="text" id="sub-company-hp" class="sub-hp" tabindex="-1"
+             autocomplete="off" aria-hidden="true">
+      <fieldset class="sub-states">
+        <legend>Alert me about these states</legend>
+        <div class="sub-actions">
+          <button type="button" class="sub-mini" id="sub-all">Select all</button>
+          <button type="button" class="sub-mini" id="sub-none">Clear</button>
+        </div>
+        <div class="sub-grid">{state_checkboxes}</div>
+      </fieldset>
+      <label class="sub-digest">
+        <input type="checkbox" id="sub-digest">
+        <span style="color:var(--text);font-size:13px">Monthly summary of
+          the whole US
+          <span>One email a month covering every live state — separate
+            from the per-state alerts above.</span></span>
+      </label>
+      <button type="submit" class="sub-btn" id="sub-submit">Subscribe</button>
+      <div class="sub-msg" id="subscribe-msg" role="status"
+           aria-live="polite"></div>
+    </form>
+  </section>
 </main>
 <footer>
   Data: official state workforce-agency WARN publications, unified by this
@@ -768,21 +914,94 @@ footer {{ color:var(--muted); font-size:12px; text-align:center;
 </footer>
 <script>
 var PAGE_COUNTS = {page_counts};
+var PAGE_SIZE = {page_size};
+var SEARCH_INDEX_URL = '{search_index_name}';
 var currentSet = 'all';
 var currentPage = 1;
 
-function applySearch() {{
-  var q = document.getElementById('cofilter').value.toLowerCase();
-  var shown = 0;
-  document.querySelectorAll('#recent tbody tr').forEach(function (tr) {{
-    var on = !q || tr.cells[1].textContent.toLowerCase().indexOf(q) !== -1;
-    tr.style.display = on ? '' : 'none';
-    if (on) shown++;
-  }});
-  document.getElementById('filternote').textContent =
-    q ? shown + ' match(es) on this page — search applies per page' : '';
+// Search state. INDEX stays null until the visitor actually types, so the
+// browse-only path never downloads it.
+var INDEX = null;        // {{ rows: [...], key: [...], st: [...] }}
+var indexPromise = null;
+var query = '';          // active search term, lowercased
+var matches = null;      // row indexes matching query + state, or null
+
+var noteEl = document.getElementById('filternote');
+var stfilterEl = document.getElementById('stfilter');
+var cofilterEl = document.getElementById('cofilter');
+
+function setNote(text) {{ noteEl.textContent = text; }}
+
+// ── Index row decoding ──────────────────────────────────────────────
+// "ST|Company|Place|20260706|20260904|160". Company may itself contain the
+// separator, so the trailing four fields are located from the end.
+function rowCuts(s) {{
+  var e = s.length, cuts = [];
+  for (var k = 0; k < 4; k++) {{
+    e = s.lastIndexOf('|', e - 1);
+    cuts.unshift(e);
+  }}
+  return cuts;
+}}
+function companyOf(s) {{
+  return s.slice(s.indexOf('|') + 1, rowCuts(s)[0]);
+}}
+function stateOf(s) {{ return s.slice(0, s.indexOf('|')); }}
+function fmtDate(v) {{
+  return v ? v.slice(0, 4) + '-' + v.slice(4, 6) + '-' + v.slice(6, 8) : '—';
+}}
+function fmtNum(v) {{
+  return v ? Number(v).toLocaleString('en-US') : '—';
+}}
+function decodeRow(s) {{
+  var c = rowCuts(s);
+  return [
+    s.slice(0, s.indexOf('|')),
+    s.slice(s.indexOf('|') + 1, c[0]),
+    s.slice(c[0] + 1, c[1]),
+    fmtDate(s.slice(c[1] + 1, c[2])),
+    fmtDate(s.slice(c[2] + 1, c[3])),
+    fmtNum(s.slice(c[3] + 1))
+  ];
 }}
 
+function loadIndex() {{
+  if (indexPromise) return indexPromise;
+  setNote('loading search index…');
+  indexPromise = fetch(SEARCH_INDEX_URL)
+    .then(function (r) {{ return r.json(); }})
+    .then(function (d) {{
+      var rows = d.rows || [];
+      INDEX = {{
+        rows: rows,
+        key: rows.map(function (s) {{ return companyOf(s).toLowerCase(); }}),
+        st: rows.map(stateOf)
+      }};
+      return INDEX;
+    }})
+    .catch(function () {{
+      indexPromise = null;
+      setNote('search unavailable right now — try again in a moment');
+      return null;
+    }});
+  return indexPromise;
+}}
+
+function computeMatches() {{
+  matches = [];
+  if (!INDEX || !query) return;
+  var st = currentSet === 'all' ? '' : currentSet;
+  for (var i = 0; i < INDEX.key.length; i++) {{
+    if (st && INDEX.st[i] !== st) continue;
+    if (INDEX.key[i].indexOf(query) !== -1) matches.push(i);
+  }}
+}}
+
+function searchPages() {{
+  return matches ? Math.ceil(matches.length / PAGE_SIZE) : 0;
+}}
+
+// ── Rendering ───────────────────────────────────────────────────────
 function renderRows(rows) {{
   var tbody = document.querySelector('#recent tbody');
   tbody.textContent = '';
@@ -798,7 +1017,6 @@ function renderRows(rows) {{
     }});
     tbody.appendChild(tr);
   }});
-  applySearch();
 }}
 
 function setPagerText(text) {{
@@ -807,12 +1025,46 @@ function setPagerText(text) {{
   }});
 }}
 
-function gotoPage(n) {{
+function syncJump(page, total) {{
+  document.querySelectorAll('.pgjump').forEach(function (jump) {{
+    jump.value = page;
+    jump.max = Math.max(1, total);
+  }});
+}}
+
+function scopeLabel() {{
+  return currentSet === 'all' ? '' : ' — ' + currentSet + ' only';
+}}
+
+function gotoSearchPage(n) {{
+  var total = searchPages();
+  var label = scopeLabel();
+  var hits = matches.length.toLocaleString();
+  if (!total) {{
+    currentPage = 1;
+    renderRows([]);
+    setPagerText('No matches' + label);
+    syncJump(1, 1);
+    setNote('0 records match "' + query + '"' + label);
+    return;
+  }}
+  n = Math.max(1, Math.min(total, n));
+  currentPage = n;
+  var slice = matches.slice((n - 1) * PAGE_SIZE, n * PAGE_SIZE);
+  renderRows(slice.map(function (i) {{ return decodeRow(INDEX.rows[i]); }}));
+  setPagerText('Page ' + n + ' of ' + total + label);
+  syncJump(n, total);
+  setNote(hits + ' matching record(s) for "' + query + '"' + label
+          + ' — across all pages');
+}}
+
+function gotoBrowsePage(n) {{
   var total = PAGE_COUNTS[currentSet] || 0;
-  var label = currentSet === 'all' ? '' : ' — ' + currentSet + ' only';
+  var label = scopeLabel();
   if (!total) {{
     renderRows([]);
     setPagerText('No dated records' + label);
+    syncJump(1, 1);
     return;
   }}
   n = Math.max(1, Math.min(total, n));
@@ -822,11 +1074,26 @@ function gotoPage(n) {{
       currentPage = p.page;
       renderRows(p.rows);
       setPagerText('Page ' + p.page + ' of ' + p.total_pages + label);
-      document.querySelectorAll('.pgjump').forEach(function (jump) {{
-        jump.value = p.page;
-        jump.max = p.total_pages;
-      }});
+      syncJump(p.page, p.total_pages);
     }});
+}}
+
+function gotoPage(n) {{
+  if (query && matches) {{ gotoSearchPage(n); }} else {{ gotoBrowsePage(n); }}
+}}
+
+function refreshSearch() {{
+  if (!query) {{
+    matches = null;
+    setNote('');
+    gotoBrowsePage(1);
+    return;
+  }}
+  loadIndex().then(function (idx) {{
+    if (!idx || !query) return;
+    computeMatches();
+    gotoSearchPage(1);
+  }});
 }}
 
 document.querySelectorAll('.pgprev').forEach(function (b) {{
@@ -840,11 +1107,114 @@ document.querySelectorAll('.pgjump').forEach(function (j) {{
     gotoPage(parseInt(this.value, 10) || 1);
   }});
 }});
-document.getElementById('stfilter').addEventListener('change', function () {{
+stfilterEl.addEventListener('change', function () {{
   currentSet = this.value || 'all';
-  gotoPage(1);
+  if (query) {{ refreshSearch(); }} else {{ gotoBrowsePage(1); }}
 }});
-document.getElementById('cofilter').addEventListener('input', applySearch);
+
+var searchTimer = null;
+cofilterEl.addEventListener('input', function () {{
+  var next = this.value.trim().toLowerCase();
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(function () {{
+    if (next === query) return;
+    query = next;
+    refreshSearch();
+  }}, 200);
+}});
+
+// ── Email signup ────────────────────────────────────────────────────
+var SIGNUP_ENDPOINT = "{signup_endpoint}";
+var DIGEST_CODE = 'US';   // sentinel for the whole-US monthly summary
+var subForm = document.getElementById('subscribe-form');
+var subMsg = document.getElementById('subscribe-msg');
+var subName = document.getElementById('sub-name');
+var subEmail = document.getElementById('sub-email');
+var subBtn = document.getElementById('sub-submit');
+var subHp = document.getElementById('sub-company-hp');
+var subDigest = document.getElementById('sub-digest');
+
+function setSubMsg(text, kind) {{
+  if (!subMsg) return;
+  subMsg.textContent = text;
+  subMsg.className = 'sub-msg' + (kind ? ' ' + kind : '');
+}}
+function validEmail(v) {{ return /^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$/.test(v); }}
+
+// "CA,NY", "CA,US" or "US" — state codes first, digest sentinel last.
+function selectedStates() {{
+  var out = [];
+  document.querySelectorAll('.sub-state:checked').forEach(function (c) {{
+    out.push(c.value);
+  }});
+  if (subDigest && subDigest.checked) out.push(DIGEST_CODE);
+  return out;
+}}
+
+function setAllStates(on) {{
+  document.querySelectorAll('.sub-state').forEach(function (c) {{
+    c.checked = on;
+  }});
+}}
+var subAll = document.getElementById('sub-all');
+var subNone = document.getElementById('sub-none');
+if (subAll) {{
+  subAll.addEventListener('click', function () {{ setAllStates(true); }});
+}}
+if (subNone) {{
+  subNone.addEventListener('click', function () {{ setAllStates(false); }});
+}}
+
+if (subForm) {{
+  subForm.addEventListener('submit', function (ev) {{
+    ev.preventDefault();
+    if (subHp && subHp.value) return;   // honeypot: silently drop bots
+    var nm = ((subName && subName.value) || '').trim();
+    var em = ((subEmail && subEmail.value) || '').trim();
+    if (!validEmail(em)) {{
+      setSubMsg('Please enter a valid email address.', 'err');
+      return;
+    }}
+    var states = selectedStates();
+    if (!states.length) {{
+      setSubMsg('Pick at least one state, or the monthly US summary.', 'err');
+      return;
+    }}
+    if (!SIGNUP_ENDPOINT) {{
+      setSubMsg("Signups aren't configured yet — check back soon.", 'err');
+      return;
+    }}
+    if (subBtn) {{ subBtn.disabled = true; subBtn.textContent = 'Subscribing…'; }}
+    setSubMsg('');
+    fetch(SIGNUP_ENDPOINT, {{
+      method: 'POST',
+      headers: {{ 'Content-Type': 'text/plain;charset=utf-8' }},
+      body: JSON.stringify({{
+        name: nm, email: em, states: states.join(','), source: 'us-dashboard'
+      }})
+    }})
+      .then(function (r) {{ return r.json(); }})
+      .then(function (d) {{
+        if (d && d.ok) {{
+          setSubMsg(d.duplicate
+            ? "You're already subscribed — preferences updated."
+            : "You're in! Watch your inbox for new WARN alerts.", 'ok');
+          subForm.reset();
+        }} else {{
+          setSubMsg('Something went wrong. Please try again later.', 'err');
+        }}
+      }})
+      .catch(function () {{
+        setSubMsg('Network error. Please try again later.', 'err');
+      }})
+      .finally(function () {{
+        if (subBtn) {{
+          subBtn.disabled = false;
+          subBtn.textContent = 'Subscribe';
+        }}
+      }});
+  }});
+}}
 
 // Tab switching: charts rendered while hidden need a resize kick once shown.
 document.querySelectorAll('.tab').forEach(function (btn) {{
@@ -901,7 +1271,17 @@ def build_us_site(
         if code not in codes
     )
 
+    # Checkbox per live state, none pre-selected: subscribers opt in.
+    state_checkboxes = "\n".join(
+        f'<label class="sub-st"><input type="checkbox" class="sub-state" '
+        f'value="{c}">{c}</label>'
+        for c in codes
+    )
+    # Public endpoint, injected at build time. Unset → the form says so.
+    signup_endpoint = os.getenv("SIGNUP_ENDPOINT", "").strip()
+
     page_counts = _write_pages(df, out_dir)
+    index_stats = _write_search_index(df, out_dir)
     total_pages = page_counts["all"]
     updated = str(kpis["last_updated"])[:10]
     n_live = kpis["states_live"]
@@ -931,6 +1311,9 @@ def build_us_site(
         companies_div=_chart_div("us_top_companies"),
         state_options=state_options,
         unavailable_options=unavailable_options,
+        state_checkboxes=state_checkboxes,
+        signup_endpoint=signup_endpoint,
+        search_index_name=SEARCH_INDEX_NAME,
         recent_rows=_recent_rows(df),
         page_size=PAGE_SIZE,
         total_pages=total_pages,
@@ -944,6 +1327,10 @@ def build_us_site(
     log.info(
         f"US dashboard built: {index} "
         f"({kpis['states_live']} states, {kpis['total_notices']} records)"
+    )
+    log.info(
+        f"Search index: {index_stats['records']:,} rows, "
+        f"{index_stats['bytes'] / 1e6:.2f} MB (fetched only on first search)"
     )
     return index
 

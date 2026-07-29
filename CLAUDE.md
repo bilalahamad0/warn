@@ -22,7 +22,11 @@ python3 warn_monitor.py          # Download + parse XLSX only
 python3 warn_diff.py             # Detect changes between runs
 python3 warn_charts.py           # Regenerate 8 Plotly charts
 python3 warn_history.py          # Re-parse historical PDFs (2014-2024)
+python3 warn_site_us.py          # Rebuild the US dashboard (docs/us/)
 python3 warn_notify.py --test    # Send a test email
+python3 warn_digest.py           # Preview last month's US digest (prints text)
+python3 warn_digest.py --year 2026 --month 6 --html /tmp/d.html   # HTML preview
+python3 warn_publish.py --digest # Force-send the monthly digest now
 
 # Run all tests
 pytest -v --cov=.
@@ -76,12 +80,35 @@ Apache-2.0 warn-scraper where available — vendor it into the module, never a
 runtime dependency), plus a registry entry. Failure isolation is built in:
 one state erroring never blocks the others (`warn_sources.run_all`).
 
-**Email signups:** the dashboard form POSTs to a Google Apps Script Web App
-(`automation/subscribe.gs`) that stores `{timestamp, name, email}` in a Google
-Sheet. `warn_subscribers.py` reads that list (via `SUBSCRIBERS_TOKEN`) so
-`warn_notify.py` can BCC subscribers. The form endpoint (`SIGNUP_ENDPOINT`) is
-injected into `index.html` at build time; if unset, the form degrades to a
-"not configured" message. See README "Email Signups" for deployment.
+**Email signups:** both dashboards' forms POST to a Google Apps Script Web App
+(`automation/subscribe.gs`) that stores `{timestamp, name, email, source,
+states}` in a Google Sheet. `warn_subscribers.py` reads that list (via
+`SUBSCRIBERS_TOKEN`). The form endpoint (`SIGNUP_ENDPOINT`) is injected into
+both pages at build time; if unset, the form degrades to a "not configured"
+message. See README "Email Signups" for deployment. **Re-deploy the Apps
+Script after changing `subscribe.gs`** (Manage deployments ▸ edit ▸ New
+version) or the new column is never written.
+
+**Subscription preferences** (the `states` sheet column, comma-separated):
+- 2-letter codes = per-notice alerts for those states, routed by
+  `warn_subscribers.subscribers_for_state` → `warn_notify.send_email(...,
+  state=CODE)`. An Illinois notice only reaches Illinois subscribers.
+- The sentinel `US` (`warn_subscribers.DIGEST_CODE`, never a state) = the
+  whole-country **monthly digest** built by `warn_digest.build_monthly_digest`
+  and sent by `warn_notify.send_monthly_digest`.
+- A **blank cell means California** (`DEFAULT_STATES`) — subscribers who
+  signed up before preferences existed keep exactly the alerts they had.
+- `warn_publish.maybe_send_monthly_digest` runs every pipeline run but sends
+  at most once per calendar month, guarded by `data/digest_sent.json` and
+  recorded only after a successful send (same discipline as the notice
+  ledgers). `--digest` forces a send; `--no-digest` skips.
+
+**US dashboard search** (`docs/us/search_index.json`): a compact
+`ST|Company|Place|dates|Emp` row index (~3.5 MB, ~1 MB gzipped) written at
+build time and fetched by the browser **only after the first search
+keystroke**, so company search pages through every matching record in the
+dataset — combinable with the state filter — while normal browsing still
+loads nothing extra.
 
 **Key data files** (under `data/`):
 - `warn_latest.json` — current WARN records from the live XLSX
@@ -91,6 +118,7 @@ injected into `index.html` at build time; if unset, the form degrades to a
 - `amended_keys.json` — cumulative ledger of every notice already reported as *amended*. `detect_changes` recognises an amendment when a filing's *anchor* (company + county + city + notice_date, via `_anchor_key`) persists across runs but its `_notice_key` changes (EDD most often revises the effective date). Without this ledger the same single amendment is re-reported as "removed/amended" on every feed swing — the exact bug that put a phantom "⚠️ 1 previously filed notice removed/amended" line in every alert email. Keys are recorded only after a successful send (`warn_publish` → `warn_monitor.record_amended_keys`). The ledger also marks the canonical (post-amendment) version so `update_cumulative` can evict the superseded line and the dashboard never shows a notice twice. `removed_count` now counts only genuine withdrawals (a whole anchor gone from the feed), never a revision.
 - `meta.json` — ETag + file hash + timestamps for cache invalidation
 - `warn_national.json` — unified multi-state dataset (records stamped with `state`), rebuilt every publish run by `warn_sources/aggregate.py`
+- `digest_sent.json` — ledger of monthly-digest periods already emailed (`YYYY-MM`), written only after a successful send so a failure retries next run
 - `states/<code>/` — per-state pipeline files for every non-CA source (same shapes as the top-level CA files: warn_latest, snapshot, cumulative, meta, both key ledgers, changelog)
 - `changelog.jsonl` — append-only log of every detected change
 

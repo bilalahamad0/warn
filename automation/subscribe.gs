@@ -26,14 +26,40 @@
 
 var SHEET_NAME = 'subscribers';
 
+/**
+ * Column E holds subscription preferences: comma-separated 2-letter state
+ * codes, plus the sentinel "US" for the whole-country monthly digest
+ * (e.g. "CA", "CA,NY", "US", "TX,US"). Rows created before preferences
+ * existed have a blank cell and are treated as "CA" by the pipeline, so
+ * existing subscribers keep getting California alerts.
+ */
+var PREF_COL = 5;
+var DEFAULT_STATES = 'CA';
+
 function _sheet() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sh = ss.getSheetByName(SHEET_NAME);
   if (!sh) {
     sh = ss.insertSheet(SHEET_NAME);
-    sh.appendRow(['timestamp', 'name', 'email', 'source']);
+    sh.appendRow(['timestamp', 'name', 'email', 'source', 'states']);
+    return sh;
+  }
+  // Add the states header to sheets created before preferences existed.
+  if (sh.getLastColumn() < PREF_COL) {
+    sh.getRange(1, PREF_COL).setValue('states');
   }
   return sh;
+}
+
+/** Normalize a submitted preference string to "CA,NY" / "US" form. */
+function _cleanStates(raw) {
+  var tokens = String(raw || '').toUpperCase().split(/[^A-Z]+/);
+  var out = [];
+  for (var i = 0; i < tokens.length; i++) {
+    var t = tokens[i];
+    if (t.length === 2 && out.indexOf(t) === -1) out.push(t);
+  }
+  return out.join(',');
 }
 
 function _json(obj) {
@@ -94,6 +120,7 @@ function doPost(e) {
     var name = String(data.name || '').trim().slice(0, 120);
     var email = String(data.email || '').trim().toLowerCase().slice(0, 200);
     if (!_isEmail(email)) return _json({ ok: false, error: 'invalid_email' });
+    var states = _cleanStates(data.states) || DEFAULT_STATES;
 
     var lock = LockService.getScriptLock();
     lock.waitLock(10000);
@@ -104,7 +131,9 @@ function doPost(e) {
         var existing = sh.getRange(2, 3, n, 1).getValues();
         for (var i = 0; i < existing.length; i++) {
           if (String(existing[i][0]).trim().toLowerCase() === email) {
-            return _json({ ok: true, duplicate: true });
+            // Re-subscribing updates preferences rather than duplicating.
+            sh.getRange(i + 2, PREF_COL).setValue(states);
+            return _json({ ok: true, duplicate: true, updated: true });
           }
         }
       }
@@ -113,6 +142,7 @@ function doPost(e) {
         name,
         email,
         String(data.source || 'dashboard').slice(0, 60),
+        states,
       ]);
     } finally {
       lock.releaseLock();
@@ -145,10 +175,17 @@ function doGet(e) {
   if (!token) return _json({ count: n });
   if (token !== secret) return _json({ ok: false, error: 'forbidden' });
 
-  var rows = n > 0 ? sh.getRange(2, 1, n, 3).getValues() : [];
+  var rows = n > 0 ? sh.getRange(2, 1, n, PREF_COL).getValues() : [];
   var subs = rows
     .map(function (r) {
-      return { timestamp: r[0], name: r[1], email: String(r[2]).trim().toLowerCase() };
+      return {
+        timestamp: r[0],
+        name: r[1],
+        email: String(r[2]).trim().toLowerCase(),
+        // Blank for rows that predate preferences — the pipeline reads that
+        // as California so existing subscribers are unaffected.
+        states: String(r[PREF_COL - 1] || '').trim(),
+      };
     })
     .filter(function (s) { return s.email; });
   return _json({ ok: true, count: subs.length, subscribers: subs });

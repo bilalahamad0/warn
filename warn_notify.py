@@ -12,7 +12,12 @@ Config (in .env):
 
 Usage:
     python3 warn_notify.py --test     # send a test email
-    # Or call: notify_if_changes(diff_result) from warn_publish.py
+    # Or call: notify_if_changes(diff_result, summary, state="IL")
+
+Routing: a per-notice alert for state X reaches NOTIFY_EMAIL (the operator,
+always) plus only those subscribers whose preferences include X. The whole-US
+monthly digest reaches the operator plus subscribers who opted into it. See
+warn_subscribers for the preference schema.
 """
 
 import smtplib
@@ -56,6 +61,49 @@ def _smtp_config() -> tuple:
 
 WARN_URL = "https://edd.ca.gov/en/jobs_and_training/layoff_services_warn"
 DASHBOARD_URL = "https://bilalahamad0.github.io/warn/"
+US_DASHBOARD_URL = DASHBOARD_URL + "us/"
+
+# California is the platform's original (grandfathered) jurisdiction, so its
+# labels stay here rather than coming from the registry: WARN_URL is the
+# human-readable EDD page, whereas warn_sources.ca.source_url is the raw XLSX.
+_CA_META = {
+    "name": "California",
+    "agency": "California Employment Development Department",
+    "url": WARN_URL,
+    "dashboard": DASHBOARD_URL,
+}
+
+
+def _state_meta(state: str) -> dict:
+    """Display name / agency / source URL / dashboard for a 2-letter code.
+
+    Resolved from the warn_sources registry so state labels have one source of
+    truth. warn_sources is imported lazily — this module stays usable (and
+    `--test` stays fast) without pulling in the whole scraper stack. Falls back
+    to the bare code when the registry is unavailable or the state is unknown.
+    """
+    code = str(state or "CA").strip().lower()
+    if code == "ca":
+        return dict(_CA_META)
+    fallback = {
+        "name": code.upper(),
+        "agency": "",
+        "url": "",
+        "dashboard": US_DASHBOARD_URL,
+    }
+    try:
+        import warn_sources
+
+        cls = warn_sources.SOURCES[code]
+    except Exception:  # noqa: BLE001 — labels must never break a send
+        return fallback
+    return {
+        "name": getattr(cls, "name", "") or code.upper(),
+        "agency": getattr(cls, "agency", "") or "",
+        "url": getattr(cls, "source_url", "") or "",
+        "dashboard": US_DASHBOARD_URL,
+    }
+
 
 # ---------------------------------------------------------------------------
 # HTML email template
@@ -82,7 +130,22 @@ def _describe_amendment(a: dict) -> str:
     return "; ".join(parts) or "details revised"
 
 
-def _build_html(diff: dict, summary: dict) -> str:
+def _build_html(diff: dict, summary: dict, state: str = "CA") -> str:
+    meta = _state_meta(state)
+    state_name = meta["name"]
+    dashboard_url = meta["dashboard"]
+    source_label = meta["agency"] or state_name
+    # An unregistered code has no known feed URL — link to nothing rather than
+    # to some other state's agency.
+    source_btn = ""
+    if meta["url"]:
+        source_btn = (
+            f'&nbsp;<a href="{meta["url"]}" style="display:inline-block;'
+            "background:none;border:1px solid #21262d;color:#8b949e;"
+            "text-decoration:none;padding:12px 28px;border-radius:8px;"
+            'font-weight:500;font-size:14px">'
+            f"Source: {state_name}</a>"
+        )
     new_count = diff.get("new_count", 0)
     amend_count = diff.get("amendment_count", 0)
     rem_count = diff.get("removed_count", 0)
@@ -169,7 +232,7 @@ def _build_html(diff: dict, summary: dict) -> str:
         <tr>
           <td style="background:linear-gradient(135deg,#58a6ff,#f78166);padding:28px 32px">
             <h1 style="margin:0;font-size:22px;color:#fff;font-weight:700">
-              📋 California WARN Alert
+              📋 {state_name} WARN Alert
             </h1>
             <p style="margin:6px 0 0;color:rgba(255,255,255,0.85);font-size:14px">{now}</p>
           </td>
@@ -208,30 +271,23 @@ def _build_html(diff: dict, summary: dict) -> str:
         <!-- CTA -->
         <tr>
           <td style="padding:0 32px 32px">
-            <a href="{DASHBOARD_URL}"
+            <a href="{dashboard_url}"
                style="display:inline-block;background:linear-gradient(135deg,#58a6ff,#388bfd);
                       color:#fff;text-decoration:none;padding:12px 28px;border-radius:8px;
                       font-weight:600;font-size:14px">
               View Full Dashboard →
-            </a>
-            &nbsp;
-            <a href="{WARN_URL}"
-               style="display:inline-block;background:none;border:1px solid #21262d;
-                      color:#8b949e;text-decoration:none;padding:12px 28px;border-radius:8px;
-                      font-weight:500;font-size:14px">
-              Source: CA EDD
-            </a>
+            </a>{source_btn}
           </td>
         </tr>
 
         <!-- Footer -->
         <tr>
           <td style="padding:20px 32px;border-top:1px solid #21262d;font-size:12px;color:#8b949e">
-            You're receiving this because you subscribed to California WARN alerts at
-            <a href="{DASHBOARD_URL}" style="color:#58a6ff">
-              {DASHBOARD_URL}
+            You're receiving this because you subscribed to {state_name} WARN alerts at
+            <a href="{dashboard_url}" style="color:#58a6ff">
+              {dashboard_url}
             </a>.
-            Data source: California Employment Development Department.
+            Data source: {source_label}.
             <br/>To unsubscribe, reply to this email with "unsubscribe".
           </td>
         </tr>
@@ -243,13 +299,14 @@ def _build_html(diff: dict, summary: dict) -> str:
 </html>"""
 
 
-def _build_text(diff: dict, summary: dict) -> str:
+def _build_text(diff: dict, summary: dict, state: str = "CA") -> str:
+    meta = _state_meta(state)
     new_count = diff.get("new_count", 0)
     amend_count = diff.get("amendment_count", 0)
     new_emp = diff.get("total_employees_new", 0)
     entries = diff.get("new_entries", [])[:10]
     lines = [
-        "California WARN Alert",
+        f"{meta['name']} WARN Alert",
         "=" * 40,
         f"New notices: {new_count:,} ({new_emp:,} employees)",
         f"Amended notices: {amend_count:,}",
@@ -274,10 +331,10 @@ def _build_text(diff: dict, summary: dict) -> str:
                 f"{_describe_amendment(a)}"
             )
 
+    lines += ["", f"Dashboard: {meta['dashboard']}"]
+    if meta["url"]:
+        lines.append(f"Source: {meta['url']}")
     lines += [
-        "",
-        f"Dashboard: {DASHBOARD_URL}",
-        f"Source: {WARN_URL}",
         "",
         'To unsubscribe, reply to this email with "unsubscribe".',
     ]
@@ -307,73 +364,20 @@ def _recipient_batches(to_addr: str, subscribers: List[str]) -> List[List[str]]:
     return batches
 
 
-def send_email(diff: dict, summary: dict) -> bool:
-    """
-    Send a notification email if there are new entries.
-    Goes to NOTIFY_EMAIL (To) plus every signup subscriber (BCC).
-    Returns True if sent successfully.
-    """
-    gmail_user, gmail_pass, notify_email = _smtp_config()
-    if not gmail_user or not gmail_pass:
-        log.warning(
-            "GMAIL_USER / GMAIL_APP_PASSWORD not set — skipping email. "
-            "Add them to .env to enable notifications."
-        )
-        return False
-
-    new_count = diff.get("new_count", 0)
-    amend_count = diff.get("amendment_count", 0)
-    if new_count == 0 and amend_count == 0:
-        log.info("No new notices or amendments — skipping email notification.")
-        return False
-
-    if new_count > 0:
-        subject = (
-            f"🚨 WARN Alert: {new_count} new CA layoff notice{'s' if new_count > 1 else ''} "
-            f"({diff.get('total_employees_new', 0):,} employees)"
-        )
-        if amend_count > 0:
-            subject += f" + {amend_count} amended"
-    else:
-        subject = (
-            f"📝 WARN Update: {amend_count} CA layoff "
-            f"notice{'s' if amend_count > 1 else ''} amended"
-        )
-
-    # Recipients: owner in To; signup subscribers BCC'd (privacy + Gmail caps).
-    to_addr = notify_email or gmail_user
-    try:
-        subscribers = warn_subscribers.get_subscribers()
-    except Exception as e:
-        log.warning(f"Could not load subscribers (sending to owner only): {e}")
-        subscribers = []
-
-    batches = _recipient_batches(to_addr, subscribers)
-    if not batches:
-        log.warning("No recipients (NOTIFY_EMAIL unset, no subscribers) — skipping.")
-        return False
-
-    msg = MIMEMultipart("alternative")
-    msg["Subject"] = subject
-    msg["From"] = f"WARN Monitor <{gmail_user}>"
-    msg["To"] = to_addr
-    msg["List-Unsubscribe"] = f"<mailto:{gmail_user}?subject=unsubscribe>"
-
-    msg.attach(MIMEText(_build_text(diff, summary), "plain"))
-    msg.attach(MIMEText(_build_html(diff, summary), "html"))
+def _deliver(msg: MIMEMultipart, batches: List[List[str]], what: str) -> bool:
+    """Log in once and send ``msg`` to every envelope batch. True on success."""
+    gmail_user, gmail_pass, _ = _smtp_config()
     raw = msg.as_string()
-
     total = len({r for batch in batches for r in batch})
     try:
         log.info(
-            f"Sending alert to {total} recipient(s) "
-            f"({len(subscribers)} subscriber(s)) in {len(batches)} batch(es) …"
+            f"Sending {what} to {total} recipient(s) in {len(batches)} batch(es) …"
         )
         with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
             server.login(gmail_user, gmail_pass)
             for batch in batches:
                 server.sendmail(gmail_user, batch, raw)
-        log.info("✓ Alert email sent.")
+        log.info(f"✓ {what.capitalize()} sent.")
         return True
     except smtplib.SMTPAuthenticationError:
         log.error(
@@ -387,9 +391,154 @@ def send_email(diff: dict, summary: dict) -> bool:
         return False
 
 
-def notify_if_changes(diff: dict, summary: dict) -> bool:
+def load_subscriber_records() -> list:
+    """Fetch the subscriber list once, returning [] on any failure.
+
+    Callers (warn_publish) fetch once per pipeline run and thread the result
+    through every send as ``records=``, so a run that alerts on N states hits
+    the signup sheet once rather than N times.
+    """
+    try:
+        return warn_subscribers.get_subscriber_records()
+    except Exception as e:  # noqa: BLE001 — never block a send on the sheet
+        log.warning(f"Could not load subscribers (operator-only sends): {e}")
+        return []
+
+
+def _subscribers_for_state(code: str, records=None) -> List[str]:
+    try:
+        return warn_subscribers.subscribers_for_state(code, records=records)
+    except Exception as e:  # noqa: BLE001
+        log.warning(f"Could not load {code} subscribers (operator only): {e}")
+        return []
+
+
+def send_email(
+    diff: dict, summary: dict, state: str = "CA", records=None
+) -> bool:
+    """Send a per-notice alert for one state's WARN feed.
+
+    Goes to NOTIFY_EMAIL (the operator, in To) plus — BCC'd, for privacy and to
+    stay under Gmail's per-message cap — only those subscribers who asked for
+    ``state``. A state nobody subscribed to still reaches the operator, so
+    pipeline activity is never invisible.
+
+    ``records`` is an already-fetched subscriber list (see
+    ``load_subscriber_records``); when None the list is fetched here.
+    Returns True if sent successfully.
+    """
+    gmail_user, gmail_pass, notify_email = _smtp_config()
+    if not gmail_user or not gmail_pass:
+        log.warning(
+            "GMAIL_USER / GMAIL_APP_PASSWORD not set — skipping email. "
+            "Add them to .env to enable notifications."
+        )
+        return False
+
+    code = str(state or "CA").strip().upper()
+    new_count = diff.get("new_count", 0)
+    amend_count = diff.get("amendment_count", 0)
+    if new_count == 0 and amend_count == 0:
+        log.info(f"No new {code} notices or amendments — skipping email.")
+        return False
+
+    state_name = _state_meta(code)["name"]
+    if new_count > 0:
+        plural = "s" if new_count > 1 else ""
+        subject = (
+            f"🚨 WARN Alert: {new_count} new {state_name} layoff notice{plural} "
+            f"({diff.get('total_employees_new', 0):,} employees)"
+        )
+        if amend_count > 0:
+            subject += f" + {amend_count} amended"
+    else:
+        subject = (
+            f"📝 WARN Update: {amend_count} {state_name} layoff "
+            f"notice{'s' if amend_count > 1 else ''} amended"
+        )
+
+    to_addr = notify_email or gmail_user
+    subscribers = _subscribers_for_state(code, records)
+    if not subscribers:
+        log.info(f"No subscribers requested {code} alerts — operator only.")
+
+    batches = _recipient_batches(to_addr, subscribers)
+    if not batches:
+        log.warning(
+            f"No recipients for {code} (NOTIFY_EMAIL unset, no subscribers) "
+            "— skipping."
+        )
+        return False
+
+    msg = MIMEMultipart("alternative")
+    msg["Subject"] = subject
+    msg["From"] = f"WARN Monitor <{gmail_user}>"
+    msg["To"] = to_addr
+    msg["List-Unsubscribe"] = f"<mailto:{gmail_user}?subject=unsubscribe>"
+
+    msg.attach(MIMEText(_build_text(diff, summary, code), "plain"))
+    msg.attach(MIMEText(_build_html(diff, summary, code), "html"))
+
+    return _deliver(
+        msg, batches, f"{code} alert ({len(subscribers)} subscriber(s))"
+    )
+
+
+def send_monthly_digest(digest: dict, records=None) -> bool:
+    """Email the whole-US monthly digest built by warn_digest.
+
+    Recipients are NOTIFY_EMAIL (To) plus every subscriber who opted into the
+    digest (BCC), batched like the per-notice alerts. ``digest`` carries
+    ``subject``/``html``/``text``; the plain-text part is attached first so
+    clients that prefer it get a readable body.
+    """
+    gmail_user, gmail_pass, notify_email = _smtp_config()
+    if not gmail_user or not gmail_pass:
+        log.warning("GMAIL_USER / GMAIL_APP_PASSWORD not set — skipping digest.")
+        return False
+
+    digest = digest or {}
+    html = digest.get("html") or ""
+    text = digest.get("text") or ""
+    if not html and not text:
+        log.warning("Digest payload has no html/text body — nothing to send.")
+        return False
+
+    subject = digest.get("subject") or "📊 Monthly US WARN digest"
+    to_addr = notify_email or gmail_user
+    try:
+        subscribers = warn_subscribers.digest_subscribers(records=records)
+    except Exception as e:  # noqa: BLE001
+        log.warning(f"Could not load digest subscribers (operator only): {e}")
+        subscribers = []
+
+    batches = _recipient_batches(to_addr, subscribers)
+    if not batches:
+        log.warning("No digest recipients (NOTIFY_EMAIL unset) — skipping.")
+        return False
+
+    msg = MIMEMultipart("alternative")
+    msg["Subject"] = subject
+    msg["From"] = f"WARN Monitor <{gmail_user}>"
+    msg["To"] = to_addr
+    msg["List-Unsubscribe"] = f"<mailto:{gmail_user}?subject=unsubscribe>"
+
+    msg.attach(
+        MIMEText(text or f"View the full digest at {US_DASHBOARD_URL}", "plain")
+    )
+    if html:
+        msg.attach(MIMEText(html, "html"))
+
+    return _deliver(
+        msg, batches, f"monthly digest ({len(subscribers)} subscriber(s))"
+    )
+
+
+def notify_if_changes(
+    diff: dict, summary: dict, state: str = "CA", records=None
+) -> bool:
     """Convenience wrapper — call this from warn_publish.py."""
-    return send_email(diff, summary)
+    return send_email(diff, summary, state=state, records=records)
 
 
 # ---------------------------------------------------------------------------
