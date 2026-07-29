@@ -1,9 +1,9 @@
 {
-  "total_records": 629,
-  "total_employees": 59040,
+  "total_records": 630,
+  "total_employees": 59099,
   "date_range_start": "2020-01-02",
-  "date_range_end": "2026-07-21",
-  "last_updated": "2026-07-28T13:53:52.241092+00:00Z",
+  "date_range_end": "2026-07-28",
+  "last_updated": "2026-07-29T01:53:05.625609+00:00Z",
   "source_url": "https://dwd.wisconsin.gov/dislocatedworker/warn/",
   "records": [
     {
@@ -7553,6 +7553,18 @@
       "city": "Washington",
       "address": "",
       "industry": "Corrugated & Solid Fiber Box Mfg"
+    },
+    {
+      "state": "WI",
+      "company": "School Specialty, LLC",
+      "notice_date": "2026-07-28",
+      "effective_date": "2026-09-25",
+      "employees": 59,
+      "layoff_type": "Facility Closure",
+      "county": "Jefferson",
+      "city": "Fort Atkinson",
+      "address": "",
+      "industry": "Other Professional Equip Merch Whls"
     }
   ]
 }

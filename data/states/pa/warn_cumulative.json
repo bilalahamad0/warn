@@ -1,9 +1,9 @@
 {
-  "total_records": 296,
-  "total_employees": 44059,
+  "total_records": 297,
+  "total_employees": 44219,
   "date_range_start": "2023-01-09",
   "date_range_end": "2026-09-30",
-  "last_updated": "2026-07-28T13:50:52.440802+00:00Z",
+  "last_updated": "2026-07-29T01:50:00.066992+00:00Z",
   "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
   "records": [
     {
@@ -3556,6 +3556,18 @@
       "county": "Cambria",
       "city": "",
       "address": "1003 Broad Street, #101, Johnstown, PA 15906",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Pottstown Hospital, LLC.",
+      "notice_date": null,
+      "effective_date": "2026-09-28",
+      "employees": 160,
+      "layoff_type": "Layoff",
+      "county": "Montgomery",
+      "city": "",
+      "address": "1600 East High Street, Pottstown, PA  19464",
       "industry": ""
     }
   ]

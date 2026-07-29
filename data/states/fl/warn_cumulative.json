@@ -1,9 +1,9 @@
 {
-  "total_records": 456,
-  "total_employees": 33830,
+  "total_records": 457,
+  "total_employees": 33927,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-07-21",
-  "last_updated": "2026-07-28T13:41:06.839825+00:00Z",
+  "date_range_end": "2026-07-27",
+  "last_updated": "2026-07-29T01:40:01.589398+00:00Z",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -5477,6 +5477,18 @@
       "city": "STARKE",
       "address": "Trail Ridge South Mine 5222 Treat Road,",
       "industry": "Mining"
+    },
+    {
+      "state": "FL",
+      "company": "COLSA Corporation",
+      "notice_date": "2026-07-27",
+      "effective_date": "2026-09-30",
+      "employees": 97,
+      "layoff_type": "",
+      "county": "",
+      "city": "EGLIN AFB",
+      "address": "591 Eglin Boulevard",
+      "industry": "Professional, Scientific, and Technical Services"
     }
   ]
 }

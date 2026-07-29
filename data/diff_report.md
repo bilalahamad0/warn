@@ -1,30 +1,49 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-07-28 13:53:54 UTC
+**Generated:** 2026-07-29 01:53:08 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 36 | 36 | +0/+0 |
-| Total employees | 2,560 | 2,560 | +0 |
+| Total records | 36 | 52 | +16/+0 |
+| Total employees | 2,560 | 3,297 | +737 |
 
-### ✅ No new entries.
+### ✅ New Entries (16 records)
+
+| Company | Employees | Effective Date | County |
+|---------|-----------|----------------|--------|
+| Pixar | 108 | 2026-09-26 | Alameda County |
+| Fortrex | 91 | 2026-08-21 | Imperial County |
+| PD Systems | 81 | 2026-08-28 | Monterey County |
+| Chick-fil-A & Fig | 77 | 2026-09-27 | Los Angeles County |
+| Intel Corporation - SC-12 | 67 | 2026-08-15 | Santa Clara County |
+| O'Briens Market Inc. | 67 | 2026-09-27 | Stanislaus County |
+| New Leaf Community Markets, Inc. | 61 | 2026-09-20 | Santa Clara County |
+| CraftForce Services, Inc. (2330 Circadian Way) | 51 | 2026-09-20 | Sonoma County |
+| O'Brien's Market Inc. | 50 | 2026-09-26 | Stanislaus County |
+| Uber Technologies, Inc. (1655 3rd Street) | 26 | 2026-09-21 | San Francisco County |
+| Intel Corporation - Robert Noyce Building | 24 | 2026-08-15 | Santa Clara County |
+| Uber Technologies, Inc. (Remote) | 14 | 2026-09-21 | San Francisco County |
+| Intel Corporation - SC-9 | 10 | 2026-08-15 | Santa Clara County |
+| CraftForce Services, Inc. (2753 Giffen Avenue) | 7 | 2026-09-20 | Sonoma County |
+| Intel Corporation - SC11 | 2 | 2026-08-15 | Santa Clara County |
+| Uber Technologies, Inc. (1725 3rd St.) | 1 | 2026-09-21 | San Francisco County |
 
 ---
 ## 📁 File vs Git Comparison
 
-- **Local `file.xlsx` hash:** `2c73db1b759812982a57b17b77afa3c5`
+- **Local `file.xlsx` hash:** `a2bf8f8fd48415f03446e81f806bbeb9`
 - **Committed hash:**          `2c73db1b759812982a57b17b77afa3c5`
-- ✅ Local file matches committed version
+- 🔴 **Local file differs from committed version**
 
 **Git status:**
 ```
 M .coverage
  M data/changelog.jsonl
+ M data/meta.json
  M data/states/ak/changelog.jsonl
- M data/states/ak/meta.json
  M data/states/ak/warn_cumulative.json
  M data/states/ak/warn_latest.json
  M data/states/ak/warn_snapshot.json
@@ -50,6 +69,7 @@ M .coverage
  M data/states/ct/warn_snapshot.json
  M data/states/dc/changelog.jsonl
  M data/states/dc/meta.json
+ M data/states/dc/raw_download
  M data/states/dc/warn_cumulative.json
  M data/states/dc/warn_latest.json
  M data/states/dc/warn_snapshot.json
@@ -59,6 +79,7 @@ M .coverage
  M data/states/de/warn_latest.json
  M data/states/de/warn_snapshot.json
  M data/states/fl/changelog.jsonl
+ M data/states/fl/raw_download
  M data/states/fl/warn_cumulative.json
  M data/states/fl/warn_latest.json
  M data/states/fl/warn_snapshot.json
@@ -123,7 +144,6 @@ M .coverage
  M data/states/me/warn_snapshot.json
  M data/states/mi/changelog.jsonl
  M data/states/mi/meta.json
- M data/states/mi/raw_download
  M data/states/mi/warn_cumulative.json
  M data/states/mi/warn_latest.json
  M data/states/mi/warn_snapshot.json
@@ -138,6 +158,7 @@ M .coverage
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
  M data/states/mt/meta.json
+ M data/states/mt/raw_download.xlsx
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
@@ -152,7 +173,6 @@ M .coverage
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
- M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
@@ -168,6 +188,7 @@ M .coverage
  M data/states/nm/warn_snapshot.json
  M data/states/ny/changelog.jsonl
  M data/states/ny/meta.json
+ M data/states/ny/raw_download
  M data/states/ny/warn_cumulative.json
  M data/states/ny/warn_latest.json
  M data/states/ny/warn_snapshot.json
@@ -188,6 +209,7 @@ M .coverage
  M data/states/or/warn_snapshot.json
  M data/states/pa/changelog.jsonl
  M data/states/pa/meta.json
+ M data/states/pa/raw_download
  M data/states/pa/warn_cumulative.json
  M data/states/pa/warn_latest.json
  M data/states/pa/warn_snapshot.json
@@ -211,12 +233,12 @@ M .coverage
  M data/states/tn/warn_latest.json
  M data/states/tn/warn_snapshot.json
  M data/states/ut/changelog.jsonl
- M data/states/ut/meta.json
  M data/states/ut/warn_cumulative.json
  M data/states/ut/warn_latest.json
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
+ M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -227,11 +249,13 @@ M .coverage
  M data/states/vt/warn_snapshot.json
  M data/states/wa/changelog.jsonl
  M data/states/wa/meta.json
+ M data/states/wa/raw_download
  M data/states/wa/warn_cumulative.json
  M data/states/wa/warn_latest.json
  M data/states/wa/warn_snapshot.json
  M data/states/wi/changelog.jsonl
  M data/states/wi/meta.json
+ M data/states/wi/raw_download
  M data/states/wi/warn_cumulative.json
  M data/states/wi/warn_latest.json
  M data/states/wi/warn_snapshot.json
@@ -249,20 +273,22 @@ M .coverage
  M docs/charts/us_top_companies.html
  M docs/charts/us_top_states.html
  M docs/us/index.html
+ M file.xlsx
 ```
 
 **Recent commits:**
 ```
+963cf4d auto: WARN data update [skip ci]
 c23357a auto: WARN data update [skip ci]
 6329ec7 auto: WARN data update [skip ci]
 7118ae7 auto: WARN data update [skip ci]
 89981d4 auto: WARN data update [skip ci]
-070769b auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-07-29T01:37:12.984615+00:00Z` — +12 added, -0 removed, 510 employees (new)
 - `2026-07-28T13:38:17.848348+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-28T01:37:39.383191+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-27T14:28:54.070131+00:00Z` — +0 added, -0 removed, 0 employees (new)
@@ -272,4 +298,3 @@ c23357a auto: WARN data update [skip ci]
 - `2026-07-25T13:11:12.546392+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-25T01:43:02.893410+00:00Z` — +0 added, -4 removed, 0 employees (new)
 - `2026-07-24T13:26:16.660374+00:00Z` — +4 added, -0 removed, 227 employees (new)
-- `2026-07-23T13:34:07.540528+00:00Z` — +0 added, -0 removed, 0 employees (new)

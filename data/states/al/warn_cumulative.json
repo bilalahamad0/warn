@@ -3,7 +3,7 @@
   "total_employees": 180827,
   "date_range_start": "1998-07-14",
   "date_range_end": "2034-12-01",
-  "last_updated": "2026-07-28T13:29:00.312530+00:00Z",
+  "last_updated": "2026-07-29T01:27:37.806381+00:00Z",
   "source_url": "https://workforce.alabama.gov/warn-list/",
   "records": [
     {
@@ -12624,45 +12624,9 @@
       "notice_date": "2026-07-22",
       "effective_date": "2026-09-30",
       "employees": 79,
-      "layoff_type": "Closure",
+      "layoff_type": "Layoff",
       "county": "",
       "city": "Mc Intosh",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "AL",
-      "company": "CORIZON HEALTH",
-      "notice_date": "2018-02-05",
-      "effective_date": "2026-07-23",
-      "employees": 648,
-      "layoff_type": "Closing *",
-      "county": "",
-      "city": "State Wide",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "AL",
-      "company": "SEARS HOLDINGS",
-      "notice_date": "2009-02-28",
-      "effective_date": "2026-07-23",
-      "employees": 15,
-      "layoff_type": "Closing *",
-      "county": "",
-      "city": "Birmingham",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "AL",
-      "company": "URS CORPORATION",
-      "notice_date": "2010-01-22",
-      "effective_date": "2026-07-23",
-      "employees": 134,
-      "layoff_type": "Layoff *",
-      "county": "",
-      "city": "Birmingham",
       "address": "",
       "industry": ""
     },
@@ -12771,6 +12735,42 @@
       "layoff_type": "B){var a0w={W:0x205",
       "county": "",
       "city": "n:0x200}",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "CORIZON HEALTH",
+      "notice_date": "2018-02-05",
+      "effective_date": "2026-07-28",
+      "employees": 648,
+      "layoff_type": "Closing *",
+      "county": "",
+      "city": "State Wide",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "SEARS HOLDINGS",
+      "notice_date": "2009-02-28",
+      "effective_date": "2026-07-28",
+      "employees": 15,
+      "layoff_type": "Closing *",
+      "county": "",
+      "city": "Birmingham",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "URS CORPORATION",
+      "notice_date": "2010-01-22",
+      "effective_date": "2026-07-28",
+      "employees": 134,
+      "layoff_type": "Layoff *",
+      "county": "",
+      "city": "Birmingham",
       "address": "",
       "industry": ""
     }

@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-28T13:53:55.325753+00:00Z",
+  "last_updated": "2026-07-29T01:53:08.972291+00:00Z",
   "states_live": 47,
-  "total_records": 58946,
-  "total_employees": 6398592,
+  "total_records": 58967,
+  "total_employees": 6399734,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -29,8 +29,8 @@
       "name": "California",
       "agency": "California Employment Development Department",
       "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
-      "total_records": 16134,
-      "total_employees": 1382366
+      "total_records": 16146,
+      "total_employees": 1382876
     },
     "CO": {
       "name": "Colorado",
@@ -50,8 +50,8 @@
       "name": "District of Columbia",
       "agency": "District of Columbia Department of Employment Services",
       "source_url": "https://does.dc.gov/page/industry-closings-and-layoffs-warn-notifications-2026",
-      "total_records": 142,
-      "total_employees": 26158
+      "total_records": 143,
+      "total_employees": 26243
     },
     "DE": {
       "name": "Delaware",
@@ -64,8 +64,8 @@
       "name": "Florida",
       "agency": "Florida Department of Commerce (FloridaCommerce)",
       "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
-      "total_records": 456,
-      "total_employees": 33830
+      "total_records": 457,
+      "total_employees": 33927
     },
     "GA": {
       "name": "Georgia",
@@ -176,8 +176,8 @@
       "name": "Montana",
       "agency": "Montana Department of Labor & Industry",
       "source_url": "https://wsd.dli.mt.gov/wioa/related-links/warn-notice-page",
-      "total_records": 44,
-      "total_employees": 3955
+      "total_records": 46,
+      "total_employees": 3973
     },
     "NC": {
       "name": "North Carolina",
@@ -225,8 +225,8 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 4768,
-      "total_employees": 415727
+      "total_records": 4770,
+      "total_employees": 415827
     },
     "OH": {
       "name": "Ohio",
@@ -253,8 +253,8 @@
       "name": "Pennsylvania",
       "agency": "Pennsylvania Department of Labor & Industry",
       "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
-      "total_records": 296,
-      "total_employees": 44059
+      "total_records": 297,
+      "total_employees": 44219
     },
     "RI": {
       "name": "Rhode Island",
@@ -316,15 +316,15 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1484,
-      "total_employees": 234548
+      "total_records": 1485,
+      "total_employees": 234661
     },
     "WI": {
       "name": "Wisconsin",
       "agency": "Wisconsin Department of Workforce Development",
       "source_url": "https://dwd.wisconsin.gov/dislocatedworker/warn/",
-      "total_records": 629,
-      "total_employees": 59040
+      "total_records": 630,
+      "total_employees": 59099
     },
     "WV": {
       "name": "West Virginia",
@@ -13745,45 +13745,9 @@
       "notice_date": "2026-07-22",
       "effective_date": "2026-09-30",
       "employees": 79,
-      "layoff_type": "Closure",
+      "layoff_type": "Layoff",
       "county": "",
       "city": "Mc Intosh",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "AL",
-      "company": "CORIZON HEALTH",
-      "notice_date": "2018-02-05",
-      "effective_date": "2026-07-23",
-      "employees": 648,
-      "layoff_type": "Closing *",
-      "county": "",
-      "city": "State Wide",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "AL",
-      "company": "SEARS HOLDINGS",
-      "notice_date": "2009-02-28",
-      "effective_date": "2026-07-23",
-      "employees": 15,
-      "layoff_type": "Closing *",
-      "county": "",
-      "city": "Birmingham",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "AL",
-      "company": "URS CORPORATION",
-      "notice_date": "2010-01-22",
-      "effective_date": "2026-07-23",
-      "employees": 134,
-      "layoff_type": "Layoff *",
-      "county": "",
-      "city": "Birmingham",
       "address": "",
       "industry": ""
     },
@@ -13892,6 +13856,42 @@
       "layoff_type": "B){var a0w={W:0x205",
       "county": "",
       "city": "n:0x200}",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "CORIZON HEALTH",
+      "notice_date": "2018-02-05",
+      "effective_date": "2026-07-28",
+      "employees": 648,
+      "layoff_type": "Closing *",
+      "county": "",
+      "city": "State Wide",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "SEARS HOLDINGS",
+      "notice_date": "2009-02-28",
+      "effective_date": "2026-07-28",
+      "employees": 15,
+      "layoff_type": "Closing *",
+      "county": "",
+      "city": "Birmingham",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "URS CORPORATION",
+      "notice_date": "2010-01-22",
+      "effective_date": "2026-07-28",
+      "employees": 134,
+      "layoff_type": "Layoff *",
+      "county": "",
+      "city": "Birmingham",
       "address": "",
       "industry": ""
     },
@@ -38110,6 +38110,150 @@
       "city": "",
       "address": "1200 Park Avenue  Emeryville CA 94608",
       "industry": "71 Arts Entertainment and Recreation"
+    },
+    {
+      "state": "CA",
+      "company": "Intel Corporation - SC-9",
+      "notice_date": "2026-07-24",
+      "effective_date": "2026-08-15",
+      "employees": 10,
+      "layoff_type": "Layoff Permanent",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "3601 Juliette Lane  Santa Clara CA 95054",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "state": "CA",
+      "company": "Intel Corporation - SC-12",
+      "notice_date": "2026-07-24",
+      "effective_date": "2026-08-15",
+      "employees": 67,
+      "layoff_type": "Layoff Permanent",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "3600 Juliette Lane  Santa Clara CA 95054",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "state": "CA",
+      "company": "Intel Corporation - Robert Noyce Building",
+      "notice_date": "2026-07-24",
+      "effective_date": "2026-08-15",
+      "employees": 24,
+      "layoff_type": "Layoff Permanent",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "2200 Mission College Blvd  Santa Clara CA 95054",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "state": "CA",
+      "company": "Intel Corporation - SC11",
+      "notice_date": "2026-07-24",
+      "effective_date": "2026-08-15",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "2191 Laurelwood Rd.  Santa Clara CA 95054",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "state": "CA",
+      "company": "Fortrex",
+      "notice_date": "2026-07-23",
+      "effective_date": "2026-08-21",
+      "employees": 91,
+      "layoff_type": "Layoff Permanent",
+      "county": "Imperial County",
+      "city": "",
+      "address": "57 Shank Road  Brawley CA 92227",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
+    },
+    {
+      "state": "CA",
+      "company": "PD Systems",
+      "notice_date": "2026-07-27",
+      "effective_date": "2026-08-28",
+      "employees": 81,
+      "layoff_type": "Layoff Permanent",
+      "county": "Monterey County",
+      "city": "",
+      "address": "Fort Hunter Liggett, Building 3360 Hunter Liggett Road Jolon CA 93928",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "state": "CA",
+      "company": "Uber Technologies, Inc. (1655 3rd Street)",
+      "notice_date": "2026-07-22",
+      "effective_date": "2026-09-21",
+      "employees": 26,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Francisco County",
+      "city": "",
+      "address": "1655 3rd Street  San Francisco CA 94158",
+      "industry": "48-49 Transportation and Warehousing"
+    },
+    {
+      "state": "CA",
+      "company": "Uber Technologies, Inc. (1725 3rd St.)",
+      "notice_date": "2026-07-22",
+      "effective_date": "2026-09-21",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Francisco County",
+      "city": "",
+      "address": "1725 3rd St.  San Francisco CA 94158",
+      "industry": "48-49 Transportation and Warehousing"
+    },
+    {
+      "state": "CA",
+      "company": "Uber Technologies, Inc. (Remote)",
+      "notice_date": "2026-07-22",
+      "effective_date": "2026-09-21",
+      "employees": 14,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Francisco County",
+      "city": "",
+      "address": "1655 3rd Street (Remote)  San Francisco CA 94158",
+      "industry": "48-49 Transportation and Warehousing"
+    },
+    {
+      "state": "CA",
+      "company": "O'Brien's Market Inc.",
+      "notice_date": "2026-07-27",
+      "effective_date": "2026-09-26",
+      "employees": 50,
+      "layoff_type": "Closure Permanent",
+      "county": "Stanislaus County",
+      "city": "",
+      "address": "839 W. Roseburg Avenue  Modesto CA 95350",
+      "industry": "44-45 Retail Trade"
+    },
+    {
+      "state": "CA",
+      "company": "O'Briens Market Inc.",
+      "notice_date": "2026-07-27",
+      "effective_date": "2026-09-27",
+      "employees": 67,
+      "layoff_type": "Closure Permanent",
+      "county": "Stanislaus County",
+      "city": "",
+      "address": "4120 Dale Road  Modesto CA 95356",
+      "industry": "44-45 Retail Trade"
+    },
+    {
+      "state": "CA",
+      "company": "Chick-fil-A & Fig",
+      "notice_date": "2026-07-24",
+      "effective_date": "2026-09-27",
+      "employees": 77,
+      "layoff_type": "Layoff Temporary",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "660 S Figueroa St., Ste. 100  Los Angeles CA 90017",
+      "industry": "72 Accommodation and Food Services"
     },
     {
       "company": "Adventist Health St. Helena",
@@ -194092,6 +194236,18 @@
       "industry": ""
     },
     {
+      "state": "DC",
+      "company": "Elevnce Health",
+      "notice_date": "2026-07-27",
+      "effective_date": null,
+      "employees": 85,
+      "layoff_type": "",
+      "county": "",
+      "city": "Washington D.C.",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "DE",
       "company": "Atlas Hospitality Group, LLC",
       "notice_date": "2026-04-30",
@@ -200042,6 +200198,18 @@
       "city": "STARKE",
       "address": "Trail Ridge South Mine 5222 Treat Road,",
       "industry": "Mining"
+    },
+    {
+      "state": "FL",
+      "company": "COLSA Corporation",
+      "notice_date": "2026-07-27",
+      "effective_date": "2026-09-30",
+      "employees": 97,
+      "layoff_type": "",
+      "county": "",
+      "city": "EGLIN AFB",
+      "address": "591 Eglin Boulevard",
+      "industry": "Professional, Scientific, and Technical Services"
     },
     {
       "state": "GA",
@@ -401143,6 +401311,30 @@
       "industry": "Oil exploration"
     },
     {
+      "state": "MT",
+      "company": "Wells Fargo & Company",
+      "notice_date": "2026-06-23",
+      "effective_date": "2026-08-22",
+      "employees": 16,
+      "layoff_type": "",
+      "county": "Yellowstone",
+      "city": "",
+      "address": "",
+      "industry": "Banking"
+    },
+    {
+      "state": "MT",
+      "company": "Wells Fargo & Company",
+      "notice_date": "2026-07-21",
+      "effective_date": "2026-09-19",
+      "employees": 2,
+      "layoff_type": "",
+      "county": "Yellowstone",
+      "city": "",
+      "address": "",
+      "industry": "Banking"
+    },
+    {
       "state": "NC",
       "company": "ADT Cybersecurity/SDI facility",
       "notice_date": "2022-01-25",
@@ -512959,6 +513151,30 @@
       "industry": ""
     },
     {
+      "state": "NY",
+      "company": "Brinker International Payroll Company, L.P.",
+      "notice_date": "2026-06-30",
+      "effective_date": "2026-09-28",
+      "employees": 57,
+      "layoff_type": "Closure Permanent",
+      "county": "Nassau",
+      "city": "",
+      "address": "600 Garden City Plaza Garden City, NY, 11530",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Flagship Logistics, LLC.",
+      "notice_date": "2026-05-28",
+      "effective_date": "2026-06-30",
+      "employees": 43,
+      "layoff_type": "Closure Permanent",
+      "county": "Steuben",
+      "city": "",
+      "address": "6823 Industrial Park Road North Bath, NY, 14810",
+      "industry": ""
+    },
+    {
       "state": "OH",
       "company": "UPDATE Refresco Beverages US Inc",
       "notice_date": "2026-07-14",
@@ -546316,6 +546532,18 @@
       "county": "Cambria",
       "city": "",
       "address": "1003 Broad Street, #101, Johnstown, PA 15906",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Pottstown Hospital, LLC.",
+      "notice_date": null,
+      "effective_date": "2026-09-28",
+      "employees": 160,
+      "layoff_type": "Layoff",
+      "county": "Montgomery",
+      "city": "",
+      "address": "1600 East High Street, Pottstown, PA  19464",
       "industry": ""
     },
     {
@@ -629379,7 +629607,7 @@
       "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-07-28",
+      "effective_date": "2026-07-29",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",
@@ -647640,6 +647868,18 @@
       "industry": ""
     },
     {
+      "state": "WA",
+      "company": "No Meat Factory USA Inc",
+      "notice_date": "2026-07-28",
+      "effective_date": "2026-07-27",
+      "employees": 113,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Stanwood",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "WI",
       "company": "Semco Windows and Doors",
       "notice_date": "2020-01-02",
@@ -655186,6 +655426,18 @@
       "city": "Washington",
       "address": "",
       "industry": "Corrugated & Solid Fiber Box Mfg"
+    },
+    {
+      "state": "WI",
+      "company": "School Specialty, LLC",
+      "notice_date": "2026-07-28",
+      "effective_date": "2026-09-25",
+      "employees": 59,
+      "layoff_type": "Facility Closure",
+      "county": "Jefferson",
+      "city": "Fort Atkinson",
+      "address": "",
+      "industry": "Other Professional Equip Merch Whls"
     },
     {
       "state": "WV",

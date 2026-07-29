@@ -1,9 +1,9 @@
 {
-  "total_records": 1484,
-  "total_employees": 234548,
+  "total_records": 1485,
+  "total_employees": 234661,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-07-22",
-  "last_updated": "2026-07-28T13:53:49.806036+00:00Z",
+  "date_range_end": "2026-07-28",
+  "last_updated": "2026-07-29T01:53:03.035297+00:00Z",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -17808,6 +17808,18 @@
       "notice_date": "2026-07-22",
       "effective_date": "2026-09-16",
       "employees": 123,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Stanwood",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "No Meat Factory USA Inc",
+      "notice_date": "2026-07-28",
+      "effective_date": "2026-07-27",
+      "employees": 113,
       "layoff_type": "Closure Permanent",
       "county": "",
       "city": "Stanwood",
