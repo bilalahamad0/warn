@@ -1,5 +1,6 @@
 import json
 from datetime import date
+from types import SimpleNamespace
 from unittest.mock import patch
 
 import pytest
@@ -7,6 +8,7 @@ import pytest
 import warn_publish
 
 
+@patch("warn_publish.build_unsubscribe_page")
 @patch("warn_publish.warn_notify.load_subscriber_records", return_value=[])
 @patch("warn_publish.maybe_send_monthly_digest")
 @patch("warn_publish.git_commit_push")
@@ -18,7 +20,7 @@ import warn_publish
 @patch("warn_publish.warn_sources.run_all")
 def test_run_full_pipeline(
     mock_sources, mock_diff, mock_history, mock_national, mock_charts,
-    mock_site, mock_push, mock_digest, mock_subs, tmp_path
+    mock_site, mock_push, mock_digest, mock_subs, mock_unsub, tmp_path
 ):
     """run() orchestrates every stage and honours no_push — without touching the
     real data/ directory, the network, or git.
@@ -50,6 +52,10 @@ def test_run_full_pipeline(
     assert mock_charts.called
     assert mock_site.called
     assert not mock_push.called
+
+    # The unsubscribe page is rebuilt every run — the links already mailed out
+    # have to keep landing somewhere live.
+    assert mock_unsub.called
 
     # The subscriber list is fetched exactly once per run and the digest step
     # runs (as a ledger no-op) on every run.
@@ -201,6 +207,7 @@ def _run_notify_loop(state_results, sources, send_ok=True, tmp_path=None):
          patch("warn_publish.warn_charts.run"), \
          patch("warn_publish.warn_site_us.build_us_site"), \
          patch("warn_publish.build_site"), \
+         patch("warn_publish.build_unsubscribe_page"), \
          patch("warn_publish.git_commit_push"), \
          patch("warn_publish.maybe_send_monthly_digest"), \
          patch("warn_publish.warn_notify.load_subscriber_records",
@@ -358,6 +365,7 @@ def test_digest_failure_is_non_fatal_to_the_run(tmp_path):
          patch("warn_publish.warn_charts.run"), \
          patch("warn_publish.warn_site_us.build_us_site"), \
          patch("warn_publish.build_site"), \
+         patch("warn_publish.build_unsubscribe_page"), \
          patch("warn_publish.git_commit_push"), \
          patch("warn_publish.warn_notify.load_subscriber_records",
                return_value=[]), \
@@ -379,6 +387,7 @@ def test_no_digest_flag_skips_the_step(tmp_path):
          patch("warn_publish.warn_charts.run"), \
          patch("warn_publish.warn_site_us.build_us_site"), \
          patch("warn_publish.build_site"), \
+         patch("warn_publish.build_unsubscribe_page"), \
          patch("warn_publish.git_commit_push"), \
          patch("warn_publish.warn_notify.load_subscriber_records",
                return_value=[]), \
@@ -415,6 +424,97 @@ def test_build_digest_payload_matches_the_real_digest_signature():
 
     params = inspect.signature(warn_digest.build_monthly_digest).parameters
     assert "year" in params and "month" in params
+
+
+# ---------------------------------------------------------------------------
+# Unsubscribe page
+# ---------------------------------------------------------------------------
+
+
+def test_build_unsubscribe_page_delegates_to_warn_unsubscribe(monkeypatch):
+    """The seam calls warn_unsubscribe.build_unsubscribe_page() and nothing else."""
+    import sys
+    import types
+
+    calls = []
+    mod = types.ModuleType("warn_unsubscribe")
+    mod.build_unsubscribe_page = lambda: calls.append(True)
+    monkeypatch.setitem(sys.modules, "warn_unsubscribe", mod)
+
+    warn_publish.build_unsubscribe_page()
+    assert calls == [True]
+
+
+def _run_with_unsubscribe(tmp_path, **kw):
+    """Drive run() with every stage mocked except the unsubscribe-page step."""
+    (tmp_path / "charts_manifest.json").write_text(
+        json.dumps({"charts": [], "total_records": 0, "total_employees": 0})
+    )
+    with patch("warn_publish.warn_sources.run_all", return_value={}), \
+         patch("warn_publish.warn_sources.all_sources", return_value=[]), \
+         patch("warn_publish.warn_diff.generate_report"), \
+         patch("warn_publish.warn_history.run"), \
+         patch("warn_publish.warn_aggregate.build_national"), \
+         patch("warn_publish.warn_charts.run"), \
+         patch("warn_publish.warn_site_us.build_us_site"), \
+         patch("warn_publish.build_site"), \
+         patch("warn_publish.git_commit_push") as mock_push, \
+         patch("warn_publish.maybe_send_monthly_digest") as mock_digest, \
+         patch("warn_publish.warn_notify.load_subscriber_records",
+               return_value=[]), \
+         patch("warn_publish.build_unsubscribe_page", **kw) as mock_unsub, \
+         patch("warn_publish.DATA_DIR", tmp_path):
+        warn_publish.run(no_push=True)
+    return mock_unsub, mock_digest, mock_push
+
+
+def test_unsubscribe_page_is_built_every_run(tmp_path):
+    mock_unsub, _, _ = _run_with_unsubscribe(tmp_path)
+    assert mock_unsub.call_count == 1
+
+
+def test_unsubscribe_page_failure_is_non_fatal(tmp_path):
+    """A missing/broken warn_unsubscribe must not fail a run with good data."""
+    mock_unsub, mock_digest, _ = _run_with_unsubscribe(
+        tmp_path, side_effect=ImportError("no warn_unsubscribe")
+    )
+    assert mock_unsub.called
+    # The run carried on past the failure — the digest step still ran.
+    assert mock_digest.called
+
+
+def _staged_paths(monkeypatch) -> list:
+    """Run git_commit_push with git stubbed out; return the `git add` argv."""
+    calls = []
+
+    def fake_run(args, **kwargs):
+        calls.append(args)
+        # Empty `git status --porcelain` → "nothing to commit", so the stub
+        # never has to fake a commit or a push.
+        return SimpleNamespace(returncode=0, stdout="", stderr="")
+
+    monkeypatch.setattr(warn_publish.subprocess, "run", fake_run)
+    assert warn_publish.git_commit_push() is True
+    add_call = next(c for c in calls if c[:2] == ["git", "add"])
+    return add_call
+
+
+def test_git_add_stages_the_unsubscribe_page(tmp_path, monkeypatch):
+    page = tmp_path / "unsubscribe.html"
+    page.write_text("<html></html>")
+    monkeypatch.setattr(warn_publish, "UNSUBSCRIBE_HTML", page)
+    assert "docs/unsubscribe.html" in _staged_paths(monkeypatch)
+
+
+def test_git_add_omits_the_unsubscribe_page_when_it_was_not_built(
+    tmp_path, monkeypatch
+):
+    """`git add` fails wholesale on a pathspec matching nothing — so a page
+    that was never built must not be named, or nothing else gets staged."""
+    monkeypatch.setattr(warn_publish, "UNSUBSCRIBE_HTML", tmp_path / "absent.html")
+    staged = _staged_paths(monkeypatch)
+    assert "docs/unsubscribe.html" not in staged
+    assert "docs/" in staged            # the rest is still staged as before
 
 
 def test_maybe_send_digest_threads_records_to_the_notifier(digest_dir):

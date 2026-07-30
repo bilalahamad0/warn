@@ -1,8 +1,72 @@
+import smtplib
 from email import message_from_string
 from email.header import decode_header, make_header
 from unittest.mock import MagicMock, patch
 
+import pytest
+
 import warn_notify
+import warn_subscribers
+
+
+@pytest.fixture(autouse=True)
+def _unsigned_by_default(monkeypatch):
+    """Default every test to the unsigned path unless it asks for `signed`.
+
+    Without this, a SUBSCRIBERS_TOKEN in the ambient environment (CI exports it
+    for the pipeline step) would silently flip delivery to personalised mode and
+    change what `sendmail.call_args` means for the older assertions here.
+    """
+    monkeypatch.delenv("SUBSCRIBERS_TOKEN", raising=False)
+
+
+# The shared contract's reference token (see warn_subscribers): with it,
+# "me@example.com" must sign to b71371db806cc29b7660ac1369591ea5.
+SIGNING_TOKEN = "test-secret-123"
+
+
+@pytest.fixture
+def signed(monkeypatch):
+    """Turn on signed, per-recipient unsubscribe links."""
+    monkeypatch.setenv("SUBSCRIBERS_TOKEN", SIGNING_TOKEN)
+    return SIGNING_TOKEN
+
+
+def _sent(inst):
+    """Every sendmail call as (envelope_recipients, parsed message)."""
+    return [
+        (list(call[0][1]), message_from_string(call[0][2]))
+        for call in inst.sendmail.call_args_list
+    ]
+
+
+def _by_recipient(inst):
+    """Parsed messages keyed by their single envelope recipient."""
+    return {recips[0]: msg for recips, msg in _sent(inst) if len(recips) == 1}
+
+
+def _parts(msg) -> dict:
+    """{content_type: decoded body} for one message."""
+    out = {}
+    for part in msg.walk():
+        if part.get_content_maintype() == "multipart":
+            continue
+        out[part.get_content_type()] = part.get_payload(decode=True).decode()
+    return out
+
+
+def _body(msg) -> str:
+    """Every part of a message concatenated — for 'appears nowhere' checks."""
+    return "".join(_parts(msg).values())
+
+
+def _href(url: str) -> str:
+    """How ``url`` appears in an HTML body: `&` escaped, per the markup spec.
+
+    A client unescapes this back to exactly ``url`` — the same one the
+    List-Unsubscribe header carries.
+    """
+    return 'href="' + url.replace("&", "&amp;") + '"'
 
 
 def test_build_text(sample_warn_data):
@@ -387,3 +451,284 @@ def test_digest_batches_large_subscriber_lists(mock_env, monkeypatch):
 def test_digest_send_failure_returns_false(mock_env):
     with patch("warn_notify.smtplib.SMTP_SSL", side_effect=OSError("boom")):
         assert warn_notify.send_monthly_digest(_DIGEST, records=[]) is False
+
+
+# ---------------------------------------------------------------------------
+# Signed per-recipient unsubscribe links
+# ---------------------------------------------------------------------------
+
+_TWO_SUBS = [_sub("alice@x.com"), _sub("bob@x.com")]
+
+
+def _send_alert(records, state="CA", diff=None):
+    """Send one alert with SMTP mocked; return (result, smtp class, instance)."""
+    with patch("warn_notify.smtplib.SMTP_SSL") as mock_smtp:
+        inst = MagicMock()
+        mock_smtp.return_value.__enter__.return_value = inst
+        ok = warn_notify.send_email(
+            diff if diff is not None else _NEW_DIFF,
+            {"total_records": 1},
+            state=state,
+            records=records,
+        )
+    return ok, mock_smtp, inst
+
+
+def _send_digest(records, digest=None):
+    with patch("warn_notify.smtplib.SMTP_SSL") as mock_smtp:
+        inst = MagicMock()
+        mock_smtp.return_value.__enter__.return_value = inst
+        ok = warn_notify.send_monthly_digest(
+            digest if digest is not None else _DIGEST, records=records
+        )
+    return ok, mock_smtp, inst
+
+
+def test_link_matches_the_shared_contract_reference_vector(monkeypatch):
+    """The exact vector both sides of the contract must reproduce.
+
+    warn_notify only mints links; the Apps Script re-derives the signature with
+    the same key before honouring one. If either side drifts, every link in
+    every email silently stops verifying — so pin the value here too.
+    """
+    monkeypatch.setenv("SUBSCRIBERS_TOKEN", "test-secret-123")
+    assert warn_notify._unsubscribe_link("me@example.com") == (
+        "https://bilalahamad0.github.io/warn/unsubscribe.html"
+        "?e=me%40example.com&s=b71371db806cc29b7660ac1369591ea5"
+    )
+
+
+def test_link_is_empty_without_a_token():
+    assert warn_notify._unsubscribe_link("me@example.com") == ""
+
+
+def test_link_failure_degrades_to_no_link(signed):
+    """A blow-up in link minting must not take the alert down with it."""
+    with patch(
+        "warn_notify.warn_subscribers.unsubscribe_url",
+        side_effect=RuntimeError("nope"),
+    ):
+        assert warn_notify._unsubscribe_link("a@x.com") == ""
+
+
+def test_each_subscriber_gets_a_link_signed_for_their_own_address(
+    mock_env, signed
+):
+    """The whole point: Alice's link unsubscribes Alice, never Bob.
+
+    A BCC blast physically cannot do this — one body, one link — which is why
+    subscriber delivery is personalised.
+    """
+    ok, _, inst = _send_alert(_TWO_SUBS)
+    assert ok is True
+
+    msgs = _by_recipient(inst)
+    assert set(msgs) == {"notify@example.com", "alice@x.com", "bob@x.com"}
+
+    alice_sig = warn_subscribers.unsubscribe_signature("alice@x.com")
+    bob_sig = warn_subscribers.unsubscribe_signature("bob@x.com")
+    assert alice_sig and bob_sig and alice_sig != bob_sig
+
+    alice_body, bob_body = _body(msgs["alice@x.com"]), _body(msgs["bob@x.com"])
+    assert alice_sig in alice_body and bob_sig not in alice_body
+    assert bob_sig in bob_body and alice_sig not in bob_body
+    # The address the link acts on is theirs too, not just the signature.
+    assert "alice%40x.com" in alice_body and "bob%40x.com" not in alice_body
+    assert "bob%40x.com" in bob_body and "alice%40x.com" not in bob_body
+
+
+def test_personalised_messages_never_expose_another_subscriber(mock_env, signed):
+    """Their own address in To, one envelope recipient — no BCC, no leak."""
+    _, _, inst = _send_alert(_TWO_SUBS)
+    for recips, msg in _sent(inst):
+        assert len(recips) == 1
+        assert msg["To"] == recips[0]
+    msgs = _by_recipient(inst)
+    assert "bob@x.com" not in msgs["alice@x.com"].as_string()
+    assert "alice@x.com" not in msgs["bob@x.com"].as_string()
+
+
+def test_operator_copy_is_unchanged(mock_env, signed):
+    """NOTIFY_EMAIL is the operator, not a subscriber — no signed link."""
+    _, _, inst = _send_alert(_TWO_SUBS)
+    op = _by_recipient(inst)["notify@example.com"]
+    assert op["List-Unsubscribe"] == "<mailto:test@gmail.com?subject=unsubscribe>"
+    assert op["List-Unsubscribe-Post"] is None
+    body = _body(op)
+    assert "unsubscribe.html?" not in body
+    assert "reply to this email" in body
+    # …and no subscriber's address rides along on it.
+    assert "alice@x.com" not in op.as_string()
+
+
+def test_list_unsubscribe_headers_match_the_body_link(mock_env, signed):
+    """Mail clients render their unsubscribe affordance off this header.
+
+    No List-Unsubscribe-Post: the landing page is a static asset that cannot
+    accept the RFC 8058 POST, and unsubscribing requires confirming a
+    selection — advertising one-click would strand the user on a dead POST
+    believing they had been removed.
+    """
+    _, _, inst = _send_alert(_TWO_SUBS)
+    msgs = _by_recipient(inst)
+    for addr in ("alice@x.com", "bob@x.com"):
+        url = warn_subscribers.unsubscribe_url(addr)
+        msg = msgs[addr]
+        assert msg["List-Unsubscribe"] == f"<{url}>"
+        assert msg["List-Unsubscribe-Post"] is None
+        parts = _parts(msg)
+        # Visible in BOTH alternatives, and the same URL the headers carry.
+        assert f"Manage or cancel these alerts: {url}" in parts["text/plain"]
+        assert "Manage or cancel these alerts" in parts["text/html"]
+        assert _href(url) in parts["text/html"]
+        # The pre-link instruction is replaced, not doubled up.
+        assert "reply to this email" not in parts["text/plain"]
+
+
+def test_personalised_send_reuses_one_smtp_connection(mock_env, signed):
+    """One login for the whole run — not one handshake per subscriber."""
+    records = [_sub(f"s{i}@x.com") for i in range(5)]
+    _, mock_smtp, inst = _send_alert(records)
+    assert mock_smtp.call_count == 1
+    assert inst.login.call_count == 1
+    assert inst.sendmail.call_count == 6          # operator + 5 subscribers
+
+
+def test_unsigned_send_carries_no_link_and_still_delivers(mock_env):
+    """SUBSCRIBERS_TOKEN unset: exactly the pre-link behaviour, no broken URL."""
+    ok, _, inst = _send_alert(_TWO_SUBS)
+    assert ok is True
+
+    sent = _sent(inst)
+    assert len(sent) == 1                        # one BCC-batched message
+    recips, msg = sent[0]
+    assert set(recips) == {"notify@example.com", "alice@x.com", "bob@x.com"}
+    assert msg["List-Unsubscribe-Post"] is None
+    assert msg["List-Unsubscribe"] == "<mailto:test@gmail.com?subject=unsubscribe>"
+    body = _body(msg)
+    assert "unsubscribe.html" not in body        # no half-built link
+    assert "&s=" not in body
+    assert "reply to this email" in body
+
+
+def test_unsigned_state_alert_is_logged_once(mock_env, caplog):
+    """The operator is told why links are missing — once, not per recipient."""
+    with caplog.at_level("INFO", logger="warn_notify"):
+        _send_alert(_TWO_SUBS)
+    hits = [r for r in caplog.records if "SUBSCRIBERS_TOKEN not set" in r.message]
+    assert len(hits) == 1
+
+
+def test_no_unsigned_warning_when_there_are_no_subscribers(mock_env, caplog):
+    """Operator-only sends have nobody to link, so nothing to explain."""
+    with caplog.at_level("INFO", logger="warn_notify"):
+        _send_alert([])
+    assert not [r for r in caplog.records if "SUBSCRIBERS_TOKEN" in r.message]
+
+
+def test_digest_carries_the_same_signed_treatment(mock_env, signed):
+    records = [
+        _sub("d1@x.com", [], digest=True),
+        _sub("d2@x.com", [], digest=True),
+    ]
+    ok, mock_smtp, inst = _send_digest(records)
+    assert ok is True
+    assert mock_smtp.call_count == 1              # still one connection
+
+    msgs = _by_recipient(inst)
+    assert set(msgs) == {"notify@example.com", "d1@x.com", "d2@x.com"}
+    for addr in ("d1@x.com", "d2@x.com"):
+        url = warn_subscribers.unsubscribe_url(addr)
+        msg = msgs[addr]
+        assert msg["List-Unsubscribe"] == f"<{url}>"
+        # No one-click promise — see test_list_unsubscribe_headers_*.
+        assert msg["List-Unsubscribe-Post"] is None
+        parts = _parts(msg)
+        assert f"Manage or cancel these alerts: {url}" in parts["text/plain"]
+        assert _href(url) in parts["text/html"]
+        # The digest's own body survives the appended footer.
+        assert "June 2026" in parts["text/html"]
+
+    other = warn_subscribers.unsubscribe_signature("d2@x.com")
+    assert other not in _body(msgs["d1@x.com"])
+    # The operator's digest copy is untouched.
+    assert msgs["notify@example.com"]["List-Unsubscribe-Post"] is None
+
+
+def test_unsigned_digest_still_delivers_without_a_link(mock_env):
+    records = [_sub("d1@x.com", [], digest=True)]
+    ok, _, inst = _send_digest(records)
+    assert ok is True
+    sent = _sent(inst)
+    assert len(sent) == 1
+    assert set(sent[0][0]) == {"notify@example.com", "d1@x.com"}
+    assert "unsubscribe.html" not in _body(sent[0][1])
+
+
+def test_digest_without_html_still_gets_a_text_footer(mock_env, signed):
+    """A text-only digest must not grow an empty HTML alternative."""
+    payload = {"subject": "s", "html": "", "text": "just text"}
+    _, _, inst = _send_digest(
+        [_sub("d1@x.com", [], digest=True)], digest=payload
+    )
+    parts = _parts(_by_recipient(inst)["d1@x.com"])
+    assert set(parts) == {"text/plain"}
+    assert warn_subscribers.unsubscribe_url("d1@x.com") in parts["text/plain"]
+
+
+def test_a_refused_address_does_not_sink_the_rest_of_the_send(mock_env, signed):
+    """One dead mailbox must not strand the alert ledger and re-mail everyone."""
+    def sendmail(sender, recips, raw):
+        if "bob@x.com" in recips:
+            raise smtplib.SMTPRecipientsRefused({"bob@x.com": (550, b"no such")})
+
+    with patch("warn_notify.smtplib.SMTP_SSL") as mock_smtp:
+        inst = MagicMock()
+        inst.sendmail.side_effect = sendmail
+        mock_smtp.return_value.__enter__.return_value = inst
+        ok = warn_notify.send_email(
+            _NEW_DIFF, {"total_records": 1}, state="CA", records=_TWO_SUBS
+        )
+    assert ok is True
+    assert inst.sendmail.call_count == 3          # attempted all three
+
+
+def test_send_is_a_failure_when_every_address_is_refused(mock_env, signed):
+    with patch("warn_notify.smtplib.SMTP_SSL") as mock_smtp:
+        inst = MagicMock()
+        inst.sendmail.side_effect = smtplib.SMTPRecipientsRefused({})
+        mock_smtp.return_value.__enter__.return_value = inst
+        assert warn_notify.send_email(
+            _NEW_DIFF, {"total_records": 1}, state="CA", records=_TWO_SUBS
+        ) is False
+
+
+def test_body_builders_render_the_footer_when_given_a_url():
+    url = "https://example.test/unsubscribe.html?e=a%40x.com&s=abc"
+    text = warn_notify._build_text(_NEW_DIFF, {"total_records": 1}, "CA", url)
+    html = warn_notify._build_html(_NEW_DIFF, {"total_records": 1}, "CA", url)
+    assert f"Manage or cancel these alerts: {url}" in text
+    assert _href(url) in html
+    assert "reply to this email" not in text
+    assert "reply to this email" not in html
+
+
+def test_body_builders_keep_the_reply_line_without_a_url():
+    text = warn_notify._build_text(_NEW_DIFF, {"total_records": 1})
+    html = warn_notify._build_html(_NEW_DIFF, {"total_records": 1})
+    assert "reply to this email" in text
+    assert "reply to this email" in html
+
+
+def test_html_footer_lands_inside_the_document_body():
+    """Appended to an opaque digest, the block goes before </body>."""
+    out = warn_notify._append_unsubscribe_html(
+        "<html><body><p>hi</p></body></html>", "https://example.test/u"
+    )
+    assert out.endswith("</body></html>")
+    assert out.index("Manage or cancel") < out.index("</body>")
+
+
+def test_footer_appenders_are_no_ops_without_a_url():
+    assert warn_notify._append_unsubscribe_html("<p>hi</p>", "") == "<p>hi</p>"
+    assert warn_notify._append_unsubscribe_text("hi", "") == "hi"

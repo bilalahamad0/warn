@@ -16,10 +16,13 @@ Returns an empty list when unconfigured or on any error (never raises), so the
 pipeline degrades gracefully.
 """
 
+import hashlib
+import hmac
 import os
 import logging
 import re
 from pathlib import Path
+from urllib.parse import urlencode
 
 try:
     from dotenv import load_dotenv
@@ -143,6 +146,42 @@ def digest_subscribers(timeout: int = 20, records=None) -> list:
     if records is None:
         records = get_subscriber_records(timeout=timeout)
     return [r["email"] for r in records if r["digest"]]
+
+
+# ---------------------------------------------------------------------------
+# Signed unsubscribe links
+# ---------------------------------------------------------------------------
+
+# Public site root; the unsubscribe page is published alongside the dashboards.
+SITE_BASE_URL = "https://bilalahamad0.github.io/warn"
+UNSUBSCRIBE_PAGE = "unsubscribe.html"
+
+
+def unsubscribe_signature(email: str) -> str:
+    """HMAC-SHA256 of the lowercased email, keyed by the shared list token.
+
+    The Apps Script recomputes this with the same key (its LIST_TOKEN script
+    property) before showing or changing anyone's preferences, so a link only
+    ever works for the address it was minted for — nobody can unsubscribe
+    somebody else by editing the query string. Returns "" when the token is
+    unset, which callers treat as "no unsubscribe link available".
+    """
+    secret = _token()
+    email = str(email or "").strip().lower()
+    if not secret or not email:
+        return ""
+    return hmac.new(
+        secret.encode("utf-8"), email.encode("utf-8"), hashlib.sha256
+    ).hexdigest()[:32]
+
+
+def unsubscribe_url(email: str, base: str = SITE_BASE_URL) -> str:
+    """Signed one-click unsubscribe URL for one subscriber ("" if unsigned)."""
+    sig = unsubscribe_signature(email)
+    if not sig:
+        return ""
+    query = urlencode({"e": str(email).strip().lower(), "s": sig})
+    return f"{base.rstrip('/')}/{UNSUBSCRIBE_PAGE}?{query}"
 
 
 def get_subscriber_count(timeout: int = 15) -> int:

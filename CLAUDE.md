@@ -89,6 +89,21 @@ message. See README "Email Signups" for deployment. **Re-deploy the Apps
 Script after changing `subscribe.gs`** (Manage deployments ▸ edit ▸ New
 version) or the new column is never written.
 
+**Unsubscribe** (`warn_unsubscribe.py` → `docs/unsubscribe.html`, rebuilt every
+run): every subscriber email carries a per-recipient link signed with
+`warn_subscribers.unsubscribe_signature` (HMAC-SHA256 of the lowercased
+address keyed by `SUBSCRIBERS_TOKEN`, hex, 32 chars — the Apps Script
+recomputes it with its identical `LIST_TOKEN`, so a link only works for the
+address it was minted for). The page GETs `?action=prefs` to show current
+subscriptions and POSTs `{action:'unsubscribe', e, s, states[], digest}`.
+**An empty selection deletes the sheet row** — blanking the cell would
+re-subscribe them to California via `DEFAULT_STATES`. Alerts carry
+`List-Unsubscribe` but deliberately *not* `List-Unsubscribe-Post`: the
+landing page is a static asset that cannot serve the RFC 8058 one-click
+POST (see `warn_notify._build_message`). Because links are per-recipient,
+subscriber mail is sent one message per address over a single SMTP
+connection rather than one BCC blast.
+
 **Subscription preferences** (the `states` sheet column, comma-separated):
 - 2-letter codes = per-notice alerts for those states, routed by
   `warn_subscribers.subscribers_for_state` → `warn_notify.send_email(...,

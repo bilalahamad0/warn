@@ -42,6 +42,11 @@ SITE_DATA = OUTPUT_DIR / "data.json"
 INDEX_HTML = OUTPUT_DIR / "index.html"
 TEMPLATE = BASE_DIR / "docs" / "index_template.html"
 
+# Landing page for the signed unsubscribe links carried by every subscriber
+# email (warn_subscribers.unsubscribe_url). Rebuilt every run alongside the
+# dashboards so the link in an alert always resolves to a live page.
+UNSUBSCRIBE_HTML = OUTPUT_DIR / "unsubscribe.html"
+
 # The dashboard reads the cumulative store (union of every notice ever
 # observed) so notices dropped by a later EDD re-export stay visible. It
 # falls back to the latest download if the cumulative store is absent.
@@ -471,6 +476,21 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
     return str(INDEX_HTML)
 
 
+def build_unsubscribe_page() -> None:
+    """Write docs/unsubscribe.html via warn_unsubscribe.
+
+    A seam (like ``_build_digest_payload``): warn_unsubscribe is imported at
+    call time so this module still imports on a checkout that predates it, and
+    tests can patch the whole step. The caller wraps this in try/except —
+    losing the page must never fail a run that produced good data, though it
+    does mean the links already mailed out land on a stale page until the next
+    successful build.
+    """
+    import warn_unsubscribe
+
+    warn_unsubscribe.build_unsubscribe_page()
+
+
 # ---------------------------------------------------------------------------
 # Git push
 # ---------------------------------------------------------------------------
@@ -505,22 +525,27 @@ def git_commit_push(message: str = None) -> bool:
         return result.returncode == 0
 
     log.info("Staging changes …")
-    run_git(
-        [
-            "add",
-            "data/",
-            "docs/",
-            "file.xlsx",
-            "requirements.txt",
-            "warn_monitor.py",
-            "warn_charts.py",
-            "warn_diff.py",
-            "warn_publish.py",
-            "warn_site_us.py",
-            "warn_sources/",
-            "README.md",
-        ]
-    )
+    add_paths = [
+        "add",
+        "data/",
+        "docs/",
+        "file.xlsx",
+        "requirements.txt",
+        "warn_monitor.py",
+        "warn_charts.py",
+        "warn_diff.py",
+        "warn_publish.py",
+        "warn_site_us.py",
+        "warn_sources/",
+        "README.md",
+    ]
+    # Stage the unsubscribe page by name as well as via docs/, so the page the
+    # mailed-out links point at can never be left behind. Only when it exists:
+    # `git add` fails the *whole* invocation on a pathspec that matches
+    # nothing, which would strand every other change above.
+    if UNSUBSCRIBE_HTML.exists():
+        add_paths.append("docs/unsubscribe.html")
+    run_git(add_paths)
 
     # Check if there's anything to commit
     status_result = subprocess.run(
@@ -1587,6 +1612,13 @@ def run(no_push: bool = False, force: bool = False, skip_history: bool = False,
         warn_site_us.build_us_site()
     except Exception as e:
         log.warning(f"US dashboard build failed (non-fatal): {e}")
+    # The landing page for the signed unsubscribe links in every subscriber
+    # email. Built before the sends below, so a link can never be mailed out
+    # ahead of the page it points at.
+    try:
+        build_unsubscribe_page()
+    except Exception as e:
+        log.warning(f"Unsubscribe page build failed (non-fatal): {e}")
 
     # Subscriber preferences, fetched once for the whole run and threaded
     # through every send — a run that alerts on N states must not hit the

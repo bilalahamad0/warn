@@ -18,6 +18,13 @@ Routing: a per-notice alert for state X reaches NOTIFY_EMAIL (the operator,
 always) plus only those subscribers whose preferences include X. The whole-US
 monthly digest reaches the operator plus subscribers who opted into it. See
 warn_subscribers for the preference schema.
+
+Unsubscribe links are per recipient — the URL carries an HMAC of that one
+address (warn_subscribers.unsubscribe_url), so a single BCC blast cannot carry
+a correct one. Subscriber mail is therefore personalised: one message each,
+all sent over ONE SMTP login. When SUBSCRIBERS_TOKEN is unset there is no
+signature to mint, so delivery falls back to the original BCC batching rather
+than shipping a link that would fail verification.
 """
 
 import smtplib
@@ -25,6 +32,7 @@ import os
 import logging
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from html import escape as _html_escape
 from pathlib import Path
 from datetime import datetime, timezone
 from typing import List
@@ -106,6 +114,75 @@ def _state_meta(state: str) -> dict:
 
 
 # ---------------------------------------------------------------------------
+# Unsubscribe footer
+# ---------------------------------------------------------------------------
+
+# One wording, used by the alert template, the digest footer and the plain-text
+# parts, so the visible line always matches the List-Unsubscribe header.
+UNSUBSCRIBE_LABEL = "Manage or cancel these alerts"
+
+# Shown when no signed link can be minted (SUBSCRIBERS_TOKEN unset) — exactly
+# what every message said before signed links existed.
+REPLY_UNSUBSCRIBE_LINE = 'To unsubscribe, reply to this email with "unsubscribe".'
+
+
+def _unsubscribe_link(email: str) -> str:
+    """Signed one-click unsubscribe URL for one address ("" when unavailable).
+
+    Returns "" when SUBSCRIBERS_TOKEN is unset (nothing to sign with) and on any
+    error — a missing link is a cosmetic loss, a failed alert is not.
+    """
+    try:
+        return warn_subscribers.unsubscribe_url(email) or ""
+    except Exception as e:  # noqa: BLE001 — never block a send on link minting
+        log.warning(f"Could not build unsubscribe link: {e}")
+        return ""
+
+
+def _unsubscribe_line_text(url: str) -> str:
+    return f"{UNSUBSCRIBE_LABEL}: {url}"
+
+
+def _unsubscribe_line_html(url: str) -> str:
+    """The footer line as markup. The URL is HTML-escaped, not mangled.
+
+    The signed URL joins its two query parameters with ``&``, which is invalid
+    raw in markup — in an attribute *or* in text. Mail clients run aggressive
+    sanitisers over the body, so escape it and let the client unescape back to
+    the exact URL the List-Unsubscribe header carries.
+    """
+    safe = _html_escape(url, quote=True)
+    return f'{UNSUBSCRIBE_LABEL}: <a href="{safe}" style="color:#58a6ff">{safe}</a>'
+
+
+def _append_unsubscribe_text(text: str, url: str) -> str:
+    """Append the footer line to an opaque plain-text body (the digest)."""
+    if not url:
+        return text
+    return f"{text.rstrip()}\n\n{_unsubscribe_line_text(url)}"
+
+
+def _append_unsubscribe_html(html: str, url: str) -> str:
+    """Append the footer block to an opaque HTML body (the digest).
+
+    Inserted just before </body> when there is one so it lands inside the
+    rendered document, appended otherwise.
+    """
+    if not url:
+        return html
+    block = (
+        '<div style="margin:0 auto;padding:20px;max-width:620px;'
+        "text-align:center;font-family:Inter,system-ui,sans-serif;"
+        'font-size:12px;color:#8b949e">'
+        f"{_unsubscribe_line_html(url)}</div>"
+    )
+    idx = html.lower().rfind("</body>")
+    if idx == -1:
+        return html + block
+    return html[:idx] + block + html[idx:]
+
+
+# ---------------------------------------------------------------------------
 # HTML email template
 # ---------------------------------------------------------------------------
 
@@ -130,7 +207,9 @@ def _describe_amendment(a: dict) -> str:
     return "; ".join(parts) or "details revised"
 
 
-def _build_html(diff: dict, summary: dict, state: str = "CA") -> str:
+def _build_html(
+    diff: dict, summary: dict, state: str = "CA", unsubscribe_url: str = ""
+) -> str:
     meta = _state_meta(state)
     state_name = meta["name"]
     dashboard_url = meta["dashboard"]
@@ -206,6 +285,14 @@ def _build_html(diff: dict, summary: dict, state: str = "CA") -> str:
             '</tr></thead><tbody>' + amend_rows + '</tbody></table>' + amend_more +
             '</td></tr>'
         )
+
+    # Footer: the recipient's own signed link when we have one, else the
+    # pre-link reply instruction.
+    unsub_line = (
+        _unsubscribe_line_html(unsubscribe_url)
+        if unsubscribe_url
+        else REPLY_UNSUBSCRIBE_LINE
+    )
 
     # Genuine withdrawals only — a filing whose whole anchor vanished from the
     # feed, not a revision (those are shown above as amendments).
@@ -288,7 +375,7 @@ def _build_html(diff: dict, summary: dict, state: str = "CA") -> str:
               {dashboard_url}
             </a>.
             Data source: {source_label}.
-            <br/>To unsubscribe, reply to this email with "unsubscribe".
+            <br/>{unsub_line}
           </td>
         </tr>
 
@@ -299,7 +386,9 @@ def _build_html(diff: dict, summary: dict, state: str = "CA") -> str:
 </html>"""
 
 
-def _build_text(diff: dict, summary: dict, state: str = "CA") -> str:
+def _build_text(
+    diff: dict, summary: dict, state: str = "CA", unsubscribe_url: str = ""
+) -> str:
     meta = _state_meta(state)
     new_count = diff.get("new_count", 0)
     amend_count = diff.get("amendment_count", 0)
@@ -336,7 +425,11 @@ def _build_text(diff: dict, summary: dict, state: str = "CA") -> str:
         lines.append(f"Source: {meta['url']}")
     lines += [
         "",
-        'To unsubscribe, reply to this email with "unsubscribe".',
+        (
+            _unsubscribe_line_text(unsubscribe_url)
+            if unsubscribe_url
+            else REPLY_UNSUBSCRIBE_LINE
+        ),
     ]
     return "\n".join(lines)
 
@@ -364,21 +457,129 @@ def _recipient_batches(to_addr: str, subscribers: List[str]) -> List[List[str]]:
     return batches
 
 
-def _deliver(msg: MIMEMultipart, batches: List[List[str]], what: str) -> bool:
-    """Log in once and send ``msg`` to every envelope batch. True on success."""
+def _build_message(
+    subject: str,
+    to_addr: str,
+    text: str,
+    html: str,
+    unsubscribe_url: str = "",
+) -> MIMEMultipart:
+    """Assemble one message, wired to ``unsubscribe_url`` when there is one.
+
+    ``List-Unsubscribe`` points at the same per-recipient URL the visible
+    footer shows, so mail clients can offer their own unsubscribe affordance
+    that opens the confirmation page. Without a signed URL the header falls
+    back to the mailto form used before signed links.
+
+    Deliberately NO ``List-Unsubscribe-Post``: RFC 8058 one-click promises the
+    URI accepts an HTTPS POST *and* completes the unsubscribe with no further
+    interaction. The landing page is a static GitHub Pages asset that cannot
+    process POST, and by design nothing changes until the visitor confirms
+    their selection — so advertising one-click would send Gmail's native
+    button to a dead POST and tell the user they were unsubscribed when they
+    were not. (To offer true one-click later, point this header at the Apps
+    Script /exec endpoint, which can accept POST, and add a handler there.)
+    """
+    gmail_user, _, _ = _smtp_config()
+    msg = MIMEMultipart("alternative")
+    msg["Subject"] = subject
+    msg["From"] = f"WARN Monitor <{gmail_user}>"
+    msg["To"] = to_addr
+    if unsubscribe_url:
+        msg["List-Unsubscribe"] = f"<{unsubscribe_url}>"
+    else:
+        msg["List-Unsubscribe"] = f"<mailto:{gmail_user}?subject=unsubscribe>"
+
+    msg.attach(MIMEText(text, "plain"))
+    if html:
+        msg.attach(MIMEText(html, "html"))
+    return msg
+
+
+def _plan_deliveries(
+    subject: str,
+    to_addr: str,
+    subscribers: List[str],
+    build_text,
+    build_html,
+) -> List[tuple]:
+    """Plan one send as a list of ``(envelope_recipients, message)`` pairs.
+
+    ``build_text``/``build_html`` take the recipient's unsubscribe URL ("" for
+    none) and return that recipient's body, so each subscriber's message can
+    carry their own signed link.
+
+    Signed: the operator gets their copy unchanged, then one personalised
+    message per subscriber (their address in To — no BCC, nobody's link
+    reaching anybody else). Unsigned (SUBSCRIBERS_TOKEN unset): a single
+    message BCC-batched under Gmail's per-message cap, exactly as before.
+    """
+    subs = [s for s in dict.fromkeys(subscribers) if s and s != to_addr]
+    links = {em: _unsubscribe_link(em) for em in subs}
+
+    if not any(links.values()):
+        if subs:
+            log.info(
+                "SUBSCRIBERS_TOKEN not set — no per-recipient unsubscribe link; "
+                "sending one BCC-batched message as before."
+            )
+        msg = _build_message(subject, to_addr, build_text(""), build_html(""))
+        return [(batch, msg) for batch in _recipient_batches(to_addr, subs)]
+
+    deliveries = []
+    if to_addr:
+        deliveries.append(
+            (
+                [to_addr],
+                _build_message(subject, to_addr, build_text(""), build_html("")),
+            )
+        )
+    for em in subs:
+        url = links.get(em, "")
+        deliveries.append(
+            (
+                [em],
+                _build_message(
+                    subject, em, build_text(url), build_html(url), url
+                ),
+            )
+        )
+    return deliveries
+
+
+def _deliver(deliveries: List[tuple], what: str) -> bool:
+    """Log in once and send every planned message. True if any was delivered.
+
+    Personalised sends mean one message per subscriber, so a fresh connection
+    per recipient would turn a 500-subscriber alert into 500 TLS handshakes and
+    500 Gmail logins — one login, N sendmail commands instead.
+
+    An address Gmail refuses outright is logged and skipped rather than failing
+    the whole send: a permanently dead address would otherwise leave the
+    alerted-keys ledger unwritten and re-mail everyone else on the next run.
+    """
     gmail_user, gmail_pass, _ = _smtp_config()
-    raw = msg.as_string()
-    total = len({r for batch in batches for r in batch})
+    if not deliveries:
+        return False
+    total = len({r for recips, _ in deliveries for r in recips})
+    delivered = 0
     try:
         log.info(
-            f"Sending {what} to {total} recipient(s) in {len(batches)} batch(es) …"
+            f"Sending {what} to {total} recipient(s) in "
+            f"{len(deliveries)} message(s) …"
         )
         with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
             server.login(gmail_user, gmail_pass)
-            for batch in batches:
-                server.sendmail(gmail_user, batch, raw)
-        log.info(f"✓ {what.capitalize()} sent.")
-        return True
+            for recips, msg in deliveries:
+                try:
+                    server.sendmail(gmail_user, recips, msg.as_string())
+                    delivered += 1
+                except (
+                    smtplib.SMTPRecipientsRefused,
+                    smtplib.SMTPSenderRefused,
+                    smtplib.SMTPDataError,
+                ) as e:
+                    log.warning(f"Recipient refused ({', '.join(recips)}): {e}")
     except smtplib.SMTPAuthenticationError:
         log.error(
             "Gmail authentication failed. Make sure you're using an App Password, "
@@ -389,6 +590,12 @@ def _deliver(msg: MIMEMultipart, batches: List[List[str]], what: str) -> bool:
     except Exception as e:
         log.error(f"Email send failed: {e}")
         return False
+
+    if not delivered:
+        log.error(f"{what.capitalize()} reached nobody — every address refused.")
+        return False
+    log.info(f"✓ {what.capitalize()} sent ({delivered}/{len(deliveries)} msgs).")
+    return True
 
 
 def load_subscriber_records() -> list:
@@ -418,10 +625,11 @@ def send_email(
 ) -> bool:
     """Send a per-notice alert for one state's WARN feed.
 
-    Goes to NOTIFY_EMAIL (the operator, in To) plus — BCC'd, for privacy and to
-    stay under Gmail's per-message cap — only those subscribers who asked for
-    ``state``. A state nobody subscribed to still reaches the operator, so
-    pipeline activity is never invisible.
+    Goes to NOTIFY_EMAIL (the operator, in To) plus only those subscribers who
+    asked for ``state`` — each as their own message carrying their own signed
+    unsubscribe link, all over one SMTP login (see ``_plan_deliveries``). A
+    state nobody subscribed to still reaches the operator, so pipeline activity
+    is never invisible.
 
     ``records`` is an already-fetched subscriber list (see
     ``load_subscriber_records``); when None the list is fetched here.
@@ -462,25 +670,22 @@ def send_email(
     if not subscribers:
         log.info(f"No subscribers requested {code} alerts — operator only.")
 
-    batches = _recipient_batches(to_addr, subscribers)
-    if not batches:
+    deliveries = _plan_deliveries(
+        subject,
+        to_addr,
+        subscribers,
+        lambda url: _build_text(diff, summary, code, url),
+        lambda url: _build_html(diff, summary, code, url),
+    )
+    if not deliveries:
         log.warning(
             f"No recipients for {code} (NOTIFY_EMAIL unset, no subscribers) "
             "— skipping."
         )
         return False
 
-    msg = MIMEMultipart("alternative")
-    msg["Subject"] = subject
-    msg["From"] = f"WARN Monitor <{gmail_user}>"
-    msg["To"] = to_addr
-    msg["List-Unsubscribe"] = f"<mailto:{gmail_user}?subject=unsubscribe>"
-
-    msg.attach(MIMEText(_build_text(diff, summary, code), "plain"))
-    msg.attach(MIMEText(_build_html(diff, summary, code), "html"))
-
     return _deliver(
-        msg, batches, f"{code} alert ({len(subscribers)} subscriber(s))"
+        deliveries, f"{code} alert ({len(subscribers)} subscriber(s))"
     )
 
 
@@ -488,7 +693,8 @@ def send_monthly_digest(digest: dict, records=None) -> bool:
     """Email the whole-US monthly digest built by warn_digest.
 
     Recipients are NOTIFY_EMAIL (To) plus every subscriber who opted into the
-    digest (BCC), batched like the per-notice alerts. ``digest`` carries
+    digest — personalised one per subscriber, with the same signed unsubscribe
+    footer and headers as the per-notice alerts. ``digest`` carries
     ``subject``/``html``/``text``; the plain-text part is attached first so
     clients that prefer it get a readable body.
     """
@@ -512,25 +718,20 @@ def send_monthly_digest(digest: dict, records=None) -> bool:
         log.warning(f"Could not load digest subscribers (operator only): {e}")
         subscribers = []
 
-    batches = _recipient_batches(to_addr, subscribers)
-    if not batches:
+    body_text = text or f"View the full digest at {US_DASHBOARD_URL}"
+    deliveries = _plan_deliveries(
+        subject,
+        to_addr,
+        subscribers,
+        lambda url: _append_unsubscribe_text(body_text, url),
+        lambda url: _append_unsubscribe_html(html, url) if html else "",
+    )
+    if not deliveries:
         log.warning("No digest recipients (NOTIFY_EMAIL unset) — skipping.")
         return False
 
-    msg = MIMEMultipart("alternative")
-    msg["Subject"] = subject
-    msg["From"] = f"WARN Monitor <{gmail_user}>"
-    msg["To"] = to_addr
-    msg["List-Unsubscribe"] = f"<mailto:{gmail_user}?subject=unsubscribe>"
-
-    msg.attach(
-        MIMEText(text or f"View the full digest at {US_DASHBOARD_URL}", "plain")
-    )
-    if html:
-        msg.attach(MIMEText(html, "html"))
-
     return _deliver(
-        msg, batches, f"monthly digest ({len(subscribers)} subscriber(s))"
+        deliveries, f"monthly digest ({len(subscribers)} subscriber(s))"
     )
 
 
