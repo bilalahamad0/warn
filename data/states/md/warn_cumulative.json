@@ -1,9 +1,9 @@
 {
-  "total_records": 1340,
-  "total_employees": 114128,
+  "total_records": 1344,
+  "total_employees": 114478,
   "date_range_start": "2010-01-07",
   "date_range_end": "2026-07-24",
-  "last_updated": "2026-07-29T14:02:57.793533+00:00Z",
+  "last_updated": "2026-07-30T01:39:19.465240+00:00Z",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -16085,6 +16085,54 @@
       "city": "",
       "address": "44927 George Washington Blvd. Ashburn, VA 20147",
       "industry": "541611"
+    },
+    {
+      "state": "MD",
+      "company": "EchoStar Corporation (Lakewood facility)",
+      "notice_date": "2026-07-24",
+      "effective_date": "2026-09-22",
+      "employees": 42,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Montgomery County",
+      "city": "",
+      "address": "100 Lakeforest Blvd. Gaithersburg, MD 20877",
+      "industry": "334220"
+    },
+    {
+      "state": "MD",
+      "company": "EchoStar Corporation (Germantown EXM facility)",
+      "notice_date": "2026-07-24",
+      "effective_date": "2026-09-22",
+      "employees": 48,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Montgomery County",
+      "city": "",
+      "address": "11717 Exploration Lane Germantown, MD 20876",
+      "industry": "334220"
+    },
+    {
+      "state": "MD",
+      "company": "EchoStar Corporation (Germantown EXP facility)",
+      "notice_date": "2026-07-24",
+      "effective_date": "2026-09-22",
+      "employees": 240,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Montgomery County",
+      "city": "",
+      "address": "19710 Observation Drive Germantown, MD 20876",
+      "industry": "334220"
+    },
+    {
+      "state": "MD",
+      "company": "Kirson Medical LLC",
+      "notice_date": "2026-07-01",
+      "effective_date": "2026-07-26",
+      "employees": 20,
+      "layoff_type": "Plant Closure",
+      "county": "Baltimore County",
+      "city": "",
+      "address": "8801 Kelso Drive Essex, MD 21221",
+      "industry": "456199"
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
-  "total_records": 779,
-  "total_employees": 120204,
+  "total_records": 781,
+  "total_employees": 120402,
   "date_range_start": "2016-01-07",
   "date_range_end": "2024-11-15",
-  "last_updated": "2026-07-29T14:04:33.347714+00:00Z",
+  "last_updated": "2026-07-30T01:39:35.080209+00:00Z",
   "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
   "records": [
     {
@@ -7357,6 +7357,30 @@
       "county": "Oakland",
       "city": "Troy",
       "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "SK Siltron CSS, LLC",
+      "notice_date": null,
+      "effective_date": "2026-09-15",
+      "employees": 130,
+      "layoff_type": "Facility closure",
+      "county": "Bay",
+      "city": "",
+      "address": "1311 Straits Drive, Bay City, MI 48706; 1317 Straits Drive, Bay City, MI 48706",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Kroger",
+      "notice_date": null,
+      "effective_date": "2026-09-30",
+      "employees": 68,
+      "layoff_type": "Facility closure",
+      "county": "Genesee",
+      "city": "",
+      "address": "3288 Corunna Road, Flint, MI 48532 (Store #404)",
       "industry": ""
     }
   ]

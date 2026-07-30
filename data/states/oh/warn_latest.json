@@ -1,11 +1,35 @@
 {
-  "total_records": 797,
-  "total_employees": 116883,
+  "total_records": 798,
+  "total_employees": 118224,
   "date_range_start": "2017-01-09",
-  "date_range_end": "2026-07-14",
-  "last_updated": "2026-07-29T14:07:53.708204+00:00Z",
+  "date_range_end": "2026-07-29",
+  "last_updated": "2026-07-30T01:45:43.077362+00:00Z",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
+    {
+      "state": "OH",
+      "company": "UPDATE Down-Lite International Inc",
+      "notice_date": "2026-07-29",
+      "effective_date": "2026-09-25",
+      "employees": 164,
+      "layoff_type": "Closure",
+      "county": "Warren",
+      "city": "Mason",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "International Motors, LLC",
+      "notice_date": "2026-07-28",
+      "effective_date": "2026-10-02",
+      "employees": 1341,
+      "layoff_type": "Layoff",
+      "county": "Clark",
+      "city": "Springfield",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "OH",
       "company": "UPDATE Refresco Beverages US Inc",
@@ -195,18 +219,6 @@
       "layoff_type": "Closure",
       "county": "Pickaway",
       "city": "Circleville",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "OH",
-      "company": "Down-Lite Internaional Inc",
-      "notice_date": "2026-04-28",
-      "effective_date": "2026-06-19",
-      "employees": 164,
-      "layoff_type": "Closure",
-      "county": "Warren",
-      "city": "Mason",
       "address": "",
       "industry": ""
     },

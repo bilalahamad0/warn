@@ -1,9 +1,9 @@
 {
-  "total_records": 143,
-  "total_employees": 26243,
+  "total_records": 144,
+  "total_employees": 26328,
   "date_range_start": "2017-02-02",
   "date_range_end": "2026-07-27",
-  "last_updated": "2026-07-29T13:55:28.501872+00:00Z",
+  "last_updated": "2026-07-30T01:31:45.880948+00:00Z",
   "source_url": "https://does.dc.gov/page/industry-closings-and-layoffs-warn-notifications-2026",
   "records": [
     {
@@ -1713,6 +1713,18 @@
     {
       "state": "DC",
       "company": "Elevnce Health",
+      "notice_date": "2026-07-27",
+      "effective_date": null,
+      "employees": 85,
+      "layoff_type": "",
+      "county": "",
+      "city": "Washington D.C.",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "DC",
+      "company": "Elevance Health",
       "notice_date": "2026-07-27",
       "effective_date": null,
       "employees": 85,
