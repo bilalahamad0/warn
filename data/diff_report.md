@@ -1,28 +1,52 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-07-30 13:49:28 UTC
+**Generated:** 2026-07-31 02:15:33 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 36 | 36 | +0/+0 |
-| Total employees | 2,560 | 2,560 | +0 |
+| Total records | 36 | 72 | +36/+0 |
+| Total employees | 2,560 | 4,012 | +1,452 |
 
-### ✅ No new entries.
+### ✅ New Entries (36 records)
+
+| Company | Employees | Effective Date | County |
+|---------|-----------|----------------|--------|
+| Sodexo | 164 | 2026-09-30 | Orange County |
+| ServiceNow, Inc. | 154 | 2026-09-28 | Santa Clara County |
+| ServiceNow, Inc. | 133 | 2026-09-28 | San Diego County |
+| Pixar | 108 | 2026-09-26 | Alameda County |
+| Fortrex | 91 | 2026-08-21 | Imperial County |
+| PD Systems | 81 | 2026-08-28 | Monterey County |
+| Chick-fil-A & Fig | 77 | 2026-09-27 | Los Angeles County |
+| Tencent America LLC | 68 | 2026-09-28 | Orange County |
+| Intel Corporation - SC-12 | 67 | 2026-08-15 | Santa Clara County |
+| O'Briens Market Inc. | 67 | 2026-09-27 | Stanislaus County |
+| Federal Express Corporation | 62 | 2026-09-29 | Riverside County |
+| New Leaf Community Markets, Inc. | 61 | 2026-09-20 | Santa Clara County |
+| Silgan Containers | 55 | 2026-09-21 | Stanislaus County |
+| Federal Express Corporation | 54 | 2026-09-28 | San Bernardino County |
+| CraftForce Services, Inc. (2330 Circadian Way) | 51 | 2026-09-20 | Sonoma County |
+| O'Brien's Market Inc. | 50 | 2026-09-26 | Stanislaus County |
+| Uber Technologies, Inc. (1655 3rd Street) | 26 | 2026-09-21 | San Francisco County |
+| Intel Corporation - Robert Noyce Building | 24 | 2026-08-15 | Santa Clara County |
+| Uber Technologies, Inc. (Remote) | 14 | 2026-09-21 | San Francisco County |
+| Intel Corporation - SC-9 | 10 | 2026-08-15 | Santa Clara County |
 
 ---
 ## 📁 File vs Git Comparison
 
-- **Local `file.xlsx` hash:** `2c73db1b759812982a57b17b77afa3c5`
+- **Local `file.xlsx` hash:** `dfa0642c7913705fb7f8567ff6da943d`
 - **Committed hash:**          `2c73db1b759812982a57b17b77afa3c5`
-- ✅ Local file matches committed version
+- 🔴 **Local file differs from committed version**
 
 **Git status:**
 ```
 M .coverage
  M data/changelog.jsonl
+ M data/meta.json
  M data/states/ak/changelog.jsonl
  M data/states/ak/warn_cumulative.json
  M data/states/ak/warn_latest.json
@@ -122,7 +146,6 @@ M .coverage
  M data/states/me/warn_snapshot.json
  M data/states/mi/changelog.jsonl
  M data/states/mi/meta.json
- M data/states/mi/raw_download
  M data/states/mi/warn_cumulative.json
  M data/states/mi/warn_latest.json
  M data/states/mi/warn_snapshot.json
@@ -135,11 +158,6 @@ M .coverage
  M data/states/ms/warn_cumulative.json
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
- M data/states/mt/changelog.jsonl
- M data/states/mt/meta.json
- M data/states/mt/warn_cumulative.json
- M data/states/mt/warn_latest.json
- M data/states/mt/warn_snapshot.json
  M data/states/nc/changelog.jsonl
  M data/states/nc/meta.json
  M data/states/nc/warn_cumulative.json
@@ -151,7 +169,6 @@ M .coverage
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
- M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
@@ -167,9 +184,14 @@ M .coverage
  M data/states/nm/warn_snapshot.json
  M data/states/ny/changelog.jsonl
  M data/states/ny/meta.json
+ M data/states/ny/raw_download
  M data/states/ny/warn_cumulative.json
  M data/states/ny/warn_latest.json
  M data/states/ny/warn_snapshot.json
+ M data/states/oh/changelog.jsonl
+ M data/states/oh/warn_cumulative.json
+ M data/states/oh/warn_latest.json
+ M data/states/oh/warn_snapshot.json
  M data/states/ok/changelog.jsonl
  M data/states/ok/meta.json
  M data/states/ok/warn_cumulative.json
@@ -190,8 +212,10 @@ M .coverage
  M data/states/ri/warn_cumulative.json
  M data/states/ri/warn_latest.json
  M data/states/ri/warn_snapshot.json
+ M data/states/sc/archive/2026.pdf
  M data/states/sc/changelog.jsonl
  M data/states/sc/meta.json
+ M data/states/sc/raw_download
  M data/states/sc/warn_cumulative.json
  M data/states/sc/warn_latest.json
  M data/states/sc/warn_snapshot.json
@@ -212,6 +236,7 @@ M .coverage
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
+ M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -244,20 +269,23 @@ M .coverage
  M docs/charts/us_top_companies.html
  M docs/charts/us_top_states.html
  M docs/us/index.html
+ M docs/us/search_index.json
+ M file.xlsx
 ```
 
 **Recent commits:**
 ```
+84ab20e feat: signed unsubscribe links + confirmation page
+1a45bf7 auto: WARN data update [skip ci]
 3f3eaf6 auto: WARN data update [skip ci]
 4fc9076 feat: dataset-wide search, per-state subscriptions, monthly US digest
 31106ec auto: WARN data update [skip ci]
-ad417a3 auto: WARN data update [skip ci]
-963cf4d auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-07-31T01:56:58.667002+00:00Z` — +20 added, -0 removed, 715 employees (new)
 - `2026-07-30T13:34:50.909850+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-30T01:31:18.012419+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-29T13:54:53.542281+00:00Z` — +0 added, -16 removed, 0 employees (new)
@@ -267,4 +295,3 @@ ad417a3 auto: WARN data update [skip ci]
 - `2026-07-27T14:28:54.070131+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-27T02:05:01.390969+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-26T13:08:21.745406+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-07-26T01:56:19.651295+00:00Z` — +0 added, -0 removed, 0 employees (new)

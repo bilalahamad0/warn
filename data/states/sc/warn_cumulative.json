@@ -1,9 +1,9 @@
 {
-  "total_records": 600,
-  "total_employees": 80690,
+  "total_records": 601,
+  "total_employees": 80885,
   "date_range_start": "2013-02-25",
-  "date_range_end": "2026-07-15",
-  "last_updated": "2026-07-30T13:46:32.635345+00:00Z",
+  "date_range_end": "2026-07-30",
+  "last_updated": "2026-07-31T02:12:37.410891+00:00Z",
   "source_url": "https://scworks.org/employer/employer-programs/risk-closing/layoff-notification-reports",
   "records": [
     {
@@ -7204,6 +7204,18 @@
       "county": "Anderson",
       "city": "",
       "address": "435 E. Shockley Ferry Rd., Anderson, SC 29624",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "Smith Drug Company",
+      "notice_date": "2026-07-30",
+      "effective_date": "2026-09-30",
+      "employees": 195,
+      "layoff_type": "Permanent Closure",
+      "county": "Spartanburg",
+      "city": "",
+      "address": "9098 Fairforest Rd., Spartanburg, SC 29301",
       "industry": ""
     }
   ]
