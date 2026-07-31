@@ -16,7 +16,7 @@ from pathlib import Path
 from typing import Optional
 
 from . import registered_sources
-from .base import DATA_DIR
+from .base import DATA_DIR, sanitize_records
 
 log = logging.getLogger("warn_sources")
 
@@ -48,8 +48,10 @@ def build_national(
         if not store.exists():
             log.info(f"[{source.code.upper()}] no data yet — skipped in national set.")
             continue
-        state_records = _read_records(store)
         code = source.code.upper()
+        # Cumulative stores keep every row ever seen, including ones written
+        # before a parser bug was fixed — clean them on the way out.
+        state_records = sanitize_records(_read_records(store), code)
         # Optional deep-history file: national-only records merged with
         # _record_key dedup so live-era rows never double count.
         if source.history_file is not None and source.history_file.exists():

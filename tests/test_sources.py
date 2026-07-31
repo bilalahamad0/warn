@@ -204,3 +204,66 @@ def test_build_national_skips_states_with_no_data(tmp_path, monkeypatch):
     payload = aggregate.build_national(data_dir=tmp_path, output_file=out)
     assert payload["states_live"] == 0
     assert payload["records"] == []
+
+
+# ---------------------------------------------------------------------------
+# Record sanity guard — one state's parse debris must not distort the nation
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.parametrize("name", [
+    "7.4031878 C39.1565598",      # SVG path data scraped as a company (AL)
+    "9.61276098 38.1747183",      # bare coordinates
+    "",
+])
+def test_junk_company_names_are_rejected(name):
+    from warn_sources.base import is_junk_company
+    assert is_junk_company(name) is True
+
+
+@pytest.mark.parametrize("name", [
+    "3M Company", "3M", "A&B Inc", "7-Eleven", "Big 5 Sporting Goods",
+    "21st Century Fox", "H.B. Fuller", "Amazon",
+])
+def test_real_company_names_survive_the_guard(name):
+    """Digits and punctuation are normal in company names — only debris goes."""
+    from warn_sources.base import is_junk_company
+    assert is_junk_company(name) is False
+
+
+def test_implausible_dates_are_nulled_not_kept():
+    from warn_sources.base import plausible_date
+    assert plausible_date("2040-09-01") is None      # crippled the dashboard
+    assert plausible_date("1930-03-30") is None
+    assert plausible_date("2028-08-25") == "2028-08-25"   # scheduled, genuine
+    assert plausible_date("1987-09-01") == "1987-09-01"   # oldest real record
+
+
+def test_unify_drops_junk_and_nulls_bad_dates(tmp_path):
+    src = FakeSource(tmp_path)
+    df = pd.DataFrame([
+        {"company": "7.4031878 C39.1565598", "notice_date": "2034-12-01",
+         "effective_date": "2040-09-01", "employees": 0},
+        {"company": "Acme", "notice_date": "2026-01-01",
+         "effective_date": "2040-09-01", "employees": 25},
+    ])
+    out = src.unify(df)
+    assert list(out["company"]) == ["Acme"]           # debris row gone
+    assert out.iloc[0]["effective_date"] is None      # implausible date nulled
+    assert out.iloc[0]["notice_date"] == "2026-01-01"  # good date untouched
+
+
+def test_build_national_cleans_stale_junk_already_in_a_store(tmp_path, monkeypatch):
+    """A bad row written before a parser fix is cleaned on the next build."""
+    monkeypatch.setattr(warn_sources, "SOURCES", {"zz": FakeSource})
+    paths = FakeSource(tmp_path).paths
+    paths.ensure()
+    paths.cumulative.write_text(json.dumps({"records": [
+        {"company": "7.4031878 C39.1565598", "employees": 0,
+         "notice_date": "2034-12-01", "effective_date": "2040-09-01"},
+        {"company": "Acme", "employees": 10, "notice_date": "2026-05-01"},
+    ]}))
+    payload = aggregate.build_national(
+        data_dir=tmp_path, output_file=tmp_path / "warn_national.json"
+    )
+    assert [r["company"] for r in payload["records"]] == ["Acme"]

@@ -21,8 +21,10 @@ existing dashboard, history merge, and cron pipelines keep working unchanged.
 """
 
 import logging
+import re
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
@@ -56,6 +58,76 @@ UNIFIED_FIELDS = [
 
 # Fields that stay None when missing; the rest default to "".
 _NULLABLE_FIELDS = {"notice_date", "effective_date", "employees"}
+
+# ---------------------------------------------------------------------------
+# Record sanity guard
+# ---------------------------------------------------------------------------
+#
+# A parse artifact from ONE state must never be able to distort the national
+# dashboard. It happened: an early Alabama parser picked up inline SVG path
+# data ("7.4031878 C39.1565598") as a company, dated 2040 — and because the
+# charts derive their year list from the data, 2040 and 2034 became the two
+# "newest" years and every default view rendered empty.
+#
+# So: implausible dates are nulled (the record survives, minus a date it never
+# really had) and coordinate/path-like junk companies are dropped outright.
+
+# WARN predates the platform (the oldest genuine record on file is a 1987
+# Illinois filing); anything earlier is a parse error. States legitimately
+# publish effective dates a year or two out, so allow a generous horizon.
+MIN_YEAR = 1980
+MAX_FUTURE_YEARS = 5
+
+# "7.4031878 C39.1565598" / "9.61276098 38.1747183" — decimal coordinate or
+# SVG path fragments. Requires a decimal number AND no run of 3+ letters, so
+# real names ("3M Company", "A&B Inc") are never caught.
+_DECIMAL_RUN = re.compile(r"\d+\.\d+")
+_LETTER_RUN = re.compile(r"[A-Za-z]{3,}")
+
+
+def is_junk_company(name) -> bool:
+    """True for coordinate/SVG-path debris that is not a company name."""
+    text = str(name or "").strip()
+    if not text:
+        return True
+    return bool(_DECIMAL_RUN.search(text)) and not _LETTER_RUN.search(text)
+
+
+def plausible_date(value):
+    """Return the date if it could be a real WARN date, else None."""
+    text = str(value or "")[:10]
+    if len(text) < 4 or not text[:4].isdigit():
+        return value or None
+    year = int(text[:4])
+    if year < MIN_YEAR or year > datetime.now(timezone.utc).year + MAX_FUTURE_YEARS:
+        return None
+    return value
+
+
+def sanitize_records(records: list, source: str = "") -> list:
+    """Drop junk rows and null implausible dates in a list of record dicts.
+
+    Applied both when a state parses fresh data and when the national dataset
+    reads existing stores, so a bad row already sitting in a cumulative store
+    is cleaned on the next build rather than needing a manual purge.
+    """
+    clean, dropped, fixed = [], 0, 0
+    for r in records:
+        if is_junk_company(r.get("company")):
+            dropped += 1
+            continue
+        for field in ("notice_date", "effective_date"):
+            if r.get(field) and plausible_date(r[field]) is None:
+                r[field] = None
+                fixed += 1
+        clean.append(r)
+    if dropped or fixed:
+        tag = f"[{source.upper()}] " if source else ""
+        log.warning(
+            f"{tag}sanity guard: dropped {dropped} junk record(s), "
+            f"nulled {fixed} implausible date(s)."
+        )
+    return clean
 
 
 @dataclass(frozen=True)
@@ -126,14 +198,27 @@ class Source(ABC):
     # -- shared engine ------------------------------------------------------
 
     def unify(self, df: pd.DataFrame) -> pd.DataFrame:
-        """Stamp the state code and guarantee every unified column exists."""
+        """Stamp the state code, fill missing columns, drop parse debris."""
         df = df.copy()
         df["state"] = self.code.upper()
         for col in UNIFIED_FIELDS:
             if col not in df.columns:
                 df[col] = None if col in _NULLABLE_FIELDS else ""
         extras = [c for c in df.columns if c not in UNIFIED_FIELDS]
-        return df[UNIFIED_FIELDS + extras]
+        df = df[UNIFIED_FIELDS + extras]
+
+        # One state's parse artifact must never distort the national view.
+        if len(df):
+            keep = ~df["company"].map(is_junk_company)
+            if not keep.all():
+                log.warning(
+                    f"[{self.code.upper()}] sanity guard dropped "
+                    f"{int((~keep).sum())} junk record(s)."
+                )
+                df = df[keep]
+            for field in ("notice_date", "effective_date"):
+                df[field] = df[field].map(plausible_date)
+        return df
 
     def run(self, dry_run: bool = False, force: bool = False) -> dict:
         """Full monitor cycle for this state; mirrors ``warn_monitor.run``."""
