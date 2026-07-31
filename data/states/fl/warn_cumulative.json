@@ -1,9 +1,9 @@
 {
-  "total_records": 457,
-  "total_employees": 33927,
+  "total_records": 458,
+  "total_employees": 34078,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-07-27",
-  "last_updated": "2026-07-31T01:59:50.900890+00:00Z",
+  "date_range_end": "2026-07-30",
+  "last_updated": "2026-07-31T13:43:14.776805+00:00Z",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -5489,6 +5489,18 @@
       "city": "EGLIN AFB",
       "address": "591 Eglin Boulevard",
       "industry": "Professional, Scientific, and Technical Services"
+    },
+    {
+      "state": "FL",
+      "company": "MV Transportation, Inc.",
+      "notice_date": "2026-07-30",
+      "effective_date": "2026-09-30",
+      "employees": 151,
+      "layoff_type": "",
+      "county": "",
+      "city": "NAPLES",
+      "address": "8300 Radio Road",
+      "industry": "Transportation and Warehousing"
     }
   ]
 }
