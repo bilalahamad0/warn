@@ -1,9 +1,9 @@
 {
-  "total_records": 378,
-  "total_employees": 33220,
+  "total_records": 380,
+  "total_employees": 33690,
   "date_range_start": "2021-04-19",
-  "date_range_end": "2026-07-15",
-  "last_updated": "2026-07-31T13:48:17.437383+00:00Z",
+  "date_range_end": "2026-07-31",
+  "last_updated": "2026-08-01T02:06:03.675329+00:00Z",
   "source_url": "https://www.mass.gov/info-details/worker-adjustment-and-retraining-notification-act-warn",
   "records": [
     {
@@ -4539,6 +4539,30 @@
       "layoff_type": "",
       "county": "Boston",
       "city": "Cambridge",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "*Updated* Community Healthlink, Inc. (aka CHL)",
+      "notice_date": "2026-07-31",
+      "effective_date": "2026-09-16",
+      "employees": 236,
+      "layoff_type": "",
+      "county": "Central",
+      "city": "Worcester and Leominster",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "*Updated* Community Healthlink, Inc. (aka CHL)",
+      "notice_date": "2026-07-30",
+      "effective_date": "2026-09-16",
+      "employees": 234,
+      "layoff_type": "",
+      "county": "Central",
+      "city": "Worcester and Leominster",
       "address": "",
       "industry": ""
     }

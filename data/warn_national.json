@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-31T20:43:50.396774+00:00Z",
+  "last_updated": "2026-08-01T02:13:32.297419+00:00Z",
   "states_live": 47,
-  "total_records": 58986,
-  "total_employees": 6402072,
+  "total_records": 59013,
+  "total_employees": 6404109,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -134,8 +134,8 @@
       "name": "Massachusetts",
       "agency": "Massachusetts Executive Office of Labor and Workforce Development",
       "source_url": "https://www.mass.gov/info-details/worker-adjustment-and-retraining-notification-act-warn",
-      "total_records": 378,
-      "total_employees": 33220
+      "total_records": 380,
+      "total_employees": 33690
     },
     "MD": {
       "name": "Maryland",
@@ -232,8 +232,8 @@
       "name": "Ohio",
       "agency": "Ohio Department of Job and Family Services",
       "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
-      "total_records": 979,
-      "total_employees": 138869
+      "total_records": 980,
+      "total_employees": 138918
     },
     "OK": {
       "name": "Oklahoma",
@@ -246,8 +246,8 @@
       "name": "Oregon",
       "agency": "Oregon Higher Education Coordinating Commission, Office of Community Colleges and Workforce Development",
       "source_url": "https://ccwd.hecc.oregon.gov/Layoff/WARN",
-      "total_records": 1352,
-      "total_employees": 186077
+      "total_records": 1353,
+      "total_employees": 186464
     },
     "PA": {
       "name": "Pennsylvania",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1485,
-      "total_employees": 234661
+      "total_records": 1486,
+      "total_employees": 234731
     },
     "WI": {
       "name": "Wisconsin",
@@ -367270,6 +367270,30 @@
       "industry": ""
     },
     {
+      "state": "MA",
+      "company": "*Updated* Community Healthlink, Inc. (aka CHL)",
+      "notice_date": "2026-07-31",
+      "effective_date": "2026-09-16",
+      "employees": 236,
+      "layoff_type": "",
+      "county": "Central",
+      "city": "Worcester and Leominster",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "*Updated* Community Healthlink, Inc. (aka CHL)",
+      "notice_date": "2026-07-30",
+      "effective_date": "2026-09-16",
+      "employees": 234,
+      "layoff_type": "",
+      "county": "Central",
+      "city": "Worcester and Leominster",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "MD",
       "company": "Taft Broadcasting, LLC",
       "notice_date": "2026-07-20",
@@ -524827,6 +524851,18 @@
       "industry": ""
     },
     {
+      "state": "OH",
+      "company": "Bridgeway Pointe",
+      "notice_date": "2026-07-30",
+      "effective_date": "2026-10-31",
+      "employees": 49,
+      "layoff_type": "Closure",
+      "county": "Hamilton",
+      "city": "Cincinnati",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "OK",
       "company": "Surgical Specialties",
       "notice_date": "2003-07-21",
@@ -543447,6 +543483,18 @@
       "layoff_type": "Reduction",
       "county": "",
       "city": "ARLINGTON, TX",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Portland Truck Manufacturing Facility",
+      "notice_date": "2026-07-30",
+      "effective_date": "2026-10-30",
+      "employees": 387,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Portland",
       "address": "",
       "industry": ""
     },
@@ -630087,7 +630135,7 @@
       "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-07-31",
+      "effective_date": "2026-08-01",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",
@@ -648360,6 +648408,18 @@
       "industry": ""
     },
     {
+      "state": "WA",
+      "company": "Visa",
+      "notice_date": "2026-07-31",
+      "effective_date": "2026-10-01",
+      "employees": 70,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Bellevue",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "WI",
       "company": "Semco Windows and Doors",
       "notice_date": "2020-01-02",
@@ -655821,7 +655881,7 @@
       "county": "Wood",
       "city": "Wisconsin Rapids",
       "address": "",
-      "industry": "General Automotive Repair"
+      "industry": "General Freight Trucking Long Distance"
     },
     {
       "state": "WI",

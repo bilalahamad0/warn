@@ -1,9 +1,9 @@
 {
-  "total_records": 1485,
-  "total_employees": 234661,
+  "total_records": 1486,
+  "total_employees": 234731,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-07-28",
-  "last_updated": "2026-07-31T13:56:11.430028+00:00Z",
+  "date_range_end": "2026-07-31",
+  "last_updated": "2026-08-01T02:13:26.722882+00:00Z",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -17823,6 +17823,18 @@
       "layoff_type": "Closure Permanent",
       "county": "",
       "city": "Stanwood",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Visa",
+      "notice_date": "2026-07-31",
+      "effective_date": "2026-10-01",
+      "employees": 70,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Bellevue",
       "address": "",
       "industry": ""
     }

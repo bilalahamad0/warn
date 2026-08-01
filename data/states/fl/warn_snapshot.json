@@ -1,9 +1,9 @@
 {
-  "total_records": 465,
-  "total_employees": 34814,
+  "total_records": 466,
+  "total_employees": 34965,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-07-27",
-  "last_updated": "2026-07-31T01:59:50.895718+00:00Z",
+  "date_range_end": "2026-07-30",
+  "last_updated": "2026-07-31T13:43:14.771087+00:00Z",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -3245,6 +3245,18 @@
       "city": "BOCA RATON",
       "address": "4700 Exchange Court, Suite 125",
       "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "FL",
+      "company": "MV Transportation, Inc.",
+      "notice_date": "2026-07-30",
+      "effective_date": "2026-09-30",
+      "employees": 151,
+      "layoff_type": "",
+      "county": "",
+      "city": "NAPLES",
+      "address": "8300 Radio Road",
+      "industry": "Transportation and Warehousing"
     },
     {
       "state": "FL",

@@ -1,41 +1,16 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-07-31 13:56:17 UTC
+**Generated:** 2026-08-01 02:13:31 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 72 | 36 | +0/+36 |
-| Total employees | 4,012 | 2,560 | -1,452 |
+| Total records | 36 | 36 | +0/+0 |
+| Total employees | 2,560 | 2,560 | +0 |
 
 ### ✅ No new entries.
-
-### ❌ Removed Entries (36 records)
-
-| Company | Employees | Effective Date |
-|---------|-----------|----------------|
-| Sodexo | 164 | 2026-09-30 |
-| ServiceNow, Inc. | 154 | 2026-09-28 |
-| ServiceNow, Inc. | 133 | 2026-09-28 |
-| Pixar | 108 | 2026-09-26 |
-| Fortrex | 91 | 2026-08-21 |
-| PD Systems | 81 | 2026-08-28 |
-| Chick-fil-A & Fig | 77 | 2026-09-27 |
-| Tencent America LLC | 68 | 2026-09-28 |
-| Intel Corporation - SC-12 | 67 | 2026-08-15 |
-| O'Briens Market Inc. | 67 | 2026-09-27 |
-| Federal Express Corporation | 62 | 2026-09-29 |
-| New Leaf Community Markets, Inc. | 61 | 2026-09-20 |
-| Silgan Containers | 55 | 2026-09-21 |
-| Federal Express Corporation | 54 | 2026-09-28 |
-| CraftForce Services, Inc. (2330 Circadian Way) | 51 | 2026-09-20 |
-| O'Brien's Market Inc. | 50 | 2026-09-26 |
-| Uber Technologies, Inc. (1655 3rd Street) | 26 | 2026-09-21 |
-| Intel Corporation - Robert Noyce Building | 24 | 2026-08-15 |
-| Uber Technologies, Inc. (Remote) | 14 | 2026-09-21 |
-| Intel Corporation - SC-9 | 10 | 2026-08-15 |
 
 ---
 ## 📁 File vs Git Comparison
@@ -83,7 +58,6 @@ M .coverage
  M data/states/de/warn_latest.json
  M data/states/de/warn_snapshot.json
  M data/states/fl/changelog.jsonl
- M data/states/fl/raw_download
  M data/states/fl/warn_cumulative.json
  M data/states/fl/warn_latest.json
  M data/states/fl/warn_snapshot.json
@@ -133,6 +107,7 @@ M .coverage
  M data/states/la/warn_snapshot.json
  M data/states/ma/changelog.jsonl
  M data/states/ma/meta.json
+ M data/states/ma/raw_download.csv
  M data/states/ma/warn_cumulative.json
  M data/states/ma/warn_latest.json
  M data/states/ma/warn_snapshot.json
@@ -161,7 +136,6 @@ M .coverage
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
- M data/states/mt/meta.json
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
@@ -176,7 +150,6 @@ M .coverage
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
- M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
@@ -196,6 +169,7 @@ M .coverage
  M data/states/ny/warn_latest.json
  M data/states/ny/warn_snapshot.json
  M data/states/oh/changelog.jsonl
+ M data/states/oh/raw_download
  M data/states/oh/warn_cumulative.json
  M data/states/oh/warn_latest.json
  M data/states/oh/warn_snapshot.json
@@ -207,6 +181,7 @@ M .coverage
  M data/states/or/changelog.jsonl
  M data/states/or/latest.xlsx
  M data/states/or/meta.json
+ M data/states/or/raw_download
  M data/states/or/warn_cumulative.json
  M data/states/or/warn_latest.json
  M data/states/or/warn_snapshot.json
@@ -241,6 +216,7 @@ M .coverage
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
+ M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -251,11 +227,13 @@ M .coverage
  M data/states/vt/warn_snapshot.json
  M data/states/wa/changelog.jsonl
  M data/states/wa/meta.json
+ M data/states/wa/raw_download
  M data/states/wa/warn_cumulative.json
  M data/states/wa/warn_latest.json
  M data/states/wa/warn_snapshot.json
  M data/states/wi/changelog.jsonl
  M data/states/wi/meta.json
+ M data/states/wi/raw_download
  M data/states/wi/warn_cumulative.json
  M data/states/wi/warn_latest.json
  M data/states/wi/warn_snapshot.json
@@ -272,21 +250,304 @@ M .coverage
  M docs/charts/us_states_years.html
  M docs/charts/us_top_companies.html
  M docs/charts/us_top_states.html
+ M docs/us/data.json
  M docs/us/index.html
+ M docs/us/pages/AL/1.json
+ M docs/us/pages/AL/2.json
+ M docs/us/pages/AL/3.json
+ M docs/us/pages/AL/4.json
+ M docs/us/pages/AL/5.json
+ M docs/us/pages/AZ/1.json
+ M docs/us/pages/CA/1.json
+ M docs/us/pages/CA/2.json
+ M docs/us/pages/CA/3.json
+ M docs/us/pages/CA/4.json
+ M docs/us/pages/CA/5.json
+ M docs/us/pages/CA/6.json
+ M docs/us/pages/CA/7.json
+ M docs/us/pages/CO/1.json
+ M docs/us/pages/DC/1.json
+ M docs/us/pages/FL/1.json
+ M docs/us/pages/FL/2.json
+ M docs/us/pages/GA/1.json
+ M docs/us/pages/HI/1.json
+ M docs/us/pages/IA/1.json
+ M docs/us/pages/IL/1.json
+ M docs/us/pages/IN/1.json
+ M docs/us/pages/KS/1.json
+ M docs/us/pages/KY/1.json
+ M docs/us/pages/LA/1.json
+ M docs/us/pages/MA/1.json
+ M docs/us/pages/MD/1.json
+ M docs/us/pages/ME/1.json
+ M docs/us/pages/MI/1.json
+ M docs/us/pages/MN/1.json
+ M docs/us/pages/NC/1.json
+ M docs/us/pages/NE/1.json
+ M docs/us/pages/NJ/1.json
+ M docs/us/pages/NV/1.json
+ M docs/us/pages/NY/1.json
+ M docs/us/pages/OH/1.json
+ M docs/us/pages/OR/1.json
+ M docs/us/pages/PA/1.json
+ M docs/us/pages/SC/1.json
+ M docs/us/pages/TN/1.json
+ M docs/us/pages/VA/1.json
+ M docs/us/pages/WA/1.json
+ M docs/us/pages/WI/1.json
+ M docs/us/pages/WV/1.json
+ M docs/us/pages/all/1.json
+ M docs/us/pages/all/10.json
+ M docs/us/pages/all/100.json
+ M docs/us/pages/all/101.json
+ M docs/us/pages/all/102.json
+ M docs/us/pages/all/103.json
+ M docs/us/pages/all/104.json
+ M docs/us/pages/all/105.json
+ M docs/us/pages/all/106.json
+ M docs/us/pages/all/107.json
+ M docs/us/pages/all/108.json
+ M docs/us/pages/all/109.json
+ M docs/us/pages/all/11.json
+ M docs/us/pages/all/110.json
+ M docs/us/pages/all/111.json
+ M docs/us/pages/all/112.json
+ M docs/us/pages/all/113.json
+ M docs/us/pages/all/114.json
+ M docs/us/pages/all/115.json
+ M docs/us/pages/all/116.json
+ M docs/us/pages/all/117.json
+ M docs/us/pages/all/118.json
+ M docs/us/pages/all/119.json
+ M docs/us/pages/all/12.json
+ M docs/us/pages/all/120.json
+ M docs/us/pages/all/121.json
+ M docs/us/pages/all/122.json
+ M docs/us/pages/all/123.json
+ M docs/us/pages/all/124.json
+ M docs/us/pages/all/125.json
+ M docs/us/pages/all/126.json
+ M docs/us/pages/all/127.json
+ M docs/us/pages/all/128.json
+ M docs/us/pages/all/129.json
+ M docs/us/pages/all/13.json
+ M docs/us/pages/all/130.json
+ M docs/us/pages/all/131.json
+ M docs/us/pages/all/132.json
+ M docs/us/pages/all/133.json
+ M docs/us/pages/all/134.json
+ M docs/us/pages/all/135.json
+ M docs/us/pages/all/136.json
+ M docs/us/pages/all/137.json
+ M docs/us/pages/all/138.json
+ M docs/us/pages/all/139.json
+ M docs/us/pages/all/14.json
+ M docs/us/pages/all/140.json
+ M docs/us/pages/all/141.json
+ M docs/us/pages/all/142.json
+ M docs/us/pages/all/143.json
+ M docs/us/pages/all/144.json
+ M docs/us/pages/all/145.json
+ M docs/us/pages/all/146.json
+ M docs/us/pages/all/147.json
+ M docs/us/pages/all/148.json
+ M docs/us/pages/all/149.json
+ M docs/us/pages/all/15.json
+ M docs/us/pages/all/150.json
+ M docs/us/pages/all/151.json
+ M docs/us/pages/all/152.json
+ M docs/us/pages/all/153.json
+ M docs/us/pages/all/154.json
+ M docs/us/pages/all/155.json
+ M docs/us/pages/all/156.json
+ M docs/us/pages/all/157.json
+ M docs/us/pages/all/158.json
+ M docs/us/pages/all/159.json
+ M docs/us/pages/all/16.json
+ M docs/us/pages/all/160.json
+ M docs/us/pages/all/161.json
+ M docs/us/pages/all/162.json
+ M docs/us/pages/all/163.json
+ M docs/us/pages/all/164.json
+ M docs/us/pages/all/165.json
+ M docs/us/pages/all/166.json
+ M docs/us/pages/all/167.json
+ M docs/us/pages/all/168.json
+ M docs/us/pages/all/169.json
+ M docs/us/pages/all/17.json
+ M docs/us/pages/all/170.json
+ M docs/us/pages/all/171.json
+ M docs/us/pages/all/172.json
+ M docs/us/pages/all/173.json
+ M docs/us/pages/all/174.json
+ M docs/us/pages/all/175.json
+ M docs/us/pages/all/176.json
+ M docs/us/pages/all/177.json
+ M docs/us/pages/all/178.json
+ M docs/us/pages/all/179.json
+ M docs/us/pages/all/18.json
+ M docs/us/pages/all/180.json
+ M docs/us/pages/all/181.json
+ M docs/us/pages/all/182.json
+ M docs/us/pages/all/183.json
+ M docs/us/pages/all/184.json
+ M docs/us/pages/all/185.json
+ M docs/us/pages/all/186.json
+ M docs/us/pages/all/187.json
+ M docs/us/pages/all/188.json
+ M docs/us/pages/all/189.json
+ M docs/us/pages/all/19.json
+ M docs/us/pages/all/190.json
+ M docs/us/pages/all/191.json
+ M docs/us/pages/all/192.json
+ M docs/us/pages/all/193.json
+ M docs/us/pages/all/194.json
+ M docs/us/pages/all/195.json
+ M docs/us/pages/all/196.json
+ M docs/us/pages/all/197.json
+ M docs/us/pages/all/198.json
+ M docs/us/pages/all/199.json
+ M docs/us/pages/all/2.json
+ M docs/us/pages/all/20.json
+ M docs/us/pages/all/200.json
+ M docs/us/pages/all/201.json
+ M docs/us/pages/all/202.json
+ M docs/us/pages/all/203.json
+ M docs/us/pages/all/204.json
+ M docs/us/pages/all/205.json
+ M docs/us/pages/all/206.json
+ M docs/us/pages/all/207.json
+ M docs/us/pages/all/208.json
+ M docs/us/pages/all/209.json
+ M docs/us/pages/all/21.json
+ M docs/us/pages/all/210.json
+ M docs/us/pages/all/211.json
+ M docs/us/pages/all/212.json
+ M docs/us/pages/all/213.json
+ M docs/us/pages/all/214.json
+ M docs/us/pages/all/215.json
+ M docs/us/pages/all/216.json
+ M docs/us/pages/all/217.json
+ M docs/us/pages/all/218.json
+ M docs/us/pages/all/219.json
+ M docs/us/pages/all/22.json
+ M docs/us/pages/all/220.json
+ M docs/us/pages/all/221.json
+ M docs/us/pages/all/222.json
+ M docs/us/pages/all/223.json
+ M docs/us/pages/all/224.json
+ M docs/us/pages/all/225.json
+ M docs/us/pages/all/226.json
+ M docs/us/pages/all/227.json
+ M docs/us/pages/all/228.json
+ M docs/us/pages/all/229.json
+ M docs/us/pages/all/23.json
+ M docs/us/pages/all/230.json
+ M docs/us/pages/all/231.json
+ M docs/us/pages/all/232.json
+ M docs/us/pages/all/233.json
+ M docs/us/pages/all/234.json
+ M docs/us/pages/all/235.json
+ M docs/us/pages/all/236.json
+ M docs/us/pages/all/24.json
+ M docs/us/pages/all/25.json
+ M docs/us/pages/all/26.json
+ M docs/us/pages/all/27.json
+ M docs/us/pages/all/28.json
+ M docs/us/pages/all/29.json
+ M docs/us/pages/all/3.json
+ M docs/us/pages/all/30.json
+ M docs/us/pages/all/31.json
+ M docs/us/pages/all/32.json
+ M docs/us/pages/all/33.json
+ M docs/us/pages/all/34.json
+ M docs/us/pages/all/35.json
+ M docs/us/pages/all/36.json
+ M docs/us/pages/all/37.json
+ M docs/us/pages/all/38.json
+ M docs/us/pages/all/39.json
+ M docs/us/pages/all/4.json
+ M docs/us/pages/all/40.json
+ M docs/us/pages/all/41.json
+ M docs/us/pages/all/42.json
+ M docs/us/pages/all/43.json
+ M docs/us/pages/all/44.json
+ M docs/us/pages/all/45.json
+ M docs/us/pages/all/46.json
+ M docs/us/pages/all/47.json
+ M docs/us/pages/all/48.json
+ M docs/us/pages/all/49.json
+ M docs/us/pages/all/5.json
+ M docs/us/pages/all/50.json
+ M docs/us/pages/all/51.json
+ M docs/us/pages/all/52.json
+ M docs/us/pages/all/53.json
+ M docs/us/pages/all/54.json
+ M docs/us/pages/all/55.json
+ M docs/us/pages/all/56.json
+ M docs/us/pages/all/57.json
+ M docs/us/pages/all/58.json
+ M docs/us/pages/all/59.json
+ M docs/us/pages/all/6.json
+ M docs/us/pages/all/60.json
+ M docs/us/pages/all/61.json
+ M docs/us/pages/all/62.json
+ M docs/us/pages/all/63.json
+ M docs/us/pages/all/64.json
+ M docs/us/pages/all/65.json
+ M docs/us/pages/all/66.json
+ M docs/us/pages/all/67.json
+ M docs/us/pages/all/68.json
+ M docs/us/pages/all/69.json
+ M docs/us/pages/all/7.json
+ M docs/us/pages/all/70.json
+ M docs/us/pages/all/71.json
+ M docs/us/pages/all/72.json
+ M docs/us/pages/all/73.json
+ M docs/us/pages/all/74.json
+ M docs/us/pages/all/75.json
+ M docs/us/pages/all/76.json
+ M docs/us/pages/all/77.json
+ M docs/us/pages/all/78.json
+ M docs/us/pages/all/79.json
+ M docs/us/pages/all/8.json
+ M docs/us/pages/all/80.json
+ M docs/us/pages/all/81.json
+ M docs/us/pages/all/82.json
+ M docs/us/pages/all/83.json
+ M docs/us/pages/all/84.json
+ M docs/us/pages/all/85.json
+ M docs/us/pages/all/86.json
+ M docs/us/pages/all/87.json
+ M docs/us/pages/all/88.json
+ M docs/us/pages/all/89.json
+ M docs/us/pages/all/9.json
+ M docs/us/pages/all/90.json
+ M docs/us/pages/all/91.json
+ M docs/us/pages/all/92.json
+ M docs/us/pages/all/93.json
+ M docs/us/pages/all/94.json
+ M docs/us/pages/all/95.json
+ M docs/us/pages/all/96.json
+ M docs/us/pages/all/97.json
+ M docs/us/pages/all/98.json
+ M docs/us/pages/all/99.json
+ M docs/us/search_index.json
 ```
 
 **Recent commits:**
 ```
-8e54a62 auto: WARN data update [skip ci]
-84ab20e feat: signed unsubscribe links + confirmation page
-1a45bf7 auto: WARN data update [skip ci]
-3f3eaf6 auto: WARN data update [skip ci]
-4fc9076 feat: dataset-wide search, per-state subscriptions, monthly US digest
+4f70b686 fix: sanity guard stops one state's parse debris crippling the dashboard
+7a6b090d auto: WARN data update [skip ci]
+8e54a621 auto: WARN data update [skip ci]
+84ab20e1 feat: signed unsubscribe links + confirmation page
+1a45bf74 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-08-01T01:58:18.193168+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-31T13:40:23.624011+00:00Z` — +0 added, -36 removed, 0 employees (new)
 - `2026-07-31T01:56:58.667002+00:00Z` — +20 added, -0 removed, 715 employees (new)
 - `2026-07-30T13:34:50.909850+00:00Z` — +0 added, -0 removed, 0 employees (new)
@@ -296,4 +557,3 @@ M .coverage
 - `2026-07-28T13:38:17.848348+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-28T01:37:39.383191+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-27T14:28:54.070131+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-07-27T02:05:01.390969+00:00Z` — +0 added, -0 removed, 0 employees (new)

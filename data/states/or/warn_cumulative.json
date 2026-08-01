@@ -1,9 +1,9 @@
 {
-  "total_records": 1352,
-  "total_employees": 186077,
+  "total_records": 1353,
+  "total_employees": 186464,
   "date_range_start": "1988-11-28",
-  "date_range_end": "2026-06-26",
-  "last_updated": "2026-07-31T13:53:04.944755+00:00Z",
+  "date_range_end": "2026-07-30",
+  "last_updated": "2026-08-01T02:10:30.466799+00:00Z",
   "source_url": "https://ccwd.hecc.oregon.gov/Layoff/WARN",
   "records": [
     {
@@ -16227,6 +16227,18 @@
       "layoff_type": "Reduction",
       "county": "",
       "city": "ARLINGTON, TX",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Portland Truck Manufacturing Facility",
+      "notice_date": "2026-07-30",
+      "effective_date": "2026-10-30",
+      "employees": 387,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Portland",
       "address": "",
       "industry": ""
     }
