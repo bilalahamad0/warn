@@ -23,9 +23,21 @@
       ],
       "tokens": 100000,
       "role": "Dashboard revamp, charts & code review"
+    },
+    {
+      "name": "Claude Code",
+      "provider": "Anthropic",
+      "period": "Jul 2026",
+      "models": [
+        "Claude Fable 5",
+        "Claude Opus 4.8",
+        "Claude Opus 5"
+      ],
+      "tokens": 278143352,
+      "role": "50-state expansion, national dataset & US dashboard"
     }
   ],
-  "totalTokens": 200000,
+  "totalTokens": 278343352,
   "totalCommits": 339,
   "linesOfCode": 40714,
   "devCycleDays": 2,
@@ -34,6 +46,6 @@
   "cycle": "2 days",
   "beforeAI": "Manual Excel download, no monitoring",
   "afterAI": "Fully automated pipeline, runs twice daily",
-  "tests": 13,
-  "testSuites": 5
+  "tests": 968,
+  "testSuites": 57
 }
