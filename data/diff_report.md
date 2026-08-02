@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-08-02 02:18:39 UTC
+**Generated:** 2026-08-02 13:27:29 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -41,6 +41,11 @@ M .coverage
  M data/states/co/warn_cumulative.json
  M data/states/co/warn_latest.json
  M data/states/co/warn_snapshot.json
+ M data/states/ct/changelog.jsonl
+ M data/states/ct/meta.json
+ M data/states/ct/warn_cumulative.json
+ M data/states/ct/warn_latest.json
+ M data/states/ct/warn_snapshot.json
  M data/states/dc/changelog.jsonl
  M data/states/dc/meta.json
  M data/states/dc/warn_cumulative.json
@@ -111,6 +116,7 @@ M .coverage
  M data/states/me/warn_snapshot.json
  M data/states/mi/changelog.jsonl
  M data/states/mi/meta.json
+ M data/states/mi/raw_download
  M data/states/mi/warn_cumulative.json
  M data/states/mi/warn_latest.json
  M data/states/mi/warn_snapshot.json
@@ -124,6 +130,7 @@ M .coverage
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
+ M data/states/mt/meta.json
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
@@ -136,11 +143,22 @@ M .coverage
  M data/states/nd/warn_cumulative.json
  M data/states/nd/warn_latest.json
  M data/states/nd/warn_snapshot.json
+ M data/states/ne/changelog.jsonl
+ M data/states/ne/meta.json
+ M data/states/ne/raw_download
+ M data/states/ne/warn_cumulative.json
+ M data/states/ne/warn_latest.json
+ M data/states/ne/warn_snapshot.json
  M data/states/nj/changelog.jsonl
  M data/states/nj/meta.json
  M data/states/nj/warn_cumulative.json
  M data/states/nj/warn_latest.json
  M data/states/nj/warn_snapshot.json
+ M data/states/nm/changelog.jsonl
+ M data/states/nm/meta.json
+ M data/states/nm/warn_cumulative.json
+ M data/states/nm/warn_latest.json
+ M data/states/nm/warn_snapshot.json
  M data/states/ny/changelog.jsonl
  M data/states/ny/meta.json
  M data/states/ny/warn_cumulative.json
@@ -192,7 +210,6 @@ M .coverage
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
- M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -229,16 +246,17 @@ M .coverage
 
 **Recent commits:**
 ```
+38c0bce0 auto: WARN data update [skip ci]
 90be38b5 auto: WARN data update [skip ci]
 42134efe auto: WARN data update [skip ci]
 4f70b686 fix: sanity guard stops one state's parse debris crippling the dashboard
 7a6b090d auto: WARN data update [skip ci]
-8e54a621 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-08-02T13:08:36.575732+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-02T01:54:09.119878+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-01T13:04:36.439770+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-01T01:58:18.193168+00:00Z` — +0 added, -0 removed, 0 employees (new)
@@ -248,4 +266,3 @@ M .coverage
 - `2026-07-30T01:31:18.012419+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-29T13:54:53.542281+00:00Z` — +0 added, -16 removed, 0 employees (new)
 - `2026-07-29T01:37:12.984615+00:00Z` — +12 added, -0 removed, 510 employees (new)
-- `2026-07-28T13:38:17.848348+00:00Z` — +0 added, -0 removed, 0 employees (new)
