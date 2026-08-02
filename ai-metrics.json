@@ -1,6 +1,6 @@
 {
   "projectId": "warn",
-  "lastUpdated": "2026-06-07",
+  "lastUpdated": "2026-08-02",
   "aiContribution": 88,
   "agents": [
     {
@@ -26,8 +26,8 @@
     }
   ],
   "totalTokens": 200000,
-  "totalCommits": 196,
-  "linesOfCode": 4749,
+  "totalCommits": 339,
+  "linesOfCode": 40714,
   "devCycleDays": 2,
   "manualEstimateDays": 10,
   "impact": "Automated 100% of data ingestion and alerting",
