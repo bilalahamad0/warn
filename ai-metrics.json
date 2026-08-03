@@ -41,7 +41,7 @@
   "totalCommits": 344,
   "linesOfCode": 40714,
   "devCycleDays": 31,
-  "manualEstimateDays": 155,
+  "manualEstimateDays": 93,
   "impact": "Automated 100% of data ingestion and alerting",
   "cycle": "31 active days",
   "beforeAI": "Manual Excel download, no monitoring",
