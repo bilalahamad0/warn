@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-02T13:27:30.277863+00:00Z",
+  "last_updated": "2026-08-03T01:56:31.028428+00:00Z",
   "states_live": 47,
   "total_records": 59013,
   "total_employees": 6404109,
@@ -630135,7 +630135,7 @@
       "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-08-02",
+      "effective_date": "2026-08-03",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",
