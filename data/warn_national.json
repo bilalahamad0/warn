@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-03T01:56:31.028428+00:00Z",
+  "last_updated": "2026-08-03T14:39:10.507494+00:00Z",
   "states_live": 47,
-  "total_records": 59013,
-  "total_employees": 6404109,
+  "total_records": 59016,
+  "total_employees": 6404390,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -253,8 +253,8 @@
       "name": "Pennsylvania",
       "agency": "Pennsylvania Department of Labor & Industry",
       "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
-      "total_records": 297,
-      "total_employees": 44219
+      "total_records": 299,
+      "total_employees": 44399
     },
     "RI": {
       "name": "Rhode Island",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1486,
-      "total_employees": 234731
+      "total_records": 1487,
+      "total_employees": 234832
     },
     "WI": {
       "name": "Wisconsin",
@@ -547063,6 +547063,30 @@
       "industry": ""
     },
     {
+      "state": "PA",
+      "company": "Xanitos, Inc.",
+      "notice_date": null,
+      "effective_date": "2026-10-01",
+      "employees": 80,
+      "layoff_type": "Layoff",
+      "county": "Philadelphia",
+      "city": "",
+      "address": "160 East Erie Avenue, Philadelphia, PA 19134",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Technica, LLC",
+      "notice_date": null,
+      "effective_date": "2026-09-30",
+      "employees": 100,
+      "layoff_type": "Layoff",
+      "county": "Cumberland",
+      "city": "",
+      "address": "2001 Mission Drive, New Cumberland, PA  17070",
+      "industry": ""
+    },
+    {
       "state": "RI",
       "company": "Conduent",
       "notice_date": "2026-06-26",
@@ -648416,6 +648440,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Bellevue",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "I.Q. Data International, Inc.",
+      "notice_date": "2026-07-31",
+      "effective_date": "2026-10-01",
+      "employees": 101,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Bothell",
       "address": "",
       "industry": ""
     },

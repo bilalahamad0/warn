@@ -1,9 +1,9 @@
 {
-  "total_records": 297,
-  "total_employees": 44219,
+  "total_records": 299,
+  "total_employees": 44399,
   "date_range_start": "2023-01-09",
-  "date_range_end": "2026-09-30",
-  "last_updated": "2026-08-03T01:54:12.593934+00:00Z",
+  "date_range_end": "2026-10-01",
+  "last_updated": "2026-08-03T14:36:05.748344+00:00Z",
   "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
   "records": [
     {
@@ -3568,6 +3568,30 @@
       "county": "Montgomery",
       "city": "",
       "address": "1600 East High Street, Pottstown, PA  19464",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Xanitos, Inc.",
+      "notice_date": null,
+      "effective_date": "2026-10-01",
+      "employees": 80,
+      "layoff_type": "Layoff",
+      "county": "Philadelphia",
+      "city": "",
+      "address": "160 East Erie Avenue, Philadelphia, PA 19134",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Technica, LLC",
+      "notice_date": null,
+      "effective_date": "2026-09-30",
+      "employees": 100,
+      "layoff_type": "Layoff",
+      "county": "Cumberland",
+      "city": "",
+      "address": "2001 Mission Drive, New Cumberland, PA  17070",
       "industry": ""
     }
   ]
