@@ -327,6 +327,16 @@
    "industry": "Business\nSupport\nServices",
    "year": 2026,
    "file": "WarnNotices2026.pdf"
+  },
+  {
+   "company_original": "United Parcel\nService",
+   "address_original": "5700 Morrison Road, New\nOrleans, Louisiana 70126",
+   "date_notice": "7/30/26",
+   "date_action": "10/01/26",
+   "affected": "172",
+   "industry": "Couriers and\nExpress Delivery\nServices",
+   "year": 2026,
+   "file": "WarnNotices2026.pdf"
   }
  ]
 }

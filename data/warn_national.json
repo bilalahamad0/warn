@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-03T14:39:10.507494+00:00Z",
+  "last_updated": "2026-08-04T01:49:51.064141+00:00Z",
   "states_live": 47,
-  "total_records": 59016,
-  "total_employees": 6404390,
+  "total_records": 59020,
+  "total_employees": 6405480,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -22,8 +22,8 @@
       "name": "Arizona",
       "agency": "Arizona Department of Economic Security",
       "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
-      "total_records": 473,
-      "total_employees": 72962
+      "total_records": 474,
+      "total_employees": 73060
     },
     "CA": {
       "name": "California",
@@ -71,8 +71,8 @@
       "name": "Georgia",
       "agency": "Technical College System of Georgia, Office of Workforce Development",
       "source_url": "https://www.tcsg.edu/warn-public-view/",
-      "total_records": 4723,
-      "total_employees": 604156
+      "total_records": 4724,
+      "total_employees": 604917
     },
     "HI": {
       "name": "Hawaii",
@@ -127,8 +127,8 @@
       "name": "Louisiana",
       "agency": "Louisiana Workforce Commission",
       "source_url": "https://www.laworks.net/Downloads/Downloads_WFD.asp",
-      "total_records": 35,
-      "total_employees": 6323
+      "total_records": 36,
+      "total_employees": 6495
     },
     "MA": {
       "name": "Massachusetts",
@@ -204,8 +204,8 @@
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2329,
-      "total_employees": 350497
+      "total_records": 2330,
+      "total_employees": 350556
     },
     "NM": {
       "name": "New Mexico",
@@ -19485,6 +19485,18 @@
       "county": "",
       "city": "Phoenix",
       "address": "7878 N 16th Street suite 105; Phoenix, Arizona 85020",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Infineon Technologies America Corp",
+      "notice_date": "2026-08-03",
+      "effective_date": null,
+      "employees": 98,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Mesa",
+      "address": "550 West Juanita Avenue; Mesa, Arizona 85210",
       "industry": ""
     },
     {
@@ -257068,6 +257080,18 @@
       "industry": ""
     },
     {
+      "state": "GA",
+      "company": "Wellstar Health System, Inc.",
+      "notice_date": null,
+      "effective_date": "2026-09-26",
+      "employees": 761,
+      "layoff_type": "Permanent Layoff / Reduction in Force",
+      "county": "Cobb",
+      "city": "",
+      "address": "793 Sawyer Rd, Marietta, Georgia",
+      "industry": ""
+    },
+    {
       "state": "HI",
       "company": "Maui Seaside Hotel",
       "notice_date": "2019-01-16",
@@ -362734,6 +362758,18 @@
       "industry": "Business Support Services"
     },
     {
+      "state": "LA",
+      "company": "United Parcel Service",
+      "notice_date": "2026-07-30",
+      "effective_date": "2026-10-01",
+      "employees": 172,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "5700 Morrison Road, New, Orleans, Louisiana 70126",
+      "industry": "Couriers and Express Delivery Services"
+    },
+    {
       "state": "MA",
       "company": "Sodexo @ Suffolk University",
       "notice_date": "2021-07-07",
@@ -447231,6 +447267,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Florham Park",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Citibank, N.A.",
+      "notice_date": null,
+      "effective_date": "2026-10-31",
+      "employees": 59,
+      "layoff_type": "",
+      "county": "",
+      "city": "Hudson County",
       "address": "",
       "industry": ""
     },
@@ -630159,7 +630207,7 @@
       "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-08-03",
+      "effective_date": "2026-08-04",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",

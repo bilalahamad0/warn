@@ -1,9 +1,9 @@
 {
-  "total_records": 2358,
-  "total_employees": 353348,
+  "total_records": 2359,
+  "total_employees": 353407,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-08-03T14:35:36.882797+00:00Z",
+  "last_updated": "2026-08-04T01:46:13.847290+00:00Z",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -1059,6 +1059,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Florham Park",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Citibank, N.A.",
+      "notice_date": null,
+      "effective_date": "2026-10-31",
+      "employees": 59,
+      "layoff_type": "",
+      "county": "",
+      "city": "Hudson County",
       "address": "",
       "industry": ""
     },

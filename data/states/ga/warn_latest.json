@@ -1,9 +1,9 @@
 {
-  "total_records": 4746,
-  "total_employees": 605351,
+  "total_records": 4747,
+  "total_employees": 606112,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-08-03T14:26:33.033125+00:00Z",
+  "last_updated": "2026-08-04T01:37:27.213115+00:00Z",
   "source_url": "https://www.tcsg.edu/warn-public-view/",
   "records": [
     {
@@ -3232,6 +3232,18 @@
       "county": "Coweta",
       "city": "",
       "address": "105 N Christopher Ct, 24 Herring Road; and 76 Sprayberry Road, Newnan, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Wellstar Health System, Inc.",
+      "notice_date": null,
+      "effective_date": "2026-09-26",
+      "employees": 761,
+      "layoff_type": "Permanent Layoff / Reduction in Force",
+      "county": "Cobb",
+      "city": "",
+      "address": "793 Sawyer Rd, Marietta, Georgia",
       "industry": ""
     },
     {

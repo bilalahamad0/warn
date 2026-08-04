@@ -1,5 +1,17 @@
 [
  {
+  "employer": "Infineon Technologies America Corp",
+  "city": "Mesa",
+  "zip": "85210",
+  "lwib_area": "7 - ARIZONA@WORK - Maricopa County",
+  "notice_date": "Aug 03, 2026",
+  "warn_type": "WARN",
+  "record_number": "986",
+  "detail_page_url": "https://www.azjobconnection.gov/search/warn_lookups/986",
+  "number_of_employees_affected": "98",
+  "address": "550 West Juanita Avenue; Mesa, Arizona 85210"
+ },
+ {
   "employer": "Select Medical Corporation",
   "city": "Tucson",
   "zip": "85712",
