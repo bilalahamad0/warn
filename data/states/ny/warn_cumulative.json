@@ -1,9 +1,9 @@
 {
-  "total_records": 4770,
-  "total_employees": 415827,
+  "total_records": 4771,
+  "total_employees": 415851,
   "date_range_start": "2016-01-04",
   "date_range_end": "2026-07-21",
-  "last_updated": "2026-08-04T01:46:31.562520+00:00Z",
+  "last_updated": "2026-08-04T14:07:41.742028+00:00Z",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -57244,6 +57244,18 @@
       "county": "Steuben",
       "city": "",
       "address": "6823 Industrial Park Road North Bath, NY, 14810",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Springer Nature America, Inc.",
+      "notice_date": "2026-06-23",
+      "effective_date": "2026-06-23",
+      "employees": 24,
+      "layoff_type": "Closure",
+      "county": "New York",
+      "city": "",
+      "address": "One New York Plaza Suite 4600 New York, NY, 10004",
       "industry": ""
     }
   ]

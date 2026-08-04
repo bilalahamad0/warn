@@ -1,9 +1,9 @@
 {
-  "total_records": 35,
-  "total_employees": 6323,
+  "total_records": 36,
+  "total_employees": 6495,
   "date_range_start": "2025-01-07",
-  "date_range_end": "2026-06-26",
-  "last_updated": "2026-08-03T14:31:49.561054+00:00Z",
+  "date_range_end": "2026-07-30",
+  "last_updated": "2026-08-04T01:41:53.170608+00:00Z",
   "source_url": "https://www.laworks.net/Downloads/Downloads_WFD.asp",
   "records": [
     {
@@ -425,6 +425,18 @@
       "city": "",
       "address": "100 Campus Drive, Florham Park, NJ 07932",
       "industry": "Business Support Services"
+    },
+    {
+      "state": "LA",
+      "company": "United Parcel Service",
+      "notice_date": "2026-07-30",
+      "effective_date": "2026-10-01",
+      "employees": 172,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "5700 Morrison Road, New, Orleans, Louisiana 70126",
+      "industry": "Couriers and Express Delivery Services"
     }
   ]
 }

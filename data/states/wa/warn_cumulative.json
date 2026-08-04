@@ -1,9 +1,9 @@
 {
-  "total_records": 1487,
-  "total_employees": 234832,
+  "total_records": 1488,
+  "total_employees": 234887,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-07-31",
-  "last_updated": "2026-08-04T01:49:45.118717+00:00Z",
+  "date_range_end": "2026-08-03",
+  "last_updated": "2026-08-04T14:10:55.342147+00:00Z",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -17847,6 +17847,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Bothell",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "80 Acres Urban Agriculture, Inc.",
+      "notice_date": "2026-08-03",
+      "effective_date": "2026-08-03",
+      "employees": 55,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Marysville",
       "address": "",
       "industry": ""
     }

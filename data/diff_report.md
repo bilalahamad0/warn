@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-08-04 01:49:50 UTC
+**Generated:** 2026-08-04 14:11:01 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -34,7 +34,6 @@ M .coverage
  M data/states/al/warn_snapshot.json
  M data/states/az/changelog.jsonl
  M data/states/az/meta.json
- M data/states/az/raw_download
  M data/states/az/warn_cumulative.json
  M data/states/az/warn_latest.json
  M data/states/az/warn_snapshot.json
@@ -63,9 +62,7 @@ M .coverage
  M data/states/fl/warn_latest.json
  M data/states/fl/warn_snapshot.json
  M data/states/ga/changelog.jsonl
- M data/states/ga/detail_cache.json
  M data/states/ga/meta.json
- M data/states/ga/raw_download
  M data/states/ga/warn_cumulative.json
  M data/states/ga/warn_latest.json
  M data/states/ga/warn_snapshot.json
@@ -105,7 +102,6 @@ M .coverage
  M data/states/ky/warn_snapshot.json
  M data/states/la/changelog.jsonl
  M data/states/la/meta.json
- M data/states/la/raw_download
  M data/states/la/warn_cumulative.json
  M data/states/la/warn_latest.json
  M data/states/la/warn_snapshot.json
@@ -140,6 +136,7 @@ M .coverage
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
+ M data/states/mt/meta.json
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
@@ -154,12 +151,12 @@ M .coverage
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
+ M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
  M data/states/nj/changelog.jsonl
  M data/states/nj/meta.json
- M data/states/nj/raw_download.xlsx
  M data/states/nj/warn_cumulative.json
  M data/states/nj/warn_latest.json
  M data/states/nj/warn_snapshot.json
@@ -170,6 +167,7 @@ M .coverage
  M data/states/nm/warn_snapshot.json
  M data/states/ny/changelog.jsonl
  M data/states/ny/meta.json
+ M data/states/ny/raw_download
  M data/states/ny/warn_cumulative.json
  M data/states/ny/warn_latest.json
  M data/states/ny/warn_snapshot.json
@@ -213,12 +211,12 @@ M .coverage
  M data/states/tn/warn_latest.json
  M data/states/tn/warn_snapshot.json
  M data/states/ut/changelog.jsonl
+ M data/states/ut/meta.json
  M data/states/ut/warn_cumulative.json
  M data/states/ut/warn_latest.json
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
- M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -229,6 +227,7 @@ M .coverage
  M data/states/vt/warn_snapshot.json
  M data/states/wa/changelog.jsonl
  M data/states/wa/meta.json
+ M data/states/wa/raw_download
  M data/states/wa/warn_cumulative.json
  M data/states/wa/warn_latest.json
  M data/states/wa/warn_snapshot.json
@@ -255,16 +254,17 @@ M .coverage
 
 **Recent commits:**
 ```
+681cbd78 auto: WARN data update [skip ci]
 979d7683 auto: WARN data update [skip ci]
 a31da9f7 auto: WARN data update [skip ci]
 c1575972 chore(ai): set manual-effort baseline to 3x measured active days
 24e631f7 chore: weekly AI metrics update [skip actions]
-7d602329 chore: weekly AI metrics update [skip actions]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-08-04T13:55:57.828318+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-04T01:34:05.729837+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-03T14:23:26.774431+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-03T01:47:22.895772+00:00Z` — +0 added, -0 removed, 0 employees (new)
@@ -274,4 +274,3 @@ c1575972 chore(ai): set manual-effort baseline to 3x measured active days
 - `2026-08-01T01:58:18.193168+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-07-31T13:40:23.624011+00:00Z` — +0 added, -36 removed, 0 employees (new)
 - `2026-07-31T01:56:58.667002+00:00Z` — +20 added, -0 removed, 715 employees (new)
-- `2026-07-30T13:34:50.909850+00:00Z` — +0 added, -0 removed, 0 employees (new)

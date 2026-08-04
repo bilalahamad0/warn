@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-04T01:49:51.064141+00:00Z",
+  "last_updated": "2026-08-04T14:11:01.682487+00:00Z",
   "states_live": 47,
-  "total_records": 59020,
-  "total_employees": 6405480,
+  "total_records": 59022,
+  "total_employees": 6405559,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -225,8 +225,8 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 4770,
-      "total_employees": 415827
+      "total_records": 4771,
+      "total_employees": 415851
     },
     "OH": {
       "name": "Ohio",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1487,
-      "total_employees": 234832
+      "total_records": 1488,
+      "total_employees": 234887
     },
     "WI": {
       "name": "Wisconsin",
@@ -513691,6 +513691,18 @@
       "industry": ""
     },
     {
+      "state": "NY",
+      "company": "Springer Nature America, Inc.",
+      "notice_date": "2026-06-23",
+      "effective_date": "2026-06-23",
+      "employees": 24,
+      "layoff_type": "Closure",
+      "county": "New York",
+      "city": "",
+      "address": "One New York Plaza Suite 4600 New York, NY, 10004",
+      "industry": ""
+    },
+    {
       "state": "OH",
       "company": "UPDATE Refresco Beverages US Inc",
       "notice_date": "2026-07-14",
@@ -648500,6 +648512,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Bothell",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "80 Acres Urban Agriculture, Inc.",
+      "notice_date": "2026-08-03",
+      "effective_date": "2026-08-03",
+      "employees": 55,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Marysville",
       "address": "",
       "industry": ""
     },

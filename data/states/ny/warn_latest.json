@@ -1,9 +1,9 @@
 {
-  "total_records": 182,
-  "total_employees": 9994,
+  "total_records": 183,
+  "total_employees": 10018,
   "date_range_start": "2026-01-06",
   "date_range_end": "2026-07-21",
-  "last_updated": "2026-08-04T01:46:31.544985+00:00Z",
+  "last_updated": "2026-08-04T14:07:41.723666+00:00Z",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -1984,6 +1984,18 @@
       "county": "New York",
       "city": "",
       "address": "LaGuardia Airport (LGA) 9400 Ditmars Blvd East Elmhurst, NY, 11369",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Springer Nature America, Inc.",
+      "notice_date": "2026-06-23",
+      "effective_date": "2026-06-23",
+      "employees": 24,
+      "layoff_type": "Closure",
+      "county": "New York",
+      "city": "",
+      "address": "One New York Plaza Suite 4600 New York, NY, 10004",
       "industry": ""
     },
     {
