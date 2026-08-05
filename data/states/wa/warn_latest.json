@@ -1,11 +1,23 @@
 {
-  "total_records": 1487,
-  "total_employees": 234764,
+  "total_records": 1488,
+  "total_employees": 234855,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-08-03",
-  "last_updated": "2026-08-05T01:52:52.532607+00:00Z",
+  "date_range_end": "2026-08-04",
+  "last_updated": "2026-08-05T14:04:56.993056+00:00Z",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
+    {
+      "state": "WA",
+      "company": "Zillow Group",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-10-05",
+      "employees": 91,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Seattle",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "WA",
       "company": "80 Acres Urban Agriculture, Inc.",

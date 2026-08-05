@@ -1,9 +1,9 @@
 {
-  "total_records": 183,
-  "total_employees": 10018,
+  "total_records": 184,
+  "total_employees": 10070,
   "date_range_start": "2026-01-06",
   "date_range_end": "2026-07-21",
-  "last_updated": "2026-08-05T01:49:43.796135+00:00Z",
+  "last_updated": "2026-08-05T14:01:45.442589+00:00Z",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -592,6 +592,18 @@
       "county": "Steuben",
       "city": "",
       "address": "One Gunlocke Drive Wayland, NY, 14572",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Hyatt Corporation",
+      "notice_date": "2026-07-01",
+      "effective_date": "2026-09-29",
+      "employees": 52,
+      "layoff_type": "Layoff Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "130 W 44th St Chatwal NY Hotel New York, NY, 10036",
       "industry": ""
     },
     {

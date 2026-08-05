@@ -1,9 +1,9 @@
 {
-  "total_records": 931,
-  "total_employees": 51410,
+  "total_records": 935,
+  "total_employees": 51712,
   "date_range_start": "2011-01-13",
-  "date_range_end": "2026-07-22",
-  "last_updated": "2026-08-04T13:59:25.010625+00:00Z",
+  "date_range_end": "2026-08-03",
+  "last_updated": "2026-08-05T01:41:47.648441+00:00Z",
   "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
   "records": [
     {
@@ -953,6 +953,54 @@
       "city": "West Des Moines",
       "address": "800 S Jordan Creek Pkwy",
       "industry": "Finance and Insurance"
+    },
+    {
+      "state": "IA",
+      "company": "NFI Interactive Logistics, LLC",
+      "notice_date": "2026-07-28",
+      "effective_date": "2026-09-30",
+      "employees": 49,
+      "layoff_type": "Closing",
+      "county": "Linn",
+      "city": "Cedar Rapids",
+      "address": "3110 Prairie Valley Ct. SW",
+      "industry": "Transportation and Warehouse"
+    },
+    {
+      "state": "IA",
+      "company": "UnityPoint Health",
+      "notice_date": "2026-07-28",
+      "effective_date": "2027-02-28",
+      "employees": 229,
+      "layoff_type": "Mass Layoff",
+      "county": "Polk",
+      "city": "West Des Moines",
+      "address": "1776 West Lakes Pkwy Ste 400",
+      "industry": "Management of Companies and Enterprises"
+    },
+    {
+      "state": "IA",
+      "company": "UnityPoint Health",
+      "notice_date": "2026-07-28",
+      "effective_date": "2027-02-28",
+      "employees": 1,
+      "layoff_type": "Mass Layoff",
+      "county": "Dubuque",
+      "city": "Dubuque",
+      "address": "350 N Grandview Ave",
+      "industry": "Management of Companies and Enterprises"
+    },
+    {
+      "state": "IA",
+      "company": "Lund Foods Holdings, Inc",
+      "notice_date": "2026-08-03",
+      "effective_date": "2026-10-09",
+      "employees": 23,
+      "layoff_type": "Closing",
+      "county": "Winnebago",
+      "city": "Lake Mills",
+      "address": "877 N Lake St",
+      "industry": "Manufacturing"
     },
     {
       "state": "IA",

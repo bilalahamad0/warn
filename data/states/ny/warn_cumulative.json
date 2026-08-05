@@ -1,9 +1,9 @@
 {
-  "total_records": 4771,
-  "total_employees": 415851,
+  "total_records": 4772,
+  "total_employees": 415903,
   "date_range_start": "2016-01-04",
   "date_range_end": "2026-07-21",
-  "last_updated": "2026-08-05T01:49:43.812679+00:00Z",
+  "last_updated": "2026-08-05T14:01:45.461334+00:00Z",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -57256,6 +57256,18 @@
       "county": "New York",
       "city": "",
       "address": "One New York Plaza Suite 4600 New York, NY, 10004",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Hyatt Corporation",
+      "notice_date": "2026-07-01",
+      "effective_date": "2026-09-29",
+      "employees": 52,
+      "layoff_type": "Layoff Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "130 W 44th St Chatwal NY Hotel New York, NY, 10036",
       "industry": ""
     }
   ]

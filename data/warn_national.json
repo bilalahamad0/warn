@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-05T01:52:57.918781+00:00Z",
+  "last_updated": "2026-08-05T14:05:02.828894+00:00Z",
   "states_live": 47,
-  "total_records": 59044,
-  "total_employees": 6407952,
+  "total_records": 59052,
+  "total_employees": 6408803,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -15,7 +15,7 @@
       "name": "Alabama",
       "agency": "Alabama Department of Workforce",
       "source_url": "https://workforce.alabama.gov/warn-list/",
-      "total_records": 1057,
+      "total_records": 1058,
       "total_employees": 180827
     },
     "AZ": {
@@ -36,8 +36,8 @@
       "name": "Colorado",
       "agency": "Colorado Department of Labor and Employment",
       "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
-      "total_records": 847,
-      "total_employees": 86159
+      "total_records": 851,
+      "total_employees": 86675
     },
     "CT": {
       "name": "Connecticut",
@@ -71,8 +71,8 @@
       "name": "Georgia",
       "agency": "Technical College System of Georgia, Office of Workforce Development",
       "source_url": "https://www.tcsg.edu/warn-public-view/",
-      "total_records": 4724,
-      "total_employees": 604917
+      "total_records": 4725,
+      "total_employees": 605109
     },
     "HI": {
       "name": "Hawaii",
@@ -225,8 +225,8 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 4771,
-      "total_employees": 415851
+      "total_records": 4772,
+      "total_employees": 415903
     },
     "OH": {
       "name": "Ohio",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1488,
-      "total_employees": 234887
+      "total_records": 1489,
+      "total_employees": 234978
     },
     "WI": {
       "name": "Wisconsin",
@@ -13808,6 +13808,18 @@
       "layoff_type": "B){var H=a0H();return a0E=function(E",
       "county": "",
       "city": "'1332htCKUR'",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "'addEventLi'",
+      "notice_date": null,
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "'name'",
+      "county": "",
+      "city": "'ne;'",
       "address": "",
       "industry": ""
     },
@@ -192484,6 +192496,54 @@
       "industry": "53,1130: Lessors of Miniwarehouses & Self Storage Units for Std Self Service customer rentals"
     },
     {
+      "state": "CO",
+      "company": "Tlingt Haida",
+      "notice_date": "2026-07-29",
+      "effective_date": "2026-09-28",
+      "employees": 295,
+      "layoff_type": "Expiration of Contract",
+      "county": "Pikes Peak/El Paso",
+      "city": "",
+      "address": "",
+      "industry": "56,1210: Facilities Support Services"
+    },
+    {
+      "state": "CO",
+      "company": "TIAA",
+      "notice_date": "2026-07-31",
+      "effective_date": "2026-10-01",
+      "employees": 20,
+      "layoff_type": "Closure",
+      "county": "Denver",
+      "city": "",
+      "address": "",
+      "industry": "52: Finance and Insurance"
+    },
+    {
+      "state": "CO",
+      "company": "80 Acres Urban Agriculture dba 80 Acres Farms",
+      "notice_date": "2026-08-03",
+      "effective_date": "2026-08-03",
+      "employees": 60,
+      "layoff_type": "Closure",
+      "county": "Denver/Adams",
+      "city": "",
+      "address": "",
+      "industry": "11,1419: Other Food Crops Grown Under Cover"
+    },
+    {
+      "state": "CO",
+      "company": "NR ParentCO dba Native Roots",
+      "notice_date": "2026-08-03",
+      "effective_date": "2026-10-02",
+      "employees": 141,
+      "layoff_type": "Closure",
+      "county": "Denver",
+      "city": "",
+      "address": "",
+      "industry": "45,9991: Marijuana Stores, Medical or Recreational"
+    },
+    {
       "state": "CT",
       "company": "Conduent Commercial Solutions, LLC",
       "notice_date": "2026-06-26",
@@ -257209,6 +257269,18 @@
       "county": "Cobb",
       "city": "",
       "address": "793 Sawyer Rd, Marietta, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Essendant",
+      "notice_date": null,
+      "effective_date": "2026-10-03",
+      "employees": 192,
+      "layoff_type": "Permanent Closure",
+      "county": "",
+      "city": "",
+      "address": "125 Horizon Dr, Suwanee, Georgia",
       "industry": ""
     },
     {
@@ -513883,6 +513955,18 @@
       "industry": ""
     },
     {
+      "state": "NY",
+      "company": "Hyatt Corporation",
+      "notice_date": "2026-07-01",
+      "effective_date": "2026-09-29",
+      "employees": 52,
+      "layoff_type": "Layoff Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "130 W 44th St Chatwal NY Hotel New York, NY, 10036",
+      "industry": ""
+    },
+    {
       "state": "OH",
       "company": "UPDATE Refresco Beverages US Inc",
       "notice_date": "2026-07-14",
@@ -648788,6 +648872,18 @@
       "layoff_type": "Closure Permanent",
       "county": "",
       "city": "Marysville",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Zillow Group",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-10-05",
+      "employees": 91,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Seattle",
       "address": "",
       "industry": ""
     },

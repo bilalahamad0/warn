@@ -1,9 +1,9 @@
 {
-  "total_records": 1057,
+  "total_records": 1058,
   "total_employees": 180827,
   "date_range_start": "1998-07-14",
   "date_range_end": "2026-07-22",
-  "last_updated": "2026-08-05T01:28:01.591111+00:00Z",
+  "last_updated": "2026-08-05T13:41:19.704709+00:00Z",
   "source_url": "https://workforce.alabama.gov/warn-list/",
   "records": [
     {
@@ -12687,6 +12687,18 @@
       "layoff_type": "B){var H=a0H();return a0E=function(E",
       "county": "",
       "city": "'1332htCKUR'",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "'addEventLi'",
+      "notice_date": null,
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "'name'",
+      "county": "",
+      "city": "'ne;'",
       "address": "",
       "industry": ""
     }

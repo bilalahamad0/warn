@@ -1,11 +1,23 @@
 {
-  "total_records": 1353,
-  "total_employees": 186464,
+  "total_records": 1354,
+  "total_employees": 186593,
   "date_range_start": "1988-11-28",
-  "date_range_end": "2026-07-30",
-  "last_updated": "2026-08-04T14:07:52.212389+00:00Z",
+  "date_range_end": "2026-08-03",
+  "last_updated": "2026-08-05T01:49:52.739591+00:00Z",
   "source_url": "https://ccwd.hecc.oregon.gov/Layoff/WARN",
   "records": [
+    {
+      "state": "OR",
+      "company": "Avamere Health Services, LLC",
+      "notice_date": "2026-08-03",
+      "effective_date": "2026-09-01",
+      "employees": 129,
+      "layoff_type": "Large Layoff - 10 or more workers",
+      "county": "",
+      "city": "Tigard",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "OR",
       "company": "Portland Truck Manufacturing Facility",

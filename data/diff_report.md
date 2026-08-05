@@ -1,58 +1,59 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-08-05 01:52:57 UTC
+**Generated:** 2026-08-05 14:05:02 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 36 | 82 | +46/+0 |
-| Total employees | 2,560 | 4,719 | +2,159 |
+| Total records | 82 | 36 | +0/+46 |
+| Total employees | 4,719 | 2,560 | -2,159 |
 
-### ✅ New Entries (46 records)
+### ✅ No new entries.
 
-| Company | Employees | Effective Date | County |
-|---------|-----------|----------------|--------|
-| Visa | 320 | 2026-10-01 | San Mateo County |
-| Sodexo | 164 | 2026-09-30 | Orange County |
-| ServiceNow, Inc. | 154 | 2026-09-28 | Santa Clara County |
-| Chime Financial, Inc. | 135 | 2026-09-30 | San Francisco County |
-| ServiceNow, Inc. | 133 | 2026-09-28 | San Diego County |
-| Pixar | 108 | 2026-09-26 | Alameda County |
-| Fortrex | 91 | 2026-08-21 | Imperial County |
-| PD Systems | 81 | 2026-08-28 | Monterey County |
-| Chick-fil-A & Fig | 77 | 2026-09-27 | Los Angeles County |
-| Tencent America LLC | 68 | 2026-09-28 | Orange County |
-| Intel Corporation - SC-12 | 67 | 2026-08-15 | Santa Clara County |
-| O'Briens Market Inc. | 67 | 2026-09-27 | Stanislaus County |
-| WeDriveU, Inc. | 63 | 2026-10-01 | Kern County |
-| Federal Express Corporation | 62 | 2026-09-29 | Riverside County |
-| New Leaf Community Markets, Inc. | 61 | 2026-09-20 | Santa Clara County |
-| Yamaha Motor Finance Corporation U.S.A. | 61 | 2026-10-01 | Orange County |
-| Silgan Containers | 55 | 2026-09-21 | Stanislaus County |
-| Federal Express Corporation | 54 | 2026-09-28 | San Bernardino County |
-| CraftForce Services, Inc. (2330 Circadian Way) | 51 | 2026-09-20 | Sonoma County |
-| O'Brien's Market Inc. | 50 | 2026-09-26 | Stanislaus County |
+### ❌ Removed Entries (46 records)
+
+| Company | Employees | Effective Date |
+|---------|-----------|----------------|
+| Visa | 320 | 2026-10-01 |
+| Sodexo | 164 | 2026-09-30 |
+| ServiceNow, Inc. | 154 | 2026-09-28 |
+| Chime Financial, Inc. | 135 | 2026-09-30 |
+| ServiceNow, Inc. | 133 | 2026-09-28 |
+| Pixar | 108 | 2026-09-26 |
+| Fortrex | 91 | 2026-08-21 |
+| PD Systems | 81 | 2026-08-28 |
+| Chick-fil-A & Fig | 77 | 2026-09-27 |
+| Tencent America LLC | 68 | 2026-09-28 |
+| Intel Corporation - SC-12 | 67 | 2026-08-15 |
+| O'Briens Market Inc. | 67 | 2026-09-27 |
+| WeDriveU, Inc. | 63 | 2026-10-01 |
+| Federal Express Corporation | 62 | 2026-09-29 |
+| New Leaf Community Markets, Inc. | 61 | 2026-09-20 |
+| Yamaha Motor Finance Corporation U.S.A. | 61 | 2026-10-01 |
+| Silgan Containers | 55 | 2026-09-21 |
+| Federal Express Corporation | 54 | 2026-09-28 |
+| CraftForce Services, Inc. (2330 Circadian Way) | 51 | 2026-09-20 |
+| O'Brien's Market Inc. | 50 | 2026-09-26 |
 
 ---
 ## 📁 File vs Git Comparison
 
-- **Local `file.xlsx` hash:** `08d590fd76632e6972a69851b590a89a`
+- **Local `file.xlsx` hash:** `2c73db1b759812982a57b17b77afa3c5`
 - **Committed hash:**          `2c73db1b759812982a57b17b77afa3c5`
-- 🔴 **Local file differs from committed version**
+- ✅ Local file matches committed version
 
 **Git status:**
 ```
 M .coverage
  M data/changelog.jsonl
- M data/meta.json
  M data/states/ak/changelog.jsonl
- M data/states/ak/meta.json
  M data/states/ak/warn_cumulative.json
  M data/states/ak/warn_latest.json
  M data/states/ak/warn_snapshot.json
  M data/states/al/changelog.jsonl
+ M data/states/al/raw_download
  M data/states/al/warn_cumulative.json
  M data/states/al/warn_latest.json
  M data/states/al/warn_snapshot.json
@@ -63,6 +64,8 @@ M .coverage
  M data/states/az/warn_snapshot.json
  M data/states/co/changelog.jsonl
  M data/states/co/meta.json
+ M data/states/co/raw_download
+ M data/states/co/sheet_2026.html
  M data/states/co/warn_cumulative.json
  M data/states/co/warn_latest.json
  M data/states/co/warn_snapshot.json
@@ -86,7 +89,9 @@ M .coverage
  M data/states/fl/warn_latest.json
  M data/states/fl/warn_snapshot.json
  M data/states/ga/changelog.jsonl
+ M data/states/ga/detail_cache.json
  M data/states/ga/meta.json
+ M data/states/ga/raw_download
  M data/states/ga/warn_cumulative.json
  M data/states/ga/warn_latest.json
  M data/states/ga/warn_snapshot.json
@@ -97,7 +102,6 @@ M .coverage
  M data/states/hi/warn_snapshot.json
  M data/states/ia/changelog.jsonl
  M data/states/ia/meta.json
- M data/states/ia/raw_download
  M data/states/ia/warn_cumulative.json
  M data/states/ia/warn_latest.json
  M data/states/ia/warn_snapshot.json
@@ -147,7 +151,6 @@ M .coverage
  M data/states/me/warn_snapshot.json
  M data/states/mi/changelog.jsonl
  M data/states/mi/meta.json
- M data/states/mi/raw_download
  M data/states/mi/warn_cumulative.json
  M data/states/mi/warn_latest.json
  M data/states/mi/warn_snapshot.json
@@ -161,6 +164,7 @@ M .coverage
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
+ M data/states/mt/meta.json
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
@@ -175,6 +179,7 @@ M .coverage
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
+ M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
@@ -190,11 +195,11 @@ M .coverage
  M data/states/nm/warn_snapshot.json
  M data/states/ny/changelog.jsonl
  M data/states/ny/meta.json
+ M data/states/ny/raw_download
  M data/states/ny/warn_cumulative.json
  M data/states/ny/warn_latest.json
  M data/states/ny/warn_snapshot.json
  M data/states/oh/changelog.jsonl
- M data/states/oh/raw_download
  M data/states/oh/warn_cumulative.json
  M data/states/oh/warn_latest.json
  M data/states/oh/warn_snapshot.json
@@ -206,7 +211,6 @@ M .coverage
  M data/states/or/changelog.jsonl
  M data/states/or/latest.xlsx
  M data/states/or/meta.json
- M data/states/or/raw_download
  M data/states/or/warn_cumulative.json
  M data/states/or/warn_latest.json
  M data/states/or/warn_snapshot.json
@@ -219,10 +223,8 @@ M .coverage
  M data/states/ri/warn_cumulative.json
  M data/states/ri/warn_latest.json
  M data/states/ri/warn_snapshot.json
- M data/states/sc/archive/2026.pdf
  M data/states/sc/changelog.jsonl
  M data/states/sc/meta.json
- M data/states/sc/raw_download
  M data/states/sc/warn_cumulative.json
  M data/states/sc/warn_latest.json
  M data/states/sc/warn_snapshot.json
@@ -243,7 +245,6 @@ M .coverage
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
- M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -254,6 +255,7 @@ M .coverage
  M data/states/vt/warn_snapshot.json
  M data/states/wa/changelog.jsonl
  M data/states/wa/meta.json
+ M data/states/wa/raw_download
  M data/states/wa/warn_cumulative.json
  M data/states/wa/warn_latest.json
  M data/states/wa/warn_snapshot.json
@@ -276,21 +278,21 @@ M .coverage
  M docs/charts/us_top_companies.html
  M docs/charts/us_top_states.html
  M docs/us/index.html
- M file.xlsx
 ```
 
 **Recent commits:**
 ```
+829423e5 auto: WARN data update [skip ci]
 570cd0be auto: WARN data update [skip ci]
 681cbd78 auto: WARN data update [skip ci]
 979d7683 auto: WARN data update [skip ci]
 a31da9f7 auto: WARN data update [skip ci]
-c1575972 chore(ai): set manual-effort baseline to 3x measured active days
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-08-05T13:50:38.715645+00:00Z` — +0 added, -46 removed, 0 employees (new)
 - `2026-08-05T01:38:13.496412+00:00Z` — +10 added, -0 removed, 707 employees (new)
 - `2026-08-04T13:55:57.828318+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-04T01:34:05.729837+00:00Z` — +0 added, -0 removed, 0 employees (new)
@@ -300,4 +302,3 @@ c1575972 chore(ai): set manual-effort baseline to 3x measured active days
 - `2026-08-02T01:54:09.119878+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-01T13:04:36.439770+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-01T01:58:18.193168+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-07-31T13:40:23.624011+00:00Z` — +0 added, -36 removed, 0 employees (new)

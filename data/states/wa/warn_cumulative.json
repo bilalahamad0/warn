@@ -1,9 +1,9 @@
 {
-  "total_records": 1488,
-  "total_employees": 234887,
+  "total_records": 1489,
+  "total_employees": 234978,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-08-03",
-  "last_updated": "2026-08-05T01:52:52.544797+00:00Z",
+  "date_range_end": "2026-08-04",
+  "last_updated": "2026-08-05T14:04:57.008580+00:00Z",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -17859,6 +17859,18 @@
       "layoff_type": "Closure Permanent",
       "county": "",
       "city": "Marysville",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Zillow Group",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-10-05",
+      "employees": 91,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Seattle",
       "address": "",
       "industry": ""
     }

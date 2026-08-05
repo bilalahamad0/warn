@@ -1,9 +1,9 @@
 {
-  "total_records": 851,
-  "total_employees": 87374,
+  "total_records": 855,
+  "total_employees": 87890,
   "date_range_start": "2015-01-02",
-  "date_range_end": "2026-07-24",
-  "last_updated": "2026-08-05T01:38:35.960962+00:00Z",
+  "date_range_end": "2026-08-03",
+  "last_updated": "2026-08-05T13:51:01.599522+00:00Z",
   "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
   "records": [
     {
@@ -389,6 +389,54 @@
       "city": "",
       "address": "",
       "industry": "53,1130: Lessors of Miniwarehouses & Self Storage Units for Std Self Service customer rentals"
+    },
+    {
+      "state": "CO",
+      "company": "Tlingt Haida",
+      "notice_date": "2026-07-29",
+      "effective_date": "2026-09-28",
+      "employees": 295,
+      "layoff_type": "Expiration of Contract",
+      "county": "Pikes Peak/El Paso",
+      "city": "",
+      "address": "",
+      "industry": "56,1210: Facilities Support Services"
+    },
+    {
+      "state": "CO",
+      "company": "TIAA",
+      "notice_date": "2026-07-31",
+      "effective_date": "2026-10-01",
+      "employees": 20,
+      "layoff_type": "Closure",
+      "county": "Denver",
+      "city": "",
+      "address": "",
+      "industry": "52: Finance and Insurance"
+    },
+    {
+      "state": "CO",
+      "company": "80 Acres Urban Agriculture dba 80 Acres Farms",
+      "notice_date": "2026-08-03",
+      "effective_date": "2026-08-03",
+      "employees": 60,
+      "layoff_type": "Closure",
+      "county": "Denver/Adams",
+      "city": "",
+      "address": "",
+      "industry": "11,1419: Other Food Crops Grown Under Cover"
+    },
+    {
+      "state": "CO",
+      "company": "NR ParentCO dba Native Roots",
+      "notice_date": "2026-08-03",
+      "effective_date": "2026-10-02",
+      "employees": 141,
+      "layoff_type": "Closure",
+      "county": "Denver",
+      "city": "",
+      "address": "",
+      "industry": "45,9991: Marijuana Stores, Medical or Recreational"
     },
     {
       "state": "CO",
