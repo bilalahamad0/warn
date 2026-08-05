@@ -1,9 +1,9 @@
 {
-  "total_records": 980,
-  "total_employees": 138918,
+  "total_records": 983,
+  "total_employees": 139607,
   "date_range_start": "2015-01-05",
-  "date_range_end": "2026-07-30",
-  "last_updated": "2026-08-04T14:07:43.873866+00:00Z",
+  "date_range_end": "2026-08-04",
+  "last_updated": "2026-08-05T01:49:45.710603+00:00Z",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
     {
@@ -11223,6 +11223,42 @@
       "layoff_type": "Closure",
       "county": "Hamilton",
       "city": "Cincinnati",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "SDH Services West, LLC",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-10-01",
+      "employees": 488,
+      "layoff_type": "Closure",
+      "county": "Hamilton",
+      "city": "Cincinnati",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "UPDATE Republic National Distributing Company",
+      "notice_date": "2026-08-03",
+      "effective_date": "2026-08-31",
+      "employees": 56,
+      "layoff_type": "Closure",
+      "county": "Hamilton",
+      "city": "Cincinnati",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "80 Acres Urban Agriculture, Inc.",
+      "notice_date": "2026-08-03",
+      "effective_date": "2026-08-03",
+      "employees": 145,
+      "layoff_type": "Closure",
+      "county": "Butler",
+      "city": "Hamilton",
       "address": "",
       "industry": ""
     }

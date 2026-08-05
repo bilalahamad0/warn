@@ -1,9 +1,9 @@
 {
-  "total_records": 4867,
-  "total_employees": 668670,
+  "total_records": 4868,
+  "total_employees": 668911,
   "date_range_start": "1987-09-01",
-  "date_range_end": "2026-07-15",
-  "last_updated": "2026-08-04T13:59:51.167474+00:00Z",
+  "date_range_end": "2026-07-31",
+  "last_updated": "2026-08-05T01:42:11.560144+00:00Z",
   "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
   "records": [
     {
@@ -58409,6 +58409,18 @@
       "city": "Danville",
       "address": "1010 E Fairchild St",
       "industry": "Wholesale Trade"
+    },
+    {
+      "state": "IL",
+      "company": "SCR Medical Transportation LLC",
+      "notice_date": "2026-07-31",
+      "effective_date": null,
+      "employees": 241,
+      "layoff_type": "Mass Layoff",
+      "county": "Cook County",
+      "city": "Chicago",
+      "address": "8835 S Greenwood Ave.",
+      "industry": "Transportation and Warehousing"
     }
   ]
 }

@@ -1,11 +1,23 @@
 {
-  "total_records": 92,
-  "total_employees": 14401,
+  "total_records": 93,
+  "total_employees": 14520,
   "date_range_start": "2025-01-21",
-  "date_range_end": "2026-07-13",
-  "last_updated": "2026-08-04T14:08:11.765717+00:00Z",
+  "date_range_end": "2026-08-04",
+  "last_updated": "2026-08-05T01:50:09.467583+00:00Z",
   "source_url": "https://www.tn.gov/workforce/general-resources/major-publications0/major-publications-redirect/reports.html",
   "records": [
+    {
+      "state": "TN",
+      "company": "Wellpath",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-09-30",
+      "employees": 119,
+      "layoff_type": "",
+      "county": "Shelby",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "TN",
       "company": "Carlex",

@@ -1,9 +1,9 @@
 {
-  "total_records": 601,
-  "total_employees": 80885,
+  "total_records": 603,
+  "total_employees": 81091,
   "date_range_start": "2013-02-25",
-  "date_range_end": "2026-07-30",
-  "last_updated": "2026-08-04T14:08:06.637712+00:00Z",
+  "date_range_end": "2026-08-03",
+  "last_updated": "2026-08-05T01:50:02.442548+00:00Z",
   "source_url": "https://scworks.org/employer/employer-programs/risk-closing/layoff-notification-reports",
   "records": [
     {
@@ -7216,6 +7216,30 @@
       "county": "Spartanburg",
       "city": "",
       "address": "9098 Fairforest Rd., Spartanburg, SC 29301",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "Pactiv LLC",
+      "notice_date": "2026-08-03",
+      "effective_date": "2026-10-06",
+      "employees": 133,
+      "layoff_type": "Permanent Closure",
+      "county": "Aiken",
+      "city": "",
+      "address": "578 Old Jackson Highway, Jackson, SC 29831",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "80 Acres Urban Agriculture, Inc. (80 Acres Farms)",
+      "notice_date": "2026-08-03",
+      "effective_date": "2026-08-03",
+      "employees": 73,
+      "layoff_type": "Permanent Layoff",
+      "county": "Anderson",
+      "city": "",
+      "address": "2665 US-29 N., Anderson, SC 29626",
       "industry": ""
     }
   ]

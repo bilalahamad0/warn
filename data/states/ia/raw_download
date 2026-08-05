@@ -869,6 +869,50 @@
   "industry": "Finance and Insurance "
  },
  {
+  "company": "NFI Interactive Logistics, LLC",
+  "address": "3110 Prairie Valley Ct. SW",
+  "city": "Cedar Rapids",
+  "county": "Linn",
+  "layoff_type": "Closing",
+  "employees": 49,
+  "notice_date": "2026-07-28 00:00:00",
+  "effective_date": "2026-09-30 00:00:00",
+  "industry": "Transportation and Warehouse "
+ },
+ {
+  "company": "UnityPoint Health ",
+  "address": "1776 West Lakes Pkwy Ste 400",
+  "city": "West Des Moines",
+  "county": "Polk ",
+  "layoff_type": "Mass Layoff ",
+  "employees": 229,
+  "notice_date": "2026-07-28 00:00:00",
+  "effective_date": "2027-02-28 00:00:00",
+  "industry": "Management of Companies and Enterprises"
+ },
+ {
+  "company": "UnityPoint Health ",
+  "address": "350 N Grandview Ave",
+  "city": "Dubuque",
+  "county": "Dubuque",
+  "layoff_type": "Mass Layoff ",
+  "employees": 1,
+  "notice_date": "2026-07-28 00:00:00",
+  "effective_date": "2027-02-28 00:00:00",
+  "industry": "Management of Companies and Enterprises"
+ },
+ {
+  "company": "Lund Foods Holdings, Inc",
+  "address": "877 N Lake St",
+  "city": "Lake Mills",
+  "county": "Winnebago",
+  "layoff_type": "Closing ",
+  "employees": 23,
+  "notice_date": "2026-08-03 00:00:00",
+  "effective_date": "2026-10-09 00:00:00",
+  "industry": "Manufacturing "
+ },
+ {
   "company": "John Deere Ottumwa Works ",
   "address": "928 E Vine St",
   "city": "Ottumwa",

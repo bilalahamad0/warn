@@ -1,9 +1,9 @@
 {
-  "total_records": 1057,
-  "total_employees": 120623,
+  "total_records": 1058,
+  "total_employees": 120742,
   "date_range_start": "2012-01-05",
-  "date_range_end": "2026-07-13",
-  "last_updated": "2026-08-04T14:08:11.769875+00:00Z",
+  "date_range_end": "2026-08-04",
+  "last_updated": "2026-08-05T01:50:09.471153+00:00Z",
   "source_url": "https://www.tn.gov/workforce/general-resources/major-publications0/major-publications-redirect/reports.html",
   "records": [
     {
@@ -10759,6 +10759,18 @@
       "county": "Shelby",
       "city": "Memphis",
       "state": "TN"
+    },
+    {
+      "state": "TN",
+      "company": "Wellpath",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-09-30",
+      "employees": 119,
+      "layoff_type": "",
+      "county": "Shelby",
+      "city": "",
+      "address": "",
+      "industry": ""
     }
   ]
 }

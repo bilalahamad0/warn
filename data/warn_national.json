@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-04T14:11:01.682487+00:00Z",
+  "last_updated": "2026-08-05T01:52:57.918781+00:00Z",
   "states_live": 47,
-  "total_records": 59022,
-  "total_employees": 6405559,
+  "total_records": 59044,
+  "total_employees": 6407952,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -29,8 +29,8 @@
       "name": "California",
       "agency": "California Employment Development Department",
       "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
-      "total_records": 16166,
-      "total_employees": 1383591
+      "total_records": 16176,
+      "total_employees": 1384298
     },
     "CO": {
       "name": "Colorado",
@@ -85,8 +85,8 @@
       "name": "Iowa",
       "agency": "Iowa Workforce Development",
       "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
-      "total_records": 921,
-      "total_employees": 51382
+      "total_records": 925,
+      "total_employees": 51684
     },
     "ID": {
       "name": "Idaho",
@@ -99,8 +99,8 @@
       "name": "Illinois",
       "agency": "Illinois Department of Commerce and Economic Opportunity",
       "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
-      "total_records": 4867,
-      "total_employees": 668670
+      "total_records": 4868,
+      "total_employees": 668911
     },
     "IN": {
       "name": "Indiana",
@@ -232,8 +232,8 @@
       "name": "Ohio",
       "agency": "Ohio Department of Job and Family Services",
       "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
-      "total_records": 980,
-      "total_employees": 138918
+      "total_records": 983,
+      "total_employees": 139607
     },
     "OK": {
       "name": "Oklahoma",
@@ -246,8 +246,8 @@
       "name": "Oregon",
       "agency": "Oregon Higher Education Coordinating Commission, Office of Community Colleges and Workforce Development",
       "source_url": "https://ccwd.hecc.oregon.gov/Layoff/WARN",
-      "total_records": 1353,
-      "total_employees": 186464
+      "total_records": 1354,
+      "total_employees": 186593
     },
     "PA": {
       "name": "Pennsylvania",
@@ -267,8 +267,8 @@
       "name": "South Carolina",
       "agency": "South Carolina Department of Employment and Workforce",
       "source_url": "https://scworks.org/employer/employer-programs/risk-closing/layoff-notification-reports",
-      "total_records": 601,
-      "total_employees": 80885
+      "total_records": 603,
+      "total_employees": 81091
     },
     "SD": {
       "name": "South Dakota",
@@ -281,8 +281,8 @@
       "name": "Tennessee",
       "agency": "Tennessee Department of Labor and Workforce Development",
       "source_url": "https://www.tn.gov/workforce/general-resources/major-publications0/major-publications-redirect/reports.html",
-      "total_records": 1057,
-      "total_employees": 120623
+      "total_records": 1058,
+      "total_employees": 120742
     },
     "TX": {
       "name": "Texas",
@@ -38421,6 +38421,126 @@
       "county": "Orange County",
       "city": "",
       "address": "1020 W Ball Rd.  Anaheim CA 92802",
+      "industry": "72 Accommodation and Food Services"
+    },
+    {
+      "state": "CA",
+      "company": "Veritone, Inc.",
+      "notice_date": "2026-07-30",
+      "effective_date": "2026-09-28",
+      "employees": 10,
+      "layoff_type": "Layoff Permanent",
+      "county": "Orange County",
+      "city": "",
+      "address": "5291 California Ave., Ste. 350  Irvine CA 92617",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "state": "CA",
+      "company": "International Rescue Committee, Inc.",
+      "notice_date": "2026-07-28",
+      "effective_date": "2026-09-30",
+      "employees": 15,
+      "layoff_type": "Layoff Permanent",
+      "county": "Stanislaus County",
+      "city": "",
+      "address": "3446 N. Golden State Blvd, Ste A  Turlock CA 95382",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "International Rescue Committee, Inc.",
+      "notice_date": "2026-07-28",
+      "effective_date": "2026-09-30",
+      "employees": 41,
+      "layoff_type": "Layoff Permanent",
+      "county": "Sacramento County",
+      "city": "",
+      "address": "2020 Hurley Way, Ste 395  Sacramento CA 95825",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Chime Financial, Inc.",
+      "notice_date": "2026-07-31",
+      "effective_date": "2026-09-30",
+      "employees": 135,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Francisco County",
+      "city": "",
+      "address": "101 California Street, Suite 500  San Francisco CA 94111",
+      "industry": "52 Finance and Insurance"
+    },
+    {
+      "state": "CA",
+      "company": "TPE Acquisition, LLC - 5116",
+      "notice_date": "2026-07-31",
+      "effective_date": "2026-09-30",
+      "employees": 3,
+      "layoff_type": "Closure Permanent",
+      "county": "San Bernardino County",
+      "city": "",
+      "address": "5116 Chino Hills Parkway  Chino CA 91710",
+      "industry": "48-49 Transportation and Warehousing"
+    },
+    {
+      "state": "CA",
+      "company": "TPE Acquisition, LLC - 5026",
+      "notice_date": "2026-07-31",
+      "effective_date": "2026-09-30",
+      "employees": 12,
+      "layoff_type": "Closure Permanent",
+      "county": "San Bernardino County",
+      "city": "",
+      "address": "5026 Chino Hills Parkway  Chino CA 91710",
+      "industry": "48-49 Transportation and Warehousing"
+    },
+    {
+      "state": "CA",
+      "company": "Yamaha Motor Finance Corporation U.S.A.",
+      "notice_date": "2026-07-31",
+      "effective_date": "2026-10-01",
+      "employees": 61,
+      "layoff_type": "Closure Permanent",
+      "county": "Orange County",
+      "city": "",
+      "address": "6555 Katella Avenue  Cypress CA 90630",
+      "industry": "52 Finance and Insurance"
+    },
+    {
+      "state": "CA",
+      "company": "WeDriveU, Inc.",
+      "notice_date": "2026-07-31",
+      "effective_date": "2026-10-01",
+      "employees": 63,
+      "layoff_type": "Closure Permanent",
+      "county": "Kern County",
+      "city": "",
+      "address": "5438 Victor Street  Bakersfield CA 93308",
+      "industry": "48-49 Transportation and Warehousing"
+    },
+    {
+      "state": "CA",
+      "company": "Visa",
+      "notice_date": "2026-07-31",
+      "effective_date": "2026-10-01",
+      "employees": 320,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Mateo County",
+      "city": "",
+      "address": "900 Metro Center Blvd  Foster City CA 94404",
+      "industry": "52 Finance and Insurance"
+    },
+    {
+      "state": "CA",
+      "company": "Sunnyside Restaurant and Lodge",
+      "notice_date": "2026-07-28",
+      "effective_date": "2026-10-04",
+      "employees": 47,
+      "layoff_type": "Closure Permanent",
+      "county": "Placer County",
+      "city": "",
+      "address": "1850 West Lake Blvd  Tahoe City CA 96145",
       "industry": "72 Accommodation and Food Services"
     },
     {
@@ -273580,6 +273700,54 @@
       "industry": "Finance and Insurance"
     },
     {
+      "state": "IA",
+      "company": "NFI Interactive Logistics, LLC",
+      "notice_date": "2026-07-28",
+      "effective_date": "2026-09-30",
+      "employees": 49,
+      "layoff_type": "Closing",
+      "county": "Linn",
+      "city": "Cedar Rapids",
+      "address": "3110 Prairie Valley Ct. SW",
+      "industry": "Transportation and Warehouse"
+    },
+    {
+      "state": "IA",
+      "company": "UnityPoint Health",
+      "notice_date": "2026-07-28",
+      "effective_date": "2027-02-28",
+      "employees": 229,
+      "layoff_type": "Mass Layoff",
+      "county": "Polk",
+      "city": "West Des Moines",
+      "address": "1776 West Lakes Pkwy Ste 400",
+      "industry": "Management of Companies and Enterprises"
+    },
+    {
+      "state": "IA",
+      "company": "UnityPoint Health",
+      "notice_date": "2026-07-28",
+      "effective_date": "2027-02-28",
+      "employees": 1,
+      "layoff_type": "Mass Layoff",
+      "county": "Dubuque",
+      "city": "Dubuque",
+      "address": "350 N Grandview Ave",
+      "industry": "Management of Companies and Enterprises"
+    },
+    {
+      "state": "IA",
+      "company": "Lund Foods Holdings, Inc",
+      "notice_date": "2026-08-03",
+      "effective_date": "2026-10-09",
+      "employees": 23,
+      "layoff_type": "Closing",
+      "county": "Winnebago",
+      "city": "Lake Mills",
+      "address": "877 N Lake St",
+      "industry": "Manufacturing"
+    },
+    {
       "state": "ID",
       "company": "Fortrex",
       "notice_date": "2026-07-01",
@@ -334358,6 +334526,18 @@
       "city": "Danville",
       "address": "1010 E Fairchild St",
       "industry": "Wholesale Trade"
+    },
+    {
+      "state": "IL",
+      "company": "SCR Medical Transportation LLC",
+      "notice_date": "2026-07-31",
+      "effective_date": null,
+      "employees": 241,
+      "layoff_type": "Mass Layoff",
+      "county": "Cook County",
+      "city": "Chicago",
+      "address": "8835 S Greenwood Ave.",
+      "industry": "Transportation and Warehousing"
     },
     {
       "state": "IN",
@@ -524923,6 +525103,42 @@
       "industry": ""
     },
     {
+      "state": "OH",
+      "company": "SDH Services West, LLC",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-10-01",
+      "employees": 488,
+      "layoff_type": "Closure",
+      "county": "Hamilton",
+      "city": "Cincinnati",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "UPDATE Republic National Distributing Company",
+      "notice_date": "2026-08-03",
+      "effective_date": "2026-08-31",
+      "employees": 56,
+      "layoff_type": "Closure",
+      "county": "Hamilton",
+      "city": "Cincinnati",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "80 Acres Urban Agriculture, Inc.",
+      "notice_date": "2026-08-03",
+      "effective_date": "2026-08-03",
+      "employees": 145,
+      "layoff_type": "Closure",
+      "county": "Butler",
+      "city": "Hamilton",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "OK",
       "company": "Surgical Specialties",
       "notice_date": "2003-07-21",
@@ -543559,6 +543775,18 @@
       "industry": ""
     },
     {
+      "state": "OR",
+      "company": "Avamere Health Services, LLC",
+      "notice_date": "2026-08-03",
+      "effective_date": "2026-09-01",
+      "employees": 129,
+      "layoff_type": "Large Layoff - 10 or more workers",
+      "county": "",
+      "city": "Tigard",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "PA",
       "company": "Transform Warehouse Operations, LLC",
       "notice_date": null,
@@ -555871,6 +556099,30 @@
       "industry": ""
     },
     {
+      "state": "SC",
+      "company": "Pactiv LLC",
+      "notice_date": "2026-08-03",
+      "effective_date": "2026-10-06",
+      "employees": 133,
+      "layoff_type": "Permanent Closure",
+      "county": "Aiken",
+      "city": "",
+      "address": "578 Old Jackson Highway, Jackson, SC 29831",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "80 Acres Urban Agriculture, Inc. (80 Acres Farms)",
+      "notice_date": "2026-08-03",
+      "effective_date": "2026-08-03",
+      "employees": 73,
+      "layoff_type": "Permanent Layoff",
+      "county": "Anderson",
+      "city": "",
+      "address": "2665 US-29 N., Anderson, SC 29626",
+      "industry": ""
+    },
+    {
       "state": "SD",
       "company": "Conduent",
       "notice_date": "2026-06-29",
@@ -567571,6 +567823,18 @@
       "county": "Shelby",
       "city": "Memphis",
       "state": "TN"
+    },
+    {
+      "state": "TN",
+      "company": "Wellpath",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-09-30",
+      "employees": 119,
+      "layoff_type": "",
+      "county": "Shelby",
+      "city": "",
+      "address": "",
+      "industry": ""
     },
     {
       "company": "Philips Electronics",
@@ -630219,7 +630483,7 @@
       "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-08-04",
+      "effective_date": "2026-08-05",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",
