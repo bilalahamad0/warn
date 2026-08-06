@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-05T14:05:02.828894+00:00Z",
+  "last_updated": "2026-08-06T01:50:27.021328+00:00Z",
   "states_live": 47,
-  "total_records": 59052,
-  "total_employees": 6408803,
+  "total_records": 59064,
+  "total_employees": 6409681,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -15,15 +15,15 @@
       "name": "Alabama",
       "agency": "Alabama Department of Workforce",
       "source_url": "https://workforce.alabama.gov/warn-list/",
-      "total_records": 1058,
-      "total_employees": 180827
+      "total_records": 1059,
+      "total_employees": 180874
     },
     "AZ": {
       "name": "Arizona",
       "agency": "Arizona Department of Economic Security",
       "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
-      "total_records": 474,
-      "total_employees": 73060
+      "total_records": 475,
+      "total_employees": 73113
     },
     "CA": {
       "name": "California",
@@ -71,8 +71,8 @@
       "name": "Georgia",
       "agency": "Technical College System of Georgia, Office of Workforce Development",
       "source_url": "https://www.tcsg.edu/warn-public-view/",
-      "total_records": 4725,
-      "total_employees": 605109
+      "total_records": 4726,
+      "total_employees": 605219
     },
     "HI": {
       "name": "Hawaii",
@@ -85,8 +85,8 @@
       "name": "Iowa",
       "agency": "Iowa Workforce Development",
       "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
-      "total_records": 925,
-      "total_employees": 51684
+      "total_records": 926,
+      "total_employees": 51691
     },
     "ID": {
       "name": "Idaho",
@@ -120,8 +120,8 @@
       "name": "Kentucky",
       "agency": "Kentucky Career Center (Education & Labor Cabinet)",
       "source_url": "https://kyworks.ky.gov/Services/Pages/Rapid-Response-Layoffs-and-Closures.aspx",
-      "total_records": 1231,
-      "total_employees": 156287
+      "total_records": 1234,
+      "total_employees": 156488
     },
     "LA": {
       "name": "Louisiana",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1344,
-      "total_employees": 114478
+      "total_records": 1345,
+      "total_employees": 114512
     },
     "ME": {
       "name": "Maine",
@@ -225,8 +225,8 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 4772,
-      "total_employees": 415903
+      "total_records": 4773,
+      "total_employees": 416065
     },
     "OH": {
       "name": "Ohio",
@@ -246,15 +246,15 @@
       "name": "Oregon",
       "agency": "Oregon Higher Education Coordinating Commission, Office of Community Colleges and Workforce Development",
       "source_url": "https://ccwd.hecc.oregon.gov/Layoff/WARN",
-      "total_records": 1354,
-      "total_employees": 186593
+      "total_records": 1355,
+      "total_employees": 186655
     },
     "PA": {
       "name": "Pennsylvania",
       "agency": "Pennsylvania Department of Labor & Industry",
       "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
-      "total_records": 299,
-      "total_employees": 44399
+      "total_records": 300,
+      "total_employees": 44549
     },
     "RI": {
       "name": "Rhode Island",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1489,
-      "total_employees": 234978
+      "total_records": 1490,
+      "total_employees": 235030
     },
     "WI": {
       "name": "Wisconsin",
@@ -13824,6 +13824,18 @@
       "industry": ""
     },
     {
+      "state": "AL",
+      "company": "Biocryst Pharmaceuticals Inc",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-10-07",
+      "employees": 47,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Hoover",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "AZ",
       "company": "Select Medical Corporation",
       "notice_date": "2026-07-09",
@@ -19509,6 +19521,18 @@
       "county": "",
       "city": "Mesa",
       "address": "550 West Juanita Avenue; Mesa, Arizona 85210",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Essendant",
+      "notice_date": "2026-08-04",
+      "effective_date": null,
+      "employees": 53,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Phoenix",
+      "address": "1500 S 71st Ave,; Phoenix, Arizona 85042",
       "industry": ""
     },
     {
@@ -257284,6 +257308,18 @@
       "industry": ""
     },
     {
+      "state": "GA",
+      "company": "80 Acres Urban Agriculture, Inc",
+      "notice_date": null,
+      "effective_date": "2026-08-03",
+      "employees": 110,
+      "layoff_type": "Permanent Layoff / Reduction in Force",
+      "county": "Clayton",
+      "city": "",
+      "address": "2070 Anvil Block Rd, Suite 100, Forest Park, Georgia",
+      "industry": ""
+    },
+    {
       "state": "HI",
       "company": "Maui Seaside Hotel",
       "notice_date": "2019-01-16",
@@ -273818,6 +273854,18 @@
       "city": "Lake Mills",
       "address": "877 N Lake St",
       "industry": "Manufacturing"
+    },
+    {
+      "state": "IA",
+      "company": "Wells Fargo",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-10-03",
+      "employees": 7,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Polk",
+      "city": "West Des Moines",
+      "address": "800 S Jordan Creek Pkwy",
+      "industry": "Finance and Insurance"
     },
     {
       "state": "ID",
@@ -348645,7 +348693,7 @@
       "notice_date": "2026-08-26",
       "effective_date": "2026-06-26",
       "employees": 28,
-      "layoff_type": "",
+      "layoff_type": "Layoff",
       "county": "Jefferson",
       "city": "",
       "address": "",
@@ -362588,6 +362636,42 @@
       "address": "",
       "industry": "332991",
       "state": "KY"
+    },
+    {
+      "state": "KY",
+      "company": "80 Acres Farm",
+      "notice_date": "2026-08-03",
+      "effective_date": "2026-08-03",
+      "employees": 127,
+      "layoff_type": "Closure",
+      "county": "Boone",
+      "city": "",
+      "address": "",
+      "industry": "11141"
+    },
+    {
+      "state": "KY",
+      "company": "Battelle Memorial Institute E3",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-07-23",
+      "employees": 1,
+      "layoff_type": "Closure",
+      "county": "Madison",
+      "city": "",
+      "address": "",
+      "industry": "541715"
+    },
+    {
+      "state": "KY",
+      "company": "Geodis",
+      "notice_date": "2026-09-08",
+      "effective_date": "2026-07-10",
+      "employees": 73,
+      "layoff_type": "Layoff",
+      "county": "Boone",
+      "city": "",
+      "address": "",
+      "industry": "493110"
     },
     {
       "state": "LA",
@@ -383708,6 +383792,18 @@
       "city": "",
       "address": "8801 Kelso Drive Essex, MD 21221",
       "industry": "456199"
+    },
+    {
+      "state": "MD",
+      "company": "Emergent Biosolutions, Inc.",
+      "notice_date": "2026-08-05",
+      "effective_date": "2026-10-04",
+      "employees": 34,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Montgomery County",
+      "city": "",
+      "address": "300 Professional Drive, Gaithersburg, MD 20879",
+      "industry": "541715"
     },
     {
       "state": "ME",
@@ -406316,30 +406412,6 @@
     },
     {
       "state": "NC",
-      "company": "Republic National Distributing Company, LLC",
-      "notice_date": "2026-06-02",
-      "effective_date": "2026-07-31",
-      "employees": 14,
-      "layoff_type": "Closure Permanent",
-      "county": "Wake",
-      "city": "Raleigh",
-      "address": "7221 Becky Circle",
-      "industry": ""
-    },
-    {
-      "state": "NC",
-      "company": "Republic National Distributing Company, LLC",
-      "notice_date": "2026-06-02",
-      "effective_date": "2026-07-31",
-      "employees": 39,
-      "layoff_type": "Closure Permanent",
-      "county": "Mecklenburg",
-      "city": "Charlotte",
-      "address": "6701-H Northpark Blvd",
-      "industry": ""
-    },
-    {
-      "state": "NC",
       "company": "Down-Lite International, Inc.",
       "notice_date": "2026-06-04",
       "effective_date": "2026-08-14",
@@ -406492,6 +406564,30 @@
       "county": "Onslow",
       "city": "Jacksonville",
       "address": "178 Curtis Road",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Republic National Distributing Company, LLC",
+      "notice_date": "2026-06-02",
+      "effective_date": "2026-08-31",
+      "employees": 14,
+      "layoff_type": "Closure Permanent",
+      "county": "Wake",
+      "city": "Raleigh",
+      "address": "7221 Becky Circle",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Republic National Distributing Company, LLC",
+      "notice_date": "2026-06-02",
+      "effective_date": "2026-08-31",
+      "employees": 39,
+      "layoff_type": "Closure Permanent",
+      "county": "Mecklenburg",
+      "city": "Charlotte",
+      "address": "6701-H Northpark Blvd",
       "industry": ""
     },
     {
@@ -513967,6 +514063,18 @@
       "industry": ""
     },
     {
+      "state": "NY",
+      "company": "LIV Golf Incorporated and Affiliates",
+      "notice_date": "2026-07-08",
+      "effective_date": "2026-10-06",
+      "employees": 162,
+      "layoff_type": "Layoff Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "50 Hudson Yards Suite 65B, New York, NY, 10001",
+      "industry": ""
+    },
+    {
       "state": "OH",
       "company": "UPDATE Refresco Beverages US Inc",
       "notice_date": "2026-07-14",
@@ -543871,6 +543979,18 @@
       "industry": ""
     },
     {
+      "state": "OR",
+      "company": "TV Hardware Distribution, LLC",
+      "notice_date": "2026-08-03",
+      "effective_date": "2026-10-03",
+      "employees": 62,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Springfield",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "PA",
       "company": "Transform Warehouse Operations, LLC",
       "notice_date": null,
@@ -547456,6 +547576,18 @@
       "county": "Cumberland",
       "city": "",
       "address": "2001 Mission Drive, New Cumberland, PA  17070",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Essendant Management Services, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-03",
+      "employees": 150,
+      "layoff_type": "Closure",
+      "county": "Chester",
+      "city": "",
+      "address": "125 Green Tree Road, Phoenixville, PA 19460",
       "industry": ""
     },
     {
@@ -630567,7 +630699,7 @@
       "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-08-05",
+      "effective_date": "2026-08-06",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",
@@ -648884,6 +649016,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Seattle",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Google",
+      "notice_date": "2026-08-05",
+      "effective_date": "2026-09-06",
+      "employees": 52,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Various locations in Washington",
       "address": "",
       "industry": ""
     },

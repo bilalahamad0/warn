@@ -1,41 +1,16 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-08-05 14:05:02 UTC
+**Generated:** 2026-08-06 01:50:26 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 82 | 36 | +0/+46 |
-| Total employees | 4,719 | 2,560 | -2,159 |
+| Total records | 36 | 36 | +0/+0 |
+| Total employees | 2,560 | 2,560 | +0 |
 
 ### ✅ No new entries.
-
-### ❌ Removed Entries (46 records)
-
-| Company | Employees | Effective Date |
-|---------|-----------|----------------|
-| Visa | 320 | 2026-10-01 |
-| Sodexo | 164 | 2026-09-30 |
-| ServiceNow, Inc. | 154 | 2026-09-28 |
-| Chime Financial, Inc. | 135 | 2026-09-30 |
-| ServiceNow, Inc. | 133 | 2026-09-28 |
-| Pixar | 108 | 2026-09-26 |
-| Fortrex | 91 | 2026-08-21 |
-| PD Systems | 81 | 2026-08-28 |
-| Chick-fil-A & Fig | 77 | 2026-09-27 |
-| Tencent America LLC | 68 | 2026-09-28 |
-| Intel Corporation - SC-12 | 67 | 2026-08-15 |
-| O'Briens Market Inc. | 67 | 2026-09-27 |
-| WeDriveU, Inc. | 63 | 2026-10-01 |
-| Federal Express Corporation | 62 | 2026-09-29 |
-| New Leaf Community Markets, Inc. | 61 | 2026-09-20 |
-| Yamaha Motor Finance Corporation U.S.A. | 61 | 2026-10-01 |
-| Silgan Containers | 55 | 2026-09-21 |
-| Federal Express Corporation | 54 | 2026-09-28 |
-| CraftForce Services, Inc. (2330 Circadian Way) | 51 | 2026-09-20 |
-| O'Brien's Market Inc. | 50 | 2026-09-26 |
 
 ---
 ## 📁 File vs Git Comparison
@@ -49,6 +24,7 @@
 M .coverage
  M data/changelog.jsonl
  M data/states/ak/changelog.jsonl
+ M data/states/ak/meta.json
  M data/states/ak/warn_cumulative.json
  M data/states/ak/warn_latest.json
  M data/states/ak/warn_snapshot.json
@@ -59,13 +35,12 @@ M .coverage
  M data/states/al/warn_snapshot.json
  M data/states/az/changelog.jsonl
  M data/states/az/meta.json
+ M data/states/az/raw_download
  M data/states/az/warn_cumulative.json
  M data/states/az/warn_latest.json
  M data/states/az/warn_snapshot.json
  M data/states/co/changelog.jsonl
  M data/states/co/meta.json
- M data/states/co/raw_download
- M data/states/co/sheet_2026.html
  M data/states/co/warn_cumulative.json
  M data/states/co/warn_latest.json
  M data/states/co/warn_snapshot.json
@@ -102,6 +77,7 @@ M .coverage
  M data/states/hi/warn_snapshot.json
  M data/states/ia/changelog.jsonl
  M data/states/ia/meta.json
+ M data/states/ia/raw_download
  M data/states/ia/warn_cumulative.json
  M data/states/ia/warn_latest.json
  M data/states/ia/warn_snapshot.json
@@ -126,6 +102,7 @@ M .coverage
  M data/states/ks/warn_snapshot.json
  M data/states/ky/changelog.jsonl
  M data/states/ky/meta.json
+ M data/states/ky/raw_download
  M data/states/ky/warn_cumulative.json
  M data/states/ky/warn_latest.json
  M data/states/ky/warn_snapshot.json
@@ -164,12 +141,12 @@ M .coverage
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
- M data/states/mt/meta.json
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
  M data/states/nc/changelog.jsonl
  M data/states/nc/meta.json
+ M data/states/nc/raw_download
  M data/states/nc/warn_cumulative.json
  M data/states/nc/warn_latest.json
  M data/states/nc/warn_snapshot.json
@@ -179,7 +156,6 @@ M .coverage
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
- M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
@@ -200,6 +176,7 @@ M .coverage
  M data/states/ny/warn_latest.json
  M data/states/ny/warn_snapshot.json
  M data/states/oh/changelog.jsonl
+ M data/states/oh/raw_download
  M data/states/oh/warn_cumulative.json
  M data/states/oh/warn_latest.json
  M data/states/oh/warn_snapshot.json
@@ -211,11 +188,13 @@ M .coverage
  M data/states/or/changelog.jsonl
  M data/states/or/latest.xlsx
  M data/states/or/meta.json
+ M data/states/or/raw_download
  M data/states/or/warn_cumulative.json
  M data/states/or/warn_latest.json
  M data/states/or/warn_snapshot.json
  M data/states/pa/changelog.jsonl
  M data/states/pa/meta.json
+ M data/states/pa/raw_download
  M data/states/pa/warn_cumulative.json
  M data/states/pa/warn_latest.json
  M data/states/pa/warn_snapshot.json
@@ -233,11 +212,6 @@ M .coverage
  M data/states/sd/warn_cumulative.json
  M data/states/sd/warn_latest.json
  M data/states/sd/warn_snapshot.json
- M data/states/tn/changelog.jsonl
- M data/states/tn/raw_download
- M data/states/tn/warn_cumulative.json
- M data/states/tn/warn_latest.json
- M data/states/tn/warn_snapshot.json
  M data/states/ut/changelog.jsonl
  M data/states/ut/meta.json
  M data/states/ut/warn_cumulative.json
@@ -245,6 +219,7 @@ M .coverage
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
+ M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -282,16 +257,17 @@ M .coverage
 
 **Recent commits:**
 ```
+77efaecb auto: WARN data update [skip ci]
 829423e5 auto: WARN data update [skip ci]
 570cd0be auto: WARN data update [skip ci]
 681cbd78 auto: WARN data update [skip ci]
 979d7683 auto: WARN data update [skip ci]
-a31da9f7 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-08-06T01:35:16.983844+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-05T13:50:38.715645+00:00Z` — +0 added, -46 removed, 0 employees (new)
 - `2026-08-05T01:38:13.496412+00:00Z` — +10 added, -0 removed, 707 employees (new)
 - `2026-08-04T13:55:57.828318+00:00Z` — +0 added, -0 removed, 0 employees (new)
@@ -301,4 +277,3 @@ a31da9f7 auto: WARN data update [skip ci]
 - `2026-08-02T13:08:36.575732+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-02T01:54:09.119878+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-01T13:04:36.439770+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-08-01T01:58:18.193168+00:00Z` — +0 added, -0 removed, 0 employees (new)

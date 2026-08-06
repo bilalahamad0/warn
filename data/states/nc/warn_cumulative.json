@@ -3,7 +3,7 @@
   "total_employees": 34037,
   "date_range_start": "2022-01-25",
   "date_range_end": "2026-07-23",
-  "last_updated": "2026-08-05T14:00:40.607178+00:00Z",
+  "last_updated": "2026-08-06T01:46:09.937309+00:00Z",
   "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
   "records": [
     {
@@ -4232,30 +4232,6 @@
     },
     {
       "state": "NC",
-      "company": "Republic National Distributing Company, LLC",
-      "notice_date": "2026-06-02",
-      "effective_date": "2026-07-31",
-      "employees": 14,
-      "layoff_type": "Closure Permanent",
-      "county": "Wake",
-      "city": "Raleigh",
-      "address": "7221 Becky Circle",
-      "industry": ""
-    },
-    {
-      "state": "NC",
-      "company": "Republic National Distributing Company, LLC",
-      "notice_date": "2026-06-02",
-      "effective_date": "2026-07-31",
-      "employees": 39,
-      "layoff_type": "Closure Permanent",
-      "county": "Mecklenburg",
-      "city": "Charlotte",
-      "address": "6701-H Northpark Blvd",
-      "industry": ""
-    },
-    {
-      "state": "NC",
       "company": "Down-Lite International, Inc.",
       "notice_date": "2026-06-04",
       "effective_date": "2026-08-14",
@@ -4408,6 +4384,30 @@
       "county": "Onslow",
       "city": "Jacksonville",
       "address": "178 Curtis Road",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Republic National Distributing Company, LLC",
+      "notice_date": "2026-06-02",
+      "effective_date": "2026-08-31",
+      "employees": 14,
+      "layoff_type": "Closure Permanent",
+      "county": "Wake",
+      "city": "Raleigh",
+      "address": "7221 Becky Circle",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Republic National Distributing Company, LLC",
+      "notice_date": "2026-06-02",
+      "effective_date": "2026-08-31",
+      "employees": 39,
+      "layoff_type": "Closure Permanent",
+      "county": "Mecklenburg",
+      "city": "Charlotte",
+      "address": "6701-H Northpark Blvd",
       "industry": ""
     }
   ]

@@ -1,9 +1,9 @@
 {
-  "total_records": 4725,
-  "total_employees": 605109,
+  "total_records": 4726,
+  "total_employees": 605219,
   "date_range_start": "1989-08-17",
   "date_range_end": "2026-10-03",
-  "last_updated": "2026-08-05T13:53:38.989373+00:00Z",
+  "last_updated": "2026-08-06T01:38:35.363905+00:00Z",
   "source_url": "https://www.tcsg.edu/warn-public-view/",
   "records": [
     {
@@ -56704,6 +56704,18 @@
       "county": "",
       "city": "",
       "address": "125 Horizon Dr, Suwanee, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "80 Acres Urban Agriculture, Inc",
+      "notice_date": null,
+      "effective_date": "2026-08-03",
+      "employees": 110,
+      "layoff_type": "Permanent Layoff / Reduction in Force",
+      "county": "Clayton",
+      "city": "",
+      "address": "2070 Anvil Block Rd, Suite 100, Forest Park, Georgia",
       "industry": ""
     }
   ]

@@ -1,9 +1,9 @@
 {
-  "total_records": 801,
-  "total_employees": 118906,
+  "total_records": 800,
+  "total_employees": 118843,
   "date_range_start": "2017-01-09",
   "date_range_end": "2026-08-04",
-  "last_updated": "2026-08-05T14:01:47.551302+00:00Z",
+  "last_updated": "2026-08-06T01:47:13.994549+00:00Z",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
     {
@@ -315,18 +315,6 @@
       "layoff_type": "Closure",
       "county": "Franklin",
       "city": "Grove City",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "OH",
-      "company": "Refresco Beverages US Inc",
-      "notice_date": "2026-04-14",
-      "effective_date": "2026-06-24",
-      "employees": 63,
-      "layoff_type": "Closure",
-      "county": "Warren",
-      "city": "Carlisle",
       "address": "",
       "industry": ""
     },

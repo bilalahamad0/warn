@@ -1,9 +1,9 @@
 {
-  "total_records": 1058,
-  "total_employees": 180827,
+  "total_records": 1059,
+  "total_employees": 180874,
   "date_range_start": "1998-07-14",
-  "date_range_end": "2026-07-22",
-  "last_updated": "2026-08-05T13:41:19.704709+00:00Z",
+  "date_range_end": "2026-08-04",
+  "last_updated": "2026-08-06T01:25:48.697508+00:00Z",
   "source_url": "https://workforce.alabama.gov/warn-list/",
   "records": [
     {
@@ -12699,6 +12699,18 @@
       "layoff_type": "'name'",
       "county": "",
       "city": "'ne;'",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "Biocryst Pharmaceuticals Inc",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-10-07",
+      "employees": 47,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Hoover",
       "address": "",
       "industry": ""
     }

@@ -1,5 +1,17 @@
 [
  {
+  "employer": "Essendant",
+  "city": "Phoenix",
+  "zip": "85042",
+  "lwib_area": "5 - ARIZONA@WORK - City of Phoenix",
+  "notice_date": "Aug 04, 2026",
+  "warn_type": "WARN",
+  "record_number": "987",
+  "detail_page_url": "https://www.azjobconnection.gov/search/warn_lookups/987",
+  "number_of_employees_affected": "53",
+  "address": "1500 S 71st Ave,; Phoenix, Arizona 85042"
+ },
+ {
   "employer": "Infineon Technologies America Corp",
   "city": "Mesa",
   "zip": "85210",

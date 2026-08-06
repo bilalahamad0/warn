@@ -1,9 +1,9 @@
 {
-  "total_records": 474,
-  "total_employees": 73060,
+  "total_records": 475,
+  "total_employees": 73113,
   "date_range_start": "2019-01-04",
-  "date_range_end": "2026-08-03",
-  "last_updated": "2026-08-05T13:50:38.591107+00:00Z",
+  "date_range_end": "2026-08-04",
+  "last_updated": "2026-08-06T01:35:16.865329+00:00Z",
   "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
   "records": [
     {
@@ -5692,6 +5692,18 @@
       "county": "",
       "city": "Mesa",
       "address": "550 West Juanita Avenue; Mesa, Arizona 85210",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Essendant",
+      "notice_date": "2026-08-04",
+      "effective_date": null,
+      "employees": 53,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Phoenix",
+      "address": "1500 S 71st Ave,; Phoenix, Arizona 85042",
       "industry": ""
     }
   ]

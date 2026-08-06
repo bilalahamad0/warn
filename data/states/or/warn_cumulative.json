@@ -1,9 +1,9 @@
 {
-  "total_records": 1354,
-  "total_employees": 186593,
+  "total_records": 1355,
+  "total_employees": 186655,
   "date_range_start": "1988-11-28",
   "date_range_end": "2026-08-03",
-  "last_updated": "2026-08-05T14:01:55.093717+00:00Z",
+  "last_updated": "2026-08-06T01:47:21.507448+00:00Z",
   "source_url": "https://ccwd.hecc.oregon.gov/Layoff/WARN",
   "records": [
     {
@@ -16251,6 +16251,18 @@
       "layoff_type": "Large Layoff - 10 or more workers",
       "county": "",
       "city": "Tigard",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "TV Hardware Distribution, LLC",
+      "notice_date": "2026-08-03",
+      "effective_date": "2026-10-03",
+      "employees": 62,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Springfield",
       "address": "",
       "industry": ""
     }

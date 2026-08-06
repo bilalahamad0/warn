@@ -1,9 +1,9 @@
 {
-  "total_records": 1231,
-  "total_employees": 156287,
+  "total_records": 1234,
+  "total_employees": 156488,
   "date_range_start": "2001-01-26",
   "date_range_end": "2026-12-31",
-  "last_updated": "2026-08-05T13:57:35.830719+00:00Z",
+  "last_updated": "2026-08-06T01:42:27.826216+00:00Z",
   "source_url": "https://kyworks.ky.gov/Services/Pages/Rapid-Response-Layoffs-and-Closures.aspx",
   "records": [
     {
@@ -48,7 +48,7 @@
       "notice_date": "2026-08-26",
       "effective_date": "2026-06-26",
       "employees": 28,
-      "layoff_type": "",
+      "layoff_type": "Layoff",
       "county": "Jefferson",
       "city": "",
       "address": "",
@@ -13991,6 +13991,42 @@
       "address": "",
       "industry": "332991",
       "state": "KY"
+    },
+    {
+      "state": "KY",
+      "company": "80 Acres Farm",
+      "notice_date": "2026-08-03",
+      "effective_date": "2026-08-03",
+      "employees": 127,
+      "layoff_type": "Closure",
+      "county": "Boone",
+      "city": "",
+      "address": "",
+      "industry": "11141"
+    },
+    {
+      "state": "KY",
+      "company": "Battelle Memorial Institute E3",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-07-23",
+      "employees": 1,
+      "layoff_type": "Closure",
+      "county": "Madison",
+      "city": "",
+      "address": "",
+      "industry": "541715"
+    },
+    {
+      "state": "KY",
+      "company": "Geodis",
+      "notice_date": "2026-09-08",
+      "effective_date": "2026-07-10",
+      "employees": 73,
+      "layoff_type": "Layoff",
+      "county": "Boone",
+      "city": "",
+      "address": "",
+      "industry": "493110"
     }
   ]
 }
