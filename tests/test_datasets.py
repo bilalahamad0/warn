@@ -9,6 +9,7 @@ other. These tests pin the shape of the fix.
 """
 
 import json
+from datetime import date
 
 import pytest
 
@@ -200,3 +201,109 @@ def test_publish_and_charts_read_the_identical_records(national, monkeypatch):
 
     assert len(publish_records) == len(charts_df) == 3
     assert charts_payload["records"] == publish_records
+
+
+# ---------------------------------------------------------------------------
+# Year-over-year summary — the series behind chart 7
+# ---------------------------------------------------------------------------
+
+
+def _yoy_national(tmp_path, records):
+    path = tmp_path / "warn_national.json"
+    path.write_text(json.dumps({"records": records}))
+    return path
+
+
+def _ca_year(year, n, employees_each=10, skip_months=()):
+    """n notices spread one-per-month across `year`, skipping `skip_months`."""
+    out, m = [], 1
+    while len(out) < n:
+        if f"{m:02d}" not in skip_months:
+            out.append({
+                "state": "CA", "company": f"Co{len(out)}",
+                "notice_date": f"{year}-{m:02d}-15",
+                "effective_date": f"{year}-{m:02d}-28",
+                "employees": employees_each,
+            })
+        m = m % 12 + 1
+    return out
+
+
+def test_yearly_summary_totals_per_calendar_year(tmp_path):
+    nat = _yoy_national(tmp_path, _ca_year(2020, 24) + _ca_year(2021, 12))
+    summary = warn_datasets.ca_yearly_summary(nat, today=date(2022, 6, 1))
+    assert [(s["year"], s["records"], s["employees"]) for s in summary] == [
+        (2020, 24, 240), (2021, 12, 120),
+    ]
+
+
+def test_yearly_summary_excludes_other_states(tmp_path):
+    records = _ca_year(2020, 12) + [
+        {"state": "NJ", "company": "Gamma", "notice_date": "2020-05-01",
+         "effective_date": "2020-07-01", "employees": 9999},
+    ]
+    summary = warn_datasets.ca_yearly_summary(
+        _yoy_national(tmp_path, records), today=date(2021, 1, 1)
+    )
+    assert summary[0]["employees"] == 120
+
+
+def test_yearly_summary_reaches_past_the_dashboard_boundary(tmp_path):
+    """Unlike the dashboard, this series is NOT clipped at CA_COVERAGE_START:
+    a year-over-year chart needs only notice_date and employees, and both are
+    present on every historical record."""
+    nat = _yoy_national(tmp_path, _ca_year(2016, 12) + _ca_year(2017, 12))
+    years = [s["year"] for s in
+             warn_datasets.ca_yearly_summary(nat, today=date(2018, 1, 1))]
+    assert years == [2016, 2017]
+    assert min(years) < int(warn_datasets.CA_COVERAGE_START[:4])
+
+
+def test_year_with_a_missing_month_is_flagged_incomplete(tmp_path):
+    """California files 18-500 notices a month; an empty month is missing data,
+    not a quiet month. Charting it flat would read as a decline that never
+    happened — this is exactly what 2025 (no Feb/Mar/Apr) would do."""
+    records = _ca_year(2024, 12) + _ca_year(2025, 9, skip_months=("02", "03", "04"))
+    summary = warn_datasets.ca_yearly_summary(
+        _yoy_national(tmp_path, records), today=date(2026, 6, 1)
+    )
+    complete, gapped = summary[0], summary[1]
+    assert complete["year"] == 2024 and complete["partial"] is False
+    assert complete["gap_months"] == []
+    assert gapped["year"] == 2025 and gapped["partial"] is True
+    assert gapped["gap_months"] == ["02", "03", "04"]
+
+
+def test_running_year_is_partial_without_being_called_a_gap(tmp_path):
+    """Months that have not happened yet are not missing data."""
+    rest_of_year = ("07", "08", "09", "10", "11", "12")
+    nat = _yoy_national(tmp_path, _ca_year(2026, 6, skip_months=rest_of_year))
+    current = warn_datasets.ca_yearly_summary(nat, today=date(2026, 6, 15))[-1]
+    assert current["year"] == 2026
+    assert current["partial"] is True
+    assert current["gap_months"] == []
+
+
+def test_isolated_years_before_a_coverage_gap_are_dropped(tmp_path):
+    """One stray 2008 notice plotted beside 2020 reads as "2008 was quiet"
+    rather than "2008 is not covered"."""
+    records = [
+        {"state": "CA", "company": "Ancient", "notice_date": "2008-09-04",
+         "effective_date": "2008-10-01", "employees": 5},
+    ] + _ca_year(2014, 12) + _ca_year(2015, 12)
+    years = [s["year"] for s in warn_datasets.ca_yearly_summary(
+        _yoy_national(tmp_path, records), today=date(2016, 1, 1))]
+    assert years == [2014, 2015]
+
+
+def test_contiguous_years_are_all_kept(tmp_path):
+    records = _ca_year(2014, 12) + _ca_year(2015, 12) + _ca_year(2016, 12)
+    years = [s["year"] for s in warn_datasets.ca_yearly_summary(
+        _yoy_national(tmp_path, records), today=date(2017, 1, 1))]
+    assert years == [2014, 2015, 2016]
+
+
+def test_yearly_summary_is_empty_without_the_national_dataset(tmp_path):
+    """The caller renders an empty state rather than falling back to the PDF
+    summary, which captured 3-5% of filings."""
+    assert warn_datasets.ca_yearly_summary(tmp_path / "nope.json") == []

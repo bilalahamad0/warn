@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T14:04:10.858542+00:00Z",
+  "generated_at": "2026-08-06T19:47:59.626108+00:00Z",
   "charts": [
     {
       "id": "1_timeline_scatter",
@@ -40,7 +40,7 @@
     {
       "id": "7_yoy_bar",
       "title": "Year-over-Year",
-      "desc": "Annual employees affected and notice count from 2014 to present.",
+      "desc": "Employees affected and notices filed per calendar year. Hatched bars are years with missing months \u2014 they undercount, and are not a real decline.",
       "status": "ok"
     },
     {

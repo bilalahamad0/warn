@@ -487,7 +487,30 @@ def chart_treemap(df: pd.DataFrame, save_png: bool = True) -> go.Figure:
 # ---------------------------------------------------------------------------
 
 
+def _month_names(codes: list) -> str:
+    """['02','03'] -> 'February and March' (for hover copy)."""
+    names = [
+        ["January", "February", "March", "April", "May", "June", "July",
+         "August", "September", "October", "November", "December"][int(c) - 1]
+        for c in codes
+    ]
+    if len(names) == 1:
+        return names[0]
+    return ", ".join(names[:-1]) + " and " + names[-1]
+
+
 def chart_yoy_bar(yearly_summary: list, save_png: bool = True) -> go.Figure:
+    """Employees affected and notice count per calendar year.
+
+    Driven by warn_datasets.ca_yearly_summary — i.e. the same national dataset
+    the rest of the site reads. It used to be driven by yearly_summary from
+    warn_all_years.json, parsed out of EDD's fiscal-year PDFs, which captured
+    3–5% of actual filings: FY2019-20 rendered as 17 notices / 851 employees
+    where 5,143 notices covering 565,385 employees were filed. The bars were
+    greyed and captioned as a partial sample, so the chart was not dishonest —
+    but it flattened California's COVID spike into nothing, which is the single
+    most important thing a year-over-year view of this data should show.
+    """
     log.info("Chart 7: Year-over-year bar …")
     if not yearly_summary:
         fig = go.Figure()
@@ -500,76 +523,104 @@ def chart_yoy_bar(yearly_summary: list, save_png: bool = True) -> go.Figure:
         _save_chart(fig, "7_yoy_bar", save_png)
         return fig
 
-    # Separate live (xlsx) vs incomplete PDF years
-    pdf_years = [s for s in yearly_summary if s["source"] == "pdf"]
-    live_years = [s for s in yearly_summary if s["source"] == "xlsx"]
+    complete = [s for s in yearly_summary if not s["partial"]]
+    partial = [s for s in yearly_summary if s["partial"]]
+
+    def _hover(entry: dict) -> str:
+        if entry.get("gap_months"):
+            return (
+                f"<b>{entry['label']}</b><br>Employees: {entry['employees']:,}"
+                f"<br>Notices: {entry['records']:,}"
+                f"<br><i>⚠ No filings recorded for "
+                f"{_month_names(entry['gap_months'])} — the total below the "
+                f"true figure</i><extra></extra>"
+            )
+        return (
+            f"<b>{entry['label']}</b><br>Employees: {entry['employees']:,}"
+            f"<br>Notices: {entry['records']:,}"
+            f"<br><i>Year still in progress</i><extra></extra>"
+        )
 
     fig = make_subplots(specs=[[{"secondary_y": True}]])
 
-    # PDF bars — muted/gray to signal incompleteness
-    if pdf_years:
+    if complete:
         fig.add_trace(
             go.Bar(
-                x=[s["label"] for s in pdf_years],
-                y=[s["employees"] for s in pdf_years],
-                name="Employees (PDF sample — incomplete)",
-                marker_color="rgba(139,148,158,0.4)",
-                marker_line_color="rgba(139,148,158,0.7)",
-                marker_line_width=1,
-                hovertemplate=(
-                    "<b>%{x}</b><br>Employees (partial PDF): %{y:,}"
-                    "<br><i>⚠ Incomplete — EDD PDFs capture only a fraction of annual notices</i>"
-                    "<extra></extra>"
-                ),
-            ),
-            secondary_y=False,
-        )
-
-    # Live XLSX bar — bright accent
-    if live_years:
-        fig.add_trace(
-            go.Bar(
-                x=[s["label"] for s in live_years],
-                y=[s["employees"] for s in live_years],
-                name="Employees Affected (Live XLSX)",
+                x=[s["label"] for s in complete],
+                y=[s["employees"] for s in complete],
+                name="Employees affected",
                 marker_color=ACCENT,
                 marker_line_width=0,
-                hovertemplate="<b>%{x}</b><br>Employees: %{y:,}<extra></extra>",
+                hovertemplate=(
+                    "<b>%{x}</b><br>Employees: %{y:,}"
+                    "<br>Notices: %{customdata:,}<extra></extra>"
+                ),
+                customdata=[s["records"] for s in complete],
             ),
             secondary_y=False,
         )
 
-    # Notice count line — live only (PDF counts are meaningless)
-    if live_years:
+    # Incomplete years keep their real values but read as hatched/muted, so a
+    # gap is never mistaken for a decline.
+    if partial:
         fig.add_trace(
-            go.Scatter(
-                x=[s["label"] for s in live_years],
-                y=[s["records"] for s in live_years],
-                name="Notice Count (Live)",
-                line=dict(color=ACCENT3, width=2.5),
-                marker=dict(size=10),
-                hovertemplate="<b>%{x}</b><br>Notices: %{y:,}<extra></extra>",
+            go.Bar(
+                x=[s["label"] for s in partial],
+                y=[s["employees"] for s in partial],
+                name="Incomplete year (see hover)",
+                marker_color="rgba(88,166,255,0.35)",
+                marker_line_color=ACCENT,
+                marker_line_width=1,
+                marker_pattern_shape="/",
+                hovertemplate=[_hover(s) for s in partial],
             ),
-            secondary_y=True,
+            secondary_y=False,
         )
+
+    # Now a real trend line across every year, not a single point: the notice
+    # count used to be plotted for the live year alone because the PDF counts
+    # were not comparable to it.
+    fig.add_trace(
+        go.Scatter(
+            x=[s["label"] for s in yearly_summary],
+            y=[s["records"] for s in yearly_summary],
+            name="Notice count",
+            line=dict(color=ACCENT3, width=2.5),
+            marker=dict(size=8),
+            hovertemplate="<b>%{x}</b><br>Notices: %{y:,}<extra></extra>",
+        ),
+        secondary_y=True,
+    )
+
+    first, last = yearly_summary[0]["label"], yearly_summary[-1]["label"]
+    flagged = [s["label"] for s in partial]
+    caption = (
+        "Calendar years, from official California WARN filings. "
+        + (
+            "Hatched bars are incomplete — "
+            + ", ".join(flagged)
+            + " (hover for why) — and undercount rather than showing a real fall."
+            if flagged else "Every year shown is complete."
+        )
+    )
 
     _apply_theme(fig)
     fig.update_layout(
         title=dict(
-            text="<b>Year-over-Year — Employees Affected & Notice Count (2014–Present)</b>",
+            text=(
+                "<b>Year-over-Year — Employees Affected &amp; Notice Count "
+                f"({first}–{last})</b>"
+            ),
             font_size=18,
         ),
-        xaxis_title="Fiscal Year",
+        xaxis_title="Calendar Year",
         yaxis_title="Employees Affected",
         yaxis2_title="Number of Notices",
         barmode="overlay",
         showlegend=True,
         annotations=[
             dict(
-                text=(
-                    "⚠ Gray bars = partial PDF extracts (EDD PDFs capture only ~3–5% of actual annual notices). "
-                    "Only FY 2025-26 (blue) reflects complete data."
-                ),
+                text=caption,
                 xref="paper", yref="paper",
                 x=0, y=-0.22, showarrow=False,
                 font=dict(size=11, color="#8b949e"),
@@ -578,7 +629,14 @@ def chart_yoy_bar(yearly_summary: list, save_png: bool = True) -> go.Figure:
         ],
         margin=dict(l=60, r=30, t=70, b=100),
     )
-    fig.update_xaxes(tickangle=-30)
+    # Complete and incomplete years are separate traces so they can be styled
+    # differently, and Plotly derives category order from the order traces are
+    # added — which would land 2014 after 2024. Pin the axis to real chronology.
+    fig.update_xaxes(
+        tickangle=-30,
+        categoryorder="array",
+        categoryarray=[s["label"] for s in yearly_summary],
+    )
     fig.update_yaxes(gridcolor=GRID_COLOR, secondary_y=True)
     _save_chart(fig, "7_yoy_bar", save_png)
     return fig
@@ -1232,7 +1290,9 @@ CHART_META = [
     {
         "id": "7_yoy_bar",
         "title": "Year-over-Year",
-        "desc": "Annual employees affected and notice count from 2014 to present.",
+        "desc": ("Employees affected and notices filed per calendar year. "
+                 "Hatched bars are years with missing months — they undercount, "
+                 "and are not a real decline."),
     },
     {
         "id": "8_multiyear_trend",
@@ -1269,29 +1329,21 @@ def run(save_png: bool = True) -> list:
 
     # Load historical data if available
     combined_file = BASE_DIR / "data" / "warn_all_years.json"
-    yearly_summary = []
     all_records = []
     if combined_file.exists():
         combined = json.loads(combined_file.read_text())
-        yearly_summary = combined.get("yearly_summary", [])
         all_records = combined.get("records", [])
-        log.info(
-            f"Historical data: {len(all_records):,} records across {len(yearly_summary)} years"
-        )
+        log.info(f"Historical data: {len(all_records):,} records")
     else:
         log.info("No historical data yet — run warn_history.py to generate it")
 
-    # warn_all_years.json's "(Live)" bar is a snapshot of the raw EDD feed taken
-    # when warn_history last ran, so it counts fewer notices than the dashboard
-    # now shows — the same page would carry two different totals for the current
-    # period. Recompute that one bar from the records actually being charted;
-    # the PDF-derived historical bars are left exactly as they are.
-    if len(df):
-        live_records, live_employees = len(df), int(df["employees"].sum())
-        for entry in yearly_summary:
-            if entry.get("source") == "xlsx":
-                entry["records"] = live_records
-                entry["employees"] = live_employees
+    # Chart 7 reads the national dataset, not warn_all_years.json's
+    # `yearly_summary`. That summary is parsed from EDD's fiscal-year PDFs and
+    # captures 3–5% of actual filings, so it rendered California's 2020 spike —
+    # 6,066 notices, 656,501 employees — as 14 notices and 1,394 employees.
+    # warn_history still writes it as an archive of what those PDFs said;
+    # nothing charts it any more.
+    yearly_summary = warn_datasets.ca_yearly_summary()
 
     # Chart 8 overlays every year's monthly pattern. Feed it the dashboard's own
     # records for the live period so its current-year line matches chart 2.
