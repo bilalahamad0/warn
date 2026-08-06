@@ -1,9 +1,9 @@
 {
-  "total_records": 630,
-  "total_employees": 59099,
+  "total_records": 631,
+  "total_employees": 59175,
   "date_range_start": "2020-01-02",
-  "date_range_end": "2026-07-28",
-  "last_updated": "2026-08-06T01:50:24.286943+00:00Z",
+  "date_range_end": "2026-08-05",
+  "last_updated": "2026-08-06T14:03:24.669943+00:00Z",
   "source_url": "https://dwd.wisconsin.gov/dislocatedworker/warn/",
   "records": [
     {
@@ -7565,6 +7565,18 @@
       "city": "Fort Atkinson",
       "address": "",
       "industry": "Other Professional Equip Merch Whls"
+    },
+    {
+      "state": "WI",
+      "company": "Samuel Pressure Vessel Group",
+      "notice_date": "2026-08-05",
+      "effective_date": "2026-08-04",
+      "employees": 76,
+      "layoff_type": "Facility Closure",
+      "county": "Lincoln",
+      "city": "Tomahawk",
+      "address": "",
+      "industry": "Metal Tank (Heavy Gauge) Manufacturing"
     }
   ]
 }

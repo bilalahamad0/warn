@@ -128,9 +128,12 @@ legend .hint { text-transform:none; letter-spacing:0; }
     <p class="detail" id="done-detail"></p>
   </div>
 
+  <!-- This page lives at the site root, so "./" is the US dashboard and
+       California is one level down. Both stay relative: the page is allowed
+       exactly one absolute URL (the Apps Script endpoint). -->
   <p class="links">
-    <a href="./">California dashboard</a> ·
-    <a href="us/">US dashboard</a>
+    <a href="./">US dashboard</a> ·
+    <a href="ca/">California dashboard</a>
   </p>
 </main>
 <script>
@@ -160,8 +163,8 @@ legend .hint { text-transform:none; letter-spacing:0; }
   var original = { states: [], digest: false };
   var savedKeep = null;   // selection stashed while "everything" is picked
 
-  var LINKS = ' <a href="./">California dashboard</a> or ' +
-              '<a href="us/">US dashboard</a>.';
+  var LINKS = ' <a href="./">US dashboard</a> or ' +
+              '<a href="ca/">California dashboard</a>.';
 
   function setStatus(text, kind) {
     elStatus.textContent = text || '';

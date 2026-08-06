@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-08-06 01:50:26 UTC
+**Generated:** 2026-08-06 14:03:27 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -24,7 +24,6 @@
 M .coverage
  M data/changelog.jsonl
  M data/states/ak/changelog.jsonl
- M data/states/ak/meta.json
  M data/states/ak/warn_cumulative.json
  M data/states/ak/warn_latest.json
  M data/states/ak/warn_snapshot.json
@@ -35,7 +34,6 @@ M .coverage
  M data/states/al/warn_snapshot.json
  M data/states/az/changelog.jsonl
  M data/states/az/meta.json
- M data/states/az/raw_download
  M data/states/az/warn_cumulative.json
  M data/states/az/warn_latest.json
  M data/states/az/warn_snapshot.json
@@ -64,9 +62,7 @@ M .coverage
  M data/states/fl/warn_latest.json
  M data/states/fl/warn_snapshot.json
  M data/states/ga/changelog.jsonl
- M data/states/ga/detail_cache.json
  M data/states/ga/meta.json
- M data/states/ga/raw_download
  M data/states/ga/warn_cumulative.json
  M data/states/ga/warn_latest.json
  M data/states/ga/warn_snapshot.json
@@ -77,7 +73,6 @@ M .coverage
  M data/states/hi/warn_snapshot.json
  M data/states/ia/changelog.jsonl
  M data/states/ia/meta.json
- M data/states/ia/raw_download
  M data/states/ia/warn_cumulative.json
  M data/states/ia/warn_latest.json
  M data/states/ia/warn_snapshot.json
@@ -102,7 +97,6 @@ M .coverage
  M data/states/ks/warn_snapshot.json
  M data/states/ky/changelog.jsonl
  M data/states/ky/meta.json
- M data/states/ky/raw_download
  M data/states/ky/warn_cumulative.json
  M data/states/ky/warn_latest.json
  M data/states/ky/warn_snapshot.json
@@ -128,6 +122,7 @@ M .coverage
  M data/states/me/warn_snapshot.json
  M data/states/mi/changelog.jsonl
  M data/states/mi/meta.json
+ M data/states/mi/raw_download
  M data/states/mi/warn_cumulative.json
  M data/states/mi/warn_latest.json
  M data/states/mi/warn_snapshot.json
@@ -141,12 +136,12 @@ M .coverage
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
+ M data/states/mt/meta.json
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
  M data/states/nc/changelog.jsonl
  M data/states/nc/meta.json
- M data/states/nc/raw_download
  M data/states/nc/warn_cumulative.json
  M data/states/nc/warn_latest.json
  M data/states/nc/warn_snapshot.json
@@ -156,11 +151,13 @@ M .coverage
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
+ M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
  M data/states/nj/changelog.jsonl
  M data/states/nj/meta.json
+ M data/states/nj/raw_download.xlsx
  M data/states/nj/warn_cumulative.json
  M data/states/nj/warn_latest.json
  M data/states/nj/warn_snapshot.json
@@ -171,12 +168,10 @@ M .coverage
  M data/states/nm/warn_snapshot.json
  M data/states/ny/changelog.jsonl
  M data/states/ny/meta.json
- M data/states/ny/raw_download
  M data/states/ny/warn_cumulative.json
  M data/states/ny/warn_latest.json
  M data/states/ny/warn_snapshot.json
  M data/states/oh/changelog.jsonl
- M data/states/oh/raw_download
  M data/states/oh/warn_cumulative.json
  M data/states/oh/warn_latest.json
  M data/states/oh/warn_snapshot.json
@@ -188,13 +183,11 @@ M .coverage
  M data/states/or/changelog.jsonl
  M data/states/or/latest.xlsx
  M data/states/or/meta.json
- M data/states/or/raw_download
  M data/states/or/warn_cumulative.json
  M data/states/or/warn_latest.json
  M data/states/or/warn_snapshot.json
  M data/states/pa/changelog.jsonl
  M data/states/pa/meta.json
- M data/states/pa/raw_download
  M data/states/pa/warn_cumulative.json
  M data/states/pa/warn_latest.json
  M data/states/pa/warn_snapshot.json
@@ -213,13 +206,11 @@ M .coverage
  M data/states/sd/warn_latest.json
  M data/states/sd/warn_snapshot.json
  M data/states/ut/changelog.jsonl
- M data/states/ut/meta.json
  M data/states/ut/warn_cumulative.json
  M data/states/ut/warn_latest.json
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
- M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -230,12 +221,12 @@ M .coverage
  M data/states/vt/warn_snapshot.json
  M data/states/wa/changelog.jsonl
  M data/states/wa/meta.json
- M data/states/wa/raw_download
  M data/states/wa/warn_cumulative.json
  M data/states/wa/warn_latest.json
  M data/states/wa/warn_snapshot.json
  M data/states/wi/changelog.jsonl
  M data/states/wi/meta.json
+ M data/states/wi/raw_download
  M data/states/wi/warn_cumulative.json
  M data/states/wi/warn_latest.json
  M data/states/wi/warn_snapshot.json
@@ -247,26 +238,21 @@ M .coverage
  M data/warn_cumulative.json
  M data/warn_latest.json
  M data/warn_snapshot.json
- M docs/charts/us_monthly.html
- M docs/charts/us_monthly_years.html
- M docs/charts/us_states_years.html
- M docs/charts/us_top_companies.html
- M docs/charts/us_top_states.html
- M docs/us/index.html
 ```
 
 **Recent commits:**
 ```
+5fc6ab90 Merge pull request #17 from bilalahamad0/feat/us-dashboard-at-root
+7a742933 feat: US dashboard at the site root, California at /ca/
+b6f1bb7d auto: WARN data update [skip ci]
 77efaecb auto: WARN data update [skip ci]
 829423e5 auto: WARN data update [skip ci]
-570cd0be auto: WARN data update [skip ci]
-681cbd78 auto: WARN data update [skip ci]
-979d7683 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-08-06T13:48:39.914019+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-06T01:35:16.983844+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-05T13:50:38.715645+00:00Z` — +0 added, -46 removed, 0 employees (new)
 - `2026-08-05T01:38:13.496412+00:00Z` — +10 added, -0 removed, 707 employees (new)
@@ -276,4 +262,3 @@ M .coverage
 - `2026-08-03T01:47:22.895772+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-02T13:08:36.575732+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-02T01:54:09.119878+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-08-01T13:04:36.439770+00:00Z` — +0 added, -0 removed, 0 employees (new)

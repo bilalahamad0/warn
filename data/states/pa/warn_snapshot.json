@@ -1,11 +1,23 @@
 {
-  "total_records": 299,
-  "total_employees": 44399,
+  "total_records": 300,
+  "total_employees": 44549,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-08-05T14:01:56.967524+00:00Z",
+  "last_updated": "2026-08-06T01:47:22.112663+00:00Z",
   "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
   "records": [
+    {
+      "state": "PA",
+      "company": "Essendant Management Services, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-03",
+      "employees": 150,
+      "layoff_type": "Closure",
+      "county": "Chester",
+      "city": "",
+      "address": "125 Green Tree Road, Phoenixville, PA 19460",
+      "industry": ""
+    },
     {
       "state": "PA",
       "company": "Xanitos, Inc.",

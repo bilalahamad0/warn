@@ -3,7 +3,7 @@
   "total_employees": 34130,
   "date_range_start": "2022-01-25",
   "date_range_end": "2026-07-23",
-  "last_updated": "2026-08-05T14:00:40.602430+00:00Z",
+  "last_updated": "2026-08-06T01:46:09.932392+00:00Z",
   "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
   "records": [
     {
@@ -4270,7 +4270,7 @@
       "state": "NC",
       "company": "Republic National Distributing Company, LLC",
       "notice_date": "2026-06-02",
-      "effective_date": "2026-07-31",
+      "effective_date": "2026-08-31",
       "employees": 14,
       "layoff_type": "Closure Permanent",
       "county": "Wake",
@@ -4282,7 +4282,7 @@
       "state": "NC",
       "company": "Republic National Distributing Company, LLC",
       "notice_date": "2026-06-02",
-      "effective_date": "2026-07-31",
+      "effective_date": "2026-08-31",
       "employees": 39,
       "layoff_type": "Closure Permanent",
       "county": "Mecklenburg",

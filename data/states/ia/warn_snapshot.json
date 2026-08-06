@@ -1,9 +1,9 @@
 {
-  "total_records": 935,
-  "total_employees": 51712,
+  "total_records": 936,
+  "total_employees": 51719,
   "date_range_start": "2011-01-13",
-  "date_range_end": "2026-08-03",
-  "last_updated": "2026-08-05T13:54:00.859132+00:00Z",
+  "date_range_end": "2026-08-04",
+  "last_updated": "2026-08-06T01:38:53.515268+00:00Z",
   "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
   "records": [
     {
@@ -1001,6 +1001,18 @@
       "city": "Lake Mills",
       "address": "877 N Lake St",
       "industry": "Manufacturing"
+    },
+    {
+      "state": "IA",
+      "company": "Wells Fargo",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-10-03",
+      "employees": 7,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Polk",
+      "city": "West Des Moines",
+      "address": "800 S Jordan Creek Pkwy",
+      "industry": "Finance and Insurance"
     },
     {
       "state": "IA",

@@ -1,9 +1,9 @@
 {
-  "total_records": 184,
-  "total_employees": 10070,
+  "total_records": 185,
+  "total_employees": 10232,
   "date_range_start": "2026-01-06",
   "date_range_end": "2026-07-21",
-  "last_updated": "2026-08-05T14:01:45.442589+00:00Z",
+  "last_updated": "2026-08-06T01:47:11.593049+00:00Z",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -1276,6 +1276,18 @@
       "county": "Westchester",
       "city": "",
       "address": "115 US-202 Lincolndale, NY, 10540",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "LIV Golf Incorporated and Affiliates",
+      "notice_date": "2026-07-08",
+      "effective_date": "2026-10-06",
+      "employees": 162,
+      "layoff_type": "Layoff Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "50 Hudson Yards Suite 65B, New York, NY, 10001",
       "industry": ""
     },
     {

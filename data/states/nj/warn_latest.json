@@ -1,9 +1,9 @@
 {
-  "total_records": 2359,
-  "total_employees": 353407,
+  "total_records": 2360,
+  "total_employees": 353546,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-08-06T01:46:53.101023+00:00Z",
+  "last_updated": "2026-08-06T13:59:47.969873+00:00Z",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -1071,6 +1071,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Hudson County",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Gerresheimer",
+      "notice_date": null,
+      "effective_date": "2026-09-01",
+      "employees": 139,
+      "layoff_type": "",
+      "county": "",
+      "city": "Vineland",
       "address": "",
       "industry": ""
     },
