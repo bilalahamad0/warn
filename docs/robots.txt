@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Paged table shards and the search index are data the dashboard fetches, not
+# pages anyone should land on from a search result.
+Disallow: /warn/pages/
+Disallow: /warn/search_index.json
+
+Sitemap: https://bilalahamad0.github.io/warn/sitemap.xml

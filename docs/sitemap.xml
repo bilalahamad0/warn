@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  The US dashboard took over the site root and California moved to /ca/ in
+  August 2026. Listing both explicitly gets search engines to re-index the swap
+  in days rather than waiting for a recrawl — /warn/ used to be California, and
+  its old title and description are still what most results show.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://bilalahamad0.github.io/warn/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://bilalahamad0.github.io/warn/ca/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bilalahamad0.github.io/warn/architecture.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>

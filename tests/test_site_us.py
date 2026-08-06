@@ -7,6 +7,7 @@ import pytest
 
 import warn_charts
 import warn_site_us
+import warn_urls
 
 
 YEAR = datetime.now(timezone.utc).year
@@ -47,7 +48,8 @@ def _build(tmp_path, payload, monkeypatch, endpoint=None):
         monkeypatch.setenv("SIGNUP_ENDPOINT", endpoint)
     nat = tmp_path / "warn_national.json"
     nat.write_text(json.dumps(payload))
-    out = tmp_path / "us"
+    # Named "site", not "us": this builder writes the site root now.
+    out = tmp_path / "site"
     index = warn_site_us.build_us_site(national_file=nat, out_dir=out)
     return index, out
 
@@ -230,3 +232,139 @@ def test_signup_degrades_when_endpoint_unset(built_site):
     html = index.read_text()
     assert 'var SIGNUP_ENDPOINT = "";' in html
     assert "Signups aren't configured yet" in html
+
+
+# ---------------------------------------------------------------------------
+# Site layout: this builder owns the site ROOT
+# ---------------------------------------------------------------------------
+
+
+def test_default_out_dir_is_the_site_root():
+    """The national dashboard is the front page.
+
+    Guards the standalone `python3 warn_site_us.py` entry point: while the
+    default was docs/us/ that command would rebuild the whole 14 MB site on top
+    of the redirect stub that now lives there.
+    """
+    assert warn_site_us.SITE_DIR.name == "docs"
+    assert warn_site_us.LEGACY_US_DIR.name == "us"
+    assert warn_site_us.LEGACY_US_DIR.parent == warn_site_us.SITE_DIR
+
+
+def test_write_pages_only_clears_its_own_directory(
+    tmp_path, national_payload, monkeypatch
+):
+    """`pages/` is wiped wholesale each build — at the site root that rmtree is
+    one directory away from California, the chart fragments and the unsubscribe
+    page, so pin exactly what it may delete."""
+    out = tmp_path / "site"
+    (out / "ca").mkdir(parents=True)
+    (out / "ca" / "index.html").write_text("california")
+    (out / "charts").mkdir(parents=True)
+    (out / "charts" / "12_us_map.html").write_text("chart")
+    (out / "us").mkdir(parents=True)
+    (out / "us" / "index.html").write_text("stub")
+    (out / "unsubscribe.html").write_text("unsub")
+    (out / "pages" / "stale").mkdir(parents=True)
+    (out / "pages" / "stale" / "9.json").write_text("[]")
+
+    charts = tmp_path / "chartfrag"
+    charts.mkdir()
+    monkeypatch.setattr(warn_charts, "CHARTS_DIR", charts)
+    monkeypatch.setattr(warn_site_us, "CHARTS_DIR", charts)
+    monkeypatch.delenv("SIGNUP_ENDPOINT", raising=False)
+    nat = tmp_path / "warn_national.json"
+    nat.write_text(json.dumps(national_payload))
+    warn_site_us.build_us_site(national_file=nat, out_dir=out)
+
+    assert (out / "ca" / "index.html").read_text() == "california"
+    assert (out / "charts" / "12_us_map.html").read_text() == "chart"
+    assert (out / "us" / "index.html").read_text() == "stub"
+    assert (out / "unsubscribe.html").read_text() == "unsub"
+    assert not (out / "pages" / "stale").exists()   # only its own dir is pruned
+    assert (out / "pages" / "all" / "1.json").exists()
+
+
+def test_us_page_routes_visitors_to_california(built_site):
+    """California is a sibling directory now, not the parent."""
+    index, _out = built_site
+    html = index.read_text()
+    assert 'href="ca/"' in html
+    assert 'href="../"' not in html     # the old up-link would leave the site
+
+
+def test_state_filter_points_ca_visitors_at_the_ca_dashboard(built_site):
+    """Selecting CA filters the table but leaves every chart national, so the
+    page has to offer the route the filter itself is not."""
+    index, _out = built_site
+    html = index.read_text()
+    assert 'id="ca-hint"' in html
+    assert "stfilterEl.value !== 'CA'" in html
+
+
+def test_head_carries_icons_manifest_canonical_and_og(built_site):
+    index, _out = built_site
+    html = index.read_text()
+    for asset in ("apple-touch-icon.png", "favicon-32x32.png", "favicon-16x16.png",
+                  "favicon.ico", "icon.svg", "site.webmanifest"):
+        # Bare relative names: this page sits at the root beside its assets.
+        assert f'href="{asset}"' in html
+    assert f'<link rel="canonical" href="{warn_urls.US_DASHBOARD_URL}">' in html
+    assert f'<meta property="og:url" content="{warn_urls.US_DASHBOARD_URL}">' in html
+    assert f'<meta property="og:image" content="{warn_urls.OG_IMAGE_URL}">' in html
+
+
+def test_api_payload_declares_its_scope(built_site):
+    """/warn/data.json used to serve California. It serves the nation now, and
+    GitHub Pages cannot redirect a JSON file — so the payload says which it is."""
+    _index, out = built_site
+    assert json.loads((out / "data.json").read_text())["scope"] == "us"
+
+
+# ---------------------------------------------------------------------------
+# The /us/ redirect stub
+# ---------------------------------------------------------------------------
+
+
+def test_legacy_stub_redirects_to_the_root(tmp_path):
+    site = tmp_path / "site"
+    site.mkdir()
+    site.joinpath("data.json").write_text('{"scope": "us"}')
+    legacy = site / "us"
+
+    stub = warn_site_us.build_legacy_us_redirect(site_dir=site, legacy_dir=legacy)
+    html = stub.read_text()
+
+    assert stub == legacy / "index.html"
+    assert '<meta http-equiv="refresh" content="0; url=../">' in html
+    assert f'<link rel="canonical" href="{warn_urls.US_DASHBOARD_URL}">' in html
+    assert "location.replace('../' + location.search + location.hash)" in html
+    assert '<a href="../">' in html      # works with JS and meta-refresh off
+    assert '<a href="../ca/">' in html   # California is still reachable
+    # A 0-second refresh reads as a permanent redirect and consolidates ranking
+    # into the canonical; noindex would suppress that instead.
+    assert "noindex" not in html
+    # canonical must precede the refresh, for crawlers that stop parsing early.
+    assert html.index("canonical") < html.index("http-equiv")
+
+
+def test_legacy_data_json_is_byte_identical_to_the_root(tmp_path):
+    """Old integrations polling /warn/us/data.json keep working, and the copy is
+    made from the written file rather than re-serialised so the two cannot
+    drift (git stores one blob for both)."""
+    site = tmp_path / "site"
+    site.mkdir()
+    payload = json.dumps({"scope": "us", "records": [1, 2, 3]})
+    site.joinpath("data.json").write_text(payload)
+    legacy = site / "us"
+
+    warn_site_us.build_legacy_us_redirect(site_dir=site, legacy_dir=legacy)
+    assert (legacy / "data.json").read_bytes() == (site / "data.json").read_bytes()
+
+
+def test_legacy_stub_stays_tiny(tmp_path):
+    """Fails loudly if anyone ever re-points the full build at docs/us/."""
+    site = tmp_path / "site"
+    site.mkdir()
+    stub = warn_site_us.build_legacy_us_redirect(site_dir=site, legacy_dir=site / "us")
+    assert len(stub.read_text()) < 4000

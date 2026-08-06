@@ -276,7 +276,8 @@
     </div>
     <div class="head-links">
       <span class="pill"><span class="dot"></span>Runs 2× daily</span>
-      <a class="pill" href="https://bilalahamad0.github.io/warn/" target="_blank" rel="noopener">↗ Live dashboard</a>
+      <a class="pill" href="https://bilalahamad0.github.io/warn/" target="_blank" rel="noopener">↗ US dashboard</a>
+      <a class="pill" href="https://bilalahamad0.github.io/warn/ca/" target="_blank" rel="noopener">↗ California dashboard</a>
       <a class="pill" href="https://github.com/bilalahamad0/warn" target="_blank" rel="noopener">★ GitHub</a>
     </div>
   </div>
@@ -369,11 +370,11 @@
         <div class="row">
           <div class="node" data-node="a-pages" data-type="output">
             <span class="node-ic">🌐</span>
-            <div class="node-body"><div class="node-title">GitHub Pages</div><div class="node-sub">docs/index.html dashboard</div></div>
+            <div class="node-body"><div class="node-title">GitHub Pages</div><div class="node-sub">docs/index.html (US) · docs/ca/ (CA)</div></div>
           </div>
           <div class="node" data-node="a-api" data-type="output">
             <span class="node-ic">{ }</span>
-            <div class="node-body"><div class="node-title">data.json</div><div class="node-sub">public read-only API</div></div>
+            <div class="node-body"><div class="node-title">data.json</div><div class="node-sub">public read-only API (US + CA)</div></div>
           </div>
           <div class="node" data-node="a-notify" data-type="service">
             <span class="node-ic">✉️</span>
@@ -466,11 +467,11 @@
         <div class="row">
           <div class="node" data-node="p-pages" data-type="output">
             <span class="node-ic">🌐</span>
-            <div class="node-body"><div class="node-title">index.html</div><div class="node-sub">GitHub Pages</div></div>
+            <div class="node-body"><div class="node-title">index.html</div><div class="node-sub">GitHub Pages — US at /, CA at /ca/</div></div>
           </div>
           <div class="node" data-node="p-api" data-type="output">
             <span class="node-ic">{ }</span>
-            <div class="node-body"><div class="node-title">data.json</div><div class="node-sub">public API</div></div>
+            <div class="node-body"><div class="node-title">data.json</div><div class="node-sub">public API — /data.json + /ca/data.json</div></div>
           </div>
           <div class="node" data-node="p-notify" data-type="service">
             <span class="node-ic">✉️</span>
@@ -708,7 +709,7 @@
 <footer>
   Architecture map for <a href="https://github.com/bilalahamad0/warn" target="_blank" rel="noopener">bilalahamad0/warn</a> ·
   Data: <a href="https://edd.ca.gov/en/jobs_and_training/layoff_services_warn" target="_blank" rel="noopener">CA EDD</a> ·
-  Dashboard: <a href="https://bilalahamad0.github.io/warn/" target="_blank" rel="noopener">live site</a>
+  Dashboards: <a href="https://bilalahamad0.github.io/warn/" target="_blank" rel="noopener">US</a> · <a href="https://bilalahamad0.github.io/warn/ca/" target="_blank" rel="noopener">California</a>
   <span class="reduced-note">· animations reduced per your system setting</span>
 </footer>
 
@@ -918,7 +919,7 @@
     {n:2, t:'<b>warn_diff</b> — latest vs snapshot · write diff_report.md + changelog.jsonl'},
     {n:3, t:'<b>warn_history</b> — merge historical PDFs (2014→now) → warn_all_years.json'},
     {n:4, t:'<b>warn_charts</b> — render 11 self-contained Plotly divs + manifest'},
-    {n:5, t:'<b>build_site</b> — inline charts → index.html + data.json · notify · git push'}
+    {n:5, t:'<b>build sites</b> — US at / (fatal if it fails), California at /ca/ · notify · git push'}
   ];
   var playing=false;
   function clearFiring(){ document.querySelectorAll('#pipeline .node.firing').forEach(function(n){ n.classList.remove('firing'); }); }

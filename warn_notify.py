@@ -45,6 +45,7 @@ except ImportError:
     pass
 
 import warn_subscribers
+import warn_urls
 
 log = logging.getLogger("warn_notify")
 
@@ -68,8 +69,19 @@ def _smtp_config() -> tuple:
 
 
 WARN_URL = "https://edd.ca.gov/en/jobs_and_training/layoff_services_warn"
-DASHBOARD_URL = "https://bilalahamad0.github.io/warn/"
-US_DASHBOARD_URL = DASHBOARD_URL + "us/"
+
+# Both dashboards come straight from warn_urls. US_DASHBOARD_URL used to be
+# derived as ``DASHBOARD_URL + "us/"``, which was only correct while California
+# sat at the site root — the moment the root became the national dashboard that
+# derivation would have pointed every non-CA alert at a redirect stub without
+# anything failing. Independent constants, one source of truth.
+CA_DASHBOARD_URL = warn_urls.CA_DASHBOARD_URL
+US_DASHBOARD_URL = warn_urls.US_DASHBOARD_URL
+
+# Deprecated alias — the old name for the California dashboard, kept one
+# release so any out-of-tree caller does not break silently. Prefer
+# CA_DASHBOARD_URL.
+DASHBOARD_URL = CA_DASHBOARD_URL
 
 # California is the platform's original (grandfathered) jurisdiction, so its
 # labels stay here rather than coming from the registry: WARN_URL is the
@@ -78,7 +90,7 @@ _CA_META = {
     "name": "California",
     "agency": "California Employment Development Department",
     "url": WARN_URL,
-    "dashboard": DASHBOARD_URL,
+    "dashboard": CA_DASHBOARD_URL,
 }
 
 

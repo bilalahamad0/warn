@@ -23,17 +23,21 @@ import plotly.express as px
 from plotly.subplots import make_subplots
 import plotly.io as pio
 
+import warn_datasets
+
 BASE_DIR = Path(__file__).parent
 DATA_DIR = BASE_DIR / "data"
 OUTPUT_DIR = BASE_DIR / "docs"
 CHARTS_DIR = OUTPUT_DIR / "charts"
 CHARTS_DIR.mkdir(parents=True, exist_ok=True)
 
-LATEST_FILE = DATA_DIR / "warn_latest.json"
-# Cumulative store (union of every notice ever observed) is the dashboard's
-# source of truth; charts read it so they never lose notices that a later EDD
-# re-export drops from warn_latest.json. Falls back to the latest download.
-CUMULATIVE_FILE = DATA_DIR / "warn_cumulative.json"
+# Raw California stores. The dashboard charts no longer read these directly —
+# load_data() goes through warn_datasets, which derives California from the
+# national dataset so the two dashboards cannot disagree. These stay because
+# _national_records() uses them as its pre-aggregation fallback, and that path
+# genuinely wants the raw feed rather than the derived view.
+LATEST_FILE = warn_datasets.LATEST_FILE
+CUMULATIVE_FILE = warn_datasets.CUMULATIVE_FILE
 CHART_MANIFEST = DATA_DIR / "charts_manifest.json"
 
 LOG_FORMAT = "%(asctime)s [%(levelname)s] %(message)s"
@@ -84,10 +88,14 @@ def _apply_theme(fig: go.Figure, margin: dict = None) -> go.Figure:
 
 
 def load_data() -> pd.DataFrame:
-    source = CUMULATIVE_FILE if CUMULATIVE_FILE.exists() else LATEST_FILE
-    if not source.exists():
-        raise FileNotFoundError(f"Run warn_monitor.py first — {source} not found.")
-    payload = json.loads(source.read_text())
+    """The California record set the dashboard charts describe.
+
+    Resolved through warn_datasets so these charts and warn_publish's KPIs and
+    notices table are guaranteed to be describing the identical records. They
+    used to each resolve the store themselves, which let the page show KPIs
+    computed over one record set and charts drawn over another.
+    """
+    payload = warn_datasets.load_ca_dashboard()
     df = pd.DataFrame(payload["records"])
     df["effective_date"] = pd.to_datetime(df["effective_date"], errors="coerce")
     df["notice_date"] = pd.to_datetime(df.get("notice_date"), errors="coerce")
@@ -1272,6 +1280,29 @@ def run(save_png: bool = True) -> list:
         )
     else:
         log.info("No historical data yet — run warn_history.py to generate it")
+
+    # warn_all_years.json's "(Live)" bar is a snapshot of the raw EDD feed taken
+    # when warn_history last ran, so it counts fewer notices than the dashboard
+    # now shows — the same page would carry two different totals for the current
+    # period. Recompute that one bar from the records actually being charted;
+    # the PDF-derived historical bars are left exactly as they are.
+    if len(df):
+        live_records, live_employees = len(df), int(df["employees"].sum())
+        for entry in yearly_summary:
+            if entry.get("source") == "xlsx":
+                entry["records"] = live_records
+                entry["employees"] = live_employees
+
+    # Chart 8 overlays every year's monthly pattern. Feed it the dashboard's own
+    # records for the live period so its current-year line matches chart 2.
+    if payload.get("records"):
+        seen = {(str(r.get("company") or ""), str(r.get("effective_date") or ""))
+                for r in payload["records"]}
+        all_records = [
+            r for r in all_records
+            if (str(r.get("company") or ""),
+                str(r.get("effective_date") or "")) not in seen
+        ] + list(payload["records"])
 
     def _call(fn, df, sp):
         """Unified call that always passes (df, save_png)."""

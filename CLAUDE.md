@@ -22,7 +22,7 @@ python3 warn_monitor.py          # Download + parse XLSX only
 python3 warn_diff.py             # Detect changes between runs
 python3 warn_charts.py           # Regenerate 8 Plotly charts
 python3 warn_history.py          # Re-parse historical PDFs (2014-2024)
-python3 warn_site_us.py          # Rebuild the US dashboard (docs/us/)
+python3 warn_site_us.py          # Rebuild the US dashboard (docs/ — the site root)
 python3 warn_notify.py --test    # Send a test email
 python3 warn_digest.py           # Preview last month's US digest (prints text)
 python3 warn_digest.py --year 2026 --month 6 --html /tmp/d.html   # HTML preview
@@ -56,16 +56,65 @@ state feeds (online)
   → warn_history.py   → data/warn_all_years.json (merged 2014-present, CA)
   → warn_sources/aggregate.py → data/warn_national.json (all states, unified
          schema with `state` field; drives the US map chart)
+  → warn_datasets.py  → the California record set, derived in memory from the
+         national CA slice (see "California is derived" below)
   → warn_charts.py    → docs/charts/*.html (12 self-contained Plotly divs,
          incl. 12_us_map — filterable state choropleth)
-  → warn_publish.py   → docs/index.html (California dashboard, unchanged surface)
-                        docs/data.json (CA public API)
-  → warn_site_us.py   → docs/us/index.html (standalone US-wide dashboard)
-                        docs/us/data.json (national public API)
+  → warn_site_us.py   → docs/index.html (US dashboard — the SITE ROOT)
+                        docs/data.json (national public API, "scope": "us")
+                        docs/search_index.json, docs/pages/<ST>/N.json
+                        docs/us/index.html (redirect stub → /warn/)
+  → warn_publish.py   → docs/ca/index.html (California dashboard)
+                        docs/ca/data.json (CA public API, "scope": "ca")
                       → warn_notify.py (Gmail alert if changes detected, per state)
                           ↳ warn_subscribers.py (fetch signup list → BCC subscribers)
                       → git commit + push
 ```
+
+**Site URL layout** lives in `warn_urls.py`, a leaf module every other module
+imports for its links (never hardcode a path). `/warn/` is the US dashboard,
+`/warn/ca/` is California, `/warn/us/` is a redirect stub kept for old
+bookmarks and already-mailed non-CA alerts. **`/warn/unsubscribe.html` is
+frozen** — every subscriber email ever sent carries an HMAC-signed link to it
+and those live in inboxes indefinitely; `tests/test_notify.py` pins the exact
+URL + signature as the guard. `warn_notify.US_DASHBOARD_URL` used to be derived
+as `DASHBOARD_URL + "us/"`, which was silently correct only while California
+sat at the root; the two are independent constants now.
+
+**Which site build may fail** inverted when the national dashboard took over
+the root, and `warn_publish.run()` step 5 encodes it. Whatever builds the root
+page must be fatal — a non-zero exit skips `git_commit_push` here and CI's
+`if: success()` commit step, leaving the last good page published. That guard
+used to sit on `build_site` (California was the root); it now sits on
+`build_us_site`, and California — whose failure still leaves a live, correct
+front page — is the non-fatal one. The raise happens *after* notifications and
+the digest so a chart hiccup never costs a subscriber a legitimate alert.
+
+**`docs/pages/` is a reserved name.** `warn_site_us._write_pages` rmtrees
+`out_dir/"pages"` wholesale each build, and `out_dir` is now the site root.
+Sibling directories are untouched (`tests/test_site_us.py` guards it), but
+nothing else may live at that path.
+
+**California is derived, not fetched** (`warn_datasets.py`). The live EDD feed
+(`data/warn_cumulative.json`) starts 2025-01-29, while
+`data/historical/ca_national_history.json` — merged into the national dataset
+by `warn_sources.aggregate` — holds 71 further CA notices dated 2025-01-03 →
+2025-01-28 worth 5,475 employees. The merge dedupes nothing because the sets
+are disjoint, so the US dashboard counted 827 California notices for 2025 while
+the California dashboard, reading only the live feed, counted 756. Both
+`warn_publish._dashboard_payload` and `warn_charts.load_data` now go through
+`warn_datasets.load_ca_dashboard`, which slices California out of
+`warn_national.json` from `CA_COVERAGE_START` (2025-01-01) and normalises every
+record onto `CA_RECORD_FIELDS`. The boundary exists because pre-2025 CA records
+carry **no `industry` at all** and only 85% county coverage — the industry
+chart, industry filter and county filter would silently degrade across it — and
+it is a calendar-year edge so the 2025 KPI year is whole and directly
+comparable. The page states its span (`_build_coverage_note`) and flags a
+degraded fallback. The invariant that keeps this honest is
+`tests/test_datasets.py::test_no_covered_era_record_is_dropped`: every CA record
+in the national dataset on or after the boundary must survive into the derived
+payload. Nothing is persisted under `data/` — `docs/ca/data.json` is the
+artifact.
 
 **Plotly version coupling**: chart divs are generated by plotly.py 6.x, which
 emits base64 `bdata` arrays that plotly.js 2.x cannot decode — both dashboard
@@ -118,7 +167,7 @@ connection rather than one BCC blast.
   recorded only after a successful send (same discipline as the notice
   ledgers). `--digest` forces a send; `--no-digest` skips.
 
-**US dashboard search** (`docs/us/search_index.json`): a compact
+**US dashboard search** (`docs/search_index.json`): a compact
 `ST|Company|Place|dates|Emp` row index (~3.5 MB, ~1 MB gzipped) written at
 build time and fetched by the browser **only after the first search
 keystroke**, so company search pages through every matching record in the
