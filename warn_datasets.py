@@ -50,6 +50,7 @@ both depend on it, and ``warn_charts`` must not be made to pull in the whole
 
 import json
 import logging
+from datetime import date
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -203,6 +204,117 @@ def load_ca_dashboard(national_file: Path = None, refresh: bool = False) -> dict
 def ca_dashboard_records(national_file: Path = None) -> list:
     """Convenience: just the records the California dashboard shows."""
     return _records(load_ca_dashboard(national_file))
+
+
+def ca_yearly_summary(national_file: Path = None, today: date = None) -> list:
+    """Per-calendar-year California totals, for the year-over-year chart.
+
+    Not bounded by CA_COVERAGE_START. The dashboard's boundary exists because
+    pre-2025 records carry no ``industry`` and patchy ``county``, which the
+    industry and county visuals depend on — but a year-over-year chart needs
+    only ``notice_date`` and ``employees``, and both are present on 100% of the
+    16,176 historical California records. So this reaches back as far as the
+    data honestly goes.
+
+    **Calendar years, not fiscal years.** The chart used to bucket by CA EDD's
+    July–June fiscal year purely because its source was EDD's fiscal-year PDFs.
+    That source is retired here, and every other figure on the dashboard — the
+    KPI date-range selector, the US dashboard's per-year views — is calendar.
+    The old fiscal framing was already broken in practice: the single "complete"
+    bar, labelled ``FY 2025-26 (Live)``, actually held 19 months spanning three
+    fiscal years.
+
+    Years before a gap in coverage are dropped, not shown as near-zero bars:
+    the backfill has one stray 2008 notice and then nothing until 2014, and
+    plotting that lone record next to 2020 would read as "2008 was quiet"
+    rather than "2008 is not covered". What gets dropped is logged.
+
+    A year is flagged ``partial`` when it is still running, or when some month
+    in it recorded no filings at all. California files 18–500 WARN notices in a
+    normal month, so an empty month means missing data, never a quiet month —
+    and two such gaps exist today that would otherwise be read as real declines:
+
+    * 2014 — the backfill effectively starts in July; Jan–Jun holds 7 records
+      against a ~55/month run rate afterwards.
+    * 2025 — February, March and April are absent from the EDD feed *and* from
+      the backfill, so the year's 827 notices undercount. Charted flat against
+      2024's 1,502 that reads as a 45% drop that did not happen.
+
+    Returns oldest-first, each entry::
+
+        {"year": 2020, "label": "2020", "records": 6066, "employees": 656501,
+         "partial": False, "gap_months": []}
+
+    Returns ``[]`` when the national dataset is unavailable. The caller renders
+    an empty state rather than falling back to the PDF summary in
+    ``warn_all_years.json`` — that sample captured 3–5% of actual filings
+    (FY2019-20: 17 notices where 5,143 were filed), and a chart that wrong is
+    worse than no chart, which is the whole reason this function exists.
+    """
+    path = Path(national_file) if national_file else NATIONAL_FILE
+    national = _read(path)
+    if national is None:
+        log.warning("No national dataset at %s — year-over-year chart skipped", path)
+        return []
+
+    totals = {}
+    months = {}
+    for record in _records(national):
+        if str(record.get("state") or "").upper() != "CA":
+            continue
+        stamp = str(record.get("notice_date") or "")[:10]
+        if len(stamp) != 10 or not stamp[:4].isdigit():
+            continue
+        year = int(stamp[:4])
+        count, employees = totals.get(year, (0, 0))
+        totals[year] = (count + 1, employees + _int(record.get("employees")))
+        months.setdefault(year, set()).add(stamp[5:7])
+
+    if not totals:
+        return []
+
+    years = sorted(totals)
+    # Keep the longest unbroken run ending at the most recent year — that is
+    # the span the dataset actually covers continuously.
+    start = years[-1]
+    for year in reversed(years):
+        if year == start or year == start - 1:
+            start = year
+        else:
+            break
+    dropped = [y for y in years if y < start]
+    if dropped:
+        log.info(
+            "Year-over-year: ignoring %d pre-coverage year(s) before %d (%s) — "
+            "isolated records ahead of a gap, not complete years",
+            len(dropped), start, ", ".join(str(y) for y in dropped),
+        )
+
+    current_year = (today or date.today()).year
+    summary = []
+    for year in years:
+        if year < start:
+            continue
+        gaps = sorted({f"{m:02d}" for m in range(1, 13)} - months.get(year, set()))
+        running = year >= current_year
+        if running:
+            # Months after today are not gaps, they simply have not happened.
+            gaps = []
+        summary.append({
+            "year": year,
+            "label": str(year),
+            "records": totals[year][0],
+            "employees": totals[year][1],
+            "partial": running or bool(gaps),
+            "gap_months": gaps,
+        })
+        if gaps:
+            log.info(
+                "Year-over-year: %d has no filings in %s — charted as "
+                "incomplete so the total is not read as a real decline",
+                year, ", ".join(gaps),
+            )
+    return summary
 
 
 def reset_cache() -> None:
