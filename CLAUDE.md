@@ -186,6 +186,20 @@ connection rather than one BCC blast.
   and sent by `warn_notify.send_monthly_digest`.
 - A **blank cell means California** (`DEFAULT_STATES`) — subscribers who
   signed up before preferences existed keep exactly the alerts they had.
+- **Signup is additive; only the preferences page removes.** `doPost`'s
+  duplicate-address branch merges (`_mergeStates`) instead of overwriting the
+  cell. Neither signup form loads the subscriber's current selection — the
+  California form has no state picker, and the US dashboard's picker starts
+  blank on every visit — so neither can show what a replace would destroy.
+  Before this, picking IL+NY at `/warn/` and then subscribing at `/warn/ca/`
+  silently cancelled Illinois and New York; so did returning to the US form
+  and ticking one more state. Narrowing a subscription belongs to
+  `warn_unsubscribe`'s page, which GETs `?action=prefs`, shows the current
+  selection, and writes back exactly what was confirmed — destructive power
+  sits on the one surface where the consequence is visible. A legacy blank
+  cell is read as `CA` *before* merging, so an implicit California never
+  vanishes. Guarded by `tests/test_subscribe_gs.py::
+  test_no_signup_ever_shrinks_a_subscription`.
 - `warn_publish.maybe_send_monthly_digest` runs every pipeline run but sends
   at most once per calendar month, guarded by `data/digest_sent.json` and
   recorded only after a successful send (same discipline as the notice

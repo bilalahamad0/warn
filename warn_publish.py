@@ -1125,9 +1125,9 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
     <div class="subscribe-text">
       <h2 class="subscribe-title">📬 Get layoff alerts in your inbox</h2>
       <p class="subscribe-sub">New California WARN notices, delivered straight to your inbox when our twice-daily check finds them.</p>
-      <p class="subscribe-sub">Subscribes you to California alerts. If you
-        already picked states on the <a href="../#subscribe">US dashboard</a>,
-        signing up here replaces that selection.</p>
+      <p class="subscribe-sub">Adds California to your alerts — any other
+        states you picked on the <a href="../#subscribe">US dashboard</a> stay
+        as they are. Change or cancel anything from the link in every email.</p>
     </div>
     <form class="subscribe-form" id="subscribe-form" novalidate>
       <input type="text" id="sub-name" class="subscribe-input" placeholder="Your name" autocomplete="name" aria-label="Your name" />
@@ -1302,12 +1302,22 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
       fetch(SIGNUP_ENDPOINT, {{
         method: 'POST',
         headers: {{ 'Content-Type': 'text/plain;charset=utf-8' }},
-        body: JSON.stringify({{ name: nm, email: em, source: 'dashboard' }})
+        // 'CA' is sent explicitly rather than leaning on the Apps Script's
+        // DEFAULT_STATES fallback, so the payload says what this form means.
+        // Signup is additive server-side: any other states this address
+        // already subscribed to are kept.
+        body: JSON.stringify({{
+          name: nm, email: em, states: 'CA', source: 'dashboard'
+        }})
       }})
         .then(function (r) {{ return r.json(); }})
         .then(function (d) {{
           if (d && d.ok) {{
-            setSubMsg(d.duplicate ? "You're already subscribed — thanks!" : "You're in! Watch your inbox for new WARN alerts.", 'ok');
+            setSubMsg(d.duplicate
+              ? (d.updated
+                  ? "California added — your other alerts are unchanged."
+                  : "You're already subscribed to California alerts.")
+              : "You're in! Watch your inbox for new WARN alerts.", 'ok');
             subForm.reset();
           }} else {{
             setSubMsg('Something went wrong. Please try again later.', 'err');

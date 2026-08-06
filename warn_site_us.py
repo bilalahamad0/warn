@@ -910,7 +910,10 @@ footer {{ color:var(--muted); font-size:12px; text-align:center;
   <section id="subscribe">
     <h2>📬 Get WARN alerts by email</h2>
     <div class="desc">Pick the states you want per-notice alerts for. We
-      email you when our twice-daily check finds new notices there.</div>
+      email you when our twice-daily check finds new notices there.
+      Already subscribed? Picking states here <strong>adds</strong> them —
+      nothing you signed up for is removed. To stop alerts for a state, use
+      the link at the bottom of any alert email.</div>
     <form class="sub-form" id="subscribe-form" novalidate>
       <div class="sub-row">
         <input type="text" id="sub-name" placeholder="Your name"
@@ -1244,7 +1247,10 @@ if (subForm) {{
       .then(function (d) {{
         if (d && d.ok) {{
           setSubMsg(d.duplicate
-            ? "You're already subscribed — preferences updated."
+            ? (d.updated
+                ? 'Added. You now get alerts for: ' + (d.states || '')
+                    .split(',').join(', ') + '.'
+                : "You're already subscribed to those.")
             : "You're in! Watch your inbox for new WARN alerts.", 'ok');
           subForm.reset();
         }} else {{
