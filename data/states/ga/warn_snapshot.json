@@ -1,9 +1,9 @@
 {
-  "total_records": 4748,
-  "total_employees": 606304,
+  "total_records": 4749,
+  "total_employees": 606414,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-08-05T13:53:38.944557+00:00Z",
+  "last_updated": "2026-08-06T01:38:35.316414+00:00Z",
   "source_url": "https://www.tcsg.edu/warn-public-view/",
   "records": [
     {
@@ -3244,6 +3244,18 @@
       "county": "Cobb",
       "city": "",
       "address": "793 Sawyer Rd, Marietta, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "80 Acres Urban Agriculture, Inc",
+      "notice_date": null,
+      "effective_date": "2026-08-03",
+      "employees": 110,
+      "layoff_type": "Permanent Layoff / Reduction in Force",
+      "county": "Clayton",
+      "city": "",
+      "address": "2070 Anvil Block Rd, Suite 100, Forest Park, Georgia",
       "industry": ""
     },
     {

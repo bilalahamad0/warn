@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-06T01:50:27.021328+00:00Z",
+  "last_updated": "2026-08-06T14:03:27.873861+00:00Z",
   "states_live": 47,
-  "total_records": 59064,
-  "total_employees": 6409681,
+  "total_records": 59067,
+  "total_employees": 6409937,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -15,8 +15,8 @@
       "name": "Alabama",
       "agency": "Alabama Department of Workforce",
       "source_url": "https://workforce.alabama.gov/warn-list/",
-      "total_records": 1059,
-      "total_employees": 180874
+      "total_records": 1060,
+      "total_employees": 180915
     },
     "AZ": {
       "name": "Arizona",
@@ -204,8 +204,8 @@
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2330,
-      "total_employees": 350556
+      "total_records": 2331,
+      "total_employees": 350695
     },
     "NM": {
       "name": "New Mexico",
@@ -323,8 +323,8 @@
       "name": "Wisconsin",
       "agency": "Wisconsin Department of Workforce Development",
       "source_url": "https://dwd.wisconsin.gov/dislocatedworker/warn/",
-      "total_records": 630,
-      "total_employees": 59099
+      "total_records": 631,
+      "total_employees": 59175
     },
     "WV": {
       "name": "West Virginia",
@@ -13832,6 +13832,18 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Hoover",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "FMC Corporation",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-10-31",
+      "employees": 41,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Axis",
       "address": "",
       "industry": ""
     },
@@ -447631,6 +447643,18 @@
       "industry": ""
     },
     {
+      "state": "NJ",
+      "company": "Gerresheimer",
+      "notice_date": null,
+      "effective_date": "2026-09-01",
+      "employees": 139,
+      "layoff_type": "",
+      "county": "",
+      "city": "Vineland",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "NM",
       "company": "Atkore HDPE, LLC",
       "notice_date": "2026-04-27",
@@ -656590,6 +656614,18 @@
       "city": "Fort Atkinson",
       "address": "",
       "industry": "Other Professional Equip Merch Whls"
+    },
+    {
+      "state": "WI",
+      "company": "Samuel Pressure Vessel Group",
+      "notice_date": "2026-08-05",
+      "effective_date": "2026-08-04",
+      "employees": 76,
+      "layoff_type": "Facility Closure",
+      "county": "Lincoln",
+      "city": "Tomahawk",
+      "address": "",
+      "industry": "Metal Tank (Heavy Gauge) Manufacturing"
     },
     {
       "state": "WV",

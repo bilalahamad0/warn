@@ -1,11 +1,23 @@
 {
-  "total_records": 1488,
-  "total_employees": 234855,
+  "total_records": 1489,
+  "total_employees": 234907,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-08-04",
-  "last_updated": "2026-08-05T14:04:56.993056+00:00Z",
+  "date_range_end": "2026-08-05",
+  "last_updated": "2026-08-06T01:50:21.736974+00:00Z",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
+    {
+      "state": "WA",
+      "company": "Google",
+      "notice_date": "2026-08-05",
+      "effective_date": "2026-09-06",
+      "employees": 52,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Various locations in Washington",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "WA",
       "company": "Zillow Group",
