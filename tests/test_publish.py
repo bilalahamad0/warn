@@ -13,6 +13,12 @@ import warn_publish
 @patch("warn_publish.maybe_send_monthly_digest")
 @patch("warn_publish.git_commit_push")
 @patch("warn_publish.build_site")
+# Both site builders are mocked: build_us_site now writes the site ROOT
+# (docs/index.html, docs/data.json, docs/search_index.json, docs/pages/) and
+# build_legacy_us_redirect writes docs/us/. Unmocked, this test rewrites the
+# real published site every time the suite runs.
+@patch("warn_publish.warn_site_us.build_legacy_us_redirect")
+@patch("warn_publish.warn_site_us.build_us_site")
 @patch("warn_publish.warn_charts.run")
 @patch("warn_publish.warn_aggregate.build_national")
 @patch("warn_publish.warn_history.run")
@@ -20,7 +26,8 @@ import warn_publish
 @patch("warn_publish.warn_sources.run_all")
 def test_run_full_pipeline(
     mock_sources, mock_diff, mock_history, mock_national, mock_charts,
-    mock_site, mock_push, mock_digest, mock_subs, mock_unsub, tmp_path
+    mock_us_site, mock_redirect, mock_site, mock_push, mock_digest,
+    mock_subs, mock_unsub, tmp_path
 ):
     """run() orchestrates every stage and honours no_push — without touching the
     real data/ directory, the network, or git.
@@ -52,6 +59,12 @@ def test_run_full_pipeline(
     assert mock_charts.called
     assert mock_site.called
     assert not mock_push.called
+
+    # The root of the published site is the national dashboard, and the old
+    # /us/ address keeps a stub so already-mailed links still land.
+    assert mock_us_site.called
+    assert mock_us_site.call_args.kwargs["out_dir"] == warn_publish.OUTPUT_DIR
+    assert mock_redirect.called
 
     # The unsubscribe page is rebuilt every run — the links already mailed out
     # have to keep landing somewhere live.
@@ -206,6 +219,7 @@ def _run_notify_loop(state_results, sources, send_ok=True, tmp_path=None):
          patch("warn_publish.warn_aggregate.build_national"), \
          patch("warn_publish.warn_charts.run"), \
          patch("warn_publish.warn_site_us.build_us_site"), \
+         patch("warn_publish.warn_site_us.build_legacy_us_redirect"), \
          patch("warn_publish.build_site"), \
          patch("warn_publish.build_unsubscribe_page"), \
          patch("warn_publish.git_commit_push"), \
@@ -364,6 +378,7 @@ def test_digest_failure_is_non_fatal_to_the_run(tmp_path):
          patch("warn_publish.warn_aggregate.build_national"), \
          patch("warn_publish.warn_charts.run"), \
          patch("warn_publish.warn_site_us.build_us_site"), \
+         patch("warn_publish.warn_site_us.build_legacy_us_redirect"), \
          patch("warn_publish.build_site"), \
          patch("warn_publish.build_unsubscribe_page"), \
          patch("warn_publish.git_commit_push"), \
@@ -386,6 +401,7 @@ def test_no_digest_flag_skips_the_step(tmp_path):
          patch("warn_publish.warn_aggregate.build_national"), \
          patch("warn_publish.warn_charts.run"), \
          patch("warn_publish.warn_site_us.build_us_site"), \
+         patch("warn_publish.warn_site_us.build_legacy_us_redirect"), \
          patch("warn_publish.build_site"), \
          patch("warn_publish.build_unsubscribe_page"), \
          patch("warn_publish.git_commit_push"), \
@@ -457,6 +473,7 @@ def _run_with_unsubscribe(tmp_path, **kw):
          patch("warn_publish.warn_aggregate.build_national"), \
          patch("warn_publish.warn_charts.run"), \
          patch("warn_publish.warn_site_us.build_us_site"), \
+         patch("warn_publish.warn_site_us.build_legacy_us_redirect"), \
          patch("warn_publish.build_site"), \
          patch("warn_publish.git_commit_push") as mock_push, \
          patch("warn_publish.maybe_send_monthly_digest") as mock_digest, \

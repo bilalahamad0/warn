@@ -1,29 +1,45 @@
-# 📋 California WARN Layoff Monitor
+# 📋 US WARN Layoff Monitor
 
 [![WARN Monitor](https://github.com/bilalahamad0/warn/actions/workflows/monitor.yml/badge.svg)](https://github.com/bilalahamad0/warn/actions/workflows/monitor.yml)
 [![CodeQL](https://github.com/bilalahamad0/warn/actions/workflows/codeql.yml/badge.svg)](https://github.com/bilalahamad0/warn/actions/workflows/codeql.yml)
 [![Auto-Update](https://img.shields.io/badge/updates-twice_daily-brightgreen)](https://github.com/bilalahamad0/warn/actions/workflows/monitor.yml)
 [![Last Commit](https://img.shields.io/github/last-commit/bilalahamad0/warn)](https://github.com/bilalahamad0/warn/commits/main)
-[![Live Dashboard](https://img.shields.io/badge/dashboard-live-orange)](https://bilalahamad0.github.io/warn/)
+[![US Dashboard](https://img.shields.io/badge/US_dashboard-live-orange)](https://bilalahamad0.github.io/warn/)
+[![California Dashboard](https://img.shields.io/badge/California_dashboard-live-orange)](https://bilalahamad0.github.io/warn/ca/)
 [![Architecture](https://img.shields.io/badge/architecture-animated-blueviolet)](https://bilalahamad0.github.io/warn/architecture.html)
 [![Data Source](https://img.shields.io/badge/source-CA_EDD-blue)](https://edd.ca.gov/en/jobs_and_training/layoff_services_warn)
 [![Python](https://img.shields.io/badge/python-3.12-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](#-license)
 
-An automated end-to-end pipeline that monitors California layoff notices (WARN Act filings) from the CA Employment Development Department, parses historical records (2014-present), detects changes, generates rich interactive charts, and publishes a live dashboard with email alerts.
+An automated end-to-end pipeline that monitors layoff notices (WARN Act filings) from 46 state workforce agencies plus DC, parses historical records, detects changes, generates rich interactive charts, and publishes live dashboards with email alerts. California — the jurisdiction the project started with — keeps a dedicated dashboard with deeper per-notice detail.
 
 ---
 
-## 🌐 Live Dashboard
+## 🌐 Live Dashboards
 
-**[→ View Dashboard](https://bilalahamad0.github.io/warn/)** · **[→ How it works (animated architecture)](https://bilalahamad0.github.io/warn/architecture.html)**
+**[→ US Dashboard](https://bilalahamad0.github.io/warn/)** · **[→ California Dashboard](https://bilalahamad0.github.io/warn/ca/)** · **[→ How it works (animated architecture)](https://bilalahamad0.github.io/warn/architecture.html)**
+
+| URL | Serves |
+|-----|--------|
+| `/warn/` | US national dashboard — all live states, searchable across the whole dataset |
+| `/warn/ca/` | California — EDD notices with industry, county and layoff-type filters |
+| `/warn/us/` | Redirect to `/warn/` (the US dashboard's address before August 2026) |
 
 The [architecture page](https://bilalahamad0.github.io/warn/architecture.html) is an interactive, animated walk-through of the system: the layered architecture, the 5-stage pipeline (with a play-through), the data-flow / change-detection logic, and the twice-daily CI workflow.
 
 Or embed on any website:
 ```html
+<!-- US dashboard, all states -->
 <iframe
   src="https://bilalahamad0.github.io/warn/"
+  width="100%" height="800"
+  style="border:none;border-radius:12px;"
+  title="US WARN Layoff Monitor"
+></iframe>
+
+<!-- California only -->
+<iframe
+  src="https://bilalahamad0.github.io/warn/ca/"
   width="100%" height="800"
   style="border:none;border-radius:12px;"
   title="California WARN Layoff Monitor"
@@ -122,9 +138,19 @@ tail -f data/warn_cron.log data/warn_cron_err.log
 
 ### 5. Publish (GitHub Pages)
 
-The dashboard is served from GitHub Pages — **Settings ▸ Pages**, Branch: `main`,
-Folder: `/docs`. Every pipeline run rewrites `docs/index.html` and `docs/data.json`,
-so the live site updates automatically once Pages is enabled.
+The dashboards are served from GitHub Pages — **Settings ▸ Pages**, Branch: `main`,
+Folder: `/docs`. Every pipeline run rewrites `docs/index.html` (US), `docs/ca/index.html`
+(California) and both `data.json` files, so the live site updates automatically once
+Pages is enabled.
+
+> **⚠️ API change (August 2026).** `/warn/data.json` used to serve California and now
+> serves the national dataset — 47 jurisdictions, ~14 MB, each record carrying a
+> `state` field. California moved to
+> [`/warn/ca/data.json`](https://bilalahamad0.github.io/warn/ca/data.json). Both
+> payloads carry a top-level `"scope"` (`"us"` or `"ca"`) so a client can tell which
+> it received. GitHub Pages cannot redirect a JSON file, so this one could not be
+> made backward compatible; `/warn/us/data.json` is still published as a
+> byte-identical copy of the national payload for anything pinned to the old path.
 
 ---
 
@@ -177,12 +203,13 @@ EDD WARN XLSX  ───► warn_monitor.py ──► data/warn_latest.json
                           └──────┬───────────────┘
                                  ▼
                           warn_publish.py
-                          (builds index.html + git push)
+                          (builds both sites + git push)
                                  │
-                          ┌──────┴──────┐
-                          ▼             ▼
-                   docs/index.html    warn_notify.py
-                   (GitHub Pages)     (Email Alerts)
+                    ┌────────────┼────────────┐
+                    ▼            ▼            ▼
+            docs/index.html  docs/ca/     warn_notify.py
+            (US, site root)  index.html   (Email Alerts)
+                             (California)
 ```
 
 ### Data files
@@ -195,8 +222,14 @@ EDD WARN XLSX  ───► warn_monitor.py ──► data/warn_latest.json
 | `data/changelog.jsonl` | Append-only record of every change detected |
 | `data/diff_report.md` | Human-readable summary of the latest change |
 | `data/charts_manifest.json` | Chart metadata + dataset summary the dashboard reads |
-| `docs/index.html` | Published premium interactive dashboard |
-| `docs/data.json` | Publicly accessible JSON API of current notices |
+| `data/warn_national.json` | Unified multi-state dataset; also the source the California page is derived from |
+| `docs/index.html` | Published US dashboard (site root) |
+| `docs/data.json` | Public JSON API — national, `"scope": "us"` |
+| `docs/search_index.json` | Compact row index, fetched only on the first search keystroke |
+| `docs/pages/<ST>/N.json` | Paged table shards the US dashboard fetches lazily |
+| `docs/ca/index.html` | Published California dashboard |
+| `docs/ca/data.json` | Public JSON API — California, `"scope": "ca"` |
+| `docs/us/index.html` | Redirect stub to the site root (pre-August-2026 US address) |
 
 ---
 

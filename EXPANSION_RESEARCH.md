@@ -7,9 +7,11 @@
 > TX fully implemented but disabled behind an AWS WAF challenge — flip
 > `enabled=True` once a sanctioned fetch proxy is configured). AR, WY keep
 > filings confidential by statute; NH/PR/territories publish no list. The
-> standalone US dashboard lives at `docs/us/` (built by `warn_site_us.py`);
-> the California dashboard is unchanged. Per-state details live in each
-> module's docstring and its `tests/test_source_<code>.py`.
+> US dashboard is the site root, `docs/` (built by `warn_site_us.py`);
+> California moved to `docs/ca/` and now derives its records from the national
+> dataset so the two pages cannot report different California numbers.
+> Per-state details live in each module's docstring and its
+> `tests/test_source_<code>.py`.
 
 ---
 

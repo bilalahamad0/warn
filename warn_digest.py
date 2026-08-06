@@ -43,13 +43,18 @@ from datetime import date, datetime
 from pathlib import Path
 from typing import Optional
 
+import warn_urls
+
 log = logging.getLogger("warn_digest")
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
 NATIONAL_FILE = DATA_DIR / "warn_national.json"
 
-US_DASHBOARD_URL = "https://bilalahamad0.github.io/warn/us/"
+# The national dashboard is the site root. Sourced from warn_urls rather than
+# hardcoded here — this constant used to be a second, independent copy of the
+# same URL that warn_notify also held, and the two could drift apart unnoticed.
+US_DASHBOARD_URL = warn_urls.US_DASHBOARD_URL
 
 # How many rows each "top N" section shows. The per-state table is never
 # truncated: every state with activity in the month is listed.

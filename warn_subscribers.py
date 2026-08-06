@@ -33,6 +33,8 @@ except ImportError:
 
 import requests
 
+import warn_urls
+
 log = logging.getLogger("warn_subscribers")
 
 
@@ -153,8 +155,10 @@ def digest_subscribers(timeout: int = 20, records=None) -> list:
 # ---------------------------------------------------------------------------
 
 # Public site root; the unsubscribe page is published alongside the dashboards.
-SITE_BASE_URL = "https://bilalahamad0.github.io/warn"
-UNSUBSCRIBE_PAGE = "unsubscribe.html"
+# Both come from warn_urls so the layout has one source of truth — and both are
+# frozen: live links in already-sent mail resolve against exactly these values.
+SITE_BASE_URL = warn_urls.SITE_BASE_URL
+UNSUBSCRIBE_PAGE = warn_urls.UNSUBSCRIBE_PATH.lstrip("/")
 
 
 def unsubscribe_signature(email: str) -> str:

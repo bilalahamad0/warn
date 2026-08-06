@@ -2,11 +2,16 @@
 warn_publish.py
 ---------------
 Full pipeline runner:
-  1. warn_monitor  — download + parse + detect changes
+  1. warn_sources  — download + parse + detect changes, per state
   2. warn_diff     — generate diff report
-  3. warn_charts   — generate 6 Plotly charts
-  4. build_site    — assemble output/index.html
-  5. git_push      — commit + push to GitHub (requires GITHUB_TOKEN env var)
+  3. warn_history  — historical PDFs; then aggregate the national dataset
+  4. warn_charts   — generate the Plotly chart fragments
+  5. build sites   — warn_site_us → docs/ (the US dashboard, at the site root)
+                     build_site   → docs/ca/ (the California dashboard)
+                     Only the root build is fatal; see step 5 in run().
+  6. git_push      — commit + push to GitHub (requires GITHUB_TOKEN env var)
+
+This module owns the California page. The site root belongs to warn_site_us.
 
 Usage:
     python3 warn_publish.py               # full run
@@ -20,7 +25,6 @@ import json
 import logging
 import argparse
 import os
-import shutil
 import subprocess
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -28,19 +32,27 @@ from pathlib import Path
 import warn_monitor
 import warn_diff
 import warn_charts
+import warn_datasets
 import warn_notify
 import warn_history
 import warn_sources
 import warn_site_us
+import warn_urls
 from warn_sources import aggregate as warn_aggregate
 
 BASE_DIR = Path(__file__).parent
 OUTPUT_DIR = BASE_DIR / "docs"
 CHARTS_DIR = OUTPUT_DIR / "charts"
 DATA_DIR = BASE_DIR / "data"
-SITE_DATA = OUTPUT_DIR / "data.json"
-INDEX_HTML = OUTPUT_DIR / "index.html"
-TEMPLATE = BASE_DIR / "docs" / "index_template.html"
+
+# California's own page. The site root belongs to the national dashboard
+# (warn_site_us) — this module used to own it, back when California was the
+# only jurisdiction the project covered. Chart fragments stay at the shared
+# docs/charts/ because they are inlined at build time, never linked, so they
+# carry no URL coupling to either page's depth.
+CA_DIR = OUTPUT_DIR / "ca"
+SITE_DATA = CA_DIR / "data.json"
+INDEX_HTML = CA_DIR / "index.html"
 
 # Landing page for the signed unsubscribe links carried by every subscriber
 # email (warn_subscribers.unsubscribe_url). Rebuilt every run alongside the
@@ -92,10 +104,23 @@ def _fmt_human_date(iso: str) -> str:
         return str(iso)
 
 
-def _dashboard_source() -> Path:
-    """Return the dataset that backs the dashboard: the cumulative store if it
-    exists, otherwise the latest download."""
-    return CUMULATIVE_FILE if CUMULATIVE_FILE.exists() else LATEST_FILE
+def _dashboard_payload() -> dict:
+    """The dataset that backs the California dashboard.
+
+    Delegates to warn_datasets so this page and warn_charts read the identical
+    records — they used to resolve the file independently, which is how the
+    California dashboard came to under-report early 2025 while the US dashboard
+    counted it correctly. Returns ``{}`` rather than raising when there is no
+    dataset at all, since callers each have their own empty-state rendering.
+    """
+    try:
+        return warn_datasets.load_ca_dashboard()
+    except FileNotFoundError:
+        return {}
+
+
+def _dashboard_records() -> list:
+    return _dashboard_payload().get("records", [])
 
 
 def _strip_county(name) -> str:
@@ -124,10 +149,9 @@ def _compute_kpis(records: list = None, date_from: str = None, date_to: str = No
         "top_county_employees": "N/A",
     }
     if records is None:
-        source = _dashboard_source()
-        if not source.exists():
+        records = _dashboard_records()
+        if not records:
             return defaults
-        records = json.loads(source.read_text()).get("records", [])
 
     if date_from or date_to:
         lo = date_from or "0000-01-01"
@@ -206,12 +230,9 @@ def _build_recent_table(new_keys: list = None) -> tuple:
     if new_keys is None:
         new_keys = []
 
-    source = _dashboard_source()
-    if not source.exists():
+    records = _dashboard_records()
+    if not records:
         return ("", "<p style='color:var(--muted)'>No data available.</p>", "", 0)
-
-    payload = json.loads(source.read_text())
-    records = payload.get("records", [])
     
     def get_key(r):
         return f"{r.get('company','')}__{r.get('effective_date','')}__{r.get('employees','')}"
@@ -355,9 +376,59 @@ def _build_chart_tabs_panes(chart_ids: list, chart_divs: dict, meta_by_id: dict)
     return tabs, panes
 
 
-def build_site(manifest: dict, monitor_result: dict) -> str:
-    """Build the full index.html by embedding Plotly divs."""
-    log.info("Building index.html …")
+def _build_coverage_note(payload: dict, records: list) -> str:
+    """The banner stating what span of California filings this page covers.
+
+    Dates come from the records themselves, so the note cannot go stale. When
+    the payload carries no ``coverage_start`` the derivation fell back to the
+    raw EDD store (see warn_datasets.load_ca_dashboard) and the page is
+    under-reporting early 2025 — say so rather than showing a confident total
+    that quietly disagrees with the US dashboard.
+    """
+    if not records:
+        return ""
+
+    dates = sorted(str(r.get("notice_date") or "")[:10]
+                   for r in records if r.get("notice_date"))
+    if not dates:
+        return ""
+    span = f"{_fmt_human_date(dates[0])} – {_fmt_human_date(dates[-1])}"
+    count = _format_number(len(records))
+
+    if payload.get("coverage_start"):
+        return (
+            '<div class="coverage-note">'
+            '<span aria-hidden="true">📌</span>'
+            f'<span>Covers <strong>{count} California notices</strong> filed '
+            f'{span} — the span for which every field on this page '
+            '(industry, county, layoff type) is complete. Earlier California '
+            'filings, back to 2008, are counted on the '
+            '<a href="../">US dashboard</a>.</span>'
+            '</div>'
+        )
+    return (
+        '<div class="coverage-note degraded">'
+        '<span aria-hidden="true">⚠️</span>'
+        f'<span>Showing <strong>{count} California notices</strong> filed '
+        f'{span} from the live EDD feed only. The national dataset was '
+        'unavailable at build time, so notices filed before the feed began '
+        'are missing and these totals will read lower than the '
+        '<a href="../">US dashboard</a>\'s for California.</span>'
+        '</div>'
+    )
+
+
+def build_site(manifest: dict, monitor_result: dict,
+               out_dir: Path = None) -> str:
+    """Build the California dashboard by embedding Plotly divs.
+
+    ``out_dir`` defaults to ``docs/ca/``. It stays a keyword with a default so
+    the pipeline's ``build_site(manifest, monitor_result)`` call is unchanged;
+    tests pass a tmp dir to check the page's ``../`` asset paths resolve.
+    """
+    out_dir = Path(out_dir) if out_dir is not None else CA_DIR
+    out_dir.mkdir(parents=True, exist_ok=True)
+    log.info(f"Building {out_dir.name}/index.html …")
 
     meta_by_id = {cm["id"]: cm for cm in warn_charts.CHART_META}
     chart_divs = {cm["id"]: _read_chart_div(cm["id"]) for cm in warn_charts.CHART_META}
@@ -366,11 +437,11 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
     new_count = diff.get("new_count", 0)
     new_employees = diff.get("total_employees_new", 0)
 
-    # Headline totals/date-range come from the cumulative dashboard dataset so
-    # they stay consistent with the table (which also reads the cumulative
-    # store), even when EDD's latest file drops notices.
-    source = _dashboard_source()
-    dash = json.loads(source.read_text()) if source.exists() else {}
+    # Headline totals/date-range come from the same derived California dataset
+    # the table and the charts read (warn_datasets), so every number on the page
+    # describes one record set — and the same one the US dashboard counts for
+    # California.
+    dash = _dashboard_payload()
     records = dash.get("records", [])
     last_updated = (dash.get("last_updated") or manifest.get("last_updated", ""))[:10]
 
@@ -419,9 +490,14 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
             f" since last check.</div>"
         )
 
-    # Section: Impact (US map leads — the multi-state face of the dashboard)
+    coverage_note = _build_coverage_note(dash, records)
+
+    # Section: Impact — California only. The national choropleth used to lead
+    # this section, which made the first thing a visitor saw on the California
+    # page a 47-state map indistinguishable from the US dashboard's. The map
+    # now lives at the site root, where it is the point rather than a detour.
     impact_tabs, impact_panes = _build_chart_tabs_panes(
-        ["12_us_map", "9_industry_breakdown", "4_top_companies", "11_county_bar"],
+        ["9_industry_breakdown", "4_top_companies", "11_county_bar"],
         chart_divs, meta_by_id,
     )
     # Section: Trends
@@ -448,6 +524,13 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
         kpi_range_span=kpi_range_span,
         summary_scope=summary_scope,
         summary_dates=summary_dates,
+        coverage_note=coverage_note,
+        meta_description=(
+            "Live California WARN layoff notices from the Employment "
+            "Development Department, with charts, filters and a free JSON API."
+        ),
+        ca_url=warn_urls.CA_DASHBOARD_URL,
+        og_image=warn_urls.OG_IMAGE_URL,
         new_banner=new_banner,
         avg_lead_days=kpis["avg_lead_days"],
         largest_company=kpis["largest_company"],
@@ -467,13 +550,20 @@ def build_site(manifest: dict, monitor_result: dict) -> str:
         generated_at=datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
     )
 
-    INDEX_HTML.write_text(html, encoding="utf-8")
+    index_html = out_dir / "index.html"
+    index_html.write_text(html, encoding="utf-8")
 
-    if source.exists():
-        shutil.copy(source, SITE_DATA)
+    # Publish the derived California dataset as this page's API. Written from
+    # the in-memory payload rather than copied from data/, because the records
+    # the page shows are derived (national CA slice, coverage-window trimmed,
+    # schema-normalised) and no file on disk holds exactly them.
+    if dash:
+        (out_dir / "data.json").write_text(
+            json.dumps(dash, indent=2, default=str), encoding="utf-8"
+        )
 
     log.info(f"Site built → {INDEX_HTML}")
-    return str(INDEX_HTML)
+    return str(index_html)
 
 
 def build_unsubscribe_page() -> None:
@@ -608,16 +698,29 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>California Live Layoff Monitoring Dashboard</title>
-  <meta name="description" content="Live monitoring and analysis of California WARN layoff notices from the Employment Development Department." />
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-  <link rel="icon" href="favicon.ico" sizes="any" />
-  <link rel="icon" type="image/svg+xml" href="icon.svg" />
+  <title>California WARN Layoff Tracker — live EDD notices, charts and API</title>
+  <meta name="description" content="{meta_description}" />
+  <link rel="canonical" href="{ca_url}" />
+  <!-- Icons live at the site root and are shared with the US dashboard: one
+       byte-identical set, one cache entry, nothing to keep in sync. The
+       manifest is the deliberate exception — start_url and scope resolve
+       against the *manifest* URL, so a shared one would make an installed
+       California PWA open the US dashboard. -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="../icon.svg" />
   <link rel="manifest" href="site.webmanifest" />
   <meta name="theme-color" content="#0d1117" />
   <meta name="apple-mobile-web-app-title" content="CA Layoffs" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="WARN Layoff Tracker" />
+  <meta property="og:title" content="California WARN Layoff Tracker" />
+  <meta property="og:description" content="{meta_description}" />
+  <meta property="og:url" content="{ca_url}" />
+  <meta property="og:image" content="{og_image}" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <!-- Must match the plotly.py major that generates the chart divs: plotly.py 6
@@ -765,6 +868,22 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
       .summary-range-banner {{ font-size: 0.82rem; align-items: flex-start; }}
       .summary-range-banner .srb-dates {{ white-space: normal; }}
     }}
+
+    /* States what span of California filings this page actually covers, so the
+       totals here can be reconciled against the national dashboard's. */
+    .coverage-note {{
+      display: flex; align-items: flex-start; gap: 0.55rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent6);
+      border-radius: 10px;
+      padding: 0.6rem 0.9rem;
+      margin-bottom: 1.25rem;
+      font-size: 0.84rem; color: var(--muted); line-height: 1.5;
+    }}
+    .coverage-note strong {{ color: var(--text); font-weight: 600; }}
+    .coverage-note a {{ color: var(--accent); }}
+    .coverage-note.degraded {{ border-left-color: var(--accent4); }}
 
     /* ── KPI cards ── */
     .kpi-grid {{
@@ -982,13 +1101,13 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
       <div class="brand-icon">📋</div>
       <div>
         <h1>California Live Layoff Monitoring Dashboard</h1>
-        <div class="subtitle">Employment Development Department · Real-time Tracking</div>
+        <div class="subtitle">Employment Development Department · part of the US WARN Layoff Tracker</div>
       </div>
     </div>
     <div class="header-right">
       <div class="header-meta">
         Updated: <strong>{last_updated}</strong><br/>
-        <a href="us/">🇺🇸 US Dashboard</a>
+        <a href="../">🇺🇸 All 50 states</a>
         &nbsp;·&nbsp;
         <a href="https://edd.ca.gov/en/jobs_and_training/layoff_services_warn" target="_blank" rel="noopener">CA EDD WARN</a>
         &nbsp;·&nbsp;
@@ -1006,6 +1125,9 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
     <div class="subscribe-text">
       <h2 class="subscribe-title">📬 Get layoff alerts in your inbox</h2>
       <p class="subscribe-sub">New California WARN notices, delivered straight to your inbox when our twice-daily check finds them.</p>
+      <p class="subscribe-sub">Subscribes you to California alerts. If you
+        already picked states on the <a href="../#subscribe">US dashboard</a>,
+        signing up here replaces that selection.</p>
     </div>
     <form class="subscribe-form" id="subscribe-form" novalidate>
       <input type="text" id="sub-name" class="subscribe-input" placeholder="Your name" autocomplete="name" aria-label="Your name" />
@@ -1058,6 +1180,8 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
       <div class="kpi-sub" id="kpi-range-span">{kpi_range_span}</div>
     </div>
   </div>
+
+  {coverage_note}
 
   <!-- Section: IMPACT -->
   <div class="section-card">
@@ -1112,7 +1236,7 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
 <footer>
   Built by <a href="https://bilalahamad.com" target="_blank">bilalahamad.com</a> ·
   Data: <a href="https://edd.ca.gov/en/jobs_and_training/layoff_services_warn" target="_blank">CA EDD</a> ·
-  <a href="architecture.html">How it works</a> ·
+  <a href="../architecture.html">How it works</a> ·
   Generated {generated_at}
   <span id="visitor-counter" class="visitor-counter" hidden> · 👁 <strong id="visitor-count">—</strong> visitors</span>
 </footer>
@@ -1604,14 +1728,31 @@ def run(no_push: bool = False, force: bool = False, skip_history: bool = False,
             "last_updated": datetime.now(timezone.utc).isoformat() + "Z",
         }
 
-    # Step 5: Build sites — the original California dashboard (unchanged) and
-    # the standalone US-wide dashboard at docs/us/.
+    # Step 5: Build sites — the national dashboard at the site root, then
+    # California at docs/ca/, then the unsubscribe landing page.
+    #
+    # Which build is allowed to fail is deliberate and it INVERTED when the
+    # national dashboard took over the root. Whatever builds the root page must
+    # be fatal: an unguarded failure exits non-zero, so git_commit_push is
+    # skipped here and CI's `if: success()` commit step never runs, leaving the
+    # last good page published. That guard used to sit on build_site because
+    # California was the root. It now sits on build_us_site, and California —
+    # a sub-page whose failure leaves a live, correct front page — is the
+    # non-fatal one.
     log.info("Step 5/5: Building sites …")
-    build_site(manifest, monitor_result)
+    site_failures = []
     try:
-        warn_site_us.build_us_site()
+        warn_site_us.build_us_site(out_dir=OUTPUT_DIR)
+        warn_site_us.build_legacy_us_redirect(site_dir=OUTPUT_DIR)
     except Exception as e:
-        log.warning(f"US dashboard build failed (non-fatal): {e}")
+        site_failures.append(f"root US dashboard: {e}")
+        log.error(f"ROOT dashboard build FAILED — nothing will be committed: {e}")
+
+    try:
+        build_site(manifest, monitor_result)
+    except Exception as e:
+        log.warning(f"California dashboard build failed (non-fatal): {e}")
+
     # The landing page for the signed unsubscribe links in every subscriber
     # email. Built before the sends below, so a link can never be mailed out
     # ahead of the page it points at.
@@ -1664,12 +1805,22 @@ def run(no_push: bool = False, force: bool = False, skip_history: bool = False,
     else:
         log.info("Skipping monthly digest (--no-digest).")
 
-    # Git push
-    if not no_push:
+    # Git push — never when the site root failed to build, or the commit would
+    # publish a stale or half-built front page.
+    if site_failures:
+        log.error("Skipping git push — the site root was not rebuilt.")
+    elif not no_push:
         log.info("Git push …")
         git_commit_push()
     else:
         log.info("Skipping git push (--no-push).")
+
+    # Raised only here, after the notifications and the digest have gone out: a
+    # chart hiccup in the national build should not cost a subscriber a
+    # legitimate alert. The ledgers only record after a successful send, so a
+    # send skipped by this raise is retried next run rather than lost.
+    if site_failures:
+        raise RuntimeError("site build failed: " + "; ".join(site_failures))
 
     log.info("✓ Publisher complete.")
     return monitor_result

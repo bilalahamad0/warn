@@ -147,9 +147,13 @@ def test_only_outbound_url_is_the_endpoint(built):
 
 
 def test_links_back_to_both_dashboards(built):
+    """The page sits at the site root, so "./" is the national dashboard and
+    California is one level down. Both must stay relative — the page is allowed
+    exactly one absolute URL (test_only_outbound_url_is_the_endpoint)."""
     _, html = built
-    assert 'href="./"' in html          # California dashboard
-    assert 'href="us/"' in html         # US dashboard
+    assert 'href="./"' in html          # US dashboard (site root)
+    assert 'href="ca/"' in html         # California dashboard
+    assert 'href="us/"' not in html     # the pre-2026-08 US address is gone
 
 
 # ---------------------------------------------------------------------------

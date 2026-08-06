@@ -1,21 +1,26 @@
 """
 warn_site_us.py
 ---------------
-Builds the standalone US-wide dashboard at docs/us/ (GitHub Pages: /us/).
+Builds the US-wide dashboard at docs/ — the SITE ROOT (GitHub Pages: /warn/).
 
-Completely separate surface from the original California dashboard
-(docs/index.html), which stays untouched by design. Everything here is driven
-by data/warn_national.json — the unified multi-state dataset produced by
-warn_sources.aggregate — so new states appear automatically as their sources
-come online.
+This page is the project's front door: 46 states plus DC. California, which
+used to occupy the root back when it was the only jurisdiction covered, is now
+a sub-page at docs/ca/ built by warn_publish. docs/us/ — this dashboard's
+address before August 2026 — keeps a redirect stub and a back-compat copy of
+data.json (see build_legacy_us_redirect).
+
+Everything here is driven by data/warn_national.json — the unified multi-state
+dataset produced by warn_sources.aggregate — so new states appear automatically
+as their sources come online.
 
 Usage:
-    python3 warn_site_us.py          # build docs/us/ from current national data
+    python3 warn_site_us.py     # build docs/ (+ the /us/ stub) from national data
 """
 
 import json
 import logging
 import os
+import shutil
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
@@ -31,12 +36,19 @@ import pandas as pd
 import plotly.graph_objects as go
 
 import warn_charts
+import warn_urls
 from warn_charts import ACCENT, ACCENT2, ACCENT3, _apply_theme
 
 BASE_DIR = Path(__file__).parent
 DATA_DIR = BASE_DIR / "data"
 NATIONAL_FILE = DATA_DIR / "warn_national.json"
-US_DIR = BASE_DIR / "docs" / "us"
+# The national dashboard IS the site root: this project tracks 46 states + DC,
+# and California — which used to sit here — now has its own page at docs/ca/.
+SITE_DIR = BASE_DIR / "docs"
+# Pre-2026-08 home of the US dashboard. Only a redirect stub and a back-compat
+# copy of data.json live here now (build_legacy_us_redirect). Never pass this
+# as build_us_site's out_dir — it would rebuild the whole site over the stub.
+LEGACY_US_DIR = BASE_DIR / "docs" / "us"
 CHARTS_DIR = BASE_DIR / "docs" / "charts"
 
 LOG_FORMAT = "%(asctime)s [%(levelname)s] %(message)s"
@@ -523,10 +535,14 @@ def _write_pages(df: pd.DataFrame, out_dir: Path) -> dict:
     ~250 rows per file (~30 KB) keeps the main page light while making every
     record browsable without ever loading the whole dataset at once.
 
+    ``out_dir/"pages"`` is wiped wholesale on every build to drop stale chunks.
+    Since ``out_dir`` is now the site root, **``docs/pages/`` is a reserved
+    name owned entirely by this function** — do not put anything else there.
+    Sibling directories (``docs/ca/``, ``docs/charts/``, ``docs/us/``) and the
+    root's own files are untouched; ``tests/test_site_us.py`` guards that.
+
     Returns {set_name: page_count} for the client-side pager.
     """
-    import shutil
-
     recent = _recent_sorted(df)
     pages_dir = out_dir / "pages"
     if pages_dir.exists():
@@ -618,7 +634,24 @@ US_TEMPLATE = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>US WARN Layoff Tracker</title>
+<title>{page_title}</title>
+<meta name="description" content="{meta_description}">
+<link rel="canonical" href="{us_url}">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="icon.svg">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#0d1117">
+<meta name="apple-mobile-web-app-title" content="US Layoffs">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="WARN Layoff Tracker">
+<meta property="og:title" content="US WARN Layoff Tracker">
+<meta property="og:description" content="{meta_description}">
+<meta property="og:url" content="{us_url}">
+<meta property="og:image" content="{og_image}">
+<meta name="twitter:card" content="summary_large_image">
 <script src="https://cdn.plot.ly/plotly-3.5.0.min.js"></script>
 <style>
 /* Mobile-first: base styles target phones; the media query below layers on
@@ -758,7 +791,7 @@ footer {{ color:var(--muted); font-size:12px; text-align:center;
   <span class="badge">{live_badge}</span>
   <span class="sub">unified WARN notices, updated twice daily</span>
   <span class="right">Updated {updated} ·
-    <a href="../">California dashboard</a> ·
+    <a href="ca/">California — charts &amp; industry detail</a> ·
     <a href="data.json">API</a> ·
     <a href="https://github.com/bilalahamad0/warn">GitHub</a></span>
 </header>
@@ -848,6 +881,10 @@ footer {{ color:var(--muted); font-size:12px; text-align:center;
       {unavailable_options}</select>
       <input id="cofilter" type="search" placeholder="Search company…">
       <span id="filternote" style="color:var(--muted);font-size:12px"></span>
+      <span id="ca-hint" hidden style="color:var(--muted);font-size:12px">
+        California also has a full dashboard — charts, industry breakdown,
+        county detail and date filters:
+        <a href="ca/">open the California dashboard →</a></span>
     </div>
     <div class="pager">
       <button class="pgbtn pgprev">← Prev</button>
@@ -906,7 +943,7 @@ footer {{ color:var(--muted); font-size:12px; text-align:center;
 </main>
 <footer>
   Data: official state workforce-agency WARN publications, unified by this
-  project. California keeps its dedicated dashboard <a href="../">here</a>.
+  project. California keeps its dedicated dashboard <a href="ca/">here</a>.
   Some states publish limited fields or shallow history; blocked or
   non-publishing states are documented in
   <a href="https://github.com/bilalahamad0/warn/blob/main/EXPANSION_RESEARCH.md">
@@ -1107,10 +1144,20 @@ document.querySelectorAll('.pgjump').forEach(function (j) {{
     gotoPage(parseInt(this.value, 10) || 1);
   }});
 }});
+// Picking a state filters this table but leaves the KPIs and every chart
+// national — for California there IS somewhere better to send them, so say so.
+// This is the only route to the California page from inside the table, since
+// the filter is not navigation and there are no per-state pages.
+var caHintEl = document.getElementById('ca-hint');
+function updateCaHint() {{
+  if (caHintEl) {{ caHintEl.hidden = (stfilterEl.value !== 'CA'); }}
+}}
 stfilterEl.addEventListener('change', function () {{
   currentSet = this.value || 'all';
+  updateCaHint();
   if (query) {{ refreshSearch(); }} else {{ gotoBrowsePage(1); }}
 }});
+updateCaHint();
 
 var searchTimer = null;
 cofilterEl.addEventListener('input', function () {{
@@ -1248,8 +1295,9 @@ def _chart_div(name: str) -> str:
 def build_us_site(
     national_file: Optional[Path] = None, out_dir: Optional[Path] = None
 ) -> Path:
-    """Build docs/us/index.html + docs/us/data.json from the national dataset."""
-    out_dir = out_dir if out_dir is not None else US_DIR
+    """Build the national dashboard (index.html + data.json + search index +
+    paged table shards) from the national dataset. Defaults to the site root."""
+    out_dir = out_dir if out_dir is not None else SITE_DIR
     payload = _load_national(national_file)
     df = _to_frame(payload)
     kpis = compute_us_kpis(payload)
@@ -1288,6 +1336,16 @@ def build_us_site(
     has_dc = "DC" in payload.get("states", {})
     live_short = f"{n_live - 1} states + DC" if has_dc else f"{n_live} states"
     live_badge = f"{live_short} live"
+    # Built here rather than inline in the template so the copy can be as long
+    # as it needs to be without the template line running past the line limit.
+    page_title = (
+        "US WARN Layoff Tracker — every state's layoff notices, "
+        "updated twice daily"
+    )
+    meta_description = (
+        f"Live WARN layoff notices from {live_short}, unified into one "
+        "searchable dataset and updated twice daily. Free JSON API."
+    )
     html = US_TEMPLATE.format(
         states_live=kpis["states_live"],
         live_badge=live_badge,
@@ -1318,11 +1376,19 @@ def build_us_site(
         page_size=PAGE_SIZE,
         total_pages=total_pages,
         page_counts=json.dumps(page_counts),
+        us_url=warn_urls.US_DASHBOARD_URL,
+        og_image=warn_urls.OG_IMAGE_URL,
+        page_title=page_title,
+        meta_description=meta_description,
     )
 
     out_dir.mkdir(parents=True, exist_ok=True)
     index = out_dir / "index.html"
     index.write_text(html)
+    # "scope" lets an API consumer tell the national payload from California's
+    # programmatically — this file took over the /warn/data.json URL that used
+    # to serve California, and GitHub Pages cannot redirect a JSON file.
+    payload["scope"] = "us"
     (out_dir / "data.json").write_text(json.dumps(payload, default=str))
     log.info(
         f"US dashboard built: {index} "
@@ -1335,5 +1401,82 @@ def build_us_site(
     return index
 
 
+LEGACY_REDIRECT_TEMPLATE = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Moved — US WARN Layoff Tracker</title>
+<link rel="canonical" href="{canonical}">
+<meta http-equiv="refresh" content="0; url=../">
+<script>location.replace('../' + location.search + location.hash);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {{ background:#0d1117; color:#e6edf3; max-width:34em; margin:0 auto;
+        padding:48px 20px; font:15px/1.65 Inter,system-ui,sans-serif; }}
+h1 {{ font-size:20px; margin:0 0 16px; }}
+a {{ color:#58a6ff; }}
+p {{ margin:0 0 12px; }}
+</style>
+</head>
+<body>
+<h1>This page moved</h1>
+<p>The US WARN dashboard is now the front page of the site:
+   <a href="../">{canonical}</a></p>
+<p>The national JSON API is still served from this directory so existing
+   integrations keep working: <a href="data.json">data.json</a>. New code
+   should use <a href="../data.json">../data.json</a>.</p>
+<p>California has its own dashboard at <a href="../ca/">/warn/ca/</a>.</p>
+</body>
+</html>
+"""
+
+
+def build_legacy_us_redirect(
+    site_dir: Optional[Path] = None, legacy_dir: Optional[Path] = None
+) -> Path:
+    """Leave a redirect stub at the US dashboard's old address.
+
+    ``docs/us/`` was the US dashboard until the national view took over the site
+    root. Old bookmarks, every non-California alert email already in an inbox,
+    and any search result still point there, so the directory keeps a stub.
+
+    Deliberate details:
+
+    * ``<link rel="canonical">`` is emitted *before* the meta refresh, so a
+      crawler that stops parsing early still gets the signal.
+    * The inline ``location.replace`` runs before the 0-second refresh and
+      leaves no history entry — Back returns the visitor where they came from
+      instead of bouncing them into the stub again. Query and hash carry over.
+    * No ``robots noindex``: a 0-second refresh reads as a permanent redirect
+      and consolidates ranking into the canonical, which ``noindex`` would
+      suppress instead.
+    * ``data.json`` is copied byte-for-byte rather than re-serialised, so the
+      14 MB payload is written once per run and the two files are identical by
+      construction. Git stores one blob for both, so the copy is nearly free.
+
+    Kept out of :func:`build_us_site` on purpose: that function runs against a
+    tmp dir in tests and must never touch the real ``docs/us/``.
+    """
+    site_dir = Path(site_dir) if site_dir is not None else SITE_DIR
+    legacy_dir = Path(legacy_dir) if legacy_dir is not None else LEGACY_US_DIR
+    legacy_dir.mkdir(parents=True, exist_ok=True)
+
+    stub = legacy_dir / "index.html"
+    stub.write_text(
+        LEGACY_REDIRECT_TEMPLATE.format(canonical=warn_urls.US_DASHBOARD_URL),
+        encoding="utf-8",
+    )
+
+    source = site_dir / "data.json"
+    if source.exists():
+        shutil.copyfile(source, legacy_dir / "data.json")
+    else:
+        log.warning("No %s to mirror — /us/data.json will be stale", source)
+
+    log.info(f"Legacy redirect written: {stub}")
+    return stub
+
+
 if __name__ == "__main__":
     build_us_site()
+    build_legacy_us_redirect()

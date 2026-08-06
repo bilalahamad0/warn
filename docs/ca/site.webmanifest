@@ -1,0 +1,16 @@
+{
+  "_comment": "start_url and scope resolve against THIS file's URL (/warn/ca/), not the page that links it — which is why California needs its own manifest rather than sharing the root one. Icons may sit outside the scope, so they point up at the shared set.",
+  "name": "California Live Layoff Monitoring Dashboard",
+  "short_name": "CA Layoffs",
+  "description": "Live monitoring and analysis of California WARN layoff notices from the Employment Development Department.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#0d1117",
+  "theme_color": "#0d1117",
+  "icons": [
+    { "src": "../icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "../icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "../apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

@@ -1,7 +1,7 @@
 {
-  "name": "California Live Layoff Monitoring Dashboard",
-  "short_name": "CA Layoffs",
-  "description": "Live monitoring and analysis of California WARN layoff notices from the Employment Development Department.",
+  "name": "US WARN Layoff Tracker",
+  "short_name": "US Layoffs",
+  "description": "Live WARN layoff notices from every publishing US state, unified into one searchable dataset and updated twice daily.",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",
