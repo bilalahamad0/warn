@@ -717,7 +717,7 @@ class MinnesotaDEED(Source):
         meta.update(
             {
                 "file_hash": digest,
-                "last_checked": datetime.now(timezone.utc).isoformat() + "Z",
+                "last_checked": datetime.now(timezone.utc).isoformat(),
                 "url": PAGE_URL,
                 "source_files": len(catalog),
             }

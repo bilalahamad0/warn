@@ -26,7 +26,7 @@ def test_registry_contains_colorado():
     cls = warn_sources.SOURCES["co"]
     assert cls.code == "co"
     assert cls.name == "Colorado"
-    assert cls.source_url.startswith("https://cdle.colorado.gov")
+    assert cls.source_url.startswith("https://cdle.colorado.gov/")
 
 
 def test_paths_use_per_state_layout(tmp_path):

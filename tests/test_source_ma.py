@@ -27,7 +27,7 @@ def test_registry_contains_massachusetts():
     cls = warn_sources.SOURCES["ma"]
     assert cls.code == "ma"
     assert cls.name == "Massachusetts"
-    assert cls.source_url.startswith("https://www.mass.gov")
+    assert cls.source_url.startswith("https://www.mass.gov/")
 
 
 def test_paths_use_per_state_layout(tmp_path):

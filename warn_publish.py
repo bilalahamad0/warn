@@ -28,6 +28,7 @@ import os
 import subprocess
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 
 import warn_monitor
 import warn_diff
@@ -656,6 +657,8 @@ def git_commit_push(message: str = None) -> bool:
 
     log.info("Pushing to origin/main …")
     # Inject token if available
+    url_modified = False
+    original_url = ""
     if token:
         remote_url_result = subprocess.run(
             ["git", "remote", "get-url", "origin"],
@@ -664,18 +667,20 @@ def git_commit_push(message: str = None) -> bool:
             text=True,
         )
         original_url = remote_url_result.stdout.strip()
-        if "github.com" in original_url and "https://" in original_url:
-            auth_url = original_url.replace("https://", f"https://{token}@")
+        parsed = urlparse(original_url)
+        if parsed.scheme == "https" and parsed.hostname == "github.com":
+            auth_url = original_url.replace("https://", f"https://{token}@", 1)
             subprocess.run(
                 ["git", "remote", "set-url", "origin", auth_url],
                 cwd=str(BASE_DIR),
                 capture_output=True,
             )
+            url_modified = True
 
     push_ok = run_git(["push", "origin", "main"])
 
     # Restore original URL if we modified it
-    if token and "github.com" in original_url:
+    if url_modified:
         subprocess.run(
             ["git", "remote", "set-url", "origin", original_url],
             cwd=str(BASE_DIR),
@@ -1632,7 +1637,7 @@ def _record_digest_sent(period: str) -> None:
         sent.append(period)
     data["sent"] = sorted(sent)
     data["last_sent"] = period
-    data["last_sent_at"] = datetime.now(timezone.utc).isoformat() + "Z"
+    data["last_sent_at"] = datetime.now(timezone.utc).isoformat()
     path = _digest_ledger_path()
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, indent=2))
@@ -1683,7 +1688,7 @@ def maybe_send_monthly_digest(records=None, force: bool = False,
 def run(no_push: bool = False, force: bool = False, skip_history: bool = False,
         send_digest: bool = True, force_digest: bool = False):
     log.info("=" * 70)
-    log.info(f"WARN Publisher — {datetime.now(timezone.utc).isoformat()}Z")
+    log.info(f"WARN Publisher — {datetime.now(timezone.utc).isoformat()}")
     log.info("=" * 70)
 
     # Step 1: Monitor every registered state source (failure-isolated).
@@ -1735,7 +1740,7 @@ def run(no_push: bool = False, force: bool = False, skip_history: bool = False,
             "charts": [],
             "total_records": 0,
             "total_employees": 0,
-            "last_updated": datetime.now(timezone.utc).isoformat() + "Z",
+            "last_updated": datetime.now(timezone.utc).isoformat(),
         }
 
     # Step 5: Build sites — the national dashboard at the site root, then

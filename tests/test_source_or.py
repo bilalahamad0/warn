@@ -27,7 +27,7 @@ def test_registry_contains_oregon():
     cls = warn_sources.SOURCES["or"]
     assert cls.code == "or"
     assert cls.name == "Oregon"
-    assert cls.source_url.startswith("https://ccwd.hecc.oregon.gov")
+    assert cls.source_url.startswith("https://ccwd.hecc.oregon.gov/")
 
 
 def test_paths_use_per_state_layout(tmp_path):

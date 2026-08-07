@@ -1386,7 +1386,7 @@ def run(save_png: bool = True) -> list:
 
     # Save manifest
     manifest = {
-        "generated_at": datetime.now(timezone.utc).isoformat() + "Z",
+        "generated_at": datetime.now(timezone.utc).isoformat(),
         "charts": results,
         "total_records": payload.get("total_records", 0),
         "total_employees": payload.get("total_employees", 0),

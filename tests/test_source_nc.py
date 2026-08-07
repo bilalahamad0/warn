@@ -34,7 +34,7 @@ def test_registry_contains_north_carolina():
     cls = warn_sources.SOURCES["nc"]
     assert cls.code == "nc"
     assert cls.name == "North Carolina"
-    assert cls.source_url.startswith("https://www.commerce.nc.gov")
+    assert cls.source_url.startswith("https://www.commerce.nc.gov/")
 
 
 def test_paths_use_per_state_layout(tmp_path):
