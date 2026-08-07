@@ -37,7 +37,7 @@ def write_national(tmp_path: Path, records, states=None, name="national.json"):
         {r["state"] for r in records}
     )
     payload = {
-        "last_updated": "2026-07-01T00:00:00+00:00Z",
+        "last_updated": "2026-07-01T00:00:00+00:00",
         "states_live": len(codes),
         "total_records": len(records),
         "states": {c: {"name": wd.STATE_NAMES.get(c, c)} for c in codes},

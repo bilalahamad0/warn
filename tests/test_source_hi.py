@@ -28,7 +28,7 @@ def test_registry_contains_hawaii():
     cls = warn_sources.SOURCES["hi"]
     assert cls.code == "hi"
     assert cls.name == "Hawaii"
-    assert cls.source_url.startswith("https://labor.hawaii.gov")
+    assert cls.source_url.startswith("https://labor.hawaii.gov/")
 
 
 def test_paths_use_per_state_layout(tmp_path):

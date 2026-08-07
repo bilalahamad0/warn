@@ -23,7 +23,7 @@ def test_registry_contains_mississippi():
     cls = warn_sources.SOURCES["ms"]
     assert cls.code == "ms"
     assert cls.name == "Mississippi"
-    assert cls.source_url.startswith("https://mdes.ms.gov")
+    assert cls.source_url.startswith("https://mdes.ms.gov/")
 
 
 def test_paths_use_per_state_layout(tmp_path):

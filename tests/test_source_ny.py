@@ -24,7 +24,7 @@ def test_ny_registered():
 def test_ny_metadata():
     assert NewYorkDOL.code == "ny"
     assert NewYorkDOL.name == "New York"
-    assert "tableau.com" in NewYorkDOL.source_url
+    assert NewYorkDOL.source_url.startswith("https://public.tableau.com/")
 
 
 def test_ny_uses_per_state_paths(tmp_path):

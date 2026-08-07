@@ -29,7 +29,7 @@ def test_registry_contains_nebraska():
     cls = warn_sources.SOURCES["ne"]
     assert cls.code == "ne"
     assert cls.name == "Nebraska"
-    assert cls.source_url.startswith("https://dol.nebraska.gov")
+    assert cls.source_url.startswith("https://dol.nebraska.gov/")
 
 
 def test_paths_use_per_state_layout(tmp_path):
