@@ -13,11 +13,17 @@ warn/scrapers/ky.py):
 * a "Prior Year Warn Notices" archive workbook, one sheet per year
   (2017-present), which provides the backfill.
 
-CRITICAL QUIRK (replicated exactly from BLN's warn-transformer
-warn_transformer/transformers/ky.py field map): Kentucky's date columns are
-semantically swapped in the unified schema — ``notice_date`` maps from the
-feed's "Projected Date" (date_effective) and ``effective_date`` maps from
-"Date Received" (date_received). Neither date is ever copied into the other.
+DELIBERATE DIVERGENCE FROM BLN: Big Local News' warn-transformer
+(warn_transformer/transformers/ky.py) maps Kentucky's dates SWAPPED —
+notice_date from "Projected Date" and effective_date from "Date Received".
+This module used to replicate that, but in the unified national schema —
+where every other state's notice_date is the filing date — the swap put
+future "notice dates" (projected layoffs up to months out) at the top of the
+national dashboard's newest-first table, and 67% of KY records showed an
+effective date before their notice date. So here the mapping follows the
+column names' plain meaning instead: ``notice_date`` <- "Date Received" (the
+filing date), ``effective_date`` <- "Projected Date" (the layoff date).
+Neither date is ever copied into the other.
 
 Other feed quirks handled here:
 * the 2024/2025 archive sheets ship the County column with a *blank* header
@@ -369,10 +375,10 @@ class KentuckyCareerCenter(Source):
             out.append(
                 {
                     "company": company,
-                    # BLN field-map swap (see module docstring): notice_date
-                    # <- "Projected Date", effective_date <- "Date Received".
-                    "notice_date": _clean_date(r.get("date_effective")),
-                    "effective_date": _clean_date(r.get("date_received")),
+                    # Plain-meaning mapping — deliberately NOT BLN's swapped
+                    # field map; see the module docstring.
+                    "notice_date": _clean_date(r.get("date_received")),
+                    "effective_date": _clean_date(r.get("date_effective")),
                     "employees": _clean_employees(r.get("employees")),
                     "layoff_type": _clean_str(r.get("closure_or_layoff")),
                     "county": _clean_str(r.get("county")),

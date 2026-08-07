@@ -1043,11 +1043,34 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
             lo, hi = coverage.get(st, (9999, 0))
             coverage[st] = (min(lo, int(y)), max(hi, int(y)))
 
+    # Intra-window gap detection: a coverage window alone cannot see a feed
+    # that died mid-span (Ohio 2023-25) or a partial-year outage (New York's
+    # 2025 Tableau migration) — those used to hover as affirmative zeros.
+    gap_cov = warn_datasets.state_year_coverage(records)
+
+    def _gap_years(code: str) -> str:
+        info = gap_cov.get(code)
+        if not info:
+            return ""
+        flagged = sorted(y for y, yi in info["years"].items() if yi["suspect_gap"])
+        if not flagged:
+            return ""
+        runs, start = [], None
+        for i, y in enumerate(flagged):
+            if start is None:
+                start = y
+            if i + 1 == len(flagged) or flagged[i + 1] != y + 1:
+                runs.append(str(start) if start == y else f"{start}–{y}")
+                start = None
+        return ", ".join(runs)
+
     def z_text(year: str, metric: str) -> tuple:
         agg = totals(year)
         z, text = [], []
         for code in all_codes:
             name = states_meta.get(code, {}).get("name", code)
+            year_info = (gap_cov.get(code, {}).get("years", {}).get(int(year))
+                         if year != "All years" else None)
             a = agg.get(code)
             if a is None and year != "All years":
                 # Nothing this year: distinguish a coverage gap from a
@@ -1056,11 +1079,16 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
                 lo, hi = coverage.get(code, (None, None))
                 if lo is not None and not (lo <= int(year) <= hi):
                     line = f"no data for {year} — coverage {lo}–{hi}"
-                    note = PARTIAL_COVERAGE_NOTES.get(code)
-                    if note:
-                        line += f"<br>{note}"
+                elif year_info is not None and year_info["suspect_gap"]:
+                    # An empty year strictly inside an active span is a dead
+                    # or switched feed, not a year without layoffs.
+                    line = (f"no records captured for {year} — "
+                            "likely a source coverage gap, not zero layoffs")
                 else:
                     line = f"no WARN notices recorded in {year}"
+                note = PARTIAL_COVERAGE_NOTES.get(code)
+                if note:
+                    line += f"<br>{note}"
                 text.append(f"<b>{name}</b><br>{line}")
                 continue
             a = a or {"employees": 0, "notices": 0}
@@ -1071,9 +1099,20 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
                 emp_line = "employee counts not reported"
             else:
                 emp_line = f"{a['employees']:,} employees affected"
-            text.append(
-                f"<b>{name}</b><br>{emp_line}<br>{a['notices']:,} notices"
-            )
+            line = f"<b>{name}</b><br>{emp_line}<br>{a['notices']:,} notices"
+            if (year_info is not None and year_info["suspect_gap"]
+                    and year_info["missing_months"]):
+                months = warn_datasets.format_month_gaps(
+                    year_info["missing_months"]
+                )
+                line += (f"<br>⚠ no data for {months} — "
+                         "the true total is higher")
+            elif year == "All years":
+                flagged = _gap_years(code)
+                if flagged:
+                    line += (f"<br>⚠ source gaps in {flagged} — "
+                             "totals undercount those spans")
+            text.append(line)
         return z, text
 
     def z_cap(z: list) -> int:
@@ -1143,15 +1182,24 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
             for code in all_codes:
                 if code in agg:
                     continue
+                name = states_meta.get(code, {}).get("name", code)
                 lo, hi = coverage.get(code, (None, None))
+                year_info = gap_cov.get(code, {}).get("years", {}).get(int(year))
                 if lo is not None and not (lo <= int(year) <= hi):
-                    name = states_meta.get(code, {}).get("name", code)
                     line = f"no data for {year} — coverage {lo}–{hi}"
-                    note = PARTIAL_COVERAGE_NOTES.get(code)
-                    if note:
-                        line += f"<br>{note}"
-                    locs.append(code)
-                    texts.append(f"<b>{name}</b><br>{line}")
+                elif year_info is not None and year_info["suspect_gap"]:
+                    # A dead feed mid-span (Ohio 2023-25) belongs on the red
+                    # overlay just like an out-of-window year — the gap must
+                    # be visible at a glance, not only on hover.
+                    line = (f"no records captured for {year} — "
+                            "likely a source coverage gap, not zero layoffs")
+                else:
+                    continue
+                note = PARTIAL_COVERAGE_NOTES.get(code)
+                if note:
+                    line += f"<br>{note}"
+                locs.append(code)
+                texts.append(f"<b>{name}</b><br>{line}")
         return locs, texts
 
     # Distinct "no data" layer, drawn on top so it wins over the base fill.

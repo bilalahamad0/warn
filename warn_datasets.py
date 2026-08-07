@@ -273,6 +273,24 @@ def ca_yearly_summary(national_file: Path = None, today: date = None) -> list:
     if not totals:
         return []
 
+    current_year = (today or date.today()).year
+    # A typo'd future notice_date (a lone 2103 record, say) must not become
+    # the anchor of the contiguous-run scan below — it would break the chain
+    # at the fake year and silently wipe every real year off the chart. Years
+    # beyond next year cannot be legitimate filings; drop them up front.
+    # (current_year + 1 stays: December filings for January layoffs are real.)
+    bogus = sorted(y for y in totals if y > current_year + 1)
+    if bogus:
+        log.warning(
+            "Year-over-year: ignoring %d record(s) in impossible future "
+            "year(s) %s — likely feed typos",
+            sum(totals[y][0] for y in bogus), ", ".join(map(str, bogus)),
+        )
+        for y in bogus:
+            del totals[y]
+    if not totals:
+        return []
+
     years = sorted(totals)
     # Keep the longest unbroken run ending at the most recent year — that is
     # the span the dataset actually covers continuously.
@@ -290,7 +308,6 @@ def ca_yearly_summary(national_file: Path = None, today: date = None) -> list:
             len(dropped), start, ", ".join(str(y) for y in dropped),
         )
 
-    current_year = (today or date.today()).year
     summary = []
     for year in years:
         if year < start:
@@ -315,6 +332,135 @@ def ca_yearly_summary(national_file: Path = None, today: date = None) -> list:
                 year, ", ".join(gaps),
             )
     return summary
+
+
+_MONTH_ABBR = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+               "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+# A state whose feed produces filings in at least this share of its elapsed
+# months is "dense": an empty month there is evidence of a broken or switched
+# feed, not a quiet month. Sparse states (a handful of filings a year) have
+# genuinely empty months all the time and are never flagged on months alone.
+_DENSE_STATE_THRESHOLD = 0.75
+_MIN_SUSPECT_MONTHS = 3
+
+
+def format_month_gaps(codes: list) -> str:
+    """['02','03','04','12'] -> 'Feb–Apr, Dec' (for hover captions)."""
+    nums = sorted(int(c) for c in codes)
+    runs, start = [], None
+    for i, n in enumerate(nums):
+        if start is None:
+            start = n
+        if i + 1 == len(nums) or nums[i + 1] != n + 1:
+            a, b = _MONTH_ABBR[start - 1], _MONTH_ABBR[n - 1]
+            runs.append(a if a == b else f"{a}–{b}")
+            start = None
+    return ", ".join(runs)
+
+
+def state_year_coverage(records: list, today: date = None) -> dict:
+    """Per-state, per-year gap assessment for the national dataset.
+
+    Generalises the California rule ("an empty month is missing data, never a
+    quiet month") to every state — calibrated by each state's own filing rate,
+    because the rule is only true of states that file constantly. Exists so
+    the US map and the per-state trend chart can render a source gap as
+    *missing data* instead of an affirmative zero: before this, Ohio's dead
+    2023-2025 feed hovered as "no WARN notices recorded in 2023", and New
+    York's seven silent months of 2025 (the DOL's Tableau migration) read as
+    an 80% collapse in filings.
+
+    Uses the same date resolution as the charts (notice_date, else
+    effective_date). Returns::
+
+        {"OH": {"span": (2016, 2026), "density": 0.94,
+                "years": {2023: {"records": 0, "missing_months": [..12..],
+                                 "empty": True, "suspect_gap": True}, ...}},
+         ...}
+
+    Flag rules, deliberately simple enough to explain in a hover:
+
+    * A year with **zero records strictly inside** the state's span is
+      ``suspect_gap`` when the state normally files enough that a silent year
+      is implausible (>= 6 records/year over its active years). A state that
+      files three times a year can genuinely have none; Ohio at ~80/year
+      cannot.
+    * A year **with** records is ``suspect_gap`` only when the state is dense
+      — files in >= 75% of the months its feed is alive (fully-empty years
+      are excluded from that denominator: they are the *output* of the
+      empty-year rule and must not dilute the input of this one, or a long
+      dead stretch would disguise a later partial outage, as California's
+      2009-13 backfill gap otherwise would) — and at least three elapsed
+      months of that year are empty.
+    * Months after the current one have not happened and are never missing;
+      the running year's density window ends at last month.
+    """
+    now = today or date.today()
+    by_state = {}
+    for r in records:
+        code = str(r.get("state") or "").upper()
+        stamp = str(r.get("notice_date") or r.get("effective_date") or "")[:7]
+        if len(code) != 2 or len(stamp) != 7 or not stamp[:4].isdigit():
+            continue
+        by_state.setdefault(code, {}).setdefault(int(stamp[:4]), set()).add(stamp[5:])
+
+    def elapsed_months(year: int) -> list:
+        if year < now.year:
+            return [f"{m:02d}" for m in range(1, 13)]
+        if year > now.year:
+            return []
+        return [f"{m:02d}" for m in range(1, now.month)]
+
+    out = {}
+    for code, years_months in by_state.items():
+        counts = {}
+        for r in records:
+            if str(r.get("state") or "").upper() != code:
+                continue
+            stamp = str(r.get("notice_date") or r.get("effective_date") or "")[:7]
+            if len(stamp) == 7:
+                counts[stamp] = counts.get(stamp, 0) + 1
+
+        lo, hi = min(years_months), max(years_months)
+        total = active = 0
+        for year in range(lo, min(hi, now.year) + 1):
+            if not years_months.get(year):
+                continue  # fully-empty year: the empty-year rule's business
+            for m in elapsed_months(year):
+                total += 1
+                if m in years_months.get(year, set()):
+                    active += 1
+        density = (active / total) if total else 0.0
+
+        active_years = [y for y in years_months if years_months[y]]
+        annual_mean = (
+            sum(counts.get(f"{y}-{m}", 0)
+                for y in active_years for m in years_months[y])
+            / len(active_years)
+        ) if active_years else 0.0
+
+        years = {}
+        for year in range(lo, hi + 1):
+            present = years_months.get(year, set())
+            missing = [m for m in elapsed_months(year) if m not in present]
+            empty = not present
+            suspect = (
+                (empty and lo < year < hi and annual_mean >= 6)
+                or (not empty
+                    and density >= _DENSE_STATE_THRESHOLD
+                    and len(missing) >= _MIN_SUSPECT_MONTHS)
+            )
+            years[year] = {
+                "records": sum(counts.get(f"{year}-{m}", 0)
+                               for m in years_months.get(year, set())),
+                "missing_months": missing,
+                "empty": empty,
+                "suspect_gap": suspect,
+            }
+        out[code] = {"span": (lo, hi), "density": round(density, 3),
+                     "years": years}
+    return out
 
 
 def reset_cache() -> None:

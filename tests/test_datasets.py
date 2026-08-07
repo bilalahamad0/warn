@@ -307,3 +307,106 @@ def test_yearly_summary_is_empty_without_the_national_dataset(tmp_path):
     """The caller renders an empty state rather than falling back to the PDF
     summary, which captured 3-5% of filings."""
     assert warn_datasets.ca_yearly_summary(tmp_path / "nope.json") == []
+
+
+# ---------------------------------------------------------------------------
+# Per-state gap detection — the series behind the map's honesty
+# ---------------------------------------------------------------------------
+
+
+def _monthly(state, year, months, per_month=6):
+    """per_month records in each given month of a year for a state."""
+    out = []
+    for m in months:
+        for i in range(per_month):
+            out.append({"state": state, "company": f"{state}{year}{m}{i}",
+                        "notice_date": f"{year}-{m:02d}-10",
+                        "effective_date": f"{year}-{m:02d}-28",
+                        "employees": 10})
+    return out
+
+
+ALL_MONTHS = list(range(1, 13))
+
+
+def test_dead_feed_years_inside_the_span_are_flagged():
+    """The Ohio shape: an active feed, three silent years, then activity —
+    those years are a dead scraper, not three years without layoffs."""
+    recs = (_monthly("OH", 2021, ALL_MONTHS) + _monthly("OH", 2022, ALL_MONTHS)
+            + _monthly("OH", 2026, ALL_MONTHS[:6]))
+    cov = warn_datasets.state_year_coverage(recs, today=date(2026, 7, 15))["OH"]
+    for year in (2023, 2024, 2025):
+        assert cov["years"][year]["empty"] is True
+        assert cov["years"][year]["suspect_gap"] is True
+    assert cov["years"][2022]["suspect_gap"] is False
+
+
+def test_partial_year_outage_in_a_dense_state_is_flagged_with_months():
+    """The New York shape: a dense feed goes silent mid-year."""
+    recs = (_monthly("NY", 2022, ALL_MONTHS) + _monthly("NY", 2023, ALL_MONTHS)
+            + _monthly("NY", 2024, ALL_MONTHS)
+            + _monthly("NY", 2025, [1, 2, 3, 11]))
+    cov = warn_datasets.state_year_coverage(recs, today=date(2026, 1, 15))["NY"]
+    y25 = cov["years"][2025]
+    assert y25["suspect_gap"] is True and y25["empty"] is False
+    assert warn_datasets.format_month_gaps(y25["missing_months"]) == "Apr–Oct, Dec"
+
+
+def test_sparse_states_are_never_flagged_on_months_alone():
+    """The Alaska shape: a few filings a year — empty months and even empty
+    years are routine, not evidence of a broken feed."""
+    recs = []
+    for year in (2020, 2021, 2023, 2024):     # 2022 entirely empty
+        recs += _monthly("AK", year, [3, 9], per_month=1)
+    cov = warn_datasets.state_year_coverage(recs, today=date(2025, 1, 15))["AK"]
+    assert not any(y["suspect_gap"] for y in cov["years"].values())
+
+
+def test_a_dead_stretch_does_not_disguise_a_later_partial_outage():
+    """The California shape: five empty backfill years must not drag density
+    below the threshold and mask a genuine three-month gap years later."""
+    recs = _monthly("CA", 2008, [9], per_month=1)
+    for year in range(2014, 2019):
+        recs += _monthly("CA", year, ALL_MONTHS)
+    recs += _monthly("CA", 2025, [1, 5, 6, 7, 8, 9, 10, 11, 12])
+    cov = warn_datasets.state_year_coverage(recs, today=date(2026, 1, 15))["CA"]
+    assert cov["years"][2010]["suspect_gap"] is True      # backfill hole
+    y25 = cov["years"][2025]
+    assert y25["suspect_gap"] is True
+    assert warn_datasets.format_month_gaps(y25["missing_months"]) == "Feb–Apr"
+
+
+def test_running_year_counts_only_elapsed_months():
+    recs = _monthly("IL", 2025, ALL_MONTHS) + _monthly("IL", 2026, [1, 2, 3])
+    cov = warn_datasets.state_year_coverage(recs, today=date(2026, 4, 10))["IL"]
+    assert cov["years"][2026]["missing_months"] == []
+    assert cov["years"][2026]["suspect_gap"] is False
+
+
+def test_span_edges_are_not_intra_window_gaps():
+    recs = _monthly("GA", 2020, ALL_MONTHS) + _monthly("GA", 2021, ALL_MONTHS)
+    cov = warn_datasets.state_year_coverage(recs, today=date(2022, 1, 15))["GA"]
+    assert not any(y["empty"] and y["suspect_gap"] for y in cov["years"].values())
+
+
+def test_format_month_gaps_compacts_runs():
+    fmt = warn_datasets.format_month_gaps
+    assert fmt(["02", "03", "04"]) == "Feb–Apr"
+    assert fmt(["02", "03", "04", "12"]) == "Feb–Apr, Dec"
+    assert fmt(["06"]) == "Jun"
+    assert fmt(["01", "03", "05"]) == "Jan, Mar, May"
+
+
+def test_impossible_future_years_cannot_wipe_the_yoy_chart(tmp_path):
+    """One typo'd 2103 record used to become the contiguous-run anchor and
+    silently drop every real year."""
+    recs = _monthly("CA", 2024, ALL_MONTHS) + _monthly("CA", 2025, ALL_MONTHS)
+    recs.append({"state": "CA", "company": "Typo Corp",
+                 "notice_date": "2103-01-01", "effective_date": "2103-03-01",
+                 "employees": 5})
+    nat = tmp_path / "warn_national.json"
+    nat.write_text(json.dumps({"records": recs}))
+    years = [e["year"] for e in
+             warn_datasets.ca_yearly_summary(nat, today=date(2026, 1, 15))]
+    assert 2024 in years and 2025 in years
+    assert 2103 not in years
