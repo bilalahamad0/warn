@@ -887,7 +887,7 @@ footer {{ color:var(--muted); font-size:12px; text-align:center;
        The panel it opens holds the ONLY signup form on the page — duplicating
        the markup would duplicate every element id and break the handlers. -->
   <button type="button" class="alert-cta" id="sub-toggle"
-          aria-expanded="false" aria-controls="subscribe">📬 Get alerts</button>
+          aria-expanded="false" aria-controls="subscribe">📬 Get Email Alerts</button>
 </header>
 <main>
   <div class="kpis">
@@ -1306,10 +1306,11 @@ function openSub(open) {{
   subPanel.hidden = !open;
   if (subScrim) subScrim.hidden = !open;
   if (subToggle) subToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-  // Opening from the foot of a long page must not leave the visitor
-  // scrolled somewhere else behind a fixed panel.
+  // No scrolling on open. The panel is position:fixed, so it is already in
+  // view wherever the reader happens to be — an earlier version yanked the
+  // page to the top, which threw away their place in a very long table for
+  // no benefit. preventScroll keeps the focus call from doing it either.
   if (open) {{
-    window.scrollTo({{ top: 0, behavior: 'smooth' }});
     if (subEmail) subEmail.focus({{ preventScroll: true }});
   }} else if (subToggle) {{
     subToggle.focus();
