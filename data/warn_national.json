@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-07T06:59:38.447626+00:00",
+  "last_updated": "2026-08-07T13:03:14.825226+00:00",
   "states_live": 47,
-  "total_records": 59899,
-  "total_employees": 6458777,
+  "total_records": 59897,
+  "total_employees": 6458046,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -15,8 +15,8 @@
       "name": "Alabama",
       "agency": "Alabama Department of Workforce",
       "source_url": "https://workforce.alabama.gov/warn-list/",
-      "total_records": 1063,
-      "total_employees": 181712
+      "total_records": 1061,
+      "total_employees": 180981
     },
     "AZ": {
       "name": "Arizona",
@@ -13849,37 +13849,13 @@
     },
     {
       "state": "AL",
-      "company": "CORIZON HEALTH",
-      "notice_date": "2018-02-05",
-      "effective_date": "2026-08-06",
-      "employees": 648,
-      "layoff_type": "Closing *",
+      "company": "Fluor Enterprises  Inc.",
+      "notice_date": "2026-08-06",
+      "effective_date": "2026-07-31",
+      "employees": 66,
+      "layoff_type": "Layoff",
       "county": "",
-      "city": "State Wide",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "AL",
-      "company": "SEARS HOLDINGS",
-      "notice_date": "2009-02-28",
-      "effective_date": "2026-08-06",
-      "employees": 15,
-      "layoff_type": "Closing *",
-      "county": "",
-      "city": "Birmingham",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "AL",
-      "company": "URS CORPORATION",
-      "notice_date": "2010-01-22",
-      "effective_date": "2026-08-06",
-      "employees": 134,
-      "layoff_type": "Layoff *",
-      "county": "",
-      "city": "Birmingham",
+      "city": "Bay Minette",
       "address": "",
       "industry": ""
     },
