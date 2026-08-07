@@ -586,8 +586,8 @@ def build_unsubscribe_page() -> None:
 # ---------------------------------------------------------------------------
 
 
-def git_commit_push(message: str = None) -> bool:
-    """Stage changed files, commit, and push."""
+def _resolve_github_token() -> str:
+    """GH_REPO_TOKEN from the environment, falling back to .env."""
     token = os.getenv("GH_REPO_TOKEN")
     if not token:
         # Try .env
@@ -596,23 +596,63 @@ def git_commit_push(message: str = None) -> bool:
             for line in env_file.read_text().splitlines():
                 if line.startswith("GH_REPO_TOKEN="):
                     token = line.split("=", 1)[1].strip().strip("\"'")
+    return token
+
+
+def _run_git(args) -> bool:
+    result = subprocess.run(
+        ["git"] + args,
+        cwd=str(BASE_DIR),
+        capture_output=True,
+        text=True,
+        timeout=30,
+    )
+    if result.returncode != 0:
+        log.warning(f"git {' '.join(args)} stderr: {result.stderr.strip()}")
+    return result.returncode == 0
+
+
+def _push_origin_main(token: str) -> bool:
+    """Push to origin/main, injecting ``token`` into the remote URL for the
+    duration of the push (restored afterwards). Shared by git_commit_push and
+    commit_ledgers so the auth plumbing lives in exactly one place."""
+    original_url = ""
+    if token:
+        remote_url_result = subprocess.run(
+            ["git", "remote", "get-url", "origin"],
+            cwd=str(BASE_DIR),
+            capture_output=True,
+            text=True,
+        )
+        original_url = remote_url_result.stdout.strip()
+        if "github.com" in original_url and "https://" in original_url:
+            auth_url = original_url.replace("https://", f"https://{token}@")
+            subprocess.run(
+                ["git", "remote", "set-url", "origin", auth_url],
+                cwd=str(BASE_DIR),
+                capture_output=True,
+            )
+
+    push_ok = _run_git(["push", "origin", "main"])
+
+    # Restore original URL if we modified it
+    if token and "github.com" in original_url:
+        subprocess.run(
+            ["git", "remote", "set-url", "origin", original_url],
+            cwd=str(BASE_DIR),
+            capture_output=True,
+        )
+    return push_ok
+
+
+def git_commit_push(message: str = None) -> bool:
+    """Stage changed files, commit, and push."""
+    token = _resolve_github_token()
 
     msg = (
         message
         or f"auto: WARN update {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M')} UTC"
     )
-
-    def run_git(args):
-        result = subprocess.run(
-            ["git"] + args,
-            cwd=str(BASE_DIR),
-            capture_output=True,
-            text=True,
-            timeout=30,
-        )
-        if result.returncode != 0:
-            log.warning(f"git {' '.join(args)} stderr: {result.stderr.strip()}")
-        return result.returncode == 0
 
     log.info("Staging changes …")
     add_paths = [
@@ -635,7 +675,7 @@ def git_commit_push(message: str = None) -> bool:
     # nothing, which would strand every other change above.
     if UNSUBSCRIBE_HTML.exists():
         add_paths.append("docs/unsubscribe.html")
-    run_git(add_paths)
+    _run_git(add_paths)
 
     # Check if there's anything to commit
     status_result = subprocess.run(
@@ -649,44 +689,81 @@ def git_commit_push(message: str = None) -> bool:
         return True
 
     log.info(f"Committing: {msg}")
-    ok = run_git(["commit", "-m", msg])
+    ok = _run_git(["commit", "-m", msg])
     if not ok:
         log.error("git commit failed.")
         return False
 
     log.info("Pushing to origin/main …")
-    # Inject token if available
-    if token:
-        remote_url_result = subprocess.run(
-            ["git", "remote", "get-url", "origin"],
-            cwd=str(BASE_DIR),
-            capture_output=True,
-            text=True,
-        )
-        original_url = remote_url_result.stdout.strip()
-        if "github.com" in original_url and "https://" in original_url:
-            auth_url = original_url.replace("https://", f"https://{token}@")
-            subprocess.run(
-                ["git", "remote", "set-url", "origin", auth_url],
-                cwd=str(BASE_DIR),
-                capture_output=True,
-            )
-
-    push_ok = run_git(["push", "origin", "main"])
-
-    # Restore original URL if we modified it
-    if token and "github.com" in original_url:
-        subprocess.run(
-            ["git", "remote", "set-url", "origin", original_url],
-            cwd=str(BASE_DIR),
-            capture_output=True,
-        )
+    push_ok = _push_origin_main(token)
 
     if push_ok:
         log.info("✓ Pushed successfully.")
     else:
         log.error("✗ Push failed — check GITHUB_TOKEN and repo permissions.")
     return push_ok
+
+
+# Commit message for the failure-path ledger commit. Distinct from the normal
+# publish message so history shows at a glance which runs published a site and
+# which only persisted alert state; [skip ci] for the same loop-prevention as
+# every other automated commit.
+LEDGER_COMMIT_MESSAGE = "auto: alert ledgers (site build failed) [skip ci]"
+
+
+def commit_ledgers(message: str = None) -> bool:
+    """Commit and push ONLY ``data/`` — the alert ledgers — leaving docs/ alone.
+
+    The failure-path counterpart to git_commit_push. When the root site build
+    fails, run() must still exit non-zero (so the last good page stays
+    published), but by that point the notifications and the digest have already
+    gone out and their ledgers (notified_keys.json, amended_keys.json,
+    digest_sent.json, and the per-state copies under data/states/) were written
+    locally. In CI the workspace is thrown away, so unless those ledgers are
+    committed, the next scheduled run re-detects the same notices as new and
+    re-emails every subscriber — repeating every 12h until the build is fixed.
+
+    Persisting the ledgers is decoupled from publishing the site: only data/
+    is staged, so the broken docs/ output is never committed. Best-effort by
+    design — every failure here is logged and swallowed, because this path
+    runs just ahead of run()'s deliberate raise and must never mask it. Does
+    nothing when data/ holds no changes.
+    """
+    msg = message or LEDGER_COMMIT_MESSAGE
+    try:
+        log.info("Persisting alert ledgers (data/ only) despite site failure …")
+        _run_git(["add", "data/"])
+
+        # Anything actually staged under data/? (exit 0 = no differences)
+        staged = subprocess.run(
+            ["git", "diff", "--cached", "--quiet", "--", "data/"],
+            cwd=str(BASE_DIR),
+            capture_output=True,
+            text=True,
+            timeout=30,
+        )
+        if staged.returncode == 0:
+            log.info("No ledger changes under data/ — nothing to commit.")
+            return False
+
+        # The trailing pathspec restricts the commit to data/ even if
+        # something else (a dirty local checkout, say) was already staged.
+        if not _run_git(["commit", "-m", msg, "--", "data/"]):
+            log.error("Ledger commit failed — alert ledgers NOT persisted.")
+            return False
+
+        push_ok = _push_origin_main(_resolve_github_token())
+        if push_ok:
+            log.info("✓ Alert ledgers pushed (data/ only).")
+        else:
+            log.error(
+                "✗ Ledger push failed — already-sent alerts may repeat "
+                "next run."
+            )
+        return push_ok
+    except Exception as e:
+        log.error(f"Ledger commit failed (non-fatal): {e}")
+        return False
 
 
 # ---------------------------------------------------------------------------
@@ -1743,12 +1820,20 @@ def run(no_push: bool = False, force: bool = False, skip_history: bool = False,
     #
     # Which build is allowed to fail is deliberate and it INVERTED when the
     # national dashboard took over the root. Whatever builds the root page must
-    # be fatal: an unguarded failure exits non-zero, so git_commit_push is
-    # skipped here and CI's `if: success()` commit step never runs, leaving the
-    # last good page published. That guard used to sit on build_site because
-    # California was the root. It now sits on build_us_site, and California —
-    # a sub-page whose failure leaves a live, correct front page — is the
-    # non-fatal one.
+    # be fatal: an unguarded failure exits non-zero, so the full docs/ commit
+    # is skipped here and in CI's commit step, leaving the last good page
+    # published. That guard used to sit on build_site because California was
+    # the root. It now sits on build_us_site, and California — a sub-page whose
+    # failure leaves a live, correct front page — is the non-fatal one.
+    #
+    # Skipping the docs/ commit must NOT also discard the alert ledgers: the
+    # notifications below go out before the raise, and their ledgers only ever
+    # record successful sends. If those ledger writes are lost with the
+    # workspace (as happens in CI, where every run starts fresh), the next run
+    # re-detects the same notices and re-emails every subscriber, twice a day,
+    # until the root build is fixed. So the failure path commits data/ alone —
+    # commit_ledgers() here for local runs, monitor.yml's failure branch for
+    # CI runs (which invoke us with --no-push).
     log.info("Step 5/5: Building sites …")
     site_failures = []
     try:
@@ -1815,10 +1900,24 @@ def run(no_push: bool = False, force: bool = False, skip_history: bool = False,
     else:
         log.info("Skipping monthly digest (--no-digest).")
 
-    # Git push — never when the site root failed to build, or the commit would
-    # publish a stale or half-built front page.
+    # Git push — never the full docs/ commit when the site root failed to
+    # build, or it would publish a stale or half-built front page. The alert
+    # ledgers under data/ are the exception: the sends above already happened,
+    # so their record must survive the failed run (see commit_ledgers).
     if site_failures:
         log.error("Skipping git push — the site root was not rebuilt.")
+        if no_push:
+            # The caller owns git (in CI, monitor.yml's failure branch
+            # commits data/); running git here would race or duplicate it.
+            log.info("Ledger commit skipped (--no-push) — the caller owns git.")
+        else:
+            # Best-effort belt-and-braces: commit_ledgers swallows its own
+            # errors, and this guard makes sure nothing it raises can mask
+            # the deliberate RuntimeError below.
+            try:
+                commit_ledgers()
+            except Exception as e:
+                log.error(f"Ledger commit failed (non-fatal): {e}")
     elif not no_push:
         log.info("Git push …")
         git_commit_push()
@@ -1827,8 +1926,9 @@ def run(no_push: bool = False, force: bool = False, skip_history: bool = False,
 
     # Raised only here, after the notifications and the digest have gone out: a
     # chart hiccup in the national build should not cost a subscriber a
-    # legitimate alert. The ledgers only record after a successful send, so a
-    # send skipped by this raise is retried next run rather than lost.
+    # legitimate alert. The ledgers only record after a successful send, and
+    # the failure path above persists exactly those ledgers, so a successful
+    # send is never repeated and a failed send is retried next run.
     if site_failures:
         raise RuntimeError("site build failed: " + "; ".join(site_failures))
 
