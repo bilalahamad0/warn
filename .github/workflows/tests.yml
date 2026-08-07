@@ -1,0 +1,63 @@
+# Runs the test suite on every pull request.
+#
+# Until this workflow existed, no PR ever ran pytest in CI: the suite lived
+# only inside monitor.yml, which is schedule-only, so CodeQL was the sole PR
+# check and every "tests pass" claim on a PR came from somebody's laptop. The
+# steps below mirror monitor.yml's test stage exactly — same Python, same
+# installs, same directory prep — minus the Gmail secrets, which the tests do
+# not need and which fork PRs cannot see anyway.
+#
+# flake8 is deliberately NOT run here: the repo carries ~177 standing
+# violations (long lines in the big template modules), so a lint gate would be
+# permanently red and teach everyone to ignore this workflow. Add it if that
+# backlog is ever cleared.
+
+name: Tests
+
+on:
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# A force-push to a PR branch obsoletes the previous run — cancel it rather
+# than paying for both.
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest-mock pytest-cov python-dotenv
+
+      # node is preinstalled on ubuntu runners; the subscribe.gs behavioural
+      # tests need it and silently skip without it — fail loudly instead if a
+      # runner image ever drops it.
+      - name: Confirm node is present (subscribe.gs tests run through it)
+        run: node --version
+
+      - name: Run tests
+        env:
+          PYTHONPATH: .
+        run: |
+          # Ensure directories exist for the structure tests (same prep as
+          # monitor.yml's test stage).
+          mkdir -p data/historical/pdfs docs/charts
+          pytest -v --cov=.
