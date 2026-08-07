@@ -156,9 +156,15 @@ Pages is enabled.
 
 ## 📬 Email Signups (optional)
 
-The dashboard has a **name + email signup form**. Visitors who subscribe get the
-same alert email the pipeline sends whenever new WARN notices appear, and the
+Both dashboards have a **name + email signup form**. Visitors who subscribe get
+the same alert email the pipeline sends whenever new WARN notices appear, and the
 signup count doubles as a simple user-base metric.
+
+Signing up is **additive**: a returning address keeps every state it already
+subscribed to and gains whatever was just picked. Neither form shows you your
+current selection, so neither is allowed to replace it. To stop alerts for a
+state, use the link at the bottom of any alert email — that page loads your
+preferences, shows them, and saves exactly what you confirm.
 
 Because the dashboard is a static GitHub Pages site, signups are collected by a
 small **Google Apps Script Web App** that writes to a **Google Sheet** you own

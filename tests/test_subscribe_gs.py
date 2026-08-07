@@ -706,6 +706,13 @@ def test_signup_and_counter_endpoints_still_work(harness):
 
 @needs_node
 def test_resubscribing_updates_preferences_in_place(harness):
+    """Updates the existing row rather than duplicating the address.
+
+    This used to assert the cell became "TX" — i.e. that re-subscribing
+    REPLACED the stored selection. That was the bug: neither signup form loads
+    the subscriber's current preferences, so neither can show what a replace
+    would destroy. Signup adds; only the preferences page removes.
+    """
     out = run_gs(
         harness,
         [{"kind": "post", "body": {
@@ -713,10 +720,10 @@ def test_resubscribing_updates_preferences_in_place(harness):
         rows=[_row(REF_EMAIL, "CA")],
     )
     assert out["results"][0] == {
-        "ok": True, "duplicate": True, "updated": True,
+        "ok": True, "duplicate": True, "updated": True, "states": "CA,TX",
     }
     assert len(out["rows"]) == 2
-    assert out["rows"][1][4] == "TX"
+    assert out["rows"][1][4] == "CA,TX"
 
 
 @needs_node
@@ -749,3 +756,153 @@ def test_end_to_end_link_from_python_through_the_script(harness):
     assert prefs["states"] == ["CA"] and prefs["digest"] is True
     assert unsub == {"ok": True, "removed": True, "found": True}
     assert out["rows"][1:] == []
+
+
+# ---------------------------------------------------------------------------
+# Signup is additive — a form that cannot show your preferences must not
+# destroy them
+# ---------------------------------------------------------------------------
+
+
+def _signup(email, states=None, source="dashboard", name="Sam"):
+    body = {"name": name, "email": email, "source": source}
+    if states is not None:
+        body["states"] = states
+    return {"kind": "post", "body": body}
+
+
+def _cell(out, row=1):
+    """The states cell of the Nth subscriber row (1-based, past the header)."""
+    return out["rows"][row][4]
+
+
+def test_signup_path_never_replaces_the_preference_cell():
+    """Static guard on the regression.
+
+    The duplicate branch used to `setValue(states)` — the raw submitted value.
+    Whatever it writes now must be a merge of the stored cell with the payload.
+    """
+    body = _body(CODE, "doPost")
+    dup = body[body.index("duplicate") - 900:body.index("duplicate") + 200]
+    assert "_mergeStates" in dup, "the duplicate branch must merge, not replace"
+    assert not re.search(r"setValue\(\s*states\s*\)", body), (
+        "writing the submitted states verbatim discards everything the "
+        "subscriber already had"
+    )
+
+
+@needs_node
+def test_new_subscriber_is_stored_with_what_they_picked(harness):
+    out = run_gs(harness, [_signup("new@example.com", "IL,NY")])
+    assert out["results"][0] == {"ok": True}
+    assert _cell(out) == "IL,NY"
+
+
+@needs_node
+def test_returning_subscriber_gains_a_state_and_keeps_the_rest(harness):
+    """The reported bug: IL+NY on the US dashboard, then California."""
+    rows = [["t", "Sam", "sam@example.com", "us-dashboard", "IL,NY"]]
+    out = run_gs(harness, [_signup("sam@example.com", "CA")], rows=rows)
+    assert out["results"][0] == {
+        "ok": True, "duplicate": True, "updated": True, "states": "IL,NY,CA",
+    }
+    assert _cell(out) == "IL,NY,CA"
+
+
+@needs_node
+def test_resubscribing_to_what_you_already_have_writes_nothing(harness):
+    rows = [["t", "Sam", "sam@example.com", "us-dashboard", "CA,NY"]]
+    out = run_gs(harness, [_signup("sam@example.com", "NY")], rows=rows)
+    assert out["results"][0]["updated"] is False
+    assert out["results"][0]["states"] == "CA,NY"
+    assert not [e for e in mutations(out) if e["op"] == "setValue"]
+
+
+@needs_node
+def test_a_legacy_blank_cell_keeps_its_implicit_california(harness):
+    """A blank cell means California (DEFAULT_STATES). Merging onto the raw
+    blank would silently drop it and leave the subscriber with only the new
+    state — the same data loss in a different disguise."""
+    rows = [["t", "Old", "old@example.com", "dashboard", ""]]
+    out = run_gs(harness, [_signup("old@example.com", "NY")], rows=rows)
+    assert out["results"][0]["states"] == "CA,NY"
+    assert _cell(out) == "CA,NY"
+
+
+@needs_node
+def test_the_california_form_payload_preserves_other_states(harness):
+    """End-to-end shape of the two-click path the restructure made plausible:
+    pick IL+NY at /warn/, click through to /warn/ca/, subscribe again."""
+    rows = [["t", "Sam", "sam@example.com", "us-dashboard", "IL,NY"]]
+    out = run_gs(harness, [_signup("sam@example.com", "CA", source="dashboard")],
+                 rows=rows)
+    assert _cell(out) == "IL,NY,CA"
+
+
+@needs_node
+def test_the_digest_sentinel_merges_like_any_other_code(harness):
+    rows = [["t", "Sam", "sam@example.com", "us-dashboard", "CA"]]
+    out = run_gs(harness, [_signup("sam@example.com", "US")], rows=rows)
+    assert _cell(out) == "CA,US"
+
+
+@needs_node
+def test_signup_without_a_states_field_still_means_california(harness):
+    """DEFAULT_STATES fallback, for any older cached page still posting it."""
+    out = run_gs(harness, [_signup("nostates@example.com")])
+    assert _cell(out) == "CA"
+
+
+@needs_node
+@pytest.mark.parametrize("stored,submitted", [
+    ("IL,NY", "CA"), ("CA", "NY"), ("CA,NY,US", "TX"), ("", "NY"), ("US", "CA"),
+])
+def test_no_signup_ever_shrinks_a_subscription(harness, stored, submitted):
+    """The invariant, over every shape: whatever a subscriber had before a
+    signup, they still have after it."""
+    rows = [["t", "Sam", "sam@example.com", "us-dashboard", stored]]
+    out = run_gs(harness, [_signup("sam@example.com", submitted)], rows=rows)
+    before = set((stored or "CA").split(","))
+    after = set(_cell(out).split(","))
+    assert before <= after, f"{sorted(before - after)} was dropped"
+    assert submitted in after
+
+
+@needs_node
+def test_signup_still_matches_addresses_case_insensitively(harness):
+    rows = [["t", "Sam", "sam@example.com", "us-dashboard", "IL"]]
+    out = run_gs(harness, [_signup("SAM@Example.COM", "CA")], rows=rows)
+    assert len(out["rows"]) == 2, "must update the existing row, not duplicate"
+    assert _cell(out) == "IL,CA"
+
+
+@needs_node
+def test_signup_adds_then_the_preferences_page_removes(harness):
+    """The round trip that makes additive signup safe.
+
+    Signup can only ever grow a subscription, so something must be able to
+    shrink one. That is the preferences page: it loads the current selection
+    over `?action=prefs`, shows it, and writes back exactly what the subscriber
+    confirmed. Destructive power lives on the one surface where the
+    consequences are visible.
+    """
+    import os
+
+    os.environ["SUBSCRIBERS_TOKEN"] = REF_TOKEN
+    sig = warn_subscribers.unsubscribe_signature(REF_EMAIL)
+    out = run_gs(
+        harness,
+        [
+            # Subscriber already has IL,NY — they sign up on the CA page.
+            {"kind": "post", "body": {"email": REF_EMAIL, "states": "CA",
+                                      "source": "dashboard"}},
+            # Later, from an alert email's link, they keep only NY.
+            {"kind": "post", "body": {"action": "unsubscribe", "e": REF_EMAIL,
+                                      "s": sig, "states": ["NY"],
+                                      "digest": False}},
+        ],
+        rows=[_row(REF_EMAIL, "IL,NY")],
+    )
+    assert out["results"][0]["states"] == "IL,NY,CA"   # signup added
+    assert out["results"][1]["states"] == "NY"         # prefs page narrowed
+    assert out["rows"][1][4] == "NY"

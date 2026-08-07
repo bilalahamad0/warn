@@ -9,10 +9,16 @@
  * GET ?action=views. The dashboard footer calls these to show a visit count.
  *
  * ── Endpoints ───────────────────────────────────────────────────────────────
- * POST {name, email, source, states}          → sign up / update preferences
- *      → { ok: true } | { ok: true, duplicate: true, updated: true }
+ * POST {name, email, source, states}          → sign up / ADD preferences
+ *      → { ok: true }
+ *      → { ok: true, duplicate: true, updated: bool, states: "CA,NY" }
+ *      Signup is additive: a returning address keeps every state it already
+ *      had and gains whatever was submitted (see _mergeStates). Only the
+ *      unsubscribe/preferences flow below can remove a subscription.
  * POST {action:'unsubscribe', e, s, states[], digest}
- *      → keep exactly the confirmed selection for address `e`
+ *      → keep exactly the confirmed selection for address `e` — the ONLY
+ *        path that may narrow a subscription, because its page loads and
+ *        displays the current selection first
  *      → { ok: true, removed: true,  found: bool }        (row deleted)
  *      → { ok: true, removed: false, found: true, states: "CA,US" }
  *      → { ok: false, error: 'forbidden' }                (bad signature)
@@ -83,6 +89,32 @@ function _sheet() {
     sh.getRange(1, PREF_COL).setValue('states');
   }
   return sh;
+}
+
+/**
+ * Union of what a subscriber already has with what they just asked for.
+ *
+ * Signup is ADDITIVE, and deliberately so. Neither signup form loads the
+ * subscriber's current selection — the California form has no state picker at
+ * all, and the US dashboard's picker starts blank on every visit — so neither
+ * can show somebody what they are about to lose. A form that cannot display
+ * your preferences must not be allowed to destroy them.
+ *
+ * Before this, re-subscribing overwrote the cell. Picking IL+NY on the US
+ * dashboard and then signing up on the California page silently cancelled the
+ * Illinois and New York alerts; so did coming back to the US form months later
+ * and ticking one more state.
+ *
+ * Removing a subscription is the unsubscribe/preferences page's job
+ * (`?action=prefs` + `action:'unsubscribe'`). That page loads the current
+ * selection, shows it, and writes back exactly what the subscriber confirmed —
+ * it is the one surface where destructive intent is visible, so it is the one
+ * surface with destructive power.
+ *
+ * _cleanStates dedupes, so the concatenation cannot produce repeats.
+ */
+function _mergeStates(existing, incoming) {
+  return _cleanStates(String(existing || '') + ',' + String(incoming || ''));
 }
 
 /** Normalize a submitted preference string to "CA,NY" / "US" form. */
@@ -337,9 +369,21 @@ function doPost(e) {
         var existing = sh.getRange(2, 3, n, 1).getValues();
         for (var i = 0; i < existing.length; i++) {
           if (String(existing[i][0]).trim().toLowerCase() === email) {
-            // Re-subscribing updates preferences rather than duplicating.
-            sh.getRange(i + 2, PREF_COL).setValue(states);
-            return _json({ ok: true, duplicate: true, updated: true });
+            // Re-subscribing ADDS to the existing selection — it never
+            // replaces it. See _mergeStates for why. A blank cell means
+            // California (DEFAULT_STATES), so read it that way before merging
+            // rather than letting a legacy subscriber's implicit CA vanish.
+            var cell = _cleanStates(
+              sh.getRange(i + 2, PREF_COL).getValue()
+            ) || DEFAULT_STATES;
+            var merged = _mergeStates(cell, states);
+            if (merged !== cell) sh.getRange(i + 2, PREF_COL).setValue(merged);
+            return _json({
+              ok: true,
+              duplicate: true,
+              updated: merged !== cell,
+              states: merged,
+            });
           }
         }
       }
