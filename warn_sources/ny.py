@@ -8,8 +8,10 @@ Tableau dashboard (https://dol.ny.gov/warn-dashboard). The underlying
 Tableau Public workbook exposes a direct CSV export endpoint, which this
 source downloads as a single file. The dashboard only carries the current
 filing year — older filings live on per-year legacy pages
-(https://dol.ny.gov/legacy-warn-notices) and are not fetched here, so
-there is no historical backfill beyond what the dashboard publishes.
+(https://dol.ny.gov/legacy-warn-notices), captured separately:
+2016 - Mar 2025 by ``scripts/backfill/ny.py`` (merged into the NY
+cumulative store), and the dashboard-era gap Apr - Dec 2025 by
+``scripts/backfill/ny_2025_gap.py`` into ``history_file`` below.
 
 Fetch URL and field crosswalk vendored from Big Local News' Apache-2.0
 warn-scraper (warn/scrapers/ny.py) and warn-transformer
@@ -33,7 +35,7 @@ from typing import Optional
 import pandas as pd
 
 import warn_monitor
-from .base import Source
+from .base import DATA_DIR, Source
 
 # Known bad date strings in NY's historical feed -> intended ISO dates.
 # Vendored from Big Local News warn-transformer (Apache-2.0), transformers/ny.py.
@@ -101,6 +103,11 @@ class NewYorkDOL(Source):
         "&:embed=y&:showVizHome=n&:apiID=host0"
     )
     cadence = "daily"
+    # Dashboard-era 2025 notices (Apr-Dec) rolled off the current-year CSV
+    # export when 2026 began; scripts/backfill/ny_2025_gap.py recovered them
+    # from the workbook's year-2025 export. Like CA, the file surfaces in the
+    # national dataset only — the NY live pipeline stays exactly as it is.
+    history_file = DATA_DIR / "historical" / "ny_history.json"
 
     def fetch(self, force: bool = False) -> tuple:
         # Single-file feed: the shared downloader handles conditional GETs
