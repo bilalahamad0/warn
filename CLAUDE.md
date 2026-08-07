@@ -226,7 +226,21 @@ loads nothing extra.
 - `states/<code>/` — per-state pipeline files for every non-CA source (same shapes as the top-level CA files: warn_latest, snapshot, cumulative, meta, both key ledgers, changelog)
 - `changelog.jsonl` — append-only log of every detected change
 
-**GitHub Actions** (`.github/workflows/monitor.yml`) runs the full pipeline twice daily (00:00 and 12:00 UTC). Automated commits use `"auto: WARN data update [skip ci]"` to prevent loops.
+**GitHub Actions** — three workflows, with one deliberate coupling:
+- `monitor.yml` runs the full pipeline twice daily (00:00 and 12:00 UTC).
+  Automated commits use `"auto: WARN data update [skip ci]"` to prevent loops.
+- `tests.yml` runs pytest on every pull request. Before it existed no PR ever
+  ran the suite in CI (`monitor.yml` is schedule-only; CodeQL was the sole PR
+  check). It deliberately runs no flake8 — the repo carries ~177 standing
+  violations, so a lint gate would be permanently red.
+- `pages.yml` deploys `docs/` to GitHub Pages (Settings ▸ Pages ▸ Source =
+  **GitHub Actions**, not branch). The branch-based build it replaced wedged
+  routinely (builds stuck at duration 0, deploys cancelled mid-flight), which
+  could leave main updated while the live site silently served stale content.
+  **The coupling:** the pipeline's `[skip ci]` commits cannot fire `pages.yml`'s
+  push trigger, so it also runs on `workflow_run` after every successful
+  `monitor.yml` run — renaming `monitor.yml`'s `name:` breaks that link
+  silently. Manual redeploy: Actions ▸ Deploy Pages ▸ Run workflow.
 
 **Environment** (copy `.env.example` → `.env`):
 - `GITHUB_TOKEN` — for git push in local runs

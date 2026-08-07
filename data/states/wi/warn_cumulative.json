@@ -1,9 +1,9 @@
 {
-  "total_records": 631,
-  "total_employees": 59175,
+  "total_records": 633,
+  "total_employees": 59193,
   "date_range_start": "2020-01-02",
   "date_range_end": "2026-08-05",
-  "last_updated": "2026-08-06T14:03:24.669943+00:00Z",
+  "last_updated": "2026-08-07T04:23:44.035174+00:00Z",
   "source_url": "https://dwd.wisconsin.gov/dislocatedworker/warn/",
   "records": [
     {
@@ -7577,6 +7577,30 @@
       "city": "Tomahawk",
       "address": "",
       "industry": "Metal Tank (Heavy Gauge) Manufacturing"
+    },
+    {
+      "state": "WI",
+      "company": "UnityPoint Health",
+      "notice_date": "2026-08-04",
+      "effective_date": "2027-02-28",
+      "employees": 1,
+      "layoff_type": "Workforce Reduction",
+      "county": "Dane",
+      "city": "Madison",
+      "address": "",
+      "industry": "General Medical and Surgical Hospitals"
+    },
+    {
+      "state": "WI",
+      "company": "UnityPoint Health",
+      "notice_date": "2026-08-04",
+      "effective_date": "2027-02-28",
+      "employees": 17,
+      "layoff_type": "Workforce Reduction",
+      "county": "Unknown",
+      "city": "Unknown - Remote Employees",
+      "address": "",
+      "industry": "General Medical and Surgical Hospitals"
     }
   ]
 }

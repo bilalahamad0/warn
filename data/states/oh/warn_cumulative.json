@@ -1,9 +1,9 @@
 {
-  "total_records": 983,
-  "total_employees": 139607,
+  "total_records": 984,
+  "total_employees": 139673,
   "date_range_start": "2015-01-05",
-  "date_range_end": "2026-08-04",
-  "last_updated": "2026-08-06T14:00:10.282724+00:00Z",
+  "date_range_end": "2026-08-06",
+  "last_updated": "2026-08-07T04:20:27.048697+00:00Z",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
     {
@@ -11259,6 +11259,18 @@
       "layoff_type": "Closure",
       "county": "Butler",
       "city": "Hamilton",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Sodexo CTM, LLC",
+      "notice_date": "2026-08-06",
+      "effective_date": "2026-10-01",
+      "employees": 66,
+      "layoff_type": "Closure",
+      "county": "Butler",
+      "city": "West Chester",
       "address": "",
       "industry": ""
     }

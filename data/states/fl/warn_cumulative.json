@@ -1,9 +1,9 @@
 {
-  "total_records": 458,
-  "total_employees": 34078,
+  "total_records": 459,
+  "total_employees": 34158,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-07-30",
-  "last_updated": "2026-08-06T13:51:26.404464+00:00Z",
+  "date_range_end": "2026-08-06",
+  "last_updated": "2026-08-07T04:11:05.177578+00:00Z",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -5501,6 +5501,18 @@
       "city": "NAPLES",
       "address": "8300 Radio Road",
       "industry": "Transportation and Warehousing"
+    },
+    {
+      "state": "FL",
+      "company": "West Marine's Florida Support Center",
+      "notice_date": "2026-08-06",
+      "effective_date": "2026-10-03",
+      "employees": 80,
+      "layoff_type": "",
+      "county": "",
+      "city": "FORT LAUDERDALE",
+      "address": "1 E. Broward Blvd., Suite 200",
+      "industry": "Agriculture, Forestry, Fishing and Hunting"
     }
   ]
 }
