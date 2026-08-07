@@ -23,7 +23,7 @@ def test_registry_contains_ohio():
     cls = warn_sources.SOURCES["oh"]
     assert cls.code == "oh"
     assert cls.name == "Ohio"
-    assert cls.source_url.startswith("https://jfs.ohio.gov")
+    assert cls.source_url.startswith("https://jfs.ohio.gov/")
 
 
 def test_paths_use_per_state_layout(tmp_path):

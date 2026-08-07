@@ -23,7 +23,7 @@ def test_registry_contains_south_carolina():
     cls = warn_sources.SOURCES["sc"]
     assert cls.code == "sc"
     assert cls.name == "South Carolina"
-    assert cls.source_url.startswith("https://scworks.org")
+    assert cls.source_url.startswith("https://scworks.org/")
 
 
 def test_paths_use_per_state_layout(tmp_path):

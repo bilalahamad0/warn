@@ -10,5 +10,11 @@ __pycache__/
 dist/
 build/
 
+# Test/coverage artifacts
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+
 # Raw downloads caching (keep file.xlsx for diff purposes)
 # docs/ is committed for GitHub Pages

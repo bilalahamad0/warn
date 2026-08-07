@@ -3,9 +3,12 @@
 *Researched 2026-07-20. Combines a multi-agent web research sweep (claims adversarially verified 3-0 unless noted), firsthand inspection of the Big Local News codebases, and ~35 live endpoint probes run today.*
 
 > **STATUS (2026-07-23): IMPLEMENTED.** All phases of the rollout below are
-> complete: 47 scraper modules in `warn_sources/` (46 states + DC live;
-> TX fully implemented but disabled behind an AWS WAF challenge — flip
-> `enabled=True` once a sanctioned fetch proxy is configured). AR, WY keep
+> complete: 48 scraper modules in `warn_sources/` (45 states + DC live — the
+> 46 sources with `enabled = True` in the registry, i.e.
+> `len([s for s in warn_sources.SOURCES.values() if s.enabled])`; TX and MO
+> are fully implemented but disabled behind anti-bot walls — TX an AWS WAF
+> challenge, MO an Imperva/Incapsula wall; flip `enabled=True` once a
+> sanctioned fetch route exists, see each module's docstring). AR, WY keep
 > filings confidential by statute; NH/PR/territories publish no list. The
 > US dashboard is the site root, `docs/` (built by `warn_site_us.py`);
 > California moved to `docs/ca/` and now derives its records from the national

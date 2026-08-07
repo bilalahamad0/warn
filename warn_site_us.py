@@ -36,6 +36,7 @@ import pandas as pd
 import plotly.graph_objects as go
 
 import warn_charts
+import warn_datasets
 import warn_urls
 from warn_charts import ACCENT, ACCENT2, ACCENT3, _apply_theme
 
@@ -320,8 +321,12 @@ def chart_us_monthly_years(df: pd.DataFrame, save_png: bool = False) -> go.Figur
 def chart_us_states_years(df: pd.DataFrame, save_png: bool = False) -> go.Figure:
     """Top states compared across years — one line per state.
 
-    Years outside a state's coverage window render as gaps, never as
-    misleading zeros. Legend entries toggle lines on/off.
+    Missing data renders as line breaks, never as misleading zeros. That
+    covers both years outside a state's coverage window AND dead-feed years
+    inside it (Ohio's unparsed 2023-25, for instance — charted flat, those
+    read as three years without a single layoff). Partial-outage years that
+    still have records (New York's 2025) keep their point but the hover says
+    which months are missing. Legend entries toggle lines on/off.
     """
     dated = df[df["event_date"].notna()].copy()
     dated["year"] = dated["event_date"].dt.year
@@ -335,23 +340,45 @@ def chart_us_states_years(df: pd.DataFrame, save_png: bool = False) -> go.Figure
     )
     coverage = dated.groupby("state")["year"].agg(["min", "max"])
 
+    # Per-state intra-window gap assessment, same detector as the US map.
+    gap_records = [
+        {"state": st, "notice_date": d.strftime("%Y-%m-%d")}
+        for st, d in zip(dated["state"], dated["event_date"])
+    ]
+    gap_cov = warn_datasets.state_year_coverage(gap_records)
+
     fig = go.Figure()
     for i, st in enumerate(top_states):
         sdf = window[window["state"] == st]
         by_year = sdf.groupby("year")["employees"].sum()
         lo, hi = coverage.loc[st, "min"], coverage.loc[st, "max"]
-        y_vals = [
-            int(by_year.get(y, 0)) if lo <= y <= hi else None
-            for y in years
-        ]
+        st_years = gap_cov.get(st, {}).get("years", {})
+        y_vals, hovers = [], []
+        for y in years:
+            info = st_years.get(y)
+            if not (lo <= y <= hi):
+                y_vals.append(None)
+                hovers.append("")
+                continue
+            if info is not None and info["empty"] and info["suspect_gap"]:
+                y_vals.append(None)
+                hovers.append("")
+                continue
+            val = int(by_year.get(y, 0))
+            y_vals.append(val)
+            hover = f"<b>{st}</b> {y}<br>{val:,} employees"
+            if (info is not None and info["suspect_gap"]
+                    and info["missing_months"]):
+                months = warn_datasets.format_month_gaps(info["missing_months"])
+                hover += f"<br>⚠ no data for {months} — undercounts"
+            hovers.append(hover + "<extra></extra>")
         fig.add_scatter(
             x=years, y=y_vals, name=st,
             mode="lines+markers",
             connectgaps=False,
             line=dict(color=LINE_COLORS[i % len(LINE_COLORS)], width=2),
             marker=dict(size=6),
-            hovertemplate="<b>" + st + "</b> %{x}<br>%{y:,} employees"
-                          "<extra></extra>",
+            hovertemplate=hovers,
         )
     fig.update_layout(
         yaxis_title="Employees affected",
@@ -360,7 +387,8 @@ def chart_us_states_years(df: pd.DataFrame, save_png: bool = False) -> go.Figure
         height=520,
         annotations=[dict(
             text="top 10 states by volume — click legend entries to "
-                 "toggle; gaps = outside that state's coverage",
+                 "toggle; line breaks = no data captured (outside "
+                 "coverage, or a source gap)",
             x=0.99, y=0.02, xref="paper", yref="paper",
             xanchor="right", yanchor="bottom",
             showarrow=False, font=dict(size=11, color="#8b949e"),
@@ -511,7 +539,26 @@ def _row_values(r) -> list:
 
 
 def _recent_sorted(df: pd.DataFrame) -> pd.DataFrame:
-    return df[df["event_date"].notna()].sort_values("event_date", ascending=False)
+    """Every dated record, newest-first — with future dates capped at today.
+
+    "Newest" means most recently *known about*, not furthest in the future.
+    Several states publish only an effective date, which for an upcoming
+    layoff is legitimately months out; and a feed typo (a 2103 date, say)
+    would otherwise sit at position 1 indefinitely. Sorting those rows at
+    today keeps them near the top — they are current news — without letting
+    anything pin itself above genuinely newer filings until its date passes.
+    The displayed dates are untouched; only the sort key is capped.
+    """
+    dated = df[df["event_date"].notna()].copy()
+    today = pd.Timestamp.now().normalize()
+    dated["_sort_date"] = dated["event_date"].clip(upper=today)
+    # Future-dated rows all share today's sort key; break the tie by how far
+    # out they are (nearest first) so tomorrow's layoff outranks December's.
+    dated["_tiebreak"] = -(dated["event_date"] - today).dt.days
+    return (
+        dated.sort_values(["_sort_date", "_tiebreak"], ascending=False)
+        .drop(columns=["_sort_date", "_tiebreak"])
+    )
 
 
 def _recent_rows(df: pd.DataFrame, limit: int = PAGE_SIZE) -> str:

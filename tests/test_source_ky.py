@@ -2,9 +2,11 @@
 
 Offline: the fixtures under tests/fixtures/ are tiny XLSX files built from
 rows really fetched from kyworks.ky.gov on 2026-07-20, reproducing the
-feed's documented quirks (swapped date semantics, blank County header,
-Excel date serials, datetime-mangled NAICS, footer rows, overlap between
-the current report and the prior-year archive).
+feed's documented quirks (blank County header, Excel date serials,
+datetime-mangled NAICS, footer rows, overlap between the current report and
+the prior-year archive). Dates map by plain meaning — notice_date from
+"Date Received" — deliberately diverging from BLN's swapped field map; see
+the ky.py docstring.
 """
 
 import json
@@ -65,13 +67,17 @@ def test_parse_drops_headers_footers_and_dedupes_overlap(tmp_path):
     assert companies.count("Battelle Memorial Institute E3") == 1
 
 
-def test_parse_applies_bln_date_swap(tmp_path):
+def test_parse_maps_dates_by_plain_meaning_not_blns_swap(tmp_path):
+    """notice_date <- "Date Received", effective_date <- "Projected Date".
+
+    BLN's transformer swaps these two; replicating that put future "notice
+    dates" at the top of the national dashboard's newest-first table. The
+    module deliberately diverges — see the ky.py docstring.
+    """
     df = _parse_fixtures(tmp_path)
     carrier = df[df.company.str.startswith("Carrier")].iloc[0]
-    # BLN quirk: notice_date <- "Projected Date", effective_date <- "Date
-    # Received" — never one copied into the other.
-    assert carrier["notice_date"] == "2026-08-30"
-    assert carrier["effective_date"] == "2026-06-12"
+    assert carrier["notice_date"] == "2026-06-12"      # Date Received
+    assert carrier["effective_date"] == "2026-08-30"   # Projected Date
     assert carrier["layoff_type"] == "Closure"
     assert carrier["county"] == "Simpson"
     assert carrier["industry"] == "333415"
@@ -80,8 +86,8 @@ def test_parse_applies_bln_date_swap(tmp_path):
 def test_parse_converts_excel_date_serials(tmp_path):
     df = _parse_fixtures(tmp_path)
     led = df[df.company == "LED VANCE LLC"].iloc[0]
-    assert led["effective_date"] == "2019-01-25"   # serial 43490 (received)
-    assert led["notice_date"] == "2019-09-27"      # serial 43735 (projected)
+    assert led["notice_date"] == "2019-01-25"      # serial 43490 (received)
+    assert led["effective_date"] == "2019-09-27"   # serial 43735 (projected)
 
 
 def test_parse_employee_counts(tmp_path):
@@ -102,5 +108,5 @@ def test_parse_drops_mangled_naics(tmp_path):
     df = _parse_fixtures(tmp_path)
     mine = df[df.company == "THOROUGHFARE MINING LLC"].iloc[0]
     assert mine["industry"] == ""                  # datetime garbage dropped
-    assert mine["effective_date"] == "2017-12-18"
+    assert mine["notice_date"] == "2017-12-18"     # Date Received
     assert mine["employees"] == 99

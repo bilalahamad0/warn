@@ -315,7 +315,7 @@ def merge_with_live() -> dict:
         all_records.extend(live_recs)
 
     combined = {
-        "generated_at": datetime.now(timezone.utc).isoformat() + "Z",
+        "generated_at": datetime.now(timezone.utc).isoformat(),
         "total_records": len(all_records),
         "total_employees": sum(r.get("employees", 0) for r in all_records),
         "yearly_summary": yearly_summary,

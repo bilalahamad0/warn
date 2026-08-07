@@ -43,7 +43,8 @@ def test_fl_metadata():
     assert FloridaCommerce.code == "fl"
     assert FloridaCommerce.name == "Florida"
     assert FloridaCommerce.enabled
-    assert "reactwarn.floridajobs.org" in FloridaCommerce.source_url
+    assert FloridaCommerce.source_url.startswith(
+        "https://reactwarn.floridajobs.org/")
 
 
 def test_fl_uses_per_state_paths(tmp_path):

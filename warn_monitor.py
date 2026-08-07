@@ -165,7 +165,7 @@ def download_xlsx(
             "etag": resp.headers.get("ETag", ""),
             "last_modified": resp.headers.get("Last-Modified", ""),
             "file_hash": new_hash,
-            "last_checked": datetime.now(timezone.utc).isoformat() + "Z",
+            "last_checked": datetime.now(timezone.utc).isoformat(),
             "url": url,
         }
     )
@@ -433,7 +433,7 @@ def _save_keys_file(keys: set, path: Path) -> None:
     """Persist a key ledger (sorted, for small/stable git diffs)."""
     payload = {
         "count": len(keys),
-        "last_updated": datetime.now(timezone.utc).isoformat() + "Z",
+        "last_updated": datetime.now(timezone.utc).isoformat(),
         "keys": sorted(keys),
     }
     path.write_text(json.dumps(payload, indent=2))
@@ -651,7 +651,7 @@ def _log_change(diff: dict, dry_run: bool = False, changelog_file: Optional[Path
     """Append change event to the changelog."""
     changelog_file = changelog_file if changelog_file is not None else CHANGELOG_FILE
     entry = {
-        "timestamp": datetime.now(timezone.utc).isoformat() + "Z",
+        "timestamp": datetime.now(timezone.utc).isoformat(),
         # amend_superseded is an internal threading field (full old records used
         # to evict from the cumulative store) — keep it out of the changelog.
         **{k: v for k, v in diff.items() if k != "amend_superseded"},
@@ -692,7 +692,7 @@ def save_latest(
         "total_employees": int(df["employees"].sum()),
         "date_range_start": df["notice_date"].dropna().min() if "notice_date" in df.columns else df["effective_date"].dropna().min(),
         "date_range_end": df["notice_date"].dropna().max() if "notice_date" in df.columns else df["effective_date"].dropna().max(),
-        "last_updated": datetime.now(timezone.utc).isoformat() + "Z",
+        "last_updated": datetime.now(timezone.utc).isoformat(),
         "source_url": source_url or WARN_XLSX_URL,
         "records": records,
     }
@@ -740,7 +740,7 @@ def _summarise(records: list[dict], source_url: Optional[str] = None) -> dict:
         "total_employees": int(sum(r.get("employees") or 0 for r in records)),
         "date_range_start": min(dates) if dates else None,
         "date_range_end": max(dates) if dates else None,
-        "last_updated": datetime.now(timezone.utc).isoformat() + "Z",
+        "last_updated": datetime.now(timezone.utc).isoformat(),
         "source_url": source_url or WARN_XLSX_URL,
         "records": records,
     }
@@ -829,7 +829,7 @@ def run(dry_run: bool = False, force: bool = False) -> dict:
     Full monitor run. Returns a result dict with stats + diff.
     """
     log.info("=" * 60)
-    log.info(f"WARN Monitor — {datetime.now(timezone.utc).isoformat()}Z")
+    log.info(f"WARN Monitor — {datetime.now(timezone.utc).isoformat()}")
     log.info("=" * 60)
 
     # 1. Download

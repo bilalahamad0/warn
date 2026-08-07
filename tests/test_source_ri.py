@@ -31,7 +31,7 @@ def test_ri_metadata(tmp_path):
     src = warn_sources.get_source("ri", tmp_path)
     assert src.code == "ri"
     assert src.name == "Rhode Island"
-    assert "dlt.ri.gov" in src.source_url
+    assert src.source_url.startswith("https://dlt.ri.gov/")
     assert src.paths.root == tmp_path / "states" / "ri"
     assert src.paths.raw.suffix == ".xlsx"  # openpyxl needs the extension
 

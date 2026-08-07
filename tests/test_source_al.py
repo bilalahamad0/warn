@@ -23,7 +23,7 @@ def test_registry_contains_alabama():
     cls = warn_sources.SOURCES["al"]
     assert cls.code == "al"
     assert cls.name == "Alabama"
-    assert cls.source_url.startswith("https://workforce.alabama.gov")
+    assert cls.source_url.startswith("https://workforce.alabama.gov/")
 
 
 def test_paths_use_per_state_layout(tmp_path):

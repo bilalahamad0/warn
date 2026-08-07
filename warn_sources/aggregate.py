@@ -79,7 +79,7 @@ def build_national(
         records.extend(state_records)
 
     payload = {
-        "last_updated": datetime.now(timezone.utc).isoformat() + "Z",
+        "last_updated": datetime.now(timezone.utc).isoformat(),
         "states_live": len(states),
         "total_records": len(records),
         "total_employees": int(sum(r.get("employees") or 0 for r in records)),

@@ -31,7 +31,7 @@ def test_registry_contains_new_mexico():
     assert cls.code == "nm"
     assert cls.name == "New Mexico"
     assert cls.enabled is True
-    assert cls.source_url.startswith("https://www.dws.state.nm.us")
+    assert cls.source_url.startswith("https://www.dws.state.nm.us/")
 
 
 def test_paths_use_per_state_layout(tmp_path):

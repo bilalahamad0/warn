@@ -20,7 +20,7 @@ python3 warn_publish.py --force
 # Run individual pipeline stages
 python3 warn_monitor.py          # Download + parse XLSX only
 python3 warn_diff.py             # Detect changes between runs
-python3 warn_charts.py           # Regenerate 8 Plotly charts
+python3 warn_charts.py           # Regenerate the 12 Plotly charts
 python3 warn_history.py          # Re-parse historical PDFs (2014-2024)
 python3 warn_site_us.py          # Rebuild the US dashboard (docs/ — the site root)
 python3 warn_notify.py --test    # Send a test email
@@ -83,12 +83,22 @@ sat at the root; the two are independent constants now.
 
 **Which site build may fail** inverted when the national dashboard took over
 the root, and `warn_publish.run()` step 5 encodes it. Whatever builds the root
-page must be fatal — a non-zero exit skips `git_commit_push` here and CI's
-`if: success()` commit step, leaving the last good page published. That guard
-used to sit on `build_site` (California was the root); it now sits on
-`build_us_site`, and California — whose failure still leaves a live, correct
+page must be fatal — a non-zero exit skips the full `git_commit_push` here and
+the success branch of CI's commit step, leaving the last good page published.
+That guard used to sit on `build_site` (California was the root); it now sits
+on `build_us_site`, and California — whose failure still leaves a live, correct
 front page — is the non-fatal one. The raise happens *after* notifications and
 the digest so a chart hiccup never costs a subscriber a legitimate alert.
+**But a skipped commit must never discard the alert ledgers**: those sends
+already happened, and their ledgers were written locally — lost with a CI
+workspace, the next run re-detects the same notices and re-emails every
+subscriber, every 12h, until the build is fixed. So the failure path commits
+`data/` alone (never `docs/`): locally `warn_publish.commit_ledgers()`
+(best-effort, `"auto: alert ledgers (site build failed) [skip ci]"`, skipped
+under `--no-push`); in CI `monitor.yml`'s commit step runs on pipeline failure
+too (gated on the pipeline step's outcome so a totally-failed run commits
+nothing) and stages only `data/` with
+`"auto: alert ledgers (pipeline failed) [skip ci]"`.
 
 **`docs/pages/` is a reserved name.** `warn_site_us._write_pages` rmtrees
 `out_dir/"pages"` wholesale each build, and `out_dir` is now the site root.
@@ -243,7 +253,7 @@ loads nothing extra.
   silently. Manual redeploy: Actions ▸ Deploy Pages ▸ Run workflow.
 
 **Environment** (copy `.env.example` → `.env`):
-- `GITHUB_TOKEN` — for git push in local runs
+- `GH_REPO_TOKEN` — for git push in local runs (read by `warn_publish.git_commit_push`)
 - `GMAIL_USER`, `GMAIL_APP_PASSWORD`, `NOTIFY_EMAIL` — for email alerts
 - `SIGNUP_ENDPOINT` — Apps Script `/exec` URL for the signup form (public; a CI repo *variable*)
 - `SUBSCRIBERS_TOKEN` — shared secret to read the subscriber list (a CI *secret*)
