@@ -807,6 +807,41 @@ footer {{ color:var(--muted); font-size:12px; text-align:center;
 .sub-msg.ok {{ color:#3fb950; }}
 .sub-msg.err {{ color:#f78166; }}
 
+/* ── Header signup call-to-action + the panel it opens ────────────────── */
+/* Mobile: full-width button under the header meta. Desktop (below): pinned
+   to the top-right corner with the panel dropping out of it. */
+.alert-cta {{ display:block; width:100%; margin-top:10px;
+              background:var(--accent); color:#0d1117; border:0;
+              border-radius:8px; padding:10px 16px; font-size:14px;
+              font-weight:600; cursor:pointer; min-height:40px; }}
+.alert-cta:hover {{ filter:brightness(1.08); }}
+.alert-cta[aria-expanded="true"] {{ background:#1f6feb; color:#fff; }}
+
+/* Dims the page behind the open panel; also the click-outside target. */
+.sub-scrim {{ position:fixed; inset:0; z-index:19;
+              background:rgba(1,4,9,.55); }}
+.sub-scrim[hidden] {{ display:none; }}
+
+.sub-panel {{ position:fixed; z-index:20; top:0; right:0; left:0;
+              margin:0; border-radius:0 0 12px 12px;
+              max-height:100vh; overflow-y:auto;
+              -webkit-overflow-scrolling:touch;
+              box-shadow:0 18px 48px rgba(1,4,9,.6); }}
+.sub-panel[hidden] {{ display:none; }}
+.sub-panel-head {{ display:flex; align-items:center;
+                   justify-content:space-between; gap:12px;
+                   margin-bottom:4px; }}
+.sub-panel-head h2 {{ margin:0; }}
+.sub-close {{ background:none; border:0; color:var(--muted); cursor:pointer;
+              font-size:26px; line-height:1; padding:0 4px;
+              min-width:40px; min-height:40px; }}
+.sub-close:hover {{ color:var(--text); }}
+
+/* Bottom-of-page prompt — opens the same panel, never a second form. */
+.sub-teaser {{ text-align:center; }}
+.sub-teaser .desc {{ margin-bottom:14px; }}
+.sub-open {{ width:auto; padding:12px 22px; }}
+
 @media (min-width: 720px) {{
   body {{ font-size:15px; }}
   header {{ padding:14px 24px; display:flex; align-items:baseline;
@@ -815,6 +850,12 @@ footer {{ color:var(--muted); font-size:12px; text-align:center;
   header .sub {{ display:inline; margin-top:0; font-size:13px; }}
   header .right {{ display:block; margin-left:auto; margin-top:0;
                    font-size:13px; }}
+  /* Top-right-most element on the page, ahead of the meta links. */
+  .alert-cta {{ display:inline-block; width:auto; margin-top:0;
+                order:99; padding:8px 16px; min-height:36px; }}
+  /* Drops out of the button rather than spanning the viewport. */
+  .sub-panel {{ top:64px; right:24px; left:auto; width:min(440px, calc(100vw - 48px));
+                max-height:calc(100vh - 84px); border-radius:12px; }}
   main {{ padding:24px; }}
   .kpis {{ grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
            gap:14px; }}
@@ -838,9 +879,15 @@ footer {{ color:var(--muted); font-size:12px; text-align:center;
   <span class="badge">{live_badge}</span>
   <span class="sub">unified WARN notices, updated twice daily</span>
   <span class="right">Updated {updated} ·
-    <a href="ca/">California — charts &amp; industry detail</a> ·
+    <a href="ca/">🐻 California Live Dashboard</a> ·
     <a href="data.json">API</a> ·
     <a href="https://github.com/bilalahamad0/warn">GitHub</a></span>
+  <!-- Top-right and always in view: the signup used to sit at the very
+       bottom of a very long page, so most visitors never learned it existed.
+       The panel it opens holds the ONLY signup form on the page — duplicating
+       the markup would duplicate every element id and break the handlers. -->
+  <button type="button" class="alert-cta" id="sub-toggle"
+          aria-expanded="false" aria-controls="subscribe">📬 Get alerts</button>
 </header>
 <main>
   <div class="kpis">
@@ -931,7 +978,7 @@ footer {{ color:var(--muted); font-size:12px; text-align:center;
       <span id="ca-hint" hidden style="color:var(--muted);font-size:12px">
         California also has a full dashboard — charts, industry breakdown,
         county detail and date filters:
-        <a href="ca/">open the California dashboard →</a></span>
+        <a href="ca/">open the California Live Dashboard →</a></span>
     </div>
     <div class="pager">
       <button class="pgbtn pgprev">← Prev</button>
@@ -954,8 +1001,25 @@ footer {{ color:var(--muted); font-size:12px; text-align:center;
     </div>
   </section>
 
-  <section id="subscribe">
+  <!-- Scrollers get a prompt too; it opens the same panel rather than
+       carrying a second copy of the form. -->
+  <section class="sub-teaser">
     <h2>📬 Get WARN alerts by email</h2>
+    <div class="desc">Pick the states you care about and we email you when
+      our twice-daily check finds new notices there.</div>
+    <button type="button" class="sub-btn sub-open" data-opens="subscribe">
+      Choose states &amp; subscribe</button>
+  </section>
+</main>
+
+<div class="sub-scrim" id="sub-scrim" hidden></div>
+<section id="subscribe" class="sub-panel" hidden
+         role="dialog" aria-modal="true" aria-labelledby="sub-title">
+  <div class="sub-panel-head">
+    <h2 id="sub-title">📬 Get WARN alerts by email</h2>
+    <button type="button" class="sub-close" id="sub-close"
+            aria-label="Close">&times;</button>
+  </div>
     <div class="desc">Pick the states you want per-notice alerts for. We
       email you when our twice-daily check finds new notices there.
       Already subscribed? Picking states here <strong>adds</strong> them —
@@ -989,11 +1053,11 @@ footer {{ color:var(--muted); font-size:12px; text-align:center;
       <div class="sub-msg" id="subscribe-msg" role="status"
            aria-live="polite"></div>
     </form>
-  </section>
-</main>
+</section>
 <footer>
   Data: official state workforce-agency WARN publications, unified by this
-  project. California keeps its dedicated dashboard <a href="ca/">here</a>.
+  project. California has its own <a href="ca/">Live Dashboard</a> with
+  charts, industry breakdown and county detail.
   Some states publish limited fields or shallow history; blocked or
   non-publishing states are documented in
   <a href="https://github.com/bilalahamad0/warn/blob/main/EXPANSION_RESEARCH.md">
@@ -1230,6 +1294,45 @@ var subEmail = document.getElementById('sub-email');
 var subBtn = document.getElementById('sub-submit');
 var subHp = document.getElementById('sub-company-hp');
 var subDigest = document.getElementById('sub-digest');
+
+// ── Signup panel (opened from the header, or the prompt at the page foot) ──
+// The form lives in one place; both entry points toggle this same panel.
+var subPanel = document.getElementById('subscribe');
+var subScrim = document.getElementById('sub-scrim');
+var subToggle = document.getElementById('sub-toggle');
+
+function openSub(open) {{
+  if (!subPanel) return;
+  subPanel.hidden = !open;
+  if (subScrim) subScrim.hidden = !open;
+  if (subToggle) subToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  // Opening from the foot of a long page must not leave the visitor
+  // scrolled somewhere else behind a fixed panel.
+  if (open) {{
+    window.scrollTo({{ top: 0, behavior: 'smooth' }});
+    if (subEmail) subEmail.focus({{ preventScroll: true }});
+  }} else if (subToggle) {{
+    subToggle.focus();
+  }}
+}}
+
+if (subToggle) {{
+  subToggle.addEventListener('click', function () {{
+    openSub(subPanel.hidden);
+  }});
+}}
+document.querySelectorAll('.sub-open').forEach(function (b) {{
+  b.addEventListener('click', function () {{ openSub(true); }});
+}});
+var subCloseBtn = document.getElementById('sub-close');
+if (subCloseBtn) subCloseBtn.addEventListener('click', function () {{ openSub(false); }});
+if (subScrim) subScrim.addEventListener('click', function () {{ openSub(false); }});
+document.addEventListener('keydown', function (ev) {{
+  if (ev.key === 'Escape' && subPanel && !subPanel.hidden) openSub(false);
+}});
+// The California page links here as ../#subscribe — honour the deep link by
+// opening the panel, since the target is no longer a section you scroll to.
+if (location.hash === '#subscribe') openSub(true);
 
 function setSubMsg(text, kind) {{
   if (!subMsg) return;
