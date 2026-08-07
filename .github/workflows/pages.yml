@@ -1,0 +1,77 @@
+# Deploys docs/ to GitHub Pages.
+#
+# This repo used the branch-based ("legacy") Pages build until August 2026,
+# and it failed routinely: builds wedged at duration 0 and needed a manual
+# POST /pages/builds to unstick, one deploy hit a duplicate-artifact race
+# ("Multiple artifacts named github-pages"), and others were cancelled
+# mid-deploy — leaving main updated while the live site silently served stale
+# content. Being GitHub-managed, that workflow offered nothing to configure,
+# queue, or retry. This workflow replaces it (Settings ▸ Pages ▸ Source must
+# be "GitHub Actions"), so deploys are ordinary runs: visible, re-runnable,
+# and queued through the concurrency group below instead of racing.
+#
+# Why THREE triggers:
+#   push          Human merges. Filtered to docs/** because only docs/ is the
+#                 site — a code-only merge has nothing to deploy.
+#   workflow_run  The twice-daily pipeline. Its commits can never fire the
+#                 push trigger: the commit message carries [skip ci], which
+#                 suppresses push-triggered workflows for that commit. Runs
+#                 after the pipeline completes successfully; monitor.yml only
+#                 commits when its site build succeeded (the root build is
+#                 fatal in warn_publish.run), so deploying its HEAD is safe.
+#                 An occasional no-change deploy is idempotent and costs ~1min.
+#   workflow_dispatch  Manual unstick — the replacement for the POST
+#                 /pages/builds trick the legacy build needed.
+
+name: Deploy Pages
+
+on:
+  push:
+    branches: [ "main" ]
+    paths: [ "docs/**" ]
+  workflow_run:
+    workflows: ["WARN Monitor & Dashboard Update"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Queue deploys, never cancel one mid-flight — a cancelled deploy was one of
+# the exact failure modes this workflow exists to remove. The queue holds at
+# most one pending run, so a burst of merges deploys the newest state.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    # For workflow_run, deploy only after a successful pipeline. A failed
+    # pipeline exits before git push (warn_publish.run raises when the site
+    # root fails to build), so its HEAD may predate the failure — redeploying
+    # it would be harmless but pointless, and a red pipeline should stay the
+    # only signal demanding attention.
+    if: >-
+      github.event_name != 'workflow_run' ||
+      github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload docs/ as the Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
