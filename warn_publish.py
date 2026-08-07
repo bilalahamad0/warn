@@ -9,7 +9,7 @@ Full pipeline runner:
   5. build sites   — warn_site_us → docs/ (the US dashboard, at the site root)
                      build_site   → docs/ca/ (the California dashboard)
                      Only the root build is fatal; see step 5 in run().
-  6. git_push      — commit + push to GitHub (requires GITHUB_TOKEN env var)
+  6. git_push      — commit + push to GitHub (requires GH_REPO_TOKEN env var)
 
 This module owns the California page. The site root belongs to warn_site_us.
 
@@ -685,7 +685,7 @@ def git_commit_push(message: str = None) -> bool:
     if push_ok:
         log.info("✓ Pushed successfully.")
     else:
-        log.error("✗ Push failed — check GITHUB_TOKEN and repo permissions.")
+        log.error("✗ Push failed — check GH_REPO_TOKEN and repo permissions.")
     return push_ok
 
 

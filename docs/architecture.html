@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>WARN Monitor — Architecture &amp; System Design</title>
-<meta name="description" content="Animated architecture, system design and workflow for the California WARN layoff monitoring pipeline." />
+<meta name="description" content="Animated architecture, system design and workflow for the US WARN layoff monitoring pipeline — per-state scrapers for 45 states plus DC, a national dashboard at the root and California detail at /ca/." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <style>
@@ -271,7 +271,7 @@
       <div class="logo">📋</div>
       <div>
         <h1>WARN Monitor — System Architecture</h1>
-        <div class="sub">California layoff-tracking data pipeline · serverless &amp; git-native</div>
+        <div class="sub">US layoff-tracking data pipeline · serverless &amp; git-native</div>
       </div>
     </div>
     <div class="head-links">
@@ -285,15 +285,15 @@
 
 <section class="hero">
   <div class="eyebrow">Architecture · System Design · Workflow</div>
-  <h2>How California WARN notices become a live dashboard</h2>
-  <p>A fully automated, server-less pipeline that watches the state's Employment Development
-     Department feed, detects genuinely new layoff filings, renders interactive charts, emails
+  <h2>How WARN notices from across the US become a live dashboard</h2>
+  <p>A fully automated, server-less pipeline that watches WARN feeds from 45 state workforce
+     agencies plus DC, detects genuinely new layoff filings, renders interactive charts, emails
      subscribers, and self-publishes to GitHub Pages — twice a day, with no database and no backend.</p>
 </section>
 
 <div class="stats" id="stats">
   <div class="stat" style="--c:var(--accent)"><div class="num" data-to="5">0</div><div class="lab">Pipeline stages</div></div>
-  <div class="stat" style="--c:var(--green)"><div class="num" data-to="11">0</div><div class="lab">Interactive charts</div></div>
+  <div class="stat" style="--c:var(--green)"><div class="num" data-to="12">0</div><div class="lab">Interactive charts</div></div>
   <div class="stat" style="--c:var(--yellow)"><div class="num" data-to="2" data-suffix="×">0</div><div class="lab">Runs per day</div></div>
   <div class="stat" style="--c:var(--purple)"><div class="num" data-to="2014">0</div><div class="lab">History since</div></div>
   <div class="stat" style="--c:var(--cyan)"><div class="num" data-to="9">0</div><div class="lab">Data artifacts</div></div>
@@ -435,11 +435,11 @@
         <div class="row">
           <div class="node" data-node="p-edd" data-type="source" data-seq="0">
             <span class="node-ic">📄</span>
-            <div class="node-body"><div class="node-title">CA EDD</div><div class="node-sub">XLSX + PDFs</div></div>
+            <div class="node-body"><div class="node-title">State WARN feeds</div><div class="node-sub">45 states + DC · CA EDD among them</div></div>
           </div>
           <div class="node" data-node="p-monitor" data-type="engine" data-seq="1">
             <span class="node-ic">📥</span>
-            <div class="node-body"><div class="node-title">warn_monitor</div><div class="node-sub">download · parse · detect</div></div>
+            <div class="node-body"><div class="node-title">warn_sources</div><div class="node-sub">per-state scrapers · warn_monitor engine</div></div>
             <span class="node-tag">1</span>
           </div>
           <div class="node" data-node="p-diff" data-type="engine" data-seq="2">
@@ -454,7 +454,7 @@
           </div>
           <div class="node" data-node="p-charts" data-type="engine" data-seq="4">
             <span class="node-ic">📈</span>
-            <div class="node-body"><div class="node-title">warn_charts</div><div class="node-sub">11 Plotly charts</div></div>
+            <div class="node-body"><div class="node-title">warn_charts</div><div class="node-sub">12 Plotly charts</div></div>
             <span class="node-tag">4</span>
           </div>
           <div class="node" data-node="p-publish" data-type="engine" data-seq="5">
@@ -915,10 +915,10 @@
   var bar=document.getElementById('bar');
   var con=document.getElementById('console');
   var LOG=[
-    {n:1, t:'<b>warn_monitor</b> — GET EDD XLSX · ETag check · parse 2 sheet formats · diff vs ledger'},
+    {n:1, t:'<b>warn_sources</b> — fetch every enabled state feed (warn_monitor engine) · ETag checks · diff vs ledgers · aggregate.py → warn_national.json'},
     {n:2, t:'<b>warn_diff</b> — latest vs snapshot · write diff_report.md + changelog.jsonl'},
     {n:3, t:'<b>warn_history</b> — merge historical PDFs (2014→now) → warn_all_years.json'},
-    {n:4, t:'<b>warn_charts</b> — render 11 self-contained Plotly divs + manifest'},
+    {n:4, t:'<b>warn_charts</b> — render 12 self-contained Plotly divs + manifest'},
     {n:5, t:'<b>build sites</b> — US at / (fatal if it fails), California at /ca/ · notify · git push'}
   ];
   var playing=false;

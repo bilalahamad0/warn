@@ -20,7 +20,7 @@ python3 warn_publish.py --force
 # Run individual pipeline stages
 python3 warn_monitor.py          # Download + parse XLSX only
 python3 warn_diff.py             # Detect changes between runs
-python3 warn_charts.py           # Regenerate 8 Plotly charts
+python3 warn_charts.py           # Regenerate the 12 Plotly charts
 python3 warn_history.py          # Re-parse historical PDFs (2014-2024)
 python3 warn_site_us.py          # Rebuild the US dashboard (docs/ — the site root)
 python3 warn_notify.py --test    # Send a test email
@@ -243,7 +243,7 @@ loads nothing extra.
   silently. Manual redeploy: Actions ▸ Deploy Pages ▸ Run workflow.
 
 **Environment** (copy `.env.example` → `.env`):
-- `GITHUB_TOKEN` — for git push in local runs
+- `GH_REPO_TOKEN` — for git push in local runs (read by `warn_publish.git_commit_push`)
 - `GMAIL_USER`, `GMAIL_APP_PASSWORD`, `NOTIFY_EMAIL` — for email alerts
 - `SIGNUP_ENDPOINT` — Apps Script `/exec` URL for the signup form (public; a CI repo *variable*)
 - `SUBSCRIBERS_TOKEN` — shared secret to read the subscriber list (a CI *secret*)
