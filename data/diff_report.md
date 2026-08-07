@@ -1,34 +1,58 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-08-06 14:03:27 UTC
+**Generated:** 2026-08-07 04:23:46 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 36 | 36 | +0/+0 |
-| Total employees | 2,560 | 2,560 | +0 |
+| Total records | 36 | 86 | +50/+0 |
+| Total employees | 2,560 | 4,958 | +2,398 |
 
-### ✅ No new entries.
+### ✅ New Entries (50 records)
+
+| Company | Employees | Effective Date | County |
+|---------|-----------|----------------|--------|
+| Visa | 320 | 2026-10-01 | San Mateo County |
+| Sodexo | 164 | 2026-09-30 | Orange County |
+| ServiceNow, Inc. | 154 | 2026-09-28 | Santa Clara County |
+| Chime Financial, Inc. | 135 | 2026-09-30 | San Francisco County |
+| ServiceNow, Inc. | 133 | 2026-09-28 | San Diego County |
+| Pixar | 108 | 2026-09-26 | Alameda County |
+| Fortrex | 91 | 2026-08-21 | Imperial County |
+| San Francisico Pretrial Diversion Project, Inc. | 82 | 2026-11-13 | San Francisco County |
+| PD Systems | 81 | 2026-08-28 | Monterey County |
+| Chick-fil-A & Fig | 77 | 2026-09-27 | Los Angeles County |
+| Salesforce, Inc. | 74 | 2026-10-05 | San Francisco County |
+| Tencent America LLC | 68 | 2026-09-28 | Orange County |
+| Intel Corporation - SC-12 | 67 | 2026-08-15 | Santa Clara County |
+| O'Briens Market Inc. | 67 | 2026-09-27 | Stanislaus County |
+| Nutanix, Inc. | 65 | 2026-10-05 | Santa Clara County |
+| WeDriveU, Inc. | 63 | 2026-10-01 | Kern County |
+| Federal Express Corporation | 62 | 2026-09-29 | Riverside County |
+| New Leaf Community Markets, Inc. | 61 | 2026-09-20 | Santa Clara County |
+| Yamaha Motor Finance Corporation U.S.A. | 61 | 2026-10-01 | Orange County |
+| Silgan Containers | 55 | 2026-09-21 | Stanislaus County |
 
 ---
 ## 📁 File vs Git Comparison
 
-- **Local `file.xlsx` hash:** `2c73db1b759812982a57b17b77afa3c5`
+- **Local `file.xlsx` hash:** `d8bb0550955bbae2735726eca472a27a`
 - **Committed hash:**          `2c73db1b759812982a57b17b77afa3c5`
-- ✅ Local file matches committed version
+- 🔴 **Local file differs from committed version**
 
 **Git status:**
 ```
 M .coverage
  M data/changelog.jsonl
+ M data/meta.json
  M data/states/ak/changelog.jsonl
+ M data/states/ak/meta.json
  M data/states/ak/warn_cumulative.json
  M data/states/ak/warn_latest.json
  M data/states/ak/warn_snapshot.json
  M data/states/al/changelog.jsonl
- M data/states/al/raw_download
  M data/states/al/warn_cumulative.json
  M data/states/al/warn_latest.json
  M data/states/al/warn_snapshot.json
@@ -58,6 +82,7 @@ M .coverage
  M data/states/de/warn_latest.json
  M data/states/de/warn_snapshot.json
  M data/states/fl/changelog.jsonl
+ M data/states/fl/raw_download
  M data/states/fl/warn_cumulative.json
  M data/states/fl/warn_latest.json
  M data/states/fl/warn_snapshot.json
@@ -68,6 +93,7 @@ M .coverage
  M data/states/ga/warn_snapshot.json
  M data/states/hi/changelog.jsonl
  M data/states/hi/meta.json
+ M data/states/hi/raw_download
  M data/states/hi/warn_cumulative.json
  M data/states/hi/warn_latest.json
  M data/states/hi/warn_snapshot.json
@@ -136,7 +162,6 @@ M .coverage
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
- M data/states/mt/meta.json
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
@@ -151,13 +176,11 @@ M .coverage
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
- M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
  M data/states/nj/changelog.jsonl
  M data/states/nj/meta.json
- M data/states/nj/raw_download.xlsx
  M data/states/nj/warn_cumulative.json
  M data/states/nj/warn_latest.json
  M data/states/nj/warn_snapshot.json
@@ -168,10 +191,12 @@ M .coverage
  M data/states/nm/warn_snapshot.json
  M data/states/ny/changelog.jsonl
  M data/states/ny/meta.json
+ M data/states/ny/raw_download
  M data/states/ny/warn_cumulative.json
  M data/states/ny/warn_latest.json
  M data/states/ny/warn_snapshot.json
  M data/states/oh/changelog.jsonl
+ M data/states/oh/raw_download
  M data/states/oh/warn_cumulative.json
  M data/states/oh/warn_latest.json
  M data/states/oh/warn_snapshot.json
@@ -188,6 +213,7 @@ M .coverage
  M data/states/or/warn_snapshot.json
  M data/states/pa/changelog.jsonl
  M data/states/pa/meta.json
+ M data/states/pa/raw_download
  M data/states/pa/warn_cumulative.json
  M data/states/pa/warn_latest.json
  M data/states/pa/warn_snapshot.json
@@ -206,11 +232,13 @@ M .coverage
  M data/states/sd/warn_latest.json
  M data/states/sd/warn_snapshot.json
  M data/states/ut/changelog.jsonl
+ M data/states/ut/meta.json
  M data/states/ut/warn_cumulative.json
  M data/states/ut/warn_latest.json
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
+ M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -221,6 +249,7 @@ M .coverage
  M data/states/vt/warn_snapshot.json
  M data/states/wa/changelog.jsonl
  M data/states/wa/meta.json
+ M data/states/wa/raw_download
  M data/states/wa/warn_cumulative.json
  M data/states/wa/warn_latest.json
  M data/states/wa/warn_snapshot.json
@@ -238,20 +267,22 @@ M .coverage
  M data/warn_cumulative.json
  M data/warn_latest.json
  M data/warn_snapshot.json
+ M file.xlsx
 ```
 
 **Recent commits:**
 ```
-5fc6ab90 Merge pull request #17 from bilalahamad0/feat/us-dashboard-at-root
-7a742933 feat: US dashboard at the site root, California at /ca/
-b6f1bb7d auto: WARN data update [skip ci]
-77efaecb auto: WARN data update [skip ci]
-829423e5 auto: WARN data update [skip ci]
+ac5ed02f Merge pull request #20 from bilalahamad0/ci/pages-workflow-and-pr-tests
+44f0351f ci: PR test suite + self-owned Pages deploys
+62eba88f Merge pull request #18 from bilalahamad0/fix/yoy-chart-from-national-data
+c7248cbc Merge remote-tracking branch 'origin/main' into fix/yoy-chart-from-national-data
+ff4f8220 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-08-07T04:08:11.219674+00:00Z` — +5 added, -0 removed, 240 employees (new)
 - `2026-08-06T13:48:39.914019+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-06T01:35:16.983844+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-05T13:50:38.715645+00:00Z` — +0 added, -46 removed, 0 employees (new)
@@ -261,4 +292,3 @@ b6f1bb7d auto: WARN data update [skip ci]
 - `2026-08-03T14:23:26.774431+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-03T01:47:22.895772+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-02T13:08:36.575732+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-08-02T01:54:09.119878+00:00Z` — +0 added, -0 removed, 0 employees (new)

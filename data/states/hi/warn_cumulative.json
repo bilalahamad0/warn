@@ -1,9 +1,9 @@
 {
-  "total_records": 453,
+  "total_records": 454,
   "total_employees": 0,
   "date_range_start": "2019-01-16",
-  "date_range_end": "2026-07-22",
-  "last_updated": "2026-08-06T13:52:03.390116+00:00Z",
+  "date_range_end": "2026-07-31",
+  "last_updated": "2026-08-07T04:11:50.661158+00:00Z",
   "source_url": "https://labor.hawaii.gov/wdc/real-time-warn-updates/",
   "records": [
     {
@@ -5434,6 +5434,18 @@
       "state": "HI",
       "company": "Bayer Research and Development Services",
       "notice_date": "2026-07-22",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "HI",
+      "company": "Watabe Wedding Corporation (dba Michel\u2019s at the Colony Surf)",
+      "notice_date": "2026-07-31",
       "effective_date": null,
       "employees": 0,
       "layoff_type": "",

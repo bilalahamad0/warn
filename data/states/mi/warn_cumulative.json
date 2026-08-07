@@ -1,9 +1,9 @@
 {
-  "total_records": 781,
-  "total_employees": 120402,
+  "total_records": 782,
+  "total_employees": 120570,
   "date_range_start": "2016-01-07",
   "date_range_end": "2024-11-15",
-  "last_updated": "2026-08-06T13:57:43.512885+00:00Z",
+  "last_updated": "2026-08-07T04:18:10.043856+00:00Z",
   "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
   "records": [
     {
@@ -7381,6 +7381,18 @@
       "county": "Genesee",
       "city": "",
       "address": "3288 Corunna Road, Flint, MI 48532 (Store #404)",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Compass Group USA, Inc. / Morrison Healthcare",
+      "notice_date": null,
+      "effective_date": "2026-09-25",
+      "employees": 168,
+      "layoff_type": "Layoff",
+      "county": "Cheboygan, Emmett, Genessee, Ingham, Lapeer",
+      "city": "",
+      "address": "748 S. Main St., Cheboygan, MI 49721; 1 McLaren Drive, Grand Blanc, MI 48439; 2900 Collins Road, Lansing, MI 48910; 1375 N. Maine St., Lapeer, MI 48446; 416 Connable Ave., Petoskey, MI 49770",
       "industry": ""
     }
   ]
