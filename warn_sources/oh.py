@@ -6,11 +6,13 @@ Ohio — Ohio Department of Job and Family Services (ODJFS) WARN notices.
 ODJFS publishes the current calendar year as a CSV hosted on the state's
 Cloudinary DAM; its versioned URL is embedded as escaped JSON (``csvUrl``)
 inside the Next.js payload of the public-notices page, so fetch scrapes the
-page first, then downloads the CSV it points to. Prior years live only as a
-PDF archive; Big Local News' pre-scraped historical snapshot (2017-2022) is
-used for backfill and cached locally after a single download. 2023-2025
-exist only as archive PDFs and are not parsed — the same gap BLN's own
-scraper has.
+page first, then downloads the CSV it points to. For prior years, Big Local
+News' pre-scraped historical snapshot (2017-2022) is used for backfill and
+cached locally after a single download. 2023-2025 used to exist only as
+archive PDFs nobody parsed (the same gap BLN's own scraper has), but JFS's
+rebuilt site now republishes each archived year as a CSV in the live feed's
+exact shape; ``scripts/backfill/oh_2023_2025_gap.py`` captures those three
+years into ``history_file`` below.
 
 Scrape flow, feed-line cleaning, and historical meld are vendored from Big
 Local News' Apache-2.0 warn-scraper (scrapers/oh.py); the field crosswalk
@@ -39,7 +41,7 @@ import pandas as pd
 import requests
 
 import warn_monitor
-from .base import Source
+from .base import DATA_DIR, Source
 
 log = logging.getLogger("warn_sources")
 
@@ -269,6 +271,11 @@ class OhioJFS(Source):
     agency = "Ohio Department of Job and Family Services"
     source_url = PAGE_URL
     cadence = "twice-daily"
+    # 2023-2025 fell between the BLN snapshot (ends 2022) and the live
+    # current-year feed; scripts/backfill/oh_2023_2025_gap.py recovered them
+    # from JFS's per-year archive CSVs. Like CA and NY, the file surfaces in
+    # the national dataset only — the OH live pipeline stays exactly as it is.
+    history_file = DATA_DIR / "historical" / "oh_history.json"
 
     # -- fetch ---------------------------------------------------------------
 
