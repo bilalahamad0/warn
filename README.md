@@ -11,7 +11,7 @@
 [![Python](https://img.shields.io/badge/python-3.12-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](#-license)
 
-An automated end-to-end pipeline that monitors layoff notices (WARN Act filings) from 46 state workforce agencies plus DC, parses historical records, detects changes, generates rich interactive charts, and publishes live dashboards with email alerts. California — the jurisdiction the project started with — keeps a dedicated dashboard with deeper per-notice detail.
+An automated end-to-end pipeline that monitors layoff notices (WARN Act filings) from 45 state workforce agencies plus DC — the 46 sources with `enabled = True` in the `warn_sources/` registry (count them with `len([s for s in warn_sources.SOURCES.values() if s.enabled])`; Missouri and Texas are fully implemented but disabled behind anti-bot walls). It parses historical records, detects changes, generates rich interactive charts, and publishes live dashboards with email alerts. California — the jurisdiction the project started with — keeps a dedicated dashboard with deeper per-notice detail.
 
 ---
 
@@ -48,7 +48,7 @@ Or embed on any website:
 
 ---
 
-## 📊 Charts Generated (11)
+## 📊 Charts Generated (12)
 
 | # | Chart | Description |
 |---|-------|-------------|
@@ -58,11 +58,12 @@ Or embed on any website:
 | 4 | **Top 25 Companies** | Biggest layoffs by cumulative headcount |
 | 5 | **County Heatmap** | County × Month heat-intensity matrix |
 | 6 | **Treemap** | Proportional breakdown by company and layoff type |
-| 7 | **Year-over-Year** | **Historical** annual employees and notice count (2014-present) |
-| 8 | **Multi-Year Trend** | **Historical** seasonal overlay of monthly layoffs across all years |
+| 7 | **Year-over-Year** | Employees and notices per calendar year (2014-present), derived from the national dataset; years with missing months are hatched, not hidden |
+| 8 | **Multi-Year Trend** | Monthly layoff pattern overlaid across all years (2014-present) for seasonal comparison |
 | 9 | **Industry Breakdown** | Employees affected by industry sector |
 | 10 | **Notice Lead Time** | Days from notice filing to effective date vs the 60-day WARN requirement |
 | 11 | **Top Counties** | Top 10 counties by total employees affected |
+| 12 | **US Map** | Filterable state choropleth — WARN activity by state, with metric and year toggles |
 
 ---
 
@@ -77,7 +78,7 @@ pip3 install -r requirements.txt
 ```bash
 cp .env.example .env
 # Edit .env and add your secrets:
-# GITHUB_TOKEN=your_personal_access_token (repo write scope)
+# GH_REPO_TOKEN=your_personal_access_token (repo write scope)
 # GMAIL_USER=your_email@gmail.com
 # GMAIL_APP_PASSWORD=your_16_char_google_app_password
 # NOTIFY_EMAIL=recipient@example.com
@@ -105,8 +106,11 @@ python3 warn_history.py
 **GitHub Actions (recommended).** The [`monitor.yml`](.github/workflows/monitor.yml)
 workflow runs the full pipeline twice daily (00:00 and 12:00 UTC) and on demand
 from the **Actions** tab. It runs the test suite, executes `warn_publish.py --no-push`,
-then commits any data/chart changes as `"auto: WARN data update [skip ci]"`. Two
+then commits any data/chart changes as `"auto: WARN data update [skip ci]"`. Four
 companion workflows keep the repo healthy:
+[`tests.yml`](.github/workflows/tests.yml) (runs pytest on every pull request),
+[`pages.yml`](.github/workflows/pages.yml) (deploys `docs/` to GitHub Pages — see
+["Publish"](#5-publish-github-pages) below),
 [`codeql.yml`](.github/workflows/codeql.yml) (weekly security scanning) and
 [`update-ai-metrics.yml`](.github/workflows/update-ai-metrics.yml) (refreshes
 `ai-metrics.json`).
@@ -138,10 +142,21 @@ tail -f data/warn_cron.log data/warn_cron_err.log
 
 ### 5. Publish (GitHub Pages)
 
-The dashboards are served from GitHub Pages — **Settings ▸ Pages**, Branch: `main`,
-Folder: `/docs`. Every pipeline run rewrites `docs/index.html` (US), `docs/ca/index.html`
-(California) and both `data.json` files, so the live site updates automatically once
-Pages is enabled.
+The dashboards are deployed by [`pages.yml`](.github/workflows/pages.yml), which
+uploads `docs/` as the Pages artifact and deploys it with `actions/deploy-pages`.
+For this to work, **Settings ▸ Pages ▸ Source** must be set to **GitHub Actions**
+(not a branch). The workflow runs on three triggers:
+
+- **push to `main` touching `docs/**`** — a human merge that changes the site;
+- **`workflow_run`** after a successful "WARN Monitor & Dashboard Update" run —
+  the pipeline's `[skip ci]` commits can never fire the push trigger, so this is
+  how the twice-daily data updates reach the live site;
+- **manually**: **Actions ▸ Deploy Pages ▸ Run workflow** (useful to redeploy
+  after a hiccup).
+
+Every pipeline run rewrites `docs/index.html` (US), `docs/ca/index.html`
+(California) and both `data.json` files, so the live site follows `main`
+automatically.
 
 > **⚠️ API change (August 2026).** `/warn/data.json` used to serve California and now
 > serves the national dataset — 47 jurisdictions, ~14 MB, each record carrying a
@@ -199,7 +214,7 @@ EDD WARN XLSX  ───► warn_monitor.py ──► data/warn_latest.json
     (ETag cache)          │                      │
                           ▼                      ▼
                   warn_history.py        warn_charts.py
-                  (PDF 2014-2024)        (11 Plotly charts)
+                  (PDF 2014-2024)        (12 Plotly charts)
                           │                      │
                           ▼                      ▼
                   warn_diff.py           docs/charts/*.html
