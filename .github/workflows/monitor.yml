@@ -45,6 +45,7 @@ jobs:
           pytest -v --cov=.
 
       - name: Run WARN Update Pipeline
+        id: pipeline
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
@@ -60,16 +61,35 @@ jobs:
           python3 warn_publish.py --no-push
 
       - name: Commit and push changes
+        # Runs on pipeline success AND pipeline failure — but only when the
+        # pipeline step actually ran. A failed run has already sent its alert
+        # emails (warn_publish raises on a root-site build failure only AFTER
+        # the notifications go out), and the ledgers recording those sends
+        # (data/notified_keys.json, amended_keys.json, digest_sent.json, and
+        # data/states/*) exist only in this throwaway workspace. Discarding
+        # them re-emails every subscriber the same notices next run. The
+        # outcome gate keeps a totally-failed run (dependency install or test
+        # failure — pipeline outcome 'skipped') from committing garbage.
+        if: ${{ !cancelled() && (steps.pipeline.outcome == 'success' || steps.pipeline.outcome == 'failure') }}
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          
-          # Add all data and docs updates
-          git add data/ docs/
-          
-          # Only commit/push if there are actual data changes
+
+          if [ "${{ steps.pipeline.outcome }}" = "success" ]; then
+            # Full publish: data and the rebuilt site.
+            git add data/ docs/
+            MSG="auto: WARN data update [skip ci]"
+          else
+            # Root site build failed: persist ONLY the alert ledgers so
+            # already-sent alerts are never re-emailed. docs/ stays
+            # uncommitted — the last good page remains published.
+            git add data/
+            MSG="auto: alert ledgers (pipeline failed) [skip ci]"
+          fi
+
+          # Only commit/push if there are actual changes staged
           if ! git diff --cached --quiet; then
-            git commit -m "auto: WARN data update [skip ci]"
+            git commit -m "$MSG"
             git push
           else
             echo "No changes to commit"

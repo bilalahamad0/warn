@@ -534,6 +534,157 @@ def test_git_add_omits_the_unsubscribe_page_when_it_was_not_built(
     assert "docs/" in staged            # the rest is still staged as before
 
 
+# ---------------------------------------------------------------------------
+# Ledger persistence on a root-site build failure
+# ---------------------------------------------------------------------------
+#
+# run() deliberately sends notifications and the digest BEFORE raising on a
+# root-build failure. The ledgers recording those sends are written locally —
+# so the failure path must commit data/ (and only data/) or a fresh CI
+# workspace discards them and every subscriber is re-emailed next run.
+
+
+class _GitRecorder:
+    """Stands in for subprocess.run, recording every argv.
+
+    ``git diff --cached --quiet`` reports staged changes (exit 1) by default so
+    the ledger-commit path runs end to end; ``staged_changes=False`` gives the
+    nothing-to-commit case. Everything else succeeds with empty output.
+    """
+
+    def __init__(self, staged_changes=True):
+        self.calls = []
+        self.staged_changes = staged_changes
+
+    def __call__(self, args, **kwargs):
+        self.calls.append(list(args))
+        if list(args[:3]) == ["git", "diff", "--cached"]:
+            rc = 1 if self.staged_changes else 0
+            return SimpleNamespace(returncode=rc, stdout="", stderr="")
+        return SimpleNamespace(returncode=0, stdout="", stderr="")
+
+
+def _run_with_root_failure(tmp_path, no_push):
+    """Drive run() with build_us_site raising and every other stage mocked.
+
+    Asserts the RuntimeError propagates (the run must still exit non-zero so
+    the last good page stays published). Git is NOT mocked here — stub
+    subprocess.run before calling if the test lets the ledger path run.
+    """
+    (tmp_path / "charts_manifest.json").write_text(
+        json.dumps({"charts": [], "total_records": 0, "total_employees": 0})
+    )
+    with patch("warn_publish.warn_sources.run_all", return_value={}), \
+         patch("warn_publish.warn_sources.all_sources", return_value=[]), \
+         patch("warn_publish.warn_diff.generate_report"), \
+         patch("warn_publish.warn_history.run"), \
+         patch("warn_publish.warn_aggregate.build_national"), \
+         patch("warn_publish.warn_charts.run"), \
+         patch("warn_publish.warn_site_us.build_us_site",
+               side_effect=ValueError("chart hiccup")), \
+         patch("warn_publish.warn_site_us.build_legacy_us_redirect"), \
+         patch("warn_publish.build_site"), \
+         patch("warn_publish.build_unsubscribe_page"), \
+         patch("warn_publish.maybe_send_monthly_digest") as mock_digest, \
+         patch("warn_publish.warn_notify.load_subscriber_records",
+               return_value=[]), \
+         patch("warn_publish.DATA_DIR", tmp_path):
+        with pytest.raises(RuntimeError, match="site build failed"):
+            warn_publish.run(no_push=no_push)
+    return mock_digest
+
+
+def test_root_failure_commits_ledgers_only_and_still_raises(
+    tmp_path, monkeypatch
+):
+    """Local run, root build fails: data/ is committed and pushed, docs/ is
+    never staged, and the RuntimeError still propagates."""
+    rec = _GitRecorder()
+    monkeypatch.setattr(warn_publish.subprocess, "run", rec)
+    mock_digest = _run_with_root_failure(tmp_path, no_push=False)
+
+    # The sends went out before the raise, exactly as before.
+    assert mock_digest.called
+
+    # Only data/ was ever staged — docs/ appears in no git argv at all.
+    assert ["git", "add", "data/"] in rec.calls
+    assert not any("docs/" in arg for call in rec.calls for arg in call)
+
+    # Committed with the distinct ledger message, [skip ci] included, and the
+    # pathspec restricting the commit to data/ …
+    commit = next(c for c in rec.calls if c[:2] == ["git", "commit"])
+    msg = commit[commit.index("-m") + 1]
+    assert msg == "auto: alert ledgers (site build failed) [skip ci]"
+    assert "[skip ci]" in msg
+    assert commit[-2:] == ["--", "data/"]
+
+    # … and pushed.
+    assert ["git", "push", "origin", "main"] in rec.calls
+
+
+def test_root_failure_with_no_push_runs_no_git_at_all(tmp_path, monkeypatch):
+    """--no-push means the caller owns git: in CI, monitor.yml's failure
+    branch commits data/ itself, so the in-process path must stay silent."""
+    rec = _GitRecorder()
+    monkeypatch.setattr(warn_publish.subprocess, "run", rec)
+    _run_with_root_failure(tmp_path, no_push=True)
+    assert rec.calls == []
+
+
+def test_ledger_commit_failure_never_masks_the_root_raise(tmp_path):
+    """A broken git must not turn the deliberate RuntimeError into an OSError
+    (the helper asserts the RuntimeError still propagates)."""
+    with patch("warn_publish.commit_ledgers",
+               side_effect=OSError("no git binary")) as mock_ledgers:
+        _run_with_root_failure(tmp_path, no_push=False)
+    assert mock_ledgers.called
+
+
+def test_commit_ledgers_is_a_noop_without_data_changes(monkeypatch):
+    rec = _GitRecorder(staged_changes=False)
+    monkeypatch.setattr(warn_publish.subprocess, "run", rec)
+    assert warn_publish.commit_ledgers() is False
+    assert ["git", "add", "data/"] in rec.calls
+    assert not any(c[:2] == ["git", "commit"] for c in rec.calls)
+    assert not any(c[:2] == ["git", "push"] for c in rec.calls)
+
+
+def test_commit_ledgers_swallows_git_errors(monkeypatch):
+    """Best-effort by contract: it runs just ahead of run()'s raise."""
+    def boom(*args, **kwargs):
+        raise OSError("git missing")
+
+    monkeypatch.setattr(warn_publish.subprocess, "run", boom)
+    assert warn_publish.commit_ledgers() is False       # must not raise
+
+
+def test_success_path_uses_full_commit_not_the_ledger_path(tmp_path):
+    """With a healthy root build and no_push=False, the normal full commit
+    runs and the failure-path ledger commit does not."""
+    (tmp_path / "charts_manifest.json").write_text(
+        json.dumps({"charts": [], "total_records": 0, "total_employees": 0})
+    )
+    with patch("warn_publish.warn_sources.run_all", return_value={}), \
+         patch("warn_publish.warn_sources.all_sources", return_value=[]), \
+         patch("warn_publish.warn_diff.generate_report"), \
+         patch("warn_publish.warn_history.run"), \
+         patch("warn_publish.warn_aggregate.build_national"), \
+         patch("warn_publish.warn_charts.run"), \
+         patch("warn_publish.warn_site_us.build_us_site"), \
+         patch("warn_publish.warn_site_us.build_legacy_us_redirect"), \
+         patch("warn_publish.build_site"), \
+         patch("warn_publish.build_unsubscribe_page"), \
+         patch("warn_publish.maybe_send_monthly_digest"), \
+         patch("warn_publish.warn_notify.load_subscriber_records",
+               return_value=[]), \
+         patch("warn_publish.git_commit_push") as mock_push, \
+         patch("warn_publish.commit_ledgers") as mock_ledgers, \
+         patch("warn_publish.DATA_DIR", tmp_path):
+        warn_publish.run(no_push=False)
+    assert mock_push.called
+    assert not mock_ledgers.called
+
+
 def test_maybe_send_digest_threads_records_to_the_notifier(digest_dir):
     records = [{"email": "d@x.com", "name": "", "states": [], "digest": True}]
     payload = {"subject": "s", "html": "<p>h</p>", "text": "t"}
