@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-07T13:03:14.825226+00:00",
+  "last_updated": "2026-08-08T01:12:05.755462+00:00",
   "states_live": 47,
-  "total_records": 59897,
-  "total_employees": 6458046,
+  "total_records": 59910,
+  "total_employees": 6459307,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -15,8 +15,8 @@
       "name": "Alabama",
       "agency": "Alabama Department of Workforce",
       "source_url": "https://workforce.alabama.gov/warn-list/",
-      "total_records": 1061,
-      "total_employees": 180981
+      "total_records": 1064,
+      "total_employees": 181778
     },
     "AZ": {
       "name": "Arizona",
@@ -134,15 +134,15 @@
       "name": "Massachusetts",
       "agency": "Massachusetts Executive Office of Labor and Workforce Development",
       "source_url": "https://www.mass.gov/info-details/worker-adjustment-and-retraining-notification-act-warn",
-      "total_records": 380,
-      "total_employees": 33690
+      "total_records": 381,
+      "total_employees": 33695
     },
     "MD": {
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1345,
-      "total_employees": 114512
+      "total_records": 1347,
+      "total_employees": 114610
     },
     "ME": {
       "name": "Maine",
@@ -246,8 +246,8 @@
       "name": "Oregon",
       "agency": "Oregon Higher Education Coordinating Commission, Office of Community Colleges and Workforce Development",
       "source_url": "https://ccwd.hecc.oregon.gov/Layoff/WARN",
-      "total_records": 1355,
-      "total_employees": 186655
+      "total_records": 1360,
+      "total_employees": 186698
     },
     "PA": {
       "name": "Pennsylvania",
@@ -281,8 +281,8 @@
       "name": "Tennessee",
       "agency": "Tennessee Department of Labor and Workforce Development",
       "source_url": "https://www.tn.gov/workforce/general-resources/major-publications0/major-publications-redirect/reports.html",
-      "total_records": 1058,
-      "total_employees": 120742
+      "total_records": 1060,
+      "total_employees": 121060
     },
     "TX": {
       "name": "Texas",
@@ -13856,6 +13856,42 @@
       "layoff_type": "Layoff",
       "county": "",
       "city": "Bay Minette",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "CORIZON HEALTH",
+      "notice_date": "2018-02-05",
+      "effective_date": "2026-08-07",
+      "employees": 648,
+      "layoff_type": "Closing *",
+      "county": "",
+      "city": "State Wide",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "SEARS HOLDINGS",
+      "notice_date": "2009-02-28",
+      "effective_date": "2026-08-07",
+      "employees": 15,
+      "layoff_type": "Closing *",
+      "county": "",
+      "city": "Birmingham",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "URS CORPORATION",
+      "notice_date": "2010-01-22",
+      "effective_date": "2026-08-07",
+      "employees": 134,
+      "layoff_type": "Layoff *",
+      "county": "",
+      "city": "Birmingham",
       "address": "",
       "industry": ""
     },
@@ -367774,6 +367810,18 @@
       "industry": ""
     },
     {
+      "state": "MA",
+      "company": "Pure Safety Group, Inc (dba Guardian Fall)",
+      "notice_date": "2026-08-06",
+      "effective_date": "2026-10-02",
+      "employees": 5,
+      "layoff_type": "",
+      "county": "Metro Southwest",
+      "city": "Franklin",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "MD",
       "company": "Taft Broadcasting, LLC",
       "notice_date": "2026-07-20",
@@ -383912,6 +383960,30 @@
       "city": "",
       "address": "300 Professional Drive, Gaithersburg, MD 20879",
       "industry": "541715"
+    },
+    {
+      "state": "MD",
+      "company": "Grassroots Crisis Intervention Center",
+      "notice_date": "2026-08-06",
+      "effective_date": "2026-09-29",
+      "employees": 60,
+      "layoff_type": "Mass-Layoff - No Recall",
+      "county": "Howard County",
+      "city": "",
+      "address": "8990 Old Annapolis Road, Ste. A, Columbia, MD 21045",
+      "industry": "624190"
+    },
+    {
+      "state": "MD",
+      "company": "Karna, LLC",
+      "notice_date": "2026-08-06",
+      "effective_date": "2026-11-30",
+      "employees": 38,
+      "layoff_type": "Plant Closure",
+      "county": "Prince George\u2019s County",
+      "city": "",
+      "address": "6404 Ivy Lane, Suite 620, Greenbelt, MD 20770",
+      "industry": "541990"
     },
     {
       "state": "ME",
@@ -553939,6 +554011,66 @@
       "industry": ""
     },
     {
+      "state": "OR",
+      "company": "Bowtech, LLC",
+      "notice_date": "2026-07-27",
+      "effective_date": "2027-02-28",
+      "employees": 1,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Eugene",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Bowtech, LLC",
+      "notice_date": "2026-07-27",
+      "effective_date": "2026-12-31",
+      "employees": 9,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Eugene",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Bowtech, LLC",
+      "notice_date": "2026-07-27",
+      "effective_date": "2026-11-30",
+      "employees": 4,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Eugene",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Bowtech, LLC",
+      "notice_date": "2026-07-27",
+      "effective_date": "2026-10-31",
+      "employees": 6,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Eugene",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Bowtech, LLC",
+      "notice_date": "2026-07-27",
+      "effective_date": "2026-09-30",
+      "employees": 23,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Eugene",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "PA",
       "company": "Transform Warehouse Operations, LLC",
       "notice_date": null,
@@ -577996,6 +578128,30 @@
       "employees": 119,
       "layoff_type": "",
       "county": "Shelby",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "TN",
+      "company": "Resource Label",
+      "notice_date": "2026-08-06",
+      "effective_date": "2026-10-03",
+      "employees": 68,
+      "layoff_type": "",
+      "county": "Williamson",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "TN",
+      "company": "TikTok USDS JV",
+      "notice_date": "2026-08-05",
+      "effective_date": "2026-10-05",
+      "employees": 250,
+      "layoff_type": "",
+      "county": "Davidson",
       "city": "",
       "address": "",
       "industry": ""
@@ -640647,7 +640803,7 @@
       "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-08-07",
+      "effective_date": "2026-08-08",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",

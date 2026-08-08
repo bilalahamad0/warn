@@ -1,9 +1,9 @@
 {
-  "total_records": 380,
-  "total_employees": 33690,
+  "total_records": 381,
+  "total_employees": 33695,
   "date_range_start": "2021-04-19",
-  "date_range_end": "2026-07-31",
-  "last_updated": "2026-08-07T12:54:54.001625+00:00",
+  "date_range_end": "2026-08-06",
+  "last_updated": "2026-08-08T01:05:07.624840+00:00",
   "source_url": "https://www.mass.gov/info-details/worker-adjustment-and-retraining-notification-act-warn",
   "records": [
     {
@@ -4479,6 +4479,18 @@
       "layoff_type": "",
       "county": "Southeast",
       "city": "Bridgewater",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "Pure Safety Group, Inc (dba Guardian Fall)",
+      "notice_date": "2026-08-06",
+      "effective_date": "2026-10-02",
+      "employees": 5,
+      "layoff_type": "",
+      "county": "Metro Southwest",
+      "city": "Franklin",
       "address": "",
       "industry": ""
     },

@@ -1,41 +1,16 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-08-07 13:03:14 UTC
+**Generated:** 2026-08-08 01:12:05 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 86 | 36 | +0/+50 |
-| Total employees | 4,958 | 2,560 | -2,398 |
+| Total records | 36 | 36 | +0/+0 |
+| Total employees | 2,560 | 2,560 | +0 |
 
 ### ✅ No new entries.
-
-### ❌ Removed Entries (50 records)
-
-| Company | Employees | Effective Date |
-|---------|-----------|----------------|
-| Visa | 320 | 2026-10-01 |
-| Sodexo | 164 | 2026-09-30 |
-| ServiceNow, Inc. | 154 | 2026-09-28 |
-| Chime Financial, Inc. | 135 | 2026-09-30 |
-| ServiceNow, Inc. | 133 | 2026-09-28 |
-| Pixar | 108 | 2026-09-26 |
-| Fortrex | 91 | 2026-08-21 |
-| San Francisico Pretrial Diversion Project, Inc. | 82 | 2026-11-13 |
-| PD Systems | 81 | 2026-08-28 |
-| Chick-fil-A & Fig | 77 | 2026-09-27 |
-| Salesforce, Inc. | 74 | 2026-10-05 |
-| Tencent America LLC | 68 | 2026-09-28 |
-| Intel Corporation - SC-12 | 67 | 2026-08-15 |
-| O'Briens Market Inc. | 67 | 2026-09-27 |
-| Nutanix, Inc. | 65 | 2026-10-05 |
-| WeDriveU, Inc. | 63 | 2026-10-01 |
-| Federal Express Corporation | 62 | 2026-09-29 |
-| New Leaf Community Markets, Inc. | 61 | 2026-09-20 |
-| Yamaha Motor Finance Corporation U.S.A. | 61 | 2026-10-01 |
-| Silgan Containers | 55 | 2026-09-21 |
 
 ---
 ## 📁 File vs Git Comparison
@@ -48,11 +23,11 @@
 ```
 M data/changelog.jsonl
  M data/states/ak/changelog.jsonl
+ M data/states/ak/meta.json
  M data/states/ak/warn_cumulative.json
  M data/states/ak/warn_latest.json
  M data/states/ak/warn_snapshot.json
  M data/states/al/changelog.jsonl
- M data/states/al/raw_download
  M data/states/al/warn_cumulative.json
  M data/states/al/warn_latest.json
  M data/states/al/warn_snapshot.json
@@ -131,6 +106,7 @@ M data/changelog.jsonl
  M data/states/la/warn_snapshot.json
  M data/states/ma/changelog.jsonl
  M data/states/ma/meta.json
+ M data/states/ma/raw_download.csv
  M data/states/ma/warn_cumulative.json
  M data/states/ma/warn_latest.json
  M data/states/ma/warn_snapshot.json
@@ -160,7 +136,6 @@ M data/changelog.jsonl
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
- M data/states/mt/meta.json
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
@@ -175,7 +150,6 @@ M data/changelog.jsonl
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
- M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
@@ -206,11 +180,13 @@ M data/changelog.jsonl
  M data/states/or/changelog.jsonl
  M data/states/or/latest.xlsx
  M data/states/or/meta.json
+ M data/states/or/raw_download
  M data/states/or/warn_cumulative.json
  M data/states/or/warn_latest.json
  M data/states/or/warn_snapshot.json
  M data/states/pa/changelog.jsonl
  M data/states/pa/meta.json
+ M data/states/pa/raw_download
  M data/states/pa/warn_cumulative.json
  M data/states/pa/warn_latest.json
  M data/states/pa/warn_snapshot.json
@@ -228,6 +204,11 @@ M data/changelog.jsonl
  M data/states/sd/warn_cumulative.json
  M data/states/sd/warn_latest.json
  M data/states/sd/warn_snapshot.json
+ M data/states/tn/changelog.jsonl
+ M data/states/tn/raw_download
+ M data/states/tn/warn_cumulative.json
+ M data/states/tn/warn_latest.json
+ M data/states/tn/warn_snapshot.json
  M data/states/ut/changelog.jsonl
  M data/states/ut/meta.json
  M data/states/ut/warn_cumulative.json
@@ -235,6 +216,7 @@ M data/changelog.jsonl
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
+ M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -265,16 +247,17 @@ M data/changelog.jsonl
 
 **Recent commits:**
 ```
-8b84e62a Merge pull request #22 from bilalahamad0/fix/oh-backfill-and-verify
-16f404ff chore: rebuild artifacts with the Ohio 2023-2025 backfill
-0b18d893 data: backfill Ohio's 2023-2025 archive gap (265 records, all 36 months)
-f9f25219 Merge pull request #21 from bilalahamad0/fix/date-semantics-and-gap-honesty
-94322af3 chore: rebuild all artifacts from the integrated dataset
+b3e84c7b Merge pull request #24 from bilalahamad0/fix/signup-scroll-and-honest-labels
+21cba16d fix: signup opens in place; honest label for the US dashboard link
+e7d46a61 Merge pull request #23 from bilalahamad0/feat/header-signup-and-ca-link
+cec0dedc feat: signup reachable from the header; clearer California link
+3aad18ca auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-08-08T00:56:53.158561+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-07T12:47:50.735677+00:00` — +0 added, -50 removed, 0 employees (new)
 - `2026-08-07T04:08:11.219674+00:00Z` — +5 added, -0 removed, 240 employees (new)
 - `2026-08-06T13:48:39.914019+00:00Z` — +0 added, -0 removed, 0 employees (new)
@@ -284,4 +267,3 @@ f9f25219 Merge pull request #21 from bilalahamad0/fix/date-semantics-and-gap-hon
 - `2026-08-04T13:55:57.828318+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-04T01:34:05.729837+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-03T14:23:26.774431+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-08-03T01:47:22.895772+00:00Z` — +0 added, -0 removed, 0 employees (new)
