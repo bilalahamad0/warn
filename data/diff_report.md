@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-08-08 01:12:05 UTC
+**Generated:** 2026-08-08 12:48:34 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -106,7 +106,6 @@ M data/changelog.jsonl
  M data/states/la/warn_snapshot.json
  M data/states/ma/changelog.jsonl
  M data/states/ma/meta.json
- M data/states/ma/raw_download.csv
  M data/states/ma/warn_cumulative.json
  M data/states/ma/warn_latest.json
  M data/states/ma/warn_snapshot.json
@@ -136,6 +135,7 @@ M data/changelog.jsonl
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
+ M data/states/mt/meta.json
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
@@ -180,13 +180,11 @@ M data/changelog.jsonl
  M data/states/or/changelog.jsonl
  M data/states/or/latest.xlsx
  M data/states/or/meta.json
- M data/states/or/raw_download
  M data/states/or/warn_cumulative.json
  M data/states/or/warn_latest.json
  M data/states/or/warn_snapshot.json
  M data/states/pa/changelog.jsonl
  M data/states/pa/meta.json
- M data/states/pa/raw_download
  M data/states/pa/warn_cumulative.json
  M data/states/pa/warn_latest.json
  M data/states/pa/warn_snapshot.json
@@ -210,13 +208,11 @@ M data/changelog.jsonl
  M data/states/tn/warn_latest.json
  M data/states/tn/warn_snapshot.json
  M data/states/ut/changelog.jsonl
- M data/states/ut/meta.json
  M data/states/ut/warn_cumulative.json
  M data/states/ut/warn_latest.json
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
- M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -247,16 +243,17 @@ M data/changelog.jsonl
 
 **Recent commits:**
 ```
+af6b531f auto: WARN data update [skip ci]
 b3e84c7b Merge pull request #24 from bilalahamad0/fix/signup-scroll-and-honest-labels
 21cba16d fix: signup opens in place; honest label for the US dashboard link
 e7d46a61 Merge pull request #23 from bilalahamad0/feat/header-signup-and-ca-link
 cec0dedc feat: signup reachable from the header; clearer California link
-3aad18ca auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-08-08T12:33:59.277007+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-08T00:56:53.158561+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-07T12:47:50.735677+00:00` — +0 added, -50 removed, 0 employees (new)
 - `2026-08-07T04:08:11.219674+00:00Z` — +5 added, -0 removed, 240 employees (new)
@@ -266,4 +263,3 @@ cec0dedc feat: signup reachable from the header; clearer California link
 - `2026-08-05T01:38:13.496412+00:00Z` — +10 added, -0 removed, 707 employees (new)
 - `2026-08-04T13:55:57.828318+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-04T01:34:05.729837+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-08-03T14:23:26.774431+00:00Z` — +0 added, -0 removed, 0 employees (new)

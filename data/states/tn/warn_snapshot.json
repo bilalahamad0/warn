@@ -1,11 +1,35 @@
 {
-  "total_records": 93,
-  "total_employees": 14520,
+  "total_records": 95,
+  "total_employees": 14838,
   "date_range_start": "2025-01-21",
-  "date_range_end": "2026-08-04",
-  "last_updated": "2026-08-05T14:02:10.015966+00:00Z",
+  "date_range_end": "2026-08-06",
+  "last_updated": "2026-08-08T01:09:16.165246+00:00",
   "source_url": "https://www.tn.gov/workforce/general-resources/major-publications0/major-publications-redirect/reports.html",
   "records": [
+    {
+      "state": "TN",
+      "company": "Resource Label",
+      "notice_date": "2026-08-06",
+      "effective_date": "2026-10-03",
+      "employees": 68,
+      "layoff_type": "",
+      "county": "Williamson",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "TN",
+      "company": "TikTok USDS JV",
+      "notice_date": "2026-08-05",
+      "effective_date": "2026-10-05",
+      "employees": 250,
+      "layoff_type": "",
+      "county": "Davidson",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "TN",
       "company": "Wellpath",
