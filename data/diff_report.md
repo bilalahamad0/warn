@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-08-09 12:53:41 UTC
+**Generated:** 2026-08-10 01:17:31 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -28,6 +28,7 @@ M data/changelog.jsonl
  M data/states/ak/warn_latest.json
  M data/states/ak/warn_snapshot.json
  M data/states/al/changelog.jsonl
+ M data/states/al/raw_download
  M data/states/al/warn_cumulative.json
  M data/states/al/warn_latest.json
  M data/states/al/warn_snapshot.json
@@ -135,7 +136,6 @@ M data/changelog.jsonl
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
- M data/states/mt/meta.json
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
@@ -150,7 +150,6 @@ M data/changelog.jsonl
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
- M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
@@ -204,12 +203,12 @@ M data/changelog.jsonl
  M data/states/sd/warn_latest.json
  M data/states/sd/warn_snapshot.json
  M data/states/ut/changelog.jsonl
- M data/states/ut/meta.json
  M data/states/ut/warn_cumulative.json
  M data/states/ut/warn_latest.json
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
+ M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -240,16 +239,17 @@ M data/changelog.jsonl
 
 **Recent commits:**
 ```
+66a36393 auto: WARN data update [skip ci]
 ce364bb9 chore: weekly AI metrics update [skip actions]
 d4a18976 auto: WARN data update [skip ci]
 7082836b auto: WARN data update [skip ci]
 af6b531f auto: WARN data update [skip ci]
-b3e84c7b Merge pull request #24 from bilalahamad0/fix/signup-scroll-and-honest-labels
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-08-10T01:02:56.868008+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-09T12:37:45.493776+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-09T01:00:48.806436+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-08T12:33:59.277007+00:00` — +0 added, -0 removed, 0 employees (new)
@@ -259,4 +259,3 @@ b3e84c7b Merge pull request #24 from bilalahamad0/fix/signup-scroll-and-honest-l
 - `2026-08-06T13:48:39.914019+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-06T01:35:16.983844+00:00Z` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-05T13:50:38.715645+00:00Z` — +0 added, -46 removed, 0 employees (new)
-- `2026-08-05T01:38:13.496412+00:00Z` — +10 added, -0 removed, 707 employees (new)
