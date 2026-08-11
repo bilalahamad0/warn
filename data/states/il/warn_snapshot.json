@@ -1,9 +1,9 @@
 {
-  "total_records": 4874,
-  "total_employees": 669407,
+  "total_records": 4880,
+  "total_employees": 670389,
   "date_range_start": "1987-09-01",
-  "date_range_end": "2026-07-31",
-  "last_updated": "2026-08-10T12:57:26.555271+00:00",
+  "date_range_end": "2026-08-07",
+  "last_updated": "2026-08-11T01:07:14.034058+00:00",
   "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
   "records": [
     {
@@ -3848,6 +3848,18 @@
     },
     {
       "state": "IL",
+      "company": "UnityPoint Health (at Rock Island Trinity West Hospital)",
+      "notice_date": "2026-05-01",
+      "effective_date": null,
+      "employees": 68,
+      "layoff_type": "Layoff",
+      "county": "Rock Island County",
+      "city": "Rock Island",
+      "address": "2701 17th Street",
+      "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "IL",
       "company": "Vistra Corp.",
       "notice_date": "2026-05-04",
       "effective_date": null,
@@ -4133,6 +4145,66 @@
       "city": "Chicago",
       "address": "8835 S Greenwood Ave.",
       "industry": "Transportation and Warehousing"
+    },
+    {
+      "state": "IL",
+      "company": "GreenWood, Inc.",
+      "notice_date": "2026-08-04",
+      "effective_date": null,
+      "employees": 28,
+      "layoff_type": "Plant Closure",
+      "county": "Du Page County",
+      "city": "Hanover Park",
+      "address": "850 Central Ave.",
+      "industry": "Other Services (except Public Administration)"
+    },
+    {
+      "state": "IL",
+      "company": "Essendant Co.",
+      "notice_date": "2026-08-03",
+      "effective_date": null,
+      "employees": 134,
+      "layoff_type": "Plant Closure",
+      "county": "Du Page County",
+      "city": "Carol Stream",
+      "address": "230 Lies Rd E",
+      "industry": "Wholesale Trade"
+    },
+    {
+      "state": "IL",
+      "company": "Essendant Co.",
+      "notice_date": "2026-08-03",
+      "effective_date": null,
+      "employees": 510,
+      "layoff_type": "Plant Closure",
+      "county": "Lake County",
+      "city": "Lincolnshire",
+      "address": "200 Tri-State Dr., Suite 400",
+      "industry": "Wholesale Trade"
+    },
+    {
+      "state": "IL",
+      "company": "Nordstrom",
+      "notice_date": "2026-08-07",
+      "effective_date": null,
+      "employees": 101,
+      "layoff_type": "Plant Closure",
+      "county": "Du Page County",
+      "city": "Lombard",
+      "address": "100 Yorktown Center",
+      "industry": "Retail Trade"
+    },
+    {
+      "state": "IL",
+      "company": "Silver Star Protection Group",
+      "notice_date": "2026-08-03",
+      "effective_date": null,
+      "employees": 141,
+      "layoff_type": "Mass Layoff",
+      "county": "Cook County",
+      "city": "Rolling Meadows",
+      "address": "3601 Algonquin Rd.",
+      "industry": "Administrative, Support, Waste Management, and Remediation Services"
     },
     {
       "state": "IL",
