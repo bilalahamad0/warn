@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-10T13:08:29.579570+00:00",
+  "last_updated": "2026-08-11T01:18:33.082662+00:00",
   "states_live": 47,
-  "total_records": 59910,
-  "total_employees": 6459307,
+  "total_records": 59916,
+  "total_employees": 6460289,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -99,8 +99,8 @@
       "name": "Illinois",
       "agency": "Illinois Department of Commerce and Economic Opportunity",
       "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
-      "total_records": 4868,
-      "total_employees": 668911
+      "total_records": 4874,
+      "total_employees": 669893
     },
     "IN": {
       "name": "Indiana",
@@ -334804,6 +334804,78 @@
       "industry": "Transportation and Warehousing"
     },
     {
+      "state": "IL",
+      "company": "UnityPoint Health (at Rock Island Trinity West Hospital)",
+      "notice_date": "2026-05-01",
+      "effective_date": null,
+      "employees": 68,
+      "layoff_type": "Layoff",
+      "county": "Rock Island County",
+      "city": "Rock Island",
+      "address": "2701 17th Street",
+      "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "IL",
+      "company": "GreenWood, Inc.",
+      "notice_date": "2026-08-04",
+      "effective_date": null,
+      "employees": 28,
+      "layoff_type": "Plant Closure",
+      "county": "Du Page County",
+      "city": "Hanover Park",
+      "address": "850 Central Ave.",
+      "industry": "Other Services (except Public Administration)"
+    },
+    {
+      "state": "IL",
+      "company": "Essendant Co.",
+      "notice_date": "2026-08-03",
+      "effective_date": null,
+      "employees": 134,
+      "layoff_type": "Plant Closure",
+      "county": "Du Page County",
+      "city": "Carol Stream",
+      "address": "230 Lies Rd E",
+      "industry": "Wholesale Trade"
+    },
+    {
+      "state": "IL",
+      "company": "Essendant Co.",
+      "notice_date": "2026-08-03",
+      "effective_date": null,
+      "employees": 510,
+      "layoff_type": "Plant Closure",
+      "county": "Lake County",
+      "city": "Lincolnshire",
+      "address": "200 Tri-State Dr., Suite 400",
+      "industry": "Wholesale Trade"
+    },
+    {
+      "state": "IL",
+      "company": "Nordstrom",
+      "notice_date": "2026-08-07",
+      "effective_date": null,
+      "employees": 101,
+      "layoff_type": "Plant Closure",
+      "county": "Du Page County",
+      "city": "Lombard",
+      "address": "100 Yorktown Center",
+      "industry": "Retail Trade"
+    },
+    {
+      "state": "IL",
+      "company": "Silver Star Protection Group",
+      "notice_date": "2026-08-03",
+      "effective_date": null,
+      "employees": 141,
+      "layoff_type": "Mass Layoff",
+      "county": "Cook County",
+      "city": "Rolling Meadows",
+      "address": "3601 Algonquin Rd.",
+      "industry": "Administrative, Support, Waste Management, and Remediation Services"
+    },
+    {
       "state": "IN",
       "company": "Thyssenkrupp Presta North America",
       "notice_date": "2026-06-30",
@@ -640803,7 +640875,7 @@
       "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-08-10",
+      "effective_date": "2026-08-11",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",
