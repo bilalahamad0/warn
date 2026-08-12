@@ -1,9 +1,9 @@
 {
   "total_records": 369,
-  "total_employees": 34130,
+  "total_employees": 34139,
   "date_range_start": "2022-01-25",
   "date_range_end": "2026-07-23",
-  "last_updated": "2026-08-11T13:01:21.001481+00:00",
+  "last_updated": "2026-08-12T01:19:02.839639+00:00",
   "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
   "records": [
     {
@@ -3814,8 +3814,8 @@
       "state": "NC",
       "company": "SMBC MANUBANK",
       "notice_date": "2026-01-08",
-      "effective_date": "2026-08-03",
-      "employees": 19,
+      "effective_date": "2026-10-09",
+      "employees": 28,
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "New York NY",

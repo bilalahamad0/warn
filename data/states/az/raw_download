@@ -1,5 +1,17 @@
 [
  {
+  "employer": "SMBC MANUBANK",
+  "city": "New York",
+  "zip": "10172",
+  "lwib_area": "7 - ARIZONA@WORK - Maricopa County",
+  "notice_date": "Aug 11, 2026",
+  "warn_type": "WARN",
+  "record_number": "991",
+  "detail_page_url": "https://www.azjobconnection.gov/search/warn_lookups/991",
+  "number_of_employees_affected": "23",
+  "address": "277 Park Avenue; New York, New York 10172"
+ },
+ {
   "employer": "Essendant",
   "city": "Phoenix",
   "zip": "85042",

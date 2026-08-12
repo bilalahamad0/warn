@@ -1,9 +1,9 @@
 {
-  "total_records": 4776,
-  "total_employees": 416944,
+  "total_records": 4778,
+  "total_employees": 417076,
   "date_range_start": "2016-01-04",
   "date_range_end": "2026-07-21",
-  "last_updated": "2026-08-11T13:02:20.872250+00:00",
+  "last_updated": "2026-08-12T01:20:02.469038+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -57316,6 +57316,30 @@
       "county": "Bronx",
       "city": "",
       "address": "1 E 161st St Bronx, NY, 10451",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Republic National Distributing Company New York, LLC.",
+      "notice_date": "2026-05-01",
+      "effective_date": "2026-07-31",
+      "employees": 86,
+      "layoff_type": "Closure Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "570 Lexington Avenue Suite 2501 New York, NY, 10022",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Republic National Distributing Company New York, LLC.",
+      "notice_date": "2026-05-01",
+      "effective_date": "2026-07-31",
+      "employees": 46,
+      "layoff_type": "Closure Permanent",
+      "county": "Onondaga",
+      "city": "",
+      "address": "6600 New Venture Gear Drive Suite 450 East Syracuse, NY, 13057",
       "industry": ""
     }
   ]

@@ -1,9 +1,9 @@
 {
   "total_records": 367,
-  "total_employees": 34037,
+  "total_employees": 34046,
   "date_range_start": "2022-01-25",
   "date_range_end": "2026-07-23",
-  "last_updated": "2026-08-11T13:01:21.006737+00:00",
+  "last_updated": "2026-08-12T01:19:02.844336+00:00",
   "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
   "records": [
     {
@@ -4352,18 +4352,6 @@
     },
     {
       "state": "NC",
-      "company": "SMBC MANUBANK",
-      "notice_date": "2026-01-08",
-      "effective_date": "2026-08-03",
-      "employees": 19,
-      "layoff_type": "Layoff Permanent",
-      "county": "",
-      "city": "New York NY",
-      "address": "277 Park Avenue",
-      "industry": ""
-    },
-    {
-      "state": "NC",
       "company": "Asensus Surgical, Inc.",
       "notice_date": "2026-06-16",
       "effective_date": "2027-03-31",
@@ -4408,6 +4396,18 @@
       "county": "Mecklenburg",
       "city": "Charlotte",
       "address": "6701-H Northpark Blvd",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "SMBC MANUBANK",
+      "notice_date": "2026-01-08",
+      "effective_date": "2026-10-09",
+      "employees": 28,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "New York NY",
+      "address": "277 Park Avenue",
       "industry": ""
     }
   ]
