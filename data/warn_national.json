@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-12T01:23:16.346951+00:00",
+  "last_updated": "2026-08-12T13:05:41.145564+00:00",
   "states_live": 47,
-  "total_records": 59932,
-  "total_employees": 6461786,
+  "total_records": 59933,
+  "total_employees": 6461798,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -36,8 +36,8 @@
       "name": "Colorado",
       "agency": "Colorado Department of Labor and Employment",
       "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
-      "total_records": 851,
-      "total_employees": 86675
+      "total_records": 852,
+      "total_employees": 86687
     },
     "CT": {
       "name": "Connecticut",
@@ -192806,6 +192806,18 @@
       "city": "",
       "address": "",
       "industry": "45,9991: Marijuana Stores, Medical or Recreational"
+    },
+    {
+      "state": "CO",
+      "company": "Battelle",
+      "notice_date": "2026-08-06",
+      "effective_date": "2026-10-05",
+      "employees": 12,
+      "layoff_type": "PCAPP Milestone Project Completions",
+      "county": "Pueblo",
+      "city": "",
+      "address": "",
+      "industry": "56,2910: Remediation Services"
     },
     {
       "state": "CT",

@@ -1,51 +1,52 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-08-12 01:23:15 UTC
+**Generated:** 2026-08-12 13:05:40 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 36 | 95 | +59/+0 |
-| Total employees | 2,560 | 5,634 | +3,074 |
+| Total records | 95 | 36 | +0/+59 |
+| Total employees | 5,634 | 2,560 | -3,074 |
 
-### ✅ New Entries (59 records)
+### ✅ No new entries.
 
-| Company | Employees | Effective Date | County |
-|---------|-----------|----------------|--------|
-| Visa | 320 | 2026-10-01 | San Mateo County |
-| Sodexo | 164 | 2026-09-30 | Orange County |
-| ServiceNow, Inc. | 154 | 2026-09-28 | Santa Clara County |
-| LAZ Parking California (9610 Sky Way) | 139 | 2026-10-06 | Los Angeles County |
-| Chime Financial, Inc. | 135 | 2026-09-30 | San Francisco County |
-| ServiceNow, Inc. | 133 | 2026-09-28 | San Diego County |
-| Staples Fulfillment Center | 109 | 2026-10-09 | Los Angeles County |
-| Pixar | 108 | 2026-09-26 | Alameda County |
-| Essendant Co. | 99 | 2026-10-03 | Sacramento County |
-| Fortrex | 91 | 2026-08-21 | Imperial County |
-| Renteria Vineyard Management | 91 | 2026-10-15 | Napa County |
-| San Francisico Pretrial Diversion Project, Inc. | 82 | 2026-11-13 | San Francisco County |
-| PD Systems | 81 | 2026-08-28 | Monterey County |
-| Chick-fil-A & Fig | 77 | 2026-09-27 | Los Angeles County |
-| Salesforce, Inc. | 74 | 2026-10-05 | San Francisco County |
-| Tencent America LLC | 68 | 2026-09-28 | Orange County |
-| Intel Corporation - SC-12 | 67 | 2026-08-15 | Santa Clara County |
-| O'Briens Market Inc. | 67 | 2026-09-27 | Stanislaus County |
-| G3 Enterprises | 66 | 2026-10-06 | Stanislaus County |
-| Nutanix, Inc. | 65 | 2026-10-05 | Santa Clara County |
+### ❌ Removed Entries (59 records)
+
+| Company | Employees | Effective Date |
+|---------|-----------|----------------|
+| Visa | 320 | 2026-10-01 |
+| Sodexo | 164 | 2026-09-30 |
+| ServiceNow, Inc. | 154 | 2026-09-28 |
+| LAZ Parking California (9610 Sky Way) | 139 | 2026-10-06 |
+| Chime Financial, Inc. | 135 | 2026-09-30 |
+| ServiceNow, Inc. | 133 | 2026-09-28 |
+| Staples Fulfillment Center | 109 | 2026-10-09 |
+| Pixar | 108 | 2026-09-26 |
+| Essendant Co. | 99 | 2026-10-03 |
+| Fortrex | 91 | 2026-08-21 |
+| Renteria Vineyard Management | 91 | 2026-10-15 |
+| San Francisico Pretrial Diversion Project, Inc. | 82 | 2026-11-13 |
+| PD Systems | 81 | 2026-08-28 |
+| Chick-fil-A & Fig | 77 | 2026-09-27 |
+| Salesforce, Inc. | 74 | 2026-10-05 |
+| Tencent America LLC | 68 | 2026-09-28 |
+| Intel Corporation - SC-12 | 67 | 2026-08-15 |
+| O'Briens Market Inc. | 67 | 2026-09-27 |
+| G3 Enterprises | 66 | 2026-10-06 |
+| Nutanix, Inc. | 65 | 2026-10-05 |
 
 ---
 ## 📁 File vs Git Comparison
 
-- **Local `file.xlsx` hash:** `046609d01882e3986151bad4054cc5d0`
+- **Local `file.xlsx` hash:** `2c73db1b759812982a57b17b77afa3c5`
 - **Committed hash:**          `2c73db1b759812982a57b17b77afa3c5`
-- 🔴 **Local file differs from committed version**
+- ✅ Local file matches committed version
 
 **Git status:**
 ```
 M data/changelog.jsonl
- M data/meta.json
  M data/states/ak/changelog.jsonl
  M data/states/ak/meta.json
  M data/states/ak/warn_cumulative.json
@@ -57,12 +58,13 @@ M data/changelog.jsonl
  M data/states/al/warn_snapshot.json
  M data/states/az/changelog.jsonl
  M data/states/az/meta.json
- M data/states/az/raw_download
  M data/states/az/warn_cumulative.json
  M data/states/az/warn_latest.json
  M data/states/az/warn_snapshot.json
  M data/states/co/changelog.jsonl
  M data/states/co/meta.json
+ M data/states/co/raw_download
+ M data/states/co/sheet_2026.html
  M data/states/co/warn_cumulative.json
  M data/states/co/warn_latest.json
  M data/states/co/warn_snapshot.json
@@ -160,12 +162,12 @@ M data/changelog.jsonl
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
+ M data/states/mt/meta.json
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
  M data/states/nc/changelog.jsonl
  M data/states/nc/meta.json
- M data/states/nc/raw_download
  M data/states/nc/warn_cumulative.json
  M data/states/nc/warn_latest.json
  M data/states/nc/warn_snapshot.json
@@ -175,6 +177,7 @@ M data/changelog.jsonl
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
+ M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
@@ -190,7 +193,6 @@ M data/changelog.jsonl
  M data/states/nm/warn_snapshot.json
  M data/states/ny/changelog.jsonl
  M data/states/ny/meta.json
- M data/states/ny/raw_download
  M data/states/ny/warn_cumulative.json
  M data/states/ny/warn_latest.json
  M data/states/ny/warn_snapshot.json
@@ -206,7 +208,6 @@ M data/changelog.jsonl
  M data/states/or/changelog.jsonl
  M data/states/or/latest.xlsx
  M data/states/or/meta.json
- M data/states/or/raw_download
  M data/states/or/warn_cumulative.json
  M data/states/or/warn_latest.json
  M data/states/or/warn_snapshot.json
@@ -226,7 +227,6 @@ M data/changelog.jsonl
  M data/states/sc/warn_snapshot.json
  M data/states/sd/changelog.jsonl
  M data/states/sd/meta.json
- M data/states/sd/raw_download
  M data/states/sd/warn_cumulative.json
  M data/states/sd/warn_latest.json
  M data/states/sd/warn_snapshot.json
@@ -242,7 +242,6 @@ M data/changelog.jsonl
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
- M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -269,21 +268,21 @@ M data/changelog.jsonl
  M data/warn_cumulative.json
  M data/warn_latest.json
  M data/warn_snapshot.json
- M file.xlsx
 ```
 
 **Recent commits:**
 ```
+d457874a auto: WARN data update [skip ci]
 a749d795 auto: WARN data update [skip ci]
 ad6a8a72 auto: WARN data update [skip ci]
 f8f7cc29 auto: WARN data update [skip ci]
 d09a2152 auto: WARN data update [skip ci]
-66a36393 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-08-12T12:51:27.733345+00:00` — +0 added, -59 removed, 0 employees (new)
 - `2026-08-12T01:08:54.035049+00:00` — +9 added, -0 removed, 676 employees (new)
 - `2026-08-11T12:50:00.882841+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-11T01:02:52.873803+00:00` — +0 added, -0 removed, 0 employees (new)
@@ -293,4 +292,3 @@ d09a2152 auto: WARN data update [skip ci]
 - `2026-08-09T01:00:48.806436+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-08T12:33:59.277007+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-08T00:56:53.158561+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-08-07T12:47:50.735677+00:00` — +0 added, -50 removed, 0 employees (new)

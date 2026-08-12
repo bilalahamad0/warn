@@ -2,7 +2,7 @@
   "scope": "ca",
   "state": "CA",
   "coverage_start": "2025-01-01",
-  "last_updated": "2026-08-12T01:23:16.346951+00:00",
+  "last_updated": "2026-08-12T13:05:41.145564+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "total_records": 1672,
   "total_employees": 93425,
@@ -20,7 +20,7 @@
       "address": "500 S. Santa Rosa  Modesto CA 95354",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Renteria Vineyard Management",
@@ -33,7 +33,7 @@
       "address": "462 Devlin Road  Napa CA 94558",
       "industry": "11 Agriculture Forestry Fishing Hunting",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "LAZ Parking California (9610 Sky Way)",
@@ -46,7 +46,7 @@
       "address": "9610 Sky Way  Los Angeles CA 90045",
       "industry": "81 Other Services Except Public Administration",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "LAZ Parking California (5455 West 111th Street)",
@@ -59,7 +59,7 @@
       "address": "5455 West 111th Street  Los Angeles CA 90045",
       "industry": "81 Other Services Except Public Administration",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "LAZ Parking California (5251 West 98th Street)",
@@ -72,7 +72,7 @@
       "address": "5251 West 98th Street  Los Angeles CA 90045",
       "industry": "81 Other Services Except Public Administration",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Salesforce, Inc.",
@@ -111,7 +111,7 @@
       "address": "16501 Trojan Way  La Mirada CA 90638",
       "industry": "44-45 Retail Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Nutanix, Inc.",
@@ -137,7 +137,7 @@
       "address": "7021 Roseville Rd.  Sacramento CA 95842",
       "industry": "42 Wholesale Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Essendant Co.",
@@ -150,7 +150,7 @@
       "address": "4555 Redlands Ave.  Perris CA 92571",
       "industry": "42 Wholesale Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Chime Financial, Inc.",
@@ -787,7 +787,7 @@
       "address": "567 S Riverside Drive  Modesto CA 95354",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "DesigneRX Pharmaceuticals, Inc.",

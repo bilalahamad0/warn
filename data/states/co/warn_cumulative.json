@@ -1,9 +1,9 @@
 {
-  "total_records": 851,
-  "total_employees": 86675,
+  "total_records": 852,
+  "total_employees": 86687,
   "date_range_start": "2015-01-02",
-  "date_range_end": "2026-08-03",
-  "last_updated": "2026-08-12T01:09:16.930656+00:00",
+  "date_range_end": "2026-08-06",
+  "last_updated": "2026-08-12T12:51:46.492999+00:00",
   "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
   "records": [
     {
@@ -10217,6 +10217,18 @@
       "city": "",
       "address": "",
       "industry": "45,9991: Marijuana Stores, Medical or Recreational"
+    },
+    {
+      "state": "CO",
+      "company": "Battelle",
+      "notice_date": "2026-08-06",
+      "effective_date": "2026-10-05",
+      "employees": 12,
+      "layoff_type": "PCAPP Milestone Project Completions",
+      "county": "Pueblo",
+      "city": "",
+      "address": "",
+      "industry": "56,2910: Remediation Services"
     }
   ]
 }
