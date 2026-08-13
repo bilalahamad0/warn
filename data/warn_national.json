@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-12T13:05:41.145564+00:00",
+  "last_updated": "2026-08-13T01:15:47.176326+00:00",
   "states_live": 47,
-  "total_records": 59933,
-  "total_employees": 6461798,
+  "total_records": 59939,
+  "total_employees": 6462004,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -71,8 +71,8 @@
       "name": "Georgia",
       "agency": "Technical College System of Georgia, Office of Workforce Development",
       "source_url": "https://www.tcsg.edu/warn-public-view/",
-      "total_records": 4726,
-      "total_employees": 605219
+      "total_records": 4727,
+      "total_employees": 605224
     },
     "HI": {
       "name": "Hawaii",
@@ -141,15 +141,15 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1347,
-      "total_employees": 114610
+      "total_records": 1348,
+      "total_employees": 114612
     },
     "ME": {
       "name": "Maine",
       "agency": "Maine Department of Labor",
       "source_url": "https://joblink.maine.gov/search/warn_lookups",
-      "total_records": 73,
-      "total_employees": 6022
+      "total_records": 74,
+      "total_employees": 6124
     },
     "MI": {
       "name": "Michigan",
@@ -302,8 +302,8 @@
       "name": "Virginia",
       "agency": "Virginia Works (Virginia Employment Commission)",
       "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
-      "total_records": 1119,
-      "total_employees": 130199
+      "total_records": 1121,
+      "total_employees": 130272
     },
     "VT": {
       "name": "Vermont",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1491,
-      "total_employees": 235089
+      "total_records": 1492,
+      "total_employees": 235113
     },
     "WI": {
       "name": "Wisconsin",
@@ -257584,6 +257584,18 @@
       "industry": ""
     },
     {
+      "state": "GA",
+      "company": "SMBC Manubank",
+      "notice_date": null,
+      "effective_date": "2026-10-09",
+      "employees": 5,
+      "layoff_type": "Permanent Layoff / Reduction in Force",
+      "county": "",
+      "city": "",
+      "address": "277 Park Ave, New York, New York",
+      "industry": ""
+    },
+    {
       "state": "HI",
       "company": "Maui Seaside Hotel",
       "notice_date": "2019-01-16",
@@ -384202,6 +384214,18 @@
       "industry": "541990"
     },
     {
+      "state": "MD",
+      "company": "SMBC Manubank",
+      "notice_date": "2026-08-10",
+      "effective_date": "2026-10-09",
+      "employees": 2,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Statewide",
+      "city": "",
+      "address": "277 Park Avenue New York, NY 10172",
+      "industry": "522110"
+    },
+    {
       "state": "ME",
       "company": "SMBC-Sumitomo Mitsui Banking Corporation",
       "notice_date": "2026-01-13",
@@ -385075,6 +385099,18 @@
       "county": "",
       "city": "",
       "address": "",
+      "industry": ""
+    },
+    {
+      "state": "ME",
+      "company": "Host International, Inc.",
+      "notice_date": "2026-08-04",
+      "effective_date": null,
+      "employees": 102,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Portland",
+      "address": "1001 Westbrook St; Portland, Maine 04102",
       "industry": ""
     },
     {
@@ -641077,9 +641113,33 @@
     },
     {
       "state": "VA",
+      "company": "SMBC Manubank",
+      "notice_date": "2026-08-10",
+      "effective_date": "2026-10-09",
+      "employees": 5,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Aldie, Arlington, Reston, Maidens & Henrico",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "Eurofins Professional Scientific Services LLC",
+      "notice_date": "2026-08-10",
+      "effective_date": "2026-10-09",
+      "employees": 68,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Richmond",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-08-12",
+      "effective_date": "2026-08-13",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",
@@ -659420,6 +659480,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Seattle, Bellevue",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Jack in the Box",
+      "notice_date": "2026-08-12",
+      "effective_date": "2026-10-10",
+      "employees": 24,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Everett",
       "address": "",
       "industry": ""
     },

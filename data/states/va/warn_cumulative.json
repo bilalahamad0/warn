@@ -1,9 +1,9 @@
 {
-  "total_records": 1119,
-  "total_employees": 130199,
+  "total_records": 1121,
+  "total_employees": 130272,
   "date_range_start": "2010-07-29",
-  "date_range_end": "2026-07-09",
-  "last_updated": "2026-08-12T13:02:53.815164+00:00",
+  "date_range_end": "2026-08-10",
+  "last_updated": "2026-08-13T01:12:59.026076+00:00",
   "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
   "records": [
     {
@@ -13424,9 +13424,33 @@
     },
     {
       "state": "VA",
+      "company": "SMBC Manubank",
+      "notice_date": "2026-08-10",
+      "effective_date": "2026-10-09",
+      "employees": 5,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Aldie, Arlington, Reston, Maidens & Henrico",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "Eurofins Professional Scientific Services LLC",
+      "notice_date": "2026-08-10",
+      "effective_date": "2026-10-09",
+      "employees": 68,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Richmond",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-08-12",
+      "effective_date": "2026-08-13",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",

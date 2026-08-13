@@ -3,7 +3,7 @@
   "total_employees": 45852,
   "date_range_start": "2009-03-09",
   "date_range_end": "2026-06-26",
-  "last_updated": "2026-08-12T01:19:44.026455+00:00",
+  "last_updated": "2026-08-12T13:02:07.944490+00:00",
   "source_url": "https://dol.nebraska.gov/ReemploymentServices/LayoffServices/LayoffsAndDownsizingWARN",
   "records": [
     {
@@ -1376,18 +1376,6 @@
     },
     {
       "state": "NE",
-      "company": "Little Miracles Childcare",
-      "notice_date": "2020-02-14",
-      "effective_date": null,
-      "employees": 7,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Doniphan",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
       "company": "Midwest Medical Transport",
       "notice_date": "2020-02-14",
       "effective_date": null,
@@ -1395,6 +1383,18 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Hastings",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Little Miracles Childcare",
+      "notice_date": "2020-02-14",
+      "effective_date": null,
+      "employees": 7,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Doniphan",
       "address": "",
       "industry": ""
     },
@@ -1436,18 +1436,6 @@
     },
     {
       "state": "NE",
-      "company": "Spectrum Salon Systems Inc",
-      "notice_date": "2020-01-31",
-      "effective_date": null,
-      "employees": 2,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Hastings",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
       "company": "Ahmad's Persian Cuisine",
       "notice_date": "2020-01-31",
       "effective_date": null,
@@ -1455,6 +1443,18 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Omaha",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Spectrum Salon Systems Inc",
+      "notice_date": "2020-01-31",
+      "effective_date": null,
+      "employees": 2,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Hastings",
       "address": "",
       "industry": ""
     },
@@ -1544,18 +1544,6 @@
     },
     {
       "state": "NE",
-      "company": "Madhouse Experience",
-      "notice_date": "2020-01-01",
-      "effective_date": null,
-      "employees": 0,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Lincoln",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
       "company": "Kearney Cinema",
       "notice_date": "2020-01-01",
       "effective_date": null,
@@ -1563,6 +1551,18 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Kearney",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Madhouse Experience",
+      "notice_date": "2020-01-01",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Lincoln",
       "address": "",
       "industry": ""
     },
@@ -2192,6 +2192,18 @@
     },
     {
       "state": "NE",
+      "company": "Seasons Floral & Gifts",
+      "notice_date": "2019-10-31",
+      "effective_date": null,
+      "employees": 2,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Columbus",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
       "company": "Airhost Restaurant & Lounge",
       "notice_date": "2019-10-31",
       "effective_date": null,
@@ -2211,18 +2223,6 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Scottsbluff",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
-      "company": "Seasons Floral & Gifts",
-      "notice_date": "2019-10-31",
-      "effective_date": null,
-      "employees": 2,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Columbus",
       "address": "",
       "industry": ""
     },
@@ -2804,18 +2804,6 @@
     },
     {
       "state": "NE",
-      "company": "Video Kingdom Electronics",
-      "notice_date": "2019-06-28",
-      "effective_date": null,
-      "employees": 5,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Hastings",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
       "company": "Highnooner's Deli",
       "notice_date": "2019-06-28",
       "effective_date": null,
@@ -2823,6 +2811,18 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Lincoln",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Video Kingdom Electronics",
+      "notice_date": "2019-06-28",
+      "effective_date": null,
+      "employees": 5,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Hastings",
       "address": "",
       "industry": ""
     },
@@ -2864,18 +2864,6 @@
     },
     {
       "state": "NE",
-      "company": "Union Pacific",
-      "notice_date": "2019-06-21",
-      "effective_date": null,
-      "employees": 78,
-      "layoff_type": "Layoff",
-      "county": "",
-      "city": "North Platte",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
       "company": "Werner Service & Trucking",
       "notice_date": "2019-06-21",
       "effective_date": null,
@@ -2883,6 +2871,18 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "St. Edward",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Union Pacific",
+      "notice_date": "2019-06-21",
+      "effective_date": null,
+      "employees": 78,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "North Platte",
       "address": "",
       "industry": ""
     },
@@ -2903,82 +2903,10 @@
       "company": "Shopko Hometown xxxx",
       "notice_date": "2019-06-16",
       "effective_date": null,
-      "employees": 25,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Wayne",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
-      "company": "Shopko Hometown xxxx",
-      "notice_date": "2019-06-16",
-      "effective_date": null,
       "employees": 15,
       "layoff_type": "Closure",
       "county": "",
       "city": "Broken Bow",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
-      "company": "Shopko xxxx",
-      "notice_date": "2019-06-16",
-      "effective_date": null,
-      "employees": 45,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "North Platte",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
-      "company": "Shopko Hometown xxxx",
-      "notice_date": "2019-06-16",
-      "effective_date": null,
-      "employees": 21,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Holdrege",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
-      "company": "Shopko xxxx",
-      "notice_date": "2019-06-16",
-      "effective_date": null,
-      "employees": 54,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Grand Island",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
-      "company": "Shopko xxxx",
-      "notice_date": "2019-06-16",
-      "effective_date": null,
-      "employees": 19,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "O.Neil",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
-      "company": "Shopko Hometown xxxx",
-      "notice_date": "2019-06-16",
-      "effective_date": null,
-      "employees": 18,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Valentine",
       "address": "",
       "industry": ""
     },
@@ -3063,6 +2991,78 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Wayne",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Shopko xxxx",
+      "notice_date": "2019-06-16",
+      "effective_date": null,
+      "employees": 45,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "North Platte",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Shopko Hometown xxxx",
+      "notice_date": "2019-06-16",
+      "effective_date": null,
+      "employees": 21,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Holdrege",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Shopko xxxx",
+      "notice_date": "2019-06-16",
+      "effective_date": null,
+      "employees": 54,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Grand Island",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Shopko Hometown xxxx",
+      "notice_date": "2019-06-16",
+      "effective_date": null,
+      "employees": 25,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Wayne",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Shopko xxxx",
+      "notice_date": "2019-06-16",
+      "effective_date": null,
+      "employees": 19,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "O.Neil",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Shopko Hometown xxxx",
+      "notice_date": "2019-06-16",
+      "effective_date": null,
+      "employees": 18,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Valentine",
       "address": "",
       "industry": ""
     },
@@ -3284,30 +3284,6 @@
     },
     {
       "state": "NE",
-      "company": "Shopko Hometown xxxx",
-      "notice_date": "2019-05-05",
-      "effective_date": null,
-      "employees": 20,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Auburn",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
-      "company": "Shopko Hometown xxxx",
-      "notice_date": "2019-05-05",
-      "effective_date": null,
-      "employees": 12,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Superior",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
       "company": "Shopko Corporate Office",
       "notice_date": "2019-05-05",
       "effective_date": null,
@@ -3327,6 +3303,30 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Auburn",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Shopko Hometown xxxx",
+      "notice_date": "2019-05-05",
+      "effective_date": null,
+      "employees": 20,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Auburn",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Shopko Hometown xxxx",
+      "notice_date": "2019-05-05",
+      "effective_date": null,
+      "employees": 12,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Superior",
       "address": "",
       "industry": ""
     },
@@ -3644,18 +3644,6 @@
     },
     {
       "state": "NE",
-      "company": "Wausa Care and Rehabilitation Center",
-      "notice_date": "2019-03-15",
-      "effective_date": null,
-      "employees": 39,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Wausa",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
       "company": "Sidney Care and Rehabilitation Center",
       "notice_date": "2019-03-15",
       "effective_date": null,
@@ -3668,13 +3656,13 @@
     },
     {
       "state": "NE",
-      "company": "Nebraska Commission for the Blind and Visually Impaired",
-      "notice_date": "2019-03-12",
+      "company": "Wausa Care and Rehabilitation Center",
+      "notice_date": "2019-03-15",
       "effective_date": null,
-      "employees": 2,
-      "layoff_type": "Layoff",
+      "employees": 39,
+      "layoff_type": "Closure",
       "county": "",
-      "city": "Norfolk",
+      "city": "Wausa",
       "address": "",
       "industry": ""
     },
@@ -3687,6 +3675,18 @@
       "layoff_type": "Layoff",
       "county": "",
       "city": "Lincoln",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Nebraska Commission for the Blind and Visually Impaired",
+      "notice_date": "2019-03-12",
+      "effective_date": null,
+      "employees": 2,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Norfolk",
       "address": "",
       "industry": ""
     },
@@ -3731,10 +3731,10 @@
       "company": "Shopko xxxx",
       "notice_date": "2019-03-02",
       "effective_date": null,
-      "employees": 17,
+      "employees": 48,
       "layoff_type": "Closure",
       "county": "",
-      "city": "Ord",
+      "city": "Lincoln",
       "address": "",
       "industry": ""
     },
@@ -3743,10 +3743,10 @@
       "company": "Shopko xxxx",
       "notice_date": "2019-03-02",
       "effective_date": null,
-      "employees": 48,
+      "employees": 17,
       "layoff_type": "Closure",
       "county": "",
-      "city": "Lincoln",
+      "city": "Ord",
       "address": "",
       "industry": ""
     },
@@ -3800,18 +3800,6 @@
     },
     {
       "state": "NE",
-      "company": "Shopko Corporate Office",
-      "notice_date": "2019-02-28",
-      "effective_date": null,
-      "employees": 16,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Kimball",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
       "company": "Corps of Discovery Welcome Center",
       "notice_date": "2019-02-28",
       "effective_date": null,
@@ -3836,7 +3824,19 @@
     },
     {
       "state": "NE",
-      "company": "Shopko Hometown xxxx",
+      "company": "Shopko Corporate Office",
+      "notice_date": "2019-02-28",
+      "effective_date": null,
+      "employees": 16,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Kimball",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Shopko Corporate Office",
       "notice_date": "2019-02-18",
       "effective_date": null,
       "employees": 3,
@@ -3848,19 +3848,7 @@
     },
     {
       "state": "NE",
-      "company": "Shopko xxxx",
-      "notice_date": "2019-02-18",
-      "effective_date": null,
-      "employees": 3,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Ainsworth",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
-      "company": "Shopko Corporate Office",
+      "company": "Shopko Hometown xxxx",
       "notice_date": "2019-02-18",
       "effective_date": null,
       "employees": 3,
@@ -3879,6 +3867,18 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Kearney",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Shopko xxxx",
+      "notice_date": "2019-02-18",
+      "effective_date": null,
+      "employees": 3,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Ainsworth",
       "address": "",
       "industry": ""
     },
@@ -3923,10 +3923,10 @@
       "company": "US Bank",
       "notice_date": "2019-01-25",
       "effective_date": null,
-      "employees": 1,
+      "employees": 0,
       "layoff_type": "Closure",
       "county": "",
-      "city": "North Platte",
+      "city": "Lincoln",
       "address": "",
       "industry": ""
     },
@@ -3935,10 +3935,10 @@
       "company": "US Bank",
       "notice_date": "2019-01-25",
       "effective_date": null,
-      "employees": 0,
+      "employees": 1,
       "layoff_type": "Closure",
       "county": "",
-      "city": "Lincoln",
+      "city": "North Platte",
       "address": "",
       "industry": ""
     },
@@ -3968,18 +3968,6 @@
     },
     {
       "state": "NE",
-      "company": "Shopko Corporate Office",
-      "notice_date": "2019-01-12",
-      "effective_date": null,
-      "employees": 9,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Wayne",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
       "company": "Shopko Hometown Pharmacy xxxx",
       "notice_date": "2019-01-12",
       "effective_date": null,
@@ -3992,25 +3980,13 @@
     },
     {
       "state": "NE",
-      "company": "Shopko Pharmacy xxxx",
-      "notice_date": "2019-01-09",
+      "company": "Shopko Corporate Office",
+      "notice_date": "2019-01-12",
       "effective_date": null,
-      "employees": 4,
+      "employees": 9,
       "layoff_type": "Closure",
       "county": "",
-      "city": "Lincoln",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
-      "company": "Shopko Pharmacy xxxx",
-      "notice_date": "2019-01-09",
-      "effective_date": null,
-      "employees": 6,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Lincoln",
+      "city": "Wayne",
       "address": "",
       "industry": ""
     },
@@ -4040,7 +4016,31 @@
     },
     {
       "state": "NE",
-      "company": "Shopko Corporate Office",
+      "company": "Shopko Pharmacy xxxx",
+      "notice_date": "2019-01-09",
+      "effective_date": null,
+      "employees": 6,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Lincoln",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Shopko Pharmacy xxxx",
+      "notice_date": "2019-01-09",
+      "effective_date": null,
+      "employees": 4,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Lincoln",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Shopko Pharmacy xxxx",
       "notice_date": "2019-01-08",
       "effective_date": null,
       "employees": 0,
@@ -4052,7 +4052,7 @@
     },
     {
       "state": "NE",
-      "company": "Shopko Pharmacy xxxx",
+      "company": "Shopko Corporate Office",
       "notice_date": "2019-01-08",
       "effective_date": null,
       "employees": 0,
@@ -4184,11 +4184,11 @@
     },
     {
       "state": "NE",
-      "company": "Allstate Insurance",
+      "company": "Dr. Mausolf Ophthalmology",
       "notice_date": "2018-12-31",
       "effective_date": null,
-      "employees": 14,
-      "layoff_type": "Layoff",
+      "employees": 7,
+      "layoff_type": "Closure",
       "county": "",
       "city": "Lincoln",
       "address": "",
@@ -4208,11 +4208,11 @@
     },
     {
       "state": "NE",
-      "company": "Dr. Mausolf Ophthalmology",
+      "company": "Allstate Insurance",
       "notice_date": "2018-12-31",
       "effective_date": null,
-      "employees": 7,
-      "layoff_type": "Closure",
+      "employees": 14,
+      "layoff_type": "Layoff",
       "county": "",
       "city": "Lincoln",
       "address": "",
@@ -4364,18 +4364,6 @@
     },
     {
       "state": "NE",
-      "company": "Quad Graphics",
-      "notice_date": "2018-11-16",
-      "effective_date": null,
-      "employees": 30,
-      "layoff_type": "Layoff",
-      "county": "",
-      "city": "Sidney",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
       "company": "The Emporium Restaurant",
       "notice_date": "2018-11-16",
       "effective_date": null,
@@ -4383,6 +4371,18 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Scottsbluff",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Quad Graphics",
+      "notice_date": "2018-11-16",
+      "effective_date": null,
+      "employees": 30,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Sidney",
       "address": "",
       "industry": ""
     },
@@ -4502,7 +4502,7 @@
       "employees": 0,
       "layoff_type": "Closure",
       "county": "",
-      "city": "Omaha",
+      "city": "Lincoln",
       "address": "",
       "industry": ""
     },
@@ -4514,7 +4514,7 @@
       "employees": 0,
       "layoff_type": "Closure",
       "county": "",
-      "city": "Lincoln",
+      "city": "Omaha",
       "address": "",
       "industry": ""
     },
@@ -4556,18 +4556,6 @@
     },
     {
       "state": "NE",
-      "company": "Herbergers",
-      "notice_date": "2018-08-31",
-      "effective_date": null,
-      "employees": 80,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Kearney",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
       "company": "Save Best Store",
       "notice_date": "2018-08-31",
       "effective_date": null,
@@ -4575,6 +4563,18 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Lincoln",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Herbergers",
+      "notice_date": "2018-08-31",
+      "effective_date": null,
+      "employees": 80,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Kearney",
       "address": "",
       "industry": ""
     },
@@ -4868,7 +4868,7 @@
     },
     {
       "state": "NE",
-      "company": "Shopko xxxx",
+      "company": "Shopko Corporate Office",
       "notice_date": "2018-06-30",
       "effective_date": null,
       "employees": 12,
@@ -4880,7 +4880,7 @@
     },
     {
       "state": "NE",
-      "company": "Shopko Corporate Office",
+      "company": "Shopko xxxx",
       "notice_date": "2018-06-30",
       "effective_date": null,
       "employees": 12,
@@ -4910,7 +4910,7 @@
       "employees": 30,
       "layoff_type": "Closure",
       "county": "",
-      "city": "Omaha",
+      "city": "Lincoln",
       "address": "",
       "industry": ""
     },
@@ -4922,7 +4922,7 @@
       "employees": 30,
       "layoff_type": "Closure",
       "county": "",
-      "city": "Lincoln",
+      "city": "Omaha",
       "address": "",
       "industry": ""
     },
@@ -4988,18 +4988,6 @@
     },
     {
       "state": "NE",
-      "company": "Farner Company",
-      "notice_date": "2018-06-15",
-      "effective_date": null,
-      "employees": 17,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Norfolk",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
       "company": "Good Samaritan Assisted Living",
       "notice_date": "2018-06-15",
       "effective_date": null,
@@ -5012,6 +5000,18 @@
     },
     {
       "state": "NE",
+      "company": "Farner Company",
+      "notice_date": "2018-06-15",
+      "effective_date": null,
+      "employees": 17,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Norfolk",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
       "company": "Applebee's",
       "notice_date": "2018-06-14",
       "effective_date": null,
@@ -5019,18 +5019,6 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Hastings",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
-      "company": "Convergys Corporation",
-      "notice_date": "2018-05-31",
-      "effective_date": null,
-      "employees": 123,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Omaha",
       "address": "",
       "industry": ""
     },
@@ -5072,6 +5060,18 @@
     },
     {
       "state": "NE",
+      "company": "Convergys Corporation",
+      "notice_date": "2018-05-31",
+      "effective_date": null,
+      "employees": 123,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Omaha",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
       "company": "Wells Fargo",
       "notice_date": "2018-05-16",
       "effective_date": null,
@@ -5096,6 +5096,18 @@
     },
     {
       "state": "NE",
+      "company": "Runza",
+      "notice_date": "2018-05-04",
+      "effective_date": null,
+      "employees": 19,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Lincoln",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
       "company": "Streck",
       "notice_date": "2018-05-04",
       "effective_date": null,
@@ -5108,13 +5120,13 @@
     },
     {
       "state": "NE",
-      "company": "Runza",
-      "notice_date": "2018-05-04",
+      "company": "Maaschhoff's",
+      "notice_date": "2018-05-01",
       "effective_date": null,
-      "employees": 19,
-      "layoff_type": "Closure",
+      "employees": 9,
+      "layoff_type": "Layoff",
       "county": "",
-      "city": "Lincoln",
+      "city": "Wolbach",
       "address": "",
       "industry": ""
     },
@@ -5151,18 +5163,6 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "North Platte",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
-      "company": "Maaschhoff's",
-      "notice_date": "2018-05-01",
-      "effective_date": null,
-      "employees": 9,
-      "layoff_type": "Layoff",
-      "county": "",
-      "city": "Wolbach",
       "address": "",
       "industry": ""
     },
@@ -5264,18 +5264,6 @@
     },
     {
       "state": "NE",
-      "company": "Election Systems & Software",
-      "notice_date": "2018-04-02",
-      "effective_date": null,
-      "employees": 1,
-      "layoff_type": "Layoff",
-      "county": "",
-      "city": "Omaha",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
       "company": "Corelink Administrative Solutions",
       "notice_date": "2018-04-02",
       "effective_date": null,
@@ -5283,6 +5271,18 @@
       "layoff_type": "Layoff",
       "county": "",
       "city": "Fargo",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Election Systems & Software",
+      "notice_date": "2018-04-02",
+      "effective_date": null,
+      "employees": 1,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Omaha",
       "address": "",
       "industry": ""
     },
@@ -5468,18 +5468,6 @@
     },
     {
       "state": "NE",
-      "company": "Lot 2 Restaurant and Wine Bar",
-      "notice_date": "2018-02-15",
-      "effective_date": null,
-      "employees": 15,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Omaha",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
       "company": "Chocolatier Blue",
       "notice_date": "2018-02-15",
       "effective_date": null,
@@ -5487,6 +5475,18 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Lincoln",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Lot 2 Restaurant and Wine Bar",
+      "notice_date": "2018-02-15",
+      "effective_date": null,
+      "employees": 15,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Omaha",
       "address": "",
       "industry": ""
     },
@@ -5624,18 +5624,6 @@
     },
     {
       "state": "NE",
-      "company": "Company Kitchen",
-      "notice_date": "2018-01-26",
-      "effective_date": null,
-      "employees": 3,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Omaha",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
       "company": "Wahoo's Fish Taco",
       "notice_date": "2018-01-26",
       "effective_date": null,
@@ -5643,6 +5631,18 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Lincoln",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Company Kitchen",
+      "notice_date": "2018-01-26",
+      "effective_date": null,
+      "employees": 3,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Omaha",
       "address": "",
       "industry": ""
     },
@@ -5732,7 +5732,7 @@
     },
     {
       "state": "NE",
-      "company": "Shopko xxxx",
+      "company": "Shopko Corporate Office",
       "notice_date": "2018-01-06",
       "effective_date": null,
       "employees": 15,
@@ -5744,7 +5744,7 @@
     },
     {
       "state": "NE",
-      "company": "Shopko Corporate Office",
+      "company": "Shopko xxxx",
       "notice_date": "2018-01-06",
       "effective_date": null,
       "employees": 15,
@@ -5936,18 +5936,6 @@
     },
     {
       "state": "NE",
-      "company": "Union Tank Car",
-      "notice_date": "2017-12-29",
-      "effective_date": null,
-      "employees": 12,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Omaha",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
       "company": "Black Hills Energy",
       "notice_date": "2017-12-29",
       "effective_date": null,
@@ -5955,6 +5943,18 @@
       "layoff_type": "Layoff",
       "county": "",
       "city": "Lincoln",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Union Tank Car",
+      "notice_date": "2017-12-29",
+      "effective_date": null,
+      "employees": 12,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Omaha",
       "address": "",
       "industry": ""
     },
@@ -6032,18 +6032,6 @@
     },
     {
       "state": "NE",
-      "company": "Buss Stop Petro",
-      "notice_date": "2017-12-15",
-      "effective_date": null,
-      "employees": 5,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Beatrice",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
       "company": "Foster Lumber Company",
       "notice_date": "2017-12-15",
       "effective_date": null,
@@ -6051,6 +6039,18 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Sidney",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Buss Stop Petro",
+      "notice_date": "2017-12-15",
+      "effective_date": null,
+      "employees": 5,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Beatrice",
       "address": "",
       "industry": ""
     },
@@ -6416,18 +6416,6 @@
     },
     {
       "state": "NE",
-      "company": "Doc's Place",
-      "notice_date": "2017-07-15",
-      "effective_date": null,
-      "employees": 0,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Lincoln",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
       "company": "Game Cycle",
       "notice_date": "2017-07-15",
       "effective_date": null,
@@ -6435,6 +6423,18 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Beatrice",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Doc's Place",
+      "notice_date": "2017-07-15",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Lincoln",
       "address": "",
       "industry": ""
     },
@@ -6476,18 +6476,6 @@
     },
     {
       "state": "NE",
-      "company": "Nebraska Bull Service",
-      "notice_date": "2017-06-30",
-      "effective_date": null,
-      "employees": 14,
-      "layoff_type": "Layoff",
-      "county": "",
-      "city": "McCook",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
       "company": "Integrated Life Choices",
       "notice_date": "2017-06-30",
       "effective_date": null,
@@ -6495,6 +6483,18 @@
       "layoff_type": "Layoff",
       "county": "",
       "city": "Beatrice",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Nebraska Bull Service",
+      "notice_date": "2017-06-30",
+      "effective_date": null,
+      "employees": 14,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "McCook",
       "address": "",
       "industry": ""
     },
@@ -6680,18 +6680,6 @@
     },
     {
       "state": "NE",
-      "company": "Resource Real Estate Management",
-      "notice_date": "2017-03-31",
-      "effective_date": null,
-      "employees": 6,
-      "layoff_type": "Layoff",
-      "county": "",
-      "city": "Omaha",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
       "company": "Envision",
       "notice_date": "2017-03-31",
       "effective_date": null,
@@ -6716,6 +6704,18 @@
     },
     {
       "state": "NE",
+      "company": "Resource Real Estate Management",
+      "notice_date": "2017-03-31",
+      "effective_date": null,
+      "employees": 6,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Omaha",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
       "company": "Casey's",
       "notice_date": "2017-03-28",
       "effective_date": null,
@@ -6723,18 +6723,6 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "West Point",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
-      "company": "Hallmark",
-      "notice_date": "2017-03-27",
-      "effective_date": null,
-      "employees": 13,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Lincoln",
       "address": "",
       "industry": ""
     },
@@ -6831,6 +6819,18 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Grand Island",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Hallmark",
+      "notice_date": "2017-03-27",
+      "effective_date": null,
+      "employees": 13,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Lincoln",
       "address": "",
       "industry": ""
     },
@@ -7016,18 +7016,6 @@
     },
     {
       "state": "NE",
-      "company": "City of Fairbury",
-      "notice_date": "2017-02-28",
-      "effective_date": null,
-      "employees": 0,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Fairbury",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
       "company": "Nebraska State Patrol-Communications Center",
       "notice_date": "2017-02-28",
       "effective_date": null,
@@ -7035,6 +7023,18 @@
       "layoff_type": "Layoff",
       "county": "",
       "city": "Lincoln",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "City of Fairbury",
+      "notice_date": "2017-02-28",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Fairbury",
       "address": "",
       "industry": ""
     },
@@ -7112,18 +7112,6 @@
     },
     {
       "state": "NE",
-      "company": "First National Bank",
-      "notice_date": "2017-02-16",
-      "effective_date": null,
-      "employees": 65,
-      "layoff_type": "Layoff",
-      "county": "",
-      "city": "Omaha",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
       "company": "Sunmart",
       "notice_date": "2017-02-16",
       "effective_date": null,
@@ -7143,6 +7131,18 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Ogallala",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "First National Bank",
+      "notice_date": "2017-02-16",
+      "effective_date": null,
+      "employees": 65,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Omaha",
       "address": "",
       "industry": ""
     },
@@ -7184,18 +7184,6 @@
     },
     {
       "state": "NE",
-      "company": "Bentley Fine Jewelry and Repair",
-      "notice_date": "2017-01-31",
-      "effective_date": null,
-      "employees": 1,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Scottsbluff",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
       "company": "Shopko xxxx",
       "notice_date": "2017-01-31",
       "effective_date": null,
@@ -7203,6 +7191,18 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Omaha",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Bentley Fine Jewelry and Repair",
+      "notice_date": "2017-01-31",
+      "effective_date": null,
+      "employees": 1,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Scottsbluff",
       "address": "",
       "industry": ""
     },
@@ -7232,18 +7232,6 @@
     },
     {
       "state": "NE",
-      "company": "NCI Building Systems",
-      "notice_date": "2017-01-27",
-      "effective_date": null,
-      "employees": 30,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Omaha",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
       "company": "Midwest Medical Transport",
       "notice_date": "2017-01-27",
       "effective_date": null,
@@ -7260,6 +7248,18 @@
       "notice_date": "2017-01-27",
       "effective_date": null,
       "employees": 28,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Omaha",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "NCI Building Systems",
+      "notice_date": "2017-01-27",
+      "effective_date": null,
+      "employees": 30,
       "layoff_type": "Closure",
       "county": "",
       "city": "Omaha",

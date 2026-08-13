@@ -1,11 +1,23 @@
 {
-  "total_records": 1397,
-  "total_employees": 115787,
+  "total_records": 1398,
+  "total_employees": 115789,
   "date_range_start": "2010-01-07",
-  "date_range_end": "2026-08-06",
-  "last_updated": "2026-08-12T12:58:52.961154+00:00",
+  "date_range_end": "2026-08-10",
+  "last_updated": "2026-08-13T01:08:26.128005+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
+    {
+      "state": "MD",
+      "company": "SMBC Manubank",
+      "notice_date": "2026-08-10",
+      "effective_date": "2026-10-09",
+      "employees": 2,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Statewide",
+      "city": "",
+      "address": "277 Park Avenue New York, NY 10172",
+      "industry": "522110"
+    },
     {
       "state": "MD",
       "company": "Grassroots Crisis Intervention Center",

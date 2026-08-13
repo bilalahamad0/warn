@@ -1,9 +1,9 @@
 {
-  "total_records": 4726,
-  "total_employees": 605219,
+  "total_records": 4727,
+  "total_employees": 605224,
   "date_range_start": "1989-08-17",
-  "date_range_end": "2026-10-03",
-  "last_updated": "2026-08-12T12:54:23.338433+00:00",
+  "date_range_end": "2026-10-09",
+  "last_updated": "2026-08-13T01:03:58.069291+00:00",
   "source_url": "https://www.tcsg.edu/warn-public-view/",
   "records": [
     {
@@ -56716,6 +56716,18 @@
       "county": "Clayton",
       "city": "",
       "address": "2070 Anvil Block Rd, Suite 100, Forest Park, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "SMBC Manubank",
+      "notice_date": null,
+      "effective_date": "2026-10-09",
+      "employees": 5,
+      "layoff_type": "Permanent Layoff / Reduction in Force",
+      "county": "",
+      "city": "",
+      "address": "277 Park Ave, New York, New York",
       "industry": ""
     }
   ]

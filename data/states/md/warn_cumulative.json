@@ -1,9 +1,9 @@
 {
-  "total_records": 1347,
-  "total_employees": 114610,
+  "total_records": 1348,
+  "total_employees": 114612,
   "date_range_start": "2010-01-07",
-  "date_range_end": "2026-08-06",
-  "last_updated": "2026-08-12T12:58:52.976291+00:00",
+  "date_range_end": "2026-08-10",
+  "last_updated": "2026-08-13T01:08:26.143348+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -16169,6 +16169,18 @@
       "city": "",
       "address": "6404 Ivy Lane, Suite 620, Greenbelt, MD 20770",
       "industry": "541990"
+    },
+    {
+      "state": "MD",
+      "company": "SMBC Manubank",
+      "notice_date": "2026-08-10",
+      "effective_date": "2026-10-09",
+      "employees": 2,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Statewide",
+      "city": "",
+      "address": "277 Park Avenue New York, NY 10172",
+      "industry": "522110"
     }
   ]
 }
