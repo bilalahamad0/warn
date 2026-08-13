@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-13T01:15:47.176326+00:00",
+  "last_updated": "2026-08-13T13:07:34.028466+00:00",
   "states_live": 47,
-  "total_records": 59939,
-  "total_employees": 6462004,
+  "total_records": 59940,
+  "total_employees": 6462005,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -120,8 +120,8 @@
       "name": "Kentucky",
       "agency": "Kentucky Career Center (Education & Labor Cabinet)",
       "source_url": "https://kyworks.ky.gov/Services/Pages/Rapid-Response-Layoffs-and-Closures.aspx",
-      "total_records": 1234,
-      "total_employees": 156488
+      "total_records": 1235,
+      "total_employees": 156489
     },
     "LA": {
       "name": "Louisiana",
@@ -363044,6 +363044,18 @@
       "city": "",
       "address": "",
       "industry": "493110"
+    },
+    {
+      "state": "KY",
+      "company": "SMBC Manubank",
+      "notice_date": "2026-08-10",
+      "effective_date": "2026-10-09",
+      "employees": 1,
+      "layoff_type": "Closure",
+      "county": "Out of the State County",
+      "city": "",
+      "address": "",
+      "industry": "522110"
     },
     {
       "state": "LA",

@@ -1,9 +1,9 @@
 {
-  "total_records": 4749,
-  "total_employees": 606414,
+  "total_records": 4750,
+  "total_employees": 606419,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-08-12T12:54:23.289713+00:00",
+  "last_updated": "2026-08-13T01:03:58.022080+00:00",
   "source_url": "https://www.tcsg.edu/warn-public-view/",
   "records": [
     {
@@ -3268,6 +3268,18 @@
       "county": "",
       "city": "",
       "address": "125 Horizon Dr, Suwanee, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "SMBC Manubank",
+      "notice_date": null,
+      "effective_date": "2026-10-09",
+      "employees": 5,
+      "layoff_type": "Permanent Layoff / Reduction in Force",
+      "county": "",
+      "city": "",
+      "address": "277 Park Ave, New York, New York",
       "industry": ""
     },
     {

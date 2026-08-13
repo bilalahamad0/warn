@@ -1,9 +1,9 @@
 {
-  "total_records": 1234,
-  "total_employees": 156488,
+  "total_records": 1235,
+  "total_employees": 156489,
   "date_range_start": "1998-10-02",
-  "date_range_end": "2026-08-03",
-  "last_updated": "2026-08-13T01:07:54.084871+00:00",
+  "date_range_end": "2026-08-10",
+  "last_updated": "2026-08-13T12:59:50.791962+00:00",
   "source_url": "https://kyworks.ky.gov/Services/Pages/Rapid-Response-Layoffs-and-Closures.aspx",
   "records": [
     {
@@ -14027,6 +14027,18 @@
       "city": "",
       "address": "",
       "industry": "493110"
+    },
+    {
+      "state": "KY",
+      "company": "SMBC Manubank",
+      "notice_date": "2026-08-10",
+      "effective_date": "2026-10-09",
+      "employees": 1,
+      "layoff_type": "Closure",
+      "county": "Out of the State County",
+      "city": "",
+      "address": "",
+      "industry": "522110"
     }
   ]
 }
