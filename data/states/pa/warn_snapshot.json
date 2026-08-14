@@ -1,11 +1,35 @@
 {
-  "total_records": 300,
-  "total_employees": 44549,
+  "total_records": 302,
+  "total_employees": 44726,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-08-13T13:04:27.963534+00:00",
+  "last_updated": "2026-08-14T01:24:53.326771+00:00",
   "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
   "records": [
+    {
+      "state": "PA",
+      "company": "SMBC MANUBANK",
+      "notice_date": null,
+      "effective_date": "2026-10-09",
+      "employees": 7,
+      "layoff_type": "Closure",
+      "county": "Various",
+      "city": "",
+      "address": "Various remote locations throughout the United States",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Grede, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-10",
+      "employees": 170,
+      "layoff_type": "Closure",
+      "county": "Crawford",
+      "city": "",
+      "address": "18771 Mill Street, Meadville, PA  16335",
+      "industry": ""
+    },
     {
       "state": "PA",
       "company": "Essendant Management Services, LLC",

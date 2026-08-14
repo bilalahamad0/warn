@@ -2,7 +2,7 @@
   "scope": "ca",
   "state": "CA",
   "coverage_start": "2025-01-01",
-  "last_updated": "2026-08-14T01:27:53.108234+00:00",
+  "last_updated": "2026-08-14T13:03:16.961734+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "total_records": 1700,
   "total_employees": 94039,
@@ -20,7 +20,7 @@
       "address": "600 S Central Ave.  Glendale CA 91205",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "EBALDC (801 Pine Street)",
@@ -33,7 +33,7 @@
       "address": "801 Pine Street  Oakland CA 94607",
       "industry": "92 Public Administration",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "EBALDC (120 Macdonald Ave)",
@@ -46,7 +46,7 @@
       "address": "120 Macdonald Ave 907 Lake Street Richmond CA 94801",
       "industry": "92 Public Administration",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Sharp Metropolitan Medical Group - Sharp McDonald Center",
@@ -59,7 +59,7 @@
       "address": "7901 Frost Street  San Diego CA 92123",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "EBALDC (907 Lake Street)",
@@ -72,7 +72,7 @@
       "address": "907 Lake Street  San Pablo CA 94806",
       "industry": "92 Public Administration",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "EBALDC (918 Clay Street)",
@@ -85,7 +85,7 @@
       "address": "918 Clay Street  Oakland CA 94607",
       "industry": "92 Public Administration",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "EBALDC (989 Brush Street)",
@@ -98,7 +98,7 @@
       "address": "989 Brush Street  Oakland CA 94610",
       "industry": "92 Public Administration",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "EBALDC (3850 San Pablo Ave)",
@@ -111,7 +111,7 @@
       "address": "3850 San Pablo Ave  Emeryville CA 94608",
       "industry": "92 Public Administration",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "EBALDC (3501 San Pablo Ave)",
@@ -124,7 +124,7 @@
       "address": "3501 San Pablo Ave  Oakland CA 94608",
       "industry": "92 Public Administration",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "EBALDC (2946 International BLVD)",
@@ -137,7 +137,7 @@
       "address": "2946 International BLVD 2618 East 16th Street Oakland CA 94601",
       "industry": "92 Public Administration",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "EBALDC (283 13th Street)",
@@ -150,7 +150,7 @@
       "address": "283 13th Street  Oakland CA 94612",
       "industry": "92 Public Administration",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "EBALDC (2555 International BLVD)",
@@ -163,7 +163,7 @@
       "address": "2555 International BLVD  Oakland CA 94601",
       "industry": "92 Public Administration",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "EBALDC (2201 Brush St.)",
@@ -176,7 +176,7 @@
       "address": "2201 Brush St.  Oakland CA 94612",
       "industry": "92 Public Administration",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "EBALDC (1955 San Pablo Ave)",
@@ -189,7 +189,7 @@
       "address": "1955 San Pablo Ave  Oakland CA 94612",
       "industry": "92 Public Administration",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "EBALDC (100 9th Street)",
@@ -202,7 +202,7 @@
       "address": "100 9th Street  Oakland CA 94607",
       "industry": "92 Public Administration",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "EBALDC (1935 Seminary Ave)",
@@ -215,7 +215,7 @@
       "address": "1935 Seminary Ave 2530 International BLVD Oakland CA 94621",
       "industry": "92 Public Administration",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "EBALDC (1825 San Pablo Ave., Suite 200)",
@@ -228,7 +228,7 @@
       "address": "1825 San Pablo Ave., Suite 200  Oakland CA 94612",
       "industry": "92 Public Administration",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "EBALDC (1448 10th Street)",
@@ -241,7 +241,7 @@
       "address": "1448 10th Street 829 East 19th Street Oakland CA 94607",
       "industry": "92 Public Administration",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "EBALDC (121 E 12th Street)",
@@ -254,7 +254,7 @@
       "address": "121 E 12th Street  Oakland CA 94606",
       "industry": "92 Public Administration",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "EBALDC (700 Willow Street)",
@@ -267,7 +267,7 @@
       "address": "700 Willow Street 721 Wood Street Oakland CA 94607",
       "industry": "92 Public Administration",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Sharp Metropolitan Medical Campus - Sharp Mary Birch Hospital",
@@ -280,7 +280,7 @@
       "address": "7901 Frost Street  San Diego CA 92123",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Sharp Metropolitan Medical Campus - Sharp Memorial Hospital",
@@ -293,7 +293,7 @@
       "address": "7901 Frost Street  San Diego CA 92123",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Sharp Metropolitan Medical Campus - Sharp Mesa Vista",
@@ -306,7 +306,7 @@
       "address": "7901 Frost Street  San Diego CA 92123",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Sharp Metropolitan Medical Campus - Sharp Outpatient Pavilion",
@@ -319,7 +319,7 @@
       "address": "7901 Frost Street  San Diego CA 92123",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "EBALDC (188 11th Street)",
@@ -332,7 +332,7 @@
       "address": "188 11th Street  Oakland CA 94607",
       "industry": "92 Public Administration",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Bumble Bee Foods, LLC",
@@ -345,7 +345,7 @@
       "address": "13100 Arctic Circle  Santa Fe Springs CA 90670",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "ZOLL Medical Corporation",
@@ -358,7 +358,7 @@
       "address": "1100 Bird Center Drive  Palm Springs CA 92262",
       "industry": "81 Other Services Except Public Administration",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "G3 Enterprises",
@@ -618,7 +618,7 @@
       "address": "1200 Folsom Street  San Francisco CA 94103",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Tencent America LLC",
