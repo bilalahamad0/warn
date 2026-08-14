@@ -1,9 +1,9 @@
 {
-  "total_records": 852,
-  "total_employees": 86687,
+  "total_records": 853,
+  "total_employees": 86688,
   "date_range_start": "2015-01-02",
-  "date_range_end": "2026-08-06",
-  "last_updated": "2026-08-13T12:53:03.730768+00:00",
+  "date_range_end": "2026-08-13",
+  "last_updated": "2026-08-14T01:13:30.620124+00:00",
   "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
   "records": [
     {
@@ -10224,6 +10224,18 @@
       "notice_date": "2026-08-06",
       "effective_date": "2026-10-05",
       "employees": 12,
+      "layoff_type": "PCAPP Milestone Project Completions",
+      "county": "Pueblo",
+      "city": "",
+      "address": "",
+      "industry": "56,2910: Remediation Services"
+    },
+    {
+      "state": "CO",
+      "company": "Battelle",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-10-12",
+      "employees": 1,
       "layoff_type": "PCAPP Milestone Project Completions",
       "county": "Pueblo",
       "city": "",

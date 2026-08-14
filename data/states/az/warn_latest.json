@@ -1,9 +1,9 @@
 {
   "total_records": 477,
-  "total_employees": 73312,
+  "total_employees": 71246,
   "date_range_start": "2019-01-04",
   "date_range_end": "2026-08-11",
-  "last_updated": "2026-08-13T12:52:30.508663+00:00",
+  "last_updated": "2026-08-14T01:13:08.107152+00:00",
   "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
   "records": [
     {
@@ -11,11 +11,11 @@
       "company": "SMBC MANUBANK",
       "notice_date": "2026-08-11",
       "effective_date": null,
-      "employees": 23,
+      "employees": 0,
       "layoff_type": "WARN",
       "county": "",
       "city": "New York",
-      "address": "277 Park Avenue; New York, New York 10172",
+      "address": "",
       "industry": ""
     },
     {
@@ -35,11 +35,11 @@
       "company": "Infineon Technologies America Corp",
       "notice_date": "2026-08-03",
       "effective_date": null,
-      "employees": 98,
+      "employees": 0,
       "layoff_type": "WARN",
       "county": "",
       "city": "Mesa",
-      "address": "550 West Juanita Avenue; Mesa, Arizona 85210",
+      "address": "",
       "industry": ""
     },
     {
@@ -47,11 +47,11 @@
       "company": "Select Medical Corporation",
       "notice_date": "2026-07-09",
       "effective_date": null,
-      "employees": 99,
+      "employees": 0,
       "layoff_type": "WARN",
       "county": "",
       "city": "Tucson",
-      "address": "5301 East Grand Road; Tucson, Arizona 85712",
+      "address": "",
       "industry": ""
     },
     {
@@ -923,11 +923,11 @@
       "company": "DFC",
       "notice_date": "2025-04-29",
       "effective_date": null,
-      "employees": 33,
+      "employees": 0,
       "layoff_type": "WARN",
       "county": "",
       "city": "Chandler",
-      "address": "6900 W Morelos Place, Suite 2; Chandler, Arizona 85226",
+      "address": "",
       "industry": ""
     },
     {
@@ -1007,11 +1007,11 @@
       "company": "Veyer, LLC",
       "notice_date": "2025-02-28",
       "effective_date": null,
-      "employees": 60,
+      "employees": 0,
       "layoff_type": "WARN",
       "county": "",
       "city": "Phoenix",
-      "address": "602 S. 63rd Avenue; Phoenix, Arizona 85043",
+      "address": "",
       "industry": ""
     },
     {
@@ -1019,11 +1019,11 @@
       "company": "LUKE Holding Inc.",
       "notice_date": "2025-02-28",
       "effective_date": null,
-      "employees": 19,
+      "employees": 0,
       "layoff_type": "WARN",
       "county": "",
       "city": "Nogales",
-      "address": "1500 W La Quinta Road; Nogales, Arizona 85621",
+      "address": "",
       "industry": ""
     },
     {
@@ -1031,11 +1031,11 @@
       "company": "LUKE Holding Inc.",
       "notice_date": "2025-02-28",
       "effective_date": null,
-      "employees": 34,
+      "employees": 0,
       "layoff_type": "WARN",
       "county": "",
       "city": "Tucson",
-      "address": "4550 E. Los Reales Road; Tucson, Arizona 85756",
+      "address": "",
       "industry": ""
     },
     {
@@ -1043,11 +1043,11 @@
       "company": "LUKE Holding Inc.",
       "notice_date": "2025-02-28",
       "effective_date": null,
-      "employees": 54,
+      "employees": 0,
       "layoff_type": "WARN",
       "county": "",
       "city": "Yuma",
-      "address": "4035 S Avenue A; Yuma, Arizona 85364",
+      "address": "",
       "industry": ""
     },
     {
@@ -1055,11 +1055,11 @@
       "company": "Behavioral Health Link",
       "notice_date": "2025-02-19",
       "effective_date": null,
-      "employees": 2,
+      "employees": 0,
       "layoff_type": "WARN",
       "county": "",
       "city": "Atlanta",
-      "address": "1201 Peachtree St. NE, Ste. 1215; Atlanta, Georgia 30361",
+      "address": "",
       "industry": ""
     },
     {
@@ -1067,11 +1067,11 @@
       "company": "Nikola Corporation",
       "notice_date": "2025-02-19",
       "effective_date": null,
-      "employees": 315,
+      "employees": 0,
       "layoff_type": "WARN",
       "county": "",
       "city": "Coolidge",
-      "address": "680 E Houser Road; Coolidge, Arizona 85128",
+      "address": "",
       "industry": ""
     },
     {
@@ -1079,11 +1079,11 @@
       "company": "Nikola Corporation",
       "notice_date": "2025-02-19",
       "effective_date": null,
-      "employees": 540,
+      "employees": 0,
       "layoff_type": "WARN",
       "county": "",
       "city": "Phoenix",
-      "address": "4141 East Broadway; Phoenix, Arizona 85040",
+      "address": "",
       "industry": ""
     },
     {
@@ -1103,11 +1103,11 @@
       "company": "ManpowerGroup US Inc.",
       "notice_date": "2025-01-27",
       "effective_date": null,
-      "employees": 564,
+      "employees": 0,
       "layoff_type": "WARN",
       "county": "",
       "city": "Goodyear",
-      "address": "14170 W Yuma Rd.; Goodyear, Arizona 85338",
+      "address": "",
       "industry": ""
     },
     {
@@ -1115,11 +1115,11 @@
       "company": "Safeway Inc.",
       "notice_date": "2025-01-14",
       "effective_date": null,
-      "employees": 225,
+      "employees": 0,
       "layoff_type": "WARN",
       "county": "",
       "city": "Phoenix",
-      "address": "20427 N. 27th Ave; Phoenix, Arizona 85027",
+      "address": "",
       "industry": ""
     },
     {

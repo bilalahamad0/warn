@@ -1,9 +1,9 @@
 {
-  "total_records": 300,
-  "total_employees": 44549,
+  "total_records": 302,
+  "total_employees": 44726,
   "date_range_start": "2023-01-09",
-  "date_range_end": "2026-10-03",
-  "last_updated": "2026-08-13T13:04:27.967255+00:00",
+  "date_range_end": "2026-10-10",
+  "last_updated": "2026-08-14T01:24:53.329833+00:00",
   "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
   "records": [
     {
@@ -3604,6 +3604,30 @@
       "county": "Chester",
       "city": "",
       "address": "125 Green Tree Road, Phoenixville, PA 19460",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "SMBC MANUBANK",
+      "notice_date": null,
+      "effective_date": "2026-10-09",
+      "employees": 7,
+      "layoff_type": "Closure",
+      "county": "Various",
+      "city": "",
+      "address": "Various remote locations throughout the United States",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Grede, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-10",
+      "employees": 170,
+      "layoff_type": "Closure",
+      "county": "Crawford",
+      "city": "",
+      "address": "18771 Mill Street, Meadville, PA  16335",
       "industry": ""
     }
   ]

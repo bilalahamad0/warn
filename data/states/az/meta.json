@@ -1,8 +1,8 @@
 {
-  "file_hash": "e37da6799a144859ed863010d02d3355",
-  "last_checked": "2026-08-13T12:52:30.485195+00:00",
+  "file_hash": "5708c86ea6f59e67377b8a8116d0bf5f",
+  "last_checked": "2026-08-14T01:13:08.089612+00:00",
   "url": "https://www.azjobconnection.gov/search/warn_lookups",
   "backfill_year": 2019,
   "row_count": 477,
-  "detail_failures": 0
+  "detail_failures": 13
 }

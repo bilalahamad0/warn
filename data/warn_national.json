@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-13T13:07:34.028466+00:00",
+  "last_updated": "2026-08-14T01:27:53.108234+00:00",
   "states_live": 47,
-  "total_records": 59940,
-  "total_employees": 6462005,
+  "total_records": 59976,
+  "total_employees": 6461130,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -23,21 +23,21 @@
       "agency": "Arizona Department of Economic Security",
       "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
       "total_records": 476,
-      "total_employees": 73136
+      "total_employees": 71070
     },
     "CA": {
       "name": "California",
       "agency": "California Employment Development Department",
       "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
-      "total_records": 16190,
-      "total_employees": 1385214
+      "total_records": 16218,
+      "total_employees": 1385828
     },
     "CO": {
       "name": "Colorado",
       "agency": "Colorado Department of Labor and Employment",
       "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
-      "total_records": 852,
-      "total_employees": 86687
+      "total_records": 853,
+      "total_employees": 86688
     },
     "CT": {
       "name": "Connecticut",
@@ -57,15 +57,15 @@
       "name": "Delaware",
       "agency": "Delaware Department of Labor",
       "source_url": "https://joblink.delaware.gov/search/warn_lookups",
-      "total_records": 40,
-      "total_employees": 6135
+      "total_records": 41,
+      "total_employees": 6241
     },
     "FL": {
       "name": "Florida",
       "agency": "Florida Department of Commerce (FloridaCommerce)",
       "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
-      "total_records": 459,
-      "total_employees": 34158
+      "total_records": 461,
+      "total_employees": 34348
     },
     "GA": {
       "name": "Georgia",
@@ -92,8 +92,8 @@
       "name": "Idaho",
       "agency": "Idaho Department of Labor",
       "source_url": "https://www.labor.idaho.gov/businesss/layoff-assistance/",
-      "total_records": 198,
-      "total_employees": 21869
+      "total_records": 199,
+      "total_employees": 21870
     },
     "IL": {
       "name": "Illinois",
@@ -184,7 +184,7 @@
       "agency": "North Carolina Department of Commerce",
       "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
       "total_records": 367,
-      "total_employees": 34046
+      "total_employees": 34076
     },
     "ND": {
       "name": "North Dakota",
@@ -253,8 +253,8 @@
       "name": "Pennsylvania",
       "agency": "Pennsylvania Department of Labor & Industry",
       "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
-      "total_records": 300,
-      "total_employees": 44549
+      "total_records": 302,
+      "total_employees": 44726
     },
     "RI": {
       "name": "Rhode Island",
@@ -323,8 +323,8 @@
       "name": "Wisconsin",
       "agency": "Wisconsin Department of Workforce Development",
       "source_url": "https://dwd.wisconsin.gov/dislocatedworker/warn/",
-      "total_records": 633,
-      "total_employees": 59193
+      "total_records": 634,
+      "total_employees": 59265
     },
     "WV": {
       "name": "West Virginia",
@@ -13897,18 +13897,6 @@
     },
     {
       "state": "AZ",
-      "company": "Select Medical Corporation",
-      "notice_date": "2026-07-09",
-      "effective_date": null,
-      "employees": 99,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Tucson",
-      "address": "5301 East Grand Road; Tucson, Arizona 85712",
-      "industry": ""
-    },
-    {
-      "state": "AZ",
       "company": "Conduent Commercial Solutions, LLC",
       "notice_date": "2026-06-29",
       "effective_date": null,
@@ -14773,18 +14761,6 @@
     },
     {
       "state": "AZ",
-      "company": "DFC",
-      "notice_date": "2025-04-29",
-      "effective_date": null,
-      "employees": 33,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Chandler",
-      "address": "6900 W Morelos Place, Suite 2; Chandler, Arizona 85226",
-      "industry": ""
-    },
-    {
-      "state": "AZ",
       "company": "District Medical Group (Children's Rehabilitative Services)",
       "notice_date": "2025-04-25",
       "effective_date": null,
@@ -14857,90 +14833,6 @@
     },
     {
       "state": "AZ",
-      "company": "Veyer, LLC",
-      "notice_date": "2025-02-28",
-      "effective_date": null,
-      "employees": 60,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Phoenix",
-      "address": "602 S. 63rd Avenue; Phoenix, Arizona 85043",
-      "industry": ""
-    },
-    {
-      "state": "AZ",
-      "company": "LUKE Holding Inc.",
-      "notice_date": "2025-02-28",
-      "effective_date": null,
-      "employees": 19,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Nogales",
-      "address": "1500 W La Quinta Road; Nogales, Arizona 85621",
-      "industry": ""
-    },
-    {
-      "state": "AZ",
-      "company": "LUKE Holding Inc.",
-      "notice_date": "2025-02-28",
-      "effective_date": null,
-      "employees": 34,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Tucson",
-      "address": "4550 E. Los Reales Road; Tucson, Arizona 85756",
-      "industry": ""
-    },
-    {
-      "state": "AZ",
-      "company": "LUKE Holding Inc.",
-      "notice_date": "2025-02-28",
-      "effective_date": null,
-      "employees": 54,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Yuma",
-      "address": "4035 S Avenue A; Yuma, Arizona 85364",
-      "industry": ""
-    },
-    {
-      "state": "AZ",
-      "company": "Behavioral Health Link",
-      "notice_date": "2025-02-19",
-      "effective_date": null,
-      "employees": 2,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Atlanta",
-      "address": "1201 Peachtree St. NE, Ste. 1215; Atlanta, Georgia 30361",
-      "industry": ""
-    },
-    {
-      "state": "AZ",
-      "company": "Nikola Corporation",
-      "notice_date": "2025-02-19",
-      "effective_date": null,
-      "employees": 315,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Coolidge",
-      "address": "680 E Houser Road; Coolidge, Arizona 85128",
-      "industry": ""
-    },
-    {
-      "state": "AZ",
-      "company": "Nikola Corporation",
-      "notice_date": "2025-02-19",
-      "effective_date": null,
-      "employees": 540,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Phoenix",
-      "address": "4141 East Broadway; Phoenix, Arizona 85040",
-      "industry": ""
-    },
-    {
-      "state": "AZ",
       "company": "Cruise LLC",
       "notice_date": "2025-02-04",
       "effective_date": null,
@@ -14949,30 +14841,6 @@
       "county": "",
       "city": "Phoenix",
       "address": "4410 E Cotton Center Blvd; Phoenix, Arizona 85040",
-      "industry": ""
-    },
-    {
-      "state": "AZ",
-      "company": "ManpowerGroup US Inc.",
-      "notice_date": "2025-01-27",
-      "effective_date": null,
-      "employees": 564,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Goodyear",
-      "address": "14170 W Yuma Rd.; Goodyear, Arizona 85338",
-      "industry": ""
-    },
-    {
-      "state": "AZ",
-      "company": "Safeway Inc.",
-      "notice_date": "2025-01-14",
-      "effective_date": null,
-      "employees": 225,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Phoenix",
-      "address": "20427 N. 27th Ave; Phoenix, Arizona 85027",
       "industry": ""
     },
     {
@@ -19573,18 +19441,6 @@
     },
     {
       "state": "AZ",
-      "company": "Infineon Technologies America Corp",
-      "notice_date": "2026-08-03",
-      "effective_date": null,
-      "employees": 98,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Mesa",
-      "address": "550 West Juanita Avenue; Mesa, Arizona 85210",
-      "industry": ""
-    },
-    {
-      "state": "AZ",
       "company": "Essendant",
       "notice_date": "2026-08-04",
       "effective_date": null,
@@ -19600,11 +19456,155 @@
       "company": "SMBC MANUBANK",
       "notice_date": "2026-08-11",
       "effective_date": null,
-      "employees": 23,
+      "employees": 0,
       "layoff_type": "WARN",
       "county": "",
       "city": "New York",
-      "address": "277 Park Avenue; New York, New York 10172",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Infineon Technologies America Corp",
+      "notice_date": "2026-08-03",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Mesa",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Select Medical Corporation",
+      "notice_date": "2026-07-09",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Tucson",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "DFC",
+      "notice_date": "2025-04-29",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Chandler",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Veyer, LLC",
+      "notice_date": "2025-02-28",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Phoenix",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "LUKE Holding Inc.",
+      "notice_date": "2025-02-28",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Nogales",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "LUKE Holding Inc.",
+      "notice_date": "2025-02-28",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Tucson",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "LUKE Holding Inc.",
+      "notice_date": "2025-02-28",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Yuma",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Behavioral Health Link",
+      "notice_date": "2025-02-19",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Atlanta",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Nikola Corporation",
+      "notice_date": "2025-02-19",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Coolidge",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Nikola Corporation",
+      "notice_date": "2025-02-19",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Phoenix",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "ManpowerGroup US Inc.",
+      "notice_date": "2025-01-27",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Goodyear",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Safeway Inc.",
+      "notice_date": "2025-01-14",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Phoenix",
+      "address": "",
       "industry": ""
     },
     {
@@ -38818,6 +38818,342 @@
       "city": "",
       "address": "462 Devlin Road  Napa CA 94558",
       "industry": "11 Agriculture Forestry Fishing Hunting"
+    },
+    {
+      "state": "CA",
+      "company": "Adventist Health Glendale",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-09-01",
+      "employees": 7,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "600 S Central Ave.  Glendale CA 91205",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (801 Pine Street)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 4,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "801 Pine Street  Oakland CA 94607",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (120 Macdonald Ave)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "Contra Costa County",
+      "city": "",
+      "address": "120 Macdonald Ave 907 Lake Street Richmond CA 94801",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "Sharp Metropolitan Medical Group - Sharp McDonald Center",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "7901 Frost Street  San Diego CA 92123",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (907 Lake Street)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Contra Costa County",
+      "city": "",
+      "address": "907 Lake Street  San Pablo CA 94806",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (918 Clay Street)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "918 Clay Street  Oakland CA 94607",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (989 Brush Street)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "989 Brush Street  Oakland CA 94610",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (3850 San Pablo Ave)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "3850 San Pablo Ave  Emeryville CA 94608",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (3501 San Pablo Ave)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 9,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "3501 San Pablo Ave  Oakland CA 94608",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (2946 International BLVD)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "2946 International BLVD 2618 East 16th Street Oakland CA 94601",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (283 13th Street)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 4,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "283 13th Street  Oakland CA 94612",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (2555 International BLVD)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 5,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "2555 International BLVD  Oakland CA 94601",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (2201 Brush St.)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 5,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "2201 Brush St.  Oakland CA 94612",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (1955 San Pablo Ave)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 9,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "1955 San Pablo Ave  Oakland CA 94612",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (100 9th Street)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 4,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "100 9th Street  Oakland CA 94607",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (1935 Seminary Ave)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "1935 Seminary Ave 2530 International BLVD Oakland CA 94621",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (1825 San Pablo Ave., Suite 200)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 20,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "1825 San Pablo Ave., Suite 200  Oakland CA 94612",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (1448 10th Street)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "1448 10th Street 829 East 19th Street Oakland CA 94607",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (121 E 12th Street)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "121 E 12th Street  Oakland CA 94606",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (700 Willow Street)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "700 Willow Street 721 Wood Street Oakland CA 94607",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "Sharp Metropolitan Medical Campus - Sharp Mary Birch Hospital",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 7,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "7901 Frost Street  San Diego CA 92123",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Sharp Metropolitan Medical Campus - Sharp Memorial Hospital",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 20,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "7901 Frost Street  San Diego CA 92123",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Sharp Metropolitan Medical Campus - Sharp Mesa Vista",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 134,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "7901 Frost Street  San Diego CA 92123",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Sharp Metropolitan Medical Campus - Sharp Outpatient Pavilion",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 5,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "7901 Frost Street  San Diego CA 92123",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (188 11th Street)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 4,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "188 11th Street  Oakland CA 94607",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "San Francisco Pretrial Diversion Project, Inc.",
+      "notice_date": "2026-07-30",
+      "effective_date": "2026-11-13",
+      "employees": 82,
+      "layoff_type": "Closure Permanent",
+      "county": "San Francisco County",
+      "city": "",
+      "address": "1200 Folsom Street  San Francisco CA 94103",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Bumble Bee Foods, LLC",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-11-19",
+      "employees": 197,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "13100 Arctic Circle  Santa Fe Springs CA 90670",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "ZOLL Medical Corporation",
+      "notice_date": "2026-08-11",
+      "effective_date": "2027-02-01",
+      "employees": 78,
+      "layoff_type": "Closure Permanent",
+      "county": "Riverside County",
+      "city": "",
+      "address": "1100 Bird Center Drive  Palm Springs CA 92262",
+      "industry": "81 Other Services Except Public Administration"
     },
     {
       "company": "Adventist Health St. Helena",
@@ -192820,6 +193156,18 @@
       "industry": "56,2910: Remediation Services"
     },
     {
+      "state": "CO",
+      "company": "Battelle",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-10-12",
+      "employees": 1,
+      "layoff_type": "PCAPP Milestone Project Completions",
+      "county": "Pueblo",
+      "city": "",
+      "address": "",
+      "industry": "56,2910: Remediation Services"
+    },
+    {
       "state": "CT",
       "company": "Conduent Commercial Solutions, LLC",
       "notice_date": "2026-06-26",
@@ -195361,6 +195709,18 @@
       "county": "",
       "city": "",
       "address": "",
+      "industry": ""
+    },
+    {
+      "state": "DE",
+      "company": "JeniusBank",
+      "notice_date": "2026-08-10",
+      "effective_date": null,
+      "employees": 106,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "New York",
+      "address": "277 Park Ave; New York, New York 10172",
       "industry": ""
     },
     {
@@ -200870,6 +201230,30 @@
       "city": "FORT LAUDERDALE",
       "address": "1 E. Broward Blvd., Suite 200",
       "industry": "Agriculture, Forestry, Fishing and Hunting"
+    },
+    {
+      "state": "FL",
+      "company": "Postal Center International, Inc.",
+      "notice_date": "2026-08-12",
+      "effective_date": "2026-08-13",
+      "employees": 181,
+      "layoff_type": "",
+      "county": "",
+      "city": "WESTON",
+      "address": "2965 W Corporate Lakes Blvd",
+      "industry": "Transportation and Warehousing"
+    },
+    {
+      "state": "FL",
+      "company": "SMBC Manubank",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-09",
+      "employees": 9,
+      "layoff_type": "",
+      "county": "",
+      "city": "MULTIPLE LOCATIONS",
+      "address": "227 Park Avenue, New York, NY",
+      "industry": "Finance and Insurance"
     },
     {
       "state": "GA",
@@ -276529,6 +276913,18 @@
       "county": "",
       "city": "Boise",
       "address": "5200 Federal Way",
+      "industry": ""
+    },
+    {
+      "state": "ID",
+      "company": "JeniusBank (digital banking unit of SMBC Manubank)",
+      "notice_date": "2026-08-10",
+      "effective_date": "2026-10-09",
+      "employees": 1,
+      "layoff_type": "",
+      "county": "",
+      "city": "New York",
+      "address": "277 Park Avenue",
       "industry": ""
     },
     {
@@ -406940,18 +407336,6 @@
     },
     {
       "state": "NC",
-      "company": "Barrette Outdoor Living, Inc.",
-      "notice_date": "2026-07-01",
-      "effective_date": "2026-07-01",
-      "employees": 63,
-      "layoff_type": "Layoff Permanent",
-      "county": "Rowan",
-      "city": "Salisbury",
-      "address": "745 Mid S Drive",
-      "industry": ""
-    },
-    {
-      "state": "NC",
       "company": "Electric Glass Fiber America, LLC",
       "notice_date": "2026-07-06",
       "effective_date": "2027-09-30",
@@ -407044,6 +407428,18 @@
       "county": "",
       "city": "New York NY",
       "address": "277 Park Avenue",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Barrette Outdoor Living, Inc.",
+      "notice_date": "2026-07-01",
+      "effective_date": "2026-10-12",
+      "employees": 93,
+      "layoff_type": "Layoff Permanent",
+      "county": "Rowan",
+      "city": "Salisbury",
+      "address": "745 Mid S Drive",
       "industry": ""
     },
     {
@@ -557983,6 +558379,30 @@
       "industry": ""
     },
     {
+      "state": "PA",
+      "company": "SMBC MANUBANK",
+      "notice_date": null,
+      "effective_date": "2026-10-09",
+      "employees": 7,
+      "layoff_type": "Closure",
+      "county": "Various",
+      "city": "",
+      "address": "Various remote locations throughout the United States",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Grede, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-10",
+      "employees": 170,
+      "layoff_type": "Closure",
+      "county": "Crawford",
+      "city": "",
+      "address": "18771 Mill Street, Meadville, PA  16335",
+      "industry": ""
+    },
+    {
       "state": "RI",
       "company": "Conduent",
       "notice_date": "2026-06-26",
@@ -641151,7 +641571,7 @@
       "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-08-13",
+      "effective_date": "2026-08-14",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",
@@ -667102,6 +667522,18 @@
       "city": "Unknown - Remote Employees",
       "address": "",
       "industry": "General Medical and Surgical Hospitals"
+    },
+    {
+      "state": "WI",
+      "company": "Durr CTS, Inc.",
+      "notice_date": "2026-08-12",
+      "effective_date": "2026-10-13",
+      "employees": 72,
+      "layoff_type": "Facility Closure",
+      "county": "Brown",
+      "city": "De Pere",
+      "address": "",
+      "industry": "Automatic Environmental Control Mfg"
     },
     {
       "state": "WV",

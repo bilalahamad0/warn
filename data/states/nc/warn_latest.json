@@ -1,9 +1,9 @@
 {
   "total_records": 369,
-  "total_employees": 34139,
+  "total_employees": 34169,
   "date_range_start": "2022-01-25",
   "date_range_end": "2026-07-23",
-  "last_updated": "2026-08-13T13:03:16.955975+00:00",
+  "last_updated": "2026-08-14T01:23:43.657960+00:00",
   "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
   "records": [
     {
@@ -4378,8 +4378,8 @@
       "state": "NC",
       "company": "Barrette Outdoor Living, Inc.",
       "notice_date": "2026-07-01",
-      "effective_date": "2026-07-01",
-      "employees": 63,
+      "effective_date": "2026-10-12",
+      "employees": 93,
       "layoff_type": "Layoff Permanent",
       "county": "Rowan",
       "city": "Salisbury",
