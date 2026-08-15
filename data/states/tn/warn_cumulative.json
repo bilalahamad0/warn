@@ -1,9 +1,9 @@
 {
-  "total_records": 1060,
-  "total_employees": 121060,
+  "total_records": 1061,
+  "total_employees": 121189,
   "date_range_start": "2012-01-05",
-  "date_range_end": "2026-08-06",
-  "last_updated": "2026-08-14T13:00:25.760172+00:00",
+  "date_range_end": "2026-08-14",
+  "last_updated": "2026-08-15T00:57:22.653326+00:00",
   "source_url": "https://www.tn.gov/workforce/general-resources/major-publications0/major-publications-redirect/reports.html",
   "records": [
     {
@@ -10792,6 +10792,18 @@
       "employees": 250,
       "layoff_type": "",
       "county": "Davidson",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "TN",
+      "company": "Wise Company LLC",
+      "notice_date": "2026-08-14",
+      "effective_date": null,
+      "employees": 129,
+      "layoff_type": "",
+      "county": "Hardin",
       "city": "",
       "address": "",
       "industry": ""

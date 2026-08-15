@@ -1,11 +1,23 @@
 {
-  "total_records": 110,
-  "total_employees": 14078,
+  "total_records": 111,
+  "total_employees": 14428,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-08-14T12:57:27.261128+00:00",
+  "last_updated": "2026-08-15T00:54:45.138593+00:00",
   "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
   "records": [
+    {
+      "state": "MI",
+      "company": "General Motors, LLC -- Lansing Region",
+      "notice_date": null,
+      "effective_date": "2027-01-14",
+      "employees": 350,
+      "layoff_type": "Mass layoff",
+      "county": "Eaton, Ingham",
+      "city": "",
+      "address": "General Motors, LLC -- Lansing Grand River Assembly/Stamping 920 Townsend Street Lansing, MI 48933; General Motors, LLC -- Lansing Regional Stamping 8175 Millett Highway Lansing, MI 48917",
+      "industry": ""
+    },
     {
       "state": "MI",
       "company": "Compass Group USA, Inc. / Morrison Healthcare",

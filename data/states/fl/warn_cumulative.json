@@ -1,9 +1,9 @@
 {
-  "total_records": 461,
-  "total_employees": 34348,
+  "total_records": 462,
+  "total_employees": 34408,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-08-12",
-  "last_updated": "2026-08-14T12:51:05.226166+00:00",
+  "date_range_end": "2026-08-13",
+  "last_updated": "2026-08-15T00:48:23.984488+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -5537,6 +5537,18 @@
       "city": "MULTIPLE LOCATIONS",
       "address": "227 Park Avenue, New York, NY",
       "industry": "Finance and Insurance"
+    },
+    {
+      "state": "FL",
+      "company": "Nearly Natural, LLC",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-10-12",
+      "employees": 60,
+      "layoff_type": "",
+      "county": "",
+      "city": "HIALEAH",
+      "address": "3870 W 108th St, Suite 20",
+      "industry": "Retail Trade"
     }
   ]
 }

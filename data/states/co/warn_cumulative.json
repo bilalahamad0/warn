@@ -1,9 +1,9 @@
 {
-  "total_records": 853,
-  "total_employees": 86688,
+  "total_records": 854,
+  "total_employees": 86778,
   "date_range_start": "2015-01-02",
-  "date_range_end": "2026-08-13",
-  "last_updated": "2026-08-14T12:48:38.779950+00:00",
+  "date_range_end": "2026-08-14",
+  "last_updated": "2026-08-15T00:45:57.378747+00:00",
   "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
   "records": [
     {
@@ -10241,6 +10241,18 @@
       "city": "",
       "address": "",
       "industry": "56,2910: Remediation Services"
+    },
+    {
+      "state": "CO",
+      "company": "Mission Foods",
+      "notice_date": "2026-08-14",
+      "effective_date": "2026-10-13",
+      "employees": 90,
+      "layoff_type": "Closure",
+      "county": "Pueblo (Rural Alliance)",
+      "city": "",
+      "address": "",
+      "industry": "31,1830: Bakery & Tortilla Manufacturing"
     }
   ]
 }

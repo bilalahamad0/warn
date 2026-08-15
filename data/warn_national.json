@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-14T13:03:16.961734+00:00",
+  "last_updated": "2026-08-15T01:00:15.040920+00:00",
   "states_live": 47,
-  "total_records": 59976,
-  "total_employees": 6461130,
+  "total_records": 59992,
+  "total_employees": 6463801,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -36,8 +36,8 @@
       "name": "Colorado",
       "agency": "Colorado Department of Labor and Employment",
       "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
-      "total_records": 853,
-      "total_employees": 86688
+      "total_records": 854,
+      "total_employees": 86778
     },
     "CT": {
       "name": "Connecticut",
@@ -64,8 +64,8 @@
       "name": "Florida",
       "agency": "Florida Department of Commerce (FloridaCommerce)",
       "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
-      "total_records": 461,
-      "total_employees": 34348
+      "total_records": 462,
+      "total_employees": 34408
     },
     "GA": {
       "name": "Georgia",
@@ -85,8 +85,8 @@
       "name": "Iowa",
       "agency": "Iowa Workforce Development",
       "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
-      "total_records": 926,
-      "total_employees": 51691
+      "total_records": 928,
+      "total_employees": 51725
     },
     "ID": {
       "name": "Idaho",
@@ -134,8 +134,8 @@
       "name": "Massachusetts",
       "agency": "Massachusetts Executive Office of Labor and Workforce Development",
       "source_url": "https://www.mass.gov/info-details/worker-adjustment-and-retraining-notification-act-warn",
-      "total_records": 381,
-      "total_employees": 33695
+      "total_records": 388,
+      "total_employees": 34875
     },
     "MD": {
       "name": "Maryland",
@@ -155,8 +155,8 @@
       "name": "Michigan",
       "agency": "Michigan Department of Labor and Economic Opportunity",
       "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
-      "total_records": 782,
-      "total_employees": 120570
+      "total_records": 783,
+      "total_employees": 120920
     },
     "MN": {
       "name": "Minnesota",
@@ -253,8 +253,8 @@
       "name": "Pennsylvania",
       "agency": "Pennsylvania Department of Labor & Industry",
       "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
-      "total_records": 302,
-      "total_employees": 44726
+      "total_records": 303,
+      "total_employees": 44774
     },
     "RI": {
       "name": "Rhode Island",
@@ -281,8 +281,8 @@
       "name": "Tennessee",
       "agency": "Tennessee Department of Labor and Workforce Development",
       "source_url": "https://www.tn.gov/workforce/general-resources/major-publications0/major-publications-redirect/reports.html",
-      "total_records": 1060,
-      "total_employees": 121060
+      "total_records": 1061,
+      "total_employees": 121189
     },
     "TX": {
       "name": "Texas",
@@ -295,8 +295,8 @@
       "name": "Utah",
       "agency": "Utah Department of Workforce Services",
       "source_url": "https://jobs.utah.gov/employer/business/warnnotices.html",
-      "total_records": 281,
-      "total_employees": 35980
+      "total_records": 282,
+      "total_employees": 36703
     },
     "VA": {
       "name": "Virginia",
@@ -316,15 +316,15 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1492,
-      "total_employees": 235113
+      "total_records": 1493,
+      "total_employees": 235167
     },
     "WI": {
       "name": "Wisconsin",
       "agency": "Wisconsin Department of Workforce Development",
       "source_url": "https://dwd.wisconsin.gov/dislocatedworker/warn/",
       "total_records": 634,
-      "total_employees": 59265
+      "total_employees": 59268
     },
     "WV": {
       "name": "West Virginia",
@@ -193168,6 +193168,18 @@
       "industry": "56,2910: Remediation Services"
     },
     {
+      "state": "CO",
+      "company": "Mission Foods",
+      "notice_date": "2026-08-14",
+      "effective_date": "2026-10-13",
+      "employees": 90,
+      "layoff_type": "Closure",
+      "county": "Pueblo (Rural Alliance)",
+      "city": "",
+      "address": "",
+      "industry": "31,1830: Bakery & Tortilla Manufacturing"
+    },
+    {
       "state": "CT",
       "company": "Conduent Commercial Solutions, LLC",
       "notice_date": "2026-06-26",
@@ -201254,6 +201266,18 @@
       "city": "MULTIPLE LOCATIONS",
       "address": "227 Park Avenue, New York, NY",
       "industry": "Finance and Insurance"
+    },
+    {
+      "state": "FL",
+      "company": "Nearly Natural, LLC",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-10-12",
+      "employees": 60,
+      "layoff_type": "",
+      "county": "",
+      "city": "HIALEAH",
+      "address": "3870 W 108th St, Suite 20",
+      "industry": "Retail Trade"
     },
     {
       "state": "GA",
@@ -274538,6 +274562,30 @@
       "city": "West Des Moines",
       "address": "800 S Jordan Creek Pkwy",
       "industry": "Finance and Insurance"
+    },
+    {
+      "state": "IA",
+      "company": "CNH Industrial America LLC",
+      "notice_date": "2026-01-20",
+      "effective_date": "2026-03-02",
+      "employees": 7,
+      "layoff_type": "Closing",
+      "county": "Des Moines",
+      "city": "Burlington",
+      "address": "1930 Des Moines Ave",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "IA",
+      "company": "Winnebago Industries",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-11-30",
+      "employees": 27,
+      "layoff_type": "Mass Layoff",
+      "county": "Winnebago",
+      "city": "Forest City",
+      "address": "605 W Crystal Lake Rd",
+      "industry": "Manufacturing"
     },
     {
       "state": "ID",
@@ -368458,6 +368506,90 @@
       "industry": ""
     },
     {
+      "state": "MA",
+      "company": "*Updated* Thermo Fisher Scientific",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-10-16",
+      "employees": 15,
+      "layoff_type": "",
+      "county": "Metro Southwest",
+      "city": "Franklin",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "Postal Center International, Inc. (aka PCI)",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-08-13",
+      "employees": 112,
+      "layoff_type": "",
+      "county": "Metro Southwest",
+      "city": "Franklin",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "*Updated* EMD Serono Research Development Institute, Inc.",
+      "notice_date": "2026-08-12",
+      "effective_date": "2026-10-16",
+      "employees": 20,
+      "layoff_type": "",
+      "county": "Northeast",
+      "city": "Billerica",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "SMBC Manubank (aka JeniusBank)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-09",
+      "employees": 3,
+      "layoff_type": "",
+      "county": "Statewide",
+      "city": "Statewide",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "*Updated* Community Healthlink, Inc. (aka CHL)",
+      "notice_date": "2026-08-10",
+      "effective_date": "2026-10-09",
+      "employees": 639,
+      "layoff_type": "",
+      "county": "Central",
+      "city": "Worcester and Leominster",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "Blueprint Medicines Corporation (aka Sanofi Company Blueprint)",
+      "notice_date": "2026-08-07",
+      "effective_date": "2026-10-09",
+      "employees": 229,
+      "layoff_type": "",
+      "county": "Boston",
+      "city": "Cambridge",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "National Express Transit Corp. (dba Kiessling of Attleboro)",
+      "notice_date": "2026-08-07",
+      "effective_date": "2026-09-15",
+      "employees": 162,
+      "layoff_type": "",
+      "county": "Southeast",
+      "city": "Taunton and Wareham",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "MD",
       "company": "Taft Broadcasting, LLC",
       "notice_date": "2026-07-20",
@@ -392908,6 +393040,18 @@
       "county": "Cheboygan, Emmett, Genessee, Ingham, Lapeer",
       "city": "",
       "address": "748 S. Main St., Cheboygan, MI 49721; 1 McLaren Drive, Grand Blanc, MI 48439; 2900 Collins Road, Lansing, MI 48910; 1375 N. Maine St., Lapeer, MI 48446; 416 Connable Ave., Petoskey, MI 49770",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "General Motors, LLC -- Lansing Region",
+      "notice_date": null,
+      "effective_date": "2027-01-14",
+      "employees": 350,
+      "layoff_type": "Mass layoff",
+      "county": "Eaton, Ingham",
+      "city": "",
+      "address": "General Motors, LLC -- Lansing Grand River Assembly/Stamping 920 Townsend Street Lansing, MI 48933; General Motors, LLC -- Lansing Regional Stamping 8175 Millett Highway Lansing, MI 48917",
       "industry": ""
     },
     {
@@ -558403,6 +558547,18 @@
       "industry": ""
     },
     {
+      "state": "PA",
+      "company": "United Natural Foods, Inc. (NFI)",
+      "notice_date": null,
+      "effective_date": "2026-10-16",
+      "employees": 48,
+      "layoff_type": "Closure",
+      "county": "Philadelphia",
+      "city": "",
+      "address": "2722 Commerce Way, Philadelphia, PA  19154",
+      "industry": ""
+    },
+    {
       "state": "RI",
       "company": "Conduent",
       "notice_date": "2026-06-26",
@@ -578896,6 +579052,18 @@
       "employees": 250,
       "layoff_type": "",
       "county": "Davidson",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "TN",
+      "company": "Wise Company LLC",
+      "notice_date": "2026-08-14",
+      "effective_date": null,
+      "employees": 129,
+      "layoff_type": "",
+      "county": "Hardin",
       "city": "",
       "address": "",
       "industry": ""
@@ -628128,6 +628296,18 @@
       "industry": ""
     },
     {
+      "state": "UT",
+      "company": "Tyson Fresh Meats",
+      "notice_date": "2026-08-13",
+      "effective_date": null,
+      "employees": 723,
+      "layoff_type": "",
+      "county": "",
+      "city": "Eagle Mountain",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "VA",
       "company": "Emerson",
       "notice_date": "2026-07-09",
@@ -641571,7 +641751,7 @@
       "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-08-14",
+      "effective_date": "2026-08-15",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",
@@ -659928,6 +660108,18 @@
       "industry": ""
     },
     {
+      "state": "WA",
+      "company": "Norwesco",
+      "notice_date": "2026-08-14",
+      "effective_date": "2026-10-16",
+      "employees": 54,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Fife",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "WI",
       "company": "Semco Windows and Doors",
       "notice_date": "2020-01-02",
@@ -667528,7 +667720,7 @@
       "company": "Durr CTS, Inc.",
       "notice_date": "2026-08-12",
       "effective_date": "2026-10-13",
-      "employees": 72,
+      "employees": 75,
       "layoff_type": "Facility Closure",
       "county": "Brown",
       "city": "De Pere",

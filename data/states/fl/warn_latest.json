@@ -1,9 +1,9 @@
 {
-  "total_records": 469,
-  "total_employees": 35235,
+  "total_records": 470,
+  "total_employees": 35295,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-08-12",
-  "last_updated": "2026-08-14T12:51:05.220874+00:00",
+  "date_range_end": "2026-08-13",
+  "last_updated": "2026-08-15T00:48:23.979061+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -3245,6 +3245,18 @@
       "city": "BOCA RATON",
       "address": "4700 Exchange Court, Suite 125",
       "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "FL",
+      "company": "Nearly Natural, LLC",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-10-12",
+      "employees": 60,
+      "layoff_type": "",
+      "county": "",
+      "city": "HIALEAH",
+      "address": "3870 W 108th St, Suite 20",
+      "industry": "Retail Trade"
     },
     {
       "state": "FL",

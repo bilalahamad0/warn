@@ -1,9 +1,9 @@
 {
-  "total_records": 1492,
-  "total_employees": 235113,
+  "total_records": 1493,
+  "total_employees": 235167,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-08-12",
-  "last_updated": "2026-08-14T13:03:11.313267+00:00",
+  "date_range_end": "2026-08-14",
+  "last_updated": "2026-08-15T01:00:09.815212+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -17907,6 +17907,18 @@
       "layoff_type": "Closure Permanent",
       "county": "",
       "city": "Everett",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Norwesco",
+      "notice_date": "2026-08-14",
+      "effective_date": "2026-10-16",
+      "employees": 54,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Fife",
       "address": "",
       "industry": ""
     }

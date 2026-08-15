@@ -7,7 +7,7 @@
   "layoff_type": "Closing ",
   "employees": 7,
   "notice_date": "2026-01-20 00:00:00",
-  "effective_date": "3/32/2026",
+  "effective_date": "2026-03-02 00:00:00",
   "industry": "Manufacturing "
  },
  {
@@ -922,6 +922,17 @@
   "notice_date": "2026-08-04 00:00:00",
   "effective_date": "2026-10-03 00:00:00",
   "industry": "Finance and Insurance "
+ },
+ {
+  "company": "Winnebago Industries",
+  "address": "605 W Crystal Lake Rd",
+  "city": "Forest City ",
+  "county": "Winnebago",
+  "layoff_type": "Mass Layoff ",
+  "employees": 27,
+  "notice_date": "2026-08-13 00:00:00",
+  "effective_date": "2026-11-30 00:00:00",
+  "industry": "Manufacturing"
  },
  {
   "company": "John Deere Ottumwa Works ",

@@ -1,9 +1,9 @@
 {
-  "total_records": 281,
-  "total_employees": 35980,
+  "total_records": 282,
+  "total_employees": 36703,
   "date_range_start": "2009-01-07",
   "date_range_end": "2026-10-30",
-  "last_updated": "2026-08-14T13:00:26.265124+00:00",
+  "last_updated": "2026-08-15T00:57:23.136604+00:00",
   "source_url": "https://jobs.utah.gov/employer/business/warnnotices.html",
   "records": [
     {
@@ -3375,6 +3375,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Cedar City",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "UT",
+      "company": "Tyson Fresh Meats",
+      "notice_date": "2026-08-13",
+      "effective_date": null,
+      "employees": 723,
+      "layoff_type": "",
+      "county": "",
+      "city": "Eagle Mountain",
       "address": "",
       "industry": ""
     }
