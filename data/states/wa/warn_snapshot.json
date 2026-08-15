@@ -1,11 +1,23 @@
 {
-  "total_records": 1491,
-  "total_employees": 234990,
+  "total_records": 1492,
+  "total_employees": 235044,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-08-12",
-  "last_updated": "2026-08-14T13:03:11.296766+00:00",
+  "date_range_end": "2026-08-14",
+  "last_updated": "2026-08-15T01:00:09.801038+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
+    {
+      "state": "WA",
+      "company": "Norwesco",
+      "notice_date": "2026-08-14",
+      "effective_date": "2026-10-16",
+      "employees": 54,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Fife",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "WA",
       "company": "Jack in the Box",

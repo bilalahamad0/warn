@@ -1,9 +1,9 @@
 {
-  "total_records": 302,
-  "total_employees": 44726,
+  "total_records": 303,
+  "total_employees": 44774,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-08-14T13:00:13.118130+00:00",
+  "last_updated": "2026-08-15T00:57:12.789435+00:00",
   "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
   "records": [
     {
@@ -64,6 +64,18 @@
       "county": "Cumberland",
       "city": "",
       "address": "2001 Mission Drive, New Cumberland, PA  17070",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "United Natural Foods, Inc. (NFI)",
+      "notice_date": null,
+      "effective_date": "2026-10-16",
+      "employees": 48,
+      "layoff_type": "Closure",
+      "county": "Philadelphia",
+      "city": "",
+      "address": "2722 Commerce Way, Philadelphia, PA  19154",
       "industry": ""
     },
     {

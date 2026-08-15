@@ -1,11 +1,23 @@
 {
-  "total_records": 95,
-  "total_employees": 14838,
+  "total_records": 96,
+  "total_employees": 14967,
   "date_range_start": "2025-01-21",
-  "date_range_end": "2026-08-06",
-  "last_updated": "2026-08-14T13:00:25.756067+00:00",
+  "date_range_end": "2026-08-14",
+  "last_updated": "2026-08-15T00:57:22.649378+00:00",
   "source_url": "https://www.tn.gov/workforce/general-resources/major-publications0/major-publications-redirect/reports.html",
   "records": [
+    {
+      "state": "TN",
+      "company": "Wise Company LLC",
+      "notice_date": "2026-08-14",
+      "effective_date": null,
+      "employees": 129,
+      "layoff_type": "",
+      "county": "Hardin",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "TN",
       "company": "Resource Label",
