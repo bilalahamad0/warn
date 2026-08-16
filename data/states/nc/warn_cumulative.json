@@ -1,9 +1,9 @@
 {
-  "total_records": 367,
-  "total_employees": 34076,
+  "total_records": 368,
+  "total_employees": 34149,
   "date_range_start": "2022-01-25",
-  "date_range_end": "2026-07-23",
-  "last_updated": "2026-08-15T12:39:10.032152+00:00",
+  "date_range_end": "2026-08-13",
+  "last_updated": "2026-08-16T00:57:23.724930+00:00",
   "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
   "records": [
     {
@@ -4408,6 +4408,18 @@
       "county": "Rowan",
       "city": "Salisbury",
       "address": "745 Mid S Drive",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Ryder",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-10-12",
+      "employees": 73,
+      "layoff_type": "Layoff Permanent",
+      "county": "Cumberland",
+      "city": "Fayetteville",
+      "address": "2486 Gillespie St.",
       "industry": ""
     }
   ]

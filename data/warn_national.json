@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-15T12:43:21.574113+00:00",
+  "last_updated": "2026-08-16T01:01:43.662210+00:00",
   "states_live": 47,
-  "total_records": 59992,
-  "total_employees": 6463801,
+  "total_records": 59993,
+  "total_employees": 6463874,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -183,8 +183,8 @@
       "name": "North Carolina",
       "agency": "North Carolina Department of Commerce",
       "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
-      "total_records": 367,
-      "total_employees": 34076
+      "total_records": 368,
+      "total_employees": 34149
     },
     "ND": {
       "name": "North Dakota",
@@ -407587,6 +407587,18 @@
       "industry": ""
     },
     {
+      "state": "NC",
+      "company": "Ryder",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-10-12",
+      "employees": 73,
+      "layoff_type": "Layoff Permanent",
+      "county": "Cumberland",
+      "city": "Fayetteville",
+      "address": "2486 Gillespie St.",
+      "industry": ""
+    },
+    {
       "state": "ND",
       "company": "EGS Customer Care Inc",
       "notice_date": "2015-07-31",
@@ -641751,7 +641763,7 @@
       "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-08-15",
+      "effective_date": "2026-08-16",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",
