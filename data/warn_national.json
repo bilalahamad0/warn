@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-17T01:02:03.945617+00:00",
+  "last_updated": "2026-08-17T12:44:22.887618+00:00",
   "states_live": 47,
-  "total_records": 59993,
-  "total_employees": 6463874,
+  "total_records": 59994,
+  "total_employees": 6463931,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -253,8 +253,8 @@
       "name": "Pennsylvania",
       "agency": "Pennsylvania Department of Labor & Industry",
       "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
-      "total_records": 303,
-      "total_employees": 44774
+      "total_records": 304,
+      "total_employees": 44831
     },
     "RI": {
       "name": "Rhode Island",
@@ -558568,6 +558568,18 @@
       "county": "Philadelphia",
       "city": "",
       "address": "2722 Commerce Way, Philadelphia, PA  19154",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "CJ Logistics America, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-16",
+      "employees": 57,
+      "layoff_type": "Closure",
+      "county": "Lehigh",
+      "city": "",
+      "address": "400 Nestle Way, Breinigsville, PA  18031",
       "industry": ""
     },
     {

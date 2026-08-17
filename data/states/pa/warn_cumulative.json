@@ -1,9 +1,9 @@
 {
-  "total_records": 303,
-  "total_employees": 44774,
+  "total_records": 304,
+  "total_employees": 44831,
   "date_range_start": "2023-01-09",
   "date_range_end": "2026-10-16",
-  "last_updated": "2026-08-17T00:58:54.518545+00:00",
+  "last_updated": "2026-08-17T12:41:17.580388+00:00",
   "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
   "records": [
     {
@@ -3640,6 +3640,18 @@
       "county": "Philadelphia",
       "city": "",
       "address": "2722 Commerce Way, Philadelphia, PA  19154",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "CJ Logistics America, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-16",
+      "employees": 57,
+      "layoff_type": "Closure",
+      "county": "Lehigh",
+      "city": "",
+      "address": "400 Nestle Way, Breinigsville, PA  18031",
       "industry": ""
     }
   ]
