@@ -1,9 +1,9 @@
 {
-  "total_records": 1348,
-  "total_employees": 114612,
+  "total_records": 1349,
+  "total_employees": 114649,
   "date_range_start": "2010-01-07",
-  "date_range_end": "2026-08-10",
-  "last_updated": "2026-08-17T12:37:18.672531+00:00",
+  "date_range_end": "2026-08-14",
+  "last_updated": "2026-08-18T00:55:42.164470+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -16181,6 +16181,18 @@
       "city": "",
       "address": "277 Park Avenue New York, NY 10172",
       "industry": "522110"
+    },
+    {
+      "state": "MD",
+      "company": "Kolon TissueGene, Inc.",
+      "notice_date": "2026-08-14",
+      "effective_date": "2026-08-31",
+      "employees": 37,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Montgomery County",
+      "city": "",
+      "address": "9713 Key West Avenue, Rockville Maryland 20850",
+      "industry": "541714"
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
-  "total_records": 2360,
-  "total_employees": 353546,
+  "total_records": 2361,
+  "total_employees": 353920,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-08-17T12:40:46.685461+00:00",
+  "last_updated": "2026-08-18T01:02:06.277190+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -1083,6 +1083,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Vineland",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Grocery Delivery E-Services USA, Inc DBA Hello Fresh",
+      "notice_date": null,
+      "effective_date": "2026-11-17",
+      "employees": 374,
+      "layoff_type": "",
+      "county": "",
+      "city": "Swedesboro",
       "address": "",
       "industry": ""
     },

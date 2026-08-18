@@ -1,9 +1,9 @@
 {
-  "total_records": 470,
-  "total_employees": 35295,
+  "total_records": 471,
+  "total_employees": 35473,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-08-13",
-  "last_updated": "2026-08-17T12:32:28.799595+00:00",
+  "date_range_end": "2026-08-17",
+  "last_updated": "2026-08-18T00:49:47.054661+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -3245,6 +3245,18 @@
       "city": "BOCA RATON",
       "address": "4700 Exchange Court, Suite 125",
       "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "FL",
+      "company": "Saddle Creek Corporation",
+      "notice_date": "2026-08-17",
+      "effective_date": "2026-10-15",
+      "employees": 178,
+      "layoff_type": "",
+      "county": "",
+      "city": "PLANT CITY",
+      "address": "771 S. County Line Road",
+      "industry": "Transportation and Warehousing"
     },
     {
       "state": "FL",

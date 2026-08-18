@@ -1,9 +1,9 @@
 {
-  "total_records": 462,
-  "total_employees": 34408,
+  "total_records": 463,
+  "total_employees": 34586,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-08-13",
-  "last_updated": "2026-08-17T12:32:28.804778+00:00",
+  "date_range_end": "2026-08-17",
+  "last_updated": "2026-08-18T00:49:47.059828+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -5549,6 +5549,18 @@
       "city": "HIALEAH",
       "address": "3870 W 108th St, Suite 20",
       "industry": "Retail Trade"
+    },
+    {
+      "state": "FL",
+      "company": "Saddle Creek Corporation",
+      "notice_date": "2026-08-17",
+      "effective_date": "2026-10-15",
+      "employees": 178,
+      "layoff_type": "",
+      "county": "",
+      "city": "PLANT CITY",
+      "address": "771 S. County Line Road",
+      "industry": "Transportation and Warehousing"
     }
   ]
 }
