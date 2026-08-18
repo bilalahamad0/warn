@@ -1,9 +1,9 @@
 {
-  "total_records": 4881,
-  "total_employees": 670940,
+  "total_records": 4883,
+  "total_employees": 673538,
   "date_range_start": "1987-09-01",
-  "date_range_end": "2026-08-10",
-  "last_updated": "2026-08-17T12:33:38.372256+00:00",
+  "date_range_end": "2026-08-14",
+  "last_updated": "2026-08-18T00:50:56.837875+00:00",
   "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
   "records": [
     {
@@ -4217,6 +4217,30 @@
       "city": "Chicago",
       "address": "8600 W Bryn Mawr Ave.",
       "industry": "Wholesale Trade"
+    },
+    {
+      "state": "IL",
+      "company": "Tyson Foods, Inc.",
+      "notice_date": "2026-08-13",
+      "effective_date": null,
+      "employees": 2495,
+      "layoff_type": "Plant Closure",
+      "county": "Rock Island County",
+      "city": "Hillsdale",
+      "address": "28424 38TH Ave. North",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "IL",
+      "company": "Fortrex (at Tyson Foods)",
+      "notice_date": "2026-08-14",
+      "effective_date": null,
+      "employees": 103,
+      "layoff_type": "Mass Layoff",
+      "county": "Rock Island County",
+      "city": "Hillsdale",
+      "address": "28424 38TH Ave. North",
+      "industry": "Administrative, Support, Waste Management, and Remediation Services"
     },
     {
       "state": "IL",
