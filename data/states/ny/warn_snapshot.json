@@ -1,9 +1,9 @@
 {
-  "total_records": 189,
-  "total_employees": 11214,
+  "total_records": 191,
+  "total_employees": 11747,
   "date_range_start": "2026-01-06",
-  "date_range_end": "2026-07-21",
-  "last_updated": "2026-08-18T12:46:40.720126+00:00",
+  "date_range_end": "2026-08-04",
+  "last_updated": "2026-08-19T00:57:23.265406+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -532,6 +532,18 @@
       "county": "Onondaga",
       "city": "",
       "address": "6313 Running Ridge Syracuse, NY, 13212",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Ferraro Foods of New York North, LLC.",
+      "notice_date": "2026-07-07",
+      "effective_date": "2026-07-07",
+      "employees": 62,
+      "layoff_type": "Closure Permanent",
+      "county": "Oneida",
+      "city": "",
+      "address": "1301 Broad Street Utica, NY, 13501",
       "industry": ""
     },
     {
@@ -2044,6 +2056,18 @@
       "county": "New York",
       "city": "",
       "address": "96 South Street New York, NY, 10038",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Sky Chefs, LLC",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-10-07",
+      "employees": 471,
+      "layoff_type": "Layoff Permanent",
+      "county": "Queens",
+      "city": "",
+      "address": "JFK International Airport 139 West Hangar Road Jamaica, NY, 11430",
       "industry": ""
     },
     {

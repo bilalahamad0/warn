@@ -2,7 +2,7 @@
   "scope": "ca",
   "state": "CA",
   "coverage_start": "2025-01-01",
-  "last_updated": "2026-08-19T01:00:39.945570+00:00",
+  "last_updated": "2026-08-19T12:47:29.397341+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "total_records": 1703,
   "total_employees": 94227,
@@ -20,7 +20,7 @@
       "address": "305 South Acacia Street  San Dimas CA 91773",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Netflix, Inc.",
@@ -33,7 +33,7 @@
       "address": "5808 W. Sunset Blvd  Los Angeles CA 90028",
       "industry": "51 Information",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Universal City Studios Productions LLLP",
@@ -46,7 +46,7 @@
       "address": "100 Universal City Plaza, Bldg. 1440  Universal City CA 91608",
       "industry": "51 Information",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Adventist Health Glendale",

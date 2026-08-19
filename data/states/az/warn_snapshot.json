@@ -1,11 +1,23 @@
 {
-  "total_records": 477,
-  "total_employees": 73312,
+  "total_records": 478,
+  "total_employees": 73402,
   "date_range_start": "2019-01-04",
-  "date_range_end": "2026-08-11",
-  "last_updated": "2026-08-18T12:33:10.735062+00:00",
+  "date_range_end": "2026-08-17",
+  "last_updated": "2026-08-19T00:45:54.202081+00:00",
   "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
   "records": [
+    {
+      "state": "AZ",
+      "company": "Pinnacle Transplant Technologies, LLC",
+      "notice_date": "2026-08-17",
+      "effective_date": null,
+      "employees": 90,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Phoenix",
+      "address": "1125 W. Pinnacle Peak Rd.; Phoenix, Arizona 85027",
+      "industry": ""
+    },
     {
       "state": "AZ",
       "company": "SMBC MANUBANK",

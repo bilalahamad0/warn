@@ -1,11 +1,23 @@
 {
-  "total_records": 1492,
-  "total_employees": 235044,
+  "total_records": 1493,
+  "total_employees": 235119,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-08-14",
-  "last_updated": "2026-08-18T12:49:57.126192+00:00",
+  "date_range_end": "2026-08-18",
+  "last_updated": "2026-08-19T01:00:34.209700+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
+    {
+      "state": "WA",
+      "company": "TT Commerce & Global Services",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-10-19",
+      "employees": 75,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Bellevue",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "WA",
       "company": "Norwesco",
