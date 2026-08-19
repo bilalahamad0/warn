@@ -1,5 +1,17 @@
 [
  {
+  "employer": "Pinnacle Transplant Technologies, LLC",
+  "city": "Phoenix",
+  "zip": "85027",
+  "lwib_area": "5 - ARIZONA@WORK - City of Phoenix",
+  "notice_date": "Aug 17, 2026",
+  "warn_type": "WARN",
+  "record_number": "992",
+  "detail_page_url": "https://www.azjobconnection.gov/search/warn_lookups/992",
+  "number_of_employees_affected": "90",
+  "address": "1125 W. Pinnacle Peak Rd.; Phoenix, Arizona 85027"
+ },
+ {
   "employer": "SMBC MANUBANK",
   "city": "New York",
   "zip": "10172",

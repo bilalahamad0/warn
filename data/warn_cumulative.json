@@ -1,9 +1,9 @@
 {
-  "total_records": 1629,
-  "total_employees": 88564,
+  "total_records": 1632,
+  "total_employees": 88752,
   "date_range_start": "2025-01-29",
-  "date_range_end": "2026-08-11",
-  "last_updated": "2026-08-18T12:33:10.915688+00:00",
+  "date_range_end": "2026-08-17",
+  "last_updated": "2026-08-19T00:45:54.421458+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "records": [
     {
@@ -19310,6 +19310,42 @@
       "city": "",
       "address": "1100 Bird Center Drive  Palm Springs CA 92262",
       "industry": "81 Other Services Except Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "Netflix, Inc.",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-07-14",
+      "employees": 59,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "5808 W. Sunset Blvd  Los Angeles CA 90028",
+      "industry": "51 Information"
+    },
+    {
+      "state": "CA",
+      "company": "Roskam Baking Company dba Organic Milling",
+      "notice_date": "2026-08-17",
+      "effective_date": "2026-10-02",
+      "employees": 115,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "305 South Acacia Street  San Dimas CA 91773",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Universal City Studios Productions LLLP",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-10-13",
+      "employees": 14,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "100 Universal City Plaza, Bldg. 1440  Universal City CA 91608",
+      "industry": "51 Information"
     }
   ]
 }

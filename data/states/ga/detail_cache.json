@@ -2455,5 +2455,23 @@
   "GA WARN ID": "GA202600008",
   "Total Number of Affected Employees": "5",
   "Type of Layoff or Closure": "Permanent Layoff / Reduction in Force"
+ },
+ "84163": {
+  "Company Name": "Meyn Americas",
+  "County": "Cherokee County",
+  "First Date of Separation": "10/01/2026",
+  "First Location Address": "1000 Evenflo Dr, Ball Ground, Georgia",
+  "GA WARN ID": "GA202600010",
+  "Total Number of Affected Employees": "150",
+  "Type of Layoff or Closure": "Permanent Closure"
+ },
+ "84177": {
+  "Company Name": "Anchor Glass Container Corporation",
+  "County": "Houston County",
+  "First Date of Separation": "10/17/2026",
+  "First Location Address": "1044 Booth Rd, Warner Robins, Georgia",
+  "GA WARN ID": "GA202600009",
+  "Total Number of Affected Employees": "168",
+  "Type of Layoff or Closure": "Permanent Closure"
  }
 }

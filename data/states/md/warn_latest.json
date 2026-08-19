@@ -1,11 +1,23 @@
 {
-  "total_records": 1399,
-  "total_employees": 115826,
+  "total_records": 1400,
+  "total_employees": 115895,
   "date_range_start": "2010-01-07",
   "date_range_end": "2026-08-14",
-  "last_updated": "2026-08-18T12:42:12.556428+00:00",
+  "last_updated": "2026-08-19T00:53:58.910453+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
+    {
+      "state": "MD",
+      "company": "Mulford Construction Co., Inc.",
+      "notice_date": "2026-08-14",
+      "effective_date": "2026-08-17",
+      "employees": 69,
+      "layoff_type": "Plant Closure",
+      "county": "Southern Maryland",
+      "city": "",
+      "address": "PO Box 60 Barstow, MD 20610",
+      "industry": "238990"
+    },
     {
       "state": "MD",
       "company": "Kolon TissueGene, Inc.",

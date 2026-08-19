@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-18T12:50:03.087164+00:00",
-  "total_records": 1930,
-  "total_employees": 109858,
+  "generated_at": "2026-08-19T01:00:39.703826+00:00",
+  "total_records": 1933,
+  "total_employees": 110046,
   "yearly_summary": [
     {
       "fiscal_year": 2014,
@@ -83,8 +83,8 @@
     {
       "fiscal_year": "current",
       "label": "FY 2025-26 (Live)",
-      "records": 1629,
-      "employees": 88564,
+      "records": 1632,
+      "employees": 88752,
       "source": "xlsx"
     }
   ],
@@ -25960,6 +25960,48 @@
       "city": "",
       "address": "1100 Bird Center Drive  Palm Springs CA 92262",
       "industry": "81 Other Services Except Public Administration",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "state": "CA",
+      "company": "Netflix, Inc.",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-07-14",
+      "employees": 59,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "5808 W. Sunset Blvd  Los Angeles CA 90028",
+      "industry": "51 Information",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "state": "CA",
+      "company": "Roskam Baking Company dba Organic Milling",
+      "notice_date": "2026-08-17",
+      "effective_date": "2026-10-02",
+      "employees": 115,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "305 South Acacia Street  San Dimas CA 91773",
+      "industry": "31-33 Manufacturing",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "state": "CA",
+      "company": "Universal City Studios Productions LLLP",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-10-13",
+      "employees": 14,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "100 Universal City Plaza, Bldg. 1440  Universal City CA 91608",
+      "industry": "51 Information",
       "fiscal_year": "current",
       "source": "xlsx"
     }

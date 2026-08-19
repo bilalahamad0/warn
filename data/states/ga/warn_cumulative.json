@@ -1,9 +1,9 @@
 {
-  "total_records": 4727,
-  "total_employees": 605224,
+  "total_records": 4729,
+  "total_employees": 605542,
   "date_range_start": "1989-08-17",
-  "date_range_end": "2026-10-09",
-  "last_updated": "2026-08-18T12:36:39.865252+00:00",
+  "date_range_end": "2026-10-17",
+  "last_updated": "2026-08-19T00:49:26.045442+00:00",
   "source_url": "https://www.tcsg.edu/warn-public-view/",
   "records": [
     {
@@ -56728,6 +56728,30 @@
       "county": "",
       "city": "",
       "address": "277 Park Ave, New York, New York",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Anchor Glass Container Corporation",
+      "notice_date": null,
+      "effective_date": "2026-10-17",
+      "employees": 168,
+      "layoff_type": "Permanent Closure",
+      "county": "Houston",
+      "city": "",
+      "address": "1044 Booth Rd, Warner Robins, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Meyn Americas",
+      "notice_date": null,
+      "effective_date": "2026-10-01",
+      "employees": 150,
+      "layoff_type": "Permanent Closure",
+      "county": "Cherokee",
+      "city": "",
+      "address": "1000 Evenflo Dr, Ball Ground, Georgia",
       "industry": ""
     }
   ]

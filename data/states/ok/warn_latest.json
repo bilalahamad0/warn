@@ -1,9 +1,9 @@
 {
-  "total_records": 218,
+  "total_records": 219,
   "total_employees": 0,
   "date_range_start": "2001-03-21",
-  "date_range_end": "2026-07-14",
-  "last_updated": "2026-08-18T12:46:46.054174+00:00",
+  "date_range_end": "2026-08-17",
+  "last_updated": "2026-08-19T00:57:28.310447+00:00",
   "source_url": "https://www.employoklahoma.gov/Participants/s/warnnotices",
   "records": [
     {
@@ -2619,6 +2619,18 @@
       "layoff_type": "Mass Layoff",
       "county": "",
       "city": "Purchase",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OK",
+      "company": "T-Mobile USA, Inc.",
+      "notice_date": "2026-08-17",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Other",
+      "county": "",
+      "city": "Oklahoma City",
       "address": "",
       "industry": ""
     }

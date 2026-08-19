@@ -1,9 +1,9 @@
 {
-  "total_records": 1493,
-  "total_employees": 235167,
+  "total_records": 1494,
+  "total_employees": 235242,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-08-14",
-  "last_updated": "2026-08-18T12:49:57.143846+00:00",
+  "date_range_end": "2026-08-18",
+  "last_updated": "2026-08-19T01:00:34.226076+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -17919,6 +17919,18 @@
       "layoff_type": "Closure Permanent",
       "county": "",
       "city": "Fife",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "TT Commerce & Global Services",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-10-19",
+      "employees": 75,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Bellevue",
       "address": "",
       "industry": ""
     }

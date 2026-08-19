@@ -1907,5 +1907,15 @@
   "Launchpad__Notice_Date__c": "2026-07-14",
   "Select_Local_Workforce_Board__c": "Green Country",
   "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000rOYEvEAO",
+  "OESC_Employer_Name__c": "T-Mobile USA, Inc.",
+  "OESC_Employer_City__c": "Oklahoma City",
+  "OESC_Employer_Zip_Code__c": "73128",
+  "Launchpad__Layoff_Closure_Type__c": "Other",
+  "Launchpad__Notice_Date__c": "2026-08-17",
+  "Select_Local_Workforce_Board__c": "Green Country",
+  "RecordTypeId": "012cs000001OucAAAS"
  }
 ]

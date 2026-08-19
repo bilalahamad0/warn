@@ -1,9 +1,9 @@
 {
-  "total_records": 1349,
-  "total_employees": 114649,
+  "total_records": 1350,
+  "total_employees": 114718,
   "date_range_start": "2010-01-07",
   "date_range_end": "2026-08-14",
-  "last_updated": "2026-08-18T12:42:12.573181+00:00",
+  "last_updated": "2026-08-19T00:53:58.927378+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -16193,6 +16193,18 @@
       "city": "",
       "address": "9713 Key West Avenue, Rockville Maryland 20850",
       "industry": "541714"
+    },
+    {
+      "state": "MD",
+      "company": "Mulford Construction Co., Inc.",
+      "notice_date": "2026-08-14",
+      "effective_date": "2026-08-17",
+      "employees": 69,
+      "layoff_type": "Plant Closure",
+      "county": "Southern Maryland",
+      "city": "",
+      "address": "PO Box 60 Barstow, MD 20610",
+      "industry": "238990"
     }
   ]
 }

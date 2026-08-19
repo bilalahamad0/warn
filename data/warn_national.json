@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-18T12:50:03.337833+00:00",
+  "last_updated": "2026-08-19T01:00:39.945570+00:00",
   "states_live": 47,
-  "total_records": 60000,
-  "total_employees": 6467119,
+  "total_records": 60012,
+  "total_employees": 6468384,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -22,15 +22,15 @@
       "name": "Arizona",
       "agency": "Arizona Department of Economic Security",
       "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
-      "total_records": 476,
-      "total_employees": 71070
+      "total_records": 477,
+      "total_employees": 71160
     },
     "CA": {
       "name": "California",
       "agency": "California Employment Development Department",
       "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
-      "total_records": 16218,
-      "total_employees": 1385828
+      "total_records": 16221,
+      "total_employees": 1386016
     },
     "CO": {
       "name": "Colorado",
@@ -71,8 +71,8 @@
       "name": "Georgia",
       "agency": "Technical College System of Georgia, Office of Workforce Development",
       "source_url": "https://www.tcsg.edu/warn-public-view/",
-      "total_records": 4727,
-      "total_employees": 605224
+      "total_records": 4729,
+      "total_employees": 605542
     },
     "HI": {
       "name": "Hawaii",
@@ -100,7 +100,7 @@
       "agency": "Illinois Department of Commerce and Economic Opportunity",
       "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
       "total_records": 4877,
-      "total_employees": 673042
+      "total_employees": 672965
     },
     "IN": {
       "name": "Indiana",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1349,
-      "total_employees": 114649
+      "total_records": 1350,
+      "total_employees": 114718
     },
     "ME": {
       "name": "Maine",
@@ -225,8 +225,8 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 5327,
-      "total_employees": 432005
+      "total_records": 5329,
+      "total_employees": 432538
     },
     "OH": {
       "name": "Ohio",
@@ -239,7 +239,7 @@
       "name": "Oklahoma",
       "agency": "Oklahoma Employment Security Commission",
       "source_url": "https://www.employoklahoma.gov/Participants/s/warnnotices",
-      "total_records": 200,
+      "total_records": 201,
       "total_employees": 0
     },
     "OR": {
@@ -302,8 +302,8 @@
       "name": "Virginia",
       "agency": "Virginia Works (Virginia Employment Commission)",
       "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
-      "total_records": 1121,
-      "total_employees": 130272
+      "total_records": 1122,
+      "total_employees": 130341
     },
     "VT": {
       "name": "Vermont",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1493,
-      "total_employees": 235167
+      "total_records": 1494,
+      "total_employees": 235242
     },
     "WI": {
       "name": "Wisconsin",
@@ -19605,6 +19605,18 @@
       "county": "",
       "city": "Phoenix",
       "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Pinnacle Transplant Technologies, LLC",
+      "notice_date": "2026-08-17",
+      "effective_date": null,
+      "employees": 90,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Phoenix",
+      "address": "1125 W. Pinnacle Peak Rd.; Phoenix, Arizona 85027",
       "industry": ""
     },
     {
@@ -39154,6 +39166,42 @@
       "city": "",
       "address": "1100 Bird Center Drive  Palm Springs CA 92262",
       "industry": "81 Other Services Except Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "Netflix, Inc.",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-07-14",
+      "employees": 59,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "5808 W. Sunset Blvd  Los Angeles CA 90028",
+      "industry": "51 Information"
+    },
+    {
+      "state": "CA",
+      "company": "Roskam Baking Company dba Organic Milling",
+      "notice_date": "2026-08-17",
+      "effective_date": "2026-10-02",
+      "employees": 115,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "305 South Acacia Street  San Dimas CA 91773",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Universal City Studios Productions LLLP",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-10-13",
+      "employees": 14,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "100 Universal City Plaza, Bldg. 1440  Universal City CA 91608",
+      "industry": "51 Information"
     },
     {
       "company": "Adventist Health St. Helena",
@@ -258016,6 +258064,30 @@
       "industry": ""
     },
     {
+      "state": "GA",
+      "company": "Anchor Glass Container Corporation",
+      "notice_date": null,
+      "effective_date": "2026-10-17",
+      "employees": 168,
+      "layoff_type": "Permanent Closure",
+      "county": "Houston",
+      "city": "",
+      "address": "1044 Booth Rd, Warner Robins, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Meyn Americas",
+      "notice_date": null,
+      "effective_date": "2026-10-01",
+      "employees": 150,
+      "layoff_type": "Permanent Closure",
+      "county": "Cherokee",
+      "city": "",
+      "address": "1000 Evenflo Dr, Ball Ground, Georgia",
+      "industry": ""
+    },
+    {
       "state": "HI",
       "company": "Maui Seaside Hotel",
       "notice_date": "2019-01-16",
@@ -335453,18 +335525,6 @@
     },
     {
       "state": "IL",
-      "company": "Silver Star Protection Group",
-      "notice_date": "2026-08-03",
-      "effective_date": null,
-      "employees": 141,
-      "layoff_type": "Mass Layoff",
-      "county": "Cook County",
-      "city": "Rolling Meadows",
-      "address": "3601 Algonquin Rd.",
-      "industry": "Administrative, Support, Waste Management, and Remediation Services"
-    },
-    {
-      "state": "IL",
       "company": "Capital One Financial Corporation",
       "notice_date": "2025-08-15",
       "effective_date": null,
@@ -335509,6 +335569,18 @@
       "county": "Rock Island County",
       "city": "Hillsdale",
       "address": "28424 38TH Ave. North",
+      "industry": "Administrative, Support, Waste Management, and Remediation Services"
+    },
+    {
+      "state": "IL",
+      "company": "Silver Star Protection Group",
+      "notice_date": "2026-08-03",
+      "effective_date": null,
+      "employees": 64,
+      "layoff_type": "Mass Layoff",
+      "county": "Cook County",
+      "city": "Rolling Meadows",
+      "address": "3601 Algonquin Rd.",
       "industry": "Administrative, Support, Waste Management, and Remediation Services"
     },
     {
@@ -384812,6 +384884,18 @@
       "city": "",
       "address": "9713 Key West Avenue, Rockville Maryland 20850",
       "industry": "541714"
+    },
+    {
+      "state": "MD",
+      "company": "Mulford Construction Co., Inc.",
+      "notice_date": "2026-08-14",
+      "effective_date": "2026-08-17",
+      "employees": 69,
+      "layoff_type": "Plant Closure",
+      "county": "Southern Maryland",
+      "city": "",
+      "address": "PO Box 60 Barstow, MD 20610",
+      "industry": "238990"
     },
     {
       "state": "ME",
@@ -515228,6 +515312,30 @@
     },
     {
       "state": "NY",
+      "company": "Ferraro Foods of New York North, LLC.",
+      "notice_date": "2026-07-07",
+      "effective_date": "2026-07-07",
+      "employees": 62,
+      "layoff_type": "Closure Permanent",
+      "county": "Oneida",
+      "city": "",
+      "address": "1301 Broad Street Utica, NY, 13501",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Sky Chefs, LLC",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-10-07",
+      "employees": 471,
+      "layoff_type": "Layoff Permanent",
+      "county": "Queens",
+      "city": "",
+      "address": "JFK International Airport 139 West Hangar Road Jamaica, NY, 11430",
+      "industry": ""
+    },
+    {
+      "state": "NY",
       "company": "Cardionet, LLC. an affiliate of Philips North America, LLC.",
       "notice_date": "2025-04-01",
       "effective_date": "2025-06-30",
@@ -538659,6 +538767,18 @@
       "layoff_type": "Mass Layoff",
       "county": "",
       "city": "Purchase",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OK",
+      "company": "T-Mobile USA, Inc.",
+      "notice_date": "2026-08-17",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Other",
+      "county": "",
+      "city": "Oklahoma City",
       "address": "",
       "industry": ""
     },
@@ -641845,9 +641965,21 @@
     },
     {
       "state": "VA",
+      "company": "TekSynap Corporation",
+      "notice_date": "2026-08-17",
+      "effective_date": "2026-10-14",
+      "employees": 69,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Statewide",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-08-18",
+      "effective_date": "2026-08-19",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",
@@ -660212,6 +660344,18 @@
       "layoff_type": "Closure Permanent",
       "county": "",
       "city": "Fife",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "TT Commerce & Global Services",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-10-19",
+      "employees": 75,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Bellevue",
       "address": "",
       "industry": ""
     },
