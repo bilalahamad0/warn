@@ -1,9 +1,9 @@
 {
-  "total_records": 4752,
-  "total_employees": 606737,
+  "total_records": 4753,
+  "total_employees": 606839,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-08-19T12:35:25.809059+00:00",
+  "last_updated": "2026-08-20T00:48:37.911016+00:00",
   "source_url": "https://www.tcsg.edu/warn-public-view/",
   "records": [
     {
@@ -3304,6 +3304,18 @@
       "county": "Cherokee",
       "city": "",
       "address": "1000 Evenflo Dr, Ball Ground, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Asama Coldwater Manufacturing Georgia",
+      "notice_date": null,
+      "effective_date": "2026-10-14",
+      "employees": 102,
+      "layoff_type": "Permanent Closure",
+      "county": "Warren",
+      "city": "",
+      "address": "975 Thomson Hwy, Warrenton, Georgia",
       "industry": ""
     },
     {
