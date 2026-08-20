@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-19T12:47:29.397341+00:00",
+  "last_updated": "2026-08-20T00:59:53.626202+00:00",
   "states_live": 47,
-  "total_records": 60012,
-  "total_employees": 6468384,
+  "total_records": 60018,
+  "total_employees": 6468606,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -71,8 +71,8 @@
       "name": "Georgia",
       "agency": "Technical College System of Georgia, Office of Workforce Development",
       "source_url": "https://www.tcsg.edu/warn-public-view/",
-      "total_records": 4729,
-      "total_employees": 605542
+      "total_records": 4730,
+      "total_employees": 605644
     },
     "HI": {
       "name": "Hawaii",
@@ -85,8 +85,8 @@
       "name": "Iowa",
       "agency": "Iowa Workforce Development",
       "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
-      "total_records": 928,
-      "total_employees": 51725
+      "total_records": 930,
+      "total_employees": 51740
     },
     "ID": {
       "name": "Idaho",
@@ -267,8 +267,8 @@
       "name": "South Carolina",
       "agency": "South Carolina Department of Employment and Workforce",
       "source_url": "https://scworks.org/employer/employer-programs/risk-closing/layoff-notification-reports",
-      "total_records": 603,
-      "total_employees": 81091
+      "total_records": 605,
+      "total_employees": 81196
     },
     "SD": {
       "name": "South Dakota",
@@ -330,7 +330,7 @@
       "name": "West Virginia",
       "agency": "WorkForce West Virginia",
       "source_url": "https://workforcewv.org/job-seeker/layoffs-downsizing/warn-listing/",
-      "total_records": 57,
+      "total_records": 58,
       "total_employees": 2985
     }
   },
@@ -258088,6 +258088,18 @@
       "industry": ""
     },
     {
+      "state": "GA",
+      "company": "Asama Coldwater Manufacturing Georgia",
+      "notice_date": null,
+      "effective_date": "2026-10-14",
+      "employees": 102,
+      "layoff_type": "Permanent Closure",
+      "county": "Warren",
+      "city": "",
+      "address": "975 Thomson Hwy, Warrenton, Georgia",
+      "industry": ""
+    },
+    {
       "state": "HI",
       "company": "Maui Seaside Hotel",
       "notice_date": "2019-01-16",
@@ -274670,6 +274682,30 @@
       "city": "Forest City",
       "address": "605 W Crystal Lake Rd",
       "industry": "Manufacturing"
+    },
+    {
+      "state": "IA",
+      "company": "RTX",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-09-30",
+      "employees": 1,
+      "layoff_type": "Mass Layoff",
+      "county": "Linn",
+      "city": "Cedar Rapids",
+      "address": "400 Collins Rd NE",
+      "industry": "Professional, Scientific, and Technical Services"
+    },
+    {
+      "state": "IA",
+      "company": "Wells Fargo",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-10-17",
+      "employees": 14,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Polk",
+      "city": "West Des Moines",
+      "address": "800 S Jordan Creek Pkwy",
+      "industry": "Finance and Insurance"
     },
     {
       "state": "ID",
@@ -567428,18 +567464,6 @@
     },
     {
       "state": "SC",
-      "company": "Electrolux Consumer Products, Inc.",
-      "notice_date": "2026-05-15",
-      "effective_date": "2026-07-18",
-      "employees": 1255,
-      "layoff_type": "Permanent Layoff",
-      "county": "Anderson",
-      "city": "",
-      "address": "101 Masters Boulevard, Anderson, SC 29622",
-      "industry": ""
-    },
-    {
-      "state": "SC",
       "company": "KPR US LLC",
       "notice_date": "2026-06-01",
       "effective_date": "2026-08-07",
@@ -567520,6 +567544,42 @@
       "county": "Anderson",
       "city": "",
       "address": "2665 US-29 N., Anderson, SC 29626",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "Electrolux Consumer Products, Inc.",
+      "notice_date": "2026-05-15",
+      "effective_date": "2026-07-18",
+      "employees": 1245,
+      "layoff_type": "Permanent Layoff",
+      "county": "Anderson",
+      "city": "",
+      "address": "101 Masters Boulevard, Anderson, SC 29622",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "Electrolux Consumer Products, Inc.",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-12-22",
+      "employees": 10,
+      "layoff_type": "Permanent Layoff",
+      "county": "Anderson",
+      "city": "",
+      "address": "101 Masters Boulevard, Anderson, SC 29622",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "PepsiCo Beverages Sales LLC",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-10-18",
+      "employees": 105,
+      "layoff_type": "Permanent Layoff",
+      "county": "Richland",
+      "city": "",
+      "address": "6925 N. Main St., Columbia, SC 29203",
       "industry": ""
     },
     {
@@ -641979,7 +642039,7 @@
       "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-08-19",
+      "effective_date": "2026-08-20",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",
@@ -668642,6 +668702,18 @@
     {
       "state": "WV",
       "company": "Felman Productions",
+      "notice_date": null,
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WV",
+      "company": "Eagle Horizon Resources 08-2026",
       "notice_date": null,
       "effective_date": null,
       "employees": 0,

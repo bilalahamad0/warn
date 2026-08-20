@@ -1,9 +1,9 @@
 {
-  "total_records": 57,
+  "total_records": 58,
   "total_employees": 2985,
   "date_range_start": "2021-05-25",
   "date_range_end": "2026-06-04",
-  "last_updated": "2026-08-19T12:47:28.703697+00:00",
+  "last_updated": "2026-08-20T00:59:52.936049+00:00",
   "source_url": "https://workforcewv.org/job-seeker/layoffs-downsizing/warn-listing/",
   "records": [
     {
@@ -681,6 +681,18 @@
     {
       "state": "WV",
       "company": "Felman Productions",
+      "notice_date": null,
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WV",
+      "company": "Eagle Horizon Resources 08-2026",
       "notice_date": null,
       "effective_date": null,
       "employees": 0,

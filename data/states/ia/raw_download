@@ -935,6 +935,28 @@
   "industry": "Manufacturing"
  },
  {
+  "company": "RTX",
+  "address": "400 Collins Rd NE ",
+  "city": "Cedar Rapids",
+  "county": "Linn",
+  "layoff_type": "Mass Layoff ",
+  "employees": 1,
+  "notice_date": "2026-08-18 00:00:00",
+  "effective_date": "2026-09-30 00:00:00",
+  "industry": "Professional, Scientific, and Technical Services"
+ },
+ {
+  "company": "Wells Fargo",
+  "address": "800 S Jordan Creek Pkwy",
+  "city": "West Des Moines",
+  "county": "Polk",
+  "layoff_type": "Amendment - Additional Employees",
+  "employees": 14,
+  "notice_date": "2026-08-18 00:00:00",
+  "effective_date": "2026-10-17 00:00:00",
+  "industry": "Finance and Insurance "
+ },
+ {
   "company": "John Deere Ottumwa Works ",
   "address": "928 E Vine St",
   "city": "Ottumwa",
@@ -6477,17 +6499,6 @@
   "notice_date": "12/20/2022",
   "effective_date": "2023-01-16 00:00:00",
   "industry": "Manufacturing "
- },
- {
-  "company": "Arcosa Wind Towers, Inc ",
-  "address": "801 N 19th Ave E",
-  "city": "Newton",
-  "county": "Jasper",
-  "layoff_type": "Mass Layoff ",
-  "employees": 82,
-  "notice_date": "8/18/2021",
-  "effective_date": "2021-10-19 00:00:00",
-  "industry": "Manufacturing"
  },
  {
   "company": "Collins Aerospace ",

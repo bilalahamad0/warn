@@ -1,9 +1,9 @@
 {
-  "total_records": 603,
-  "total_employees": 81091,
+  "total_records": 605,
+  "total_employees": 81196,
   "date_range_start": "2013-02-25",
-  "date_range_end": "2026-08-03",
-  "last_updated": "2026-08-19T12:44:36.731468+00:00",
+  "date_range_end": "2026-08-18",
+  "last_updated": "2026-08-20T00:57:03.333395+00:00",
   "source_url": "https://scworks.org/employer/employer-programs/risk-closing/layoff-notification-reports",
   "records": [
     {
@@ -7148,18 +7148,6 @@
     },
     {
       "state": "SC",
-      "company": "Electrolux Consumer Products, Inc.",
-      "notice_date": "2026-05-15",
-      "effective_date": "2026-07-18",
-      "employees": 1255,
-      "layoff_type": "Permanent Layoff",
-      "county": "Anderson",
-      "city": "",
-      "address": "101 Masters Boulevard, Anderson, SC 29622",
-      "industry": ""
-    },
-    {
-      "state": "SC",
       "company": "KPR US LLC",
       "notice_date": "2026-06-01",
       "effective_date": "2026-08-07",
@@ -7240,6 +7228,42 @@
       "county": "Anderson",
       "city": "",
       "address": "2665 US-29 N., Anderson, SC 29626",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "Electrolux Consumer Products, Inc.",
+      "notice_date": "2026-05-15",
+      "effective_date": "2026-07-18",
+      "employees": 1245,
+      "layoff_type": "Permanent Layoff",
+      "county": "Anderson",
+      "city": "",
+      "address": "101 Masters Boulevard, Anderson, SC 29622",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "Electrolux Consumer Products, Inc.",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-12-22",
+      "employees": 10,
+      "layoff_type": "Permanent Layoff",
+      "county": "Anderson",
+      "city": "",
+      "address": "101 Masters Boulevard, Anderson, SC 29622",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "PepsiCo Beverages Sales LLC",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-10-18",
+      "employees": 105,
+      "layoff_type": "Permanent Layoff",
+      "county": "Richland",
+      "city": "",
+      "address": "6925 N. Main St., Columbia, SC 29203",
       "industry": ""
     }
   ]

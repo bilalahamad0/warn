@@ -1,9 +1,9 @@
 {
-  "total_records": 928,
-  "total_employees": 51725,
+  "total_records": 930,
+  "total_employees": 51740,
   "date_range_start": "2011-01-13",
-  "date_range_end": "2026-08-13",
-  "last_updated": "2026-08-19T12:35:44.464680+00:00",
+  "date_range_end": "2026-08-18",
+  "last_updated": "2026-08-20T00:48:57.154398+00:00",
   "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
   "records": [
     {
@@ -11141,6 +11141,30 @@
       "city": "Forest City",
       "address": "605 W Crystal Lake Rd",
       "industry": "Manufacturing"
+    },
+    {
+      "state": "IA",
+      "company": "RTX",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-09-30",
+      "employees": 1,
+      "layoff_type": "Mass Layoff",
+      "county": "Linn",
+      "city": "Cedar Rapids",
+      "address": "400 Collins Rd NE",
+      "industry": "Professional, Scientific, and Technical Services"
+    },
+    {
+      "state": "IA",
+      "company": "Wells Fargo",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-10-17",
+      "employees": 14,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Polk",
+      "city": "West Des Moines",
+      "address": "800 S Jordan Creek Pkwy",
+      "industry": "Finance and Insurance"
     }
   ]
 }
