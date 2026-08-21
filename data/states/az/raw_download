@@ -1,5 +1,17 @@
 [
  {
+  "employer": "Salad and Go",
+  "city": "Phoenix",
+  "zip": "85009",
+  "lwib_area": "5 - ARIZONA@WORK - City of Phoenix",
+  "notice_date": "Aug 04, 2026",
+  "warn_type": "WARN",
+  "record_number": "993",
+  "detail_page_url": "https://www.azjobconnection.gov/search/warn_lookups/993",
+  "number_of_employees_affected": "517",
+  "address": "625 S. 27th; Phoenix, Arizona 85009"
+ },
+ {
   "employer": "Pinnacle Transplant Technologies, LLC",
   "city": "Phoenix",
   "zip": "85027",

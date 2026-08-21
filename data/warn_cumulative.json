@@ -1,9 +1,9 @@
 {
-  "total_records": 1632,
-  "total_employees": 88752,
+  "total_records": 1639,
+  "total_employees": 89175,
   "date_range_start": "2025-01-29",
-  "date_range_end": "2026-08-17",
-  "last_updated": "2026-08-20T12:33:18.654848+00:00",
+  "date_range_end": "2026-08-19",
+  "last_updated": "2026-08-21T00:49:19.511694+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "records": [
     {
@@ -19346,6 +19346,90 @@
       "city": "",
       "address": "100 Universal City Plaza, Bldg. 1440  Universal City CA 91608",
       "industry": "51 Information"
+    },
+    {
+      "state": "CA",
+      "company": "Volume Services, Inc. (Sodexo)",
+      "notice_date": "2026-08-17",
+      "effective_date": "2026-10-16",
+      "employees": 93,
+      "layoff_type": "Layoff Permanent",
+      "county": "Ventura County",
+      "city": "",
+      "address": "40 Presidential Drive  Simi Valley CA 93065",
+      "industry": "72 Accommodation and Food Services"
+    },
+    {
+      "state": "CA",
+      "company": "LeeMAH Electronics",
+      "notice_date": "2026-08-17",
+      "effective_date": "2026-10-16",
+      "employees": 205,
+      "layoff_type": "Closure Permanent",
+      "county": "San Mateo County",
+      "city": "",
+      "address": "155 South Hill Drive  Brisbane CA 94005",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Stockton Truss LLC",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-10-18",
+      "employees": 65,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Joaquin County",
+      "city": "",
+      "address": "4408 E Fremont St  Stockton CA 95215",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Stone Brewing CO., LLC - Citracado Parkway",
+      "notice_date": "2026-08-19",
+      "effective_date": "2026-10-19",
+      "employees": 50,
+      "layoff_type": "Closure Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "1999 Citracado Parkway  Escondido CA 92029",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Stone Brewing Co., LLC - Harmony Grove",
+      "notice_date": "2026-08-19",
+      "effective_date": "2026-10-19",
+      "employees": 2,
+      "layoff_type": "Closure Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "2005 Harmony Grove Rd.  Escondido CA 92029",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Stone Brewing Co., LLC - Executive Place",
+      "notice_date": "2026-08-19",
+      "effective_date": "2026-10-19",
+      "employees": 6,
+      "layoff_type": "Closure Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "2865 Executive Place  Escondido CA 92029",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Corteva Agriscience LLC",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-10-30",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Contra Costa County",
+      "city": "",
+      "address": "901 Loveridge Road  Pittsburg CA 94565",
+      "industry": "31-33 Manufacturing"
     }
   ]
 }

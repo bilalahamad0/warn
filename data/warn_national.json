@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-20T12:48:23.016968+00:00",
+  "last_updated": "2026-08-21T01:05:21.304417+00:00",
   "states_live": 47,
-  "total_records": 60018,
-  "total_employees": 6468606,
+  "total_records": 60027,
+  "total_employees": 6469609,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -22,15 +22,15 @@
       "name": "Arizona",
       "agency": "Arizona Department of Economic Security",
       "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
-      "total_records": 477,
-      "total_employees": 71160
+      "total_records": 478,
+      "total_employees": 71677
     },
     "CA": {
       "name": "California",
       "agency": "California Employment Development Department",
       "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
-      "total_records": 16221,
-      "total_employees": 1386016
+      "total_records": 16228,
+      "total_employees": 1386439
     },
     "CO": {
       "name": "Colorado",
@@ -204,8 +204,8 @@
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2332,
-      "total_employees": 351069
+      "total_records": 2333,
+      "total_employees": 351132
     },
     "NM": {
       "name": "New Mexico",
@@ -19617,6 +19617,18 @@
       "county": "",
       "city": "Phoenix",
       "address": "1125 W. Pinnacle Peak Rd.; Phoenix, Arizona 85027",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Salad and Go",
+      "notice_date": "2026-08-04",
+      "effective_date": null,
+      "employees": 517,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Phoenix",
+      "address": "625 S. 27th; Phoenix, Arizona 85009",
       "industry": ""
     },
     {
@@ -39202,6 +39214,90 @@
       "city": "",
       "address": "100 Universal City Plaza, Bldg. 1440  Universal City CA 91608",
       "industry": "51 Information"
+    },
+    {
+      "state": "CA",
+      "company": "Volume Services, Inc. (Sodexo)",
+      "notice_date": "2026-08-17",
+      "effective_date": "2026-10-16",
+      "employees": 93,
+      "layoff_type": "Layoff Permanent",
+      "county": "Ventura County",
+      "city": "",
+      "address": "40 Presidential Drive  Simi Valley CA 93065",
+      "industry": "72 Accommodation and Food Services"
+    },
+    {
+      "state": "CA",
+      "company": "LeeMAH Electronics",
+      "notice_date": "2026-08-17",
+      "effective_date": "2026-10-16",
+      "employees": 205,
+      "layoff_type": "Closure Permanent",
+      "county": "San Mateo County",
+      "city": "",
+      "address": "155 South Hill Drive  Brisbane CA 94005",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Stockton Truss LLC",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-10-18",
+      "employees": 65,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Joaquin County",
+      "city": "",
+      "address": "4408 E Fremont St  Stockton CA 95215",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Stone Brewing CO., LLC - Citracado Parkway",
+      "notice_date": "2026-08-19",
+      "effective_date": "2026-10-19",
+      "employees": 50,
+      "layoff_type": "Closure Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "1999 Citracado Parkway  Escondido CA 92029",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Stone Brewing Co., LLC - Harmony Grove",
+      "notice_date": "2026-08-19",
+      "effective_date": "2026-10-19",
+      "employees": 2,
+      "layoff_type": "Closure Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "2005 Harmony Grove Rd.  Escondido CA 92029",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Stone Brewing Co., LLC - Executive Place",
+      "notice_date": "2026-08-19",
+      "effective_date": "2026-10-19",
+      "employees": 6,
+      "layoff_type": "Closure Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "2865 Executive Place  Escondido CA 92029",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Corteva Agriscience LLC",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-10-30",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Contra Costa County",
+      "city": "",
+      "address": "901 Loveridge Road  Pittsburg CA 94565",
+      "industry": "31-33 Manufacturing"
     },
     {
       "company": "Adventist Health St. Helena",
@@ -448843,6 +448939,18 @@
       "industry": ""
     },
     {
+      "state": "NJ",
+      "company": "JP Morgan Chase",
+      "notice_date": null,
+      "effective_date": "2026-08-19",
+      "employees": 63,
+      "layoff_type": "",
+      "county": "",
+      "city": "Jersey City",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "NM",
       "company": "Atkore HDPE, LLC",
       "notice_date": "2026-04-27",
@@ -642039,7 +642147,7 @@
       "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-08-20",
+      "effective_date": "2026-08-21",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",

@@ -1,9 +1,9 @@
 {
-  "total_records": 477,
-  "total_employees": 71160,
+  "total_records": 478,
+  "total_employees": 71677,
   "date_range_start": "2019-01-04",
   "date_range_end": "2026-08-17",
-  "last_updated": "2026-08-20T12:33:18.526865+00:00",
+  "last_updated": "2026-08-21T00:49:19.367665+00:00",
   "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
   "records": [
     {
@@ -5728,6 +5728,18 @@
       "county": "",
       "city": "Phoenix",
       "address": "1125 W. Pinnacle Peak Rd.; Phoenix, Arizona 85027",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Salad and Go",
+      "notice_date": "2026-08-04",
+      "effective_date": null,
+      "employees": 517,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Phoenix",
+      "address": "625 S. 27th; Phoenix, Arizona 85009",
       "industry": ""
     }
   ]
