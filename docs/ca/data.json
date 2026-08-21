@@ -2,7 +2,7 @@
   "scope": "ca",
   "state": "CA",
   "coverage_start": "2025-01-01",
-  "last_updated": "2026-08-21T01:05:21.304417+00:00",
+  "last_updated": "2026-08-21T12:50:26.928167+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "total_records": 1710,
   "total_employees": 94650,
@@ -20,7 +20,7 @@
       "address": "1999 Citracado Parkway  Escondido CA 92029",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Stone Brewing Co., LLC - Harmony Grove",
@@ -33,7 +33,7 @@
       "address": "2005 Harmony Grove Rd.  Escondido CA 92029",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Stone Brewing Co., LLC - Executive Place",
@@ -46,7 +46,7 @@
       "address": "2865 Executive Place  Escondido CA 92029",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Stockton Truss LLC",
@@ -59,7 +59,7 @@
       "address": "4408 E Fremont St  Stockton CA 95215",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Corteva Agriscience LLC",
@@ -72,7 +72,7 @@
       "address": "901 Loveridge Road  Pittsburg CA 94565",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Roskam Baking Company dba Organic Milling",
@@ -98,7 +98,7 @@
       "address": "40 Presidential Drive  Simi Valley CA 93065",
       "industry": "72 Accommodation and Food Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "LeeMAH Electronics",
@@ -111,7 +111,7 @@
       "address": "155 South Hill Drive  Brisbane CA 94005",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Netflix, Inc.",

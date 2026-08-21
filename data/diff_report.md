@@ -1,62 +1,58 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-08-21 01:05:20 UTC
+**Generated:** 2026-08-21 12:50:26 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 36 | 132 | +96/+0 |
-| Total employees | 2,560 | 6,777 | +4,217 |
+| Total records | 132 | 36 | +0/+96 |
+| Total employees | 6,777 | 2,560 | -4,217 |
 
-### ✅ New Entries (96 records)
+### ✅ No new entries.
 
-| Company | Employees | Effective Date | County |
-|---------|-----------|----------------|--------|
-| Visa | 320 | 2026-10-01 | San Mateo County |
-| LeeMAH Electronics | 205 | 2026-10-16 | San Mateo County |
-| Bumble Bee Foods, LLC | 197 | 2026-11-19 | Los Angeles County |
-| Sodexo | 164 | 2026-09-30 | Orange County |
-| ServiceNow, Inc. | 154 | 2026-09-28 | Santa Clara County |
-| LAZ Parking California (9610 Sky Way) | 139 | 2026-10-06 | Los Angeles County |
-| Chime Financial, Inc. | 135 | 2026-09-30 | San Francisco County |
-| Sharp Metropolitan Medical Campus - Sharp Mesa Vista | 134 | 2026-10-10 | San Diego County |
-| ServiceNow, Inc. | 133 | 2026-09-28 | San Diego County |
-| Roskam Baking Company dba Organic Milling | 115 | 2026-10-02 | Los Angeles County |
-| Staples Fulfillment Center | 109 | 2026-10-09 | Los Angeles County |
-| Pixar | 108 | 2026-09-26 | Alameda County |
-| Essendant Co. | 99 | 2026-10-03 | Sacramento County |
-| Volume Services, Inc. (Sodexo) | 93 | 2026-10-16 | Ventura County |
-| Fortrex | 91 | 2026-08-21 | Imperial County |
-| Renteria Vineyard Management | 91 | 2026-10-15 | Napa County |
-| San Francisco Pretrial Diversion Project, Inc. | 82 | 2026-11-13 | San Francisco County |
-| PD Systems | 81 | 2026-08-28 | Monterey County |
-| ZOLL Medical Corporation | 78 | 2027-02-01 | Riverside County |
-| Chick-fil-A & Fig | 77 | 2026-09-27 | Los Angeles County |
+### ❌ Removed Entries (96 records)
+
+| Company | Employees | Effective Date |
+|---------|-----------|----------------|
+| Visa | 320 | 2026-10-01 |
+| LeeMAH Electronics | 205 | 2026-10-16 |
+| Bumble Bee Foods, LLC | 197 | 2026-11-19 |
+| Sodexo | 164 | 2026-09-30 |
+| ServiceNow, Inc. | 154 | 2026-09-28 |
+| LAZ Parking California (9610 Sky Way) | 139 | 2026-10-06 |
+| Chime Financial, Inc. | 135 | 2026-09-30 |
+| Sharp Metropolitan Medical Campus - Sharp Mesa Vista | 134 | 2026-10-10 |
+| ServiceNow, Inc. | 133 | 2026-09-28 |
+| Roskam Baking Company dba Organic Milling | 115 | 2026-10-02 |
+| Staples Fulfillment Center | 109 | 2026-10-09 |
+| Pixar | 108 | 2026-09-26 |
+| Essendant Co. | 99 | 2026-10-03 |
+| Volume Services, Inc. (Sodexo) | 93 | 2026-10-16 |
+| Fortrex | 91 | 2026-08-21 |
+| Renteria Vineyard Management | 91 | 2026-10-15 |
+| San Francisco Pretrial Diversion Project, Inc. | 82 | 2026-11-13 |
+| PD Systems | 81 | 2026-08-28 |
+| ZOLL Medical Corporation | 78 | 2027-02-01 |
+| Chick-fil-A & Fig | 77 | 2026-09-27 |
 
 ---
 ## 📁 File vs Git Comparison
 
-- **Local `file.xlsx` hash:** `5ee096f7b0bd9368180ee96d9f6da2ef`
+- **Local `file.xlsx` hash:** `2c73db1b759812982a57b17b77afa3c5`
 - **Committed hash:**          `2c73db1b759812982a57b17b77afa3c5`
-- 🔴 **Local file differs from committed version**
+- ✅ Local file matches committed version
 
 **Git status:**
 ```
 M data/changelog.jsonl
- M data/meta.json
- M data/states/ak/changelog.jsonl
- M data/states/ak/warn_cumulative.json
- M data/states/ak/warn_latest.json
- M data/states/ak/warn_snapshot.json
  M data/states/al/changelog.jsonl
  M data/states/al/warn_cumulative.json
  M data/states/al/warn_latest.json
  M data/states/al/warn_snapshot.json
  M data/states/az/changelog.jsonl
  M data/states/az/meta.json
- M data/states/az/raw_download
  M data/states/az/warn_cumulative.json
  M data/states/az/warn_latest.json
  M data/states/az/warn_snapshot.json
@@ -158,6 +154,7 @@ M data/changelog.jsonl
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
+ M data/states/mt/meta.json
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
@@ -172,12 +169,12 @@ M data/changelog.jsonl
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
+ M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
  M data/states/nj/changelog.jsonl
  M data/states/nj/meta.json
- M data/states/nj/raw_download.xlsx
  M data/states/nj/warn_cumulative.json
  M data/states/nj/warn_latest.json
  M data/states/nj/warn_snapshot.json
@@ -208,7 +205,6 @@ M data/changelog.jsonl
  M data/states/or/warn_snapshot.json
  M data/states/pa/changelog.jsonl
  M data/states/pa/meta.json
- M data/states/pa/raw_download
  M data/states/pa/warn_cumulative.json
  M data/states/pa/warn_latest.json
  M data/states/pa/warn_snapshot.json
@@ -232,12 +228,12 @@ M data/changelog.jsonl
  M data/states/tn/warn_latest.json
  M data/states/tn/warn_snapshot.json
  M data/states/ut/changelog.jsonl
+ M data/states/ut/meta.json
  M data/states/ut/warn_cumulative.json
  M data/states/ut/warn_latest.json
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
- M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -264,21 +260,21 @@ M data/changelog.jsonl
  M data/warn_cumulative.json
  M data/warn_latest.json
  M data/warn_snapshot.json
- M file.xlsx
 ```
 
 **Recent commits:**
 ```
+c35042d9 auto: WARN data update [skip ci]
 954f5ed5 auto: WARN data update [skip ci]
 1db7fbff auto: WARN data update [skip ci]
 ffe6d221 auto: WARN data update [skip ci]
 618f7224 auto: WARN data update [skip ci]
-d5c409fd auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-08-21T12:35:21.411200+00:00` — +0 added, -96 removed, 0 employees (new)
 - `2026-08-21T00:49:19.502253+00:00` — +7 added, -0 removed, 423 employees (new)
 - `2026-08-20T12:33:18.644519+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-20T00:45:06.412237+00:00` — +0 added, -0 removed, 0 employees (new)
@@ -288,4 +284,3 @@ d5c409fd auto: WARN data update [skip ci]
 - `2026-08-18T00:46:38.287342+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-17T12:29:37.669489+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-17T00:46:45.528569+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-08-16T12:26:50.830591+00:00` — +0 added, -0 removed, 0 employees (new)
