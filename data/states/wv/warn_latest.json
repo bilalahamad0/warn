@@ -1,9 +1,9 @@
 {
-  "total_records": 57,
+  "total_records": 58,
   "total_employees": 2985,
   "date_range_start": "2021-05-25",
-  "date_range_end": "2026-06-04",
-  "last_updated": "2026-08-21T12:50:26.206543+00:00",
+  "date_range_end": "2026-08-19",
+  "last_updated": "2026-08-22T01:02:04.589380+00:00",
   "source_url": "https://workforcewv.org/job-seeker/layoffs-downsizing/warn-listing/",
   "records": [
     {
@@ -292,6 +292,18 @@
       "county": "Hancock",
       "city": "",
       "address": "75 Nielson Street, Watsonville, CA 95076",
+      "industry": ""
+    },
+    {
+      "state": "WV",
+      "company": "ECM Energy Services",
+      "notice_date": "2026-08-19",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "",
       "industry": ""
     },
     {

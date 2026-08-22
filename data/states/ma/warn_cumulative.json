@@ -1,9 +1,9 @@
 {
-  "total_records": 388,
-  "total_employees": 34875,
+  "total_records": 389,
+  "total_employees": 34934,
   "date_range_start": "2021-04-19",
-  "date_range_end": "2026-08-13",
-  "last_updated": "2026-08-21T12:43:21.181860+00:00",
+  "date_range_end": "2026-08-17",
+  "last_updated": "2026-08-22T00:54:39.757219+00:00",
   "source_url": "https://www.mass.gov/info-details/worker-adjustment-and-retraining-notification-act-warn",
   "records": [
     {
@@ -4659,6 +4659,18 @@
       "layoff_type": "",
       "county": "Southeast",
       "city": "Taunton and Wareham",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "Noble Equity Holdings LLC, Noble.com, LLC, Noble Supply & Logistics, LLC (f/k/a Noble Sales Co. Inc.), Tactical & Survival Specialties, LLC (f/k/a Tactical & Survival Specialties, Inc.), Federal Resource Supply Company, LLC (f/k/a Federal Resource Supply Company), and K.D. Analytical Consulting, LLC (aka Noble)",
+      "notice_date": "2026-08-17",
+      "effective_date": "2026-10-09",
+      "employees": 59,
+      "layoff_type": "",
+      "county": "Boston",
+      "city": "Boston",
       "address": "",
       "industry": ""
     }

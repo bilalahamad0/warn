@@ -1,9 +1,9 @@
 {
-  "total_records": 4780,
-  "total_employees": 417609,
+  "total_records": 4782,
+  "total_employees": 417951,
   "date_range_start": "2016-01-04",
   "date_range_end": "2026-08-04",
-  "last_updated": "2026-08-21T12:47:13.204563+00:00",
+  "last_updated": "2026-08-22T00:58:49.717415+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -57364,6 +57364,30 @@
       "county": "Queens",
       "city": "",
       "address": "JFK International Airport 139 West Hangar Road Jamaica, NY, 11430",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Cazar Logistics",
+      "notice_date": "2026-01-31",
+      "effective_date": "2026-05-03",
+      "employees": 37,
+      "layoff_type": "Closure Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "408 E 60th Street New York, NY, 10022",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Diageo North America, Inc",
+      "notice_date": "2026-06-30",
+      "effective_date": "2026-09-30",
+      "employees": 305,
+      "layoff_type": "Layoff Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "3 World Trade Center 175 Greenwich St New York, NY, 10007",
       "industry": ""
     }
   ]

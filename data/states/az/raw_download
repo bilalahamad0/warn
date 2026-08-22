@@ -1,5 +1,17 @@
 [
  {
+  "employer": "Amentum",
+  "city": "Chandler",
+  "zip": "85248",
+  "lwib_area": "7 - ARIZONA@WORK - Maricopa County",
+  "notice_date": "Aug 21, 2026",
+  "warn_type": "WARN",
+  "record_number": "994",
+  "detail_page_url": "https://www.azjobconnection.gov/search/warn_lookups/994",
+  "number_of_employees_affected": "75",
+  "address": "4500 S. Dobson; Chandler, Arizona 85248"
+ },
+ {
   "employer": "Salad and Go",
   "city": "Phoenix",
   "zip": "85009",
@@ -8,7 +20,7 @@
   "warn_type": "WARN",
   "record_number": "993",
   "detail_page_url": "https://www.azjobconnection.gov/search/warn_lookups/993",
-  "number_of_employees_affected": "517",
+  "number_of_employees_affected": "25",
   "address": "625 S. 27th; Phoenix, Arizona 85009"
  },
  {

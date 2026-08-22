@@ -1,9 +1,9 @@
 {
-  "total_records": 191,
-  "total_employees": 11747,
+  "total_records": 192,
+  "total_employees": 12052,
   "date_range_start": "2026-01-06",
   "date_range_end": "2026-08-04",
-  "last_updated": "2026-08-21T12:47:13.182486+00:00",
+  "last_updated": "2026-08-22T00:58:49.691074+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -301,7 +301,7 @@
       "effective_date": "2026-05-03",
       "employees": 37,
       "layoff_type": "Closure Permanent",
-      "county": "Manhattan",
+      "county": "New York",
       "city": "",
       "address": "408 E 60th Street New York, NY, 10022",
       "industry": ""
@@ -376,6 +376,18 @@
       "county": "Westchester",
       "city": "",
       "address": "1050 Lower South Street Peekskill, NY, 10566",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Diageo North America, Inc",
+      "notice_date": "2026-06-30",
+      "effective_date": "2026-09-30",
+      "employees": 305,
+      "layoff_type": "Layoff Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "3 World Trade Center 175 Greenwich St New York, NY, 10007",
       "industry": ""
     },
     {

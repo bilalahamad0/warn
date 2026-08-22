@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-21T12:50:26.928167+00:00",
+  "last_updated": "2026-08-22T01:02:05.099842+00:00",
   "states_live": 47,
-  "total_records": 60027,
-  "total_employees": 6469609,
+  "total_records": 60036,
+  "total_employees": 6470033,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -22,8 +22,8 @@
       "name": "Arizona",
       "agency": "Arizona Department of Economic Security",
       "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
-      "total_records": 478,
-      "total_employees": 71677
+      "total_records": 479,
+      "total_employees": 71260
     },
     "CA": {
       "name": "California",
@@ -134,8 +134,8 @@
       "name": "Massachusetts",
       "agency": "Massachusetts Executive Office of Labor and Workforce Development",
       "source_url": "https://www.mass.gov/info-details/worker-adjustment-and-retraining-notification-act-warn",
-      "total_records": 388,
-      "total_employees": 34875
+      "total_records": 389,
+      "total_employees": 34934
     },
     "MD": {
       "name": "Maryland",
@@ -204,8 +204,8 @@
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2333,
-      "total_employees": 351132
+      "total_records": 2335,
+      "total_employees": 351239
     },
     "NM": {
       "name": "New Mexico",
@@ -225,8 +225,8 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 5329,
-      "total_employees": 432538
+      "total_records": 5331,
+      "total_employees": 432880
     },
     "OH": {
       "name": "Ohio",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1494,
-      "total_employees": 235242
+      "total_records": 1496,
+      "total_employees": 235575
     },
     "WI": {
       "name": "Wisconsin",
@@ -330,7 +330,7 @@
       "name": "West Virginia",
       "agency": "WorkForce West Virginia",
       "source_url": "https://workforcewv.org/job-seeker/layoffs-downsizing/warn-listing/",
-      "total_records": 58,
+      "total_records": 59,
       "total_employees": 2985
     }
   },
@@ -19621,10 +19621,22 @@
     },
     {
       "state": "AZ",
+      "company": "Amentum",
+      "notice_date": "2026-08-21",
+      "effective_date": null,
+      "employees": 75,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Chandler",
+      "address": "4500 S. Dobson; Chandler, Arizona 85248",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
       "company": "Salad and Go",
       "notice_date": "2026-08-04",
       "effective_date": null,
-      "employees": 517,
+      "employees": 25,
       "layoff_type": "WARN",
       "county": "",
       "city": "Phoenix",
@@ -368830,6 +368842,18 @@
       "industry": ""
     },
     {
+      "state": "MA",
+      "company": "Noble Equity Holdings LLC, Noble.com, LLC, Noble Supply & Logistics, LLC (f/k/a Noble Sales Co. Inc.), Tactical & Survival Specialties, LLC (f/k/a Tactical & Survival Specialties, Inc.), Federal Resource Supply Company, LLC (f/k/a Federal Resource Supply Company), and K.D. Analytical Consulting, LLC (aka Noble)",
+      "notice_date": "2026-08-17",
+      "effective_date": "2026-10-09",
+      "employees": 59,
+      "layoff_type": "",
+      "county": "Boston",
+      "city": "Boston",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "MD",
       "company": "Taft Broadcasting, LLC",
       "notice_date": "2026-07-20",
@@ -448951,6 +448975,30 @@
       "industry": ""
     },
     {
+      "state": "NJ",
+      "company": "Optum",
+      "notice_date": null,
+      "effective_date": "2026-12-07",
+      "employees": 57,
+      "layoff_type": "",
+      "county": "",
+      "city": "Basking Ridge",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Cenlar FSB",
+      "notice_date": null,
+      "effective_date": "2026-08-21",
+      "employees": 50,
+      "layoff_type": "",
+      "county": "",
+      "city": "Ewing Twp.",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "NM",
       "company": "Atkore HDPE, LLC",
       "notice_date": "2026-04-27",
@@ -515476,6 +515524,30 @@
       "county": "Queens",
       "city": "",
       "address": "JFK International Airport 139 West Hangar Road Jamaica, NY, 11430",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Cazar Logistics",
+      "notice_date": "2026-01-31",
+      "effective_date": "2026-05-03",
+      "employees": 37,
+      "layoff_type": "Closure Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "408 E 60th Street New York, NY, 10022",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Diageo North America, Inc",
+      "notice_date": "2026-06-30",
+      "effective_date": "2026-09-30",
+      "employees": 305,
+      "layoff_type": "Layoff Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "3 World Trade Center 175 Greenwich St New York, NY, 10007",
       "industry": ""
     },
     {
@@ -642147,7 +642219,7 @@
       "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-08-21",
+      "effective_date": "2026-08-22",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",
@@ -660528,6 +660600,30 @@
       "industry": ""
     },
     {
+      "state": "WA",
+      "company": "Twin City Foods, Inc.",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-11-02",
+      "employees": 109,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Ellensburg",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Starbucks",
+      "notice_date": "2026-08-20",
+      "effective_date": "2026-10-19",
+      "employees": 224,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Seattle",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "WI",
       "company": "Semco Windows and Doors",
       "notice_date": "2020-01-02",
@@ -668823,6 +668919,18 @@
       "state": "WV",
       "company": "Eagle Horizon Resources 08-2026",
       "notice_date": null,
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WV",
+      "company": "ECM Energy Services",
+      "notice_date": "2026-08-19",
       "effective_date": null,
       "employees": 0,
       "layoff_type": "",
