@@ -1,9 +1,9 @@
 {
-  "total_records": 2362,
-  "total_employees": 353983,
+  "total_records": 2364,
+  "total_employees": 354090,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-08-21T12:46:55.853237+00:00",
+  "last_updated": "2026-08-22T00:58:32.651370+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -1107,6 +1107,30 @@
       "layoff_type": "",
       "county": "",
       "city": "Jersey City",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Optum",
+      "notice_date": null,
+      "effective_date": "2026-12-07",
+      "employees": 57,
+      "layoff_type": "",
+      "county": "",
+      "city": "Basking Ridge",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Cenlar FSB",
+      "notice_date": null,
+      "effective_date": "2026-08-21",
+      "employees": 50,
+      "layoff_type": "",
+      "county": "",
+      "city": "Ewing Twp.",
       "address": "",
       "industry": ""
     },

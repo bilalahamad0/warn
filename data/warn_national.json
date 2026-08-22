@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-22T01:02:05.099842+00:00",
+  "last_updated": "2026-08-22T12:43:00.850936+00:00",
   "states_live": 47,
-  "total_records": 60036,
-  "total_employees": 6470033,
+  "total_records": 60038,
+  "total_employees": 6470181,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -15,8 +15,8 @@
       "name": "Alabama",
       "agency": "Alabama Department of Workforce",
       "source_url": "https://workforce.alabama.gov/warn-list/",
-      "total_records": 1064,
-      "total_employees": 181778
+      "total_records": 1066,
+      "total_employees": 181926
     },
     "AZ": {
       "name": "Arizona",
@@ -13892,6 +13892,30 @@
       "layoff_type": "Layoff *",
       "county": "",
       "city": "Birmingham",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "Fortrex [(Packers Sanitation Services  Inc.) PSSI]",
+      "notice_date": "2026-08-20",
+      "effective_date": "2026-09-11",
+      "employees": 50,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Blountsville",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "Flagstone Foods",
+      "notice_date": "2026-08-20",
+      "effective_date": "2026-10-22",
+      "employees": 98,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Dothan",
       "address": "",
       "industry": ""
     },
