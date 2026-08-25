@@ -1,9 +1,9 @@
 {
-  "total_records": 192,
-  "total_employees": 12052,
+  "total_records": 194,
+  "total_employees": 12103,
   "date_range_start": "2026-01-06",
   "date_range_end": "2026-08-04",
-  "last_updated": "2026-08-24T12:46:07.905476+00:00",
+  "last_updated": "2026-08-25T00:59:10.197239+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -64,6 +64,30 @@
       "county": "Queens",
       "city": "",
       "address": "1 Marine Air Terminal Allied Aviation LaGuardia Airport, 2nd Floor Flushing, NY, 11371",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Alray Car Parts Supply & Mfg. Corp.d/b/a Tinker Auto Parts",
+      "notice_date": "2026-07-01",
+      "effective_date": "2026-08-30",
+      "employees": 20,
+      "layoff_type": "Closure Permanent",
+      "county": "Suffolk",
+      "city": "",
+      "address": "200 Suffolk Avenue Brentwood, NY, 11717",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Alray Car Parts Supply & Mfg. Corp.d/b/a Tinker Auto Parts",
+      "notice_date": "2026-07-01",
+      "effective_date": "2026-08-30",
+      "employees": 31,
+      "layoff_type": "Closure Permanent",
+      "county": "Suffolk",
+      "city": "",
+      "address": "1650 Locust Ave Bohemia, NY, 11716",
       "industry": ""
     },
     {

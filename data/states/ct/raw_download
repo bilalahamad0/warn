@@ -374,19 +374,6 @@
       },
       "modifiedDate": "2025-09-15T14:34:12+00:00",
       "name": "rapid_response/warn_documents/2025/Posigen (Shelton, Danbury, Wethersfield 9-12-2025.pdf"
-    },
-    {
-      "blobProperties": {
-        "affected_company": "PosiGen Developer LLC",
-        "layoff_dates": "August 24, 2024",
-        "layoff_locations__": "Shelton, Danbury, Wethersfield",
-        "number_of_impacted_workers": "78",
-        "title": "PosiGen Developer LLC",
-        "warn_document_date": "2025-08-25",
-        "warn_document_received_date": "2025-08-25"
-      },
-      "modifiedDate": "2025-08-25T17:02:05+00:00",
-      "name": "rapid_response/warn_documents/2025/Posigen (Shelton, Danbury, Wethersfield) 8-25-2025.pdf"
     }
   ]
 }
