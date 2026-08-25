@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-24T12:49:24.333136+00:00",
+  "last_updated": "2026-08-25T01:02:21.315591+00:00",
   "states_live": 47,
-  "total_records": 60038,
-  "total_employees": 6470181,
+  "total_records": 60042,
+  "total_employees": 6470352,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1350,
-      "total_employees": 114718
+      "total_records": 1351,
+      "total_employees": 114773
     },
     "ME": {
       "name": "Maine",
@@ -225,15 +225,15 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 5331,
-      "total_employees": 432880
+      "total_records": 5333,
+      "total_employees": 432931
     },
     "OH": {
       "name": "Ohio",
       "agency": "Ohio Department of Job and Family Services",
       "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
-      "total_records": 1249,
-      "total_employees": 171277
+      "total_records": 1250,
+      "total_employees": 171342
     },
     "OK": {
       "name": "Oklahoma",
@@ -385078,6 +385078,18 @@
       "industry": "238990"
     },
     {
+      "state": "MD",
+      "company": "Stanley Black & Decker",
+      "notice_date": "2026-08-19",
+      "effective_date": "2026-10-23",
+      "employees": 55,
+      "layoff_type": "Plant Closure",
+      "county": "Carroll",
+      "city": "",
+      "address": "625 Hanover Pike Hampstead, MD 21074",
+      "industry": "332510"
+    },
+    {
       "state": "ME",
       "company": "SMBC-Sumitomo Mitsui Banking Corporation",
       "notice_date": "2026-01-13",
@@ -515576,6 +515588,30 @@
     },
     {
       "state": "NY",
+      "company": "Alray Car Parts Supply & Mfg. Corp.d/b/a Tinker Auto Parts",
+      "notice_date": "2026-07-01",
+      "effective_date": "2026-08-30",
+      "employees": 20,
+      "layoff_type": "Closure Permanent",
+      "county": "Suffolk",
+      "city": "",
+      "address": "200 Suffolk Avenue Brentwood, NY, 11717",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Alray Car Parts Supply & Mfg. Corp.d/b/a Tinker Auto Parts",
+      "notice_date": "2026-07-01",
+      "effective_date": "2026-08-30",
+      "employees": 31,
+      "layoff_type": "Closure Permanent",
+      "county": "Suffolk",
+      "city": "",
+      "address": "1650 Locust Ave Bohemia, NY, 11716",
+      "industry": ""
+    },
+    {
+      "state": "NY",
       "company": "Cardionet, LLC. an affiliate of Philips North America, LLC.",
       "notice_date": "2025-04-01",
       "effective_date": "2025-06-30",
@@ -533427,6 +533463,18 @@
       "layoff_type": "Closure",
       "county": "Butler",
       "city": "West Chester",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Insteel Wire Products Company",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-10-20",
+      "employees": 65,
+      "layoff_type": "Closure",
+      "county": "Wyandot",
+      "city": "Upper Sandusky",
       "address": "",
       "industry": ""
     },
@@ -642243,7 +642291,7 @@
       "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-08-24",
+      "effective_date": "2026-08-25",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",

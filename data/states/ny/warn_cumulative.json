@@ -1,9 +1,9 @@
 {
-  "total_records": 4782,
-  "total_employees": 417951,
+  "total_records": 4784,
+  "total_employees": 418002,
   "date_range_start": "2016-01-04",
   "date_range_end": "2026-08-04",
-  "last_updated": "2026-08-24T12:46:07.930252+00:00",
+  "last_updated": "2026-08-25T00:59:10.217913+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -57388,6 +57388,30 @@
       "county": "New York",
       "city": "",
       "address": "3 World Trade Center 175 Greenwich St New York, NY, 10007",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Alray Car Parts Supply & Mfg. Corp.d/b/a Tinker Auto Parts",
+      "notice_date": "2026-07-01",
+      "effective_date": "2026-08-30",
+      "employees": 20,
+      "layoff_type": "Closure Permanent",
+      "county": "Suffolk",
+      "city": "",
+      "address": "200 Suffolk Avenue Brentwood, NY, 11717",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Alray Car Parts Supply & Mfg. Corp.d/b/a Tinker Auto Parts",
+      "notice_date": "2026-07-01",
+      "effective_date": "2026-08-30",
+      "employees": 31,
+      "layoff_type": "Closure Permanent",
+      "county": "Suffolk",
+      "city": "",
+      "address": "1650 Locust Ave Bohemia, NY, 11716",
       "industry": ""
     }
   ]
