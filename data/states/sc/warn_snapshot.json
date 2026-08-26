@@ -1,9 +1,9 @@
 {
-  "total_records": 605,
-  "total_employees": 81196,
+  "total_records": 606,
+  "total_employees": 81450,
   "date_range_start": "2013-02-25",
-  "date_range_end": "2026-08-18",
-  "last_updated": "2026-08-25T12:48:31.352781+00:00",
+  "date_range_end": "2026-08-21",
+  "last_updated": "2026-08-26T01:02:20.519133+00:00",
   "source_url": "https://scworks.org/employer/employer-programs/risk-closing/layoff-notification-reports",
   "records": [
     {
@@ -7264,6 +7264,18 @@
       "county": "Richland",
       "city": "",
       "address": "6925 N. Main St., Columbia, SC 29203",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "Healthcare SC, LLC",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-08-28",
+      "employees": 254,
+      "layoff_type": "Permanent Closure",
+      "county": "Fairfield",
+      "city": "",
+      "address": "1 Mlily Way, Winnsboro, SC 29180",
       "industry": ""
     }
   ]

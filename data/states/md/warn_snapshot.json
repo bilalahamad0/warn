@@ -1,9 +1,9 @@
 {
-  "total_records": 1401,
-  "total_employees": 115950,
+  "total_records": 1402,
+  "total_employees": 115989,
   "date_range_start": "2010-01-07",
   "date_range_end": "2026-08-19",
-  "last_updated": "2026-08-25T12:44:03.861065+00:00",
+  "last_updated": "2026-08-26T00:57:34.988239+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -41,6 +41,18 @@
       "city": "",
       "address": "9713 Key West Avenue, Rockville Maryland 20850",
       "industry": "541714"
+    },
+    {
+      "state": "MD",
+      "company": "Savista, LLC",
+      "notice_date": "2026-08-14",
+      "effective_date": "2026-10-15",
+      "employees": 39,
+      "layoff_type": "Mass Layoff- No Recall",
+      "county": "Montgomery County",
+      "city": "",
+      "address": "4920 Elm Street Bethesda, MD 20814",
+      "industry": "561110"
     },
     {
       "state": "MD",

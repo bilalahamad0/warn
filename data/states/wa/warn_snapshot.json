@@ -1,9 +1,9 @@
 {
-  "total_records": 1495,
-  "total_employees": 235452,
+  "total_records": 1496,
+  "total_employees": 236380,
   "date_range_start": "2004-01-12",
   "date_range_end": "2026-08-21",
-  "last_updated": "2026-08-25T12:51:15.414936+00:00",
+  "last_updated": "2026-08-26T01:05:04.522603+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -15,6 +15,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Ellensburg",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Borton & Sons, Inc.",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-11-08",
+      "employees": 928,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Yakima, Zillah, Pasco, Burbank, Prescott, Soap Lake, Othello, Mesa",
       "address": "",
       "industry": ""
     },

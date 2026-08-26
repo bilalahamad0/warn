@@ -2,7 +2,7 @@
   "scope": "ca",
   "state": "CA",
   "coverage_start": "2025-01-01",
-  "last_updated": "2026-08-26T01:05:10.246379+00:00",
+  "last_updated": "2026-08-26T12:55:34.929828+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "total_records": 1727,
   "total_employees": 95643,
@@ -20,7 +20,7 @@
       "address": "3740 Seaport Boulevard, Suite 10  West Sacramento CA 95691",
       "industry": "42 Wholesale Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "BFG Supply Co., LLC",
@@ -33,7 +33,7 @@
       "address": "2552 Shenandoah Way  San Bernardino CA 92407",
       "industry": "42 Wholesale Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Blue Shield of California",
@@ -46,7 +46,7 @@
       "address": "601 12th Street  Oakland CA 94607",
       "industry": "52 Finance and Insurance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Blue Shield of California",
@@ -59,7 +59,7 @@
       "address": "3840 Kilroy Airport Way  Long Beach CA 90806",
       "industry": "52 Finance and Insurance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Blue Shield of California",
@@ -72,7 +72,7 @@
       "address": "3300 Zinfandel Drive  Rancho Cordova CA 95670",
       "industry": "52 Finance and Insurance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Blue Shield of California",
@@ -85,7 +85,7 @@
       "address": "3131 Camino Del Rio, Suite #1300  San Diego CA 92108",
       "industry": "52 Finance and Insurance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Cellares Corporation",
@@ -98,7 +98,7 @@
       "address": "1100 Veterans Boulevard  South San Francisco CA 94080",
       "industry": "54 Professional Scientific and Technical Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Blue Shield of California (Building B)",
@@ -111,7 +111,7 @@
       "address": "4203 Town Center Blvd., Building B  El Dorado Hills CA 95672",
       "industry": "52 Finance and Insurance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Blue Shield of California (Building C)",
@@ -124,7 +124,7 @@
       "address": "4203 Town Center Blvd., Building C  El Dorado Hills CA 95762",
       "industry": "52 Finance and Insurance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Blue Shield of California",
@@ -137,7 +137,7 @@
       "address": "3021 Reynolds Ranch Parkway  Lodi CA 95240",
       "industry": "52 Finance and Insurance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Apple, Inc. - Cupertino",
@@ -150,7 +150,7 @@
       "address": "One Apple Park Way  Cupertino CA 95014",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Apple, Inc. - Maude Ave.",
@@ -163,7 +163,7 @@
       "address": "605 W. Maude Ave.  Sunnyvale CA 94085",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Apple, Inc. - Sunnyvale",
@@ -176,7 +176,7 @@
       "address": "599 N. Mathilda Ave.  Sunnyvale CA 94085",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Jabil Inc.",
@@ -189,7 +189,7 @@
       "address": "30 Great Oaks Boulevard  San Jose CA 95119",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Stone Brewing CO., LLC - Citracado Parkway",
@@ -241,7 +241,7 @@
       "address": "2800 Sturgis Road  Oxnard CA 93030",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Stockton Truss LLC",
@@ -319,7 +319,7 @@
       "address": "50 Adrian Ct  Burlingame CA 94010",
       "industry": "72 Accommodation and Food Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Netflix, Inc.",
@@ -358,7 +358,7 @@
       "address": "3250 Patterson Road  Riverbank CA 95367",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Adventist Health Glendale",
