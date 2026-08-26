@@ -1,9 +1,9 @@
 {
-  "total_records": 634,
-  "total_employees": 59268,
+  "total_records": 635,
+  "total_employees": 59336,
   "date_range_start": "2020-01-02",
-  "date_range_end": "2026-08-12",
-  "last_updated": "2026-08-25T12:51:18.055398+00:00",
+  "date_range_end": "2026-08-24",
+  "last_updated": "2026-08-26T01:05:07.265240+00:00",
   "source_url": "https://dwd.wisconsin.gov/dislocatedworker/warn/",
   "records": [
     {
@@ -7613,6 +7613,18 @@
       "city": "De Pere",
       "address": "",
       "industry": "Automatic Environmental Control Mfg"
+    },
+    {
+      "state": "WI",
+      "company": "Foremost Farms USA",
+      "notice_date": "2026-08-24",
+      "effective_date": "2026-12-15",
+      "employees": 68,
+      "layoff_type": "Facility Closure",
+      "county": "Wood",
+      "city": "Marshfield",
+      "address": "",
+      "industry": "Cheese Mfg"
     }
   ]
 }

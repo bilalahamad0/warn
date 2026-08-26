@@ -1,9 +1,9 @@
 {
-  "total_records": 1351,
-  "total_employees": 114773,
+  "total_records": 1352,
+  "total_employees": 114812,
   "date_range_start": "2010-01-07",
   "date_range_end": "2026-08-19",
-  "last_updated": "2026-08-25T12:44:03.926806+00:00",
+  "last_updated": "2026-08-26T00:57:35.003708+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -16217,6 +16217,18 @@
       "city": "",
       "address": "625 Hanover Pike Hampstead, MD 21074",
       "industry": "332510"
+    },
+    {
+      "state": "MD",
+      "company": "Savista, LLC",
+      "notice_date": "2026-08-14",
+      "effective_date": "2026-10-15",
+      "employees": 39,
+      "layoff_type": "Mass Layoff- No Recall",
+      "county": "Montgomery County",
+      "city": "",
+      "address": "4920 Elm Street Bethesda, MD 20814",
+      "industry": "561110"
     }
   ]
 }

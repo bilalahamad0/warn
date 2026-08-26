@@ -1,9 +1,9 @@
 {
-  "total_records": 4753,
-  "total_employees": 606839,
+  "total_records": 4754,
+  "total_employees": 606934,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-08-25T12:39:14.291589+00:00",
+  "last_updated": "2026-08-26T00:52:25.332566+00:00",
   "source_url": "https://www.tcsg.edu/warn-public-view/",
   "records": [
     {
@@ -3316,6 +3316,18 @@
       "county": "Warren",
       "city": "",
       "address": "975 Thomson Hwy, Warrenton, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "KidsPeace National Centers of Georgia",
+      "notice_date": null,
+      "effective_date": "2026-10-24",
+      "employees": 95,
+      "layoff_type": "Permanent Closure",
+      "county": "Carroll",
+      "city": "",
+      "address": "101 Kidspeace Dr, Bowdon, Georgia",
       "industry": ""
     },
     {

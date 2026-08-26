@@ -1,11 +1,23 @@
 {
-  "total_records": 96,
-  "total_employees": 14967,
+  "total_records": 97,
+  "total_employees": 15030,
   "date_range_start": "2025-01-21",
-  "date_range_end": "2026-08-14",
-  "last_updated": "2026-08-25T12:48:32.412377+00:00",
+  "date_range_end": "2026-08-24",
+  "last_updated": "2026-08-26T01:02:21.624467+00:00",
   "source_url": "https://www.tn.gov/workforce/general-resources/major-publications0/major-publications-redirect/reports.html",
   "records": [
+    {
+      "state": "TN",
+      "company": "Identity Group",
+      "notice_date": "2026-08-24",
+      "effective_date": "2026-10-20",
+      "employees": 63,
+      "layoff_type": "",
+      "county": "Putnam",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "TN",
       "company": "Wise Company LLC",

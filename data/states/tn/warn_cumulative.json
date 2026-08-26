@@ -1,9 +1,9 @@
 {
-  "total_records": 1061,
-  "total_employees": 121189,
+  "total_records": 1062,
+  "total_employees": 121252,
   "date_range_start": "2012-01-05",
-  "date_range_end": "2026-08-14",
-  "last_updated": "2026-08-25T12:48:32.416284+00:00",
+  "date_range_end": "2026-08-24",
+  "last_updated": "2026-08-26T01:02:21.629346+00:00",
   "source_url": "https://www.tn.gov/workforce/general-resources/major-publications0/major-publications-redirect/reports.html",
   "records": [
     {
@@ -10804,6 +10804,18 @@
       "employees": 129,
       "layoff_type": "",
       "county": "Hardin",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "TN",
+      "company": "Identity Group",
+      "notice_date": "2026-08-24",
+      "effective_date": "2026-10-20",
+      "employees": 63,
+      "layoff_type": "",
+      "county": "Putnam",
       "city": "",
       "address": "",
       "industry": ""

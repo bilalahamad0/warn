@@ -12,6 +12,16 @@
    "Notice Type": "Notice Type"
   },
   {
+   "Company": "Postal Center International Inc",
+   "City": "Brownsburg",
+   "Affected Workers": "151",
+   "Notice Date": "8/13/2026",
+   "LO/CL Date": "8/13/2026",
+   "NAICS": "48-49",
+   "Description of Work/Industry": "Transportation and Warehousing",
+   "Notice Type": "CL"
+  },
+  {
    "Company": "Forest River, Inc.",
    "City": "Bristol",
    "Affected Workers": "105",

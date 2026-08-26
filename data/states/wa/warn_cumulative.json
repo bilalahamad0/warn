@@ -1,9 +1,9 @@
 {
-  "total_records": 1496,
-  "total_employees": 235575,
+  "total_records": 1497,
+  "total_employees": 236503,
   "date_range_start": "2004-01-12",
   "date_range_end": "2026-08-21",
-  "last_updated": "2026-08-25T12:51:15.430968+00:00",
+  "last_updated": "2026-08-26T01:05:04.539216+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -17955,6 +17955,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Seattle",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Borton & Sons, Inc.",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-11-08",
+      "employees": 928,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Yakima, Zillah, Pasco, Burbank, Prescott, Soap Lake, Othello, Mesa",
       "address": "",
       "industry": ""
     }

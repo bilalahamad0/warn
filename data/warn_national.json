@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-25T12:51:21.225624+00:00",
+  "last_updated": "2026-08-26T01:05:10.246379+00:00",
   "states_live": 47,
-  "total_records": 60042,
-  "total_employees": 6470352,
+  "total_records": 60068,
+  "total_employees": 6473089,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -29,8 +29,8 @@
       "name": "California",
       "agency": "California Employment Development Department",
       "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
-      "total_records": 16228,
-      "total_employees": 1386439
+      "total_records": 16245,
+      "total_employees": 1387432
     },
     "CO": {
       "name": "Colorado",
@@ -71,8 +71,8 @@
       "name": "Georgia",
       "agency": "Technical College System of Georgia, Office of Workforce Development",
       "source_url": "https://www.tcsg.edu/warn-public-view/",
-      "total_records": 4730,
-      "total_employees": 605644
+      "total_records": 4731,
+      "total_employees": 605739
     },
     "HI": {
       "name": "Hawaii",
@@ -106,8 +106,8 @@
       "name": "Indiana",
       "agency": "Indiana Department of Workforce Development",
       "source_url": "https://www.in.gov/dwd/warn-notices/current-warn-notices/",
-      "total_records": 1014,
-      "total_employees": 152411
+      "total_records": 1015,
+      "total_employees": 152562
     },
     "KS": {
       "name": "Kansas",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1351,
-      "total_employees": 114773
+      "total_records": 1352,
+      "total_employees": 114812
     },
     "ME": {
       "name": "Maine",
@@ -225,8 +225,8 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 5333,
-      "total_employees": 432931
+      "total_records": 5334,
+      "total_employees": 433003
     },
     "OH": {
       "name": "Ohio",
@@ -246,8 +246,8 @@
       "name": "Oregon",
       "agency": "Oregon Higher Education Coordinating Commission, Office of Community Colleges and Workforce Development",
       "source_url": "https://ccwd.hecc.oregon.gov/Layoff/WARN",
-      "total_records": 1362,
-      "total_employees": 186804
+      "total_records": 1363,
+      "total_employees": 186878
     },
     "PA": {
       "name": "Pennsylvania",
@@ -267,8 +267,8 @@
       "name": "South Carolina",
       "agency": "South Carolina Department of Employment and Workforce",
       "source_url": "https://scworks.org/employer/employer-programs/risk-closing/layoff-notification-reports",
-      "total_records": 605,
-      "total_employees": 81196
+      "total_records": 606,
+      "total_employees": 81450
     },
     "SD": {
       "name": "South Dakota",
@@ -281,8 +281,8 @@
       "name": "Tennessee",
       "agency": "Tennessee Department of Labor and Workforce Development",
       "source_url": "https://www.tn.gov/workforce/general-resources/major-publications0/major-publications-redirect/reports.html",
-      "total_records": 1061,
-      "total_employees": 121189
+      "total_records": 1062,
+      "total_employees": 121252
     },
     "TX": {
       "name": "Texas",
@@ -316,15 +316,15 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1496,
-      "total_employees": 235575
+      "total_records": 1497,
+      "total_employees": 236503
     },
     "WI": {
       "name": "Wisconsin",
       "agency": "Wisconsin Department of Workforce Development",
       "source_url": "https://dwd.wisconsin.gov/dislocatedworker/warn/",
-      "total_records": 634,
-      "total_employees": 59268
+      "total_records": 635,
+      "total_employees": 59336
     },
     "WV": {
       "name": "West Virginia",
@@ -39333,6 +39333,210 @@
       "county": "Contra Costa County",
       "city": "",
       "address": "901 Loveridge Road  Pittsburg CA 94565",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Silgan Containers",
+      "notice_date": "2026-08-12",
+      "effective_date": "2026-10-12",
+      "employees": 120,
+      "layoff_type": "Layoff Temporary",
+      "county": "Stanislaus County",
+      "city": "",
+      "address": "3250 Patterson Road  Riverbank CA 95367",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Flying Food Group, LLC",
+      "notice_date": "2026-08-14",
+      "effective_date": "2026-10-13",
+      "employees": 72,
+      "layoff_type": "Closure Permanent",
+      "county": "San Mateo County",
+      "city": "",
+      "address": "50 Adrian Ct  Burlingame CA 94010",
+      "industry": "72 Accommodation and Food Services"
+    },
+    {
+      "state": "CA",
+      "company": "Apple, Inc. - Cupertino",
+      "notice_date": "2026-08-20",
+      "effective_date": "2026-10-19",
+      "employees": 79,
+      "layoff_type": "Layoff Permanent",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "One Apple Park Way  Cupertino CA 95014",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Apple, Inc. - Maude Ave.",
+      "notice_date": "2026-08-20",
+      "effective_date": "2026-10-19",
+      "employees": 40,
+      "layoff_type": "Layoff Permanent",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "605 W. Maude Ave.  Sunnyvale CA 94085",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Apple, Inc. - Sunnyvale",
+      "notice_date": "2026-08-20",
+      "effective_date": "2026-10-19",
+      "employees": 28,
+      "layoff_type": "Layoff Permanent",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "599 N. Mathilda Ave.  Sunnyvale CA 94085",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Blue Shield of California",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-10-20",
+      "employees": 25,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "601 12th Street  Oakland CA 94607",
+      "industry": "52 Finance and Insurance"
+    },
+    {
+      "state": "CA",
+      "company": "Blue Shield of California",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-10-20",
+      "employees": 11,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "3840 Kilroy Airport Way  Long Beach CA 90806",
+      "industry": "52 Finance and Insurance"
+    },
+    {
+      "state": "CA",
+      "company": "Blue Shield of California",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-10-20",
+      "employees": 5,
+      "layoff_type": "Layoff Permanent",
+      "county": "Sacramento County",
+      "city": "",
+      "address": "3300 Zinfandel Drive  Rancho Cordova CA 95670",
+      "industry": "52 Finance and Insurance"
+    },
+    {
+      "state": "CA",
+      "company": "Blue Shield of California",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-10-20",
+      "employees": 4,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "3131 Camino Del Rio, Suite #1300  San Diego CA 92108",
+      "industry": "52 Finance and Insurance"
+    },
+    {
+      "state": "CA",
+      "company": "Cellares Corporation",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-10-20",
+      "employees": 100,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Mateo County",
+      "city": "",
+      "address": "1100 Veterans Boulevard  South San Francisco CA 94080",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "state": "CA",
+      "company": "Blue Shield of California (Building B)",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-10-20",
+      "employees": 12,
+      "layoff_type": "Layoff Permanent",
+      "county": "El Dorado County",
+      "city": "",
+      "address": "4203 Town Center Blvd., Building B  El Dorado Hills CA 95672",
+      "industry": "52 Finance and Insurance"
+    },
+    {
+      "state": "CA",
+      "company": "Blue Shield of California (Building C)",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-10-20",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "El Dorado County",
+      "city": "",
+      "address": "4203 Town Center Blvd., Building C  El Dorado Hills CA 95762",
+      "industry": "52 Finance and Insurance"
+    },
+    {
+      "state": "CA",
+      "company": "Blue Shield of California",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-10-20",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Joaquin County",
+      "city": "",
+      "address": "3021 Reynolds Ranch Parkway  Lodi CA 95240",
+      "industry": "52 Finance and Insurance"
+    },
+    {
+      "state": "CA",
+      "company": "BFG Supply Co., LLC",
+      "notice_date": "2026-08-24",
+      "effective_date": "2026-10-25",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Yolo County",
+      "city": "",
+      "address": "3740 Seaport Boulevard, Suite 10  West Sacramento CA 95691",
+      "industry": "42 Wholesale Trade"
+    },
+    {
+      "state": "CA",
+      "company": "BFG Supply Co., LLC",
+      "notice_date": "2026-08-24",
+      "effective_date": "2026-10-25",
+      "employees": 37,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Bernardino County",
+      "city": "",
+      "address": "2552 Shenandoah Way  San Bernardino CA 92407",
+      "industry": "42 Wholesale Trade"
+    },
+    {
+      "state": "CA",
+      "company": "Haas Automation, Inc.",
+      "notice_date": "2026-08-19",
+      "effective_date": "2026-11-02",
+      "employees": 73,
+      "layoff_type": "Layoff Permanent",
+      "county": "Ventura County",
+      "city": "",
+      "address": "2800 Sturgis Road  Oxnard CA 93030",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Jabil Inc.",
+      "notice_date": "2026-08-20",
+      "effective_date": "2026-11-23",
+      "employees": 382,
+      "layoff_type": "Closure Temporary",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "30 Great Oaks Boulevard  San Jose CA 95119",
       "industry": "31-33 Manufacturing"
     },
     {
@@ -258232,6 +258436,18 @@
       "industry": ""
     },
     {
+      "state": "GA",
+      "company": "KidsPeace National Centers of Georgia",
+      "notice_date": null,
+      "effective_date": "2026-10-24",
+      "employees": 95,
+      "layoff_type": "Permanent Closure",
+      "county": "Carroll",
+      "city": "",
+      "address": "101 Kidspeace Dr, Bowdon, Georgia",
+      "industry": ""
+    },
+    {
       "state": "HI",
       "company": "Maui Seaside Hotel",
       "notice_date": "2019-01-16",
@@ -347920,6 +348136,18 @@
       "industry": "Wood Window and Door Manufacturing"
     },
     {
+      "state": "IN",
+      "company": "Postal Center International Inc",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-08-13",
+      "employees": 151,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Brownsburg",
+      "address": "",
+      "industry": "Transportation and Warehousing"
+    },
+    {
       "state": "KS",
       "company": "First Student",
       "notice_date": "2026-05-01",
@@ -385088,6 +385316,18 @@
       "city": "",
       "address": "625 Hanover Pike Hampstead, MD 21074",
       "industry": "332510"
+    },
+    {
+      "state": "MD",
+      "company": "Savista, LLC",
+      "notice_date": "2026-08-14",
+      "effective_date": "2026-10-15",
+      "employees": 39,
+      "layoff_type": "Mass Layoff- No Recall",
+      "county": "Montgomery County",
+      "city": "",
+      "address": "4920 Elm Street Bethesda, MD 20814",
+      "industry": "561110"
     },
     {
       "state": "ME",
@@ -515612,6 +515852,18 @@
     },
     {
       "state": "NY",
+      "company": "USIC Locating Services, LLC. d/b/a Reconn Utility Services",
+      "notice_date": "2026-04-01",
+      "effective_date": "2026-04-06",
+      "employees": 72,
+      "layoff_type": "Layoff Permanent",
+      "county": "Suffolk",
+      "city": "",
+      "address": "1500 Ocean Avenue Bohemia, NY, 11716",
+      "industry": ""
+    },
+    {
+      "state": "NY",
       "company": "Cardionet, LLC. an affiliate of Philips North America, LLC.",
       "notice_date": "2025-04-01",
       "effective_date": "2025-06-30",
@@ -555415,6 +555667,18 @@
       "industry": ""
     },
     {
+      "state": "OR",
+      "company": "Amentum - Hillsboro, OR",
+      "notice_date": "2026-08-20",
+      "effective_date": "2026-10-19",
+      "employees": 74,
+      "layoff_type": "Large Layoff - 10 or more workers",
+      "county": "",
+      "city": "Hillsboro",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "PA",
       "company": "Transform Warehouse Operations, LLC",
       "notice_date": null,
@@ -567835,6 +568099,18 @@
       "industry": ""
     },
     {
+      "state": "SC",
+      "company": "Healthcare SC, LLC",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-08-28",
+      "employees": 254,
+      "layoff_type": "Permanent Closure",
+      "county": "Fairfield",
+      "city": "",
+      "address": "1 Mlily Way, Winnsboro, SC 29180",
+      "industry": ""
+    },
+    {
       "state": "SD",
       "company": "Conduent",
       "notice_date": "2026-06-29",
@@ -579592,6 +579868,18 @@
       "employees": 129,
       "layoff_type": "",
       "county": "Hardin",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "TN",
+      "company": "Identity Group",
+      "notice_date": "2026-08-24",
+      "effective_date": "2026-10-20",
+      "employees": 63,
+      "layoff_type": "",
+      "county": "Putnam",
       "city": "",
       "address": "",
       "industry": ""
@@ -642291,7 +642579,7 @@
       "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-08-25",
+      "effective_date": "2026-08-26",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",
@@ -660696,6 +660984,18 @@
       "industry": ""
     },
     {
+      "state": "WA",
+      "company": "Borton & Sons, Inc.",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-11-08",
+      "employees": 928,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Yakima, Zillah, Pasco, Burbank, Prescott, Soap Lake, Othello, Mesa",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "WI",
       "company": "Semco Windows and Doors",
       "notice_date": "2020-01-02",
@@ -668302,6 +668602,18 @@
       "city": "De Pere",
       "address": "",
       "industry": "Automatic Environmental Control Mfg"
+    },
+    {
+      "state": "WI",
+      "company": "Foremost Farms USA",
+      "notice_date": "2026-08-24",
+      "effective_date": "2026-12-15",
+      "employees": 68,
+      "layoff_type": "Facility Closure",
+      "county": "Wood",
+      "city": "Marshfield",
+      "address": "",
+      "industry": "Cheese Mfg"
     },
     {
       "state": "WV",
