@@ -207,22 +207,17 @@ def _year_frames(df: pd.DataFrame, max_years: int = 6) -> list:
     """(label, frame) pairs: each recent year, newest first, then all time.
 
     `event_date` falls back to the effective date when a filing carries no
-    notice date, so one notice can open a year bucket well past today — a
-    single Michigan GM line effective 2027-01-14 is the entirety of "2027".
-    Those buckets stay selectable, because the notice is real, but they sit
-    outside the `max_years` window: that window is a window on *recent*
-    years, and counting a future one against it evicted 2021 from a six-year
-    ranking to make room for one bar. `_default_year_index` keeps a future
-    year from being the view the chart opens on.
+    notice date, so one notice can open a year bucket well past today. Those
+    buckets stay selectable — the notice is real — but they sit outside the
+    `max_years` window (see `warn_charts.recent_year_window`, which the US map
+    shares), and `_default_year_index` keeps one from being the view a chart
+    opens on.
     """
-    years = sorted(
+    years = warn_charts.recent_year_window(
         {int(y) for y in df["event_date"].dropna().dt.year.unique()},
-        reverse=True,
+        max_years=max_years,
     )
-    now_year = datetime.now(timezone.utc).year
-    ordered = [y for y in years if y > now_year]
-    ordered += [y for y in years if y <= now_year][:max_years]
-    frames = [(str(y), df[df["event_date"].dt.year == y]) for y in ordered]
+    frames = [(str(y), df[df["event_date"].dt.year == y]) for y in years]
     frames.append(("All time", df))
     return frames
 

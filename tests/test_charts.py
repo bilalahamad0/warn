@@ -7,9 +7,15 @@ COVID spike — 6,066 notices covering 656,501 employees — as 14 notices and
 1,394 employees.
 """
 
+import json
+from datetime import datetime, timezone
+
 import pytest
 
 import warn_charts
+
+
+YEAR = datetime.now(timezone.utc).year
 
 
 @pytest.fixture(autouse=True)
@@ -115,3 +121,75 @@ def test_empty_summary_renders_an_empty_state():
 def test_title_spans_the_actual_range(summary):
     fig = warn_charts.chart_yoy_bar(summary, save_png=False)
     assert "(2014–2026)" in fig.layout.title.text
+
+
+# ---------------------------------------------------------------------------
+# recent_year_window — the six-year window shared by the US map and the
+# national ranking charts in warn_site_us
+# ---------------------------------------------------------------------------
+
+
+def test_a_future_year_does_not_count_against_the_window():
+    # 2027 exists only because one filing carries no notice date and an
+    # effective date that far out. Counted against max_years it cost the
+    # window its oldest real year; it now sits beside the six, not inside them.
+    years = {"2027", "2026", "2025", "2024", "2023", "2022", "2021", "2020"}
+    assert warn_charts.recent_year_window(years, now_year=2026) == [
+        "2027", "2026", "2025", "2024", "2023", "2022", "2021",
+    ]
+
+
+def test_the_window_still_stops_at_max_years_without_a_future_year():
+    years = {str(y) for y in range(2018, 2027)}
+    assert warn_charts.recent_year_window(years, now_year=2026) == [
+        "2026", "2025", "2024", "2023", "2022", "2021",
+    ]
+
+
+def test_every_future_year_sorts_ahead_of_the_recent_ones():
+    assert warn_charts.recent_year_window({2029, 2027, 2026, 2025},
+                                          now_year=2026) == [2029, 2027, 2026, 2025]
+
+
+def test_window_hands_back_the_type_it_was_given():
+    assert warn_charts.recent_year_window({2025, 2024}, now_year=2026) == [2025, 2024]
+    assert warn_charts.recent_year_window({"2025"}, now_year=2026) == ["2025"]
+    assert warn_charts.recent_year_window(set(), now_year=2026) == []
+
+
+def test_us_map_keeps_six_recent_years_beside_a_future_one(tmp_path, monkeypatch):
+    """The map builds its own dropdown, so pin its window end to end.
+
+    Seven whole years of history plus one future-dated notice: the six most
+    recent must all survive, which before the shared window they did not —
+    the lone future bucket displaced the oldest of them.
+    """
+    records = [
+        {"state": "CA", "company": f"Acme {y}", "notice_date": f"{y}-06-01",
+         "effective_date": f"{y}-08-01", "employees": 100}
+        for y in range(YEAR - 6, YEAR + 1)
+    ]
+    records.append(
+        {"state": "MI", "company": "General Motors", "notice_date": None,
+         "effective_date": f"{YEAR + 1}-01-14", "employees": 350}
+    )
+    national = tmp_path / "warn_national.json"
+    national.write_text(json.dumps({
+        "records": records,
+        "states": {"CA": {"name": "California"}, "MI": {"name": "Michigan"}},
+    }))
+    monkeypatch.setattr(warn_charts, "NATIONAL_FILE", national)
+
+    fig = warn_charts.chart_us_map(save_png=False)
+    menu = fig.layout.updatemenus[1]          # [0] is the metric toggle
+    labels = [b.label for b in menu.buttons]
+
+    # All time heads the list, the current year follows and is the default …
+    assert labels[:2] == ["All years", str(YEAR)]
+    assert menu.buttons[menu.active].label == str(YEAR)
+    # … the future bucket stays selectable …
+    assert str(YEAR + 1) in labels
+    # … and it costs the window nothing: six recent years, oldest included.
+    assert {lbl for lbl in labels if lbl != "All years"} == (
+        {str(YEAR + 1)} | {str(y) for y in range(YEAR, YEAR - 6, -1)}
+    )

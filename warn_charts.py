@@ -979,6 +979,26 @@ def _record_year(r: dict) -> str:
     return str(d)[:4]
 
 
+def recent_year_window(years, max_years: int = 6, now_year: int = None) -> list:
+    """Years newest-first: any future ones, then the `max_years` most recent.
+
+    A filing that carries no notice date is dated by its effective date, which
+    can sit years out — one Michigan GM line effective 2027-01-14 is the
+    entirety of "2027". That year is real and stays selectable, but it is not a
+    *recent* year, and counting it against the window silently evicted the
+    oldest real year from every six-year view on the site: the US map and both
+    national rankings were charting five years of history in a six-year window.
+
+    Accepts ints or four-digit strings and hands back whichever it was given.
+    Callers pass a set; nothing here dedupes.
+    """
+    if now_year is None:
+        now_year = datetime.now(timezone.utc).year
+    ordered = sorted(years, key=int, reverse=True)
+    future = [y for y in ordered if int(y) > now_year]
+    return future + [y for y in ordered if int(y) <= now_year][:max_years]
+
+
 # Jurisdictions with no public WARN data, and why — rendered on the map as a
 # distinct muted fill with an explanatory hover. (Plotly choropleths do not
 # support hatch patterns; this is the closest native treatment.)
@@ -1006,8 +1026,9 @@ def chart_us_map(df: pd.DataFrame = None, save_png: bool = True) -> go.Figure:
     if not records:
         raise ValueError("No records available for US map.")
 
-    years = sorted({y for y in (_record_year(r) for r in records) if y.isdigit()},
-                   reverse=True)[:6]
+    years = recent_year_window(
+        {y for y in (_record_year(r) for r in records) if y.isdigit()}
+    )
     # All-time heads the list; the current year is still the default view
     # (selected via the menu's `active` index below).
     current_year = str(datetime.now(timezone.utc).year)
