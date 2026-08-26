@@ -1,41 +1,16 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-08-26 12:55:34 UTC
+**Generated:** 2026-08-26 20:40:45 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 149 | 36 | +0/+113 |
-| Total employees | 7,770 | 2,560 | -5,210 |
+| Total records | 36 | 36 | +0/+0 |
+| Total employees | 2,560 | 2,560 | +0 |
 
 ### ✅ No new entries.
-
-### ❌ Removed Entries (113 records)
-
-| Company | Employees | Effective Date |
-|---------|-----------|----------------|
-| Jabil Inc. | 382 | 2026-11-23 |
-| Visa | 320 | 2026-10-01 |
-| LeeMAH Electronics | 205 | 2026-10-16 |
-| Bumble Bee Foods, LLC | 197 | 2026-11-19 |
-| Sodexo | 164 | 2026-09-30 |
-| ServiceNow, Inc. | 154 | 2026-09-28 |
-| LAZ Parking California (9610 Sky Way) | 139 | 2026-10-06 |
-| Chime Financial, Inc. | 135 | 2026-09-30 |
-| Sharp Metropolitan Medical Campus - Sharp Mesa Vista | 134 | 2026-10-10 |
-| ServiceNow, Inc. | 133 | 2026-09-28 |
-| Silgan Containers | 120 | 2026-10-12 |
-| Roskam Baking Company dba Organic Milling | 115 | 2026-10-02 |
-| Staples Fulfillment Center | 109 | 2026-10-09 |
-| Pixar | 108 | 2026-09-26 |
-| Cellares Corporation | 100 | 2026-10-20 |
-| Essendant Co. | 99 | 2026-10-03 |
-| Volume Services, Inc. (Sodexo) | 93 | 2026-10-16 |
-| Fortrex | 91 | 2026-08-21 |
-| Renteria Vineyard Management | 91 | 2026-10-15 |
-| San Francisco Pretrial Diversion Project, Inc. | 82 | 2026-11-13 |
 
 ---
 ## 📁 File vs Git Comparison
@@ -48,7 +23,6 @@
 ```
 M data/changelog.jsonl
  M data/states/ak/changelog.jsonl
- M data/states/ak/meta.json
  M data/states/ak/warn_cumulative.json
  M data/states/ak/warn_latest.json
  M data/states/ak/warn_snapshot.json
@@ -86,7 +60,9 @@ M data/changelog.jsonl
  M data/states/fl/warn_latest.json
  M data/states/fl/warn_snapshot.json
  M data/states/ga/changelog.jsonl
+ M data/states/ga/detail_cache.json
  M data/states/ga/meta.json
+ M data/states/ga/raw_download
  M data/states/ga/warn_cumulative.json
  M data/states/ga/warn_latest.json
  M data/states/ga/warn_snapshot.json
@@ -146,7 +122,6 @@ M data/changelog.jsonl
  M data/states/me/warn_snapshot.json
  M data/states/mi/changelog.jsonl
  M data/states/mi/meta.json
- M data/states/mi/raw_download
  M data/states/mi/warn_cumulative.json
  M data/states/mi/warn_latest.json
  M data/states/mi/warn_snapshot.json
@@ -160,7 +135,6 @@ M data/changelog.jsonl
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
- M data/states/mt/meta.json
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
@@ -175,7 +149,6 @@ M data/changelog.jsonl
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
- M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
@@ -191,6 +164,7 @@ M data/changelog.jsonl
  M data/states/nm/warn_snapshot.json
  M data/states/ny/changelog.jsonl
  M data/states/ny/meta.json
+ M data/states/ny/raw_download
  M data/states/ny/warn_cumulative.json
  M data/states/ny/warn_latest.json
  M data/states/ny/warn_snapshot.json
@@ -211,6 +185,7 @@ M data/changelog.jsonl
  M data/states/or/warn_snapshot.json
  M data/states/pa/changelog.jsonl
  M data/states/pa/meta.json
+ M data/states/pa/raw_download
  M data/states/pa/warn_cumulative.json
  M data/states/pa/warn_latest.json
  M data/states/pa/warn_snapshot.json
@@ -229,7 +204,6 @@ M data/changelog.jsonl
  M data/states/sd/warn_latest.json
  M data/states/sd/warn_snapshot.json
  M data/states/tn/changelog.jsonl
- M data/states/tn/raw_download
  M data/states/tn/warn_cumulative.json
  M data/states/tn/warn_latest.json
  M data/states/tn/warn_snapshot.json
@@ -249,6 +223,7 @@ M data/changelog.jsonl
  M data/states/vt/warn_snapshot.json
  M data/states/wa/changelog.jsonl
  M data/states/wa/meta.json
+ M data/states/wa/raw_download
  M data/states/wa/warn_cumulative.json
  M data/states/wa/warn_latest.json
  M data/states/wa/warn_snapshot.json
@@ -269,16 +244,17 @@ M data/changelog.jsonl
 
 **Recent commits:**
 ```
+46846584 auto: WARN data update [skip ci]
 e8fbd744 Merge pull request #25 from bilalahamad0/claude/dropdown-default-current-year-91a19q
 d54ab130 fix: share one recent-year window between the US map and the rankings
 bbe42f9b fix: open the year dropdowns on the current year, not a future one
 3ce64435 auto: WARN data update [skip ci]
-45941025 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-08-26T20:24:22.006133+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-26T12:39:38.736182+00:00` — +0 added, -113 removed, 0 employees (new)
 - `2026-08-26T00:48:45.010465+00:00` — +17 added, -0 removed, 993 employees (new)
 - `2026-08-25T12:35:39.079280+00:00` — +0 added, -0 removed, 0 employees (new)
@@ -288,4 +264,3 @@ bbe42f9b fix: open the year dropdowns on the current year, not a future one
 - `2026-08-23T12:28:53.787347+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-23T00:48:25.914463+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-22T12:27:03.862873+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-08-22T00:46:28.736819+00:00` — +0 added, -0 removed, 0 employees (new)

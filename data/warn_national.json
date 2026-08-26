@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-26T12:55:34.929828+00:00",
+  "last_updated": "2026-08-26T20:40:45.952068+00:00",
   "states_live": 47,
-  "total_records": 60068,
-  "total_employees": 6473089,
+  "total_records": 60076,
+  "total_employees": 6474107,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -71,8 +71,8 @@
       "name": "Georgia",
       "agency": "Technical College System of Georgia, Office of Workforce Development",
       "source_url": "https://www.tcsg.edu/warn-public-view/",
-      "total_records": 4731,
-      "total_employees": 605739
+      "total_records": 4735,
+      "total_employees": 606297
     },
     "HI": {
       "name": "Hawaii",
@@ -99,8 +99,8 @@
       "name": "Illinois",
       "agency": "Illinois Department of Commerce and Economic Opportunity",
       "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
-      "total_records": 4877,
-      "total_employees": 672965
+      "total_records": 4879,
+      "total_employees": 673097
     },
     "IN": {
       "name": "Indiana",
@@ -253,8 +253,8 @@
       "name": "Pennsylvania",
       "agency": "Pennsylvania Department of Labor & Industry",
       "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
-      "total_records": 304,
-      "total_employees": 44831
+      "total_records": 305,
+      "total_employees": 45082
     },
     "RI": {
       "name": "Rhode Island",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1497,
-      "total_employees": 236503
+      "total_records": 1498,
+      "total_employees": 236580
     },
     "WI": {
       "name": "Wisconsin",
@@ -258448,6 +258448,54 @@
       "industry": ""
     },
     {
+      "state": "GA",
+      "company": "Republic National Distributing Company of Texas, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-19",
+      "employees": 157,
+      "layoff_type": "Permanent Closure",
+      "county": "Appling",
+      "city": "",
+      "address": "1 National Dr SW, Atlanta, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Republic National Distributing Company, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-19",
+      "employees": 321,
+      "layoff_type": "Permanent Closure",
+      "county": "Cobb",
+      "city": "",
+      "address": "1 National Dr SW, Atlanta, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Young's Market Company of Arizona, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-19",
+      "employees": 2,
+      "layoff_type": "Permanent Closure",
+      "county": "Cobb",
+      "city": "",
+      "address": "1 National Dr SW, Atlanta, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Young's Market Company, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-19",
+      "employees": 78,
+      "layoff_type": "Permanent Closure",
+      "county": "Cobb",
+      "city": "",
+      "address": "1 National Dr SW, Atlanta, Georgia",
+      "industry": ""
+    },
+    {
       "state": "HI",
       "company": "Maui Seaside Hotel",
       "notice_date": "2019-01-16",
@@ -335966,6 +336014,30 @@
       "city": "Rolling Meadows",
       "address": "3601 Algonquin Rd.",
       "industry": "Administrative, Support, Waste Management, and Remediation Services"
+    },
+    {
+      "state": "IL",
+      "company": "MAT HOLDINGS INC.",
+      "notice_date": "2026-08-25",
+      "effective_date": null,
+      "employees": 97,
+      "layoff_type": "Plant Closure",
+      "county": "Will County",
+      "city": "Romeoville",
+      "address": "821 W Bluff Rd",
+      "industry": "Management of Companies and Enterprises"
+    },
+    {
+      "state": "IL",
+      "company": "BFG Supply Company, LLC",
+      "notice_date": "2026-08-24",
+      "effective_date": null,
+      "employees": 35,
+      "layoff_type": "Plant Closure",
+      "county": "Vermilion County",
+      "city": "Danville",
+      "address": "70 Eastgate Dr.",
+      "industry": "Wholesale Trade"
     },
     {
       "state": "IN",
@@ -559327,6 +559399,18 @@
       "industry": ""
     },
     {
+      "state": "PA",
+      "company": "Eos Energy Storage, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-26",
+      "employees": 251,
+      "layoff_type": "Layoff",
+      "county": "Allegheny",
+      "city": "",
+      "address": "700 Braddock Avenue, Building 700, East Pittsburgh, PA  15112",
+      "industry": ""
+    },
+    {
       "state": "RI",
       "company": "Conduent",
       "notice_date": "2026-06-26",
@@ -660992,6 +661076,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Yakima, Zillah, Pasco, Burbank, Prescott, Soap Lake, Othello, Mesa",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "T-Mobile USA, Inc.",
+      "notice_date": "2026-08-26",
+      "effective_date": "2026-09-21",
+      "employees": 77,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Seattle, Bellingham, Bothell, Vancouver, Bellevue, Kennewick, Tacoma, and Yakima",
       "address": "",
       "industry": ""
     },

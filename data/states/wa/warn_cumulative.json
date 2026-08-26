@@ -1,9 +1,9 @@
 {
-  "total_records": 1497,
-  "total_employees": 236503,
+  "total_records": 1498,
+  "total_employees": 236580,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-08-21",
-  "last_updated": "2026-08-26T12:55:29.168627+00:00",
+  "date_range_end": "2026-08-26",
+  "last_updated": "2026-08-26T20:40:39.974887+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -17967,6 +17967,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Yakima, Zillah, Pasco, Burbank, Prescott, Soap Lake, Othello, Mesa",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "T-Mobile USA, Inc.",
+      "notice_date": "2026-08-26",
+      "effective_date": "2026-09-21",
+      "employees": 77,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Seattle, Bellingham, Bothell, Vancouver, Bellevue, Kennewick, Tacoma, and Yakima",
       "address": "",
       "industry": ""
     }

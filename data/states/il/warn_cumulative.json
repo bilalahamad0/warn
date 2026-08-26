@@ -1,9 +1,9 @@
 {
-  "total_records": 4877,
-  "total_employees": 672965,
+  "total_records": 4879,
+  "total_employees": 673097,
   "date_range_start": "1987-09-01",
-  "date_range_end": "2026-08-14",
-  "last_updated": "2026-08-26T12:43:55.067070+00:00",
+  "date_range_end": "2026-08-25",
+  "last_updated": "2026-08-26T20:28:55.597869+00:00",
   "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
   "records": [
     {
@@ -58529,6 +58529,30 @@
       "city": "Rolling Meadows",
       "address": "3601 Algonquin Rd.",
       "industry": "Administrative, Support, Waste Management, and Remediation Services"
+    },
+    {
+      "state": "IL",
+      "company": "MAT HOLDINGS INC.",
+      "notice_date": "2026-08-25",
+      "effective_date": null,
+      "employees": 97,
+      "layoff_type": "Plant Closure",
+      "county": "Will County",
+      "city": "Romeoville",
+      "address": "821 W Bluff Rd",
+      "industry": "Management of Companies and Enterprises"
+    },
+    {
+      "state": "IL",
+      "company": "BFG Supply Company, LLC",
+      "notice_date": "2026-08-24",
+      "effective_date": null,
+      "employees": 35,
+      "layoff_type": "Plant Closure",
+      "county": "Vermilion County",
+      "city": "Danville",
+      "address": "70 Eastgate Dr.",
+      "industry": "Wholesale Trade"
     }
   ]
 }

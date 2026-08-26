@@ -1,9 +1,9 @@
 {
-  "total_records": 304,
-  "total_employees": 44831,
+  "total_records": 305,
+  "total_employees": 45082,
   "date_range_start": "2023-01-09",
-  "date_range_end": "2026-10-16",
-  "last_updated": "2026-08-26T12:52:37.350997+00:00",
+  "date_range_end": "2026-10-26",
+  "last_updated": "2026-08-26T20:37:44.560849+00:00",
   "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
   "records": [
     {
@@ -3652,6 +3652,18 @@
       "county": "Lehigh",
       "city": "",
       "address": "400 Nestle Way, Breinigsville, PA  18031",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Eos Energy Storage, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-26",
+      "employees": 251,
+      "layoff_type": "Layoff",
+      "county": "Allegheny",
+      "city": "",
+      "address": "700 Braddock Avenue, Building 700, East Pittsburgh, PA  15112",
       "industry": ""
     }
   ]
