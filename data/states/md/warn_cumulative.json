@@ -1,9 +1,9 @@
 {
-  "total_records": 1352,
-  "total_employees": 114812,
+  "total_records": 1355,
+  "total_employees": 115214,
   "date_range_start": "2010-01-07",
-  "date_range_end": "2026-08-19",
-  "last_updated": "2026-08-26T20:33:01.178338+00:00",
+  "date_range_end": "2026-08-25",
+  "last_updated": "2026-08-27T05:55:12.527057+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -16229,6 +16229,42 @@
       "city": "",
       "address": "4920 Elm Street Bethesda, MD 20814",
       "industry": "561110"
+    },
+    {
+      "state": "MD",
+      "company": "Crosby Marketing Communications",
+      "notice_date": "2026-08-25",
+      "effective_date": "2026-10-30",
+      "employees": 20,
+      "layoff_type": "Mass Layoff- No Recall",
+      "county": "Anne Arundel County",
+      "city": "",
+      "address": "705 Melvin Avenue Annapolis, MD 21401",
+      "industry": "541810"
+    },
+    {
+      "state": "MD",
+      "company": "Amentum",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-11-13",
+      "employees": 65,
+      "layoff_type": "Mass Layoff- No Recall",
+      "county": "Anne Arundel County",
+      "city": "",
+      "address": "7710 Milestone Parkway Hanover, MD 21076",
+      "industry": "541330"
+    },
+    {
+      "state": "MD",
+      "company": "Amentum",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-10-31",
+      "employees": 317,
+      "layoff_type": "Mass Layoff- No Recall",
+      "county": "Anne Arundel County",
+      "city": "",
+      "address": "7710 Milestone Parkway Hanover, MD 21076",
+      "industry": "561210"
     }
   ]
 }

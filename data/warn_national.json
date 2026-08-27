@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-26T20:40:45.952068+00:00",
+  "last_updated": "2026-08-27T06:04:27.735268+00:00",
   "states_live": 47,
-  "total_records": 60076,
-  "total_employees": 6474107,
+  "total_records": 60079,
+  "total_employees": 6474509,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1352,
-      "total_employees": 114812
+      "total_records": 1355,
+      "total_employees": 115214
     },
     "ME": {
       "name": "Maine",
@@ -385402,6 +385402,42 @@
       "industry": "561110"
     },
     {
+      "state": "MD",
+      "company": "Crosby Marketing Communications",
+      "notice_date": "2026-08-25",
+      "effective_date": "2026-10-30",
+      "employees": 20,
+      "layoff_type": "Mass Layoff- No Recall",
+      "county": "Anne Arundel County",
+      "city": "",
+      "address": "705 Melvin Avenue Annapolis, MD 21401",
+      "industry": "541810"
+    },
+    {
+      "state": "MD",
+      "company": "Amentum",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-11-13",
+      "employees": 65,
+      "layoff_type": "Mass Layoff- No Recall",
+      "county": "Anne Arundel County",
+      "city": "",
+      "address": "7710 Milestone Parkway Hanover, MD 21076",
+      "industry": "541330"
+    },
+    {
+      "state": "MD",
+      "company": "Amentum",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-10-31",
+      "employees": 317,
+      "layoff_type": "Mass Layoff- No Recall",
+      "county": "Anne Arundel County",
+      "city": "",
+      "address": "7710 Milestone Parkway Hanover, MD 21076",
+      "industry": "561210"
+    },
+    {
       "state": "ME",
       "company": "SMBC-Sumitomo Mitsui Banking Corporation",
       "notice_date": "2026-01-13",
@@ -642663,7 +642699,7 @@
       "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-08-26",
+      "effective_date": "2026-08-27",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",

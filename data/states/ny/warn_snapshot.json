@@ -1,9 +1,9 @@
 {
-  "total_records": 195,
-  "total_employees": 12175,
+  "total_records": 192,
+  "total_employees": 12110,
   "date_range_start": "2026-01-06",
   "date_range_end": "2026-08-04",
-  "last_updated": "2026-08-26T12:52:25.515518+00:00",
+  "last_updated": "2026-08-26T20:37:32.195703+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -16,42 +16,6 @@
       "county": "New York",
       "city": "",
       "address": "420 Park Ave S New York, NY, 10016",
-      "industry": ""
-    },
-    {
-      "state": "NY",
-      "company": "Air Company Holdings Inc.",
-      "notice_date": "2026-05-04",
-      "effective_date": "2026-08-02",
-      "employees": 16,
-      "layoff_type": "Closure Permanent",
-      "county": "Kings",
-      "city": "",
-      "address": "10 Grand Street Brooklyn, NY, 11211",
-      "industry": ""
-    },
-    {
-      "state": "NY",
-      "company": "Air Company Holdings Inc.",
-      "notice_date": "2026-05-04",
-      "effective_date": "2026-08-02",
-      "employees": 23,
-      "layoff_type": "Closure Permanent",
-      "county": "Kings",
-      "city": "",
-      "address": "94 Scott Ave Brooklyn, NY, 11237",
-      "industry": ""
-    },
-    {
-      "state": "NY",
-      "company": "Air Company Holdings Inc.",
-      "notice_date": "2026-05-04",
-      "effective_date": "2026-08-02",
-      "employees": 26,
-      "layoff_type": "Closure Permanent",
-      "county": "Kings",
-      "city": "",
-      "address": "456 Johnson Avenue 420 Brooklyn, NY, 11237",
       "industry": ""
     },
     {

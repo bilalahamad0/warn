@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-08-26 20:40:45 UTC
+**Generated:** 2026-08-27 06:04:27 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -23,6 +23,7 @@
 ```
 M data/changelog.jsonl
  M data/states/ak/changelog.jsonl
+ M data/states/ak/meta.json
  M data/states/ak/warn_cumulative.json
  M data/states/ak/warn_latest.json
  M data/states/ak/warn_snapshot.json
@@ -60,9 +61,7 @@ M data/changelog.jsonl
  M data/states/fl/warn_latest.json
  M data/states/fl/warn_snapshot.json
  M data/states/ga/changelog.jsonl
- M data/states/ga/detail_cache.json
  M data/states/ga/meta.json
- M data/states/ga/raw_download
  M data/states/ga/warn_cumulative.json
  M data/states/ga/warn_latest.json
  M data/states/ga/warn_snapshot.json
@@ -122,6 +121,7 @@ M data/changelog.jsonl
  M data/states/me/warn_snapshot.json
  M data/states/mi/changelog.jsonl
  M data/states/mi/meta.json
+ M data/states/mi/raw_download
  M data/states/mi/warn_cumulative.json
  M data/states/mi/warn_latest.json
  M data/states/mi/warn_snapshot.json
@@ -164,7 +164,6 @@ M data/changelog.jsonl
  M data/states/nm/warn_snapshot.json
  M data/states/ny/changelog.jsonl
  M data/states/ny/meta.json
- M data/states/ny/raw_download
  M data/states/ny/warn_cumulative.json
  M data/states/ny/warn_latest.json
  M data/states/ny/warn_snapshot.json
@@ -185,7 +184,6 @@ M data/changelog.jsonl
  M data/states/or/warn_snapshot.json
  M data/states/pa/changelog.jsonl
  M data/states/pa/meta.json
- M data/states/pa/raw_download
  M data/states/pa/warn_cumulative.json
  M data/states/pa/warn_latest.json
  M data/states/pa/warn_snapshot.json
@@ -204,6 +202,7 @@ M data/changelog.jsonl
  M data/states/sd/warn_latest.json
  M data/states/sd/warn_snapshot.json
  M data/states/tn/changelog.jsonl
+ M data/states/tn/raw_download
  M data/states/tn/warn_cumulative.json
  M data/states/tn/warn_latest.json
  M data/states/tn/warn_snapshot.json
@@ -213,6 +212,7 @@ M data/changelog.jsonl
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
+ M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -223,7 +223,6 @@ M data/changelog.jsonl
  M data/states/vt/warn_snapshot.json
  M data/states/wa/changelog.jsonl
  M data/states/wa/meta.json
- M data/states/wa/raw_download
  M data/states/wa/warn_cumulative.json
  M data/states/wa/warn_latest.json
  M data/states/wa/warn_snapshot.json
@@ -244,16 +243,17 @@ M data/changelog.jsonl
 
 **Recent commits:**
 ```
+36b52bd0 auto: WARN data update [skip ci]
 46846584 auto: WARN data update [skip ci]
 e8fbd744 Merge pull request #25 from bilalahamad0/claude/dropdown-default-current-year-91a19q
 d54ab130 fix: share one recent-year window between the US map and the rankings
 bbe42f9b fix: open the year dropdowns on the current year, not a future one
-3ce64435 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-08-27T05:46:33.609458+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-26T20:24:22.006133+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-26T12:39:38.736182+00:00` — +0 added, -113 removed, 0 employees (new)
 - `2026-08-26T00:48:45.010465+00:00` — +17 added, -0 removed, 993 employees (new)
@@ -263,4 +263,3 @@ bbe42f9b fix: open the year dropdowns on the current year, not a future one
 - `2026-08-24T00:47:07.789337+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-23T12:28:53.787347+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-23T00:48:25.914463+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-08-22T12:27:03.862873+00:00` — +0 added, -0 removed, 0 employees (new)
