@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-27T06:04:27.735268+00:00",
+  "last_updated": "2026-08-27T21:50:54.026263+00:00",
   "states_live": 47,
-  "total_records": 60079,
-  "total_employees": 6474509,
+  "total_records": 60086,
+  "total_employees": 6474850,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -29,8 +29,8 @@
       "name": "California",
       "agency": "California Employment Development Department",
       "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
-      "total_records": 16245,
-      "total_employees": 1387432
+      "total_records": 16246,
+      "total_employees": 1387504
     },
     "CO": {
       "name": "Colorado",
@@ -100,7 +100,7 @@
       "agency": "Illinois Department of Commerce and Economic Opportunity",
       "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
       "total_records": 4879,
-      "total_employees": 673097
+      "total_employees": 673098
     },
     "IN": {
       "name": "Indiana",
@@ -127,8 +127,8 @@
       "name": "Louisiana",
       "agency": "Louisiana Workforce Commission",
       "source_url": "https://www.laworks.net/Downloads/Downloads_WFD.asp",
-      "total_records": 36,
-      "total_employees": 6495
+      "total_records": 37,
+      "total_employees": 6701
     },
     "MA": {
       "name": "Massachusetts",
@@ -162,8 +162,8 @@
       "name": "Minnesota",
       "agency": "Minnesota Department of Employment and Economic Development",
       "source_url": "https://mn.gov/deed/programs-services/dislocated-worker-program/reports/",
-      "total_records": 670,
-      "total_employees": 18292
+      "total_records": 675,
+      "total_employees": 18414
     },
     "MS": {
       "name": "Mississippi",
@@ -303,7 +303,7 @@
       "agency": "Virginia Works (Virginia Employment Commission)",
       "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
       "total_records": 1122,
-      "total_employees": 130341
+      "total_employees": 130281
     },
     "VT": {
       "name": "Vermont",
@@ -39538,6 +39538,18 @@
       "city": "",
       "address": "30 Great Oaks Boulevard  San Jose CA 95119",
       "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Levine Management Group, Inc.",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-08-17",
+      "employees": 72,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "822 S. Robertson Suite #200  Los Angeles CA 90035",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
     },
     {
       "company": "Adventist Health St. Helena",
@@ -280721,18 +280733,6 @@
     },
     {
       "state": "IL",
-      "company": "Sumitomo Mitsui Banking Corporation",
-      "notice_date": "2026-01-08",
-      "effective_date": null,
-      "employees": 6,
-      "layoff_type": "Mass Layoff",
-      "county": "Not Applicable",
-      "city": "New York",
-      "address": "277 Park Ave",
-      "industry": "Finance and Insurance"
-    },
-    {
-      "state": "IL",
       "company": "GXO Logistics Supply Chain, Inc.",
       "notice_date": "2026-01-21",
       "effective_date": null,
@@ -336040,6 +336040,18 @@
       "industry": "Wholesale Trade"
     },
     {
+      "state": "IL",
+      "company": "Sumitomo Mitsui Banking Corporation",
+      "notice_date": "2026-01-08",
+      "effective_date": null,
+      "employees": 7,
+      "layoff_type": "Mass Layoff",
+      "county": "Not Applicable",
+      "city": "New York",
+      "address": "277 Park Ave",
+      "industry": "Finance and Insurance"
+    },
+    {
       "state": "IN",
       "company": "Thyssenkrupp Presta North America",
       "notice_date": "2026-06-30",
@@ -364508,6 +364520,18 @@
       "city": "",
       "address": "5700 Morrison Road, New, Orleans, Louisiana 70126",
       "industry": "Couriers and Express Delivery Services"
+    },
+    {
+      "state": "LA",
+      "company": "Mosaic Company",
+      "notice_date": "2026-08-26",
+      "effective_date": "2026-10-30",
+      "employees": 206,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "Uncle Sam - 7250 LA-44, Convent, LA 70723, Faustina \u2013 9959 LA-18, St. James, LA 70086",
+      "industry": "Agricultural Chemical Manufacturing"
     },
     {
       "state": "MA",
@@ -401777,6 +401801,66 @@
       "city": "St Paul",
       "address": "",
       "industry": "Government"
+    },
+    {
+      "state": "MN",
+      "company": "First Student",
+      "notice_date": null,
+      "effective_date": "2026-06-16",
+      "employees": 49,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Red Wing",
+      "address": "",
+      "industry": "Transportation"
+    },
+    {
+      "state": "MN",
+      "company": "Shopkick Inc",
+      "notice_date": null,
+      "effective_date": "2026-03-26",
+      "employees": 70,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Boston",
+      "address": "",
+      "industry": "Retail"
+    },
+    {
+      "state": "MN",
+      "company": "Ruby's Pantry",
+      "notice_date": null,
+      "effective_date": "2026-04-01",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "North Branch",
+      "address": "",
+      "industry": "Transportation"
+    },
+    {
+      "state": "MN",
+      "company": "Coastal Seafood",
+      "notice_date": null,
+      "effective_date": "2026-04-11",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "St Paul",
+      "address": "",
+      "industry": "Dining Establishments"
+    },
+    {
+      "state": "MN",
+      "company": "Hangry Joe's",
+      "notice_date": null,
+      "effective_date": "2026-04-27",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Woodbury",
+      "address": "",
+      "industry": "Dining Establishments"
     },
     {
       "state": "MS",
@@ -642685,18 +642769,6 @@
     },
     {
       "state": "VA",
-      "company": "TekSynap Corporation",
-      "notice_date": "2026-08-17",
-      "effective_date": "2026-10-14",
-      "employees": 69,
-      "layoff_type": "Layoff",
-      "county": "",
-      "city": "Statewide",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
       "effective_date": "2026-08-27",
@@ -642704,6 +642776,18 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Ringgold",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "TekSynap Corporation",
+      "notice_date": "2026-08-17",
+      "effective_date": "2026-10-14",
+      "employees": 9,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Statewide",
       "address": "",
       "industry": ""
     },

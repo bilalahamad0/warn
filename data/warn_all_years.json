@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-27T06:04:27.503356+00:00",
-  "total_records": 1957,
-  "total_employees": 111462,
+  "generated_at": "2026-08-27T21:50:53.792431+00:00",
+  "total_records": 1958,
+  "total_employees": 111534,
   "yearly_summary": [
     {
       "fiscal_year": 2014,
@@ -83,8 +83,8 @@
     {
       "fiscal_year": "current",
       "label": "FY 2025-26 (Live)",
-      "records": 1656,
-      "employees": 90168,
+      "records": 1657,
+      "employees": 90240,
       "source": "xlsx"
     }
   ],
@@ -26338,6 +26338,20 @@
       "city": "",
       "address": "30 Great Oaks Boulevard  San Jose CA 95119",
       "industry": "31-33 Manufacturing",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "state": "CA",
+      "company": "Levine Management Group, Inc.",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-08-17",
+      "employees": 72,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "822 S. Robertson Suite #200  Los Angeles CA 90035",
+      "industry": "56 Administrative and Support and Waste Management and Remediation",
       "fiscal_year": "current",
       "source": "xlsx"
     }

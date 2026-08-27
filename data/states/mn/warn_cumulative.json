@@ -1,9 +1,9 @@
 {
-  "total_records": 670,
-  "total_employees": 18292,
+  "total_records": 675,
+  "total_employees": 18414,
   "date_range_start": "2021-01-06",
   "date_range_end": "2026-06-15",
-  "last_updated": "2026-08-27T05:58:18.292490+00:00",
+  "last_updated": "2026-08-27T21:46:17.310922+00:00",
   "source_url": "https://mn.gov/deed/programs-services/dislocated-worker-program/reports/",
   "records": [
     {
@@ -8045,6 +8045,66 @@
       "city": "St Paul",
       "address": "",
       "industry": "Government"
+    },
+    {
+      "state": "MN",
+      "company": "First Student",
+      "notice_date": null,
+      "effective_date": "2026-06-16",
+      "employees": 49,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Red Wing",
+      "address": "",
+      "industry": "Transportation"
+    },
+    {
+      "state": "MN",
+      "company": "Shopkick Inc",
+      "notice_date": null,
+      "effective_date": "2026-03-26",
+      "employees": 70,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Boston",
+      "address": "",
+      "industry": "Retail"
+    },
+    {
+      "state": "MN",
+      "company": "Ruby's Pantry",
+      "notice_date": null,
+      "effective_date": "2026-04-01",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "North Branch",
+      "address": "",
+      "industry": "Transportation"
+    },
+    {
+      "state": "MN",
+      "company": "Coastal Seafood",
+      "notice_date": null,
+      "effective_date": "2026-04-11",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "St Paul",
+      "address": "",
+      "industry": "Dining Establishments"
+    },
+    {
+      "state": "MN",
+      "company": "Hangry Joe's",
+      "notice_date": null,
+      "effective_date": "2026-04-27",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Woodbury",
+      "address": "",
+      "industry": "Dining Establishments"
     }
   ]
 }
