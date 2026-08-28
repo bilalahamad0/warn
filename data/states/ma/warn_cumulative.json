@@ -1,9 +1,9 @@
 {
-  "total_records": 389,
-  "total_employees": 34934,
+  "total_records": 390,
+  "total_employees": 35011,
   "date_range_start": "2021-04-19",
-  "date_range_end": "2026-08-17",
-  "last_updated": "2026-08-28T07:50:14.180233+00:00",
+  "date_range_end": "2026-08-24",
+  "last_updated": "2026-08-28T22:00:29.989155+00:00",
   "source_url": "https://www.mass.gov/info-details/worker-adjustment-and-retraining-notification-act-warn",
   "records": [
     {
@@ -4671,6 +4671,18 @@
       "layoff_type": "",
       "county": "Boston",
       "city": "Boston",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "P1 Logistics LLC",
+      "notice_date": "2026-08-24",
+      "effective_date": "2026-10-24",
+      "employees": 77,
+      "layoff_type": "",
+      "county": "Central",
+      "city": "Littleton",
       "address": "",
       "industry": ""
     }

@@ -957,6 +957,39 @@
   "industry": "Finance and Insurance "
  },
  {
+  "company": "Verschoor Meats, Inc",
+  "address": "1401 Bluff Rd",
+  "city": "Sioux City",
+  "county": "Woodbury",
+  "layoff_type": "Closing ",
+  "employees": 42,
+  "notice_date": "2026-08-21 00:00:00",
+  "effective_date": "2026-08-21 00:00:00",
+  "industry": "Wholesale Trade "
+ },
+ {
+  "company": "RTX",
+  "address": "400 Collins Rd NE ",
+  "city": "Cedar Rapids",
+  "county": "Linn",
+  "layoff_type": "Amendment - Additional Employees ",
+  "employees": 1,
+  "notice_date": "2026-08-25 00:00:00",
+  "effective_date": "2026-09-30 00:00:00",
+  "industry": "Professional, Scientific, and Technical Services"
+ },
+ {
+  "company": "People First Sanitation",
+  "address": "1000 Cunningham Dr",
+  "city": "Sioux City",
+  "county": "Woodbury",
+  "layoff_type": "Mass Layoff",
+  "employees": 54,
+  "notice_date": "2026-08-28 00:00:00",
+  "effective_date": "2026-09-25 00:00:00",
+  "industry": "Administrative and Support and Waste Management and Remediation Services"
+ },
+ {
   "company": "John Deere Ottumwa Works ",
   "address": "928 E Vine St",
   "city": "Ottumwa",
@@ -3034,6 +3067,17 @@
   "notice_date": "2025-12-23 00:00:00",
   "effective_date": "2025-12-23 00:00:00",
   "industry": "Construction "
+ },
+ {
+  "company": "RTX",
+  "address": "400 Collins Rd NE ",
+  "city": "Cedar Rapids",
+  "county": "Linn",
+  "layoff_type": "Amendment - Additional Employees ",
+  "employees": 1,
+  "notice_date": "2026-08-25 00:00:00",
+  "effective_date": "2026-09-30 00:00:00",
+  "industry": "Professional, Scientific, and Technical Services"
  },
  {
   "company": "GXO Warehouse Company, Inc",

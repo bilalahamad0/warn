@@ -1,9 +1,9 @@
 {
-  "total_records": 192,
-  "total_employees": 12110,
+  "total_records": 193,
+  "total_employees": 12191,
   "date_range_start": "2026-01-06",
   "date_range_end": "2026-08-04",
-  "last_updated": "2026-08-28T07:54:58.290578+00:00",
+  "last_updated": "2026-08-28T22:04:11.292776+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -172,6 +172,18 @@
       "county": "Bronx",
       "city": "",
       "address": "488 E 164th Street Bronx, NY, 10456",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Buffalo Newspress Inc. d/b/a BNP Empowered Print",
+      "notice_date": "2026-07-09",
+      "effective_date": "2026-07-09",
+      "employees": 81,
+      "layoff_type": "Closure Permanent",
+      "county": "Erie",
+      "city": "",
+      "address": "200 Broadway St Buffalo, NY, 14204",
       "industry": ""
     },
     {

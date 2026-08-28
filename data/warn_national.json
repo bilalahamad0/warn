@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-28T07:58:15.014026+00:00",
+  "last_updated": "2026-08-28T22:07:17.550251+00:00",
   "states_live": 47,
-  "total_records": 60086,
-  "total_employees": 6474850,
+  "total_records": 60096,
+  "total_employees": 6475792,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -85,8 +85,8 @@
       "name": "Iowa",
       "agency": "Iowa Workforce Development",
       "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
-      "total_records": 930,
-      "total_employees": 51740
+      "total_records": 933,
+      "total_employees": 51837
     },
     "ID": {
       "name": "Idaho",
@@ -134,8 +134,8 @@
       "name": "Massachusetts",
       "agency": "Massachusetts Executive Office of Labor and Workforce Development",
       "source_url": "https://www.mass.gov/info-details/worker-adjustment-and-retraining-notification-act-warn",
-      "total_records": 389,
-      "total_employees": 34934
+      "total_records": 390,
+      "total_employees": 35011
     },
     "MD": {
       "name": "Maryland",
@@ -197,15 +197,15 @@
       "name": "Nebraska",
       "agency": "Nebraska Department of Labor",
       "source_url": "https://dol.nebraska.gov/ReemploymentServices/LayoffServices/LayoffsAndDownsizingWARN",
-      "total_records": 1036,
-      "total_employees": 45533
+      "total_records": 1037,
+      "total_employees": 45624
     },
     "NJ": {
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2335,
-      "total_employees": 351239
+      "total_records": 2336,
+      "total_employees": 351426
     },
     "NM": {
       "name": "New Mexico",
@@ -225,15 +225,15 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 5334,
-      "total_employees": 433003
+      "total_records": 5335,
+      "total_employees": 433084
     },
     "OH": {
       "name": "Ohio",
       "agency": "Ohio Department of Job and Family Services",
       "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
-      "total_records": 1250,
-      "total_employees": 171342
+      "total_records": 1251,
+      "total_employees": 171446
     },
     "OK": {
       "name": "Oklahoma",
@@ -267,8 +267,8 @@
       "name": "South Carolina",
       "agency": "South Carolina Department of Employment and Workforce",
       "source_url": "https://scworks.org/employer/employer-programs/risk-closing/layoff-notification-reports",
-      "total_records": 606,
-      "total_employees": 81450
+      "total_records": 607,
+      "total_employees": 81669
     },
     "SD": {
       "name": "South Dakota",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1498,
-      "total_employees": 236580
+      "total_records": 1499,
+      "total_employees": 236666
     },
     "WI": {
       "name": "Wisconsin",
@@ -275116,6 +275116,42 @@
       "industry": "Finance and Insurance"
     },
     {
+      "state": "IA",
+      "company": "Verschoor Meats, Inc",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-08-21",
+      "employees": 42,
+      "layoff_type": "Closing",
+      "county": "Woodbury",
+      "city": "Sioux City",
+      "address": "1401 Bluff Rd",
+      "industry": "Wholesale Trade"
+    },
+    {
+      "state": "IA",
+      "company": "RTX",
+      "notice_date": "2026-08-25",
+      "effective_date": "2026-09-30",
+      "employees": 1,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Linn",
+      "city": "Cedar Rapids",
+      "address": "400 Collins Rd NE",
+      "industry": "Professional, Scientific, and Technical Services"
+    },
+    {
+      "state": "IA",
+      "company": "People First Sanitation",
+      "notice_date": "2026-08-28",
+      "effective_date": "2026-09-25",
+      "employees": 54,
+      "layoff_type": "Mass Layoff",
+      "county": "Woodbury",
+      "city": "Sioux City",
+      "address": "1000 Cunningham Dr",
+      "industry": "Administrative and Support and Waste Management and Remediation Services"
+    },
+    {
       "state": "ID",
       "company": "Fortrex",
       "notice_date": "2026-07-01",
@@ -369202,6 +369238,18 @@
       "industry": ""
     },
     {
+      "state": "MA",
+      "company": "P1 Logistics LLC",
+      "notice_date": "2026-08-24",
+      "effective_date": "2026-10-24",
+      "employees": 77,
+      "layoff_type": "",
+      "county": "Central",
+      "city": "Littleton",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "MD",
       "company": "Taft Broadcasting, LLC",
       "notice_date": "2026-07-20",
@@ -421447,6 +421495,18 @@
       "industry": ""
     },
     {
+      "state": "NE",
+      "company": "Fortrex 0129 Madison",
+      "notice_date": "2026-08-26",
+      "effective_date": null,
+      "employees": 91,
+      "layoff_type": "",
+      "county": "",
+      "city": "Madison",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "NJ",
       "company": "The Fresh Market",
       "notice_date": null,
@@ -449463,6 +449523,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Ewing Twp.",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Enablx, INC",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 187,
+      "layoff_type": "",
+      "county": "",
+      "city": "Rockaway Township",
       "address": "",
       "industry": ""
     },
@@ -516056,6 +516128,18 @@
     },
     {
       "state": "NY",
+      "company": "Buffalo Newspress Inc. d/b/a BNP Empowered Print",
+      "notice_date": "2026-07-09",
+      "effective_date": "2026-07-09",
+      "employees": 81,
+      "layoff_type": "Closure Permanent",
+      "county": "Erie",
+      "city": "",
+      "address": "200 Broadway St Buffalo, NY, 14204",
+      "industry": ""
+    },
+    {
+      "state": "NY",
       "company": "Cardionet, LLC. an affiliate of Philips North America, LLC.",
       "notice_date": "2025-04-01",
       "effective_date": "2025-06-30",
@@ -533919,6 +534003,18 @@
       "layoff_type": "Closure",
       "county": "Wyandot",
       "city": "Upper Sandusky",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Cornerstone Building Brands",
+      "notice_date": "2026-08-27",
+      "effective_date": "2026-12-01",
+      "employees": 104,
+      "layoff_type": "Closure",
+      "county": "Wood",
+      "city": "Walbridge",
       "address": "",
       "industry": ""
     },
@@ -568312,6 +568408,18 @@
       "county": "Fairfield",
       "city": "",
       "address": "1 Mlily Way, Winnsboro, SC 29180",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "The Westin Hilton Head Island Resort & Spa",
+      "notice_date": "2026-08-27",
+      "effective_date": "2026-11-03",
+      "employees": 219,
+      "layoff_type": "Temporary Closure",
+      "county": "Beaufort",
+      "city": "",
+      "address": "2 Grasslawn Ave., Hilton Head Island, SC 29928",
       "industry": ""
     },
     {
@@ -661208,6 +661316,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Seattle, Bellingham, Bothell, Vancouver, Bellevue, Kennewick, Tacoma, and Yakima",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Columbia Hospitality, Inc",
+      "notice_date": "2026-08-28",
+      "effective_date": "2026-10-30",
+      "employees": 86,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Kenmore",
       "address": "",
       "industry": ""
     },

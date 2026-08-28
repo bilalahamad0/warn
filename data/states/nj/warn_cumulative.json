@@ -1,9 +1,9 @@
 {
-  "total_records": 2335,
-  "total_employees": 351239,
+  "total_records": 2336,
+  "total_employees": 351426,
   "date_range_start": "2004-02-24",
-  "date_range_end": "2026-12-07",
-  "last_updated": "2026-08-28T07:54:40.990534+00:00",
+  "date_range_end": "2026-12-31",
+  "last_updated": "2026-08-28T22:03:56.016702+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -28023,6 +28023,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Ewing Twp.",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Enablx, INC",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 187,
+      "layoff_type": "",
+      "county": "",
+      "city": "Rockaway Township",
       "address": "",
       "industry": ""
     }

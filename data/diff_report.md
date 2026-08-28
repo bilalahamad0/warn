@@ -1,41 +1,16 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-08-28 07:58:14 UTC
+**Generated:** 2026-08-28 22:07:17 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 150 | 36 | +0/+114 |
-| Total employees | 7,842 | 2,560 | -5,282 |
+| Total records | 36 | 36 | +0/+0 |
+| Total employees | 2,560 | 2,560 | +0 |
 
 ### ✅ No new entries.
-
-### ❌ Removed Entries (114 records)
-
-| Company | Employees | Effective Date |
-|---------|-----------|----------------|
-| Jabil Inc. | 382 | 2026-11-23 |
-| Visa | 320 | 2026-10-01 |
-| LeeMAH Electronics | 205 | 2026-10-16 |
-| Bumble Bee Foods, LLC | 197 | 2026-11-19 |
-| Sodexo | 164 | 2026-09-30 |
-| ServiceNow, Inc. | 154 | 2026-09-28 |
-| LAZ Parking California (9610 Sky Way) | 139 | 2026-10-06 |
-| Chime Financial, Inc. | 135 | 2026-09-30 |
-| Sharp Metropolitan Medical Campus - Sharp Mesa Vista | 134 | 2026-10-10 |
-| ServiceNow, Inc. | 133 | 2026-09-28 |
-| Silgan Containers | 120 | 2026-10-12 |
-| Roskam Baking Company dba Organic Milling | 115 | 2026-10-02 |
-| Staples Fulfillment Center | 109 | 2026-10-09 |
-| Pixar | 108 | 2026-09-26 |
-| Cellares Corporation | 100 | 2026-10-20 |
-| Essendant Co. | 99 | 2026-10-03 |
-| Volume Services, Inc. (Sodexo) | 93 | 2026-10-16 |
-| Fortrex | 91 | 2026-08-21 |
-| Renteria Vineyard Management | 91 | 2026-10-15 |
-| San Francisco Pretrial Diversion Project, Inc. | 82 | 2026-11-13 |
 
 ---
 ## 📁 File vs Git Comparison
@@ -48,13 +23,10 @@
 ```
 M data/changelog.jsonl
  M data/states/ak/changelog.jsonl
+ M data/states/ak/meta.json
  M data/states/ak/warn_cumulative.json
  M data/states/ak/warn_latest.json
  M data/states/ak/warn_snapshot.json
- M data/states/al/changelog.jsonl
- M data/states/al/warn_cumulative.json
- M data/states/al/warn_latest.json
- M data/states/al/warn_snapshot.json
  M data/states/az/changelog.jsonl
  M data/states/az/meta.json
  M data/states/az/warn_cumulative.json
@@ -96,6 +68,7 @@ M data/changelog.jsonl
  M data/states/hi/warn_snapshot.json
  M data/states/ia/changelog.jsonl
  M data/states/ia/meta.json
+ M data/states/ia/raw_download
  M data/states/ia/warn_cumulative.json
  M data/states/ia/warn_latest.json
  M data/states/ia/warn_snapshot.json
@@ -130,6 +103,7 @@ M data/changelog.jsonl
  M data/states/la/warn_snapshot.json
  M data/states/ma/changelog.jsonl
  M data/states/ma/meta.json
+ M data/states/ma/raw_download.csv
  M data/states/ma/warn_cumulative.json
  M data/states/ma/warn_latest.json
  M data/states/ma/warn_snapshot.json
@@ -145,7 +119,6 @@ M data/changelog.jsonl
  M data/states/me/warn_snapshot.json
  M data/states/mi/changelog.jsonl
  M data/states/mi/meta.json
- M data/states/mi/raw_download
  M data/states/mi/warn_cumulative.json
  M data/states/mi/warn_latest.json
  M data/states/mi/warn_snapshot.json
@@ -159,6 +132,7 @@ M data/changelog.jsonl
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
+ M data/states/mt/meta.json
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
@@ -173,11 +147,13 @@ M data/changelog.jsonl
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
+ M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
  M data/states/nj/changelog.jsonl
  M data/states/nj/meta.json
+ M data/states/nj/raw_download.xlsx
  M data/states/nj/warn_cumulative.json
  M data/states/nj/warn_latest.json
  M data/states/nj/warn_snapshot.json
@@ -188,10 +164,12 @@ M data/changelog.jsonl
  M data/states/nm/warn_snapshot.json
  M data/states/ny/changelog.jsonl
  M data/states/ny/meta.json
+ M data/states/ny/raw_download
  M data/states/ny/warn_cumulative.json
  M data/states/ny/warn_latest.json
  M data/states/ny/warn_snapshot.json
  M data/states/oh/changelog.jsonl
+ M data/states/oh/raw_download
  M data/states/oh/warn_cumulative.json
  M data/states/oh/warn_latest.json
  M data/states/oh/warn_snapshot.json
@@ -208,7 +186,6 @@ M data/changelog.jsonl
  M data/states/or/warn_snapshot.json
  M data/states/pa/changelog.jsonl
  M data/states/pa/meta.json
- M data/states/pa/raw_download
  M data/states/pa/warn_cumulative.json
  M data/states/pa/warn_latest.json
  M data/states/pa/warn_snapshot.json
@@ -216,8 +193,10 @@ M data/changelog.jsonl
  M data/states/ri/warn_cumulative.json
  M data/states/ri/warn_latest.json
  M data/states/ri/warn_snapshot.json
+ M data/states/sc/archive/2026.pdf
  M data/states/sc/changelog.jsonl
  M data/states/sc/meta.json
+ M data/states/sc/raw_download
  M data/states/sc/warn_cumulative.json
  M data/states/sc/warn_latest.json
  M data/states/sc/warn_snapshot.json
@@ -227,6 +206,7 @@ M data/changelog.jsonl
  M data/states/sd/warn_latest.json
  M data/states/sd/warn_snapshot.json
  M data/states/tn/changelog.jsonl
+ M data/states/tn/raw_download
  M data/states/tn/warn_cumulative.json
  M data/states/tn/warn_latest.json
  M data/states/tn/warn_snapshot.json
@@ -237,7 +217,6 @@ M data/changelog.jsonl
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
- M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -248,6 +227,7 @@ M data/changelog.jsonl
  M data/states/vt/warn_snapshot.json
  M data/states/wa/changelog.jsonl
  M data/states/wa/meta.json
+ M data/states/wa/raw_download
  M data/states/wa/warn_cumulative.json
  M data/states/wa/warn_latest.json
  M data/states/wa/warn_snapshot.json
@@ -268,16 +248,17 @@ M data/changelog.jsonl
 
 **Recent commits:**
 ```
+2e734ff2 auto: WARN data update [skip ci]
 a2d19774 auto: WARN data update [skip ci]
 1f8355f6 auto: WARN data update [skip ci]
 36b52bd0 auto: WARN data update [skip ci]
 46846584 auto: WARN data update [skip ci]
-e8fbd744 Merge pull request #25 from bilalahamad0/claude/dropdown-default-current-year-91a19q
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-08-28T21:52:26.893553+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-28T07:41:54.307635+00:00` — +0 added, -114 removed, 0 employees (new)
 - `2026-08-27T21:35:09.508853+00:00` — +1 added, -0 removed, 72 employees (new)
 - `2026-08-27T05:46:33.609458+00:00` — +0 added, -0 removed, 0 employees (new)
@@ -287,4 +268,3 @@ e8fbd744 Merge pull request #25 from bilalahamad0/claude/dropdown-default-curren
 - `2026-08-25T12:35:39.079280+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-25T00:47:18.144168+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-24T12:34:27.927190+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-08-24T00:47:07.789337+00:00` — +0 added, -0 removed, 0 employees (new)

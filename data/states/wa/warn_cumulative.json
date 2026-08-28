@@ -1,9 +1,9 @@
 {
-  "total_records": 1498,
-  "total_employees": 236580,
+  "total_records": 1499,
+  "total_employees": 236666,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-08-26",
-  "last_updated": "2026-08-28T07:58:08.486773+00:00",
+  "date_range_end": "2026-08-28",
+  "last_updated": "2026-08-28T22:07:12.708564+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -17979,6 +17979,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Seattle, Bellingham, Bothell, Vancouver, Bellevue, Kennewick, Tacoma, and Yakima",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Columbia Hospitality, Inc",
+      "notice_date": "2026-08-28",
+      "effective_date": "2026-10-30",
+      "employees": 86,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Kenmore",
       "address": "",
       "industry": ""
     }

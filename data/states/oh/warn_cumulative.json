@@ -1,9 +1,9 @@
 {
-  "total_records": 985,
-  "total_employees": 139738,
+  "total_records": 986,
+  "total_employees": 139842,
   "date_range_start": "2015-01-05",
-  "date_range_end": "2026-08-21",
-  "last_updated": "2026-08-28T07:55:00.552967+00:00",
+  "date_range_end": "2026-08-27",
+  "last_updated": "2026-08-28T22:04:13.646509+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
     {
@@ -11283,6 +11283,18 @@
       "layoff_type": "Closure",
       "county": "Wyandot",
       "city": "Upper Sandusky",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Cornerstone Building Brands",
+      "notice_date": "2026-08-27",
+      "effective_date": "2026-12-01",
+      "employees": 104,
+      "layoff_type": "Closure",
+      "county": "Wood",
+      "city": "Walbridge",
       "address": "",
       "industry": ""
     }
