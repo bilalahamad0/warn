@@ -1,51 +1,52 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-08-27 21:50:53 UTC
+**Generated:** 2026-08-28 07:58:14 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 36 | 150 | +114/+0 |
-| Total employees | 2,560 | 7,842 | +5,282 |
+| Total records | 150 | 36 | +0/+114 |
+| Total employees | 7,842 | 2,560 | -5,282 |
 
-### ✅ New Entries (114 records)
+### ✅ No new entries.
 
-| Company | Employees | Effective Date | County |
-|---------|-----------|----------------|--------|
-| Jabil Inc. | 382 | 2026-11-23 | Santa Clara County |
-| Visa | 320 | 2026-10-01 | San Mateo County |
-| LeeMAH Electronics | 205 | 2026-10-16 | San Mateo County |
-| Bumble Bee Foods, LLC | 197 | 2026-11-19 | Los Angeles County |
-| Sodexo | 164 | 2026-09-30 | Orange County |
-| ServiceNow, Inc. | 154 | 2026-09-28 | Santa Clara County |
-| LAZ Parking California (9610 Sky Way) | 139 | 2026-10-06 | Los Angeles County |
-| Chime Financial, Inc. | 135 | 2026-09-30 | San Francisco County |
-| Sharp Metropolitan Medical Campus - Sharp Mesa Vista | 134 | 2026-10-10 | San Diego County |
-| ServiceNow, Inc. | 133 | 2026-09-28 | San Diego County |
-| Silgan Containers | 120 | 2026-10-12 | Stanislaus County |
-| Roskam Baking Company dba Organic Milling | 115 | 2026-10-02 | Los Angeles County |
-| Staples Fulfillment Center | 109 | 2026-10-09 | Los Angeles County |
-| Pixar | 108 | 2026-09-26 | Alameda County |
-| Cellares Corporation | 100 | 2026-10-20 | San Mateo County |
-| Essendant Co. | 99 | 2026-10-03 | Sacramento County |
-| Volume Services, Inc. (Sodexo) | 93 | 2026-10-16 | Ventura County |
-| Fortrex | 91 | 2026-08-21 | Imperial County |
-| Renteria Vineyard Management | 91 | 2026-10-15 | Napa County |
-| San Francisco Pretrial Diversion Project, Inc. | 82 | 2026-11-13 | San Francisco County |
+### ❌ Removed Entries (114 records)
+
+| Company | Employees | Effective Date |
+|---------|-----------|----------------|
+| Jabil Inc. | 382 | 2026-11-23 |
+| Visa | 320 | 2026-10-01 |
+| LeeMAH Electronics | 205 | 2026-10-16 |
+| Bumble Bee Foods, LLC | 197 | 2026-11-19 |
+| Sodexo | 164 | 2026-09-30 |
+| ServiceNow, Inc. | 154 | 2026-09-28 |
+| LAZ Parking California (9610 Sky Way) | 139 | 2026-10-06 |
+| Chime Financial, Inc. | 135 | 2026-09-30 |
+| Sharp Metropolitan Medical Campus - Sharp Mesa Vista | 134 | 2026-10-10 |
+| ServiceNow, Inc. | 133 | 2026-09-28 |
+| Silgan Containers | 120 | 2026-10-12 |
+| Roskam Baking Company dba Organic Milling | 115 | 2026-10-02 |
+| Staples Fulfillment Center | 109 | 2026-10-09 |
+| Pixar | 108 | 2026-09-26 |
+| Cellares Corporation | 100 | 2026-10-20 |
+| Essendant Co. | 99 | 2026-10-03 |
+| Volume Services, Inc. (Sodexo) | 93 | 2026-10-16 |
+| Fortrex | 91 | 2026-08-21 |
+| Renteria Vineyard Management | 91 | 2026-10-15 |
+| San Francisco Pretrial Diversion Project, Inc. | 82 | 2026-11-13 |
 
 ---
 ## 📁 File vs Git Comparison
 
-- **Local `file.xlsx` hash:** `fc4490ee650d4d7973672e9f57dbbbda`
+- **Local `file.xlsx` hash:** `2c73db1b759812982a57b17b77afa3c5`
 - **Committed hash:**          `2c73db1b759812982a57b17b77afa3c5`
-- 🔴 **Local file differs from committed version**
+- ✅ Local file matches committed version
 
 **Git status:**
 ```
 M data/changelog.jsonl
- M data/meta.json
  M data/states/ak/changelog.jsonl
  M data/states/ak/warn_cumulative.json
  M data/states/ak/warn_latest.json
@@ -61,7 +62,6 @@ M data/changelog.jsonl
  M data/states/az/warn_snapshot.json
  M data/states/co/changelog.jsonl
  M data/states/co/meta.json
- M data/states/co/sheet_2026.html
  M data/states/co/warn_cumulative.json
  M data/states/co/warn_latest.json
  M data/states/co/warn_snapshot.json
@@ -125,7 +125,6 @@ M data/changelog.jsonl
  M data/states/ky/warn_snapshot.json
  M data/states/la/changelog.jsonl
  M data/states/la/meta.json
- M data/states/la/raw_download
  M data/states/la/warn_cumulative.json
  M data/states/la/warn_latest.json
  M data/states/la/warn_snapshot.json
@@ -146,12 +145,12 @@ M data/changelog.jsonl
  M data/states/me/warn_snapshot.json
  M data/states/mi/changelog.jsonl
  M data/states/mi/meta.json
+ M data/states/mi/raw_download
  M data/states/mi/warn_cumulative.json
  M data/states/mi/warn_latest.json
  M data/states/mi/warn_snapshot.json
  M data/states/mn/changelog.jsonl
  M data/states/mn/meta.json
- M data/states/mn/raw_download.csv
  M data/states/mn/warn_cumulative.json
  M data/states/mn/warn_latest.json
  M data/states/mn/warn_snapshot.json
@@ -160,7 +159,6 @@ M data/changelog.jsonl
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
- M data/states/mt/meta.json
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
@@ -175,7 +173,6 @@ M data/changelog.jsonl
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
- M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
@@ -211,6 +208,7 @@ M data/changelog.jsonl
  M data/states/or/warn_snapshot.json
  M data/states/pa/changelog.jsonl
  M data/states/pa/meta.json
+ M data/states/pa/raw_download
  M data/states/pa/warn_cumulative.json
  M data/states/pa/warn_latest.json
  M data/states/pa/warn_snapshot.json
@@ -229,7 +227,6 @@ M data/changelog.jsonl
  M data/states/sd/warn_latest.json
  M data/states/sd/warn_snapshot.json
  M data/states/tn/changelog.jsonl
- M data/states/tn/raw_download
  M data/states/tn/warn_cumulative.json
  M data/states/tn/warn_latest.json
  M data/states/tn/warn_snapshot.json
@@ -267,22 +264,21 @@ M data/changelog.jsonl
  M data/warn_cumulative.json
  M data/warn_latest.json
  M data/warn_snapshot.json
- M file.xlsx
-?? data/states/mn/archive/plant-closing-mass-layoff-warn-2026-april_tcm1045-749441.pdf
 ```
 
 **Recent commits:**
 ```
+a2d19774 auto: WARN data update [skip ci]
 1f8355f6 auto: WARN data update [skip ci]
 36b52bd0 auto: WARN data update [skip ci]
 46846584 auto: WARN data update [skip ci]
 e8fbd744 Merge pull request #25 from bilalahamad0/claude/dropdown-default-current-year-91a19q
-d54ab130 fix: share one recent-year window between the US map and the rankings
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-08-28T07:41:54.307635+00:00` — +0 added, -114 removed, 0 employees (new)
 - `2026-08-27T21:35:09.508853+00:00` — +1 added, -0 removed, 72 employees (new)
 - `2026-08-27T05:46:33.609458+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-26T20:24:22.006133+00:00` — +0 added, -0 removed, 0 employees (new)
@@ -292,4 +288,3 @@ d54ab130 fix: share one recent-year window between the US map and the rankings
 - `2026-08-25T00:47:18.144168+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-24T12:34:27.927190+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-24T00:47:07.789337+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-08-23T12:28:53.787347+00:00` — +0 added, -0 removed, 0 employees (new)

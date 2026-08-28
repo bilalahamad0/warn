@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-27T21:50:54.026263+00:00",
+  "last_updated": "2026-08-28T07:58:15.014026+00:00",
   "states_live": 47,
   "total_records": 60086,
   "total_employees": 6474850,
@@ -642769,18 +642769,6 @@
     },
     {
       "state": "VA",
-      "company": "AeroFarms Inc. - Rescinded",
-      "notice_date": "2026-04-29",
-      "effective_date": "2026-08-27",
-      "employees": 133,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Ringgold",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "VA",
       "company": "TekSynap Corporation",
       "notice_date": "2026-08-17",
       "effective_date": "2026-10-14",
@@ -642788,6 +642776,18 @@
       "layoff_type": "Layoff",
       "county": "",
       "city": "Statewide",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "AeroFarms Inc. - Rescinded",
+      "notice_date": "2026-04-29",
+      "effective_date": "2026-08-28",
+      "employees": 133,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Ringgold",
       "address": "",
       "industry": ""
     },

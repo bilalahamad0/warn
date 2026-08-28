@@ -1,9 +1,9 @@
 {
-  "total_records": 36,
-  "total_employees": 6495,
+  "total_records": 37,
+  "total_employees": 6701,
   "date_range_start": "2025-01-07",
-  "date_range_end": "2026-07-30",
-  "last_updated": "2026-08-27T05:54:43.457593+00:00",
+  "date_range_end": "2026-08-26",
+  "last_updated": "2026-08-27T21:42:43.072813+00:00",
   "source_url": "https://www.laworks.net/Downloads/Downloads_WFD.asp",
   "records": [
     {
@@ -437,6 +437,18 @@
       "city": "",
       "address": "5700 Morrison Road, New, Orleans, Louisiana 70126",
       "industry": "Couriers and Express Delivery Services"
+    },
+    {
+      "state": "LA",
+      "company": "Mosaic Company",
+      "notice_date": "2026-08-26",
+      "effective_date": "2026-10-30",
+      "employees": 206,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "Uncle Sam - 7250 LA-44, Convent, LA 70723, Faustina \u2013 9959 LA-18, St. James, LA 70086",
+      "industry": "Agricultural Chemical Manufacturing"
     }
   ]
 }

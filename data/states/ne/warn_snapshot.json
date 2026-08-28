@@ -3,7 +3,7 @@
   "total_employees": 45852,
   "date_range_start": "2009-03-09",
   "date_range_end": "2026-06-26",
-  "last_updated": "2026-08-27T05:59:22.906615+00:00",
+  "last_updated": "2026-08-27T21:47:21.506481+00:00",
   "source_url": "https://dol.nebraska.gov/ReemploymentServices/LayoffServices/LayoffsAndDownsizingWARN",
   "records": [
     {
@@ -12056,18 +12056,6 @@
     },
     {
       "state": "NE",
-      "company": "Lannys Bar and Grill",
-      "notice_date": "2011-10-30",
-      "effective_date": null,
-      "employees": 10,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Hadar",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NE",
       "company": "Square D (Schneider Electric)",
       "notice_date": "2011-10-30",
       "effective_date": null,
@@ -12075,6 +12063,18 @@
       "layoff_type": "Layoff",
       "county": "",
       "city": "Lincoln",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Lannys Bar and Grill",
+      "notice_date": "2011-10-30",
+      "effective_date": null,
+      "employees": 10,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Hadar",
       "address": "",
       "industry": ""
     },
