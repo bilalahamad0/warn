@@ -1,11 +1,23 @@
 {
-  "total_records": 1122,
-  "total_employees": 130281,
+  "total_records": 1123,
+  "total_employees": 130826,
   "date_range_start": "2010-07-29",
-  "date_range_end": "2026-08-17",
-  "last_updated": "2026-08-28T22:04:35.682107+00:00",
+  "date_range_end": "2026-08-28",
+  "last_updated": "2026-08-29T05:02:35.213634+00:00",
   "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
   "records": [
+    {
+      "state": "VA",
+      "company": "Crothall Healthcare",
+      "notice_date": "2026-08-28",
+      "effective_date": "2026-10-31",
+      "employees": 545,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Richmond",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "VA",
       "company": "TekSynap Corporation",
@@ -598,7 +610,7 @@
       "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-08-28",
+      "effective_date": "2026-08-29",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",
