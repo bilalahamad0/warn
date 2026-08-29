@@ -1,9 +1,9 @@
 {
-  "total_records": 606,
-  "total_employees": 81450,
+  "total_records": 607,
+  "total_employees": 81669,
   "date_range_start": "2013-02-25",
-  "date_range_end": "2026-08-21",
-  "last_updated": "2026-08-28T07:55:22.156532+00:00",
+  "date_range_end": "2026-08-27",
+  "last_updated": "2026-08-28T22:04:30.457450+00:00",
   "source_url": "https://scworks.org/employer/employer-programs/risk-closing/layoff-notification-reports",
   "records": [
     {
@@ -7276,6 +7276,18 @@
       "county": "Fairfield",
       "city": "",
       "address": "1 Mlily Way, Winnsboro, SC 29180",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "The Westin Hilton Head Island Resort & Spa",
+      "notice_date": "2026-08-27",
+      "effective_date": "2026-11-03",
+      "employees": 219,
+      "layoff_type": "Temporary Closure",
+      "county": "Beaufort",
+      "city": "",
+      "address": "2 Grasslawn Ave., Hilton Head Island, SC 29928",
       "industry": ""
     }
   ]

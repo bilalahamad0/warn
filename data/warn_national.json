@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-28T22:07:17.550251+00:00",
+  "last_updated": "2026-08-29T05:05:20.121711+00:00",
   "states_live": 47,
-  "total_records": 60096,
-  "total_employees": 6475792,
+  "total_records": 60097,
+  "total_employees": 6476337,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -302,8 +302,8 @@
       "name": "Virginia",
       "agency": "Virginia Works (Virginia Employment Commission)",
       "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
-      "total_records": 1122,
-      "total_employees": 130281
+      "total_records": 1123,
+      "total_employees": 130826
     },
     "VT": {
       "name": "Vermont",
@@ -642889,9 +642889,21 @@
     },
     {
       "state": "VA",
+      "company": "Crothall Healthcare",
+      "notice_date": "2026-08-28",
+      "effective_date": "2026-10-31",
+      "employees": 545,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Richmond",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-08-28",
+      "effective_date": "2026-08-29",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",

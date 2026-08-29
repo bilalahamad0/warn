@@ -1,9 +1,9 @@
 {
-  "total_records": 938,
-  "total_employees": 51679,
+  "total_records": 942,
+  "total_employees": 51777,
   "date_range_start": "2011-01-13",
-  "date_range_end": "2026-08-18",
-  "last_updated": "2026-08-28T07:46:03.103332+00:00",
+  "date_range_end": "2026-08-28",
+  "last_updated": "2026-08-28T21:56:18.749459+00:00",
   "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
   "records": [
     {
@@ -1049,6 +1049,42 @@
       "city": "West Des Moines",
       "address": "800 S Jordan Creek Pkwy",
       "industry": "Finance and Insurance"
+    },
+    {
+      "state": "IA",
+      "company": "Verschoor Meats, Inc",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-08-21",
+      "employees": 42,
+      "layoff_type": "Closing",
+      "county": "Woodbury",
+      "city": "Sioux City",
+      "address": "1401 Bluff Rd",
+      "industry": "Wholesale Trade"
+    },
+    {
+      "state": "IA",
+      "company": "RTX",
+      "notice_date": "2026-08-25",
+      "effective_date": "2026-09-30",
+      "employees": 1,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Linn",
+      "city": "Cedar Rapids",
+      "address": "400 Collins Rd NE",
+      "industry": "Professional, Scientific, and Technical Services"
+    },
+    {
+      "state": "IA",
+      "company": "People First Sanitation",
+      "notice_date": "2026-08-28",
+      "effective_date": "2026-09-25",
+      "employees": 54,
+      "layoff_type": "Mass Layoff",
+      "county": "Woodbury",
+      "city": "Sioux City",
+      "address": "1000 Cunningham Dr",
+      "industry": "Administrative and Support and Waste Management and Remediation Services"
     },
     {
       "state": "IA",
@@ -3317,6 +3353,18 @@
       "city": "Ankeny",
       "address": "4707 SE Rio Court, Suites 106-110",
       "industry": "Construction"
+    },
+    {
+      "state": "IA",
+      "company": "RTX",
+      "notice_date": "2026-08-25",
+      "effective_date": "2026-09-30",
+      "employees": 1,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Linn",
+      "city": "Cedar Rapids",
+      "address": "400 Collins Rd NE",
+      "industry": "Professional, Scientific, and Technical Services"
     },
     {
       "state": "IA",

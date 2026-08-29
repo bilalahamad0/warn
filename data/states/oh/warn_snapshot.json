@@ -1,11 +1,23 @@
 {
-  "total_records": 802,
-  "total_employees": 118974,
+  "total_records": 803,
+  "total_employees": 119078,
   "date_range_start": "2017-01-09",
-  "date_range_end": "2026-08-21",
-  "last_updated": "2026-08-28T07:55:00.543706+00:00",
+  "date_range_end": "2026-08-27",
+  "last_updated": "2026-08-28T22:04:13.638929+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
+    {
+      "state": "OH",
+      "company": "Cornerstone Building Brands",
+      "notice_date": "2026-08-27",
+      "effective_date": "2026-12-01",
+      "employees": 104,
+      "layoff_type": "Closure",
+      "county": "Wood",
+      "city": "Walbridge",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "OH",
       "company": "Insteel Wire Products Company",
