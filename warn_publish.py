@@ -294,13 +294,13 @@ def _build_recent_table(new_keys: list = None) -> tuple:
     controls_html = f"""
     <div class="filter-row">
       <input type="search" id="filter-company" class="filter-input" placeholder="Company, e.g. meta, linkedin" autocomplete="off"/>
-      <select id="filter-county" class="filter-input">
+      <select id="filter-county" class="filter-input" aria-label="Filter by county">
         <option value="">All counties</option>{_opt(counties)}
       </select>
-      <select id="filter-industry" class="filter-input">
+      <select id="filter-industry" class="filter-input" aria-label="Filter by industry">
         <option value="">All industries</option>{_opt(industries)}
       </select>
-      <select id="filter-type" class="filter-input">
+      <select id="filter-type" class="filter-input" aria-label="Filter by notice type">
         <option value="">All types</option>{_opt(types)}
       </select>
       <input type="date" id="filter-date-from" class="filter-input" title="Notice date from" value="{date_from_default}" data-default="{date_from_default}" />
@@ -1163,7 +1163,7 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
       padding: 1.25rem 2rem; text-align: center;
       font-size: 0.75rem; color: var(--muted);
     }}
-    footer a {{ color: var(--accent); text-decoration: none; }}
+    footer a {{ color: var(--accent); text-decoration: underline; }}
     .visitor-counter {{ white-space: nowrap; }}
     .visitor-counter strong {{ color: var(--accent); font-variant-numeric: tabular-nums; }}
 
@@ -1312,7 +1312,8 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
       <span class="section-tag">{recent_total} total</span>
     </div>
     {recent_controls}
-    <div class="table-wrap">
+    <div class="table-wrap" tabindex="0" role="region"
+         aria-label="Recent notices">
       {recent_table}
     </div>
     {recent_table_controls}
