@@ -836,6 +836,7 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
       min-height: 100vh;
       overflow-x: hidden;
     }}
+    a {{ color: var(--accent); text-decoration: underline; }}
     body::before {{
       content: '';
       position: fixed; inset: 0; z-index: -1;
@@ -867,8 +868,6 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
     .subtitle {{ font-size: 0.75rem; color: var(--muted); }}
     .header-right {{ display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }}
     .header-meta {{ font-size: 0.75rem; color: var(--muted); text-align: right; white-space: nowrap; }}
-    .header-meta a {{ color: var(--accent); text-decoration: none; }}
-    .header-meta a:hover {{ text-decoration: underline; }}
 
     /* ── Main ── */
     main {{ max-width: 1400px; margin: 0 auto; padding: 1.5rem 2rem; }}
@@ -968,7 +967,6 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
       font-size: 0.84rem; color: var(--muted); line-height: 1.5;
     }}
     .coverage-note strong {{ color: var(--text); font-weight: 600; }}
-    .coverage-note a {{ color: var(--accent); }}
     .coverage-note.degraded {{ border-left-color: var(--accent4); }}
 
     /* ── KPI cards ── */
@@ -1163,7 +1161,6 @@ SITE_HTML_TEMPLATE = r"""<!DOCTYPE html>
       padding: 1.25rem 2rem; text-align: center;
       font-size: 0.75rem; color: var(--muted);
     }}
-    footer a {{ color: var(--accent); text-decoration: underline; }}
     .visitor-counter {{ white-space: nowrap; }}
     .visitor-counter strong {{ color: var(--accent); font-variant-numeric: tabular-nums; }}
 
