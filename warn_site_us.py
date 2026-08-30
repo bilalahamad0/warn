@@ -743,7 +743,7 @@ US_TEMPLATE = """<!DOCTYPE html>
 html {{ -webkit-text-size-adjust:100%; }}
 body {{ background:var(--bg); color:var(--text);
         font:14px/1.5 Inter,system-ui,sans-serif; }}
-a {{ color:var(--accent); text-decoration:none; }}
+a {{ color:var(--accent); text-decoration:underline; }}
 header {{ position:sticky; top:0; z-index:10; background:rgba(13,17,23,.97);
           border-bottom:1px solid var(--border); padding:10px 14px; }}
 header h1 {{ font-size:17px; display:inline; margin-right:8px; }}
@@ -1004,10 +1004,12 @@ footer {{ color:var(--muted); font-size:12px; text-align:center;
       <a href="data.json">data.json</a>.
       Searching a company scans every record in the dataset, not just the
       page on screen — results page the same way.
-      Filter: <select id="stfilter"><option value="">All states</option>
+      Filter: <select id="stfilter" aria-label="Filter notices by state">
+      <option value="">All states</option>
       {state_options}
       {unavailable_options}</select>
-      <input id="cofilter" type="search" placeholder="Search company…">
+      <input id="cofilter" type="search" placeholder="Search company…"
+             aria-label="Search company">
       <span id="filternote" style="color:var(--muted);font-size:12px"></span>
       <span id="ca-hint" hidden style="color:var(--muted);font-size:12px">
         California also has a full dashboard — charts, industry breakdown,
@@ -1018,10 +1020,12 @@ footer {{ color:var(--muted); font-size:12px; text-align:center;
       <button class="pgbtn pgprev">← Prev</button>
       <span class="pginfo">Page 1 of {total_pages}</span>
       <button class="pgbtn pgnext">Next →</button>
-      <span style="color:var(--muted);font-size:13px">Jump to:</span>
-      <input class="pgjump" type="number" min="1" max="{total_pages}" value="1">
+      <label style="color:var(--muted);font-size:13px">Jump to:
+        <input class="pgjump" type="number" min="1"
+               max="{total_pages}" value="1"></label>
     </div>
-    <div style="overflow-x:auto"><table id="recent">
+    <div style="overflow-x:auto" tabindex="0" role="region"
+         aria-label="All notices"><table id="recent">
       <thead><tr><th>State</th><th>Company</th><th>Location</th>
         <th>Notice</th><th>Effective</th><th>Employees</th></tr></thead>
       <tbody>{recent_rows}</tbody>
@@ -1030,8 +1034,9 @@ footer {{ color:var(--muted); font-size:12px; text-align:center;
       <button class="pgbtn pgprev">← Prev</button>
       <span class="pginfo">Page 1 of {total_pages}</span>
       <button class="pgbtn pgnext">Next →</button>
-      <span style="color:var(--muted);font-size:13px">Jump to:</span>
-      <input class="pgjump" type="number" min="1" max="{total_pages}" value="1">
+      <label style="color:var(--muted);font-size:13px">Jump to:
+        <input class="pgjump" type="number" min="1"
+               max="{total_pages}" value="1"></label>
     </div>
   </section>
 
