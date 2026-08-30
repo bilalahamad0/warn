@@ -204,18 +204,46 @@ def chart_us_monthly(df: pd.DataFrame, save_png: bool = False) -> go.Figure:
 
 
 def _year_frames(df: pd.DataFrame, max_years: int = 6) -> list:
-    """(label, frame) pairs: each recent year, newest first, then all time."""
-    years = sorted(
+    """(label, frame) pairs: each recent year, newest first, then all time.
+
+    `event_date` falls back to the effective date when a filing carries no
+    notice date, so one notice can open a year bucket well past today. Those
+    buckets stay selectable — the notice is real — but they sit outside the
+    `max_years` window (see `warn_charts.recent_year_window`, which the US map
+    shares), and `_default_year_index` keeps one from being the view a chart
+    opens on.
+    """
+    years = warn_charts.recent_year_window(
         {int(y) for y in df["event_date"].dropna().dt.year.unique()},
-        reverse=True,
-    )[:max_years]
+        max_years=max_years,
+    )
     frames = [(str(y), df[df["event_date"].dt.year == y]) for y in years]
     frames.append(("All time", df))
     return frames
 
 
-def _year_menu(fig: go.Figure, labels: list) -> go.Figure:
-    """One-visible-trace-at-a-time dropdown over per-year traces."""
+def _default_year_index(labels: list) -> int:
+    """Index of the frame a year dropdown should open on: the current year.
+
+    Never a future one. Labels run newest-first, so opening on `labels[0]`
+    meant that from the moment a single 2027-effective notice landed, both
+    the state ranking and the employer ranking greeted every visitor with an
+    almost-empty 2027 chart. Falls back to the newest year already begun,
+    then to "All time" (always last) if every record is future-dated.
+    """
+    now_year = datetime.now(timezone.utc).year
+    started = [i for i, lbl in enumerate(labels)
+               if lbl.isdigit() and int(lbl) <= now_year]
+    return started[0] if started else len(labels) - 1
+
+
+def _year_menu(fig: go.Figure, labels: list, active: int) -> go.Figure:
+    """One-visible-trace-at-a-time dropdown over per-year traces.
+
+    `active` is required rather than defaulted because it has to name the
+    same frame the caller built visible — otherwise the collapsed button
+    reads one year while the bars underneath it show another.
+    """
     n = len(labels)
     fig.update_layout(
         updatemenus=[
@@ -225,6 +253,7 @@ def _year_menu(fig: go.Figure, labels: list) -> go.Figure:
                          args=[{"visible": [j == i for j in range(n)]}])
                     for i, lbl in enumerate(labels)
                 ],
+                active=active,
                 direction="down",
                 x=0.01, y=1.12, xanchor="left", yanchor="top",
                 bgcolor="#161b22", bordercolor="#21262d",
@@ -420,6 +449,8 @@ def chart_us_top_states(df: pd.DataFrame, save_png: bool = False) -> go.Figure:
         return r[r["employees"] > 0]
 
     frames = [(label, ranked(frame)) for label, frame in _year_frames(df)]
+    year_labels = [label for label, _ in frames]
+    default = _default_year_index(year_labels)
     fig = go.Figure()
     max_rows = 0
     for i, (label, r) in enumerate(frames):
@@ -427,7 +458,7 @@ def chart_us_top_states(df: pd.DataFrame, save_png: bool = False) -> go.Figure:
         fig.add_bar(
             x=r["employees"], y=r["state"], orientation="h",
             name=label, marker_color=ACCENT3,
-            customdata=r["notices"], visible=(i == 0),
+            customdata=r["notices"], visible=(i == default),
             text=[f"{v:,.0f}" for v in r["employees"]],
             textposition="outside",
             textfont=dict(size=10, color="#8b949e"),
@@ -449,7 +480,7 @@ def chart_us_top_states(df: pd.DataFrame, save_png: bool = False) -> go.Figure:
             showarrow=False, font=dict(size=11, color="#8b949e"),
         )],
     )
-    fig = _year_menu(_apply_theme(fig), [label for label, _ in frames])
+    fig = _year_menu(_apply_theme(fig), year_labels, default)
     warn_charts._save_chart(fig, "us_top_states", save_png)
     return fig
 
@@ -490,11 +521,13 @@ def chart_us_top_companies(df: pd.DataFrame, save_png: bool = False) -> go.Figur
         return top
 
     frames = [(label, ranked(frame)) for label, frame in _year_frames(df)]
+    year_labels = [label for label, _ in frames]
+    default = _default_year_index(year_labels)
     fig = go.Figure()
     for i, (label, t) in enumerate(frames):
         fig.add_bar(
             x=t["employees"], y=t["label"], orientation="h",
-            name=label, marker_color=ACCENT, visible=(i == 0),
+            name=label, marker_color=ACCENT, visible=(i == default),
             customdata=t["company"],
             text=[f"{v:,.0f}" for v in t["employees"]],
             textposition="outside",
@@ -507,7 +540,8 @@ def chart_us_top_companies(df: pd.DataFrame, save_png: bool = False) -> go.Figur
                       showlegend=False, hovermode="y unified")
     fig = _year_menu(
         _apply_theme(fig, margin=dict(l=10, r=30, t=40, b=60)),
-        [label for label, _ in frames],
+        year_labels,
+        default,
     )
     fig.update_yaxes(automargin=True)
     warn_charts._save_chart(fig, "us_top_companies", save_png)

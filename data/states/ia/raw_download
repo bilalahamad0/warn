@@ -7,7 +7,7 @@
   "layoff_type": "Closing ",
   "employees": 7,
   "notice_date": "2026-01-20 00:00:00",
-  "effective_date": "3/32/2026",
+  "effective_date": "2026-03-02 00:00:00",
   "industry": "Manufacturing "
  },
  {
@@ -922,6 +922,72 @@
   "notice_date": "2026-08-04 00:00:00",
   "effective_date": "2026-10-03 00:00:00",
   "industry": "Finance and Insurance "
+ },
+ {
+  "company": "Winnebago Industries",
+  "address": "605 W Crystal Lake Rd",
+  "city": "Forest City ",
+  "county": "Winnebago",
+  "layoff_type": "Mass Layoff ",
+  "employees": 27,
+  "notice_date": "2026-08-13 00:00:00",
+  "effective_date": "2026-11-30 00:00:00",
+  "industry": "Manufacturing"
+ },
+ {
+  "company": "RTX",
+  "address": "400 Collins Rd NE ",
+  "city": "Cedar Rapids",
+  "county": "Linn",
+  "layoff_type": "Mass Layoff ",
+  "employees": 1,
+  "notice_date": "2026-08-18 00:00:00",
+  "effective_date": "2026-09-30 00:00:00",
+  "industry": "Professional, Scientific, and Technical Services"
+ },
+ {
+  "company": "Wells Fargo",
+  "address": "800 S Jordan Creek Pkwy",
+  "city": "West Des Moines",
+  "county": "Polk",
+  "layoff_type": "Amendment - Additional Employees",
+  "employees": 14,
+  "notice_date": "2026-08-18 00:00:00",
+  "effective_date": "2026-10-17 00:00:00",
+  "industry": "Finance and Insurance "
+ },
+ {
+  "company": "Verschoor Meats, Inc",
+  "address": "1401 Bluff Rd",
+  "city": "Sioux City",
+  "county": "Woodbury",
+  "layoff_type": "Closing ",
+  "employees": 42,
+  "notice_date": "2026-08-21 00:00:00",
+  "effective_date": "2026-08-21 00:00:00",
+  "industry": "Wholesale Trade "
+ },
+ {
+  "company": "RTX",
+  "address": "400 Collins Rd NE ",
+  "city": "Cedar Rapids",
+  "county": "Linn",
+  "layoff_type": "Amendment - Additional Employees ",
+  "employees": 1,
+  "notice_date": "2026-08-25 00:00:00",
+  "effective_date": "2026-09-30 00:00:00",
+  "industry": "Professional, Scientific, and Technical Services"
+ },
+ {
+  "company": "People First Sanitation",
+  "address": "1000 Cunningham Dr",
+  "city": "Sioux City",
+  "county": "Woodbury",
+  "layoff_type": "Mass Layoff",
+  "employees": 54,
+  "notice_date": "2026-08-28 00:00:00",
+  "effective_date": "2026-09-25 00:00:00",
+  "industry": "Administrative and Support and Waste Management and Remediation Services"
  },
  {
   "company": "John Deere Ottumwa Works ",
@@ -3001,6 +3067,17 @@
   "notice_date": "2025-12-23 00:00:00",
   "effective_date": "2025-12-23 00:00:00",
   "industry": "Construction "
+ },
+ {
+  "company": "RTX",
+  "address": "400 Collins Rd NE ",
+  "city": "Cedar Rapids",
+  "county": "Linn",
+  "layoff_type": "Amendment - Additional Employees ",
+  "employees": 1,
+  "notice_date": "2026-08-25 00:00:00",
+  "effective_date": "2026-09-30 00:00:00",
+  "industry": "Professional, Scientific, and Technical Services"
  },
  {
   "company": "GXO Warehouse Company, Inc",
@@ -6466,17 +6543,6 @@
   "notice_date": "12/20/2022",
   "effective_date": "2023-01-16 00:00:00",
   "industry": "Manufacturing "
- },
- {
-  "company": "Arcosa Wind Towers, Inc ",
-  "address": "801 N 19th Ave E",
-  "city": "Newton",
-  "county": "Jasper",
-  "layoff_type": "Mass Layoff ",
-  "employees": 82,
-  "notice_date": "8/18/2021",
-  "effective_date": "2021-10-19 00:00:00",
-  "industry": "Manufacturing"
  },
  {
   "company": "Collins Aerospace ",

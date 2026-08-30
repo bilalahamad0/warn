@@ -1,9 +1,9 @@
 {
-  "total_records": 855,
-  "total_employees": 87890,
+  "total_records": 858,
+  "total_employees": 87993,
   "date_range_start": "2015-01-02",
-  "date_range_end": "2026-08-03",
-  "last_updated": "2026-08-07T04:08:36.925465+00:00Z",
+  "date_range_end": "2026-08-14",
+  "last_updated": "2026-08-29T16:10:43.179120+00:00",
   "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
   "records": [
     {
@@ -437,6 +437,42 @@
       "city": "",
       "address": "",
       "industry": "45,9991: Marijuana Stores, Medical or Recreational"
+    },
+    {
+      "state": "CO",
+      "company": "Battelle",
+      "notice_date": "2026-08-06",
+      "effective_date": "2026-10-05",
+      "employees": 12,
+      "layoff_type": "PCAPP Milestone Project Completions",
+      "county": "Pueblo",
+      "city": "",
+      "address": "",
+      "industry": "56,2910: Remediation Services"
+    },
+    {
+      "state": "CO",
+      "company": "Battelle",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-10-12",
+      "employees": 1,
+      "layoff_type": "PCAPP Milestone Project Completions",
+      "county": "Pueblo",
+      "city": "",
+      "address": "",
+      "industry": "56,2910: Remediation Services"
+    },
+    {
+      "state": "CO",
+      "company": "Mission Foods",
+      "notice_date": "2026-08-14",
+      "effective_date": "2026-10-13",
+      "employees": 90,
+      "layoff_type": "Closure",
+      "county": "Pueblo (Rural Alliance)",
+      "city": "",
+      "address": "",
+      "industry": "31,1830: Bakery & Tortilla Manufacturing"
     },
     {
       "state": "CO",

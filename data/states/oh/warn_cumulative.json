@@ -1,9 +1,9 @@
 {
-  "total_records": 984,
-  "total_employees": 139673,
+  "total_records": 986,
+  "total_employees": 139842,
   "date_range_start": "2015-01-05",
-  "date_range_end": "2026-08-06",
-  "last_updated": "2026-08-07T12:59:57.502862+00:00",
+  "date_range_end": "2026-08-27",
+  "last_updated": "2026-08-30T02:35:08.301543+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
     {
@@ -11271,6 +11271,30 @@
       "layoff_type": "Closure",
       "county": "Butler",
       "city": "West Chester",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Insteel Wire Products Company",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-10-20",
+      "employees": 65,
+      "layoff_type": "Closure",
+      "county": "Wyandot",
+      "city": "Upper Sandusky",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Cornerstone Building Brands",
+      "notice_date": "2026-08-27",
+      "effective_date": "2026-12-01",
+      "employees": 104,
+      "layoff_type": "Closure",
+      "county": "Wood",
+      "city": "Walbridge",
       "address": "",
       "industry": ""
     }

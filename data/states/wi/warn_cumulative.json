@@ -1,9 +1,9 @@
 {
-  "total_records": 633,
-  "total_employees": 59193,
+  "total_records": 635,
+  "total_employees": 59336,
   "date_range_start": "2020-01-02",
-  "date_range_end": "2026-08-05",
-  "last_updated": "2026-08-07T13:03:11.778671+00:00",
+  "date_range_end": "2026-08-24",
+  "last_updated": "2026-08-30T02:38:16.105731+00:00",
   "source_url": "https://dwd.wisconsin.gov/dislocatedworker/warn/",
   "records": [
     {
@@ -7601,6 +7601,30 @@
       "city": "Unknown - Remote Employees",
       "address": "",
       "industry": "General Medical and Surgical Hospitals"
+    },
+    {
+      "state": "WI",
+      "company": "Durr CTS, Inc.",
+      "notice_date": "2026-08-12",
+      "effective_date": "2026-10-13",
+      "employees": 75,
+      "layoff_type": "Facility Closure",
+      "county": "Brown",
+      "city": "De Pere",
+      "address": "",
+      "industry": "Automatic Environmental Control Mfg"
+    },
+    {
+      "state": "WI",
+      "company": "Foremost Farms USA",
+      "notice_date": "2026-08-24",
+      "effective_date": "2026-12-15",
+      "employees": 68,
+      "layoff_type": "Facility Closure",
+      "county": "Wood",
+      "city": "Marshfield",
+      "address": "",
+      "industry": "Cheese Mfg"
     }
   ]
 }

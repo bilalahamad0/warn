@@ -2446,5 +2446,86 @@
   "GA WARN ID": "GA202600006",
   "Total Number of Affected Employees": "110",
   "Type of Layoff or Closure": "Permanent Layoff / Reduction in Force"
+ },
+ "84050": {
+  "Company Name": "SMBC Manubank",
+  "County": "",
+  "First Date of Separation": "10/09/2026",
+  "First Location Address": "277 Park Ave, New York, New York",
+  "GA WARN ID": "GA202600008",
+  "Total Number of Affected Employees": "5",
+  "Type of Layoff or Closure": "Permanent Layoff / Reduction in Force"
+ },
+ "84163": {
+  "Company Name": "Meyn Americas",
+  "County": "Cherokee County",
+  "First Date of Separation": "10/01/2026",
+  "First Location Address": "1000 Evenflo Dr, Ball Ground, Georgia",
+  "GA WARN ID": "GA202600010",
+  "Total Number of Affected Employees": "150",
+  "Type of Layoff or Closure": "Permanent Closure"
+ },
+ "84177": {
+  "Company Name": "Anchor Glass Container Corporation",
+  "County": "Houston County",
+  "First Date of Separation": "10/17/2026",
+  "First Location Address": "1044 Booth Rd, Warner Robins, Georgia",
+  "GA WARN ID": "GA202600009",
+  "Total Number of Affected Employees": "168",
+  "Type of Layoff or Closure": "Permanent Closure"
+ },
+ "84198": {
+  "Company Name": "Asama Coldwater Manufacturing Georgia",
+  "County": "Warren County",
+  "First Date of Separation": "10/14/2026",
+  "First Location Address": "975 Thomson Hwy, Warrenton, Georgia",
+  "GA WARN ID": "GA202600011",
+  "Total Number of Affected Employees": "102",
+  "Type of Layoff or Closure": "Permanent Closure"
+ },
+ "84315": {
+  "Company Name": "KidsPeace National Centers of Georgia",
+  "County": "Carroll County",
+  "First Date of Separation": "10/24/2026",
+  "First Location Address": "101 Kidspeace Dr, Bowdon, Georgia",
+  "GA WARN ID": "GA202600016",
+  "Total Number of Affected Employees": "95",
+  "Type of Layoff or Closure": "Permanent Closure"
+ },
+ "84342": {
+  "Company Name": "Republic National Distributing Company of Texas, LLC",
+  "County": "Appling County",
+  "First Date of Separation": "10/19/2026",
+  "First Location Address": "1 National Dr SW, Atlanta, Georgia",
+  "GA WARN ID": "GA202600012",
+  "Total Number of Affected Employees": "157",
+  "Type of Layoff or Closure": "Permanent Closure"
+ },
+ "84343": {
+  "Company Name": "Republic National Distributing Company, LLC",
+  "County": "Cobb County",
+  "First Date of Separation": "10/19/2026",
+  "First Location Address": "1 National Dr SW, Atlanta, Georgia",
+  "GA WARN ID": "GA202600013",
+  "Total Number of Affected Employees": "321",
+  "Type of Layoff or Closure": "Permanent Closure"
+ },
+ "84344": {
+  "Company Name": "Young's Market Company of Arizona, LLC",
+  "County": "Cobb County",
+  "First Date of Separation": "10/19/2026",
+  "First Location Address": "1 National Dr SW, Atlanta, Georgia",
+  "GA WARN ID": "GA202600014",
+  "Total Number of Affected Employees": "2",
+  "Type of Layoff or Closure": "Permanent Closure"
+ },
+ "84345": {
+  "Company Name": "Young's Market Company, LLC",
+  "County": "Cobb County",
+  "First Date of Separation": "10/19/2026",
+  "First Location Address": "1 National Dr SW, Atlanta, Georgia",
+  "GA WARN ID": "GA202600015",
+  "Total Number of Affected Employees": "78",
+  "Type of Layoff or Closure": "Permanent Closure"
  }
 }

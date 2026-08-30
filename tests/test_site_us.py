@@ -368,3 +368,79 @@ def test_legacy_stub_stays_tiny(tmp_path):
     site.mkdir()
     stub = warn_site_us.build_legacy_us_redirect(site_dir=site, legacy_dir=site / "us")
     assert len(stub.read_text()) < 4000
+
+
+# ---------------------------------------------------------------------------
+# Year dropdowns (states ranked / top employers)
+# ---------------------------------------------------------------------------
+
+
+@pytest.fixture
+def future_dated_frame():
+    """Seven whole years of history plus one lone future-dated notice.
+
+    Mirrors the shape of the real dataset: a Michigan GM filing carrying no
+    notice date and a 2027 effective date opens a year bucket 17 months ahead
+    of today, because event_date falls back to the effective date.
+    """
+    records = [
+        {"state": "CA", "company": f"Acme {y}", "notice_date": f"{y}-06-01",
+         "effective_date": f"{y}-08-01", "employees": 100, "city": "LA"}
+        for y in range(YEAR - 6, YEAR + 1)
+    ]
+    records.append(
+        {"state": "MI", "company": "General Motors", "notice_date": None,
+         "effective_date": f"{YEAR + 1}-01-14", "employees": 350,
+         "city": "Lansing"}
+    )
+    return warn_site_us._to_frame({"records": records})
+
+
+def test_year_dropdown_opens_on_the_current_year_not_a_future_one(
+    future_dated_frame,
+):
+    labels = [lbl for lbl, _ in warn_site_us._year_frames(future_dated_frame)]
+    # The future bucket stays selectable — that notice is real …
+    assert labels[0] == str(YEAR + 1)
+    # … but it is never what the chart opens on.
+    assert labels[warn_site_us._default_year_index(labels)] == str(YEAR)
+
+
+def test_a_future_year_never_evicts_a_recent_year_from_the_window(
+    future_dated_frame,
+):
+    labels = [
+        lbl for lbl, _ in warn_site_us._year_frames(future_dated_frame, max_years=6)
+    ]
+    # Six recent years, with the future bucket beside them — not instead of
+    # one of them: counted against max_years it cost the window its oldest year.
+    assert labels == (
+        [str(YEAR + 1)]
+        + [str(y) for y in range(YEAR, YEAR - 6, -1)]
+        + ["All time"]
+    )
+
+
+def test_default_year_index_falls_back_past_a_missing_current_year():
+    # Newest year already begun, when the current one filed nothing.
+    assert warn_site_us._default_year_index(
+        [str(YEAR + 1), str(YEAR - 1), str(YEAR - 2), "All time"]
+    ) == 1
+    # Entirely future-dated data has no started year — fall back to All time.
+    assert warn_site_us._default_year_index([str(YEAR + 1), "All time"]) == 1
+    assert warn_site_us._default_year_index(["All time"]) == 0
+
+
+@pytest.mark.parametrize(
+    "builder", ["chart_us_top_states", "chart_us_top_companies"]
+)
+def test_ranking_charts_paint_the_current_year_on_load(
+    future_dated_frame, builder, tmp_path, monkeypatch
+):
+    monkeypatch.setattr(warn_charts, "CHARTS_DIR", tmp_path)
+    fig = getattr(warn_site_us, builder)(future_dated_frame, save_png=False)
+    menu = fig.layout.updatemenus[0]
+    # The collapsed button and the bars beneath it must name the same year,
+    # and that year is the current one.
+    assert [t.name for t in fig.data if t.visible] == [str(YEAR)]
+    assert menu.buttons[menu.active].label == str(YEAR)

@@ -1,11 +1,23 @@
 {
-  "total_records": 199,
-  "total_employees": 21872,
+  "total_records": 200,
+  "total_employees": 21873,
   "date_range_start": "2009-01-09",
-  "date_range_end": "2026-07-01",
-  "last_updated": "2026-08-07T12:51:14.062600+00:00",
+  "date_range_end": "2026-08-10",
+  "last_updated": "2026-08-30T02:27:11.391715+00:00",
   "source_url": "https://www.labor.idaho.gov/businesss/layoff-assistance/",
   "records": [
+    {
+      "state": "ID",
+      "company": "JeniusBank (digital banking unit of SMBC Manubank)",
+      "notice_date": "2026-08-10",
+      "effective_date": "2026-10-09",
+      "employees": 1,
+      "layoff_type": "",
+      "county": "",
+      "city": "New York",
+      "address": "277 Park Avenue",
+      "industry": ""
+    },
     {
       "state": "ID",
       "company": "Fortrex",

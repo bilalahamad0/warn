@@ -1,11 +1,23 @@
 {
-  "total_records": 79,
+  "total_records": 80,
   "total_employees": 8758,
   "date_range_start": "2007-05-16",
-  "date_range_end": "2026-06-29",
-  "last_updated": "2026-08-07T04:20:49.482344+00:00Z",
+  "date_range_end": "2026-08-10",
+  "last_updated": "2026-08-29T16:28:36.309343+00:00",
   "source_url": "https://dlr.sd.gov/workforce_services/businesses/warn_notices.aspx",
   "records": [
+    {
+      "state": "SD",
+      "company": "JeniusBank (digital unit of SMBC Manubank)",
+      "notice_date": "2026-08-10",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "",
+      "county": "",
+      "city": "Nationwide",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "SD",
       "company": "Conduent",

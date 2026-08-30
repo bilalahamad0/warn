@@ -1,11 +1,23 @@
 {
-  "total_records": 1015,
-  "total_employees": 152496,
+  "total_records": 1016,
+  "total_employees": 152647,
   "date_range_start": "2008-07-10",
-  "date_range_end": "2026-07-21",
-  "last_updated": "2026-08-07T04:12:19.966188+00:00Z",
+  "date_range_end": "2026-08-13",
+  "last_updated": "2026-08-29T16:19:20.793462+00:00",
   "source_url": "https://www.in.gov/dwd/warn-notices/current-warn-notices/",
   "records": [
+    {
+      "state": "IN",
+      "company": "Postal Center International Inc",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-08-13",
+      "employees": 151,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Brownsburg",
+      "address": "",
+      "industry": "Transportation and Warehousing"
+    },
     {
       "state": "IN",
       "company": "Forest River, Inc.",

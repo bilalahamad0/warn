@@ -1,41 +1,16 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-08-07 13:03:14 UTC
+**Generated:** 2026-08-30 02:38:18 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 86 | 36 | +0/+50 |
-| Total employees | 4,958 | 2,560 | -2,398 |
+| Total records | 36 | 36 | +0/+0 |
+| Total employees | 2,560 | 2,560 | +0 |
 
 ### ✅ No new entries.
-
-### ❌ Removed Entries (50 records)
-
-| Company | Employees | Effective Date |
-|---------|-----------|----------------|
-| Visa | 320 | 2026-10-01 |
-| Sodexo | 164 | 2026-09-30 |
-| ServiceNow, Inc. | 154 | 2026-09-28 |
-| Chime Financial, Inc. | 135 | 2026-09-30 |
-| ServiceNow, Inc. | 133 | 2026-09-28 |
-| Pixar | 108 | 2026-09-26 |
-| Fortrex | 91 | 2026-08-21 |
-| San Francisico Pretrial Diversion Project, Inc. | 82 | 2026-11-13 |
-| PD Systems | 81 | 2026-08-28 |
-| Chick-fil-A & Fig | 77 | 2026-09-27 |
-| Salesforce, Inc. | 74 | 2026-10-05 |
-| Tencent America LLC | 68 | 2026-09-28 |
-| Intel Corporation - SC-12 | 67 | 2026-08-15 |
-| O'Briens Market Inc. | 67 | 2026-09-27 |
-| Nutanix, Inc. | 65 | 2026-10-05 |
-| WeDriveU, Inc. | 63 | 2026-10-01 |
-| Federal Express Corporation | 62 | 2026-09-29 |
-| New Leaf Community Markets, Inc. | 61 | 2026-09-20 |
-| Yamaha Motor Finance Corporation U.S.A. | 61 | 2026-10-01 |
-| Silgan Containers | 55 | 2026-09-21 |
 
 ---
 ## 📁 File vs Git Comparison
@@ -52,7 +27,6 @@ M data/changelog.jsonl
  M data/states/ak/warn_latest.json
  M data/states/ak/warn_snapshot.json
  M data/states/al/changelog.jsonl
- M data/states/al/raw_download
  M data/states/al/warn_cumulative.json
  M data/states/al/warn_latest.json
  M data/states/al/warn_snapshot.json
@@ -160,7 +134,6 @@ M data/changelog.jsonl
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
- M data/states/mt/meta.json
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
@@ -175,7 +148,6 @@ M data/changelog.jsonl
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
- M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
@@ -228,6 +200,11 @@ M data/changelog.jsonl
  M data/states/sd/warn_cumulative.json
  M data/states/sd/warn_latest.json
  M data/states/sd/warn_snapshot.json
+ M data/states/tn/changelog.jsonl
+ M data/states/tn/raw_download
+ M data/states/tn/warn_cumulative.json
+ M data/states/tn/warn_latest.json
+ M data/states/tn/warn_snapshot.json
  M data/states/ut/changelog.jsonl
  M data/states/ut/meta.json
  M data/states/ut/warn_cumulative.json
@@ -235,6 +212,7 @@ M data/changelog.jsonl
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
+ M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -265,23 +243,23 @@ M data/changelog.jsonl
 
 **Recent commits:**
 ```
-8b84e62a Merge pull request #22 from bilalahamad0/fix/oh-backfill-and-verify
-16f404ff chore: rebuild artifacts with the Ohio 2023-2025 backfill
-0b18d893 data: backfill Ohio's 2023-2025 archive gap (265 records, all 36 months)
-f9f25219 Merge pull request #21 from bilalahamad0/fix/date-semantics-and-gap-honesty
-94322af3 chore: rebuild all artifacts from the integrated dataset
+b71f8db9 auto: WARN data update [skip ci]
+8fd92874 auto: WARN data update [skip ci]
+d04c4148 auto: WARN data update [skip ci]
+2e734ff2 auto: WARN data update [skip ci]
+a2d19774 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
-- `2026-08-07T12:47:50.735677+00:00` — +0 added, -50 removed, 0 employees (new)
-- `2026-08-07T04:08:11.219674+00:00Z` — +5 added, -0 removed, 240 employees (new)
-- `2026-08-06T13:48:39.914019+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-08-06T01:35:16.983844+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-08-05T13:50:38.715645+00:00Z` — +0 added, -46 removed, 0 employees (new)
-- `2026-08-05T01:38:13.496412+00:00Z` — +10 added, -0 removed, 707 employees (new)
-- `2026-08-04T13:55:57.828318+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-08-04T01:34:05.729837+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-08-03T14:23:26.774431+00:00Z` — +0 added, -0 removed, 0 employees (new)
-- `2026-08-03T01:47:22.895772+00:00Z` — +0 added, -0 removed, 0 employees (new)
+- `2026-08-30T02:23:18.513480+00:00` — +0 added, -0 removed, 0 employees (new)
+- `2026-08-29T16:10:22.482851+00:00` — +0 added, -0 removed, 0 employees (new)
+- `2026-08-29T04:50:39.489722+00:00` — +0 added, -0 removed, 0 employees (new)
+- `2026-08-28T21:52:26.893553+00:00` — +0 added, -0 removed, 0 employees (new)
+- `2026-08-28T07:41:54.307635+00:00` — +0 added, -114 removed, 0 employees (new)
+- `2026-08-27T21:35:09.508853+00:00` — +1 added, -0 removed, 72 employees (new)
+- `2026-08-27T05:46:33.609458+00:00` — +0 added, -0 removed, 0 employees (new)
+- `2026-08-26T20:24:22.006133+00:00` — +0 added, -0 removed, 0 employees (new)
+- `2026-08-26T12:39:38.736182+00:00` — +0 added, -113 removed, 0 employees (new)
+- `2026-08-26T00:48:45.010465+00:00` — +17 added, -0 removed, 993 employees (new)

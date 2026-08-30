@@ -337,6 +337,16 @@
    "industry": "Couriers and\nExpress Delivery\nServices",
    "year": 2026,
    "file": "WarnNotices2026.pdf"
+  },
+  {
+   "company_original": "Mosaic Company",
+   "address_original": "Uncle Sam - 7250 LA-44\nConvent, LA 70723\nFaustina \u2013 9959 LA-18\nSt. James, LA 70086",
+   "date_notice": "8/26/26",
+   "date_action": "10/30/26",
+   "affected": "206",
+   "industry": "Agricultural\nChemical\nManufacturing",
+   "year": 2026,
+   "file": "WarnNotices2026.pdf"
   }
  ]
 }

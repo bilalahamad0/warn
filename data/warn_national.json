@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-07T13:03:14.825226+00:00",
+  "last_updated": "2026-08-30T02:38:19.355398+00:00",
   "states_live": 47,
-  "total_records": 59897,
-  "total_employees": 6458046,
+  "total_records": 60097,
+  "total_employees": 6476337,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -15,29 +15,29 @@
       "name": "Alabama",
       "agency": "Alabama Department of Workforce",
       "source_url": "https://workforce.alabama.gov/warn-list/",
-      "total_records": 1061,
-      "total_employees": 180981
+      "total_records": 1066,
+      "total_employees": 181926
     },
     "AZ": {
       "name": "Arizona",
       "agency": "Arizona Department of Economic Security",
       "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
-      "total_records": 475,
-      "total_employees": 73113
+      "total_records": 479,
+      "total_employees": 71260
     },
     "CA": {
       "name": "California",
       "agency": "California Employment Development Department",
       "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
-      "total_records": 16181,
-      "total_employees": 1384538
+      "total_records": 16246,
+      "total_employees": 1387504
     },
     "CO": {
       "name": "Colorado",
       "agency": "Colorado Department of Labor and Employment",
       "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
-      "total_records": 851,
-      "total_employees": 86675
+      "total_records": 854,
+      "total_employees": 86778
     },
     "CT": {
       "name": "Connecticut",
@@ -57,22 +57,22 @@
       "name": "Delaware",
       "agency": "Delaware Department of Labor",
       "source_url": "https://joblink.delaware.gov/search/warn_lookups",
-      "total_records": 40,
-      "total_employees": 6135
+      "total_records": 41,
+      "total_employees": 6241
     },
     "FL": {
       "name": "Florida",
       "agency": "Florida Department of Commerce (FloridaCommerce)",
       "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
-      "total_records": 459,
-      "total_employees": 34158
+      "total_records": 463,
+      "total_employees": 34586
     },
     "GA": {
       "name": "Georgia",
       "agency": "Technical College System of Georgia, Office of Workforce Development",
       "source_url": "https://www.tcsg.edu/warn-public-view/",
-      "total_records": 4726,
-      "total_employees": 605219
+      "total_records": 4735,
+      "total_employees": 606297
     },
     "HI": {
       "name": "Hawaii",
@@ -85,29 +85,29 @@
       "name": "Iowa",
       "agency": "Iowa Workforce Development",
       "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
-      "total_records": 926,
-      "total_employees": 51691
+      "total_records": 933,
+      "total_employees": 51837
     },
     "ID": {
       "name": "Idaho",
       "agency": "Idaho Department of Labor",
       "source_url": "https://www.labor.idaho.gov/businesss/layoff-assistance/",
-      "total_records": 198,
-      "total_employees": 21869
+      "total_records": 199,
+      "total_employees": 21870
     },
     "IL": {
       "name": "Illinois",
       "agency": "Illinois Department of Commerce and Economic Opportunity",
       "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
-      "total_records": 4868,
-      "total_employees": 668911
+      "total_records": 4879,
+      "total_employees": 673098
     },
     "IN": {
       "name": "Indiana",
       "agency": "Indiana Department of Workforce Development",
       "source_url": "https://www.in.gov/dwd/warn-notices/current-warn-notices/",
-      "total_records": 1014,
-      "total_employees": 152411
+      "total_records": 1015,
+      "total_employees": 152562
     },
     "KS": {
       "name": "Kansas",
@@ -120,50 +120,50 @@
       "name": "Kentucky",
       "agency": "Kentucky Career Center (Education & Labor Cabinet)",
       "source_url": "https://kyworks.ky.gov/Services/Pages/Rapid-Response-Layoffs-and-Closures.aspx",
-      "total_records": 1234,
-      "total_employees": 156488
+      "total_records": 1235,
+      "total_employees": 156489
     },
     "LA": {
       "name": "Louisiana",
       "agency": "Louisiana Workforce Commission",
       "source_url": "https://www.laworks.net/Downloads/Downloads_WFD.asp",
-      "total_records": 36,
-      "total_employees": 6495
+      "total_records": 37,
+      "total_employees": 6701
     },
     "MA": {
       "name": "Massachusetts",
       "agency": "Massachusetts Executive Office of Labor and Workforce Development",
       "source_url": "https://www.mass.gov/info-details/worker-adjustment-and-retraining-notification-act-warn",
-      "total_records": 380,
-      "total_employees": 33690
+      "total_records": 390,
+      "total_employees": 35011
     },
     "MD": {
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1345,
-      "total_employees": 114512
+      "total_records": 1355,
+      "total_employees": 115214
     },
     "ME": {
       "name": "Maine",
       "agency": "Maine Department of Labor",
       "source_url": "https://joblink.maine.gov/search/warn_lookups",
-      "total_records": 73,
-      "total_employees": 6022
+      "total_records": 74,
+      "total_employees": 6124
     },
     "MI": {
       "name": "Michigan",
       "agency": "Michigan Department of Labor and Economic Opportunity",
       "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
-      "total_records": 782,
-      "total_employees": 120570
+      "total_records": 784,
+      "total_employees": 120921
     },
     "MN": {
       "name": "Minnesota",
       "agency": "Minnesota Department of Employment and Economic Development",
       "source_url": "https://mn.gov/deed/programs-services/dislocated-worker-program/reports/",
-      "total_records": 670,
-      "total_employees": 18292
+      "total_records": 675,
+      "total_employees": 18414
     },
     "MS": {
       "name": "Mississippi",
@@ -183,8 +183,8 @@
       "name": "North Carolina",
       "agency": "North Carolina Department of Commerce",
       "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
-      "total_records": 367,
-      "total_employees": 34037
+      "total_records": 368,
+      "total_employees": 34149
     },
     "ND": {
       "name": "North Dakota",
@@ -197,15 +197,15 @@
       "name": "Nebraska",
       "agency": "Nebraska Department of Labor",
       "source_url": "https://dol.nebraska.gov/ReemploymentServices/LayoffServices/LayoffsAndDownsizingWARN",
-      "total_records": 1036,
-      "total_employees": 45533
+      "total_records": 1037,
+      "total_employees": 45624
     },
     "NJ": {
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2331,
-      "total_employees": 350695
+      "total_records": 2336,
+      "total_employees": 351426
     },
     "NM": {
       "name": "New Mexico",
@@ -225,36 +225,36 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 5325,
-      "total_employees": 431873
+      "total_records": 5335,
+      "total_employees": 433084
     },
     "OH": {
       "name": "Ohio",
       "agency": "Ohio Department of Job and Family Services",
       "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
-      "total_records": 1249,
-      "total_employees": 171277
+      "total_records": 1251,
+      "total_employees": 171446
     },
     "OK": {
       "name": "Oklahoma",
       "agency": "Oklahoma Employment Security Commission",
       "source_url": "https://www.employoklahoma.gov/Participants/s/warnnotices",
-      "total_records": 200,
+      "total_records": 201,
       "total_employees": 0
     },
     "OR": {
       "name": "Oregon",
       "agency": "Oregon Higher Education Coordinating Commission, Office of Community Colleges and Workforce Development",
       "source_url": "https://ccwd.hecc.oregon.gov/Layoff/WARN",
-      "total_records": 1355,
-      "total_employees": 186655
+      "total_records": 1363,
+      "total_employees": 186878
     },
     "PA": {
       "name": "Pennsylvania",
       "agency": "Pennsylvania Department of Labor & Industry",
       "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
-      "total_records": 300,
-      "total_employees": 44549
+      "total_records": 305,
+      "total_employees": 45082
     },
     "RI": {
       "name": "Rhode Island",
@@ -267,22 +267,22 @@
       "name": "South Carolina",
       "agency": "South Carolina Department of Employment and Workforce",
       "source_url": "https://scworks.org/employer/employer-programs/risk-closing/layoff-notification-reports",
-      "total_records": 603,
-      "total_employees": 81091
+      "total_records": 607,
+      "total_employees": 81669
     },
     "SD": {
       "name": "South Dakota",
       "agency": "South Dakota Department of Labor and Regulation",
       "source_url": "https://dlr.sd.gov/workforce_services/businesses/warn_notices.aspx",
-      "total_records": 79,
+      "total_records": 80,
       "total_employees": 8758
     },
     "TN": {
       "name": "Tennessee",
       "agency": "Tennessee Department of Labor and Workforce Development",
       "source_url": "https://www.tn.gov/workforce/general-resources/major-publications0/major-publications-redirect/reports.html",
-      "total_records": 1058,
-      "total_employees": 120742
+      "total_records": 1062,
+      "total_employees": 121252
     },
     "TX": {
       "name": "Texas",
@@ -295,15 +295,15 @@
       "name": "Utah",
       "agency": "Utah Department of Workforce Services",
       "source_url": "https://jobs.utah.gov/employer/business/warnnotices.html",
-      "total_records": 281,
-      "total_employees": 35980
+      "total_records": 282,
+      "total_employees": 36703
     },
     "VA": {
       "name": "Virginia",
       "agency": "Virginia Works (Virginia Employment Commission)",
       "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
-      "total_records": 1119,
-      "total_employees": 130199
+      "total_records": 1123,
+      "total_employees": 130826
     },
     "VT": {
       "name": "Vermont",
@@ -316,21 +316,21 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1491,
-      "total_employees": 235089
+      "total_records": 1499,
+      "total_employees": 236666
     },
     "WI": {
       "name": "Wisconsin",
       "agency": "Wisconsin Department of Workforce Development",
       "source_url": "https://dwd.wisconsin.gov/dislocatedworker/warn/",
-      "total_records": 633,
-      "total_employees": 59193
+      "total_records": 635,
+      "total_employees": 59336
     },
     "WV": {
       "name": "West Virginia",
       "agency": "WorkForce West Virginia",
       "source_url": "https://workforcewv.org/job-seeker/layoffs-downsizing/warn-listing/",
-      "total_records": 57,
+      "total_records": 59,
       "total_employees": 2985
     }
   },
@@ -13860,15 +13860,63 @@
       "industry": ""
     },
     {
-      "state": "AZ",
-      "company": "Select Medical Corporation",
-      "notice_date": "2026-07-09",
-      "effective_date": null,
-      "employees": 99,
-      "layoff_type": "WARN",
+      "state": "AL",
+      "company": "CORIZON HEALTH",
+      "notice_date": "2018-02-05",
+      "effective_date": "2026-08-07",
+      "employees": 648,
+      "layoff_type": "Closing *",
       "county": "",
-      "city": "Tucson",
-      "address": "5301 East Grand Road; Tucson, Arizona 85712",
+      "city": "State Wide",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "SEARS HOLDINGS",
+      "notice_date": "2009-02-28",
+      "effective_date": "2026-08-07",
+      "employees": 15,
+      "layoff_type": "Closing *",
+      "county": "",
+      "city": "Birmingham",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "URS CORPORATION",
+      "notice_date": "2010-01-22",
+      "effective_date": "2026-08-07",
+      "employees": 134,
+      "layoff_type": "Layoff *",
+      "county": "",
+      "city": "Birmingham",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "Fortrex [(Packers Sanitation Services  Inc.) PSSI]",
+      "notice_date": "2026-08-20",
+      "effective_date": "2026-09-11",
+      "employees": 50,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Blountsville",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "Flagstone Foods",
+      "notice_date": "2026-08-20",
+      "effective_date": "2026-10-22",
+      "employees": 98,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Dothan",
+      "address": "",
       "industry": ""
     },
     {
@@ -14737,18 +14785,6 @@
     },
     {
       "state": "AZ",
-      "company": "DFC",
-      "notice_date": "2025-04-29",
-      "effective_date": null,
-      "employees": 33,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Chandler",
-      "address": "6900 W Morelos Place, Suite 2; Chandler, Arizona 85226",
-      "industry": ""
-    },
-    {
-      "state": "AZ",
       "company": "District Medical Group (Children's Rehabilitative Services)",
       "notice_date": "2025-04-25",
       "effective_date": null,
@@ -14821,90 +14857,6 @@
     },
     {
       "state": "AZ",
-      "company": "Veyer, LLC",
-      "notice_date": "2025-02-28",
-      "effective_date": null,
-      "employees": 60,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Phoenix",
-      "address": "602 S. 63rd Avenue; Phoenix, Arizona 85043",
-      "industry": ""
-    },
-    {
-      "state": "AZ",
-      "company": "LUKE Holding Inc.",
-      "notice_date": "2025-02-28",
-      "effective_date": null,
-      "employees": 19,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Nogales",
-      "address": "1500 W La Quinta Road; Nogales, Arizona 85621",
-      "industry": ""
-    },
-    {
-      "state": "AZ",
-      "company": "LUKE Holding Inc.",
-      "notice_date": "2025-02-28",
-      "effective_date": null,
-      "employees": 34,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Tucson",
-      "address": "4550 E. Los Reales Road; Tucson, Arizona 85756",
-      "industry": ""
-    },
-    {
-      "state": "AZ",
-      "company": "LUKE Holding Inc.",
-      "notice_date": "2025-02-28",
-      "effective_date": null,
-      "employees": 54,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Yuma",
-      "address": "4035 S Avenue A; Yuma, Arizona 85364",
-      "industry": ""
-    },
-    {
-      "state": "AZ",
-      "company": "Behavioral Health Link",
-      "notice_date": "2025-02-19",
-      "effective_date": null,
-      "employees": 2,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Atlanta",
-      "address": "1201 Peachtree St. NE, Ste. 1215; Atlanta, Georgia 30361",
-      "industry": ""
-    },
-    {
-      "state": "AZ",
-      "company": "Nikola Corporation",
-      "notice_date": "2025-02-19",
-      "effective_date": null,
-      "employees": 315,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Coolidge",
-      "address": "680 E Houser Road; Coolidge, Arizona 85128",
-      "industry": ""
-    },
-    {
-      "state": "AZ",
-      "company": "Nikola Corporation",
-      "notice_date": "2025-02-19",
-      "effective_date": null,
-      "employees": 540,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Phoenix",
-      "address": "4141 East Broadway; Phoenix, Arizona 85040",
-      "industry": ""
-    },
-    {
-      "state": "AZ",
       "company": "Cruise LLC",
       "notice_date": "2025-02-04",
       "effective_date": null,
@@ -14913,30 +14865,6 @@
       "county": "",
       "city": "Phoenix",
       "address": "4410 E Cotton Center Blvd; Phoenix, Arizona 85040",
-      "industry": ""
-    },
-    {
-      "state": "AZ",
-      "company": "ManpowerGroup US Inc.",
-      "notice_date": "2025-01-27",
-      "effective_date": null,
-      "employees": 564,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Goodyear",
-      "address": "14170 W Yuma Rd.; Goodyear, Arizona 85338",
-      "industry": ""
-    },
-    {
-      "state": "AZ",
-      "company": "Safeway Inc.",
-      "notice_date": "2025-01-14",
-      "effective_date": null,
-      "employees": 225,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Phoenix",
-      "address": "20427 N. 27th Ave; Phoenix, Arizona 85027",
       "industry": ""
     },
     {
@@ -19537,18 +19465,6 @@
     },
     {
       "state": "AZ",
-      "company": "Infineon Technologies America Corp",
-      "notice_date": "2026-08-03",
-      "effective_date": null,
-      "employees": 98,
-      "layoff_type": "WARN",
-      "county": "",
-      "city": "Mesa",
-      "address": "550 West Juanita Avenue; Mesa, Arizona 85210",
-      "industry": ""
-    },
-    {
-      "state": "AZ",
       "company": "Essendant",
       "notice_date": "2026-08-04",
       "effective_date": null,
@@ -19557,6 +19473,198 @@
       "county": "",
       "city": "Phoenix",
       "address": "1500 S 71st Ave,; Phoenix, Arizona 85042",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "SMBC MANUBANK",
+      "notice_date": "2026-08-11",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "New York",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Infineon Technologies America Corp",
+      "notice_date": "2026-08-03",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Mesa",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Select Medical Corporation",
+      "notice_date": "2026-07-09",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Tucson",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "DFC",
+      "notice_date": "2025-04-29",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Chandler",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Veyer, LLC",
+      "notice_date": "2025-02-28",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Phoenix",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "LUKE Holding Inc.",
+      "notice_date": "2025-02-28",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Nogales",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "LUKE Holding Inc.",
+      "notice_date": "2025-02-28",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Tucson",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "LUKE Holding Inc.",
+      "notice_date": "2025-02-28",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Yuma",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Behavioral Health Link",
+      "notice_date": "2025-02-19",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Atlanta",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Nikola Corporation",
+      "notice_date": "2025-02-19",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Coolidge",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Nikola Corporation",
+      "notice_date": "2025-02-19",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Phoenix",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "ManpowerGroup US Inc.",
+      "notice_date": "2025-01-27",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Goodyear",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Safeway Inc.",
+      "notice_date": "2025-01-14",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Phoenix",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Pinnacle Transplant Technologies, LLC",
+      "notice_date": "2026-08-17",
+      "effective_date": null,
+      "employees": 90,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Phoenix",
+      "address": "1125 W. Pinnacle Peak Rd.; Phoenix, Arizona 85027",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Amentum",
+      "notice_date": "2026-08-21",
+      "effective_date": null,
+      "employees": 75,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Chandler",
+      "address": "4500 S. Dobson; Chandler, Arizona 85248",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Salad and Go",
+      "notice_date": "2026-08-04",
+      "effective_date": null,
+      "employees": 25,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Phoenix",
+      "address": "625 S. 27th; Phoenix, Arizona 85009",
       "industry": ""
     },
     {
@@ -38662,6 +38770,786 @@
       "city": "",
       "address": "1200 Folsom Street  San Francisco CA 94103",
       "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Silgan Containers",
+      "notice_date": "2026-07-21",
+      "effective_date": "2026-07-21",
+      "employees": 60,
+      "layoff_type": "Layoff Temporary",
+      "county": "Stanislaus County",
+      "city": "",
+      "address": "567 S Riverside Drive  Modesto CA 95354",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
+    },
+    {
+      "state": "CA",
+      "company": "Essendant Co.",
+      "notice_date": "2026-08-03",
+      "effective_date": "2026-10-03",
+      "employees": 99,
+      "layoff_type": "Closure Permanent",
+      "county": "Sacramento County",
+      "city": "",
+      "address": "7021 Roseville Rd.  Sacramento CA 95842",
+      "industry": "42 Wholesale Trade"
+    },
+    {
+      "state": "CA",
+      "company": "Essendant Co.",
+      "notice_date": "2026-08-03",
+      "effective_date": "2026-10-03",
+      "employees": 4,
+      "layoff_type": "Closure Permanent",
+      "county": "Riverside County",
+      "city": "",
+      "address": "4555 Redlands Ave.  Perris CA 92571",
+      "industry": "42 Wholesale Trade"
+    },
+    {
+      "state": "CA",
+      "company": "G3 Enterprises",
+      "notice_date": "2026-08-07",
+      "effective_date": "2026-10-06",
+      "employees": 66,
+      "layoff_type": "Layoff Permanent",
+      "county": "Stanislaus County",
+      "city": "",
+      "address": "500 S. Santa Rosa  Modesto CA 95354",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "LAZ Parking California (9610 Sky Way)",
+      "notice_date": "2026-08-06",
+      "effective_date": "2026-10-06",
+      "employees": 139,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "9610 Sky Way  Los Angeles CA 90045",
+      "industry": "81 Other Services Except Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "LAZ Parking California (5455 West 111th Street)",
+      "notice_date": "2026-08-06",
+      "effective_date": "2026-10-06",
+      "employees": 58,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "5455 West 111th Street  Los Angeles CA 90045",
+      "industry": "81 Other Services Except Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "LAZ Parking California (5251 West 98th Street)",
+      "notice_date": "2026-08-06",
+      "effective_date": "2026-10-06",
+      "employees": 50,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "5251 West 98th Street  Los Angeles CA 90045",
+      "industry": "81 Other Services Except Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "Staples Fulfillment Center",
+      "notice_date": "2026-08-05",
+      "effective_date": "2026-10-09",
+      "employees": 109,
+      "layoff_type": "Closure Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "16501 Trojan Way  La Mirada CA 90638",
+      "industry": "44-45 Retail Trade"
+    },
+    {
+      "state": "CA",
+      "company": "Renteria Vineyard Management",
+      "notice_date": "2026-08-07",
+      "effective_date": "2026-10-15",
+      "employees": 91,
+      "layoff_type": "Layoff Temporary",
+      "county": "Napa County",
+      "city": "",
+      "address": "462 Devlin Road  Napa CA 94558",
+      "industry": "11 Agriculture Forestry Fishing Hunting"
+    },
+    {
+      "state": "CA",
+      "company": "Adventist Health Glendale",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-09-01",
+      "employees": 7,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "600 S Central Ave.  Glendale CA 91205",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (801 Pine Street)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 4,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "801 Pine Street  Oakland CA 94607",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (120 Macdonald Ave)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "Contra Costa County",
+      "city": "",
+      "address": "120 Macdonald Ave 907 Lake Street Richmond CA 94801",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "Sharp Metropolitan Medical Group - Sharp McDonald Center",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "7901 Frost Street  San Diego CA 92123",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (907 Lake Street)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Contra Costa County",
+      "city": "",
+      "address": "907 Lake Street  San Pablo CA 94806",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (918 Clay Street)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "918 Clay Street  Oakland CA 94607",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (989 Brush Street)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "989 Brush Street  Oakland CA 94610",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (3850 San Pablo Ave)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "3850 San Pablo Ave  Emeryville CA 94608",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (3501 San Pablo Ave)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 9,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "3501 San Pablo Ave  Oakland CA 94608",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (2946 International BLVD)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "2946 International BLVD 2618 East 16th Street Oakland CA 94601",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (283 13th Street)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 4,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "283 13th Street  Oakland CA 94612",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (2555 International BLVD)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 5,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "2555 International BLVD  Oakland CA 94601",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (2201 Brush St.)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 5,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "2201 Brush St.  Oakland CA 94612",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (1955 San Pablo Ave)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 9,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "1955 San Pablo Ave  Oakland CA 94612",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (100 9th Street)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 4,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "100 9th Street  Oakland CA 94607",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (1935 Seminary Ave)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "1935 Seminary Ave 2530 International BLVD Oakland CA 94621",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (1825 San Pablo Ave., Suite 200)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 20,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "1825 San Pablo Ave., Suite 200  Oakland CA 94612",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (1448 10th Street)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "1448 10th Street 829 East 19th Street Oakland CA 94607",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (121 E 12th Street)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "121 E 12th Street  Oakland CA 94606",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (700 Willow Street)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "700 Willow Street 721 Wood Street Oakland CA 94607",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "Sharp Metropolitan Medical Campus - Sharp Mary Birch Hospital",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 7,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "7901 Frost Street  San Diego CA 92123",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Sharp Metropolitan Medical Campus - Sharp Memorial Hospital",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 20,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "7901 Frost Street  San Diego CA 92123",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Sharp Metropolitan Medical Campus - Sharp Mesa Vista",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 134,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "7901 Frost Street  San Diego CA 92123",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Sharp Metropolitan Medical Campus - Sharp Outpatient Pavilion",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 5,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "7901 Frost Street  San Diego CA 92123",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "EBALDC (188 11th Street)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-10",
+      "employees": 4,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "188 11th Street  Oakland CA 94607",
+      "industry": "92 Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "San Francisco Pretrial Diversion Project, Inc.",
+      "notice_date": "2026-07-30",
+      "effective_date": "2026-11-13",
+      "employees": 82,
+      "layoff_type": "Closure Permanent",
+      "county": "San Francisco County",
+      "city": "",
+      "address": "1200 Folsom Street  San Francisco CA 94103",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Bumble Bee Foods, LLC",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-11-19",
+      "employees": 197,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "13100 Arctic Circle  Santa Fe Springs CA 90670",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "ZOLL Medical Corporation",
+      "notice_date": "2026-08-11",
+      "effective_date": "2027-02-01",
+      "employees": 78,
+      "layoff_type": "Closure Permanent",
+      "county": "Riverside County",
+      "city": "",
+      "address": "1100 Bird Center Drive  Palm Springs CA 92262",
+      "industry": "81 Other Services Except Public Administration"
+    },
+    {
+      "state": "CA",
+      "company": "Netflix, Inc.",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-07-14",
+      "employees": 59,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "5808 W. Sunset Blvd  Los Angeles CA 90028",
+      "industry": "51 Information"
+    },
+    {
+      "state": "CA",
+      "company": "Roskam Baking Company dba Organic Milling",
+      "notice_date": "2026-08-17",
+      "effective_date": "2026-10-02",
+      "employees": 115,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "305 South Acacia Street  San Dimas CA 91773",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Universal City Studios Productions LLLP",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-10-13",
+      "employees": 14,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "100 Universal City Plaza, Bldg. 1440  Universal City CA 91608",
+      "industry": "51 Information"
+    },
+    {
+      "state": "CA",
+      "company": "Volume Services, Inc. (Sodexo)",
+      "notice_date": "2026-08-17",
+      "effective_date": "2026-10-16",
+      "employees": 93,
+      "layoff_type": "Layoff Permanent",
+      "county": "Ventura County",
+      "city": "",
+      "address": "40 Presidential Drive  Simi Valley CA 93065",
+      "industry": "72 Accommodation and Food Services"
+    },
+    {
+      "state": "CA",
+      "company": "LeeMAH Electronics",
+      "notice_date": "2026-08-17",
+      "effective_date": "2026-10-16",
+      "employees": 205,
+      "layoff_type": "Closure Permanent",
+      "county": "San Mateo County",
+      "city": "",
+      "address": "155 South Hill Drive  Brisbane CA 94005",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Stockton Truss LLC",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-10-18",
+      "employees": 65,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Joaquin County",
+      "city": "",
+      "address": "4408 E Fremont St  Stockton CA 95215",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Stone Brewing CO., LLC - Citracado Parkway",
+      "notice_date": "2026-08-19",
+      "effective_date": "2026-10-19",
+      "employees": 50,
+      "layoff_type": "Closure Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "1999 Citracado Parkway  Escondido CA 92029",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Stone Brewing Co., LLC - Harmony Grove",
+      "notice_date": "2026-08-19",
+      "effective_date": "2026-10-19",
+      "employees": 2,
+      "layoff_type": "Closure Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "2005 Harmony Grove Rd.  Escondido CA 92029",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Stone Brewing Co., LLC - Executive Place",
+      "notice_date": "2026-08-19",
+      "effective_date": "2026-10-19",
+      "employees": 6,
+      "layoff_type": "Closure Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "2865 Executive Place  Escondido CA 92029",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Corteva Agriscience LLC",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-10-30",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Contra Costa County",
+      "city": "",
+      "address": "901 Loveridge Road  Pittsburg CA 94565",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Silgan Containers",
+      "notice_date": "2026-08-12",
+      "effective_date": "2026-10-12",
+      "employees": 120,
+      "layoff_type": "Layoff Temporary",
+      "county": "Stanislaus County",
+      "city": "",
+      "address": "3250 Patterson Road  Riverbank CA 95367",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Flying Food Group, LLC",
+      "notice_date": "2026-08-14",
+      "effective_date": "2026-10-13",
+      "employees": 72,
+      "layoff_type": "Closure Permanent",
+      "county": "San Mateo County",
+      "city": "",
+      "address": "50 Adrian Ct  Burlingame CA 94010",
+      "industry": "72 Accommodation and Food Services"
+    },
+    {
+      "state": "CA",
+      "company": "Apple, Inc. - Cupertino",
+      "notice_date": "2026-08-20",
+      "effective_date": "2026-10-19",
+      "employees": 79,
+      "layoff_type": "Layoff Permanent",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "One Apple Park Way  Cupertino CA 95014",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Apple, Inc. - Maude Ave.",
+      "notice_date": "2026-08-20",
+      "effective_date": "2026-10-19",
+      "employees": 40,
+      "layoff_type": "Layoff Permanent",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "605 W. Maude Ave.  Sunnyvale CA 94085",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Apple, Inc. - Sunnyvale",
+      "notice_date": "2026-08-20",
+      "effective_date": "2026-10-19",
+      "employees": 28,
+      "layoff_type": "Layoff Permanent",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "599 N. Mathilda Ave.  Sunnyvale CA 94085",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Blue Shield of California",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-10-20",
+      "employees": 25,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "601 12th Street  Oakland CA 94607",
+      "industry": "52 Finance and Insurance"
+    },
+    {
+      "state": "CA",
+      "company": "Blue Shield of California",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-10-20",
+      "employees": 11,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "3840 Kilroy Airport Way  Long Beach CA 90806",
+      "industry": "52 Finance and Insurance"
+    },
+    {
+      "state": "CA",
+      "company": "Blue Shield of California",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-10-20",
+      "employees": 5,
+      "layoff_type": "Layoff Permanent",
+      "county": "Sacramento County",
+      "city": "",
+      "address": "3300 Zinfandel Drive  Rancho Cordova CA 95670",
+      "industry": "52 Finance and Insurance"
+    },
+    {
+      "state": "CA",
+      "company": "Blue Shield of California",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-10-20",
+      "employees": 4,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "3131 Camino Del Rio, Suite #1300  San Diego CA 92108",
+      "industry": "52 Finance and Insurance"
+    },
+    {
+      "state": "CA",
+      "company": "Cellares Corporation",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-10-20",
+      "employees": 100,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Mateo County",
+      "city": "",
+      "address": "1100 Veterans Boulevard  South San Francisco CA 94080",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "state": "CA",
+      "company": "Blue Shield of California (Building B)",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-10-20",
+      "employees": 12,
+      "layoff_type": "Layoff Permanent",
+      "county": "El Dorado County",
+      "city": "",
+      "address": "4203 Town Center Blvd., Building B  El Dorado Hills CA 95672",
+      "industry": "52 Finance and Insurance"
+    },
+    {
+      "state": "CA",
+      "company": "Blue Shield of California (Building C)",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-10-20",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "El Dorado County",
+      "city": "",
+      "address": "4203 Town Center Blvd., Building C  El Dorado Hills CA 95762",
+      "industry": "52 Finance and Insurance"
+    },
+    {
+      "state": "CA",
+      "company": "Blue Shield of California",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-10-20",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Joaquin County",
+      "city": "",
+      "address": "3021 Reynolds Ranch Parkway  Lodi CA 95240",
+      "industry": "52 Finance and Insurance"
+    },
+    {
+      "state": "CA",
+      "company": "BFG Supply Co., LLC",
+      "notice_date": "2026-08-24",
+      "effective_date": "2026-10-25",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Yolo County",
+      "city": "",
+      "address": "3740 Seaport Boulevard, Suite 10  West Sacramento CA 95691",
+      "industry": "42 Wholesale Trade"
+    },
+    {
+      "state": "CA",
+      "company": "BFG Supply Co., LLC",
+      "notice_date": "2026-08-24",
+      "effective_date": "2026-10-25",
+      "employees": 37,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Bernardino County",
+      "city": "",
+      "address": "2552 Shenandoah Way  San Bernardino CA 92407",
+      "industry": "42 Wholesale Trade"
+    },
+    {
+      "state": "CA",
+      "company": "Haas Automation, Inc.",
+      "notice_date": "2026-08-19",
+      "effective_date": "2026-11-02",
+      "employees": 73,
+      "layoff_type": "Layoff Permanent",
+      "county": "Ventura County",
+      "city": "",
+      "address": "2800 Sturgis Road  Oxnard CA 93030",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Jabil Inc.",
+      "notice_date": "2026-08-20",
+      "effective_date": "2026-11-23",
+      "employees": 382,
+      "layoff_type": "Closure Temporary",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "30 Great Oaks Boulevard  San Jose CA 95119",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Levine Management Group, Inc.",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-08-17",
+      "employees": 72,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "822 S. Robertson Suite #200  Los Angeles CA 90035",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
     },
     {
       "company": "Adventist Health St. Helena",
@@ -192652,6 +193540,42 @@
       "industry": "45,9991: Marijuana Stores, Medical or Recreational"
     },
     {
+      "state": "CO",
+      "company": "Battelle",
+      "notice_date": "2026-08-06",
+      "effective_date": "2026-10-05",
+      "employees": 12,
+      "layoff_type": "PCAPP Milestone Project Completions",
+      "county": "Pueblo",
+      "city": "",
+      "address": "",
+      "industry": "56,2910: Remediation Services"
+    },
+    {
+      "state": "CO",
+      "company": "Battelle",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-10-12",
+      "employees": 1,
+      "layoff_type": "PCAPP Milestone Project Completions",
+      "county": "Pueblo",
+      "city": "",
+      "address": "",
+      "industry": "56,2910: Remediation Services"
+    },
+    {
+      "state": "CO",
+      "company": "Mission Foods",
+      "notice_date": "2026-08-14",
+      "effective_date": "2026-10-13",
+      "employees": 90,
+      "layoff_type": "Closure",
+      "county": "Pueblo (Rural Alliance)",
+      "city": "",
+      "address": "",
+      "industry": "31,1830: Bakery & Tortilla Manufacturing"
+    },
+    {
       "state": "CT",
       "company": "Conduent Commercial Solutions, LLC",
       "notice_date": "2026-06-26",
@@ -195193,6 +196117,18 @@
       "county": "",
       "city": "",
       "address": "",
+      "industry": ""
+    },
+    {
+      "state": "DE",
+      "company": "JeniusBank",
+      "notice_date": "2026-08-10",
+      "effective_date": null,
+      "employees": 106,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "New York",
+      "address": "277 Park Ave; New York, New York 10172",
       "industry": ""
     },
     {
@@ -200702,6 +201638,54 @@
       "city": "FORT LAUDERDALE",
       "address": "1 E. Broward Blvd., Suite 200",
       "industry": "Agriculture, Forestry, Fishing and Hunting"
+    },
+    {
+      "state": "FL",
+      "company": "Postal Center International, Inc.",
+      "notice_date": "2026-08-12",
+      "effective_date": "2026-08-13",
+      "employees": 181,
+      "layoff_type": "",
+      "county": "",
+      "city": "WESTON",
+      "address": "2965 W Corporate Lakes Blvd",
+      "industry": "Transportation and Warehousing"
+    },
+    {
+      "state": "FL",
+      "company": "SMBC Manubank",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-09",
+      "employees": 9,
+      "layoff_type": "",
+      "county": "",
+      "city": "MULTIPLE LOCATIONS",
+      "address": "227 Park Avenue, New York, NY",
+      "industry": "Finance and Insurance"
+    },
+    {
+      "state": "FL",
+      "company": "Nearly Natural, LLC",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-10-12",
+      "employees": 60,
+      "layoff_type": "",
+      "county": "",
+      "city": "HIALEAH",
+      "address": "3870 W 108th St, Suite 20",
+      "industry": "Retail Trade"
+    },
+    {
+      "state": "FL",
+      "company": "Saddle Creek Corporation",
+      "notice_date": "2026-08-17",
+      "effective_date": "2026-10-15",
+      "employees": 178,
+      "layoff_type": "",
+      "county": "",
+      "city": "PLANT CITY",
+      "address": "771 S. County Line Road",
+      "industry": "Transportation and Warehousing"
     },
     {
       "state": "GA",
@@ -257416,6 +258400,114 @@
       "industry": ""
     },
     {
+      "state": "GA",
+      "company": "SMBC Manubank",
+      "notice_date": null,
+      "effective_date": "2026-10-09",
+      "employees": 5,
+      "layoff_type": "Permanent Layoff / Reduction in Force",
+      "county": "",
+      "city": "",
+      "address": "277 Park Ave, New York, New York",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Anchor Glass Container Corporation",
+      "notice_date": null,
+      "effective_date": "2026-10-17",
+      "employees": 168,
+      "layoff_type": "Permanent Closure",
+      "county": "Houston",
+      "city": "",
+      "address": "1044 Booth Rd, Warner Robins, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Meyn Americas",
+      "notice_date": null,
+      "effective_date": "2026-10-01",
+      "employees": 150,
+      "layoff_type": "Permanent Closure",
+      "county": "Cherokee",
+      "city": "",
+      "address": "1000 Evenflo Dr, Ball Ground, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Asama Coldwater Manufacturing Georgia",
+      "notice_date": null,
+      "effective_date": "2026-10-14",
+      "employees": 102,
+      "layoff_type": "Permanent Closure",
+      "county": "Warren",
+      "city": "",
+      "address": "975 Thomson Hwy, Warrenton, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "KidsPeace National Centers of Georgia",
+      "notice_date": null,
+      "effective_date": "2026-10-24",
+      "employees": 95,
+      "layoff_type": "Permanent Closure",
+      "county": "Carroll",
+      "city": "",
+      "address": "101 Kidspeace Dr, Bowdon, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Republic National Distributing Company of Texas, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-19",
+      "employees": 157,
+      "layoff_type": "Permanent Closure",
+      "county": "Appling",
+      "city": "",
+      "address": "1 National Dr SW, Atlanta, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Republic National Distributing Company, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-19",
+      "employees": 321,
+      "layoff_type": "Permanent Closure",
+      "county": "Cobb",
+      "city": "",
+      "address": "1 National Dr SW, Atlanta, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Young's Market Company of Arizona, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-19",
+      "employees": 2,
+      "layoff_type": "Permanent Closure",
+      "county": "Cobb",
+      "city": "",
+      "address": "1 National Dr SW, Atlanta, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Young's Market Company, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-19",
+      "employees": 78,
+      "layoff_type": "Permanent Closure",
+      "county": "Cobb",
+      "city": "",
+      "address": "1 National Dr SW, Atlanta, Georgia",
+      "industry": ""
+    },
+    {
       "state": "HI",
       "company": "Maui Seaside Hotel",
       "notice_date": "2019-01-16",
@@ -273976,6 +275068,90 @@
       "industry": "Finance and Insurance"
     },
     {
+      "state": "IA",
+      "company": "CNH Industrial America LLC",
+      "notice_date": "2026-01-20",
+      "effective_date": "2026-03-02",
+      "employees": 7,
+      "layoff_type": "Closing",
+      "county": "Des Moines",
+      "city": "Burlington",
+      "address": "1930 Des Moines Ave",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "IA",
+      "company": "Winnebago Industries",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-11-30",
+      "employees": 27,
+      "layoff_type": "Mass Layoff",
+      "county": "Winnebago",
+      "city": "Forest City",
+      "address": "605 W Crystal Lake Rd",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "IA",
+      "company": "RTX",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-09-30",
+      "employees": 1,
+      "layoff_type": "Mass Layoff",
+      "county": "Linn",
+      "city": "Cedar Rapids",
+      "address": "400 Collins Rd NE",
+      "industry": "Professional, Scientific, and Technical Services"
+    },
+    {
+      "state": "IA",
+      "company": "Wells Fargo",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-10-17",
+      "employees": 14,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Polk",
+      "city": "West Des Moines",
+      "address": "800 S Jordan Creek Pkwy",
+      "industry": "Finance and Insurance"
+    },
+    {
+      "state": "IA",
+      "company": "Verschoor Meats, Inc",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-08-21",
+      "employees": 42,
+      "layoff_type": "Closing",
+      "county": "Woodbury",
+      "city": "Sioux City",
+      "address": "1401 Bluff Rd",
+      "industry": "Wholesale Trade"
+    },
+    {
+      "state": "IA",
+      "company": "RTX",
+      "notice_date": "2026-08-25",
+      "effective_date": "2026-09-30",
+      "employees": 1,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Linn",
+      "city": "Cedar Rapids",
+      "address": "400 Collins Rd NE",
+      "industry": "Professional, Scientific, and Technical Services"
+    },
+    {
+      "state": "IA",
+      "company": "People First Sanitation",
+      "notice_date": "2026-08-28",
+      "effective_date": "2026-09-25",
+      "employees": 54,
+      "layoff_type": "Mass Layoff",
+      "county": "Woodbury",
+      "city": "Sioux City",
+      "address": "1000 Cunningham Dr",
+      "industry": "Administrative and Support and Waste Management and Remediation Services"
+    },
+    {
       "state": "ID",
       "company": "Fortrex",
       "notice_date": "2026-07-01",
@@ -276349,6 +277525,18 @@
       "county": "",
       "city": "Boise",
       "address": "5200 Federal Way",
+      "industry": ""
+    },
+    {
+      "state": "ID",
+      "company": "JeniusBank (digital banking unit of SMBC Manubank)",
+      "notice_date": "2026-08-10",
+      "effective_date": "2026-10-09",
+      "employees": 1,
+      "layoff_type": "",
+      "county": "",
+      "city": "New York",
+      "address": "277 Park Avenue",
       "industry": ""
     },
     {
@@ -279029,18 +280217,6 @@
     },
     {
       "state": "IL",
-      "company": "Capital One Financial Corporation",
-      "notice_date": "2025-08-15",
-      "effective_date": null,
-      "employees": 2027,
-      "layoff_type": "Mass Layoff",
-      "county": "Lake County",
-      "city": "Riverwoods",
-      "address": "2500 Lake Cook Rd",
-      "industry": "Finance and Insurance"
-    },
-    {
-      "state": "IL",
       "company": "United Maintenance Company, Inc.",
       "notice_date": "2025-08-12",
       "effective_date": null,
@@ -279589,18 +280765,6 @@
       "county": "Cook County",
       "city": "Des Plaines",
       "address": "1350 E Touhy Ave Ste 200W",
-      "industry": "Finance and Insurance"
-    },
-    {
-      "state": "IL",
-      "company": "Sumitomo Mitsui Banking Corporation",
-      "notice_date": "2026-01-08",
-      "effective_date": null,
-      "employees": 6,
-      "layoff_type": "Mass Layoff",
-      "county": "Not Applicable",
-      "city": "New York",
-      "address": "277 Park Ave",
       "industry": "Finance and Insurance"
     },
     {
@@ -334768,6 +335932,162 @@
       "industry": "Transportation and Warehousing"
     },
     {
+      "state": "IL",
+      "company": "UnityPoint Health (at Rock Island Trinity West Hospital)",
+      "notice_date": "2026-05-01",
+      "effective_date": null,
+      "employees": 68,
+      "layoff_type": "Layoff",
+      "county": "Rock Island County",
+      "city": "Rock Island",
+      "address": "2701 17th Street",
+      "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "IL",
+      "company": "GreenWood, Inc.",
+      "notice_date": "2026-08-04",
+      "effective_date": null,
+      "employees": 28,
+      "layoff_type": "Plant Closure",
+      "county": "Du Page County",
+      "city": "Hanover Park",
+      "address": "850 Central Ave.",
+      "industry": "Other Services (except Public Administration)"
+    },
+    {
+      "state": "IL",
+      "company": "Essendant Co.",
+      "notice_date": "2026-08-03",
+      "effective_date": null,
+      "employees": 134,
+      "layoff_type": "Plant Closure",
+      "county": "Du Page County",
+      "city": "Carol Stream",
+      "address": "230 Lies Rd E",
+      "industry": "Wholesale Trade"
+    },
+    {
+      "state": "IL",
+      "company": "Essendant Co.",
+      "notice_date": "2026-08-03",
+      "effective_date": null,
+      "employees": 510,
+      "layoff_type": "Plant Closure",
+      "county": "Lake County",
+      "city": "Lincolnshire",
+      "address": "200 Tri-State Dr., Suite 400",
+      "industry": "Wholesale Trade"
+    },
+    {
+      "state": "IL",
+      "company": "Nordstrom",
+      "notice_date": "2026-08-07",
+      "effective_date": null,
+      "employees": 101,
+      "layoff_type": "Plant Closure",
+      "county": "Du Page County",
+      "city": "Lombard",
+      "address": "100 Yorktown Center",
+      "industry": "Retail Trade"
+    },
+    {
+      "state": "IL",
+      "company": "Capital One Financial Corporation",
+      "notice_date": "2025-08-15",
+      "effective_date": null,
+      "employees": 2462,
+      "layoff_type": "Mass Layoff",
+      "county": "Lake County",
+      "city": "Riverwoods",
+      "address": "2500 Lake Cook Rd",
+      "industry": "Finance and Insurance"
+    },
+    {
+      "state": "IL",
+      "company": "TV Hardware Distribution, LLC",
+      "notice_date": "2026-08-10",
+      "effective_date": null,
+      "employees": 116,
+      "layoff_type": "Plant Closure",
+      "county": "Cook County",
+      "city": "Chicago",
+      "address": "8600 W Bryn Mawr Ave.",
+      "industry": "Wholesale Trade"
+    },
+    {
+      "state": "IL",
+      "company": "Tyson Foods, Inc.",
+      "notice_date": "2026-08-13",
+      "effective_date": null,
+      "employees": 2495,
+      "layoff_type": "Plant Closure",
+      "county": "Rock Island County",
+      "city": "Hillsdale",
+      "address": "28424 38TH Ave. North",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "IL",
+      "company": "Fortrex (at Tyson Foods)",
+      "notice_date": "2026-08-14",
+      "effective_date": null,
+      "employees": 103,
+      "layoff_type": "Mass Layoff",
+      "county": "Rock Island County",
+      "city": "Hillsdale",
+      "address": "28424 38TH Ave. North",
+      "industry": "Administrative, Support, Waste Management, and Remediation Services"
+    },
+    {
+      "state": "IL",
+      "company": "Silver Star Protection Group",
+      "notice_date": "2026-08-03",
+      "effective_date": null,
+      "employees": 64,
+      "layoff_type": "Mass Layoff",
+      "county": "Cook County",
+      "city": "Rolling Meadows",
+      "address": "3601 Algonquin Rd.",
+      "industry": "Administrative, Support, Waste Management, and Remediation Services"
+    },
+    {
+      "state": "IL",
+      "company": "MAT HOLDINGS INC.",
+      "notice_date": "2026-08-25",
+      "effective_date": null,
+      "employees": 97,
+      "layoff_type": "Plant Closure",
+      "county": "Will County",
+      "city": "Romeoville",
+      "address": "821 W Bluff Rd",
+      "industry": "Management of Companies and Enterprises"
+    },
+    {
+      "state": "IL",
+      "company": "BFG Supply Company, LLC",
+      "notice_date": "2026-08-24",
+      "effective_date": null,
+      "employees": 35,
+      "layoff_type": "Plant Closure",
+      "county": "Vermilion County",
+      "city": "Danville",
+      "address": "70 Eastgate Dr.",
+      "industry": "Wholesale Trade"
+    },
+    {
+      "state": "IL",
+      "company": "Sumitomo Mitsui Banking Corporation",
+      "notice_date": "2026-01-08",
+      "effective_date": null,
+      "employees": 7,
+      "layoff_type": "Mass Layoff",
+      "county": "Not Applicable",
+      "city": "New York",
+      "address": "277 Park Ave",
+      "industry": "Finance and Insurance"
+    },
+    {
       "state": "IN",
       "company": "Thyssenkrupp Presta North America",
       "notice_date": "2026-06-30",
@@ -346934,6 +348254,18 @@
       "city": "Walkerton",
       "address": "",
       "industry": "Wood Window and Door Manufacturing"
+    },
+    {
+      "state": "IN",
+      "company": "Postal Center International Inc",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-08-13",
+      "employees": 151,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Brownsburg",
+      "address": "",
+      "industry": "Transportation and Warehousing"
     },
     {
       "state": "KS",
@@ -362782,6 +364114,18 @@
       "industry": "493110"
     },
     {
+      "state": "KY",
+      "company": "SMBC Manubank",
+      "notice_date": "2026-08-10",
+      "effective_date": "2026-10-09",
+      "employees": 1,
+      "layoff_type": "Closure",
+      "county": "Out of the State County",
+      "city": "",
+      "address": "",
+      "industry": "522110"
+    },
+    {
       "state": "LA",
       "company": "Dr. Reddy\u2019s Laboratories",
       "notice_date": "2025-01-07",
@@ -363212,6 +364556,18 @@
       "city": "",
       "address": "5700 Morrison Road, New, Orleans, Louisiana 70126",
       "industry": "Couriers and Express Delivery Services"
+    },
+    {
+      "state": "LA",
+      "company": "Mosaic Company",
+      "notice_date": "2026-08-26",
+      "effective_date": "2026-10-30",
+      "employees": 206,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "Uncle Sam - 7250 LA-44, Convent, LA 70723, Faustina \u2013 9959 LA-18, St. James, LA 70086",
+      "industry": "Agricultural Chemical Manufacturing"
     },
     {
       "state": "MA",
@@ -367770,6 +369126,126 @@
       "layoff_type": "",
       "county": "Central",
       "city": "Worcester and Leominster",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "Pure Safety Group, Inc (dba Guardian Fall)",
+      "notice_date": "2026-08-06",
+      "effective_date": "2026-10-02",
+      "employees": 5,
+      "layoff_type": "",
+      "county": "Metro Southwest",
+      "city": "Franklin",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "*Updated* Thermo Fisher Scientific",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-10-16",
+      "employees": 15,
+      "layoff_type": "",
+      "county": "Metro Southwest",
+      "city": "Franklin",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "Postal Center International, Inc. (aka PCI)",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-08-13",
+      "employees": 112,
+      "layoff_type": "",
+      "county": "Metro Southwest",
+      "city": "Franklin",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "*Updated* EMD Serono Research Development Institute, Inc.",
+      "notice_date": "2026-08-12",
+      "effective_date": "2026-10-16",
+      "employees": 20,
+      "layoff_type": "",
+      "county": "Northeast",
+      "city": "Billerica",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "SMBC Manubank (aka JeniusBank)",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-10-09",
+      "employees": 3,
+      "layoff_type": "",
+      "county": "Statewide",
+      "city": "Statewide",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "*Updated* Community Healthlink, Inc. (aka CHL)",
+      "notice_date": "2026-08-10",
+      "effective_date": "2026-10-09",
+      "employees": 639,
+      "layoff_type": "",
+      "county": "Central",
+      "city": "Worcester and Leominster",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "Blueprint Medicines Corporation (aka Sanofi Company Blueprint)",
+      "notice_date": "2026-08-07",
+      "effective_date": "2026-10-09",
+      "employees": 229,
+      "layoff_type": "",
+      "county": "Boston",
+      "city": "Cambridge",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "National Express Transit Corp. (dba Kiessling of Attleboro)",
+      "notice_date": "2026-08-07",
+      "effective_date": "2026-09-15",
+      "employees": 162,
+      "layoff_type": "",
+      "county": "Southeast",
+      "city": "Taunton and Wareham",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "Noble Equity Holdings LLC, Noble.com, LLC, Noble Supply & Logistics, LLC (f/k/a Noble Sales Co. Inc.), Tactical & Survival Specialties, LLC (f/k/a Tactical & Survival Specialties, Inc.), Federal Resource Supply Company, LLC (f/k/a Federal Resource Supply Company), and K.D. Analytical Consulting, LLC (aka Noble)",
+      "notice_date": "2026-08-17",
+      "effective_date": "2026-10-09",
+      "employees": 59,
+      "layoff_type": "",
+      "county": "Boston",
+      "city": "Boston",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "P1 Logistics LLC",
+      "notice_date": "2026-08-24",
+      "effective_date": "2026-10-24",
+      "employees": 77,
+      "layoff_type": "",
+      "county": "Central",
+      "city": "Littleton",
       "address": "",
       "industry": ""
     },
@@ -383914,6 +385390,126 @@
       "industry": "541715"
     },
     {
+      "state": "MD",
+      "company": "Grassroots Crisis Intervention Center",
+      "notice_date": "2026-08-06",
+      "effective_date": "2026-09-29",
+      "employees": 60,
+      "layoff_type": "Mass-Layoff - No Recall",
+      "county": "Howard County",
+      "city": "",
+      "address": "8990 Old Annapolis Road, Ste. A, Columbia, MD 21045",
+      "industry": "624190"
+    },
+    {
+      "state": "MD",
+      "company": "Karna, LLC",
+      "notice_date": "2026-08-06",
+      "effective_date": "2026-11-30",
+      "employees": 38,
+      "layoff_type": "Plant Closure",
+      "county": "Prince George\u2019s County",
+      "city": "",
+      "address": "6404 Ivy Lane, Suite 620, Greenbelt, MD 20770",
+      "industry": "541990"
+    },
+    {
+      "state": "MD",
+      "company": "SMBC Manubank",
+      "notice_date": "2026-08-10",
+      "effective_date": "2026-10-09",
+      "employees": 2,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Statewide",
+      "city": "",
+      "address": "277 Park Avenue New York, NY 10172",
+      "industry": "522110"
+    },
+    {
+      "state": "MD",
+      "company": "Kolon TissueGene, Inc.",
+      "notice_date": "2026-08-14",
+      "effective_date": "2026-08-31",
+      "employees": 37,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Montgomery County",
+      "city": "",
+      "address": "9713 Key West Avenue, Rockville Maryland 20850",
+      "industry": "541714"
+    },
+    {
+      "state": "MD",
+      "company": "Mulford Construction Co., Inc.",
+      "notice_date": "2026-08-14",
+      "effective_date": "2026-08-17",
+      "employees": 69,
+      "layoff_type": "Plant Closure",
+      "county": "Southern Maryland",
+      "city": "",
+      "address": "PO Box 60 Barstow, MD 20610",
+      "industry": "238990"
+    },
+    {
+      "state": "MD",
+      "company": "Stanley Black & Decker",
+      "notice_date": "2026-08-19",
+      "effective_date": "2026-10-23",
+      "employees": 55,
+      "layoff_type": "Plant Closure",
+      "county": "Carroll",
+      "city": "",
+      "address": "625 Hanover Pike Hampstead, MD 21074",
+      "industry": "332510"
+    },
+    {
+      "state": "MD",
+      "company": "Savista, LLC",
+      "notice_date": "2026-08-14",
+      "effective_date": "2026-10-15",
+      "employees": 39,
+      "layoff_type": "Mass Layoff- No Recall",
+      "county": "Montgomery County",
+      "city": "",
+      "address": "4920 Elm Street Bethesda, MD 20814",
+      "industry": "561110"
+    },
+    {
+      "state": "MD",
+      "company": "Crosby Marketing Communications",
+      "notice_date": "2026-08-25",
+      "effective_date": "2026-10-30",
+      "employees": 20,
+      "layoff_type": "Mass Layoff- No Recall",
+      "county": "Anne Arundel County",
+      "city": "",
+      "address": "705 Melvin Avenue Annapolis, MD 21401",
+      "industry": "541810"
+    },
+    {
+      "state": "MD",
+      "company": "Amentum",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-11-13",
+      "employees": 65,
+      "layoff_type": "Mass Layoff- No Recall",
+      "county": "Anne Arundel County",
+      "city": "",
+      "address": "7710 Milestone Parkway Hanover, MD 21076",
+      "industry": "541330"
+    },
+    {
+      "state": "MD",
+      "company": "Amentum",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-10-31",
+      "employees": 317,
+      "layoff_type": "Mass Layoff- No Recall",
+      "county": "Anne Arundel County",
+      "city": "",
+      "address": "7710 Milestone Parkway Hanover, MD 21076",
+      "industry": "561210"
+    },
+    {
       "state": "ME",
       "company": "SMBC-Sumitomo Mitsui Banking Corporation",
       "notice_date": "2026-01-13",
@@ -384787,6 +386383,18 @@
       "county": "",
       "city": "",
       "address": "",
+      "industry": ""
+    },
+    {
+      "state": "ME",
+      "company": "Host International, Inc.",
+      "notice_date": "2026-08-04",
+      "effective_date": null,
+      "employees": 102,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Portland",
+      "address": "1001 Westbrook St; Portland, Maine 04102",
       "industry": ""
     },
     {
@@ -392176,6 +393784,30 @@
       "county": "Cheboygan, Emmett, Genessee, Ingham, Lapeer",
       "city": "",
       "address": "748 S. Main St., Cheboygan, MI 49721; 1 McLaren Drive, Grand Blanc, MI 48439; 2900 Collins Road, Lansing, MI 48910; 1375 N. Maine St., Lapeer, MI 48446; 416 Connable Ave., Petoskey, MI 49770",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "General Motors, LLC -- Lansing Region",
+      "notice_date": null,
+      "effective_date": "2027-01-14",
+      "employees": 350,
+      "layoff_type": "Mass layoff",
+      "county": "Eaton, Ingham",
+      "city": "",
+      "address": "General Motors, LLC -- Lansing Grand River Assembly/Stamping 920 Townsend Street Lansing, MI 48933; General Motors, LLC -- Lansing Regional Stamping 8175 Millett Highway Lansing, MI 48917",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "SMBC MANUBANK",
+      "notice_date": null,
+      "effective_date": "2026-10-09",
+      "employees": 1,
+      "layoff_type": "Mass permanent layoff",
+      "county": "Remote",
+      "city": "",
+      "address": "JeniusBank (digital banking)",
       "industry": ""
     },
     {
@@ -400219,6 +401851,66 @@
       "industry": "Government"
     },
     {
+      "state": "MN",
+      "company": "First Student",
+      "notice_date": null,
+      "effective_date": "2026-06-16",
+      "employees": 49,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Red Wing",
+      "address": "",
+      "industry": "Transportation"
+    },
+    {
+      "state": "MN",
+      "company": "Shopkick Inc",
+      "notice_date": null,
+      "effective_date": "2026-03-26",
+      "employees": 70,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Boston",
+      "address": "",
+      "industry": "Retail"
+    },
+    {
+      "state": "MN",
+      "company": "Ruby's Pantry",
+      "notice_date": null,
+      "effective_date": "2026-04-01",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "North Branch",
+      "address": "",
+      "industry": "Transportation"
+    },
+    {
+      "state": "MN",
+      "company": "Coastal Seafood",
+      "notice_date": null,
+      "effective_date": "2026-04-11",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "St Paul",
+      "address": "",
+      "industry": "Dining Establishments"
+    },
+    {
+      "state": "MN",
+      "company": "Hangry Joe's",
+      "notice_date": null,
+      "effective_date": "2026-04-27",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Woodbury",
+      "address": "",
+      "industry": "Dining Establishments"
+    },
+    {
       "state": "MS",
       "company": "Hollywood Casino Gulf Coast Bay St. Louis (Hancock)",
       "notice_date": "2020-07-15",
@@ -406604,18 +408296,6 @@
     },
     {
       "state": "NC",
-      "company": "Barrette Outdoor Living, Inc.",
-      "notice_date": "2026-07-01",
-      "effective_date": "2026-07-01",
-      "employees": 63,
-      "layoff_type": "Layoff Permanent",
-      "county": "Rowan",
-      "city": "Salisbury",
-      "address": "745 Mid S Drive",
-      "industry": ""
-    },
-    {
-      "state": "NC",
       "company": "Electric Glass Fiber America, LLC",
       "notice_date": "2026-07-06",
       "effective_date": "2027-09-30",
@@ -406648,18 +408328,6 @@
       "county": "Alamance",
       "city": "Burlington",
       "address": "906 Anthony Street",
-      "industry": ""
-    },
-    {
-      "state": "NC",
-      "company": "SMBC MANUBANK",
-      "notice_date": "2026-01-08",
-      "effective_date": "2026-08-03",
-      "employees": 19,
-      "layoff_type": "Layoff Permanent",
-      "county": "",
-      "city": "New York NY",
-      "address": "277 Park Avenue",
       "industry": ""
     },
     {
@@ -406708,6 +408376,42 @@
       "county": "Mecklenburg",
       "city": "Charlotte",
       "address": "6701-H Northpark Blvd",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "SMBC MANUBANK",
+      "notice_date": "2026-01-08",
+      "effective_date": "2026-10-09",
+      "employees": 28,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "New York NY",
+      "address": "277 Park Avenue",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Barrette Outdoor Living, Inc.",
+      "notice_date": "2026-07-01",
+      "effective_date": "2026-10-12",
+      "employees": 93,
+      "layoff_type": "Layoff Permanent",
+      "county": "Rowan",
+      "city": "Salisbury",
+      "address": "745 Mid S Drive",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Ryder",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-10-12",
+      "employees": 73,
+      "layoff_type": "Layoff Permanent",
+      "county": "Cumberland",
+      "city": "Fayetteville",
+      "address": "2486 Gillespie St.",
       "industry": ""
     },
     {
@@ -419787,6 +421491,18 @@
       "layoff_type": "Layoff",
       "county": "",
       "city": "Omaha",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Fortrex 0129 Madison",
+      "notice_date": "2026-08-26",
+      "effective_date": null,
+      "employees": 91,
+      "layoff_type": "",
+      "county": "",
+      "city": "Madison",
       "address": "",
       "industry": ""
     },
@@ -447759,6 +449475,66 @@
       "layoff_type": "",
       "county": "",
       "city": "Vineland",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Grocery Delivery E-Services USA, Inc DBA Hello Fresh",
+      "notice_date": null,
+      "effective_date": "2026-11-17",
+      "employees": 374,
+      "layoff_type": "",
+      "county": "",
+      "city": "Swedesboro",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "JP Morgan Chase",
+      "notice_date": null,
+      "effective_date": "2026-08-19",
+      "employees": 63,
+      "layoff_type": "",
+      "county": "",
+      "city": "Jersey City",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Optum",
+      "notice_date": null,
+      "effective_date": "2026-12-07",
+      "employees": 57,
+      "layoff_type": "",
+      "county": "",
+      "city": "Basking Ridge",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Cenlar FSB",
+      "notice_date": null,
+      "effective_date": "2026-08-21",
+      "employees": 50,
+      "layoff_type": "",
+      "county": "",
+      "city": "Ewing Twp.",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Enablx, INC",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 187,
+      "layoff_type": "",
+      "county": "",
+      "city": "Rockaway Township",
       "address": "",
       "industry": ""
     },
@@ -514244,6 +516020,126 @@
     },
     {
       "state": "NY",
+      "company": "Republic National Distributing Company New York, LLC.",
+      "notice_date": "2026-05-01",
+      "effective_date": "2026-07-31",
+      "employees": 86,
+      "layoff_type": "Closure Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "570 Lexington Avenue Suite 2501 New York, NY, 10022",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Republic National Distributing Company New York, LLC.",
+      "notice_date": "2026-05-01",
+      "effective_date": "2026-07-31",
+      "employees": 46,
+      "layoff_type": "Closure Permanent",
+      "county": "Onondaga",
+      "city": "",
+      "address": "6600 New Venture Gear Drive Suite 450 East Syracuse, NY, 13057",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Ferraro Foods of New York North, LLC.",
+      "notice_date": "2026-07-07",
+      "effective_date": "2026-07-07",
+      "employees": 62,
+      "layoff_type": "Closure Permanent",
+      "county": "Oneida",
+      "city": "",
+      "address": "1301 Broad Street Utica, NY, 13501",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Sky Chefs, LLC",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-10-07",
+      "employees": 471,
+      "layoff_type": "Layoff Permanent",
+      "county": "Queens",
+      "city": "",
+      "address": "JFK International Airport 139 West Hangar Road Jamaica, NY, 11430",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Cazar Logistics",
+      "notice_date": "2026-01-31",
+      "effective_date": "2026-05-03",
+      "employees": 37,
+      "layoff_type": "Closure Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "408 E 60th Street New York, NY, 10022",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Diageo North America, Inc",
+      "notice_date": "2026-06-30",
+      "effective_date": "2026-09-30",
+      "employees": 305,
+      "layoff_type": "Layoff Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "3 World Trade Center 175 Greenwich St New York, NY, 10007",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Alray Car Parts Supply & Mfg. Corp.d/b/a Tinker Auto Parts",
+      "notice_date": "2026-07-01",
+      "effective_date": "2026-08-30",
+      "employees": 20,
+      "layoff_type": "Closure Permanent",
+      "county": "Suffolk",
+      "city": "",
+      "address": "200 Suffolk Avenue Brentwood, NY, 11717",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Alray Car Parts Supply & Mfg. Corp.d/b/a Tinker Auto Parts",
+      "notice_date": "2026-07-01",
+      "effective_date": "2026-08-30",
+      "employees": 31,
+      "layoff_type": "Closure Permanent",
+      "county": "Suffolk",
+      "city": "",
+      "address": "1650 Locust Ave Bohemia, NY, 11716",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "USIC Locating Services, LLC. d/b/a Reconn Utility Services",
+      "notice_date": "2026-04-01",
+      "effective_date": "2026-04-06",
+      "employees": 72,
+      "layoff_type": "Layoff Permanent",
+      "county": "Suffolk",
+      "city": "",
+      "address": "1500 Ocean Avenue Bohemia, NY, 11716",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Buffalo Newspress Inc. d/b/a BNP Empowered Print",
+      "notice_date": "2026-07-09",
+      "effective_date": "2026-07-09",
+      "employees": 81,
+      "layoff_type": "Closure Permanent",
+      "county": "Erie",
+      "city": "",
+      "address": "200 Broadway St Buffalo, NY, 14204",
+      "industry": ""
+    },
+    {
+      "state": "NY",
       "company": "Cardionet, LLC. an affiliate of Philips North America, LLC.",
       "notice_date": "2025-04-01",
       "effective_date": "2025-06-30",
@@ -532100,6 +533996,30 @@
     },
     {
       "state": "OH",
+      "company": "Insteel Wire Products Company",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-10-20",
+      "employees": 65,
+      "layoff_type": "Closure",
+      "county": "Wyandot",
+      "city": "Upper Sandusky",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Cornerstone Building Brands",
+      "notice_date": "2026-08-27",
+      "effective_date": "2026-12-01",
+      "employees": 104,
+      "layoff_type": "Closure",
+      "county": "Wood",
+      "city": "Walbridge",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
       "company": "Marc Glassman, Inc.",
       "notice_date": "2023-01-03",
       "effective_date": "2023-03-06",
@@ -537675,6 +539595,18 @@
       "layoff_type": "Mass Layoff",
       "county": "",
       "city": "Purchase",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OK",
+      "company": "T-Mobile USA, Inc.",
+      "notice_date": "2026-08-17",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Other",
+      "county": "",
+      "city": "Oklahoma City",
       "address": "",
       "industry": ""
     },
@@ -553939,6 +555871,102 @@
       "industry": ""
     },
     {
+      "state": "OR",
+      "company": "Bowtech, LLC",
+      "notice_date": "2026-07-27",
+      "effective_date": "2027-02-28",
+      "employees": 1,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Eugene",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Bowtech, LLC",
+      "notice_date": "2026-07-27",
+      "effective_date": "2026-12-31",
+      "employees": 9,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Eugene",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Bowtech, LLC",
+      "notice_date": "2026-07-27",
+      "effective_date": "2026-11-30",
+      "employees": 4,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Eugene",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Bowtech, LLC",
+      "notice_date": "2026-07-27",
+      "effective_date": "2026-10-31",
+      "employees": 6,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Eugene",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Bowtech, LLC",
+      "notice_date": "2026-07-27",
+      "effective_date": "2026-09-30",
+      "employees": 23,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Eugene",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "JeniusBank",
+      "notice_date": "2026-08-10",
+      "effective_date": "2026-10-09",
+      "employees": 105,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "New York, NY",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Oregon - Remote Employees",
+      "notice_date": "2026-08-10",
+      "effective_date": "2026-10-09",
+      "employees": 1,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Amentum - Hillsboro, OR",
+      "notice_date": "2026-08-20",
+      "effective_date": "2026-10-19",
+      "employees": 74,
+      "layoff_type": "Large Layoff - 10 or more workers",
+      "county": "",
+      "city": "Hillsboro",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "PA",
       "company": "Transform Warehouse Operations, LLC",
       "notice_date": null,
@@ -557536,6 +559564,66 @@
       "county": "Chester",
       "city": "",
       "address": "125 Green Tree Road, Phoenixville, PA 19460",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "SMBC MANUBANK",
+      "notice_date": null,
+      "effective_date": "2026-10-09",
+      "employees": 7,
+      "layoff_type": "Closure",
+      "county": "Various",
+      "city": "",
+      "address": "Various remote locations throughout the United States",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Grede, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-10",
+      "employees": 170,
+      "layoff_type": "Closure",
+      "county": "Crawford",
+      "city": "",
+      "address": "18771 Mill Street, Meadville, PA  16335",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "United Natural Foods, Inc. (NFI)",
+      "notice_date": null,
+      "effective_date": "2026-10-16",
+      "employees": 48,
+      "layoff_type": "Closure",
+      "county": "Philadelphia",
+      "city": "",
+      "address": "2722 Commerce Way, Philadelphia, PA  19154",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "CJ Logistics America, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-16",
+      "employees": 57,
+      "layoff_type": "Closure",
+      "county": "Lehigh",
+      "city": "",
+      "address": "400 Nestle Way, Breinigsville, PA  18031",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Eos Energy Storage, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-26",
+      "employees": 251,
+      "layoff_type": "Layoff",
+      "county": "Allegheny",
+      "city": "",
+      "address": "700 Braddock Avenue, Building 700, East Pittsburgh, PA  15112",
       "industry": ""
     },
     {
@@ -566192,18 +568280,6 @@
     },
     {
       "state": "SC",
-      "company": "Electrolux Consumer Products, Inc.",
-      "notice_date": "2026-05-15",
-      "effective_date": "2026-07-18",
-      "employees": 1255,
-      "layoff_type": "Permanent Layoff",
-      "county": "Anderson",
-      "city": "",
-      "address": "101 Masters Boulevard, Anderson, SC 29622",
-      "industry": ""
-    },
-    {
-      "state": "SC",
       "company": "KPR US LLC",
       "notice_date": "2026-06-01",
       "effective_date": "2026-08-07",
@@ -566284,6 +568360,66 @@
       "county": "Anderson",
       "city": "",
       "address": "2665 US-29 N., Anderson, SC 29626",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "Electrolux Consumer Products, Inc.",
+      "notice_date": "2026-05-15",
+      "effective_date": "2026-07-18",
+      "employees": 1245,
+      "layoff_type": "Permanent Layoff",
+      "county": "Anderson",
+      "city": "",
+      "address": "101 Masters Boulevard, Anderson, SC 29622",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "Electrolux Consumer Products, Inc.",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-12-22",
+      "employees": 10,
+      "layoff_type": "Permanent Layoff",
+      "county": "Anderson",
+      "city": "",
+      "address": "101 Masters Boulevard, Anderson, SC 29622",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "PepsiCo Beverages Sales LLC",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-10-18",
+      "employees": 105,
+      "layoff_type": "Permanent Layoff",
+      "county": "Richland",
+      "city": "",
+      "address": "6925 N. Main St., Columbia, SC 29203",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "Healthcare SC, LLC",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-08-28",
+      "employees": 254,
+      "layoff_type": "Permanent Closure",
+      "county": "Fairfield",
+      "city": "",
+      "address": "1 Mlily Way, Winnsboro, SC 29180",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "The Westin Hilton Head Island Resort & Spa",
+      "notice_date": "2026-08-27",
+      "effective_date": "2026-11-03",
+      "employees": 219,
+      "layoff_type": "Temporary Closure",
+      "county": "Beaufort",
+      "city": "",
+      "address": "2 Grasslawn Ave., Hilton Head Island, SC 29928",
       "industry": ""
     },
     {
@@ -567231,6 +569367,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Rapid City",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "SD",
+      "company": "JeniusBank (digital unit of SMBC Manubank)",
+      "notice_date": "2026-08-10",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "",
+      "county": "",
+      "city": "Nationwide",
       "address": "",
       "industry": ""
     },
@@ -577996,6 +580144,54 @@
       "employees": 119,
       "layoff_type": "",
       "county": "Shelby",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "TN",
+      "company": "Resource Label",
+      "notice_date": "2026-08-06",
+      "effective_date": "2026-10-03",
+      "employees": 68,
+      "layoff_type": "",
+      "county": "Williamson",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "TN",
+      "company": "TikTok USDS JV",
+      "notice_date": "2026-08-05",
+      "effective_date": "2026-10-05",
+      "employees": 250,
+      "layoff_type": "",
+      "county": "Davidson",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "TN",
+      "company": "Wise Company LLC",
+      "notice_date": "2026-08-14",
+      "effective_date": null,
+      "employees": 129,
+      "layoff_type": "",
+      "county": "Hardin",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "TN",
+      "company": "Identity Group",
+      "notice_date": "2026-08-24",
+      "effective_date": "2026-10-20",
+      "employees": 63,
+      "layoff_type": "",
+      "county": "Putnam",
       "city": "",
       "address": "",
       "industry": ""
@@ -627228,6 +629424,18 @@
       "industry": ""
     },
     {
+      "state": "UT",
+      "company": "Tyson Fresh Meats",
+      "notice_date": "2026-08-13",
+      "effective_date": null,
+      "employees": 723,
+      "layoff_type": "",
+      "county": "",
+      "city": "Eagle Mountain",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "VA",
       "company": "Emerson",
       "notice_date": "2026-07-09",
@@ -640645,9 +642853,57 @@
     },
     {
       "state": "VA",
+      "company": "SMBC Manubank",
+      "notice_date": "2026-08-10",
+      "effective_date": "2026-10-09",
+      "employees": 5,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Aldie, Arlington, Reston, Maidens & Henrico",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "Eurofins Professional Scientific Services LLC",
+      "notice_date": "2026-08-10",
+      "effective_date": "2026-10-09",
+      "employees": 68,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Richmond",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "TekSynap Corporation",
+      "notice_date": "2026-08-17",
+      "effective_date": "2026-10-14",
+      "employees": 9,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Statewide",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "Crothall Healthcare",
+      "notice_date": "2026-08-28",
+      "effective_date": "2026-10-31",
+      "employees": 545,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Richmond",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-08-07",
+      "effective_date": "2026-08-30",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",
@@ -658992,6 +661248,102 @@
       "industry": ""
     },
     {
+      "state": "WA",
+      "company": "Jack in the Box",
+      "notice_date": "2026-08-12",
+      "effective_date": "2026-10-10",
+      "employees": 24,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Everett",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Norwesco",
+      "notice_date": "2026-08-14",
+      "effective_date": "2026-10-16",
+      "employees": 54,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Fife",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "TT Commerce & Global Services",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-10-19",
+      "employees": 75,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Bellevue",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Twin City Foods, Inc.",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-11-02",
+      "employees": 109,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Ellensburg",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Starbucks",
+      "notice_date": "2026-08-20",
+      "effective_date": "2026-10-19",
+      "employees": 224,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Seattle",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Borton & Sons, Inc.",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-11-08",
+      "employees": 928,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Yakima, Zillah, Pasco, Burbank, Prescott, Soap Lake, Othello, Mesa",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "T-Mobile USA, Inc.",
+      "notice_date": "2026-08-26",
+      "effective_date": "2026-09-21",
+      "employees": 77,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Seattle, Bellingham, Bothell, Vancouver, Bellevue, Kennewick, Tacoma, and Yakima",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Columbia Hospitality, Inc",
+      "notice_date": "2026-08-28",
+      "effective_date": "2026-10-30",
+      "employees": 86,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Kenmore",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "WI",
       "company": "Semco Windows and Doors",
       "notice_date": "2020-01-02",
@@ -666588,6 +668940,30 @@
       "industry": "General Medical and Surgical Hospitals"
     },
     {
+      "state": "WI",
+      "company": "Durr CTS, Inc.",
+      "notice_date": "2026-08-12",
+      "effective_date": "2026-10-13",
+      "employees": 75,
+      "layoff_type": "Facility Closure",
+      "county": "Brown",
+      "city": "De Pere",
+      "address": "",
+      "industry": "Automatic Environmental Control Mfg"
+    },
+    {
+      "state": "WI",
+      "company": "Foremost Farms USA",
+      "notice_date": "2026-08-24",
+      "effective_date": "2026-12-15",
+      "employees": 68,
+      "layoff_type": "Facility Closure",
+      "county": "Wood",
+      "city": "Marshfield",
+      "address": "",
+      "industry": "Cheese Mfg"
+    },
+    {
       "state": "WV",
       "company": "Vimo, Inc. dba GetInsured",
       "notice_date": "2024-12-20",
@@ -667263,6 +669639,30 @@
       "state": "WV",
       "company": "Felman Productions",
       "notice_date": null,
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WV",
+      "company": "Eagle Horizon Resources 08-2026",
+      "notice_date": null,
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WV",
+      "company": "ECM Energy Services",
+      "notice_date": "2026-08-19",
       "effective_date": null,
       "employees": 0,
       "layoff_type": "",

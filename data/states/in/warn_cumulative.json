@@ -1,9 +1,9 @@
 {
-  "total_records": 1014,
-  "total_employees": 152411,
+  "total_records": 1015,
+  "total_employees": 152562,
   "date_range_start": "2008-07-10",
-  "date_range_end": "2026-07-21",
-  "last_updated": "2026-08-07T12:51:36.368812+00:00",
+  "date_range_end": "2026-08-13",
+  "last_updated": "2026-08-30T02:27:33.197980+00:00",
   "source_url": "https://www.in.gov/dwd/warn-notices/current-warn-notices/",
   "records": [
     {
@@ -12173,6 +12173,18 @@
       "city": "Walkerton",
       "address": "",
       "industry": "Wood Window and Door Manufacturing"
+    },
+    {
+      "state": "IN",
+      "company": "Postal Center International Inc",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-08-13",
+      "employees": 151,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Brownsburg",
+      "address": "",
+      "industry": "Transportation and Warehousing"
     }
   ]
 }

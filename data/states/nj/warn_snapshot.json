@@ -1,9 +1,9 @@
 {
-  "total_records": 2360,
-  "total_employees": 353546,
+  "total_records": 2365,
+  "total_employees": 354277,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-08-07T04:20:07.563351+00:00Z",
+  "last_updated": "2026-08-29T16:28:04.640800+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -1083,6 +1083,66 @@
       "layoff_type": "",
       "county": "",
       "city": "Vineland",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Grocery Delivery E-Services USA, Inc DBA Hello Fresh",
+      "notice_date": null,
+      "effective_date": "2026-11-17",
+      "employees": 374,
+      "layoff_type": "",
+      "county": "",
+      "city": "Swedesboro",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "JP Morgan Chase",
+      "notice_date": null,
+      "effective_date": "2026-08-19",
+      "employees": 63,
+      "layoff_type": "",
+      "county": "",
+      "city": "Jersey City",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Optum",
+      "notice_date": null,
+      "effective_date": "2026-12-07",
+      "employees": 57,
+      "layoff_type": "",
+      "county": "",
+      "city": "Basking Ridge",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Cenlar FSB",
+      "notice_date": null,
+      "effective_date": "2026-08-21",
+      "employees": 50,
+      "layoff_type": "",
+      "county": "",
+      "city": "Ewing Twp.",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Enablx, INC",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 187,
+      "layoff_type": "",
+      "county": "",
+      "city": "Rockaway Township",
       "address": "",
       "industry": ""
     },

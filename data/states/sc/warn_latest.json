@@ -1,9 +1,9 @@
 {
-  "total_records": 603,
-  "total_employees": 81091,
+  "total_records": 607,
+  "total_employees": 81669,
   "date_range_start": "2013-02-25",
-  "date_range_end": "2026-08-03",
-  "last_updated": "2026-08-07T13:00:16.531294+00:00",
+  "date_range_end": "2026-08-27",
+  "last_updated": "2026-08-30T02:35:27.338154+00:00",
   "source_url": "https://scworks.org/employer/employer-programs/risk-closing/layoff-notification-reports",
   "records": [
     {
@@ -7151,7 +7151,7 @@
       "company": "Electrolux Consumer Products, Inc.",
       "notice_date": "2026-05-15",
       "effective_date": "2026-07-18",
-      "employees": 1255,
+      "employees": 1245,
       "layoff_type": "Permanent Layoff",
       "county": "Anderson",
       "city": "",
@@ -7240,6 +7240,54 @@
       "county": "Anderson",
       "city": "",
       "address": "2665 US-29 N., Anderson, SC 29626",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "Electrolux Consumer Products, Inc.",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-12-22",
+      "employees": 10,
+      "layoff_type": "Permanent Layoff",
+      "county": "Anderson",
+      "city": "",
+      "address": "101 Masters Boulevard, Anderson, SC 29622",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "PepsiCo Beverages Sales LLC",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-10-18",
+      "employees": 105,
+      "layoff_type": "Permanent Layoff",
+      "county": "Richland",
+      "city": "",
+      "address": "6925 N. Main St., Columbia, SC 29203",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "Healthcare SC, LLC",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-08-28",
+      "employees": 254,
+      "layoff_type": "Permanent Closure",
+      "county": "Fairfield",
+      "city": "",
+      "address": "1 Mlily Way, Winnsboro, SC 29180",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "The Westin Hilton Head Island Resort & Spa",
+      "notice_date": "2026-08-27",
+      "effective_date": "2026-11-03",
+      "employees": 219,
+      "layoff_type": "Temporary Closure",
+      "county": "Beaufort",
+      "city": "",
+      "address": "2 Grasslawn Ave., Hilton Head Island, SC 29928",
       "industry": ""
     }
   ]

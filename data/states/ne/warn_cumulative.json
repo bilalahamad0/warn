@@ -1,9 +1,9 @@
 {
-  "total_records": 1036,
-  "total_employees": 45533,
+  "total_records": 1037,
+  "total_employees": 45624,
   "date_range_start": "2009-03-09",
-  "date_range_end": "2026-06-26",
-  "last_updated": "2026-08-07T12:59:37.600277+00:00",
+  "date_range_end": "2026-08-26",
+  "last_updated": "2026-08-30T02:34:45.901671+00:00",
   "source_url": "https://dol.nebraska.gov/ReemploymentServices/LayoffServices/LayoffsAndDownsizingWARN",
   "records": [
     {
@@ -12435,6 +12435,18 @@
       "layoff_type": "Layoff",
       "county": "",
       "city": "Omaha",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Fortrex 0129 Madison",
+      "notice_date": "2026-08-26",
+      "effective_date": null,
+      "employees": 91,
+      "layoff_type": "",
+      "county": "",
+      "city": "Madison",
       "address": "",
       "industry": ""
     }

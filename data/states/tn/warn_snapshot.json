@@ -1,11 +1,59 @@
 {
-  "total_records": 93,
-  "total_employees": 14520,
+  "total_records": 97,
+  "total_employees": 15030,
   "date_range_start": "2025-01-21",
-  "date_range_end": "2026-08-04",
-  "last_updated": "2026-08-05T01:50:09.467583+00:00Z",
+  "date_range_end": "2026-08-24",
+  "last_updated": "2026-08-29T16:28:36.565951+00:00",
   "source_url": "https://www.tn.gov/workforce/general-resources/major-publications0/major-publications-redirect/reports.html",
   "records": [
+    {
+      "state": "TN",
+      "company": "Identity Group",
+      "notice_date": "2026-08-24",
+      "effective_date": "2026-10-20",
+      "employees": 63,
+      "layoff_type": "",
+      "county": "Putnam",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "TN",
+      "company": "Wise Company LLC",
+      "notice_date": "2026-08-14",
+      "effective_date": null,
+      "employees": 129,
+      "layoff_type": "",
+      "county": "Hardin",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "TN",
+      "company": "Resource Label",
+      "notice_date": "2026-08-06",
+      "effective_date": "2026-10-03",
+      "employees": 68,
+      "layoff_type": "",
+      "county": "Williamson",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "TN",
+      "company": "TikTok USDS JV",
+      "notice_date": "2026-08-05",
+      "effective_date": "2026-10-05",
+      "employees": 250,
+      "layoff_type": "",
+      "county": "Davidson",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "TN",
       "company": "Wellpath",

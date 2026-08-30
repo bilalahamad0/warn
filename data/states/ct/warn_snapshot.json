@@ -1,9 +1,9 @@
 {
-  "total_records": 28,
-  "total_employees": 3190,
-  "date_range_start": "2025-08-25",
+  "total_records": 27,
+  "total_employees": 3112,
+  "date_range_start": "2025-09-12",
   "date_range_end": "2026-06-26",
-  "last_updated": "2026-08-07T04:08:39.789821+00:00Z",
+  "last_updated": "2026-08-29T04:51:04.169644+00:00",
   "source_url": "https://dolpublicdocumentlibrary.ct.gov/CsblrCategory?prefix=%2Frapid_response%2Fwarn_documents",
   "records": [
     {
@@ -324,18 +324,6 @@
       "notice_date": "2025-09-12",
       "effective_date": "2025-09-21",
       "employees": 0,
-      "layoff_type": "",
-      "county": "",
-      "city": "Shelton, Danbury, Wethersfield",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "CT",
-      "company": "PosiGen Developer LLC",
-      "notice_date": "2025-08-25",
-      "effective_date": "2024-08-24",
-      "employees": 78,
       "layoff_type": "",
       "county": "",
       "city": "Shelton, Danbury, Wethersfield",

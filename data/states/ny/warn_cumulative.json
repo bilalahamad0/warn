@@ -1,9 +1,9 @@
 {
-  "total_records": 4776,
-  "total_employees": 416944,
+  "total_records": 4786,
+  "total_employees": 418155,
   "date_range_start": "2016-01-04",
-  "date_range_end": "2026-07-21",
-  "last_updated": "2026-08-07T12:59:55.413690+00:00",
+  "date_range_end": "2026-08-04",
+  "last_updated": "2026-08-30T02:35:05.971857+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -57316,6 +57316,126 @@
       "county": "Bronx",
       "city": "",
       "address": "1 E 161st St Bronx, NY, 10451",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Republic National Distributing Company New York, LLC.",
+      "notice_date": "2026-05-01",
+      "effective_date": "2026-07-31",
+      "employees": 86,
+      "layoff_type": "Closure Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "570 Lexington Avenue Suite 2501 New York, NY, 10022",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Republic National Distributing Company New York, LLC.",
+      "notice_date": "2026-05-01",
+      "effective_date": "2026-07-31",
+      "employees": 46,
+      "layoff_type": "Closure Permanent",
+      "county": "Onondaga",
+      "city": "",
+      "address": "6600 New Venture Gear Drive Suite 450 East Syracuse, NY, 13057",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Ferraro Foods of New York North, LLC.",
+      "notice_date": "2026-07-07",
+      "effective_date": "2026-07-07",
+      "employees": 62,
+      "layoff_type": "Closure Permanent",
+      "county": "Oneida",
+      "city": "",
+      "address": "1301 Broad Street Utica, NY, 13501",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Sky Chefs, LLC",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-10-07",
+      "employees": 471,
+      "layoff_type": "Layoff Permanent",
+      "county": "Queens",
+      "city": "",
+      "address": "JFK International Airport 139 West Hangar Road Jamaica, NY, 11430",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Cazar Logistics",
+      "notice_date": "2026-01-31",
+      "effective_date": "2026-05-03",
+      "employees": 37,
+      "layoff_type": "Closure Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "408 E 60th Street New York, NY, 10022",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Diageo North America, Inc",
+      "notice_date": "2026-06-30",
+      "effective_date": "2026-09-30",
+      "employees": 305,
+      "layoff_type": "Layoff Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "3 World Trade Center 175 Greenwich St New York, NY, 10007",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Alray Car Parts Supply & Mfg. Corp.d/b/a Tinker Auto Parts",
+      "notice_date": "2026-07-01",
+      "effective_date": "2026-08-30",
+      "employees": 20,
+      "layoff_type": "Closure Permanent",
+      "county": "Suffolk",
+      "city": "",
+      "address": "200 Suffolk Avenue Brentwood, NY, 11717",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Alray Car Parts Supply & Mfg. Corp.d/b/a Tinker Auto Parts",
+      "notice_date": "2026-07-01",
+      "effective_date": "2026-08-30",
+      "employees": 31,
+      "layoff_type": "Closure Permanent",
+      "county": "Suffolk",
+      "city": "",
+      "address": "1650 Locust Ave Bohemia, NY, 11716",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "USIC Locating Services, LLC. d/b/a Reconn Utility Services",
+      "notice_date": "2026-04-01",
+      "effective_date": "2026-04-06",
+      "employees": 72,
+      "layoff_type": "Layoff Permanent",
+      "county": "Suffolk",
+      "city": "",
+      "address": "1500 Ocean Avenue Bohemia, NY, 11716",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Buffalo Newspress Inc. d/b/a BNP Empowered Print",
+      "notice_date": "2026-07-09",
+      "effective_date": "2026-07-09",
+      "employees": 81,
+      "layoff_type": "Closure Permanent",
+      "county": "Erie",
+      "city": "",
+      "address": "200 Broadway St Buffalo, NY, 14204",
       "industry": ""
     }
   ]

@@ -1,11 +1,35 @@
 {
-  "total_records": 801,
-  "total_employees": 118909,
+  "total_records": 803,
+  "total_employees": 119078,
   "date_range_start": "2017-01-09",
-  "date_range_end": "2026-08-06",
-  "last_updated": "2026-08-07T04:20:27.039479+00:00Z",
+  "date_range_end": "2026-08-27",
+  "last_updated": "2026-08-29T16:28:18.040512+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
+    {
+      "state": "OH",
+      "company": "Cornerstone Building Brands",
+      "notice_date": "2026-08-27",
+      "effective_date": "2026-12-01",
+      "employees": 104,
+      "layoff_type": "Closure",
+      "county": "Wood",
+      "city": "Walbridge",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Insteel Wire Products Company",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-10-20",
+      "employees": 65,
+      "layoff_type": "Closure",
+      "county": "Wyandot",
+      "city": "Upper Sandusky",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "OH",
       "company": "Sodexo CTM, LLC",

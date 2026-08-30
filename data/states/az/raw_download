@@ -1,5 +1,53 @@
 [
  {
+  "employer": "Amentum",
+  "city": "Chandler",
+  "zip": "85248",
+  "lwib_area": "7 - ARIZONA@WORK - Maricopa County",
+  "notice_date": "Aug 21, 2026",
+  "warn_type": "WARN",
+  "record_number": "994",
+  "detail_page_url": "https://www.azjobconnection.gov/search/warn_lookups/994",
+  "number_of_employees_affected": "75",
+  "address": "4500 S. Dobson; Chandler, Arizona 85248"
+ },
+ {
+  "employer": "Salad and Go",
+  "city": "Phoenix",
+  "zip": "85009",
+  "lwib_area": "5 - ARIZONA@WORK - City of Phoenix",
+  "notice_date": "Aug 04, 2026",
+  "warn_type": "WARN",
+  "record_number": "993",
+  "detail_page_url": "https://www.azjobconnection.gov/search/warn_lookups/993",
+  "number_of_employees_affected": "25",
+  "address": "625 S. 27th; Phoenix, Arizona 85009"
+ },
+ {
+  "employer": "Pinnacle Transplant Technologies, LLC",
+  "city": "Phoenix",
+  "zip": "85027",
+  "lwib_area": "5 - ARIZONA@WORK - City of Phoenix",
+  "notice_date": "Aug 17, 2026",
+  "warn_type": "WARN",
+  "record_number": "992",
+  "detail_page_url": "https://www.azjobconnection.gov/search/warn_lookups/992",
+  "number_of_employees_affected": "90",
+  "address": "1125 W. Pinnacle Peak Rd.; Phoenix, Arizona 85027"
+ },
+ {
+  "employer": "SMBC MANUBANK",
+  "city": "New York",
+  "zip": "10172",
+  "lwib_area": "7 - ARIZONA@WORK - Maricopa County",
+  "notice_date": "Aug 11, 2026",
+  "warn_type": "WARN",
+  "record_number": "991",
+  "detail_page_url": "https://www.azjobconnection.gov/search/warn_lookups/991",
+  "number_of_employees_affected": "23",
+  "address": "277 Park Avenue; New York, New York 10172"
+ },
+ {
   "employer": "Essendant",
   "city": "Phoenix",
   "zip": "85042",

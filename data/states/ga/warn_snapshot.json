@@ -1,9 +1,9 @@
 {
-  "total_records": 4749,
-  "total_employees": 606414,
+  "total_records": 4758,
+  "total_employees": 607492,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-08-07T04:11:31.249927+00:00Z",
+  "last_updated": "2026-08-29T16:18:27.504814+00:00",
   "source_url": "https://www.tcsg.edu/warn-public-view/",
   "records": [
     {
@@ -3268,6 +3268,114 @@
       "county": "",
       "city": "",
       "address": "125 Horizon Dr, Suwanee, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "SMBC Manubank",
+      "notice_date": null,
+      "effective_date": "2026-10-09",
+      "employees": 5,
+      "layoff_type": "Permanent Layoff / Reduction in Force",
+      "county": "",
+      "city": "",
+      "address": "277 Park Ave, New York, New York",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Anchor Glass Container Corporation",
+      "notice_date": null,
+      "effective_date": "2026-10-17",
+      "employees": 168,
+      "layoff_type": "Permanent Closure",
+      "county": "Houston",
+      "city": "",
+      "address": "1044 Booth Rd, Warner Robins, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Meyn Americas",
+      "notice_date": null,
+      "effective_date": "2026-10-01",
+      "employees": 150,
+      "layoff_type": "Permanent Closure",
+      "county": "Cherokee",
+      "city": "",
+      "address": "1000 Evenflo Dr, Ball Ground, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Asama Coldwater Manufacturing Georgia",
+      "notice_date": null,
+      "effective_date": "2026-10-14",
+      "employees": 102,
+      "layoff_type": "Permanent Closure",
+      "county": "Warren",
+      "city": "",
+      "address": "975 Thomson Hwy, Warrenton, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Republic National Distributing Company of Texas, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-19",
+      "employees": 157,
+      "layoff_type": "Permanent Closure",
+      "county": "Appling",
+      "city": "",
+      "address": "1 National Dr SW, Atlanta, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Republic National Distributing Company, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-19",
+      "employees": 321,
+      "layoff_type": "Permanent Closure",
+      "county": "Cobb",
+      "city": "",
+      "address": "1 National Dr SW, Atlanta, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Young's Market Company of Arizona, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-19",
+      "employees": 2,
+      "layoff_type": "Permanent Closure",
+      "county": "Cobb",
+      "city": "",
+      "address": "1 National Dr SW, Atlanta, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Young's Market Company, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-19",
+      "employees": 78,
+      "layoff_type": "Permanent Closure",
+      "county": "Cobb",
+      "city": "",
+      "address": "1 National Dr SW, Atlanta, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "KidsPeace National Centers of Georgia",
+      "notice_date": null,
+      "effective_date": "2026-10-24",
+      "employees": 95,
+      "layoff_type": "Permanent Closure",
+      "county": "Carroll",
+      "city": "",
+      "address": "101 Kidspeace Dr, Bowdon, Georgia",
       "industry": ""
     },
     {

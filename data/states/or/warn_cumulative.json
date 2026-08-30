@@ -1,9 +1,9 @@
 {
-  "total_records": 1355,
-  "total_employees": 186655,
+  "total_records": 1363,
+  "total_employees": 186878,
   "date_range_start": "1988-11-28",
-  "date_range_end": "2026-08-03",
-  "last_updated": "2026-08-07T13:00:04.944759+00:00",
+  "date_range_end": "2026-08-20",
+  "last_updated": "2026-08-30T02:35:15.851685+00:00",
   "source_url": "https://ccwd.hecc.oregon.gov/Layoff/WARN",
   "records": [
     {
@@ -16263,6 +16263,102 @@
       "layoff_type": "Permanent closure",
       "county": "",
       "city": "Springfield",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Bowtech, LLC",
+      "notice_date": "2026-07-27",
+      "effective_date": "2027-02-28",
+      "employees": 1,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Eugene",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Bowtech, LLC",
+      "notice_date": "2026-07-27",
+      "effective_date": "2026-12-31",
+      "employees": 9,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Eugene",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Bowtech, LLC",
+      "notice_date": "2026-07-27",
+      "effective_date": "2026-11-30",
+      "employees": 4,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Eugene",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Bowtech, LLC",
+      "notice_date": "2026-07-27",
+      "effective_date": "2026-10-31",
+      "employees": 6,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Eugene",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Bowtech, LLC",
+      "notice_date": "2026-07-27",
+      "effective_date": "2026-09-30",
+      "employees": 23,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Eugene",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "JeniusBank",
+      "notice_date": "2026-08-10",
+      "effective_date": "2026-10-09",
+      "employees": 105,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "New York, NY",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Oregon - Remote Employees",
+      "notice_date": "2026-08-10",
+      "effective_date": "2026-10-09",
+      "employees": 1,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Amentum - Hillsboro, OR",
+      "notice_date": "2026-08-20",
+      "effective_date": "2026-10-19",
+      "employees": 74,
+      "layoff_type": "Large Layoff - 10 or more workers",
+      "county": "",
+      "city": "Hillsboro",
       "address": "",
       "industry": ""
     }

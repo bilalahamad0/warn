@@ -1,16 +1,16 @@
 {
-  "total_records": 936,
-  "total_employees": 51719,
+  "total_records": 942,
+  "total_employees": 51777,
   "date_range_start": "2011-01-13",
-  "date_range_end": "2026-08-04",
-  "last_updated": "2026-08-07T04:11:53.303847+00:00Z",
+  "date_range_end": "2026-08-28",
+  "last_updated": "2026-08-29T16:18:54.217695+00:00",
   "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
   "records": [
     {
       "state": "IA",
       "company": "CNH Industrial America LLC",
       "notice_date": "2026-01-20",
-      "effective_date": "2026-03-23",
+      "effective_date": "2026-03-02",
       "employees": 7,
       "layoff_type": "Closing",
       "county": "Des Moines",
@@ -1013,6 +1013,78 @@
       "city": "West Des Moines",
       "address": "800 S Jordan Creek Pkwy",
       "industry": "Finance and Insurance"
+    },
+    {
+      "state": "IA",
+      "company": "Winnebago Industries",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-11-30",
+      "employees": 27,
+      "layoff_type": "Mass Layoff",
+      "county": "Winnebago",
+      "city": "Forest City",
+      "address": "605 W Crystal Lake Rd",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "IA",
+      "company": "RTX",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-09-30",
+      "employees": 1,
+      "layoff_type": "Mass Layoff",
+      "county": "Linn",
+      "city": "Cedar Rapids",
+      "address": "400 Collins Rd NE",
+      "industry": "Professional, Scientific, and Technical Services"
+    },
+    {
+      "state": "IA",
+      "company": "Wells Fargo",
+      "notice_date": "2026-08-18",
+      "effective_date": "2026-10-17",
+      "employees": 14,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Polk",
+      "city": "West Des Moines",
+      "address": "800 S Jordan Creek Pkwy",
+      "industry": "Finance and Insurance"
+    },
+    {
+      "state": "IA",
+      "company": "Verschoor Meats, Inc",
+      "notice_date": "2026-08-21",
+      "effective_date": "2026-08-21",
+      "employees": 42,
+      "layoff_type": "Closing",
+      "county": "Woodbury",
+      "city": "Sioux City",
+      "address": "1401 Bluff Rd",
+      "industry": "Wholesale Trade"
+    },
+    {
+      "state": "IA",
+      "company": "RTX",
+      "notice_date": "2026-08-25",
+      "effective_date": "2026-09-30",
+      "employees": 1,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Linn",
+      "city": "Cedar Rapids",
+      "address": "400 Collins Rd NE",
+      "industry": "Professional, Scientific, and Technical Services"
+    },
+    {
+      "state": "IA",
+      "company": "People First Sanitation",
+      "notice_date": "2026-08-28",
+      "effective_date": "2026-09-25",
+      "employees": 54,
+      "layoff_type": "Mass Layoff",
+      "county": "Woodbury",
+      "city": "Sioux City",
+      "address": "1000 Cunningham Dr",
+      "industry": "Administrative and Support and Waste Management and Remediation Services"
     },
     {
       "state": "IA",
@@ -3281,6 +3353,18 @@
       "city": "Ankeny",
       "address": "4707 SE Rio Court, Suites 106-110",
       "industry": "Construction"
+    },
+    {
+      "state": "IA",
+      "company": "RTX",
+      "notice_date": "2026-08-25",
+      "effective_date": "2026-09-30",
+      "employees": 1,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Linn",
+      "city": "Cedar Rapids",
+      "address": "400 Collins Rd NE",
+      "industry": "Professional, Scientific, and Technical Services"
     },
     {
       "state": "IA",
@@ -7060,18 +7144,6 @@
       "county": "Marshall",
       "city": "Marshalltown",
       "address": "200 S 12th Ave",
-      "industry": "Manufacturing"
-    },
-    {
-      "state": "IA",
-      "company": "Arcosa Wind Towers, Inc",
-      "notice_date": "2021-08-18",
-      "effective_date": "2021-10-19",
-      "employees": 82,
-      "layoff_type": "Mass Layoff",
-      "county": "Jasper",
-      "city": "Newton",
-      "address": "801 N 19th Ave E",
       "industry": "Manufacturing"
     },
     {

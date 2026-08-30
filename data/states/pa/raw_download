@@ -89,7 +89,7 @@
     
     
     <link rel="stylesheet" href="/etc.clientlibs/copapwp/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.css" type="text/css">
-<link rel="stylesheet" href="/etc.clientlibs/copapwp/clientlibs/clientlib-site.lc-5f6666411123de10a32e6a3fd1ce2c57-lc.min.css" type="text/css">
+<link rel="stylesheet" href="/etc.clientlibs/copapwp/clientlibs/clientlib-site.lc-a2959220f80be46576a0a4bdc95f54c5-lc.min.css" type="text/css">
 
 
     
@@ -1042,35 +1042,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a id="sidenav-title-newsroom" aria-current="false" data-cmp-data-layer="{&#34;SideNavMenu-navigation-8dc170420c-item-ae36132a8b-item0&#34;:{&#34;name&#34;:&#34;Newsroom&#34;,&#34;action&#34;:&#34;Side Navigation Click&#34;,&#34;id&#34;:&#34;SideNavMenu-navigation-8dc170420c-item-ae36132a8b-item0&#34;,&#34;label&#34;:&#34;Newsroom&#34;,&#34;type&#34;:&#34;other&#34;,&#34;category&#34;:&#34;Side Navigation&#34;,&#34;targetURL&#34;:&#34;/agencies/dli/newsroom.html&#34;,&#34;parentId&#34;:&#34;sidenavigationmenu&#34;}}" data-cmp-clickable class="cmp-navigation__item-link" href="/agencies/dli/newsroom">Newsroom
         </a>
         
-            <button class='cmp-button__nav' type='button' data-bs-toggle='collapse' aria-labelledby="sidenav-title-newsroom" data-bs-target='#sidenavitem-levelnewsroom' aria-expanded="false">
-            <span class='cmp-button__icon'></span>
-            </button>
-        
     </span>
 
         
-  
-
-
-  <ul id="sidenavitem-levelnewsroom" class=" cmp-sidenav--child collapse">
-    
-      
-
-    <li>
-        
-    
-    <span class="cmp-sidenav--link ">
-        <a id="sidenav-title-governor-shapiro-honors-dli-pennserve-with-governors-awards-for-excellence" aria-current="false" data-cmp-data-layer="{&#34;SideNavMenu-navigation-8dc170420c-item-900aa00f39-item0&#34;:{&#34;name&#34;:&#34;Governor Shapiro Honors L&amp;I’s PennSERVE Team with GAE&#34;,&#34;action&#34;:&#34;Side Navigation Click&#34;,&#34;id&#34;:&#34;SideNavMenu-navigation-8dc170420c-item-900aa00f39-item0&#34;,&#34;label&#34;:&#34;Governor Shapiro Honors L&amp;I’s PennSERVE Team with GAE&#34;,&#34;type&#34;:&#34;other&#34;,&#34;category&#34;:&#34;Side Navigation&#34;,&#34;targetURL&#34;:&#34;/agencies/dli/newsroom/governor-shapiro-honors-dli-pennserve-with-governors-awards-for-excellence.html&#34;,&#34;parentId&#34;:&#34;sidenavigationmenu&#34;}}" data-cmp-clickable class="cmp-navigation__item-link" href="/agencies/dli/newsroom/governor-shapiro-honors-dli-pennserve-with-governors-awards-for-excellence">Governor Shapiro Honors L&amp;I’s PennSERVE Team with GAE
-        </a>
-        
-    </span>
-
-        
-    </li>
-
-    
-  </ul>
-
     </li>
 
     
@@ -3343,7 +3317,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     <div class="accordion panelcontainer aem-GridColumn aem-GridColumn--default--12">
 
-<div id="accordion-2e0f88dcba" class="cmp-accordion" data-cmp-is="accordion" data-cmp-data-layer="{&#34;accordion-2e0f88dcba&#34;:{&#34;shownItems&#34;:[],&#34;@type&#34;:&#34;copapwp/components/core/accordion/v1/accordion&#34;,&#34;repo:modifyDate&#34;:&#34;2026-08-03T13:35:24Z&#34;}}" data-placeholder-text="false">
+<div id="accordion-2e0f88dcba" class="cmp-accordion" data-cmp-is="accordion" data-cmp-data-layer="{&#34;accordion-2e0f88dcba&#34;:{&#34;shownItems&#34;:[],&#34;@type&#34;:&#34;copapwp/components/core/accordion/v1/accordion&#34;,&#34;repo:modifyDate&#34;:&#34;2026-08-17T12:20:21Z&#34;}}" data-placeholder-text="false">
     
 		<h2 class="cmp-accordion__main-heading--large">2026</h2>
      
@@ -3367,10 +3341,121 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         
         <div class="accordion panelcontainer">
 
-<div id="accordion-7ed76a28d7" class="cmp-accordion" data-cmp-is="accordion" data-cmp-data-layer="{&#34;accordion-7ed76a28d7&#34;:{&#34;shownItems&#34;:[],&#34;@type&#34;:&#34;copapwp/components/core/accordion/v1/accordion&#34;,&#34;repo:modifyDate&#34;:&#34;2026-08-05T14:46:11Z&#34;}}" data-placeholder-text="false">
+<div id="accordion-7ed76a28d7" class="cmp-accordion" data-cmp-is="accordion" data-cmp-data-layer="{&#34;accordion-7ed76a28d7&#34;:{&#34;shownItems&#34;:[],&#34;@type&#34;:&#34;copapwp/components/core/accordion/v1/accordion&#34;,&#34;repo:modifyDate&#34;:&#34;2026-08-26T17:44:30Z&#34;}}" data-placeholder-text="false">
      
     
-    <div class="cmp-accordion__item" data-cmp-hook-accordion="item" data-cmp-data-layer="{&#34;accordion-7ed76a28d7-item-14e08021e0&#34;:{&#34;@type&#34;:&#34;copapwp/components/core/accordion/v1/accordion/item&#34;,&#34;dc:title&#34;:&#34;Essendant Management Services, LLC&#34;}}" id="accordion-7ed76a28d7-item-14e08021e0">
+    <div class="cmp-accordion__item" data-cmp-hook-accordion="item" data-cmp-data-layer="{&#34;accordion-7ed76a28d7-item-94dbe02bd4&#34;:{&#34;@type&#34;:&#34;copapwp/components/core/accordion/v1/accordion/item&#34;,&#34;dc:title&#34;:&#34;Eos Energy Storage, LLC&#34;}}" id="accordion-7ed76a28d7-item-94dbe02bd4">
+        <h3 class="cmp-accordion__header ">
+
+            <button id="accordion-7ed76a28d7-item-94dbe02bd4-button" class="cmp-accordion__button " type="button" aria-controls="accordion-7ed76a28d7-item-94dbe02bd4-panel" data-cmp-hook-accordion="button">
+                <span class="cmp-accordion__title">Eos Energy Storage, LLC</span>
+                <span class="cmp-accordion__icon"></span>
+
+
+            </button>
+        </h3>
+        <div data-cmp-hook-accordion="panel" id="accordion-7ed76a28d7-item-94dbe02bd4-panel" class="cmp-accordion__panel  cmp-accordion__panel--hidden" role="region" aria-labelledby="accordion-7ed76a28d7-item-94dbe02bd4-button"><div class="container responsivegrid">
+
+    
+    
+    
+    <div id="container-94dbe02bd4" class="cmp-container">
+        
+        <div class="text">
+<div data-cmp-data-layer="{&#34;text-a58d2c1dfb&#34;:{&#34;@type&#34;:&#34;copapwp/components/core/text/v1/text&#34;,&#34;repo:modifyDate&#34;:&#34;2026-08-26T17:45:41Z&#34;,&#34;xdm:text&#34;:&#34;&lt;p>700 Braddock Avenue, Building 700, East Pittsburgh, PA&amp;nbsp; 15112&lt;/p>\r\n&lt;p>COUNTY:&amp;nbsp;Allegheny&lt;br>\r\n# AFFECTED:&amp;nbsp;251&lt;br>\r\nEFFECTIVE DATE: 10/26/26&lt;br>\r\nCLOSURE OR LAYOFF: Layoff​&lt;/p>\r\n&#34;}}">
+<p>700 Braddock Avenue, Building 700, East Pittsburgh, PA  15112</p>
+<p>COUNTY: Allegheny<br />
+# AFFECTED: 251<br />
+EFFECTIVE DATE: 10/26/26<br />
+CLOSURE OR LAYOFF: Layoff​</p>
+
+</div>
+
+    
+
+</div>
+
+        
+    </div>
+
+</div>
+</div>
+    </div>
+<div class="cmp-accordion__item" data-cmp-hook-accordion="item" data-cmp-data-layer="{&#34;accordion-7ed76a28d7-item-d71b7aaf0c&#34;:{&#34;@type&#34;:&#34;copapwp/components/core/accordion/v1/accordion/item&#34;,&#34;dc:title&#34;:&#34;SMBC MANUBANK&#34;}}" id="accordion-7ed76a28d7-item-d71b7aaf0c">
+        <h3 class="cmp-accordion__header ">
+
+            <button id="accordion-7ed76a28d7-item-d71b7aaf0c-button" class="cmp-accordion__button " type="button" aria-controls="accordion-7ed76a28d7-item-d71b7aaf0c-panel" data-cmp-hook-accordion="button">
+                <span class="cmp-accordion__title">SMBC MANUBANK</span>
+                <span class="cmp-accordion__icon"></span>
+
+
+            </button>
+        </h3>
+        <div data-cmp-hook-accordion="panel" id="accordion-7ed76a28d7-item-d71b7aaf0c-panel" class="cmp-accordion__panel  cmp-accordion__panel--hidden" role="region" aria-labelledby="accordion-7ed76a28d7-item-d71b7aaf0c-button"><div class="container responsivegrid">
+
+    
+    
+    
+    <div id="container-d71b7aaf0c" class="cmp-container">
+        
+        <div class="text">
+<div data-cmp-data-layer="{&#34;text-e4f7b4dcb3&#34;:{&#34;@type&#34;:&#34;copapwp/components/core/text/v1/text&#34;,&#34;repo:modifyDate&#34;:&#34;2026-08-13T14:00:34Z&#34;,&#34;xdm:text&#34;:&#34;&lt;p>Various remote locations throughout the United States&lt;/p>\r\n&lt;p>COUNTY:&amp;nbsp;Various&lt;br>\r\n# AFFECTED:&amp;nbsp;7 – PA Remote Employees&lt;br>\r\nEFFECTIVE DATE: 10/9/26&lt;br>\r\nCLOSURE OR LAYOFF: Closure​&lt;/p>\r\n&#34;}}">
+<p>Various remote locations throughout the United States</p>
+<p>COUNTY: Various<br />
+# AFFECTED: 7 – PA Remote Employees<br />
+EFFECTIVE DATE: 10/9/26<br />
+CLOSURE OR LAYOFF: Closure​</p>
+
+</div>
+
+    
+
+</div>
+
+        
+    </div>
+
+</div>
+</div>
+    </div>
+<div class="cmp-accordion__item" data-cmp-hook-accordion="item" data-cmp-data-layer="{&#34;accordion-7ed76a28d7-item-2d66f109d8&#34;:{&#34;@type&#34;:&#34;copapwp/components/core/accordion/v1/accordion/item&#34;,&#34;dc:title&#34;:&#34;Grede, LLC&#34;}}" id="accordion-7ed76a28d7-item-2d66f109d8">
+        <h3 class="cmp-accordion__header ">
+
+            <button id="accordion-7ed76a28d7-item-2d66f109d8-button" class="cmp-accordion__button " type="button" aria-controls="accordion-7ed76a28d7-item-2d66f109d8-panel" data-cmp-hook-accordion="button">
+                <span class="cmp-accordion__title">Grede, LLC</span>
+                <span class="cmp-accordion__icon"></span>
+
+
+            </button>
+        </h3>
+        <div data-cmp-hook-accordion="panel" id="accordion-7ed76a28d7-item-2d66f109d8-panel" class="cmp-accordion__panel  cmp-accordion__panel--hidden" role="region" aria-labelledby="accordion-7ed76a28d7-item-2d66f109d8-button"><div class="container responsivegrid">
+
+    
+    
+    
+    <div id="container-2d66f109d8" class="cmp-container">
+        
+        <div class="text">
+<div data-cmp-data-layer="{&#34;text-863d0e1143&#34;:{&#34;@type&#34;:&#34;copapwp/components/core/text/v1/text&#34;,&#34;repo:modifyDate&#34;:&#34;2026-08-13T13:44:18Z&#34;,&#34;xdm:text&#34;:&#34;&lt;p>18771 Mill Street, Meadville, PA&amp;nbsp; 16335&lt;/p>\r\n&lt;p>COUNTY:&amp;nbsp;Crawford&lt;br>\r\n# AFFECTED: 170&lt;br>\r\nEFFECTIVE DATE: 10/10/26&lt;br>\r\nCLOSURE OR LAYOFF: Closure​&lt;/p>\r\n&#34;}}">
+<p>18771 Mill Street, Meadville, PA  16335</p>
+<p>COUNTY: Crawford<br />
+# AFFECTED: 170<br />
+EFFECTIVE DATE: 10/10/26<br />
+CLOSURE OR LAYOFF: Closure​</p>
+
+</div>
+
+    
+
+</div>
+
+        
+    </div>
+
+</div>
+</div>
+    </div>
+<div class="cmp-accordion__item" data-cmp-hook-accordion="item" data-cmp-data-layer="{&#34;accordion-7ed76a28d7-item-14e08021e0&#34;:{&#34;@type&#34;:&#34;copapwp/components/core/accordion/v1/accordion/item&#34;,&#34;dc:title&#34;:&#34;Essendant Management Services, LLC&#34;}}" id="accordion-7ed76a28d7-item-14e08021e0">
         <h3 class="cmp-accordion__header ">
 
             <button id="accordion-7ed76a28d7-item-14e08021e0-button" class="cmp-accordion__button " type="button" aria-controls="accordion-7ed76a28d7-item-14e08021e0-panel" data-cmp-hook-accordion="button">
@@ -3488,6 +3573,80 @@ CLOSURE OR LAYOFF: Layoff​</p>
     </div>
 
     
+</div>
+</div>
+    </div>
+<div class="cmp-accordion__item" data-cmp-hook-accordion="item" data-cmp-data-layer="{&#34;accordion-7ed76a28d7-item-9340327574&#34;:{&#34;@type&#34;:&#34;copapwp/components/core/accordion/v1/accordion/item&#34;,&#34;dc:title&#34;:&#34;United Natural Foods, Inc. (NFI)&#34;}}" id="accordion-7ed76a28d7-item-9340327574">
+        <h3 class="cmp-accordion__header ">
+
+            <button id="accordion-7ed76a28d7-item-9340327574-button" class="cmp-accordion__button " type="button" aria-controls="accordion-7ed76a28d7-item-9340327574-panel" data-cmp-hook-accordion="button">
+                <span class="cmp-accordion__title">United Natural Foods, Inc. (NFI)</span>
+                <span class="cmp-accordion__icon"></span>
+
+
+            </button>
+        </h3>
+        <div data-cmp-hook-accordion="panel" id="accordion-7ed76a28d7-item-9340327574-panel" class="cmp-accordion__panel  cmp-accordion__panel--hidden" role="region" aria-labelledby="accordion-7ed76a28d7-item-9340327574-button"><div class="container responsivegrid">
+
+    
+    
+    
+    <div id="container-9340327574" class="cmp-container">
+        
+        <div class="text">
+<div data-cmp-data-layer="{&#34;text-fb5c91527c&#34;:{&#34;@type&#34;:&#34;copapwp/components/core/text/v1/text&#34;,&#34;repo:modifyDate&#34;:&#34;2026-08-14T15:23:51Z&#34;,&#34;xdm:text&#34;:&#34;&lt;p>2722 Commerce Way, Philadelphia, PA&amp;nbsp; 19154&lt;/p>\r\n&lt;p>COUNTY: Philadelphia&lt;br>\r\n# AFFECTED: 48&lt;br>\r\nEFFECTIVE DATE: 10/16/26&lt;br>\r\nCLOSURE OR LAYOFF: Closure​&lt;/p>\r\n&#34;}}">
+<p>2722 Commerce Way, Philadelphia, PA  19154</p>
+<p>COUNTY: Philadelphia<br />
+# AFFECTED: 48<br />
+EFFECTIVE DATE: 10/16/26<br />
+CLOSURE OR LAYOFF: Closure​</p>
+
+</div>
+
+    
+
+</div>
+
+        
+    </div>
+
+</div>
+</div>
+    </div>
+<div class="cmp-accordion__item" data-cmp-hook-accordion="item" data-cmp-data-layer="{&#34;accordion-7ed76a28d7-item-ed60ccaa51&#34;:{&#34;@type&#34;:&#34;copapwp/components/core/accordion/v1/accordion/item&#34;,&#34;dc:title&#34;:&#34;CJ Logistics America, LLC&#34;}}" id="accordion-7ed76a28d7-item-ed60ccaa51">
+        <h3 class="cmp-accordion__header ">
+
+            <button id="accordion-7ed76a28d7-item-ed60ccaa51-button" class="cmp-accordion__button " type="button" aria-controls="accordion-7ed76a28d7-item-ed60ccaa51-panel" data-cmp-hook-accordion="button">
+                <span class="cmp-accordion__title">CJ Logistics America, LLC</span>
+                <span class="cmp-accordion__icon"></span>
+
+
+            </button>
+        </h3>
+        <div data-cmp-hook-accordion="panel" id="accordion-7ed76a28d7-item-ed60ccaa51-panel" class="cmp-accordion__panel  cmp-accordion__panel--hidden" role="region" aria-labelledby="accordion-7ed76a28d7-item-ed60ccaa51-button"><div class="container responsivegrid">
+
+    
+    
+    
+    <div id="container-ed60ccaa51" class="cmp-container">
+        
+        <div class="text">
+<div data-cmp-data-layer="{&#34;text-52ce141155&#34;:{&#34;@type&#34;:&#34;copapwp/components/core/text/v1/text&#34;,&#34;repo:modifyDate&#34;:&#34;2026-08-17T12:18:21Z&#34;,&#34;xdm:text&#34;:&#34;&lt;p>400 Nestle Way, Breinigsville, PA&amp;nbsp; 18031&lt;/p>\r\n&lt;p>COUNTY: Lehigh&lt;br>\r\n# AFFECTED: 57&lt;br>\r\nEFFECTIVE DATE: 10/16/26 -&amp;nbsp;11/20/26&lt;br>\r\nCLOSURE OR LAYOFF: Closure​&lt;/p>\r\n&#34;}}">
+<p>400 Nestle Way, Breinigsville, PA  18031</p>
+<p>COUNTY: Lehigh<br />
+# AFFECTED: 57<br />
+EFFECTIVE DATE: 10/16/26 - 11/20/26<br />
+CLOSURE OR LAYOFF: Closure​</p>
+
+</div>
+
+    
+
+</div>
+
+        
+    </div>
+
 </div>
 </div>
     </div>
@@ -17056,7 +17215,7 @@ fetch('https://api.ipify.org?format=json')
     
     
     <script src="/etc.clientlibs/copapwp/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.js"></script>
-<script src="/etc.clientlibs/copapwp/clientlibs/clientlib-site.lc-a5917da0c5517b9a21ee6ac43b923a92-lc.min.js"></script>
+<script src="/etc.clientlibs/copapwp/clientlibs/clientlib-site.lc-289d9be8f38870127030af6ed789f2e1-lc.min.js"></script>
 
 
     

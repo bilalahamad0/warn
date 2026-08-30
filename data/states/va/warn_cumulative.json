@@ -1,9 +1,9 @@
 {
-  "total_records": 1119,
-  "total_employees": 130199,
+  "total_records": 1123,
+  "total_employees": 130826,
   "date_range_start": "2010-07-29",
-  "date_range_end": "2026-07-09",
-  "last_updated": "2026-08-07T13:00:27.457739+00:00",
+  "date_range_end": "2026-08-28",
+  "last_updated": "2026-08-30T02:35:32.123366+00:00",
   "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
   "records": [
     {
@@ -13424,9 +13424,57 @@
     },
     {
       "state": "VA",
+      "company": "SMBC Manubank",
+      "notice_date": "2026-08-10",
+      "effective_date": "2026-10-09",
+      "employees": 5,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Aldie, Arlington, Reston, Maidens & Henrico",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "Eurofins Professional Scientific Services LLC",
+      "notice_date": "2026-08-10",
+      "effective_date": "2026-10-09",
+      "employees": 68,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Richmond",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "TekSynap Corporation",
+      "notice_date": "2026-08-17",
+      "effective_date": "2026-10-14",
+      "employees": 9,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Statewide",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "Crothall Healthcare",
+      "notice_date": "2026-08-28",
+      "effective_date": "2026-10-31",
+      "employees": 545,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Richmond",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-08-07",
+      "effective_date": "2026-08-30",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",

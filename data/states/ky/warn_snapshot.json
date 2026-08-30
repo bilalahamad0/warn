@@ -1,22 +1,22 @@
 {
-  "total_records": 448,
-  "total_employees": 54125,
-  "date_range_start": "2017-04-01",
-  "date_range_end": "2026-12-31",
-  "last_updated": "2026-08-07T04:16:00.077617+00:00Z",
+  "total_records": 449,
+  "total_employees": 54126,
+  "date_range_start": "2017-01-25",
+  "date_range_end": "2026-08-10",
+  "last_updated": "2026-08-29T16:22:28.538766+00:00",
   "source_url": "https://kyworks.ky.gov/Services/Pages/Rapid-Response-Layoffs-and-Closures.aspx",
   "records": [
     {
       "state": "KY",
-      "company": "80 Acres Farm",
-      "notice_date": "2026-08-03",
-      "effective_date": "2026-08-03",
-      "employees": 127,
+      "company": "SMBC Manubank",
+      "notice_date": "2026-08-10",
+      "effective_date": "2026-10-09",
+      "employees": 1,
       "layoff_type": "Closure",
-      "county": "Boone",
+      "county": "Out of the State County",
       "city": "",
       "address": "",
-      "industry": "11141"
+      "industry": "522110"
     },
     {
       "state": "KY",
@@ -41,6 +41,18 @@
       "city": "",
       "address": "",
       "industry": "493110"
+    },
+    {
+      "state": "KY",
+      "company": "Carrier Corporation (Franklin Operation)",
+      "notice_date": "2026-06-12",
+      "effective_date": "2026-08-30",
+      "employees": 70,
+      "layoff_type": "Closure",
+      "county": "Simpson",
+      "city": "",
+      "address": "",
+      "industry": "333415"
     },
     {
       "state": "KY",
@@ -104,15 +116,15 @@
     },
     {
       "state": "KY",
-      "company": "Carrier Corporation (Franklin Operation)",
-      "notice_date": "2026-06-12",
-      "effective_date": "2026-08-30",
-      "employees": 70,
+      "company": "80 Acres Farm",
+      "notice_date": "2026-08-03",
+      "effective_date": "2026-08-03",
+      "employees": 127,
       "layoff_type": "Closure",
-      "county": "Simpson",
+      "county": "Boone",
       "city": "",
       "address": "",
-      "industry": "333415"
+      "industry": "11141"
     },
     {
       "state": "KY",
@@ -125,30 +137,6 @@
       "city": "",
       "address": "",
       "industry": "541715"
-    },
-    {
-      "state": "KY",
-      "company": "University of Kentucky College of Medicine, Department of Behavioral Science",
-      "notice_date": "2026-05-05",
-      "effective_date": "2026-06-30",
-      "employees": 36,
-      "layoff_type": "",
-      "county": "Fayette",
-      "city": "",
-      "address": "",
-      "industry": "611310"
-    },
-    {
-      "state": "KY",
-      "company": "UK HealthCare-HIV Program Operations (KIRP)",
-      "notice_date": "2026-05-05",
-      "effective_date": "2026-06-30",
-      "employees": 61,
-      "layoff_type": "Closure",
-      "county": "Fayette",
-      "city": "",
-      "address": "",
-      "industry": "611310"
     },
     {
       "state": "KY",
@@ -176,15 +164,27 @@
     },
     {
       "state": "KY",
-      "company": "Marsden Services LLC",
-      "notice_date": "2026-04-16",
-      "effective_date": "2026-05-10",
-      "employees": 106,
-      "layoff_type": "Layoff",
-      "county": "Jefferson County - Louisville",
+      "company": "University of Kentucky College of Medicine, Department of Behavioral Science",
+      "notice_date": "2026-05-05",
+      "effective_date": "2026-06-30",
+      "employees": 36,
+      "layoff_type": "",
+      "county": "Fayette",
       "city": "",
       "address": "",
-      "industry": "56172"
+      "industry": "611310"
+    },
+    {
+      "state": "KY",
+      "company": "UK HealthCare-HIV Program Operations (KIRP)",
+      "notice_date": "2026-05-05",
+      "effective_date": "2026-06-30",
+      "employees": 61,
+      "layoff_type": "Closure",
+      "county": "Fayette",
+      "city": "",
+      "address": "",
+      "industry": "611310"
     },
     {
       "state": "KY",
@@ -212,27 +212,15 @@
     },
     {
       "state": "KY",
-      "company": "CC Metals and Alloys",
-      "notice_date": "2026-03-17",
-      "effective_date": "2026-03-24",
-      "employees": 114,
+      "company": "Marsden Services LLC",
+      "notice_date": "2026-04-16",
+      "effective_date": "2026-05-10",
+      "employees": 106,
       "layoff_type": "Layoff",
-      "county": "Marshall",
+      "county": "Jefferson County - Louisville",
       "city": "",
       "address": "",
-      "industry": "33331"
-    },
-    {
-      "state": "KY",
-      "company": "C2 Technologies",
-      "notice_date": "2026-03-06",
-      "effective_date": "2026-03-06",
-      "employees": 2,
-      "layoff_type": "Layoff",
-      "county": "Out of the State County",
-      "city": "",
-      "address": "",
-      "industry": "545410"
+      "industry": "56172"
     },
     {
       "state": "KY",
@@ -260,18 +248,6 @@
     },
     {
       "state": "KY",
-      "company": "HGS CX TECHNOLOGIES INC.",
-      "notice_date": "2026-02-04",
-      "effective_date": "2026-03-31",
-      "employees": 1,
-      "layoff_type": "Layoff",
-      "county": "Franklin",
-      "city": "",
-      "address": "",
-      "industry": "541611"
-    },
-    {
-      "state": "KY",
       "company": "PARSONS CORPORATION",
       "notice_date": "2026-02-03",
       "effective_date": "2026-04-16",
@@ -281,18 +257,6 @@
       "city": "",
       "address": "",
       "industry": "541330"
-    },
-    {
-      "state": "KY",
-      "company": "T-Mobile USA, Inc.",
-      "notice_date": "2026-01-31",
-      "effective_date": "2026-04-02",
-      "employees": 74,
-      "layoff_type": "Layoff",
-      "county": "Jefferson County - Louisville",
-      "city": "",
-      "address": "",
-      "industry": "517112"
     },
     {
       "state": "KY",
@@ -308,15 +272,39 @@
     },
     {
       "state": "KY",
-      "company": "Bechtel Parsons Blue Grass",
-      "notice_date": "2026-01-19",
-      "effective_date": "2026-03-20",
-      "employees": 33,
-      "layoff_type": "Closure",
-      "county": "Madison",
+      "company": "T-Mobile USA, Inc.",
+      "notice_date": "2026-01-31",
+      "effective_date": "2026-04-02",
+      "employees": 74,
+      "layoff_type": "Layoff",
+      "county": "Jefferson County - Louisville",
       "city": "",
       "address": "",
-      "industry": "541330"
+      "industry": "517112"
+    },
+    {
+      "state": "KY",
+      "company": "Blue Oval SK Group/Battery Plant",
+      "notice_date": "2025-12-16",
+      "effective_date": "2026-03-31",
+      "employees": 1514,
+      "layoff_type": "Closure",
+      "county": "Hardin",
+      "city": "",
+      "address": "",
+      "industry": "335911"
+    },
+    {
+      "state": "KY",
+      "company": "HGS CX TECHNOLOGIES INC.",
+      "notice_date": "2026-02-04",
+      "effective_date": "2026-03-31",
+      "employees": 1,
+      "layoff_type": "Layoff",
+      "county": "Franklin",
+      "city": "",
+      "address": "",
+      "industry": "541611"
     },
     {
       "state": "KY",
@@ -329,6 +317,42 @@
       "city": "",
       "address": "",
       "industry": "541330"
+    },
+    {
+      "state": "KY",
+      "company": "CC Metals and Alloys",
+      "notice_date": "2026-03-17",
+      "effective_date": "2026-03-24",
+      "employees": 114,
+      "layoff_type": "Layoff",
+      "county": "Marshall",
+      "city": "",
+      "address": "",
+      "industry": "33331"
+    },
+    {
+      "state": "KY",
+      "company": "Bechtel Parsons Blue Grass",
+      "notice_date": "2026-01-19",
+      "effective_date": "2026-03-20",
+      "employees": 33,
+      "layoff_type": "Closure",
+      "county": "Madison",
+      "city": "",
+      "address": "",
+      "industry": "541330"
+    },
+    {
+      "state": "KY",
+      "company": "C2 Technologies",
+      "notice_date": "2026-03-06",
+      "effective_date": "2026-03-06",
+      "employees": 2,
+      "layoff_type": "Layoff",
+      "county": "Out of the State County",
+      "city": "",
+      "address": "",
+      "industry": "545410"
     },
     {
       "state": "KY",
@@ -356,15 +380,15 @@
     },
     {
       "state": "KY",
-      "company": "Blue Oval SK Group/Battery Plant",
-      "notice_date": "2025-12-16",
-      "effective_date": "2026-03-31",
-      "employees": 1514,
+      "company": "Thyssenkrupp",
+      "notice_date": "2025-12-15",
+      "effective_date": "2026-02-13",
+      "employees": 77,
       "layoff_type": "Closure",
-      "county": "Hardin",
+      "county": "Boone",
       "city": "",
       "address": "",
-      "industry": "335911"
+      "industry": "332991"
     },
     {
       "state": "KY",
@@ -377,18 +401,6 @@
       "city": "",
       "address": "",
       "industry": "541330"
-    },
-    {
-      "state": "KY",
-      "company": "Thyssenkrupp",
-      "notice_date": "2025-12-15",
-      "effective_date": "2026-02-13",
-      "employees": 77,
-      "layoff_type": "Closure",
-      "county": "Boone",
-      "city": "",
-      "address": "",
-      "industry": "332991"
     },
     {
       "state": "KY",

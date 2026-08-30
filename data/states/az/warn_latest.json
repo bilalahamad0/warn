@@ -1,11 +1,59 @@
 {
-  "total_records": 476,
-  "total_employees": 73289,
+  "total_records": 480,
+  "total_employees": 73502,
   "date_range_start": "2019-01-04",
-  "date_range_end": "2026-08-04",
-  "last_updated": "2026-08-07T12:47:50.415780+00:00",
+  "date_range_end": "2026-08-21",
+  "last_updated": "2026-08-30T02:23:18.378151+00:00",
   "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
   "records": [
+    {
+      "state": "AZ",
+      "company": "Amentum",
+      "notice_date": "2026-08-21",
+      "effective_date": null,
+      "employees": 75,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Chandler",
+      "address": "4500 S. Dobson; Chandler, Arizona 85248",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Salad and Go",
+      "notice_date": "2026-08-04",
+      "effective_date": null,
+      "employees": 25,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Phoenix",
+      "address": "625 S. 27th; Phoenix, Arizona 85009",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Pinnacle Transplant Technologies, LLC",
+      "notice_date": "2026-08-17",
+      "effective_date": null,
+      "employees": 90,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Phoenix",
+      "address": "1125 W. Pinnacle Peak Rd.; Phoenix, Arizona 85027",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "SMBC MANUBANK",
+      "notice_date": "2026-08-11",
+      "effective_date": null,
+      "employees": 23,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "New York",
+      "address": "277 Park Avenue; New York, New York 10172",
+      "industry": ""
+    },
     {
       "state": "AZ",
       "company": "Essendant",

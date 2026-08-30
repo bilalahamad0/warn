@@ -1,11 +1,47 @@
 {
-  "total_records": 300,
-  "total_employees": 44549,
+  "total_records": 305,
+  "total_employees": 45082,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-08-07T04:20:37.663648+00:00Z",
+  "last_updated": "2026-08-29T16:28:26.080201+00:00",
   "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
   "records": [
+    {
+      "state": "PA",
+      "company": "Eos Energy Storage, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-26",
+      "employees": 251,
+      "layoff_type": "Layoff",
+      "county": "Allegheny",
+      "city": "",
+      "address": "700 Braddock Avenue, Building 700, East Pittsburgh, PA  15112",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "SMBC MANUBANK",
+      "notice_date": null,
+      "effective_date": "2026-10-09",
+      "employees": 7,
+      "layoff_type": "Closure",
+      "county": "Various",
+      "city": "",
+      "address": "Various remote locations throughout the United States",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Grede, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-10",
+      "employees": 170,
+      "layoff_type": "Closure",
+      "county": "Crawford",
+      "city": "",
+      "address": "18771 Mill Street, Meadville, PA  16335",
+      "industry": ""
+    },
     {
       "state": "PA",
       "company": "Essendant Management Services, LLC",
@@ -40,6 +76,30 @@
       "county": "Cumberland",
       "city": "",
       "address": "2001 Mission Drive, New Cumberland, PA  17070",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "United Natural Foods, Inc. (NFI)",
+      "notice_date": null,
+      "effective_date": "2026-10-16",
+      "employees": 48,
+      "layoff_type": "Closure",
+      "county": "Philadelphia",
+      "city": "",
+      "address": "2722 Commerce Way, Philadelphia, PA  19154",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "CJ Logistics America, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-16",
+      "employees": 57,
+      "layoff_type": "Closure",
+      "county": "Lehigh",
+      "city": "",
+      "address": "400 Nestle Way, Breinigsville, PA  18031",
       "industry": ""
     },
     {

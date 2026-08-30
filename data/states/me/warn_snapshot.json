@@ -1,9 +1,9 @@
 {
-  "total_records": 73,
-  "total_employees": 6022,
+  "total_records": 74,
+  "total_employees": 6124,
   "date_range_start": "2019-01-08",
-  "date_range_end": "2026-06-02",
-  "last_updated": "2026-08-07T04:18:08.188219+00:00Z",
+  "date_range_end": "2026-08-04",
+  "last_updated": "2026-08-29T16:24:30.160804+00:00",
   "source_url": "https://joblink.maine.gov/search/warn_lookups",
   "records": [
     {
@@ -28,6 +28,18 @@
       "county": "",
       "city": "Burnham",
       "address": "10 North Main Street; Burnham, Maine 04922",
+      "industry": ""
+    },
+    {
+      "state": "ME",
+      "company": "Host International, Inc.",
+      "notice_date": "2026-08-04",
+      "effective_date": null,
+      "employees": 102,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Portland",
+      "address": "1001 Westbrook St; Portland, Maine 04102",
       "industry": ""
     },
     {

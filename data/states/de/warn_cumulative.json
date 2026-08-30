@@ -1,9 +1,9 @@
 {
-  "total_records": 40,
-  "total_employees": 6135,
+  "total_records": 41,
+  "total_employees": 6241,
   "date_range_start": "2019-06-05",
-  "date_range_end": "2026-06-29",
-  "last_updated": "2026-08-07T12:49:17.599711+00:00",
+  "date_range_end": "2026-08-10",
+  "last_updated": "2026-08-30T02:24:44.978726+00:00",
   "source_url": "https://joblink.delaware.gov/search/warn_lookups",
   "records": [
     {
@@ -484,6 +484,18 @@
       "county": "",
       "city": "",
       "address": "",
+      "industry": ""
+    },
+    {
+      "state": "DE",
+      "company": "JeniusBank",
+      "notice_date": "2026-08-10",
+      "effective_date": null,
+      "employees": 106,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "New York",
+      "address": "277 Park Ave; New York, New York 10172",
       "industry": ""
     }
   ]

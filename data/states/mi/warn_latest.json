@@ -1,11 +1,35 @@
 {
-  "total_records": 110,
-  "total_employees": 14078,
+  "total_records": 112,
+  "total_employees": 14429,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-08-07T12:57:26.651198+00:00",
+  "last_updated": "2026-08-30T02:32:51.477358+00:00",
   "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
   "records": [
+    {
+      "state": "MI",
+      "company": "SMBC MANUBANK",
+      "notice_date": null,
+      "effective_date": "2026-10-09",
+      "employees": 1,
+      "layoff_type": "Mass permanent layoff",
+      "county": "Remote",
+      "city": "",
+      "address": "JeniusBank (digital banking)",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "General Motors, LLC -- Lansing Region",
+      "notice_date": null,
+      "effective_date": "2027-01-14",
+      "employees": 350,
+      "layoff_type": "Mass layoff",
+      "county": "Eaton, Ingham",
+      "city": "",
+      "address": "General Motors, LLC -- Lansing Grand River Assembly/Stamping 920 Townsend Street Lansing, MI 48933; General Motors, LLC -- Lansing Regional Stamping 8175 Millett Highway Lansing, MI 48917",
+      "industry": ""
+    },
     {
       "state": "MI",
       "company": "Compass Group USA, Inc. / Morrison Healthcare",
@@ -164,18 +188,6 @@
     },
     {
       "state": "MI",
-      "company": "Fifth Third Bank",
-      "notice_date": null,
-      "effective_date": "2026-07-01",
-      "employees": 502,
-      "layoff_type": "Permanent layoff",
-      "county": "Oakland",
-      "city": "",
-      "address": "36455 Corporate Drive, Farmington Hills, MI 48331",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "Spirit Airlines",
       "notice_date": null,
       "effective_date": "2026-05-02",
@@ -184,6 +196,18 @@
       "county": "Wayne",
       "city": "",
       "address": "2500 World Gateway Place, Detroit, MI 48242",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Fifth Third Bank",
+      "notice_date": null,
+      "effective_date": "2026-07-01",
+      "employees": 502,
+      "layoff_type": "Permanent layoff",
+      "county": "Oakland",
+      "city": "",
+      "address": "36455 Corporate Drive, Farmington Hills, MI 48331",
       "industry": ""
     },
     {
@@ -236,18 +260,6 @@
     },
     {
       "state": "MI",
-      "company": "Siena Heights University",
-      "notice_date": null,
-      "effective_date": "2026-05-09",
-      "employees": 132,
-      "layoff_type": "Closure",
-      "county": "Lenawee",
-      "city": "Adrian",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "Compass Group USA, Inc.",
       "notice_date": null,
       "effective_date": "2026-07-01",
@@ -255,6 +267,18 @@
       "layoff_type": "Layoff",
       "county": "",
       "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Siena Heights University",
+      "notice_date": null,
+      "effective_date": "2026-05-09",
+      "employees": 132,
+      "layoff_type": "Closure",
+      "county": "Lenawee",
+      "city": "Adrian",
       "address": "",
       "industry": ""
     },

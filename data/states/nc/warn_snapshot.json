@@ -1,9 +1,9 @@
 {
-  "total_records": 369,
-  "total_employees": 34130,
+  "total_records": 370,
+  "total_employees": 34242,
   "date_range_start": "2022-01-25",
-  "date_range_end": "2026-07-23",
-  "last_updated": "2026-08-07T04:19:25.941576+00:00Z",
+  "date_range_end": "2026-08-13",
+  "last_updated": "2026-08-29T16:27:23.274143+00:00",
   "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
   "records": [
     {
@@ -3814,8 +3814,8 @@
       "state": "NC",
       "company": "SMBC MANUBANK",
       "notice_date": "2026-01-08",
-      "effective_date": "2026-08-03",
-      "employees": 19,
+      "effective_date": "2026-10-09",
+      "employees": 28,
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "New York NY",
@@ -4378,8 +4378,8 @@
       "state": "NC",
       "company": "Barrette Outdoor Living, Inc.",
       "notice_date": "2026-07-01",
-      "effective_date": "2026-07-01",
-      "employees": 63,
+      "effective_date": "2026-10-12",
+      "employees": 93,
       "layoff_type": "Layoff Permanent",
       "county": "Rowan",
       "city": "Salisbury",
@@ -4432,6 +4432,18 @@
       "county": "Onslow",
       "city": "Jacksonville",
       "address": "178 Curtis Road",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Ryder",
+      "notice_date": "2026-08-13",
+      "effective_date": "2026-10-12",
+      "employees": 73,
+      "layoff_type": "Layoff Permanent",
+      "county": "Cumberland",
+      "city": "Fayetteville",
+      "address": "2486 Gillespie St.",
       "industry": ""
     }
   ]
