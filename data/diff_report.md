@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-08-30 16:07:44 UTC
+**Generated:** 2026-08-31 02:34:52 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -134,7 +134,6 @@ M data/changelog.jsonl
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
- M data/states/mt/meta.json
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
@@ -149,7 +148,6 @@ M data/changelog.jsonl
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
- M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
@@ -214,6 +212,7 @@ M data/changelog.jsonl
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
+ M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -244,16 +243,17 @@ M data/changelog.jsonl
 
 **Recent commits:**
 ```
+d28321f0 auto: WARN data update [skip ci]
 86adb9f9 chore: weekly AI metrics update [skip actions]
 fa30cbc9 Merge pull request #26 from bilalahamad0/fix/a11y-wcag-violations
 a6471736 fix: one link treatment across both dashboards
 9afd7072 Merge branch 'main' into fix/a11y-wcag-violations
-6b0773f1 fix: clear the WCAG 2.1 AA violations on both dashboards
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-08-31T02:19:44.594772+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-30T15:52:00.944802+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-30T02:23:18.513480+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-29T16:10:22.482851+00:00` — +0 added, -0 removed, 0 employees (new)
@@ -263,4 +263,3 @@ a6471736 fix: one link treatment across both dashboards
 - `2026-08-27T21:35:09.508853+00:00` — +1 added, -0 removed, 72 employees (new)
 - `2026-08-27T05:46:33.609458+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-26T20:24:22.006133+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-08-26T12:39:38.736182+00:00` — +0 added, -113 removed, 0 employees (new)
