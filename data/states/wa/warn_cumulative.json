@@ -1,9 +1,9 @@
 {
-  "total_records": 1499,
-  "total_employees": 236666,
+  "total_records": 1500,
+  "total_employees": 236787,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-08-28",
-  "last_updated": "2026-08-31T02:34:46.993935+00:00",
+  "date_range_end": "2026-08-31",
+  "last_updated": "2026-08-31T18:49:46.398878+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -17991,6 +17991,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Kenmore",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Amazon",
+      "notice_date": "2026-08-31",
+      "effective_date": "2026-10-01",
+      "employees": 121,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Seattle, Bellevue, Sumner",
       "address": "",
       "industry": ""
     }

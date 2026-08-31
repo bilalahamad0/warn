@@ -1,9 +1,9 @@
 {
-  "total_records": 463,
-  "total_employees": 34586,
+  "total_records": 465,
+  "total_employees": 34806,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-08-17",
-  "last_updated": "2026-08-31T02:22:43.744757+00:00",
+  "date_range_end": "2026-08-28",
+  "last_updated": "2026-08-31T18:35:54.846039+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -5561,6 +5561,30 @@
       "city": "PLANT CITY",
       "address": "771 S. County Line Road",
       "industry": "Transportation and Warehousing"
+    },
+    {
+      "state": "FL",
+      "company": "Astrion",
+      "notice_date": "2026-08-28",
+      "effective_date": "2026-09-30",
+      "employees": 204,
+      "layoff_type": "",
+      "county": "",
+      "city": "EGLIN AIR FORCE BASE",
+      "address": "Eglin Air Force Base 2591",
+      "industry": "Professional, Scientific, and Technical Services"
+    },
+    {
+      "state": "FL",
+      "company": "Astrion",
+      "notice_date": "2026-08-28",
+      "effective_date": "2026-09-30",
+      "employees": 16,
+      "layoff_type": "",
+      "county": "",
+      "city": "PATRICK AFB",
+      "address": "Patrick Air Force Base 820 Falcon Ave",
+      "industry": "Professional, Scientific, and Technical Services"
     }
   ]
 }

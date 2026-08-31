@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-08-31T02:34:53.243352+00:00",
+  "last_updated": "2026-08-31T18:49:52.038796+00:00",
   "states_live": 47,
-  "total_records": 60097,
-  "total_employees": 6476337,
+  "total_records": 60102,
+  "total_employees": 6476933,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -64,8 +64,8 @@
       "name": "Florida",
       "agency": "Florida Department of Commerce (FloridaCommerce)",
       "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
-      "total_records": 463,
-      "total_employees": 34586
+      "total_records": 465,
+      "total_employees": 34806
     },
     "GA": {
       "name": "Georgia",
@@ -204,8 +204,8 @@
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2336,
-      "total_employees": 351426
+      "total_records": 2338,
+      "total_employees": 351681
     },
     "NM": {
       "name": "New Mexico",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1499,
-      "total_employees": 236666
+      "total_records": 1500,
+      "total_employees": 236787
     },
     "WI": {
       "name": "Wisconsin",
@@ -201686,6 +201686,30 @@
       "city": "PLANT CITY",
       "address": "771 S. County Line Road",
       "industry": "Transportation and Warehousing"
+    },
+    {
+      "state": "FL",
+      "company": "Astrion",
+      "notice_date": "2026-08-28",
+      "effective_date": "2026-09-30",
+      "employees": 204,
+      "layoff_type": "",
+      "county": "",
+      "city": "EGLIN AIR FORCE BASE",
+      "address": "Eglin Air Force Base 2591",
+      "industry": "Professional, Scientific, and Technical Services"
+    },
+    {
+      "state": "FL",
+      "company": "Astrion",
+      "notice_date": "2026-08-28",
+      "effective_date": "2026-09-30",
+      "employees": 16,
+      "layoff_type": "",
+      "county": "",
+      "city": "PATRICK AFB",
+      "address": "Patrick Air Force Base 820 Falcon Ave",
+      "industry": "Professional, Scientific, and Technical Services"
     },
     {
       "state": "GA",
@@ -449539,6 +449563,30 @@
       "industry": ""
     },
     {
+      "state": "NJ",
+      "company": "Cellares Corporation",
+      "notice_date": null,
+      "effective_date": "2026-11-19",
+      "employees": 68,
+      "layoff_type": "",
+      "county": "",
+      "city": "Bridgewater",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Enablx, Inc.",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 187,
+      "layoff_type": "",
+      "county": "",
+      "city": "Rockaway Twp.",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "NM",
       "company": "Atkore HDPE, LLC",
       "notice_date": "2026-04-27",
@@ -661340,6 +661388,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Kenmore",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Amazon",
+      "notice_date": "2026-08-31",
+      "effective_date": "2026-10-01",
+      "employees": 121,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Seattle, Bellevue, Sumner",
       "address": "",
       "industry": ""
     },
