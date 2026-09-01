@@ -3,7 +3,7 @@
   "total_employees": 14429,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-09-01T02:51:06.861611+00:00",
+  "last_updated": "2026-09-01T16:09:25.789873+00:00",
   "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
   "records": [
     {
@@ -68,18 +68,6 @@
     },
     {
       "state": "MI",
-      "company": "Republic National Distributing Company (RNDC)",
-      "notice_date": null,
-      "effective_date": "2026-08-17",
-      "employees": 641,
-      "layoff_type": "Layoff",
-      "county": "Delta, Grand Traverse, Kent, Saginaw, Wayne",
-      "city": "",
-      "address": "2101 North 19 th St., Escanaba, MI 49829; 4495 Airwest Drive SE, Grand Rapids, MI 49512; 13000 Eckles Road, Livonia, MI 48150; 3460 E. Washington Road, Saginaw, MI 48601; 3055 Cass Road, Traverse City, MI 49684",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "Compass Group USA, Inc. / Morrison Healthcare",
       "notice_date": null,
       "effective_date": "2026-07-24",
@@ -100,6 +88,18 @@
       "county": "Oakland",
       "city": "",
       "address": "3701 Hamlin Road, Auburn Hills, MI 48326",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Republic National Distributing Company (RNDC)",
+      "notice_date": null,
+      "effective_date": "2026-08-17",
+      "employees": 641,
+      "layoff_type": "Layoff",
+      "county": "Delta, Grand Traverse, Kent, Saginaw, Wayne",
+      "city": "",
+      "address": "2101 North 19 th St., Escanaba, MI 49829; 4495 Airwest Drive SE, Grand Rapids, MI 49512; 13000 Eckles Road, Livonia, MI 48150; 3460 E. Washington Road, Saginaw, MI 48601; 3055 Cass Road, Traverse City, MI 49684",
       "industry": ""
     },
     {
@@ -260,18 +260,6 @@
     },
     {
       "state": "MI",
-      "company": "Siena Heights University",
-      "notice_date": null,
-      "effective_date": "2026-05-09",
-      "employees": 132,
-      "layoff_type": "Closure",
-      "county": "Lenawee",
-      "city": "Adrian",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "Compass Group USA, Inc.",
       "notice_date": null,
       "effective_date": "2026-07-01",
@@ -279,6 +267,18 @@
       "layoff_type": "Layoff",
       "county": "",
       "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Siena Heights University",
+      "notice_date": null,
+      "effective_date": "2026-05-09",
+      "employees": 132,
+      "layoff_type": "Closure",
+      "county": "Lenawee",
+      "city": "Adrian",
       "address": "",
       "industry": ""
     },
@@ -512,6 +512,18 @@
     },
     {
       "state": "MI",
+      "company": "Avancez",
+      "notice_date": null,
+      "effective_date": "2025-12-05",
+      "employees": 143,
+      "layoff_type": "Layoff",
+      "county": "Oakland",
+      "city": "Hazel Park",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
       "company": "The Taubman Company LLC",
       "notice_date": null,
       "effective_date": "2026-01-09",
@@ -531,18 +543,6 @@
       "layoff_type": "Facility closure",
       "county": "Gladwin",
       "city": "Gladwin",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "MI",
-      "company": "Avancez",
-      "notice_date": null,
-      "effective_date": "2025-12-05",
-      "employees": 143,
-      "layoff_type": "Layoff",
-      "county": "Oakland",
-      "city": "Hazel Park",
       "address": "",
       "industry": ""
     },
@@ -764,18 +764,6 @@
     },
     {
       "state": "MI",
-      "company": "NPR of America, Inc.",
-      "notice_date": null,
-      "effective_date": "2025-10-12",
-      "employees": 64,
-      "layoff_type": "Company closure",
-      "county": "Ottawa",
-      "city": "Grand Haven",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "Davalor Mold Company, LLC",
       "notice_date": null,
       "effective_date": "2025-10-03",
@@ -783,6 +771,18 @@
       "layoff_type": "Layoff",
       "county": "Macomb",
       "city": "New Baltimore",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "NPR of America, Inc.",
+      "notice_date": null,
+      "effective_date": "2025-10-12",
+      "employees": 64,
+      "layoff_type": "Company closure",
+      "county": "Ottawa",
+      "city": "Grand Haven",
       "address": "",
       "industry": ""
     },
@@ -872,6 +872,18 @@
     },
     {
       "state": "MI",
+      "company": "Lansing Entertainment and Public Facilities Authority (LEPFA)",
+      "notice_date": null,
+      "effective_date": "2025-08-30",
+      "employees": 181,
+      "layoff_type": "Layoff",
+      "county": "Ingham",
+      "city": "Lansing",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
       "company": "Plasan North America, Inc.",
       "notice_date": null,
       "effective_date": "2025-07-02",
@@ -915,18 +927,6 @@
       "layoff_type": "Layoff",
       "county": "Statewide",
       "city": "Statewide",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "MI",
-      "company": "Lansing Entertainment and Public Facilities Authority (LEPFA)",
-      "notice_date": null,
-      "effective_date": "2025-08-30",
-      "employees": 181,
-      "layoff_type": "Layoff",
-      "county": "Ingham",
-      "city": "Lansing",
       "address": "",
       "industry": ""
     },
@@ -1052,6 +1052,18 @@
     },
     {
       "state": "MI",
+      "company": "Aramark Campus, LLC",
+      "notice_date": null,
+      "effective_date": "2025-06-30",
+      "employees": 137,
+      "layoff_type": "Layoff",
+      "county": "Wayne",
+      "city": "Detroit",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
       "company": "Conagra Brands, Inc.",
       "notice_date": null,
       "effective_date": "2025-06-27",
@@ -1071,18 +1083,6 @@
       "layoff_type": "Layoff",
       "county": "Statewide",
       "city": "Statewide",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "MI",
-      "company": "Aramark Campus, LLC",
-      "notice_date": null,
-      "effective_date": "2025-06-30",
-      "employees": 137,
-      "layoff_type": "Layoff",
-      "county": "Wayne",
-      "city": "Detroit",
       "address": "",
       "industry": ""
     },
@@ -1196,18 +1196,6 @@
     },
     {
       "state": "MI",
-      "company": "Akasol, Inc.",
-      "notice_date": null,
-      "effective_date": "2025-04-14",
-      "employees": 188,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "Jack Cooper LLC",
       "notice_date": null,
       "effective_date": "2025-02-08",
@@ -1215,6 +1203,18 @@
       "layoff_type": "Closure",
       "county": "Eaton",
       "city": "Dimondale",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Akasol, Inc.",
+      "notice_date": null,
+      "effective_date": "2025-04-14",
+      "employees": 188,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "",
       "address": "",
       "industry": ""
     },

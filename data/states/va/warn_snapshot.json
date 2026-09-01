@@ -3,7 +3,7 @@
   "total_employees": 130826,
   "date_range_start": "2010-07-29",
   "date_range_end": "2026-08-28",
-  "last_updated": "2026-08-31T18:47:05.965506+00:00",
+  "last_updated": "2026-09-01T02:53:51.513931+00:00",
   "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
   "records": [
     {
@@ -610,7 +610,7 @@
       "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-08-31",
+      "effective_date": "2026-09-01",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",

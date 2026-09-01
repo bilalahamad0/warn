@@ -1,9 +1,9 @@
 {
-  "total_records": 4758,
-  "total_employees": 607492,
+  "total_records": 4759,
+  "total_employees": 607671,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-08-31T18:36:23.280503+00:00",
+  "last_updated": "2026-09-01T02:44:08.762199+00:00",
   "source_url": "https://www.tcsg.edu/warn-public-view/",
   "records": [
     {
@@ -3376,6 +3376,18 @@
       "county": "Carroll",
       "city": "",
       "address": "101 Kidspeace Dr, Bowdon, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "FPL Food, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-31",
+      "employees": 179,
+      "layoff_type": "Permanent Layoff / Reduction in Force",
+      "county": "Richmond",
+      "city": "",
+      "address": "1301 New Savannah Rd, Augusta, Georgia",
       "industry": ""
     },
     {
