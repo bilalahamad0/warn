@@ -1,9 +1,9 @@
 {
-  "total_records": 675,
-  "total_employees": 18414,
+  "total_records": 682,
+  "total_employees": 18584,
   "date_range_start": "2021-01-06",
   "date_range_end": "2026-06-15",
-  "last_updated": "2026-08-31T18:45:15.333898+00:00",
+  "last_updated": "2026-09-01T02:51:58.634477+00:00",
   "source_url": "https://mn.gov/deed/programs-services/dislocated-worker-program/reports/",
   "records": [
     {
@@ -7851,6 +7851,90 @@
       "layoff_type": "Temporary Layoff",
       "county": "",
       "city": "Minneapolis",
+      "address": "",
+      "industry": "Dining Establishments"
+    },
+    {
+      "state": "MN",
+      "company": "MDI 2026",
+      "notice_date": null,
+      "effective_date": "2026-02-04",
+      "employees": 102,
+      "layoff_type": "",
+      "county": "",
+      "city": "Grand Rapids",
+      "address": "",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "MN",
+      "company": "Main Steet Sports Group",
+      "notice_date": "2026-02-13",
+      "effective_date": "2026-04-14",
+      "employees": 20,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Minneapolis",
+      "address": "",
+      "industry": "Arts/Entertainment/Rec"
+    },
+    {
+      "state": "MN",
+      "company": "Pizza Hut",
+      "notice_date": null,
+      "effective_date": "2026-03-02",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Winona",
+      "address": "",
+      "industry": "Dining Establishments"
+    },
+    {
+      "state": "MN",
+      "company": "Pace Industries",
+      "notice_date": null,
+      "effective_date": "2026-04-02",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Maple Lake",
+      "address": "",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "MN",
+      "company": "Jack Links",
+      "notice_date": null,
+      "effective_date": "2026-03-22",
+      "employees": 44,
+      "layoff_type": "Workforce Reduction",
+      "county": "",
+      "city": "Mankato",
+      "address": "",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "MN",
+      "company": "Le jeune Steel",
+      "notice_date": null,
+      "effective_date": "2026-03-31",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Minneapolis",
+      "address": "",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "MN",
+      "company": "Godfather Pizza",
+      "notice_date": null,
+      "effective_date": "2026-03-19",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Brooklyn Park",
       "address": "",
       "industry": "Dining Establishments"
     },

@@ -1,9 +1,9 @@
 {
-  "total_records": 2365,
-  "total_employees": 354277,
+  "total_records": 2366,
+  "total_employees": 354345,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-08-31T02:31:18.388414+00:00",
+  "last_updated": "2026-08-31T18:46:20.734370+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -1136,13 +1136,25 @@
     },
     {
       "state": "NJ",
-      "company": "Enablx, INC",
+      "company": "Cellares Corporation",
+      "notice_date": null,
+      "effective_date": "2026-11-19",
+      "employees": 68,
+      "layoff_type": "",
+      "county": "",
+      "city": "Bridgewater",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Enablx, Inc.",
       "notice_date": null,
       "effective_date": "2026-12-31",
       "employees": 187,
       "layoff_type": "",
       "county": "",
-      "city": "Rockaway Township",
+      "city": "Rockaway Twp.",
       "address": "",
       "industry": ""
     },

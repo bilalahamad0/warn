@@ -1,9 +1,9 @@
 {
-  "total_records": 305,
-  "total_employees": 45082,
+  "total_records": 306,
+  "total_employees": 45282,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-08-31T18:46:51.370170+00:00",
+  "last_updated": "2026-09-01T02:53:34.967612+00:00",
   "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
   "records": [
     {
@@ -100,6 +100,18 @@
       "county": "Lehigh",
       "city": "",
       "address": "400 Nestle Way, Breinigsville, PA  18031",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Stoelzle Glass USA, Inc.",
+      "notice_date": null,
+      "effective_date": "2026-07-25",
+      "employees": 200,
+      "layoff_type": "Layoff",
+      "county": "Beaver",
+      "city": "",
+      "address": "400 9th Street, Monaca, PA  15022",
       "industry": ""
     },
     {

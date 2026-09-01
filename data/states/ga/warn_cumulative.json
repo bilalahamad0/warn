@@ -1,9 +1,9 @@
 {
-  "total_records": 4735,
-  "total_employees": 606297,
+  "total_records": 4736,
+  "total_employees": 606476,
   "date_range_start": "1989-08-17",
-  "date_range_end": "2026-10-24",
-  "last_updated": "2026-08-31T18:36:23.331399+00:00",
+  "date_range_end": "2026-10-31",
+  "last_updated": "2026-09-01T02:44:08.809715+00:00",
   "source_url": "https://www.tcsg.edu/warn-public-view/",
   "records": [
     {
@@ -56824,6 +56824,18 @@
       "county": "Cobb",
       "city": "",
       "address": "1 National Dr SW, Atlanta, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "FPL Food, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-31",
+      "employees": 179,
+      "layoff_type": "Permanent Layoff / Reduction in Force",
+      "county": "Richmond",
+      "city": "",
+      "address": "1301 New Savannah Rd, Augusta, Georgia",
       "industry": ""
     }
   ]

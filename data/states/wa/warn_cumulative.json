@@ -1,9 +1,9 @@
 {
-  "total_records": 1500,
-  "total_employees": 236787,
+  "total_records": 1502,
+  "total_employees": 237025,
   "date_range_start": "2004-01-12",
   "date_range_end": "2026-08-31",
-  "last_updated": "2026-08-31T18:49:46.398878+00:00",
+  "last_updated": "2026-09-01T02:56:33.923855+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -18003,6 +18003,30 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Seattle, Bellevue, Sumner",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Maverick Washington LLC / Riverside Casino",
+      "notice_date": "2026-08-31",
+      "effective_date": "2026-11-01",
+      "employees": 142,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Tukwila",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Maverick Washington LLC / Great American Casino",
+      "notice_date": "2026-08-31",
+      "effective_date": "2026-11-01",
+      "employees": 96,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Tukwila",
       "address": "",
       "industry": ""
     }
