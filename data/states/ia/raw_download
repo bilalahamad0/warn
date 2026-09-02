@@ -990,6 +990,17 @@
   "industry": "Administrative and Support and Waste Management and Remediation Services"
  },
  {
+  "company": "Independence Premium Foods",
+  "address": "812 3rd St NE ",
+  "city": "Independence",
+  "county": "Buchanan",
+  "layoff_type": "Amendment - Additional Employees",
+  "employees": 5,
+  "notice_date": "2026-08-31 00:00:00",
+  "effective_date": "2026-08-31 00:00:00",
+  "industry": "Manufacturing "
+ },
+ {
   "company": "John Deere Ottumwa Works ",
   "address": "928 E Vine St",
   "city": "Ottumwa",
@@ -6543,17 +6554,6 @@
   "notice_date": "12/20/2022",
   "effective_date": "2023-01-16 00:00:00",
   "industry": "Manufacturing "
- },
- {
-  "company": "Collins Aerospace ",
-  "address": "400 Collins Road NE",
-  "city": "Cedar Rapids",
-  "county": "Linn",
-  "layoff_type": "Mass Layoff",
-  "employees": 37,
-  "notice_date": "9/1/2021",
-  "effective_date": "2021-10-01 00:00:00",
-  "industry": "Manufacturing"
  },
  {
   "company": "Principal Life Insurance Company ",

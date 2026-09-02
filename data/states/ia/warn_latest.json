@@ -1,9 +1,9 @@
 {
   "total_records": 942,
-  "total_employees": 51777,
+  "total_employees": 51745,
   "date_range_start": "2011-01-13",
-  "date_range_end": "2026-08-28",
-  "last_updated": "2026-09-01T16:03:44.723551+00:00",
+  "date_range_end": "2026-08-31",
+  "last_updated": "2026-09-02T02:03:45.675603+00:00",
   "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
   "records": [
     {
@@ -1085,6 +1085,18 @@
       "city": "Sioux City",
       "address": "1000 Cunningham Dr",
       "industry": "Administrative and Support and Waste Management and Remediation Services"
+    },
+    {
+      "state": "IA",
+      "company": "Independence Premium Foods",
+      "notice_date": "2026-08-31",
+      "effective_date": "2026-08-31",
+      "employees": 5,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Buchanan",
+      "city": "Independence",
+      "address": "812 3rd St NE",
+      "industry": "Manufacturing"
     },
     {
       "state": "IA",
@@ -7144,18 +7156,6 @@
       "county": "Marshall",
       "city": "Marshalltown",
       "address": "200 S 12th Ave",
-      "industry": "Manufacturing"
-    },
-    {
-      "state": "IA",
-      "company": "Collins Aerospace",
-      "notice_date": "2021-09-01",
-      "effective_date": "2021-10-01",
-      "employees": 37,
-      "layoff_type": "Mass Layoff",
-      "county": "Linn",
-      "city": "Cedar Rapids",
-      "address": "400 Collins Road NE",
       "industry": "Manufacturing"
     },
     {

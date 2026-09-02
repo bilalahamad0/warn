@@ -1,9 +1,9 @@
 {
-  "total_records": 635,
-  "total_employees": 59336,
+  "total_records": 636,
+  "total_employees": 59395,
   "date_range_start": "2020-01-02",
   "date_range_end": "2026-08-24",
-  "last_updated": "2026-09-01T16:14:40.018825+00:00",
+  "last_updated": "2026-09-02T02:15:09.577048+00:00",
   "source_url": "https://dwd.wisconsin.gov/dislocatedworker/warn/",
   "records": [
     {
@@ -7625,6 +7625,18 @@
       "city": "Marshfield",
       "address": "",
       "industry": "Cheese Mfg"
+    },
+    {
+      "state": "WI",
+      "company": "Wisconsin Green, LLC",
+      "notice_date": "2026-07-21",
+      "effective_date": "2026-07-22",
+      "employees": 59,
+      "layoff_type": "Facility Closure",
+      "county": "Washington",
+      "city": "West Bend",
+      "address": "",
+      "industry": "Corrugated & Solid Fiber Box Mfg"
     }
   ]
 }

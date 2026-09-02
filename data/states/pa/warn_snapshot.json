@@ -1,11 +1,35 @@
 {
-  "total_records": 306,
-  "total_employees": 45282,
+  "total_records": 308,
+  "total_employees": 45449,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-09-01T02:53:34.967612+00:00",
+  "last_updated": "2026-09-01T16:11:39.261584+00:00",
   "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
   "records": [
+    {
+      "state": "PA",
+      "company": "CJ Logistics America, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-31",
+      "employees": 56,
+      "layoff_type": "Closure",
+      "county": "Cumberland",
+      "city": "",
+      "address": "801 Centerville Road, Newville, PA 17241",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Mountain Valley Golf Course",
+      "notice_date": null,
+      "effective_date": "2026-10-31",
+      "employees": 111,
+      "layoff_type": "Closure",
+      "county": "Schuylkill",
+      "city": "",
+      "address": "1021 Brockton Mountain Drive, Barnesville, PA 18214",
+      "industry": ""
+    },
     {
       "state": "PA",
       "company": "Eos Energy Storage, LLC",

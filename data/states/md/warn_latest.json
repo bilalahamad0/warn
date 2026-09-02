@@ -1,11 +1,23 @@
 {
-  "total_records": 1405,
-  "total_employees": 116391,
+  "total_records": 1406,
+  "total_employees": 116527,
   "date_range_start": "2010-01-07",
-  "date_range_end": "2026-08-25",
-  "last_updated": "2026-09-01T16:07:53.744980+00:00",
+  "date_range_end": "2026-08-31",
+  "last_updated": "2026-09-02T02:07:59.058664+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
+    {
+      "state": "MD",
+      "company": "ThriftBooks Global, LLC",
+      "notice_date": "2026-08-31",
+      "effective_date": "2026-10-31",
+      "employees": 136,
+      "layoff_type": "Plant Closure",
+      "county": "Baltimore County",
+      "city": "",
+      "address": "4734 Trident Court, Building A Baltimore, MD 21227",
+      "industry": "459510"
+    },
     {
       "state": "MD",
       "company": "Crosby Marketing Communications",

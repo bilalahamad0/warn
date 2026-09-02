@@ -1,9 +1,9 @@
 {
-  "total_records": 933,
-  "total_employees": 51837,
+  "total_records": 934,
+  "total_employees": 51842,
   "date_range_start": "2011-01-13",
-  "date_range_end": "2026-08-28",
-  "last_updated": "2026-09-01T16:03:44.733835+00:00",
+  "date_range_end": "2026-08-31",
+  "last_updated": "2026-09-02T02:03:45.685343+00:00",
   "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
   "records": [
     {
@@ -11201,6 +11201,18 @@
       "city": "Sioux City",
       "address": "1000 Cunningham Dr",
       "industry": "Administrative and Support and Waste Management and Remediation Services"
+    },
+    {
+      "state": "IA",
+      "company": "Independence Premium Foods",
+      "notice_date": "2026-08-31",
+      "effective_date": "2026-08-31",
+      "employees": 5,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Buchanan",
+      "city": "Independence",
+      "address": "812 3rd St NE",
+      "industry": "Manufacturing"
     }
   ]
 }
