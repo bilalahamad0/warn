@@ -1,9 +1,9 @@
 {
-  "total_records": 1502,
-  "total_employees": 237025,
+  "total_records": 1503,
+  "total_employees": 237145,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-08-31",
-  "last_updated": "2026-09-02T02:15:06.806320+00:00",
+  "date_range_end": "2026-09-01",
+  "last_updated": "2026-09-02T16:07:06.798632+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -18027,6 +18027,18 @@
       "layoff_type": "Closure Permanent",
       "county": "",
       "city": "Tukwila",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Georgia-Pacific Gypsum LLC",
+      "notice_date": "2026-09-01",
+      "effective_date": "2026-10-30",
+      "employees": 120,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Tacoma",
       "address": "",
       "industry": ""
     }

@@ -1,9 +1,9 @@
 {
-  "total_records": 934,
-  "total_employees": 51842,
+  "total_records": 935,
+  "total_employees": 51847,
   "date_range_start": "2011-01-13",
-  "date_range_end": "2026-08-31",
-  "last_updated": "2026-09-02T02:03:45.685343+00:00",
+  "date_range_end": "2026-09-01",
+  "last_updated": "2026-09-02T15:52:41.660154+00:00",
   "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
   "records": [
     {
@@ -11213,6 +11213,18 @@
       "city": "Independence",
       "address": "812 3rd St NE",
       "industry": "Manufacturing"
+    },
+    {
+      "state": "IA",
+      "company": "Wells Fargo",
+      "notice_date": "2026-09-01",
+      "effective_date": "2026-10-31",
+      "employees": 5,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Polk",
+      "city": "West Des Moines",
+      "address": "800 S Jordan Creek Pkwy",
+      "industry": "Finance and Insurance"
     }
   ]
 }

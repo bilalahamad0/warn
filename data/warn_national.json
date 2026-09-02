@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-02T02:15:12.654954+00:00",
+  "last_updated": "2026-09-02T16:07:12.579420+00:00",
   "states_live": 47,
-  "total_records": 60153,
-  "total_employees": 6479812,
+  "total_records": 60156,
+  "total_employees": 6480142,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -85,8 +85,8 @@
       "name": "Iowa",
       "agency": "Iowa Workforce Development",
       "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
-      "total_records": 934,
-      "total_employees": 51842
+      "total_records": 935,
+      "total_employees": 51847
     },
     "ID": {
       "name": "Idaho",
@@ -267,8 +267,8 @@
       "name": "South Carolina",
       "agency": "South Carolina Department of Employment and Workforce",
       "source_url": "https://scworks.org/employer/employer-programs/risk-closing/layoff-notification-reports",
-      "total_records": 607,
-      "total_employees": 81669
+      "total_records": 608,
+      "total_employees": 81874
     },
     "SD": {
       "name": "South Dakota",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1502,
-      "total_employees": 237025
+      "total_records": 1503,
+      "total_employees": 237145
     },
     "WI": {
       "name": "Wisconsin",
@@ -275546,6 +275546,18 @@
       "city": "Independence",
       "address": "812 3rd St NE",
       "industry": "Manufacturing"
+    },
+    {
+      "state": "IA",
+      "company": "Wells Fargo",
+      "notice_date": "2026-09-01",
+      "effective_date": "2026-10-31",
+      "employees": 5,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Polk",
+      "city": "West Des Moines",
+      "address": "800 S Jordan Creek Pkwy",
+      "industry": "Finance and Insurance"
     },
     {
       "state": "ID",
@@ -569047,6 +569059,18 @@
       "industry": ""
     },
     {
+      "state": "SC",
+      "company": "DP World",
+      "notice_date": "2026-09-01",
+      "effective_date": "2026-10-31",
+      "employees": 205,
+      "layoff_type": "Permanent Layoff",
+      "county": "Spartanburg",
+      "city": "",
+      "address": "226 GSP Logistics Parkway, Greer, SC 29651",
+      "industry": ""
+    },
+    {
       "state": "SD",
       "company": "Conduent",
       "notice_date": "2026-06-29",
@@ -662000,6 +662024,18 @@
       "layoff_type": "Closure Permanent",
       "county": "",
       "city": "Tukwila",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Georgia-Pacific Gypsum LLC",
+      "notice_date": "2026-09-01",
+      "effective_date": "2026-10-30",
+      "employees": 120,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Tacoma",
       "address": "",
       "industry": ""
     },
