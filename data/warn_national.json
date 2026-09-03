@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-03T02:22:32.405929+00:00",
+  "last_updated": "2026-09-03T15:52:29.852534+00:00",
   "states_live": 47,
-  "total_records": 60160,
-  "total_employees": 6480482,
+  "total_records": 60164,
+  "total_employees": 6481364,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -15,8 +15,8 @@
       "name": "Alabama",
       "agency": "Alabama Department of Workforce",
       "source_url": "https://workforce.alabama.gov/warn-list/",
-      "total_records": 1067,
-      "total_employees": 181981
+      "total_records": 1070,
+      "total_employees": 182778
     },
     "AZ": {
       "name": "Arizona",
@@ -65,7 +65,7 @@
       "agency": "Florida Department of Commerce (FloridaCommerce)",
       "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
       "total_records": 465,
-      "total_employees": 34806
+      "total_employees": 34831
     },
     "GA": {
       "name": "Georgia",
@@ -226,7 +226,7 @@
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
       "total_records": 5335,
-      "total_employees": 433084
+      "total_employees": 433083
     },
     "OH": {
       "name": "Ohio",
@@ -253,8 +253,8 @@
       "name": "Pennsylvania",
       "agency": "Pennsylvania Department of Labor & Industry",
       "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
-      "total_records": 308,
-      "total_employees": 45449
+      "total_records": 309,
+      "total_employees": 45510
     },
     "RI": {
       "name": "Rhode Island",
@@ -13928,6 +13928,42 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Huntsville",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "CORIZON HEALTH",
+      "notice_date": "2018-02-05",
+      "effective_date": "2026-09-02",
+      "employees": 648,
+      "layoff_type": "Closing *",
+      "county": "",
+      "city": "State Wide",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "SEARS HOLDINGS",
+      "notice_date": "2009-02-28",
+      "effective_date": "2026-09-02",
+      "employees": 15,
+      "layoff_type": "Closing *",
+      "county": "",
+      "city": "Birmingham",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "URS CORPORATION",
+      "notice_date": "2010-01-22",
+      "effective_date": "2026-09-02",
+      "employees": 134,
+      "layoff_type": "Layoff *",
+      "county": "",
+      "city": "Birmingham",
       "address": "",
       "industry": ""
     },
@@ -201773,18 +201809,6 @@
     },
     {
       "state": "FL",
-      "company": "Host International, Inc.",
-      "notice_date": "2026-01-16",
-      "effective_date": "2026-01-30",
-      "employees": 92,
-      "layoff_type": "",
-      "county": "",
-      "city": "ORLANDO",
-      "address": "1 Jeff Fuqua Blvd",
-      "industry": "Transportation and Warehousing"
-    },
-    {
-      "state": "FL",
       "company": "TelaForce, LLC",
       "notice_date": "2026-01-19",
       "effective_date": "2026-03-20",
@@ -202070,6 +202094,18 @@
       "city": "PATRICK AFB",
       "address": "Patrick Air Force Base 820 Falcon Ave",
       "industry": "Professional, Scientific, and Technical Services"
+    },
+    {
+      "state": "FL",
+      "company": "Host International, Inc.",
+      "notice_date": "2026-01-16",
+      "effective_date": "2026-01-30",
+      "employees": 117,
+      "layoff_type": "",
+      "county": "",
+      "city": "ORLANDO",
+      "address": "1 Jeff Fuqua Blvd",
+      "industry": "Transportation and Warehousing"
     },
     {
       "state": "GA",
@@ -459812,18 +459848,6 @@
     },
     {
       "state": "NY",
-      "company": "International Imaging Materials, Inc. (Armor-IIMAK)",
-      "notice_date": "2026-04-27",
-      "effective_date": "2026-07-31",
-      "employees": 199,
-      "layoff_type": "Closure Permanent",
-      "county": "Erie",
-      "city": "",
-      "address": "310 Commerce Drive Amherst, NY, 14228",
-      "industry": ""
-    },
-    {
-      "state": "NY",
       "company": "IPIC Theaters, LLC.",
       "notice_date": "2026-02-23",
       "effective_date": "2026-05-28",
@@ -516692,6 +516716,18 @@
     },
     {
       "state": "NY",
+      "company": "International Imaging Materials, Inc. (Armor-IIMAK)",
+      "notice_date": "2026-04-27",
+      "effective_date": "2026-07-31",
+      "employees": 198,
+      "layoff_type": "Closure Permanent",
+      "county": "Erie",
+      "city": "",
+      "address": "310 Commerce Drive Amherst, NY, 14228",
+      "industry": ""
+    },
+    {
+      "state": "NY",
       "company": "Cardionet, LLC. an affiliate of Philips North America, LLC.",
       "notice_date": "2025-04-01",
       "effective_date": "2025-06-30",
@@ -560284,6 +560320,18 @@
       "county": "Schuylkill",
       "city": "",
       "address": "1021 Brockton Mountain Drive, Barnesville, PA 18214",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Jerith Manufacturing, LLC",
+      "notice_date": null,
+      "effective_date": "2026-11-15",
+      "employees": 61,
+      "layoff_type": "Closure",
+      "county": "Philadelphia",
+      "city": "",
+      "address": "14400 McNulty Road, Philadelphia, PA 19154",
       "industry": ""
     },
     {

@@ -1,9 +1,9 @@
 {
-  "total_records": 2366,
-  "total_employees": 354345,
+  "total_records": 2367,
+  "total_employees": 354386,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-09-02T16:03:36.098027+00:00",
+  "last_updated": "2026-09-03T02:18:54.083248+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -1155,6 +1155,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Rockaway Twp.",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "UBS",
+      "notice_date": null,
+      "effective_date": "2026-11-25",
+      "employees": 41,
+      "layoff_type": "",
+      "county": "",
+      "city": "Weehawken",
       "address": "",
       "industry": ""
     },

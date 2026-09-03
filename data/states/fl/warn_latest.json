@@ -1,9 +1,9 @@
 {
   "total_records": 473,
-  "total_employees": 35693,
+  "total_employees": 35718,
   "date_range_start": "2025-01-02",
   "date_range_end": "2026-08-28",
-  "last_updated": "2026-09-03T02:09:58.461649+00:00",
+  "last_updated": "2026-09-03T15:39:33.178484+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -5495,7 +5495,7 @@
       "company": "Host International, Inc.",
       "notice_date": "2026-01-16",
       "effective_date": "2026-01-30",
-      "employees": 92,
+      "employees": 117,
       "layoff_type": "",
       "county": "",
       "city": "ORLANDO",

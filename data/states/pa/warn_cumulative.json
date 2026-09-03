@@ -1,9 +1,9 @@
 {
-  "total_records": 308,
-  "total_employees": 45449,
+  "total_records": 309,
+  "total_employees": 45510,
   "date_range_start": "2023-01-09",
-  "date_range_end": "2026-10-31",
-  "last_updated": "2026-09-03T02:19:25.249118+00:00",
+  "date_range_end": "2026-11-15",
+  "last_updated": "2026-09-03T15:49:29.269446+00:00",
   "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
   "records": [
     {
@@ -3700,6 +3700,18 @@
       "county": "Schuylkill",
       "city": "",
       "address": "1021 Brockton Mountain Drive, Barnesville, PA 18214",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Jerith Manufacturing, LLC",
+      "notice_date": null,
+      "effective_date": "2026-11-15",
+      "employees": 61,
+      "layoff_type": "Closure",
+      "county": "Philadelphia",
+      "city": "",
+      "address": "14400 McNulty Road, Philadelphia, PA 19154",
       "industry": ""
     }
   ]

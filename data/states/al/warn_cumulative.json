@@ -1,9 +1,9 @@
 {
-  "total_records": 1067,
-  "total_employees": 181981,
+  "total_records": 1070,
+  "total_employees": 182778,
   "date_range_start": "1998-07-14",
   "date_range_end": "2026-08-31",
-  "last_updated": "2026-09-03T01:56:13.018548+00:00",
+  "last_updated": "2026-09-03T15:26:25.327298+00:00",
   "source_url": "https://workforce.alabama.gov/warn-list/",
   "records": [
     {
@@ -12807,6 +12807,42 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Huntsville",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "CORIZON HEALTH",
+      "notice_date": "2018-02-05",
+      "effective_date": "2026-09-02",
+      "employees": 648,
+      "layoff_type": "Closing *",
+      "county": "",
+      "city": "State Wide",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "SEARS HOLDINGS",
+      "notice_date": "2009-02-28",
+      "effective_date": "2026-09-02",
+      "employees": 15,
+      "layoff_type": "Closing *",
+      "county": "",
+      "city": "Birmingham",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "URS CORPORATION",
+      "notice_date": "2010-01-22",
+      "effective_date": "2026-09-02",
+      "employees": 134,
+      "layoff_type": "Layoff *",
+      "county": "",
+      "city": "Birmingham",
       "address": "",
       "industry": ""
     }

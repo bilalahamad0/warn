@@ -1,11 +1,23 @@
 {
-  "total_records": 308,
-  "total_employees": 45449,
+  "total_records": 309,
+  "total_employees": 45510,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-09-03T02:19:25.245291+00:00",
+  "last_updated": "2026-09-03T15:49:29.266609+00:00",
   "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
   "records": [
+    {
+      "state": "PA",
+      "company": "Jerith Manufacturing, LLC",
+      "notice_date": null,
+      "effective_date": "2026-11-15",
+      "employees": 61,
+      "layoff_type": "Closure",
+      "county": "Philadelphia",
+      "city": "",
+      "address": "14400 McNulty Road, Philadelphia, PA 19154",
+      "industry": ""
+    },
     {
       "state": "PA",
       "company": "CJ Logistics America, LLC",

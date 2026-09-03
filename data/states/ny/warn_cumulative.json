@@ -1,9 +1,9 @@
 {
   "total_records": 4786,
-  "total_employees": 418155,
+  "total_employees": 418154,
   "date_range_start": "2016-01-04",
   "date_range_end": "2026-08-04",
-  "last_updated": "2026-09-03T02:19:12.171129+00:00",
+  "last_updated": "2026-09-03T15:49:17.764565+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -556,18 +556,6 @@
       "county": "Bronx",
       "city": "",
       "address": "400 East Fordham Road 12th Floor Bronx, NY, 10458",
-      "industry": ""
-    },
-    {
-      "state": "NY",
-      "company": "International Imaging Materials, Inc. (Armor-IIMAK)",
-      "notice_date": "2026-04-27",
-      "effective_date": "2026-07-31",
-      "employees": 199,
-      "layoff_type": "Closure Permanent",
-      "county": "Erie",
-      "city": "",
-      "address": "310 Commerce Drive Amherst, NY, 14228",
       "industry": ""
     },
     {
@@ -57436,6 +57424,18 @@
       "county": "Erie",
       "city": "",
       "address": "200 Broadway St Buffalo, NY, 14204",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "International Imaging Materials, Inc. (Armor-IIMAK)",
+      "notice_date": "2026-04-27",
+      "effective_date": "2026-07-31",
+      "employees": 198,
+      "layoff_type": "Closure Permanent",
+      "county": "Erie",
+      "city": "",
+      "address": "310 Commerce Drive Amherst, NY, 14228",
       "industry": ""
     }
   ]

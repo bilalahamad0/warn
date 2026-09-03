@@ -1,9 +1,9 @@
 {
   "total_records": 465,
-  "total_employees": 34806,
+  "total_employees": 34831,
   "date_range_start": "2025-01-02",
   "date_range_end": "2026-08-28",
-  "last_updated": "2026-09-03T02:09:58.467705+00:00",
+  "last_updated": "2026-09-03T15:39:33.183062+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -5288,18 +5288,6 @@
     },
     {
       "state": "FL",
-      "company": "Host International, Inc.",
-      "notice_date": "2026-01-16",
-      "effective_date": "2026-01-30",
-      "employees": 92,
-      "layoff_type": "",
-      "county": "",
-      "city": "ORLANDO",
-      "address": "1 Jeff Fuqua Blvd",
-      "industry": "Transportation and Warehousing"
-    },
-    {
-      "state": "FL",
       "company": "TelaForce, LLC",
       "notice_date": "2026-01-19",
       "effective_date": "2026-03-20",
@@ -5585,6 +5573,18 @@
       "city": "PATRICK AFB",
       "address": "Patrick Air Force Base 820 Falcon Ave",
       "industry": "Professional, Scientific, and Technical Services"
+    },
+    {
+      "state": "FL",
+      "company": "Host International, Inc.",
+      "notice_date": "2026-01-16",
+      "effective_date": "2026-01-30",
+      "employees": 117,
+      "layoff_type": "",
+      "county": "",
+      "city": "ORLANDO",
+      "address": "1 Jeff Fuqua Blvd",
+      "industry": "Transportation and Warehousing"
     }
   ]
 }
