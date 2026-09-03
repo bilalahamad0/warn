@@ -1,11 +1,23 @@
 {
-  "total_records": 97,
-  "total_employees": 15030,
+  "total_records": 98,
+  "total_employees": 15157,
   "date_range_start": "2025-01-21",
-  "date_range_end": "2026-08-24",
-  "last_updated": "2026-09-02T16:04:18.147983+00:00",
+  "date_range_end": "2026-09-02",
+  "last_updated": "2026-09-03T02:19:39.557914+00:00",
   "source_url": "https://www.tn.gov/workforce/general-resources/major-publications0/major-publications-redirect/reports.html",
   "records": [
+    {
+      "state": "TN",
+      "company": "Kilgore Flares Company, LLC",
+      "notice_date": "2026-09-02",
+      "effective_date": "2026-10-31",
+      "employees": 127,
+      "layoff_type": "",
+      "county": "Hardeman",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "TN",
       "company": "Identity Group",

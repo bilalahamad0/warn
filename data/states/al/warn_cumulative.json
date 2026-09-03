@@ -1,9 +1,9 @@
 {
-  "total_records": 1066,
-  "total_employees": 181926,
+  "total_records": 1067,
+  "total_employees": 181981,
   "date_range_start": "1998-07-14",
-  "date_range_end": "2026-08-20",
-  "last_updated": "2026-09-02T01:50:08.496162+00:00",
+  "date_range_end": "2026-08-31",
+  "last_updated": "2026-09-03T01:56:13.018548+00:00",
   "source_url": "https://workforce.alabama.gov/warn-list/",
   "records": [
     {
@@ -12795,6 +12795,18 @@
       "layoff_type": "Layoff",
       "county": "",
       "city": "Dothan",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "Diatherix Laboratories  LLC",
+      "notice_date": "2026-08-31",
+      "effective_date": "2026-10-31",
+      "employees": 55,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Huntsville",
       "address": "",
       "industry": ""
     }

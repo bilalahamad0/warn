@@ -11,7 +11,7 @@
             <meta name="url" content="https://www.tn.gov/workforce/general-resources/major-publications0/major-publications-redirect/reports.html"/>
         
         
-            <meta name="lastModified" content="25 Aug 2026 14:08:13 CDT"/>
+            <meta name="lastModified" content="2 Sep 2026 13:51:05 CDT"/>
         
         
         
@@ -165,25 +165,28 @@
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 columns text-right">
-            <div class="tn-headersearchcoveo"><script type="module" src="https://static.cloud.coveo.com/atomic/v2.42/atomic.esm.js"></script> 
+            <div class="tn-headersearchcoveo">
 
 <div>
+
+<script type="module" src="https://static.cloud.coveo.com/atomic/v2.42/atomic.esm.js">
+</script>
 <script type="module">
 
 import {loadContextActions, buildTab} from 'https://static.cloud.coveo.com/atomic/v2.42/headless/headless.esm.js';
 
-      (async () => {
+(async () => {
 
-		const searchHubStripped = "TNGov".trim();
-		const context = {};
-		context.userdiv = "";
-		context.userdept = "workforce";
+    const searchHubStripped = "TNGov".trim();
+    const context = {};
+    context.userdiv = "";
+    context.userdept = "workforce";
 
-		await customElements.whenDefined('atomic-search-interface');
-		const searchInterface = document.querySelector('#searchbox');
-		searchInterface.setAttribute('search-hub', searchHubStripped);
+    await customElements.whenDefined('atomic-search-interface');
+    const searchInterface = document.querySelector('#searchbox');
+    searchInterface.setAttribute('search-hub', searchHubStripped);
 
-//Adding for Context to be used for Query Suggestions
+    //Adding for Context to be used for Query Suggestions
     const preProcessQuerySuggestionsRequest = (request) => {
         if (context.userdiv) {
             const body = JSON.parse(request.body);
@@ -206,37 +209,40 @@ import {loadContextActions, buildTab} from 'https://static.cloud.coveo.com/atomi
         return request;
     };
 
-        await searchInterface.initialize({ 
-         accessToken: "eyJhbGciOiJIUzI1NiJ9.eyJzZWFyY2hIdWIiOiJUTkdvdiIsInY4Ijp0cnVlLCJ0b2tlbklkIjoiczVpamF4NTN0cHg3a2p0empneG55cnNocmEiLCJvcmdhbml6YXRpb24iOiJ0ZW5uZXNzZWVzdGF0ZWdvdmVybm1lbnRwcm9kdWN0aW9uNnBvNG01YjIiLCJ1c2VySWRzIjpbeyJ0eXBlIjoiVXNlciIsIm5hbWUiOiJhbm9ueW1vdXNfdXNlckBhbm9ueW1vdXMuY292ZW8uY29tIiwicHJvdmlkZXIiOiJFbWFpbCBTZWN1cml0eSBQcm92aWRlciJ9XSwicm9sZXMiOlsicXVlcnlFeGVjdXRvciJdLCJpc3MiOiJTZWFyY2hBcGkiLCJleHAiOjE3ODg0MzU4ODAsImlhdCI6MTc4ODM0OTQ4MH0.eX_aeXS9GxHUfoHw77rOwANIHt_0_wlyeQEweaFV3qg".trim(),
-         organizationId: "tennesseestategovernmentproduction6po4m5b2".trim(),
-         renewAccessToken: function() {
-			location.reload();
-		 },
-         preprocessRequest: (request) => {
-              if (request.url.indexOf('querySuggest') >= 0) {
-                  return preProcessQuerySuggestionsRequest(request);
-              }
-              return request;
-         }
-        });
+    const orgId = "tennesseestategovernmentproduction6po4m5b2".trim();
 
-		searchInterface.i18n.addResourceBundle('en', 'translation', {
-		search: "Search Labor and Workforce Development".trim(),
-		});
+    await searchInterface.initialize({
+        accessToken: "eyJhbGciOiJIUzI1NiJ9.eyJzZWFyY2hIdWIiOiJUTkdvdiIsInY4Ijp0cnVlLCJ0b2tlbklkIjoid2hhaXlueWw0dWg2cGRidHRvaWo3MmtpZTQiLCJvcmdhbml6YXRpb24iOiJ0ZW5uZXNzZWVzdGF0ZWdvdmVybm1lbnRwcm9kdWN0aW9uNnBvNG01YjIiLCJ1c2VySWRzIjpbeyJ0eXBlIjoiVXNlciIsIm5hbWUiOiJhbm9ueW1vdXNfdXNlckBhbm9ueW1vdXMuY292ZW8uY29tIiwicHJvdmlkZXIiOiJFbWFpbCBTZWN1cml0eSBQcm92aWRlciJ9XSwicm9sZXMiOlsicXVlcnlFeGVjdXRvciJdLCJpc3MiOiJTZWFyY2hBcGkiLCJleHAiOjE3ODg0Nzg0ODYsImlhdCI6MTc4ODM5MjA4Nn0.z3QgN2L3RcA6z8pNDeMYR4qaiuo1-Hp9thChIf9-GIc".trim(),
+        organizationId: orgId,
+        organizationEndpoints: await searchInterface.getOrganizationEndpoints(orgId),
+        renewAccessToken: function() {
+            location.reload();
+        },
+        preprocessRequest: (request) => {
+            if (request.url.indexOf('querySuggest') >= 0) {
+                return preProcessQuerySuggestionsRequest(request);
+            }
+            return request;
+        }
+    });
 
-		const engine = searchInterface.engine;
-		engine.dispatch(loadContextActions(engine).setContext(context));
-		})();
+    searchInterface.i18n.addResourceBundle('en', 'translation', {
+        search: "Search Labor and Workforce Development".trim(),
+    });
+
+    const engine = searchInterface.engine;
+    engine.dispatch(loadContextActions(engine).setContext(context));
+})();
 </script>
 
 <atomic-search-interface id="searchbox">
   <atomic-search-box clear-filters="false" redirection-url="/workforce/search-results.html" .trim()>
-		  
-	<atomic-search-box-recent-queries max-with-query="0" max-without-query="4">
-	</atomic-search-box-recent-queries>
 
-	<atomic-search-box-query-suggestions>
-	</atomic-search-box-query-suggestions>
+    <atomic-search-box-recent-queries max-with-query="0" max-without-query="4">
+    </atomic-search-box-recent-queries>
+
+    <atomic-search-box-query-suggestions>
+    </atomic-search-box-query-suggestions>
 
   </atomic-search-box>
 </atomic-search-interface>
@@ -659,6 +665,12 @@ import {loadContextActions, buildTab} from 'https://static.cloud.coveo.com/atomi
 <th scope="col">Affected Workers</th>
 <th scope="col">Closure/Layoff Date</th>
 <th scope="col">Notice/Type</th>
+</tr><tr><td>9/2/2026</td>
+<td><a title="Kilgore Flares Company, LLC WARN Letter" href="/content/dam/tn/workforce/documents/warn/Kilgore-Flares.pdf" target="_blank">Kilgore Flares Company, LLC</a></td>
+<td>Hardeman</td>
+<td style="text-align: left;">127</td>
+<td>10-31-2026</td>
+<td>#202600009</td>
 </tr><tr><td>8/24/2026</td>
 <td><a title="Identity Group WARN Letter" href="/content/dam/tn/workforce/documents/warn/Identity-Group.pdf" target="_blank">Identity Group</a></td>
 <td>Putnam</td>
@@ -963,13 +975,13 @@ to 6-5-2026</td>
     
     
     <div class="containers tn-accordion parbase">
-    <div class="accordion" id="accordion-08a09f9a60d9480ca8c7778ba144dd2b">
+    <div class="accordion" id="accordion-d68e6f5fa62d45698bb6f0a2c17c1d34">
         
 
         
             
                 <div class="button-wrapper">
-                    <button class="button icon-plus" type="button" aria-controls="collapse08a09f9a60d9480ca8c7778ba144dd2b-0 collapse08a09f9a60d9480ca8c7778ba144dd2b-1 collapse08a09f9a60d9480ca8c7778ba144dd2b-2 collapse08a09f9a60d9480ca8c7778ba144dd2b-3 collapse08a09f9a60d9480ca8c7778ba144dd2b-4 " aria-label="Expand all accordion sections" data-tn-action="accordion:expandcollapse"></button>
+                    <button class="button icon-plus" type="button" aria-controls="collapsed68e6f5fa62d45698bb6f0a2c17c1d34-0 collapsed68e6f5fa62d45698bb6f0a2c17c1d34-1 collapsed68e6f5fa62d45698bb6f0a2c17c1d34-2 collapsed68e6f5fa62d45698bb6f0a2c17c1d34-3 collapsed68e6f5fa62d45698bb6f0a2c17c1d34-4 " aria-label="Expand all accordion sections" data-tn-action="accordion:expandcollapse"></button>
                 </div>
             
 
@@ -980,13 +992,13 @@ to 6-5-2026</td>
                     
                         <div class="accordion-heading">
                             <span class="accordion-title">
-                                <button class="accordion-button icon-angle-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-08a09f9a60d9480ca8c7778ba144dd2b-0" aria-controls="collapse-08a09f9a60d9480ca8c7778ba144dd2b-0" aria-expanded="false">
+                                <button class="accordion-button icon-angle-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-d68e6f5fa62d45698bb6f0a2c17c1d34-0" aria-controls="collapse-d68e6f5fa62d45698bb6f0a2c17c1d34-0" aria-expanded="false">
                                     2025
                                 </button>
                             </span>
                         </div>
 
-                        <div id="collapse-08a09f9a60d9480ca8c7778ba144dd2b-0" class="accordion-collapse collapse" data-bs-parent="#accordion-08a09f9a60d9480ca8c7778ba144dd2b">
+                        <div id="collapse-d68e6f5fa62d45698bb6f0a2c17c1d34-0" class="accordion-collapse collapse" data-bs-parent="#accordion-d68e6f5fa62d45698bb6f0a2c17c1d34">
                             <div class="accordion-body panel-body" tabindex="0">
                                 <div>
 
@@ -1349,13 +1361,13 @@ to 6-5-2026</td>
                     
                         <div class="accordion-heading">
                             <span class="accordion-title">
-                                <button class="accordion-button icon-angle-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-08a09f9a60d9480ca8c7778ba144dd2b-1" aria-controls="collapse-08a09f9a60d9480ca8c7778ba144dd2b-1" aria-expanded="false">
+                                <button class="accordion-button icon-angle-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-d68e6f5fa62d45698bb6f0a2c17c1d34-1" aria-controls="collapse-d68e6f5fa62d45698bb6f0a2c17c1d34-1" aria-expanded="false">
                                     2024
                                 </button>
                             </span>
                         </div>
 
-                        <div id="collapse-08a09f9a60d9480ca8c7778ba144dd2b-1" class="accordion-collapse collapse" data-bs-parent="#accordion-08a09f9a60d9480ca8c7778ba144dd2b">
+                        <div id="collapse-d68e6f5fa62d45698bb6f0a2c17c1d34-1" class="accordion-collapse collapse" data-bs-parent="#accordion-d68e6f5fa62d45698bb6f0a2c17c1d34">
                             <div class="accordion-body panel-body" tabindex="0">
                                 <div>
 
@@ -1440,13 +1452,13 @@ to 6-5-2026</td>
                     
                         <div class="accordion-heading">
                             <span class="accordion-title">
-                                <button class="accordion-button icon-angle-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-08a09f9a60d9480ca8c7778ba144dd2b-2" aria-controls="collapse-08a09f9a60d9480ca8c7778ba144dd2b-2" aria-expanded="false">
+                                <button class="accordion-button icon-angle-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-d68e6f5fa62d45698bb6f0a2c17c1d34-2" aria-controls="collapse-d68e6f5fa62d45698bb6f0a2c17c1d34-2" aria-expanded="false">
                                     2023
                                 </button>
                             </span>
                         </div>
 
-                        <div id="collapse-08a09f9a60d9480ca8c7778ba144dd2b-2" class="accordion-collapse collapse" data-bs-parent="#accordion-08a09f9a60d9480ca8c7778ba144dd2b">
+                        <div id="collapse-d68e6f5fa62d45698bb6f0a2c17c1d34-2" class="accordion-collapse collapse" data-bs-parent="#accordion-d68e6f5fa62d45698bb6f0a2c17c1d34">
                             <div class="accordion-body panel-body" tabindex="0">
                                 <div>
 
@@ -1532,13 +1544,13 @@ to 6-5-2026</td>
                     
                         <div class="accordion-heading">
                             <span class="accordion-title">
-                                <button class="accordion-button icon-angle-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-08a09f9a60d9480ca8c7778ba144dd2b-3" aria-controls="collapse-08a09f9a60d9480ca8c7778ba144dd2b-3" aria-expanded="false">
+                                <button class="accordion-button icon-angle-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-d68e6f5fa62d45698bb6f0a2c17c1d34-3" aria-controls="collapse-d68e6f5fa62d45698bb6f0a2c17c1d34-3" aria-expanded="false">
                                     2022
                                 </button>
                             </span>
                         </div>
 
-                        <div id="collapse-08a09f9a60d9480ca8c7778ba144dd2b-3" class="accordion-collapse collapse" data-bs-parent="#accordion-08a09f9a60d9480ca8c7778ba144dd2b">
+                        <div id="collapse-d68e6f5fa62d45698bb6f0a2c17c1d34-3" class="accordion-collapse collapse" data-bs-parent="#accordion-d68e6f5fa62d45698bb6f0a2c17c1d34">
                             <div class="accordion-body panel-body" tabindex="0">
                                 <div>
 
@@ -1580,13 +1592,13 @@ to 6-5-2026</td>
                     
                         <div class="accordion-heading">
                             <span class="accordion-title">
-                                <button class="accordion-button icon-angle-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-08a09f9a60d9480ca8c7778ba144dd2b-4" aria-controls="collapse-08a09f9a60d9480ca8c7778ba144dd2b-4" aria-expanded="false">
+                                <button class="accordion-button icon-angle-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-d68e6f5fa62d45698bb6f0a2c17c1d34-4" aria-controls="collapse-d68e6f5fa62d45698bb6f0a2c17c1d34-4" aria-expanded="false">
                                     2021
                                 </button>
                             </span>
                         </div>
 
-                        <div id="collapse-08a09f9a60d9480ca8c7778ba144dd2b-4" class="accordion-collapse collapse" data-bs-parent="#accordion-08a09f9a60d9480ca8c7778ba144dd2b">
+                        <div id="collapse-d68e6f5fa62d45698bb6f0a2c17c1d34-4" class="accordion-collapse collapse" data-bs-parent="#accordion-d68e6f5fa62d45698bb6f0a2c17c1d34">
                             <div class="accordion-body panel-body" tabindex="0">
                                 <div>
 

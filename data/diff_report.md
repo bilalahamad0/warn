@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-09-02 16:07:11 UTC
+**Generated:** 2026-09-03 02:22:31 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -26,6 +26,11 @@ M data/changelog.jsonl
  M data/states/ak/warn_cumulative.json
  M data/states/ak/warn_latest.json
  M data/states/ak/warn_snapshot.json
+ M data/states/al/changelog.jsonl
+ M data/states/al/raw_download
+ M data/states/al/warn_cumulative.json
+ M data/states/al/warn_latest.json
+ M data/states/al/warn_snapshot.json
  M data/states/az/changelog.jsonl
  M data/states/az/meta.json
  M data/states/az/warn_cumulative.json
@@ -67,7 +72,6 @@ M data/changelog.jsonl
  M data/states/hi/warn_snapshot.json
  M data/states/ia/changelog.jsonl
  M data/states/ia/meta.json
- M data/states/ia/raw_download
  M data/states/ia/warn_cumulative.json
  M data/states/ia/warn_latest.json
  M data/states/ia/warn_snapshot.json
@@ -117,7 +121,6 @@ M data/changelog.jsonl
  M data/states/me/warn_snapshot.json
  M data/states/mi/changelog.jsonl
  M data/states/mi/meta.json
- M data/states/mi/raw_download
  M data/states/mi/warn_cumulative.json
  M data/states/mi/warn_latest.json
  M data/states/mi/warn_snapshot.json
@@ -130,6 +133,11 @@ M data/changelog.jsonl
  M data/states/ms/warn_cumulative.json
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
+ M data/states/mt/changelog.jsonl
+ M data/states/mt/meta.json
+ M data/states/mt/warn_cumulative.json
+ M data/states/mt/warn_latest.json
+ M data/states/mt/warn_snapshot.json
  M data/states/nc/changelog.jsonl
  M data/states/nc/meta.json
  M data/states/nc/warn_cumulative.json
@@ -141,12 +149,12 @@ M data/changelog.jsonl
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
- M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
  M data/states/nj/changelog.jsonl
  M data/states/nj/meta.json
+ M data/states/nj/raw_download.xlsx
  M data/states/nj/warn_cumulative.json
  M data/states/nj/warn_latest.json
  M data/states/nj/warn_snapshot.json
@@ -184,10 +192,8 @@ M data/changelog.jsonl
  M data/states/ri/warn_cumulative.json
  M data/states/ri/warn_latest.json
  M data/states/ri/warn_snapshot.json
- M data/states/sc/archive/2026.pdf
  M data/states/sc/changelog.jsonl
  M data/states/sc/meta.json
- M data/states/sc/raw_download
  M data/states/sc/warn_cumulative.json
  M data/states/sc/warn_latest.json
  M data/states/sc/warn_snapshot.json
@@ -202,11 +208,13 @@ M data/changelog.jsonl
  M data/states/tn/warn_latest.json
  M data/states/tn/warn_snapshot.json
  M data/states/ut/changelog.jsonl
+ M data/states/ut/meta.json
  M data/states/ut/warn_cumulative.json
  M data/states/ut/warn_latest.json
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
+ M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -238,16 +246,17 @@ M data/changelog.jsonl
 
 **Recent commits:**
 ```
+d88ddcb7 auto: WARN data update [skip ci]
 9d1efc81 auto: WARN data update [skip ci]
 9b0914a8 auto: WARN data update [skip ci]
 596f85b6 auto: WARN data update [skip ci]
 9d8f6f17 auto: WARN data update [skip ci]
-6a9854ef auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-09-03T02:06:46.601032+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-09-02T15:48:47.662246+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-09-02T01:59:49.991934+00:00` — +0 added, -143 removed, 0 employees (new)
 - `2026-09-01T15:59:46.028092+00:00` — +29 added, -0 removed, 1,583 employees (new)
@@ -257,4 +266,3 @@ M data/changelog.jsonl
 - `2026-08-30T15:52:00.944802+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-30T02:23:18.513480+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-08-29T16:10:22.482851+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-08-29T04:50:39.489722+00:00` — +0 added, -0 removed, 0 employees (new)

@@ -1,9 +1,9 @@
 {
-  "total_records": 607,
-  "total_employees": 81669,
+  "total_records": 608,
+  "total_employees": 81874,
   "date_range_start": "2013-02-25",
-  "date_range_end": "2026-08-27",
-  "last_updated": "2026-09-02T02:12:12.305081+00:00",
+  "date_range_end": "2026-09-01",
+  "last_updated": "2026-09-02T16:04:15.270074+00:00",
   "source_url": "https://scworks.org/employer/employer-programs/risk-closing/layoff-notification-reports",
   "records": [
     {
@@ -7288,6 +7288,18 @@
       "county": "Beaufort",
       "city": "",
       "address": "2 Grasslawn Ave., Hilton Head Island, SC 29928",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "DP World",
+      "notice_date": "2026-09-01",
+      "effective_date": "2026-10-31",
+      "employees": 205,
+      "layoff_type": "Permanent Layoff",
+      "county": "Spartanburg",
+      "city": "",
+      "address": "226 GSP Logistics Parkway, Greer, SC 29651",
       "industry": ""
     }
   ]

@@ -1,9 +1,9 @@
 {
-  "total_records": 1062,
-  "total_employees": 121252,
+  "total_records": 1063,
+  "total_employees": 121379,
   "date_range_start": "2012-01-05",
-  "date_range_end": "2026-08-24",
-  "last_updated": "2026-09-02T16:04:18.152510+00:00",
+  "date_range_end": "2026-09-02",
+  "last_updated": "2026-09-03T02:19:39.562254+00:00",
   "source_url": "https://www.tn.gov/workforce/general-resources/major-publications0/major-publications-redirect/reports.html",
   "records": [
     {
@@ -10816,6 +10816,18 @@
       "employees": 63,
       "layoff_type": "",
       "county": "Putnam",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "TN",
+      "company": "Kilgore Flares Company, LLC",
+      "notice_date": "2026-09-02",
+      "effective_date": "2026-10-31",
+      "employees": 127,
+      "layoff_type": "",
+      "county": "Hardeman",
       "city": "",
       "address": "",
       "industry": ""
