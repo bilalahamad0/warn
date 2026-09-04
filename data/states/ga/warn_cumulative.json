@@ -1,9 +1,9 @@
 {
-  "total_records": 4736,
-  "total_employees": 606476,
+  "total_records": 4737,
+  "total_employees": 606553,
   "date_range_start": "1989-08-17",
   "date_range_end": "2026-10-31",
-  "last_updated": "2026-09-04T02:03:32.599628+00:00",
+  "last_updated": "2026-09-04T15:35:42.906728+00:00",
   "source_url": "https://www.tcsg.edu/warn-public-view/",
   "records": [
     {
@@ -56836,6 +56836,18 @@
       "county": "Richmond",
       "city": "",
       "address": "1301 New Savannah Rd, Augusta, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Amentum",
+      "notice_date": null,
+      "effective_date": "2026-10-31",
+      "employees": 77,
+      "layoff_type": "Permanent Layoff / Reduction in Force",
+      "county": "",
+      "city": "",
+      "address": "Fort Eisenhower, 300 E Hospital Rd, Augusta, Georgia",
       "industry": ""
     }
   ]

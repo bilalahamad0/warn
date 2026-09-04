@@ -2,7 +2,7 @@
   "scope": "ca",
   "state": "CA",
   "coverage_start": "2025-01-01",
-  "last_updated": "2026-09-04T02:14:45.960856+00:00",
+  "last_updated": "2026-09-04T15:47:19.887715+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "total_records": 1763,
   "total_employees": 98177,
@@ -20,7 +20,7 @@
       "address": "1102 Q Street, Suite 4800  Sacramento CA 95811",
       "industry": "61 Educational Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Renewal by Andersen LLC",
@@ -33,7 +33,7 @@
       "address": "18700 Crenshaw Blvd  Torrance CA 90504",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Renewal by Andersen LLC",
@@ -46,7 +46,7 @@
       "address": "654 N Harington Dr.  Orange CA 92868",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "24Hr Homecare, LLC",
@@ -85,7 +85,7 @@
       "address": "329 Oyster Point Blvd  South San Francisco CA 94080",
       "industry": "54 Professional Scientific and Technical Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "PayPal",
@@ -98,7 +98,7 @@
       "address": "2211 N. First Street  San Jose CA 95131",
       "industry": "52 Finance and Insurance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Astrion",
@@ -254,7 +254,7 @@
       "address": "30865 San Clemente Street  Hayward CA 94544",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "John Muir Physician Network - 5860 Owens Drive",
