@@ -21,3 +21,4 @@ htmlcov/
 
 # X poster runtime state that is machine-local, not pipeline output.
 data/x_outbox.json
+data/x_cards/

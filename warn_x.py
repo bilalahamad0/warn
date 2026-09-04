@@ -63,6 +63,7 @@ POSTED_NAME = "x_posted_keys.json"
 REJECTED_NAME = "x_rejected_keys.json"
 STATE_NAME = "x_state.json"
 OUTBOX_NAME = "x_outbox.json"
+CARDS_DIR = "x_cards"
 
 QUEUE_VERSION = 1
 
@@ -132,9 +133,19 @@ def _x_config() -> tuple:
 
 
 def transport() -> str:
-    """``dry`` | ``api`` | ``browser``. Defaults to dry — sends nothing."""
-    value = _env("X_TRANSPORT", "dry").lower()
-    return value if value in ("dry", "api", "browser") else "dry"
+    """``browser`` (default) | ``dry`` | ``api``.
+
+    BROWSER IS THE DEFAULT because the API is not free. X went pay-per-use on
+    2026-02-06 — $0.015 a post, $0.200 with a URL — and this account's console
+    balance is $0.00. The browser path posts through a logged-in x.com session
+    and costs nothing, so ``api`` stays only for whoever later decides to buy
+    credits; tweepy is not even in requirements.txt.
+
+    ``dry`` composes and queues without staging anything, which is what CI
+    wants: a GitHub runner has no browser and no session to post from.
+    """
+    value = _env("X_TRANSPORT", "browser").lower()
+    return value if value in ("dry", "api", "browser") else "browser"
 
 
 def auto_post_enabled() -> bool:
@@ -371,6 +382,10 @@ def enqueue(drafts, auto_approve: bool = False) -> dict:
             "states": batch.states,
             "per_state": batch.per_state,
             "sites": batch.sites,
+            # Card inputs, stored rather than the rendered PNG: the card is
+            # regenerated at post time so no binary lands in git twice a day,
+            # and it can never drift from the row it illustrates.
+            "card": warn_x_select.card_fields(batch),
             "arm": verdict.arm,
             "reason": verdict.reason,
             "text": draft.text,
@@ -601,6 +616,7 @@ def _post_via_browser(row: dict) -> None:
                 "display": row["display"],
                 "text": row["text"],
                 "thread": row.get("thread", []),
+                "image": _render_card(row),
                 "staged_at": _now().isoformat(),
             }
         )
@@ -612,6 +628,33 @@ def _post_via_browser(row: dict) -> None:
 # ---------------------------------------------------------------------------
 # Posting
 # ---------------------------------------------------------------------------
+
+def _render_card(row: dict):
+    """Render this row's post card, returning its path as a string, or None.
+
+    Generated here rather than at enqueue time so the PNG never enters git:
+    CI stages the queue twice a day, and committing a ~100 KB image per
+    candidate would add tens of megabytes a year to a repo whose whole point
+    is small, reviewable diffs.
+    """
+    card = row.get("card") or {}
+    try:
+        import warn_x_image
+    except ImportError as e:  # noqa: BLE001
+        log.warning(f"No card for {row['id']} ({e}) — text-only post.")
+        return None
+    out = _path(CARDS_DIR) / f"{row['id']}.png"
+    path = warn_x_image.build_card(
+        display=row.get("display", ""),
+        employees=card.get("employees"),
+        place=card.get("place", ""),
+        effective=card.get("effective"),
+        states=row.get("states"),
+        per_state=row.get("per_state"),
+        out_path=out,
+    )
+    return str(path) if path else None
+
 
 def _stamp_outbox(row_id: str, tweet_id: str) -> None:
     """Mark the browser outbox entry for a row that is now live.

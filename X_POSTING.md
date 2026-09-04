@@ -7,7 +7,10 @@ it in a queue, and waits for a human to say yes. Once the queue has been right
 for long enough, one repository variable turns the waiting off.
 
 - **Account:** <https://x.com/USLayoff>
-- **Modules:** `warn_names.py` · `warn_brands.py` · `warn_x_select.py` · `warn_x.py`
+- **Modules:** `warn_names.py` · `warn_brands.py` · `warn_x_select.py` ·
+  `warn_x_image.py` · `warn_x.py`
+- **Cost: $0.** Posting goes through a logged-in x.com session in your browser,
+  not the paid API.
 - **Hooked in at:** `warn_publish.run()` → `maybe_post_to_x()`, after the email
   loop and before the monthly digest
 
@@ -22,6 +25,24 @@ status is `approved`. In review mode a human writes that word; in auto mode
 phase 1 is byte-for-byte the text auto mode sends in phase 2.
 `tests/test_x.py::test_the_gate_does_not_change_a_single_byte_of_the_post`
 is the guard.
+
+---
+
+## The transport: your browser, not the API
+
+X went pay-per-use on 2026-02-06 — no free tier, $0.015 a post and $0.200 with
+a URL — and this account's developer console shows a **$0.00 balance**. So the
+default transport is `browser`: the pipeline stages approved posts into
+`data/x_outbox.json` with a rendered card beside each, and they go out through
+a normal logged-in x.com session. Nothing is billed.
+
+`X_TRANSPORT=api` still works for anyone who later buys credits, but tweepy is
+no longer in `requirements.txt`. CI pins `X_TRANSPORT=dry` — a GitHub runner
+has no browser and no session.
+
+**What this costs you:** posting is a local step. CI stages candidates
+unattended but cannot publish them, so "fully automated" here means a scheduled
+job on your own Mac running `warn_x.py post`, not GitHub Actions.
 
 ---
 
@@ -57,28 +78,54 @@ reading only this post be misled?
 
 ## Phase 2 — hand it over
 
-Nothing to deploy. Set repository **variables**:
+Nothing to deploy and nothing to buy. Set the repository variable
+`X_AUTO_POST=1` so the pipeline approves its own candidates, then schedule the
+posting step locally:
 
-| Variable | Value | Effect |
-|---|---|---|
-| `X_TRANSPORT` | `api` | actually send, instead of only queueing |
-| `X_AUTO_POST` | `1` | the pipeline approves its own candidates |
+```bash
+0 * * * * cd ~/Documents/GitHub/warn && git pull -q && python3 warn_x.py post
+```
 
-and repository **secrets** `X_API_KEY`, `X_API_SECRET`, `X_ACCESS_TOKEN`,
-`X_ACCESS_SECRET`. Reverting is `X_AUTO_POST=0`. The instant stop that needs no
-deploy at all is `python3 warn_x.py kill --reason "..."`, or the repository
-variable `X_DISABLE_POSTING=1`.
+Flipping `X_AUTO_POST` changes *who writes the word "approved"* and nothing
+else — the queue, the wording, the cards, the ledgers and the caps are the same
+code either way, so the text you reviewed in phase one is byte-for-byte what
+auto mode sends. Reverting is `X_AUTO_POST=0`; the instant stop is
+`python3 warn_x.py kill --reason "..."`.
 
-**Auto mode still refuses to approve four shapes**, because these are where the
-composed text is most likely to be wrong. They stay pending for a human forever:
+**Auto mode still refuses to approve five shapes**, because these are where the
+composed text is most likely to be wrong. They stay pending for a human:
 
 - the post exceeds 280 characters (`over_budget`)
-- the state published no headcount, so the post can state no number
-  (`employees_unknown`)
-- **some** sites reported a headcount and others did not (`partial_headcount`) —
-  the number is true but covers fewer places than the filing does
+- the state published no headcount (`employees_unknown`)
+- some sites reported a headcount and others did not (`partial_headcount`)
 - more than 6 sites in one batch — wide batches are where grouping bugs surface
-- 2,000 or more employees — double the 99th percentile, worth a human look
+- 2,000 or more employees — double the 99th percentile
+
+**`posted` is terminal.** Nothing hands a live tweet back to the transport —
+`approve` refuses a posted row and says so. `failed` and `expired` rows *can*
+be re-approved by a human.
+
+---
+
+## The card
+
+Every post carries a generated 1600×900 PNG: the employer's name set large, the
+headcount larger, the place and effective date, and the dashboard's own mark and
+URL. It is what stops a thumb — a text-only post scrolls past.
+
+**On logos, deliberately.** The card does **not** carry the company's actual
+logo. Those are trademarks, they are not licensed to us, and putting one beside
+a layoff headline is both a rights problem and an implied association nobody
+granted. What it carries instead is the employer's **name** — naming the subject
+of a factual report is exactly what nominative use protects — set as the loudest
+element, anchored by a generated monogram tile. Everything drawn is ours;
+the palette and descending-arrow motif come from `docs/icon.svg`.
+
+Cards render at post time into `data/x_cards/` (gitignored), not at enqueue
+time, so no binary enters git — CI stages the queue twice a day and a ~100 KB
+PNG per candidate would add tens of megabytes a year. The row stores the card's
+*inputs*, so a card can never drift from the post beside it. A card that fails
+to render is logged and the post goes out as text.
 
 ---
 
@@ -180,23 +227,15 @@ system can make. `warn_names._SPLIT_AT` keeps the left-hand employer, and
 
 ---
 
-## Costs and limits (as of 2026)
+## Limits
 
-X has been **pay-per-use since 2026-02-06** — there is no free tier, and no new
-Basic/Pro signups. Buy credits at <https://console.x.com>; requests are blocked
-at a zero balance.
+Posting through the browser costs nothing and has no API quota. The binding
+limits are ours: **6 posts per run, 12 per day, 75 seconds apart**, and at most
+2 per company per month.
 
-| Item | Price |
-|---|---|
-| `POST /2/tweets` | **$0.015** per post |
-| the same post containing a URL | **$0.200** per post |
-
-At ~20-25 posts/month that is about **$0.40/month** without the dashboard link
-or **$5/month** with it. The link is on by default; `X_INCLUDE_LINK=0` drops it.
-
-Rate limits (100 posts/15 min per user, 10,000/24h per app) are far above
-anything this feed does. The binding limits are ours: 6 per run, 12 per day,
-75 seconds between posts.
+If you ever switch to `X_TRANSPORT=api`: $0.015 a post, **$0.200 with a URL**
+(`X_INCLUDE_LINK=0` drops the link and the 13× multiplier). At ~52 posts/month
+that is $0.78 or $10.40. Credits are bought at <https://console.x.com>.
 
 **Turn on the "Automated" account label** on @USLayoff and name a
 human-managed parent account in the bio. X staff cite this directly as what
@@ -241,7 +280,8 @@ python3 warn_x.py resume
 | `data/x_posted_keys.json` | notices already posted — the dedupe ledger |
 | `data/x_rejected_keys.json` | notices a human said no to. Separate from the queue because rejected rows are swept after 30 days and the "no" has to outlive them — otherwise on day 31 the same candidate is re-derived and, in auto mode, posted. |
 | `data/x_state.json` | daily counters, kill latch, circuit breaker |
-| `data/x_outbox.json` | approved text staged for the browser transport |
+| `data/x_outbox.json` | approved posts staged for the browser (gitignored) |
+| `data/x_cards/` | rendered post cards, regenerated on demand (gitignored) |
 
 All four live under `data/` **and that is load-bearing**:
 `warn_publish.commit_ledgers` and monitor.yml's failure branch stage `data/`

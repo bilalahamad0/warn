@@ -604,5 +604,31 @@ def build_drafts(state_results: dict, include_link: bool = True,
     return out
 
 
+def card_fields(batch: CompanyBatch) -> dict:
+    """The human-readable strings a post card needs, derived once.
+
+    Kept here rather than in warn_x because they must match the wording of the
+    post itself — the card and the text are the same claim in two forms, and a
+    card that says a different place or date than the post beside it is worse
+    than no card.
+    """
+    if batch.sites == 1 and len(batch.per_state) <= 1:
+        place = _place(batch.notices[0])
+    elif len(batch.per_state) <= 1:
+        only = (list(batch.per_state) or batch.states)[0]
+        place = (f"{batch.sites} sites in "
+                 f"{warn_digest.STATE_NAMES.get(only, only)}")
+    else:
+        shown = [s for s in batch.states if batch.per_state.get(s)]
+        place = " · ".join(shown[:4]) + (
+            f" +{len(shown) - 4}" if len(shown) > 4 else ""
+        )
+    return {
+        "place": place,
+        "effective": _fmt_date(batch.first_effective),
+        "employees": batch.employees if batch.employees_known else None,
+    }
+
+
 def now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()

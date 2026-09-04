@@ -8,6 +8,7 @@ state machine and the real ledger writes.
 
 import json
 from datetime import timedelta
+from pathlib import Path
 from unittest.mock import patch
 
 import pytest
@@ -370,13 +371,32 @@ def test_a_company_cannot_flood_the_month(data_dir):
 # Transports
 # ---------------------------------------------------------------------------
 
-def test_dry_transport_sends_nothing(data_dir):
+def test_dry_transport_sends_nothing(data_dir, monkeypatch):
+    """Explicit, because the DEFAULT is no longer dry.
+
+    Without setting it this test would exercise the browser path and still
+    pass every assertion below — which is exactly how a test stops testing
+    what its name says.
+    """
+    monkeypatch.setenv("X_TRANSPORT", "dry")
     _approved(data_dir)
     with patch("warn_x._post_via_api") as post:
         result = warn_x.post_approved()
     assert not post.called
     assert result["posted"] == 0
     assert warn_x.load_posted_keys() == set()
+    assert not (data_dir / warn_x.OUTBOX_NAME).exists()
+
+
+def test_browser_is_the_default_transport(monkeypatch):
+    """The API costs money and this account has a $0.00 balance."""
+    monkeypatch.delenv("X_TRANSPORT", raising=False)
+    assert warn_x.transport() == "browser"
+
+
+def test_an_unknown_transport_falls_back_to_browser(monkeypatch):
+    monkeypatch.setenv("X_TRANSPORT", "carrier-pigeon")
+    assert warn_x.transport() == "browser"
 
 
 def test_browser_transport_stages_an_outbox(data_dir, monkeypatch):
@@ -595,3 +615,58 @@ def test_the_browser_outbox_is_marked_once_a_post_is_live(data_dir, monkeypatch)
     entry = json.loads((data_dir / warn_x.OUTBOX_NAME).read_text())["posts"][0]
     assert entry.get("tweet_id") == "2001"
     assert entry.get("posted_at")
+
+
+# ---------------------------------------------------------------------------
+# Post cards
+# ---------------------------------------------------------------------------
+
+def test_the_browser_outbox_carries_a_rendered_card(data_dir, monkeypatch):
+    """The image is what stops a thumb; the outbox is what the browser reads."""
+    monkeypatch.setenv("X_TRANSPORT", "browser")
+    _approved(data_dir)
+    warn_x.post_approved()
+    post = json.loads((data_dir / warn_x.OUTBOX_NAME).read_text())["posts"][0]
+    assert post["image"], "no card rendered"
+    card = Path(post["image"])
+    assert card.exists() and card.suffix == ".png"
+    assert card.stat().st_size > 5_000
+
+
+def test_a_card_is_regenerated_not_committed(data_dir, monkeypatch):
+    """Only the card's INPUTS live on the queue row.
+
+    CI stages the queue twice a day; committing a ~100 KB PNG per candidate
+    would add tens of megabytes a year to a repo whose diffs are meant to stay
+    readable. The row carries the strings, the PNG is made at post time.
+    """
+    warn_x.enqueue(drafts_for([notice()]))
+    row = warn_x.rows("pending")[0]
+    assert set(row["card"]) == {"place", "effective", "employees"}
+    assert "image" not in row
+    assert not (data_dir / warn_x.CARDS_DIR).exists()
+
+
+def test_a_card_failure_never_blocks_a_post(data_dir, monkeypatch):
+    """The text is the story; the card is packaging."""
+    monkeypatch.setenv("X_TRANSPORT", "browser")
+    _approved(data_dir)
+    with patch("warn_x_image.build_card", return_value=None):
+        warn_x.post_approved()
+    post = json.loads((data_dir / warn_x.OUTBOX_NAME).read_text())["posts"][0]
+    assert post["image"] is None
+    assert post["text"]
+
+
+def test_the_card_says_the_same_thing_as_the_post(data_dir):
+    """A card naming a different place or date than the text beside it is
+    worse than no card at all."""
+    warn_x.enqueue(drafts_for([
+        notice(state="MI", company="Fifth Third Bank", employees=234,
+               effective="2026-09-11", county="Oakland"),
+    ]))
+    row = warn_x.rows("pending")[0]
+    assert row["card"]["effective"] == "Sep 11, 2026"
+    assert row["card"]["effective"] in row["text"]
+    assert row["card"]["employees"] == 234
+    assert "Oakland" in row["card"]["place"]

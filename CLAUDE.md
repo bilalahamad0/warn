@@ -33,6 +33,7 @@ python3 warn_x.py list           # candidates awaiting review
 python3 warn_x.py show <id>      # full post text + its source notices
 python3 warn_x.py approve <id>   # …then `post` sends it
 python3 warn_x.py post --dry-run # exactly what would be sent
+python3 warn_x.py post           # stages data/x_outbox.json + cards for the browser
 python3 warn_x.py status         # caps, counters, kill switch, credentials
 python3 warn_x.py kill --reason "403 storm"   # instant stop, no deploy
 python3 warn_publish.py --no-post-x           # skip the X stage entirely
@@ -306,11 +307,24 @@ When a run detects new notices, notable ones become posts on
   ledger written elsewhere is lost with the CI workspace and every notice is
   re-posted twice a day forever. `data/x_posted_keys.json` is written only
   after a post lands, and records **every** key in the batch.
-- **X is pay-per-use since 2026-02-06** — no free tier. `POST /2/tweets` costs
-  $0.015, or **$0.200 with a URL**. `X_INCLUDE_LINK=0` drops the dashboard link
-  and the 13× multiplier. Programmatic `@mentions` are blocked in normal posts
-  (2026-02-23), so company names are sanitised; self-replies still work, which
-  is how a >8-state breakdown threads.
+- **The transport is the BROWSER, not the API, because the API is not free.**
+  X went pay-per-use on 2026-02-06 ($0.015 a post, $0.200 with a URL) and the
+  account's console balance is $0.00, so `X_TRANSPORT` defaults to `browser`:
+  approved posts are staged into `data/x_outbox.json` and sent through a
+  logged-in x.com session. tweepy is not in requirements.txt; the `api` path
+  survives only for whoever later buys credits. CI pins `dry` — a runner has no
+  browser — which means posting is a LOCAL step and "fully automated" is a cron
+  job on the operator's Mac, not GitHub Actions. Programmatic `@mentions` are
+  blocked in normal posts (2026-02-23), so company names are sanitised;
+  self-replies still work, which is how a >8-state breakdown threads.
+- **Every post carries a generated card, and it never carries a company's
+  logo.** Real logos are trademarks nobody licensed to us, and one beside a
+  layoff headline implies an association nobody granted. `warn_x_image` draws
+  the employer's NAME large — nominative use, the same right that lets the post
+  name them at all — over the dashboard's own palette and arrow motif. Cards
+  render at post time into gitignored `data/x_cards/`; only the card's *inputs*
+  live on the queue row, so no PNG enters git twice a day and a card can never
+  disagree with the post beside it.
 - **A failed post never auto-retries** and a 403 opens a 24h circuit breaker —
   odishanow20's stated policy, which its own code did not implement.
   "Unconfigured" (no keys, no tweepy) is a distinct outcome that latches

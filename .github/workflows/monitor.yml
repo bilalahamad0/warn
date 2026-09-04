@@ -66,7 +66,11 @@ jobs:
           X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
           # Repository VARIABLES, not secrets — these are the gate and the
           # kill switch, and both need to be flippable without a deploy.
-          X_TRANSPORT: ${{ vars.X_TRANSPORT }}
+          # 'dry' in CI, always: a GitHub runner has no browser and no
+          # logged-in x.com session, so it composes and queues only. The
+          # operator posts from a local checkout, where the default is
+          # 'browser'. Set the repo variable to override.
+          X_TRANSPORT: ${{ vars.X_TRANSPORT || 'dry' }}
           X_AUTO_POST: ${{ vars.X_AUTO_POST }}
           X_DISABLE_POSTING: ${{ vars.X_DISABLE_POSTING }}
           X_INCLUDE_LINK: ${{ vars.X_INCLUDE_LINK }}
