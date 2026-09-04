@@ -46,7 +46,13 @@ BAR_COLORS = [
 ]
 
 CARD_W, CARD_H = 1600, 900          # 16:9 — X renders this without cropping
-MARGIN = 92
+MARGIN = 96
+
+# The card signs itself with the account's name, not a URL. The dashboard is on
+# a github.io address today, and a raw project-hosting URL under a layoff
+# headline reads as a hobby page rather than a source. A real domain goes in
+# here — and in warn_urls.SITE_BASE_URL — when there is one.
+BRAND = "US WARN LAYOFF TRACKER"
 
 # Font candidates, most-preferred first. macOS ships the first group; the
 # DejaVu paths are what a Linux runner has. Nothing here is bundled, so a host
@@ -79,6 +85,11 @@ def _font(paths, size):
         return ImageFont.load_default(size=size)
     except TypeError:      # Pillow < 10 has no size argument
         return ImageFont.load_default()
+
+
+def _spaced(text: str) -> str:
+    """Letter-spacing, the only way Pillow offers it: put spaces in."""
+    return " ".join(text)
 
 
 def _text_w(draw, text, font):
@@ -170,73 +181,59 @@ def build_card(display: str, employees, place: str, effective: str,
     """
     try:
         from PIL import ImageDraw
-    except ImportError as e:  # noqa: BLE001
-        log.warning(f"Pillow not installed ({e}) — posting without a card.")
-        return None
 
-    try:
         img = _gradient((CARD_W, CARD_H))
         d = ImageDraw.Draw(img)
+        right = CARD_W - MARGIN
 
-        # Top rule + our own mark. This is the only "logo" on the card.
-        d.line([MARGIN, 150, CARD_W - MARGIN, 150], fill=RULE, width=2)
-        f_mark = _font(_BOLD, 34)
-        d.text((MARGIN, 96), "US LAYOFF TRACKER", font=f_mark, fill=INK)
-        f_small = _font(_REG, 28)
-        label = "WARN notice"
-        d.text((CARD_W - MARGIN - _text_w(d, label, f_small), 102),
-               label, font=f_small, fill=MUTED)
+        # ── masthead ────────────────────────────────────────────────────────
+        f_brand = _font(_BOLD, 30)
+        d.text((MARGIN, 78), _spaced(BRAND), font=f_brand, fill=MUTED)
+        f_kicker = _font(_BOLD, 30)
+        kicker = _spaced("WARN NOTICE")
+        d.text((right - _text_w(d, kicker, f_kicker), 78), kicker,
+               font=f_kicker, fill=CORAL)
+        d.line([MARGIN, 140, right, 140], fill=RULE, width=2)
 
-        # Monogram tile — a logo-shaped anchor that belongs to us.
-        tile = 132
-        tx, ty = MARGIN, 224
-        d.rounded_rectangle([tx, ty, tx + tile, ty + tile], radius=26,
-                            fill=(31, 41, 55), outline=RULE, width=2)
-        mono = monogram(display)
-        f_mono = _fit(d, mono, _BOLD, 74, 34, tile - 30)
-        mw = _text_w(d, mono, f_mono)
-        d.text((tx + (tile - mw) / 2, ty + tile / 2 - 46), mono,
-               font=f_mono, fill=CORAL)
-
-        # The employer's name — the loudest thing on the card.
-        name_x = tx + tile + 44
-        name_w = CARD_W - MARGIN - name_x
-        f_name = _fit(d, display, _BOLD, 92, 40, name_w)
-        lines = _wrap(d, display, f_name, name_w)[:2]
-        y = ty + (18 if len(lines) > 1 else 40)
+        # ── the employer, as big as it fits on two lines ────────────────────
+        f_name = _fit(d, display, _BOLD, 108, 46, right - MARGIN)
+        lines = _wrap(d, display, f_name, right - MARGIN)[:2]
+        if len(lines) > 1:
+            f_name = _fit(d, max(lines, key=len), _BOLD, 96, 44, right - MARGIN)
+        y = 212
         for line in lines:
-            d.text((name_x, y), line, font=f_name, fill=INK)
-            y += f_name.size + 8
+            d.text((MARGIN, y), line, font=f_name, fill=INK)
+            y += f_name.size + 10
 
-        # The number — the second thing the eye lands on, after the name.
+        # ── the number: the thing the eye lands on ─────────────────────────
+        top = max(y + 34, 400)
         if employees:
+            f_num = _font(_BOLD, 250)
             num = f"{employees:,}"
-            f_num = _font(_BOLD, 236)
-            d.text((MARGIN, 452), num, font=f_num, fill=INK)
-            f_unit = _font(_REG, 46)
-            d.text((MARGIN + _text_w(d, num, f_num) + 26, 452 + 168), "jobs",
-                   font=f_unit, fill=MUTED)
+            d.text((MARGIN, top), num, font=f_num, fill=INK)
+            f_unit = _font(_BOLD, 52)
+            d.text((MARGIN + _text_w(d, num, f_num) + 30, top + 176),
+                   "jobs", font=f_unit, fill=CORAL)
         else:
             # Hawaii and Oklahoma publish no headcount. A dash here read as a
             # redaction bar, which is worse than saying so in words.
-            f_none = _font(_BOLD, 82)
-            d.text((MARGIN, 520), "Headcount not", font=f_none, fill=MUTED)
-            d.text((MARGIN, 520 + 96), "reported by the state",
+            f_none = _font(_BOLD, 76)
+            d.text((MARGIN, top + 40), "Headcount not reported",
+                   font=f_none, fill=MUTED)
+            d.text((MARGIN, top + 40 + 92), "by the state",
                    font=f_none, fill=MUTED)
 
-        _draw_motif(d, CARD_W - MARGIN - 420, 430, 420, 250)
+        _draw_motif(d, right - 380, 452, 380, 226)
 
-        # Footer: where, when, and the source.
-        d.line([MARGIN, 748, CARD_W - MARGIN, 748], fill=RULE, width=2)
-        f_foot = _font(_REG, 38)
-        f_footb = _font(_BOLD, 38)
-        where = place or ", ".join(states or [])
-        d.text((MARGIN, 786), where[:52], font=f_footb, fill=INK)
+        # ── footer: where, and when ────────────────────────────────────────
+        d.line([MARGIN, 762, right, 762], fill=RULE, width=2)
+        f_where = _font(_BOLD, 40)
+        f_when = _font(_REG, 40)
+        where = (place or ", ".join(states or ""))[:46]
+        d.text((MARGIN, 800), where, font=f_where, fill=INK)
         when = f"Effective {effective}" if effective else "Effective date not reported"
-        d.text((MARGIN, 786 + 46), when, font=f_foot, fill=MUTED)
-        src = "bilalahamad0.github.io/warn"
-        d.text((CARD_W - MARGIN - _text_w(d, src, f_foot), 786 + 23),
-               src, font=f_foot, fill=BLUE)
+        d.text((right - _text_w(d, when, f_when), 800), when,
+               font=f_when, fill=MUTED)
 
         out = Path(out_path)
         out.parent.mkdir(parents=True, exist_ok=True)

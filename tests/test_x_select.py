@@ -451,3 +451,20 @@ def test_a_non_tech_brand_at_the_tech_threshold_does_not_post():
     v = sel.score(sel.group_by_company(
         [notice("Kroger", "OH", sel.TECH_THRESHOLD)])[0])
     assert v.post is False
+
+
+def test_a_post_carries_no_link_by_default():
+    """The dashboard is on a github.io address.
+
+    A raw project-hosting URL under a layoff headline reads as a hobby page
+    rather than a source, so posts sign themselves with the account's name and
+    the link waits for a real domain. X_INCLUDE_LINK=1 turns it back on.
+    """
+    text = compose().text
+    assert "http" not in text
+    assert "github.io" not in text
+
+
+def test_the_link_can_still_be_turned_on():
+    b = sel.group_by_company([notice()])[0]
+    assert "http" in sel.compose(b, include_link=True).text

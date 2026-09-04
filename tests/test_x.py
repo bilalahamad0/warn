@@ -670,3 +670,20 @@ def test_the_card_says_the_same_thing_as_the_post(data_dir):
     assert row["card"]["effective"] in row["text"]
     assert row["card"]["employees"] == 234
     assert "Oakland" in row["card"]["place"]
+
+
+def test_the_card_signs_itself_with_a_name_not_a_url():
+    """Same reason the post text carries no link: a github.io URL on the card
+    reads as a hobby page. The brand line is the account's own name."""
+    import warn_x_image
+
+    assert warn_x_image.BRAND == "US WARN LAYOFF TRACKER"
+    assert "http" not in warn_x_image.BRAND
+    assert "github" not in warn_x_image.BRAND.lower()
+
+
+def test_the_link_is_off_by_default(monkeypatch):
+    monkeypatch.delenv("X_INCLUDE_LINK", raising=False)
+    assert warn_x.include_link() is False
+    monkeypatch.setenv("X_INCLUDE_LINK", "1")
+    assert warn_x.include_link() is True

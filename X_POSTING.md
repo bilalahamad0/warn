@@ -113,6 +113,12 @@ Every post carries a generated 1600×900 PNG: the employer's name set large, the
 headcount larger, the place and effective date, and the dashboard's own mark and
 URL. It is what stops a thumb — a text-only post scrolls past.
 
+The card signs itself **"US WARN LAYOFF TRACKER"** and carries no URL. The
+dashboard is on a github.io address, and a raw project-hosting link under a
+layoff headline reads as a hobby page rather than a source — so the link waits
+for a real domain. When there is one, set `X_INCLUDE_LINK=1`, update
+`warn_urls.SITE_BASE_URL`, and change `warn_x_image.BRAND` if the name changes.
+
 **On logos, deliberately.** The card does **not** carry the company's actual
 logo. Those are trademarks, they are not licensed to us, and putting one beside
 a layoff headline is both a rights problem and an implied association nobody
@@ -155,8 +161,6 @@ Fifth Third Bank filed a WARN notice for 234 job cuts in Oakland, MI.
 Effective Sep 11, 2026.
 
 #layoffs #Michigan
-
-https://bilalahamad0.github.io/warn/
 ```
 
 ```
@@ -165,8 +169,6 @@ AT&T filed a WARN notice for 138 job cuts in Cumberland County, NJ.
 Effective Sep 15, 2026.
 
 #layoffs #NewJersey
-
-https://bilalahamad0.github.io/warn/
 ```
 
 Both fire on the brand/tech arm — 234 and 138 are below the size threshold.
@@ -233,9 +235,9 @@ Posting through the browser costs nothing and has no API quota. The binding
 limits are ours: **6 posts per run, 12 per day, 75 seconds apart**, and at most
 2 per company per month.
 
-If you ever switch to `X_TRANSPORT=api`: $0.015 a post, **$0.200 with a URL**
-(`X_INCLUDE_LINK=0` drops the link and the 13× multiplier). At ~52 posts/month
-that is $0.78 or $10.40. Credits are bought at <https://console.x.com>.
+If you ever switch to `X_TRANSPORT=api`: $0.015 a post, **$0.200 with a URL**.
+Posts carry no URL today, so that is ~$0.78/month at this volume. Credits are
+bought at <https://console.x.com>.
 
 **Turn on the "Automated" account label** on @USLayoff and name a
 human-managed parent account in the bio. X staff cite this directly as what

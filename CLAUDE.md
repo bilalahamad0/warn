@@ -317,6 +317,12 @@ When a run detects new notices, notable ones become posts on
   job on the operator's Mac, not GitHub Actions. Programmatic `@mentions` are
   blocked in normal posts (2026-02-23), so company names are sanitised;
   self-replies still work, which is how a >8-state breakdown threads.
+- **Neither the post nor the card carries a URL.** `X_INCLUDE_LINK` defaults
+  to False and `warn_x_image.BRAND` is the account's name: the dashboard sits
+  on a github.io address, and a raw project-hosting link under a layoff
+  headline reads as a hobby page rather than a source. The link goes back in
+  when there is a real domain — flip the flag and update
+  `warn_urls.SITE_BASE_URL`.
 - **Every post carries a generated card, and it never carries a company's
   logo.** Real logos are trademarks nobody licensed to us, and one beside a
   layoff headline implies an association nobody granted. `warn_x_image` draws

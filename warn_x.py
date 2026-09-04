@@ -154,14 +154,19 @@ def auto_post_enabled() -> bool:
 
 
 def include_link() -> bool:
-    """Whether posts carry the dashboard link.
+    """Whether posts carry a link back to the dashboard. OFF by default.
 
-    Costs real money on the API transport: X charges $0.015 for a post and
-    $0.200 for a post containing a URL (pay-per-use, since 2026-02-06). At
-    this feed's volume that is roughly $0.40 vs $5 a month — worth it for a
-    link back to the source, but set X_INCLUDE_LINK=0 to drop it.
+    The dashboard currently lives at a github.io address, and a raw
+    project-hosting URL under a layoff headline reads as a hobby page rather
+    than a source. Posts carry the account's own name instead, and the link
+    goes back in — one flag, one place — the day the dashboard has a real
+    domain. Set ``X_INCLUDE_LINK=1`` then, and update
+    ``warn_urls.SITE_BASE_URL``.
+
+    It is also the cheap default on the API transport, where X charges $0.015
+    for a post and $0.200 for one containing a URL.
     """
-    return _flag("X_INCLUDE_LINK", True)
+    return _flag("X_INCLUDE_LINK", False)
 
 
 # ---------------------------------------------------------------------------

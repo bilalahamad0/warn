@@ -500,7 +500,7 @@ def _sanitize(name: str) -> str:
     return re.sub(r"@", "", name or "").strip()
 
 
-def compose(batch: CompanyBatch, include_link: bool = True) -> Draft:
+def compose(batch: CompanyBatch, include_link: bool = False) -> Draft:
     """Render a batch as post text.
 
     Phrased as a FILING, never as an accomplished fact: a WARN notice announces
@@ -595,7 +595,7 @@ def _finish(text: str, warnings: list, thread=None) -> Draft:
     )
 
 
-def build_drafts(state_results: dict, include_link: bool = True,
+def build_drafts(state_results: dict, include_link: bool = False,
                  latest_for=None) -> list:
     """The whole pipeline: [(batch, verdict, draft), …], biggest story first."""
     out = []
