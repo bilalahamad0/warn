@@ -582,6 +582,22 @@ def build_unsubscribe_page() -> None:
     warn_unsubscribe.build_unsubscribe_page()
 
 
+def maybe_post_to_x(state_results: dict, force: bool = False) -> dict:
+    """Stage (and, once auto mode is on, send) @USLayoff posts for this run.
+
+    A seam like ``build_unsubscribe_page``: warn_x is imported at call time so
+    this module still imports on a checkout that predates it, and tests can
+    patch the whole step.
+
+    Takes the WHOLE ``state_results`` map rather than one state's diff, because
+    a company laying off in three states in one run is one story and must be
+    one post carrying the combined headcount — see warn_x_select.group_by_company.
+    """
+    import warn_x
+
+    return warn_x.run_stage(state_results, force=force)
+
+
 # ---------------------------------------------------------------------------
 # Git push
 # ---------------------------------------------------------------------------
@@ -1765,7 +1781,8 @@ def maybe_send_monthly_digest(records=None, force: bool = False,
 
 
 def run(no_push: bool = False, force: bool = False, skip_history: bool = False,
-        send_digest: bool = True, force_digest: bool = False):
+        send_digest: bool = True, force_digest: bool = False,
+        post_x: bool = True, force_post: bool = False):
     log.info("=" * 70)
     log.info(f"WARN Publisher — {datetime.now(timezone.utc).isoformat()}")
     log.info("=" * 70)
@@ -1894,6 +1911,25 @@ def run(no_push: bool = False, force: bool = False, skip_history: bool = False,
                     f"(non-fatal): {e}"
                 )
 
+    # X/Twitter (@USLayoff) — compose one candidate post per notable company
+    # from this run's new notices and stage them for review.
+    #
+    # Deliberately AFTER the email loop, so a Twitter outage can never cost a
+    # subscriber a legitimate alert, and BEFORE the site_failures raise at the
+    # end of run(), so commit_ledgers() persists the queue and the posted-keys
+    # ledger on the failure path exactly as it does the alert ledgers.
+    #
+    # In review mode this only WRITES data/x_queue.json — nothing is sent.
+    # Posting happens when a human runs `python3 warn_x.py post`, or, once
+    # X_AUTO_POST=1, inside this same call.
+    if post_x:
+        try:
+            maybe_post_to_x(state_results, force=force_post)
+        except Exception as e:
+            log.warning(f"X posting failed (non-fatal): {e}")
+    else:
+        log.info("Skipping X posts (--no-post-x).")
+
     # Monthly whole-US digest — a ledger no-op except on the first run of a
     # new calendar month. Non-fatal: a digest problem must never fail a run
     # that already produced good data.
@@ -1958,6 +1994,14 @@ if __name__ == "__main__":
     parser.add_argument(
         "--no-digest", action="store_true", help="Skip the monthly US digest step"
     )
+    parser.add_argument(
+        "--no-post-x", action="store_true", help="Skip the X/Twitter staging step"
+    )
+    parser.add_argument(
+        "--post-x",
+        action="store_true",
+        help="Send approved X posts now, without waiting for X_AUTO_POST",
+    )
     args = parser.parse_args()
     run(
         no_push=args.no_push,
@@ -1965,4 +2009,6 @@ if __name__ == "__main__":
         skip_history=args.skip_history,
         send_digest=not args.no_digest,
         force_digest=args.digest,
+        post_x=not args.no_post_x,
+        force_post=args.post_x,
     )

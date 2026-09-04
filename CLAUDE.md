@@ -28,6 +28,15 @@ python3 warn_digest.py           # Preview last month's US digest (prints text)
 python3 warn_digest.py --year 2026 --month 6 --html /tmp/d.html   # HTML preview
 python3 warn_publish.py --digest # Force-send the monthly digest now
 
+# X / @USLayoff auto-posting (see X_POSTING.md)
+python3 warn_x.py list           # candidates awaiting review
+python3 warn_x.py show <id>      # full post text + its source notices
+python3 warn_x.py approve <id>   # …then `post` sends it
+python3 warn_x.py post --dry-run # exactly what would be sent
+python3 warn_x.py status         # caps, counters, kill switch, credentials
+python3 warn_x.py kill --reason "403 storm"   # instant stop, no deploy
+python3 warn_publish.py --no-post-x           # skip the X stage entirely
+
 # Run all tests
 pytest -v --cov=.
 
@@ -68,6 +77,10 @@ state feeds (online)
                         docs/ca/data.json (CA public API, "scope": "ca")
                       → warn_notify.py (Gmail alert if changes detected, per state)
                           ↳ warn_subscribers.py (fetch signup list → BCC subscribers)
+                      → warn_x.py (X/@USLayoff: compose + queue notable posts;
+                          ↳ warn_x_select.py  cross-state grouping, scoring, wording
+                          ↳ warn_names.py / warn_brands.py  company canonicalisation
+                          sends only once X_AUTO_POST=1 — see X_POSTING.md)
                       → git commit + push
 ```
 
@@ -252,11 +265,85 @@ loads nothing extra.
   `monitor.yml` run — renaming `monitor.yml`'s `name:` breaks that link
   silently. Manual redeploy: Actions ▸ Deploy Pages ▸ Run workflow.
 
+**X / @USLayoff auto-posting** (`warn_x.py`, full runbook in `X_POSTING.md`).
+When a run detects new notices, notable ones become posts on
+[@USLayoff](https://x.com/USLayoff). The load-bearing decisions:
+
+- **The review gate and the automation are one code path.** The pipeline never
+  posts; it only enqueues into `data/x_queue.json`. Posting reads rows whose
+  status is `approved` — in review mode a human writes that word, in auto mode
+  `X_AUTO_POST=1` does. So the text a human approved is byte-for-byte what auto
+  mode sends, pinned by `tests/test_x.py::
+  test_the_gate_does_not_change_a_single_byte_of_the_post`. Phase 1 needs **no
+  GitHub secrets at all**: CI stages candidates and commits them, and the
+  operator reviews and posts from a local checkout.
+- **Grouping is cross-state, so the step sits outside the per-state notify
+  loop.** `state_results` (`warn_publish.py`, step 1) is the only object
+  holding every state's diff — `monitor_result` is literally the CA entry.
+  A company laying off in three states in one run is ONE story and must be ONE
+  post carrying the combined headcount; posting inside the loop would put three
+  partial numbers under the same brand name seconds apart.
+- **`new_entries` is truncated at 50** (`warn_monitor.py`, end of
+  `detect_changes`) while `new_keys` is complete. A state landing 93 new
+  notices hands over 50 records, and silently posting those 50 would understate
+  a company's headcount with nothing looking wrong.
+  `warn_x_select.collect_new_notices` detects the mismatch and recovers the
+  rest from that state's just-written `warn_latest.json`. `new_keys[:new_count]`
+  is exactly the genuine-new set; `new_keys[new_count:]` are amendment keys.
+- **Contractors are never merged into the client brand.** `"Flagship Facility
+  Services Inc. at Meta Platforms Inc."` is Flagship's filing.
+  `warn_names._SPLIT_AT` keeps the left-hand employer and `warn_brands.resolve`
+  vetoes a brand that only appears after ` at ` / `dba` / `@` / an operator
+  suffix. Posting "Meta filed a WARN notice for N job cuts" off that row is the
+  worst factual error this system can make, and it is one regex away.
+- **`warn_names.LEGAL` is deliberately narrow** — legal forms only. Adding
+  `Group`, `Holdings`, `USA` or `Services` merges `Compass Group USA` into
+  `compass` and `Enterprise Products` into `Enterprise Rent-A-Car`. Brand-level
+  merging belongs in `warn_brands.py`, where each merge is written down and
+  tested against all 40,956 distinct company strings.
+- **Ledgers live under `data/`, like the alert ledgers, for the same reason.**
+  `commit_ledgers` and monitor.yml's failure branch stage `data/` alone; a
+  ledger written elsewhere is lost with the CI workspace and every notice is
+  re-posted twice a day forever. `data/x_posted_keys.json` is written only
+  after a post lands, and records **every** key in the batch.
+- **X is pay-per-use since 2026-02-06** — no free tier. `POST /2/tweets` costs
+  $0.015, or **$0.200 with a URL**. `X_INCLUDE_LINK=0` drops the dashboard link
+  and the 13× multiplier. Programmatic `@mentions` are blocked in normal posts
+  (2026-02-23), so company names are sanitised; self-replies still work, which
+  is how a >8-state breakdown threads.
+- **A failed post never auto-retries** and a 403 opens a 24h circuit breaker —
+  odishanow20's stated policy, which its own code did not implement.
+  "Unconfigured" (no keys, no tweepy) is a distinct outcome that latches
+  nothing, so a developer laptop cannot disable posting for CI.
+- **`posted` is terminal, and the daily cap counts tweets not rows.** A live
+  tweet cannot be un-published, so `approve` refuses a posted row. A threaded
+  batch sends `1 + len(thread)` tweets, and the root is recorded the moment it
+  has an id — a self-reply that fails must never demote a landed post, or a
+  human re-approving it publishes the same text twice.
+- **The display name is not the raw company string.** `warn_brands` refusing to
+  call "Flagship Facility Services Inc. at Meta Platforms Inc." a Meta filing
+  is only half the job: printing that string verbatim still named Meta in the
+  post. `warn_x_select._display_source` cuts the client side (360 records in
+  the dataset carried one, 28 of them big enough to auto-approve). Because only
+  the *display* was wrong, every test that checked the numbers passed.
+
+**Adding a step to `warn_publish.run()`**: seven patch stacks in
+`tests/test_publish.py` enumerate every stage by name (one decorator stack, six
+`with` stacks). A new step missing from any of them executes for real in CI.
+Note the decorator stack takes its mocks bottom-up, so inserting a decorator
+shifts the argument list.
+
 **Environment** (copy `.env.example` → `.env`):
 - `GH_REPO_TOKEN` — for git push in local runs (read by `warn_publish.git_commit_push`)
 - `GMAIL_USER`, `GMAIL_APP_PASSWORD`, `NOTIFY_EMAIL` — for email alerts
 - `SIGNUP_ENDPOINT` — Apps Script `/exec` URL for the signup form (public; a CI repo *variable*)
 - `SUBSCRIBERS_TOKEN` — shared secret to read the subscriber list (a CI *secret*)
+- `X_API_KEY` / `X_API_SECRET` / `X_ACCESS_TOKEN` / `X_ACCESS_SECRET` — OAuth
+  1.0a user context for @USLayoff (CI *secrets*). Unset is safe: the stage
+  composes and queues, and sends nothing.
+- `X_TRANSPORT` (`dry` | `api` | `browser`), `X_AUTO_POST`,
+  `X_DISABLE_POSTING`, `X_INCLUDE_LINK` — CI repository *variables*, so the
+  gate and the kill switch flip without a deploy
 
 ## Testing
 

@@ -55,6 +55,21 @@ jobs:
           SIGNUP_ENDPOINT: ${{ vars.SIGNUP_ENDPOINT }}
           # Shared token to read the subscriber list (matches Apps Script LIST_TOKEN)
           SUBSCRIBERS_TOKEN: ${{ secrets.SUBSCRIBERS_TOKEN }}
+          # X / @USLayoff. Unset is safe: warn_x degrades to composing and
+          # queueing candidates into data/x_queue.json and sends nothing, which
+          # is exactly the review-gate phase. The queue is committed by the step
+          # below (it stages data/), so the operator reviews and posts from a
+          # local checkout without any secret ever reaching this workflow.
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          # Repository VARIABLES, not secrets — these are the gate and the
+          # kill switch, and both need to be flippable without a deploy.
+          X_TRANSPORT: ${{ vars.X_TRANSPORT }}
+          X_AUTO_POST: ${{ vars.X_AUTO_POST }}
+          X_DISABLE_POSTING: ${{ vars.X_DISABLE_POSTING }}
+          X_INCLUDE_LINK: ${{ vars.X_INCLUDE_LINK }}
         run: |
           # We run the consolidated publish script
           # --no-push allows the Action to handle Git operations safely

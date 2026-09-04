@@ -8,6 +8,7 @@ import pytest
 import warn_publish
 
 
+@patch("warn_publish.maybe_post_to_x")
 @patch("warn_publish.build_unsubscribe_page")
 @patch("warn_publish.warn_notify.load_subscriber_records", return_value=[])
 @patch("warn_publish.maybe_send_monthly_digest")
@@ -27,7 +28,7 @@ import warn_publish
 def test_run_full_pipeline(
     mock_sources, mock_diff, mock_history, mock_national, mock_charts,
     mock_us_site, mock_redirect, mock_site, mock_push, mock_digest,
-    mock_subs, mock_unsub, tmp_path
+    mock_subs, mock_unsub, mock_post_x, tmp_path
 ):
     """run() orchestrates every stage and honours no_push — without touching the
     real data/ directory, the network, or git.
@@ -222,6 +223,7 @@ def _run_notify_loop(state_results, sources, send_ok=True, tmp_path=None):
          patch("warn_publish.warn_site_us.build_legacy_us_redirect"), \
          patch("warn_publish.build_site"), \
          patch("warn_publish.build_unsubscribe_page"), \
+         patch("warn_publish.maybe_post_to_x"), \
          patch("warn_publish.git_commit_push"), \
          patch("warn_publish.maybe_send_monthly_digest"), \
          patch("warn_publish.warn_notify.load_subscriber_records",
@@ -381,6 +383,7 @@ def test_digest_failure_is_non_fatal_to_the_run(tmp_path):
          patch("warn_publish.warn_site_us.build_legacy_us_redirect"), \
          patch("warn_publish.build_site"), \
          patch("warn_publish.build_unsubscribe_page"), \
+         patch("warn_publish.maybe_post_to_x"), \
          patch("warn_publish.git_commit_push"), \
          patch("warn_publish.warn_notify.load_subscriber_records",
                return_value=[]), \
@@ -404,6 +407,7 @@ def test_no_digest_flag_skips_the_step(tmp_path):
          patch("warn_publish.warn_site_us.build_legacy_us_redirect"), \
          patch("warn_publish.build_site"), \
          patch("warn_publish.build_unsubscribe_page"), \
+         patch("warn_publish.maybe_post_to_x"), \
          patch("warn_publish.git_commit_push"), \
          patch("warn_publish.warn_notify.load_subscriber_records",
                return_value=[]), \
@@ -480,6 +484,7 @@ def _run_with_unsubscribe(tmp_path, **kw):
          patch("warn_publish.warn_notify.load_subscriber_records",
                return_value=[]), \
          patch("warn_publish.build_unsubscribe_page", **kw) as mock_unsub, \
+         patch("warn_publish.maybe_post_to_x"), \
          patch("warn_publish.DATA_DIR", tmp_path):
         warn_publish.run(no_push=True)
     return mock_unsub, mock_digest, mock_push
@@ -568,8 +573,8 @@ def _run_with_root_failure(tmp_path, no_push):
     """Drive run() with build_us_site raising and every other stage mocked.
 
     Asserts the RuntimeError propagates (the run must still exit non-zero so
-    the last good page stays published). Git is NOT mocked here — stub
-    subprocess.run before calling if the test lets the ledger path run.
+    the last good page stays published). git_commit_push is NOT mocked here —
+    stub subprocess.run before calling if the test lets the ledger path run.
     """
     (tmp_path / "charts_manifest.json").write_text(
         json.dumps({"charts": [], "total_records": 0, "total_employees": 0})
@@ -585,6 +590,7 @@ def _run_with_root_failure(tmp_path, no_push):
          patch("warn_publish.warn_site_us.build_legacy_us_redirect"), \
          patch("warn_publish.build_site"), \
          patch("warn_publish.build_unsubscribe_page"), \
+         patch("warn_publish.maybe_post_to_x"), \
          patch("warn_publish.maybe_send_monthly_digest") as mock_digest, \
          patch("warn_publish.warn_notify.load_subscriber_records",
                return_value=[]), \
@@ -674,6 +680,7 @@ def test_success_path_uses_full_commit_not_the_ledger_path(tmp_path):
          patch("warn_publish.warn_site_us.build_legacy_us_redirect"), \
          patch("warn_publish.build_site"), \
          patch("warn_publish.build_unsubscribe_page"), \
+         patch("warn_publish.maybe_post_to_x"), \
          patch("warn_publish.maybe_send_monthly_digest"), \
          patch("warn_publish.warn_notify.load_subscriber_records",
                return_value=[]), \
@@ -693,3 +700,148 @@ def test_maybe_send_digest_threads_records_to_the_notifier(digest_dir):
                return_value=True) as mock_send:
         warn_publish.maybe_send_monthly_digest(records=records, period="2026-06")
     assert mock_send.call_args.kwargs["records"] is records
+
+
+# ---------------------------------------------------------------------------
+# X / @USLayoff posting stage
+# ---------------------------------------------------------------------------
+
+
+def test_maybe_post_to_x_delegates_to_warn_x(monkeypatch):
+    """The seam calls warn_x.run_stage() and returns its summary."""
+    import sys
+    import types
+
+    calls = []
+    mod = types.ModuleType("warn_x")
+    mod.run_stage = lambda results, force=False: (
+        calls.append((results, force)) or {"added": 1}
+    )
+    monkeypatch.setitem(sys.modules, "warn_x", mod)
+
+    assert warn_publish.maybe_post_to_x({"ca": {}}, force=True) == {"added": 1}
+    assert calls == [({"ca": {}}, True)]
+
+
+def _run_with_x(tmp_path, no_post=False, **kw):
+    """Drive run() with every stage mocked except the X step."""
+    (tmp_path / "charts_manifest.json").write_text(
+        json.dumps({"charts": [], "total_records": 0, "total_employees": 0})
+    )
+    state_results = {
+        "ca": {"state": "CA", "diff": {"new_count": 0}, "summary": {}},
+        "mi": {"state": "MI", "diff": {"new_count": 1}, "summary": {}},
+    }
+    with patch("warn_publish.warn_sources.run_all", return_value=state_results), \
+         patch("warn_publish.warn_sources.all_sources", return_value=[]), \
+         patch("warn_publish.warn_diff.generate_report"), \
+         patch("warn_publish.warn_history.run"), \
+         patch("warn_publish.warn_aggregate.build_national"), \
+         patch("warn_publish.warn_charts.run"), \
+         patch("warn_publish.warn_site_us.build_us_site"), \
+         patch("warn_publish.warn_site_us.build_legacy_us_redirect"), \
+         patch("warn_publish.build_site"), \
+         patch("warn_publish.build_unsubscribe_page"), \
+         patch("warn_publish.git_commit_push"), \
+         patch("warn_publish.maybe_send_monthly_digest") as mock_digest, \
+         patch("warn_publish.warn_notify.load_subscriber_records",
+               return_value=[]), \
+         patch("warn_publish.maybe_post_to_x", **kw) as mock_x, \
+         patch("warn_publish.DATA_DIR", tmp_path):
+        warn_publish.run(no_push=True, post_x=not no_post)
+    return mock_x, mock_digest, state_results
+
+
+def test_x_stage_runs_every_run(tmp_path):
+    mock_x, _, _ = _run_with_x(tmp_path)
+    assert mock_x.call_count == 1
+
+
+def test_x_stage_receives_every_state_at_once(tmp_path):
+    """The cross-state invariant.
+
+    A company laying off in three states in one run is ONE story and must be
+    ONE post carrying the combined headcount, so the stage has to see the whole
+    state_results map — not a single state's diff the way the notify loop does.
+    Pinning it here because the natural place to add this step, and the one
+    that would silently break it, is inside that per-state loop.
+    """
+    mock_x, _, state_results = _run_with_x(tmp_path)
+    passed = mock_x.call_args.args[0]
+    assert passed is state_results
+    assert set(passed) == {"ca", "mi"}
+
+
+def test_x_stage_failure_is_non_fatal(tmp_path):
+    """A Twitter outage must never fail a run that produced good data."""
+    mock_x, mock_digest, _ = _run_with_x(
+        tmp_path, side_effect=RuntimeError("X is down")
+    )
+    assert mock_x.called
+    # The run carried on past the failure — the digest step still ran.
+    assert mock_digest.called
+
+
+def test_no_post_x_skips_the_stage(tmp_path):
+    mock_x, mock_digest, _ = _run_with_x(tmp_path, no_post=True)
+    assert not mock_x.called
+    assert mock_digest.called
+
+
+def test_every_run_stage_is_mocked_in_this_file():
+    """The trap that lets a new pipeline step run for real in CI.
+
+    Seven patch stacks in this file enumerate run()'s stages by name, and a
+    stage missing from ANY ONE of them executes against the live network, the
+    real data/ directory, or a real X account in that test. Checking only that
+    a name appears somewhere in the file is not enough — the whole failure mode
+    is remembering six stacks and forgetting the seventh.
+
+    So this recomputes the seams run() actually calls, finds every test that
+    drives run(), and requires each one to mock all of them. A block may opt
+    out of one seam by saying so in its docstring ("X is NOT mocked here"),
+    which is how the site-failure helper exercises the real git path.
+    """
+    import inspect
+    import re
+    from pathlib import Path
+
+    source = inspect.getsource(warn_publish.run)
+    seams = {
+        name for name in re.findall(
+            r"\n\s+(?:[a-z_]+ = )?([a-z_][a-z_0-9]*)\(", source
+        )
+        if callable(getattr(warn_publish, name, None))
+        and getattr(warn_publish, name).__module__ == "warn_publish"
+        # Only reached on the site-failure path, whose tests assert on it
+        # directly rather than mocking it away.
+        and name != "commit_ledgers"
+    }
+    assert "maybe_post_to_x" in seams, "guard is not seeing run()'s seams"
+
+    lines = Path(__file__).read_text().splitlines()
+    defs = [i for i, ln in enumerate(lines) if ln.lstrip().startswith("def ")]
+
+    missing = {}
+    for i, line in enumerate(lines):
+        # A real call, not this docstring or the literal below.
+        if not re.search(r"(?<![\"'])warn_publish\.run\(", line):
+            continue
+        head = max((d for d in defs if d <= i), default=0)
+        # Walk back over the decorator stack, including comments inside it.
+        while head and (
+            lines[head - 1].startswith("@") or lines[head - 1].startswith("#")
+        ):
+            head -= 1
+        block = "\n".join(lines[head:i + 1])
+        for seam in seams:
+            if f"warn_publish.{seam}" in block:
+                continue
+            if f"{seam} is NOT mocked here" in block:
+                continue
+            missing.setdefault(lines[head].strip(), set()).add(seam)
+
+    assert not missing, (
+        "these run() call sites do not mock every stage: "
+        + "; ".join(f"{k} -> {sorted(v)}" for k, v in missing.items())
+    )

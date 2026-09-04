@@ -9,4 +9,5 @@ pdfplumber>=0.11.0
 beautifulsoup4>=4.12.0
 lxml>=5.0.0
 html5lib>=1.1
+tweepy>=4.17.0
 pytest-cov
