@@ -1,9 +1,9 @@
 {
-  "total_records": 1686,
-  "total_employees": 91823,
+  "total_records": 1692,
+  "total_employees": 92702,
   "date_range_start": "2025-01-29",
-  "date_range_end": "2026-08-31",
-  "last_updated": "2026-09-03T15:36:29.245647+00:00",
+  "date_range_end": "2026-09-02",
+  "last_updated": "2026-09-04T02:00:08.907843+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "records": [
     {
@@ -19994,6 +19994,78 @@
       "city": "",
       "address": "675 Almanor Ave  Sunnyvale CA 94085",
       "industry": "51 Information"
+    },
+    {
+      "state": "CA",
+      "company": "Arsenal Biosciences, Inc.",
+      "notice_date": "2026-08-31",
+      "effective_date": "2026-10-29",
+      "employees": 58,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Mateo County",
+      "city": "",
+      "address": "329 Oyster Point Blvd  South San Francisco CA 94080",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "state": "CA",
+      "company": "Foundation for California Community Colleges",
+      "notice_date": "2026-09-02",
+      "effective_date": "2026-10-30",
+      "employees": 178,
+      "layoff_type": "Layoff Permanent",
+      "county": "Sacramento County",
+      "city": "",
+      "address": "1102 Q Street, Suite 4800  Sacramento CA 95811",
+      "industry": "61 Educational Services"
+    },
+    {
+      "state": "CA",
+      "company": "Clarmil Manufacturing Corporation",
+      "notice_date": "2026-08-28",
+      "effective_date": "2026-10-30",
+      "employees": 108,
+      "layoff_type": "Closure Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "30865 San Clemente Street  Hayward CA 94544",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "PayPal",
+      "notice_date": "2026-08-31",
+      "effective_date": "2026-10-30",
+      "employees": 251,
+      "layoff_type": "Layoff Permanent",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "2211 N. First Street  San Jose CA 95131",
+      "industry": "52 Finance and Insurance"
+    },
+    {
+      "state": "CA",
+      "company": "Renewal by Andersen LLC",
+      "notice_date": "2026-09-01",
+      "effective_date": "2026-11-02",
+      "employees": 153,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "18700 Crenshaw Blvd  Torrance CA 90504",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Renewal by Andersen LLC",
+      "notice_date": "2026-09-01",
+      "effective_date": "2026-11-02",
+      "employees": 131,
+      "layoff_type": "Layoff Permanent",
+      "county": "Orange County",
+      "city": "",
+      "address": "654 N Harington Dr.  Orange CA 92868",
+      "industry": "31-33 Manufacturing"
     }
   ]
 }

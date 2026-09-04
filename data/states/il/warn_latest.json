@@ -1,9 +1,9 @@
 {
-  "total_records": 4885,
-  "total_employees": 673594,
+  "total_records": 4887,
+  "total_employees": 674066,
   "date_range_start": "1987-09-01",
-  "date_range_end": "2026-08-25",
-  "last_updated": "2026-09-03T15:40:46.666448+00:00",
+  "date_range_end": "2026-09-02",
+  "last_updated": "2026-09-04T02:04:19.615931+00:00",
   "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
   "records": [
     {
@@ -4264,6 +4264,30 @@
       "county": "Vermilion County",
       "city": "Danville",
       "address": "70 Eastgate Dr.",
+      "industry": "Wholesale Trade"
+    },
+    {
+      "state": "IL",
+      "company": "Uber Technologies, Inc.",
+      "notice_date": "2026-09-02",
+      "effective_date": null,
+      "employees": 363,
+      "layoff_type": "Mass Layoff",
+      "county": "Cook County",
+      "city": "Chicago",
+      "address": "433 West Van Buren St.",
+      "industry": "Administrative, Support, Waste Management, and Remediation Services"
+    },
+    {
+      "state": "IL",
+      "company": "Fulton Troika, LLC",
+      "notice_date": "2026-09-02",
+      "effective_date": null,
+      "employees": 109,
+      "layoff_type": "Plant Closure",
+      "county": "Cook County",
+      "city": "Chicago",
+      "address": "4501 W 42ND Pl",
       "industry": "Wholesale Trade"
     },
     {

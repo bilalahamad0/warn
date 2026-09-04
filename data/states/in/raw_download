@@ -12,6 +12,26 @@
    "Notice Type": "Notice Type"
   },
   {
+   "Company": "PMG Indiana",
+   "City": "Columbus",
+   "Affected Workers": "150",
+   "Notice Date": "9/2/2026",
+   "LO/CL Date": "12/31/2026",
+   "NAICS": "336110",
+   "Description of Work/Industry": "Automobile and Light Duty Motor Vehicle Manufacturing",
+   "Notice Type": "CL"
+  },
+  {
+   "Company": "Packaging Corporation of America",
+   "City": "Gas City",
+   "Affected Workers": "72",
+   "Notice Date": "8/31/2026",
+   "LO/CL Date": "11/02/2026",
+   "NAICS": "31-33",
+   "Description of Work/Industry": "Manufacturing",
+   "Notice Type": "CL"
+  },
+  {
    "Company": "Postal Center International Inc",
    "City": "Brownsburg",
    "Affected Workers": "151",

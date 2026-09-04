@@ -1,9 +1,9 @@
 {
-  "total_records": 1504,
-  "total_employees": 237262,
+  "total_records": 1507,
+  "total_employees": 238116,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-09-02",
-  "last_updated": "2026-09-03T15:52:24.421652+00:00",
+  "date_range_end": "2026-09-03",
+  "last_updated": "2026-09-04T02:14:40.307160+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -18051,6 +18051,42 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Seattle",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Gilbert Orchards, Inc.",
+      "notice_date": "2026-09-03",
+      "effective_date": "2026-11-22",
+      "employees": 518,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Yakima, Franklin and Grant Counties",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Uber Technologies Inc",
+      "notice_date": "2026-09-02",
+      "effective_date": "2026-11-02",
+      "employees": 93,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Seattle",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Sundquist Fruit, LLC",
+      "notice_date": "2026-09-02",
+      "effective_date": "2026-11-15",
+      "employees": 243,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Yakima and Franklin Counties",
       "address": "",
       "industry": ""
     }
