@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-04T15:47:19.887715+00:00",
+  "last_updated": "2026-09-05T02:21:24.992770+00:00",
   "states_live": 47,
-  "total_records": 60180,
-  "total_employees": 6484015,
+  "total_records": 60183,
+  "total_employees": 6484696,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -134,8 +134,8 @@
       "name": "Massachusetts",
       "agency": "Massachusetts Executive Office of Labor and Workforce Development",
       "source_url": "https://www.mass.gov/info-details/worker-adjustment-and-retraining-notification-act-warn",
-      "total_records": 390,
-      "total_employees": 35011
+      "total_records": 391,
+      "total_employees": 35107
     },
     "MD": {
       "name": "Maryland",
@@ -155,8 +155,8 @@
       "name": "Michigan",
       "agency": "Michigan Department of Labor and Economic Opportunity",
       "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
-      "total_records": 784,
-      "total_employees": 120921
+      "total_records": 786,
+      "total_employees": 121568
     },
     "MN": {
       "name": "Minnesota",
@@ -268,7 +268,7 @@
       "agency": "South Carolina Department of Employment and Workforce",
       "source_url": "https://scworks.org/employer/employer-programs/risk-closing/layoff-notification-reports",
       "total_records": 608,
-      "total_employees": 81874
+      "total_employees": 81812
     },
     "SD": {
       "name": "South Dakota",
@@ -369850,6 +369850,18 @@
       "industry": ""
     },
     {
+      "state": "MA",
+      "company": "TScan Therapeutics Inc. (dba TScan)",
+      "notice_date": "2026-09-02",
+      "effective_date": "2026-11-02",
+      "employees": 96,
+      "layoff_type": "",
+      "county": "Metro Southwest",
+      "city": "Waltham",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "MD",
       "company": "Taft Broadcasting, LLC",
       "notice_date": "2026-07-20",
@@ -394420,6 +394432,30 @@
       "county": "Remote",
       "city": "",
       "address": "JeniusBank (digital banking)",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Rugged Liner",
+      "notice_date": null,
+      "effective_date": "2027-03-19",
+      "employees": 90,
+      "layoff_type": "Company closure",
+      "county": "Shiawassee",
+      "city": "",
+      "address": "951 Aiken St., Owosso, MI 48867; 200 Universal Drive, Owosso, MI 48867",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Trinity Health Corp.",
+      "notice_date": null,
+      "effective_date": "2026-10-25",
+      "employees": 557,
+      "layoff_type": "Permanent layoff",
+      "county": "Wayne",
+      "city": "",
+      "address": "20555 Victor Parkway, Livonia, MI 48152",
       "industry": ""
     },
     {
@@ -569276,18 +569312,6 @@
     },
     {
       "state": "SC",
-      "company": "The Westin Hilton Head Island Resort & Spa",
-      "notice_date": "2026-08-27",
-      "effective_date": "2026-11-03",
-      "employees": 219,
-      "layoff_type": "Temporary Closure",
-      "county": "Beaufort",
-      "city": "",
-      "address": "2 Grasslawn Ave., Hilton Head Island, SC 29928",
-      "industry": ""
-    },
-    {
-      "state": "SC",
       "company": "DP World",
       "notice_date": "2026-09-01",
       "effective_date": "2026-10-31",
@@ -569296,6 +569320,18 @@
       "county": "Spartanburg",
       "city": "",
       "address": "226 GSP Logistics Parkway, Greer, SC 29651",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "The Westin Hilton Head Island Resort & Spa",
+      "notice_date": "2026-08-27",
+      "effective_date": "2026-11-03",
+      "employees": 157,
+      "layoff_type": "Temporary Closure",
+      "county": "Beaufort",
+      "city": "",
+      "address": "2 Grasslawn Ave., Hilton Head Island, SC 29928",
       "industry": ""
     },
     {
@@ -643791,7 +643827,7 @@
       "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-09-04",
+      "effective_date": "2026-09-05",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",

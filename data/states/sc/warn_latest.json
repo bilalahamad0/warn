@@ -1,9 +1,9 @@
 {
   "total_records": 608,
-  "total_employees": 81874,
+  "total_employees": 81812,
   "date_range_start": "2013-02-25",
   "date_range_end": "2026-09-01",
-  "last_updated": "2026-09-04T15:44:26.008667+00:00",
+  "last_updated": "2026-09-05T02:18:26.125865+00:00",
   "source_url": "https://scworks.org/employer/employer-programs/risk-closing/layoff-notification-reports",
   "records": [
     {
@@ -7283,7 +7283,7 @@
       "company": "The Westin Hilton Head Island Resort & Spa",
       "notice_date": "2026-08-27",
       "effective_date": "2026-11-03",
-      "employees": 219,
+      "employees": 157,
       "layoff_type": "Temporary Closure",
       "county": "Beaufort",
       "city": "",
