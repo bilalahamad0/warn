@@ -1,9 +1,9 @@
 {
-  "total_records": 390,
-  "total_employees": 35011,
+  "total_records": 391,
+  "total_employees": 35107,
   "date_range_start": "2021-04-19",
-  "date_range_end": "2026-08-24",
-  "last_updated": "2026-09-04T02:07:40.293088+00:00",
+  "date_range_end": "2026-09-02",
+  "last_updated": "2026-09-05T02:12:17.497123+00:00",
   "source_url": "https://www.mass.gov/info-details/worker-adjustment-and-retraining-notification-act-warn",
   "records": [
     {
@@ -4479,6 +4479,18 @@
       "layoff_type": "",
       "county": "Southeast",
       "city": "Bridgewater",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "TScan Therapeutics Inc. (dba TScan)",
+      "notice_date": "2026-09-02",
+      "effective_date": "2026-11-02",
+      "employees": 96,
+      "layoff_type": "",
+      "county": "Metro Southwest",
+      "city": "Waltham",
       "address": "",
       "industry": ""
     },
