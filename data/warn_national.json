@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-08T02:27:15.957464+00:00",
+  "last_updated": "2026-09-08T16:03:11.256677+00:00",
   "states_live": 47,
-  "total_records": 60183,
-  "total_employees": 6484696,
+  "total_records": 60184,
+  "total_employees": 6484750,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -204,8 +204,8 @@
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2339,
-      "total_employees": 351722
+      "total_records": 2340,
+      "total_employees": 351776
     },
     "NM": {
       "name": "New Mexico",
@@ -450303,6 +450303,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Weehawken",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Merck & Co",
+      "notice_date": null,
+      "effective_date": "2026-12-11",
+      "employees": 54,
+      "layoff_type": "",
+      "county": "",
+      "city": "Rahway",
       "address": "",
       "industry": ""
     },
