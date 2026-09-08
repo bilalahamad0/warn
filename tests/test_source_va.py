@@ -1,10 +1,12 @@
 """Tests for the Virginia (VA) WARN source."""
 
+import json
 import re
 from pathlib import Path
 
 import pytest
 
+import warn_monitor
 import warn_sources
 from warn_sources import va as va_module
 
@@ -179,3 +181,172 @@ def test_clean_date(raw, expected):
 )
 def test_clean_location(raw, expected):
     assert va_module._clean_location(raw) == expected
+
+
+# ---------------------------------------------------------------------------
+# Rescinded notices carry no effective date
+# ---------------------------------------------------------------------------
+
+_HEADER = (
+    "Company,Notice Date,Impact Date,Employees Affected,Location,"
+    "Contact Person,Notice Type,Collective Bargaining Unit\n"
+)
+
+
+def _csv(tmp_path, name, *rows):
+    path = tmp_path / name
+    path.write_text(_HEADER + "".join(r + "\n" for r in rows))
+    return path
+
+
+def _aerofarms(impact_date):
+    """The feed's currently-rescinded notice: Impact Date = the render date."""
+    return (
+        f'"AeroFarms Inc. - Rescinded",04/29/2026,{impact_date},133,'
+        '"Ringgold VA","Carlos Nunez",Closure,'
+    )
+
+
+_EMERSON = (
+    'Emerson,07/09/2026,09/30/2026,139,"Charlottesville VA",Justin Johnson,'
+    "Closure,"
+)
+
+
+@pytest.mark.parametrize("company,expected", [
+    ("AeroFarms Inc. - Rescinded", True),
+    ("JELD-WEN-rescinded", True),
+    ("Pyrotechnique by Grucci Inc. *notice rescinded", True),
+    ("Emerson", False),
+    ("", False),
+    (None, False),
+])
+def test_is_rescinded(company, expected):
+    assert va_module.is_rescinded(company) is expected
+
+
+def test_parse_rescinded_rows_have_no_effective_date(tmp_path):
+    """Every way the feed has spelled a rescission, and nothing else."""
+    csv = _csv(
+        tmp_path, "r.csv",
+        _aerofarms("09/02/2026"),
+        '"Pyrotechnique by Grucci Inc. *notice rescinded",04/04/2016,04/08/2016,0,'
+        '"Radford VA",Someone,Layoff,',
+        'JELD-WEN-rescinded,11/06/2012,12/31/2012,138,"Christianburg VA",'
+        "Someone,Closure,",
+        _EMERSON,
+    )
+    df = warn_sources.get_source("va", tmp_path).parse(csv)
+    by = {r["company"]: r for r in df.to_dict("records")}
+    for name in (
+        "AeroFarms Inc. - Rescinded",
+        "Pyrotechnique by Grucci Inc. *notice rescinded",
+        "JELD-WEN-rescinded",
+    ):
+        assert by[name]["effective_date"] is None, name
+    # The row itself stays exactly as published — a rescission is information.
+    aero = by["AeroFarms Inc. - Rescinded"]
+    assert aero["notice_date"] == "2026-04-29"
+    assert aero["employees"] == 133
+    assert aero["layoff_type"] == "Closure"
+    assert aero["city"] == "Ringgold"
+    # A live notice keeps its date.
+    assert by["Emerson"]["effective_date"] == "2026-09-30"
+
+
+def _stub_fetch(src, monkeypatch, tmp_path):
+    """Make fetch return whatever CSV the test staged last as feed.csv."""
+    monkeypatch.setattr(
+        src, "fetch", lambda force=False: (True, str(tmp_path / "feed.csv"))
+    )
+
+
+def _va_with_feed(tmp_path, monkeypatch):
+    """A VA source whose fetch returns whatever CSV the test staged last."""
+    src = warn_sources.get_source("va", tmp_path)
+    src.paths.ensure()
+    _stub_fetch(src, monkeypatch, tmp_path)
+    return src
+
+
+def test_daily_redating_of_a_rescinded_notice_is_not_an_amendment(
+    tmp_path, monkeypatch
+):
+    """The Virginia churn, end to end through the shared engine: the same
+    rescinded filing with a new Impact Date every download must produce no
+    amendment, no new notice, no ledger growth, and one dashboard record."""
+    src = _va_with_feed(tmp_path, monkeypatch)
+    _csv(tmp_path, "feed.csv", _aerofarms("08/30/2026"), _EMERSON)
+    src.run()  # baseline
+    ledger_before = src.paths.notified.read_text()
+
+    for day in ("08/31/2026", "09/01/2026", "09/02/2026"):
+        _csv(tmp_path, "feed.csv", _aerofarms(day), _EMERSON)
+        diff = src.run()["diff"]
+        assert diff["amendment_count"] == 0, day
+        assert diff["new_count"] == 0, day
+        assert diff["removed_count"] == 0, day
+
+    assert src.paths.notified.read_text() == ledger_before
+    assert not src.paths.amended.exists()
+    cumulative = json.loads(src.paths.cumulative.read_text())["records"]
+    aero = [r for r in cumulative if r["company"].startswith("AeroFarms")]
+    assert len(aero) == 1
+    assert aero[0]["effective_date"] is None
+
+
+def test_seeded_ledgers_make_the_key_change_silent(tmp_path, monkeypatch):
+    """The production transition. Before this rule the live ledgers held the
+    rescinded notice under a dated key and the cumulative store carried that
+    dated version. Seeding the new undated key into BOTH ledgers (done once,
+    by hand, for the three rescinded rows) turns the parser's key change into
+    a no-op: nothing reported, nothing held, and the dated version collapses
+    out of the cumulative store on the next run."""
+    src = _va_with_feed(tmp_path, monkeypatch)
+
+    # The state the live pipeline left behind, written through the engine so
+    # every file has its real shape: a run under the OLD rule (dated).
+    monkeypatch.setattr(va_module, "is_rescinded", lambda company: False)
+    _csv(tmp_path, "feed.csv", _aerofarms("09/02/2026"), _EMERSON)
+    src.run()
+    dated_key = "AeroFarms Inc. - Rescinded__2026-09-02__133"
+    assert dated_key in json.loads(src.paths.notified.read_text())["keys"]
+    monkeypatch.undo()
+    _stub_fetch(src, monkeypatch, tmp_path)
+
+    # The one-off seed.
+    undated_key = "AeroFarms Inc. - Rescinded__None__133"
+    warn_monitor.record_notified_keys([undated_key], src.paths.notified)
+    warn_monitor.record_amended_keys([undated_key], src.paths.amended)
+
+    _csv(tmp_path, "feed.csv", _aerofarms("09/03/2026"), _EMERSON)
+    diff = src.run()["diff"]
+    assert diff["amendment_count"] == 0
+    assert diff["new_count"] == 0
+    cumulative = json.loads(src.paths.cumulative.read_text())["records"]
+    aero = [r for r in cumulative if r["company"].startswith("AeroFarms")]
+    assert [r["effective_date"] for r in aero] == [None]
+
+
+def test_unseeded_key_change_surfaces_as_one_held_amendment_not_a_new_notice(
+    tmp_path, monkeypatch
+):
+    """Without the seed the change is still safe: the engine pairs the undated
+    row with its dated predecessor as ONE amendment (held, never a fresh
+    'new notice' alert) and the cumulative store still ends up with one row."""
+    src = _va_with_feed(tmp_path, monkeypatch)
+    monkeypatch.setattr(va_module, "is_rescinded", lambda company: False)
+    _csv(tmp_path, "feed.csv", _aerofarms("09/02/2026"), _EMERSON)
+    src.run()
+    monkeypatch.undo()
+    _stub_fetch(src, monkeypatch, tmp_path)
+
+    _csv(tmp_path, "feed.csv", _aerofarms("09/03/2026"), _EMERSON)
+    diff = src.run()["diff"]
+    assert diff["new_count"] == 0
+    assert diff["amendment_count"] == 1
+    assert diff["amendments"][0]["old_effective_date"] == "2026-09-02"
+    assert diff["amendments"][0]["new_effective_date"] is None
+    cumulative = json.loads(src.paths.cumulative.read_text())["records"]
+    aero = [r for r in cumulative if r["company"].startswith("AeroFarms")]
+    assert [r["effective_date"] for r in aero] == [None]

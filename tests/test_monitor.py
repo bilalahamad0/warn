@@ -369,3 +369,174 @@ def test_update_cumulative_leaves_unamended_multisite_alone(tmp_path):
         summary = warn_monitor.update_cumulative([a, b])
     # Same anchor, but no recorded amendment for it → both survive.
     assert summary["total_records"] == 2
+
+
+# ---------------------------------------------------------------------------
+# Held amendments (pending_amendments.json)
+# ---------------------------------------------------------------------------
+
+
+def _amendment(eff_old, eff_new, company="AeroFarms Inc. - Rescinded",
+               emp_old=133, emp_new=133):
+    """An amendment dict in exactly the shape detect_changes emits."""
+    return {
+        "company": company, "county": "", "city": "Ringgold",
+        "notice_date": "2026-04-29",
+        "effective_date": eff_new, "employees": emp_new,
+        "old_effective_date": eff_old, "new_effective_date": eff_new,
+        "old_employees": emp_old, "new_employees": emp_new,
+        "key": f"{company}__{eff_new}__{emp_new}",
+    }
+
+
+def test_hold_amendments_collapses_daily_redating_to_one_row(tmp_path):
+    """Virginia's feed re-dates a rescinded notice every day; the held ledger
+    must describe the net change once, not once per day."""
+    pending = tmp_path / "p.json"
+    days = ["2026-08-18", "2026-08-19", "2026-08-20", "2026-08-21", "2026-08-22"]
+    for old, new in zip(days, days[1:]):
+        held = warn_monitor.merge_pending_amendments([_amendment(old, new)], pending)
+    assert len(held) == 1
+    row = held[0]
+    assert row["old_effective_date"] == "2026-08-18"
+    assert row["new_effective_date"] == "2026-08-22"
+    assert row["effective_date"] == "2026-08-22"
+    assert row["key"] == "AeroFarms Inc. - Rescinded__2026-08-22__133"
+    assert row["revisions"] == 4
+    assert row["held_since"]
+    # Round-trips through disk.
+    assert warn_monitor._load_pending_amendments(pending) == held
+
+
+def test_hold_amendments_ignores_a_key_already_held(tmp_path):
+    pending = tmp_path / "p.json"
+    a = _amendment("2026-08-18", "2026-08-19")
+    warn_monitor.merge_pending_amendments([a], pending)
+    held = warn_monitor.merge_pending_amendments([dict(a)], pending)
+    assert len(held) == 1
+    assert held[0]["revisions"] == 1
+
+
+def test_hold_amendments_keeps_distinct_filings_apart(tmp_path):
+    pending = tmp_path / "p.json"
+    held = warn_monitor.merge_pending_amendments([
+        _amendment("2026-08-18", "2026-08-19"),
+        _amendment("2026-10-14", "2026-10-14", company="TekSynap Corporation",
+                   emp_old=69, emp_new=9),
+    ], pending)
+    assert [h["company"] for h in held] == [
+        "AeroFarms Inc. - Rescinded", "TekSynap Corporation"
+    ]
+    assert held[1]["old_employees"] == 69 and held[1]["new_employees"] == 9
+
+
+def test_pending_ledger_tolerates_missing_and_corrupt_files(tmp_path):
+    pending = tmp_path / "p.json"
+    assert warn_monitor._load_pending_amendments(pending) == []
+    pending.write_text("{not json")
+    assert warn_monitor._load_pending_amendments(pending) == []
+    # A corrupt ledger is the only record of amendments whose keys are
+    # already ledgered, so it is kept aside for recovery, never overwritten.
+    aside = tmp_path / "p.json.corrupt"
+    assert aside.read_text() == "{not json"
+    assert not pending.exists()
+    held = warn_monitor.merge_pending_amendments(
+        [_amendment("2026-08-18", "2026-08-19")], pending
+    )
+    assert len(held) == 1
+    assert json.loads(pending.read_text())["count"] == 1
+    assert aside.read_text() == "{not json"
+    # A second incident never overwrites the first copy.
+    pending.write_text("<<<<<<< HEAD")
+    assert warn_monitor._load_pending_amendments(pending) == []
+    assert aside.read_text() == "{not json"
+    assert (tmp_path / "p.json.corrupt2").read_text() == "<<<<<<< HEAD"
+
+
+def test_merge_keeps_two_filings_that_share_a_notice_key(tmp_path):
+    """Arizona's LUKE Holding: Tucson and Yuma, both revised to no date and
+    no headcount, share a _notice_key but are two filings and two rows."""
+    pending = tmp_path / "p.json"
+    tucson = {
+        "company": "LUKE Holding Inc.", "county": "Pima", "city": "Tucson",
+        "notice_date": "2025-02-28", "effective_date": None, "employees": 0,
+        "old_effective_date": "2025-04-30", "new_effective_date": None,
+        "old_employees": 40, "new_employees": 0, "key": "LUKE Holding Inc.__None__0",
+    }
+    yuma = dict(tucson, county="Yuma", city="Yuma", old_employees=25)
+    held = warn_monitor.merge_pending_amendments([tucson, yuma], pending)
+    assert [(h["city"], h["old_employees"]) for h in held] == [
+        ("Tucson", 40), ("Yuma", 25)
+    ]
+    # …and the same two again on the next feed swing are still a no-op.
+    again = warn_monitor.merge_pending_amendments([tucson, yuma], pending)
+    assert len(again) == 2 and all(h["revisions"] == 1 for h in again)
+
+
+def test_detect_changes_never_caps_amendments(tmp_path):
+    """Every amendment is held straight from this list and its key ledgered
+    the moment it is held; a row cut here would be lost for good."""
+    ledger, amended, latest = (
+        tmp_path / "n.json", tmp_path / "a.json", tmp_path / "l.json"
+    )
+    prev = [
+        {"company": f"Co {i}", "effective_date": "2026-03-01", "employees": i + 1,
+         "notice_date": "2026-01-15", "county": "Kern", "city": ""}
+        for i in range(60)
+    ]
+    with patch("warn_monitor.NOTIFIED_FILE", ledger), \
+         patch("warn_monitor.AMENDED_FILE", amended), \
+         patch("warn_monitor.LATEST_FILE", latest):
+        warn_monitor._save_notified_keys({warn_monitor._notice_key(r) for r in prev})
+        latest.write_text(json.dumps({"records": prev}))
+        feed = pd.DataFrame([dict(r, effective_date="2026-04-01") for r in prev])
+        diff = warn_monitor.detect_changes(feed)
+    assert diff["amendment_count"] == 60
+    assert len(diff["amendments"]) == 60
+    assert len(diff["amendment_keys"]) == 60
+    assert diff["new_count"] == 0
+
+
+def test_clear_pending_amendments_removes_the_file(tmp_path):
+    pending = tmp_path / "p.json"
+    warn_monitor.merge_pending_amendments(
+        [_amendment("2026-08-18", "2026-08-19")], pending
+    )
+    assert pending.exists()
+    warn_monitor.clear_pending_amendments(pending)
+    assert not pending.exists()
+    assert warn_monitor._load_pending_amendments(pending) == []
+    # Holding nothing writes nothing.
+    assert warn_monitor.merge_pending_amendments([], pending) == []
+    assert not pending.exists()
+
+
+def test_pending_ledger_write_is_atomic(tmp_path):
+    """A run killed mid-write must leave the previous ledger intact: this is
+    the one ledger whose loss is permanent (its keys are already recorded in
+    notified/amended, so detect_changes can never resurface those rows)."""
+    pending = tmp_path / "p.json"
+    warn_monitor.merge_pending_amendments(
+        [_amendment("2026-08-18", "2026-08-19")], pending
+    )
+    intact = pending.read_text()
+
+    real_write = Path.write_text
+
+    def die_midway(self, data, *args, **kwargs):
+        real_write(self, data[: len(data) // 2])
+        raise KeyboardInterrupt("killed mid-write")
+
+    with patch.object(Path, "write_text", die_midway), \
+         pytest.raises(KeyboardInterrupt):
+        warn_monitor.merge_pending_amendments(
+            [_amendment("2026-10-14", "2026-10-14", company="TekSynap Corporation")],
+            pending,
+        )
+
+    # The old ledger is still there and still parses; the torn write went to a
+    # temp file that was never renamed over it.
+    assert pending.read_text() == intact
+    held = warn_monitor._load_pending_amendments(pending)
+    assert [h["company"] for h in held] == ["AeroFarms Inc. - Rescinded"]
+    assert not list(tmp_path.glob("*.corrupt*"))

@@ -6,8 +6,10 @@ from unittest.mock import patch
 import pytest
 
 import warn_publish
+from warn_sources.base import Source
 
 
+@patch("warn_publish.alert_for_state")
 @patch("warn_publish.maybe_post_to_x")
 @patch("warn_publish.build_unsubscribe_page")
 @patch("warn_publish.warn_notify.load_subscriber_records", return_value=[])
@@ -28,7 +30,7 @@ import warn_publish
 def test_run_full_pipeline(
     mock_sources, mock_diff, mock_history, mock_national, mock_charts,
     mock_us_site, mock_redirect, mock_site, mock_push, mock_digest,
-    mock_subs, mock_unsub, mock_post_x, tmp_path
+    mock_subs, mock_unsub, mock_post_x, mock_alert, tmp_path
 ):
     """run() orchestrates every stage and honours no_push — without touching the
     real data/ directory, the network, or git.
@@ -193,21 +195,64 @@ def test_compute_kpis_top_county_tiebreak_is_order_independent():
 # ---------------------------------------------------------------------------
 
 
-class _FakeSource:
-    """Stands in for a warn_sources.Source in the notify loop."""
+class _FakeSource(Source):
+    """A real Source — ledgers and pending file under tmp_path — with the
+    network stubbed out, so the notify loop exercises the genuine hold/club
+    plumbing rather than a stand-in."""
 
-    def __init__(self, code):
+    def __init__(self, code, data_dir):
         self.code = code
+        super().__init__(data_dir)
+        self.paths.ensure()
         self.alerted = []
+
+    def fetch(self, force=False):
+        raise AssertionError("the notify loop must never fetch")
+
+    def parse(self, raw_path):
+        raise AssertionError("the notify loop must never parse")
 
     def record_alerted(self, diff):
         self.alerted.append(diff)
+        super().record_alerted(diff)
+
+
+def _va_amendment_diff(old_eff, new_eff):
+    """An amendment-only diff, as Virginia's feed produced every morning: the
+    rescinded AeroFarms notice with its effective date moved on by a day."""
+    key = f"AeroFarms Inc. - Rescinded__{new_eff}__133"
+    return {
+        "new_count": 0, "removed_count": 0, "amendment_count": 1,
+        "new_keys": [key], "amendment_keys": [key],
+        "new_entries": [], "removed_entries": [],
+        "amendments": [{
+            "company": "AeroFarms Inc. - Rescinded", "county": "",
+            "city": "Ringgold", "notice_date": "2026-04-29",
+            "effective_date": new_eff, "employees": 133,
+            "old_effective_date": old_eff, "new_effective_date": new_eff,
+            "old_employees": 133, "new_employees": 133, "key": key,
+        }],
+        "total_employees_new": 0, "total_employees_removed": 0,
+    }
+
+
+def _new_notice_diff():
+    return {
+        "new_count": 1, "removed_count": 0, "amendment_count": 0,
+        "new_keys": ["Globex__2026-11-01__40"], "amendment_keys": [],
+        "new_entries": [{"company": "Globex", "employees": 40,
+                         "effective_date": "2026-11-01", "county": "Fairfax"}],
+        "removed_entries": [], "amendments": [],
+        "total_employees_new": 40, "total_employees_removed": 0,
+    }
 
 
 def _run_notify_loop(state_results, sources, send_ok=True, tmp_path=None):
     """Drive run()'s notify loop with everything else mocked out.
 
-    Returns the mocked notify_if_changes so callers can inspect routing.
+    alert_for_state is NOT mocked here — it is the policy under test; the
+    transport beneath it (notify_if_changes) is. Returns the mocked
+    notify_if_changes so callers can inspect routing.
     """
     (tmp_path / "charts_manifest.json").write_text(
         json.dumps({"charts": [], "total_records": 0, "total_employees": 0})
@@ -243,7 +288,7 @@ def test_run_passes_state_code_and_shared_records_to_notifier(tmp_path):
         "ny": {"state": "NY", "diff": {"new_count": 0, "amendment_count": 0},
                "summary": {}},
     }
-    sources = [_FakeSource("ca"), _FakeSource("il"), _FakeSource("ny")]
+    sources = [_FakeSource(c, tmp_path) for c in ("ca", "il", "ny")]
     mock_notify, mock_load, records = _run_notify_loop(
         state_results, sources, tmp_path=tmp_path
     )
@@ -263,9 +308,212 @@ def test_run_passes_state_code_and_shared_records_to_notifier(tmp_path):
 def test_run_skips_ledger_when_a_state_send_fails(tmp_path):
     state_results = {"ca": {"state": "CA", "diff": {"new_count": 2},
                             "summary": {}}}
-    sources = [_FakeSource("ca")]
+    sources = [_FakeSource("ca", tmp_path)]
     _run_notify_loop(state_results, sources, send_ok=False, tmp_path=tmp_path)
     assert not sources[0].alerted
+
+
+# ---------------------------------------------------------------------------
+# Amendments never send on their own: held, then clubbed into the next alert
+# ---------------------------------------------------------------------------
+
+
+def _ledger(path):
+    return json.loads(path.read_text())["keys"] if path.exists() else []
+
+
+def test_amendment_only_run_sends_no_email_and_holds_it(tmp_path):
+    """The Virginia case: a revised effective date with no new filing."""
+    src = _FakeSource("va", tmp_path)
+    diff = _va_amendment_diff("2026-08-18", "2026-08-19")
+    with patch("warn_publish.warn_notify.notify_if_changes") as mock_notify:
+        assert warn_publish.alert_for_state(src, diff, {}) is False
+    assert not mock_notify.called
+    assert not src.alerted
+    held = src.pending_amendments()
+    assert len(held) == 1
+    assert held[0]["company"] == "AeroFarms Inc. - Rescinded"
+    # Both keys are recorded at once, so the revised line can never resurface
+    # — neither as the same amendment nor as a "new" notice.
+    assert diff["new_keys"][0] in _ledger(src.paths.notified)
+    assert diff["amendment_keys"][0] in _ledger(src.paths.amended)
+
+
+def test_held_amendments_are_clubbed_into_the_next_new_notice_alert(tmp_path):
+    src = _FakeSource("va", tmp_path)
+    with patch("warn_publish.warn_notify.notify_if_changes",
+               return_value=True) as mock_notify:
+        warn_publish.alert_for_state(
+            src, _va_amendment_diff("2026-08-18", "2026-08-19"), {}
+        )
+        assert not mock_notify.called
+        diff = _new_notice_diff()
+        assert warn_publish.alert_for_state(
+            src, diff, {"total_records": 9}, records=[]
+        ) is True
+
+    assert mock_notify.call_count == 1
+    emailed = mock_notify.call_args.args[0]
+    assert mock_notify.call_args.kwargs["state"] == "VA"
+    assert mock_notify.call_args.kwargs["records"] == []
+    assert emailed["new_count"] == 1
+    assert emailed["new_entries"][0]["company"] == "Globex"
+    assert emailed["amendment_count"] == 1
+    assert emailed["amendments"][0]["company"] == "AeroFarms Inc. - Rescinded"
+    assert emailed["amendments"][0]["old_effective_date"] == "2026-08-18"
+    assert emailed["amendment_keys"] == ["AeroFarms Inc. - Rescinded__2026-08-19__133"]
+    # The pipeline's own diff is untouched — the X stage reads it next.
+    assert emailed is not diff
+    assert diff["amendment_count"] == 0 and diff["amendments"] == []
+    # Sent: ledgers recorded against the ORIGINAL diff, pending cleared.
+    assert src.alerted == [diff]
+    assert "Globex__2026-11-01__40" in _ledger(src.paths.notified)
+    assert src.pending_amendments() == []
+    assert not src.paths.pending.exists()
+
+
+def test_virginia_daily_redating_becomes_one_row_in_the_eventual_alert(tmp_path):
+    """Two weeks of 'AeroFarms amended' runs must read as one net change."""
+    src = _FakeSource("va", tmp_path)
+    days = [f"2026-08-{d:02d}" for d in range(18, 32)]
+    with patch("warn_publish.warn_notify.notify_if_changes",
+               return_value=True) as mock_notify:
+        for old, new in zip(days, days[1:]):
+            assert warn_publish.alert_for_state(
+                src, _va_amendment_diff(old, new), {}
+            ) is False
+        assert not mock_notify.called
+        warn_publish.alert_for_state(src, _new_notice_diff(), {})
+    emailed = mock_notify.call_args.args[0]
+    assert emailed["amendment_count"] == 1
+    row = emailed["amendments"][0]
+    assert row["old_effective_date"] == "2026-08-18"
+    assert row["new_effective_date"] == "2026-08-31"
+    assert row["revisions"] == 13
+    # Every daily key went into the ledgers along the way.
+    assert len(_ledger(src.paths.amended)) == 13
+
+
+def test_failed_send_keeps_amendments_held_and_new_keys_unrecorded(tmp_path):
+    src = _FakeSource("va", tmp_path)
+    with patch("warn_publish.warn_notify.notify_if_changes",
+               return_value=False):
+        warn_publish.alert_for_state(
+            src, _va_amendment_diff("2026-08-18", "2026-08-19"), {}
+        )
+        assert warn_publish.alert_for_state(src, _new_notice_diff(), {}) is False
+    assert not src.alerted
+    assert len(src.pending_amendments()) == 1
+    assert "Globex__2026-11-01__40" not in _ledger(src.paths.notified)
+
+    # Next run's retry carries them both.
+    with patch("warn_publish.warn_notify.notify_if_changes",
+               return_value=True) as mock_notify:
+        assert warn_publish.alert_for_state(src, _new_notice_diff(), {}) is True
+    assert mock_notify.call_args.args[0]["amendment_count"] == 1
+    assert src.pending_amendments() == []
+
+
+def test_new_and_amendment_in_one_run_go_out_together(tmp_path):
+    src = _FakeSource("ca", tmp_path)
+    diff = _new_notice_diff()
+    am = _va_amendment_diff("2026-08-18", "2026-08-19")
+    diff.update({
+        "amendment_count": 1, "amendments": am["amendments"],
+        "amendment_keys": am["amendment_keys"],
+        "new_keys": diff["new_keys"] + am["new_keys"],
+    })
+    with patch("warn_publish.warn_notify.notify_if_changes",
+               return_value=True) as mock_notify:
+        assert warn_publish.alert_for_state(src, diff, {}) is True
+    emailed = mock_notify.call_args.args[0]
+    assert emailed["new_count"] == 1 and emailed["amendment_count"] == 1
+    assert emailed["amendments"][0]["held_since"]
+    assert src.pending_amendments() == []
+    assert set(diff["new_keys"]) <= set(_ledger(src.paths.notified))
+
+
+def test_clubbed_email_reports_a_held_revision_even_if_the_feed_swung_back(tmp_path):
+    """Held for weeks; on the day a new notice arrives the feed happens to show
+    the ORIGINAL date again. The feeds oscillate between versions, the
+    ledgers define the canonical one, and a held row dropped here could never
+    be re-reported (its key is ledgered) — so it goes out as held."""
+    src = _FakeSource("va", tmp_path)
+    with patch("warn_publish.warn_notify.notify_if_changes",
+               return_value=True) as mock_notify:
+        warn_publish.alert_for_state(
+            src, _va_amendment_diff("2026-07-21", "2026-07-22"), {}
+        )
+        assert len(src.pending_amendments()) == 1
+        # This run's feed (warn_latest.json, written before the notify loop)
+        # carries the original date again — a swing, not a decision.
+        src.paths.latest.write_text(json.dumps({"records": [{
+            "company": "AeroFarms Inc. - Rescinded", "county": "",
+            "city": "Ringgold", "notice_date": "2026-04-29",
+            "effective_date": "2026-07-21", "employees": 133,
+        }]}))
+        assert warn_publish.alert_for_state(src, _new_notice_diff(), {}) is True
+    emailed = mock_notify.call_args.args[0]
+    assert emailed["new_count"] == 1
+    assert emailed["amendment_count"] == 1
+    assert emailed["amendments"][0]["old_effective_date"] == "2026-07-21"
+    assert emailed["amendments"][0]["new_effective_date"] == "2026-07-22"
+    assert src.pending_amendments() == []
+
+
+def test_every_amendment_of_a_large_burst_is_held_and_emailed(tmp_path):
+    """A parser date fix can re-key a whole state in one run; none of those
+    revisions may vanish between the diff and the email."""
+    src = _FakeSource("ca", tmp_path)
+    amendments, keys = [], []
+    for i in range(60):
+        a = _va_amendment_diff("2026-03-01", "2026-04-01")["amendments"][0]
+        a.update({"company": f"Co {i}", "key": f"Co {i}__2026-04-01__133"})
+        amendments.append(a)
+        keys.append(a["key"])
+    burst = {
+        "new_count": 0, "removed_count": 0, "amendment_count": 60,
+        "new_keys": keys, "amendment_keys": keys, "new_entries": [],
+        "removed_entries": [], "amendments": amendments,
+        "total_employees_new": 0, "total_employees_removed": 0,
+    }
+    with patch("warn_publish.warn_notify.notify_if_changes",
+               return_value=True) as mock_notify:
+        assert warn_publish.alert_for_state(src, burst, {}) is False
+        assert len(src.pending_amendments()) == 60
+        assert set(keys) <= set(_ledger(src.paths.amended))
+        warn_publish.alert_for_state(src, _new_notice_diff(), {})
+    emailed = mock_notify.call_args.args[0]
+    assert emailed["amendment_count"] == 60
+    assert len(emailed["amendments"]) == 60
+    assert sorted(emailed["amendment_keys"]) == sorted(keys)
+
+
+def test_nothing_to_report_touches_nothing(tmp_path):
+    src = _FakeSource("ca", tmp_path)
+    with patch("warn_publish.warn_notify.notify_if_changes") as mock_notify:
+        assert warn_publish.alert_for_state(
+            src, {"new_count": 0, "amendment_count": 0}, {}
+        ) is False
+    assert not mock_notify.called
+    assert not src.paths.pending.exists()
+    assert not src.paths.notified.exists()
+
+
+def test_run_holds_amendment_only_states_and_alerts_the_rest(tmp_path):
+    """Through run(): VA's amendment sends nothing; IL's new notice still does."""
+    state_results = {
+        "va": {"state": "VA",
+               "diff": _va_amendment_diff("2026-08-18", "2026-08-19"),
+               "summary": {}},
+        "il": {"state": "IL", "diff": _new_notice_diff(), "summary": {}},
+    }
+    sources = [_FakeSource("va", tmp_path), _FakeSource("il", tmp_path)]
+    mock_notify, _, _ = _run_notify_loop(state_results, sources, tmp_path=tmp_path)
+    assert [c.kwargs["state"] for c in mock_notify.call_args_list] == ["IL"]
+    assert not sources[0].alerted
+    assert sources[0].paths.pending.exists()
+    assert sources[1].alerted
 
 
 # ---------------------------------------------------------------------------
@@ -374,6 +622,7 @@ def test_digest_failure_is_non_fatal_to_the_run(tmp_path):
         json.dumps({"charts": [], "total_records": 0, "total_employees": 0})
     )
     with patch("warn_publish.warn_sources.run_all", return_value={}), \
+         patch("warn_publish.alert_for_state"), \
          patch("warn_publish.warn_sources.all_sources", return_value=[]), \
          patch("warn_publish.warn_diff.generate_report"), \
          patch("warn_publish.warn_history.run"), \
@@ -398,6 +647,7 @@ def test_no_digest_flag_skips_the_step(tmp_path):
         json.dumps({"charts": [], "total_records": 0, "total_employees": 0})
     )
     with patch("warn_publish.warn_sources.run_all", return_value={}), \
+         patch("warn_publish.alert_for_state"), \
          patch("warn_publish.warn_sources.all_sources", return_value=[]), \
          patch("warn_publish.warn_diff.generate_report"), \
          patch("warn_publish.warn_history.run"), \
@@ -471,6 +721,7 @@ def _run_with_unsubscribe(tmp_path, **kw):
         json.dumps({"charts": [], "total_records": 0, "total_employees": 0})
     )
     with patch("warn_publish.warn_sources.run_all", return_value={}), \
+         patch("warn_publish.alert_for_state"), \
          patch("warn_publish.warn_sources.all_sources", return_value=[]), \
          patch("warn_publish.warn_diff.generate_report"), \
          patch("warn_publish.warn_history.run"), \
@@ -580,6 +831,7 @@ def _run_with_root_failure(tmp_path, no_push):
         json.dumps({"charts": [], "total_records": 0, "total_employees": 0})
     )
     with patch("warn_publish.warn_sources.run_all", return_value={}), \
+         patch("warn_publish.alert_for_state"), \
          patch("warn_publish.warn_sources.all_sources", return_value=[]), \
          patch("warn_publish.warn_diff.generate_report"), \
          patch("warn_publish.warn_history.run"), \
@@ -671,6 +923,7 @@ def test_success_path_uses_full_commit_not_the_ledger_path(tmp_path):
         json.dumps({"charts": [], "total_records": 0, "total_employees": 0})
     )
     with patch("warn_publish.warn_sources.run_all", return_value={}), \
+         patch("warn_publish.alert_for_state"), \
          patch("warn_publish.warn_sources.all_sources", return_value=[]), \
          patch("warn_publish.warn_diff.generate_report"), \
          patch("warn_publish.warn_history.run"), \
@@ -733,6 +986,7 @@ def _run_with_x(tmp_path, no_post=False, **kw):
         "mi": {"state": "MI", "diff": {"new_count": 1}, "summary": {}},
     }
     with patch("warn_publish.warn_sources.run_all", return_value=state_results), \
+         patch("warn_publish.alert_for_state"), \
          patch("warn_publish.warn_sources.all_sources", return_value=[]), \
          patch("warn_publish.warn_diff.generate_report"), \
          patch("warn_publish.warn_history.run"), \
@@ -844,4 +1098,50 @@ def test_every_run_stage_is_mocked_in_this_file():
     assert not missing, (
         "these run() call sites do not mock every stage: "
         + "; ".join(f"{k} -> {sorted(v)}" for k, v in missing.items())
+    )
+
+
+def test_hold_records_only_the_amendment_tail_of_new_keys(tmp_path):
+    """The load-bearing slice in Source.hold_amendments: new_keys is
+    [genuine-new…] + [amendment canonical keys…], and only the TAIL may be
+    ledgered at hold time. Recording the head too would mark a new notice as
+    alerted before its email was sent, and a failed send would then never
+    retry — the notice would be lost silently."""
+    src = _FakeSource("va", tmp_path)
+    am = _va_amendment_diff("2026-08-18", "2026-08-19")
+    diff = {
+        "new_count": 1, "removed_count": 0, "amendment_count": 1,
+        "new_entries": [{"company": "Globex", "employees": 40,
+                         "effective_date": "2026-11-01", "county": "Fairfax"}],
+        "new_keys": ["Globex__2026-11-01__40"] + am["new_keys"],
+        "amendment_keys": am["amendment_keys"], "amendments": am["amendments"],
+        "removed_entries": [], "total_employees_new": 40,
+        "total_employees_removed": 0,
+    }
+    src.hold_amendments(diff)
+    notified = _ledger(src.paths.notified)
+    assert am["new_keys"][0] in notified          # the amendment tail: recorded
+    assert "Globex__2026-11-01__40" not in notified  # the new notice: not yet
+
+    # And the send failing leaves the new notice still owed an email.
+    with patch("warn_publish.warn_notify.notify_if_changes", return_value=False):
+        assert warn_publish.alert_for_state(src, diff, {}) is False
+    assert "Globex__2026-11-01__40" not in _ledger(src.paths.notified)
+
+
+def test_clubbed_row_tells_the_subscriber_how_often_the_feed_moved(tmp_path):
+    """A row collapsed from many daily re-datings must not read as one
+    correction — the email says how many times the filing actually moved."""
+    src = _FakeSource("va", tmp_path)
+    days = [f"2026-08-{d:02d}" for d in range(18, 24)]
+    with patch("warn_publish.warn_notify.notify_if_changes",
+               return_value=True) as mock_notify:
+        for old, new in zip(days, days[1:]):
+            warn_publish.alert_for_state(src, _va_amendment_diff(old, new), {})
+        warn_publish.alert_for_state(src, _new_notice_diff(), {})
+    row = mock_notify.call_args.args[0]["amendments"][0]
+    assert row["revisions"] == 5
+    import warn_notify
+    assert warn_notify._describe_amendment(row) == (
+        "effective date 2026-08-18 → 2026-08-23 (revised 5 times)"
     )

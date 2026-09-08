@@ -143,6 +143,9 @@ class StatePaths:
     amended: Path
     changelog: Path
     raw: Path
+    # Amendments detected on a run with no new notice, held for the next one
+    # (see Source.hold_amendments / warn_publish.alert_for_state).
+    pending: Path
 
     @classmethod
     def for_state(cls, code: str, data_dir: Optional[Path] = None) -> "StatePaths":
@@ -159,6 +162,7 @@ class StatePaths:
             amended=root / "amended_keys.json",
             changelog=root / "changelog.jsonl",
             raw=root / "raw_download",
+            pending=root / "pending_amendments.json",
         )
 
     def ensure(self) -> None:
@@ -271,3 +275,43 @@ class Source(ABC):
         warn_monitor.record_amended_keys(
             diff.get("amendment_keys", []), self.paths.amended
         )
+
+    # -- held amendments ----------------------------------------------------
+    #
+    # An amendment never earns an email of its own: it waits in this state's
+    # pending ledger and rides along with the next alert that carries a
+    # genuinely new notice (warn_publish.alert_for_state).
+
+    def hold_amendments(self, diff: dict) -> list:
+        """Park this run's amendments; return everything now held for the state.
+
+        Their keys go into BOTH alert ledgers immediately — unlike new notices,
+        whose keys are recorded only after a send. Delivery is guaranteed by
+        the pending file, not the ledgers, and the ledgers must stop the
+        revised line from being detected again: as the same amendment on the
+        next feed swing, or — once warn_latest.json carries the revised
+        version — as a brand-new filing, which is exactly what happened before
+        whenever an amendment's email failed to send.
+        """
+        held = warn_monitor.merge_pending_amendments(
+            diff.get("amendments") or [], self.paths.pending
+        )
+        # new_keys is [genuine-new…] + [amendment canonical keys…]; only the
+        # amendment tail is recorded here. The genuine-new head still waits
+        # for a successful send (record_alerted), so a failed alert retries.
+        new_count = diff.get("new_count", 0)
+        warn_monitor.record_notified_keys(
+            list(diff.get("new_keys") or [])[new_count:], self.paths.notified
+        )
+        warn_monitor.record_amended_keys(
+            diff.get("amendment_keys", []), self.paths.amended
+        )
+        return held
+
+    def pending_amendments(self) -> list:
+        """Amendments held for this state, oldest first."""
+        return warn_monitor._load_pending_amendments(self.paths.pending)
+
+    def clear_pending_amendments(self) -> None:
+        """Forget the held amendments — only after they went out in an email."""
+        warn_monitor.clear_pending_amendments(self.paths.pending)

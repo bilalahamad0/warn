@@ -63,6 +63,7 @@ def test_ca_uses_grandfathered_legacy_paths():
     assert ca.paths.latest.name == "warn_latest.json"
     assert ca.paths.latest.parent.name == "data"          # not data/states/ca
     assert ca.paths.notified.parent == ca.paths.latest.parent
+    assert ca.paths.pending == ca.paths.latest.parent / "pending_amendments.json"
 
 
 def test_get_source_unknown_state_raises():
@@ -75,6 +76,7 @@ def test_state_paths_default_layout(tmp_path):
     assert p.root == tmp_path / "states" / "nj"
     assert p.latest == p.root / "warn_latest.json"
     assert p.notified == p.root / "notified_keys.json"
+    assert p.pending == p.root / "pending_amendments.json"
     p.ensure()
     assert p.root.is_dir()
 
@@ -124,6 +126,49 @@ def test_engine_first_run_baselines_then_alerts_only_new(tmp_path):
     latest = json.loads(src.paths.latest.read_text())
     assert all(r["state"] == "ZZ" for r in latest["records"])
     assert latest["source_url"] == FakeSource.source_url
+
+
+def test_held_amendment_is_never_redetected_as_new_or_amended(tmp_path):
+    """The invariant that lets the pipeline hold an amendment instead of
+    emailing it: once held, the revised line must not surface again — not as
+    the same amendment on the next run, and not as a brand-new filing once
+    warn_latest.json carries the revised version."""
+    src = FakeSource(tmp_path)
+    FakeSource.frames = [
+        _frame(("Acme", "2026-01-01", "2026-03-01", 25)),   # baseline
+        _frame(("Acme", "2026-01-01", "2026-04-01", 25)),   # effective date revised
+        _frame(("Acme", "2026-01-01", "2026-04-01", 25)),   # feed unchanged
+        _frame(("Acme", "2026-01-01", "2026-03-01", 25)),   # feed swings back
+        _frame(("Acme", "2026-01-01", "2026-04-01", 25),    # forward again + new
+               ("Globex", "2026-02-01", "2026-05-01", 50)),
+    ]
+    src.run()
+    r2 = src.run()
+    assert r2["diff"]["new_count"] == 0
+    assert r2["diff"]["amendment_count"] == 1
+    revised_key = r2["diff"]["amendment_keys"][0]
+
+    # The pipeline holds it instead of emailing (warn_publish.alert_for_state).
+    held = src.hold_amendments(r2["diff"])
+    assert [h["company"] for h in held] == ["Acme"]
+    assert src.paths.pending.exists()
+    assert revised_key in json.loads(src.paths.notified.read_text())["keys"]
+    assert revised_key in json.loads(src.paths.amended.read_text())["keys"]
+
+    for _ in range(2):  # unchanged feed, then the swing back
+        r = src.run()
+        assert r["diff"]["new_count"] == 0
+        assert r["diff"]["amendment_count"] == 0
+
+    r5 = src.run()
+    assert r5["diff"]["new_count"] == 1
+    assert r5["diff"]["new_entries"][0]["company"] == "Globex"
+    assert r5["diff"]["amendment_count"] == 0
+    # Still waiting for exactly this run's email.
+    assert [h["company"] for h in src.pending_amendments()] == ["Acme"]
+    src.clear_pending_amendments()
+    assert src.pending_amendments() == []
+    assert not src.paths.pending.exists()
 
 
 def test_engine_files_are_isolated_per_state(tmp_path):

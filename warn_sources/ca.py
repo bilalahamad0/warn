@@ -45,6 +45,7 @@ class CaliforniaEDD(Source):
             amended=d / "amended_keys.json",
             changelog=d / "changelog.jsonl",
             raw=raw,
+            pending=d / "pending_amendments.json",
         )
 
     def fetch(self, force: bool = False) -> tuple:

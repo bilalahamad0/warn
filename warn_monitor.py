@@ -14,6 +14,7 @@ import json
 import hashlib
 import logging
 import argparse
+import os
 import re
 from collections import defaultdict
 from datetime import datetime, date, timezone
@@ -54,6 +55,16 @@ NOTIFIED_FILE = DATA_DIR / "notified_keys.json"
 # at most once, and identifies the canonical (post-amendment) version of a
 # notice so the cumulative store can evict the superseded one.
 AMENDED_FILE = DATA_DIR / "amended_keys.json"
+
+# Per-state ledger of amendments detected but NOT yet emailed. An alert goes
+# out only when a state has a genuinely NEW notice; amendments seen on a run
+# with none are held here and clubbed into that state's next new-notice alert
+# (the policy lives in warn_publish.alert_for_state). Entries are collapsed per
+# filing (anchor), so a feed that re-dates one notice every day — Virginia's
+# rescinded AeroFarms filing advanced its effective date daily for weeks,
+# producing a "1 notice amended" email every morning — yields ONE row in the
+# eventual email (first-known → latest), not one row per day.
+PENDING_AMENDMENTS_FILE = DATA_DIR / "pending_amendments.json"
 
 LOG_FORMAT = "%(asctime)s [%(levelname)s] %(message)s"
 logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
@@ -466,7 +477,10 @@ def record_notified_keys(keys, notified_file: Optional[Path] = None) -> None:
     """Add keys to the ledger so those notices never trigger another alert.
 
     Called by warn_publish *after* an alert email is sent successfully, so a
-    failed send is retried on the next run rather than silently swallowed.
+    failed send is retried on the next run rather than silently swallowed —
+    and, for an amendment's canonical key only, at HOLD time
+    (``Source.hold_amendments``): a held amendment is delivered by the
+    pending ledger, not by a retry.
     """
     _record_keys(keys, notified_file if notified_file is not None else NOTIFIED_FILE, "new")
 
@@ -485,9 +499,134 @@ def record_amended_keys(keys, amended_file: Optional[Path] = None) -> None:
     """Add keys to the amended ledger so those amendments are never re-reported.
 
     Called by warn_publish *after* an alert email sends successfully, mirroring
-    record_notified_keys — a failed send is retried next run rather than lost.
+    record_notified_keys, and at HOLD time (``Source.hold_amendments``) so the
+    revision is never detected twice while it waits in the pending ledger.
     """
     _record_keys(keys, amended_file if amended_file is not None else AMENDED_FILE, "amended")
+
+
+def _load_pending_amendments(pending_file: Optional[Path] = None) -> list:
+    """Load the held-amendments ledger, tolerating a missing or corrupt file."""
+    path = pending_file if pending_file is not None else PENDING_AMENDMENTS_FILE
+    if not path.exists():
+        return []
+    try:
+        data = json.loads(path.read_text())
+        items = data.get("amendments", []) if isinstance(data, dict) else data
+        return [a for a in items if isinstance(a, dict)]
+    except Exception as e:
+        # This file is the ONLY thing that still owes these amendments an
+        # email — their keys are already in both alert ledgers — so a
+        # corrupt copy (a half-written save, a merge conflict) must not be
+        # silently overwritten by the next hold. Move it aside for manual
+        # recovery; the pending ledger starts again empty.
+        aside = path.with_name(path.name + ".corrupt")
+        n = 1
+        while aside.exists():  # never clobber an earlier incident's copy
+            n += 1
+            aside = path.with_name(f"{path.name}.corrupt{n}")
+        try:
+            path.replace(aside)
+            log.error(
+                f"Could not read {path.name} ({e}) — moved to {aside.name}; "
+                "the amendments it held need manual recovery."
+            )
+        except OSError as move_err:
+            log.error(
+                f"Could not read {path.name} ({e}) nor move it aside "
+                f"({move_err}) — treating as empty."
+            )
+        return []
+
+
+def _save_pending_amendments(items: list, pending_file: Optional[Path] = None) -> None:
+    """Persist the held-amendments ledger; an empty ledger is no file at all.
+
+    Written to a temporary file and renamed over the target, unlike the key
+    ledgers beside it, because this one cannot fail safe. A torn key ledger
+    reads back as empty and the notice is simply alerted again; a torn pending
+    file is moved aside as ``.corrupt`` and every row it held is already
+    recorded in both key ledgers (``Source.hold_amendments`` writes them at
+    hold time), so ``detect_changes`` can never surface those revisions again.
+    ``os.replace`` is atomic within a filesystem, so a run killed mid-write
+    leaves the previous ledger intact instead of a truncated one.
+    """
+    path = pending_file if pending_file is not None else PENDING_AMENDMENTS_FILE
+    if not items:
+        if path.exists():
+            path.unlink()
+        return
+    path.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "count": len(items),
+        "last_updated": datetime.now(timezone.utc).isoformat(),
+        "amendments": items,
+    }
+    tmp = path.with_name(path.name + ".tmp")
+    tmp.write_text(json.dumps(payload, indent=2, default=str))
+    os.replace(tmp, path)
+
+
+# Fields an amendment dict carries for the *revised* side. A later revision of
+# the same filing overwrites these; the old_* fields keep the values the
+# subscriber last saw, so the clubbed row describes the net change.
+_AMENDMENT_LATEST_FIELDS = (
+    "effective_date",
+    "employees",
+    "new_effective_date",
+    "new_employees",
+    "key",
+)
+
+
+def merge_pending_amendments(amendments, pending_file: Optional[Path] = None) -> list:
+    """Merge this run's amendments into the held ledger; return everything held.
+
+    Pure ledger bookkeeping — the alert ledgers are ``Source.hold_amendments``'
+    job, and this is only ever its helper. One entry per filing
+    (``_anchor_key``): a filing revised again while it is already held keeps
+    its earliest ``old_*`` values and adopts the latest ``new_*`` ones, and
+    ``revisions`` counts how many times the feed touched it. A revision this
+    filing already holds is a no-op, so a feed swing can never double-count.
+    The no-op test is per FILING, not per key: two sites of one company
+    revised to the same date and headcount share a ``_notice_key`` (Arizona's
+    LUKE Holding, Tucson and Yuma, both to ``None``/0) and are two rows.
+    Nothing is written unless something changed.
+    """
+    path = pending_file if pending_file is not None else PENDING_AMENDMENTS_FILE
+    held = _load_pending_amendments(path)
+    by_anchor = {_anchor_key(a): a for a in held}
+    seen = {(_anchor_key(a), a.get("key")) for a in held if a.get("key")}
+    now = datetime.now(timezone.utc).isoformat()
+    changed = False
+    for a in amendments or []:
+        anchor, key = _anchor_key(a), a.get("key")
+        if key and (anchor, key) in seen:
+            continue
+        prior = by_anchor.get(anchor)
+        if prior is None:
+            entry = dict(a)
+            entry["held_since"] = now
+            entry["revisions"] = 1
+            held.append(entry)
+            by_anchor[anchor] = entry
+        else:
+            for field in _AMENDMENT_LATEST_FIELDS:
+                if field in a:
+                    prior[field] = a[field]
+            prior["revisions"] = prior.get("revisions", 1) + 1
+        if key:
+            seen.add((anchor, key))
+        changed = True
+    if changed:
+        _save_pending_amendments(held, path)
+        log.info(f"Holding {len(held)} amendment(s) in {path.name} until a new notice.")
+    return held
+
+
+def clear_pending_amendments(pending_file: Optional[Path] = None) -> None:
+    """Drop the held-amendments ledger — call only after they were emailed."""
+    _save_pending_amendments([], pending_file)
 
 
 def detect_changes(
@@ -640,7 +779,13 @@ def detect_changes(
         "amendment_keys": [a["key"] for a in amendments],
         "new_entries": genuine_new[:50],
         "removed_entries": genuine_removed[:50],
-        "amendments": amendments[:50],
+        # NOT capped, unlike the two lists above. An amendment is delivered
+        # from this list alone (Source.hold_amendments parks it; nothing can
+        # rebuild it later the way warn_x_select rebuilds truncated
+        # new_entries from warn_latest.json), and its key is ledgered the
+        # moment it is held — so any row cut here would be marked handled and
+        # never reach a subscriber. amendment_count == len(amendments).
+        "amendments": amendments,
         "amend_superseded": amend_superseded,
         "total_employees_new": sum(r.get("employees", 0) for r in genuine_new),
         "total_employees_removed": sum(r.get("employees", 0) for r in genuine_removed),

@@ -76,7 +76,9 @@ state feeds (online)
                         docs/us/index.html (redirect stub → /warn/)
   → warn_publish.py   → docs/ca/index.html (California dashboard)
                         docs/ca/data.json (CA public API, "scope": "ca")
-                      → warn_notify.py (Gmail alert if changes detected, per state)
+                      → warn_notify.py (Gmail alert per state when it has NEW
+                          notices; an amendment alone is held and clubbed into
+                          that state's next alert — see below)
                           ↳ warn_subscribers.py (fetch signup list → BCC subscribers)
                       → warn_x.py (X/@USLayoff: compose + queue notable posts;
                           ↳ warn_x_select.py  cross-state grouping, scoring, wording
@@ -244,10 +246,12 @@ loads nothing extra.
 - `warn_snapshot.json` — previous run state used by `warn_diff.py` for comparison
 - `notified_keys.json` — cumulative ledger of every notice key already alerted on. `warn_monitor.detect_changes` keys "new" off this (not a single prior run) so the EDD feed's version churn — it intermittently flip-flops the record count across consecutive fetches — can't re-trigger emails for the same notices. Keys are recorded only after a successful send (`warn_publish` → `warn_monitor.record_notified_keys`).
 - `amended_keys.json` — cumulative ledger of every notice already reported as *amended*. `detect_changes` recognises an amendment when a filing's *anchor* (company + county + city + notice_date, via `_anchor_key`) persists across runs but its `_notice_key` changes (EDD most often revises the effective date). Without this ledger the same single amendment is re-reported as "removed/amended" on every feed swing — the exact bug that put a phantom "⚠️ 1 previously filed notice removed/amended" line in every alert email. Keys are recorded only after a successful send (`warn_publish` → `warn_monitor.record_amended_keys`). The ledger also marks the canonical (post-amendment) version so `update_cumulative` can evict the superseded line and the dashboard never shows a notice twice. `removed_count` now counts only genuine withdrawals (a whole anchor gone from the feed), never a revision.
+- `pending_amendments.json` — per-state ledger of amendments detected but not yet emailed. **An amendment never sends an email on its own.** Virginia's feed re-dated its rescinded AeroFarms notice every day (the "Impact Date" column carried the CSV's render date), so the pipeline mailed "1 Virginia layoff notice amended" every morning for weeks — each true, none news. `warn_publish.alert_for_state` now emails only when a state has a genuinely *new* notice; an amendment-only run parks its amendments here (`Source.hold_amendments` → `warn_monitor.merge_pending_amendments`) and the next new-notice alert for that state carries them, collapsed to **one row per filing** (earliest `old_*` → latest `new_*`) rather than one row per day. The row's `revisions` count is rendered in the email by `warn_notify._describe_amendment` ("effective date 2026-08-18 → 2026-08-31 (revised 13 times)") — without it a row collapsed from thirteen daily re-datings reads as a single correction. The collapse key is the *filing* (`_anchor_key`), never the notice key alone: two sites of one company revised to the same date and headcount share a `_notice_key` (Arizona's LUKE Holding, Tucson and Yuma, both to `None`/0) and must stay two rows. Discipline points that differ from the other ledgers: (1) the amendment's keys go into `notified_keys.json` *and* `amended_keys.json` at hold time, not after a send — delivery is guaranteed by this file, and the ledgers must stop the revised line being re-detected, which once `warn_latest.json` carries the revision would otherwise mean surfacing it as a brand-new notice (the pre-existing failure mode whenever an amendment's email failed to send); (2) the *new*-notice keys still wait for a successful send, so a failed alert retries next run with the held amendments still attached; (3) because this file is the only thing still owing those amendments an email, a corrupt copy is moved aside as `pending_amendments.json.corrupt` for manual recovery rather than silently overwritten by the next hold, and it is the one ledger written through a temp file + `os.replace` — a torn key ledger reads back empty and the notice is simply re-alerted, while a torn pending file loses rows whose keys are already recorded, which `detect_changes` can never surface again; (4) **`detect_changes` does not cap `amendments`** the way it caps `new_entries` and `removed_entries` at 50 — nothing can rebuild a cut amendment later (there is no `warn_latest.json` recovery for amendments as there is for new notices in `warn_x_select`), and its key would already be ledgered, so a cap here would silently lose revisions forever. Held rows are emailed **as held, never re-checked against the feed of the day**: the feeds oscillate between versions across runs and the ledgers, not the latest fetch, define the canonical version (`update_cumulative` collapses to it), so a row dropped because the feed had momentarily swung back would be lost for good — its key is already ledgered and can never be re-reported. A genuine reversion is indistinguishable from a swing and is reported the way the dashboard shows it. Cleared only after the clubbed email sends. The email diff is a copy — the `state_results` diff the X stage reads keeps its `new_keys[:new_count]` contract. Absent when nothing is held. Guarded by `tests/test_sources.py::test_held_amendment_is_never_redetected_as_new_or_amended` and the policy tests in `tests/test_publish.py`.
+- **Virginia nulls the effective date on rescinded rows** (`warn_sources/va.py`, `is_rescinded`). The feed marks a rescission only in the Company cell (`"AeroFarms Inc. - Rescinded"`, `"JELD-WEN-rescinded"`, `"… *notice rescinded"`) and, for the currently-rescinded notice, fills Impact Date with the CSV's render date — a new value every download, which re-keyed the same filing every run (~40 consecutive amendment-only runs, one ledger key per day). A rescinded notice has no impact date, so `effective_date` is None on those rows and the notice key is stable; the row itself stays exactly as published. The switch re-keyed three existing rows, so their undated keys were **seeded by hand into both VA ledgers** in the same change (`AeroFarms Inc. - Rescinded__None__133`, `Pyrotechnique by Grucci Inc. *notice rescinded__None__0`, `JELD-WEN-rescinded__None__138`): with both ledgers already knowing the key, `detect_changes` reports nothing and `update_cumulative` collapses the dated version out on the next run. `tests/test_source_va.py::test_seeded_ledgers_make_the_key_change_silent` pins that transition; without the seed it would still be safe, surfacing as one held amendment rather than a "new notice" alert. **Merging this branch conflicts in both VA ledgers**: `monitor.yml` rewrites them twice daily on `main`, appending the next dated AeroFarms key (`…__2026-09-08__133`) right where the seed inserts `…__None__133`. Resolve by **keeping both sides** — main's dated keys are history and the three undated keys are the seed; taking main's copy alone drops the seed and the next run reports the three rescinded rows as amendments (held, not emailed, so it is untidy rather than harmful).
 - `meta.json` — ETag + file hash + timestamps for cache invalidation
 - `warn_national.json` — unified multi-state dataset (records stamped with `state`), rebuilt every publish run by `warn_sources/aggregate.py`
 - `digest_sent.json` — ledger of monthly-digest periods already emailed (`YYYY-MM`), written only after a successful send so a failure retries next run
-- `states/<code>/` — per-state pipeline files for every non-CA source (same shapes as the top-level CA files: warn_latest, snapshot, cumulative, meta, both key ledgers, changelog)
+- `states/<code>/` — per-state pipeline files for every non-CA source (same shapes as the top-level CA files: warn_latest, snapshot, cumulative, meta, both key ledgers, pending_amendments, changelog)
 - `changelog.jsonl` — append-only log of every detected change
 
 **GitHub Actions** — three workflows, with one deliberate coupling:
@@ -285,7 +289,8 @@ When a run detects new notices, notable ones become posts on
   post carrying the combined headcount; posting inside the loop would put three
   partial numbers under the same brand name seconds apart.
 - **`new_entries` is truncated at 50** (`warn_monitor.py`, end of
-  `detect_changes`) while `new_keys` is complete. A state landing 93 new
+  `detect_changes`) while `new_keys` is complete (`amendments` is deliberately
+  NOT truncated — see `pending_amendments.json` above). A state landing 93 new
   notices hands over 50 records, and silently posting those 50 would understate
   a company's headcount with nothing looking wrong.
   `warn_x_select.collect_new_notices` detects the mismatch and recovers the
@@ -347,11 +352,15 @@ When a run detects new notices, notable ones become posts on
   the dataset carried one, 28 of them big enough to auto-approve). Because only
   the *display* was wrong, every test that checked the numbers passed.
 
-**Adding a step to `warn_publish.run()`**: seven patch stacks in
-`tests/test_publish.py` enumerate every stage by name (one decorator stack, six
-`with` stacks). A new step missing from any of them executes for real in CI.
-Note the decorator stack takes its mocks bottom-up, so inserting a decorator
-shifts the argument list.
+**Adding a step to `warn_publish.run()`**: eight patch stacks in
+`tests/test_publish.py` enumerate every stage by name (one decorator stack, seven
+`with` stacks), and `test_every_run_stage_is_mocked_in_this_file` recomputes
+the seams from `run()`'s source and fails on any stack that misses one. A new
+step missing from any of them executes for real in CI. Note the decorator
+stack takes its mocks bottom-up, so inserting a decorator shifts the argument
+list. A harness that deliberately exercises a seam opts out by naming it in
+its docstring (`"X is NOT mocked here"`), as `_run_notify_loop` does for
+`alert_for_state`.
 
 **Environment** (copy `.env.example` → `.env`):
 - `GH_REPO_TOKEN` — for git push in local runs (read by `warn_publish.git_commit_push`)

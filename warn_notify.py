@@ -208,7 +208,14 @@ def _fmt_emp(v) -> str:
 
 
 def _describe_amendment(a: dict) -> str:
-    """Human description of what EDD changed in an amended notice."""
+    """Human description of what the agency changed in an amended notice.
+
+    A row held across several runs (see ``pending_amendments.json``) is the
+    NET change — the values the subscriber last saw against the values that
+    stand now — so its ``revisions`` count is reported too: without it,
+    "effective date 2026-08-18 → 2026-08-31" reads as one correction when the
+    feed in fact moved that date thirteen times.
+    """
     parts = []
     old_eff, new_eff = a.get("old_effective_date"), a.get("new_effective_date")
     if old_eff != new_eff:
@@ -216,7 +223,14 @@ def _describe_amendment(a: dict) -> str:
     old_emp, new_emp = a.get("old_employees"), a.get("new_employees")
     if old_emp != new_emp:
         parts.append(f"headcount {_fmt_emp(old_emp)} → {_fmt_emp(new_emp)}")
-    return "; ".join(parts) or "details revised"
+    described = "; ".join(parts) or "details revised"
+    try:
+        revisions = int(a.get("revisions") or 1)
+    except (TypeError, ValueError):
+        revisions = 1
+    if revisions > 1:
+        described += f" (revised {revisions} times)"
+    return described
 
 
 def _build_html(
@@ -646,6 +660,11 @@ def send_email(
     ``records`` is an already-fetched subscriber list (see
     ``load_subscriber_records``); when None the list is fetched here.
     Returns True if sent successfully.
+
+    The pipeline only calls this for a diff carrying at least one NEW notice:
+    an amendment-only run is held upstream and clubbed into the state's next
+    alert (``warn_publish.alert_for_state``). The amendment-only subject below
+    remains for direct callers and tests.
     """
     gmail_user, gmail_pass, notify_email = _smtp_config()
     if not gmail_user or not gmail_pass:

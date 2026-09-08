@@ -736,6 +736,85 @@ def git_commit_push(message: str = None) -> bool:
 LEDGER_COMMIT_MESSAGE = "auto: alert ledgers (site build failed) [skip ci]"
 
 
+def _club_held_amendments(diff: dict, held: list) -> dict:
+    """The diff to EMAIL: this run's new notices plus every amendment held for
+    the state — the ones from this run included, since hold_amendments ran
+    first.
+
+    A shallow copy, never the diff in ``state_results``: that object feeds
+    the X stage, whose ``new_keys[:new_count]`` contract must stay intact,
+    and the changelog has already recorded what this run actually detected.
+    """
+    clubbed = dict(diff)
+    clubbed["amendments"] = list(held)
+    clubbed["amendment_count"] = len(held)
+    clubbed["amendment_keys"] = [a["key"] for a in held if a.get("key")]
+    return clubbed
+
+
+def alert_for_state(source, diff: dict, summary: dict, records=None) -> bool:
+    """One state's alert policy: email on a genuinely NEW notice, never on an
+    amendment alone. Returns True when an alert went out.
+
+    An amendment — a known filing whose effective date or headcount was
+    revised — does not earn subscribers an email of its own. Virginia showed
+    why: its feed re-dates a rescinded AeroFarms notice every day, so the
+    pipeline mailed "1 Virginia layoff notice amended" every morning for
+    weeks, each one true and none of them news. Amendments are instead HELD
+    in the state's pending ledger (``source.hold_amendments``) and clubbed
+    into the next alert that carries a new notice, collapsed to one row per
+    filing.
+
+    Ledger discipline, unchanged for what a subscriber has not yet seen: the
+    new-notice keys are recorded only after a successful send, so a failed
+    alert retries next run — and the held amendments simply stay held for
+    that retry. The pending ledger lives under ``data/`` beside the alert
+    ledgers and is persisted by the same commit paths (see commit_ledgers).
+    """
+    code = source.code.upper()
+    new_count = diff.get("new_count", 0)
+    amend_count = diff.get("amendment_count", 0)
+    if new_count <= 0 and amend_count <= 0:
+        return False
+
+    held = []
+    if amend_count > 0:
+        held = source.hold_amendments(diff)
+
+    if new_count <= 0:
+        log.info(
+            f"[{code}] {amend_count} amendment(s) this run, {len(held)} held "
+            "in total — no new notice, so no email until one arrives."
+        )
+        return False
+
+    if not held:
+        held = source.pending_amendments()
+    # Held rows are emailed as held — deliberately NOT re-checked against the
+    # feed as it stands today. The feeds oscillate between versions across
+    # runs, and the ledgers, not the current fetch, define the canonical
+    # version (update_cumulative collapses to it); a row dropped because the
+    # feed momentarily swung back could never be re-reported, since its key
+    # is already ledgered. A genuine reversion looks identical to a swing
+    # and is reported the way the dashboard shows it.
+    if held:
+        log.info(
+            f"[{code}] clubbing {len(held)} held amendment(s) into the "
+            f"{new_count}-notice alert."
+        )
+
+    sent = warn_notify.notify_if_changes(
+        _club_held_amendments(diff, held),
+        summary,
+        state=code,
+        records=records,
+    )
+    if sent:
+        source.record_alerted(diff)
+        source.clear_pending_amendments()
+    return bool(sent)
+
+
 def commit_ledgers(message: str = None) -> bool:
     """Commit and push ONLY ``data/`` — the alert ledgers — leaving docs/ alone.
 
@@ -743,10 +822,11 @@ def commit_ledgers(message: str = None) -> bool:
     fails, run() must still exit non-zero (so the last good page stays
     published), but by that point the notifications and the digest have already
     gone out and their ledgers (notified_keys.json, amended_keys.json,
-    digest_sent.json, and the per-state copies under data/states/) were written
-    locally. In CI the workspace is thrown away, so unless those ledgers are
-    committed, the next scheduled run re-detects the same notices as new and
-    re-emails every subscriber — repeating every 12h until the build is fixed.
+    pending_amendments.json, digest_sent.json, and the per-state copies under
+    data/states/) were written locally. In CI the workspace is thrown away, so
+    unless those ledgers are committed, the next scheduled run re-detects the
+    same notices as new and re-emails every subscriber — repeating every 12h
+    until the build is fixed.
 
     Persisting the ledgers is decoupled from publishing the site: only data/
     is staged, so the broken docs/ output is never committed. Best-effort by
@@ -1891,20 +1971,18 @@ def run(no_push: bool = False, force: bool = False, skip_history: bool = False,
     # instead of being lost. Each state's ledgers live with its source paths;
     # this is what stops feed version churn from re-alerting the same notices
     # on consecutive runs (see warn_monitor.detect_changes).
+    #
+    # An amendment alone never sends: alert_for_state holds it for the
+    # state's next new notice and clubs the two into one email.
     for source in warn_sources.all_sources():
         res = state_results.get(source.code) or {}
         diff = res.get("diff", {})
         summary = res.get("summary", {})
         if diff.get("new_count", 0) > 0 or diff.get("amendment_count", 0) > 0:
             try:
-                sent = warn_notify.notify_if_changes(
-                    diff,
-                    summary,
-                    state=source.code.upper(),
-                    records=subscriber_records,
+                alert_for_state(
+                    source, diff, summary, records=subscriber_records
                 )
-                if sent:
-                    source.record_alerted(diff)
             except Exception as e:
                 log.warning(
                     f"Email notification failed for {source.code.upper()} "

@@ -175,6 +175,12 @@ Both dashboards have a **name + email signup form**. Visitors who subscribe get
 the same alert email the pipeline sends whenever new WARN notices appear, and the
 signup count doubles as a simple user-base metric.
 
+An alert goes out only when a state files a genuinely **new** notice. A revision
+to a notice you were already told about — an effective date moved, a headcount
+corrected — is held and included in that state's next alert, collapsed to one
+line per filing, so a feed that re-dates the same notice every day never turns
+into a daily email.
+
 Signing up is **additive**: a returning address keeps every state it already
 subscribed to and gains whatever was just picked. Neither form shows you your
 current selection, so neither is allowed to replace it. To stop alerts for a

@@ -732,3 +732,39 @@ def test_html_footer_lands_inside_the_document_body():
 def test_footer_appenders_are_no_ops_without_a_url():
     assert warn_notify._append_unsubscribe_html("<p>hi</p>", "") == "<p>hi</p>"
     assert warn_notify._append_unsubscribe_text("hi", "") == "hi"
+
+
+def test_send_email_subject_clubs_held_amendments_with_the_new_notice(mock_env):
+    """The one email a subscriber gets leads with the new filing; the held
+    amendments ride along as a suffix and a section, never as their own mail
+    (the pipeline never calls send_email for an amendment-only diff — see
+    warn_publish.alert_for_state)."""
+    diff = {
+        "new_count": 1, "amendment_count": 2, "removed_count": 0,
+        "total_employees_new": 40,
+        "new_entries": [{"company": "Globex", "employees": 40,
+                         "effective_date": "2026-11-01", "county": "Fairfax"}],
+        "amendments": [
+            {"company": "AeroFarms Inc. - Rescinded", "county": "",
+             "old_effective_date": "2026-08-18", "new_effective_date": "2026-08-31",
+             "old_employees": 133, "new_employees": 133, "revisions": 13},
+            {"company": "TekSynap Corporation", "county": "",
+             "old_effective_date": "2026-10-14", "new_effective_date": "2026-10-14",
+             "old_employees": 69, "new_employees": 9},
+        ],
+    }
+    with patch("warn_notify._plan_deliveries", return_value=[object()]) as plan, \
+         patch("warn_notify._deliver", return_value=True):
+        assert warn_notify.send_email(
+            diff, {"total_records": 1}, state="VA", records=[]
+        ) is True
+    subject = plan.call_args.args[0]
+    assert "1 new Virginia layoff notice" in subject
+    assert subject.endswith("+ 2 amended")
+
+    html = warn_notify._build_html(diff, {"total_records": 1}, "VA")
+    assert "Globex" in html
+    assert "effective date 2026-08-18 → 2026-08-31" in html
+    assert "headcount 69 → 9" in html
+    text = warn_notify._build_text(diff, {"total_records": 1}, "VA")
+    assert "Amended notices: 2" in text

@@ -20,7 +20,7 @@ Field crosswalk vendored from Big Local News' Apache-2.0 warn-transformer
 
     Company            -> company         (required)
     Notice Date        -> notice_date
-    Impact Date        -> effective_date
+    Impact Date        -> effective_date  (None on a rescinded row, see below)
     Employees Affected -> employees       (0 when not published)
     Location           -> city            (see below)
     Notice Type        -> layoff_type     (verbatim: "Closure", "Layoff",
@@ -40,6 +40,18 @@ Person" and "Collective Bargaining Unit" have no unified-schema field and
 are dropped. Virginia publishes no county, street address, or industry.
 Backfill: the CSV serves the full history (2010-present, ~1100 notices as
 of 2026).
+
+Rescinded notices: the feed marks a rescission only in the Company cell
+("AeroFarms Inc. - Rescinded", "JELD-WEN-rescinded", "Pyrotechnique by
+Grucci Inc. *notice rescinded"; Notice Type never says so). A rescinded
+notice has no impact date — the layoff it announced will not happen — yet
+the column is still filled, and for the one currently-rescinded notice it
+carries the CSV's *render date*, advancing by a day on every download.
+Read as a date, that re-keyed the same filing every run: ~40 consecutive
+amendment-only runs, a "1 Virginia notice amended" alert every morning,
+and a ledger key per day. So ``effective_date`` is None on any row whose
+company cell marks it rescinded; the row itself — name, type, headcount —
+stays exactly as published, because a rescission is information.
 """
 
 import html
@@ -75,6 +87,14 @@ _DATE_CORRECTIONS = {"10/01/1973": None}
 
 _WS = re.compile(r"\s+")
 _ISO_DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+
+# A company cell that marks the notice rescinded (see the module docstring).
+_RESCINDED = re.compile(r"rescind", re.IGNORECASE)
+
+
+def is_rescinded(company) -> bool:
+    """True when Virginia's Company cell marks the notice as rescinded."""
+    return bool(_RESCINDED.search(str(company or "")))
 
 
 def _clean_text(value) -> str:
@@ -189,11 +209,18 @@ class VirginiaWorks(Source):
             if not company or company == "Company":
                 continue  # company is required; drop stray header rows
             employees = warn_monitor._safe_int(row.get("Employees Affected"))
+            # A rescinded notice has no impact date; the feed's value there is
+            # a placeholder (for the current one, the render date — a new
+            # value every download), never a date the layoff takes effect.
+            effective_date = (
+                None if is_rescinded(company)
+                else _clean_date(row.get("Impact Date"))
+            )
             records.append(
                 {
                     "company": company,
                     "notice_date": _clean_date(row.get("Notice Date")),
-                    "effective_date": _clean_date(row.get("Impact Date")),
+                    "effective_date": effective_date,
                     "employees": employees if employees is not None else 0,
                     "layoff_type": _clean_text(row.get("Notice Type", "")),
                     "city": _clean_location(row.get("Location", "")),
