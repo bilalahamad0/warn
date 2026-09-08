@@ -1001,6 +1001,17 @@
   "industry": "Manufacturing "
  },
  {
+  "company": "Wells Fargo",
+  "address": "800 S Jordan Creek Pkwy",
+  "city": "West Des Moines",
+  "county": "Polk",
+  "layoff_type": "Amendment - Additional Employees",
+  "employees": 5,
+  "notice_date": "2026-09-01 00:00:00",
+  "effective_date": "2026-10-31 00:00:00",
+  "industry": "Finance and Insurance "
+ },
+ {
   "company": "John Deere Ottumwa Works ",
   "address": "928 E Vine St",
   "city": "Ottumwa",

@@ -1,41 +1,16 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-09-02 02:15:12 UTC
+**Generated:** 2026-09-08 16:03:10 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 179 | 36 | +0/+143 |
-| Total employees | 9,425 | 2,560 | -6,865 |
+| Total records | 36 | 36 | +0/+0 |
+| Total employees | 2,560 | 2,560 | +0 |
 
 ### ✅ No new entries.
-
-### ❌ Removed Entries (143 records)
-
-| Company | Employees | Effective Date |
-|---------|-----------|----------------|
-| 24Hr Homecare, LLC | 738 | 2026-09-15 |
-| Jabil Inc. | 382 | 2026-11-23 |
-| Visa | 320 | 2026-10-01 |
-| LeeMAH Electronics | 205 | 2026-10-16 |
-| Bumble Bee Foods, LLC | 197 | 2026-11-19 |
-| Power Safety Service, LLC | 189 | 2026-11-06 |
-| Sodexo | 164 | 2026-09-30 |
-| ServiceNow, Inc. | 154 | 2026-09-28 |
-| LAZ Parking California (9610 Sky Way) | 139 | 2026-10-06 |
-| Chime Financial, Inc. | 135 | 2026-09-30 |
-| Sharp Metropolitan Medical Campus - Sharp Mesa Vista | 134 | 2026-10-10 |
-| ServiceNow, Inc. | 133 | 2026-09-28 |
-| Synopsys, Inc. | 128 | 2026-12-16 |
-| Silgan Containers | 120 | 2026-10-12 |
-| Roskam Baking Company dba Organic Milling | 115 | 2026-10-02 |
-| Staples Fulfillment Center | 109 | 2026-10-09 |
-| Pixar | 108 | 2026-09-26 |
-| Cellares Corporation | 100 | 2026-10-20 |
-| Essendant Co. | 99 | 2026-10-03 |
-| Volume Services, Inc. (Sodexo) | 93 | 2026-10-16 |
 
 ---
 ## 📁 File vs Git Comparison
@@ -48,6 +23,7 @@
 ```
 M data/changelog.jsonl
  M data/states/ak/changelog.jsonl
+ M data/states/ak/meta.json
  M data/states/ak/warn_cumulative.json
  M data/states/ak/warn_latest.json
  M data/states/ak/warn_snapshot.json
@@ -96,7 +72,6 @@ M data/changelog.jsonl
  M data/states/hi/warn_snapshot.json
  M data/states/ia/changelog.jsonl
  M data/states/ia/meta.json
- M data/states/ia/raw_download
  M data/states/ia/warn_cumulative.json
  M data/states/ia/warn_latest.json
  M data/states/ia/warn_snapshot.json
@@ -146,6 +121,7 @@ M data/changelog.jsonl
  M data/states/me/warn_snapshot.json
  M data/states/mi/changelog.jsonl
  M data/states/mi/meta.json
+ M data/states/mi/raw_download
  M data/states/mi/warn_cumulative.json
  M data/states/mi/warn_latest.json
  M data/states/mi/warn_snapshot.json
@@ -159,6 +135,7 @@ M data/changelog.jsonl
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
+ M data/states/mt/meta.json
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
@@ -173,11 +150,13 @@ M data/changelog.jsonl
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
+ M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
  M data/states/nj/changelog.jsonl
  M data/states/nj/meta.json
+ M data/states/nj/raw_download.xlsx
  M data/states/nj/warn_cumulative.json
  M data/states/nj/warn_latest.json
  M data/states/nj/warn_snapshot.json
@@ -203,13 +182,11 @@ M data/changelog.jsonl
  M data/states/or/changelog.jsonl
  M data/states/or/latest.xlsx
  M data/states/or/meta.json
- M data/states/or/raw_download
  M data/states/or/warn_cumulative.json
  M data/states/or/warn_latest.json
  M data/states/or/warn_snapshot.json
  M data/states/pa/changelog.jsonl
  M data/states/pa/meta.json
- M data/states/pa/raw_download
  M data/states/pa/warn_cumulative.json
  M data/states/pa/warn_latest.json
  M data/states/pa/warn_snapshot.json
@@ -239,7 +216,6 @@ M data/changelog.jsonl
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
- M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -255,7 +231,6 @@ M data/changelog.jsonl
  M data/states/wa/warn_snapshot.json
  M data/states/wi/changelog.jsonl
  M data/states/wi/meta.json
- M data/states/wi/raw_download
  M data/states/wi/warn_cumulative.json
  M data/states/wi/warn_latest.json
  M data/states/wi/warn_snapshot.json
@@ -271,23 +246,23 @@ M data/changelog.jsonl
 
 **Recent commits:**
 ```
-9b0914a8 auto: WARN data update [skip ci]
-596f85b6 auto: WARN data update [skip ci]
-9d8f6f17 auto: WARN data update [skip ci]
-6a9854ef auto: WARN data update [skip ci]
-d28321f0 auto: WARN data update [skip ci]
+76ce2ddc auto: WARN data update [skip ci]
+0dacaa17 auto: WARN data update [skip ci]
+fda24f55 auto: WARN data update [skip ci]
+37e29899 auto: WARN data update [skip ci]
+ac8a49c6 chore: weekly AI metrics update [skip actions]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
-- `2026-09-02T01:59:49.991934+00:00` — +0 added, -143 removed, 0 employees (new)
-- `2026-09-01T15:59:46.028092+00:00` — +29 added, -0 removed, 1,583 employees (new)
-- `2026-09-01T02:40:39.580780+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-08-31T18:32:48.806833+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-08-31T02:19:44.594772+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-08-30T15:52:00.944802+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-08-30T02:23:18.513480+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-08-29T16:10:22.482851+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-08-29T04:50:39.489722+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-08-28T21:52:26.893553+00:00` — +0 added, -0 removed, 0 employees (new)
+- `2026-09-08T15:46:49.592904+00:00` — +0 added, -0 removed, 0 employees (new)
+- `2026-09-08T02:10:12.286697+00:00` — +0 added, -0 removed, 0 employees (new)
+- `2026-09-07T16:58:34.421162+00:00` — +0 added, -0 removed, 0 employees (new)
+- `2026-09-07T01:53:45.141174+00:00` — +0 added, -0 removed, 0 employees (new)
+- `2026-09-06T14:44:13.414063+00:00` — +0 added, -0 removed, 0 employees (new)
+- `2026-09-06T01:57:09.430328+00:00` — +0 added, -0 removed, 0 employees (new)
+- `2026-09-05T14:19:13.646772+00:00` — +0 added, -0 removed, 0 employees (new)
+- `2026-09-05T02:01:38.755007+00:00` — +0 added, -0 removed, 0 employees (new)
+- `2026-09-04T15:32:06.520830+00:00` — +0 added, -149 removed, 0 employees (new)
+- `2026-09-04T02:00:08.898295+00:00` — +6 added, -0 removed, 879 employees (new)

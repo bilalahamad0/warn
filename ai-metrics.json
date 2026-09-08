@@ -1,6 +1,6 @@
 {
   "projectId": "warn",
-  "lastUpdated": "2026-08-30",
+  "lastUpdated": "2026-09-08",
   "aiContribution": 88,
   "agents": [
     {
@@ -17,7 +17,7 @@
     {
       "name": "Cursor",
       "provider": "Anthropic",
-      "period": "Apr 2026 – Present",
+      "period": "Apr 2026 \u2013 Present",
       "models": [
         "Claude Sonnet 4"
       ],
@@ -27,18 +27,19 @@
     {
       "name": "Claude Code",
       "provider": "Anthropic",
-      "period": "Jul 2026",
+      "period": "Jul 2026 \u2013 Present",
       "models": [
+        "Claude Opus 5",
         "Claude Fable 5",
-        "Claude Opus 4.8",
-        "Claude Opus 5"
+        "Claude Fable 5.1",
+        "Claude Opus 4.8"
       ],
-      "tokens": 278143352,
+      "tokens": 291411151,
       "role": "50-state expansion, national dataset & US dashboard"
     }
   ],
-  "totalTokens": 278343352,
-  "totalCommits": 442,
+  "totalTokens": 291611151,
+  "totalCommits": 457,
   "linesOfCode": 43890,
   "devCycleDays": 31,
   "manualEstimateDays": 93,
