@@ -1,9 +1,9 @@
 {
-  "total_records": 4787,
-  "total_employees": 418238,
+  "total_records": 4789,
+  "total_employees": 418331,
   "date_range_start": "2016-01-04",
-  "date_range_end": "2026-08-04",
-  "last_updated": "2026-09-09T02:25:52.188406+00:00",
+  "date_range_end": "2026-08-25",
+  "last_updated": "2026-09-09T15:52:25.820630+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -57448,6 +57448,30 @@
       "county": "New York",
       "city": "",
       "address": "50 W 23rd Street New York, NY, 10010",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Hudson Valley Fish Farm, Inc.",
+      "notice_date": "2026-07-30",
+      "effective_date": "2026-10-28",
+      "employees": 47,
+      "layoff_type": "Closure Permanent",
+      "county": "Columbia",
+      "city": "",
+      "address": "4269 Route 9 Hudson, NY, 12534",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Masonite Corporation d/b/a Owens Corning Doors",
+      "notice_date": "2026-08-25",
+      "effective_date": "2026-11-23",
+      "employees": 46,
+      "layoff_type": "Closure Permanent",
+      "county": "Broome",
+      "city": "",
+      "address": "970 US-11 Kirkwood, NY, 13795",
       "industry": ""
     }
   ]

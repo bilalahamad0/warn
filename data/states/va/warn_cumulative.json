@@ -3,7 +3,7 @@
   "total_employees": 130826,
   "date_range_start": "2010-07-29",
   "date_range_end": "2026-08-28",
-  "last_updated": "2026-09-09T02:26:23.490267+00:00",
+  "last_updated": "2026-09-09T15:52:52.311477+00:00",
   "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
   "records": [
     {
@@ -8960,18 +8960,6 @@
     },
     {
       "state": "VA",
-      "company": "Pyrotechnique by Grucci Inc. *notice rescinded",
-      "notice_date": "2016-04-04",
-      "effective_date": "2016-04-08",
-      "employees": 0,
-      "layoff_type": "Layoff",
-      "county": "",
-      "city": "Radford",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "VA",
       "company": "Alorica",
       "notice_date": "2016-03-30",
       "effective_date": "2016-05-31",
@@ -11564,18 +11552,6 @@
     },
     {
       "state": "VA",
-      "company": "JELD-WEN-rescinded",
-      "notice_date": "2012-11-06",
-      "effective_date": "2012-12-31",
-      "employees": 138,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Christianburg",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "VA",
       "company": "Target",
       "notice_date": "2012-11-05",
       "effective_date": "2013-02-02",
@@ -13474,11 +13450,35 @@
       "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-09-09",
+      "effective_date": null,
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",
       "city": "Ringgold",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "Pyrotechnique by Grucci Inc. *notice rescinded",
+      "notice_date": "2016-04-04",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Radford",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "JELD-WEN-rescinded",
+      "notice_date": "2012-11-06",
+      "effective_date": null,
+      "employees": 138,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Christianburg",
       "address": "",
       "industry": ""
     }
