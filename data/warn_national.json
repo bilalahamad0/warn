@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-08T16:03:11.256677+00:00",
+  "last_updated": "2026-09-09T02:29:08.518998+00:00",
   "states_live": 47,
-  "total_records": 60184,
-  "total_employees": 6484750,
+  "total_records": 60185,
+  "total_employees": 6484840,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -36,8 +36,8 @@
       "name": "Colorado",
       "agency": "Colorado Department of Labor and Employment",
       "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
-      "total_records": 854,
-      "total_employees": 86778
+      "total_records": 855,
+      "total_employees": 86868
     },
     "CT": {
       "name": "Connecticut",
@@ -194042,6 +194042,18 @@
       "city": "",
       "address": "",
       "industry": "31,1830: Bakery & Tortilla Manufacturing"
+    },
+    {
+      "state": "CO",
+      "company": "Montrose Forest Products",
+      "notice_date": "2026-08-08",
+      "effective_date": "2026-09-08",
+      "employees": 90,
+      "layoff_type": "",
+      "county": "Rural Allaince (Montrose)",
+      "city": "",
+      "address": "",
+      "industry": "31-33: Manufacturing"
     },
     {
       "state": "CT",
@@ -643839,7 +643851,7 @@
       "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-09-08",
+      "effective_date": "2026-09-09",
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",

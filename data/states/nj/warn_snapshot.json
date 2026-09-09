@@ -1,9 +1,9 @@
 {
-  "total_records": 2367,
-  "total_employees": 354386,
+  "total_records": 2368,
+  "total_employees": 354440,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-09-08T02:23:44.672525+00:00",
+  "last_updated": "2026-09-08T15:59:37.176275+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -1167,6 +1167,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Weehawken",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Merck & Co",
+      "notice_date": null,
+      "effective_date": "2026-12-11",
+      "employees": 54,
+      "layoff_type": "",
+      "county": "",
+      "city": "Rahway",
       "address": "",
       "industry": ""
     },
