@@ -179,7 +179,9 @@ An alert goes out only when a state files a genuinely **new** notice. A revision
 to a notice you were already told about — an effective date moved, a headcount
 corrected — is held and included in that state's next alert, collapsed to one
 line per filing, so a feed that re-dates the same notice every day never turns
-into a daily email.
+into a daily email. If no new notice arrives within a month, the held
+revisions are sent on their own, so nothing is quietly dropped in a state that
+rarely files.
 
 Signing up is **additive**: a returning address keeps every state it already
 subscribed to and gains whatever was just picked. Neither form shows you your

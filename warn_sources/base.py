@@ -20,6 +20,7 @@ grandfathered at the historical top-level ``data/*.json`` paths so the
 existing dashboard, history merge, and cron pipelines keep working unchanged.
 """
 
+import json
 import logging
 import re
 from abc import ABC, abstractmethod
@@ -276,11 +277,40 @@ class Source(ABC):
             diff.get("amendment_keys", []), self.paths.amended
         )
 
+    def standing_summary(self) -> dict:
+        """This state's durable totals, for a mail that is not about one run.
+
+        The CUMULATIVE store first, deliberately: it is the union of every
+        notice ever seen, so a truncated fetch cannot deflate it, whereas
+        ``warn_latest.json`` has already been overwritten with that short file
+        by the time the notify loop runs (``save_latest`` precedes it). An
+        aged-out amendment flush reporting "Total on file: 3" for a state
+        holding 1,067 filings would be its own small lie, told by the same
+        feed swing that ``_amendments_only_diff`` already refuses to report as
+        withdrawals. It is also the number the dashboards show. Empty if the
+        state has never run.
+        """
+        for path in (self.paths.cumulative, self.paths.latest):
+            if not path.exists():
+                continue
+            try:
+                payload = json.loads(path.read_text())
+            except Exception:  # noqa: BLE001 — a totals line is not worth a raise
+                continue
+            return {
+                "total_records": payload.get("total_records", 0),
+                "total_employees": payload.get("total_employees", 0),
+            }
+        return {}
+
     # -- held amendments ----------------------------------------------------
     #
-    # An amendment never earns an email of its own: it waits in this state's
-    # pending ledger and rides along with the next alert that carries a
-    # genuinely new notice (warn_publish.alert_for_state).
+    # An amendment does not earn an email of its own while there is any
+    # prospect of clubbing it: it waits in this state's pending ledger and
+    # rides along with the next alert carrying a genuinely new notice. Only
+    # when the wait passes warn_monitor.PENDING_MAX_AGE_DAYS is it sent alone
+    # (warn_publish.alert_for_state), because by then "wait for a new notice"
+    # has become "never" for the states that rarely file.
 
     def hold_amendments(self, diff: dict) -> list:
         """Park this run's amendments; return everything now held for the state.

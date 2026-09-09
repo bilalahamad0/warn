@@ -768,3 +768,72 @@ def test_send_email_subject_clubs_held_amendments_with_the_new_notice(mock_env):
     assert "headcount 69 → 9" in html
     text = warn_notify._build_text(diff, {"total_records": 1}, "VA")
     assert "Amended notices: 2" in text
+
+
+def test_amendment_text_omits_an_empty_place_and_falls_back_to_city():
+    """Several states publish no county — 'Acme Inc. ()' is worse than plain."""
+    base = {"new_count": 0, "amendment_count": 1, "total_employees_new": 0,
+            "new_entries": []}
+
+    def line(**over):
+        a = {"company": "AeroFarms Inc. - Rescinded", "county": "", "city": "",
+             "old_effective_date": "2026-07-21", "new_effective_date": "2026-08-31",
+             "old_employees": 133, "new_employees": 133}
+        a.update(over)
+        text = warn_notify._build_text(dict(base, amendments=[a]), {}, "VA")
+        return next(ln for ln in text.splitlines() if "AeroFarms" in ln)
+
+    assert line().startswith("  AeroFarms Inc. - Rescinded — ")
+    assert "()" not in line()
+    assert "(Ringgold)" in line(city="Ringgold")
+    assert "(Pittsylvania)" in line(county="Pittsylvania", city="Ringgold")
+
+
+def _amendment_only_diff():
+    """What warn_publish._amendments_only_diff hands the renderer on a flush."""
+    return {
+        "new_count": 0, "removed_count": 0, "amendment_count": 1,
+        "new_entries": [], "removed_entries": [],
+        "total_employees_new": 0, "total_employees_removed": 0,
+        "amendments": [{
+            "company": "AeroFarms Inc. - Rescinded", "county": "",
+            "city": "Ringgold", "revisions": 13,
+            "old_effective_date": "2026-07-21",
+            "new_effective_date": "2026-08-31",
+            "old_employees": 133, "new_employees": 133,
+        }],
+    }
+
+
+def test_an_amendment_only_mail_reads_as_an_update_not_a_zeroed_alert():
+    """The aged-out flush is this path's only production caller. It must not
+    lead with "New notices: 0" above the one thing it is reporting."""
+    diff = _amendment_only_diff()
+    summary = {"total_records": 1123, "total_employees": 60411}
+
+    text = warn_notify._build_text(diff, summary, "VA")
+    assert text.splitlines()[0] == "Virginia WARN Update"
+    assert "New notices" not in text
+    assert "Amended notices: 1" in text
+    assert "revised 13 times" in text
+
+    html = warn_notify._build_html(diff, summary, "VA")
+    assert "<title>WARN Update</title>" in html
+    assert "📝 Virginia WARN Update" in html
+    assert "WARN Alert" not in html
+    assert "Amended Notices" in html
+
+
+def test_a_new_notice_mail_still_reads_as_an_alert():
+    """The Update wording is scoped to amendment-only mail."""
+    diff = dict(_amendment_only_diff(), new_count=1, total_employees_new=40,
+                new_entries=[{"company": "Globex", "employees": 40,
+                              "effective_date": "2026-11-01",
+                              "county": "Fairfax"}])
+    text = warn_notify._build_text(diff, {"total_records": 5}, "VA")
+    assert text.splitlines()[0] == "Virginia WARN Alert"
+    assert "New notices: 1 (40 employees)" in text
+
+    html = warn_notify._build_html(diff, {"total_records": 5}, "VA")
+    assert "<title>WARN Alert</title>" in html
+    assert "📋 Virginia WARN Alert" in html

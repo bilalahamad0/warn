@@ -17,7 +17,7 @@ import argparse
 import os
 import re
 from collections import defaultdict
-from datetime import datetime, date, timezone
+from datetime import datetime, date, timedelta, timezone
 from pathlib import Path
 
 from typing import Optional
@@ -622,6 +622,57 @@ def merge_pending_amendments(amendments, pending_file: Optional[Path] = None) ->
         _save_pending_amendments(held, path)
         log.info(f"Holding {len(held)} amendment(s) in {path.name} until a new notice.")
     return held
+
+
+# How long a held amendment may wait for its state's next NEW notice before it
+# is sent on its own. Holding forever is not deferral but permanent
+# suppression: the revised key is recorded in both alert ledgers the moment the
+# row is held, so ``detect_changes`` can never surface it again by any route.
+# Roughly a quarter of the live sources go months without a new filing — over
+# the 98 runs logged to 2026-09-08, Alaska, Connecticut, Kansas, North Dakota,
+# New Mexico, Rhode Island, South Dakota and Vermont recorded none at all — so
+# for them "until a new notice arrives" is indistinguishable from "never".
+# Thirty days keeps a churning feed to one mail a month rather than one a
+# morning (Virginia's rescinded filing re-dated itself daily for weeks) while
+# guaranteeing every revision is eventually delivered.
+PENDING_MAX_AGE_DAYS = 30
+
+
+def overdue_amendments(held, *, max_age_days: Optional[int] = None, now=None) -> list:
+    """Held rows that have waited longer than the cap — see PENDING_MAX_AGE_DAYS.
+
+    Age runs from ``held_since``, stamped when the row was FIRST held and
+    deliberately not refreshed when a later revision merges into it: the clock
+    measures how long the subscriber has been waiting, not how recently the
+    feed twitched. A row whose stamp is missing or unparseable counts as
+    overdue — erring toward delivery, since the alternative is the silent
+    suppression this cap exists to prevent.
+    """
+    limit = PENDING_MAX_AGE_DAYS if max_age_days is None else max_age_days
+    cutoff = (now or datetime.now(timezone.utc)) - timedelta(days=limit)
+    overdue = []
+    for a in held or []:
+        stamp = a.get("held_since")
+        # A trailing "Z" is stripped rather than swapped for "+00:00": this
+        # repo's own changelogs carry the doubled "+00:00Z" form, which a
+        # naive replace turns into a second offset and an unparseable string.
+        text = str(stamp or "").strip()
+        if text.endswith("Z"):
+            text = text[:-1]
+        try:
+            since = datetime.fromisoformat(text)
+        except (TypeError, ValueError):
+            log.warning(
+                f"Held amendment for {a.get('company', '?')} has an unreadable "
+                f"held_since ({stamp!r}) — treating it as overdue."
+            )
+            overdue.append(a)
+            continue
+        if since.tzinfo is None:
+            since = since.replace(tzinfo=timezone.utc)
+        if since <= cutoff:
+            overdue.append(a)
+    return overdue
 
 
 def clear_pending_amendments(pending_file: Optional[Path] = None) -> None:

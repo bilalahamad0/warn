@@ -1,6 +1,7 @@
 import pytest
 import pandas as pd
 import json
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 import warn_monitor
@@ -540,3 +541,77 @@ def test_pending_ledger_write_is_atomic(tmp_path):
     held = warn_monitor._load_pending_amendments(pending)
     assert [h["company"] for h in held] == ["AeroFarms Inc. - Rescinded"]
     assert not list(tmp_path.glob("*.corrupt*"))
+
+
+# ---------------------------------------------------------------------------
+# The age cap on held amendments
+# ---------------------------------------------------------------------------
+
+
+def _aged(days, now, **extra):
+    a = _amendment("2026-07-21", "2026-07-22")
+    a["held_since"] = (now - timedelta(days=days)).isoformat()
+    a.update(extra)
+    return a
+
+
+def test_overdue_is_measured_from_the_cap():
+    now = datetime(2026, 9, 9, tzinfo=timezone.utc)
+    cap = warn_monitor.PENDING_MAX_AGE_DAYS
+    held = [_aged(cap + 1, now, company="Old"), _aged(cap - 1, now, company="Young")]
+    overdue = warn_monitor.overdue_amendments(held, now=now)
+    assert [a["company"] for a in overdue] == ["Old"]
+    # Exactly at the cap counts as overdue — the wait is "no longer than N days".
+    assert len(warn_monitor.overdue_amendments([_aged(cap, now)], now=now)) == 1
+    assert warn_monitor.overdue_amendments([], now=now) == []
+
+
+def test_overdue_errs_toward_delivery_on_an_unreadable_stamp():
+    """Silent suppression is the bug this cap exists to prevent, so a row we
+    cannot date is sent rather than kept forever."""
+    now = datetime(2026, 9, 9, tzinfo=timezone.utc)
+    for stamp in ({}, {"held_since": None}, {"held_since": "not a date"}):
+        row = dict(_amendment("2026-07-21", "2026-07-22"), **stamp)
+        assert len(warn_monitor.overdue_amendments([row], now=now)) == 1
+
+
+def test_overdue_tolerates_z_suffix_and_naive_stamps():
+    now = datetime(2026, 9, 9, tzinfo=timezone.utc)
+    old = (now - timedelta(days=40)).replace(tzinfo=None)
+    assert len(warn_monitor.overdue_amendments(
+        [dict(_amendment("a", "b"), held_since=old.isoformat() + "Z")], now=now
+    )) == 1
+    assert len(warn_monitor.overdue_amendments(
+        [dict(_amendment("a", "b"), held_since=old.isoformat())], now=now
+    )) == 1
+
+
+def test_a_later_revision_does_not_restart_the_clock(tmp_path):
+    """The clock measures how long the subscriber has waited, not how recently
+    the feed twitched — otherwise a daily-churning filing is never overdue."""
+    pending = tmp_path / "p.json"
+    warn_monitor.merge_pending_amendments(
+        [_amendment("2026-07-21", "2026-07-22")], pending
+    )
+    first = warn_monitor._load_pending_amendments(pending)[0]["held_since"]
+    warn_monitor.merge_pending_amendments(
+        [_amendment("2026-07-22", "2026-07-23")], pending
+    )
+    row = warn_monitor._load_pending_amendments(pending)[0]
+    assert row["held_since"] == first
+    assert row["revisions"] == 2
+
+
+def test_overdue_parses_the_doubled_offset_this_repo_writes():
+    """The pipeline's own changelogs carry '…+00:00Z' — both an offset and a
+    Z. A naive replace makes that a second offset and an unparseable date, so
+    a genuinely young row would be mailed out as if it had aged out."""
+    now = datetime(2026, 9, 9, tzinfo=timezone.utc)
+    young = (now - timedelta(days=1)).isoformat() + "Z"
+    assert warn_monitor.overdue_amendments(
+        [dict(_amendment("a", "b"), held_since=young)], now=now
+    ) == []
+    old = (now - timedelta(days=40)).isoformat() + "Z"
+    assert len(warn_monitor.overdue_amendments(
+        [dict(_amendment("a", "b"), held_since=old)], now=now
+    )) == 1

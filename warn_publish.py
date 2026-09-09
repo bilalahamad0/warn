@@ -752,6 +752,34 @@ def _club_held_amendments(diff: dict, held: list) -> dict:
     return clubbed
 
 
+def _amendments_only_diff(held: list) -> dict:
+    """The diff for an aged-out flush: the held rows and nothing else.
+
+    Deliberately NOT a copy of the run that happened to trip the cap. That
+    run's counts have nothing to do with what is being delivered, and one of
+    them is actively dangerous. ``removed_count`` counts filings whose whole
+    anchor vanished from the feed, which a truncated fetch produces wholesale
+    — Alabama's feed has served a near-empty file ten times, six of them on
+    runs with no new notices. Before the cap such a run sent no mail at all,
+    so a withdrawal count could only ever ride along with a genuine
+    new-notice alert. Forwarding it here would put "1,067 previously filed
+    notices were withdrawn" under a subject about one amended notice, off a
+    swing that reverts on the next run.
+    """
+    return {
+        "new_count": 0,
+        "removed_count": 0,
+        "amendment_count": len(held),
+        "new_keys": [],
+        "amendment_keys": [a["key"] for a in held if a.get("key")],
+        "new_entries": [],
+        "removed_entries": [],
+        "amendments": list(held),
+        "total_employees_new": 0,
+        "total_employees_removed": 0,
+    }
+
+
 def alert_for_state(source, diff: dict, summary: dict, records=None) -> bool:
     """One state's alert policy: email on a genuinely NEW notice, never on an
     amendment alone. Returns True when an alert went out.
@@ -765,52 +793,85 @@ def alert_for_state(source, diff: dict, summary: dict, records=None) -> bool:
     into the next alert that carries a new notice, collapsed to one row per
     filing.
 
+    The wait is capped. "Until a new notice arrives" is unbounded for the
+    quarter of sources that go months between filings, and a held amendment is
+    not merely deferred but unreachable — its key enters both alert ledgers the
+    moment it is held, so nothing can surface it again. Once any held row
+    passes ``warn_monitor.PENDING_MAX_AGE_DAYS`` the state's whole pending
+    ledger goes out on its own, which is the one case where an amendment does
+    earn its own email. Flushing all of it, not just the overdue row, keeps
+    that mail rare: a churning feed sends monthly instead of every morning.
+
     Ledger discipline, unchanged for what a subscriber has not yet seen: the
     new-notice keys are recorded only after a successful send, so a failed
     alert retries next run — and the held amendments simply stay held for
     that retry. The pending ledger lives under ``data/`` beside the alert
     ledgers and is persisted by the same commit paths (see commit_ledgers).
+
+    Called for EVERY registered state on every run — including one whose feed
+    did not change, one whose source errored, and one that is disabled. Each
+    of those was an exclusion once, and each was a permanent-suppression path
+    for exactly the states this cap protects: the hold is the only thing still
+    owing the revision an email, and its keys are already ledgered. A state
+    with nothing held costs one absent-file check.
     """
     code = source.code.upper()
     new_count = diff.get("new_count", 0)
     amend_count = diff.get("amendment_count", 0)
-    if new_count <= 0 and amend_count <= 0:
-        return False
 
-    held = []
+    # Hold first, so this run's amendments are part of whatever goes out below.
     if amend_count > 0:
         held = source.hold_amendments(diff)
+    else:
+        held = source.pending_amendments()
 
     if new_count <= 0:
+        if not held:
+            return False
+        overdue = warn_monitor.overdue_amendments(held)
+        if not overdue:
+            log.info(
+                f"[{code}] {len(held)} amendment(s) held — no new notice, so "
+                "no email until one arrives or the hold ages out."
+            )
+            return False
         log.info(
-            f"[{code}] {amend_count} amendment(s) this run, {len(held)} held "
-            "in total — no new notice, so no email until one arrives."
+            f"[{code}] {len(overdue)} held amendment(s) have waited over "
+            f"{warn_monitor.PENDING_MAX_AGE_DAYS} days — sending all "
+            f"{len(held)} on their own rather than waiting for a new notice "
+            "that may never come."
         )
-        return False
-
-    if not held:
-        held = source.pending_amendments()
-    # Held rows are emailed as held — deliberately NOT re-checked against the
-    # feed as it stands today. The feeds oscillate between versions across
-    # runs, and the ledgers, not the current fetch, define the canonical
-    # version (update_cumulative collapses to it); a row dropped because the
-    # feed momentarily swung back could never be re-reported, since its key
-    # is already ledgered. A genuine reversion looks identical to a swing
-    # and is reported the way the dashboard shows it.
-    if held:
+    elif held:
+        # Held rows are emailed as held — deliberately NOT re-checked against
+        # the feed as it stands today. The feeds oscillate between versions
+        # across runs, and the ledgers, not the current fetch, define the
+        # canonical version (update_cumulative collapses to it); a row dropped
+        # because the feed momentarily swung back could never be re-reported,
+        # since its key is already ledgered. A genuine reversion looks
+        # identical to a swing and is reported the way the dashboard shows it.
         log.info(
             f"[{code}] clubbing {len(held)} held amendment(s) into the "
             f"{new_count}-notice alert."
         )
 
+    # A new-notice alert clubs the held rows into this run's diff and reports
+    # that run's totals. An aged-out flush is not about this run at all: it
+    # carries the held rows alone (see _amendments_only_diff) and the state's
+    # standing totals. Not "summary or …" — a truncated fetch returns a
+    # perfectly truthy summary saying the state holds 3 filings, and by then
+    # save_latest has written that short file, so only the cumulative store
+    # still knows better.
+    if new_count > 0:
+        emailed = _club_held_amendments(diff, held)
+    else:
+        emailed = _amendments_only_diff(held)
+        summary = source.standing_summary() or summary
     sent = warn_notify.notify_if_changes(
-        _club_held_amendments(diff, held),
-        summary,
-        state=code,
-        records=records,
+        emailed, summary, state=code, records=records
     )
     if sent:
-        source.record_alerted(diff)
+        if new_count > 0:
+            source.record_alerted(diff)
         source.clear_pending_amendments()
     return bool(sent)
 
@@ -1972,22 +2033,28 @@ def run(no_push: bool = False, force: bool = False, skip_history: bool = False,
     # this is what stops feed version churn from re-alerting the same notices
     # on consecutive runs (see warn_monitor.detect_changes).
     #
-    # An amendment alone never sends: alert_for_state holds it for the
-    # state's next new notice and clubs the two into one email.
-    for source in warn_sources.all_sources():
+    # An amendment alone does not send: alert_for_state holds it for the
+    # state's next new notice and clubs the two into one email — unless the
+    # hold has aged out, which is why this runs for EVERY registered state and
+    # not only the ones whose feed changed this run. The exclusions all had to
+    # go, because each was a permanent-suppression path for exactly the states
+    # the cap exists to protect: a quiet state is the one sitting on a stale
+    # hold; a state whose source ERRORS keeps erroring while its hold ages,
+    # and its ledger keys are already recorded so nothing else can surface
+    # them; and a DISABLED source (registered_sources, not all_sources) may
+    # still hold rows from before it was switched off. A state with nothing
+    # held costs one absent-file check.
+    for source in warn_sources.registered_sources():
         res = state_results.get(source.code) or {}
         diff = res.get("diff", {})
         summary = res.get("summary", {})
-        if diff.get("new_count", 0) > 0 or diff.get("amendment_count", 0) > 0:
-            try:
-                alert_for_state(
-                    source, diff, summary, records=subscriber_records
-                )
-            except Exception as e:
-                log.warning(
-                    f"Email notification failed for {source.code.upper()} "
-                    f"(non-fatal): {e}"
-                )
+        try:
+            alert_for_state(source, diff, summary, records=subscriber_records)
+        except Exception as e:
+            log.warning(
+                f"Email notification failed for {source.code.upper()} "
+                f"(non-fatal): {e}"
+            )
 
     # X/Twitter (@USLayoff) — compose one candidate post per notable company
     # from this run's new notices and stage them for review.

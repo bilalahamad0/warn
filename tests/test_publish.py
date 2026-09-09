@@ -5,10 +5,12 @@ from unittest.mock import patch
 
 import pytest
 
+import warn_monitor
 import warn_publish
 from warn_sources.base import Source
 
 
+@patch("warn_publish.warn_sources.registered_sources", return_value=[])
 @patch("warn_publish.alert_for_state")
 @patch("warn_publish.maybe_post_to_x")
 @patch("warn_publish.build_unsubscribe_page")
@@ -30,7 +32,7 @@ from warn_sources.base import Source
 def test_run_full_pipeline(
     mock_sources, mock_diff, mock_history, mock_national, mock_charts,
     mock_us_site, mock_redirect, mock_site, mock_push, mock_digest,
-    mock_subs, mock_unsub, mock_post_x, mock_alert, tmp_path
+    mock_subs, mock_unsub, mock_post_x, mock_alert, mock_registered, tmp_path
 ):
     """run() orchestrates every stage and honours no_push — without touching the
     real data/ directory, the network, or git.
@@ -260,6 +262,7 @@ def _run_notify_loop(state_results, sources, send_ok=True, tmp_path=None):
     records = [{"email": "a@x.com", "name": "", "states": ["CA"], "digest": True}]
     with patch("warn_publish.warn_sources.run_all", return_value=state_results), \
          patch("warn_publish.warn_sources.all_sources", return_value=sources), \
+         patch("warn_publish.warn_sources.registered_sources", return_value=sources), \
          patch("warn_publish.warn_diff.generate_report"), \
          patch("warn_publish.warn_history.run"), \
          patch("warn_publish.warn_aggregate.build_national"), \
@@ -624,6 +627,7 @@ def test_digest_failure_is_non_fatal_to_the_run(tmp_path):
     with patch("warn_publish.warn_sources.run_all", return_value={}), \
          patch("warn_publish.alert_for_state"), \
          patch("warn_publish.warn_sources.all_sources", return_value=[]), \
+         patch("warn_publish.warn_sources.registered_sources", return_value=[]), \
          patch("warn_publish.warn_diff.generate_report"), \
          patch("warn_publish.warn_history.run"), \
          patch("warn_publish.warn_aggregate.build_national"), \
@@ -649,6 +653,7 @@ def test_no_digest_flag_skips_the_step(tmp_path):
     with patch("warn_publish.warn_sources.run_all", return_value={}), \
          patch("warn_publish.alert_for_state"), \
          patch("warn_publish.warn_sources.all_sources", return_value=[]), \
+         patch("warn_publish.warn_sources.registered_sources", return_value=[]), \
          patch("warn_publish.warn_diff.generate_report"), \
          patch("warn_publish.warn_history.run"), \
          patch("warn_publish.warn_aggregate.build_national"), \
@@ -723,6 +728,7 @@ def _run_with_unsubscribe(tmp_path, **kw):
     with patch("warn_publish.warn_sources.run_all", return_value={}), \
          patch("warn_publish.alert_for_state"), \
          patch("warn_publish.warn_sources.all_sources", return_value=[]), \
+         patch("warn_publish.warn_sources.registered_sources", return_value=[]), \
          patch("warn_publish.warn_diff.generate_report"), \
          patch("warn_publish.warn_history.run"), \
          patch("warn_publish.warn_aggregate.build_national"), \
@@ -833,6 +839,7 @@ def _run_with_root_failure(tmp_path, no_push):
     with patch("warn_publish.warn_sources.run_all", return_value={}), \
          patch("warn_publish.alert_for_state"), \
          patch("warn_publish.warn_sources.all_sources", return_value=[]), \
+         patch("warn_publish.warn_sources.registered_sources", return_value=[]), \
          patch("warn_publish.warn_diff.generate_report"), \
          patch("warn_publish.warn_history.run"), \
          patch("warn_publish.warn_aggregate.build_national"), \
@@ -925,6 +932,7 @@ def test_success_path_uses_full_commit_not_the_ledger_path(tmp_path):
     with patch("warn_publish.warn_sources.run_all", return_value={}), \
          patch("warn_publish.alert_for_state"), \
          patch("warn_publish.warn_sources.all_sources", return_value=[]), \
+         patch("warn_publish.warn_sources.registered_sources", return_value=[]), \
          patch("warn_publish.warn_diff.generate_report"), \
          patch("warn_publish.warn_history.run"), \
          patch("warn_publish.warn_aggregate.build_national"), \
@@ -988,6 +996,7 @@ def _run_with_x(tmp_path, no_post=False, **kw):
     with patch("warn_publish.warn_sources.run_all", return_value=state_results), \
          patch("warn_publish.alert_for_state"), \
          patch("warn_publish.warn_sources.all_sources", return_value=[]), \
+         patch("warn_publish.warn_sources.registered_sources", return_value=[]), \
          patch("warn_publish.warn_diff.generate_report"), \
          patch("warn_publish.warn_history.run"), \
          patch("warn_publish.warn_aggregate.build_national"), \
@@ -1145,3 +1154,285 @@ def test_clubbed_row_tells_the_subscriber_how_often_the_feed_moved(tmp_path):
     assert warn_notify._describe_amendment(row) == (
         "effective date 2026-08-18 → 2026-08-23 (revised 5 times)"
     )
+
+
+# ---------------------------------------------------------------------------
+# The age cap: a held amendment is delivered even if no new notice ever comes
+# ---------------------------------------------------------------------------
+
+
+def _age_pending(src, days):
+    """Backdate every held row, as if it had waited `days` days."""
+    import warn_monitor
+    from datetime import datetime, timedelta, timezone
+    held = src.pending_amendments()
+    stamp = (datetime.now(timezone.utc) - timedelta(days=days)).isoformat()
+    for row in held:
+        row["held_since"] = stamp
+    warn_monitor._save_pending_amendments(held, src.paths.pending)
+
+
+def test_a_fresh_hold_still_sends_nothing(tmp_path):
+    src = _FakeSource("ks", tmp_path)
+    with patch("warn_publish.warn_notify.notify_if_changes") as mock_notify:
+        assert warn_publish.alert_for_state(
+            src, _va_amendment_diff("2026-08-18", "2026-08-19"), {}
+        ) is False
+    assert not mock_notify.called
+    assert len(src.pending_amendments()) == 1
+
+
+def test_an_aged_out_hold_is_sent_on_its_own(tmp_path):
+    """Kansas logged 98 runs without a single new notice. Holding for one is
+    not deferral but permanent suppression — the key is already ledgered."""
+    src = _FakeSource("ks", tmp_path)
+    with patch("warn_publish.warn_notify.notify_if_changes",
+               return_value=True) as mock_notify:
+        warn_publish.alert_for_state(
+            src, _va_amendment_diff("2026-08-18", "2026-08-19"), {}
+        )
+        assert not mock_notify.called
+        _age_pending(src, warn_monitor.PENDING_MAX_AGE_DAYS + 1)
+
+        # A completely quiet run — nothing new, nothing amended.
+        quiet = {"new_count": 0, "amendment_count": 0}
+        assert warn_publish.alert_for_state(src, quiet, {}) is True
+
+    emailed = mock_notify.call_args.args[0]
+    assert emailed["new_count"] == 0
+    assert emailed["amendment_count"] == 1
+    assert emailed["amendments"][0]["company"] == "AeroFarms Inc. - Rescinded"
+    assert mock_notify.call_args.kwargs["state"] == "KS"
+    # Delivered, so the ledger is emptied and the state starts clean.
+    assert src.pending_amendments() == []
+    assert not src.paths.pending.exists()
+
+
+def test_ageing_out_flushes_every_held_row_not_just_the_overdue_one(tmp_path):
+    """Sending the fresh rows too is what keeps this mail rare."""
+    src = _FakeSource("ks", tmp_path)
+    with patch("warn_publish.warn_notify.notify_if_changes",
+               return_value=True) as mock_notify:
+        warn_publish.alert_for_state(
+            src, _va_amendment_diff("2026-08-18", "2026-08-19"), {}
+        )
+        _age_pending(src, warn_publish.warn_monitor.PENDING_MAX_AGE_DAYS + 1)
+        # A second filing revised today — nowhere near the cap.
+        fresh = _va_amendment_diff("2026-10-14", "2026-10-14")
+        fresh["amendments"][0].update(
+            {"company": "TekSynap Corporation", "old_employees": 69,
+             "new_employees": 9, "key": "TekSynap Corporation__2026-10-14__9"}
+        )
+        fresh["amendment_keys"] = ["TekSynap Corporation__2026-10-14__9"]
+        fresh["new_keys"] = ["TekSynap Corporation__2026-10-14__9"]
+        assert warn_publish.alert_for_state(src, fresh, {}) is True
+    rows = mock_notify.call_args.args[0]["amendments"]
+    assert sorted(r["company"] for r in rows) == [
+        "AeroFarms Inc. - Rescinded", "TekSynap Corporation"
+    ]
+    assert src.pending_amendments() == []
+
+
+def test_a_failed_age_out_send_keeps_the_rows_for_the_next_run(tmp_path):
+    src = _FakeSource("ks", tmp_path)
+    with patch("warn_publish.warn_notify.notify_if_changes", return_value=False):
+        warn_publish.alert_for_state(
+            src, _va_amendment_diff("2026-08-18", "2026-08-19"), {}
+        )
+        _age_pending(src, warn_publish.warn_monitor.PENDING_MAX_AGE_DAYS + 1)
+        assert warn_publish.alert_for_state(src, {"new_count": 0}, {}) is False
+    assert len(src.pending_amendments()) == 1
+
+    with patch("warn_publish.warn_notify.notify_if_changes",
+               return_value=True) as mock_notify:
+        assert warn_publish.alert_for_state(src, {"new_count": 0}, {}) is True
+    assert mock_notify.call_args.args[0]["amendment_count"] == 1
+    assert src.pending_amendments() == []
+
+
+def test_virginia_churn_sends_monthly_not_daily(tmp_path):
+    """The whole point of the cap: a feed that re-dates one filing every
+    morning costs one email a month, carrying one row, not thirty emails."""
+    src = _FakeSource("va", tmp_path)
+    days = [f"2026-08-{d:02d}" for d in range(1, 32)]
+    with patch("warn_publish.warn_notify.notify_if_changes",
+               return_value=True) as mock_notify:
+        for i, (old, new) in enumerate(zip(days, days[1:])):
+            warn_publish.alert_for_state(src, _va_amendment_diff(old, new), {})
+            if i == 0:
+                _age_pending(src, warn_publish.warn_monitor.PENDING_MAX_AGE_DAYS + 1)
+    assert mock_notify.call_count == 1
+    rows = mock_notify.call_args.args[0]["amendments"]
+    assert len(rows) == 1
+    assert rows[0]["old_effective_date"] == "2026-08-01"
+
+
+def test_run_reaches_a_quiet_state_holding_a_stale_amendment(tmp_path):
+    """The loop must not be gated on this run's counts: a state that files
+    nothing is exactly the one sitting on a stale hold."""
+    src = _FakeSource("ks", tmp_path)
+    with patch("warn_publish.warn_notify.notify_if_changes", return_value=True):
+        warn_publish.alert_for_state(
+            src, _va_amendment_diff("2026-08-18", "2026-08-19"), {}
+        )
+    _age_pending(src, warn_publish.warn_monitor.PENDING_MAX_AGE_DAYS + 1)
+
+    # Kansas reports nothing at all this run.
+    state_results = {"ks": {"state": "KS",
+                            "diff": {"new_count": 0, "amendment_count": 0},
+                            "summary": {"total_records": 12}}}
+    mock_notify, _, _ = _run_notify_loop(state_results, [src], tmp_path=tmp_path)
+    assert [c.kwargs["state"] for c in mock_notify.call_args_list] == ["KS"]
+    assert mock_notify.call_args.args[0]["amendment_count"] == 1
+    assert src.pending_amendments() == []
+
+
+def test_an_errored_state_still_flushes_an_aged_out_hold(tmp_path):
+    """A source that errors keeps erroring while its hold ages, and its keys
+    are already ledgered — skipping it would recreate the permanent
+    suppression the cap exists to remove. Totals come from the state's last
+    good store, since the failed run produced none."""
+    src = _FakeSource("ks", tmp_path)
+    src.paths.cumulative.write_text(json.dumps(
+        {"total_records": 812, "total_employees": 40100, "records": []}
+    ))
+    with patch("warn_publish.warn_notify.notify_if_changes", return_value=True):
+        warn_publish.alert_for_state(
+            src, _va_amendment_diff("2026-08-18", "2026-08-19"), {}
+        )
+    _age_pending(src, warn_monitor.PENDING_MAX_AGE_DAYS + 1)
+
+    state_results = {"ks": {"state": "KS", "error": "site moved",
+                            "diff": {"new_count": 0, "amendment_count": 0},
+                            "summary": {}}}
+    mock_notify, _, _ = _run_notify_loop(state_results, [src], tmp_path=tmp_path)
+    assert [c.kwargs["state"] for c in mock_notify.call_args_list] == ["KS"]
+    assert mock_notify.call_args.args[0]["amendment_count"] == 1
+    # Not the failed run's empty summary — the last good totals.
+    assert mock_notify.call_args.args[1]["total_records"] == 812
+    assert src.pending_amendments() == []
+
+
+def test_age_out_flush_never_reports_this_run_as_withdrawals(tmp_path):
+    """A truncated fetch makes every missing filing look withdrawn. Before the
+    cap such a run (no new, no amendments) sent nothing; the flush must not
+    turn it into a "1,067 notices withdrawn" banner under a subject about one
+    amended notice. Alabama's feed has served a near-empty file ten times."""
+    src = _FakeSource("al", tmp_path)
+    with patch("warn_publish.warn_notify.notify_if_changes",
+               return_value=True) as mock_notify:
+        warn_publish.alert_for_state(
+            src, _va_amendment_diff("2026-08-18", "2026-08-19"), {}
+        )
+        _age_pending(src, warn_monitor.PENDING_MAX_AGE_DAYS + 1)
+        truncated = {
+            "new_count": 0, "amendment_count": 0, "removed_count": 1067,
+            "new_entries": [], "amendments": [],
+            "removed_entries": [{"company": "Gone Inc."}],
+            "total_employees_removed": 91234, "total_employees_new": 0,
+        }
+        assert warn_publish.alert_for_state(src, truncated, {}) is True
+
+    emailed = mock_notify.call_args.args[0]
+    assert emailed["amendment_count"] == 1
+    assert emailed["removed_count"] == 0
+    assert emailed["removed_entries"] == []
+    assert emailed["total_employees_removed"] == 0
+    assert emailed["new_count"] == 0 and emailed["new_entries"] == []
+    # And the rendered mail carries no withdrawal claim.
+    import warn_notify
+    html = warn_notify._build_html(emailed, {"total_records": 3}, "AL")
+    assert "withdrawn from the official file" not in html
+
+
+def test_a_clubbed_new_notice_alert_still_reports_real_withdrawals(tmp_path):
+    """The suppression is scoped to the flush path — a genuine new-notice
+    alert still tells subscribers what left the file."""
+    src = _FakeSource("al", tmp_path)
+    diff = dict(_new_notice_diff(), removed_count=2,
+                removed_entries=[{"company": "Gone Inc."}])
+    with patch("warn_publish.warn_notify.notify_if_changes",
+               return_value=True) as mock_notify:
+        assert warn_publish.alert_for_state(src, diff, {}) is True
+    assert mock_notify.call_args.args[0]["removed_count"] == 2
+
+
+def test_every_run_call_site_stubs_the_notify_loop_registry():
+    """The trap that let this file's fixtures reach the real data/ directory.
+
+    run() looks the registry up twice: warn_sources.run_all fans out over
+    all_sources, and the notify loop iterates registered_sources so a disabled
+    or erroring state can still flush an aged-out hold. Stubbing only the
+    first leaves registered_sources returning real Source objects rooted at
+    the real data/, and the loop then writes fixtures into the live ledgers.
+    That happened while this change was being written:
+    "Globex__2026-11-01__40" landed in data/states/il/notified_keys.json and a
+    pending file appeared under data/states/va/.
+    """
+    import re
+    from pathlib import Path
+
+    lines = Path(__file__).read_text().splitlines()
+    defs = [i for i, ln in enumerate(lines) if ln.lstrip().startswith("def ")]
+    offenders = []
+    for i, line in enumerate(lines):
+        if not re.search(r"(?<![\"'])warn_publish\.run\(", line):
+            continue
+        head = max((d for d in defs if d <= i), default=0)
+        while head and (
+            lines[head - 1].startswith("@") or lines[head - 1].startswith("#")
+        ):
+            head -= 1
+        block = "\n".join(lines[head:i + 1])
+        if "warn_sources.registered_sources" not in block:
+            offenders.append(lines[head].strip())
+
+    assert not offenders, (
+        "these run() call sites do not stub warn_sources.registered_sources, "
+        "so the notify loop iterates real sources rooted at the real data/: "
+        + "; ".join(offenders)
+    )
+
+
+def test_age_out_flush_reports_standing_totals_not_a_truncated_fetch(tmp_path):
+    """The other half of the truncated-feed swing. A short fetch still returns
+    a perfectly truthy summary, and save_latest has already written that short
+    file, so only the cumulative store knows the state really holds 1,067."""
+    src = _FakeSource("al", tmp_path)
+    src.paths.cumulative.write_text(json.dumps(
+        {"total_records": 1067, "total_employees": 91234, "records": []}
+    ))
+    src.paths.latest.write_text(json.dumps(
+        {"total_records": 3, "total_employees": 120, "records": []}
+    ))
+    with patch("warn_publish.warn_notify.notify_if_changes",
+               return_value=True) as mock_notify:
+        warn_publish.alert_for_state(
+            src, _va_amendment_diff("2026-08-18", "2026-08-19"), {}
+        )
+        _age_pending(src, warn_monitor.PENDING_MAX_AGE_DAYS + 1)
+        truncated_but_successful = {
+            "new_count": 0, "amendment_count": 0, "removed_count": 1064,
+            "new_entries": [], "amendments": [], "removed_entries": [],
+        }
+        assert warn_publish.alert_for_state(
+            src, truncated_but_successful, {"total_records": 3,
+                                            "total_employees": 120}
+        ) is True
+    assert mock_notify.call_args.args[1]["total_records"] == 1067
+    assert mock_notify.call_args.args[0]["removed_count"] == 0
+
+
+def test_a_new_notice_alert_still_reports_this_runs_totals(tmp_path):
+    """Standing totals are scoped to the flush — a normal alert is about the
+    run it belongs to."""
+    src = _FakeSource("al", tmp_path)
+    src.paths.cumulative.write_text(json.dumps(
+        {"total_records": 1067, "total_employees": 91234, "records": []}
+    ))
+    with patch("warn_publish.warn_notify.notify_if_changes",
+               return_value=True) as mock_notify:
+        warn_publish.alert_for_state(
+            src, _new_notice_diff(), {"total_records": 999}
+        )
+    assert mock_notify.call_args.args[1]["total_records"] == 999

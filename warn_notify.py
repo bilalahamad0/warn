@@ -261,8 +261,12 @@ def _build_html(
     total_emp = summary.get("total_employees", 0)
     now = datetime.now(timezone.utc).strftime("%B %d, %Y at %H:%M UTC")
 
-    # Left stat card adapts: headline new filings, or amendments when an update
-    # carries only revisions.
+    # A mail carrying only revisions is an update, not an alert — the wording,
+    # the icon and the left stat card all follow that distinction.
+    amendments_only = new_count <= 0 and amend_count > 0
+    header_word = "Update" if amendments_only else "Alert"
+    header_icon = "📝" if amendments_only else "📋"
+    header_title = f"WARN {header_word}"
     if new_count > 0:
         stat_label, stat_value = "New Notices", f"+{new_count:,}"
         stat_sub, stat_color = f"{new_emp:,} employees affected", "#3fb950"
@@ -334,7 +338,7 @@ def _build_html(
     return f"""\
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><title>WARN Alert</title></head>
+<head><meta charset="UTF-8"><title>{header_title}</title></head>
 <body style="margin:0;padding:0;background:#0d1117;font-family:Inter,system-ui,sans-serif;color:#e6edf3">
   <table width="100%" cellpadding="0" cellspacing="0">
     <tr><td align="center" style="padding:40px 20px">
@@ -345,7 +349,7 @@ def _build_html(
         <tr>
           <td style="background:linear-gradient(135deg,#58a6ff,#f78166);padding:28px 32px">
             <h1 style="margin:0;font-size:22px;color:#fff;font-weight:700">
-              📋 {state_name} WARN Alert
+              {header_icon} {state_name} WARN {header_word}
             </h1>
             <p style="margin:6px 0 0;color:rgba(255,255,255,0.85);font-size:14px">{now}</p>
           </td>
@@ -420,10 +424,17 @@ def _build_text(
     amend_count = diff.get("amendment_count", 0)
     new_emp = diff.get("total_employees_new", 0)
     entries = diff.get("new_entries", [])[:10]
+    # An amendment-only mail (a hold that aged out — see
+    # warn_publish.alert_for_state) is not a new-notice alert with zeroes in
+    # it: leading on "New notices: 0" buries the one thing it is reporting.
+    amendments_only = new_count <= 0 and amend_count > 0
     lines = [
-        f"{meta['name']} WARN Alert",
+        f"{meta['name']} WARN {'Update' if amendments_only else 'Alert'}",
         "=" * 40,
-        f"New notices: {new_count:,} ({new_emp:,} employees)",
+    ]
+    if not amendments_only:
+        lines.append(f"New notices: {new_count:,} ({new_emp:,} employees)")
+    lines += [
         f"Amended notices: {amend_count:,}",
         f"Total on file: {summary.get('total_records', 0):,}",
         "",
@@ -441,9 +452,13 @@ def _build_text(
         lines.append("")
         lines.append("Amended notices:")
         for a in amendments[:10]:
+            # County, else city, else nothing — several states publish no
+            # county at all (Virginia among them), and "Acme Inc. ()" is worse
+            # than "Acme Inc.".
+            place = (a.get("county") or a.get("city") or "").strip()
+            where = f" ({place})" if place else ""
             lines.append(
-                f"  {a.get('company', '?')} ({a.get('county', '?')}) — "
-                f"{_describe_amendment(a)}"
+                f"  {a.get('company', '?')}{where} — {_describe_amendment(a)}"
             )
 
     lines += ["", f"Dashboard: {meta['dashboard']}"]
@@ -661,10 +676,12 @@ def send_email(
     ``load_subscriber_records``); when None the list is fetched here.
     Returns True if sent successfully.
 
-    The pipeline only calls this for a diff carrying at least one NEW notice:
-    an amendment-only run is held upstream and clubbed into the state's next
-    alert (``warn_publish.alert_for_state``). The amendment-only subject below
-    remains for direct callers and tests.
+    An amendment-only diff normally never reaches here: it is held upstream
+    and clubbed into the state's next new-notice alert
+    (``warn_publish.alert_for_state``). The amendment-only subject below is
+    for the one case that does — a hold that aged out past
+    ``warn_monitor.PENDING_MAX_AGE_DAYS`` and is sent rather than suppressed
+    forever — plus direct callers and tests.
     """
     gmail_user, gmail_pass, notify_email = _smtp_config()
     if not gmail_user or not gmail_pass:
