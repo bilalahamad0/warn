@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-09T02:29:08.518998+00:00",
+  "last_updated": "2026-09-09T15:55:40.566014+00:00",
   "states_live": 47,
-  "total_records": 60185,
-  "total_employees": 6484840,
+  "total_records": 60188,
+  "total_employees": 6484933,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -36,7 +36,7 @@
       "name": "Colorado",
       "agency": "Colorado Department of Labor and Employment",
       "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
-      "total_records": 855,
+      "total_records": 856,
       "total_employees": 86868
     },
     "CT": {
@@ -225,8 +225,8 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 5336,
-      "total_employees": 433167
+      "total_records": 5338,
+      "total_employees": 433260
     },
     "OH": {
       "name": "Ohio",
@@ -194054,6 +194054,18 @@
       "city": "",
       "address": "",
       "industry": "31-33: Manufacturing"
+    },
+    {
+      "state": "CO",
+      "company": "SP Plus - A Metropolis Company",
+      "notice_date": "2026-09-08",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "",
+      "industry": ""
     },
     {
       "state": "CT",
@@ -516944,6 +516956,30 @@
     },
     {
       "state": "NY",
+      "company": "Hudson Valley Fish Farm, Inc.",
+      "notice_date": "2026-07-30",
+      "effective_date": "2026-10-28",
+      "employees": 47,
+      "layoff_type": "Closure Permanent",
+      "county": "Columbia",
+      "city": "",
+      "address": "4269 Route 9 Hudson, NY, 12534",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Masonite Corporation d/b/a Owens Corning Doors",
+      "notice_date": "2026-08-25",
+      "effective_date": "2026-11-23",
+      "employees": 46,
+      "layoff_type": "Closure Permanent",
+      "county": "Broome",
+      "city": "",
+      "address": "970 US-11 Kirkwood, NY, 13795",
+      "industry": ""
+    },
+    {
+      "state": "NY",
       "company": "Cardionet, LLC. an affiliate of Philips North America, LLC.",
       "notice_date": "2025-04-01",
       "effective_date": "2025-06-30",
@@ -639337,18 +639373,6 @@
     },
     {
       "state": "VA",
-      "company": "Pyrotechnique by Grucci Inc. *notice rescinded",
-      "notice_date": "2016-04-04",
-      "effective_date": "2016-04-08",
-      "employees": 0,
-      "layoff_type": "Layoff",
-      "county": "",
-      "city": "Radford",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "VA",
       "company": "Alorica",
       "notice_date": "2016-03-30",
       "effective_date": "2016-05-31",
@@ -641941,18 +641965,6 @@
     },
     {
       "state": "VA",
-      "company": "JELD-WEN-rescinded",
-      "notice_date": "2012-11-06",
-      "effective_date": "2012-12-31",
-      "employees": 138,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Christianburg",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "VA",
       "company": "Target",
       "notice_date": "2012-11-05",
       "effective_date": "2013-02-02",
@@ -643851,11 +643863,35 @@
       "state": "VA",
       "company": "AeroFarms Inc. - Rescinded",
       "notice_date": "2026-04-29",
-      "effective_date": "2026-09-09",
+      "effective_date": null,
       "employees": 133,
       "layoff_type": "Closure",
       "county": "",
       "city": "Ringgold",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "Pyrotechnique by Grucci Inc. *notice rescinded",
+      "notice_date": "2016-04-04",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Radford",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "JELD-WEN-rescinded",
+      "notice_date": "2012-11-06",
+      "effective_date": null,
+      "employees": 138,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Christianburg",
       "address": "",
       "industry": ""
     },
