@@ -1,9 +1,9 @@
 {
-  "total_records": 309,
-  "total_employees": 45510,
+  "total_records": 310,
+  "total_employees": 45562,
   "date_range_start": "2023-01-09",
-  "date_range_end": "2026-11-15",
-  "last_updated": "2026-09-09T15:52:36.333310+00:00",
+  "date_range_end": "2026-11-16",
+  "last_updated": "2026-09-10T02:26:58.784348+00:00",
   "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
   "records": [
     {
@@ -3712,6 +3712,18 @@
       "county": "Philadelphia",
       "city": "",
       "address": "14400 McNulty Road, Philadelphia, PA 19154",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Kenco Logistic Services, LLC",
+      "notice_date": null,
+      "effective_date": "2026-11-16",
+      "employees": 52,
+      "layoff_type": "Closure",
+      "county": "Northampton",
+      "city": "",
+      "address": "150 Cesanek Road, Northampton, PA 18067",
       "industry": ""
     }
   ]

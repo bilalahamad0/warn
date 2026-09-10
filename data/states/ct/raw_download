@@ -2,6 +2,20 @@
   "blobItems": [
     {
       "blobProperties": {
+        "affected_company": "IDEX Health and Science LLC",
+        "closing_dates_": "12/31/2026",
+        "layoff_dates": "12/31/2026",
+        "layoff_locations__": "Bristol",
+        "number_of_impacted_workers": "15",
+        "union": "N/A",
+        "warn_document_date": "2026-09-09",
+        "warn_document_received_date": "2026-09-09"
+      },
+      "modifiedDate": "2026-09-09T19:14:32+00:00",
+      "name": "rapid_response/warn_documents/2026/IDEX Health & Science LLC (Bristol) 9-9-2026.pdf"
+    },
+    {
+      "blobProperties": {
         "affected_company": "Conduent Commercial Solutions, LLC",
         "closing_dates_": "N/A",
         "layoff_dates": "8/28/2026",

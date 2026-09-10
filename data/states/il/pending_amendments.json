@@ -1,0 +1,21 @@
+{
+  "count": 1,
+  "last_updated": "2026-09-10T02:31:17.462154+00:00",
+  "amendments": [
+    {
+      "company": "Heartland Human Care Services (Child Welfare Agency)",
+      "county": "Cook County",
+      "city": "Chicago",
+      "notice_date": "2026-02-17",
+      "effective_date": null,
+      "employees": 120,
+      "old_effective_date": null,
+      "new_effective_date": null,
+      "old_employees": 80,
+      "new_employees": 120,
+      "key": "Heartland Human Care Services (Child Welfare Agency)__None__120",
+      "held_since": "2026-09-10T02:31:17.462110+00:00",
+      "revisions": 1
+    }
+  ]
+}

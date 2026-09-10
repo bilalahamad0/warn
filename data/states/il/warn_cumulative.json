@@ -1,9 +1,9 @@
 {
   "total_records": 4882,
-  "total_employees": 673633,
+  "total_employees": 673673,
   "date_range_start": "1987-09-01",
   "date_range_end": "2026-09-02",
-  "last_updated": "2026-09-09T15:44:27.573959+00:00",
+  "last_updated": "2026-09-10T02:18:23.683974+00:00",
   "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
   "records": [
     {
@@ -3508,18 +3508,6 @@
       "county": "Cook County",
       "city": "Chicago",
       "address": "1628 W Morse Ave.",
-      "industry": "Other Services (except Public Administration)"
-    },
-    {
-      "state": "IL",
-      "company": "Heartland Human Care Services (Child Welfare Agency)",
-      "notice_date": "2026-02-17",
-      "effective_date": null,
-      "employees": 80,
-      "layoff_type": "Mass Layoff",
-      "county": "Cook County",
-      "city": "Chicago",
-      "address": "4822 N Broadway Ave.",
       "industry": "Other Services (except Public Administration)"
     },
     {
@@ -58589,6 +58577,18 @@
       "city": "Bloomingdale",
       "address": "250 Madsen Dr",
       "industry": "Manufacturing"
+    },
+    {
+      "state": "IL",
+      "company": "Heartland Human Care Services (Child Welfare Agency)",
+      "notice_date": "2026-02-17",
+      "effective_date": null,
+      "employees": 120,
+      "layoff_type": "Mass Layoff",
+      "county": "Cook County",
+      "city": "Chicago",
+      "address": "4822 N Broadway Ave.",
+      "industry": "Other Services (except Public Administration)"
     }
   ]
 }

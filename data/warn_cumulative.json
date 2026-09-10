@@ -1,9 +1,9 @@
 {
-  "total_records": 1692,
-  "total_employees": 92702,
+  "total_records": 1701,
+  "total_employees": 93373,
   "date_range_start": "2025-01-29",
-  "date_range_end": "2026-09-02",
-  "last_updated": "2026-09-09T15:40:06.527044+00:00",
+  "date_range_end": "2026-09-04",
+  "last_updated": "2026-09-10T02:14:06.791542+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "records": [
     {
@@ -19617,7 +19617,7 @@
       "notice_date": "2026-08-19",
       "effective_date": "2026-11-02",
       "employees": 73,
-      "layoff_type": "Relocation Permanent",
+      "layoff_type": "Layoff Permanent",
       "county": "Ventura County",
       "city": "",
       "address": "2800 Sturgis Road  Oxnard CA 93030",
@@ -20066,6 +20066,114 @@
       "city": "",
       "address": "654 N Harington Dr.  Orange CA 92868",
       "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Ventana Grill",
+      "notice_date": "2026-09-02",
+      "effective_date": "2026-09-18",
+      "employees": 82,
+      "layoff_type": "Closure Temporary",
+      "county": "San Luis Obispo County",
+      "city": "",
+      "address": "2575 Price Street  Pismo Beach CA 93449",
+      "industry": "72 Accommodation and Food Services"
+    },
+    {
+      "state": "CA",
+      "company": "Grain Craft, LLC",
+      "notice_date": "2026-09-01",
+      "effective_date": "2026-10-30",
+      "employees": 3,
+      "layoff_type": "Closure Permanent",
+      "county": "San Bernardino County",
+      "city": "",
+      "address": "8790 Rochester Ave # B  Rancho Cucamonga CA 91730",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Homeless Health Care Los Angeles - Maple Ave.",
+      "notice_date": "2026-09-02",
+      "effective_date": "2026-11-03",
+      "employees": 16,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "655 Maple Ave.  Los Angeles CA 90014",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Homeless Health Care Los Angeles - Crocker Street",
+      "notice_date": "2026-09-02",
+      "effective_date": "2026-11-03",
+      "employees": 117,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "442 Crocker Street  Los Angeles CA 90013",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Homeless Health Care Los Angeles - 2nd Street",
+      "notice_date": "2026-09-02",
+      "effective_date": "2026-11-03",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "1282 W 2nd Street  Los Angeles CA 90026",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Eggo Company dba Kellanova",
+      "notice_date": "2026-09-04",
+      "effective_date": "2026-11-04",
+      "employees": 112,
+      "layoff_type": "Closure Temporary",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "475 Eggo Way  San Jose CA 95116",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Ruiz Food Products, Inc.",
+      "notice_date": "2026-09-04",
+      "effective_date": "2026-11-04",
+      "employees": 176,
+      "layoff_type": "Layoff Permanent",
+      "county": "Tulare County",
+      "city": "",
+      "address": "501 South Alta Avenue  Dinuba CA 93618",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "SonTek (Xylem, Inc.)",
+      "notice_date": "2026-09-04",
+      "effective_date": "2026-11-06",
+      "employees": 36,
+      "layoff_type": "Closure Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "9940 Summers Ridge Rd.  San Diego CA 92121",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "OVG Hospitality",
+      "notice_date": "2026-09-03",
+      "effective_date": "2026-11-15",
+      "employees": 128,
+      "layoff_type": "Layoff Permanent",
+      "county": "Ventura County",
+      "city": "",
+      "address": "10 W. Harbor Boulevard  Ventura CA 93001",
+      "industry": "72 Accommodation and Food Services"
     }
   ]
 }

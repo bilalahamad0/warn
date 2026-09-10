@@ -1,9 +1,9 @@
 {
-  "total_records": 74,
-  "total_employees": 6124,
+  "total_records": 75,
+  "total_employees": 6178,
   "date_range_start": "2019-01-08",
-  "date_range_end": "2026-08-04",
-  "last_updated": "2026-09-09T15:50:01.166106+00:00",
+  "date_range_end": "2026-09-09",
+  "last_updated": "2026-09-10T02:24:14.810303+00:00",
   "source_url": "https://joblink.maine.gov/search/warn_lookups",
   "records": [
     {
@@ -892,6 +892,18 @@
       "county": "",
       "city": "Portland",
       "address": "1001 Westbrook St; Portland, Maine 04102",
+      "industry": ""
+    },
+    {
+      "state": "ME",
+      "company": "Count & Crush LLC",
+      "notice_date": "2026-09-09",
+      "effective_date": null,
+      "employees": 54,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Biddeford",
+      "address": "565 elm st; Biddeford, Maine 04005",
       "industry": ""
     }
   ]

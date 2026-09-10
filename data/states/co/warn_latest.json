@@ -1,9 +1,9 @@
 {
   "total_records": 860,
-  "total_employees": 88083,
+  "total_employees": 88156,
   "date_range_start": "2015-01-02",
   "date_range_end": "2026-09-08",
-  "last_updated": "2026-09-09T15:40:30.472829+00:00",
+  "last_updated": "2026-09-10T02:14:28.780694+00:00",
   "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
   "records": [
     {
@@ -480,7 +480,7 @@
       "notice_date": "2026-08-08",
       "effective_date": "2026-09-08",
       "employees": 90,
-      "layoff_type": "",
+      "layoff_type": "Closure",
       "county": "Rural Allaince (Montrose)",
       "city": "",
       "address": "",
@@ -490,13 +490,13 @@
       "state": "CO",
       "company": "SP Plus - A Metropolis Company",
       "notice_date": "2026-09-08",
-      "effective_date": null,
-      "employees": 0,
-      "layoff_type": "",
-      "county": "",
+      "effective_date": "2026-10-01",
+      "employees": 73,
+      "layoff_type": "Loss of Contract",
+      "county": "Adams",
       "city": "",
       "address": "",
-      "industry": ""
+      "industry": "81,2930: Parking Lots & Garages"
     },
     {
       "state": "CO",

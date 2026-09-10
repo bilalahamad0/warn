@@ -1,9 +1,9 @@
 {
-  "total_records": 28,
-  "total_employees": 3190,
+  "total_records": 29,
+  "total_employees": 3205,
   "date_range_start": "2025-08-25",
-  "date_range_end": "2026-06-26",
-  "last_updated": "2026-09-09T15:40:32.981672+00:00",
+  "date_range_end": "2026-09-09",
+  "last_updated": "2026-09-10T02:14:31.683372+00:00",
   "source_url": "https://dolpublicdocumentlibrary.ct.gov/CsblrCategory?prefix=%2Frapid_response%2Fwarn_documents",
   "records": [
     {
@@ -339,6 +339,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Shelton, Danbury, Wethersfield",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "CT",
+      "company": "IDEX Health and Science LLC",
+      "notice_date": "2026-09-09",
+      "effective_date": "2026-12-31",
+      "employees": 15,
+      "layoff_type": "",
+      "county": "",
+      "city": "Bristol",
       "address": "",
       "industry": ""
     }

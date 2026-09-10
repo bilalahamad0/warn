@@ -1,5 +1,20 @@
 [
  {
+  "company": "Congo Brands (Alani, Prime, 3D Energy)",
+  "source": "WARN Notice",
+  "notice_number": "Notice 2837",
+  "closure_or_layoff": "Layoff",
+  "county": "Jefferson",
+  "date_received": "2026-09-04 00:00:00",
+  "NAICS": 312111,
+  "notice_url": "https://kydev.my.salesforce.com/sfc/p/t00000004X3h/a/eq00000Wfwlc/_D6YQqXQ0CMgesFKoD8pQ_7NHn59VpYrxtkZHJeYFnU",
+  "employees": 15,
+  "date_effective": "2026-11-04 00:00:00",
+  "trade": "TBD",
+  "union_affected": "Non-Union",
+  "region": "Kentuckiana Works"
+ },
+ {
   "company": "SMBC Manubank",
   "source": "WARN Notice",
   "notice_number": "Notice 2833",

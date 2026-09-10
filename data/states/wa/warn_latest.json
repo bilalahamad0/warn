@@ -1,11 +1,23 @@
 {
-  "total_records": 1506,
-  "total_employees": 237993,
+  "total_records": 1507,
+  "total_employees": 238131,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-09-03",
-  "last_updated": "2026-09-09T15:55:34.691151+00:00",
+  "date_range_end": "2026-09-08",
+  "last_updated": "2026-09-10T02:29:56.522614+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
+    {
+      "state": "WA",
+      "company": "MultiCare Health System",
+      "notice_date": "2026-09-08",
+      "effective_date": "2026-10-27",
+      "employees": 138,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Statewide",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "WA",
       "company": "Gilbert Orchards, Inc.",

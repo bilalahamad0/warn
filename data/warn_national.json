@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-09T15:55:40.566014+00:00",
+  "last_updated": "2026-09-10T02:30:02.705445+00:00",
   "states_live": 47,
-  "total_records": 60188,
-  "total_employees": 6484933,
+  "total_records": 60203,
+  "total_employees": 6485991,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -29,22 +29,22 @@
       "name": "California",
       "agency": "California Employment Development Department",
       "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
-      "total_records": 16281,
-      "total_employees": 1389966
+      "total_records": 16290,
+      "total_employees": 1390637
     },
     "CO": {
       "name": "Colorado",
       "agency": "Colorado Department of Labor and Employment",
       "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
-      "total_records": 856,
-      "total_employees": 86868
+      "total_records": 857,
+      "total_employees": 86941
     },
     "CT": {
       "name": "Connecticut",
       "agency": "Connecticut Department of Labor",
       "source_url": "https://dolpublicdocumentlibrary.ct.gov/CsblrCategory?prefix=%2Frapid_response%2Fwarn_documents",
-      "total_records": 28,
-      "total_employees": 3190
+      "total_records": 29,
+      "total_employees": 3205
     },
     "DC": {
       "name": "District of Columbia",
@@ -100,7 +100,7 @@
       "agency": "Illinois Department of Commerce and Economic Opportunity",
       "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
       "total_records": 4882,
-      "total_employees": 673633
+      "total_employees": 673673
     },
     "IN": {
       "name": "Indiana",
@@ -120,8 +120,8 @@
       "name": "Kentucky",
       "agency": "Kentucky Career Center (Education & Labor Cabinet)",
       "source_url": "https://kyworks.ky.gov/Services/Pages/Rapid-Response-Layoffs-and-Closures.aspx",
-      "total_records": 1235,
-      "total_employees": 156489
+      "total_records": 1236,
+      "total_employees": 156504
     },
     "LA": {
       "name": "Louisiana",
@@ -148,8 +148,8 @@
       "name": "Maine",
       "agency": "Maine Department of Labor",
       "source_url": "https://joblink.maine.gov/search/warn_lookups",
-      "total_records": 74,
-      "total_employees": 6124
+      "total_records": 75,
+      "total_employees": 6178
     },
     "MI": {
       "name": "Michigan",
@@ -253,8 +253,8 @@
       "name": "Pennsylvania",
       "agency": "Pennsylvania Department of Labor & Industry",
       "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
-      "total_records": 309,
-      "total_employees": 45510
+      "total_records": 310,
+      "total_employees": 45562
     },
     "RI": {
       "name": "Rhode Island",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1507,
-      "total_employees": 238116
+      "total_records": 1508,
+      "total_employees": 238254
     },
     "WI": {
       "name": "Wisconsin",
@@ -39569,7 +39569,7 @@
       "notice_date": "2026-08-19",
       "effective_date": "2026-11-02",
       "employees": 73,
-      "layoff_type": "Relocation Permanent",
+      "layoff_type": "Layoff Permanent",
       "county": "Ventura County",
       "city": "",
       "address": "2800 Sturgis Road  Oxnard CA 93030",
@@ -40018,6 +40018,114 @@
       "city": "",
       "address": "654 N Harington Dr.  Orange CA 92868",
       "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Ventana Grill",
+      "notice_date": "2026-09-02",
+      "effective_date": "2026-09-18",
+      "employees": 82,
+      "layoff_type": "Closure Temporary",
+      "county": "San Luis Obispo County",
+      "city": "",
+      "address": "2575 Price Street  Pismo Beach CA 93449",
+      "industry": "72 Accommodation and Food Services"
+    },
+    {
+      "state": "CA",
+      "company": "Grain Craft, LLC",
+      "notice_date": "2026-09-01",
+      "effective_date": "2026-10-30",
+      "employees": 3,
+      "layoff_type": "Closure Permanent",
+      "county": "San Bernardino County",
+      "city": "",
+      "address": "8790 Rochester Ave # B  Rancho Cucamonga CA 91730",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Homeless Health Care Los Angeles - Maple Ave.",
+      "notice_date": "2026-09-02",
+      "effective_date": "2026-11-03",
+      "employees": 16,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "655 Maple Ave.  Los Angeles CA 90014",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Homeless Health Care Los Angeles - Crocker Street",
+      "notice_date": "2026-09-02",
+      "effective_date": "2026-11-03",
+      "employees": 117,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "442 Crocker Street  Los Angeles CA 90013",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Homeless Health Care Los Angeles - 2nd Street",
+      "notice_date": "2026-09-02",
+      "effective_date": "2026-11-03",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "1282 W 2nd Street  Los Angeles CA 90026",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Eggo Company dba Kellanova",
+      "notice_date": "2026-09-04",
+      "effective_date": "2026-11-04",
+      "employees": 112,
+      "layoff_type": "Closure Temporary",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "475 Eggo Way  San Jose CA 95116",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Ruiz Food Products, Inc.",
+      "notice_date": "2026-09-04",
+      "effective_date": "2026-11-04",
+      "employees": 176,
+      "layoff_type": "Layoff Permanent",
+      "county": "Tulare County",
+      "city": "",
+      "address": "501 South Alta Avenue  Dinuba CA 93618",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "SonTek (Xylem, Inc.)",
+      "notice_date": "2026-09-04",
+      "effective_date": "2026-11-06",
+      "employees": 36,
+      "layoff_type": "Closure Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "9940 Summers Ridge Rd.  San Diego CA 92121",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "OVG Hospitality",
+      "notice_date": "2026-09-03",
+      "effective_date": "2026-11-15",
+      "employees": 128,
+      "layoff_type": "Layoff Permanent",
+      "county": "Ventura County",
+      "city": "",
+      "address": "10 W. Harbor Boulevard  Ventura CA 93001",
+      "industry": "72 Accommodation and Food Services"
     },
     {
       "company": "Adventist Health St. Helena",
@@ -194049,7 +194157,7 @@
       "notice_date": "2026-08-08",
       "effective_date": "2026-09-08",
       "employees": 90,
-      "layoff_type": "",
+      "layoff_type": "Closure",
       "county": "Rural Allaince (Montrose)",
       "city": "",
       "address": "",
@@ -194066,6 +194174,18 @@
       "city": "",
       "address": "",
       "industry": ""
+    },
+    {
+      "state": "CO",
+      "company": "SP Plus - A Metropolis Company",
+      "notice_date": "2026-09-08",
+      "effective_date": "2026-10-01",
+      "employees": 73,
+      "layoff_type": "Loss of Contract",
+      "county": "Adams",
+      "city": "",
+      "address": "",
+      "industry": "81,2930: Parking Lots & Garages"
     },
     {
       "state": "CT",
@@ -194400,6 +194520,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Shelton, Danbury, Wethersfield",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "CT",
+      "company": "IDEX Health and Science LLC",
+      "notice_date": "2026-09-09",
+      "effective_date": "2026-12-31",
+      "employees": 15,
+      "layoff_type": "",
+      "county": "",
+      "city": "Bristol",
       "address": "",
       "industry": ""
     },
@@ -281609,18 +281741,6 @@
     },
     {
       "state": "IL",
-      "company": "Heartland Human Care Services (Child Welfare Agency)",
-      "notice_date": "2026-02-17",
-      "effective_date": null,
-      "employees": 80,
-      "layoff_type": "Mass Layoff",
-      "county": "Cook County",
-      "city": "Chicago",
-      "address": "4822 N Broadway Ave.",
-      "industry": "Other Services (except Public Administration)"
-    },
-    {
-      "state": "IL",
       "company": "WALGREEN CO.",
       "notice_date": "2026-02-10",
       "effective_date": null,
@@ -336688,6 +336808,18 @@
       "industry": "Manufacturing"
     },
     {
+      "state": "IL",
+      "company": "Heartland Human Care Services (Child Welfare Agency)",
+      "notice_date": "2026-02-17",
+      "effective_date": null,
+      "employees": 120,
+      "layoff_type": "Mass Layoff",
+      "county": "Cook County",
+      "city": "Chicago",
+      "address": "4822 N Broadway Ave.",
+      "industry": "Other Services (except Public Administration)"
+    },
+    {
       "state": "IN",
       "company": "Thyssenkrupp Presta North America",
       "notice_date": "2026-06-30",
@@ -364750,6 +364882,18 @@
       "industry": "522110"
     },
     {
+      "state": "KY",
+      "company": "Congo Brands (Alani, Prime, 3D Energy)",
+      "notice_date": "2026-09-04",
+      "effective_date": "2026-11-04",
+      "employees": 15,
+      "layoff_type": "Layoff",
+      "county": "Jefferson",
+      "city": "",
+      "address": "",
+      "industry": "312111"
+    },
+    {
       "state": "LA",
       "company": "Dr. Reddy\u2019s Laboratories",
       "notice_date": "2025-01-07",
@@ -387043,6 +387187,18 @@
       "county": "",
       "city": "Portland",
       "address": "1001 Westbrook St; Portland, Maine 04102",
+      "industry": ""
+    },
+    {
+      "state": "ME",
+      "company": "Count & Crush LLC",
+      "notice_date": "2026-09-09",
+      "effective_date": null,
+      "employees": 54,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Biddeford",
+      "address": "565 elm st; Biddeford, Maine 04005",
       "industry": ""
     },
     {
@@ -560587,6 +560743,18 @@
       "industry": ""
     },
     {
+      "state": "PA",
+      "company": "Kenco Logistic Services, LLC",
+      "notice_date": null,
+      "effective_date": "2026-11-16",
+      "employees": 52,
+      "layoff_type": "Closure",
+      "county": "Northampton",
+      "city": "",
+      "address": "150 Cesanek Road, Northampton, PA 18067",
+      "industry": ""
+    },
+    {
       "state": "RI",
       "company": "Conduent",
       "notice_date": "2026-06-26",
@@ -662420,6 +662588,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Yakima and Franklin Counties",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "MultiCare Health System",
+      "notice_date": "2026-09-08",
+      "effective_date": "2026-10-27",
+      "employees": 138,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Statewide",
       "address": "",
       "industry": ""
     },
