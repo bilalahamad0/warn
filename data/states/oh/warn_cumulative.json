@@ -1,9 +1,9 @@
 {
-  "total_records": 986,
-  "total_employees": 139842,
+  "total_records": 988,
+  "total_employees": 140013,
   "date_range_start": "2015-01-05",
-  "date_range_end": "2026-08-27",
-  "last_updated": "2026-09-10T02:26:48.120538+00:00",
+  "date_range_end": "2026-09-10",
+  "last_updated": "2026-09-10T15:50:58.803976+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
     {
@@ -11295,6 +11295,30 @@
       "layoff_type": "Closure",
       "county": "Wood",
       "city": "Walbridge",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Marc Glassman, Inc.",
+      "notice_date": "2026-09-10",
+      "effective_date": "2026-11-10",
+      "employees": 55,
+      "layoff_type": "Closure",
+      "county": "Cuyahoga",
+      "city": "Parma",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "PJ Trailer",
+      "notice_date": "2026-09-09",
+      "effective_date": "2026-11-08",
+      "employees": 116,
+      "layoff_type": "Closure",
+      "county": "Brown",
+      "city": "Mount Orab",
       "address": "",
       "industry": ""
     }

@@ -1,9 +1,9 @@
 {
-  "total_records": 2368,
-  "total_employees": 354440,
+  "total_records": 2369,
+  "total_employees": 354502,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-09-10T02:26:28.419133+00:00",
+  "last_updated": "2026-09-10T15:50:40.051071+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -1179,6 +1179,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Rahway",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Educational Testing Service",
+      "notice_date": null,
+      "effective_date": "2026-11-09",
+      "employees": 62,
+      "layoff_type": "",
+      "county": "",
+      "city": "Princeton",
       "address": "",
       "industry": ""
     },

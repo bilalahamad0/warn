@@ -1,11 +1,23 @@
 {
-  "total_records": 309,
-  "total_employees": 45510,
+  "total_records": 310,
+  "total_employees": 45562,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-09-09T15:52:36.329586+00:00",
+  "last_updated": "2026-09-10T02:26:58.780315+00:00",
   "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
   "records": [
+    {
+      "state": "PA",
+      "company": "Kenco Logistic Services, LLC",
+      "notice_date": null,
+      "effective_date": "2026-11-16",
+      "employees": 52,
+      "layoff_type": "Closure",
+      "county": "Northampton",
+      "city": "",
+      "address": "150 Cesanek Road, Northampton, PA 18067",
+      "industry": ""
+    },
     {
       "state": "PA",
       "company": "Jerith Manufacturing, LLC",

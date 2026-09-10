@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-10T02:30:02.705445+00:00",
+  "last_updated": "2026-09-10T15:54:13.284984+00:00",
   "states_live": 47,
-  "total_records": 60203,
-  "total_employees": 6485991,
+  "total_records": 60206,
+  "total_employees": 6486224,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -204,8 +204,8 @@
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2340,
-      "total_employees": 351776
+      "total_records": 2341,
+      "total_employees": 351838
     },
     "NM": {
       "name": "New Mexico",
@@ -232,8 +232,8 @@
       "name": "Ohio",
       "agency": "Ohio Department of Job and Family Services",
       "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
-      "total_records": 1251,
-      "total_employees": 171446
+      "total_records": 1253,
+      "total_employees": 171617
     },
     "OK": {
       "name": "Oklahoma",
@@ -450499,6 +450499,18 @@
       "industry": ""
     },
     {
+      "state": "NJ",
+      "company": "Educational Testing Service",
+      "notice_date": null,
+      "effective_date": "2026-11-09",
+      "employees": 62,
+      "layoff_type": "",
+      "county": "",
+      "city": "Princeton",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "NM",
       "company": "Atkore HDPE, LLC",
       "notice_date": "2026-04-27",
@@ -535011,6 +535023,30 @@
       "layoff_type": "Closure",
       "county": "Wood",
       "city": "Walbridge",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Marc Glassman, Inc.",
+      "notice_date": "2026-09-10",
+      "effective_date": "2026-11-10",
+      "employees": 55,
+      "layoff_type": "Closure",
+      "county": "Cuyahoga",
+      "city": "Parma",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "PJ Trailer",
+      "notice_date": "2026-09-09",
+      "effective_date": "2026-11-08",
+      "employees": 116,
+      "layoff_type": "Closure",
+      "county": "Brown",
+      "city": "Mount Orab",
       "address": "",
       "industry": ""
     },

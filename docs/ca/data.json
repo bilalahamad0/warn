@@ -2,7 +2,7 @@
   "scope": "ca",
   "state": "CA",
   "coverage_start": "2025-01-01",
-  "last_updated": "2026-09-10T02:30:02.705445+00:00",
+  "last_updated": "2026-09-10T15:54:13.284984+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "total_records": 1772,
   "total_employees": 98848,
@@ -20,7 +20,7 @@
       "address": "475 Eggo Way  San Jose CA 95116",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Ruiz Food Products, Inc.",
@@ -33,7 +33,7 @@
       "address": "501 South Alta Avenue  Dinuba CA 93618",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "SonTek (Xylem, Inc.)",
@@ -46,7 +46,7 @@
       "address": "9940 Summers Ridge Rd.  San Diego CA 92121",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "OVG Hospitality",
@@ -59,7 +59,7 @@
       "address": "10 W. Harbor Boulevard  Ventura CA 93001",
       "industry": "72 Accommodation and Food Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Foundation for California Community Colleges",
@@ -85,7 +85,7 @@
       "address": "2575 Price Street  Pismo Beach CA 93449",
       "industry": "72 Accommodation and Food Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Homeless Health Care Los Angeles - Maple Ave.",
@@ -98,7 +98,7 @@
       "address": "655 Maple Ave.  Los Angeles CA 90014",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Homeless Health Care Los Angeles - Crocker Street",
@@ -111,7 +111,7 @@
       "address": "442 Crocker Street  Los Angeles CA 90013",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Homeless Health Care Los Angeles - 2nd Street",
@@ -124,7 +124,7 @@
       "address": "1282 W 2nd Street  Los Angeles CA 90026",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Renewal by Andersen LLC",
@@ -163,7 +163,7 @@
       "address": "8790 Rochester Ave # B  Rancho Cucamonga CA 91730",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "24Hr Homecare, LLC",
