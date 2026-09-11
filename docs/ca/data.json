@@ -2,7 +2,7 @@
   "scope": "ca",
   "state": "CA",
   "coverage_start": "2025-01-01",
-  "last_updated": "2026-09-11T02:27:46.816344+00:00",
+  "last_updated": "2026-09-11T15:54:57.841202+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "total_records": 1787,
   "total_employees": 99308,
@@ -20,7 +20,7 @@
       "address": "1149 S. Hill Street  Los Angeles CA 90089",
       "industry": "61 Educational Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "University of Southern California (1042 Downey Way)",
@@ -33,7 +33,7 @@
       "address": "1042 Downey Way  Los Angeles CA 90089",
       "industry": "61 Educational Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "University of Southern California (1150 S. Olive Street)",
@@ -46,7 +46,7 @@
       "address": "1150 S. Olive Street  Los Angeles CA 90015",
       "industry": "61 Educational Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "University of Southern California (854 Downey Way)",
@@ -59,7 +59,7 @@
       "address": "854 Downey Way  Los Angeles CA 90089",
       "industry": "61 Educational Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "University of Southern California (12015 E Waterfront Dr.)",
@@ -72,7 +72,7 @@
       "address": "12015 E Waterfront Dr.  Playa Vista CA 90094",
       "industry": "61 Educational Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "University of Southern California (746 W Adams Blvd.)",
@@ -85,7 +85,7 @@
       "address": "746 W Adams Blvd.  Los Angeles CA 90007",
       "industry": "61 Educational Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "University of Southern California (4676 Admiralty Way)",
@@ -98,7 +98,7 @@
       "address": "4676 Admiralty Way  Marina Del Rey CA 90292",
       "industry": "61 Educational Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "University of Southern California (941 Bloom Walk)",
@@ -111,7 +111,7 @@
       "address": "941 Bloom Walk  Los Angeles CA 90089",
       "industry": "61 Educational Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "University of Southern California (3740 McClintock Ave)",
@@ -124,7 +124,7 @@
       "address": "3740 McClintock Ave  Los Angeles CA 90089",
       "industry": "61 Educational Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "University of Southern California (3649 McClintock Ave.)",
@@ -137,7 +137,7 @@
       "address": "3649 McClintock Ave.  Los Angeles CA 90089",
       "industry": "61 Educational Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Sapporo U.S.A. (2865 Executive Place)",
@@ -150,7 +150,7 @@
       "address": "2865 Executive Place  Escondido CA 92029",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Sapporo U.S.A. (2005 Harmony Grove Rd)",
@@ -163,7 +163,7 @@
       "address": "2005 Harmony Grove Rd  Escondido CA 92029",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Sapporo U.S.A. (1999 Citracado Parkway)",
@@ -176,7 +176,7 @@
       "address": "1999 Citracado Parkway  Escondido CA 92029",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Shell Catalyst & Technologies",
@@ -189,7 +189,7 @@
       "address": "10 Mococo Road  Martinez CA 94553",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Eggo Company dba Kellanova",
@@ -761,7 +761,7 @@
       "address": "6922 Hollywood Blvd, 10th Floor  Los Angeles CA 90028",
       "industry": "54 Professional Scientific and Technical Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "RTX",

@@ -1,55 +1,60 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-09-11 02:27:46 UTC
+**Generated:** 2026-09-11 15:54:57 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 36 | 209 | +173/+0 |
-| Total employees | 2,560 | 11,435 | +8,875 |
+| Total records | 209 | 36 | +0/+173 |
+| Total employees | 11,435 | 2,560 | -8,875 |
 
-### ✅ New Entries (173 records)
+### ✅ No new entries.
 
-| Company | Employees | Effective Date | County |
-|---------|-----------|----------------|--------|
-| 24Hr Homecare, LLC | 738 | 2026-09-15 | Los Angeles County |
-| Jabil Inc. | 382 | 2026-11-23 | Santa Clara County |
-| Visa | 320 | 2026-10-01 | San Mateo County |
-| PayPal | 251 | 2026-10-30 | Santa Clara County |
-| LeeMAH Electronics | 205 | 2026-10-16 | San Mateo County |
-| Sapporo U.S.A. (1999 Citracado Parkway) | 200 | 2026-11-13 | San Diego County |
-| Bumble Bee Foods, LLC | 197 | 2026-11-19 | Los Angeles County |
-| Power Safety Service, LLC | 189 | 2026-11-06 | San Joaquin County |
-| Foundation for California Community Colleges | 178 | 2026-10-30 | Sacramento County |
-| Ruiz Food Products, Inc. | 176 | 2026-11-04 | Tulare County |
-| Sodexo | 164 | 2026-09-30 | Orange County |
-| ServiceNow, Inc. | 154 | 2026-09-28 | Santa Clara County |
-| Renewal by Andersen LLC | 153 | 2026-11-02 | Los Angeles County |
-| LAZ Parking California (9610 Sky Way) | 139 | 2026-10-06 | Los Angeles County |
-| Chime Financial, Inc. | 135 | 2026-09-30 | San Francisco County |
-| Sharp Metropolitan Medical Campus - Sharp Mesa Vista | 134 | 2026-10-10 | San Diego County |
-| ServiceNow, Inc. | 133 | 2026-09-28 | San Diego County |
-| Renewal by Andersen LLC | 131 | 2026-11-02 | Orange County |
-| OVG Hospitality | 128 | 2026-11-15 | Ventura County |
-| Synopsys, Inc. | 128 | 2026-12-16 | Santa Clara County |
+### ❌ Removed Entries (173 records)
+
+| Company | Employees | Effective Date |
+|---------|-----------|----------------|
+| 24Hr Homecare, LLC | 738 | 2026-09-15 |
+| Jabil Inc. | 382 | 2026-11-23 |
+| Visa | 320 | 2026-10-01 |
+| PayPal | 251 | 2026-10-30 |
+| LeeMAH Electronics | 205 | 2026-10-16 |
+| Sapporo U.S.A. (1999 Citracado Parkway) | 200 | 2026-11-13 |
+| Bumble Bee Foods, LLC | 197 | 2026-11-19 |
+| Power Safety Service, LLC | 189 | 2026-11-06 |
+| Foundation for California Community Colleges | 178 | 2026-10-30 |
+| Ruiz Food Products, Inc. | 176 | 2026-11-04 |
+| Sodexo | 164 | 2026-09-30 |
+| ServiceNow, Inc. | 154 | 2026-09-28 |
+| Renewal by Andersen LLC | 153 | 2026-11-02 |
+| LAZ Parking California (9610 Sky Way) | 139 | 2026-10-06 |
+| Chime Financial, Inc. | 135 | 2026-09-30 |
+| Sharp Metropolitan Medical Campus - Sharp Mesa Vista | 134 | 2026-10-10 |
+| ServiceNow, Inc. | 133 | 2026-09-28 |
+| Renewal by Andersen LLC | 131 | 2026-11-02 |
+| OVG Hospitality | 128 | 2026-11-15 |
+| Synopsys, Inc. | 128 | 2026-12-16 |
 
 ---
 ## 📁 File vs Git Comparison
 
-- **Local `file.xlsx` hash:** `3bbdcaa935ab94f552795250bc76be68`
+- **Local `file.xlsx` hash:** `2c73db1b759812982a57b17b77afa3c5`
 - **Committed hash:**          `2c73db1b759812982a57b17b77afa3c5`
-- 🔴 **Local file differs from committed version**
+- ✅ Local file matches committed version
 
 **Git status:**
 ```
 M data/changelog.jsonl
- M data/meta.json
  M data/states/ak/changelog.jsonl
  M data/states/ak/warn_cumulative.json
  M data/states/ak/warn_latest.json
  M data/states/ak/warn_snapshot.json
+ M data/states/al/changelog.jsonl
+ M data/states/al/warn_cumulative.json
+ M data/states/al/warn_latest.json
+ M data/states/al/warn_snapshot.json
  M data/states/az/changelog.jsonl
  M data/states/az/meta.json
  M data/states/az/warn_cumulative.json
@@ -154,6 +159,7 @@ M data/changelog.jsonl
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
+ M data/states/mt/meta.json
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
@@ -168,6 +174,7 @@ M data/changelog.jsonl
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
+ M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
@@ -192,14 +199,12 @@ M data/changelog.jsonl
  M data/states/oh/warn_snapshot.json
  M data/states/ok/changelog.jsonl
  M data/states/ok/meta.json
- M data/states/ok/raw_download
  M data/states/ok/warn_cumulative.json
  M data/states/ok/warn_latest.json
  M data/states/ok/warn_snapshot.json
  M data/states/or/changelog.jsonl
  M data/states/or/latest.xlsx
  M data/states/or/meta.json
- M data/states/or/raw_download
  M data/states/or/warn_cumulative.json
  M data/states/or/warn_latest.json
  M data/states/or/warn_snapshot.json
@@ -228,12 +233,12 @@ M data/changelog.jsonl
  M data/states/tn/warn_latest.json
  M data/states/tn/warn_snapshot.json
  M data/states/ut/changelog.jsonl
+ M data/states/ut/meta.json
  M data/states/ut/warn_cumulative.json
  M data/states/ut/warn_latest.json
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
- M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -260,21 +265,21 @@ M data/changelog.jsonl
  M data/warn_cumulative.json
  M data/warn_latest.json
  M data/warn_snapshot.json
- M file.xlsx
 ```
 
 **Recent commits:**
 ```
+037ca83e auto: WARN data update [skip ci]
 5999862d auto: WARN data update [skip ci]
 943531f1 auto: WARN data update [skip ci]
 30dfda7e Merge remote-tracking branch 'origin/main'
 f52a5285 Cap how long a held amendment waits before it is sent on its own
-28ea913e auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-09-11T15:39:08.823971+00:00` — +0 added, -173 removed, 0 employees (new)
 - `2026-09-11T02:12:09.637781+00:00` — +15 added, -0 removed, 460 employees (new)
 - `2026-09-10T15:37:32.713566+00:00` — +0 added, -158 removed, 0 employees (new)
 - `2026-09-10T02:14:06.780053+00:00` — +9 added, -0 removed, 671 employees (new)
@@ -284,4 +289,3 @@ f52a5285 Cap how long a held amendment waits before it is sent on its own
 - `2026-09-08T02:10:12.286697+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-09-07T16:58:34.421162+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-09-07T01:53:45.141174+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-09-06T14:44:13.414063+00:00` — +0 added, -0 removed, 0 employees (new)
