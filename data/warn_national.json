@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-10T15:54:13.284984+00:00",
+  "last_updated": "2026-09-11T02:27:46.816344+00:00",
   "states_live": 47,
-  "total_records": 60206,
-  "total_employees": 6486224,
+  "total_records": 60226,
+  "total_employees": 6488072,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -29,8 +29,8 @@
       "name": "California",
       "agency": "California Employment Development Department",
       "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
-      "total_records": 16290,
-      "total_employees": 1390637
+      "total_records": 16305,
+      "total_employees": 1391097
     },
     "CO": {
       "name": "Colorado",
@@ -99,8 +99,8 @@
       "name": "Illinois",
       "agency": "Illinois Department of Commerce and Economic Opportunity",
       "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
-      "total_records": 4882,
-      "total_employees": 673673
+      "total_records": 4883,
+      "total_employees": 674271
     },
     "IN": {
       "name": "Indiana",
@@ -155,8 +155,8 @@
       "name": "Michigan",
       "agency": "Michigan Department of Labor and Economic Opportunity",
       "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
-      "total_records": 786,
-      "total_employees": 121568
+      "total_records": 789,
+      "total_employees": 122358
     },
     "MN": {
       "name": "Minnesota",
@@ -239,7 +239,7 @@
       "name": "Oklahoma",
       "agency": "Oklahoma Employment Security Commission",
       "source_url": "https://www.employoklahoma.gov/Participants/s/warnnotices",
-      "total_records": 201,
+      "total_records": 202,
       "total_employees": 0
     },
     "OR": {
@@ -40126,6 +40126,186 @@
       "city": "",
       "address": "10 W. Harbor Boulevard  Ventura CA 93001",
       "industry": "72 Accommodation and Food Services"
+    },
+    {
+      "state": "CA",
+      "company": "Trailer Park, Inc.",
+      "notice_date": "2026-08-27",
+      "effective_date": "2026-07-07",
+      "employees": 119,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "6922 Hollywood Blvd, 10th Floor  Los Angeles CA 90028",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "state": "CA",
+      "company": "University of Southern California (1149 S. Hill Street)",
+      "notice_date": "2026-09-09",
+      "effective_date": "2026-11-04",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "1149 S. Hill Street  Los Angeles CA 90089",
+      "industry": "61 Educational Services"
+    },
+    {
+      "state": "CA",
+      "company": "University of Southern California (1042 Downey Way)",
+      "notice_date": "2026-09-09",
+      "effective_date": "2026-11-04",
+      "employees": 7,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "1042 Downey Way  Los Angeles CA 90089",
+      "industry": "61 Educational Services"
+    },
+    {
+      "state": "CA",
+      "company": "University of Southern California (1150 S. Olive Street)",
+      "notice_date": "2026-09-09",
+      "effective_date": "2026-11-04",
+      "employees": 5,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "1150 S. Olive Street  Los Angeles CA 90015",
+      "industry": "61 Educational Services"
+    },
+    {
+      "state": "CA",
+      "company": "University of Southern California (854 Downey Way)",
+      "notice_date": "2026-09-09",
+      "effective_date": "2026-11-04",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "854 Downey Way  Los Angeles CA 90089",
+      "industry": "61 Educational Services"
+    },
+    {
+      "state": "CA",
+      "company": "University of Southern California (12015 E Waterfront Dr.)",
+      "notice_date": "2026-09-09",
+      "effective_date": "2026-11-04",
+      "employees": 8,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "12015 E Waterfront Dr.  Playa Vista CA 90094",
+      "industry": "61 Educational Services"
+    },
+    {
+      "state": "CA",
+      "company": "University of Southern California (746 W Adams Blvd.)",
+      "notice_date": "2026-09-09",
+      "effective_date": "2026-11-04",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "746 W Adams Blvd.  Los Angeles CA 90007",
+      "industry": "61 Educational Services"
+    },
+    {
+      "state": "CA",
+      "company": "University of Southern California (4676 Admiralty Way)",
+      "notice_date": "2026-09-09",
+      "effective_date": "2026-11-04",
+      "employees": 15,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "4676 Admiralty Way  Marina Del Rey CA 90292",
+      "industry": "61 Educational Services"
+    },
+    {
+      "state": "CA",
+      "company": "University of Southern California (941 Bloom Walk)",
+      "notice_date": "2026-09-09",
+      "effective_date": "2026-11-04",
+      "employees": 4,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "941 Bloom Walk  Los Angeles CA 90089",
+      "industry": "61 Educational Services"
+    },
+    {
+      "state": "CA",
+      "company": "University of Southern California (3740 McClintock Ave)",
+      "notice_date": "2026-09-09",
+      "effective_date": "2026-11-04",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "3740 McClintock Ave  Los Angeles CA 90089",
+      "industry": "61 Educational Services"
+    },
+    {
+      "state": "CA",
+      "company": "University of Southern California (3649 McClintock Ave.)",
+      "notice_date": "2026-09-09",
+      "effective_date": "2026-11-04",
+      "employees": 21,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "3649 McClintock Ave.  Los Angeles CA 90089",
+      "industry": "61 Educational Services"
+    },
+    {
+      "state": "CA",
+      "company": "Sapporo U.S.A. (2865 Executive Place)",
+      "notice_date": "2026-09-09",
+      "effective_date": "2026-11-13",
+      "employees": 6,
+      "layoff_type": "Closure Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "2865 Executive Place  Escondido CA 92029",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Sapporo U.S.A. (2005 Harmony Grove Rd)",
+      "notice_date": "2026-09-09",
+      "effective_date": "2026-11-13",
+      "employees": 6,
+      "layoff_type": "Closure Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "2005 Harmony Grove Rd  Escondido CA 92029",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Sapporo U.S.A. (1999 Citracado Parkway)",
+      "notice_date": "2026-09-09",
+      "effective_date": "2026-11-13",
+      "employees": 200,
+      "layoff_type": "Closure Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "1999 Citracado Parkway  Escondido CA 92029",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Shell Catalyst & Technologies",
+      "notice_date": "2026-09-09",
+      "effective_date": "2026-11-30",
+      "employees": 64,
+      "layoff_type": "Closure Permanent",
+      "county": "Contra Costa County",
+      "city": "",
+      "address": "10 Mococo Road  Martinez CA 94553",
+      "industry": "31-33 Manufacturing"
     },
     {
       "company": "Adventist Health St. Helena",
@@ -336820,6 +337000,18 @@
       "industry": "Other Services (except Public Administration)"
     },
     {
+      "state": "IL",
+      "company": "Norvax, LLC/GoHealth, LLC",
+      "notice_date": "2025-11-03",
+      "effective_date": null,
+      "employees": 598,
+      "layoff_type": "Plant Closure",
+      "county": "Cook County",
+      "city": "Chicago",
+      "address": "222 W Merchandise Mart Plaza #1750",
+      "industry": "Finance and Insurance"
+    },
+    {
       "state": "IN",
       "company": "Thyssenkrupp Presta North America",
       "notice_date": "2026-06-30",
@@ -394636,6 +394828,42 @@
       "county": "Wayne",
       "city": "",
       "address": "20555 Victor Parkway, Livonia, MI 48152",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Dakkota Integrated Systems, LLC",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 67,
+      "layoff_type": "Closure",
+      "county": "Clinton",
+      "city": "",
+      "address": "16130 Grove Road, Lansing, MI 48906",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Niagara Bottling, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-31",
+      "employees": 86,
+      "layoff_type": "Facility closure",
+      "county": "Wayne",
+      "city": "",
+      "address": "8835 General Drive, Plymouth, MI 48170",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Fifth Third Bank",
+      "notice_date": null,
+      "effective_date": "2026-07-01",
+      "employees": 637,
+      "layoff_type": "Permanent layoff",
+      "county": "Oakland",
+      "city": "",
+      "address": "36455 Corporate Drive, Farmington Hills, MI 48331",
       "industry": ""
     },
     {
@@ -540639,6 +540867,18 @@
       "layoff_type": "Other",
       "county": "",
       "city": "Oklahoma City",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OK",
+      "company": "US Gypsum Co",
+      "notice_date": "2026-07-16",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Plant Closing",
+      "county": "",
+      "city": "Southard",
       "address": "",
       "industry": ""
     },

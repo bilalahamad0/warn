@@ -1,9 +1,9 @@
 {
-  "total_records": 201,
+  "total_records": 202,
   "total_employees": 0,
   "date_range_start": "2001-03-21",
   "date_range_end": "2026-08-17",
-  "last_updated": "2026-09-10T15:51:01.968899+00:00",
+  "last_updated": "2026-09-11T02:24:38.774422+00:00",
   "source_url": "https://www.employoklahoma.gov/Participants/s/warnnotices",
   "records": [
     {
@@ -2415,6 +2415,18 @@
       "layoff_type": "Other",
       "county": "",
       "city": "Oklahoma City",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OK",
+      "company": "US Gypsum Co",
+      "notice_date": "2026-07-16",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Plant Closing",
+      "county": "",
+      "city": "Southard",
       "address": "",
       "industry": ""
     }

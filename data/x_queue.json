@@ -1,5 +1,114 @@
 {
   "version": 1,
-  "updated_at": "2026-09-10T15:55:17.542858+00:00",
-  "candidates": []
+  "updated_at": "2026-09-11T02:28:56.613018+00:00",
+  "candidates": [
+    {
+      "id": "c353237355db",
+      "created_at": "2026-09-11T02:28:56.612936+00:00",
+      "status": "pending",
+      "company": "Fifth Third Bank",
+      "display": "Fifth Third Bank",
+      "employees": 637,
+      "states": [
+        "MI"
+      ],
+      "per_state": {
+        "MI": 637
+      },
+      "sites": 1,
+      "card": {
+        "place": "Oakland, MI",
+        "effective": "Jul 1, 2026",
+        "employees": 637
+      },
+      "arm": "size",
+      "reason": "637 >= 250",
+      "text": "Fifth Third Bank filed a WARN notice for 637 job cuts in Oakland, MI.\n\nEffective Jul 1, 2026.\n\n#layoffs #Michigan",
+      "thread": [],
+      "weighted_len": 113,
+      "warnings": [],
+      "keys": [
+        "MI:Fifth Third Bank__2026-07-01__637"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "edbc380c255e",
+      "created_at": "2026-09-11T02:28:56.612982+00:00",
+      "status": "pending",
+      "company": "norvax llc gohealth",
+      "display": "Norvax, LLC/GoHealth, LLC",
+      "employees": 598,
+      "states": [
+        "IL"
+      ],
+      "per_state": {
+        "IL": 598
+      },
+      "sites": 1,
+      "card": {
+        "place": "Chicago, Cook County, IL",
+        "effective": null,
+        "employees": 598
+      },
+      "arm": "size",
+      "reason": "598 >= 250",
+      "text": "Norvax, LLC/GoHealth, LLC filed a WARN notice for 598 job cuts in Chicago, Cook County, IL.\n\nEffective date not reported.\n\n#layoffs #Illinois",
+      "thread": [],
+      "weighted_len": 141,
+      "warnings": [],
+      "keys": [
+        "IL:Norvax, LLC/GoHealth, LLC__None__598"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "4b622895b9b4",
+      "created_at": "2026-09-11T02:28:56.613008+00:00",
+      "status": "pending",
+      "company": "Niagara Bottling",
+      "display": "Niagara Bottling",
+      "employees": 86,
+      "states": [
+        "MI"
+      ],
+      "per_state": {
+        "MI": 86
+      },
+      "sites": 1,
+      "card": {
+        "place": "Wayne, MI",
+        "effective": "Oct 31, 2026",
+        "employees": 86
+      },
+      "arm": "brand",
+      "reason": "known brand, 86 >= 50",
+      "text": "Niagara Bottling filed a WARN notice for 86 job cuts in Wayne, MI.\n\nEffective Oct 31, 2026.\n\n#layoffs #Michigan",
+      "thread": [],
+      "weighted_len": 111,
+      "warnings": [],
+      "keys": [
+        "MI:Niagara Bottling, LLC__2026-10-31__86"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    }
+  ]
 }

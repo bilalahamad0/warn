@@ -1917,5 +1917,15 @@
   "Launchpad__Notice_Date__c": "2026-08-17",
   "Select_Local_Workforce_Board__c": "Green Country",
   "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000tjcMQEAY",
+  "OESC_Employer_Name__c": "US Gypsum Co",
+  "OESC_Employer_City__c": "Southard",
+  "OESC_Employer_Zip_Code__c": "73770",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2026-07-16",
+  "Select_Local_Workforce_Board__c": "Central",
+  "RecordTypeId": "012cs000001OucAAAS"
  }
 ]

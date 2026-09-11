@@ -1,9 +1,9 @@
 {
-  "total_records": 786,
-  "total_employees": 121568,
+  "total_records": 789,
+  "total_employees": 122358,
   "date_range_start": "2016-01-07",
   "date_range_end": "2024-11-15",
-  "last_updated": "2026-09-10T15:47:50.311826+00:00",
+  "last_updated": "2026-09-11T02:22:15.103227+00:00",
   "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
   "records": [
     {
@@ -7441,6 +7441,42 @@
       "county": "Wayne",
       "city": "",
       "address": "20555 Victor Parkway, Livonia, MI 48152",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Dakkota Integrated Systems, LLC",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 67,
+      "layoff_type": "Closure",
+      "county": "Clinton",
+      "city": "",
+      "address": "16130 Grove Road, Lansing, MI 48906",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Niagara Bottling, LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-31",
+      "employees": 86,
+      "layoff_type": "Facility closure",
+      "county": "Wayne",
+      "city": "",
+      "address": "8835 General Drive, Plymouth, MI 48170",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Fifth Third Bank",
+      "notice_date": null,
+      "effective_date": "2026-07-01",
+      "employees": 637,
+      "layoff_type": "Permanent layoff",
+      "county": "Oakland",
+      "city": "",
+      "address": "36455 Corporate Drive, Farmington Hills, MI 48331",
       "industry": ""
     }
   ]
