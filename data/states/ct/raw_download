@@ -374,20 +374,6 @@
       },
       "modifiedDate": "2025-09-24T17:54:46+00:00",
       "name": "rapid_response/warn_documents/2025/Perkin Elmer (Shelton) 9-23-2025.pdf"
-    },
-    {
-      "blobProperties": {
-        "affected_company": "PosiGen Developer LLC",
-        "closing_dates_": "9/21/2025 - 10/4/2025",
-        "layoff_dates": "9/21/2025 - 10/4/2025",
-        "layoff_locations__": "Shelton, Danbury, Wethersfield",
-        "number_of_impacted_workers": "Not provided",
-        "title": "PosiGen Supplemental WARN 9.12.25",
-        "warn_document_date": "2025-09-12",
-        "warn_document_received_date": "2025-09-12"
-      },
-      "modifiedDate": "2025-09-15T14:34:12+00:00",
-      "name": "rapid_response/warn_documents/2025/Posigen (Shelton, Danbury, Wethersfield 9-12-2025.pdf"
     }
   ]
 }

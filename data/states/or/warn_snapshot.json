@@ -1,9 +1,9 @@
 {
-  "total_records": 1369,
+  "total_records": 1370,
   "total_employees": 187020,
   "date_range_start": "1988-11-28",
   "date_range_end": "2026-09-01",
-  "last_updated": "2026-09-11T15:51:46.391523+00:00",
+  "last_updated": "2026-09-12T02:28:36.552056+00:00",
   "source_url": "https://ccwd.hecc.oregon.gov/Layoff/WARN",
   "records": [
     {
@@ -332,6 +332,30 @@
     },
     {
       "state": "OR",
+      "company": "Portland Facility",
+      "notice_date": "2026-05-18",
+      "effective_date": "2026-11-07",
+      "employees": 13,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Portland",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Oregon - Remote Employees",
+      "notice_date": "2026-05-18",
+      "effective_date": "2026-07-31",
+      "employees": 23,
+      "layoff_type": "Large Layoff - 10 or more workers",
+      "county": "",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
       "company": "Bend Depot Facility",
       "notice_date": "2026-05-18",
       "effective_date": "2026-07-31",
@@ -371,22 +395,10 @@
       "company": "Portland Facility",
       "notice_date": "2026-05-18",
       "effective_date": "2026-07-31",
-      "employees": 102,
+      "employees": 89,
       "layoff_type": "Large Layoff - 10 or more workers",
       "county": "",
       "city": "Portland",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "OR",
-      "company": "Oregon - Remote Employees",
-      "notice_date": "2026-05-18",
-      "effective_date": "2026-07-31",
-      "employees": 23,
-      "layoff_type": "Large Layoff - 10 or more workers",
-      "county": "",
-      "city": "",
       "address": "",
       "industry": ""
     },

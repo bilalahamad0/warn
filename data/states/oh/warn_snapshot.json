@@ -2,14 +2,14 @@
   "total_records": 805,
   "total_employees": 119249,
   "date_range_start": "2017-01-09",
-  "date_range_end": "2026-09-10",
-  "last_updated": "2026-09-11T15:51:38.665169+00:00",
+  "date_range_end": "2026-09-11",
+  "last_updated": "2026-09-12T02:28:29.163783+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
     {
       "state": "OH",
-      "company": "Marc Glassman, Inc.",
-      "notice_date": "2026-09-10",
+      "company": "Update Marc Glassman, Inc.",
+      "notice_date": "2026-09-11",
       "effective_date": "2026-11-10",
       "employees": 55,
       "layoff_type": "Closure",
