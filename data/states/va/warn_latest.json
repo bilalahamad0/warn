@@ -1,11 +1,23 @@
 {
-  "total_records": 1123,
-  "total_employees": 130826,
+  "total_records": 1124,
+  "total_employees": 130919,
   "date_range_start": "2010-07-29",
-  "date_range_end": "2026-08-28",
-  "last_updated": "2026-09-11T15:52:10.769505+00:00",
+  "date_range_end": "2026-09-10",
+  "last_updated": "2026-09-12T02:28:53.965802+00:00",
   "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
   "records": [
+    {
+      "state": "VA",
+      "company": "United Air Temp Air Conditioning and Heating LLC",
+      "notice_date": "2026-09-10",
+      "effective_date": "2026-11-10",
+      "employees": 93,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Lorton",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "VA",
       "company": "Crothall Healthcare",

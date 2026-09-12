@@ -1,9 +1,9 @@
 {
-  "total_records": 988,
-  "total_employees": 140013,
+  "total_records": 989,
+  "total_employees": 140068,
   "date_range_start": "2015-01-05",
-  "date_range_end": "2026-09-10",
-  "last_updated": "2026-09-11T15:51:38.674571+00:00",
+  "date_range_end": "2026-09-11",
+  "last_updated": "2026-09-12T02:28:29.172345+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
     {
@@ -11319,6 +11319,18 @@
       "layoff_type": "Closure",
       "county": "Brown",
       "city": "Mount Orab",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Update Marc Glassman, Inc.",
+      "notice_date": "2026-09-11",
+      "effective_date": "2026-11-10",
+      "employees": 55,
+      "layoff_type": "Closure",
+      "county": "Cuyahoga",
+      "city": "Parma",
       "address": "",
       "industry": ""
     }

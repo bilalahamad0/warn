@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-11T15:54:57.841202+00:00",
+  "last_updated": "2026-09-12T02:31:43.361104+00:00",
   "states_live": 47,
-  "total_records": 60226,
-  "total_employees": 6488072,
+  "total_records": 60234,
+  "total_employees": 6489772,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -134,8 +134,8 @@
       "name": "Massachusetts",
       "agency": "Massachusetts Executive Office of Labor and Workforce Development",
       "source_url": "https://www.mass.gov/info-details/worker-adjustment-and-retraining-notification-act-warn",
-      "total_records": 391,
-      "total_employees": 35107
+      "total_records": 392,
+      "total_employees": 35132
     },
     "MD": {
       "name": "Maryland",
@@ -232,8 +232,8 @@
       "name": "Ohio",
       "agency": "Ohio Department of Job and Family Services",
       "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
-      "total_records": 1253,
-      "total_employees": 171617
+      "total_records": 1254,
+      "total_employees": 171672
     },
     "OK": {
       "name": "Oklahoma",
@@ -246,8 +246,8 @@
       "name": "Oregon",
       "agency": "Oregon Higher Education Coordinating Commission, Office of Community Colleges and Workforce Development",
       "source_url": "https://ccwd.hecc.oregon.gov/Layoff/WARN",
-      "total_records": 1369,
-      "total_employees": 187020
+      "total_records": 1371,
+      "total_employees": 187122
     },
     "PA": {
       "name": "Pennsylvania",
@@ -302,8 +302,8 @@
       "name": "Virginia",
       "agency": "Virginia Works (Virginia Employment Commission)",
       "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
-      "total_records": 1123,
-      "total_employees": 130826
+      "total_records": 1124,
+      "total_employees": 130919
     },
     "VT": {
       "name": "Vermont",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1508,
-      "total_employees": 238254
+      "total_records": 1511,
+      "total_employees": 239679
     },
     "WI": {
       "name": "Wisconsin",
@@ -370222,6 +370222,18 @@
       "industry": ""
     },
     {
+      "state": "MA",
+      "company": "Metri BWI, LLC",
+      "notice_date": "2026-09-09",
+      "effective_date": "2026-10-31",
+      "employees": 25,
+      "layoff_type": "",
+      "county": "Central",
+      "city": "Leominster",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "MD",
       "company": "Taft Broadcasting, LLC",
       "notice_date": "2026-07-20",
@@ -535280,6 +535292,18 @@
     },
     {
       "state": "OH",
+      "company": "Update Marc Glassman, Inc.",
+      "notice_date": "2026-09-11",
+      "effective_date": "2026-11-10",
+      "employees": 55,
+      "layoff_type": "Closure",
+      "county": "Cuyahoga",
+      "city": "Parma",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
       "company": "Marc Glassman, Inc.",
       "notice_date": "2023-01-03",
       "effective_date": "2023-03-06",
@@ -557307,6 +557331,30 @@
       "layoff_type": "Permanent closure",
       "county": "",
       "city": "Tualatin",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Portland Facility",
+      "notice_date": "2026-05-18",
+      "effective_date": "2026-11-07",
+      "employees": 13,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Portland",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Portland Facility",
+      "notice_date": "2026-05-18",
+      "effective_date": "2026-07-31",
+      "employees": 89,
+      "layoff_type": "Large Layoff - 10 or more workers",
+      "county": "",
+      "city": "Portland",
       "address": "",
       "industry": ""
     },
@@ -644340,6 +644388,18 @@
       "industry": ""
     },
     {
+      "state": "VA",
+      "company": "United Air Temp Air Conditioning and Heating LLC",
+      "notice_date": "2026-09-10",
+      "effective_date": "2026-11-10",
+      "employees": 93,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Lorton",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "VT",
       "company": "Calmont Beverage",
       "notice_date": "2026-01-22",
@@ -662837,7 +662897,7 @@
       "notice_date": "2026-09-03",
       "effective_date": "2026-11-22",
       "employees": 518,
-      "layoff_type": "Layoff Permanent",
+      "layoff_type": "Layoff Temporary",
       "county": "",
       "city": "Yakima, Franklin and Grant Counties",
       "address": "",
@@ -662861,7 +662921,7 @@
       "notice_date": "2026-09-02",
       "effective_date": "2026-11-15",
       "employees": 243,
-      "layoff_type": "Layoff Permanent",
+      "layoff_type": "Layoff Temporary",
       "county": "",
       "city": "Yakima and Franklin Counties",
       "address": "",
@@ -662876,6 +662936,42 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Statewide",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Young's Market Company of Washington LLC",
+      "notice_date": "2026-09-11",
+      "effective_date": "2026-11-07",
+      "employees": 33,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Auburn",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Monson Ranches Snake River Orchards LLC",
+      "notice_date": "2026-09-11",
+      "effective_date": "2026-11-18",
+      "employees": 172,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Benton City, Burbank",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Legendary Fruit Co",
+      "notice_date": "2026-09-10",
+      "effective_date": "2026-11-10",
+      "employees": 1220,
+      "layoff_type": "Layoff Temporary",
+      "county": "",
+      "city": "Yakima, Wapato",
       "address": "",
       "industry": ""
     },

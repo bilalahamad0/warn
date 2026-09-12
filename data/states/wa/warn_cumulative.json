@@ -1,9 +1,9 @@
 {
-  "total_records": 1508,
-  "total_employees": 238254,
+  "total_records": 1511,
+  "total_employees": 239679,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-09-08",
-  "last_updated": "2026-09-11T15:54:51.162572+00:00",
+  "date_range_end": "2026-09-11",
+  "last_updated": "2026-09-12T02:31:37.809738+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -18060,7 +18060,7 @@
       "notice_date": "2026-09-03",
       "effective_date": "2026-11-22",
       "employees": 518,
-      "layoff_type": "Layoff Permanent",
+      "layoff_type": "Layoff Temporary",
       "county": "",
       "city": "Yakima, Franklin and Grant Counties",
       "address": "",
@@ -18084,7 +18084,7 @@
       "notice_date": "2026-09-02",
       "effective_date": "2026-11-15",
       "employees": 243,
-      "layoff_type": "Layoff Permanent",
+      "layoff_type": "Layoff Temporary",
       "county": "",
       "city": "Yakima and Franklin Counties",
       "address": "",
@@ -18099,6 +18099,42 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Statewide",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Young's Market Company of Washington LLC",
+      "notice_date": "2026-09-11",
+      "effective_date": "2026-11-07",
+      "employees": 33,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Auburn",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Monson Ranches Snake River Orchards LLC",
+      "notice_date": "2026-09-11",
+      "effective_date": "2026-11-18",
+      "employees": 172,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Benton City, Burbank",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Legendary Fruit Co",
+      "notice_date": "2026-09-10",
+      "effective_date": "2026-11-10",
+      "employees": 1220,
+      "layoff_type": "Layoff Temporary",
+      "county": "",
+      "city": "Yakima, Wapato",
       "address": "",
       "industry": ""
     }

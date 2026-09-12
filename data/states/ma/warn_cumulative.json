@@ -1,9 +1,9 @@
 {
-  "total_records": 391,
-  "total_employees": 35107,
+  "total_records": 392,
+  "total_employees": 35132,
   "date_range_start": "2021-04-19",
-  "date_range_end": "2026-09-02",
-  "last_updated": "2026-09-11T15:47:01.666108+00:00",
+  "date_range_end": "2026-09-09",
+  "last_updated": "2026-09-12T02:24:15.312215+00:00",
   "source_url": "https://www.mass.gov/info-details/worker-adjustment-and-retraining-notification-act-warn",
   "records": [
     {
@@ -4695,6 +4695,18 @@
       "layoff_type": "",
       "county": "Metro Southwest",
       "city": "Waltham",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "Metri BWI, LLC",
+      "notice_date": "2026-09-09",
+      "effective_date": "2026-10-31",
+      "employees": 25,
+      "layoff_type": "",
+      "county": "Central",
+      "city": "Leominster",
       "address": "",
       "industry": ""
     }

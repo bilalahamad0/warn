@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-11T15:55:58.369458+00:00",
+  "updated_at": "2026-09-12T02:32:54.953920+00:00",
   "candidates": [
     {
       "id": "c353237355db",
@@ -101,6 +101,42 @@
       "warnings": [],
       "keys": [
         "MI:Niagara Bottling, LLC__2026-10-31__86"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "f5f465aa1f62",
+      "created_at": "2026-09-12T02:32:54.953890+00:00",
+      "status": "pending",
+      "company": "legendary fruit",
+      "display": "Legendary Fruit Co",
+      "employees": 1220,
+      "states": [
+        "WA"
+      ],
+      "per_state": {
+        "WA": 1220
+      },
+      "sites": 1,
+      "card": {
+        "place": "Yakima, Wapato, WA",
+        "effective": "Nov 10, 2026",
+        "employees": 1220
+      },
+      "arm": "size",
+      "reason": "1,220 >= 250",
+      "text": "Legendary Fruit Co filed a WARN notice for 1,220 job cuts in Yakima, Wapato, WA.\n\nEffective Nov 10, 2026.\n\n#layoffs #Washington",
+      "thread": [],
+      "weighted_len": 127,
+      "warnings": [],
+      "keys": [
+        "WA:Legendary Fruit Co__2026-11-10__1220"
       ],
       "approved_by": null,
       "approved_at": null,
