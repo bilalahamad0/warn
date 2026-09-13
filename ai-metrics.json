@@ -1,6 +1,6 @@
 {
   "projectId": "warn",
-  "lastUpdated": "2026-09-08",
+  "lastUpdated": "2026-09-13",
   "aiContribution": 88,
   "agents": [
     {
@@ -17,7 +17,7 @@
     {
       "name": "Cursor",
       "provider": "Anthropic",
-      "period": "Apr 2026 \u2013 Present",
+      "period": "Apr 2026 – Present",
       "models": [
         "Claude Sonnet 4"
       ],
@@ -27,7 +27,7 @@
     {
       "name": "Claude Code",
       "provider": "Anthropic",
-      "period": "Jul 2026 \u2013 Present",
+      "period": "Jul 2026 – Present",
       "models": [
         "Claude Opus 5",
         "Claude Fable 5",
@@ -39,8 +39,8 @@
     }
   ],
   "totalTokens": 291611151,
-  "totalCommits": 457,
-  "linesOfCode": 43890,
+  "totalCommits": 481,
+  "linesOfCode": 55004,
   "devCycleDays": 31,
   "manualEstimateDays": 93,
   "impact": "Automated 100% of data ingestion and alerting",
