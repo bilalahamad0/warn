@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-14T02:38:06.573955+00:00",
+  "updated_at": "2026-09-14T17:38:39.755555+00:00",
   "candidates": [
     {
       "id": "c353237355db",
@@ -137,6 +137,42 @@
       "warnings": [],
       "keys": [
         "WA:Legendary Fruit Co__2026-11-10__1220"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "1ea179ecdef7",
+      "created_at": "2026-09-14T17:38:39.755525+00:00",
+      "status": "pending",
+      "company": "Fiserv",
+      "display": "Fiserv",
+      "employees": 98,
+      "states": [
+        "NJ"
+      ],
+      "per_state": {
+        "NJ": 98
+      },
+      "sites": 1,
+      "card": {
+        "place": "Berkeley Heights, NJ",
+        "effective": "Sep 11, 2026",
+        "employees": 98
+      },
+      "arm": "brand",
+      "reason": "known brand, 98 >= 50",
+      "text": "Fiserv filed a WARN notice for 98 job cuts in Berkeley Heights, NJ.\n\nEffective Sep 11, 2026.\n\n#layoffs #NewJersey",
+      "thread": [],
+      "weighted_len": 113,
+      "warnings": [],
+      "keys": [
+        "NJ:Fiserv Solutions LLC__2026-09-11__98"
       ],
       "approved_by": null,
       "approved_at": null,

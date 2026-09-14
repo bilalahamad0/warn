@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-14T02:37:09.869161+00:00",
+  "last_updated": "2026-09-14T17:37:28.578816+00:00",
   "states_live": 47,
-  "total_records": 60234,
-  "total_employees": 6489772,
+  "total_records": 60236,
+  "total_employees": 6489871,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -183,8 +183,8 @@
       "name": "North Carolina",
       "agency": "North Carolina Department of Commerce",
       "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
-      "total_records": 368,
-      "total_employees": 34149
+      "total_records": 369,
+      "total_employees": 34150
     },
     "ND": {
       "name": "North Dakota",
@@ -204,8 +204,8 @@
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2341,
-      "total_employees": 351838
+      "total_records": 2342,
+      "total_employees": 351936
     },
     "NM": {
       "name": "New Mexico",
@@ -409567,6 +409567,18 @@
       "industry": ""
     },
     {
+      "state": "NC",
+      "company": "Electrolux Consumer Products, Inc.",
+      "notice_date": "2026-09-10",
+      "effective_date": "2026-11-09",
+      "employees": 1,
+      "layoff_type": "Closure Permanent",
+      "county": "Mecklenburg",
+      "city": "Charlotte",
+      "address": "10200 David Taylor Drive",
+      "industry": ""
+    },
+    {
       "state": "ND",
       "company": "EGS Customer Care Inc",
       "notice_date": "2015-07-31",
@@ -450747,6 +450759,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Princeton",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Fiserv Solutions LLC",
+      "notice_date": null,
+      "effective_date": "2026-09-11",
+      "employees": 98,
+      "layoff_type": "",
+      "county": "",
+      "city": "Berkeley Heights",
       "address": "",
       "industry": ""
     },

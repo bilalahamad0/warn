@@ -1,9 +1,9 @@
 {
-  "total_records": 2341,
-  "total_employees": 351838,
+  "total_records": 2342,
+  "total_employees": 351936,
   "date_range_start": "2004-02-24",
   "date_range_end": "2026-12-31",
-  "last_updated": "2026-09-14T02:33:34.873587+00:00",
+  "last_updated": "2026-09-14T17:33:55.533261+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -28095,6 +28095,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Princeton",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Fiserv Solutions LLC",
+      "notice_date": null,
+      "effective_date": "2026-09-11",
+      "employees": 98,
+      "layoff_type": "",
+      "county": "",
+      "city": "Berkeley Heights",
       "address": "",
       "industry": ""
     }

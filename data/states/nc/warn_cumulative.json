@@ -1,9 +1,9 @@
 {
-  "total_records": 368,
-  "total_employees": 34149,
+  "total_records": 369,
+  "total_employees": 34150,
   "date_range_start": "2022-01-25",
-  "date_range_end": "2026-08-13",
-  "last_updated": "2026-09-14T02:32:53.031673+00:00",
+  "date_range_end": "2026-09-10",
+  "last_updated": "2026-09-14T17:33:14.334255+00:00",
   "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
   "records": [
     {
@@ -4420,6 +4420,18 @@
       "county": "Cumberland",
       "city": "Fayetteville",
       "address": "2486 Gillespie St.",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Electrolux Consumer Products, Inc.",
+      "notice_date": "2026-09-10",
+      "effective_date": "2026-11-09",
+      "employees": 1,
+      "layoff_type": "Closure Permanent",
+      "county": "Mecklenburg",
+      "city": "Charlotte",
+      "address": "10200 David Taylor Drive",
       "industry": ""
     }
   ]
