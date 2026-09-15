@@ -1,5 +1,17 @@
 [
  {
+  "employer": "West Pharmaceutical Services, Inc.",
+  "city": "Scottsdale",
+  "zip": "85260",
+  "lwib_area": "7 - ARIZONA@WORK - Maricopa County",
+  "notice_date": "Sep 03, 2026",
+  "warn_type": "WARN",
+  "record_number": "997",
+  "detail_page_url": "https://www.azjobconnection.gov/search/warn_lookups/997",
+  "number_of_employees_affected": "98",
+  "address": "14677 N. 74th St; Scottsdale, Arizona 85260"
+ },
+ {
   "employer": "Amentum",
   "city": "Chandler",
   "zip": "85248",

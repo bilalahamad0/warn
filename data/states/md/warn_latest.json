@@ -1,11 +1,23 @@
 {
-  "total_records": 1406,
-  "total_employees": 116527,
+  "total_records": 1407,
+  "total_employees": 116566,
   "date_range_start": "2010-01-07",
-  "date_range_end": "2026-08-31",
-  "last_updated": "2026-09-14T17:30:37.236924+00:00",
+  "date_range_end": "2026-09-10",
+  "last_updated": "2026-09-15T02:35:24.535647+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
+    {
+      "state": "MD",
+      "company": "United Air Temp, Air Conditioning and Heating, LLC",
+      "notice_date": "2026-09-10",
+      "effective_date": "2026-11-10",
+      "employees": 39,
+      "layoff_type": "Mass Layoff- No Recall",
+      "county": "Statewide",
+      "city": "",
+      "address": "6900 Hill Park Drive, Lorton, VA 22079",
+      "industry": "238220"
+    },
     {
       "state": "MD",
       "company": "ThriftBooks Global, LLC",

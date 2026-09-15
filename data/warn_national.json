@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-14T17:37:28.578816+00:00",
+  "last_updated": "2026-09-15T02:42:33.058901+00:00",
   "states_live": 47,
-  "total_records": 60236,
-  "total_employees": 6489871,
+  "total_records": 60241,
+  "total_employees": 6490174,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -22,8 +22,8 @@
       "name": "Arizona",
       "agency": "Arizona Department of Economic Security",
       "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
-      "total_records": 479,
-      "total_employees": 71260
+      "total_records": 480,
+      "total_employees": 71358
     },
     "CA": {
       "name": "California",
@@ -36,8 +36,8 @@
       "name": "Colorado",
       "agency": "Colorado Department of Labor and Employment",
       "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
-      "total_records": 857,
-      "total_employees": 86941
+      "total_records": 858,
+      "total_employees": 86956
     },
     "CT": {
       "name": "Connecticut",
@@ -71,8 +71,8 @@
       "name": "Georgia",
       "agency": "Technical College System of Georgia, Office of Workforce Development",
       "source_url": "https://www.tcsg.edu/warn-public-view/",
-      "total_records": 4737,
-      "total_employees": 606553
+      "total_records": 4738,
+      "total_employees": 606648
     },
     "HI": {
       "name": "Hawaii",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1356,
-      "total_employees": 115350
+      "total_records": 1357,
+      "total_employees": 115389
     },
     "ME": {
       "name": "Maine",
@@ -232,8 +232,8 @@
       "name": "Ohio",
       "agency": "Ohio Department of Job and Family Services",
       "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
-      "total_records": 1254,
-      "total_employees": 171672
+      "total_records": 1255,
+      "total_employees": 171728
     },
     "OK": {
       "name": "Oklahoma",
@@ -19713,6 +19713,18 @@
       "county": "",
       "city": "Phoenix",
       "address": "625 S. 27th; Phoenix, Arizona 85009",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "West Pharmaceutical Services, Inc.",
+      "notice_date": "2026-09-03",
+      "effective_date": null,
+      "employees": 98,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Scottsdale",
+      "address": "14677 N. 74th St; Scottsdale, Arizona 85260",
       "industry": ""
     },
     {
@@ -194368,6 +194380,18 @@
       "industry": "81,2930: Parking Lots & Garages"
     },
     {
+      "state": "CO",
+      "company": "Battelle",
+      "notice_date": "2026-09-10",
+      "effective_date": "2026-11-09",
+      "employees": 15,
+      "layoff_type": "PCAPP Milestone Project Completions",
+      "county": "Pueblo",
+      "city": "",
+      "address": "",
+      "industry": "56,2910: Remediation Services"
+    },
+    {
       "state": "CT",
       "company": "Conduent Commercial Solutions, LLC",
       "notice_date": "2026-06-26",
@@ -259357,6 +259381,18 @@
       "county": "",
       "city": "",
       "address": "Fort Eisenhower, 300 E Hospital Rd, Augusta, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Caraustar Mill Group, Inc.",
+      "notice_date": null,
+      "effective_date": "2026-11-16",
+      "employees": 95,
+      "layoff_type": "Permanent Closure",
+      "county": "Cobb",
+      "city": "",
+      "address": "3500 Joe Jerkins Blvd, Austell, Georgia",
       "industry": ""
     },
     {
@@ -386506,6 +386542,18 @@
       "industry": "459510"
     },
     {
+      "state": "MD",
+      "company": "United Air Temp, Air Conditioning and Heating, LLC",
+      "notice_date": "2026-09-10",
+      "effective_date": "2026-11-10",
+      "employees": 39,
+      "layoff_type": "Mass Layoff- No Recall",
+      "county": "Statewide",
+      "city": "",
+      "address": "6900 Hill Park Drive, Lorton, VA 22079",
+      "industry": "238220"
+    },
+    {
       "state": "ME",
       "company": "SMBC-Sumitomo Mitsui Banking Corporation",
       "notice_date": "2026-01-13",
@@ -409508,30 +409556,6 @@
     },
     {
       "state": "NC",
-      "company": "Republic National Distributing Company, LLC",
-      "notice_date": "2026-06-02",
-      "effective_date": "2026-08-31",
-      "employees": 14,
-      "layoff_type": "Closure Permanent",
-      "county": "Wake",
-      "city": "Raleigh",
-      "address": "7221 Becky Circle",
-      "industry": ""
-    },
-    {
-      "state": "NC",
-      "company": "Republic National Distributing Company, LLC",
-      "notice_date": "2026-06-02",
-      "effective_date": "2026-08-31",
-      "employees": 39,
-      "layoff_type": "Closure Permanent",
-      "county": "Mecklenburg",
-      "city": "Charlotte",
-      "address": "6701-H Northpark Blvd",
-      "industry": ""
-    },
-    {
-      "state": "NC",
       "company": "SMBC MANUBANK",
       "notice_date": "2026-01-08",
       "effective_date": "2026-10-09",
@@ -409576,6 +409600,30 @@
       "county": "Mecklenburg",
       "city": "Charlotte",
       "address": "10200 David Taylor Drive",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Republic National Distributing Company, LLC",
+      "notice_date": "2026-06-02",
+      "effective_date": "2026-09-29",
+      "employees": 14,
+      "layoff_type": "Closure Permanent",
+      "county": "Wake",
+      "city": "Raleigh",
+      "address": "7221 Becky Circle",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Republic National Distributing Company, LLC",
+      "notice_date": "2026-06-02",
+      "effective_date": "2026-09-29",
+      "employees": 39,
+      "layoff_type": "Closure Permanent",
+      "county": "Mecklenburg",
+      "city": "Charlotte",
+      "address": "6701-H Northpark Blvd",
       "industry": ""
     },
     {
@@ -535323,6 +535371,18 @@
       "layoff_type": "Closure",
       "county": "Cuyahoga",
       "city": "Parma",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "UPDATE 2 Republic National Distributing Company",
+      "notice_date": "2026-09-11",
+      "effective_date": "2026-09-29",
+      "employees": 56,
+      "layoff_type": "Closure",
+      "county": "Hamilton",
+      "city": "Cincinnati",
       "address": "",
       "industry": ""
     },

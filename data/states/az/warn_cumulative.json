@@ -1,9 +1,9 @@
 {
-  "total_records": 479,
-  "total_employees": 71260,
+  "total_records": 480,
+  "total_employees": 71358,
   "date_range_start": "2019-01-04",
-  "date_range_end": "2026-08-21",
-  "last_updated": "2026-09-14T17:22:24.466804+00:00",
+  "date_range_end": "2026-09-03",
+  "last_updated": "2026-09-15T02:27:34.044598+00:00",
   "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
   "records": [
     {
@@ -5752,6 +5752,18 @@
       "county": "",
       "city": "Phoenix",
       "address": "625 S. 27th; Phoenix, Arizona 85009",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "West Pharmaceutical Services, Inc.",
+      "notice_date": "2026-09-03",
+      "effective_date": null,
+      "employees": 98,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Scottsdale",
+      "address": "14677 N. 74th St; Scottsdale, Arizona 85260",
       "industry": ""
     }
   ]
