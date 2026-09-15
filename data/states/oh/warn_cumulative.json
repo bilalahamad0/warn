@@ -1,9 +1,9 @@
 {
-  "total_records": 990,
-  "total_employees": 140124,
+  "total_records": 991,
+  "total_employees": 140174,
   "date_range_start": "2015-01-05",
-  "date_range_end": "2026-09-11",
-  "last_updated": "2026-09-15T02:39:12.226646+00:00",
+  "date_range_end": "2026-09-14",
+  "last_updated": "2026-09-15T16:15:42.801653+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
     {
@@ -11343,6 +11343,18 @@
       "layoff_type": "Closure",
       "county": "Hamilton",
       "city": "Cincinnati",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Perstorp Polyols, Inc.",
+      "notice_date": "2026-09-14",
+      "effective_date": "2026-11-02",
+      "employees": 50,
+      "layoff_type": "Closure",
+      "county": "Lucas",
+      "city": "Toledo",
       "address": "",
       "industry": ""
     }

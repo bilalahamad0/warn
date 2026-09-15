@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-15T02:42:32.812691+00:00",
-  "total_records": 2017,
-  "total_employees": 115127,
+  "generated_at": "2026-09-15T16:18:53.011995+00:00",
+  "total_records": 2021,
+  "total_employees": 115361,
   "yearly_summary": [
     {
       "fiscal_year": 2014,
@@ -83,8 +83,8 @@
     {
       "fiscal_year": "current",
       "label": "FY 2025-26 (Live)",
-      "records": 1716,
-      "employees": 93833,
+      "records": 1720,
+      "employees": 94067,
       "source": "xlsx"
     }
   ],
@@ -27177,6 +27177,62 @@
       "county": "Contra Costa County",
       "city": "",
       "address": "10 Mococo Road  Martinez CA 94553",
+      "industry": "31-33 Manufacturing",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "state": "CA",
+      "company": "Uber Technologies, Inc. - 200 Mathilda Place",
+      "notice_date": "2026-09-02",
+      "effective_date": "2026-11-02",
+      "employees": 94,
+      "layoff_type": "Layoff Permanent",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "200 Mathilda Place  Sunnyvale CA 94086",
+      "industry": "56 Administrative and Support and Waste Management and Remediation",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "state": "CA",
+      "company": "Uber technologies, Inc. - 190 Mathilda Place",
+      "notice_date": "2026-09-02",
+      "effective_date": "2026-11-02",
+      "employees": 43,
+      "layoff_type": "Layoff Permanent",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "190 Mathilda Place  Sunnyvale CA 94086",
+      "industry": "56 Administrative and Support and Waste Management and Remediation",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "state": "CA",
+      "company": "Fuji Food Products, Inc.",
+      "notice_date": "2026-09-10",
+      "effective_date": "2026-11-13",
+      "employees": 35,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "14420 Bloomfield Ave.  Santa Fe Springs CA 90670",
+      "industry": "31-33 Manufacturing",
+      "fiscal_year": "current",
+      "source": "xlsx"
+    },
+    {
+      "state": "CA",
+      "company": "LeeMah Electronics",
+      "notice_date": "2026-09-11",
+      "effective_date": "2026-12-21",
+      "employees": 62,
+      "layoff_type": "Closure Permanent",
+      "county": "San Mateo County",
+      "city": "",
+      "address": "15 South Hill Drive  Brisbane CA 94005",
       "industry": "31-33 Manufacturing",
       "fiscal_year": "current",
       "source": "xlsx"

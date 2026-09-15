@@ -1,9 +1,9 @@
 {
-  "total_records": 371,
-  "total_employees": 34243,
+  "total_records": 372,
+  "total_employees": 34365,
   "date_range_start": "2022-01-25",
-  "date_range_end": "2026-09-10",
-  "last_updated": "2026-09-15T02:38:09.208490+00:00",
+  "date_range_end": "2026-09-11",
+  "last_updated": "2026-09-15T16:14:41.740449+00:00",
   "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
   "records": [
     {
@@ -4456,6 +4456,18 @@
       "county": "Mecklenburg",
       "city": "Charlotte",
       "address": "10200 David Taylor Drive",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Bossong Hosiery Mills, Inc.",
+      "notice_date": "2026-09-11",
+      "effective_date": "2026-09-09",
+      "employees": 122,
+      "layoff_type": "Closure Permanent",
+      "county": "Randolph",
+      "city": "Asheboro",
+      "address": "840 West Salisbury Street",
       "industry": ""
     }
   ]

@@ -1,9 +1,9 @@
 {
-  "total_records": 2370,
-  "total_employees": 354600,
+  "total_records": 2373,
+  "total_employees": 354865,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-09-15T02:38:51.195752+00:00",
+  "last_updated": "2026-09-15T16:15:21.915247+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -1203,6 +1203,42 @@
       "layoff_type": "",
       "county": "",
       "city": "Berkeley Heights",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Banker Steel, a Division of Schuff Steel",
+      "notice_date": null,
+      "effective_date": "2026-12-14",
+      "employees": 115,
+      "layoff_type": "",
+      "county": "",
+      "city": "South Plainfield",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Barrette Outdoor Living",
+      "notice_date": null,
+      "effective_date": "2026-12-13",
+      "employees": 59,
+      "layoff_type": "",
+      "county": "",
+      "city": "Egg Harbor City",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Headquarters Hotel Mgmt, LLC d/b/a Sheraton Atlantic City Convention Center Hotel",
+      "notice_date": null,
+      "effective_date": "2026-12-25",
+      "employees": 91,
+      "layoff_type": "",
+      "county": "",
+      "city": "Atlantic City",
       "address": "",
       "industry": ""
     },

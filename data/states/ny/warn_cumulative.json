@@ -1,9 +1,9 @@
 {
-  "total_records": 4789,
-  "total_employees": 418331,
+  "total_records": 4791,
+  "total_employees": 418572,
   "date_range_start": "2016-01-04",
   "date_range_end": "2026-08-25",
-  "last_updated": "2026-09-15T02:39:09.995282+00:00",
+  "last_updated": "2026-09-15T16:15:41.137557+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -57472,6 +57472,30 @@
       "county": "Broome",
       "city": "",
       "address": "970 US-11 Kirkwood, NY, 13795",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Miller's Ale House, Inc.",
+      "notice_date": "2026-08-24",
+      "effective_date": "2026-09-26",
+      "employees": 25,
+      "layoff_type": "Closure Permanent",
+      "county": "Richmond",
+      "city": "",
+      "address": "2883 Richmond Avenue Staten Island, NY, 10314",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Waterview Heights Rehabilitation and Nursing Center",
+      "notice_date": "2026-08-14",
+      "effective_date": "2026-09-07",
+      "employees": 216,
+      "layoff_type": "Closure Permanent",
+      "county": "Monroe",
+      "city": "",
+      "address": "135 Meriden Street Rochester, NY, 14612",
       "industry": ""
     }
   ]

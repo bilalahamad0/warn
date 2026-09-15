@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-15T02:42:33.058901+00:00",
+  "last_updated": "2026-09-15T16:18:53.147240+00:00",
   "states_live": 47,
-  "total_records": 60241,
-  "total_employees": 6490174,
+  "total_records": 60252,
+  "total_employees": 6491086,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -29,8 +29,8 @@
       "name": "California",
       "agency": "California Employment Development Department",
       "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
-      "total_records": 16305,
-      "total_employees": 1391097
+      "total_records": 16309,
+      "total_employees": 1391331
     },
     "CO": {
       "name": "Colorado",
@@ -183,8 +183,8 @@
       "name": "North Carolina",
       "agency": "North Carolina Department of Commerce",
       "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
-      "total_records": 369,
-      "total_employees": 34150
+      "total_records": 370,
+      "total_employees": 34272
     },
     "ND": {
       "name": "North Dakota",
@@ -204,8 +204,8 @@
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2342,
-      "total_employees": 351936
+      "total_records": 2345,
+      "total_employees": 352201
     },
     "NM": {
       "name": "New Mexico",
@@ -225,15 +225,15 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 5338,
-      "total_employees": 433260
+      "total_records": 5340,
+      "total_employees": 433501
     },
     "OH": {
       "name": "Ohio",
       "agency": "Ohio Department of Job and Family Services",
       "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
-      "total_records": 1255,
-      "total_employees": 171728
+      "total_records": 1256,
+      "total_employees": 171778
     },
     "OK": {
       "name": "Oklahoma",
@@ -40317,6 +40317,54 @@
       "county": "Contra Costa County",
       "city": "",
       "address": "10 Mococo Road  Martinez CA 94553",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Uber Technologies, Inc. - 200 Mathilda Place",
+      "notice_date": "2026-09-02",
+      "effective_date": "2026-11-02",
+      "employees": 94,
+      "layoff_type": "Layoff Permanent",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "200 Mathilda Place  Sunnyvale CA 94086",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
+    },
+    {
+      "state": "CA",
+      "company": "Uber technologies, Inc. - 190 Mathilda Place",
+      "notice_date": "2026-09-02",
+      "effective_date": "2026-11-02",
+      "employees": 43,
+      "layoff_type": "Layoff Permanent",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "190 Mathilda Place  Sunnyvale CA 94086",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
+    },
+    {
+      "state": "CA",
+      "company": "Fuji Food Products, Inc.",
+      "notice_date": "2026-09-10",
+      "effective_date": "2026-11-13",
+      "employees": 35,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "14420 Bloomfield Ave.  Santa Fe Springs CA 90670",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "LeeMah Electronics",
+      "notice_date": "2026-09-11",
+      "effective_date": "2026-12-21",
+      "employees": 62,
+      "layoff_type": "Closure Permanent",
+      "county": "San Mateo County",
+      "city": "",
+      "address": "15 South Hill Drive  Brisbane CA 94005",
       "industry": "31-33 Manufacturing"
     },
     {
@@ -409627,6 +409675,18 @@
       "industry": ""
     },
     {
+      "state": "NC",
+      "company": "Bossong Hosiery Mills, Inc.",
+      "notice_date": "2026-09-11",
+      "effective_date": "2026-09-09",
+      "employees": 122,
+      "layoff_type": "Closure Permanent",
+      "county": "Randolph",
+      "city": "Asheboro",
+      "address": "840 West Salisbury Street",
+      "industry": ""
+    },
+    {
       "state": "ND",
       "company": "EGS Customer Care Inc",
       "notice_date": "2015-07-31",
@@ -450819,6 +450879,42 @@
       "layoff_type": "",
       "county": "",
       "city": "Berkeley Heights",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Banker Steel, a Division of Schuff Steel",
+      "notice_date": null,
+      "effective_date": "2026-12-14",
+      "employees": 115,
+      "layoff_type": "",
+      "county": "",
+      "city": "South Plainfield",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Barrette Outdoor Living",
+      "notice_date": null,
+      "effective_date": "2026-12-13",
+      "employees": 59,
+      "layoff_type": "",
+      "county": "",
+      "city": "Egg Harbor City",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Headquarters Hotel Mgmt, LLC d/b/a Sheraton Atlantic City Convention Center Hotel",
+      "notice_date": null,
+      "effective_date": "2026-12-25",
+      "employees": 91,
+      "layoff_type": "",
+      "county": "",
+      "city": "Atlantic City",
       "address": "",
       "industry": ""
     },
@@ -517460,6 +517556,30 @@
     },
     {
       "state": "NY",
+      "company": "Miller's Ale House, Inc.",
+      "notice_date": "2026-08-24",
+      "effective_date": "2026-09-26",
+      "employees": 25,
+      "layoff_type": "Closure Permanent",
+      "county": "Richmond",
+      "city": "",
+      "address": "2883 Richmond Avenue Staten Island, NY, 10314",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Waterview Heights Rehabilitation and Nursing Center",
+      "notice_date": "2026-08-14",
+      "effective_date": "2026-09-07",
+      "employees": 216,
+      "layoff_type": "Closure Permanent",
+      "county": "Monroe",
+      "city": "",
+      "address": "135 Meriden Street Rochester, NY, 14612",
+      "industry": ""
+    },
+    {
+      "state": "NY",
       "company": "Cardionet, LLC. an affiliate of Philips North America, LLC.",
       "notice_date": "2025-04-01",
       "effective_date": "2025-06-30",
@@ -535383,6 +535503,18 @@
       "layoff_type": "Closure",
       "county": "Hamilton",
       "city": "Cincinnati",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Perstorp Polyols, Inc.",
+      "notice_date": "2026-09-14",
+      "effective_date": "2026-11-02",
+      "employees": 50,
+      "layoff_type": "Closure",
+      "county": "Lucas",
+      "city": "Toledo",
       "address": "",
       "industry": ""
     },

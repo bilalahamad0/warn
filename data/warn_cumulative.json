@@ -1,9 +1,9 @@
 {
-  "total_records": 1716,
-  "total_employees": 93833,
+  "total_records": 1720,
+  "total_employees": 94067,
   "date_range_start": "2025-01-29",
-  "date_range_end": "2026-09-09",
-  "last_updated": "2026-09-15T02:27:34.214175+00:00",
+  "date_range_end": "2026-09-11",
+  "last_updated": "2026-09-15T16:03:44.160284+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "records": [
     {
@@ -20353,6 +20353,54 @@
       "county": "Contra Costa County",
       "city": "",
       "address": "10 Mococo Road  Martinez CA 94553",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Uber Technologies, Inc. - 200 Mathilda Place",
+      "notice_date": "2026-09-02",
+      "effective_date": "2026-11-02",
+      "employees": 94,
+      "layoff_type": "Layoff Permanent",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "200 Mathilda Place  Sunnyvale CA 94086",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
+    },
+    {
+      "state": "CA",
+      "company": "Uber technologies, Inc. - 190 Mathilda Place",
+      "notice_date": "2026-09-02",
+      "effective_date": "2026-11-02",
+      "employees": 43,
+      "layoff_type": "Layoff Permanent",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "190 Mathilda Place  Sunnyvale CA 94086",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
+    },
+    {
+      "state": "CA",
+      "company": "Fuji Food Products, Inc.",
+      "notice_date": "2026-09-10",
+      "effective_date": "2026-11-13",
+      "employees": 35,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "14420 Bloomfield Ave.  Santa Fe Springs CA 90670",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "LeeMah Electronics",
+      "notice_date": "2026-09-11",
+      "effective_date": "2026-12-21",
+      "employees": 62,
+      "layoff_type": "Closure Permanent",
+      "county": "San Mateo County",
+      "city": "",
+      "address": "15 South Hill Drive  Brisbane CA 94005",
       "industry": "31-33 Manufacturing"
     }
   ]

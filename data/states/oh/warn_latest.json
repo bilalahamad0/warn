@@ -1,11 +1,23 @@
 {
-  "total_records": 805,
-  "total_employees": 119249,
+  "total_records": 806,
+  "total_employees": 119299,
   "date_range_start": "2017-01-09",
-  "date_range_end": "2026-09-11",
-  "last_updated": "2026-09-15T02:39:12.217556+00:00",
+  "date_range_end": "2026-09-14",
+  "last_updated": "2026-09-15T16:15:42.796357+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
+    {
+      "state": "OH",
+      "company": "Perstorp Polyols, Inc.",
+      "notice_date": "2026-09-14",
+      "effective_date": "2026-11-02",
+      "employees": 50,
+      "layoff_type": "Closure",
+      "county": "Lucas",
+      "city": "Toledo",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "OH",
       "company": "UPDATE 2 Republic National Distributing Company",

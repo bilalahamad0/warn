@@ -1,9 +1,9 @@
 {
-  "total_records": 369,
-  "total_employees": 34150,
+  "total_records": 370,
+  "total_employees": 34272,
   "date_range_start": "2022-01-25",
-  "date_range_end": "2026-09-10",
-  "last_updated": "2026-09-15T02:38:09.213168+00:00",
+  "date_range_end": "2026-09-11",
+  "last_updated": "2026-09-15T16:14:41.743176+00:00",
   "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
   "records": [
     {
@@ -4432,6 +4432,18 @@
       "county": "Mecklenburg",
       "city": "Charlotte",
       "address": "6701-H Northpark Blvd",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Bossong Hosiery Mills, Inc.",
+      "notice_date": "2026-09-11",
+      "effective_date": "2026-09-09",
+      "employees": 122,
+      "layoff_type": "Closure Permanent",
+      "county": "Randolph",
+      "city": "Asheboro",
+      "address": "840 West Salisbury Street",
       "industry": ""
     }
   ]

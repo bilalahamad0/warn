@@ -3,9 +3,21 @@
   "total_employees": 119249,
   "date_range_start": "2017-01-09",
   "date_range_end": "2026-09-11",
-  "last_updated": "2026-09-14T17:34:14.567066+00:00",
+  "last_updated": "2026-09-15T02:39:12.217556+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
+    {
+      "state": "OH",
+      "company": "UPDATE 2 Republic National Distributing Company",
+      "notice_date": "2026-09-11",
+      "effective_date": "2026-09-29",
+      "employees": 56,
+      "layoff_type": "Closure",
+      "county": "Hamilton",
+      "city": "Cincinnati",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "OH",
       "company": "Update Marc Glassman, Inc.",
@@ -72,18 +84,6 @@
       "notice_date": "2026-08-04",
       "effective_date": "2026-10-01",
       "employees": 488,
-      "layoff_type": "Closure",
-      "county": "Hamilton",
-      "city": "Cincinnati",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "OH",
-      "company": "UPDATE Republic National Distributing Company",
-      "notice_date": "2026-08-03",
-      "effective_date": "2026-08-31",
-      "employees": 56,
       "layoff_type": "Closure",
       "county": "Hamilton",
       "city": "Cincinnati",
