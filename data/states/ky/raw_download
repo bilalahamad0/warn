@@ -1,5 +1,18 @@
 [
  {
+  "company": "PARSONS CORPORATION",
+  "source": "WARN Notice",
+  "notice_number": "Notice 2839",
+  "closure_or_layoff": "Closure",
+  "county": "Madison",
+  "date_received": "2026-09-10 00:00:00",
+  "NAICS": 541330,
+  "notice_url": "https://kydev.my.salesforce.com/sfc/p/t00000004X3h/a/eq00000Wx8De/kpztXs6KnqOtbjTf8oju8WFuUrtiWuyutIsdc8uDFhE",
+  "employees": 2,
+  "date_effective": "2026-11-19 00:00:00",
+  "region": "Bluegrass"
+ },
+ {
   "company": "Congo Brands (Alani, Prime, 3D Energy)",
   "source": "WARN Notice",
   "notice_number": "Notice 2837",

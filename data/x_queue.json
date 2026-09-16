@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-16T02:40:01.759157+00:00",
+  "updated_at": "2026-09-16T16:19:51.020499+00:00",
   "candidates": [
     {
       "id": "c353237355db",
@@ -210,6 +210,42 @@
       "keys": [
         "CA:Uber Technologies, Inc. - 200 Mathilda Place__2026-11-02__94",
         "CA:Uber technologies, Inc. - 190 Mathilda Place__2026-11-02__43"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "318eb39e6433",
+      "created_at": "2026-09-16T16:19:51.020468+00:00",
+      "status": "pending",
+      "company": "wonder group",
+      "display": "Wonder Group, Inc.",
+      "employees": 533,
+      "states": [
+        "NJ"
+      ],
+      "per_state": {
+        "NJ": 533
+      },
+      "sites": 1,
+      "card": {
+        "place": "Parsippany, NJ",
+        "effective": "Sep 16, 2026",
+        "employees": 533
+      },
+      "arm": "size",
+      "reason": "533 >= 250",
+      "text": "Wonder Group, Inc. filed a WARN notice for 533 job cuts in Parsippany, NJ.\n\nEffective Sep 16, 2026.\n\n#layoffs #NewJersey",
+      "thread": [],
+      "weighted_len": 120,
+      "warnings": [],
+      "keys": [
+        "NJ:Wonder Group, Inc.__2026-09-16__533"
       ],
       "approved_by": null,
       "approved_at": null,

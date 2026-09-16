@@ -1,9 +1,9 @@
 {
-  "total_records": 1236,
-  "total_employees": 156504,
+  "total_records": 1237,
+  "total_employees": 156506,
   "date_range_start": "1998-10-02",
-  "date_range_end": "2026-09-04",
-  "last_updated": "2026-09-16T02:30:19.985712+00:00",
+  "date_range_end": "2026-09-10",
+  "last_updated": "2026-09-16T16:09:33.723195+00:00",
   "source_url": "https://kyworks.ky.gov/Services/Pages/Rapid-Response-Layoffs-and-Closures.aspx",
   "records": [
     {
@@ -14051,6 +14051,18 @@
       "city": "",
       "address": "",
       "industry": "312111"
+    },
+    {
+      "state": "KY",
+      "company": "PARSONS CORPORATION",
+      "notice_date": "2026-09-10",
+      "effective_date": "2026-11-19",
+      "employees": 2,
+      "layoff_type": "Closure",
+      "county": "Madison",
+      "city": "",
+      "address": "",
+      "industry": "541330"
     }
   ]
 }

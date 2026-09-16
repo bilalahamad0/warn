@@ -1,9 +1,9 @@
 {
-  "total_records": 2373,
-  "total_employees": 354865,
+  "total_records": 2374,
+  "total_employees": 355398,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-09-16T02:34:31.301294+00:00",
+  "last_updated": "2026-09-16T16:14:40.276782+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -1239,6 +1239,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Atlantic City",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Wonder Group, Inc.",
+      "notice_date": null,
+      "effective_date": "2026-09-16",
+      "employees": 533,
+      "layoff_type": "",
+      "county": "",
+      "city": "Parsippany",
       "address": "",
       "industry": ""
     },

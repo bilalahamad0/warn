@@ -1,41 +1,16 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-09-16 02:38:48 UTC
+**Generated:** 2026-09-16 16:18:18 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 213 | 36 | +0/+177 |
-| Total employees | 11,669 | 2,560 | -9,109 |
+| Total records | 36 | 36 | +0/+0 |
+| Total employees | 2,560 | 2,560 | +0 |
 
 ### ✅ No new entries.
-
-### ❌ Removed Entries (177 records)
-
-| Company | Employees | Effective Date |
-|---------|-----------|----------------|
-| 24Hr Homecare, LLC | 738 | 2026-09-15 |
-| Jabil Inc. | 382 | 2026-11-23 |
-| Visa | 320 | 2026-10-01 |
-| PayPal | 251 | 2026-10-30 |
-| LeeMAH Electronics | 205 | 2026-10-16 |
-| Sapporo U.S.A. (1999 Citracado Parkway) | 200 | 2026-11-13 |
-| Bumble Bee Foods, LLC | 197 | 2026-11-19 |
-| Power Safety Service, LLC | 189 | 2026-11-06 |
-| Foundation for California Community Colleges | 178 | 2026-10-30 |
-| Ruiz Food Products, Inc. | 176 | 2026-11-04 |
-| Sodexo | 164 | 2026-09-30 |
-| ServiceNow, Inc. | 154 | 2026-09-28 |
-| Renewal by Andersen LLC | 153 | 2026-11-02 |
-| LAZ Parking California (9610 Sky Way) | 139 | 2026-10-06 |
-| Chime Financial, Inc. | 135 | 2026-09-30 |
-| Sharp Metropolitan Medical Campus - Sharp Mesa Vista | 134 | 2026-10-10 |
-| ServiceNow, Inc. | 133 | 2026-09-28 |
-| Renewal by Andersen LLC | 131 | 2026-11-02 |
-| OVG Hospitality | 128 | 2026-11-15 |
-| Synopsys, Inc. | 128 | 2026-12-16 |
 
 ---
 ## 📁 File vs Git Comparison
@@ -52,13 +27,8 @@ M data/changelog.jsonl
  M data/states/ak/warn_cumulative.json
  M data/states/ak/warn_latest.json
  M data/states/ak/warn_snapshot.json
- M data/states/al/changelog.jsonl
- M data/states/al/warn_cumulative.json
- M data/states/al/warn_latest.json
- M data/states/al/warn_snapshot.json
  M data/states/az/changelog.jsonl
  M data/states/az/meta.json
- M data/states/az/raw_download
  M data/states/az/warn_cumulative.json
  M data/states/az/warn_latest.json
  M data/states/az/warn_snapshot.json
@@ -122,6 +92,7 @@ M data/changelog.jsonl
  M data/states/ks/warn_snapshot.json
  M data/states/ky/changelog.jsonl
  M data/states/ky/meta.json
+ M data/states/ky/raw_download
  M data/states/ky/warn_cumulative.json
  M data/states/ky/warn_latest.json
  M data/states/ky/warn_snapshot.json
@@ -161,6 +132,7 @@ M data/changelog.jsonl
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
+ M data/states/mt/meta.json
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
@@ -175,11 +147,13 @@ M data/changelog.jsonl
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
+ M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
  M data/states/nj/changelog.jsonl
  M data/states/nj/meta.json
+ M data/states/nj/raw_download.xlsx
  M data/states/nj/warn_cumulative.json
  M data/states/nj/warn_latest.json
  M data/states/nj/warn_snapshot.json
@@ -239,7 +213,6 @@ M data/changelog.jsonl
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
- M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -270,16 +243,17 @@ M data/changelog.jsonl
 
 **Recent commits:**
 ```
+585de1d4 chore(ai): refresh test counts in ai-metrics.json (2026-09-16)
+ac1dca36 chore: weekly AI metrics update [skip actions]
+1bdb47d8 auto: WARN data update [skip ci]
 88470b96 auto: WARN data update [skip ci]
 b339d138 auto: WARN data update [skip ci]
-1f896630 auto: WARN data update [skip ci]
-452d4fca auto: WARN data update [skip ci]
-cddd67c7 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-09-16T16:01:41.046408+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-09-16T02:22:16.072200+00:00` — +0 added, -177 removed, 0 employees (new)
 - `2026-09-15T16:03:44.154217+00:00` — +4 added, -0 removed, 234 employees (new)
 - `2026-09-15T02:27:34.205803+00:00` — +0 added, -0 removed, 0 employees (new)
@@ -289,4 +263,3 @@ cddd67c7 auto: WARN data update [skip ci]
 - `2026-09-13T02:04:36.027855+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-09-12T14:44:56.021388+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-09-12T02:16:17.020673+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-09-11T15:39:08.823971+00:00` — +0 added, -173 removed, 0 employees (new)

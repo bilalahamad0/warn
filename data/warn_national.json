@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-16T02:38:48.998434+00:00",
+  "last_updated": "2026-09-16T16:18:19.532152+00:00",
   "states_live": 47,
-  "total_records": 60254,
-  "total_employees": 6491148,
+  "total_records": 60256,
+  "total_employees": 6491683,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -120,8 +120,8 @@
       "name": "Kentucky",
       "agency": "Kentucky Career Center (Education & Labor Cabinet)",
       "source_url": "https://kyworks.ky.gov/Services/Pages/Rapid-Response-Layoffs-and-Closures.aspx",
-      "total_records": 1236,
-      "total_employees": 156504
+      "total_records": 1237,
+      "total_employees": 156506
     },
     "LA": {
       "name": "Louisiana",
@@ -204,8 +204,8 @@
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2345,
-      "total_employees": 352201
+      "total_records": 2346,
+      "total_employees": 352734
     },
     "NM": {
       "name": "New Mexico",
@@ -365182,6 +365182,18 @@
       "industry": "312111"
     },
     {
+      "state": "KY",
+      "company": "PARSONS CORPORATION",
+      "notice_date": "2026-09-10",
+      "effective_date": "2026-11-19",
+      "employees": 2,
+      "layoff_type": "Closure",
+      "county": "Madison",
+      "city": "",
+      "address": "",
+      "industry": "541330"
+    },
+    {
       "state": "LA",
       "company": "Dr. Reddy\u2019s Laboratories",
       "notice_date": "2025-01-07",
@@ -450939,6 +450951,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Atlantic City",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Wonder Group, Inc.",
+      "notice_date": null,
+      "effective_date": "2026-09-16",
+      "employees": 533,
+      "layoff_type": "",
+      "county": "",
+      "city": "Parsippany",
       "address": "",
       "industry": ""
     },
