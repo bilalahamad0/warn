@@ -1,9 +1,9 @@
 {
-  "total_records": 193,
-  "total_employees": 12154,
+  "total_records": 195,
+  "total_employees": 12395,
   "date_range_start": "2026-01-06",
   "date_range_end": "2026-08-25",
-  "last_updated": "2026-09-15T02:39:09.973265+00:00",
+  "last_updated": "2026-09-15T16:15:41.119398+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -1496,6 +1496,18 @@
     },
     {
       "state": "NY",
+      "company": "Miller's Ale House, Inc.",
+      "notice_date": "2026-08-24",
+      "effective_date": "2026-09-26",
+      "employees": 25,
+      "layoff_type": "Closure Permanent",
+      "county": "Richmond",
+      "city": "",
+      "address": "2883 Richmond Avenue Staten Island, NY, 10314",
+      "industry": ""
+    },
+    {
+      "state": "NY",
       "company": "Mizkan America, Inc.",
       "notice_date": "2026-02-10",
       "effective_date": "2026-05-11",
@@ -2308,6 +2320,18 @@
       "county": "New York",
       "city": "",
       "address": "330 W. 34th Street 10th Floor New York, NY, 10001",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Waterview Heights Rehabilitation and Nursing Center",
+      "notice_date": "2026-08-14",
+      "effective_date": "2026-09-07",
+      "employees": 216,
+      "layoff_type": "Closure Permanent",
+      "county": "Monroe",
+      "city": "",
+      "address": "135 Meriden Street Rochester, NY, 14612",
       "industry": ""
     },
     {

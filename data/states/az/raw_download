@@ -1,5 +1,17 @@
 [
  {
+  "employer": "Becton Dickson and Company (BD)",
+  "city": "Tempe",
+  "zip": "85281",
+  "lwib_area": "7 - ARIZONA@WORK - Maricopa County",
+  "notice_date": "Sep 08, 2026",
+  "warn_type": "WARN",
+  "record_number": "998",
+  "detail_page_url": "https://www.azjobconnection.gov/search/warn_lookups/998",
+  "number_of_employees_affected": "57",
+  "address": "1625 W. Third St; Tempe, Arizona 85281"
+ },
+ {
   "employer": "West Pharmaceutical Services, Inc.",
   "city": "Scottsdale",
   "zip": "85260",

@@ -1,9 +1,9 @@
 {
-  "total_records": 480,
-  "total_employees": 71358,
+  "total_records": 481,
+  "total_employees": 71415,
   "date_range_start": "2019-01-04",
-  "date_range_end": "2026-09-03",
-  "last_updated": "2026-09-15T16:03:43.904342+00:00",
+  "date_range_end": "2026-09-08",
+  "last_updated": "2026-09-16T02:22:15.984726+00:00",
   "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
   "records": [
     {
@@ -5764,6 +5764,18 @@
       "county": "",
       "city": "Scottsdale",
       "address": "14677 N. 74th St; Scottsdale, Arizona 85260",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Becton Dickson and Company (BD)",
+      "notice_date": "2026-09-08",
+      "effective_date": null,
+      "employees": 57,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Tempe",
+      "address": "1625 W. Third St; Tempe, Arizona 85281",
       "industry": ""
     }
   ]

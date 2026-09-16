@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-15T16:18:53.147240+00:00",
+  "last_updated": "2026-09-16T02:38:48.998434+00:00",
   "states_live": 47,
-  "total_records": 60252,
-  "total_employees": 6491086,
+  "total_records": 60254,
+  "total_employees": 6491148,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -22,8 +22,8 @@
       "name": "Arizona",
       "agency": "Arizona Department of Economic Security",
       "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
-      "total_records": 480,
-      "total_employees": 71358
+      "total_records": 481,
+      "total_employees": 71415
     },
     "CA": {
       "name": "California",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1357,
-      "total_employees": 115389
+      "total_records": 1358,
+      "total_employees": 115394
     },
     "ME": {
       "name": "Maine",
@@ -19725,6 +19725,18 @@
       "county": "",
       "city": "Scottsdale",
       "address": "14677 N. 74th St; Scottsdale, Arizona 85260",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Becton Dickson and Company (BD)",
+      "notice_date": "2026-09-08",
+      "effective_date": null,
+      "employees": 57,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Tempe",
+      "address": "1625 W. Third St; Tempe, Arizona 85281",
       "industry": ""
     },
     {
@@ -386600,6 +386612,18 @@
       "city": "",
       "address": "6900 Hill Park Drive, Lorton, VA 22079",
       "industry": "238220"
+    },
+    {
+      "state": "MD",
+      "company": "Sleep Med, LLC",
+      "notice_date": "2026-09-14",
+      "effective_date": "2026-08-31",
+      "employees": 5,
+      "layoff_type": "Mass Layoff- No Recall",
+      "county": "Baltimore County",
+      "city": "",
+      "address": "660 Kenilworth Drive, Ste 203 Towson, MD 21204",
+      "industry": "621498"
     },
     {
       "state": "ME",

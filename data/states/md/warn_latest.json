@@ -1,11 +1,23 @@
 {
-  "total_records": 1407,
-  "total_employees": 116566,
+  "total_records": 1408,
+  "total_employees": 116571,
   "date_range_start": "2010-01-07",
-  "date_range_end": "2026-09-10",
-  "last_updated": "2026-09-15T16:11:49.789427+00:00",
+  "date_range_end": "2026-09-14",
+  "last_updated": "2026-09-16T02:30:53.272663+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
+    {
+      "state": "MD",
+      "company": "Sleep Med, LLC",
+      "notice_date": "2026-09-14",
+      "effective_date": "2026-08-31",
+      "employees": 5,
+      "layoff_type": "Mass Layoff- No Recall",
+      "county": "Baltimore County",
+      "city": "",
+      "address": "660 Kenilworth Drive, Ste 203 Towson, MD 21204",
+      "industry": "621498"
+    },
     {
       "state": "MD",
       "company": "United Air Temp, Air Conditioning and Heating, LLC",
