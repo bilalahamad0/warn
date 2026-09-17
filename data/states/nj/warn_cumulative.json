@@ -1,9 +1,9 @@
 {
-  "total_records": 2346,
-  "total_employees": 352734,
+  "total_records": 2347,
+  "total_employees": 352825,
   "date_range_start": "2004-02-24",
   "date_range_end": "2026-12-31",
-  "last_updated": "2026-09-17T02:38:09.517276+00:00",
+  "last_updated": "2026-09-17T16:14:38.130042+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -28155,6 +28155,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Parsippany",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Headquarters Hotel Mgmt, LLC d/b/a Sheraton Atlantic City Convention Center Hotel",
+      "notice_date": null,
+      "effective_date": "2026-12-15",
+      "employees": 91,
+      "layoff_type": "",
+      "county": "",
+      "city": "Atlantic City",
       "address": "",
       "industry": ""
     }

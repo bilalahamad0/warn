@@ -1,9 +1,9 @@
 {
-  "total_records": 465,
-  "total_employees": 34831,
+  "total_records": 466,
+  "total_employees": 35046,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-08-28",
-  "last_updated": "2026-09-17T02:29:14.485118+00:00",
+  "date_range_end": "2026-09-16",
+  "last_updated": "2026-09-17T16:05:03.467222+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -5585,6 +5585,18 @@
       "city": "ORLANDO",
       "address": "1 Jeff Fuqua Blvd",
       "industry": "Transportation and Warehousing"
+    },
+    {
+      "state": "FL",
+      "company": "Health First Inc., and Health First Shared Services, Inc.",
+      "notice_date": "2026-09-16",
+      "effective_date": "2026-09-16",
+      "employees": 215,
+      "layoff_type": "",
+      "county": "",
+      "city": "ROCKLEDGE",
+      "address": "6450 US Highway 1",
+      "industry": "Health Care and Social Assistance"
     }
   ]
 }

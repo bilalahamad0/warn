@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-17T02:41:43.349277+00:00",
+  "last_updated": "2026-09-17T16:18:30.975565+00:00",
   "states_live": 47,
-  "total_records": 60263,
-  "total_employees": 6493594,
+  "total_records": 60268,
+  "total_employees": 6494208,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -64,8 +64,8 @@
       "name": "Florida",
       "agency": "Florida Department of Commerce (FloridaCommerce)",
       "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
-      "total_records": 465,
-      "total_employees": 34831
+      "total_records": 466,
+      "total_employees": 35046
     },
     "GA": {
       "name": "Georgia",
@@ -183,8 +183,8 @@
       "name": "North Carolina",
       "agency": "North Carolina Department of Commerce",
       "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
-      "total_records": 370,
-      "total_employees": 34272
+      "total_records": 372,
+      "total_employees": 34525
     },
     "ND": {
       "name": "North Dakota",
@@ -204,8 +204,8 @@
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2346,
-      "total_employees": 352734
+      "total_records": 2347,
+      "total_employees": 352825
     },
     "NM": {
       "name": "New Mexico",
@@ -232,8 +232,8 @@
       "name": "Ohio",
       "agency": "Ohio Department of Job and Family Services",
       "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
-      "total_records": 1256,
-      "total_employees": 171778
+      "total_records": 1257,
+      "total_employees": 171833
     },
     "OK": {
       "name": "Oklahoma",
@@ -202610,6 +202610,18 @@
       "city": "ORLANDO",
       "address": "1 Jeff Fuqua Blvd",
       "industry": "Transportation and Warehousing"
+    },
+    {
+      "state": "FL",
+      "company": "Health First Inc., and Health First Shared Services, Inc.",
+      "notice_date": "2026-09-16",
+      "effective_date": "2026-09-16",
+      "employees": 215,
+      "layoff_type": "",
+      "county": "",
+      "city": "ROCKLEDGE",
+      "address": "6450 US Highway 1",
+      "industry": "Health Care and Social Assistance"
     },
     {
       "state": "GA",
@@ -409759,6 +409771,30 @@
       "industry": ""
     },
     {
+      "state": "NC",
+      "company": "Regional Acceptance Corporation",
+      "notice_date": "2026-09-15",
+      "effective_date": "2027-02-28",
+      "employees": 156,
+      "layoff_type": "Closure Permanent",
+      "county": "Halifax",
+      "city": "Winterville",
+      "address": "266 Beacon Drive",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Regional Acceptance Corporation",
+      "notice_date": "2026-09-15",
+      "effective_date": "2027-07-31",
+      "employees": 97,
+      "layoff_type": "Closure Permanent",
+      "county": "Pitt",
+      "city": "Greenville",
+      "address": "1424 East Fire Tower Road",
+      "industry": ""
+    },
+    {
       "state": "ND",
       "company": "EGS Customer Care Inc",
       "notice_date": "2015-07-31",
@@ -450999,6 +451035,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Parsippany",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Headquarters Hotel Mgmt, LLC d/b/a Sheraton Atlantic City Convention Center Hotel",
+      "notice_date": null,
+      "effective_date": "2026-12-15",
+      "employees": 91,
+      "layoff_type": "",
+      "county": "",
+      "city": "Atlantic City",
       "address": "",
       "industry": ""
     },
@@ -535599,6 +535647,18 @@
       "layoff_type": "Closure",
       "county": "Lucas",
       "city": "Toledo",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Marc Glassman, Inc.",
+      "notice_date": "2026-09-11",
+      "effective_date": "2026-11-10",
+      "employees": 55,
+      "layoff_type": "Closure",
+      "county": "Cuyahoga",
+      "city": "Parma",
       "address": "",
       "industry": ""
     },

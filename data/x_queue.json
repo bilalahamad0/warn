@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-17T02:43:02.589754+00:00",
+  "updated_at": "2026-09-17T16:19:46.561970+00:00",
   "candidates": [
     {
       "id": "c353237355db",
@@ -354,6 +354,43 @@
       "warnings": [],
       "keys": [
         "WA:Cascade View Fruit & Cold Storage, LLC__2026-11-15__259"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "54005f3f9b9e",
+      "created_at": "2026-09-17T16:19:46.561942+00:00",
+      "status": "pending",
+      "company": "regional acceptance",
+      "display": "Regional Acceptance Corporation",
+      "employees": 253,
+      "states": [
+        "NC"
+      ],
+      "per_state": {
+        "NC": 253
+      },
+      "sites": 2,
+      "card": {
+        "place": "2 sites in North Carolina",
+        "effective": "Feb 28, 2027",
+        "employees": 253
+      },
+      "arm": "size",
+      "reason": "253 >= 250",
+      "text": "Regional Acceptance Corporation filed WARN notices for 253 job cuts across 2 sites in North Carolina.\n\nFirst effective date Feb 28, 2027.\n\n#layoffs #NorthCarolina",
+      "thread": [],
+      "weighted_len": 162,
+      "warnings": [],
+      "keys": [
+        "NC:Regional Acceptance Corporation__2027-02-28__156",
+        "NC:Regional Acceptance Corporation__2027-07-31__97"
       ],
       "approved_by": null,
       "approved_at": null,
