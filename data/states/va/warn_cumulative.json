@@ -1,9 +1,9 @@
 {
-  "total_records": 1124,
-  "total_employees": 130919,
+  "total_records": 1125,
+  "total_employees": 131122,
   "date_range_start": "2010-07-29",
-  "date_range_end": "2026-09-10",
-  "last_updated": "2026-09-16T16:15:31.073950+00:00",
+  "date_range_end": "2026-09-15",
+  "last_updated": "2026-09-17T02:38:55.148176+00:00",
   "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
   "records": [
     {
@@ -13484,10 +13484,22 @@
     },
     {
       "state": "VA",
+      "company": "Bechtel Power Corporation",
+      "notice_date": "2026-09-15",
+      "effective_date": "2026-11-16",
+      "employees": 200,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Reston",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
       "company": "United Air Temp Air Conditioning and Heating LLC",
       "notice_date": "2026-09-10",
       "effective_date": "2026-11-10",
-      "employees": 93,
+      "employees": 96,
       "layoff_type": "Closure",
       "county": "",
       "city": "Lorton",

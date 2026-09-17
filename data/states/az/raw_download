@@ -1,5 +1,17 @@
 [
  {
+  "employer": "Regional Acceptance Corporation",
+  "city": "Tempe",
+  "zip": "85281",
+  "lwib_area": "7 - ARIZONA@WORK - Maricopa County",
+  "notice_date": "Sep 15, 2026",
+  "warn_type": "WARN",
+  "record_number": "999",
+  "detail_page_url": "https://www.azjobconnection.gov/search/warn_lookups/999",
+  "number_of_employees_affected": "120",
+  "address": "1700 North Desert Drive; Tempe, Arizona 85281"
+ },
+ {
   "employer": "Becton Dickson and Company (BD)",
   "city": "Tempe",
   "zip": "85281",

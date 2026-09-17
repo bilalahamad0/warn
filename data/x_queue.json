@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-16T16:19:51.020499+00:00",
+  "updated_at": "2026-09-17T02:43:02.589754+00:00",
   "candidates": [
     {
       "id": "c353237355db",
@@ -246,6 +246,114 @@
       "warnings": [],
       "keys": [
         "NJ:Wonder Group, Inc.__2026-09-16__533"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "185e22aac83f",
+      "created_at": "2026-09-17T02:43:02.589612+00:00",
+      "status": "pending",
+      "company": "blue cascade orchards",
+      "display": "Blue Cascade Orchards",
+      "employees": 792,
+      "states": [
+        "WA"
+      ],
+      "per_state": {
+        "WA": 792
+      },
+      "sites": 1,
+      "card": {
+        "place": "Yakima, Okanogan, Franklin, Grant, Adams, Walla Walla, and Benton Counties, WA",
+        "effective": "Nov 20, 2026",
+        "employees": 792
+      },
+      "arm": "size",
+      "reason": "792 >= 250",
+      "text": "Blue Cascade Orchards filed a WARN notice for 792 job cuts in Yakima, Okanogan, Franklin, Grant, Adams, Walla Walla, and Benton Counties, WA.\n\nEffective Nov 20, 2026.\n\n#layoffs #Washington",
+      "thread": [],
+      "weighted_len": 188,
+      "warnings": [],
+      "keys": [
+        "WA:Blue Cascade Orchards__2026-11-20__792"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "b1904016b491",
+      "created_at": "2026-09-17T02:43:02.589685+00:00",
+      "status": "pending",
+      "company": "Oracle",
+      "display": "Oracle",
+      "employees": 359,
+      "states": [
+        "WA"
+      ],
+      "per_state": {
+        "WA": 359
+      },
+      "sites": 1,
+      "card": {
+        "place": "Seattle, WA",
+        "effective": "Nov 13, 2026",
+        "employees": 359
+      },
+      "arm": "size",
+      "reason": "359 >= 250",
+      "text": "Oracle filed a WARN notice for 359 job cuts in Seattle, WA.\n\nEffective Nov 13, 2026.\n\n#layoffs #Washington",
+      "thread": [],
+      "weighted_len": 106,
+      "warnings": [],
+      "keys": [
+        "WA:Oracle America, Inc.__2026-11-13__359"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "90ca5979ef26",
+      "created_at": "2026-09-17T02:43:02.589739+00:00",
+      "status": "pending",
+      "company": "cascade view fruit and cold storage",
+      "display": "Cascade View Fruit & Cold Storage, LLC",
+      "employees": 259,
+      "states": [
+        "WA"
+      ],
+      "per_state": {
+        "WA": 259
+      },
+      "sites": 1,
+      "card": {
+        "place": "Selah, WA",
+        "effective": "Nov 15, 2026",
+        "employees": 259
+      },
+      "arm": "size",
+      "reason": "259 >= 250",
+      "text": "Cascade View Fruit & Cold Storage, LLC filed a WARN notice for 259 job cuts in Selah, WA.\n\nEffective Nov 15, 2026.\n\n#layoffs #Washington",
+      "thread": [],
+      "weighted_len": 136,
+      "warnings": [],
+      "keys": [
+        "WA:Cascade View Fruit & Cold Storage, LLC__2026-11-15__259"
       ],
       "approved_by": null,
       "approved_at": null,

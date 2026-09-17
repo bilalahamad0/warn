@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-16T16:18:19.532152+00:00",
+  "last_updated": "2026-09-17T02:41:43.349277+00:00",
   "states_live": 47,
-  "total_records": 60256,
-  "total_employees": 6491683,
+  "total_records": 60263,
+  "total_employees": 6493594,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -22,8 +22,8 @@
       "name": "Arizona",
       "agency": "Arizona Department of Economic Security",
       "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
-      "total_records": 481,
-      "total_employees": 71415
+      "total_records": 482,
+      "total_employees": 71535
     },
     "CA": {
       "name": "California",
@@ -85,8 +85,8 @@
       "name": "Iowa",
       "agency": "Iowa Workforce Development",
       "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
-      "total_records": 935,
-      "total_employees": 51847
+      "total_records": 936,
+      "total_employees": 51882
     },
     "ID": {
       "name": "Idaho",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1358,
-      "total_employees": 115394
+      "total_records": 1359,
+      "total_employees": 115537
     },
     "ME": {
       "name": "Maine",
@@ -302,8 +302,8 @@
       "name": "Virginia",
       "agency": "Virginia Works (Virginia Employment Commission)",
       "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
-      "total_records": 1124,
-      "total_employees": 130919
+      "total_records": 1125,
+      "total_employees": 131122
     },
     "VT": {
       "name": "Vermont",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1511,
-      "total_employees": 239679
+      "total_records": 1514,
+      "total_employees": 241089
     },
     "WI": {
       "name": "Wisconsin",
@@ -19737,6 +19737,18 @@
       "county": "",
       "city": "Tempe",
       "address": "1625 W. Third St; Tempe, Arizona 85281",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Regional Acceptance Corporation",
+      "notice_date": "2026-09-15",
+      "effective_date": null,
+      "employees": 120,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Tempe",
+      "address": "1700 North Desert Drive; Tempe, Arizona 85281",
       "industry": ""
     },
     {
@@ -276124,6 +276136,18 @@
       "industry": "Finance and Insurance"
     },
     {
+      "state": "IA",
+      "company": "Wells Fargo",
+      "notice_date": "2026-09-15",
+      "effective_date": "2026-11-14",
+      "employees": 35,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Polk",
+      "city": "West Des Moines",
+      "address": "800 S Jordan Creek Pkwy",
+      "industry": "Finance and Insurance"
+    },
+    {
       "state": "ID",
       "company": "Fortrex",
       "notice_date": "2026-07-01",
@@ -386636,6 +386660,18 @@
       "city": "",
       "address": "660 Kenilworth Drive, Ste 203 Towson, MD 21204",
       "industry": "621498"
+    },
+    {
+      "state": "MD",
+      "company": "CB Manufacturing, Inc., dba Pepsi Beverages",
+      "notice_date": "2026-09-14",
+      "effective_date": "2026-11-13",
+      "employees": 143,
+      "layoff_type": "Mass Layoff- No Recall",
+      "county": "Prince Georges",
+      "city": "",
+      "address": "2611 Pepsi Place Hyattsville, MD 20781",
+      "industry": "312111"
     },
     {
       "state": "ME",
@@ -644653,10 +644689,22 @@
     },
     {
       "state": "VA",
+      "company": "Bechtel Power Corporation",
+      "notice_date": "2026-09-15",
+      "effective_date": "2026-11-16",
+      "employees": 200,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Reston",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
       "company": "United Air Temp Air Conditioning and Heating LLC",
       "notice_date": "2026-09-10",
       "effective_date": "2026-11-10",
-      "employees": 93,
+      "employees": 96,
       "layoff_type": "Closure",
       "county": "",
       "city": "Lorton",
@@ -663236,6 +663284,42 @@
       "layoff_type": "Layoff Temporary",
       "county": "",
       "city": "Yakima, Wapato",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Oracle America, Inc.",
+      "notice_date": "2026-09-14",
+      "effective_date": "2026-11-13",
+      "employees": 359,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Seattle",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Blue Cascade Orchards",
+      "notice_date": "2026-09-14",
+      "effective_date": "2026-11-20",
+      "employees": 792,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Yakima, Okanogan, Franklin, Grant, Adams, Walla Walla, and Benton Counties",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Cascade View Fruit & Cold Storage, LLC",
+      "notice_date": "2026-09-09",
+      "effective_date": "2026-11-15",
+      "employees": 259,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Selah",
       "address": "",
       "industry": ""
     },

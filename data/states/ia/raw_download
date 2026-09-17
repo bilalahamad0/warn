@@ -1012,6 +1012,17 @@
   "industry": "Finance and Insurance "
  },
  {
+  "company": "Wells Fargo",
+  "address": "800 S Jordan Creek Pkwy",
+  "city": "West Des Moines",
+  "county": "Polk",
+  "layoff_type": "Amendment - Additional Employees",
+  "employees": 35,
+  "notice_date": "2026-09-15 00:00:00",
+  "effective_date": "2026-11-14 00:00:00",
+  "industry": "Finance and Insurance "
+ },
+ {
   "company": "John Deere Ottumwa Works ",
   "address": "928 E Vine St",
   "city": "Ottumwa",
@@ -6565,17 +6576,6 @@
   "notice_date": "12/20/2022",
   "effective_date": "2023-01-16 00:00:00",
   "industry": "Manufacturing "
- },
- {
-  "company": "Principal Life Insurance Company ",
-  "address": "711 High Street ",
-  "city": "Des Moines",
-  "county": "Polk",
-  "layoff_type": "Mass Layoff",
-  "employees": 25,
-  "notice_date": "9/9/2021",
-  "effective_date": "2021-10-11 00:00:00",
-  "industry": "Finance and Insurance "
  },
  {
   "company": "Lutheran Services in Iowa ",

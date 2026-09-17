@@ -1,9 +1,9 @@
 {
-  "total_records": 481,
-  "total_employees": 71415,
+  "total_records": 482,
+  "total_employees": 71535,
   "date_range_start": "2019-01-04",
-  "date_range_end": "2026-09-08",
-  "last_updated": "2026-09-16T16:01:40.934735+00:00",
+  "date_range_end": "2026-09-15",
+  "last_updated": "2026-09-17T02:26:07.937732+00:00",
   "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
   "records": [
     {
@@ -5776,6 +5776,18 @@
       "county": "",
       "city": "Tempe",
       "address": "1625 W. Third St; Tempe, Arizona 85281",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Regional Acceptance Corporation",
+      "notice_date": "2026-09-15",
+      "effective_date": null,
+      "employees": 120,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Tempe",
+      "address": "1700 North Desert Drive; Tempe, Arizona 85281",
       "industry": ""
     }
   ]
