@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-17T16:19:46.561970+00:00",
+  "updated_at": "2026-09-18T02:28:45.090405+00:00",
   "candidates": [
     {
       "id": "c353237355db",
@@ -391,6 +391,189 @@
       "keys": [
         "NC:Regional Acceptance Corporation__2027-02-28__156",
         "NC:Regional Acceptance Corporation__2027-07-31__97"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "75f00ad2eb01",
+      "created_at": "2026-09-18T02:28:45.090165+00:00",
+      "status": "pending",
+      "company": "pacific ag services",
+      "display": "Pacific Ag Services LLC",
+      "employees": 530,
+      "states": [
+        "WA"
+      ],
+      "per_state": {
+        "WA": 530
+      },
+      "sites": 1,
+      "card": {
+        "place": "Grant and Franklin Counties, WA",
+        "effective": "Nov 15, 2026",
+        "employees": 530
+      },
+      "arm": "size",
+      "reason": "530 >= 250",
+      "text": "Pacific Ag Services LLC filed a WARN notice for 530 job cuts in Grant and Franklin Counties, WA.\n\nEffective Nov 15, 2026.\n\n#layoffs #Washington",
+      "thread": [],
+      "weighted_len": 143,
+      "warnings": [],
+      "keys": [
+        "WA:Pacific Ag Services LLC__2026-11-15__530"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "4f7a53467346",
+      "created_at": "2026-09-18T02:28:45.090241+00:00",
+      "status": "pending",
+      "company": "Oracle",
+      "display": "Oracle",
+      "employees": 441,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 441
+      },
+      "sites": 3,
+      "card": {
+        "place": "3 sites in California",
+        "effective": "Nov 13, 2026",
+        "employees": 441
+      },
+      "arm": "size",
+      "reason": "441 >= 250",
+      "text": "Oracle filed WARN notices for 441 job cuts across 3 sites in California.\n\nFirst effective date Nov 13, 2026.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 130,
+      "warnings": [],
+      "keys": [
+        "CA:Oracle America, Inc.__2026-11-13__99",
+        "CA:Oracle Pleasanton Campus (Pleasanton Campus)__2026-11-13__63",
+        "CA:Oracle America, Inc.__2026-11-13__279"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "5dd6f90a5a6e",
+      "created_at": "2026-09-18T02:28:45.090295+00:00",
+      "status": "pending",
+      "company": "owens and minor",
+      "display": "Owens & Minor",
+      "employees": 419,
+      "states": [
+        "VA"
+      ],
+      "per_state": {
+        "VA": 419
+      },
+      "sites": 1,
+      "card": {
+        "place": "Toano, VA",
+        "effective": "Nov 25, 2026",
+        "employees": 419
+      },
+      "arm": "size",
+      "reason": "419 >= 250",
+      "text": "Owens & Minor filed a WARN notice for 419 job cuts in Toano, VA.\n\nEffective Nov 25, 2026.\n\n#layoffs #Virginia",
+      "thread": [],
+      "weighted_len": 109,
+      "warnings": [],
+      "keys": [
+        "VA:Owens & Minor (Avid Medical LLC)__2026-11-25__419"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "78d823baba1d",
+      "created_at": "2026-09-18T02:28:45.090343+00:00",
+      "status": "pending",
+      "company": "loftus administrative services",
+      "display": "Loftus Administrative Services LLC",
+      "employees": 376,
+      "states": [
+        "WA"
+      ],
+      "per_state": {
+        "WA": 376
+      },
+      "sites": 1,
+      "card": {
+        "place": "Yakima County, WA",
+        "effective": "Nov 15, 2026",
+        "employees": 376
+      },
+      "arm": "size",
+      "reason": "376 >= 250",
+      "text": "Loftus Administrative Services LLC filed a WARN notice for 376 job cuts in Yakima County, WA.\n\nEffective Nov 15, 2026.\n\n#layoffs #Washington",
+      "thread": [],
+      "weighted_len": 140,
+      "warnings": [],
+      "keys": [
+        "WA:Loftus Administrative Services LLC__2026-11-15__376"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "22a991ca436e",
+      "created_at": "2026-09-18T02:28:45.090390+00:00",
+      "status": "pending",
+      "company": "Uber",
+      "display": "Uber",
+      "employees": 253,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 253
+      },
+      "sites": 2,
+      "card": {
+        "place": "2 sites in California",
+        "effective": "Nov 2, 2026",
+        "employees": 253
+      },
+      "arm": "size",
+      "reason": "253 >= 250",
+      "text": "Uber filed WARN notices for 253 job cuts across 2 sites in California.\n\nFirst effective date Nov 2, 2026.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 127,
+      "warnings": [],
+      "keys": [
+        "CA:Uber Technologies, Inc. 1725 3rd Street__2026-11-02__102",
+        "CA:Uber Technologies, Inc. - 1655 3rd Street__2026-11-02__151"
       ],
       "approved_by": null,
       "approved_at": null,

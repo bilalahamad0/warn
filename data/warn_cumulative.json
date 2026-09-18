@@ -1,9 +1,9 @@
 {
-  "total_records": 1720,
-  "total_employees": 94067,
+  "total_records": 1729,
+  "total_employees": 94945,
   "date_range_start": "2025-01-29",
-  "date_range_end": "2026-09-11",
-  "last_updated": "2026-09-17T16:02:02.592761+00:00",
+  "date_range_end": "2026-09-15",
+  "last_updated": "2026-09-18T02:12:25.087619+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "records": [
     {
@@ -19617,7 +19617,7 @@
       "notice_date": "2026-08-19",
       "effective_date": "2026-11-02",
       "employees": 73,
-      "layoff_type": "Layoff Permanent",
+      "layoff_type": "Relocation",
       "county": "Ventura County",
       "city": "",
       "address": "2800 Sturgis Road  Oxnard CA 93030",
@@ -20401,6 +20401,114 @@
       "county": "San Mateo County",
       "city": "",
       "address": "15 South Hill Drive  Brisbane CA 94005",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Pathways Community Services dba Clarvida",
+      "notice_date": "2026-09-01",
+      "effective_date": "2026-11-01",
+      "employees": 67,
+      "layoff_type": "Closure Permanent",
+      "county": "Orange County",
+      "city": "",
+      "address": "1360 S. Anaheim Blvd. Suite 101  Anaheim CA 92805",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Uber Technologies, Inc. 1725 3rd Street",
+      "notice_date": "2026-09-02",
+      "effective_date": "2026-11-02",
+      "employees": 102,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Francisco County",
+      "city": "",
+      "address": "1725 3rd Street  San Francisco CA 94158",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
+    },
+    {
+      "state": "CA",
+      "company": "Uber Technologies, Inc. - 1655 3rd Street",
+      "notice_date": "2026-09-02",
+      "effective_date": "2026-11-02",
+      "employees": 151,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Francisco County",
+      "city": "",
+      "address": "1655 3rd Street  San Francisco CA 94158",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
+    },
+    {
+      "state": "CA",
+      "company": "Full Steam Staffing (2121 Boeing Way)",
+      "notice_date": "2026-09-15",
+      "effective_date": "2026-11-04",
+      "employees": 91,
+      "layoff_type": "Closure Permanent",
+      "county": "San Joaquin County",
+      "city": "",
+      "address": "2121 Boeing Way  Stockton CA 95206",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
+    },
+    {
+      "state": "CA",
+      "company": "Full Steam Staffing (4239 Pock Lane)",
+      "notice_date": "2026-09-15",
+      "effective_date": "2026-11-04",
+      "employees": 19,
+      "layoff_type": "Closure Permanent",
+      "county": "San Joaquin County",
+      "city": "",
+      "address": "4239 Pock Lane  Stockton CA 95206",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
+    },
+    {
+      "state": "CA",
+      "company": "Oracle America, Inc.",
+      "notice_date": "2026-09-14",
+      "effective_date": "2026-11-13",
+      "employees": 99,
+      "layoff_type": "Layoff Permanent",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "4230 Leonard Stocking Drive  Santa Clara CA 95054",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Oracle Pleasanton Campus (Pleasanton Campus)",
+      "notice_date": "2026-09-14",
+      "effective_date": "2026-11-13",
+      "employees": 63,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "5815 Owens Drive  Pleasanton CA 94588",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Oracle America, Inc.",
+      "notice_date": "2026-09-14",
+      "effective_date": "2026-11-13",
+      "employees": 279,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Mateo County",
+      "city": "",
+      "address": "500 Oracle Parkway  Redwood City CA 94065",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "DesigneRx Pharmaceuticals, Inc.",
+      "notice_date": "2026-09-14",
+      "effective_date": "2026-11-15",
+      "employees": 7,
+      "layoff_type": "Closure Permanent",
+      "county": "Solano County",
+      "city": "",
+      "address": "4941 Allison Parkway, Suite B  Vacaville CA 95688",
       "industry": "31-33 Manufacturing"
     }
   ]

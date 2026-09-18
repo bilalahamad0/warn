@@ -1,9 +1,9 @@
 {
-  "total_records": 1514,
-  "total_employees": 241089,
+  "total_records": 1516,
+  "total_employees": 241995,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-09-14",
-  "last_updated": "2026-09-17T16:18:25.296307+00:00",
+  "date_range_end": "2026-09-16",
+  "last_updated": "2026-09-18T02:27:19.798318+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -18171,6 +18171,30 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Selah",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Pacific Ag Services LLC",
+      "notice_date": "2026-09-16",
+      "effective_date": "2026-11-15",
+      "employees": 530,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Grant and Franklin Counties",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Loftus Administrative Services LLC",
+      "notice_date": "2026-09-15",
+      "effective_date": "2026-11-15",
+      "employees": 376,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Yakima County",
       "address": "",
       "industry": ""
     }

@@ -1,9 +1,9 @@
 {
-  "total_records": 1125,
-  "total_employees": 131122,
+  "total_records": 1126,
+  "total_employees": 131541,
   "date_range_start": "2010-07-29",
-  "date_range_end": "2026-09-15",
-  "last_updated": "2026-09-17T16:15:45.126150+00:00",
+  "date_range_end": "2026-09-16",
+  "last_updated": "2026-09-18T02:24:39.200645+00:00",
   "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
   "records": [
     {
@@ -13503,6 +13503,18 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Lorton",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "Owens & Minor (Avid Medical LLC)",
+      "notice_date": "2026-09-16",
+      "effective_date": "2026-11-25",
+      "employees": 419,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Toano",
       "address": "",
       "industry": ""
     }

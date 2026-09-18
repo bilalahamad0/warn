@@ -1,11 +1,23 @@
 {
-  "total_records": 200,
-  "total_employees": 21873,
+  "total_records": 201,
+  "total_employees": 21922,
   "date_range_start": "2009-01-09",
-  "date_range_end": "2026-08-10",
-  "last_updated": "2026-09-17T16:06:31.259367+00:00",
+  "date_range_end": "2026-09-17",
+  "last_updated": "2026-09-18T02:16:32.737279+00:00",
   "source_url": "https://www.labor.idaho.gov/businesss/layoff-assistance/",
   "records": [
+    {
+      "state": "ID",
+      "company": "Amy's Kitchen, LLC",
+      "notice_date": "2026-09-17",
+      "effective_date": "2026-12-18",
+      "employees": 49,
+      "layoff_type": "",
+      "county": "",
+      "city": "Pocatello",
+      "address": "221 Phil Meador Ave",
+      "industry": ""
+    },
     {
       "state": "ID",
       "company": "JeniusBank (digital banking unit of SMBC Manubank)",

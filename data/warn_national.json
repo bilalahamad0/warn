@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-17T16:18:30.975565+00:00",
+  "last_updated": "2026-09-18T02:27:25.885967+00:00",
   "states_live": 47,
-  "total_records": 60268,
-  "total_employees": 6494208,
+  "total_records": 60281,
+  "total_employees": 6496460,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -29,8 +29,8 @@
       "name": "California",
       "agency": "California Employment Development Department",
       "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
-      "total_records": 16309,
-      "total_employees": 1391331
+      "total_records": 16318,
+      "total_employees": 1392209
     },
     "CO": {
       "name": "Colorado",
@@ -92,8 +92,8 @@
       "name": "Idaho",
       "agency": "Idaho Department of Labor",
       "source_url": "https://www.labor.idaho.gov/businesss/layoff-assistance/",
-      "total_records": 199,
-      "total_employees": 21870
+      "total_records": 200,
+      "total_employees": 21919
     },
     "IL": {
       "name": "Illinois",
@@ -302,8 +302,8 @@
       "name": "Virginia",
       "agency": "Virginia Works (Virginia Employment Commission)",
       "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
-      "total_records": 1125,
-      "total_employees": 131122
+      "total_records": 1126,
+      "total_employees": 131541
     },
     "VT": {
       "name": "Vermont",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1514,
-      "total_employees": 241089
+      "total_records": 1516,
+      "total_employees": 241995
     },
     "WI": {
       "name": "Wisconsin",
@@ -39605,7 +39605,7 @@
       "notice_date": "2026-08-19",
       "effective_date": "2026-11-02",
       "employees": 73,
-      "layoff_type": "Layoff Permanent",
+      "layoff_type": "Relocation",
       "county": "Ventura County",
       "city": "",
       "address": "2800 Sturgis Road  Oxnard CA 93030",
@@ -40389,6 +40389,114 @@
       "county": "San Mateo County",
       "city": "",
       "address": "15 South Hill Drive  Brisbane CA 94005",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Pathways Community Services dba Clarvida",
+      "notice_date": "2026-09-01",
+      "effective_date": "2026-11-01",
+      "employees": 67,
+      "layoff_type": "Closure Permanent",
+      "county": "Orange County",
+      "city": "",
+      "address": "1360 S. Anaheim Blvd. Suite 101  Anaheim CA 92805",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Uber Technologies, Inc. 1725 3rd Street",
+      "notice_date": "2026-09-02",
+      "effective_date": "2026-11-02",
+      "employees": 102,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Francisco County",
+      "city": "",
+      "address": "1725 3rd Street  San Francisco CA 94158",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
+    },
+    {
+      "state": "CA",
+      "company": "Uber Technologies, Inc. - 1655 3rd Street",
+      "notice_date": "2026-09-02",
+      "effective_date": "2026-11-02",
+      "employees": 151,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Francisco County",
+      "city": "",
+      "address": "1655 3rd Street  San Francisco CA 94158",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
+    },
+    {
+      "state": "CA",
+      "company": "Full Steam Staffing (2121 Boeing Way)",
+      "notice_date": "2026-09-15",
+      "effective_date": "2026-11-04",
+      "employees": 91,
+      "layoff_type": "Closure Permanent",
+      "county": "San Joaquin County",
+      "city": "",
+      "address": "2121 Boeing Way  Stockton CA 95206",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
+    },
+    {
+      "state": "CA",
+      "company": "Full Steam Staffing (4239 Pock Lane)",
+      "notice_date": "2026-09-15",
+      "effective_date": "2026-11-04",
+      "employees": 19,
+      "layoff_type": "Closure Permanent",
+      "county": "San Joaquin County",
+      "city": "",
+      "address": "4239 Pock Lane  Stockton CA 95206",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
+    },
+    {
+      "state": "CA",
+      "company": "Oracle America, Inc.",
+      "notice_date": "2026-09-14",
+      "effective_date": "2026-11-13",
+      "employees": 99,
+      "layoff_type": "Layoff Permanent",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "4230 Leonard Stocking Drive  Santa Clara CA 95054",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Oracle Pleasanton Campus (Pleasanton Campus)",
+      "notice_date": "2026-09-14",
+      "effective_date": "2026-11-13",
+      "employees": 63,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "5815 Owens Drive  Pleasanton CA 94588",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Oracle America, Inc.",
+      "notice_date": "2026-09-14",
+      "effective_date": "2026-11-13",
+      "employees": 279,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Mateo County",
+      "city": "",
+      "address": "500 Oracle Parkway  Redwood City CA 94065",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "DesigneRx Pharmaceuticals, Inc.",
+      "notice_date": "2026-09-14",
+      "effective_date": "2026-11-15",
+      "employees": 7,
+      "layoff_type": "Closure Permanent",
+      "county": "Solano County",
+      "city": "",
+      "address": "4941 Allison Parkway, Suite B  Vacaville CA 95688",
       "industry": "31-33 Manufacturing"
     },
     {
@@ -278545,6 +278653,18 @@
       "county": "",
       "city": "New York",
       "address": "277 Park Avenue",
+      "industry": ""
+    },
+    {
+      "state": "ID",
+      "company": "Amy's Kitchen, LLC",
+      "notice_date": "2026-09-17",
+      "effective_date": "2026-12-18",
+      "employees": 49,
+      "layoff_type": "",
+      "county": "",
+      "city": "Pocatello",
+      "address": "221 Phil Meador Ave",
       "industry": ""
     },
     {
@@ -644772,6 +644892,18 @@
       "industry": ""
     },
     {
+      "state": "VA",
+      "company": "Owens & Minor (Avid Medical LLC)",
+      "notice_date": "2026-09-16",
+      "effective_date": "2026-11-25",
+      "employees": 419,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Toano",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "VT",
       "company": "Calmont Beverage",
       "notice_date": "2026-01-22",
@@ -663380,6 +663512,30 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Selah",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Pacific Ag Services LLC",
+      "notice_date": "2026-09-16",
+      "effective_date": "2026-11-15",
+      "employees": 530,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Grant and Franklin Counties",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Loftus Administrative Services LLC",
+      "notice_date": "2026-09-15",
+      "effective_date": "2026-11-15",
+      "employees": 376,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Yakima County",
       "address": "",
       "industry": ""
     },
