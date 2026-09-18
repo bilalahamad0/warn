@@ -1,9 +1,9 @@
 {
-  "total_records": 372,
-  "total_employees": 34525,
+  "total_records": 374,
+  "total_employees": 34748,
   "date_range_start": "2022-01-25",
-  "date_range_end": "2026-09-15",
-  "last_updated": "2026-09-18T02:23:43.723028+00:00",
+  "date_range_end": "2026-09-16",
+  "last_updated": "2026-09-18T15:28:23.354254+00:00",
   "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
   "records": [
     {
@@ -4468,6 +4468,30 @@
       "county": "Pitt",
       "city": "Greenville",
       "address": "1424 East Fire Tower Road",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Regional Acceptance Corporation",
+      "notice_date": "2026-09-15",
+      "effective_date": "2027-02-28",
+      "employees": 156,
+      "layoff_type": "Closure Permanent",
+      "county": "Pitt",
+      "city": "Winterville",
+      "address": "266 Beacon Drive",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Comfort First Heating & Cooling, LLC",
+      "notice_date": "2026-09-16",
+      "effective_date": "2026-11-16",
+      "employees": 67,
+      "layoff_type": "Layoff Permanent",
+      "county": "Lee",
+      "city": "Sanford",
+      "address": "7001 Lark Lane",
       "industry": ""
     }
   ]
