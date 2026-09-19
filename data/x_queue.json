@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-19T02:32:12.534735+00:00",
+  "updated_at": "2026-09-19T15:27:00.023144+00:00",
   "candidates": [
     {
       "id": "c353237355db",
@@ -113,7 +113,7 @@
     {
       "id": "f5f465aa1f62",
       "created_at": "2026-09-12T02:32:54.953890+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "legendary fruit",
       "display": "Legendary Fruit Co",
       "employees": 1220,

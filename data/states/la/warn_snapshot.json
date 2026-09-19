@@ -1,9 +1,9 @@
 {
-  "total_records": 37,
-  "total_employees": 6701,
+  "total_records": 38,
+  "total_employees": 6917,
   "date_range_start": "2025-01-07",
-  "date_range_end": "2026-08-26",
-  "last_updated": "2026-09-18T02:20:33.789517+00:00",
+  "date_range_end": "2026-09-15",
+  "last_updated": "2026-09-19T02:23:29.110897+00:00",
   "source_url": "https://www.laworks.net/Downloads/Downloads_WFD.asp",
   "records": [
     {
@@ -449,6 +449,18 @@
       "city": "",
       "address": "Uncle Sam - 7250 LA-44, Convent, LA 70723, Faustina \u2013 9959 LA-18, St. James, LA 70086",
       "industry": "Agricultural Chemical Manufacturing"
+    },
+    {
+      "state": "LA",
+      "company": "Elevance Health, Inc.",
+      "notice_date": "2026-09-15",
+      "effective_date": "2026-12-31",
+      "employees": 216,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "3850 N. Causeway Blvd, Suite 1770, Metairie, LA, 70002",
+      "industry": "Insurance Administration"
     }
   ]
 }
