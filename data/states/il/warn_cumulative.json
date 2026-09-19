@@ -1,9 +1,9 @@
 {
-  "total_records": 4883,
-  "total_employees": 674271,
+  "total_records": 4885,
+  "total_employees": 674438,
   "date_range_start": "1987-09-01",
-  "date_range_end": "2026-09-02",
-  "last_updated": "2026-09-18T15:25:55.739737+00:00",
+  "date_range_end": "2026-09-16",
+  "last_updated": "2026-09-19T02:20:09.009435+00:00",
   "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
   "records": [
     {
@@ -58601,6 +58601,30 @@
       "city": "Chicago",
       "address": "222 W Merchandise Mart Plaza #1750",
       "industry": "Finance and Insurance"
+    },
+    {
+      "state": "IL",
+      "company": "Charles Industries, LLC",
+      "notice_date": "2026-09-16",
+      "effective_date": null,
+      "employees": 75,
+      "layoff_type": "Plant Closure",
+      "county": "Champaign County",
+      "city": "Rantoul",
+      "address": "201 Shellhouse Dr",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "IL",
+      "company": "Continental Web Press, Inc.",
+      "notice_date": "2026-09-16",
+      "effective_date": null,
+      "employees": 92,
+      "layoff_type": "Plant Closure",
+      "county": "Du Page County",
+      "city": "Itasca",
+      "address": "1430 Industrial Dr",
+      "industry": "Manufacturing"
     }
   ]
 }

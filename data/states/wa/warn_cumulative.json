@@ -1,9 +1,9 @@
 {
-  "total_records": 1516,
-  "total_employees": 241995,
+  "total_records": 1521,
+  "total_employees": 243569,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-09-16",
-  "last_updated": "2026-09-18T15:37:33.014326+00:00",
+  "date_range_end": "2026-09-18",
+  "last_updated": "2026-09-19T02:30:47.117168+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -18195,6 +18195,66 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Yakima County",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "King Fuji Ranch, Inc.",
+      "notice_date": "2026-09-18",
+      "effective_date": "2026-11-27",
+      "employees": 286,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Mattawa",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "TLC Orchards LLC",
+      "notice_date": "2026-09-17",
+      "effective_date": "2026-11-07",
+      "employees": 125,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Wapato",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Columbia Reach Chiawana Orchards",
+      "notice_date": "2026-09-17",
+      "effective_date": "2026-11-14",
+      "employees": 570,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Yakima, Kittitas, and Grant Counties",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "PeaceHealth",
+      "notice_date": "2026-09-17",
+      "effective_date": "2026-11-20",
+      "employees": 150,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Clark, Skagit, and Whatcom Counties",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Sagemoor Group Management Services Inc",
+      "notice_date": "2026-09-17",
+      "effective_date": "2026-11-14",
+      "employees": 443,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Yakima, Franklin, and Adams Counties",
       "address": "",
       "industry": ""
     }

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-18T15:38:44.141725+00:00",
+  "updated_at": "2026-09-19T02:32:12.534735+00:00",
   "candidates": [
     {
       "id": "c353237355db",
@@ -574,6 +574,186 @@
       "keys": [
         "CA:Uber Technologies, Inc. 1725 3rd Street__2026-11-02__102",
         "CA:Uber Technologies, Inc. - 1655 3rd Street__2026-11-02__151"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "aa7029fca7a2",
+      "created_at": "2026-09-19T02:32:12.534517+00:00",
+      "status": "pending",
+      "company": "columbia reach chiawana orchards",
+      "display": "Columbia Reach Chiawana Orchards",
+      "employees": 570,
+      "states": [
+        "WA"
+      ],
+      "per_state": {
+        "WA": 570
+      },
+      "sites": 1,
+      "card": {
+        "place": "Yakima, Kittitas, and Grant Counties, WA",
+        "effective": "Nov 14, 2026",
+        "employees": 570
+      },
+      "arm": "size",
+      "reason": "570 >= 250",
+      "text": "Columbia Reach Chiawana Orchards filed a WARN notice for 570 job cuts in Yakima, Kittitas, and Grant Counties, WA.\n\nEffective Nov 14, 2026.\n\n#layoffs #Washington",
+      "thread": [],
+      "weighted_len": 161,
+      "warnings": [],
+      "keys": [
+        "WA:Columbia Reach Chiawana Orchards__2026-11-14__570"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "e9c96b29da1c",
+      "created_at": "2026-09-19T02:32:12.534581+00:00",
+      "status": "pending",
+      "company": "sagemoor group management services",
+      "display": "Sagemoor Group Management Services Inc",
+      "employees": 443,
+      "states": [
+        "WA"
+      ],
+      "per_state": {
+        "WA": 443
+      },
+      "sites": 1,
+      "card": {
+        "place": "Yakima, Franklin, and Adams Counties, WA",
+        "effective": "Nov 14, 2026",
+        "employees": 443
+      },
+      "arm": "size",
+      "reason": "443 >= 250",
+      "text": "Sagemoor Group Management Services Inc filed a WARN notice for 443 job cuts in Yakima, Franklin, and Adams Counties, WA.\n\nEffective Nov 14, 2026.\n\n#layoffs #Washington",
+      "thread": [],
+      "weighted_len": 167,
+      "warnings": [],
+      "keys": [
+        "WA:Sagemoor Group Management Services Inc__2026-11-14__443"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "ba7141ec64a9",
+      "created_at": "2026-09-19T02:32:12.534632+00:00",
+      "status": "pending",
+      "company": "king fuji ranch",
+      "display": "King Fuji Ranch, Inc.",
+      "employees": 286,
+      "states": [
+        "WA"
+      ],
+      "per_state": {
+        "WA": 286
+      },
+      "sites": 1,
+      "card": {
+        "place": "Mattawa, WA",
+        "effective": "Nov 27, 2026",
+        "employees": 286
+      },
+      "arm": "size",
+      "reason": "286 >= 250",
+      "text": "King Fuji Ranch, Inc. filed a WARN notice for 286 job cuts in Mattawa, WA.\n\nEffective Nov 27, 2026.\n\n#layoffs #Washington",
+      "thread": [],
+      "weighted_len": 121,
+      "warnings": [],
+      "keys": [
+        "WA:King Fuji Ranch, Inc.__2026-11-27__286"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "48d676c80da7",
+      "created_at": "2026-09-19T02:32:12.534678+00:00",
+      "status": "pending",
+      "company": "Anthem",
+      "display": "Anthem",
+      "employees": 216,
+      "states": [
+        "LA"
+      ],
+      "per_state": {
+        "LA": 216
+      },
+      "sites": 1,
+      "card": {
+        "place": "Louisiana",
+        "effective": "Dec 31, 2026",
+        "employees": 216
+      },
+      "arm": "brand",
+      "reason": "known brand, 216 >= 50",
+      "text": "Anthem filed a WARN notice for 216 job cuts in Louisiana.\n\nEffective Dec 31, 2026.\n\n#layoffs #Louisiana",
+      "thread": [],
+      "weighted_len": 103,
+      "warnings": [],
+      "keys": [
+        "LA:Elevance Health, Inc.__2026-12-31__216"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "ed56075fa3ba",
+      "created_at": "2026-09-19T02:32:12.534722+00:00",
+      "status": "pending",
+      "company": "Johnson & Johnson",
+      "display": "Johnson & Johnson",
+      "employees": 87,
+      "states": [
+        "NJ"
+      ],
+      "per_state": {
+        "NJ": 87
+      },
+      "sites": 1,
+      "card": {
+        "place": "New Brunswick, NJ",
+        "effective": "Dec 18, 2026",
+        "employees": 87
+      },
+      "arm": "brand",
+      "reason": "known brand, 87 >= 50",
+      "text": "Johnson & Johnson filed a WARN notice for 87 job cuts in New Brunswick, NJ.\n\nEffective Dec 18, 2026.\n\n#layoffs #NewJersey",
+      "thread": [],
+      "weighted_len": 121,
+      "warnings": [],
+      "keys": [
+        "NJ:Johnson & Johnson Services Inc__2026-12-18__87"
       ],
       "approved_by": null,
       "approved_at": null,

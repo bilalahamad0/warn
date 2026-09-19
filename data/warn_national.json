@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-18T15:37:39.575343+00:00",
+  "last_updated": "2026-09-19T02:30:52.670673+00:00",
   "states_live": 47,
-  "total_records": 60283,
-  "total_employees": 6496683,
+  "total_records": 60292,
+  "total_employees": 6498727,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -99,8 +99,8 @@
       "name": "Illinois",
       "agency": "Illinois Department of Commerce and Economic Opportunity",
       "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
-      "total_records": 4883,
-      "total_employees": 674271
+      "total_records": 4885,
+      "total_employees": 674438
     },
     "IN": {
       "name": "Indiana",
@@ -127,8 +127,8 @@
       "name": "Louisiana",
       "agency": "Louisiana Workforce Commission",
       "source_url": "https://www.laworks.net/Downloads/Downloads_WFD.asp",
-      "total_records": 37,
-      "total_employees": 6701
+      "total_records": 38,
+      "total_employees": 6917
     },
     "MA": {
       "name": "Massachusetts",
@@ -204,8 +204,8 @@
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2347,
-      "total_employees": 352825
+      "total_records": 2348,
+      "total_employees": 352912
     },
     "NM": {
       "name": "New Mexico",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1516,
-      "total_employees": 241995
+      "total_records": 1521,
+      "total_employees": 243569
     },
     "WI": {
       "name": "Wisconsin",
@@ -337264,6 +337264,30 @@
       "industry": "Finance and Insurance"
     },
     {
+      "state": "IL",
+      "company": "Charles Industries, LLC",
+      "notice_date": "2026-09-16",
+      "effective_date": null,
+      "employees": 75,
+      "layoff_type": "Plant Closure",
+      "county": "Champaign County",
+      "city": "Rantoul",
+      "address": "201 Shellhouse Dr",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "IL",
+      "company": "Continental Web Press, Inc.",
+      "notice_date": "2026-09-16",
+      "effective_date": null,
+      "employees": 92,
+      "layoff_type": "Plant Closure",
+      "county": "Du Page County",
+      "city": "Itasca",
+      "address": "1430 Industrial Dr",
+      "industry": "Manufacturing"
+    },
+    {
       "state": "IN",
       "company": "Thyssenkrupp Presta North America",
       "notice_date": "2026-06-30",
@@ -365792,6 +365816,18 @@
       "city": "",
       "address": "Uncle Sam - 7250 LA-44, Convent, LA 70723, Faustina \u2013 9959 LA-18, St. James, LA 70086",
       "industry": "Agricultural Chemical Manufacturing"
+    },
+    {
+      "state": "LA",
+      "company": "Elevance Health, Inc.",
+      "notice_date": "2026-09-15",
+      "effective_date": "2026-12-31",
+      "employees": 216,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "3850 N. Causeway Blvd, Suite 1770, Metairie, LA, 70002",
+      "industry": "Insurance Administration"
     },
     {
       "state": "MA",
@@ -451191,6 +451227,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Atlantic City",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Johnson & Johnson Services Inc",
+      "notice_date": null,
+      "effective_date": "2026-12-18",
+      "employees": 87,
+      "layoff_type": "",
+      "county": "",
+      "city": "New Brunswick",
       "address": "",
       "industry": ""
     },
@@ -663560,6 +663608,66 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Yakima County",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "King Fuji Ranch, Inc.",
+      "notice_date": "2026-09-18",
+      "effective_date": "2026-11-27",
+      "employees": 286,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Mattawa",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "TLC Orchards LLC",
+      "notice_date": "2026-09-17",
+      "effective_date": "2026-11-07",
+      "employees": 125,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Wapato",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Columbia Reach Chiawana Orchards",
+      "notice_date": "2026-09-17",
+      "effective_date": "2026-11-14",
+      "employees": 570,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Yakima, Kittitas, and Grant Counties",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "PeaceHealth",
+      "notice_date": "2026-09-17",
+      "effective_date": "2026-11-20",
+      "employees": 150,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Clark, Skagit, and Whatcom Counties",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Sagemoor Group Management Services Inc",
+      "notice_date": "2026-09-17",
+      "effective_date": "2026-11-14",
+      "employees": 443,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Yakima, Franklin, and Adams Counties",
       "address": "",
       "industry": ""
     },

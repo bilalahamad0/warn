@@ -1,9 +1,9 @@
 {
-  "total_records": 2347,
-  "total_employees": 352825,
+  "total_records": 2348,
+  "total_employees": 352912,
   "date_range_start": "2004-02-24",
   "date_range_end": "2026-12-31",
-  "last_updated": "2026-09-18T15:31:33.961262+00:00",
+  "last_updated": "2026-09-19T02:27:08.963525+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -28167,6 +28167,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Atlantic City",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Johnson & Johnson Services Inc",
+      "notice_date": null,
+      "effective_date": "2026-12-18",
+      "employees": 87,
+      "layoff_type": "",
+      "county": "",
+      "city": "New Brunswick",
       "address": "",
       "industry": ""
     }
