@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-09-19 15:25:52 UTC
+**Generated:** 2026-09-20 03:04:11 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -134,7 +134,6 @@ M data/changelog.jsonl
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
- M data/states/mt/meta.json
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
@@ -213,6 +212,7 @@ M data/changelog.jsonl
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
+ M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -243,16 +243,17 @@ M data/changelog.jsonl
 
 **Recent commits:**
 ```
+0f07c46c auto: WARN data update [skip ci]
 0c2a90c7 auto: WARN data update [skip ci]
 248dbf21 auto: WARN data update [skip ci]
 b689cd7d auto: WARN data update [skip ci]
 199b3d98 auto: WARN data update [skip ci]
-87e465b0 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-09-20T02:49:25.579419+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-09-19T15:10:48.391262+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-09-19T02:15:55.383982+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-09-18T15:23:52.913801+00:00` — +0 added, -186 removed, 0 employees (new)
@@ -262,4 +263,3 @@ b689cd7d auto: WARN data update [skip ci]
 - `2026-09-16T16:01:41.046408+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-09-16T02:22:16.072200+00:00` — +0 added, -177 removed, 0 employees (new)
 - `2026-09-15T16:03:44.154217+00:00` — +4 added, -0 removed, 234 employees (new)
-- `2026-09-15T02:27:34.205803+00:00` — +0 added, -0 removed, 0 employees (new)
