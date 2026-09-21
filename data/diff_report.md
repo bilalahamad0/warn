@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-09-20 15:28:09 UTC
+**Generated:** 2026-09-21 02:36:20 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -120,7 +120,6 @@ M data/changelog.jsonl
  M data/states/me/warn_snapshot.json
  M data/states/mi/changelog.jsonl
  M data/states/mi/meta.json
- M data/states/mi/raw_download
  M data/states/mi/warn_cumulative.json
  M data/states/mi/warn_latest.json
  M data/states/mi/warn_snapshot.json
@@ -134,7 +133,6 @@ M data/changelog.jsonl
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
  M data/states/mt/changelog.jsonl
- M data/states/mt/meta.json
  M data/states/mt/warn_cumulative.json
  M data/states/mt/warn_latest.json
  M data/states/mt/warn_snapshot.json
@@ -149,7 +147,6 @@ M data/changelog.jsonl
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
- M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
@@ -213,6 +210,7 @@ M data/changelog.jsonl
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
+ M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -243,16 +241,17 @@ M data/changelog.jsonl
 
 **Recent commits:**
 ```
+a72d27a9 auto: WARN data update [skip ci]
 e6ae2855 chore: weekly AI metrics update [skip actions]
 8f76e74f auto: WARN data update [skip ci]
 0f07c46c auto: WARN data update [skip ci]
 0c2a90c7 auto: WARN data update [skip ci]
-248dbf21 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-09-21T02:21:41.700859+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-09-20T15:13:26.994399+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-09-20T02:49:25.579419+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-09-19T15:10:48.391262+00:00` — +0 added, -0 removed, 0 employees (new)
@@ -262,4 +261,3 @@ e6ae2855 chore: weekly AI metrics update [skip actions]
 - `2026-09-17T16:02:02.583464+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-09-17T02:26:08.046583+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-09-16T16:01:41.046408+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-09-16T02:22:16.072200+00:00` — +0 added, -177 removed, 0 employees (new)
