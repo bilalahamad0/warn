@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-21T02:36:21.063553+00:00",
+  "last_updated": "2026-09-21T17:46:21.681527+00:00",
   "states_live": 47,
-  "total_records": 60292,
-  "total_employees": 6498727,
+  "total_records": 60293,
+  "total_employees": 6498819,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1521,
-      "total_employees": 243569
+      "total_records": 1522,
+      "total_employees": 243661
     },
     "WI": {
       "name": "Wisconsin",
@@ -663668,6 +663668,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Yakima, Franklin, and Adams Counties",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Comprehensive Life Resources",
+      "notice_date": "2026-09-18",
+      "effective_date": "2026-11-21",
+      "employees": 92,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Tacoma",
       "address": "",
       "industry": ""
     },
