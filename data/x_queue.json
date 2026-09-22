@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-21T17:47:33.501303+00:00",
+  "updated_at": "2026-09-22T02:42:56.927310+00:00",
   "candidates": [
     {
       "id": "c353237355db",
@@ -754,6 +754,42 @@
       "warnings": [],
       "keys": [
         "NJ:Johnson & Johnson Services Inc__2026-12-18__87"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "680cddfa5156",
+      "created_at": "2026-09-22T02:42:56.927285+00:00",
+      "status": "pending",
+      "company": "Bristol Myers Squibb",
+      "display": "Bristol Myers Squibb",
+      "employees": 265,
+      "states": [
+        "NJ"
+      ],
+      "per_state": {
+        "NJ": 265
+      },
+      "sites": 1,
+      "card": {
+        "place": "Princeton, NJ",
+        "effective": "Dec 17, 2026",
+        "employees": 265
+      },
+      "arm": "size",
+      "reason": "265 >= 250",
+      "text": "Bristol Myers Squibb filed a WARN notice for 265 job cuts in Princeton, NJ.\n\nEffective Dec 17, 2026.\n\n#layoffs #NewJersey",
+      "thread": [],
+      "weighted_len": 121,
+      "warnings": [],
+      "keys": [
+        "NJ:Bristol Myers Squibb__2026-12-17__265"
       ],
       "approved_by": null,
       "approved_at": null,

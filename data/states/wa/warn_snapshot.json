@@ -1,9 +1,9 @@
 {
-  "total_records": 1520,
-  "total_employees": 243446,
+  "total_records": 1521,
+  "total_employees": 243538,
   "date_range_start": "2004-01-12",
   "date_range_end": "2026-09-18",
-  "last_updated": "2026-09-21T02:36:15.407173+00:00",
+  "last_updated": "2026-09-21T17:46:15.934816+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -15,6 +15,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Mattawa",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Comprehensive Life Resources",
+      "notice_date": "2026-09-18",
+      "effective_date": "2026-11-21",
+      "employees": 92,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Tacoma",
       "address": "",
       "industry": ""
     },

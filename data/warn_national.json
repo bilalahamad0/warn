@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-21T17:46:21.681527+00:00",
+  "last_updated": "2026-09-22T02:41:43.630297+00:00",
   "states_live": 47,
-  "total_records": 60293,
-  "total_employees": 6498819,
+  "total_records": 60296,
+  "total_employees": 6499442,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -204,8 +204,8 @@
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2348,
-      "total_employees": 352912
+      "total_records": 2349,
+      "total_employees": 353177
     },
     "NM": {
       "name": "New Mexico",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1522,
-      "total_employees": 243661
+      "total_records": 1524,
+      "total_employees": 244019
     },
     "WI": {
       "name": "Wisconsin",
@@ -451243,6 +451243,18 @@
       "industry": ""
     },
     {
+      "state": "NJ",
+      "company": "Bristol Myers Squibb",
+      "notice_date": null,
+      "effective_date": "2026-12-17",
+      "employees": 265,
+      "layoff_type": "",
+      "county": "",
+      "city": "Princeton",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "NM",
       "company": "Atkore HDPE, LLC",
       "notice_date": "2026-04-27",
@@ -663680,6 +663692,30 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Tacoma",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "DNS Farm Services LLC",
+      "notice_date": "2026-09-21",
+      "effective_date": "2026-09-17",
+      "employees": 238,
+      "layoff_type": "Layoff Temporary",
+      "county": "",
+      "city": "Grant and Chelan Counties",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "2EZY LLC",
+      "notice_date": "2026-09-21",
+      "effective_date": "2026-09-30",
+      "employees": 120,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Airway Heights",
       "address": "",
       "industry": ""
     },
