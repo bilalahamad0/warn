@@ -1,9 +1,9 @@
 {
-  "total_records": 2375,
-  "total_employees": 355485,
+  "total_records": 2376,
+  "total_employees": 355750,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-09-21T17:42:48.834409+00:00",
+  "last_updated": "2026-09-22T02:38:05.319041+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -1263,6 +1263,18 @@
       "layoff_type": "",
       "county": "",
       "city": "New Brunswick",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Bristol Myers Squibb",
+      "notice_date": null,
+      "effective_date": "2026-12-17",
+      "employees": 265,
+      "layoff_type": "",
+      "county": "",
+      "city": "Princeton",
       "address": "",
       "industry": ""
     },

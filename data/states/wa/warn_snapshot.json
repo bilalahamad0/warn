@@ -1,11 +1,35 @@
 {
-  "total_records": 1521,
-  "total_employees": 243538,
+  "total_records": 1523,
+  "total_employees": 243896,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-09-18",
-  "last_updated": "2026-09-21T17:46:15.934816+00:00",
+  "date_range_end": "2026-09-21",
+  "last_updated": "2026-09-22T02:41:38.029016+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
+    {
+      "state": "WA",
+      "company": "DNS Farm Services LLC",
+      "notice_date": "2026-09-21",
+      "effective_date": "2026-09-17",
+      "employees": 238,
+      "layoff_type": "Layoff Temporary",
+      "county": "",
+      "city": "Grant and Chelan Counties",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "2EZY LLC",
+      "notice_date": "2026-09-21",
+      "effective_date": "2026-09-30",
+      "employees": 120,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Airway Heights",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "WA",
       "company": "King Fuji Ranch, Inc.",

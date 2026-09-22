@@ -1,9 +1,9 @@
 {
-  "total_records": 1524,
-  "total_employees": 244019,
+  "total_records": 1525,
+  "total_employees": 244340,
   "date_range_start": "2004-01-12",
   "date_range_end": "2026-09-21",
-  "last_updated": "2026-09-22T02:41:38.044821+00:00",
+  "last_updated": "2026-09-22T16:24:27.074525+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -18291,6 +18291,18 @@
       "layoff_type": "Closure Permanent",
       "county": "",
       "city": "Airway Heights",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "BM Administrative Services",
+      "notice_date": "2026-09-21",
+      "effective_date": "2026-11-30",
+      "employees": 321,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Yakima County",
       "address": "",
       "industry": ""
     }
