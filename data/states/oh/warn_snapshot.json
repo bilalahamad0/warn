@@ -1,11 +1,23 @@
 {
-  "total_records": 806,
-  "total_employees": 119299,
+  "total_records": 807,
+  "total_employees": 119306,
   "date_range_start": "2017-01-09",
-  "date_range_end": "2026-09-14",
-  "last_updated": "2026-09-22T16:18:37.817023+00:00",
+  "date_range_end": "2026-09-21",
+  "last_updated": "2026-09-23T02:40:14.046711+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
+    {
+      "state": "OH",
+      "company": "Michigan Sugar Company",
+      "notice_date": "2026-09-21",
+      "effective_date": "2026-09-22",
+      "employees": 7,
+      "layoff_type": "Layoff",
+      "county": "Lucas",
+      "city": "Toledo",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "OH",
       "company": "Perstorp Polyols, Inc.",

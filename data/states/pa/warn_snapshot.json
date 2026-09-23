@@ -1,9 +1,9 @@
 {
-  "total_records": 310,
-  "total_employees": 45562,
+  "total_records": 311,
+  "total_employees": 45642,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-09-22T16:18:46.404955+00:00",
+  "last_updated": "2026-09-23T02:40:22.167461+00:00",
   "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
   "records": [
     {
@@ -52,6 +52,18 @@
       "county": "Schuylkill",
       "city": "",
       "address": "1021 Brockton Mountain Drive, Barnesville, PA 18214",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Pavilion at Bradford",
+      "notice_date": null,
+      "effective_date": "2026-12-01",
+      "employees": 80,
+      "layoff_type": "Closure",
+      "county": "McKean",
+      "city": "",
+      "address": "200 Pleasant Street, Bradford, PA  16701",
       "industry": ""
     },
     {
