@@ -1023,6 +1023,17 @@
   "industry": "Finance and Insurance "
  },
  {
+  "company": "RTX",
+  "address": "400 Collins Rd NE ",
+  "city": "Cedar Rapids",
+  "county": "Linn",
+  "layoff_type": "Amendment - Additional Employees ",
+  "employees": 1,
+  "notice_date": "2026-09-22 00:00:00",
+  "effective_date": "2026-10-30 00:00:00",
+  "industry": "Professional, Scientific, and Technical Services"
+ },
+ {
   "company": "John Deere Ottumwa Works ",
   "address": "928 E Vine St",
   "city": "Ottumwa",

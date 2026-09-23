@@ -1,9 +1,9 @@
 {
-  "total_records": 936,
-  "total_employees": 51882,
+  "total_records": 937,
+  "total_employees": 51883,
   "date_range_start": "2011-01-13",
-  "date_range_end": "2026-09-15",
-  "last_updated": "2026-09-22T16:09:16.845928+00:00",
+  "date_range_end": "2026-09-22",
+  "last_updated": "2026-09-23T02:31:09.072019+00:00",
   "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
   "records": [
     {
@@ -11237,6 +11237,18 @@
       "city": "West Des Moines",
       "address": "800 S Jordan Creek Pkwy",
       "industry": "Finance and Insurance"
+    },
+    {
+      "state": "IA",
+      "company": "RTX",
+      "notice_date": "2026-09-22",
+      "effective_date": "2026-10-30",
+      "employees": 1,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Linn",
+      "city": "Cedar Rapids",
+      "address": "400 Collins Rd NE",
+      "industry": "Professional, Scientific, and Technical Services"
     }
   ]
 }

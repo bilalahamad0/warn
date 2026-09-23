@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-22T16:24:33.011775+00:00",
+  "last_updated": "2026-09-23T02:43:25.890044+00:00",
   "states_live": 47,
-  "total_records": 60334,
-  "total_employees": 6499736,
+  "total_records": 60343,
+  "total_employees": 6500730,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -15,8 +15,8 @@
       "name": "Alabama",
       "agency": "Alabama Department of Workforce",
       "source_url": "https://workforce.alabama.gov/warn-list/",
-      "total_records": 1068,
-      "total_employees": 182033
+      "total_records": 1071,
+      "total_employees": 182830
     },
     "AZ": {
       "name": "Arizona",
@@ -85,8 +85,8 @@
       "name": "Iowa",
       "agency": "Iowa Workforce Development",
       "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
-      "total_records": 936,
-      "total_employees": 51882
+      "total_records": 937,
+      "total_employees": 51883
     },
     "ID": {
       "name": "Idaho",
@@ -225,15 +225,15 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 5340,
-      "total_employees": 433501
+      "total_records": 5342,
+      "total_employees": 433552
     },
     "OH": {
       "name": "Ohio",
       "agency": "Ohio Department of Job and Family Services",
       "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
-      "total_records": 1257,
-      "total_employees": 171833
+      "total_records": 1258,
+      "total_employees": 171840
     },
     "OK": {
       "name": "Oklahoma",
@@ -253,8 +253,8 @@
       "name": "Pennsylvania",
       "agency": "Pennsylvania Department of Labor & Industry",
       "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
-      "total_records": 310,
-      "total_employees": 45562
+      "total_records": 311,
+      "total_employees": 45642
     },
     "RI": {
       "name": "Rhode Island",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1525,
-      "total_employees": 244340
+      "total_records": 1526,
+      "total_employees": 244398
     },
     "WI": {
       "name": "Wisconsin",
@@ -13940,6 +13940,42 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Greenville",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "CORIZON HEALTH",
+      "notice_date": "2018-02-05",
+      "effective_date": "2026-09-22",
+      "employees": 648,
+      "layoff_type": "Closing *",
+      "county": "",
+      "city": "State Wide",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "SEARS HOLDINGS",
+      "notice_date": "2009-02-28",
+      "effective_date": "2026-09-22",
+      "employees": 15,
+      "layoff_type": "Closing *",
+      "county": "",
+      "city": "Birmingham",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "URS CORPORATION",
+      "notice_date": "2010-01-22",
+      "effective_date": "2026-09-22",
+      "employees": 134,
+      "layoff_type": "Layoff *",
+      "county": "",
+      "city": "Birmingham",
       "address": "",
       "industry": ""
     },
@@ -276712,6 +276748,18 @@
       "industry": "Finance and Insurance"
     },
     {
+      "state": "IA",
+      "company": "RTX",
+      "notice_date": "2026-09-22",
+      "effective_date": "2026-10-30",
+      "employees": 1,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Linn",
+      "city": "Cedar Rapids",
+      "address": "400 Collins Rd NE",
+      "industry": "Professional, Scientific, and Technical Services"
+    },
+    {
       "state": "ID",
       "company": "Fortrex",
       "notice_date": "2026-07-01",
@@ -518360,6 +518408,30 @@
     },
     {
       "state": "NY",
+      "company": "Alray Car Parts Supply & Mfg. Corp.d/b/a Tinker Auto Parts",
+      "notice_date": "2026-07-01",
+      "effective_date": "2026-09-30",
+      "employees": 20,
+      "layoff_type": "Closure Permanent",
+      "county": "Suffolk",
+      "city": "",
+      "address": "200 Suffolk Avenue Brentwood, NY, 11717",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Alray Car Parts Supply & Mfg. Corp.d/b/a Tinker Auto Parts",
+      "notice_date": "2026-07-01",
+      "effective_date": "2026-09-30",
+      "employees": 31,
+      "layoff_type": "Closure Permanent",
+      "county": "Suffolk",
+      "city": "",
+      "address": "1650 Locust Ave Bohemia, NY, 11716",
+      "industry": ""
+    },
+    {
+      "state": "NY",
       "company": "Cardionet, LLC. an affiliate of Philips North America, LLC.",
       "notice_date": "2025-04-01",
       "effective_date": "2025-06-30",
@@ -536307,6 +536379,18 @@
       "layoff_type": "Closure",
       "county": "Cuyahoga",
       "city": "Parma",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Michigan Sugar Company",
+      "notice_date": "2026-09-21",
+      "effective_date": "2026-09-22",
+      "employees": 7,
+      "layoff_type": "Layoff",
+      "county": "Lucas",
+      "city": "Toledo",
       "address": "",
       "industry": ""
     },
@@ -562084,6 +562168,18 @@
       "county": "Northampton",
       "city": "",
       "address": "150 Cesanek Road, Northampton, PA 18067",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Pavilion at Bradford",
+      "notice_date": null,
+      "effective_date": "2026-12-01",
+      "employees": 80,
+      "layoff_type": "Closure",
+      "county": "McKean",
+      "city": "",
+      "address": "200 Pleasant Street, Bradford, PA  16701",
       "industry": ""
     },
     {
@@ -664172,6 +664268,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Yakima County",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Expedia, Inc.",
+      "notice_date": "2026-09-22",
+      "effective_date": "2026-11-21",
+      "employees": 58,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Seattle",
       "address": "",
       "industry": ""
     },

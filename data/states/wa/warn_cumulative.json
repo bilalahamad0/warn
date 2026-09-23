@@ -1,9 +1,9 @@
 {
-  "total_records": 1525,
-  "total_employees": 244340,
+  "total_records": 1526,
+  "total_employees": 244398,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-09-21",
-  "last_updated": "2026-09-22T16:24:27.074525+00:00",
+  "date_range_end": "2026-09-22",
+  "last_updated": "2026-09-23T02:43:20.096094+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -18303,6 +18303,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Yakima County",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Expedia, Inc.",
+      "notice_date": "2026-09-22",
+      "effective_date": "2026-11-21",
+      "employees": 58,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Seattle",
       "address": "",
       "industry": ""
     }

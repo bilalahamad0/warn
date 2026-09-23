@@ -1,9 +1,9 @@
 {
-  "total_records": 992,
-  "total_employees": 140229,
+  "total_records": 993,
+  "total_employees": 140236,
   "date_range_start": "2015-01-05",
-  "date_range_end": "2026-09-14",
-  "last_updated": "2026-09-22T16:18:37.826041+00:00",
+  "date_range_end": "2026-09-21",
+  "last_updated": "2026-09-23T02:40:14.054404+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
     {
@@ -11367,6 +11367,18 @@
       "layoff_type": "Closure",
       "county": "Cuyahoga",
       "city": "Parma",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Michigan Sugar Company",
+      "notice_date": "2026-09-21",
+      "effective_date": "2026-09-22",
+      "employees": 7,
+      "layoff_type": "Layoff",
+      "county": "Lucas",
+      "city": "Toledo",
       "address": "",
       "industry": ""
     }
