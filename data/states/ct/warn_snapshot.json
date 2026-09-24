@@ -1,9 +1,9 @@
 {
-  "total_records": 27,
-  "total_employees": 3127,
-  "date_range_start": "2025-09-23",
+  "total_records": 26,
+  "total_employees": 3059,
+  "date_range_start": "2025-10-03",
   "date_range_end": "2026-09-09",
-  "last_updated": "2026-09-23T02:27:58.777741+00:00",
+  "last_updated": "2026-09-23T15:55:59.161696+00:00",
   "source_url": "https://dolpublicdocumentlibrary.ct.gov/CsblrCategory?prefix=%2Frapid_response%2Fwarn_documents",
   "records": [
     {
@@ -315,18 +315,6 @@
       "layoff_type": "",
       "county": "",
       "city": "Remote",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "CT",
-      "company": "PerkinElmer U.S. LLC",
-      "notice_date": "2025-09-23",
-      "effective_date": "2025-11-24",
-      "employees": 68,
-      "layoff_type": "",
-      "county": "",
-      "city": "Shelton",
       "address": "",
       "industry": ""
     }

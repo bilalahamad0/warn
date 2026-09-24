@@ -1,11 +1,23 @@
 {
-  "total_records": 1370,
-  "total_employees": 187020,
+  "total_records": 1371,
+  "total_employees": 187100,
   "date_range_start": "1988-11-28",
-  "date_range_end": "2026-09-01",
-  "last_updated": "2026-09-23T16:08:06.491196+00:00",
+  "date_range_end": "2026-09-23",
+  "last_updated": "2026-09-24T02:24:17.842866+00:00",
   "source_url": "https://ccwd.hecc.oregon.gov/Layoff/WARN",
   "records": [
+    {
+      "state": "OR",
+      "company": "Lombard Street Facility",
+      "notice_date": "2026-09-23",
+      "effective_date": "2026-11-23",
+      "employees": 80,
+      "layoff_type": "Large Layoff - 10 or more workers",
+      "county": "",
+      "city": "Portland",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "OR",
       "company": "Tualatin Oregon Facility",
