@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-24T02:28:14.655255+00:00",
+  "updated_at": "2026-09-24T16:30:58.174533+00:00",
   "candidates": [
     {
       "id": "c353237355db",
@@ -258,7 +258,7 @@
     {
       "id": "185e22aac83f",
       "created_at": "2026-09-17T02:43:02.589612+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "blue cascade orchards",
       "display": "Blue Cascade Orchards",
       "employees": 792,
@@ -294,7 +294,7 @@
     {
       "id": "b1904016b491",
       "created_at": "2026-09-17T02:43:02.589685+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Oracle",
       "display": "Oracle",
       "employees": 359,
@@ -330,7 +330,7 @@
     {
       "id": "90ca5979ef26",
       "created_at": "2026-09-17T02:43:02.589739+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "cascade view fruit and cold storage",
       "display": "Cascade View Fruit & Cold Storage, LLC",
       "employees": 259,
@@ -366,7 +366,7 @@
     {
       "id": "54005f3f9b9e",
       "created_at": "2026-09-17T16:19:46.561942+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "regional acceptance",
       "display": "Regional Acceptance Corporation",
       "employees": 253,
