@@ -1,9 +1,9 @@
 {
-  "total_records": 994,
-  "total_employees": 140415,
+  "total_records": 995,
+  "total_employees": 140468,
   "date_range_start": "2015-01-05",
   "date_range_end": "2026-09-24",
-  "last_updated": "2026-09-25T02:44:15.925440+00:00",
+  "last_updated": "2026-09-25T16:26:58.702104+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
     {
@@ -11391,6 +11391,18 @@
       "layoff_type": "Closure",
       "county": "Montgomery",
       "city": "Centerville",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Powers and Sons, LLC",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-12-07",
+      "employees": 53,
+      "layoff_type": "Layoff",
+      "county": "Williams",
+      "city": "Montpelier",
       "address": "",
       "industry": ""
     }

@@ -1,9 +1,9 @@
 {
-  "total_records": 636,
-  "total_employees": 59395,
+  "total_records": 637,
+  "total_employees": 59436,
   "date_range_start": "2020-01-02",
-  "date_range_end": "2026-08-24",
-  "last_updated": "2026-09-25T02:47:29.931929+00:00",
+  "date_range_end": "2026-09-24",
+  "last_updated": "2026-09-25T16:30:08.638242+00:00",
   "source_url": "https://dwd.wisconsin.gov/dislocatedworker/warn/",
   "records": [
     {
@@ -7637,6 +7637,18 @@
       "city": "West Bend",
       "address": "",
       "industry": "Corrugated & Solid Fiber Box Mfg"
+    },
+    {
+      "state": "WI",
+      "company": "Sunlite Plastics, Inc.",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-12-07",
+      "employees": 41,
+      "layoff_type": "Workforce Reduction",
+      "county": "Washington",
+      "city": "Germantown",
+      "address": "",
+      "industry": "Unlaminated Plastics Profile Shape Manufacturing"
     }
   ]
 }

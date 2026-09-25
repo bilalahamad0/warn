@@ -1,11 +1,23 @@
 {
-  "total_records": 1409,
-  "total_employees": 116714,
+  "total_records": 1410,
+  "total_employees": 116727,
   "date_range_start": "2010-01-07",
-  "date_range_end": "2026-09-14",
-  "last_updated": "2026-09-24T16:22:35.070369+00:00",
+  "date_range_end": "2026-09-24",
+  "last_updated": "2026-09-25T02:39:34.872550+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
+    {
+      "state": "MD",
+      "company": "ColonialWebb Contracting Company",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-12-01",
+      "employees": 13,
+      "layoff_type": "Mass Layoff- No Recall",
+      "county": "Anne Arundel",
+      "city": "",
+      "address": "150 Blades Lane Glen Burnie, MD 21060",
+      "industry": "238220"
+    },
     {
       "state": "MD",
       "company": "CB Manufacturing, Inc., dba Pepsi Beverages",

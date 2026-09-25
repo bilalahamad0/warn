@@ -1,11 +1,23 @@
 {
-  "total_records": 808,
-  "total_employees": 119485,
+  "total_records": 809,
+  "total_employees": 119538,
   "date_range_start": "2017-01-09",
   "date_range_end": "2026-09-24",
-  "last_updated": "2026-09-25T02:44:15.915830+00:00",
+  "last_updated": "2026-09-25T16:26:58.693073+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
+    {
+      "state": "OH",
+      "company": "Powers and Sons, LLC",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-12-07",
+      "employees": 53,
+      "layoff_type": "Layoff",
+      "county": "Williams",
+      "city": "Montpelier",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "OH",
       "company": "Ardor Delivery Services",

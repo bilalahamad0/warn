@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-25T02:47:33.198077+00:00",
+  "last_updated": "2026-09-25T16:30:11.613609+00:00",
   "states_live": 47,
-  "total_records": 60370,
-  "total_employees": 6501835,
+  "total_records": 60372,
+  "total_employees": 6501929,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -232,8 +232,8 @@
       "name": "Ohio",
       "agency": "Ohio Department of Job and Family Services",
       "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
-      "total_records": 1259,
-      "total_employees": 172019
+      "total_records": 1260,
+      "total_employees": 172072
     },
     "OK": {
       "name": "Oklahoma",
@@ -323,8 +323,8 @@
       "name": "Wisconsin",
       "agency": "Wisconsin Department of Workforce Development",
       "source_url": "https://dwd.wisconsin.gov/dislocatedworker/warn/",
-      "total_records": 636,
-      "total_employees": 59395
+      "total_records": 637,
+      "total_employees": 59436
     },
     "WV": {
       "name": "West Virginia",
@@ -536684,6 +536684,18 @@
     },
     {
       "state": "OH",
+      "company": "Powers and Sons, LLC",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-12-07",
+      "employees": 53,
+      "layoff_type": "Layoff",
+      "county": "Williams",
+      "city": "Montpelier",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
       "company": "Marc Glassman, Inc.",
       "notice_date": "2023-01-03",
       "effective_date": "2023-03-06",
@@ -672238,6 +672250,18 @@
       "city": "West Bend",
       "address": "",
       "industry": "Corrugated & Solid Fiber Box Mfg"
+    },
+    {
+      "state": "WI",
+      "company": "Sunlite Plastics, Inc.",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-12-07",
+      "employees": 41,
+      "layoff_type": "Workforce Reduction",
+      "county": "Washington",
+      "city": "Germantown",
+      "address": "",
+      "industry": "Unlaminated Plastics Profile Shape Manufacturing"
     },
     {
       "state": "WV",

@@ -1,9 +1,9 @@
 {
-  "total_records": 1525,
-  "total_employees": 244275,
+  "total_records": 1527,
+  "total_employees": 244555,
   "date_range_start": "2004-01-12",
   "date_range_end": "2026-09-22",
-  "last_updated": "2026-09-24T16:29:40.014130+00:00",
+  "last_updated": "2026-09-25T02:47:27.360831+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -15,6 +15,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Seattle",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Microsoft",
+      "notice_date": "2026-09-22",
+      "effective_date": "2026-11-21",
+      "employees": 277,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Redmond",
       "address": "",
       "industry": ""
     },
@@ -75,6 +87,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Tacoma",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Providence Health & Services",
+      "notice_date": "2026-09-18",
+      "effective_date": "2026-11-18",
+      "employees": 3,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Olympia",
       "address": "",
       "industry": ""
     },

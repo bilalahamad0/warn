@@ -2,7 +2,7 @@
   "scope": "ca",
   "state": "CA",
   "coverage_start": "2025-01-01",
-  "last_updated": "2026-09-25T02:47:33.198077+00:00",
+  "last_updated": "2026-09-25T16:30:11.613609+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "total_records": 1860,
   "total_employees": 101449,
@@ -20,7 +20,7 @@
       "address": "9350 Rayo Avenue  South Gate CA 90280",
       "industry": "48-49 Transportation and Warehousing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "RTX",
@@ -33,7 +33,7 @@
       "address": "2000 E El Segundo Blvd  El Segundo CA 90245",
       "industry": "54 Professional Scientific and Technical Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser (99 S. Oakland Ave.)",
@@ -46,7 +46,7 @@
       "address": "99 S. Oakland Ave.  Pasadena CA 91101",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser (393 E. Walnut St.)",
@@ -59,7 +59,7 @@
       "address": "393 E. Walnut St.  Pasadena CA 91188",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser (74 N. Pasadena Ave.)",
@@ -72,7 +72,7 @@
       "address": "74 N. Pasadena Ave.  Pasadena CA 91103",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser (75N. Fair Oaks Ave.)",
@@ -85,7 +85,7 @@
       "address": "75 N. Fair Oaks Ave.  Pasadena CA 91103",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser (8954 Rio San Diego Dr.)",
@@ -98,7 +98,7 @@
       "address": "8954 Rio San Diego Dr.  San Diego CA 92108",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser (One Kaiser Plaza)",
@@ -111,7 +111,7 @@
       "address": "One Kaiser Plaza  Oakland CA 94612",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser",
@@ -124,7 +124,7 @@
       "address": "50 Iron Point Cir.  Folsom CA 95630",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser (1800 Harrison St.)",
@@ -137,7 +137,7 @@
       "address": "1800 Harrison St.  Oakland CA 94612",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser (3840 Murphy Canyon Rd.)",
@@ -150,7 +150,7 @@
       "address": "3840 Murphy Canyon Rd.  San Diego CA 92123",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser (1840 California Ave.)",
@@ -163,7 +163,7 @@
       "address": "1840 California Ave.  Corona CA 92881",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser (1830 California Ave.)",
@@ -176,7 +176,7 @@
       "address": "1830 California Ave.  Corona CA 92881",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser",
@@ -189,7 +189,7 @@
       "address": "17836 Gillette Ave.  Irvine CA 92614",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser",
@@ -202,7 +202,7 @@
       "address": "3000 S. Robertson Blvd.  Los Angeles CA 90034",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser (17140 Bernardo Center Dr.)",
@@ -215,7 +215,7 @@
       "address": "17140 Bernardo Center Dr.  San Diego CA 92128",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser",
@@ -228,7 +228,7 @@
       "address": "4460 Hacienda Dr.  Pleasanton CA 94588",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Intel Corporation - Robert Noyce Building",
@@ -397,7 +397,7 @@
       "address": "10252 Norris Ave.  Pacoima CA 91331",
       "industry": "71 Arts Entertainment and Recreation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Quixote Studio Services - Sylmar South",
@@ -410,7 +410,7 @@
       "address": "13334 Ralston Avenue  Sylmar CA 91342",
       "industry": "71 Arts Entertainment and Recreation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Quixote Studio Services - North Valley Campus A",
@@ -423,7 +423,7 @@
       "address": "12137 Montague St.  Pacoima CA 91331",
       "industry": "71 Arts Entertainment and Recreation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Quixote Studio Services - Sylmar North",
@@ -436,7 +436,7 @@
       "address": "14002 Balboa  Sylmar CA 91342",
       "industry": "71 Arts Entertainment and Recreation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Oracle America, Inc.",
