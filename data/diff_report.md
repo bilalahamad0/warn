@@ -1,29 +1,54 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-09-24 16:29:45 UTC
+**Generated:** 2026-09-25 02:47:32 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 36 | 36 | +0/+0 |
-| Total employees | 2,560 | 2,560 | +0 |
+| Total records | 36 | 282 | +246/+0 |
+| Total employees | 2,560 | 13,576 | +11,016 |
 
-### ✅ No new entries.
+### ✅ New Entries (246 records)
+
+| Company | Employees | Effective Date | County |
+|---------|-----------|----------------|--------|
+| 24Hr Homecare, LLC | 738 | 2026-09-15 | Los Angeles County |
+| Jabil Inc. | 382 | 2026-11-23 | Santa Clara County |
+| Visa | 320 | 2026-10-01 | San Mateo County |
+| Oracle America, Inc. | 279 | 2026-11-13 | San Mateo County |
+| PayPal | 251 | 2026-10-30 | Santa Clara County |
+| IPS Nationwide, Inc. | 212 | 2026-11-17 | Alameda County |
+| LeeMAH Electronics | 205 | 2026-10-16 | San Mateo County |
+| Sapporo U.S.A. (1999 Citracado Parkway) | 200 | 2026-11-13 | San Diego County |
+| Amy's Kitchen, LLC | 200 | 2026-12-18 | Sonoma County |
+| Bumble Bee Foods, LLC | 197 | 2026-11-19 | Los Angeles County |
+| Power Safety Service, LLC | 189 | 2026-11-06 | San Joaquin County |
+| Foundation for California Community Colleges | 178 | 2026-10-30 | Sacramento County |
+| Ruiz Food Products, Inc. | 176 | 2026-11-04 | Tulare County |
+| Sodexo | 164 | 2026-09-30 | Orange County |
+| ServiceNow, Inc. | 154 | 2026-09-28 | Santa Clara County |
+| Renewal by Andersen LLC | 153 | 2026-11-02 | Los Angeles County |
+| Uber Technologies, Inc. - 1655 3rd Street | 151 | 2026-11-02 | San Francisco County |
+| LAZ Parking California (9610 Sky Way) | 139 | 2026-10-06 | Los Angeles County |
+| Chime Financial, Inc. | 135 | 2026-09-30 | San Francisco County |
+| Sharp Metropolitan Medical Campus - Sharp Mesa Vista | 134 | 2026-10-10 | San Diego County |
 
 ---
 ## 📁 File vs Git Comparison
 
-- **Local `file.xlsx` hash:** `2c73db1b759812982a57b17b77afa3c5`
+- **Local `file.xlsx` hash:** `2b7759719d52daf926233f5e058ae53f`
 - **Committed hash:**          `2c73db1b759812982a57b17b77afa3c5`
-- ✅ Local file matches committed version
+- 🔴 **Local file differs from committed version**
 
 **Git status:**
 ```
 M data/changelog.jsonl
+ M data/meta.json
  M data/states/ak/changelog.jsonl
  M data/states/ak/meta.json
+ M data/states/ak/raw_download
  M data/states/ak/warn_cumulative.json
  M data/states/ak/warn_latest.json
  M data/states/ak/warn_snapshot.json
@@ -38,6 +63,8 @@ M data/changelog.jsonl
  M data/states/az/warn_snapshot.json
  M data/states/co/changelog.jsonl
  M data/states/co/meta.json
+ M data/states/co/raw_download
+ M data/states/co/sheet_2025.html
  M data/states/co/warn_cumulative.json
  M data/states/co/warn_latest.json
  M data/states/co/warn_snapshot.json
@@ -116,6 +143,7 @@ M data/changelog.jsonl
  M data/states/me/warn_snapshot.json
  M data/states/mi/changelog.jsonl
  M data/states/mi/meta.json
+ M data/states/mi/raw_download
  M data/states/mi/warn_cumulative.json
  M data/states/mi/warn_latest.json
  M data/states/mi/warn_snapshot.json
@@ -143,7 +171,6 @@ M data/changelog.jsonl
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
- M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
@@ -154,6 +181,7 @@ M data/changelog.jsonl
  M data/states/nj/warn_snapshot.json
  M data/states/nm/changelog.jsonl
  M data/states/nm/meta.json
+ M data/states/nm/raw_download
  M data/states/nm/warn_cumulative.json
  M data/states/nm/warn_latest.json
  M data/states/nm/warn_snapshot.json
@@ -163,6 +191,7 @@ M data/changelog.jsonl
  M data/states/ny/warn_latest.json
  M data/states/ny/warn_snapshot.json
  M data/states/oh/changelog.jsonl
+ M data/states/oh/raw_download
  M data/states/oh/warn_cumulative.json
  M data/states/oh/warn_latest.json
  M data/states/oh/warn_snapshot.json
@@ -179,6 +208,7 @@ M data/changelog.jsonl
  M data/states/or/warn_snapshot.json
  M data/states/pa/changelog.jsonl
  M data/states/pa/meta.json
+ M data/states/pa/raw_download
  M data/states/pa/warn_cumulative.json
  M data/states/pa/warn_latest.json
  M data/states/pa/warn_snapshot.json
@@ -208,6 +238,7 @@ M data/changelog.jsonl
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
+ M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -218,6 +249,7 @@ M data/changelog.jsonl
  M data/states/vt/warn_snapshot.json
  M data/states/wa/changelog.jsonl
  M data/states/wa/meta.json
+ M data/states/wa/raw_download
  M data/states/wa/warn_cumulative.json
  M data/states/wa/warn_latest.json
  M data/states/wa/warn_snapshot.json
@@ -234,20 +266,22 @@ M data/changelog.jsonl
  M data/warn_cumulative.json
  M data/warn_latest.json
  M data/warn_snapshot.json
+ M file.xlsx
 ```
 
 **Recent commits:**
 ```
+5c9c4d9ee auto: WARN data update [skip ci]
 954d1066c auto: WARN data update [skip ci]
 e567380f5 auto: WARN data update [skip ci]
 bdbf2d8f7 auto: WARN data update [skip ci]
 773f13870 auto: WARN data update [skip ci]
-750d9c19b auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-09-25T02:31:21.756343+00:00` — +21 added, -0 removed, 311 employees (new)
 - `2026-09-24T16:15:00.570877+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-09-24T02:13:14.828325+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-09-23T15:55:34.205065+00:00` — +0 added, -0 removed, 0 employees (new)
@@ -257,4 +291,3 @@ bdbf2d8f7 auto: WARN data update [skip ci]
 - `2026-09-21T17:31:40.740915+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-09-21T02:21:41.700859+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-09-20T15:13:26.994399+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-09-20T02:49:25.579419+00:00` — +0 added, -0 removed, 0 employees (new)

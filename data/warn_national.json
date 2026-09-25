@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-24T16:29:45.714738+00:00",
+  "last_updated": "2026-09-25T02:47:33.198077+00:00",
   "states_live": 47,
-  "total_records": 60344,
-  "total_employees": 6500810,
+  "total_records": 60370,
+  "total_employees": 6501835,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -29,8 +29,8 @@
       "name": "California",
       "agency": "California Employment Development Department",
       "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
-      "total_records": 16357,
-      "total_employees": 1392927
+      "total_records": 16378,
+      "total_employees": 1393238
     },
     "CO": {
       "name": "Colorado",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1359,
-      "total_employees": 115537
+      "total_records": 1360,
+      "total_employees": 115550
     },
     "ME": {
       "name": "Maine",
@@ -211,8 +211,8 @@
       "name": "New Mexico",
       "agency": "New Mexico Department of Workforce Solutions",
       "source_url": "https://www.dws.state.nm.us/Rapid-Response",
-      "total_records": 117,
-      "total_employees": 14928
+      "total_records": 118,
+      "total_employees": 15170
     },
     "NV": {
       "name": "Nevada",
@@ -232,8 +232,8 @@
       "name": "Ohio",
       "agency": "Ohio Department of Job and Family Services",
       "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
-      "total_records": 1258,
-      "total_employees": 171840
+      "total_records": 1259,
+      "total_employees": 172019
     },
     "OK": {
       "name": "Oklahoma",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1526,
-      "total_employees": 244398
+      "total_records": 1528,
+      "total_employees": 244678
     },
     "WI": {
       "name": "Wisconsin",
@@ -39617,7 +39617,7 @@
       "notice_date": "2026-08-19",
       "effective_date": "2026-11-02",
       "employees": 73,
-      "layoff_type": "Relocation Permanent",
+      "layoff_type": "Layoff Permanent",
       "county": "Ventura County",
       "city": "",
       "address": "2800 Sturgis Road  Oxnard CA 93030",
@@ -40978,6 +40978,258 @@
       "city": "",
       "address": "2330 Northpoint Parkway  Santa Rosa CA 95407",
       "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Quixote Studio Services - North Valley",
+      "notice_date": "2026-09-15",
+      "effective_date": "2026-11-14",
+      "employees": 29,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "10252 Norris Ave.  Pacoima CA 91331",
+      "industry": "71 Arts Entertainment and Recreation"
+    },
+    {
+      "state": "CA",
+      "company": "Quixote Studio Services - Sylmar South",
+      "notice_date": "2026-09-15",
+      "effective_date": "2026-11-14",
+      "employees": 3,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "13334 Ralston Avenue  Sylmar CA 91342",
+      "industry": "71 Arts Entertainment and Recreation"
+    },
+    {
+      "state": "CA",
+      "company": "Quixote Studio Services - North Valley Campus A",
+      "notice_date": "2026-09-15",
+      "effective_date": "2026-11-14",
+      "employees": 24,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "12137 Montague St.  Pacoima CA 91331",
+      "industry": "71 Arts Entertainment and Recreation"
+    },
+    {
+      "state": "CA",
+      "company": "Quixote Studio Services - Sylmar North",
+      "notice_date": "2026-09-15",
+      "effective_date": "2026-11-14",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "14002 Balboa  Sylmar CA 91342",
+      "industry": "71 Arts Entertainment and Recreation"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser (99 S. Oakland Ave.)",
+      "notice_date": "2026-09-21",
+      "effective_date": "2026-11-20",
+      "employees": 20,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "99 S. Oakland Ave.  Pasadena CA 91101",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser (393 E. Walnut St.)",
+      "notice_date": "2026-09-21",
+      "effective_date": "2026-11-20",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "393 E. Walnut St.  Pasadena CA 91188",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser (74 N. Pasadena Ave.)",
+      "notice_date": "2026-09-21",
+      "effective_date": "2026-11-20",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "74 N. Pasadena Ave.  Pasadena CA 91103",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser (75N. Fair Oaks Ave.)",
+      "notice_date": "2026-09-21",
+      "effective_date": "2026-11-20",
+      "employees": 3,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "75 N. Fair Oaks Ave.  Pasadena CA 91103",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser (8954 Rio San Diego Dr.)",
+      "notice_date": "2026-09-21",
+      "effective_date": "2026-11-20",
+      "employees": 72,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "8954 Rio San Diego Dr.  San Diego CA 92108",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser (One Kaiser Plaza)",
+      "notice_date": "2026-09-21",
+      "effective_date": "2026-11-20",
+      "employees": 11,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "One Kaiser Plaza  Oakland CA 94612",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser",
+      "notice_date": "2026-09-21",
+      "effective_date": "2026-11-20",
+      "employees": 3,
+      "layoff_type": "Layoff Permanent",
+      "county": "Sacramento County",
+      "city": "",
+      "address": "50 Iron Point Cir.  Folsom CA 95630",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser (1800 Harrison St.)",
+      "notice_date": "2026-09-21",
+      "effective_date": "2026-11-20",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "1800 Harrison St.  Oakland CA 94612",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser (3840 Murphy Canyon Rd.)",
+      "notice_date": "2026-09-21",
+      "effective_date": "2026-11-20",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "3840 Murphy Canyon Rd.  San Diego CA 92123",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser (1840 California Ave.)",
+      "notice_date": "2026-09-21",
+      "effective_date": "2026-11-20",
+      "employees": 4,
+      "layoff_type": "Layoff Permanent",
+      "county": "Riverside County",
+      "city": "",
+      "address": "1840 California Ave.  Corona CA 92881",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser (1830 California Ave.)",
+      "notice_date": "2026-09-21",
+      "effective_date": "2026-11-20",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Riverside County",
+      "city": "",
+      "address": "1830 California Ave.  Corona CA 92881",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser",
+      "notice_date": "2026-09-21",
+      "effective_date": "2026-11-20",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Orange County",
+      "city": "",
+      "address": "17836 Gillette Ave.  Irvine CA 92614",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser",
+      "notice_date": "2026-09-21",
+      "effective_date": "2026-11-20",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "3000 S. Robertson Blvd.  Los Angeles CA 90034",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser (17140 Bernardo Center Dr.)",
+      "notice_date": "2026-09-21",
+      "effective_date": "2026-11-20",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "17140 Bernardo Center Dr.  San Diego CA 92128",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser",
+      "notice_date": "2026-09-21",
+      "effective_date": "2026-11-20",
+      "employees": 22,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "4460 Hacienda Dr.  Pleasanton CA 94588",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Capstone Delivery Inc.",
+      "notice_date": "2026-09-23",
+      "effective_date": "2026-11-21",
+      "employees": 106,
+      "layoff_type": "Closure Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "9350 Rayo Avenue  South Gate CA 90280",
+      "industry": "48-49 Transportation and Warehousing"
+    },
+    {
+      "state": "CA",
+      "company": "RTX",
+      "notice_date": "2026-09-22",
+      "effective_date": "2026-11-27",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "2000 E El Segundo Blvd  El Segundo CA 90245",
+      "industry": "54 Professional Scientific and Technical Services"
     },
     {
       "company": "Adventist Health St. Helena",
@@ -387334,6 +387586,18 @@
       "industry": "312111"
     },
     {
+      "state": "MD",
+      "company": "ColonialWebb Contracting Company",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-12-01",
+      "employees": 13,
+      "layoff_type": "Mass Layoff- No Recall",
+      "county": "Anne Arundel",
+      "city": "",
+      "address": "150 Blades Lane Glen Burnie, MD 21060",
+      "industry": "238220"
+    },
+    {
       "state": "ME",
       "company": "SMBC-Sumitomo Mitsui Banking Corporation",
       "notice_date": "2026-01-13",
@@ -453147,6 +453411,18 @@
       "layoff_type": "",
       "county": "Bernalillo",
       "city": "Albuquerque",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NM",
+      "company": "Sierra Lobo",
+      "notice_date": "2026-09-15",
+      "effective_date": "2026-11-29",
+      "employees": 242,
+      "layoff_type": "",
+      "county": "Otero",
+      "city": "Alamogordo",
       "address": "",
       "industry": ""
     },
@@ -536391,6 +536667,18 @@
       "layoff_type": "Layoff",
       "county": "Lucas",
       "city": "Toledo",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Ardor Delivery Services",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-11-26",
+      "employees": 179,
+      "layoff_type": "Closure",
+      "county": "Montgomery",
+      "city": "Centerville",
       "address": "",
       "industry": ""
     },
@@ -664292,6 +664580,30 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Seattle",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Microsoft",
+      "notice_date": "2026-09-22",
+      "effective_date": "2026-11-21",
+      "employees": 277,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Redmond",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Providence Health & Services",
+      "notice_date": "2026-09-18",
+      "effective_date": "2026-11-18",
+      "employees": 3,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Olympia",
       "address": "",
       "industry": ""
     },

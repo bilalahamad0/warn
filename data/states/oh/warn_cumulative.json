@@ -1,9 +1,9 @@
 {
-  "total_records": 993,
-  "total_employees": 140236,
+  "total_records": 994,
+  "total_employees": 140415,
   "date_range_start": "2015-01-05",
-  "date_range_end": "2026-09-21",
-  "last_updated": "2026-09-24T16:26:31.638504+00:00",
+  "date_range_end": "2026-09-24",
+  "last_updated": "2026-09-25T02:44:15.925440+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
     {
@@ -11379,6 +11379,18 @@
       "layoff_type": "Layoff",
       "county": "Lucas",
       "city": "Toledo",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Ardor Delivery Services",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-11-26",
+      "employees": 179,
+      "layoff_type": "Closure",
+      "county": "Montgomery",
+      "city": "Centerville",
       "address": "",
       "industry": ""
     }

@@ -1,9 +1,9 @@
 {
-  "total_records": 1359,
-  "total_employees": 115537,
+  "total_records": 1360,
+  "total_employees": 115550,
   "date_range_start": "2010-01-07",
-  "date_range_end": "2026-09-14",
-  "last_updated": "2026-09-24T16:22:35.085127+00:00",
+  "date_range_end": "2026-09-24",
+  "last_updated": "2026-09-25T02:39:34.888344+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -16313,6 +16313,18 @@
       "city": "",
       "address": "2611 Pepsi Place Hyattsville, MD 20781",
       "industry": "312111"
+    },
+    {
+      "state": "MD",
+      "company": "ColonialWebb Contracting Company",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-12-01",
+      "employees": 13,
+      "layoff_type": "Mass Layoff- No Recall",
+      "county": "Anne Arundel",
+      "city": "",
+      "address": "150 Blades Lane Glen Burnie, MD 21060",
+      "industry": "238220"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-24T16:30:58.174533+00:00",
+  "updated_at": "2026-09-25T02:49:01.849927+00:00",
   "candidates": [
     {
       "id": "c353237355db",
@@ -403,7 +403,7 @@
     {
       "id": "75f00ad2eb01",
       "created_at": "2026-09-18T02:28:45.090165+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "pacific ag services",
       "display": "Pacific Ag Services LLC",
       "employees": 530,
@@ -439,7 +439,7 @@
     {
       "id": "4f7a53467346",
       "created_at": "2026-09-18T02:28:45.090241+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Oracle",
       "display": "Oracle",
       "employees": 441,
@@ -477,7 +477,7 @@
     {
       "id": "5dd6f90a5a6e",
       "created_at": "2026-09-18T02:28:45.090295+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "owens and minor",
       "display": "Owens & Minor",
       "employees": 419,
@@ -513,7 +513,7 @@
     {
       "id": "78d823baba1d",
       "created_at": "2026-09-18T02:28:45.090343+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "loftus administrative services",
       "display": "Loftus Administrative Services LLC",
       "employees": 376,
@@ -549,7 +549,7 @@
     {
       "id": "22a991ca436e",
       "created_at": "2026-09-18T02:28:45.090390+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Uber",
       "display": "Uber",
       "employees": 253,
@@ -975,6 +975,42 @@
       "warnings": [],
       "keys": [
         "WA:Expedia, Inc.__2026-11-21__58"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "5e404079cd82",
+      "created_at": "2026-09-25T02:49:01.849896+00:00",
+      "status": "pending",
+      "company": "Microsoft",
+      "display": "Microsoft",
+      "employees": 277,
+      "states": [
+        "WA"
+      ],
+      "per_state": {
+        "WA": 277
+      },
+      "sites": 1,
+      "card": {
+        "place": "Redmond, WA",
+        "effective": "Nov 21, 2026",
+        "employees": 277
+      },
+      "arm": "size",
+      "reason": "277 >= 250",
+      "text": "Microsoft filed a WARN notice for 277 job cuts in Redmond, WA.\n\nEffective Nov 21, 2026.\n\n#layoffs #Washington",
+      "thread": [],
+      "weighted_len": 109,
+      "warnings": [],
+      "keys": [
+        "WA:Microsoft__2026-11-21__277"
       ],
       "approved_by": null,
       "approved_at": null,
