@@ -1,9 +1,9 @@
 {
-  "total_records": 858,
-  "total_employees": 86956,
+  "total_records": 860,
+  "total_employees": 87322,
   "date_range_start": "2015-01-02",
-  "date_range_end": "2026-09-10",
-  "last_updated": "2026-09-25T16:16:04.607328+00:00",
+  "date_range_end": "2026-09-25",
+  "last_updated": "2026-09-26T02:35:13.252047+00:00",
   "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
   "records": [
     {
@@ -10301,6 +10301,30 @@
       "city": "",
       "address": "",
       "industry": "56,2910: Remediation Services"
+    },
+    {
+      "state": "CO",
+      "company": "Navajo Manufacturing Co. Inc.",
+      "notice_date": "2026-09-09",
+      "effective_date": null,
+      "employees": 102,
+      "layoff_type": "Divesture",
+      "county": "Pueblo",
+      "city": "",
+      "address": "",
+      "industry": "424: Merchant Wholesalers, Non Durable Goods"
+    },
+    {
+      "state": "CO",
+      "company": "T&H/KIRA: KIRA Infrastructure, KIRA Integrated Solutions, T&H Solutions, T&H Services, KIRA Aviation Update",
+      "notice_date": "2026-09-25",
+      "effective_date": null,
+      "employees": 264,
+      "layoff_type": "Kira has been selected so if contract is finalized no net layoffs",
+      "county": "Pikes Peak",
+      "city": "",
+      "address": "",
+      "industry": "56, 54, 33, 23 (Kira Infrastructure: 562111), 236220 (KIRA Integrated Solutions), 541512 (T&H Solutions), 336143 (Kira Aviation),"
     }
   ]
 }

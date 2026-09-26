@@ -1,9 +1,9 @@
 {
-  "total_records": 392,
-  "total_employees": 35132,
+  "total_records": 394,
+  "total_employees": 35399,
   "date_range_start": "2021-04-19",
-  "date_range_end": "2026-09-09",
-  "last_updated": "2026-09-25T16:22:58.041124+00:00",
+  "date_range_end": "2026-09-25",
+  "last_updated": "2026-09-26T02:41:54.281933+00:00",
   "source_url": "https://www.mass.gov/info-details/worker-adjustment-and-retraining-notification-act-warn",
   "records": [
     {
@@ -4479,6 +4479,30 @@
       "layoff_type": "",
       "county": "Southeast",
       "city": "Bridgewater",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "*Updated* Revvity",
+      "notice_date": "2026-09-25",
+      "effective_date": "2025-12-09",
+      "employees": 53,
+      "layoff_type": "",
+      "county": "Northeast",
+      "city": "Lawrence",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "Retail Therapy, LLC (dba Frugal Fannie's Fashion and Shoe Warehouse)",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-11-23",
+      "employees": 214,
+      "layoff_type": "",
+      "county": "Metro Southwest",
+      "city": "Westwood",
       "address": "",
       "industry": ""
     },

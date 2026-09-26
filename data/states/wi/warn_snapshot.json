@@ -1,9 +1,9 @@
 {
-  "total_records": 635,
-  "total_employees": 59336,
+  "total_records": 636,
+  "total_employees": 59377,
   "date_range_start": "2020-01-02",
-  "date_range_end": "2026-08-24",
-  "last_updated": "2026-09-25T02:47:29.923806+00:00",
+  "date_range_end": "2026-09-24",
+  "last_updated": "2026-09-25T16:30:08.630665+00:00",
   "source_url": "https://dwd.wisconsin.gov/dislocatedworker/warn/",
   "records": [
     {
@@ -7625,6 +7625,18 @@
       "city": "Marshfield",
       "address": "",
       "industry": "Cheese Mfg"
+    },
+    {
+      "state": "WI",
+      "company": "Sunlite Plastics, Inc.",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-12-07",
+      "employees": 41,
+      "layoff_type": "Workforce Reduction",
+      "county": "Washington",
+      "city": "Germantown",
+      "address": "",
+      "industry": "Unlaminated Plastics Profile Shape Manufacturing"
     }
   ]
 }

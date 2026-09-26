@@ -1,5 +1,17 @@
 [
  {
+  "employer": "Restoration Forest Products, LLC",
+  "city": "Bellemont",
+  "zip": "86015",
+  "lwib_area": "10 - ARIZONA@WORK - Coconino County",
+  "notice_date": "Sep 24, 2026",
+  "warn_type": "WARN",
+  "record_number": "1001",
+  "detail_page_url": "https://www.azjobconnection.gov/search/warn_lookups/1001",
+  "number_of_employees_affected": "130",
+  "address": "14005 Old Route 66; Bellemont, Arizona 86015"
+ },
+ {
   "employer": "Regional Acceptance Corporation",
   "city": "Tempe",
   "zip": "85281",

@@ -1,9 +1,9 @@
 {
-  "total_records": 466,
-  "total_employees": 35046,
+  "total_records": 467,
+  "total_employees": 35116,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-09-16",
-  "last_updated": "2026-09-25T16:18:35.894612+00:00",
+  "date_range_end": "2026-09-25",
+  "last_updated": "2026-09-26T02:37:30.078505+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -5597,6 +5597,18 @@
       "city": "ROCKLEDGE",
       "address": "6450 US Highway 1",
       "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "FL",
+      "company": "Amentum",
+      "notice_date": "2026-09-25",
+      "effective_date": "2026-11-30",
+      "employees": 70,
+      "layoff_type": "",
+      "county": "",
+      "city": "MERRITT ISLAND",
+      "address": "Space Commerce Way, Merritt Island, Kennedy Space Center",
+      "industry": "Public Administration"
     }
   ]
 }

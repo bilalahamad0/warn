@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-25T16:30:11.613609+00:00",
+  "last_updated": "2026-09-26T02:49:06.983401+00:00",
   "states_live": 47,
-  "total_records": 60372,
-  "total_employees": 6501929,
+  "total_records": 60379,
+  "total_employees": 6502931,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -22,8 +22,8 @@
       "name": "Arizona",
       "agency": "Arizona Department of Economic Security",
       "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
-      "total_records": 482,
-      "total_employees": 71535
+      "total_records": 483,
+      "total_employees": 71665
     },
     "CA": {
       "name": "California",
@@ -36,8 +36,8 @@
       "name": "Colorado",
       "agency": "Colorado Department of Labor and Employment",
       "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
-      "total_records": 858,
-      "total_employees": 86956
+      "total_records": 860,
+      "total_employees": 87322
     },
     "CT": {
       "name": "Connecticut",
@@ -64,8 +64,8 @@
       "name": "Florida",
       "agency": "Florida Department of Commerce (FloridaCommerce)",
       "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
-      "total_records": 466,
-      "total_employees": 35046
+      "total_records": 467,
+      "total_employees": 35116
     },
     "GA": {
       "name": "Georgia",
@@ -134,8 +134,8 @@
       "name": "Massachusetts",
       "agency": "Massachusetts Executive Office of Labor and Workforce Development",
       "source_url": "https://www.mass.gov/info-details/worker-adjustment-and-retraining-notification-act-warn",
-      "total_records": 392,
-      "total_employees": 35132
+      "total_records": 394,
+      "total_employees": 35399
     },
     "MD": {
       "name": "Maryland",
@@ -253,8 +253,8 @@
       "name": "Pennsylvania",
       "agency": "Pennsylvania Department of Labor & Industry",
       "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
-      "total_records": 311,
-      "total_employees": 45642
+      "total_records": 312,
+      "total_employees": 45811
     },
     "RI": {
       "name": "Rhode Island",
@@ -19761,6 +19761,18 @@
       "county": "",
       "city": "Tempe",
       "address": "1700 North Desert Drive; Tempe, Arizona 85281",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Restoration Forest Products, LLC",
+      "notice_date": "2026-09-24",
+      "effective_date": null,
+      "employees": 130,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Bellemont",
+      "address": "14005 Old Route 66; Bellemont, Arizona 86015",
       "industry": ""
     },
     {
@@ -195304,6 +195316,30 @@
       "industry": "56,2910: Remediation Services"
     },
     {
+      "state": "CO",
+      "company": "Navajo Manufacturing Co. Inc.",
+      "notice_date": "2026-09-09",
+      "effective_date": null,
+      "employees": 102,
+      "layoff_type": "Divesture",
+      "county": "Pueblo",
+      "city": "",
+      "address": "",
+      "industry": "424: Merchant Wholesalers, Non Durable Goods"
+    },
+    {
+      "state": "CO",
+      "company": "T&H/KIRA: KIRA Infrastructure, KIRA Integrated Solutions, T&H Solutions, T&H Services, KIRA Aviation Update",
+      "notice_date": "2026-09-25",
+      "effective_date": null,
+      "employees": 264,
+      "layoff_type": "Kira has been selected so if contract is finalized no net layoffs",
+      "county": "Pikes Peak",
+      "city": "",
+      "address": "",
+      "industry": "56, 54, 33, 23 (Kira Infrastructure: 562111), 236220 (KIRA Integrated Solutions), 541512 (T&H Solutions), 336143 (Kira Aviation),"
+    },
+    {
       "state": "CT",
       "company": "Conduent Commercial Solutions, LLC",
       "notice_date": "2026-06-26",
@@ -203462,6 +203498,18 @@
       "city": "ROCKLEDGE",
       "address": "6450 US Highway 1",
       "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "FL",
+      "company": "Amentum",
+      "notice_date": "2026-09-25",
+      "effective_date": "2026-11-30",
+      "employees": 70,
+      "layoff_type": "",
+      "county": "",
+      "city": "MERRITT ISLAND",
+      "address": "Space Commerce Way, Merritt Island, Kennedy Space Center",
+      "industry": "Public Administration"
     },
     {
       "state": "GA",
@@ -371274,6 +371322,30 @@
       "layoff_type": "",
       "county": "Central",
       "city": "Leominster",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "*Updated* Revvity",
+      "notice_date": "2026-09-25",
+      "effective_date": "2025-12-09",
+      "employees": 53,
+      "layoff_type": "",
+      "county": "Northeast",
+      "city": "Lawrence",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "Retail Therapy, LLC (dba Frugal Fannie's Fashion and Shoe Warehouse)",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-11-23",
+      "employees": 214,
+      "layoff_type": "",
+      "county": "Metro Southwest",
+      "city": "Westwood",
       "address": "",
       "industry": ""
     },
@@ -562492,6 +562564,18 @@
       "county": "McKean",
       "city": "",
       "address": "200 Pleasant Street, Bradford, PA  16701",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Pep Boys Manny Moe & Jack, LLC",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 169,
+      "layoff_type": "Layoff",
+      "county": "Montgomery",
+      "city": "",
+      "address": "1 Presidential Boulevard, Suite 400, Bala Cynwyd, PA  19004",
       "industry": ""
     },
     {
