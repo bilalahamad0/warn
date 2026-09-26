@@ -1,9 +1,9 @@
 {
-  "total_records": 311,
-  "total_employees": 45642,
+  "total_records": 312,
+  "total_employees": 45811,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-09-25T16:27:07.755456+00:00",
+  "last_updated": "2026-09-26T02:45:54.782498+00:00",
   "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
   "records": [
     {
@@ -64,6 +64,18 @@
       "county": "McKean",
       "city": "",
       "address": "200 Pleasant Street, Bradford, PA  16701",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Pep Boys Manny Moe & Jack, LLC",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 169,
+      "layoff_type": "Layoff",
+      "county": "Montgomery",
+      "city": "",
+      "address": "1 Presidential Boulevard, Suite 400, Bala Cynwyd, PA  19004",
       "industry": ""
     },
     {
