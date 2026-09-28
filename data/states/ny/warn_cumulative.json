@@ -1,9 +1,9 @@
 {
-  "total_records": 4793,
-  "total_employees": 418623,
+  "total_records": 4796,
+  "total_employees": 418781,
   "date_range_start": "2016-01-04",
   "date_range_end": "2026-08-25",
-  "last_updated": "2026-09-28T02:49:31.893662+00:00",
+  "last_updated": "2026-09-28T19:18:27.143673+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -57520,6 +57520,42 @@
       "county": "Suffolk",
       "city": "",
       "address": "1650 Locust Ave Bohemia, NY, 11716",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Career Systems Development Corporation",
+      "notice_date": "2026-08-20",
+      "effective_date": "2026-09-30",
+      "employees": 39,
+      "layoff_type": "Layoff Permanent",
+      "county": "Kings",
+      "city": "",
+      "address": "585 DeKalb Avenue Brooklyn, NY, 11205",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Career Systems Development Corporation",
+      "notice_date": "2026-08-20",
+      "effective_date": "2026-09-30",
+      "employees": 67,
+      "layoff_type": "Layoff Permanent",
+      "county": "Bronx",
+      "city": "",
+      "address": "1771 Andrews Avenue S Bronx, NY, 10453",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "One Moment Logistics Inc.",
+      "notice_date": "2026-07-07",
+      "effective_date": "2026-07-17",
+      "employees": 52,
+      "layoff_type": "Closure Permanent",
+      "county": "Herkimer",
+      "city": "",
+      "address": "120 Benson Place Frankfort, NY, 13340",
       "industry": ""
     }
   ]

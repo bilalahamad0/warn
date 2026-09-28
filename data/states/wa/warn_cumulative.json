@@ -1,9 +1,9 @@
 {
-  "total_records": 1528,
-  "total_employees": 244678,
+  "total_records": 1529,
+  "total_employees": 248123,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-09-22",
-  "last_updated": "2026-09-28T02:52:42.856648+00:00",
+  "date_range_end": "2026-09-25",
+  "last_updated": "2026-09-28T19:22:41.736840+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -18339,6 +18339,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Olympia",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Gebbers Farms, Etal",
+      "notice_date": "2026-09-25",
+      "effective_date": "2026-11-25",
+      "employees": 3445,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Brewster",
       "address": "",
       "industry": ""
     }

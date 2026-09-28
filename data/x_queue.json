@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-28T02:53:53.530802+00:00",
+  "updated_at": "2026-09-28T19:23:56.266201+00:00",
   "candidates": [
     {
       "id": "c353237355db",
@@ -1083,6 +1083,42 @@
       "warnings": [],
       "keys": [
         "FL:Amentum__2026-11-30__70"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "6efbe0055b68",
+      "created_at": "2026-09-28T19:23:56.266169+00:00",
+      "status": "pending",
+      "company": "gebbers farms etal",
+      "display": "Gebbers Farms, Etal",
+      "employees": 3445,
+      "states": [
+        "WA"
+      ],
+      "per_state": {
+        "WA": 3445
+      },
+      "sites": 1,
+      "card": {
+        "place": "Brewster, WA",
+        "effective": "Nov 25, 2026",
+        "employees": 3445
+      },
+      "arm": "size",
+      "reason": "3,445 >= 250",
+      "text": "Gebbers Farms, Etal filed a WARN notice for 3,445 job cuts in Brewster, WA.\n\nEffective Nov 25, 2026.\n\n#layoffs #Washington",
+      "thread": [],
+      "weighted_len": 122,
+      "warnings": [],
+      "keys": [
+        "WA:Gebbers Farms, Etal__2026-11-25__3445"
       ],
       "approved_by": null,
       "approved_at": null,

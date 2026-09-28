@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-28T02:52:48.648115+00:00",
+  "last_updated": "2026-09-28T19:22:47.277157+00:00",
   "states_live": 47,
-  "total_records": 60379,
-  "total_employees": 6502931,
+  "total_records": 60384,
+  "total_employees": 6506713,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -225,8 +225,8 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 5342,
-      "total_employees": 433552
+      "total_records": 5345,
+      "total_employees": 433710
     },
     "OH": {
       "name": "Ohio",
@@ -309,15 +309,15 @@
       "name": "Vermont",
       "agency": "Vermont Department of Labor",
       "source_url": "https://www.vermontjoblink.com/search/warn_lookups",
-      "total_records": 37,
-      "total_employees": 3537
+      "total_records": 38,
+      "total_employees": 3716
     },
     "WA": {
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1528,
-      "total_employees": 244678
+      "total_records": 1529,
+      "total_employees": 248123
     },
     "WI": {
       "name": "Wisconsin",
@@ -518780,6 +518780,42 @@
     },
     {
       "state": "NY",
+      "company": "Career Systems Development Corporation",
+      "notice_date": "2026-08-20",
+      "effective_date": "2026-09-30",
+      "employees": 39,
+      "layoff_type": "Layoff Permanent",
+      "county": "Kings",
+      "city": "",
+      "address": "585 DeKalb Avenue Brooklyn, NY, 11205",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Career Systems Development Corporation",
+      "notice_date": "2026-08-20",
+      "effective_date": "2026-09-30",
+      "employees": 67,
+      "layoff_type": "Layoff Permanent",
+      "county": "Bronx",
+      "city": "",
+      "address": "1771 Andrews Avenue S Bronx, NY, 10453",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "One Moment Logistics Inc.",
+      "notice_date": "2026-07-07",
+      "effective_date": "2026-07-17",
+      "employees": 52,
+      "layoff_type": "Closure Permanent",
+      "county": "Herkimer",
+      "city": "",
+      "address": "120 Benson Place Frankfort, NY, 13340",
+      "industry": ""
+    },
+    {
+      "state": "NY",
       "company": "Cardionet, LLC. an affiliate of Philips North America, LLC.",
       "notice_date": "2025-04-01",
       "effective_date": "2025-06-30",
@@ -646368,6 +646404,18 @@
       "industry": ""
     },
     {
+      "state": "VT",
+      "company": "University of Vermont Health",
+      "notice_date": "2026-09-15",
+      "effective_date": null,
+      "employees": 179,
+      "layoff_type": "",
+      "county": "",
+      "city": "Burlington",
+      "address": "111 Colchester Ave; Burlington, Vermont 05401",
+      "industry": ""
+    },
+    {
       "state": "WA",
       "company": "Verizon",
       "notice_date": "2026-07-16",
@@ -664700,6 +664748,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Olympia",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Gebbers Farms, Etal",
+      "notice_date": "2026-09-25",
+      "effective_date": "2026-11-25",
+      "employees": 3445,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Brewster",
       "address": "",
       "industry": ""
     },

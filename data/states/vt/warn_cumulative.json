@@ -1,9 +1,9 @@
 {
-  "total_records": 37,
-  "total_employees": 3537,
+  "total_records": 38,
+  "total_employees": 3716,
   "date_range_start": "2019-01-17",
-  "date_range_end": "2026-06-17",
-  "last_updated": "2026-09-28T02:50:47.083798+00:00",
+  "date_range_end": "2026-09-15",
+  "last_updated": "2026-09-28T19:20:48.864123+00:00",
   "source_url": "https://www.vermontjoblink.com/search/warn_lookups",
   "records": [
     {
@@ -448,6 +448,18 @@
       "county": "",
       "city": "",
       "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VT",
+      "company": "University of Vermont Health",
+      "notice_date": "2026-09-15",
+      "effective_date": null,
+      "employees": 179,
+      "layoff_type": "",
+      "county": "",
+      "city": "Burlington",
+      "address": "111 Colchester Ave; Burlington, Vermont 05401",
       "industry": ""
     }
   ]
