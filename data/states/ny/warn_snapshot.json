@@ -1,9 +1,9 @@
 {
-  "total_records": 197,
-  "total_employees": 12446,
+  "total_records": 200,
+  "total_employees": 12604,
   "date_range_start": "2026-01-06",
   "date_range_end": "2026-08-25",
-  "last_updated": "2026-09-28T02:49:31.866408+00:00",
+  "last_updated": "2026-09-28T19:18:27.116128+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -208,6 +208,30 @@
       "county": "New York",
       "city": "",
       "address": "50 W 23rd Street New York, NY, 10010",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Career Systems Development Corporation",
+      "notice_date": "2026-08-20",
+      "effective_date": "2026-09-30",
+      "employees": 39,
+      "layoff_type": "Layoff Permanent",
+      "county": "Kings",
+      "city": "",
+      "address": "585 DeKalb Avenue Brooklyn, NY, 11205",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Career Systems Development Corporation",
+      "notice_date": "2026-08-20",
+      "effective_date": "2026-09-30",
+      "employees": 67,
+      "layoff_type": "Layoff Permanent",
+      "county": "Bronx",
+      "city": "",
+      "address": "1771 Andrews Avenue S Bronx, NY, 10453",
       "industry": ""
     },
     {
@@ -1720,6 +1744,18 @@
       "county": "Nassau",
       "city": "",
       "address": "220 RXR Plaza Uniondale, NY, 11556",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "One Moment Logistics Inc.",
+      "notice_date": "2026-07-07",
+      "effective_date": "2026-07-17",
+      "employees": 52,
+      "layoff_type": "Closure Permanent",
+      "county": "Herkimer",
+      "city": "",
+      "address": "120 Benson Place Frankfort, NY, 13340",
       "industry": ""
     },
     {

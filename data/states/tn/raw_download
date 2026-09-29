@@ -212,7 +212,7 @@ import {loadContextActions, buildTab} from 'https://static.cloud.coveo.com/atomi
     const orgId = "tennesseestategovernmentproduction6po4m5b2".trim();
 
     await searchInterface.initialize({
-        accessToken: "eyJhbGciOiJIUzI1NiJ9.eyJzZWFyY2hIdWIiOiJUTkdvdiIsInY4Ijp0cnVlLCJ0b2tlbklkIjoidmQyaG15bjRrYnFjcW9xMmVxaXNhbjJvZm0iLCJvcmdhbml6YXRpb24iOiJ0ZW5uZXNzZWVzdGF0ZWdvdmVybm1lbnRwcm9kdWN0aW9uNnBvNG01YjIiLCJ1c2VySWRzIjpbeyJ0eXBlIjoiVXNlciIsIm5hbWUiOiJhbm9ueW1vdXNfdXNlckBhbm9ueW1vdXMuY292ZW8uY29tIiwicHJvdmlkZXIiOiJFbWFpbCBTZWN1cml0eSBQcm92aWRlciJ9XSwicm9sZXMiOlsicXVlcnlFeGVjdXRvciJdLCJpc3MiOiJTZWFyY2hBcGkiLCJleHAiOjE3OTA2NzczNDYsImlhdCI6MTc5MDU5MDk0Nn0.hzrzmmMeKEFCPevQWnsbjkO3Fod283g3n3C5K2u4-x0".trim(),
+        accessToken: "eyJhbGciOiJIUzI1NiJ9.eyJzZWFyY2hIdWIiOiJUTkdvdiIsInY4Ijp0cnVlLCJ0b2tlbklkIjoic3BuYmQ1MnNhbnJnc2NhamtzM2p1bWtpdG0iLCJvcmdhbml6YXRpb24iOiJ0ZW5uZXNzZWVzdGF0ZWdvdmVybm1lbnRwcm9kdWN0aW9uNnBvNG01YjIiLCJ1c2VySWRzIjpbeyJ0eXBlIjoiVXNlciIsIm5hbWUiOiJhbm9ueW1vdXNfdXNlckBhbm9ueW1vdXMuY292ZW8uY29tIiwicHJvdmlkZXIiOiJFbWFpbCBTZWN1cml0eSBQcm92aWRlciJ9XSwicm9sZXMiOlsicXVlcnlFeGVjdXRvciJdLCJpc3MiOiJTZWFyY2hBcGkiLCJleHAiOjE3OTA3Mjc2NDksImlhdCI6MTc5MDY0MTI0OX0.S7kBXemZcijCQRpYIQeUmRh2aXJ4auhy12HV7wTmbg4".trim(),
         organizationId: orgId,
         organizationEndpoints: await searchInterface.getOrganizationEndpoints(orgId),
         renewAccessToken: function() {
@@ -975,13 +975,13 @@ to 6-5-2026</td>
     
     
     <div class="containers tn-accordion parbase">
-    <div class="accordion" id="accordion-ec4f6acefeaf48e6a44071119bd4fa99">
+    <div class="accordion" id="accordion-60905c5ce0da4b2f9895cfdeaade80a1">
         
 
         
             
                 <div class="button-wrapper">
-                    <button class="button icon-plus" type="button" aria-controls="collapseec4f6acefeaf48e6a44071119bd4fa99-0 collapseec4f6acefeaf48e6a44071119bd4fa99-1 collapseec4f6acefeaf48e6a44071119bd4fa99-2 collapseec4f6acefeaf48e6a44071119bd4fa99-3 collapseec4f6acefeaf48e6a44071119bd4fa99-4 " aria-label="Expand all accordion sections" data-tn-action="accordion:expandcollapse"></button>
+                    <button class="button icon-plus" type="button" aria-controls="collapse60905c5ce0da4b2f9895cfdeaade80a1-0 collapse60905c5ce0da4b2f9895cfdeaade80a1-1 collapse60905c5ce0da4b2f9895cfdeaade80a1-2 collapse60905c5ce0da4b2f9895cfdeaade80a1-3 collapse60905c5ce0da4b2f9895cfdeaade80a1-4 " aria-label="Expand all accordion sections" data-tn-action="accordion:expandcollapse"></button>
                 </div>
             
 
@@ -992,13 +992,13 @@ to 6-5-2026</td>
                     
                         <div class="accordion-heading">
                             <span class="accordion-title">
-                                <button class="accordion-button icon-angle-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-ec4f6acefeaf48e6a44071119bd4fa99-0" aria-controls="collapse-ec4f6acefeaf48e6a44071119bd4fa99-0" aria-expanded="false">
+                                <button class="accordion-button icon-angle-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-60905c5ce0da4b2f9895cfdeaade80a1-0" aria-controls="collapse-60905c5ce0da4b2f9895cfdeaade80a1-0" aria-expanded="false">
                                     2025
                                 </button>
                             </span>
                         </div>
 
-                        <div id="collapse-ec4f6acefeaf48e6a44071119bd4fa99-0" class="accordion-collapse collapse" data-bs-parent="#accordion-ec4f6acefeaf48e6a44071119bd4fa99">
+                        <div id="collapse-60905c5ce0da4b2f9895cfdeaade80a1-0" class="accordion-collapse collapse" data-bs-parent="#accordion-60905c5ce0da4b2f9895cfdeaade80a1">
                             <div class="accordion-body panel-body" tabindex="0">
                                 <div>
 
@@ -1361,13 +1361,13 @@ to 6-5-2026</td>
                     
                         <div class="accordion-heading">
                             <span class="accordion-title">
-                                <button class="accordion-button icon-angle-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-ec4f6acefeaf48e6a44071119bd4fa99-1" aria-controls="collapse-ec4f6acefeaf48e6a44071119bd4fa99-1" aria-expanded="false">
+                                <button class="accordion-button icon-angle-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-60905c5ce0da4b2f9895cfdeaade80a1-1" aria-controls="collapse-60905c5ce0da4b2f9895cfdeaade80a1-1" aria-expanded="false">
                                     2024
                                 </button>
                             </span>
                         </div>
 
-                        <div id="collapse-ec4f6acefeaf48e6a44071119bd4fa99-1" class="accordion-collapse collapse" data-bs-parent="#accordion-ec4f6acefeaf48e6a44071119bd4fa99">
+                        <div id="collapse-60905c5ce0da4b2f9895cfdeaade80a1-1" class="accordion-collapse collapse" data-bs-parent="#accordion-60905c5ce0da4b2f9895cfdeaade80a1">
                             <div class="accordion-body panel-body" tabindex="0">
                                 <div>
 
@@ -1452,13 +1452,13 @@ to 6-5-2026</td>
                     
                         <div class="accordion-heading">
                             <span class="accordion-title">
-                                <button class="accordion-button icon-angle-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-ec4f6acefeaf48e6a44071119bd4fa99-2" aria-controls="collapse-ec4f6acefeaf48e6a44071119bd4fa99-2" aria-expanded="false">
+                                <button class="accordion-button icon-angle-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-60905c5ce0da4b2f9895cfdeaade80a1-2" aria-controls="collapse-60905c5ce0da4b2f9895cfdeaade80a1-2" aria-expanded="false">
                                     2023
                                 </button>
                             </span>
                         </div>
 
-                        <div id="collapse-ec4f6acefeaf48e6a44071119bd4fa99-2" class="accordion-collapse collapse" data-bs-parent="#accordion-ec4f6acefeaf48e6a44071119bd4fa99">
+                        <div id="collapse-60905c5ce0da4b2f9895cfdeaade80a1-2" class="accordion-collapse collapse" data-bs-parent="#accordion-60905c5ce0da4b2f9895cfdeaade80a1">
                             <div class="accordion-body panel-body" tabindex="0">
                                 <div>
 
@@ -1544,13 +1544,13 @@ to 6-5-2026</td>
                     
                         <div class="accordion-heading">
                             <span class="accordion-title">
-                                <button class="accordion-button icon-angle-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-ec4f6acefeaf48e6a44071119bd4fa99-3" aria-controls="collapse-ec4f6acefeaf48e6a44071119bd4fa99-3" aria-expanded="false">
+                                <button class="accordion-button icon-angle-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-60905c5ce0da4b2f9895cfdeaade80a1-3" aria-controls="collapse-60905c5ce0da4b2f9895cfdeaade80a1-3" aria-expanded="false">
                                     2022
                                 </button>
                             </span>
                         </div>
 
-                        <div id="collapse-ec4f6acefeaf48e6a44071119bd4fa99-3" class="accordion-collapse collapse" data-bs-parent="#accordion-ec4f6acefeaf48e6a44071119bd4fa99">
+                        <div id="collapse-60905c5ce0da4b2f9895cfdeaade80a1-3" class="accordion-collapse collapse" data-bs-parent="#accordion-60905c5ce0da4b2f9895cfdeaade80a1">
                             <div class="accordion-body panel-body" tabindex="0">
                                 <div>
 
@@ -1592,13 +1592,13 @@ to 6-5-2026</td>
                     
                         <div class="accordion-heading">
                             <span class="accordion-title">
-                                <button class="accordion-button icon-angle-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-ec4f6acefeaf48e6a44071119bd4fa99-4" aria-controls="collapse-ec4f6acefeaf48e6a44071119bd4fa99-4" aria-expanded="false">
+                                <button class="accordion-button icon-angle-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-60905c5ce0da4b2f9895cfdeaade80a1-4" aria-controls="collapse-60905c5ce0da4b2f9895cfdeaade80a1-4" aria-expanded="false">
                                     2021
                                 </button>
                             </span>
                         </div>
 
-                        <div id="collapse-ec4f6acefeaf48e6a44071119bd4fa99-4" class="accordion-collapse collapse" data-bs-parent="#accordion-ec4f6acefeaf48e6a44071119bd4fa99">
+                        <div id="collapse-60905c5ce0da4b2f9895cfdeaade80a1-4" class="accordion-collapse collapse" data-bs-parent="#accordion-60905c5ce0da4b2f9895cfdeaade80a1">
                             <div class="accordion-body panel-body" tabindex="0">
                                 <div>
 
