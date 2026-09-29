@@ -1,9 +1,9 @@
 {
-  "total_records": 1789,
-  "total_employees": 95974,
+  "total_records": 1800,
+  "total_employees": 98307,
   "date_range_start": "2025-01-29",
-  "date_range_end": "2026-09-23",
-  "last_updated": "2026-09-29T03:18:32.144750+00:00",
+  "date_range_end": "2026-09-28",
+  "last_updated": "2026-09-29T17:31:14.869942+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "records": [
     {
@@ -21230,6 +21230,138 @@
       "city": "",
       "address": "2000 E El Segundo Blvd  El Segundo CA 90245",
       "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "state": "CA",
+      "company": "SAC Health (1003 East Brier Drive)",
+      "notice_date": "2026-09-22",
+      "effective_date": "2026-09-28",
+      "employees": 42,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Bernardino County",
+      "city": "",
+      "address": "1003 East Brier Drive  San Bernardino CA 92408",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "SAC Health (250 South G St.)",
+      "notice_date": "2026-09-22",
+      "effective_date": "2026-09-28",
+      "employees": 9,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Bernardino County",
+      "city": "",
+      "address": "250 South G St.  San Bernardino CA 92410",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Dreyer's Grand Ice Cream",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-11-19",
+      "employees": 647,
+      "layoff_type": "Closure Temporary",
+      "county": "Kern County",
+      "city": "",
+      "address": "7301 District Boulevard  Bakersfield CA 93313",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Dreyer's Grand Ice Cream",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-11-22",
+      "employees": 90,
+      "layoff_type": "Closure Temporary",
+      "county": "Tulare County",
+      "city": "",
+      "address": "970 E. Continental Ave.  Tulare CA 93274",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Key Energy Services, LLC - Bakersfield Location",
+      "notice_date": "2026-09-23",
+      "effective_date": "2026-11-22",
+      "employees": 53,
+      "layoff_type": "Closure Temporary",
+      "county": "Kern County",
+      "city": "",
+      "address": "18835 Highway 65  Bakersfield CA 93308",
+      "industry": "21 Mining Quarrying Oil and Gas Exraction"
+    },
+    {
+      "state": "CA",
+      "company": "Key Energy Services, LLC - Ventura Location",
+      "notice_date": "2026-09-23",
+      "effective_date": "2026-11-22",
+      "employees": 4,
+      "layoff_type": "Closure Temporary",
+      "county": "Ventura County",
+      "city": "",
+      "address": "2951 N. Ventura Avenue  Ventura CA 93002",
+      "industry": "21 Mining Quarrying Oil and Gas Exraction"
+    },
+    {
+      "state": "CA",
+      "company": "City National Bank - Grand Ave.",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-11-23",
+      "employees": 15,
+      "layoff_type": "Layoff Not known at this time",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "350 S. Grand Ave.  Los Angeles CA 90071",
+      "industry": "52 Finance and Insurance"
+    },
+    {
+      "state": "CA",
+      "company": "City National Bank - Flower Street",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-11-23",
+      "employees": 4,
+      "layoff_type": "Layoff Not known at this time",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "555 S. Flower St.  Los Angeles CA 90071",
+      "industry": "52 Finance and Insurance"
+    },
+    {
+      "state": "CA",
+      "company": "City of Hope",
+      "notice_date": "2026-09-23",
+      "effective_date": "2026-11-24",
+      "employees": 73,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "4900 Rivergrade Road  Irwindale CA 91706",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Covenant Aviation Security, LLC",
+      "notice_date": "2026-09-28",
+      "effective_date": "2026-11-30",
+      "employees": 1279,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Francisco County",
+      "city": "",
+      "address": "Highway 101  San Francisco CA 94128",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
+    },
+    {
+      "state": "CA",
+      "company": "BioMarin Pharmaceutical Inc.",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-12-04",
+      "employees": 117,
+      "layoff_type": "Layoff Permanent",
+      "county": "Marin County",
+      "city": "",
+      "address": "105 Digital Drive  Novato CA 94949",
+      "industry": "31-33 Manufacturing"
     }
   ]
 }

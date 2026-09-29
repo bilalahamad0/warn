@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-29T03:34:22.106960+00:00",
+  "updated_at": "2026-09-29T17:50:50.704130+00:00",
   "candidates": [
     {
       "id": "c353237355db",
@@ -802,7 +802,7 @@
     {
       "id": "de849ea8569b",
       "created_at": "2026-09-22T16:25:33.726149+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "bm administrative services",
       "display": "BM Administrative Services",
       "employees": 321,
@@ -838,7 +838,7 @@
     {
       "id": "727a3b49e28e",
       "created_at": "2026-09-22T16:25:33.726211+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "ips nationwide",
       "display": "IPS Nationwide, Inc.",
       "employees": 262,
@@ -875,7 +875,7 @@
     {
       "id": "35e14e0688f3",
       "created_at": "2026-09-22T16:25:33.726254+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Intel",
       "display": "Intel",
       "employees": 52,
@@ -914,7 +914,7 @@
     {
       "id": "c497a92c5d4d",
       "created_at": "2026-09-22T16:25:33.726291+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Safeway",
       "display": "Safeway",
       "employees": 50,
@@ -1119,6 +1119,115 @@
       "warnings": [],
       "keys": [
         "WA:Gebbers Farms, Etal__2026-11-25__3445"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "3574ff7fdb59",
+      "created_at": "2026-09-29T17:50:50.703957+00:00",
+      "status": "pending",
+      "company": "covenant aviation security",
+      "display": "Covenant Aviation Security, LLC",
+      "employees": 1279,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 1279
+      },
+      "sites": 1,
+      "card": {
+        "place": "San Francisco County, CA",
+        "effective": "Nov 30, 2026",
+        "employees": 1279
+      },
+      "arm": "size",
+      "reason": "1,279 >= 250",
+      "text": "Covenant Aviation Security, LLC filed a WARN notice for 1,279 job cuts in San Francisco County, CA.\n\nEffective Nov 30, 2026.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 146,
+      "warnings": [],
+      "keys": [
+        "CA:Covenant Aviation Security, LLC__2026-11-30__1279"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "1d237d69626e",
+      "created_at": "2026-09-29T17:50:50.704056+00:00",
+      "status": "pending",
+      "company": "firstfruits",
+      "display": "FirstFruits, LLC",
+      "employees": 1200,
+      "states": [
+        "WA"
+      ],
+      "per_state": {
+        "WA": 1200
+      },
+      "sites": 1,
+      "card": {
+        "place": "Prescott, WA",
+        "effective": "Nov 18, 2026",
+        "employees": 1200
+      },
+      "arm": "size",
+      "reason": "1,200 >= 250",
+      "text": "FirstFruits, LLC filed a WARN notice for 1,200 job cuts in Prescott, WA.\n\nEffective Nov 18, 2026.\n\n#layoffs #Washington",
+      "thread": [],
+      "weighted_len": 119,
+      "warnings": [],
+      "keys": [
+        "WA:FirstFruits, LLC__2026-11-18__1200"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "f39b1ef7d78a",
+      "created_at": "2026-09-29T17:50:50.704114+00:00",
+      "status": "pending",
+      "company": "dreyers grand ice cream",
+      "display": "Dreyer's Grand Ice Cream",
+      "employees": 737,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 737
+      },
+      "sites": 2,
+      "card": {
+        "place": "2 sites in California",
+        "effective": "Nov 19, 2026",
+        "employees": 737
+      },
+      "arm": "size",
+      "reason": "737 >= 250",
+      "text": "Dreyer's Grand Ice Cream filed WARN notices for 737 job cuts across 2 sites in California.\n\nFirst effective date Nov 19, 2026.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 148,
+      "warnings": [],
+      "keys": [
+        "CA:Dreyer's Grand Ice Cream__2026-11-19__647",
+        "CA:Dreyer's Grand Ice Cream__2026-11-22__90"
       ],
       "approved_by": null,
       "approved_at": null,

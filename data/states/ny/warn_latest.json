@@ -1,9 +1,9 @@
 {
   "total_records": 200,
-  "total_employees": 12604,
+  "total_employees": 12560,
   "date_range_start": "2026-01-06",
-  "date_range_end": "2026-08-25",
-  "last_updated": "2026-09-29T03:29:49.883506+00:00",
+  "date_range_end": "2026-08-28",
+  "last_updated": "2026-09-29T17:46:08.727866+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -392,18 +392,6 @@
     },
     {
       "state": "NY",
-      "company": "Coral Graphic Services, Inc.",
-      "notice_date": "2026-04-30",
-      "effective_date": "2026-07-30",
-      "employees": 85,
-      "layoff_type": "Closure Permanent",
-      "county": "Nassau",
-      "city": "",
-      "address": "840 S Broadway Hicksville, NY, 11801",
-      "industry": ""
-    },
-    {
-      "state": "NY",
       "company": "DF NY One Inc. d/b/a Dreamfields",
       "notice_date": "2026-03-02",
       "effective_date": "2026-03-13",
@@ -760,6 +748,18 @@
       "county": "Erie",
       "city": "",
       "address": "222 East Main St Springville, NY, 14141",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "KJ Quality Logistics, LLC.",
+      "notice_date": "2026-08-28",
+      "effective_date": "2026-11-26",
+      "employees": 41,
+      "layoff_type": "Closure Permanent",
+      "county": "Monroe",
+      "city": "",
+      "address": "1200 Lexington Avenue Rochester, NY, 14606",
       "industry": ""
     },
     {

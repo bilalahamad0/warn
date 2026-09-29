@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-29T03:33:21.122640+00:00",
+  "last_updated": "2026-09-29T17:49:29.088231+00:00",
   "states_live": 47,
-  "total_records": 60384,
-  "total_employees": 6506713,
+  "total_records": 60401,
+  "total_employees": 6510702,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -29,8 +29,8 @@
       "name": "California",
       "agency": "California Employment Development Department",
       "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
-      "total_records": 16378,
-      "total_employees": 1393238
+      "total_records": 16389,
+      "total_employees": 1395571
     },
     "CO": {
       "name": "Colorado",
@@ -99,8 +99,8 @@
       "name": "Illinois",
       "agency": "Illinois Department of Commerce and Economic Opportunity",
       "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
-      "total_records": 4885,
-      "total_employees": 674438
+      "total_records": 4886,
+      "total_employees": 674499
     },
     "IN": {
       "name": "Indiana",
@@ -204,8 +204,8 @@
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2349,
-      "total_employees": 353177
+      "total_records": 2351,
+      "total_employees": 353356
     },
     "NM": {
       "name": "New Mexico",
@@ -225,8 +225,8 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 5345,
-      "total_employees": 433710
+      "total_records": 5346,
+      "total_employees": 433751
     },
     "OH": {
       "name": "Ohio",
@@ -295,8 +295,8 @@
       "name": "Utah",
       "agency": "Utah Department of Workforce Services",
       "source_url": "https://jobs.utah.gov/employer/business/warnnotices.html",
-      "total_records": 282,
-      "total_employees": 36703
+      "total_records": 283,
+      "total_employees": 36878
     },
     "VA": {
       "name": "Virginia",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1529,
-      "total_employees": 248123
+      "total_records": 1530,
+      "total_employees": 249323
     },
     "WI": {
       "name": "Wisconsin",
@@ -41242,6 +41242,138 @@
       "city": "",
       "address": "2000 E El Segundo Blvd  El Segundo CA 90245",
       "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "state": "CA",
+      "company": "SAC Health (1003 East Brier Drive)",
+      "notice_date": "2026-09-22",
+      "effective_date": "2026-09-28",
+      "employees": 42,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Bernardino County",
+      "city": "",
+      "address": "1003 East Brier Drive  San Bernardino CA 92408",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "SAC Health (250 South G St.)",
+      "notice_date": "2026-09-22",
+      "effective_date": "2026-09-28",
+      "employees": 9,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Bernardino County",
+      "city": "",
+      "address": "250 South G St.  San Bernardino CA 92410",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Dreyer's Grand Ice Cream",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-11-19",
+      "employees": 647,
+      "layoff_type": "Closure Temporary",
+      "county": "Kern County",
+      "city": "",
+      "address": "7301 District Boulevard  Bakersfield CA 93313",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Dreyer's Grand Ice Cream",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-11-22",
+      "employees": 90,
+      "layoff_type": "Closure Temporary",
+      "county": "Tulare County",
+      "city": "",
+      "address": "970 E. Continental Ave.  Tulare CA 93274",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Key Energy Services, LLC - Bakersfield Location",
+      "notice_date": "2026-09-23",
+      "effective_date": "2026-11-22",
+      "employees": 53,
+      "layoff_type": "Closure Temporary",
+      "county": "Kern County",
+      "city": "",
+      "address": "18835 Highway 65  Bakersfield CA 93308",
+      "industry": "21 Mining Quarrying Oil and Gas Exraction"
+    },
+    {
+      "state": "CA",
+      "company": "Key Energy Services, LLC - Ventura Location",
+      "notice_date": "2026-09-23",
+      "effective_date": "2026-11-22",
+      "employees": 4,
+      "layoff_type": "Closure Temporary",
+      "county": "Ventura County",
+      "city": "",
+      "address": "2951 N. Ventura Avenue  Ventura CA 93002",
+      "industry": "21 Mining Quarrying Oil and Gas Exraction"
+    },
+    {
+      "state": "CA",
+      "company": "City National Bank - Grand Ave.",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-11-23",
+      "employees": 15,
+      "layoff_type": "Layoff Not known at this time",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "350 S. Grand Ave.  Los Angeles CA 90071",
+      "industry": "52 Finance and Insurance"
+    },
+    {
+      "state": "CA",
+      "company": "City National Bank - Flower Street",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-11-23",
+      "employees": 4,
+      "layoff_type": "Layoff Not known at this time",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "555 S. Flower St.  Los Angeles CA 90071",
+      "industry": "52 Finance and Insurance"
+    },
+    {
+      "state": "CA",
+      "company": "City of Hope",
+      "notice_date": "2026-09-23",
+      "effective_date": "2026-11-24",
+      "employees": 73,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "4900 Rivergrade Road  Irwindale CA 91706",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Covenant Aviation Security, LLC",
+      "notice_date": "2026-09-28",
+      "effective_date": "2026-11-30",
+      "employees": 1279,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Francisco County",
+      "city": "",
+      "address": "Highway 101  San Francisco CA 94128",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
+    },
+    {
+      "state": "CA",
+      "company": "BioMarin Pharmaceutical Inc.",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-12-04",
+      "employees": 117,
+      "layoff_type": "Layoff Permanent",
+      "county": "Marin County",
+      "city": "",
+      "address": "105 Digital Drive  Novato CA 94949",
+      "industry": "31-33 Manufacturing"
     },
     {
       "company": "Adventist Health St. Helena",
@@ -338080,6 +338212,18 @@
       "industry": "Manufacturing"
     },
     {
+      "state": "IL",
+      "company": "Volante of Arlington Heights (at Mariella of Arlington Heights)",
+      "notice_date": "2026-09-25",
+      "effective_date": null,
+      "employees": 61,
+      "layoff_type": "Mass Layoff",
+      "county": "Cook County",
+      "city": "Arlington Heights",
+      "address": "1625 S Arlington Heights Rd",
+      "industry": "Health Care and Social Assistance"
+    },
+    {
       "state": "IN",
       "company": "Thyssenkrupp Presta North America",
       "notice_date": "2026-06-30",
@@ -452083,6 +452227,30 @@
       "industry": ""
     },
     {
+      "state": "NJ",
+      "company": "Novo Nordisk",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 108,
+      "layoff_type": "",
+      "county": "",
+      "city": "Plainsboro",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "EWC Controls, LLC",
+      "notice_date": null,
+      "effective_date": "2027-04-01",
+      "employees": 71,
+      "layoff_type": "",
+      "county": "",
+      "city": "Englishtown",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "NM",
       "company": "Atkore HDPE, LLC",
       "notice_date": "2026-04-27",
@@ -518812,6 +518980,18 @@
       "county": "Herkimer",
       "city": "",
       "address": "120 Benson Place Frankfort, NY, 13340",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "KJ Quality Logistics, LLC.",
+      "notice_date": "2026-08-28",
+      "effective_date": "2026-11-26",
+      "employees": 41,
+      "layoff_type": "Closure Permanent",
+      "county": "Monroe",
+      "city": "",
+      "address": "1200 Lexington Avenue Rochester, NY, 14606",
       "industry": ""
     },
     {
@@ -632448,6 +632628,18 @@
       "industry": ""
     },
     {
+      "state": "UT",
+      "company": "Domo Inc.",
+      "notice_date": "2026-09-23",
+      "effective_date": null,
+      "employees": 175,
+      "layoff_type": "",
+      "county": "",
+      "city": "American Fork",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "VA",
       "company": "Emerson",
       "notice_date": "2026-07-09",
@@ -664760,6 +664952,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Brewster",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "FirstFruits, LLC",
+      "notice_date": "2026-09-28",
+      "effective_date": "2026-11-18",
+      "employees": 1200,
+      "layoff_type": "Layoff Temporary",
+      "county": "",
+      "city": "Prescott",
       "address": "",
       "industry": ""
     },
