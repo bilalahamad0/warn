@@ -1,9 +1,9 @@
 {
   "total_records": 4886,
-  "total_employees": 674499,
+  "total_employees": 674664,
   "date_range_start": "1987-09-01",
   "date_range_end": "2026-09-25",
-  "last_updated": "2026-09-29T17:35:18.145958+00:00",
+  "last_updated": "2026-09-30T03:04:56.720962+00:00",
   "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
   "records": [
     {
@@ -3293,18 +3293,6 @@
       "city": "Maywood",
       "address": "1900 S Maywood Dr.",
       "industry": "Retail Trade"
-    },
-    {
-      "state": "IL",
-      "company": "T-Mobile USA, Inc.",
-      "notice_date": "2026-01-30",
-      "effective_date": null,
-      "employees": 172,
-      "layoff_type": "Mass Layoff",
-      "county": "Cook County",
-      "city": "Schaumburg",
-      "address": "50 Commerce Dr., Suite 130",
-      "industry": "Information"
     },
     {
       "state": "IL",
@@ -58637,6 +58625,18 @@
       "city": "Arlington Heights",
       "address": "1625 S Arlington Heights Rd",
       "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "IL",
+      "company": "T-Mobile USA, Inc.",
+      "notice_date": "2026-01-30",
+      "effective_date": null,
+      "employees": 337,
+      "layoff_type": "Mass Layoff",
+      "county": "Cook County",
+      "city": "Schaumburg",
+      "address": "50 Commerce Dr., Suite 130",
+      "industry": "Information"
     }
   ]
 }

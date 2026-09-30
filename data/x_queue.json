@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-29T17:50:50.704130+00:00",
+  "updated_at": "2026-09-30T03:16:53.275954+00:00",
   "candidates": [
     {
       "id": "c353237355db",
@@ -951,7 +951,7 @@
     {
       "id": "b5ae4689e0ec",
       "created_at": "2026-09-23T02:44:16.227636+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Expedia",
       "display": "Expedia",
       "employees": 58,
@@ -1228,6 +1228,42 @@
       "keys": [
         "CA:Dreyer's Grand Ice Cream__2026-11-19__647",
         "CA:Dreyer's Grand Ice Cream__2026-11-22__90"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "8e8fe1ea95b9",
+      "created_at": "2026-09-30T03:16:53.275923+00:00",
+      "status": "pending",
+      "company": "Leidos",
+      "display": "Leidos",
+      "employees": 84,
+      "states": [
+        "VA"
+      ],
+      "per_state": {
+        "VA": 84
+      },
+      "sites": 1,
+      "card": {
+        "place": "Ashburn, VA",
+        "effective": "Nov 23, 2026",
+        "employees": 84
+      },
+      "arm": "brand",
+      "reason": "known brand, 84 >= 50",
+      "text": "Leidos filed a WARN notice for 84 job cuts in Ashburn, VA.\n\nEffective Nov 23, 2026.\n\n#layoffs #Virginia",
+      "thread": [],
+      "weighted_len": 103,
+      "warnings": [],
+      "keys": [
+        "VA:Leidos__2026-11-23__84"
       ],
       "approved_by": null,
       "approved_at": null,

@@ -1,9 +1,9 @@
 {
-  "total_records": 2376,
-  "total_employees": 355750,
+  "total_records": 2378,
+  "total_employees": 355929,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-09-29T03:29:31.483231+00:00",
+  "last_updated": "2026-09-29T17:45:52.712119+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -1275,6 +1275,30 @@
       "layoff_type": "",
       "county": "",
       "city": "Princeton",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Novo Nordisk",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 108,
+      "layoff_type": "",
+      "county": "",
+      "city": "Plainsboro",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "EWC Controls, LLC",
+      "notice_date": null,
+      "effective_date": "2027-04-01",
+      "employees": 71,
+      "layoff_type": "",
+      "county": "",
+      "city": "Englishtown",
       "address": "",
       "industry": ""
     },

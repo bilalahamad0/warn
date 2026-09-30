@@ -1,11 +1,23 @@
 {
-  "total_records": 1410,
-  "total_employees": 116727,
+  "total_records": 1411,
+  "total_employees": 116739,
   "date_range_start": "2010-01-07",
-  "date_range_end": "2026-09-24",
-  "last_updated": "2026-09-29T17:39:26.352556+00:00",
+  "date_range_end": "2026-09-28",
+  "last_updated": "2026-09-30T03:08:36.528560+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
+    {
+      "state": "MD",
+      "company": "LifeBridge Suburban Staffing, LLC (LBSS)",
+      "notice_date": "2026-09-28",
+      "effective_date": "2026-09-30",
+      "employees": 12,
+      "layoff_type": "Plant Closure Note: Performing work at the Cardiovascular Associates of Maryland)",
+      "county": "Susquehanna",
+      "city": "",
+      "address": "2021-B Emmorton Road, Suite 110 Bel Air, MD 21015",
+      "industry": "561320"
+    },
     {
       "state": "MD",
       "company": "ColonialWebb Contracting Company",

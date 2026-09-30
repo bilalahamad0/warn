@@ -1,5 +1,17 @@
 [
  {
+  "employer": "Farmers Investment Co.",
+  "city": "Sahuarita",
+  "zip": "85629",
+  "lwib_area": "6 - ARIZONA@WORK - Pima",
+  "notice_date": "Sep 15, 2026",
+  "warn_type": "WARN",
+  "record_number": "1002",
+  "detail_page_url": "https://www.azjobconnection.gov/search/warn_lookups/1002",
+  "number_of_employees_affected": "10",
+  "address": "1525 E Sahuarita Rd in Sahuarita; Sahuarita, Arizona 85629"
+ },
+ {
   "employer": "Restoration Forest Products, LLC",
   "city": "Bellemont",
   "zip": "86015",

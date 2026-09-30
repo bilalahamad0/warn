@@ -1,9 +1,9 @@
 {
-  "total_records": 1126,
-  "total_employees": 131541,
+  "total_records": 1127,
+  "total_employees": 131625,
   "date_range_start": "2010-07-29",
-  "date_range_end": "2026-09-16",
-  "last_updated": "2026-09-29T17:46:40.610744+00:00",
+  "date_range_end": "2026-09-28",
+  "last_updated": "2026-09-30T03:12:36.784789+00:00",
   "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
   "records": [
     {
@@ -13515,6 +13515,18 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Toano",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "Leidos",
+      "notice_date": "2026-09-28",
+      "effective_date": "2026-11-23",
+      "employees": 84,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Ashburn",
       "address": "",
       "industry": ""
     }

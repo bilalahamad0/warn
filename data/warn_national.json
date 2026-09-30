@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-29T17:49:29.088231+00:00",
+  "last_updated": "2026-09-30T03:15:26.736931+00:00",
   "states_live": 47,
-  "total_records": 60401,
-  "total_employees": 6510702,
+  "total_records": 60404,
+  "total_employees": 6510973,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -22,8 +22,8 @@
       "name": "Arizona",
       "agency": "Arizona Department of Economic Security",
       "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
-      "total_records": 483,
-      "total_employees": 71665
+      "total_records": 484,
+      "total_employees": 71675
     },
     "CA": {
       "name": "California",
@@ -100,7 +100,7 @@
       "agency": "Illinois Department of Commerce and Economic Opportunity",
       "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
       "total_records": 4886,
-      "total_employees": 674499
+      "total_employees": 674664
     },
     "IN": {
       "name": "Indiana",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1360,
-      "total_employees": 115550
+      "total_records": 1361,
+      "total_employees": 115562
     },
     "ME": {
       "name": "Maine",
@@ -302,8 +302,8 @@
       "name": "Virginia",
       "agency": "Virginia Works (Virginia Employment Commission)",
       "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
-      "total_records": 1126,
-      "total_employees": 131541
+      "total_records": 1127,
+      "total_employees": 131625
     },
     "VT": {
       "name": "Vermont",
@@ -19773,6 +19773,18 @@
       "county": "",
       "city": "Bellemont",
       "address": "14005 Old Route 66; Bellemont, Arizona 86015",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Farmers Investment Co.",
+      "notice_date": "2026-09-15",
+      "effective_date": null,
+      "employees": 10,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Sahuarita",
+      "address": "1525 E Sahuarita Rd in Sahuarita; Sahuarita, Arizona 85629",
       "industry": ""
     },
     {
@@ -282881,18 +282893,6 @@
     },
     {
       "state": "IL",
-      "company": "T-Mobile USA, Inc.",
-      "notice_date": "2026-01-30",
-      "effective_date": null,
-      "employees": 172,
-      "layoff_type": "Mass Layoff",
-      "county": "Cook County",
-      "city": "Schaumburg",
-      "address": "50 Commerce Dr., Suite 130",
-      "industry": "Information"
-    },
-    {
-      "state": "IL",
       "company": "Alverno Laboratories (at Franciscan Health Olympia Fields)",
       "notice_date": "2026-02-02",
       "effective_date": null,
@@ -338224,6 +338224,18 @@
       "industry": "Health Care and Social Assistance"
     },
     {
+      "state": "IL",
+      "company": "T-Mobile USA, Inc.",
+      "notice_date": "2026-01-30",
+      "effective_date": null,
+      "employees": 337,
+      "layoff_type": "Mass Layoff",
+      "county": "Cook County",
+      "city": "Schaumburg",
+      "address": "50 Commerce Dr., Suite 130",
+      "industry": "Information"
+    },
+    {
       "state": "IN",
       "company": "Thyssenkrupp Presta North America",
       "notice_date": "2026-06-30",
@@ -387812,6 +387824,18 @@
       "city": "",
       "address": "150 Blades Lane Glen Burnie, MD 21060",
       "industry": "238220"
+    },
+    {
+      "state": "MD",
+      "company": "LifeBridge Suburban Staffing, LLC (LBSS)",
+      "notice_date": "2026-09-28",
+      "effective_date": "2026-09-30",
+      "employees": 12,
+      "layoff_type": "Plant Closure Note: Performing work at the Cardiovascular Associates of Maryland)",
+      "county": "Susquehanna",
+      "city": "",
+      "address": "2021-B Emmorton Road, Suite 110 Bel Air, MD 21015",
+      "industry": "561320"
     },
     {
       "state": "ME",
@@ -646148,6 +646172,18 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Toano",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "Leidos",
+      "notice_date": "2026-09-28",
+      "effective_date": "2026-11-23",
+      "employees": 84,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Ashburn",
       "address": "",
       "industry": ""
     },

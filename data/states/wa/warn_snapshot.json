@@ -1,11 +1,23 @@
 {
-  "total_records": 1528,
-  "total_employees": 248000,
+  "total_records": 1529,
+  "total_employees": 249200,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-09-25",
-  "last_updated": "2026-09-29T03:33:15.064568+00:00",
+  "date_range_end": "2026-09-28",
+  "last_updated": "2026-09-29T17:49:23.243091+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
+    {
+      "state": "WA",
+      "company": "FirstFruits, LLC",
+      "notice_date": "2026-09-28",
+      "effective_date": "2026-11-18",
+      "employees": 1200,
+      "layoff_type": "Layoff Temporary",
+      "county": "",
+      "city": "Prescott",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "WA",
       "company": "Gebbers Farms, Etal",

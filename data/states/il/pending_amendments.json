@@ -1,0 +1,21 @@
+{
+  "count": 1,
+  "last_updated": "2026-09-30T03:16:51.110025+00:00",
+  "amendments": [
+    {
+      "company": "T-Mobile USA, Inc.",
+      "county": "Cook County",
+      "city": "Schaumburg",
+      "notice_date": "2026-01-30",
+      "effective_date": null,
+      "employees": 337,
+      "old_effective_date": null,
+      "new_effective_date": null,
+      "old_employees": 172,
+      "new_employees": 337,
+      "key": "T-Mobile USA, Inc.__None__337",
+      "held_since": "2026-09-30T03:16:51.109986+00:00",
+      "revisions": 1
+    }
+  ]
+}

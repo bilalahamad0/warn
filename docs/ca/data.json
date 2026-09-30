@@ -2,7 +2,7 @@
   "scope": "ca",
   "state": "CA",
   "coverage_start": "2025-01-01",
-  "last_updated": "2026-09-29T17:49:29.088231+00:00",
+  "last_updated": "2026-09-30T03:15:26.736931+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "total_records": 1871,
   "total_employees": 103782,
@@ -20,7 +20,7 @@
       "address": "Highway 101  San Francisco CA 94128",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Dreyer's Grand Ice Cream",
@@ -33,7 +33,7 @@
       "address": "7301 District Boulevard  Bakersfield CA 93313",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Dreyer's Grand Ice Cream",
@@ -46,7 +46,7 @@
       "address": "970 E. Continental Ave.  Tulare CA 93274",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "City National Bank - Grand Ave.",
@@ -59,7 +59,7 @@
       "address": "350 S. Grand Ave.  Los Angeles CA 90071",
       "industry": "52 Finance and Insurance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "City National Bank - Flower Street",
@@ -72,7 +72,7 @@
       "address": "555 S. Flower St.  Los Angeles CA 90071",
       "industry": "52 Finance and Insurance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "BioMarin Pharmaceutical Inc.",
@@ -85,7 +85,7 @@
       "address": "105 Digital Drive  Novato CA 94949",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Capstone Delivery Inc.",
@@ -111,7 +111,7 @@
       "address": "18835 Highway 65  Bakersfield CA 93308",
       "industry": "21 Mining Quarrying Oil and Gas Exraction",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Key Energy Services, LLC - Ventura Location",
@@ -124,7 +124,7 @@
       "address": "2951 N. Ventura Avenue  Ventura CA 93002",
       "industry": "21 Mining Quarrying Oil and Gas Exraction",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "City of Hope",
@@ -137,7 +137,7 @@
       "address": "4900 Rivergrade Road  Irwindale CA 91706",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "RTX",
@@ -163,7 +163,7 @@
       "address": "1003 East Brier Drive  San Bernardino CA 92408",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "SAC Health (250 South G St.)",
@@ -176,7 +176,7 @@
       "address": "250 South G St.  San Bernardino CA 92410",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser (99 S. Oakland Ave.)",
