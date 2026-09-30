@@ -1,9 +1,9 @@
 {
-  "total_records": 2351,
-  "total_employees": 353356,
+  "total_records": 2353,
+  "total_employees": 353547,
   "date_range_start": "2004-02-24",
   "date_range_end": "2027-04-01",
-  "last_updated": "2026-09-30T03:11:54.218651+00:00",
+  "last_updated": "2026-09-30T17:30:53.275379+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -28215,6 +28215,30 @@
       "layoff_type": "",
       "county": "",
       "city": "Englishtown",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Prudential Insurance Company of America",
+      "notice_date": null,
+      "effective_date": "2026-11-28",
+      "employees": 125,
+      "layoff_type": "",
+      "county": "",
+      "city": "Newark",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "BASF Corporation",
+      "notice_date": null,
+      "effective_date": "2026-11-01",
+      "employees": 66,
+      "layoff_type": "",
+      "county": "",
+      "city": "Florham Park",
       "address": "",
       "industry": ""
     }

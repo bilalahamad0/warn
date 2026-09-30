@@ -1,11 +1,23 @@
 {
-  "total_records": 484,
-  "total_employees": 73907,
+  "total_records": 485,
+  "total_employees": 73917,
   "date_range_start": "2019-01-04",
   "date_range_end": "2026-09-24",
-  "last_updated": "2026-09-29T17:31:14.668518+00:00",
+  "last_updated": "2026-09-30T03:00:53.121661+00:00",
   "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
   "records": [
+    {
+      "state": "AZ",
+      "company": "Farmers Investment Co.",
+      "notice_date": "2026-09-15",
+      "effective_date": null,
+      "employees": 10,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Sahuarita",
+      "address": "1525 E Sahuarita Rd in Sahuarita; Sahuarita, Arizona 85629",
+      "industry": ""
+    },
     {
       "state": "AZ",
       "company": "Restoration Forest Products, LLC",

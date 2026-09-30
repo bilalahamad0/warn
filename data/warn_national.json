@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-30T03:15:26.736931+00:00",
+  "last_updated": "2026-09-30T17:35:36.938639+00:00",
   "states_live": 47,
-  "total_records": 60404,
-  "total_employees": 6510973,
+  "total_records": 60411,
+  "total_employees": 6511810,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -64,8 +64,8 @@
       "name": "Florida",
       "agency": "Florida Department of Commerce (FloridaCommerce)",
       "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
-      "total_records": 467,
-      "total_employees": 35116
+      "total_records": 469,
+      "total_employees": 35254
     },
     "GA": {
       "name": "Georgia",
@@ -183,8 +183,8 @@
       "name": "North Carolina",
       "agency": "North Carolina Department of Commerce",
       "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
-      "total_records": 374,
-      "total_employees": 34748
+      "total_records": 375,
+      "total_employees": 35139
     },
     "ND": {
       "name": "North Dakota",
@@ -204,8 +204,8 @@
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2351,
-      "total_employees": 353356
+      "total_records": 2353,
+      "total_employees": 353547
     },
     "NM": {
       "name": "New Mexico",
@@ -225,8 +225,8 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 5346,
-      "total_employees": 433751
+      "total_records": 5348,
+      "total_employees": 433868
     },
     "OH": {
       "name": "Ohio",
@@ -203654,6 +203654,30 @@
       "city": "MERRITT ISLAND",
       "address": "Space Commerce Way, Merritt Island, Kennedy Space Center",
       "industry": "Public Administration"
+    },
+    {
+      "state": "FL",
+      "company": "AssistRx, LLC",
+      "notice_date": "2026-09-30",
+      "effective_date": "2026-11-30",
+      "employees": 86,
+      "layoff_type": "",
+      "county": "",
+      "city": "ORLANDO",
+      "address": "2400 Sand Lake Road, Suite 200",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "FL",
+      "company": "Hancock Whitney",
+      "notice_date": "2026-09-30",
+      "effective_date": "2026-12-01",
+      "employees": 52,
+      "layoff_type": "",
+      "county": "",
+      "city": "ORLANDO",
+      "address": "33 W. Pineloch Avenue,, Suite A",
+      "industry": "Finance and Insurance"
     },
     {
       "state": "GA",
@@ -410971,6 +410995,18 @@
       "industry": ""
     },
     {
+      "state": "NC",
+      "company": "MasterBrand Cabinets LLC",
+      "notice_date": "2026-09-28",
+      "effective_date": "2026-11-27",
+      "employees": 391,
+      "layoff_type": "Layoff Permanent",
+      "county": "Lenoir",
+      "city": "Kinston",
+      "address": "651 Collier-Loftin Rd",
+      "industry": ""
+    },
+    {
       "state": "ND",
       "company": "EGS Customer Care Inc",
       "notice_date": "2015-07-31",
@@ -452271,6 +452307,30 @@
       "layoff_type": "",
       "county": "",
       "city": "Englishtown",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Prudential Insurance Company of America",
+      "notice_date": null,
+      "effective_date": "2026-11-28",
+      "employees": 125,
+      "layoff_type": "",
+      "county": "",
+      "city": "Newark",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "BASF Corporation",
+      "notice_date": null,
+      "effective_date": "2026-11-01",
+      "employees": 66,
+      "layoff_type": "",
+      "county": "",
+      "city": "Florham Park",
       "address": "",
       "industry": ""
     },
@@ -519016,6 +519076,30 @@
       "county": "Monroe",
       "city": "",
       "address": "1200 Lexington Avenue Rochester, NY, 14606",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Children's Home of Poughkeepsie",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-12-28",
+      "employees": 39,
+      "layoff_type": "Layoff Permanent",
+      "county": "Dutchess",
+      "city": "",
+      "address": "10 Children's Way Poughkeepsie, NY, 12601",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "ThreeC Logistics, LLC.",
+      "notice_date": "2026-08-11",
+      "effective_date": "2026-11-11",
+      "employees": 78,
+      "layoff_type": "Closure Permanent",
+      "county": "Albany",
+      "city": "",
+      "address": "1 Mustang Dr. Cohoes, NY, 12047",
       "industry": ""
     },
     {

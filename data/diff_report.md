@@ -1,41 +1,16 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-09-30 03:15:26 UTC
+**Generated:** 2026-09-30 17:35:36 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 293 | 36 | +0/+257 |
-| Total employees | 15,909 | 2,560 | -13,349 |
+| Total records | 36 | 36 | +0/+0 |
+| Total employees | 2,560 | 2,560 | +0 |
 
 ### ✅ No new entries.
-
-### ❌ Removed Entries (257 records)
-
-| Company | Employees | Effective Date |
-|---------|-----------|----------------|
-| Covenant Aviation Security, LLC | 1,279 | 2026-11-30 |
-| 24Hr Homecare, LLC | 738 | 2026-09-15 |
-| Dreyer's Grand Ice Cream | 647 | 2026-11-19 |
-| Jabil Inc. | 382 | 2026-11-23 |
-| Visa | 320 | 2026-10-01 |
-| Oracle America, Inc. | 279 | 2026-11-13 |
-| PayPal | 251 | 2026-10-30 |
-| IPS Nationwide, Inc. | 212 | 2026-11-17 |
-| LeeMAH Electronics | 205 | 2026-10-16 |
-| Sapporo U.S.A. (1999 Citracado Parkway) | 200 | 2026-11-13 |
-| Amy's Kitchen, LLC | 200 | 2026-12-18 |
-| Bumble Bee Foods, LLC | 197 | 2026-11-19 |
-| Power Safety Service, LLC | 189 | 2026-11-06 |
-| Foundation for California Community Colleges | 178 | 2026-10-30 |
-| Ruiz Food Products, Inc. | 176 | 2026-11-04 |
-| Sodexo | 164 | 2026-09-30 |
-| ServiceNow, Inc. | 154 | 2026-09-28 |
-| Renewal by Andersen LLC | 153 | 2026-11-02 |
-| Uber Technologies, Inc. - 1655 3rd Street | 151 | 2026-11-02 |
-| LAZ Parking California (9610 Sky Way) | 139 | 2026-10-06 |
 
 ---
 ## 📁 File vs Git Comparison
@@ -57,7 +32,6 @@ M data/changelog.jsonl
  M data/states/al/warn_snapshot.json
  M data/states/az/changelog.jsonl
  M data/states/az/meta.json
- M data/states/az/raw_download
  M data/states/az/warn_cumulative.json
  M data/states/az/warn_latest.json
  M data/states/az/warn_snapshot.json
@@ -77,6 +51,7 @@ M data/changelog.jsonl
  M data/states/de/warn_latest.json
  M data/states/de/warn_snapshot.json
  M data/states/fl/changelog.jsonl
+ M data/states/fl/raw_download
  M data/states/fl/warn_cumulative.json
  M data/states/fl/warn_latest.json
  M data/states/fl/warn_snapshot.json
@@ -141,6 +116,7 @@ M data/changelog.jsonl
  M data/states/me/warn_snapshot.json
  M data/states/mi/changelog.jsonl
  M data/states/mi/meta.json
+ M data/states/mi/raw_download
  M data/states/mi/warn_cumulative.json
  M data/states/mi/warn_latest.json
  M data/states/mi/warn_snapshot.json
@@ -159,6 +135,7 @@ M data/changelog.jsonl
  M data/states/mt/warn_snapshot.json
  M data/states/nc/changelog.jsonl
  M data/states/nc/meta.json
+ M data/states/nc/raw_download
  M data/states/nc/warn_cumulative.json
  M data/states/nc/warn_latest.json
  M data/states/nc/warn_snapshot.json
@@ -168,11 +145,13 @@ M data/changelog.jsonl
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
+ M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
  M data/states/nj/changelog.jsonl
  M data/states/nj/meta.json
+ M data/states/nj/raw_download.xlsx
  M data/states/nj/warn_cumulative.json
  M data/states/nj/warn_latest.json
  M data/states/nj/warn_snapshot.json
@@ -183,6 +162,7 @@ M data/changelog.jsonl
  M data/states/nm/warn_snapshot.json
  M data/states/ny/changelog.jsonl
  M data/states/ny/meta.json
+ M data/states/ny/raw_download
  M data/states/ny/warn_cumulative.json
  M data/states/ny/warn_latest.json
  M data/states/ny/warn_snapshot.json
@@ -231,7 +211,6 @@ M data/changelog.jsonl
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
- M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -262,16 +241,17 @@ M data/changelog.jsonl
 
 **Recent commits:**
 ```
+258ac49b1 auto: WARN data update [skip ci]
 9ae2727ca auto: WARN data update [skip ci]
 b84c0a993 auto: WARN data update [skip ci]
 969cfa9d2 auto: WARN data update [skip ci]
 7c6e29edf auto: WARN data update [skip ci]
-f44c403f3 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-09-30T17:20:27.280443+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-09-30T03:00:53.225522+00:00` — +0 added, -257 removed, 0 employees (new)
 - `2026-09-29T17:31:14.857129+00:00` — +11 added, -0 removed, 2,333 employees (new)
 - `2026-09-29T03:18:32.135680+00:00` — +0 added, -0 removed, 0 employees (new)
@@ -281,4 +261,3 @@ f44c403f3 auto: WARN data update [skip ci]
 - `2026-09-27T02:37:30.202413+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-09-26T15:20:05.557782+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-09-26T02:34:51.456089+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-09-25T16:15:45.975773+00:00` — +0 added, -246 removed, 0 employees (new)

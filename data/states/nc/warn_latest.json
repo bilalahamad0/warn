@@ -1,9 +1,9 @@
 {
-  "total_records": 375,
-  "total_employees": 34685,
+  "total_records": 376,
+  "total_employees": 35076,
   "date_range_start": "2022-01-25",
-  "date_range_end": "2026-09-16",
-  "last_updated": "2026-09-30T03:11:12.957171+00:00",
+  "date_range_end": "2026-09-28",
+  "last_updated": "2026-09-30T17:30:12.179970+00:00",
   "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
   "records": [
     {
@@ -4504,6 +4504,18 @@
       "county": "Lee",
       "city": "Sanford",
       "address": "7001 Lark Lane",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "MasterBrand Cabinets LLC",
+      "notice_date": "2026-09-28",
+      "effective_date": "2026-11-27",
+      "employees": 391,
+      "layoff_type": "Layoff Permanent",
+      "county": "Lenoir",
+      "city": "Kinston",
+      "address": "651 Collier-Loftin Rd",
       "industry": ""
     }
   ]

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-30T03:16:53.275954+00:00",
+  "updated_at": "2026-09-30T17:36:34.993572+00:00",
   "candidates": [
     {
       "id": "c353237355db",
@@ -1264,6 +1264,114 @@
       "warnings": [],
       "keys": [
         "VA:Leidos__2026-11-23__84"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "9e8a891f2677",
+      "created_at": "2026-09-30T17:36:34.993481+00:00",
+      "status": "pending",
+      "company": "masterbrand cabinets",
+      "display": "MasterBrand Cabinets LLC",
+      "employees": 391,
+      "states": [
+        "NC"
+      ],
+      "per_state": {
+        "NC": 391
+      },
+      "sites": 1,
+      "card": {
+        "place": "Kinston, Lenoir, NC",
+        "effective": "Nov 27, 2026",
+        "employees": 391
+      },
+      "arm": "size",
+      "reason": "391 >= 250",
+      "text": "MasterBrand Cabinets LLC filed a WARN notice for 391 job cuts in Kinston, Lenoir, NC.\n\nEffective Nov 27, 2026.\n\n#layoffs #NorthCarolina",
+      "thread": [],
+      "weighted_len": 135,
+      "warnings": [],
+      "keys": [
+        "NC:MasterBrand Cabinets LLC__2026-11-27__391"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "aa2ddf989a5b",
+      "created_at": "2026-09-30T17:36:34.993528+00:00",
+      "status": "pending",
+      "company": "Prudential",
+      "display": "Prudential",
+      "employees": 125,
+      "states": [
+        "NJ"
+      ],
+      "per_state": {
+        "NJ": 125
+      },
+      "sites": 1,
+      "card": {
+        "place": "Newark, NJ",
+        "effective": "Nov 28, 2026",
+        "employees": 125
+      },
+      "arm": "brand",
+      "reason": "known brand, 125 >= 50",
+      "text": "Prudential filed a WARN notice for 125 job cuts in Newark, NJ.\n\nEffective Nov 28, 2026.\n\n#layoffs #NewJersey",
+      "thread": [],
+      "weighted_len": 108,
+      "warnings": [],
+      "keys": [
+        "NJ:Prudential Insurance Company of America__2026-11-28__125"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "99e9038d45f6",
+      "created_at": "2026-09-30T17:36:34.993562+00:00",
+      "status": "pending",
+      "company": "BASF",
+      "display": "BASF",
+      "employees": 66,
+      "states": [
+        "NJ"
+      ],
+      "per_state": {
+        "NJ": 66
+      },
+      "sites": 1,
+      "card": {
+        "place": "Florham Park, NJ",
+        "effective": "Nov 1, 2026",
+        "employees": 66
+      },
+      "arm": "brand",
+      "reason": "known brand, 66 >= 50",
+      "text": "BASF filed a WARN notice for 66 job cuts in Florham Park, NJ.\n\nEffective Nov 1, 2026.\n\n#layoffs #NewJersey",
+      "thread": [],
+      "weighted_len": 106,
+      "warnings": [],
+      "keys": [
+        "NJ:BASF Corporation__2026-11-01__66"
       ],
       "approved_by": null,
       "approved_at": null,

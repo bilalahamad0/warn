@@ -1,9 +1,9 @@
 {
-  "total_records": 467,
-  "total_employees": 35116,
+  "total_records": 469,
+  "total_employees": 35254,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-09-25",
-  "last_updated": "2026-09-30T03:03:56.705182+00:00",
+  "date_range_end": "2026-09-30",
+  "last_updated": "2026-09-30T17:23:15.842866+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -5609,6 +5609,30 @@
       "city": "MERRITT ISLAND",
       "address": "Space Commerce Way, Merritt Island, Kennedy Space Center",
       "industry": "Public Administration"
+    },
+    {
+      "state": "FL",
+      "company": "AssistRx, LLC",
+      "notice_date": "2026-09-30",
+      "effective_date": "2026-11-30",
+      "employees": 86,
+      "layoff_type": "",
+      "county": "",
+      "city": "ORLANDO",
+      "address": "2400 Sand Lake Road, Suite 200",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "FL",
+      "company": "Hancock Whitney",
+      "notice_date": "2026-09-30",
+      "effective_date": "2026-12-01",
+      "employees": 52,
+      "layoff_type": "",
+      "county": "",
+      "city": "ORLANDO",
+      "address": "33 W. Pineloch Avenue,, Suite A",
+      "industry": "Finance and Insurance"
     }
   ]
 }
