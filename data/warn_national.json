@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-30T17:35:36.938639+00:00",
+  "last_updated": "2026-10-01T03:28:01.536223+00:00",
   "states_live": 47,
-  "total_records": 60411,
-  "total_employees": 6511810,
+  "total_records": 60419,
+  "total_employees": 6512660,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1530,
-      "total_employees": 249323
+      "total_records": 1538,
+      "total_employees": 250173
     },
     "WI": {
       "name": "Wisconsin",
@@ -665084,6 +665084,102 @@
       "layoff_type": "Layoff Temporary",
       "county": "",
       "city": "Prescott",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Maverick Washington LLC / Chips Casino",
+      "notice_date": "2026-09-28",
+      "effective_date": "2026-11-30",
+      "employees": 131,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Lakewood",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Maverick Washington LLC / Macau Casino",
+      "notice_date": "2026-09-28",
+      "effective_date": "2026-11-30",
+      "employees": 106,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Lakewood",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Maverick Washington LLC / Palace Casino",
+      "notice_date": "2026-09-28",
+      "effective_date": "2026-11-30",
+      "employees": 15,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Lakewood",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Maverick Washington LLC / Great American Casino",
+      "notice_date": "2026-09-28",
+      "effective_date": "2026-11-30",
+      "employees": 133,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Everett",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Maverick Washington LLC / All Star Casino",
+      "notice_date": "2026-09-28",
+      "effective_date": "2026-11-30",
+      "employees": 159,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Silverdale",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Maverick Washington LLC / Coyote Bobs Casino",
+      "notice_date": "2026-09-28",
+      "effective_date": "2026-11-30",
+      "employees": 68,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Kennewick",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Maverick Washington LLC / Crazy Moose Casino",
+      "notice_date": "2026-09-28",
+      "effective_date": "2026-11-30",
+      "employees": 137,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Pasco",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Maverick Washington LLC / Casino Caribbean",
+      "notice_date": "2026-09-28",
+      "effective_date": "2026-11-30",
+      "employees": 101,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Yakima",
       "address": "",
       "industry": ""
     },
