@@ -1,9 +1,9 @@
 {
-  "total_records": 2353,
-  "total_employees": 353547,
+  "total_records": 2354,
+  "total_employees": 353622,
   "date_range_start": "2004-02-24",
   "date_range_end": "2027-04-01",
-  "last_updated": "2026-10-01T03:24:23.865742+00:00",
+  "last_updated": "2026-10-01T18:02:06.397895+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -28239,6 +28239,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Florham Park",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Culinaire",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 75,
+      "layoff_type": "",
+      "county": "",
+      "city": "Newark",
       "address": "",
       "industry": ""
     }

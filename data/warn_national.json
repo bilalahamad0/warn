@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-01T03:28:01.536223+00:00",
+  "last_updated": "2026-10-01T18:06:20.463290+00:00",
   "states_live": 47,
-  "total_records": 60419,
-  "total_employees": 6512660,
+  "total_records": 60425,
+  "total_employees": 6513118,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -85,8 +85,8 @@
       "name": "Iowa",
       "agency": "Iowa Workforce Development",
       "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
-      "total_records": 937,
-      "total_employees": 51883
+      "total_records": 939,
+      "total_employees": 51972
     },
     "ID": {
       "name": "Idaho",
@@ -106,8 +106,8 @@
       "name": "Indiana",
       "agency": "Indiana Department of Workforce Development",
       "source_url": "https://www.in.gov/dwd/warn-notices/current-warn-notices/",
-      "total_records": 1017,
-      "total_employees": 152784
+      "total_records": 1018,
+      "total_employees": 152917
     },
     "KS": {
       "name": "Kansas",
@@ -204,8 +204,8 @@
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2353,
-      "total_employees": 353547
+      "total_records": 2354,
+      "total_employees": 353622
     },
     "NM": {
       "name": "New Mexico",
@@ -302,8 +302,8 @@
       "name": "Virginia",
       "agency": "Virginia Works (Virginia Employment Commission)",
       "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
-      "total_records": 1127,
-      "total_employees": 131625
+      "total_records": 1128,
+      "total_employees": 131676
     },
     "VT": {
       "name": "Vermont",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1538,
-      "total_employees": 250173
+      "total_records": 1539,
+      "total_employees": 250283
     },
     "WI": {
       "name": "Wisconsin",
@@ -277228,6 +277228,30 @@
       "industry": "Professional, Scientific, and Technical Services"
     },
     {
+      "state": "IA",
+      "company": "Wells Fargo",
+      "notice_date": "2026-09-29",
+      "effective_date": "2026-11-28",
+      "employees": 10,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Polk",
+      "city": "West Des Moines",
+      "address": "800 S Jordan Creek Pkwy",
+      "industry": "Finance and Insurance"
+    },
+    {
+      "state": "IA",
+      "company": "Carry On Trailer Inc",
+      "notice_date": "2026-09-30",
+      "effective_date": "2026-11-29",
+      "employees": 79,
+      "layoff_type": "Closing",
+      "county": "Harrision",
+      "city": "Missouri Valley",
+      "address": "1965 Hwy 30",
+      "industry": "Manufacturing"
+    },
+    {
       "state": "ID",
       "company": "Fortrex",
       "notice_date": "2026-07-01",
@@ -350460,6 +350484,18 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Gas City",
+      "address": "",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "IN",
+      "company": "ZF Active Safety & Electronics US LLC",
+      "notice_date": "2026-09-30",
+      "effective_date": "2026-11-30",
+      "employees": 133,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Lafayette",
       "address": "",
       "industry": "Manufacturing"
     },
@@ -452331,6 +452367,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Florham Park",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Culinaire",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 75,
+      "layoff_type": "",
+      "county": "",
+      "city": "Newark",
       "address": "",
       "industry": ""
     },
@@ -646272,6 +646320,18 @@
       "industry": ""
     },
     {
+      "state": "VA",
+      "company": "Kay and Associates Inc",
+      "notice_date": "2026-09-28",
+      "effective_date": "2026-10-31",
+      "employees": 51,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Virginia Beach",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "VT",
       "company": "Calmont Beverage",
       "notice_date": "2026-01-22",
@@ -665180,6 +665240,18 @@
       "layoff_type": "Closure Permanent",
       "county": "",
       "city": "Yakima",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Haak Administrative Services LLC",
+      "notice_date": "2026-09-29",
+      "effective_date": "2026-11-30",
+      "employees": 110,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Yakima County",
       "address": "",
       "industry": ""
     },

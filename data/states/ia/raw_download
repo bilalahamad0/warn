@@ -1034,6 +1034,28 @@
   "industry": "Professional, Scientific, and Technical Services"
  },
  {
+  "company": "Wells Fargo",
+  "address": "800 S Jordan Creek Pkwy",
+  "city": "West Des Moines",
+  "county": "Polk",
+  "layoff_type": "Amendment - Additional Employees",
+  "employees": 10,
+  "notice_date": "2026-09-29 00:00:00",
+  "effective_date": "2026-11-28 00:00:00",
+  "industry": "Finance and Insurance "
+ },
+ {
+  "company": "Carry On Trailer Inc ",
+  "address": "1965 Hwy 30",
+  "city": "Missouri Valley",
+  "county": "Harrision",
+  "layoff_type": "Closing ",
+  "employees": 79,
+  "notice_date": "2026-09-30 00:00:00",
+  "effective_date": "2026-11-29 00:00:00",
+  "industry": "Manufacturing"
+ },
+ {
   "company": "John Deere Ottumwa Works ",
   "address": "928 E Vine St",
   "city": "Ottumwa",
@@ -6587,17 +6609,6 @@
   "notice_date": "12/20/2022",
   "effective_date": "2023-01-16 00:00:00",
   "industry": "Manufacturing "
- },
- {
-  "company": "Lutheran Services in Iowa ",
-  "address": "1323 Northeast Ave",
-  "city": "Ames",
-  "county": "Story",
-  "layoff_type": "Mass Layoff",
-  "employees": 26,
-  "notice_date": "09/23/2021",
-  "effective_date": "2021-10-22 00:00:00",
-  "industry": "Health Care and Social Assistance "
  },
  {
   "company": "CHEP Services, LLC ",

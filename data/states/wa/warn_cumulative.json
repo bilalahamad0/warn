@@ -1,9 +1,9 @@
 {
-  "total_records": 1538,
-  "total_employees": 250173,
+  "total_records": 1539,
+  "total_employees": 250283,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-09-28",
-  "last_updated": "2026-10-01T03:27:55.699684+00:00",
+  "date_range_end": "2026-09-29",
+  "last_updated": "2026-10-01T18:06:14.749478+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -18459,6 +18459,18 @@
       "layoff_type": "Closure Permanent",
       "county": "",
       "city": "Yakima",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Haak Administrative Services LLC",
+      "notice_date": "2026-09-29",
+      "effective_date": "2026-11-30",
+      "employees": 110,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Yakima County",
       "address": "",
       "industry": ""
     }

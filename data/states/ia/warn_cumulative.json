@@ -1,9 +1,9 @@
 {
-  "total_records": 937,
-  "total_employees": 51883,
+  "total_records": 939,
+  "total_employees": 51972,
   "date_range_start": "2011-01-13",
-  "date_range_end": "2026-09-22",
-  "last_updated": "2026-10-01T03:16:53.512257+00:00",
+  "date_range_end": "2026-09-30",
+  "last_updated": "2026-10-01T17:54:24.537670+00:00",
   "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
   "records": [
     {
@@ -11249,6 +11249,30 @@
       "city": "Cedar Rapids",
       "address": "400 Collins Rd NE",
       "industry": "Professional, Scientific, and Technical Services"
+    },
+    {
+      "state": "IA",
+      "company": "Wells Fargo",
+      "notice_date": "2026-09-29",
+      "effective_date": "2026-11-28",
+      "employees": 10,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Polk",
+      "city": "West Des Moines",
+      "address": "800 S Jordan Creek Pkwy",
+      "industry": "Finance and Insurance"
+    },
+    {
+      "state": "IA",
+      "company": "Carry On Trailer Inc",
+      "notice_date": "2026-09-30",
+      "effective_date": "2026-11-29",
+      "employees": 79,
+      "layoff_type": "Closing",
+      "county": "Harrision",
+      "city": "Missouri Valley",
+      "address": "1965 Hwy 30",
+      "industry": "Manufacturing"
     }
   ]
 }

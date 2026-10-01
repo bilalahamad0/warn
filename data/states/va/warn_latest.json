@@ -1,11 +1,23 @@
 {
-  "total_records": 1127,
-  "total_employees": 131625,
+  "total_records": 1128,
+  "total_employees": 131676,
   "date_range_start": "2010-07-29",
   "date_range_end": "2026-09-28",
-  "last_updated": "2026-10-01T03:25:10.071273+00:00",
+  "last_updated": "2026-10-01T18:03:30.777671+00:00",
   "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
   "records": [
+    {
+      "state": "VA",
+      "company": "Kay and Associates Inc",
+      "notice_date": "2026-09-28",
+      "effective_date": "2026-10-31",
+      "employees": 51,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Virginia Beach",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "VA",
       "company": "Leidos",
