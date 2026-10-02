@@ -1,9 +1,9 @@
 {
-  "total_records": 1539,
-  "total_employees": 250283,
+  "total_records": 1540,
+  "total_employees": 250558,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-09-29",
-  "last_updated": "2026-10-01T18:06:14.749478+00:00",
+  "date_range_end": "2026-10-01",
+  "last_updated": "2026-10-02T03:24:26.187349+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -18471,6 +18471,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Yakima County",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Manson Growers LLC",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-10-01",
+      "employees": 275,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Manson",
       "address": "",
       "industry": ""
     }

@@ -1,9 +1,9 @@
 {
   "total_records": 2380,
-  "total_employees": 356120,
+  "total_employees": 356133,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-10-01T03:24:23.842214+00:00",
+  "last_updated": "2026-10-01T18:02:06.373158+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -1055,7 +1055,7 @@
       "company": "BASF Corporation",
       "notice_date": null,
       "effective_date": "2026-11-01",
-      "employees": 62,
+      "employees": 66,
       "layoff_type": "",
       "county": "",
       "city": "Florham Park",
@@ -1316,13 +1316,13 @@
     },
     {
       "state": "NJ",
-      "company": "BASF Corporation",
+      "company": "Culinaire",
       "notice_date": null,
-      "effective_date": "2026-11-01",
-      "employees": 66,
+      "effective_date": "2026-12-31",
+      "employees": 75,
       "layoff_type": "",
       "county": "",
-      "city": "Florham Park",
+      "city": "Newark",
       "address": "",
       "industry": ""
     },

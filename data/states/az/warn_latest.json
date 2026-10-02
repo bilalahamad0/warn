@@ -1,11 +1,23 @@
 {
-  "total_records": 485,
-  "total_employees": 73917,
+  "total_records": 486,
+  "total_employees": 74024,
   "date_range_start": "2019-01-04",
-  "date_range_end": "2026-09-24",
-  "last_updated": "2026-10-01T17:50:49.318341+00:00",
+  "date_range_end": "2026-09-30",
+  "last_updated": "2026-10-02T03:10:01.418151+00:00",
   "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
   "records": [
+    {
+      "state": "AZ",
+      "company": "AssistRX",
+      "notice_date": "2026-09-30",
+      "effective_date": null,
+      "employees": 107,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Tempe",
+      "address": "2160 E Elliot Rd, 2nd Floor; Tempe, Arizona 85283",
+      "industry": ""
+    },
     {
       "state": "AZ",
       "company": "Farmers Investment Co.",

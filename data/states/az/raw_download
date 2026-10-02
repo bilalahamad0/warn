@@ -1,5 +1,17 @@
 [
  {
+  "employer": "AssistRX",
+  "city": "Tempe",
+  "zip": "85283",
+  "lwib_area": "7 - ARIZONA@WORK - Maricopa County",
+  "notice_date": "Sep 30, 2026",
+  "warn_type": "WARN",
+  "record_number": "1004",
+  "detail_page_url": "https://www.azjobconnection.gov/search/warn_lookups/1004",
+  "number_of_employees_affected": "107",
+  "address": "2160 E Elliot Rd, 2nd Floor; Tempe, Arizona 85283"
+ },
+ {
   "employer": "Farmers Investment Co.",
   "city": "Sahuarita",
   "zip": "85629",
