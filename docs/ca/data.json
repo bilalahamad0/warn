@@ -2,7 +2,7 @@
   "scope": "ca",
   "state": "CA",
   "coverage_start": "2025-01-01",
-  "last_updated": "2026-10-02T03:24:31.804781+00:00",
+  "last_updated": "2026-10-02T09:54:22.651834+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "total_records": 1907,
   "total_employees": 105136,
@@ -20,7 +20,7 @@
       "address": "5750 Mesmer Avenue  Culver City CA 90230",
       "industry": "48-49 Transportation and Warehousing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (1104 N. Eastern Ave.)",
@@ -33,7 +33,7 @@
       "address": "1104 N. Eastern Ave.  Los Angeles CA 90063",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (11515 S. Colima Rd.)",
@@ -46,7 +46,7 @@
       "address": "11515 S. Colima Rd.  Whittier CA 90604",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (13483 Fiji Way)",
@@ -59,7 +59,7 @@
       "address": "13483 Fiji Way  Marina Del Rey CA 90242",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (11700 S. Alameda St.)",
@@ -72,7 +72,7 @@
       "address": "11700 S. Alameda St.  Lynwood CA 90262",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (11703 S. Alameda St.)",
@@ -85,7 +85,7 @@
       "address": "11703 S. Alameda St.  Lynwood CA 90262",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (11703 W. Alameda St.)",
@@ -98,7 +98,7 @@
       "address": "11703 W. Alameda St.  Lynwood CA 90262",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (12335 Civic Center Dr.)",
@@ -111,7 +111,7 @@
       "address": "12335 Civic Center Dr.  Norwalk CA 90650",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (1310 W Imperial Hwy)",
@@ -124,7 +124,7 @@
       "address": "1310 W Imperial Hwy  Los Angeles CA 90044",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (1060 N Eastern Ave.)",
@@ -137,7 +137,7 @@
       "address": "1060 N Eastern Ave.  Los Angeles CA 90063",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (5130 N. Clark Ave.)",
@@ -150,7 +150,7 @@
       "address": "5130 N. Clark Ave.  Lakewood CA 90712",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (1445 McKinley Ave.)",
@@ -163,7 +163,7 @@
       "address": "1445 McKinley Ave.  Pomona CA 91767",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (441 Bauchet St.)",
@@ -176,7 +176,7 @@
       "address": "441 Bauchet St.  Los Angeles CA 90012",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (27050 Agoura Rd.)",
@@ -189,7 +189,7 @@
       "address": "27050 Agoura Rd.  Agoura CA 91301",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (4554 N. Briggs Ave.)",
@@ -202,7 +202,7 @@
       "address": "4554 N. Briggs Ave.  La Crescenta CA 91214",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (270 W. Walnut Ave.)",
@@ -215,7 +215,7 @@
       "address": "270 W. Walnut Ave.  San Dimas CA 91773",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (270 S. Walnut Ave.)",
@@ -228,7 +228,7 @@
       "address": "270 S. Walnut Ave.  San Dimas CA 91773",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (501 W. Lancaster Blvd.)",
@@ -241,7 +241,7 @@
       "address": "501 W. Lancaster Blvd.  Lancaster CA 93534",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (26201 Golden Valley Rd.)",
@@ -254,7 +254,7 @@
       "address": "26201 Golden Valley Rd.  Santa Clarita CA 91350",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (26123 S. Narbonne Ave.)",
@@ -267,7 +267,7 @@
       "address": "26123 S. Narbonne Ave.  Lomita CA 90717",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (29380 The Old Road)",
@@ -280,7 +280,7 @@
       "address": "29380 The Old Road  Castaic CA 91310",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (5019 E 3rd St.)",
@@ -293,7 +293,7 @@
       "address": "5019 E 3rd St.  Los Angeles CA 90022",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (6631 S Passons Ave.)",
@@ -306,7 +306,7 @@
       "address": "6631 S Passons Ave.  Pico Riva CA 90660",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (21695 Valley Blvd.)",
@@ -319,7 +319,7 @@
       "address": "21695 Valley Blvd.  Walnut CA 91789",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (21356 S. Avalon Blvd.)",
@@ -332,7 +332,7 @@
       "address": "21356 S. Avalon Blvd.  Carson CA 90745",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (150 N Hudson Ave.)",
@@ -345,7 +345,7 @@
       "address": "150 N Hudson Ave.  Industry CA 91774",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (780 N. San Vicenta Blvd.)",
@@ -358,7 +358,7 @@
       "address": "780 N. San Vicenta Blvd.  W. Hollywood CA 90069",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (8838 E. Las Tunas Dr.)",
@@ -371,7 +371,7 @@
       "address": "8838 E. Las Tunas Dr.  Temple City CA 90069",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (750 E Ave Q)",
@@ -384,7 +384,7 @@
       "address": "750 E Ave Q  Palmdale CA 93550",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Workday Inc.",
@@ -397,7 +397,7 @@
       "address": "6110 Stoneridge Mall Road  Pleasanton CA 94588",
       "industry": "51 Information",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Covenant Aviation Security, LLC",
@@ -423,7 +423,7 @@
       "address": "13012 Midway Place  Cerritos CA 90703",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Dreyer's Grand Ice Cream",
@@ -501,7 +501,7 @@
       "address": "7301 District Boulevard  Bakersfield CA 93313",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Randstad Inhouse Services, LLC (Dreyer's)",
@@ -514,7 +514,7 @@
       "address": "970 E. Continental Ave.  Tulare CA 93274",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Capstone Delivery Inc.",
@@ -618,7 +618,7 @@
       "address": "7301 District Boulevard  Bakersfield CA 93313",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Dreyer's Grand Ice Cream",
@@ -631,7 +631,7 @@
       "address": "970 E Continental Ave  Tulare CA 93274",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser (99 S. Oakland Ave.)",
@@ -2607,7 +2607,7 @@
       "address": "901 Loveridge Road  Pittsburg CA 94565",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Roskam Baking Company dba Organic Milling",
