@@ -1,9 +1,9 @@
 {
-  "total_records": 2354,
-  "total_employees": 353622,
+  "total_records": 2355,
+  "total_employees": 353697,
   "date_range_start": "2004-02-24",
   "date_range_end": "2027-04-01",
-  "last_updated": "2026-10-02T09:50:46.834166+00:00",
+  "last_updated": "2026-10-02T17:21:59.595500+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -28251,6 +28251,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Newark",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Sumitomo Mitsui Banking Corporation",
+      "notice_date": null,
+      "effective_date": "2026-10-01",
+      "employees": 75,
+      "layoff_type": "",
+      "county": "",
+      "city": "Jersey City",
       "address": "",
       "industry": ""
     }

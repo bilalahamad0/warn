@@ -1,0 +1,21 @@
+{
+  "count": 1,
+  "last_updated": "2026-10-02T17:27:12.227158+00:00",
+  "amendments": [
+    {
+      "company": "Magic Leap",
+      "county": "",
+      "city": "PLANTATION",
+      "notice_date": "2026-07-16",
+      "effective_date": "2026-10-01",
+      "employees": 272,
+      "old_effective_date": "2026-10-01",
+      "new_effective_date": "2026-10-01",
+      "old_employees": 193,
+      "new_employees": 272,
+      "key": "Magic Leap__2026-10-01__272",
+      "held_since": "2026-10-02T17:27:12.227110+00:00",
+      "revisions": 1
+    }
+  ]
+}

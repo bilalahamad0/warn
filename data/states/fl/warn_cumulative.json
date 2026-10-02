@@ -1,9 +1,9 @@
 {
   "total_records": 469,
-  "total_employees": 35254,
+  "total_employees": 35333,
   "date_range_start": "2025-01-02",
   "date_range_end": "2026-09-30",
-  "last_updated": "2026-10-02T09:42:35.613661+00:00",
+  "last_updated": "2026-10-02T17:13:54.505462+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -3248,18 +3248,6 @@
     },
     {
       "state": "FL",
-      "company": "Magic Leap",
-      "notice_date": "2026-07-16",
-      "effective_date": "2026-10-01",
-      "employees": 193,
-      "layoff_type": "",
-      "county": "",
-      "city": "PLANTATION",
-      "address": "7500 W. Sunrise Blvd.",
-      "industry": "Professional, Scientific, and Technical Services"
-    },
-    {
-      "state": "FL",
       "company": "Temco Logistics",
       "notice_date": "2026-07-16",
       "effective_date": "2026-10-03",
@@ -5633,6 +5621,18 @@
       "city": "ORLANDO",
       "address": "33 W. Pineloch Avenue,, Suite A",
       "industry": "Finance and Insurance"
+    },
+    {
+      "state": "FL",
+      "company": "Magic Leap",
+      "notice_date": "2026-07-16",
+      "effective_date": "2026-10-01",
+      "employees": 272,
+      "layoff_type": "",
+      "county": "",
+      "city": "PLANTATION",
+      "address": "7500 W. Sunrise Blvd.",
+      "industry": "Professional, Scientific, and Technical Services"
     }
   ]
 }

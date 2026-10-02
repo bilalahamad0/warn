@@ -1,9 +1,9 @@
 {
   "total_records": 477,
-  "total_employees": 36141,
+  "total_employees": 36220,
   "date_range_start": "2025-01-02",
   "date_range_end": "2026-09-30",
-  "last_updated": "2026-10-02T09:42:35.608470+00:00",
+  "last_updated": "2026-10-02T17:13:54.499507+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -3491,7 +3491,7 @@
       "company": "Magic Leap",
       "notice_date": "2026-07-16",
       "effective_date": "2026-10-01",
-      "employees": 193,
+      "employees": 272,
       "layoff_type": "",
       "county": "",
       "city": "PLANTATION",
