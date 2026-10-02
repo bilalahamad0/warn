@@ -8,20 +8,27 @@
 # content. Being GitHub-managed, that workflow offered nothing to configure,
 # queue, or retry. This workflow replaces it (Settings ▸ Pages ▸ Source must
 # be "GitHub Actions"), so deploys are ordinary runs: visible, re-runnable,
-# and queued through the concurrency group below instead of racing.
+# and serialised through the concurrency group below.
 #
-# Why THREE triggers:
-#   push          Human merges. Filtered to docs/** because only docs/ is the
-#                 site — a code-only merge has nothing to deploy.
-#   workflow_run  The twice-daily pipeline. Its commits can never fire the
-#                 push trigger: the commit message carries [skip ci], which
-#                 suppresses push-triggered workflows for that commit. Runs
-#                 after the pipeline completes successfully; monitor.yml only
-#                 commits when its site build succeeded (the root build is
-#                 fatal in warn_publish.run), so deploying its HEAD is safe.
-#                 An occasional no-change deploy is idempotent and costs ~1min.
-#   workflow_dispatch  Manual unstick — the replacement for the POST
-#                 /pages/builds trick the legacy build needed.
+# Triggers:
+#   push               Human merges. Filtered to docs/** because only docs/
+#                      is the site — a code-only merge has nothing to deploy.
+#   workflow_dispatch  How the twice-daily pipeline publishes. monitor.yml's
+#                      [skip ci] commits can never fire `push`, so after
+#                      committing it runs `warn_site_check.py --publish`,
+#                      which dispatches this workflow BY FILE NAME and waits
+#                      until the live site serves the new build (failing the
+#                      monitor run if it never does). site-watchdog.yml does
+#                      the same every two hours for anything else that falls
+#                      behind. Events raised with a GITHUB_TOKEN start no
+#                      runs, except workflow_dispatch and repository_dispatch,
+#                      so this trigger must stay. It is also the manual
+#                      button: Actions ▸ Deploy Pages ▸ Run workflow.
+#
+# This used to trigger on `workflow_run` after the pipeline completed. That
+# could not be verified from the pipeline, because its run had to finish
+# before the deploy could start. When a deploy stalled, nothing noticed; see
+# the concurrency note below.
 
 name: Deploy Pages
 
@@ -29,9 +36,6 @@ on:
   push:
     branches: [ "main" ]
     paths: [ "docs/**" ]
-  workflow_run:
-    workflows: ["WARN Monitor & Dashboard Update"]
-    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -39,24 +43,34 @@ permissions:
   pages: write
   id-token: write
 
-# Queue deploys, never cancel one mid-flight — a cancelled deploy was one of
-# the exact failure modes this workflow exists to remove. The queue holds at
-# most one pending run, so a burst of merges deploys the newest state.
+# One deploy at a time. A newer run replaces a *pending* one (the queue holds
+# at most one), but never cancels a deploy in progress. Cancelling
+# actions/deploy-pages mid-flight can leave the Pages deployment marked
+# in progress: its only cleanup is a best-effort signal handler. Every later
+# deploy then fails with "due to in progress deployment" (deploy-pages#22,
+# #118). That is why GitHub's own Pages starter workflow is also false.
+#
+# The flip side is the 2026-09-17 outage. Run 35175481498 sat in "waiting" on
+# the github-pages environment for 15 days (no reviewers, no wait timer, a
+# branch policy main passes). It held this group, and each later deploy
+# queued as "pending" behind it until the next one replaced it. Neither
+# setting here fixes that. `true` is not documented to reach a run that is
+# waiting on an environment, and a staff-acknowledged report says it does
+# not. `timeout-minutes` does not count time spent waiting on an environment
+# either, and GitHub's own cap is 30-35 days. What does work is an explicit
+# cancel from OUTSIDE this group, which released that run instantly.
+# warn_site_check.py --publish does exactly that, from monitor.yml and
+# site-watchdog.yml, whenever the live site is behind.
 concurrency:
   group: pages
   cancel-in-progress: false
 
 jobs:
   deploy:
-    # For workflow_run, deploy only after a successful pipeline. A failed
-    # pipeline exits before git push (warn_publish.run raises when the site
-    # root fails to build), so its HEAD may predate the failure — redeploying
-    # it would be harmless but pointless, and a red pipeline should stay the
-    # only signal demanding attention.
-    if: >-
-      github.event_name != 'workflow_run' ||
-      github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
+    # Bounds a hung runner step only — not a wait on the environment (above).
+    timeout-minutes: 20
+    # Required: the Pages API rejects a deployment from a job without one.
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

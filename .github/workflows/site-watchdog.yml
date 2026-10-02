@@ -1,0 +1,56 @@
+# Backstop, every two hours: is the live site serving what main has committed?
+#
+# monitor.yml publishes and verifies its own builds (warn_site_check.py
+# --publish), so this exists for everything else: a human push whose deploy
+# stalls, a pipeline run whose publish job failed, a local launchd run that
+# pushed without deploying. It runs the same command with --grace, which
+# leaves alone a build young enough that its own pipeline run may still be
+# publishing it. Past that, it cancels stuck Deploy Pages runs, dispatches a
+# fresh deploy and waits for the site. It also clears Deploy Pages runs that
+# are still stuck after the grace period even when the stamps match. A human
+# push that changes docs/ but not data.json is invisible to the stamps, and a
+# stuck run blocks every later deploy. A red run here means the site is
+# behind main and a redeploy did not fix it.
+#
+# It has its own workflow on purpose. A check inside pages.yml would share
+# the `pages` concurrency group with the stuck run it has to clear, and would
+# never run if no deploy started.
+#
+# Scheduled runs on this repo start late: up to ~10 h, median ~2 h, off-minute
+# crons included. That is why this is the backstop and not the main
+# guarantee; monitor.yml's publish job is. Every two hours, rather than
+# hourly, halves the failure emails during a long Pages outage for little
+# real loss of coverage.
+
+name: Site Watchdog
+
+on:
+  schedule:
+    - cron: '41 */2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write      # cancel stuck Deploy Pages runs, dispatch a new one
+
+# One watchdog at a time; a late scheduled run replaces a queued one. NOT the
+# `pages` group — see above.
+concurrency:
+  group: site-watchdog
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Verify the live site, redeploy if behind
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        # 45 min covers a pipeline run's own publish job (two attempts of up
+        # to 15 min each, starting right after its commit), so they never race.
+        run: python3 warn_site_check.py --publish --grace 45

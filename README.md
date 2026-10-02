@@ -106,11 +106,14 @@ python3 warn_history.py
 **GitHub Actions (recommended).** The [`monitor.yml`](.github/workflows/monitor.yml)
 workflow runs the full pipeline twice daily (00:00 and 12:00 UTC) and on demand
 from the **Actions** tab. It runs the test suite, executes `warn_publish.py --no-push`,
-then commits any data/chart changes as `"auto: WARN data update [skip ci]"`. Four
-companion workflows keep the repo healthy:
+commits any data/chart changes as `"auto: WARN data update [skip ci]"`, then
+publishes the new build and checks the live site serves it. Five companion
+workflows keep the repo healthy:
 [`tests.yml`](.github/workflows/tests.yml) (runs pytest on every pull request),
 [`pages.yml`](.github/workflows/pages.yml) (deploys `docs/` to GitHub Pages — see
 ["Publish"](#5-publish-github-pages) below),
+[`site-watchdog.yml`](.github/workflows/site-watchdog.yml) (checks every two hours
+that the live site is not behind `main`),
 [`codeql.yml`](.github/workflows/codeql.yml) (weekly security scanning) and
 [`update-ai-metrics.yml`](.github/workflows/update-ai-metrics.yml) (refreshes
 `ai-metrics.json`).
@@ -145,14 +148,41 @@ tail -f data/warn_cron.log data/warn_cron_err.log
 The dashboards are deployed by [`pages.yml`](.github/workflows/pages.yml), which
 uploads `docs/` as the Pages artifact and deploys it with `actions/deploy-pages`.
 For this to work, **Settings ▸ Pages ▸ Source** must be set to **GitHub Actions**
-(not a branch). The workflow runs on three triggers:
+(not a branch). The workflow runs on two triggers:
 
-- **push to `main` touching `docs/**`** — a human merge that changes the site;
-- **`workflow_run`** after a successful "WARN Monitor & Dashboard Update" run —
-  the pipeline's `[skip ci]` commits can never fire the push trigger, so this is
-  how the twice-daily data updates reach the live site;
-- **manually**: **Actions ▸ Deploy Pages ▸ Run workflow** (useful to redeploy
-  after a hiccup).
+- **push to `main` touching `docs/**`**: a human merge that changes the site;
+- **`workflow_dispatch`**: how the twice-daily pipeline publishes. Its
+  `[skip ci]` commits can never fire the push trigger, so `monitor.yml` ends
+  with a `publish` job that runs `python3 warn_site_check.py --publish`. That
+  dispatches this workflow and waits until the live `data.json` files carry
+  the new build's `last_updated` stamp. It is also the manual button:
+  **Actions ▸ Deploy Pages ▸ Run workflow**.
+
+If a deploy run gets stuck, `--publish` cancels it and dispatches a fresh one.
+This happened from 2026-09-17 to 2026-10-02. One run sat in "waiting" for 15
+days and held the deploy queue, so alert emails went out while both
+dashboards stayed on 2026-09-16. If the live site is still behind after a
+redeploy and a retry, the `publish` job **fails** and GitHub emails the repo
+owner.
+
+To recover, use **Re-run failed jobs**, which retries only the publish, or
+**Actions ▸ Site Watchdog ▸ Run workflow**. Never use **Re-run all jobs** on a
+WARN Monitor run: it replays the pipeline from that run's original commit and
+re-sends its alert emails.
+
+[`site-watchdog.yml`](.github/workflows/site-watchdog.yml) runs the same check
+every two hours for anything else that falls behind. To check by hand:
+
+```bash
+git pull
+python3 warn_site_check.py             # exit 0 = live site serves this checkout's docs/
+python3 warn_site_check.py --publish   # if behind: clear stuck deploys, redeploy, wait (needs gh)
+```
+
+Alerts are emailed before the site is published, on purpose: an alert must
+never wait on, or be lost to, a Pages problem. So on a healthy run the
+dashboards trail the email by a few minutes, covering the deploy plus up to
+the CDN's 10-minute cache.
 
 Every pipeline run rewrites `docs/index.html` (US), `docs/ca/index.html`
 (California) and both `data.json` files, so the live site follows `main`

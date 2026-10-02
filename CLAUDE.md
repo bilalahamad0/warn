@@ -24,6 +24,8 @@ python3 warn_charts.py           # Regenerate the 12 Plotly charts
 python3 warn_history.py          # Re-parse historical PDFs (2014-2024)
 python3 warn_site_us.py          # Rebuild the US dashboard (docs/ — the site root)
 python3 warn_notify.py --test    # Send a test email
+python3 warn_site_check.py       # Does the live site serve this checkout's docs/ build? (git pull first; exit 1 = behind)
+python3 warn_site_check.py --publish   # …and if not, redeploy pages.yml and wait (needs gh)
 python3 warn_digest.py           # Preview last month's US digest (prints text)
 python3 warn_digest.py --year 2026 --month 6 --html /tmp/d.html   # HTML preview
 python3 warn_publish.py --digest # Force-send the monthly digest now
@@ -85,6 +87,8 @@ state feeds (online)
                           ↳ warn_names.py / warn_brands.py  company canonicalisation
                           sends only once X_AUTO_POST=1 — see X_POSTING.md)
                       → git commit + push
+  → warn_site_check.py --publish (monitor.yml's `publish` job) → dispatch
+         pages.yml, wait until the live data.json stamps match; red if never
 ```
 
 **Site URL layout** lives in `warn_urls.py`, a leaf module every other module
@@ -254,9 +258,13 @@ loads nothing extra.
 - `states/<code>/` — per-state pipeline files for every non-CA source (same shapes as the top-level CA files: warn_latest, snapshot, cumulative, meta, both key ledgers, pending_amendments, changelog)
 - `changelog.jsonl` — append-only log of every detected change
 
-**GitHub Actions** — three workflows, with one deliberate coupling:
-- `monitor.yml` runs the full pipeline twice daily (00:00 and 12:00 UTC).
-  Automated commits use `"auto: WARN data update [skip ci]"` to prevent loops.
+**GitHub Actions** — four workflows, with one deliberate coupling:
+- `monitor.yml` runs the full pipeline twice daily (00:00 and 12:00 UTC;
+  GitHub starts them up to ~10 h late, median ~2 h). Automated commits use
+  `"auto: WARN data update [skip ci]"` to prevent loops. Its second job,
+  `publish`, runs `warn_site_check.py --publish` against the branch tip it
+  just pushed. That puts the build on the live site and **fails the run if
+  the site does not serve it** (below).
 - `tests.yml` runs pytest on every pull request. Before it existed no PR ever
   ran the suite in CI (`monitor.yml` is schedule-only; CodeQL was the sole PR
   check). It deliberately runs no flake8 — the repo carries ~177 standing
@@ -266,9 +274,74 @@ loads nothing extra.
   routinely (builds stuck at duration 0, deploys cancelled mid-flight), which
   could leave main updated while the live site silently served stale content.
   **The coupling:** the pipeline's `[skip ci]` commits cannot fire `pages.yml`'s
-  push trigger, so it also runs on `workflow_run` after every successful
-  `monitor.yml` run — renaming `monitor.yml`'s `name:` breaks that link
-  silently. Manual redeploy: Actions ▸ Deploy Pages ▸ Run workflow.
+  push trigger, so `monitor.yml` dispatches it **by file name**. Renaming
+  `pages.yml`, or dropping its `workflow_dispatch` trigger, breaks publishing;
+  `tests/test_site_check.py` pins both. Manual redeploy: Actions ▸ Deploy
+  Pages ▸ Run workflow.
+- `site-watchdog.yml` runs `warn_site_check.py --publish --grace 45` every
+  two hours. It is the backstop for deploys the pipeline does not own: human
+  pushes, a failed publish job, a local launchd run. It is its own workflow,
+  outside the `pages` concurrency group, so a stuck deploy cannot block the
+  thing that clears it.
+
+**A green pipeline is not a published site** (`warn_site_check.py`). From
+2026-09-17 to 2026-10-02 the dashboards froze at 2026-09-16 while every
+pipeline run stayed green and kept emailing alerts. One alert announced 36
+new California notices that neither dashboard showed. One `pages.yml` run sat
+in "waiting" on the `github-pages` environment, which has no reviewers, no
+wait timer, and a branch policy `main` satisfies; GitHub simply never
+released it. It held the `pages` concurrency group, so each later deploy
+queued as "pending" behind it and was replaced by the next. What changed,
+and why:
+- **The pipeline publishes and verifies.** `pages.yml` used to fire on
+  `workflow_run`, which can only start after the pipeline's run has finished,
+  so no run could check that its own build reached the site.
+  - `--publish` compares each dashboard's `data.json` in the checkout with the
+    public copy, by `last_updated`.
+  - If the site is behind, it cancels stuck Deploy Pages runs, dispatches
+    `pages.yml` on `main`, and polls for up to 15 min. It does that twice.
+  - "Can't tell" (fetch error, 404) counts as behind. Redeploying is
+    idempotent; assuming all is well is what hid this.
+  - Alerts still go out *before* the publish, deliberately: an alert must
+    never wait on, or be lost to, a Pages problem. On a healthy run the
+    dashboards trail the email by a few minutes (the deploy, plus up to the
+    CDN's 10 min cache).
+- **The publish is its own job, and its checkout is `ref: github.ref_name`.**
+  Two reasons:
+  - Recovery: **"Re-run failed jobs" retries only the publish. Never use "Re-run
+    all jobs" on a WARN Monitor run.** That replays the pipeline from the commit
+    the run started on, whose alert ledgers predate the emails it already
+    sent, so every subscriber gets them again. The failure annotation says so.
+  - The checkout: the default `github.sha` is that pre-push commit. Its
+    `docs/` is older than the live site, so it would always read as in sync.
+- **Stuck runs are cancelled from outside the `pages` group**: a plain
+  cancel first, then `force-cancel`, re-classifying the runs before
+  escalating. A run counts as stuck if any of these hold:
+  - it is `waiting` or `pending`, at any age;
+  - it is `queued` or `requested` and was created over 30 min ago;
+  - it is `in_progress` and a **runner** has been on it over 30 min.
+  The `in_progress` age comes from the run's earliest *step* start
+  (`deploying_since`). The run's own `startedAt` is its creation time, which
+  counts hours spent pending. The job's `startedAt` is stamped when the job
+  reaches the environment gate. Either would make a deploy that just
+  started look like a ghost. A live deploy is never interrupted.
+- **`pages.yml` stays `cancel-in-progress: false`, deliberately.** Flipping
+  it looks like the fix and is not; `tests/test_site_check.py` pins it.
+  - GitHub does not document that it reaches a run waiting on an
+    environment, and a staff-acknowledged report says it does not.
+  - Worse, cancelling `deploy-pages` mid-flight can leave the Pages
+    deployment "in progress". Every later deploy then fails "due to in
+    progress deployment".
+  - `timeout-minutes` is no substitute either. It does not count time spent
+    waiting on an environment, and GitHub's own cap is 30-35 days.
+- **The check reads the CDN copy a browser gets.**
+  - Pages' CDN caches for `max-age=600` and ignores query strings, so
+    cache-busting does not work. The wait outlasts the TTL instead.
+  - It caches each `Accept-Encoding` separately, so the check requests gzip.
+  - It reads only the first 64 KB of each file. The national payload is
+    ~14 MB, with `last_updated` as its first key.
+- The `github-pages` environment stays on the deploy job: the Pages API
+  rejects a deployment from a job without one.
 
 **X / @USLayoff auto-posting** (`warn_x.py`, full runbook in `X_POSTING.md`).
 When a run detects new notices, notable ones become posts on

@@ -113,3 +113,42 @@ jobs:
           else
             echo "No changes to commit"
           fi
+
+  publish:
+    # The alert emails have gone out and the build is on main; neither means
+    # anyone can SEE it. From 2026-09-17 to 2026-10-02 every deploy queued
+    # behind one stuck Deploy Pages run, and both dashboards sat on 2026-09-16
+    # while this workflow stayed green and kept emailing. So the run that
+    # sends an alert also puts the matching build on the live site: dispatch
+    # pages.yml, cancel any stuck deploy, wait until the public data.json files
+    # carry this build's stamp, retry once. If the site still lags, this job
+    # goes red and GitHub emails the owner.
+    #
+    # Its own job, so "Re-run failed jobs" retries the publish ALONE.
+    # Re-running update-dashboard replays the pipeline from the commit this
+    # run started on, whose alert ledgers predate the emails it already sent,
+    # so every subscriber would get them again.
+    #
+    # `needs` skips this unless update-dashboard fully succeeded: a failed
+    # pipeline commits data/ alone (no new site to put live), and a failed push
+    # leaves nothing new on main for the deploy to pick up.
+    needs: update-dashboard
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: read
+      actions: write      # dispatch pages.yml, cancel stuck Deploy Pages runs
+    steps:
+      - name: Checkout main as just pushed
+        uses: actions/checkout@v6
+        with:
+          # NOT github.sha, which is the commit this run STARTED from, before
+          # its own push. That docs/ is older than the live site, so it would
+          # always read as "in sync". The build to verify is the branch tip.
+          ref: ${{ github.ref_name }}
+
+      - name: Publish the site and verify it is live
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: python3 warn_site_check.py --publish
