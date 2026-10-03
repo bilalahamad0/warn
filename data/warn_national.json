@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-02T17:25:36.039107+00:00",
+  "last_updated": "2026-10-03T03:12:10.039103+00:00",
   "states_live": 47,
-  "total_records": 60467,
-  "total_employees": 6515207,
+  "total_records": 60481,
+  "total_employees": 6516143,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -22,8 +22,8 @@
       "name": "Arizona",
       "agency": "Arizona Department of Economic Security",
       "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
-      "total_records": 485,
-      "total_employees": 71782
+      "total_records": 486,
+      "total_employees": 71791
     },
     "CA": {
       "name": "California",
@@ -64,15 +64,15 @@
       "name": "Florida",
       "agency": "Florida Department of Commerce (FloridaCommerce)",
       "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
-      "total_records": 469,
-      "total_employees": 35333
+      "total_records": 471,
+      "total_employees": 35350
     },
     "GA": {
       "name": "Georgia",
       "agency": "Technical College System of Georgia, Office of Workforce Development",
       "source_url": "https://www.tcsg.edu/warn-public-view/",
-      "total_records": 4738,
-      "total_employees": 606648
+      "total_records": 4739,
+      "total_employees": 606657
     },
     "HI": {
       "name": "Hawaii",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1361,
-      "total_employees": 115562
+      "total_records": 1363,
+      "total_employees": 115783
     },
     "ME": {
       "name": "Maine",
@@ -204,8 +204,8 @@
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2355,
-      "total_employees": 353697
+      "total_records": 2357,
+      "total_employees": 353987
     },
     "NM": {
       "name": "New Mexico",
@@ -225,8 +225,8 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 5348,
-      "total_employees": 433868
+      "total_records": 5351,
+      "total_employees": 434053
     },
     "OH": {
       "name": "Ohio",
@@ -267,8 +267,8 @@
       "name": "South Carolina",
       "agency": "South Carolina Department of Employment and Workforce",
       "source_url": "https://scworks.org/employer/employer-programs/risk-closing/layoff-notification-reports",
-      "total_records": 608,
-      "total_employees": 81812
+      "total_records": 609,
+      "total_employees": 81819
     },
     "SD": {
       "name": "South Dakota",
@@ -302,8 +302,8 @@
       "name": "Virginia",
       "agency": "Virginia Works (Virginia Employment Commission)",
       "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
-      "total_records": 1128,
-      "total_employees": 131676
+      "total_records": 1130,
+      "total_employees": 131874
     },
     "VT": {
       "name": "Vermont",
@@ -19797,6 +19797,18 @@
       "county": "",
       "city": "Tempe",
       "address": "2160 E Elliot Rd, 2nd Floor; Tempe, Arizona 85283",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Grunt Style",
+      "notice_date": "2026-10-02",
+      "effective_date": null,
+      "employees": 9,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Chandler",
+      "address": "4976 Premium Outlet Way, Suite 714; Chandler, Arizona 85226",
       "industry": ""
     },
     {
@@ -204124,6 +204136,30 @@
       "industry": "Professional, Scientific, and Technical Services"
     },
     {
+      "state": "FL",
+      "company": "Grunt Style, LLC",
+      "notice_date": "2026-10-02",
+      "effective_date": "2026-11-30",
+      "employees": 9,
+      "layoff_type": "",
+      "county": "",
+      "city": "LUTZ",
+      "address": "2300 Grand Cypress Dr, Suite #828",
+      "industry": "Retail Trade"
+    },
+    {
+      "state": "FL",
+      "company": "Grunt Style, LLC",
+      "notice_date": "2026-10-02",
+      "effective_date": "2026-11-30",
+      "employees": 8,
+      "layoff_type": "",
+      "county": "",
+      "city": "DESTIN",
+      "address": "4267 Legendary Drive Space J107m",
+      "industry": "Retail Trade"
+    },
+    {
       "state": "GA",
       "company": "Dexter Axle Company",
       "notice_date": null,
@@ -260977,6 +261013,18 @@
       "county": "Cobb",
       "city": "",
       "address": "3500 Joe Jerkins Blvd, Austell, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Grunt Style, LLC",
+      "notice_date": null,
+      "effective_date": "2026-11-30",
+      "employees": 9,
+      "layoff_type": "Permanent Layoff / Reduction in Force",
+      "county": "",
+      "city": "",
+      "address": "915 Ridgewalk Pkwy, Suite 350, Woodstock, Georgia",
       "industry": ""
     },
     {
@@ -388342,6 +388390,30 @@
       "industry": "561320"
     },
     {
+      "state": "MD",
+      "company": "Aramark Campus, LLC",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-11-01",
+      "employees": 174,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Baltimore County",
+      "city": "",
+      "address": "5001 Washington Blvd. Halethorpe, MD 21227",
+      "industry": "722310"
+    },
+    {
+      "state": "MD",
+      "company": "Sharps Inc.",
+      "notice_date": "2026-09-30",
+      "effective_date": "2026-11-30",
+      "employees": 47,
+      "layoff_type": "Plant Closure",
+      "county": "Baltimore City",
+      "city": "",
+      "address": "3200 Hawkins Point Road, Baltimore, MD 21226",
+      "industry": "562211"
+    },
+    {
       "state": "ME",
       "company": "SMBC-Sumitomo Mitsui Banking Corporation",
       "notice_date": "2026-01-13",
@@ -452835,6 +452907,30 @@
       "layoff_type": "",
       "county": "",
       "city": "Jersey City",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Acme Markets Inc.",
+      "notice_date": null,
+      "effective_date": "2027-01-02",
+      "employees": 122,
+      "layoff_type": "",
+      "county": "",
+      "city": "Hillsdale",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Dr. Praeger's Sensible Foods LLC",
+      "notice_date": null,
+      "effective_date": "2026-12-30",
+      "employees": 168,
+      "layoff_type": "",
+      "county": "",
+      "city": "Elmwood Park",
       "address": "",
       "industry": ""
     },
@@ -519608,6 +519704,42 @@
     },
     {
       "state": "NY",
+      "company": "Great Jones Distillers, LLC",
+      "notice_date": "2026-09-08",
+      "effective_date": "2026-12-07",
+      "employees": 26,
+      "layoff_type": "Closure Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "686 Broadway New York, NY, 10012",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Lumina Care Medical Staff",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-11-03",
+      "employees": 135,
+      "layoff_type": "Layoff Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "885 3rd Avenue FL28 885 3rd Avenue FL28 New York, NY, 10022",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Stefanini Inc",
+      "notice_date": "2026-07-22",
+      "effective_date": "2026-09-20",
+      "employees": 24,
+      "layoff_type": "Layoff Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "50 Hudson Yards New York, NY, 10001",
+      "industry": ""
+    },
+    {
+      "state": "NY",
       "company": "Cardionet, LLC. an affiliate of Philips North America, LLC.",
       "notice_date": "2025-04-01",
       "effective_date": "2025-06-30",
@@ -572236,6 +572368,18 @@
       "county": "Beaufort",
       "city": "",
       "address": "2 Grasslawn Ave., Hilton Head Island, SC 29928",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "Grunt Style, LLC",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-11-30",
+      "employees": 7,
+      "layoff_type": "Permanent Closure",
+      "county": "Horry",
+      "city": "",
+      "address": "4630 Factory Stores Blvd, Ste A155, Myrtle Beach, SC 29579",
       "industry": ""
     },
     {
@@ -646808,6 +646952,30 @@
       "layoff_type": "Layoff",
       "county": "",
       "city": "Virginia Beach",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "James River Insurance",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-11-30",
+      "employees": 19,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Richmond",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "Carry-On-Trailer Inc (American Trailor World Corp-ATW)",
+      "notice_date": "2026-09-30",
+      "effective_date": "2026-11-29",
+      "employees": 179,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Montross",
       "address": "",
       "industry": ""
     },

@@ -1,9 +1,9 @@
 {
-  "total_records": 2355,
-  "total_employees": 353697,
+  "total_records": 2357,
+  "total_employees": 353987,
   "date_range_start": "2004-02-24",
   "date_range_end": "2027-04-01",
-  "last_updated": "2026-10-02T17:21:59.595500+00:00",
+  "last_updated": "2026-10-03T03:08:32.236697+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -28263,6 +28263,30 @@
       "layoff_type": "",
       "county": "",
       "city": "Jersey City",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Acme Markets Inc.",
+      "notice_date": null,
+      "effective_date": "2027-01-02",
+      "employees": 122,
+      "layoff_type": "",
+      "county": "",
+      "city": "Hillsdale",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Dr. Praeger's Sensible Foods LLC",
+      "notice_date": null,
+      "effective_date": "2026-12-30",
+      "employees": 168,
+      "layoff_type": "",
+      "county": "",
+      "city": "Elmwood Park",
       "address": "",
       "industry": ""
     }

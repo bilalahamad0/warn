@@ -1,11 +1,35 @@
 {
-  "total_records": 1411,
-  "total_employees": 116739,
+  "total_records": 1413,
+  "total_employees": 116960,
   "date_range_start": "2010-01-07",
-  "date_range_end": "2026-09-28",
-  "last_updated": "2026-10-02T17:18:38.434693+00:00",
+  "date_range_end": "2026-10-01",
+  "last_updated": "2026-10-03T03:05:17.472159+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
+    {
+      "state": "MD",
+      "company": "Aramark Campus, LLC",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-11-01",
+      "employees": 174,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Baltimore County",
+      "city": "",
+      "address": "5001 Washington Blvd. Halethorpe, MD 21227",
+      "industry": "722310"
+    },
+    {
+      "state": "MD",
+      "company": "Sharps Inc.",
+      "notice_date": "2026-09-30",
+      "effective_date": "2026-11-30",
+      "employees": 47,
+      "layoff_type": "Plant Closure",
+      "county": "Baltimore City",
+      "city": "",
+      "address": "3200 Hawkins Point Road, Baltimore, MD 21226",
+      "industry": "562211"
+    },
     {
       "state": "MD",
       "company": "LifeBridge Suburban Staffing, LLC (LBSS)",

@@ -1,9 +1,9 @@
 {
-  "total_records": 4799,
-  "total_employees": 418939,
+  "total_records": 4802,
+  "total_employees": 419124,
   "date_range_start": "2016-01-04",
   "date_range_end": "2026-09-24",
-  "last_updated": "2026-10-02T17:22:17.101353+00:00",
+  "last_updated": "2026-10-03T03:08:51.852712+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -57592,6 +57592,42 @@
       "county": "Albany",
       "city": "",
       "address": "1 Mustang Dr. Cohoes, NY, 12047",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Great Jones Distillers, LLC",
+      "notice_date": "2026-09-08",
+      "effective_date": "2026-12-07",
+      "employees": 26,
+      "layoff_type": "Closure Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "686 Broadway New York, NY, 10012",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Lumina Care Medical Staff",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-11-03",
+      "employees": 135,
+      "layoff_type": "Layoff Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "885 3rd Avenue FL28 885 3rd Avenue FL28 New York, NY, 10022",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Stefanini Inc",
+      "notice_date": "2026-07-22",
+      "effective_date": "2026-09-20",
+      "employees": 24,
+      "layoff_type": "Layoff Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "50 Hudson Yards New York, NY, 10001",
       "industry": ""
     }
   ]

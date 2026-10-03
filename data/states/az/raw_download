@@ -1,5 +1,17 @@
 [
  {
+  "employer": "Grunt Style",
+  "city": "Chandler",
+  "zip": "85226",
+  "lwib_area": "7 - ARIZONA@WORK - Maricopa County",
+  "notice_date": "Oct 02, 2026",
+  "warn_type": "WARN",
+  "record_number": "1006",
+  "detail_page_url": "https://www.azjobconnection.gov/search/warn_lookups/1006",
+  "number_of_employees_affected": "9",
+  "address": "4976 Premium Outlet Way, Suite 714; Chandler, Arizona 85226"
+ },
+ {
   "employer": "AssistRX",
   "city": "Tempe",
   "zip": "85283",

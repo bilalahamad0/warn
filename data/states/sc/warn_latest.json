@@ -1,9 +1,9 @@
 {
-  "total_records": 608,
-  "total_employees": 81812,
+  "total_records": 609,
+  "total_employees": 81819,
   "date_range_start": "2013-02-25",
-  "date_range_end": "2026-09-01",
-  "last_updated": "2026-10-02T17:22:38.471668+00:00",
+  "date_range_end": "2026-10-01",
+  "last_updated": "2026-10-03T03:09:13.641565+00:00",
   "source_url": "https://scworks.org/employer/employer-programs/risk-closing/layoff-notification-reports",
   "records": [
     {
@@ -7300,6 +7300,18 @@
       "county": "Spartanburg",
       "city": "",
       "address": "226 GSP Logistics Parkway, Greer, SC 29651",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "Grunt Style, LLC",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-11-30",
+      "employees": 7,
+      "layoff_type": "Permanent Closure",
+      "county": "Horry",
+      "city": "",
+      "address": "4630 Factory Stores Blvd, Ste A155, Myrtle Beach, SC 29579",
       "industry": ""
     }
   ]

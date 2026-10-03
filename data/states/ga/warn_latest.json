@@ -1,9 +1,9 @@
 {
-  "total_records": 4761,
-  "total_employees": 607843,
+  "total_records": 4762,
+  "total_employees": 607852,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-10-02T17:14:06.236781+00:00",
+  "last_updated": "2026-10-03T03:00:10.602209+00:00",
   "source_url": "https://www.tcsg.edu/warn-public-view/",
   "records": [
     {
@@ -3412,6 +3412,18 @@
       "county": "Cobb",
       "city": "",
       "address": "3500 Joe Jerkins Blvd, Austell, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Grunt Style, LLC",
+      "notice_date": null,
+      "effective_date": "2026-11-30",
+      "employees": 9,
+      "layoff_type": "Permanent Layoff / Reduction in Force",
+      "county": "",
+      "city": "",
+      "address": "915 Ridgewalk Pkwy, Suite 350, Woodstock, Georgia",
       "industry": ""
     },
     {

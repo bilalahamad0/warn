@@ -1,9 +1,9 @@
 {
-  "total_records": 469,
-  "total_employees": 35333,
+  "total_records": 471,
+  "total_employees": 35350,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-09-30",
-  "last_updated": "2026-10-02T17:13:54.505462+00:00",
+  "date_range_end": "2026-10-02",
+  "last_updated": "2026-10-03T02:59:51.280822+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -5633,6 +5633,30 @@
       "city": "PLANTATION",
       "address": "7500 W. Sunrise Blvd.",
       "industry": "Professional, Scientific, and Technical Services"
+    },
+    {
+      "state": "FL",
+      "company": "Grunt Style, LLC",
+      "notice_date": "2026-10-02",
+      "effective_date": "2026-11-30",
+      "employees": 9,
+      "layoff_type": "",
+      "county": "",
+      "city": "LUTZ",
+      "address": "2300 Grand Cypress Dr, Suite #828",
+      "industry": "Retail Trade"
+    },
+    {
+      "state": "FL",
+      "company": "Grunt Style, LLC",
+      "notice_date": "2026-10-02",
+      "effective_date": "2026-11-30",
+      "employees": 8,
+      "layoff_type": "",
+      "county": "",
+      "city": "DESTIN",
+      "address": "4267 Legendary Drive Space J107m",
+      "industry": "Retail Trade"
     }
   ]
 }

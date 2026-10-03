@@ -1,9 +1,9 @@
 {
-  "total_records": 1361,
-  "total_employees": 115562,
+  "total_records": 1363,
+  "total_employees": 115783,
   "date_range_start": "2010-01-07",
-  "date_range_end": "2026-09-28",
-  "last_updated": "2026-10-02T17:18:38.449948+00:00",
+  "date_range_end": "2026-10-01",
+  "last_updated": "2026-10-03T03:05:17.487966+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -16337,6 +16337,30 @@
       "city": "",
       "address": "2021-B Emmorton Road, Suite 110 Bel Air, MD 21015",
       "industry": "561320"
+    },
+    {
+      "state": "MD",
+      "company": "Aramark Campus, LLC",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-11-01",
+      "employees": 174,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Baltimore County",
+      "city": "",
+      "address": "5001 Washington Blvd. Halethorpe, MD 21227",
+      "industry": "722310"
+    },
+    {
+      "state": "MD",
+      "company": "Sharps Inc.",
+      "notice_date": "2026-09-30",
+      "effective_date": "2026-11-30",
+      "employees": 47,
+      "layoff_type": "Plant Closure",
+      "county": "Baltimore City",
+      "city": "",
+      "address": "3200 Hawkins Point Road, Baltimore, MD 21226",
+      "industry": "562211"
     }
   ]
 }

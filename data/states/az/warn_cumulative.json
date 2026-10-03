@@ -1,9 +1,9 @@
 {
-  "total_records": 485,
-  "total_employees": 71782,
+  "total_records": 486,
+  "total_employees": 71791,
   "date_range_start": "2019-01-04",
-  "date_range_end": "2026-09-30",
-  "last_updated": "2026-10-02T17:11:03.891554+00:00",
+  "date_range_end": "2026-10-02",
+  "last_updated": "2026-10-03T02:57:02.707900+00:00",
   "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
   "records": [
     {
@@ -5824,6 +5824,18 @@
       "county": "",
       "city": "Tempe",
       "address": "2160 E Elliot Rd, 2nd Floor; Tempe, Arizona 85283",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Grunt Style",
+      "notice_date": "2026-10-02",
+      "effective_date": null,
+      "employees": 9,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Chandler",
+      "address": "4976 Premium Outlet Way, Suite 714; Chandler, Arizona 85226",
       "industry": ""
     }
   ]
