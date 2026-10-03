@@ -1,9 +1,9 @@
 {
-  "total_records": 202,
-  "total_employees": 12677,
+  "total_records": 205,
+  "total_employees": 12862,
   "date_range_start": "2026-01-06",
   "date_range_end": "2026-09-24",
-  "last_updated": "2026-10-02T17:22:17.076290+00:00",
+  "last_updated": "2026-10-03T03:08:51.827025+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -664,6 +664,18 @@
       "county": "Kings",
       "city": "",
       "address": "172 Montrose Ave. Brooklyn, NY, 11206",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Great Jones Distillers, LLC",
+      "notice_date": "2026-09-08",
+      "effective_date": "2026-12-07",
+      "employees": 26,
+      "layoff_type": "Closure Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "686 Broadway New York, NY, 10012",
       "industry": ""
     },
     {
@@ -1396,6 +1408,18 @@
       "county": "Westchester",
       "city": "",
       "address": "115 US-202 Lincolndale, NY, 10540",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Lumina Care Medical Staff",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-11-03",
+      "employees": 135,
+      "layoff_type": "Layoff Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "885 3rd Avenue FL28 885 3rd Avenue FL28 New York, NY, 10022",
       "industry": ""
     },
     {
@@ -2200,6 +2224,18 @@
       "county": "New York",
       "city": "",
       "address": "One New York Plaza Suite 4600 New York, NY, 10004",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Stefanini Inc",
+      "notice_date": "2026-07-22",
+      "effective_date": "2026-09-20",
+      "employees": 24,
+      "layoff_type": "Layoff Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "50 Hudson Yards New York, NY, 10001",
       "industry": ""
     },
     {

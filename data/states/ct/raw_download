@@ -332,34 +332,6 @@
       },
       "modifiedDate": "2025-10-10T18:46:37+00:00",
       "name": "rapid_response/warn_documents/2025/ImageFIRST (Farmington) 10-9-2025.pdf"
-    },
-    {
-      "blobProperties": {
-        "affected_company": "PosiGen Developer LLC",
-        "closing_dates_": "10/25/2025",
-        "layoff_dates": "10/12/2025 - 10/25/2025",
-        "layoff_locations__": "Shelton, Danbury, Wethersfield",
-        "number_of_impacted_workers": "Not indicated",
-        "union": "N/A",
-        "warn_document_date": "2025-10-03",
-        "warn_document_received_date": "2025-10-03"
-      },
-      "modifiedDate": "2025-10-06T20:09:41+00:00",
-      "name": "rapid_response/warn_documents/2025/Posigen (Shelton, Danbury, Wethersfield) 10-3-2025.pdf"
-    },
-    {
-      "blobProperties": {
-        "affected_company": "SimplyIOA, LLC",
-        "closing_dates_": "December 2, 2025",
-        "layoff_dates": "December 2, 2025",
-        "layoff_locations__": "Remote",
-        "number_of_impacted_workers": "66; #CT workers not indicated",
-        "union": "No",
-        "warn_document_date": "2025-10-03",
-        "warn_document_received_date": "2025-10-07"
-      },
-      "modifiedDate": "2025-10-08T19:18:39+00:00",
-      "name": "rapid_response/warn_documents/2025/SimplyIOA LLC (Remote) 10-3-2025.pdf"
     }
   ]
 }
