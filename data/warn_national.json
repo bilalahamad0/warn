@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-06T04:15:25.528582+00:00",
+  "last_updated": "2026-10-06T18:01:22.093026+00:00",
   "states_live": 47,
-  "total_records": 60490,
-  "total_employees": 6517157,
+  "total_records": 60494,
+  "total_employees": 6517451,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -64,15 +64,15 @@
       "name": "Florida",
       "agency": "Florida Department of Commerce (FloridaCommerce)",
       "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
-      "total_records": 471,
-      "total_employees": 35350
+      "total_records": 472,
+      "total_employees": 35363
     },
     "GA": {
       "name": "Georgia",
       "agency": "Technical College System of Georgia, Office of Workforce Development",
       "source_url": "https://www.tcsg.edu/warn-public-view/",
-      "total_records": 4739,
-      "total_employees": 606657
+      "total_records": 4740,
+      "total_employees": 606772
     },
     "HI": {
       "name": "Hawaii",
@@ -204,8 +204,8 @@
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2358,
-      "total_employees": 354055
+      "total_records": 2359,
+      "total_employees": 354144
     },
     "NM": {
       "name": "New Mexico",
@@ -323,8 +323,8 @@
       "name": "Wisconsin",
       "agency": "Wisconsin Department of Workforce Development",
       "source_url": "https://dwd.wisconsin.gov/dislocatedworker/warn/",
-      "total_records": 638,
-      "total_employees": 59483
+      "total_records": 639,
+      "total_employees": 59560
     },
     "WV": {
       "name": "West Virginia",
@@ -204196,6 +204196,18 @@
       "industry": "Retail Trade"
     },
     {
+      "state": "FL",
+      "company": "Cayuga Home for Children, dba Cayuga Centers",
+      "notice_date": "2026-10-06",
+      "effective_date": "2027-01-04",
+      "employees": 13,
+      "layoff_type": "",
+      "county": "",
+      "city": "FORT LAUDERDALE",
+      "address": "3081 E Commercial BLVD, STE 202 & 204",
+      "industry": "Health Care and Social Assistance"
+    },
+    {
       "state": "GA",
       "company": "Dexter Axle Company",
       "notice_date": null,
@@ -261061,6 +261073,18 @@
       "county": "",
       "city": "",
       "address": "915 Ridgewalk Pkwy, Suite 350, Woodstock, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Cardinal Glass Industries",
+      "notice_date": null,
+      "effective_date": "2026-12-06",
+      "employees": 115,
+      "layoff_type": "Permanent Closure",
+      "county": "Bulloch",
+      "city": "",
+      "address": "8373 Zell Miller Pkwy, Statesboro, Georgia",
       "industry": ""
     },
     {
@@ -452979,6 +453003,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Atlantic City",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "FRC Balance LLC, DBA The Food Kitchen",
+      "notice_date": null,
+      "effective_date": "2027-01-03",
+      "employees": 89,
+      "layoff_type": "",
+      "county": "",
+      "city": "Hackensack",
       "address": "",
       "industry": ""
     },
@@ -673678,6 +673714,18 @@
       "city": "Wausau",
       "address": "",
       "industry": "Commercial Banking"
+    },
+    {
+      "state": "WI",
+      "company": "Maynard Steel Casting Company and Maynard Alloy Casting Company LLC",
+      "notice_date": "2026-10-04",
+      "effective_date": "2026-12-04",
+      "employees": 77,
+      "layoff_type": "Facility Closure",
+      "county": "Milwaukee",
+      "city": "Milwaukee",
+      "address": "",
+      "industry": "Steel Foundries (except Investment)"
     },
     {
       "state": "WV",

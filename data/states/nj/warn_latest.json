@@ -1,9 +1,9 @@
 {
-  "total_records": 2384,
-  "total_employees": 356566,
+  "total_records": 2385,
+  "total_employees": 356655,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-10-06T04:11:44.592135+00:00",
+  "last_updated": "2026-10-06T17:57:40.173874+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -1371,6 +1371,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Atlantic City",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "FRC Balance LLC, DBA The Food Kitchen",
+      "notice_date": null,
+      "effective_date": "2027-01-03",
+      "employees": 89,
+      "layoff_type": "",
+      "county": "",
+      "city": "Hackensack",
       "address": "",
       "industry": ""
     },

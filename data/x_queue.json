@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T04:16:41.081445+00:00",
+  "updated_at": "2026-10-06T18:03:13.656798+00:00",
   "candidates": [
     {
       "id": "c353237355db",
@@ -1131,7 +1131,7 @@
     {
       "id": "3574ff7fdb59",
       "created_at": "2026-09-29T17:50:50.703957+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "covenant aviation security",
       "display": "Covenant Aviation Security, LLC",
       "employees": 1279,
@@ -1167,7 +1167,7 @@
     {
       "id": "1d237d69626e",
       "created_at": "2026-09-29T17:50:50.704056+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "firstfruits",
       "display": "FirstFruits, LLC",
       "employees": 1200,
@@ -1203,7 +1203,7 @@
     {
       "id": "f39b1ef7d78a",
       "created_at": "2026-09-29T17:50:50.704114+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "dreyers grand ice cream",
       "display": "Dreyer's Grand Ice Cream",
       "employees": 737,
