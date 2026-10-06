@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-05T03:22:28.581304+00:00",
+  "updated_at": "2026-10-06T04:16:41.081445+00:00",
   "candidates": [
     {
       "id": "c353237355db",
@@ -1095,7 +1095,7 @@
     {
       "id": "6efbe0055b68",
       "created_at": "2026-09-28T19:23:56.266169+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "gebbers farms etal",
       "display": "Gebbers Farms, Etal",
       "employees": 3445,
@@ -1554,6 +1554,42 @@
       "warnings": [],
       "keys": [
         "MD:Aramark Campus, LLC__2026-11-01__174"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "a3123e3cdc02",
+      "created_at": "2026-10-06T04:16:41.081416+00:00",
+      "status": "pending",
+      "company": "national frozen foods",
+      "display": "National Frozen Foods Corporation",
+      "employees": 439,
+      "states": [
+        "WA"
+      ],
+      "per_state": {
+        "WA": 439
+      },
+      "sites": 1,
+      "card": {
+        "place": "Moses Lake and Chehalis, WA",
+        "effective": "Nov 15, 2026",
+        "employees": 439
+      },
+      "arm": "size",
+      "reason": "439 >= 250",
+      "text": "National Frozen Foods Corporation filed a WARN notice for 439 job cuts in Moses Lake and Chehalis, WA.\n\nEffective Nov 15, 2026.\n\n#layoffs #Washington",
+      "thread": [],
+      "weighted_len": 149,
+      "warnings": [],
+      "keys": [
+        "WA:National Frozen Foods Corporation__2026-11-15__439"
       ],
       "approved_by": null,
       "approved_at": null,

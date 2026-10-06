@@ -1,9 +1,9 @@
 {
-  "total_records": 2383,
-  "total_employees": 356498,
+  "total_records": 2384,
+  "total_employees": 356566,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-10-05T03:17:57.057456+00:00",
+  "last_updated": "2026-10-06T04:11:44.592135+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -1259,7 +1259,7 @@
       "company": "Johnson & Johnson Services Inc",
       "notice_date": null,
       "effective_date": "2026-12-18",
-      "employees": 87,
+      "employees": 88,
       "layoff_type": "",
       "county": "",
       "city": "New Brunswick",
@@ -1359,6 +1359,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Elmwood Park",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Atlantic City Linen Supply LLC",
+      "notice_date": null,
+      "effective_date": "2027-01-03",
+      "employees": 67,
+      "layoff_type": "",
+      "county": "",
+      "city": "Atlantic City",
       "address": "",
       "industry": ""
     },

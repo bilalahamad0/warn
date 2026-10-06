@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-05T03:21:35.759708+00:00",
+  "last_updated": "2026-10-06T04:15:25.528582+00:00",
   "states_live": 47,
-  "total_records": 60481,
-  "total_employees": 6516143,
+  "total_records": 60490,
+  "total_employees": 6517157,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -22,8 +22,8 @@
       "name": "Arizona",
       "agency": "Arizona Department of Economic Security",
       "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
-      "total_records": 486,
-      "total_employees": 71791
+      "total_records": 488,
+      "total_employees": 71900
     },
     "CA": {
       "name": "California",
@@ -36,8 +36,8 @@
       "name": "Colorado",
       "agency": "Colorado Department of Labor and Employment",
       "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
-      "total_records": 860,
-      "total_employees": 87322
+      "total_records": 861,
+      "total_employees": 87439
     },
     "CT": {
       "name": "Connecticut",
@@ -204,8 +204,8 @@
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2357,
-      "total_employees": 353987
+      "total_records": 2358,
+      "total_employees": 354055
     },
     "NM": {
       "name": "New Mexico",
@@ -302,8 +302,8 @@
       "name": "Virginia",
       "agency": "Virginia Works (Virginia Employment Commission)",
       "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
-      "total_records": 1130,
-      "total_employees": 131874
+      "total_records": 1131,
+      "total_employees": 131882
     },
     "VT": {
       "name": "Vermont",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1540,
-      "total_employees": 250558
+      "total_records": 1544,
+      "total_employees": 251270
     },
     "WI": {
       "name": "Wisconsin",
@@ -19809,6 +19809,30 @@
       "county": "",
       "city": "Chandler",
       "address": "4976 Premium Outlet Way, Suite 714; Chandler, Arizona 85226",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Chronicle Heritage",
+      "notice_date": "2026-10-05",
+      "effective_date": null,
+      "employees": 108,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Phoenix",
+      "address": "2025 N 3rd Street, Suite 157; Phoenix, Arizona 85004",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "James River",
+      "notice_date": "2026-10-02",
+      "effective_date": null,
+      "employees": 1,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Richmond",
+      "address": "6641 W Broad Street, Ste. 300; Richmond, Virginia 23230",
       "industry": ""
     },
     {
@@ -195938,6 +195962,18 @@
       "city": "",
       "address": "",
       "industry": "56, 54, 33, 23 (Kira Infrastructure: 562111), 236220 (KIRA Integrated Solutions), 541512 (T&H Solutions), 336143 (Kira Aviation),"
+    },
+    {
+      "state": "CO",
+      "company": "Intermountain Health/Trinsic",
+      "notice_date": "2026-10-02",
+      "effective_date": "2026-12-09",
+      "employees": 117,
+      "layoff_type": "Closure. Transitiion to UCHealth",
+      "county": "Rural Alliance (Broomfield)",
+      "city": "",
+      "address": "",
+      "industry": "62: Healthcare & Social Assistance"
     },
     {
       "state": "CT",
@@ -452816,18 +452852,6 @@
     },
     {
       "state": "NJ",
-      "company": "Johnson & Johnson Services Inc",
-      "notice_date": null,
-      "effective_date": "2026-12-18",
-      "employees": 87,
-      "layoff_type": "",
-      "county": "",
-      "city": "New Brunswick",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NJ",
       "company": "Bristol Myers Squibb",
       "notice_date": null,
       "effective_date": "2026-12-17",
@@ -452931,6 +452955,30 @@
       "layoff_type": "",
       "county": "",
       "city": "Elmwood Park",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Johnson & Johnson Services Inc",
+      "notice_date": null,
+      "effective_date": "2026-12-18",
+      "employees": 88,
+      "layoff_type": "",
+      "county": "",
+      "city": "New Brunswick",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Atlantic City Linen Supply LLC",
+      "notice_date": null,
+      "effective_date": "2027-01-03",
+      "employees": 67,
+      "layoff_type": "",
+      "county": "",
+      "city": "Atlantic City",
       "address": "",
       "industry": ""
     },
@@ -646980,6 +647028,18 @@
       "industry": ""
     },
     {
+      "state": "VA",
+      "company": "Grunt Style LLC (Norfolk Premium Outlet Retail Store)",
+      "notice_date": "2026-10-02",
+      "effective_date": "2026-11-30",
+      "employees": 8,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Norfolk",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "VT",
       "company": "Calmont Beverage",
       "notice_date": "2026-01-22",
@@ -665912,6 +665972,54 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Manson",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Jack in the Box",
+      "notice_date": "2026-10-05",
+      "effective_date": "2026-12-02",
+      "employees": 15,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Kent",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Quincy Foods",
+      "notice_date": "2026-10-02",
+      "effective_date": "2026-11-15",
+      "employees": 65,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Quincy",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Greenridge Farming Inc",
+      "notice_date": "2026-10-02",
+      "effective_date": "2026-11-15",
+      "employees": 193,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Pasco",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "National Frozen Foods Corporation",
+      "notice_date": "2026-10-02",
+      "effective_date": "2026-11-15",
+      "employees": 439,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Moses Lake and Chehalis",
       "address": "",
       "industry": ""
     },

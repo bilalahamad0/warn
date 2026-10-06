@@ -1,5 +1,29 @@
 [
  {
+  "employer": "Chronicle Heritage",
+  "city": "Phoenix",
+  "zip": "85004",
+  "lwib_area": "5 - ARIZONA@WORK - City of Phoenix",
+  "notice_date": "Oct 05, 2026",
+  "warn_type": "WARN",
+  "record_number": "1008",
+  "detail_page_url": "https://www.azjobconnection.gov/search/warn_lookups/1008",
+  "number_of_employees_affected": "108",
+  "address": "2025 N 3rd Street, Suite 157; Phoenix, Arizona 85004"
+ },
+ {
+  "employer": "James River",
+  "city": "Richmond",
+  "zip": "23230",
+  "lwib_area": "7 - ARIZONA@WORK - Maricopa County",
+  "notice_date": "Oct 02, 2026",
+  "warn_type": "WARN",
+  "record_number": "1007",
+  "detail_page_url": "https://www.azjobconnection.gov/search/warn_lookups/1007",
+  "number_of_employees_affected": "1",
+  "address": "6641 W Broad Street, Ste. 300; Richmond, Virginia 23230"
+ },
+ {
   "employer": "Grunt Style",
   "city": "Chandler",
   "zip": "85226",

@@ -1,11 +1,35 @@
 {
-  "total_records": 487,
-  "total_employees": 74033,
+  "total_records": 489,
+  "total_employees": 74142,
   "date_range_start": "2019-01-04",
-  "date_range_end": "2026-10-02",
-  "last_updated": "2026-10-05T03:04:04.487883+00:00",
+  "date_range_end": "2026-10-05",
+  "last_updated": "2026-10-06T04:00:22.148280+00:00",
   "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
   "records": [
+    {
+      "state": "AZ",
+      "company": "Chronicle Heritage",
+      "notice_date": "2026-10-05",
+      "effective_date": null,
+      "employees": 108,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Phoenix",
+      "address": "2025 N 3rd Street, Suite 157; Phoenix, Arizona 85004",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "James River",
+      "notice_date": "2026-10-02",
+      "effective_date": null,
+      "employees": 1,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Richmond",
+      "address": "6641 W Broad Street, Ste. 300; Richmond, Virginia 23230",
+      "industry": ""
+    },
     {
       "state": "AZ",
       "company": "Grunt Style",

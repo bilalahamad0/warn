@@ -1,9 +1,9 @@
 {
-  "total_records": 486,
-  "total_employees": 71791,
+  "total_records": 488,
+  "total_employees": 71900,
   "date_range_start": "2019-01-04",
-  "date_range_end": "2026-10-02",
-  "last_updated": "2026-10-05T03:04:04.494173+00:00",
+  "date_range_end": "2026-10-05",
+  "last_updated": "2026-10-06T04:00:22.154537+00:00",
   "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
   "records": [
     {
@@ -5836,6 +5836,30 @@
       "county": "",
       "city": "Chandler",
       "address": "4976 Premium Outlet Way, Suite 714; Chandler, Arizona 85226",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Chronicle Heritage",
+      "notice_date": "2026-10-05",
+      "effective_date": null,
+      "employees": 108,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Phoenix",
+      "address": "2025 N 3rd Street, Suite 157; Phoenix, Arizona 85004",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "James River",
+      "notice_date": "2026-10-02",
+      "effective_date": null,
+      "employees": 1,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Richmond",
+      "address": "6641 W Broad Street, Ste. 300; Richmond, Virginia 23230",
       "industry": ""
     }
   ]

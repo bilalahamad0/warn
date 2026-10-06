@@ -1,9 +1,9 @@
 {
-  "total_records": 863,
-  "total_employees": 88537,
+  "total_records": 864,
+  "total_employees": 88654,
   "date_range_start": "2015-01-02",
-  "date_range_end": "2026-09-25",
-  "last_updated": "2026-10-05T03:04:26.823505+00:00",
+  "date_range_end": "2026-10-02",
+  "last_updated": "2026-10-06T04:00:46.403671+00:00",
   "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
   "records": [
     {
@@ -533,6 +533,18 @@
       "city": "",
       "address": "",
       "industry": "56, 54, 33, 23 (Kira Infrastructure: 562111), 236220 (KIRA Integrated Solutions), 541512 (T&H Solutions), 336143 (Kira Aviation),"
+    },
+    {
+      "state": "CO",
+      "company": "Intermountain Health/Trinsic",
+      "notice_date": "2026-10-02",
+      "effective_date": "2026-12-09",
+      "employees": 117,
+      "layoff_type": "Closure. Transitiion to UCHealth",
+      "county": "Rural Alliance (Broomfield)",
+      "city": "",
+      "address": "",
+      "industry": "62: Healthcare & Social Assistance"
     },
     {
       "state": "CO",
