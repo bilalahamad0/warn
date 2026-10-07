@@ -1,9 +1,9 @@
 {
-  "total_records": 4802,
-  "total_employees": 419124,
+  "total_records": 4803,
+  "total_employees": 419155,
   "date_range_start": "2016-01-04",
-  "date_range_end": "2026-09-24",
-  "last_updated": "2026-10-06T17:57:59.422246+00:00",
+  "date_range_end": "2026-10-02",
+  "last_updated": "2026-10-07T03:34:48.040630+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -57628,6 +57628,18 @@
       "county": "New York",
       "city": "",
       "address": "50 Hudson Yards New York, NY, 10001",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "SYPartners, LLC",
+      "notice_date": "2026-10-02",
+      "effective_date": "2026-12-31",
+      "employees": 31,
+      "layoff_type": "Layoff Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "395 Hudson Street 8th Floor New York, NY, 10014",
       "industry": ""
     }
   ]

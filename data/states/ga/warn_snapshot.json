@@ -1,9 +1,9 @@
 {
-  "total_records": 4762,
-  "total_employees": 607852,
+  "total_records": 4763,
+  "total_employees": 607967,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-10-06T04:03:37.492262+00:00",
+  "last_updated": "2026-10-06T17:48:52.716598+00:00",
   "source_url": "https://www.tcsg.edu/warn-public-view/",
   "records": [
     {
@@ -3424,6 +3424,18 @@
       "county": "",
       "city": "",
       "address": "915 Ridgewalk Pkwy, Suite 350, Woodstock, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Cardinal Glass Industries",
+      "notice_date": null,
+      "effective_date": "2026-12-06",
+      "employees": 115,
+      "layoff_type": "Permanent Closure",
+      "county": "Bulloch",
+      "city": "",
+      "address": "8373 Zell Miller Pkwy, Statesboro, Georgia",
       "industry": ""
     },
     {

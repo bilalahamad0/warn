@@ -1,27 +1,51 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-10-06 18:01:21 UTC
+**Generated:** 2026-10-07 03:38:19 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 36 | 36 | +0/+0 |
-| Total employees | 2,560 | 2,560 | +0 |
+| Total records | 36 | 340 | +303/+0 |
+| Total employees | 2,560 | 16,885 | +14,325 |
 
-### ✅ No new entries.
+### ✅ New Entries (303 records)
+
+| Company | Employees | Effective Date | County |
+|---------|-----------|----------------|--------|
+| Covenant Aviation Security, LLC | 1,279 | 2026-11-30 | San Francisco County |
+| 24Hr Homecare, LLC | 738 | 2026-09-15 | Los Angeles County |
+| Randstad Inhouse Services, LLC (Dreyer's) | 426 | 2026-11-19 | Kern County |
+| Jabil Inc. | 382 | 2026-11-23 | Santa Clara County |
+| Visa | 320 | 2026-10-01 | San Mateo County |
+| Oracle America, Inc. | 279 | 2026-11-13 | San Mateo County |
+| PayPal | 251 | 2026-10-30 | Santa Clara County |
+| Dreyer's Grand Ice Cream | 221 | 2026-11-19 | Tulare County |
+| IPS Nationwide, Inc. | 212 | 2026-11-17 | Alameda County |
+| LeeMAH Electronics | 205 | 2026-10-16 | San Mateo County |
+| Sapporo U.S.A. (1999 Citracado Parkway) | 200 | 2026-11-13 | San Diego County |
+| Amy's Kitchen, LLC | 200 | 2026-12-18 | Sonoma County |
+| Bumble Bee Foods, LLC | 197 | 2026-11-19 | Los Angeles County |
+| Power Safety Service, LLC | 189 | 2026-11-06 | San Joaquin County |
+| Foundation for California Community Colleges | 178 | 2026-10-30 | Sacramento County |
+| Ruiz Food Products, Inc. | 176 | 2026-11-04 | Tulare County |
+| Sodexo | 164 | 2026-09-30 | Orange County |
+| ServiceNow, Inc. | 154 | 2026-09-28 | Santa Clara County |
+| Renewal by Andersen LLC | 153 | 2026-11-02 | Los Angeles County |
+| Uber Technologies, Inc. - 1655 3rd Street | 151 | 2026-11-02 | San Francisco County |
 
 ---
 ## 📁 File vs Git Comparison
 
-- **Local `file.xlsx` hash:** `2c73db1b759812982a57b17b77afa3c5`
+- **Local `file.xlsx` hash:** `72588e77488d8210aa79abdfead178d0`
 - **Committed hash:**          `2c73db1b759812982a57b17b77afa3c5`
-- ✅ Local file matches committed version
+- 🔴 **Local file differs from committed version**
 
 **Git status:**
 ```
 M data/changelog.jsonl
+ M data/meta.json
  M data/states/ak/changelog.jsonl
  M data/states/ak/warn_cumulative.json
  M data/states/ak/warn_latest.json
@@ -42,6 +66,7 @@ M data/changelog.jsonl
  M data/states/co/warn_snapshot.json
  M data/states/ct/changelog.jsonl
  M data/states/ct/meta.json
+ M data/states/ct/raw_download
  M data/states/ct/warn_cumulative.json
  M data/states/ct/warn_latest.json
  M data/states/ct/warn_snapshot.json
@@ -51,14 +76,11 @@ M data/changelog.jsonl
  M data/states/de/warn_latest.json
  M data/states/de/warn_snapshot.json
  M data/states/fl/changelog.jsonl
- M data/states/fl/raw_download
  M data/states/fl/warn_cumulative.json
  M data/states/fl/warn_latest.json
  M data/states/fl/warn_snapshot.json
  M data/states/ga/changelog.jsonl
- M data/states/ga/detail_cache.json
  M data/states/ga/meta.json
- M data/states/ga/raw_download
  M data/states/ga/warn_cumulative.json
  M data/states/ga/warn_latest.json
  M data/states/ga/warn_snapshot.json
@@ -118,7 +140,6 @@ M data/changelog.jsonl
  M data/states/me/warn_snapshot.json
  M data/states/mi/changelog.jsonl
  M data/states/mi/meta.json
- M data/states/mi/raw_download
  M data/states/mi/warn_cumulative.json
  M data/states/mi/warn_latest.json
  M data/states/mi/warn_snapshot.json
@@ -146,13 +167,11 @@ M data/changelog.jsonl
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
- M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
  M data/states/nj/changelog.jsonl
  M data/states/nj/meta.json
- M data/states/nj/raw_download.xlsx
  M data/states/nj/warn_cumulative.json
  M data/states/nj/warn_latest.json
  M data/states/nj/warn_snapshot.json
@@ -179,6 +198,7 @@ M data/changelog.jsonl
  M data/states/or/changelog.jsonl
  M data/states/or/latest.xlsx
  M data/states/or/meta.json
+ M data/states/or/raw_download
  M data/states/or/warn_cumulative.json
  M data/states/or/warn_latest.json
  M data/states/or/warn_snapshot.json
@@ -207,12 +227,12 @@ M data/changelog.jsonl
  M data/states/tn/warn_latest.json
  M data/states/tn/warn_snapshot.json
  M data/states/ut/changelog.jsonl
- M data/states/ut/meta.json
  M data/states/ut/warn_cumulative.json
  M data/states/ut/warn_latest.json
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
+ M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -228,7 +248,6 @@ M data/changelog.jsonl
  M data/states/wa/warn_snapshot.json
  M data/states/wi/changelog.jsonl
  M data/states/wi/meta.json
- M data/states/wi/raw_download
  M data/states/wi/warn_cumulative.json
  M data/states/wi/warn_latest.json
  M data/states/wi/warn_snapshot.json
@@ -240,20 +259,22 @@ M data/changelog.jsonl
  M data/warn_cumulative.json
  M data/warn_latest.json
  M data/warn_snapshot.json
+ M file.xlsx
 ```
 
 **Recent commits:**
 ```
+87543ce89 auto: WARN data update [skip ci]
 7bbe1467e auto: WARN data update [skip ci]
 d8e28508e auto: WARN data update [skip ci]
 39f4dc293 auto: WARN data update [skip ci]
 4344e00fe chore: weekly AI metrics update [skip actions]
-721145c42 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-10-07T03:22:43.983370+00:00` — +14 added, -0 removed, 361 employees (new)
 - `2026-10-06T17:45:43.589035+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-06T04:00:22.336548+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-05T03:04:04.732791+00:00` — +0 added, -0 removed, 0 employees (new)
@@ -263,4 +284,3 @@ d8e28508e auto: WARN data update [skip ci]
 - `2026-10-03T02:57:02.947790+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-02T17:11:04.005622+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-02T09:39:42.423513+00:00` — +0 added, -290 removed, 0 employees (new)
-- `2026-10-02T03:10:01.670795+00:00` — +36 added, -0 removed, 1,354 employees (new)

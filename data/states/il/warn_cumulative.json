@@ -3,7 +3,7 @@
   "total_employees": 674664,
   "date_range_start": "1987-09-01",
   "date_range_end": "2026-09-25",
-  "last_updated": "2026-10-06T17:49:45.487126+00:00",
+  "last_updated": "2026-10-07T03:26:32.663782+00:00",
   "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
   "records": [
     {

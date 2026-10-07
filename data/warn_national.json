@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-06T18:01:22.093026+00:00",
+  "last_updated": "2026-10-07T03:38:20.523716+00:00",
   "states_live": 47,
-  "total_records": 60494,
-  "total_employees": 6517451,
+  "total_records": 60512,
+  "total_employees": 6518139,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -29,8 +29,8 @@
       "name": "California",
       "agency": "California Employment Development Department",
       "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
-      "total_records": 16425,
-      "total_employees": 1396925
+      "total_records": 16439,
+      "total_employees": 1397286
     },
     "CO": {
       "name": "Colorado",
@@ -43,8 +43,8 @@
       "name": "Connecticut",
       "agency": "Connecticut Department of Labor",
       "source_url": "https://dolpublicdocumentlibrary.ct.gov/CsblrCategory?prefix=%2Frapid_response%2Fwarn_documents",
-      "total_records": 29,
-      "total_employees": 3205
+      "total_records": 30,
+      "total_employees": 3249
     },
     "DC": {
       "name": "District of Columbia",
@@ -225,8 +225,8 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 5351,
-      "total_employees": 434053
+      "total_records": 5352,
+      "total_employees": 434084
     },
     "OH": {
       "name": "Ohio",
@@ -246,8 +246,8 @@
       "name": "Oregon",
       "agency": "Oregon Higher Education Coordinating Commission, Office of Community Colleges and Workforce Development",
       "source_url": "https://ccwd.hecc.oregon.gov/Layoff/WARN",
-      "total_records": 1372,
-      "total_employees": 187202
+      "total_records": 1373,
+      "total_employees": 187372
     },
     "PA": {
       "name": "Pennsylvania",
@@ -302,8 +302,8 @@
       "name": "Virginia",
       "agency": "Virginia Works (Virginia Employment Commission)",
       "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
-      "total_records": 1131,
-      "total_employees": 131882
+      "total_records": 1132,
+      "total_employees": 131964
     },
     "VT": {
       "name": "Vermont",
@@ -39689,7 +39689,7 @@
       "notice_date": "2026-08-19",
       "effective_date": "2026-11-02",
       "employees": 73,
-      "layoff_type": "Layoff Permanent",
+      "layoff_type": "Relocation",
       "county": "Ventura County",
       "city": "",
       "address": "2800 Sturgis Road  Oxnard CA 93030",
@@ -41866,6 +41866,174 @@
       "city": "",
       "address": "5750 Mesmer Avenue  Culver City CA 90230",
       "industry": "48-49 Transportation and Warehousing"
+    },
+    {
+      "state": "CA",
+      "company": "Becton, Dickinson and Company (BD)",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-09-01",
+      "employees": 85,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "3750 Torrey View Court  San Diego CA 92130",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Monroe Operations, LLC, dba Newport Healthcare - Pimlico",
+      "notice_date": "2026-09-30",
+      "effective_date": "2026-09-30",
+      "employees": 3,
+      "layoff_type": "Layoff Permanent",
+      "county": "Ventura County",
+      "city": "",
+      "address": "10813 Pimlico Dr.  Moorpark CA 93021",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Monroe Operations, LLC, dba Newport Healthcare - Alhambra",
+      "notice_date": "2026-09-30",
+      "effective_date": "2026-09-30",
+      "employees": 5,
+      "layoff_type": "Layoff Permanent",
+      "county": "Ventura County",
+      "city": "",
+      "address": "2565 Alhambra Court  Santa Rosa Valley CA 93012",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Monroe Operations, LLC, dba Newport Healthcare - Presilla",
+      "notice_date": "2026-09-30",
+      "effective_date": "2026-09-30",
+      "employees": 8,
+      "layoff_type": "Layoff Permanent",
+      "county": "Ventura County",
+      "city": "",
+      "address": "11530 Presilla Rd.  Santa Rosa Valley CA 93012",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Monroe Operations, LLC, dba Newport Healthcare - Read",
+      "notice_date": "2026-09-30",
+      "effective_date": "2026-09-30",
+      "employees": 6,
+      "layoff_type": "Layoff Permanent",
+      "county": "Ventura County",
+      "city": "",
+      "address": "4914 Read Rd.  Moorpark CA 93021",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Monroe Operations, LLC, dba Newport Healthcare - Valley Vista",
+      "notice_date": "2026-09-30",
+      "effective_date": "2026-09-30",
+      "employees": 18,
+      "layoff_type": "Layoff Permanent",
+      "county": "Ventura County",
+      "city": "",
+      "address": "683 Valley Vista Dr.  Camarillo CA 93010",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "TruFusion West Hollywood LLC",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-11-30",
+      "employees": 92,
+      "layoff_type": "Closure Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "904 North La Brea Avenue  Los Angeles CA 90038",
+      "industry": "71 Arts Entertainment and Recreation"
+    },
+    {
+      "state": "CA",
+      "company": "Magic Leap, Inc.",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-12-01",
+      "employees": 5,
+      "layoff_type": "Layoff Permanent",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "1376 Bordeaux Dr.  Sunnyvale CA 94089",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc.",
+      "notice_date": "2026-10-05",
+      "effective_date": "2026-12-04",
+      "employees": 3,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "One Kaiser Plaza  Oakland CA 94612",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc. (393 E. Walnut St.)",
+      "notice_date": "2026-10-05",
+      "effective_date": "2026-12-04",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "393 E. Walnut St.  Pasadena CA 91188",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc.",
+      "notice_date": "2026-10-05",
+      "effective_date": "2026-12-04",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "8954 Rio San Diego Dr.  San Diego CA 92108",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Blue Diamond Growers",
+      "notice_date": "2026-10-02",
+      "effective_date": "2026-12-04",
+      "employees": 3,
+      "layoff_type": "Closure Permanent",
+      "county": "Sacramento County",
+      "city": "",
+      "address": "1802 C Street  Sacramento CA 95811",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc. (74 N. Pasadena Ave.)",
+      "notice_date": "2026-10-05",
+      "effective_date": "2026-12-04",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "74 N. Pasadena Ave.  Pasadena CA 91103",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "AMF Bowling Centers, Inc. Castle Park",
+      "notice_date": "2026-10-05",
+      "effective_date": "2026-12-04",
+      "employees": 130,
+      "layoff_type": "Layoff Permanent",
+      "county": "Riverside County",
+      "city": "",
+      "address": "3500 Polk Street  Riverside CA 92505",
+      "industry": "71 Arts Entertainment and Recreation"
     },
     {
       "company": "Adventist Health St. Helena",
@@ -196317,6 +196485,18 @@
       "notice_date": "2026-09-09",
       "effective_date": "2026-12-31",
       "employees": 15,
+      "layoff_type": "",
+      "county": "",
+      "city": "Bristol",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "CT",
+      "company": "IDEX Health and Science LLC",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-12-31",
+      "employees": 44,
       "layoff_type": "",
       "county": "",
       "city": "Bristol",
@@ -519824,6 +520004,18 @@
     },
     {
       "state": "NY",
+      "company": "SYPartners, LLC",
+      "notice_date": "2026-10-02",
+      "effective_date": "2026-12-31",
+      "employees": 31,
+      "layoff_type": "Layoff Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "395 Hudson Street 8th Floor New York, NY, 10014",
+      "industry": ""
+    },
+    {
+      "state": "NY",
       "company": "Cardionet, LLC. an affiliate of Philips North America, LLC.",
       "notice_date": "2025-04-01",
       "effective_date": "2025-06-30",
@@ -559899,6 +560091,18 @@
       "layoff_type": "Large Layoff - 10 or more workers",
       "county": "",
       "city": "Portland",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Medford Delivery Facility",
+      "notice_date": "2026-10-06",
+      "effective_date": "2026-12-07",
+      "employees": 170,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Medford",
       "address": "",
       "industry": ""
     },
@@ -647072,6 +647276,18 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Norfolk",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "ICF International LLC",
+      "notice_date": "2026-10-02",
+      "effective_date": "2026-12-07",
+      "employees": 82,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Arlington",
       "address": "",
       "industry": ""
     },

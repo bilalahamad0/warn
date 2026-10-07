@@ -1,9 +1,9 @@
 {
-  "total_records": 479,
-  "total_employees": 36237,
+  "total_records": 480,
+  "total_employees": 36250,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-10-02",
-  "last_updated": "2026-10-06T04:03:28.191271+00:00",
+  "date_range_end": "2026-10-06",
+  "last_updated": "2026-10-06T17:48:36.404538+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -3244,6 +3244,18 @@
       "county": "",
       "city": "BOCA RATON",
       "address": "4700 Exchange Court, Suite 125",
+      "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "FL",
+      "company": "Cayuga Home for Children, dba Cayuga Centers",
+      "notice_date": "2026-10-06",
+      "effective_date": "2027-01-04",
+      "employees": 13,
+      "layoff_type": "",
+      "county": "",
+      "city": "FORT LAUDERDALE",
+      "address": "3081 E Commercial BLVD, STE 202 & 204",
       "industry": "Health Care and Social Assistance"
     },
     {

@@ -1,9 +1,9 @@
 {
-  "total_records": 1131,
-  "total_employees": 131882,
+  "total_records": 1132,
+  "total_employees": 131964,
   "date_range_start": "2010-07-29",
   "date_range_end": "2026-10-02",
-  "last_updated": "2026-10-06T17:58:30.590274+00:00",
+  "last_updated": "2026-10-07T03:35:16.096952+00:00",
   "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
   "records": [
     {
@@ -13575,6 +13575,18 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Norfolk",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "ICF International LLC",
+      "notice_date": "2026-10-02",
+      "effective_date": "2026-12-07",
+      "employees": 82,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Arlington",
       "address": "",
       "industry": ""
     }
