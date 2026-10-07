@@ -1,9 +1,9 @@
 {
-  "total_records": 480,
-  "total_employees": 36250,
+  "total_records": 481,
+  "total_employees": 36425,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-10-06",
-  "last_updated": "2026-10-07T03:25:38.751833+00:00",
+  "date_range_end": "2026-10-07",
+  "last_updated": "2026-10-07T18:19:01.197227+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -3244,6 +3244,18 @@
       "county": "",
       "city": "BOCA RATON",
       "address": "4700 Exchange Court, Suite 125",
+      "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "FL",
+      "company": "TH Opco LLC d/b/a Terrace of Hialeah",
+      "notice_date": "2026-10-07",
+      "effective_date": "2026-12-06",
+      "employees": 175,
+      "layoff_type": "",
+      "county": "",
+      "city": "HIALEAH",
+      "address": "190 W. 28th Street",
       "industry": "Health Care and Social Assistance"
     },
     {

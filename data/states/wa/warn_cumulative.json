@@ -1,9 +1,9 @@
 {
-  "total_records": 1544,
-  "total_employees": 251270,
+  "total_records": 1545,
+  "total_employees": 251321,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-10-05",
-  "last_updated": "2026-10-07T03:38:14.328527+00:00",
+  "date_range_end": "2026-10-07",
+  "last_updated": "2026-10-07T18:32:16.487425+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -18531,6 +18531,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Moses Lake and Chehalis",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Starbucks",
+      "notice_date": "2026-10-07",
+      "effective_date": "2026-11-14",
+      "employees": 51,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Seattle, Redmond, Vancouver, and Spokane",
       "address": "",
       "industry": ""
     }

@@ -1,11 +1,23 @@
 {
-  "total_records": 1543,
-  "total_employees": 251147,
+  "total_records": 1544,
+  "total_employees": 251198,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-10-05",
-  "last_updated": "2026-10-07T03:38:14.312537+00:00",
+  "date_range_end": "2026-10-07",
+  "last_updated": "2026-10-07T18:32:16.468019+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
+    {
+      "state": "WA",
+      "company": "Starbucks",
+      "notice_date": "2026-10-07",
+      "effective_date": "2026-11-14",
+      "employees": 51,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Seattle, Redmond, Vancouver, and Spokane",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "WA",
       "company": "Jack in the Box",

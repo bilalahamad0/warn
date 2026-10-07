@@ -2,7 +2,7 @@
   "scope": "ca",
   "state": "CA",
   "coverage_start": "2025-01-01",
-  "last_updated": "2026-10-07T03:38:20.523716+00:00",
+  "last_updated": "2026-10-07T18:32:22.099253+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "total_records": 1921,
   "total_employees": 105497,
@@ -20,7 +20,7 @@
       "address": "One Kaiser Plaza  Oakland CA 94612",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc. (393 E. Walnut St.)",
@@ -33,7 +33,7 @@
       "address": "393 E. Walnut St.  Pasadena CA 91188",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc.",
@@ -46,7 +46,7 @@
       "address": "8954 Rio San Diego Dr.  San Diego CA 92108",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc. (74 N. Pasadena Ave.)",
@@ -59,7 +59,7 @@
       "address": "74 N. Pasadena Ave.  Pasadena CA 91103",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "AMF Bowling Centers, Inc. Castle Park",
@@ -72,7 +72,7 @@
       "address": "3500 Polk Street  Riverside CA 92505",
       "industry": "71 Arts Entertainment and Recreation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Blue Diamond Growers",
@@ -85,7 +85,7 @@
       "address": "1802 C Street  Sacramento CA 95811",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "TruFusion West Hollywood LLC",
@@ -98,7 +98,7 @@
       "address": "904 North La Brea Avenue  Los Angeles CA 90038",
       "industry": "71 Arts Entertainment and Recreation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Magic Leap, Inc.",
@@ -111,7 +111,7 @@
       "address": "1376 Bordeaux Dr.  Sunnyvale CA 94089",
       "industry": "54 Professional Scientific and Technical Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "DLVR (A Corp)",
@@ -137,7 +137,7 @@
       "address": "10813 Pimlico Dr.  Moorpark CA 93021",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Monroe Operations, LLC, dba Newport Healthcare - Alhambra",
@@ -150,7 +150,7 @@
       "address": "2565 Alhambra Court  Santa Rosa Valley CA 93012",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Monroe Operations, LLC, dba Newport Healthcare - Presilla",
@@ -163,7 +163,7 @@
       "address": "11530 Presilla Rd.  Santa Rosa Valley CA 93012",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Monroe Operations, LLC, dba Newport Healthcare - Read",
@@ -176,7 +176,7 @@
       "address": "4914 Read Rd.  Moorpark CA 93021",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Monroe Operations, LLC, dba Newport Healthcare - Valley Vista",
@@ -189,7 +189,7 @@
       "address": "683 Valley Vista Dr.  Camarillo CA 93010",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Constellis, LLC (1104 N. Eastern Ave.)",
@@ -696,7 +696,7 @@
       "address": "3750 Torrey View Court  San Diego CA 92130",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Capstone Delivery Inc.",

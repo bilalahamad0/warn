@@ -1,9 +1,9 @@
 {
-  "total_records": 1363,
-  "total_employees": 115783,
+  "total_records": 1364,
+  "total_employees": 115797,
   "date_range_start": "2010-01-07",
-  "date_range_end": "2026-10-01",
-  "last_updated": "2026-10-07T03:30:49.097665+00:00",
+  "date_range_end": "2026-10-05",
+  "last_updated": "2026-10-07T18:23:48.064101+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -16361,6 +16361,18 @@
       "city": "",
       "address": "3200 Hawkins Point Road, Baltimore, MD 21226",
       "industry": "562211"
+    },
+    {
+      "state": "MD",
+      "company": "Cayuga Centers",
+      "notice_date": "2026-10-05",
+      "effective_date": "2027-01-04",
+      "employees": 14,
+      "layoff_type": "Plant Closure",
+      "county": "Baltimore City",
+      "city": "",
+      "address": "2601 N. Howard Street, Suite 310 Baltimore, MD 21218",
+      "industry": "624110"
     }
   ]
 }

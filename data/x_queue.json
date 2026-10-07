@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T03:39:58.930003+00:00",
+  "updated_at": "2026-10-07T18:33:40.366062+00:00",
   "candidates": [
     {
       "id": "c353237355db",
@@ -1276,7 +1276,7 @@
     {
       "id": "9e8a891f2677",
       "created_at": "2026-09-30T17:36:34.993481+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "masterbrand cabinets",
       "display": "MasterBrand Cabinets LLC",
       "employees": 391,
@@ -1312,7 +1312,7 @@
     {
       "id": "aa2ddf989a5b",
       "created_at": "2026-09-30T17:36:34.993528+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Prudential",
       "display": "Prudential",
       "employees": 125,
@@ -1348,7 +1348,7 @@
     {
       "id": "99e9038d45f6",
       "created_at": "2026-09-30T17:36:34.993562+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "BASF",
       "display": "BASF",
       "employees": 66,
@@ -1590,6 +1590,45 @@
       "warnings": [],
       "keys": [
         "WA:National Frozen Foods Corporation__2026-11-15__439"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "1ce943c41edc",
+      "created_at": "2026-10-07T18:33:40.366027+00:00",
+      "status": "pending",
+      "company": "Starbucks",
+      "display": "Starbucks",
+      "employees": 69,
+      "states": [
+        "WA",
+        "PA"
+      ],
+      "per_state": {
+        "PA": 18,
+        "WA": 51
+      },
+      "sites": 2,
+      "card": {
+        "place": "WA \u00b7 PA",
+        "effective": "Nov 14, 2026",
+        "employees": 69
+      },
+      "arm": "brand",
+      "reason": "known brand, 69 >= 50",
+      "text": "Starbucks filed WARN notices for 69 job cuts across 2 sites in 2 states.\n\nWA 51 \u00b7 PA 18\n\nFirst effective date Nov 14, 2026.\n\n#layoffs",
+      "thread": [],
+      "weighted_len": 133,
+      "warnings": [],
+      "keys": [
+        "PA:Starbucks__2026-12-06__18",
+        "WA:Starbucks__2026-11-14__51"
       ],
       "approved_by": null,
       "approved_at": null,
