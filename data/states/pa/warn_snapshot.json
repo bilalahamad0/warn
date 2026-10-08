@@ -1,11 +1,23 @@
 {
-  "total_records": 312,
-  "total_employees": 45811,
+  "total_records": 313,
+  "total_employees": 45829,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-10-07T03:34:58.825337+00:00",
+  "last_updated": "2026-10-07T18:28:49.311842+00:00",
   "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
   "records": [
+    {
+      "state": "PA",
+      "company": "Starbucks",
+      "notice_date": null,
+      "effective_date": "2026-12-06",
+      "employees": 18,
+      "layoff_type": "Closure",
+      "county": "Philadelphia",
+      "city": "",
+      "address": "2201 South Street, Philadelphia, PA 19146, 1018 North Second Street, Philadelphia, PA 19123",
+      "industry": ""
+    },
     {
       "state": "PA",
       "company": "Kenco Logistic Services, LLC",

@@ -1,9 +1,9 @@
 {
-  "total_records": 1364,
-  "total_employees": 115797,
+  "total_records": 1366,
+  "total_employees": 115871,
   "date_range_start": "2010-01-07",
-  "date_range_end": "2026-10-05",
-  "last_updated": "2026-10-07T18:23:48.064101+00:00",
+  "date_range_end": "2026-10-06",
+  "last_updated": "2026-10-08T03:42:53.154133+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -16373,6 +16373,30 @@
       "city": "",
       "address": "2601 N. Howard Street, Suite 310 Baltimore, MD 21218",
       "industry": "624110"
+    },
+    {
+      "state": "MD",
+      "company": "Cloudforce Group, Inc.",
+      "notice_date": "2026-10-06",
+      "effective_date": "2026-10-06",
+      "employees": 33,
+      "layoff_type": "Mass Layoff- No Recall",
+      "county": "Prince George\u2019s County",
+      "city": "",
+      "address": "120 Waterfront Street, Suite 500 Oxon Hill, MD 20745",
+      "industry": "541519"
+    },
+    {
+      "state": "MD",
+      "company": "True Food Kitchen",
+      "notice_date": "2026-10-05",
+      "effective_date": "2026-12-04",
+      "employees": 41,
+      "layoff_type": "Plant Closure",
+      "county": "Montgomery County",
+      "city": "",
+      "address": "7100 Wisconsin Avenue Bethesda, MD 20815",
+      "industry": "722511"
     }
   ]
 }

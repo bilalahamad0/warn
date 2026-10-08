@@ -12,6 +12,16 @@
    "Notice Type": "Notice Type"
   },
   {
+   "Company": "American Woodmark Corporation",
+   "City": "Gas City",
+   "Affected Workers": "207",
+   "Notice Date": "10/5/2026",
+   "LO/CL Date": "12/5/2026",
+   "NAICS": "31-33",
+   "Description of Work/Industry": "Manufacturing",
+   "Notice Type": "LO"
+  },
+  {
    "Company": "ZF Active Safety & Electronics US LLC",
    "City": "Lafayette",
    "Affected Workers": "133",

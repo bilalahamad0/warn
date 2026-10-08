@@ -1,9 +1,9 @@
 {
-  "total_records": 376,
-  "total_employees": 35076,
+  "total_records": 377,
+  "total_employees": 35080,
   "date_range_start": "2022-01-25",
-  "date_range_end": "2026-09-28",
-  "last_updated": "2026-10-07T03:33:49.711981+00:00",
+  "date_range_end": "2026-10-02",
+  "last_updated": "2026-10-07T18:27:37.197357+00:00",
   "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
   "records": [
     {
@@ -4516,6 +4516,18 @@
       "county": "Lenoir",
       "city": "Kinston",
       "address": "651 Collier-Loftin Rd",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "James River Management Company, Inc.",
+      "notice_date": "2026-10-02",
+      "effective_date": "2026-11-30",
+      "employees": 4,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Richmond VA",
+      "address": "6641 W. Broad Street",
       "industry": ""
     }
   ]

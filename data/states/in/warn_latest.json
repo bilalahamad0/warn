@@ -1,11 +1,23 @@
 {
-  "total_records": 1019,
-  "total_employees": 153002,
+  "total_records": 1020,
+  "total_employees": 153209,
   "date_range_start": "2008-07-10",
-  "date_range_end": "2026-09-30",
-  "last_updated": "2026-10-07T18:20:03.870292+00:00",
+  "date_range_end": "2026-10-05",
+  "last_updated": "2026-10-08T03:39:15.436263+00:00",
   "source_url": "https://www.in.gov/dwd/warn-notices/current-warn-notices/",
   "records": [
+    {
+      "state": "IN",
+      "company": "American Woodmark Corporation",
+      "notice_date": "2026-10-05",
+      "effective_date": "2026-12-05",
+      "employees": 207,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Gas City",
+      "address": "",
+      "industry": "Manufacturing"
+    },
     {
       "state": "IN",
       "company": "ZF Active Safety & Electronics US LLC",

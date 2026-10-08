@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-07T18:32:22.099253+00:00",
+  "last_updated": "2026-10-08T03:49:50.805032+00:00",
   "states_live": 47,
-  "total_records": 60517,
-  "total_employees": 6518401,
+  "total_records": 60541,
+  "total_employees": 6518981,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -106,8 +106,8 @@
       "name": "Indiana",
       "agency": "Indiana Department of Workforce Development",
       "source_url": "https://www.in.gov/dwd/warn-notices/current-warn-notices/",
-      "total_records": 1018,
-      "total_employees": 152917
+      "total_records": 1019,
+      "total_employees": 153124
     },
     "KS": {
       "name": "Kansas",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1364,
-      "total_employees": 115797
+      "total_records": 1366,
+      "total_employees": 115871
     },
     "ME": {
       "name": "Maine",
@@ -162,8 +162,8 @@
       "name": "Minnesota",
       "agency": "Minnesota Department of Employment and Economic Development",
       "source_url": "https://mn.gov/deed/programs-services/dislocated-worker-program/reports/",
-      "total_records": 682,
-      "total_employees": 18584
+      "total_records": 696,
+      "total_employees": 18848
     },
     "MS": {
       "name": "Mississippi",
@@ -246,8 +246,8 @@
       "name": "Oregon",
       "agency": "Oregon Higher Education Coordinating Commission, Office of Community Colleges and Workforce Development",
       "source_url": "https://ccwd.hecc.oregon.gov/Layoff/WARN",
-      "total_records": 1373,
-      "total_employees": 187372
+      "total_records": 1380,
+      "total_employees": 187407
     },
     "PA": {
       "name": "Pennsylvania",
@@ -351244,6 +351244,18 @@
       "industry": "Manufacturing"
     },
     {
+      "state": "IN",
+      "company": "American Woodmark Corporation",
+      "notice_date": "2026-10-05",
+      "effective_date": "2026-12-05",
+      "employees": 207,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Gas City",
+      "address": "",
+      "industry": "Manufacturing"
+    },
+    {
       "state": "KS",
       "company": "First Student",
       "notice_date": "2026-05-01",
@@ -388678,6 +388690,30 @@
       "industry": "624110"
     },
     {
+      "state": "MD",
+      "company": "Cloudforce Group, Inc.",
+      "notice_date": "2026-10-06",
+      "effective_date": "2026-10-06",
+      "employees": 33,
+      "layoff_type": "Mass Layoff- No Recall",
+      "county": "Prince George\u2019s County",
+      "city": "",
+      "address": "120 Waterfront Street, Suite 500 Oxon Hill, MD 20745",
+      "industry": "541519"
+    },
+    {
+      "state": "MD",
+      "company": "True Food Kitchen",
+      "notice_date": "2026-10-05",
+      "effective_date": "2026-12-04",
+      "employees": 41,
+      "layoff_type": "Plant Closure",
+      "county": "Montgomery County",
+      "city": "",
+      "address": "7100 Wisconsin Avenue Bethesda, MD 20815",
+      "industry": "722511"
+    },
+    {
       "state": "ME",
       "company": "SMBC-Sumitomo Mitsui Banking Corporation",
       "notice_date": "2026-01-13",
@@ -405231,6 +405267,174 @@
       "layoff_type": "Closing",
       "county": "",
       "city": "Brooklyn Park",
+      "address": "",
+      "industry": "Dining Establishments"
+    },
+    {
+      "state": "MN",
+      "company": "July 2026 Transdev Rochester",
+      "notice_date": "2026-07-02",
+      "effective_date": "2026-08-31",
+      "employees": 0,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Rochester",
+      "address": "",
+      "industry": "Transportation"
+    },
+    {
+      "state": "MN",
+      "company": "Grand Depot",
+      "notice_date": null,
+      "effective_date": "2026-07-04",
+      "employees": 14,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "St Cloud",
+      "address": "",
+      "industry": "Retail"
+    },
+    {
+      "state": "MN",
+      "company": "Hardee's",
+      "notice_date": null,
+      "effective_date": "2026-06-18",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Austin",
+      "address": "",
+      "industry": "Dining Establishments"
+    },
+    {
+      "state": "MN",
+      "company": "OneTen Cycle",
+      "notice_date": null,
+      "effective_date": "2026-07-01",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Mendota Heights",
+      "address": "",
+      "industry": "Retail"
+    },
+    {
+      "state": "MN",
+      "company": "Medina Mall - Shops",
+      "notice_date": null,
+      "effective_date": "2026-06-01",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Minneapolis",
+      "address": "",
+      "industry": "Retail"
+    },
+    {
+      "state": "MN",
+      "company": "BrandFX-Dunnel",
+      "notice_date": null,
+      "effective_date": "2026-07-31",
+      "employees": 26,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Fort Worth",
+      "address": "",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "MN",
+      "company": "Kings Road Merch",
+      "notice_date": null,
+      "effective_date": "2026-06-23",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Columbia Heights",
+      "address": "",
+      "industry": "Retail"
+    },
+    {
+      "state": "MN",
+      "company": "Woody's Pet Food Deli",
+      "notice_date": null,
+      "effective_date": "2026-07-25",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Eagan",
+      "address": "",
+      "industry": "Dining Establishments"
+    },
+    {
+      "state": "MN",
+      "company": "Northern Iron",
+      "notice_date": "2026-07-30",
+      "effective_date": "2026-10-01",
+      "employees": 86,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "St Paul",
+      "address": "",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "MN",
+      "company": "Heliene 2nd",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-10-04",
+      "employees": 93,
+      "layoff_type": "",
+      "county": "",
+      "city": "Mountain Iron",
+      "address": "",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "MN",
+      "company": "Thesis Beer Project",
+      "notice_date": null,
+      "effective_date": "2026-12-01",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Rochester",
+      "address": "",
+      "industry": "Other Services"
+    },
+    {
+      "state": "MN",
+      "company": "Worthington IDS 518",
+      "notice_date": null,
+      "effective_date": "2026-08-18",
+      "employees": 37,
+      "layoff_type": "",
+      "county": "",
+      "city": "Worthington",
+      "address": "",
+      "industry": "Education"
+    },
+    {
+      "state": "MN",
+      "company": "Swede Hollow Cafe",
+      "notice_date": null,
+      "effective_date": "2026-08-13",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "St Paul",
+      "address": "",
+      "industry": "Dining Establishments"
+    },
+    {
+      "state": "MN",
+      "company": "Krusty's Los Dos Primos",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-08-01",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Mankato",
       "address": "",
       "industry": "Dining Establishments"
     },
@@ -560139,6 +560343,90 @@
       "layoff_type": "Permanent closure",
       "county": "",
       "city": "Medford",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Bowtech, LLC",
+      "notice_date": "2026-07-27",
+      "effective_date": "2027-02-26",
+      "employees": 3,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Eugene",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Bowtech, LLC",
+      "notice_date": "2026-07-27",
+      "effective_date": "2027-01-29",
+      "employees": 10,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Eugene",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Bowtech, LLC",
+      "notice_date": "2026-07-27",
+      "effective_date": "2026-12-31",
+      "employees": 4,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Eugene",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Bowtech, LLC",
+      "notice_date": "2026-07-27",
+      "effective_date": "2026-11-30",
+      "employees": 2,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Eugene",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Bowtech, LLC",
+      "notice_date": "2026-07-27",
+      "effective_date": "2026-11-06",
+      "employees": 5,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Eugene",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Bowtech, LLC",
+      "notice_date": "2026-07-27",
+      "effective_date": "2026-10-31",
+      "employees": 5,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Eugene",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Bowtech, LLC",
+      "notice_date": "2026-07-27",
+      "effective_date": "2026-09-30",
+      "employees": 6,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Eugene",
       "address": "",
       "industry": ""
     },
