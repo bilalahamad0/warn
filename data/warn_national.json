@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-08T03:49:50.805032+00:00",
+  "last_updated": "2026-10-08T18:42:13.348028+00:00",
   "states_live": 47,
-  "total_records": 60541,
-  "total_employees": 6518981,
+  "total_records": 60544,
+  "total_employees": 6519171,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -36,8 +36,8 @@
       "name": "Colorado",
       "agency": "Colorado Department of Labor and Employment",
       "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
-      "total_records": 861,
-      "total_employees": 87439
+      "total_records": 862,
+      "total_employees": 87509
     },
     "CT": {
       "name": "Connecticut",
@@ -155,8 +155,8 @@
       "name": "Michigan",
       "agency": "Michigan Department of Labor and Economic Opportunity",
       "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
-      "total_records": 789,
-      "total_employees": 122358
+      "total_records": 791,
+      "total_employees": 122478
     },
     "MN": {
       "name": "Minnesota",
@@ -196142,6 +196142,18 @@
       "city": "",
       "address": "",
       "industry": "62: Healthcare & Social Assistance"
+    },
+    {
+      "state": "CO",
+      "company": "Cemex",
+      "notice_date": "2026-09-22",
+      "effective_date": "2026-11-02",
+      "employees": 70,
+      "layoff_type": "Staff Rebalancing at Lyons Cement Plant",
+      "county": "Boulder",
+      "city": "",
+      "address": "",
+      "industry": "32,7310: Cement Manufacturing"
     },
     {
       "state": "CT",
@@ -397084,6 +397096,30 @@
       "county": "Oakland",
       "city": "",
       "address": "36455 Corporate Drive, Farmington Hills, MI 48331",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Lear Corporation",
+      "notice_date": null,
+      "effective_date": "2026-11-09",
+      "employees": 67,
+      "layoff_type": "Facility closure",
+      "county": "Macomb",
+      "city": "",
+      "address": "6450 Dobry Drive, Sterling Heights, MI 48314",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "HealthEdge, d/b/a as UST HealthProof",
+      "notice_date": null,
+      "effective_date": "2026-12-01",
+      "employees": 53,
+      "layoff_type": "Permanent layoff",
+      "county": "Wayne",
+      "city": "",
+      "address": "160 West Fort St., 5th Floor, Detroit, MI 48226",
       "industry": ""
     },
     {

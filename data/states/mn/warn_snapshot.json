@@ -1,9 +1,9 @@
 {
-  "total_records": 682,
-  "total_employees": 18584,
+  "total_records": 696,
+  "total_employees": 18848,
   "date_range_start": "2021-01-06",
-  "date_range_end": "2026-06-15",
-  "last_updated": "2026-10-07T18:27:11.819780+00:00",
+  "date_range_end": "2026-08-04",
+  "last_updated": "2026-10-08T03:44:56.758378+00:00",
   "source_url": "https://mn.gov/deed/programs-services/dislocated-worker-program/reports/",
   "records": [
     {
@@ -8189,6 +8189,174 @@
       "city": "St Paul",
       "address": "",
       "industry": "Government"
+    },
+    {
+      "state": "MN",
+      "company": "July 2026 Transdev Rochester",
+      "notice_date": "2026-07-02",
+      "effective_date": "2026-08-31",
+      "employees": 0,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Rochester",
+      "address": "",
+      "industry": "Transportation"
+    },
+    {
+      "state": "MN",
+      "company": "Grand Depot",
+      "notice_date": null,
+      "effective_date": "2026-07-04",
+      "employees": 14,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "St Cloud",
+      "address": "",
+      "industry": "Retail"
+    },
+    {
+      "state": "MN",
+      "company": "Hardee's",
+      "notice_date": null,
+      "effective_date": "2026-06-18",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Austin",
+      "address": "",
+      "industry": "Dining Establishments"
+    },
+    {
+      "state": "MN",
+      "company": "OneTen Cycle",
+      "notice_date": null,
+      "effective_date": "2026-07-01",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Mendota Heights",
+      "address": "",
+      "industry": "Retail"
+    },
+    {
+      "state": "MN",
+      "company": "Medina Mall - Shops",
+      "notice_date": null,
+      "effective_date": "2026-06-01",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Minneapolis",
+      "address": "",
+      "industry": "Retail"
+    },
+    {
+      "state": "MN",
+      "company": "BrandFX-Dunnel",
+      "notice_date": null,
+      "effective_date": "2026-07-31",
+      "employees": 26,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Fort Worth",
+      "address": "",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "MN",
+      "company": "Kings Road Merch",
+      "notice_date": null,
+      "effective_date": "2026-06-23",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Columbia Heights",
+      "address": "",
+      "industry": "Retail"
+    },
+    {
+      "state": "MN",
+      "company": "Woody's Pet Food Deli",
+      "notice_date": null,
+      "effective_date": "2026-07-25",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Eagan",
+      "address": "",
+      "industry": "Dining Establishments"
+    },
+    {
+      "state": "MN",
+      "company": "Northern Iron",
+      "notice_date": "2026-07-30",
+      "effective_date": "2026-10-01",
+      "employees": 86,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "St Paul",
+      "address": "",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "MN",
+      "company": "Heliene 2nd",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-10-04",
+      "employees": 93,
+      "layoff_type": "",
+      "county": "",
+      "city": "Mountain Iron",
+      "address": "",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "MN",
+      "company": "Thesis Beer Project",
+      "notice_date": null,
+      "effective_date": "2026-12-01",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Rochester",
+      "address": "",
+      "industry": "Other Services"
+    },
+    {
+      "state": "MN",
+      "company": "Worthington IDS 518",
+      "notice_date": null,
+      "effective_date": "2026-08-18",
+      "employees": 37,
+      "layoff_type": "",
+      "county": "",
+      "city": "Worthington",
+      "address": "",
+      "industry": "Education"
+    },
+    {
+      "state": "MN",
+      "company": "Swede Hollow Cafe",
+      "notice_date": null,
+      "effective_date": "2026-08-13",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "St Paul",
+      "address": "",
+      "industry": "Dining Establishments"
+    },
+    {
+      "state": "MN",
+      "company": "Krusty's Los Dos Primos",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-08-01",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Mankato",
+      "address": "",
+      "industry": "Dining Establishments"
     }
   ]
 }
