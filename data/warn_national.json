@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-09T03:56:19.527883+00:00",
+  "last_updated": "2026-10-09T18:07:15.017023+00:00",
   "states_live": 47,
-  "total_records": 60551,
-  "total_employees": 6519509,
+  "total_records": 60553,
+  "total_employees": 6519714,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -225,8 +225,8 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 5352,
-      "total_employees": 434084
+      "total_records": 5354,
+      "total_employees": 434289
     },
     "OH": {
       "name": "Ohio",
@@ -520372,6 +520372,30 @@
       "county": "New York",
       "city": "",
       "address": "395 Hudson Street 8th Floor New York, NY, 10014",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "InvaGen Pharmaceuticals, Inc.",
+      "notice_date": "2026-08-28",
+      "effective_date": "2026-11-27",
+      "employees": 160,
+      "layoff_type": "Layoff Permanent",
+      "county": "Suffolk",
+      "city": "",
+      "address": "550 S Research Pl Central Islip, NY, 11722",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "InvaGen Pharmaceuticals, Inc.",
+      "notice_date": "2026-08-28",
+      "effective_date": "2026-11-27",
+      "employees": 45,
+      "layoff_type": "Layoff Permanent",
+      "county": "Suffolk",
+      "city": "",
+      "address": "600 Old Willets Path Hauppauge, NY, 11788",
       "industry": ""
     },
     {

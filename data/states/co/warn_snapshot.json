@@ -1,9 +1,9 @@
 {
-  "total_records": 865,
-  "total_employees": 88724,
+  "total_records": 866,
+  "total_employees": 88728,
   "date_range_start": "2015-01-02",
-  "date_range_end": "2026-10-02",
-  "last_updated": "2026-10-08T18:24:31.207882+00:00",
+  "date_range_end": "2026-10-08",
+  "last_updated": "2026-10-09T03:41:35.502324+00:00",
   "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
   "records": [
     {
@@ -557,6 +557,18 @@
       "city": "",
       "address": "",
       "industry": "32,7310: Cement Manufacturing"
+    },
+    {
+      "state": "CO",
+      "company": "Battelle",
+      "notice_date": "2026-10-08",
+      "effective_date": "2026-12-07",
+      "employees": 4,
+      "layoff_type": "Completion of PCAPP Project Objectives",
+      "county": "Rural Alliance (Pueblo)",
+      "city": "",
+      "address": "",
+      "industry": "56,2910: Remediation Services"
     },
     {
       "state": "CO",

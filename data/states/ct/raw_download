@@ -334,18 +334,6 @@
       },
       "modifiedDate": "2025-10-20T11:55:19+00:00",
       "name": "rapid_response/warn_documents/2025/CVS Health (Hartford-remote) 10-17-2025.pdf"
-    },
-    {
-      "blobProperties": {
-        "affected_company": "ImageFIRST Healthcare Laundry Specialists, LLC",
-        "layoff_dates": "12/08/2025",
-        "layoff_locations__": "12/08/2025",
-        "number_of_impacted_workers": "69",
-        "warn_document_date": "2025-10-09",
-        "warn_document_received_date": "2025-10-09"
-      },
-      "modifiedDate": "2025-10-10T18:46:37+00:00",
-      "name": "rapid_response/warn_documents/2025/ImageFIRST (Farmington) 10-9-2025.pdf"
     }
   ]
 }

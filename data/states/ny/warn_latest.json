@@ -1,9 +1,9 @@
 {
-  "total_records": 203,
-  "total_employees": 11733,
+  "total_records": 205,
+  "total_employees": 11938,
   "date_range_start": "2026-01-06",
   "date_range_end": "2026-10-02",
-  "last_updated": "2026-10-09T03:52:55.696610+00:00",
+  "last_updated": "2026-10-09T18:03:57.216706+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -748,6 +748,30 @@
       "county": "Erie",
       "city": "",
       "address": "310 Commerce Drive Amherst, NY, 14228",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "InvaGen Pharmaceuticals, Inc.",
+      "notice_date": "2026-08-28",
+      "effective_date": "2026-11-27",
+      "employees": 160,
+      "layoff_type": "Layoff Permanent",
+      "county": "Suffolk",
+      "city": "",
+      "address": "550 S Research Pl Central Islip, NY, 11722",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "InvaGen Pharmaceuticals, Inc.",
+      "notice_date": "2026-08-28",
+      "effective_date": "2026-11-27",
+      "employees": 45,
+      "layoff_type": "Layoff Permanent",
+      "county": "Suffolk",
+      "city": "",
+      "address": "600 Old Willets Path Hauppauge, NY, 11788",
       "industry": ""
     },
     {
