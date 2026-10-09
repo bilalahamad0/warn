@@ -2,13 +2,39 @@
   "scope": "ca",
   "state": "CA",
   "coverage_start": "2025-01-01",
-  "last_updated": "2026-10-08T18:42:13.348028+00:00",
+  "last_updated": "2026-10-09T03:56:19.527883+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
-  "total_records": 1921,
-  "total_employees": 105497,
+  "total_records": 1927,
+  "total_employees": 105831,
   "date_range_start": "2025-01-03",
-  "date_range_end": "2026-10-05",
+  "date_range_end": "2026-10-06",
   "records": [
+    {
+      "company": "Beachbody, LLC",
+      "notice_date": "2026-10-06",
+      "effective_date": "2026-12-07",
+      "employees": 80,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "400 North Continental Blvd.  El Segundo CA 90245",
+      "industry": "54 Professional Scientific and Technical Services",
+      "state": "CA",
+      "_is_new": true
+    },
+    {
+      "company": "Caribou Biosciences, Inc.",
+      "notice_date": "2026-10-06",
+      "effective_date": "2026-12-07",
+      "employees": 87,
+      "layoff_type": "Closure Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "2929 7th Street, Ste 105  Berkeley CA 94710",
+      "industry": "54 Professional Scientific and Technical Services",
+      "state": "CA",
+      "_is_new": true
+    },
     {
       "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc.",
       "notice_date": "2026-10-05",
@@ -75,6 +101,19 @@
       "_is_new": false
     },
     {
+      "company": "Cayuga Home for Children",
+      "notice_date": "2026-10-05",
+      "effective_date": "2027-01-04",
+      "employees": 12,
+      "layoff_type": "Closure Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "8616 La Tijera Boulevard  Los Angeles CA 90045",
+      "industry": "62 Healthcare and Social Assistance",
+      "state": "CA",
+      "_is_new": true
+    },
+    {
       "company": "Blue Diamond Growers",
       "notice_date": "2026-10-02",
       "effective_date": "2026-12-04",
@@ -112,6 +151,19 @@
       "industry": "54 Professional Scientific and Technical Services",
       "state": "CA",
       "_is_new": false
+    },
+    {
+      "company": "ODS Technologies LP and Betfair Interactive US LLC",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-11-30",
+      "employees": 2,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "6701 Center Drive West, Suite 160  Los Angeles CA 90045",
+      "industry": "71 Arts Entertainment and Recreation",
+      "state": "CA",
+      "_is_new": true
     },
     {
       "company": "DLVR (A Corp)",
@@ -190,6 +242,19 @@
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
       "_is_new": false
+    },
+    {
+      "company": "Neogen Care Home Health Agency",
+      "notice_date": "2026-09-30",
+      "effective_date": "2026-09-11",
+      "employees": 148,
+      "layoff_type": "Closure Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "15260 Ventura Boulevard, Suite 670  Sherman Oaks CA 91403",
+      "industry": "62 Healthcare and Social Assistance",
+      "state": "CA",
+      "_is_new": true
     },
     {
       "company": "Constellis, LLC (1104 N. Eastern Ave.)",
@@ -567,6 +632,19 @@
       "industry": "51 Information",
       "state": "CA",
       "_is_new": false
+    },
+    {
+      "company": "Constellis, LLC (5130 N. Clark Ave.)",
+      "notice_date": "2026-09-29",
+      "effective_date": "2026-10-31",
+      "employees": 5,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "5130 N. Clark Ave.  Lakewood CA 90712",
+      "industry": "56 Administrative and Support and Waste Management and Remediation",
+      "state": "CA",
+      "_is_new": true
     },
     {
       "company": "Covenant Aviation Security, LLC",
@@ -2354,7 +2432,7 @@
       "notice_date": "2026-08-19",
       "effective_date": "2026-11-02",
       "employees": 73,
-      "layoff_type": "Relocation",
+      "layoff_type": "Relocation Permanent",
       "county": "Ventura County",
       "city": "",
       "address": "2800 Sturgis Road  Oxnard CA 93030",

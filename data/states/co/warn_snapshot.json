@@ -1,9 +1,9 @@
 {
-  "total_records": 864,
-  "total_employees": 88654,
+  "total_records": 865,
+  "total_employees": 88724,
   "date_range_start": "2015-01-02",
   "date_range_end": "2026-10-02",
-  "last_updated": "2026-10-08T03:35:53.035172+00:00",
+  "last_updated": "2026-10-08T18:24:31.207882+00:00",
   "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
   "records": [
     {
@@ -545,6 +545,18 @@
       "city": "",
       "address": "",
       "industry": "62: Healthcare & Social Assistance"
+    },
+    {
+      "state": "CO",
+      "company": "Cemex",
+      "notice_date": "2026-09-22",
+      "effective_date": "2026-11-02",
+      "employees": 70,
+      "layoff_type": "Staff Rebalancing at Lyons Cement Plant",
+      "county": "Boulder",
+      "city": "",
+      "address": "",
+      "industry": "32,7310: Cement Manufacturing"
     },
     {
       "state": "CO",
