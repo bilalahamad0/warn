@@ -1,9 +1,9 @@
 {
-  "total_records": 696,
-  "total_employees": 18848,
+  "total_records": 702,
+  "total_employees": 18939,
   "date_range_start": "2021-01-06",
   "date_range_end": "2026-08-04",
-  "last_updated": "2026-10-10T03:30:54.117919+00:00",
+  "last_updated": "2026-10-10T16:53:57.802258+00:00",
   "source_url": "https://mn.gov/deed/programs-services/dislocated-worker-program/reports/",
   "records": [
     {
@@ -8357,6 +8357,78 @@
       "city": "Mankato",
       "address": "",
       "industry": "Dining Establishments"
+    },
+    {
+      "state": "MN",
+      "company": "Ideal US Talent Worker OPCO LLC",
+      "notice_date": "2026-05-04",
+      "effective_date": "2026-07-01",
+      "employees": 23,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Minneapolis",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MN",
+      "company": "Kaye Mankato Closure",
+      "notice_date": null,
+      "effective_date": "2026-08-31",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "",
+      "address": "",
+      "industry": "Warehousing"
+    },
+    {
+      "state": "MN",
+      "company": "Cub Foods - Rochester West",
+      "notice_date": null,
+      "effective_date": "2026-05-30",
+      "employees": 50,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Rochester",
+      "address": "",
+      "industry": "Retail"
+    },
+    {
+      "state": "MN",
+      "company": "Bauer Brothers Salvage Yard",
+      "notice_date": null,
+      "effective_date": "2026-05-22",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Minneapolis",
+      "address": "",
+      "industry": "Other Services"
+    },
+    {
+      "state": "MN",
+      "company": "Hanny's",
+      "notice_date": null,
+      "effective_date": "2026-06-12",
+      "employees": 15,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Rochester",
+      "address": "",
+      "industry": "Retail"
+    },
+    {
+      "state": "MN",
+      "company": "Mango's Restaurant",
+      "notice_date": null,
+      "effective_date": "2026-05-25",
+      "employees": 1,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Moorhead",
+      "address": "",
+      "industry": ""
     }
   ]
 }

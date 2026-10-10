@@ -1,9 +1,9 @@
 {
-  "total_records": 4891,
-  "total_employees": 674673,
+  "total_records": 4892,
+  "total_employees": 674914,
   "date_range_start": "1987-09-01",
-  "date_range_end": "2026-09-25",
-  "last_updated": "2026-10-09T17:56:07.554619+00:00",
+  "date_range_end": "2026-09-30",
+  "last_updated": "2026-10-10T03:24:55.672476+00:00",
   "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
   "records": [
     {
@@ -635,7 +635,7 @@
       "company": "INEOS Joliet, LLC",
       "notice_date": "2024-04-03",
       "effective_date": null,
-      "employees": 142,
+      "employees": 208,
       "layoff_type": "Mass Layoff",
       "county": "Will County",
       "city": "Channahon",
@@ -4325,6 +4325,18 @@
       "city": "Arlington Heights",
       "address": "1625 S Arlington Heights Rd",
       "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "IL",
+      "company": "DSV Contract Logistics, LLC (at 3PL Logistics)",
+      "notice_date": "2026-09-30",
+      "effective_date": null,
+      "employees": 175,
+      "layoff_type": "Mass Layoff",
+      "county": "Madison County",
+      "city": "Edwardsville",
+      "address": "3049 Westway Dr.",
+      "industry": "Transportation and Warehousing"
     },
     {
       "state": "IL",
