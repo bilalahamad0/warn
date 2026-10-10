@@ -1,9 +1,9 @@
 {
-  "total_records": 25,
-  "total_employees": 3103,
-  "date_range_start": "2025-10-09",
+  "total_records": 24,
+  "total_employees": 3034,
+  "date_range_start": "2025-10-17",
   "date_range_end": "2026-10-01",
-  "last_updated": "2026-10-09T03:41:37.988139+00:00",
+  "last_updated": "2026-10-09T17:52:39.912838+00:00",
   "source_url": "https://dolpublicdocumentlibrary.ct.gov/CsblrCategory?prefix=%2Frapid_response%2Fwarn_documents",
   "records": [
     {
@@ -291,18 +291,6 @@
       "layoff_type": "",
       "county": "",
       "city": "Remote",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "CT",
-      "company": "ImageFIRST Healthcare Laundry Specialists, LLC",
-      "notice_date": "2025-10-09",
-      "effective_date": "2025-12-08",
-      "employees": 69,
-      "layoff_type": "",
-      "county": "",
-      "city": "12/08/2025",
       "address": "",
       "industry": ""
     }

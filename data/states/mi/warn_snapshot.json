@@ -3,7 +3,7 @@
   "total_employees": 15484,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-10-09T03:50:24.368521+00:00",
+  "last_updated": "2026-10-09T18:01:50.413183+00:00",
   "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
   "records": [
     {
@@ -152,18 +152,6 @@
     },
     {
       "state": "MI",
-      "company": "Fifth Third Bank",
-      "notice_date": null,
-      "effective_date": "2026-09-11",
-      "employees": 234,
-      "layoff_type": "Mass layoff",
-      "county": "Oakland",
-      "city": "",
-      "address": "3701 Hamlin Road, Auburn Hills, MI 48326",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "Republic National Distributing Company (RNDC)",
       "notice_date": null,
       "effective_date": "2026-08-17",
@@ -172,6 +160,18 @@
       "county": "Delta, Grand Traverse, Kent, Saginaw, Wayne",
       "city": "",
       "address": "2101 North 19 th St., Escanaba, MI 49829; 4495 Airwest Drive SE, Grand Rapids, MI 49512; 13000 Eckles Road, Livonia, MI 48150; 3460 E. Washington Road, Saginaw, MI 48601; 3055 Cass Road, Traverse City, MI 49684",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Fifth Third Bank",
+      "notice_date": null,
+      "effective_date": "2026-09-11",
+      "employees": 234,
+      "layoff_type": "Mass layoff",
+      "county": "Oakland",
+      "city": "",
+      "address": "3701 Hamlin Road, Auburn Hills, MI 48326",
       "industry": ""
     },
     {

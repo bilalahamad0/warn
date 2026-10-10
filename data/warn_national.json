@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-09T18:07:15.017023+00:00",
+  "last_updated": "2026-10-10T03:35:29.144697+00:00",
   "states_live": 47,
-  "total_records": 60553,
-  "total_employees": 6519714,
+  "total_records": 60556,
+  "total_employees": 6520072,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -99,8 +99,8 @@
       "name": "Illinois",
       "agency": "Illinois Department of Commerce and Economic Opportunity",
       "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
-      "total_records": 4886,
-      "total_employees": 674664
+      "total_records": 4887,
+      "total_employees": 674905
     },
     "IN": {
       "name": "Indiana",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1366,
-      "total_employees": 115871
+      "total_records": 1367,
+      "total_employees": 115910
     },
     "ME": {
       "name": "Maine",
@@ -232,8 +232,8 @@
       "name": "Ohio",
       "agency": "Ohio Department of Job and Family Services",
       "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
-      "total_records": 1262,
-      "total_employees": 172224
+      "total_records": 1263,
+      "total_employees": 172302
     },
     "OK": {
       "name": "Oklahoma",
@@ -281129,18 +281129,6 @@
     },
     {
       "state": "IL",
-      "company": "INEOS Joliet, LLC",
-      "notice_date": "2024-04-03",
-      "effective_date": null,
-      "employees": 142,
-      "layoff_type": "Mass Layoff",
-      "county": "Will County",
-      "city": "Channahon",
-      "address": "23425 Amoco Road",
-      "industry": "Manufacturing"
-    },
-    {
-      "state": "IL",
       "company": "Quaker Manufacturing LLC",
       "notice_date": "2024-04-08",
       "effective_date": null,
@@ -339124,6 +339112,30 @@
       "industry": "Information"
     },
     {
+      "state": "IL",
+      "company": "INEOS Joliet, LLC",
+      "notice_date": "2024-04-03",
+      "effective_date": null,
+      "employees": 208,
+      "layoff_type": "Mass Layoff",
+      "county": "Will County",
+      "city": "Channahon",
+      "address": "23425 Amoco Road",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "IL",
+      "company": "DSV Contract Logistics, LLC (at 3PL Logistics)",
+      "notice_date": "2026-09-30",
+      "effective_date": null,
+      "employees": 175,
+      "layoff_type": "Mass Layoff",
+      "county": "Madison County",
+      "city": "Edwardsville",
+      "address": "3049 Westway Dr.",
+      "industry": "Transportation and Warehousing"
+    },
+    {
       "state": "IN",
       "company": "Thyssenkrupp Presta North America",
       "notice_date": "2026-06-30",
@@ -388791,7 +388803,7 @@
       "notice_date": "2026-10-06",
       "effective_date": "2026-10-06",
       "employees": 33,
-      "layoff_type": "Mass Layoff- No Recall",
+      "layoff_type": "Mass Layoff - No Recall",
       "county": "Prince George\u2019s County",
       "city": "",
       "address": "120 Waterfront Street, Suite 500 Oxon Hill, MD 20745",
@@ -388808,6 +388820,18 @@
       "city": "",
       "address": "7100 Wisconsin Avenue Bethesda, MD 20815",
       "industry": "722511"
+    },
+    {
+      "state": "MD",
+      "company": "Provider Partners Management Services, LLC",
+      "notice_date": "2026-10-07",
+      "effective_date": "2026-12-07",
+      "employees": 39,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Howard County",
+      "city": "",
+      "address": "8820 Columbia 100 Parkway, Suite 430 Columbia, MD 21045",
+      "industry": "541611"
     },
     {
       "state": "ME",
@@ -538407,6 +538431,18 @@
       "layoff_type": "Closure",
       "county": "Cuyahoga",
       "city": "Cleveland",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Markdom Plastics USA Inc",
+      "notice_date": "2026-10-09",
+      "effective_date": null,
+      "employees": 78,
+      "layoff_type": "Closure",
+      "county": "Huron",
+      "city": "Bellevue",
       "address": "",
       "industry": ""
     },

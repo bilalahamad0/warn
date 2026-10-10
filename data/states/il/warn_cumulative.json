@@ -1,9 +1,9 @@
 {
-  "total_records": 4886,
-  "total_employees": 674664,
+  "total_records": 4887,
+  "total_employees": 674905,
   "date_range_start": "1987-09-01",
-  "date_range_end": "2026-09-25",
-  "last_updated": "2026-10-09T17:56:07.603564+00:00",
+  "date_range_end": "2026-09-30",
+  "last_updated": "2026-10-10T03:24:55.714536+00:00",
   "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
   "records": [
     {
@@ -640,18 +640,6 @@
       "county": "Kankakee County",
       "city": "Bradley",
       "address": "1201 North Kinzie Ave.",
-      "industry": "Manufacturing"
-    },
-    {
-      "state": "IL",
-      "company": "INEOS Joliet, LLC",
-      "notice_date": "2024-04-03",
-      "effective_date": null,
-      "employees": 142,
-      "layoff_type": "Mass Layoff",
-      "county": "Will County",
-      "city": "Channahon",
-      "address": "23425 Amoco Road",
       "industry": "Manufacturing"
     },
     {
@@ -58637,6 +58625,30 @@
       "city": "Schaumburg",
       "address": "50 Commerce Dr., Suite 130",
       "industry": "Information"
+    },
+    {
+      "state": "IL",
+      "company": "INEOS Joliet, LLC",
+      "notice_date": "2024-04-03",
+      "effective_date": null,
+      "employees": 208,
+      "layoff_type": "Mass Layoff",
+      "county": "Will County",
+      "city": "Channahon",
+      "address": "23425 Amoco Road",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "IL",
+      "company": "DSV Contract Logistics, LLC (at 3PL Logistics)",
+      "notice_date": "2026-09-30",
+      "effective_date": null,
+      "employees": 175,
+      "layoff_type": "Mass Layoff",
+      "county": "Madison County",
+      "city": "Edwardsville",
+      "address": "3049 Westway Dr.",
+      "industry": "Transportation and Warehousing"
     }
   ]
 }

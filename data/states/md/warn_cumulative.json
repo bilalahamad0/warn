@@ -1,9 +1,9 @@
 {
-  "total_records": 1366,
-  "total_employees": 115871,
+  "total_records": 1367,
+  "total_employees": 115910,
   "date_range_start": "2010-01-07",
-  "date_range_end": "2026-10-06",
-  "last_updated": "2026-10-09T18:00:10.257637+00:00",
+  "date_range_end": "2026-10-07",
+  "last_updated": "2026-10-10T03:28:43.734426+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -16380,7 +16380,7 @@
       "notice_date": "2026-10-06",
       "effective_date": "2026-10-06",
       "employees": 33,
-      "layoff_type": "Mass Layoff- No Recall",
+      "layoff_type": "Mass Layoff - No Recall",
       "county": "Prince George\u2019s County",
       "city": "",
       "address": "120 Waterfront Street, Suite 500 Oxon Hill, MD 20745",
@@ -16397,6 +16397,18 @@
       "city": "",
       "address": "7100 Wisconsin Avenue Bethesda, MD 20815",
       "industry": "722511"
+    },
+    {
+      "state": "MD",
+      "company": "Provider Partners Management Services, LLC",
+      "notice_date": "2026-10-07",
+      "effective_date": "2026-12-07",
+      "employees": 39,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Howard County",
+      "city": "",
+      "address": "8820 Columbia 100 Parkway, Suite 430 Columbia, MD 21045",
+      "industry": "541611"
     }
   ]
 }
