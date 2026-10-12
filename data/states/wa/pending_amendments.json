@@ -1,0 +1,21 @@
+{
+  "count": 1,
+  "last_updated": "2026-10-12T20:59:41.587110+00:00",
+  "amendments": [
+    {
+      "company": "T-Mobile USA, Inc.",
+      "county": "",
+      "city": "Seattle, Bellingham, Bothell, Vancouver, Bellevue, Kennewick, Tacoma, and Yakima",
+      "notice_date": "2026-08-26",
+      "effective_date": "2026-09-21",
+      "employees": 159,
+      "old_effective_date": "2026-09-21",
+      "new_effective_date": "2026-09-21",
+      "old_employees": 77,
+      "new_employees": 159,
+      "key": "T-Mobile USA, Inc.__2026-09-21__159",
+      "held_since": "2026-10-12T20:59:41.587077+00:00",
+      "revisions": 1
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 {
   "total_records": 1544,
-  "total_employees": 251198,
+  "total_employees": 251280,
   "date_range_start": "2004-01-12",
   "date_range_end": "2026-10-07",
-  "last_updated": "2026-10-12T03:34:43.122646+00:00",
+  "last_updated": "2026-10-12T20:58:54.847007+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -575,7 +575,7 @@
       "company": "T-Mobile USA, Inc.",
       "notice_date": "2026-08-26",
       "effective_date": "2026-09-21",
-      "employees": 77,
+      "employees": 159,
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Seattle, Bellingham, Bothell, Vancouver, Bellevue, Kennewick, Tacoma, and Yakima",

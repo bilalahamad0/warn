@@ -1,9 +1,9 @@
 {
   "total_records": 1545,
-  "total_employees": 251321,
+  "total_employees": 251403,
   "date_range_start": "2004-01-12",
   "date_range_end": "2026-10-07",
-  "last_updated": "2026-10-12T03:34:43.140245+00:00",
+  "last_updated": "2026-10-12T20:58:54.856659+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -17972,18 +17972,6 @@
     },
     {
       "state": "WA",
-      "company": "T-Mobile USA, Inc.",
-      "notice_date": "2026-08-26",
-      "effective_date": "2026-09-21",
-      "employees": 77,
-      "layoff_type": "Layoff Permanent",
-      "county": "",
-      "city": "Seattle, Bellingham, Bothell, Vancouver, Bellevue, Kennewick, Tacoma, and Yakima",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "WA",
       "company": "Columbia Hospitality, Inc",
       "notice_date": "2026-08-28",
       "effective_date": "2026-10-30",
@@ -18543,6 +18531,18 @@
       "layoff_type": "Closure Permanent",
       "county": "",
       "city": "Seattle, Redmond, Vancouver, and Spokane",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "T-Mobile USA, Inc.",
+      "notice_date": "2026-08-26",
+      "effective_date": "2026-09-21",
+      "employees": 159,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Seattle, Bellingham, Bothell, Vancouver, Bellevue, Kennewick, Tacoma, and Yakima",
       "address": "",
       "industry": ""
     }
