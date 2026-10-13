@@ -1,11 +1,23 @@
 {
-  "total_records": 126,
+  "total_records": 127,
   "total_employees": 14794,
   "date_range_start": "2009-03-04",
-  "date_range_end": "2026-06-26",
-  "last_updated": "2026-10-13T04:46:18.345984+00:00",
+  "date_range_end": "2026-10-08",
+  "last_updated": "2026-10-13T19:09:26.186808+00:00",
   "source_url": "https://dlt.ri.gov/employers/worker-adjustment-and-retraining-notification-warn",
   "records": [
+    {
+      "state": "RI",
+      "company": "Hasbro, Inc.",
+      "notice_date": "2026-10-08",
+      "effective_date": "2026-12-24",
+      "employees": 0,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Pawtucket, RI",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "RI",
       "company": "Conduent",

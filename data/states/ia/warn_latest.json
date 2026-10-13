@@ -1,9 +1,9 @@
 {
   "total_records": 945,
-  "total_employees": 51824,
+  "total_employees": 51815,
   "date_range_start": "2011-01-13",
-  "date_range_end": "2026-09-30",
-  "last_updated": "2026-10-13T04:37:36.622030+00:00",
+  "date_range_end": "2026-10-09",
+  "last_updated": "2026-10-13T18:59:02.404491+00:00",
   "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
   "records": [
     {
@@ -1156,6 +1156,18 @@
       "county": "Harrision",
       "city": "Missouri Valley",
       "address": "1965 Hwy 30",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "IA",
+      "company": "Winnebago Industries",
+      "notice_date": "2026-10-09",
+      "effective_date": "2026-11-09",
+      "employees": 51,
+      "layoff_type": "Mass Layoff",
+      "county": "Winnebago",
+      "city": "Forest City",
+      "address": "605 W Crystal Lake Rd",
       "industry": "Manufacturing"
     },
     {
@@ -7217,18 +7229,6 @@
       "city": "Marshalltown",
       "address": "200 S 12th Ave",
       "industry": "Manufacturing"
-    },
-    {
-      "state": "IA",
-      "company": "CHEP Services, LLC",
-      "notice_date": "2021-10-06",
-      "effective_date": "2021-12-05",
-      "employees": 60,
-      "layoff_type": "Mass Layoff",
-      "county": "Linn",
-      "city": "Cedar Rapids",
-      "address": "10950 High Life Court SW",
-      "industry": "Real Estate adn Rental and Leasing"
     },
     {
       "state": "IA",

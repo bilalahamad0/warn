@@ -1,9 +1,9 @@
 {
-  "total_records": 998,
-  "total_employees": 140698,
+  "total_records": 999,
+  "total_employees": 140776,
   "date_range_start": "2015-01-05",
   "date_range_end": "2026-10-09",
-  "last_updated": "2026-10-13T04:46:08.340730+00:00",
+  "last_updated": "2026-10-13T19:09:15.363562+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
     {
@@ -11438,6 +11438,18 @@
       "employees": 78,
       "layoff_type": "Closure",
       "county": "Huron",
+      "city": "Bellevue",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Markdom Plastics USA Inc",
+      "notice_date": "2026-10-09",
+      "effective_date": null,
+      "employees": 78,
+      "layoff_type": "Closure",
+      "county": "Sandusky",
       "city": "Bellevue",
       "address": "",
       "industry": ""

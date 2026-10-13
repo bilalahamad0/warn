@@ -1,0 +1,21 @@
+{
+  "count": 1,
+  "last_updated": "2026-10-13T19:13:32.656088+00:00",
+  "amendments": [
+    {
+      "company": "Areas USA MCO, LLC (GastroHub-Orlando International Airport)",
+      "county": "",
+      "city": "ORLANDO",
+      "notice_date": "2026-05-06",
+      "effective_date": "2026-11-30",
+      "employees": 101,
+      "old_effective_date": "2026-06-30",
+      "new_effective_date": "2026-11-30",
+      "old_employees": 101,
+      "new_employees": 101,
+      "key": "Areas USA MCO, LLC (GastroHub-Orlando International Airport)__2026-11-30__101",
+      "held_since": "2026-10-13T19:13:32.656043+00:00",
+      "revisions": 1
+    }
+  ]
+}

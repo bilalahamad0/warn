@@ -1056,6 +1056,17 @@
   "industry": "Manufacturing"
  },
  {
+  "company": "Winnebago Industries",
+  "address": "605 W Crystal Lake Rd",
+  "city": "Forest City ",
+  "county": "Winnebago",
+  "layoff_type": "Mass Layoff ",
+  "employees": 51,
+  "notice_date": "2026-10-09 00:00:00",
+  "effective_date": "2026-11-09 00:00:00",
+  "industry": "Manufacturing"
+ },
+ {
   "company": "John Deere Ottumwa Works ",
   "address": "928 E Vine St",
   "city": "Ottumwa",
@@ -6609,17 +6620,6 @@
   "notice_date": "12/20/2022",
   "effective_date": "2023-01-16 00:00:00",
   "industry": "Manufacturing "
- },
- {
-  "company": "CHEP Services, LLC ",
-  "address": "10950 High Life Court SW",
-  "city": "Cedar Rapids",
-  "county": "Linn",
-  "layoff_type": "Mass Layoff ",
-  "employees": 60,
-  "notice_date": "10/06/2021",
-  "effective_date": "2021-12-05 00:00:00",
-  "industry": "Real Estate adn Rental and Leasing "
  },
  {
   "company": "Sequel Youth Services of Forest Ridge Youth Services, LLC",

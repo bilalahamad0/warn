@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-13T04:49:21.295844+00:00",
+  "last_updated": "2026-10-13T19:12:33.811524+00:00",
   "states_live": 47,
-  "total_records": 60562,
-  "total_employees": 6520245,
+  "total_records": 60571,
+  "total_employees": 6520729,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -85,8 +85,8 @@
       "name": "Iowa",
       "agency": "Iowa Workforce Development",
       "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
-      "total_records": 939,
-      "total_employees": 51972
+      "total_records": 940,
+      "total_employees": 52023
     },
     "ID": {
       "name": "Idaho",
@@ -99,8 +99,8 @@
       "name": "Illinois",
       "agency": "Illinois Department of Commerce and Economic Opportunity",
       "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
-      "total_records": 4887,
-      "total_employees": 674905
+      "total_records": 4888,
+      "total_employees": 675024
     },
     "IN": {
       "name": "Indiana",
@@ -120,8 +120,8 @@
       "name": "Kentucky",
       "agency": "Kentucky Career Center (Education & Labor Cabinet)",
       "source_url": "https://kyworks.ky.gov/Services/Pages/Rapid-Response-Layoffs-and-Closures.aspx",
-      "total_records": 1237,
-      "total_employees": 156506
+      "total_records": 1239,
+      "total_employees": 156719
     },
     "LA": {
       "name": "Louisiana",
@@ -225,15 +225,15 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 5354,
-      "total_employees": 434289
+      "total_records": 5357,
+      "total_employees": 434312
     },
     "OH": {
       "name": "Ohio",
       "agency": "Ohio Department of Job and Family Services",
       "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
-      "total_records": 1263,
-      "total_employees": 172302
+      "total_records": 1264,
+      "total_employees": 172380
     },
     "OK": {
       "name": "Oklahoma",
@@ -260,7 +260,7 @@
       "name": "Rhode Island",
       "agency": "Rhode Island Department of Labor and Training",
       "source_url": "https://dlt.ri.gov/employers/worker-adjustment-and-retraining-notification-warn",
-      "total_records": 126,
+      "total_records": 127,
       "total_employees": 14794
     },
     "SC": {
@@ -202949,18 +202949,6 @@
     },
     {
       "state": "FL",
-      "company": "Areas USA MCO, LLC (GastroHub-Orlando International Airport)",
-      "notice_date": "2026-05-06",
-      "effective_date": "2026-06-30",
-      "employees": 101,
-      "layoff_type": "",
-      "county": "",
-      "city": "ORLANDO",
-      "address": "One Airport Blvd",
-      "industry": "Accommodation and Food Services"
-    },
-    {
-      "state": "FL",
       "company": "Maximus Global Services",
       "notice_date": "2026-05-06",
       "effective_date": "2026-05-03",
@@ -204494,6 +204482,18 @@
       "city": "HIALEAH",
       "address": "190 W. 28th Street",
       "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "FL",
+      "company": "Areas USA MCO, LLC (GastroHub-Orlando International Airport)",
+      "notice_date": "2026-05-06",
+      "effective_date": "2026-11-30",
+      "employees": 101,
+      "layoff_type": "",
+      "county": "",
+      "city": "ORLANDO",
+      "address": "One Airport Blvd",
+      "industry": "Accommodation and Food Services"
     },
     {
       "state": "GA",
@@ -278092,6 +278092,18 @@
       "industry": "Manufacturing"
     },
     {
+      "state": "IA",
+      "company": "Winnebago Industries",
+      "notice_date": "2026-10-09",
+      "effective_date": "2026-11-09",
+      "employees": 51,
+      "layoff_type": "Mass Layoff",
+      "county": "Winnebago",
+      "city": "Forest City",
+      "address": "605 W Crystal Lake Rd",
+      "industry": "Manufacturing"
+    },
+    {
       "state": "ID",
       "company": "Fortrex",
       "notice_date": "2026-07-01",
@@ -282473,18 +282485,6 @@
     },
     {
       "state": "IL",
-      "company": "Panduit Corp.",
-      "notice_date": "2025-02-11",
-      "effective_date": null,
-      "employees": 178,
-      "layoff_type": "Plant Closure",
-      "county": "DeKalb County",
-      "city": "DeKalb",
-      "address": "1700 E Fairview Dr",
-      "industry": "Manufacturing"
-    },
-    {
-      "state": "IL",
       "company": "Schirm USA",
       "notice_date": "2025-02-07",
       "effective_date": null,
@@ -284174,18 +284174,6 @@
       "city": "Plainfield",
       "address": "24120 Fort Beggs Dr.",
       "industry": "Accommodation and Food Services"
-    },
-    {
-      "state": "IL",
-      "company": "Dana Incorporated",
-      "notice_date": "2026-04-10",
-      "effective_date": null,
-      "employees": 78,
-      "layoff_type": "Plant Closure",
-      "county": "Crawford County",
-      "city": "Robinson",
-      "address": "1201 E Victor Dana Dr.",
-      "industry": "Manufacturing"
     },
     {
       "state": "IL",
@@ -339136,6 +339124,42 @@
       "industry": "Transportation and Warehousing"
     },
     {
+      "state": "IL",
+      "company": "Panduit Corp.",
+      "notice_date": "2025-02-11",
+      "effective_date": null,
+      "employees": 162,
+      "layoff_type": "Plant Closure",
+      "county": "DeKalb County",
+      "city": "DeKalb",
+      "address": "1700 E Fairview Dr",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "IL",
+      "company": "Dana Incorporated",
+      "notice_date": "2026-04-10",
+      "effective_date": null,
+      "employees": 92,
+      "layoff_type": "Plant Closure",
+      "county": "Crawford County",
+      "city": "Robinson",
+      "address": "1201 E Victor Dana Dr.",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "IL",
+      "company": "Success Lending, LLC",
+      "notice_date": "2026-10-02",
+      "effective_date": null,
+      "employees": 121,
+      "layoff_type": "Plant Closure",
+      "county": "Cook County",
+      "city": "Schaumburg",
+      "address": "1750 East Golf Rd., Suite 240",
+      "industry": "Finance and Insurance"
+    },
+    {
       "state": "IN",
       "company": "Thyssenkrupp Presta North America",
       "notice_date": "2026-06-30",
@@ -367244,6 +367268,30 @@
       "city": "",
       "address": "",
       "industry": "541330"
+    },
+    {
+      "state": "KY",
+      "company": "RNDC of Kentucky, LLC",
+      "notice_date": "2026-10-12",
+      "effective_date": "2026-12-08",
+      "employees": 7,
+      "layoff_type": "Layoff",
+      "county": "Jefferson County - Louisville",
+      "city": "",
+      "address": "",
+      "industry": "424820"
+    },
+    {
+      "state": "KY",
+      "company": "RNDC of Kentucky, LLC",
+      "notice_date": "2026-10-12",
+      "effective_date": "2026-10-16",
+      "employees": 206,
+      "layoff_type": "Layoff",
+      "county": "Jefferson County - Louisville",
+      "city": "",
+      "address": "",
+      "industry": "424820"
     },
     {
       "state": "LA",
@@ -520496,6 +520544,42 @@
     },
     {
       "state": "NY",
+      "company": "Air Company Holdings Inc.",
+      "notice_date": "2026-05-04",
+      "effective_date": "2026-08-02",
+      "employees": 4,
+      "layoff_type": "Closure Permanent",
+      "county": "Kings",
+      "city": "",
+      "address": "10 Grand Street Brooklyn, NY, 11211",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Air Company Holdings Inc.",
+      "notice_date": "2026-05-04",
+      "effective_date": "2026-08-02",
+      "employees": 14,
+      "layoff_type": "Closure Permanent",
+      "county": "Kings",
+      "city": "",
+      "address": "94 Scott Ave Brooklyn, NY, 11237",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Air Company Holdings Inc.",
+      "notice_date": "2026-05-04",
+      "effective_date": "2026-08-02",
+      "employees": 5,
+      "layoff_type": "Closure Permanent",
+      "county": "Kings",
+      "city": "",
+      "address": "456 Johnson Avenue 420 Brooklyn, NY, 11237",
+      "industry": ""
+    },
+    {
+      "state": "NY",
       "company": "Cardionet, LLC. an affiliate of Philips North America, LLC.",
       "notice_date": "2025-04-01",
       "effective_date": "2025-06-30",
@@ -538514,6 +538598,18 @@
       "employees": 78,
       "layoff_type": "Closure",
       "county": "Huron",
+      "city": "Bellevue",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Markdom Plastics USA Inc",
+      "notice_date": "2026-10-09",
+      "effective_date": null,
+      "employees": 78,
+      "layoff_type": "Closure",
+      "county": "Sandusky",
       "city": "Bellevue",
       "address": "",
       "industry": ""
@@ -565947,6 +566043,18 @@
       "layoff_type": "Layoff",
       "county": "",
       "city": "Lincoln",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "RI",
+      "company": "Hasbro, Inc.",
+      "notice_date": "2026-10-08",
+      "effective_date": "2026-12-24",
+      "employees": 0,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Pawtucket, RI",
       "address": "",
       "industry": ""
     },
