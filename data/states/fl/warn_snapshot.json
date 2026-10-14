@@ -3,7 +3,7 @@
   "total_employees": 36425,
   "date_range_start": "2025-01-02",
   "date_range_end": "2026-10-07",
-  "last_updated": "2026-10-13T04:37:00.976933+00:00",
+  "last_updated": "2026-10-13T18:58:21.098540+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -4438,7 +4438,7 @@
       "state": "FL",
       "company": "Areas USA MCO, LLC (GastroHub-Orlando International Airport)",
       "notice_date": "2026-05-06",
-      "effective_date": "2026-06-30",
+      "effective_date": "2026-11-30",
       "employees": 101,
       "layoff_type": "",
       "county": "",

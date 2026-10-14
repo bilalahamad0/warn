@@ -1,9 +1,9 @@
 {
-  "total_records": 1132,
-  "total_employees": 131964,
+  "total_records": 1133,
+  "total_employees": 132082,
   "date_range_start": "2010-07-29",
-  "date_range_end": "2026-10-02",
-  "last_updated": "2026-10-13T19:09:43.819047+00:00",
+  "date_range_end": "2026-10-07",
+  "last_updated": "2026-10-14T02:55:21.155060+00:00",
   "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
   "records": [
     {
@@ -13587,6 +13587,18 @@
       "layoff_type": "Layoff",
       "county": "",
       "city": "Arlington",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "The Washington Post",
+      "notice_date": "2026-10-07",
+      "effective_date": "2026-12-31",
+      "employees": 118,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Springfield",
       "address": "",
       "industry": ""
     }

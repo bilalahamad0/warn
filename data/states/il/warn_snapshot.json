@@ -1,9 +1,9 @@
 {
-  "total_records": 4892,
-  "total_employees": 674914,
+  "total_records": 4893,
+  "total_employees": 675033,
   "date_range_start": "1987-09-01",
-  "date_range_end": "2026-09-30",
-  "last_updated": "2026-10-13T04:38:00.832067+00:00",
+  "date_range_end": "2026-10-02",
+  "last_updated": "2026-10-13T18:59:29.865322+00:00",
   "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
   "records": [
     {
@@ -1991,7 +1991,7 @@
       "company": "Panduit Corp.",
       "notice_date": "2025-02-11",
       "effective_date": null,
-      "employees": 178,
+      "employees": 162,
       "layoff_type": "Plant Closure",
       "county": "DeKalb County",
       "city": "DeKalb",
@@ -3755,7 +3755,7 @@
       "company": "Dana Incorporated",
       "notice_date": "2026-04-10",
       "effective_date": null,
-      "employees": 78,
+      "employees": 92,
       "layoff_type": "Plant Closure",
       "county": "Crawford County",
       "city": "Robinson",
@@ -4337,6 +4337,18 @@
       "city": "Edwardsville",
       "address": "3049 Westway Dr.",
       "industry": "Transportation and Warehousing"
+    },
+    {
+      "state": "IL",
+      "company": "Success Lending, LLC",
+      "notice_date": "2026-10-02",
+      "effective_date": null,
+      "employees": 121,
+      "layoff_type": "Plant Closure",
+      "county": "Cook County",
+      "city": "Schaumburg",
+      "address": "1750 East Golf Rd., Suite 240",
+      "industry": "Finance and Insurance"
     },
     {
       "state": "IL",
