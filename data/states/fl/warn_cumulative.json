@@ -1,9 +1,9 @@
 {
-  "total_records": 473,
-  "total_employees": 35538,
+  "total_records": 474,
+  "total_employees": 35620,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-10-07",
-  "last_updated": "2026-10-14T02:46:29.735838+00:00",
+  "date_range_end": "2026-10-13",
+  "last_updated": "2026-10-14T16:22:25.150609+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -5681,6 +5681,18 @@
       "city": "ORLANDO",
       "address": "One Airport Blvd",
       "industry": "Accommodation and Food Services"
+    },
+    {
+      "state": "FL",
+      "company": "Builders FirstSource",
+      "notice_date": "2026-10-13",
+      "effective_date": "2026-12-12",
+      "employees": 82,
+      "layoff_type": "",
+      "county": "",
+      "city": "JACKSONVILLE",
+      "address": "2175 W 18th Street",
+      "industry": "Manufacturing"
     }
   ]
 }

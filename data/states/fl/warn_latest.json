@@ -1,9 +1,9 @@
 {
-  "total_records": 481,
-  "total_employees": 36425,
+  "total_records": 482,
+  "total_employees": 36507,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-10-07",
-  "last_updated": "2026-10-14T02:46:29.729100+00:00",
+  "date_range_end": "2026-10-13",
+  "last_updated": "2026-10-14T16:22:25.141334+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -3245,6 +3245,18 @@
       "city": "BOCA RATON",
       "address": "4700 Exchange Court, Suite 125",
       "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "FL",
+      "company": "Builders FirstSource",
+      "notice_date": "2026-10-13",
+      "effective_date": "2026-12-12",
+      "employees": 82,
+      "layoff_type": "",
+      "county": "",
+      "city": "JACKSONVILLE",
+      "address": "2175 W 18th Street",
+      "industry": "Manufacturing"
     },
     {
       "state": "FL",

@@ -1,9 +1,9 @@
 {
-  "total_records": 4808,
-  "total_employees": 419383,
+  "total_records": 4809,
+  "total_employees": 419454,
   "date_range_start": "2016-01-04",
   "date_range_end": "2026-10-02",
-  "last_updated": "2026-10-14T02:54:55.070280+00:00",
+  "last_updated": "2026-10-14T16:32:18.939094+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -57700,6 +57700,18 @@
       "county": "Kings",
       "city": "",
       "address": "456 Johnson Avenue 420 Brooklyn, NY, 11237",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Mezz57th, LLC",
+      "notice_date": "2026-09-08",
+      "effective_date": "2026-12-07",
+      "employees": 71,
+      "layoff_type": "Closure Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "36 East 57th Street Floor 1 M New York, NY, 10022",
       "industry": ""
     }
   ]
