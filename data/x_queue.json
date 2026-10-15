@@ -1,44 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-10-15T02:28:47.512200+00:00",
+  "updated_at": "2026-10-15T16:21:52.772416+00:00",
   "candidates": [
-    {
-      "id": "3c786cd119a1",
-      "created_at": "2026-09-15T16:19:43.726999+00:00",
-      "status": "expired",
-      "company": "Uber",
-      "display": "Uber",
-      "employees": 137,
-      "states": [
-        "CA"
-      ],
-      "per_state": {
-        "CA": 137
-      },
-      "sites": 2,
-      "card": {
-        "place": "2 sites in California",
-        "effective": "Nov 2, 2026",
-        "employees": 137
-      },
-      "arm": "tech",
-      "reason": "tech brand, 137 >= 25",
-      "text": "Uber filed WARN notices for 137 job cuts across 2 sites in California.\n\nFirst effective date Nov 2, 2026.\n\n#layoffs #California",
-      "thread": [],
-      "weighted_len": 127,
-      "warnings": [],
-      "keys": [
-        "CA:Uber Technologies, Inc. - 200 Mathilda Place__2026-11-02__94",
-        "CA:Uber technologies, Inc. - 190 Mathilda Place__2026-11-02__43"
-      ],
-      "approved_by": null,
-      "approved_at": null,
-      "rejected_reason": null,
-      "tweet_id": null,
-      "posted_at": null,
-      "attempts": 0,
-      "last_error": null
-    },
     {
       "id": "318eb39e6433",
       "created_at": "2026-09-16T16:19:51.020468+00:00",
@@ -1461,7 +1424,7 @@
     {
       "id": "fdc4e78deb0a",
       "created_at": "2026-10-08T03:51:07.914024+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Transdev",
       "display": "Transdev",
       "employees": 0,

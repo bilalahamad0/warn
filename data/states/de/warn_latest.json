@@ -1,9 +1,9 @@
 {
-  "total_records": 41,
-  "total_employees": 6241,
+  "total_records": 42,
+  "total_employees": 6386,
   "date_range_start": "2019-06-05",
-  "date_range_end": "2026-08-10",
-  "last_updated": "2026-10-14T16:20:50.081854+00:00",
+  "date_range_end": "2026-10-06",
+  "last_updated": "2026-10-15T16:07:17.549147+00:00",
   "source_url": "https://joblink.delaware.gov/search/warn_lookups",
   "records": [
     {
@@ -40,6 +40,18 @@
       "county": "",
       "city": "New York",
       "address": "277 Park Ave; New York, New York 10172",
+      "industry": ""
+    },
+    {
+      "state": "DE",
+      "company": "Fortrex",
+      "notice_date": "2026-10-06",
+      "effective_date": null,
+      "employees": 145,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Dunwoody",
+      "address": "1050 Crown Pointe Pkwy; Dunwoody, Georgia 30338",
       "industry": ""
     },
     {

@@ -1,9 +1,9 @@
 {
-  "total_records": 59,
+  "total_records": 60,
   "total_employees": 2985,
   "date_range_start": "2021-05-25",
-  "date_range_end": "2026-08-19",
-  "last_updated": "2026-10-15T02:27:54.181373+00:00",
+  "date_range_end": "2026-10-07",
+  "last_updated": "2026-10-15T16:20:42.093754+00:00",
   "source_url": "https://workforcewv.org/job-seeker/layoffs-downsizing/warn-listing/",
   "records": [
     {
@@ -706,6 +706,18 @@
       "state": "WV",
       "company": "ECM Energy Services",
       "notice_date": "2026-08-19",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WV",
+      "company": "Panther Creek Mining",
+      "notice_date": "2026-10-07",
       "effective_date": null,
       "employees": 0,
       "layoff_type": "",

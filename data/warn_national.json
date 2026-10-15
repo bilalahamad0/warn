@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-15T02:27:54.690953+00:00",
+  "last_updated": "2026-10-15T16:20:42.805183+00:00",
   "states_live": 47,
-  "total_records": 60574,
-  "total_employees": 6521000,
+  "total_records": 60578,
+  "total_employees": 6521500,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -57,15 +57,15 @@
       "name": "Delaware",
       "agency": "Delaware Department of Labor",
       "source_url": "https://joblink.delaware.gov/search/warn_lookups",
-      "total_records": 41,
-      "total_employees": 6241
+      "total_records": 42,
+      "total_employees": 6386
     },
     "FL": {
       "name": "Florida",
       "agency": "Florida Department of Commerce (FloridaCommerce)",
       "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
-      "total_records": 474,
-      "total_employees": 35620
+      "total_records": 475,
+      "total_employees": 35819
     },
     "GA": {
       "name": "Georgia",
@@ -155,8 +155,8 @@
       "name": "Michigan",
       "agency": "Michigan Department of Labor and Economic Opportunity",
       "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
-      "total_records": 791,
-      "total_employees": 122478
+      "total_records": 792,
+      "total_employees": 122634
     },
     "MN": {
       "name": "Minnesota",
@@ -330,7 +330,7 @@
       "name": "West Virginia",
       "agency": "WorkForce West Virginia",
       "source_url": "https://workforcewv.org/job-seeker/layoffs-downsizing/warn-listing/",
-      "total_records": 59,
+      "total_records": 60,
       "total_employees": 2985
     }
   },
@@ -198820,6 +198820,18 @@
       "industry": ""
     },
     {
+      "state": "DE",
+      "company": "Fortrex",
+      "notice_date": "2026-10-06",
+      "effective_date": null,
+      "employees": 145,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Dunwoody",
+      "address": "1050 Crown Pointe Pkwy; Dunwoody, Georgia 30338",
+      "industry": ""
+    },
+    {
       "state": "FL",
       "company": "Railcrew Xpress",
       "notice_date": "2025-12-22",
@@ -204505,6 +204517,18 @@
       "county": "",
       "city": "JACKSONVILLE",
       "address": "2175 W 18th Street",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "FL",
+      "company": "The Mosaic Company",
+      "notice_date": "2026-10-14",
+      "effective_date": "2026-12-08",
+      "employees": 199,
+      "layoff_type": "",
+      "county": "",
+      "city": "FORT MEADE",
+      "address": "5880 Manley Road",
       "industry": "Manufacturing"
     },
     {
@@ -397288,6 +397312,18 @@
       "county": "Wayne",
       "city": "",
       "address": "160 West Fort St., 5th Floor, Detroit, MI 48226",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Kern J.G. Enterprise, Inc.",
+      "notice_date": null,
+      "effective_date": "2026-08-17",
+      "employees": 156,
+      "layoff_type": "Permanent layoff",
+      "county": "Wayne",
+      "city": "",
+      "address": "44044 Merrill Road, Sterling Heights, MI 48314",
       "industry": ""
     },
     {
@@ -675387,6 +675423,18 @@
       "state": "WV",
       "company": "ECM Energy Services",
       "notice_date": "2026-08-19",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WV",
+      "company": "Panther Creek Mining",
+      "notice_date": "2026-10-07",
       "effective_date": null,
       "employees": 0,
       "layoff_type": "",
