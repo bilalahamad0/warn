@@ -1,43 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T16:36:13.232968+00:00",
+  "updated_at": "2026-10-15T02:28:47.512200+00:00",
   "candidates": [
-    {
-      "id": "1ea179ecdef7",
-      "created_at": "2026-09-14T17:38:39.755525+00:00",
-      "status": "expired",
-      "company": "Fiserv",
-      "display": "Fiserv",
-      "employees": 98,
-      "states": [
-        "NJ"
-      ],
-      "per_state": {
-        "NJ": 98
-      },
-      "sites": 1,
-      "card": {
-        "place": "Berkeley Heights, NJ",
-        "effective": "Sep 11, 2026",
-        "employees": 98
-      },
-      "arm": "brand",
-      "reason": "known brand, 98 >= 50",
-      "text": "Fiserv filed a WARN notice for 98 job cuts in Berkeley Heights, NJ.\n\nEffective Sep 11, 2026.\n\n#layoffs #NewJersey",
-      "thread": [],
-      "weighted_len": 113,
-      "warnings": [],
-      "keys": [
-        "NJ:Fiserv Solutions LLC__2026-09-11__98"
-      ],
-      "approved_by": null,
-      "approved_at": null,
-      "rejected_reason": null,
-      "tweet_id": null,
-      "posted_at": null,
-      "attempts": 0,
-      "last_error": null
-    },
     {
       "id": "3c786cd119a1",
       "created_at": "2026-09-15T16:19:43.726999+00:00",
@@ -1458,7 +1422,7 @@
     {
       "id": "1ce943c41edc",
       "created_at": "2026-10-07T18:33:40.366027+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Starbucks",
       "display": "Starbucks",
       "employees": 69,
