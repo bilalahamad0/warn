@@ -1067,6 +1067,39 @@
   "industry": "Manufacturing"
  },
  {
+  "company": "Wells Fargo",
+  "address": "800 S Jordan Creek Pkwy",
+  "city": "West Des Moines",
+  "county": "Polk",
+  "layoff_type": "Amendment - Additional Employees",
+  "employees": 2,
+  "notice_date": "2026-10-13 00:00:00",
+  "effective_date": "2026-12-12 00:00:00",
+  "industry": "Finance and Insurance "
+ },
+ {
+  "company": "Cambridge Investment Research ",
+  "address": "1776 Pleasant Plain Rd ",
+  "city": "Fairfield ",
+  "county": "Jefferson",
+  "layoff_type": "Mass Layoff ",
+  "employees": 33,
+  "notice_date": "2026-10-12 00:00:00",
+  "effective_date": "2026-11-11 00:00:00",
+  "industry": "Administrative and Support and Waste Management and Remediation Services"
+ },
+ {
+  "company": "Milestone Technologies ",
+  "address": "6200 76th Ave SW",
+  "city": "Cedar Rapids ",
+  "county": "Linn",
+  "layoff_type": "Mass Layoff ",
+  "employees": 20,
+  "notice_date": "2026-10-13 00:00:00",
+  "effective_date": "2026-12-13 00:00:00",
+  "industry": "Professional, Scientific, and Technical Services"
+ },
+ {
   "company": "John Deere Ottumwa Works ",
   "address": "928 E Vine St",
   "city": "Ottumwa",
@@ -6620,17 +6653,6 @@
   "notice_date": "12/20/2022",
   "effective_date": "2023-01-16 00:00:00",
   "industry": "Manufacturing "
- },
- {
-  "company": "Sequel Youth Services of Forest Ridge Youth Services, LLC",
-  "address": "200 6th Street",
-  "city": "Estherville",
-  "county": "Emmet",
-  "layoff_type": "Closing",
-  "employees": 59,
-  "notice_date": "10/12/2021",
-  "effective_date": "2021-11-05 00:00:00",
-  "industry": "Health Care and Social Assistance "
  },
  {
   "company": "TPI Composites",
