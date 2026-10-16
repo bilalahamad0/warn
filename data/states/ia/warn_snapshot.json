@@ -1,9 +1,9 @@
 {
-  "total_records": 945,
-  "total_employees": 51815,
+  "total_records": 947,
+  "total_employees": 51811,
   "date_range_start": "2011-01-13",
-  "date_range_end": "2026-10-09",
-  "last_updated": "2026-10-15T16:09:28.638379+00:00",
+  "date_range_end": "2026-10-13",
+  "last_updated": "2026-10-16T02:18:41.309739+00:00",
   "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
   "records": [
     {
@@ -1169,6 +1169,42 @@
       "city": "Forest City",
       "address": "605 W Crystal Lake Rd",
       "industry": "Manufacturing"
+    },
+    {
+      "state": "IA",
+      "company": "Wells Fargo",
+      "notice_date": "2026-10-13",
+      "effective_date": "2026-12-12",
+      "employees": 2,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Polk",
+      "city": "West Des Moines",
+      "address": "800 S Jordan Creek Pkwy",
+      "industry": "Finance and Insurance"
+    },
+    {
+      "state": "IA",
+      "company": "Cambridge Investment Research",
+      "notice_date": "2026-10-12",
+      "effective_date": "2026-11-11",
+      "employees": 33,
+      "layoff_type": "Mass Layoff",
+      "county": "Jefferson",
+      "city": "Fairfield",
+      "address": "1776 Pleasant Plain Rd",
+      "industry": "Administrative and Support and Waste Management and Remediation Services"
+    },
+    {
+      "state": "IA",
+      "company": "Milestone Technologies",
+      "notice_date": "2026-10-13",
+      "effective_date": "2026-12-13",
+      "employees": 20,
+      "layoff_type": "Mass Layoff",
+      "county": "Linn",
+      "city": "Cedar Rapids",
+      "address": "6200 76th Ave SW",
+      "industry": "Professional, Scientific, and Technical Services"
     },
     {
       "state": "IA",
@@ -7229,18 +7265,6 @@
       "city": "Marshalltown",
       "address": "200 S 12th Ave",
       "industry": "Manufacturing"
-    },
-    {
-      "state": "IA",
-      "company": "Sequel Youth Services of Forest Ridge Youth Services, LLC",
-      "notice_date": "2021-10-12",
-      "effective_date": "2021-11-05",
-      "employees": 59,
-      "layoff_type": "Closing",
-      "county": "Emmet",
-      "city": "Estherville",
-      "address": "200 6th Street",
-      "industry": "Health Care and Social Assistance"
     },
     {
       "state": "IA",

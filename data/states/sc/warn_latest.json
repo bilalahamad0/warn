@@ -1,9 +1,9 @@
 {
-  "total_records": 609,
-  "total_employees": 81819,
+  "total_records": 610,
+  "total_employees": 81887,
   "date_range_start": "2013-02-25",
-  "date_range_end": "2026-10-01",
-  "last_updated": "2026-10-16T02:26:40.256038+00:00",
+  "date_range_end": "2026-10-15",
+  "last_updated": "2026-10-16T16:07:35.518583+00:00",
   "source_url": "https://scworks.org/employer/employer-programs/risk-closing/layoff-notification-reports",
   "records": [
     {
@@ -7312,6 +7312,18 @@
       "county": "Horry",
       "city": "",
       "address": "4630 Factory Stores Blvd, Ste A155, Myrtle Beach, SC 29579",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "Hudson-BW GSP JV",
+      "notice_date": "2026-10-15",
+      "effective_date": "2026-12-14",
+      "employees": 68,
+      "layoff_type": "Permanent Closure",
+      "county": "Greenville",
+      "city": "",
+      "address": "2000 GSP Dr., Greer, SC 29651",
       "industry": ""
     }
   ]

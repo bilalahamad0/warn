@@ -2,7 +2,7 @@
   "scope": "ca",
   "state": "CA",
   "coverage_start": "2025-01-01",
-  "last_updated": "2026-10-16T02:29:38.141585+00:00",
+  "last_updated": "2026-10-16T16:10:36.647281+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "total_records": 1939,
   "total_employees": 106239,
@@ -20,7 +20,7 @@
       "address": "2025 N Street  Firebaugh CA 93622",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "ServiceNow, Inc.",
@@ -33,7 +33,7 @@
       "address": "2225 Lawson Lane  Santa Clara CA 95054",
       "industry": "51 Information",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "ServiceNow, Inc.",
@@ -46,7 +46,7 @@
       "address": "4801 Eastgate Mall  San Diego CA 92121",
       "industry": "51 Information",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc.",
@@ -59,7 +59,7 @@
       "address": "3240 Arden Wy.  Sacramento CA 95825",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc.",
@@ -72,7 +72,7 @@
       "address": "5820 Owens Dr.  Pleasanton CA 94588",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Phillips 66 - Carson",
@@ -85,7 +85,7 @@
       "address": "1520 E. Sepulveda Blvd.  Carson CA 90745",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Phillips 66 - Wilmington",
@@ -98,7 +98,7 @@
       "address": "1660 W. Anaheim Street  Wilmington CA 90744",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Sapporo U.S.A. - Executive Place",
@@ -111,7 +111,7 @@
       "address": "2865 Executive Place  Escondido CA 92029",
       "industry": "42 Wholesale Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Sapporo U.S.A - Citracado Parkway",
@@ -124,7 +124,7 @@
       "address": "1999 Citracado Parkway  Escondido CA 92029",
       "industry": "42 Wholesale Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Jacuzzi",
@@ -137,7 +137,7 @@
       "address": "14525 Monte Vista Ave.  Chino CA 91710",
       "industry": "44-45 Retail Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Haas Automation, Inc.",
@@ -150,7 +150,7 @@
       "address": "2800 Sturgis Road  Oxnard CA 93030",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Beachbody, LLC",
@@ -267,7 +267,7 @@
       "address": "1 World Way  Los Angeles CA 90045",
       "industry": "48-49 Transportation and Warehousing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Blue Diamond Growers",

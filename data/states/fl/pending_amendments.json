@@ -1,0 +1,21 @@
+{
+  "count": 1,
+  "last_updated": "2026-10-16T16:11:37.425247+00:00",
+  "amendments": [
+    {
+      "company": "Ritz-Carlton, Bal Harbour",
+      "county": "",
+      "city": "BAL HARBOUR",
+      "notice_date": "2026-02-06",
+      "effective_date": "2027-02-01",
+      "employees": 108,
+      "old_effective_date": "2026-04-06",
+      "new_effective_date": "2027-02-01",
+      "old_employees": 108,
+      "new_employees": 108,
+      "key": "Ritz-Carlton, Bal Harbour__2027-02-01__108",
+      "held_since": "2026-10-16T16:11:37.425177+00:00",
+      "revisions": 1
+    }
+  ]
+}

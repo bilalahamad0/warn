@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-16T02:29:38.141585+00:00",
+  "last_updated": "2026-10-16T16:10:36.647281+00:00",
   "states_live": 47,
-  "total_records": 60595,
-  "total_employees": 6522051,
+  "total_records": 60597,
+  "total_employees": 6522186,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -253,8 +253,8 @@
       "name": "Pennsylvania",
       "agency": "Pennsylvania Department of Labor & Industry",
       "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
-      "total_records": 313,
-      "total_employees": 45829
+      "total_records": 314,
+      "total_employees": 45896
     },
     "RI": {
       "name": "Rhode Island",
@@ -267,8 +267,8 @@
       "name": "South Carolina",
       "agency": "South Carolina Department of Employment and Workforce",
       "source_url": "https://scworks.org/employer/employer-programs/risk-closing/layoff-notification-reports",
-      "total_records": 609,
-      "total_employees": 81819
+      "total_records": 610,
+      "total_employees": 81887
     },
     "SD": {
       "name": "South Dakota",
@@ -203825,18 +203825,6 @@
     },
     {
       "state": "FL",
-      "company": "Ritz-Carlton, Bal Harbour",
-      "notice_date": "2026-02-06",
-      "effective_date": "2026-04-06",
-      "employees": 108,
-      "layoff_type": "",
-      "county": "",
-      "city": "BAL HARBOUR",
-      "address": "10295 Collins Avenue",
-      "industry": "Accommodation and Food Services"
-    },
-    {
-      "state": "FL",
       "company": "HGS USA",
       "notice_date": "2026-02-04",
       "effective_date": "2026-03-31",
@@ -204674,6 +204662,18 @@
       "city": "FORT MEADE",
       "address": "5880 Manley Road",
       "industry": "Manufacturing"
+    },
+    {
+      "state": "FL",
+      "company": "Ritz-Carlton, Bal Harbour",
+      "notice_date": "2026-02-06",
+      "effective_date": "2027-02-01",
+      "employees": 108,
+      "layoff_type": "",
+      "county": "",
+      "city": "BAL HARBOUR",
+      "address": "10295 Collins Avenue",
+      "industry": "Accommodation and Food Services"
     },
     {
       "state": "GA",
@@ -564799,6 +564799,18 @@
       "industry": ""
     },
     {
+      "state": "PA",
+      "company": "Powered by FTGU, LLC",
+      "notice_date": null,
+      "effective_date": "2026-12-14",
+      "employees": 67,
+      "layoff_type": "Closure",
+      "county": "Lancaster",
+      "city": "",
+      "address": "124 West Airport Road, Lititz, PA  17543",
+      "industry": ""
+    },
+    {
       "state": "RI",
       "company": "Conduent",
       "notice_date": "2026-06-26",
@@ -573628,6 +573640,18 @@
       "county": "Horry",
       "city": "",
       "address": "4630 Factory Stores Blvd, Ste A155, Myrtle Beach, SC 29579",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "Hudson-BW GSP JV",
+      "notice_date": "2026-10-15",
+      "effective_date": "2026-12-14",
+      "employees": 68,
+      "layoff_type": "Permanent Closure",
+      "county": "Greenville",
+      "city": "",
+      "address": "2000 GSP Dr., Greer, SC 29651",
       "industry": ""
     },
     {

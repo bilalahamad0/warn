@@ -3,7 +3,7 @@
   "total_employees": 36706,
   "date_range_start": "2025-01-02",
   "date_range_end": "2026-10-14",
-  "last_updated": "2026-10-16T02:18:13.324986+00:00",
+  "last_updated": "2026-10-16T15:56:57.271666+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -5206,7 +5206,7 @@
       "state": "FL",
       "company": "Ritz-Carlton, Bal Harbour",
       "notice_date": "2026-02-06",
-      "effective_date": "2026-04-06",
+      "effective_date": "2027-02-01",
       "employees": 108,
       "layoff_type": "",
       "county": "",

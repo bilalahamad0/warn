@@ -1,9 +1,9 @@
 {
-  "total_records": 209,
-  "total_employees": 12032,
+  "total_records": 208,
+  "total_employees": 11977,
   "date_range_start": "2026-01-06",
   "date_range_end": "2026-10-02",
-  "last_updated": "2026-10-15T16:17:20.384481+00:00",
+  "last_updated": "2026-10-16T02:26:20.394187+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -1960,18 +1960,6 @@
       "county": "Onondaga",
       "city": "",
       "address": "6600 New Venture Gear Drive Suite 450 East Syracuse, NY, 13057",
-      "industry": ""
-    },
-    {
-      "state": "NY",
-      "company": "Resideo, LLC. D/B/A ADI",
-      "notice_date": "2026-06-12",
-      "effective_date": "2026-09-15",
-      "employees": 55,
-      "layoff_type": "Closure Permanent",
-      "county": "Albany",
-      "city": "",
-      "address": "1217 West Yard Road Unit A Feura Bush, NY, 12067",
       "industry": ""
     },
     {

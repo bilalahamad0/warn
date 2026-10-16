@@ -3,7 +3,7 @@
   "total_employees": 35819,
   "date_range_start": "2025-01-02",
   "date_range_end": "2026-10-14",
-  "last_updated": "2026-10-16T02:18:13.328754+00:00",
+  "last_updated": "2026-10-16T15:56:57.277970+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -4856,18 +4856,6 @@
     },
     {
       "state": "FL",
-      "company": "Ritz-Carlton, Bal Harbour",
-      "notice_date": "2026-02-06",
-      "effective_date": "2026-04-06",
-      "employees": 108,
-      "layoff_type": "",
-      "county": "",
-      "city": "BAL HARBOUR",
-      "address": "10295 Collins Avenue",
-      "industry": "Accommodation and Food Services"
-    },
-    {
-      "state": "FL",
       "company": "HGS USA",
       "notice_date": "2026-02-04",
       "effective_date": "2026-03-31",
@@ -5705,6 +5693,18 @@
       "city": "FORT MEADE",
       "address": "5880 Manley Road",
       "industry": "Manufacturing"
+    },
+    {
+      "state": "FL",
+      "company": "Ritz-Carlton, Bal Harbour",
+      "notice_date": "2026-02-06",
+      "effective_date": "2027-02-01",
+      "employees": 108,
+      "layoff_type": "",
+      "county": "",
+      "city": "BAL HARBOUR",
+      "address": "10295 Collins Avenue",
+      "industry": "Accommodation and Food Services"
     }
   ]
 }
