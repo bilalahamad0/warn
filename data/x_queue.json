@@ -1,43 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-10-16T16:11:40.119584+00:00",
+  "updated_at": "2026-10-17T02:25:37.935605+00:00",
   "candidates": [
-    {
-      "id": "318eb39e6433",
-      "created_at": "2026-09-16T16:19:51.020468+00:00",
-      "status": "expired",
-      "company": "wonder group",
-      "display": "Wonder Group, Inc.",
-      "employees": 533,
-      "states": [
-        "NJ"
-      ],
-      "per_state": {
-        "NJ": 533
-      },
-      "sites": 1,
-      "card": {
-        "place": "Parsippany, NJ",
-        "effective": "Sep 16, 2026",
-        "employees": 533
-      },
-      "arm": "size",
-      "reason": "533 >= 250",
-      "text": "Wonder Group, Inc. filed a WARN notice for 533 job cuts in Parsippany, NJ.\n\nEffective Sep 16, 2026.\n\n#layoffs #NewJersey",
-      "thread": [],
-      "weighted_len": 120,
-      "warnings": [],
-      "keys": [
-        "NJ:Wonder Group, Inc.__2026-09-16__533"
-      ],
-      "approved_by": null,
-      "approved_at": null,
-      "rejected_reason": null,
-      "tweet_id": null,
-      "posted_at": null,
-      "attempts": 0,
-      "last_error": null
-    },
     {
       "id": "185e22aac83f",
       "created_at": "2026-09-17T02:43:02.589612+00:00",

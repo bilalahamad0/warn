@@ -1,9 +1,9 @@
 {
-  "total_records": 75,
-  "total_employees": 6178,
+  "total_records": 76,
+  "total_employees": 6201,
   "date_range_start": "2019-01-08",
-  "date_range_end": "2026-09-09",
-  "last_updated": "2026-10-16T16:04:16.340558+00:00",
+  "date_range_end": "2026-10-12",
+  "last_updated": "2026-10-17T02:19:28.304411+00:00",
   "source_url": "https://joblink.maine.gov/search/warn_lookups",
   "records": [
     {
@@ -76,6 +76,18 @@
       "county": "",
       "city": "Guilford",
       "address": "169 water st; Guilford, Maine 04443",
+      "industry": ""
+    },
+    {
+      "state": "ME",
+      "company": "Applegreen",
+      "notice_date": "2026-10-12",
+      "effective_date": null,
+      "employees": 23,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Cumberland Center",
+      "address": "56 southbound; Cumberland Center, Maine 04021",
       "industry": ""
     },
     {

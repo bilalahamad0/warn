@@ -1,9 +1,9 @@
 {
-  "total_records": 313,
-  "total_employees": 45829,
+  "total_records": 314,
+  "total_employees": 45896,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-10-16T02:26:31.839553+00:00",
+  "last_updated": "2026-10-16T16:07:25.893299+00:00",
   "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
   "records": [
     {
@@ -16,6 +16,18 @@
       "county": "Philadelphia",
       "city": "",
       "address": "2201 South Street, Philadelphia, PA 19146, 1018 North Second Street, Philadelphia, PA 19123",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Powered by FTGU, LLC",
+      "notice_date": null,
+      "effective_date": "2026-12-14",
+      "employees": 67,
+      "layoff_type": "Closure",
+      "county": "Lancaster",
+      "city": "",
+      "address": "124 West Airport Road, Lititz, PA  17543",
       "industry": ""
     },
     {

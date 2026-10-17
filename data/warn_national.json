@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-16T16:10:36.647281+00:00",
+  "last_updated": "2026-10-17T02:24:34.300956+00:00",
   "states_live": 47,
-  "total_records": 60597,
-  "total_employees": 6522186,
+  "total_records": 60600,
+  "total_employees": 6522290,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -64,8 +64,8 @@
       "name": "Florida",
       "agency": "Florida Department of Commerce (FloridaCommerce)",
       "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
-      "total_records": 475,
-      "total_employees": 35819
+      "total_records": 476,
+      "total_employees": 35874
     },
     "GA": {
       "name": "Georgia",
@@ -148,8 +148,8 @@
       "name": "Maine",
       "agency": "Maine Department of Labor",
       "source_url": "https://joblink.maine.gov/search/warn_lookups",
-      "total_records": 75,
-      "total_employees": 6178
+      "total_records": 76,
+      "total_employees": 6201
     },
     "MI": {
       "name": "Michigan",
@@ -225,8 +225,8 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 5358,
-      "total_employees": 434383
+      "total_records": 5359,
+      "total_employees": 434409
     },
     "OH": {
       "name": "Ohio",
@@ -204676,6 +204676,18 @@
       "industry": "Accommodation and Food Services"
     },
     {
+      "state": "FL",
+      "company": "Behlen Building Systems - Behlen Mfg., Co.",
+      "notice_date": "2026-10-15",
+      "effective_date": "2026-12-18",
+      "employees": 55,
+      "layoff_type": "",
+      "county": "",
+      "city": "SARASOTA",
+      "address": "2812 Tallevast Road",
+      "industry": "Manufacturing"
+    },
+    {
       "state": "GA",
       "company": "Dexter Axle Company",
       "notice_date": null,
@@ -390022,6 +390034,18 @@
       "industry": ""
     },
     {
+      "state": "ME",
+      "company": "Applegreen",
+      "notice_date": "2026-10-12",
+      "effective_date": null,
+      "employees": 23,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Cumberland Center",
+      "address": "56 southbound; Cumberland Center, Maine 04021",
+      "industry": ""
+    },
+    {
       "state": "MI",
       "company": "Notions Marketing Corp.",
       "notice_date": null,
@@ -520832,10 +520856,22 @@
     },
     {
       "state": "NY",
+      "company": "FreedomRoads, LLC.; CWI, LLC.; Meyer's RV Centers, LLC.",
+      "notice_date": "2026-09-09",
+      "effective_date": "2026-12-08",
+      "employees": 28,
+      "layoff_type": "Closure Permanent",
+      "county": "Erie",
+      "city": "",
+      "address": "5533 Camp Road Hamburg, NY, 14075",
+      "industry": ""
+    },
+    {
+      "state": "NY",
       "company": "Mezz57th, LLC",
       "notice_date": "2026-09-08",
-      "effective_date": "2026-12-07",
-      "employees": 71,
+      "effective_date": "2026-12-23",
+      "employees": 69,
       "layoff_type": "Closure Permanent",
       "county": "New York",
       "city": "",

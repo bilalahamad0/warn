@@ -1,9 +1,9 @@
 {
-  "total_records": 475,
-  "total_employees": 35819,
+  "total_records": 476,
+  "total_employees": 35874,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-10-14",
-  "last_updated": "2026-10-16T15:56:57.277970+00:00",
+  "date_range_end": "2026-10-15",
+  "last_updated": "2026-10-17T02:13:05.835358+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -5705,6 +5705,18 @@
       "city": "BAL HARBOUR",
       "address": "10295 Collins Avenue",
       "industry": "Accommodation and Food Services"
+    },
+    {
+      "state": "FL",
+      "company": "Behlen Building Systems - Behlen Mfg., Co.",
+      "notice_date": "2026-10-15",
+      "effective_date": "2026-12-18",
+      "employees": 55,
+      "layoff_type": "",
+      "county": "",
+      "city": "SARASOTA",
+      "address": "2812 Tallevast Road",
+      "industry": "Manufacturing"
     }
   ]
 }

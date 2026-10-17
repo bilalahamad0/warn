@@ -1,9 +1,9 @@
 {
-  "total_records": 483,
-  "total_employees": 36706,
+  "total_records": 484,
+  "total_employees": 36761,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-10-14",
-  "last_updated": "2026-10-16T15:56:57.271666+00:00",
+  "date_range_end": "2026-10-15",
+  "last_updated": "2026-10-17T02:13:05.830728+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -3245,6 +3245,18 @@
       "city": "BOCA RATON",
       "address": "4700 Exchange Court, Suite 125",
       "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "FL",
+      "company": "Behlen Building Systems - Behlen Mfg., Co.",
+      "notice_date": "2026-10-15",
+      "effective_date": "2026-12-18",
+      "employees": 55,
+      "layoff_type": "",
+      "county": "",
+      "city": "SARASOTA",
+      "address": "2812 Tallevast Road",
+      "industry": "Manufacturing"
     },
     {
       "state": "FL",
