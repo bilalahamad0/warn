@@ -1,9 +1,9 @@
 {
   "total_records": 208,
-  "total_employees": 11977,
+  "total_employees": 11966,
   "date_range_start": "2026-01-06",
   "date_range_end": "2026-10-02",
-  "last_updated": "2026-10-16T16:07:14.011479+00:00",
+  "last_updated": "2026-10-17T02:21:21.769261+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -524,18 +524,6 @@
     },
     {
       "state": "NY",
-      "company": "Etain, LLC.",
-      "notice_date": "2026-05-05",
-      "effective_date": "2026-08-03",
-      "employees": 37,
-      "layoff_type": "Closure Permanent",
-      "county": "Warren",
-      "city": "",
-      "address": "6030-6032 US-9 Chestertown, NY, 12817",
-      "industry": ""
-    },
-    {
-      "state": "NY",
       "company": "Federal Express Corporation (Capital Region)",
       "notice_date": "2026-01-13",
       "effective_date": "2026-01-31",
@@ -652,6 +640,18 @@
       "county": "Steuben",
       "city": "",
       "address": "6823 Industrial Park Road North Bath, NY, 14810",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "FreedomRoads, LLC.; CWI, LLC.; Meyer's RV Centers, LLC.",
+      "notice_date": "2026-09-09",
+      "effective_date": "2026-12-08",
+      "employees": 28,
+      "layoff_type": "Closure Permanent",
+      "county": "Erie",
+      "city": "",
+      "address": "5533 Camp Road Hamburg, NY, 14075",
       "industry": ""
     },
     {
@@ -1606,8 +1606,8 @@
       "state": "NY",
       "company": "Mezz57th, LLC",
       "notice_date": "2026-09-08",
-      "effective_date": "2026-12-07",
-      "employees": 71,
+      "effective_date": "2026-12-23",
+      "employees": 69,
       "layoff_type": "Closure Permanent",
       "county": "New York",
       "city": "",

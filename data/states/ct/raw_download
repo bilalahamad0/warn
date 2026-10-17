@@ -320,20 +320,6 @@
       },
       "modifiedDate": "2025-10-27T13:34:04+00:00",
       "name": "rapid_response/warn_documents/2025/PosiGen (Shelton) 10-24-2025.pdf"
-    },
-    {
-      "blobProperties": {
-        "affected_company": "CVS Health",
-        "closing_dates_": "N/A",
-        "layoff_dates": "12/31/2025",
-        "layoff_locations__": "Remote",
-        "number_of_impacted_workers": "72",
-        "union": "N/A",
-        "warn_document_date": "2025-10-17",
-        "warn_document_received_date": "2025-10-17"
-      },
-      "modifiedDate": "2025-10-20T11:55:19+00:00",
-      "name": "rapid_response/warn_documents/2025/CVS Health (Hartford-remote) 10-17-2025.pdf"
     }
   ]
 }
