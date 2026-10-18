@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-10-18 02:23:33 UTC
+**Generated:** 2026-10-18 15:29:53 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -142,6 +142,7 @@ M data/changelog.jsonl
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
+ M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
@@ -200,13 +201,11 @@ M data/changelog.jsonl
  M data/states/tn/warn_latest.json
  M data/states/tn/warn_snapshot.json
  M data/states/ut/changelog.jsonl
- M data/states/ut/meta.json
  M data/states/ut/warn_cumulative.json
  M data/states/ut/warn_latest.json
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
- M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -237,16 +236,17 @@ M data/changelog.jsonl
 
 **Recent commits:**
 ```
+24ddd0b40 chore: weekly AI metrics update [skip actions]
+27b870aba auto: WARN data update [skip ci]
 0f7da050b auto: WARN data update [skip ci]
 8117b6b93 auto: WARN data update [skip ci]
 9a3953e76 auto: WARN data update [skip ci]
-7c41295e9 auto: WARN data update [skip ci]
-d4d0f951f auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-10-18T15:13:58.258613+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-18T02:08:44.890434+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-17T14:46:12.274515+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-17T02:09:45.356439+00:00` — +0 added, -0 removed, 0 employees (new)
@@ -256,4 +256,3 @@ d4d0f951f auto: WARN data update [skip ci]
 - `2026-10-15T02:14:25.061975+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-14T16:19:29.571126+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-14T02:43:36.204418+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-10-13T18:55:33.695893+00:00` — +0 added, -0 removed, 0 employees (new)
