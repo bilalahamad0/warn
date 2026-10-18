@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-10-17 15:01:28 UTC
+**Generated:** 2026-10-18 02:23:33 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -23,7 +23,6 @@
 ```
 M data/changelog.jsonl
  M data/states/ak/changelog.jsonl
- M data/states/ak/meta.json
  M data/states/ak/warn_cumulative.json
  M data/states/ak/warn_latest.json
  M data/states/ak/warn_snapshot.json
@@ -43,7 +42,6 @@ M data/changelog.jsonl
  M data/states/co/warn_snapshot.json
  M data/states/ct/changelog.jsonl
  M data/states/ct/meta.json
- M data/states/ct/raw_download
  M data/states/ct/warn_cumulative.json
  M data/states/ct/warn_latest.json
  M data/states/ct/warn_snapshot.json
@@ -202,11 +200,13 @@ M data/changelog.jsonl
  M data/states/tn/warn_latest.json
  M data/states/tn/warn_snapshot.json
  M data/states/ut/changelog.jsonl
+ M data/states/ut/meta.json
  M data/states/ut/warn_cumulative.json
  M data/states/ut/warn_latest.json
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
+ M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -237,16 +237,17 @@ M data/changelog.jsonl
 
 **Recent commits:**
 ```
+0f7da050b auto: WARN data update [skip ci]
 8117b6b93 auto: WARN data update [skip ci]
 9a3953e76 auto: WARN data update [skip ci]
 7c41295e9 auto: WARN data update [skip ci]
 d4d0f951f auto: WARN data update [skip ci]
-fbce5aa28 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-10-18T02:08:44.890434+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-17T14:46:12.274515+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-17T02:09:45.356439+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-16T15:53:48.452982+00:00` — +0 added, -321 removed, 0 employees (new)
@@ -256,4 +257,3 @@ fbce5aa28 auto: WARN data update [skip ci]
 - `2026-10-14T16:19:29.571126+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-14T02:43:36.204418+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-13T18:55:33.695893+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-10-13T04:34:09.770601+00:00` — +0 added, -0 removed, 0 employees (new)
