@@ -1,9 +1,9 @@
 {
-  "total_records": 376,
-  "total_employees": 35143,
+  "total_records": 377,
+  "total_employees": 35276,
   "date_range_start": "2022-01-25",
-  "date_range_end": "2026-10-02",
-  "last_updated": "2026-10-19T02:36:17.519630+00:00",
+  "date_range_end": "2026-10-15",
+  "last_updated": "2026-10-19T18:18:34.416982+00:00",
   "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
   "records": [
     {
@@ -4516,6 +4516,18 @@
       "county": "",
       "city": "Richmond VA",
       "address": "6641 W. Broad Street",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Pella Corporation",
+      "notice_date": "2026-10-15",
+      "effective_date": "2027-01-31",
+      "employees": 133,
+      "layoff_type": "Closure Permanent",
+      "county": "Rockingham",
+      "city": "Reidsville",
+      "address": "310 Rockingham Dr.",
       "industry": ""
     }
   ]

@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-19T02:40:41.935312+00:00",
+  "last_updated": "2026-10-19T18:22:55.115255+00:00",
   "states_live": 47,
-  "total_records": 60600,
-  "total_employees": 6522290,
+  "total_records": 60601,
+  "total_employees": 6522423,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -183,8 +183,8 @@
       "name": "North Carolina",
       "agency": "North Carolina Department of Commerce",
       "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
-      "total_records": 376,
-      "total_employees": 35143
+      "total_records": 377,
+      "total_employees": 35276
     },
     "ND": {
       "name": "North Dakota",
@@ -412576,6 +412576,18 @@
       "county": "",
       "city": "Richmond VA",
       "address": "6641 W. Broad Street",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Pella Corporation",
+      "notice_date": "2026-10-15",
+      "effective_date": "2027-01-31",
+      "employees": 133,
+      "layoff_type": "Closure Permanent",
+      "county": "Rockingham",
+      "city": "Reidsville",
+      "address": "310 Rockingham Dr.",
       "industry": ""
     },
     {
