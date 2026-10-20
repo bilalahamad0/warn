@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-19T18:22:55.115255+00:00",
+  "last_updated": "2026-10-20T02:56:09.626207+00:00",
   "states_live": 47,
-  "total_records": 60601,
-  "total_employees": 6522423,
+  "total_records": 60602,
+  "total_employees": 6522449,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1367,
-      "total_employees": 115910
+      "total_records": 1368,
+      "total_employees": 115936
     },
     "ME": {
       "name": "Maine",
@@ -389132,6 +389132,18 @@
       "city": "",
       "address": "8820 Columbia 100 Parkway, Suite 430 Columbia, MD 21045",
       "industry": "541611"
+    },
+    {
+      "state": "MD",
+      "company": "Peraton",
+      "notice_date": "2026-10-16",
+      "effective_date": "2027-01-05",
+      "employees": 26,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Anne Arundel",
+      "city": "",
+      "address": "9800 Savage Road Fort Mead, MD 20755",
+      "industry": "541330"
     },
     {
       "state": "ME",

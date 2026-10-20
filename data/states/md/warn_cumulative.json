@@ -1,9 +1,9 @@
 {
-  "total_records": 1367,
-  "total_employees": 115910,
+  "total_records": 1368,
+  "total_employees": 115936,
   "date_range_start": "2010-01-07",
-  "date_range_end": "2026-10-07",
-  "last_updated": "2026-10-19T18:15:35.578770+00:00",
+  "date_range_end": "2026-10-16",
+  "last_updated": "2026-10-20T02:48:44.075317+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -16409,6 +16409,18 @@
       "city": "",
       "address": "8820 Columbia 100 Parkway, Suite 430 Columbia, MD 21045",
       "industry": "541611"
+    },
+    {
+      "state": "MD",
+      "company": "Peraton",
+      "notice_date": "2026-10-16",
+      "effective_date": "2027-01-05",
+      "employees": 26,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Anne Arundel",
+      "city": "",
+      "address": "9800 Savage Road Fort Mead, MD 20755",
+      "industry": "541330"
     }
   ]
 }
