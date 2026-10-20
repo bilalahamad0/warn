@@ -3,7 +3,7 @@
   "total_employees": 15640,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-10-20T02:50:19.663087+00:00",
+  "last_updated": "2026-10-20T16:19:12.495028+00:00",
   "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
   "records": [
     {
@@ -20,18 +20,6 @@
     },
     {
       "state": "MI",
-      "company": "Lear Corporation",
-      "notice_date": null,
-      "effective_date": "2026-11-09",
-      "employees": 67,
-      "layoff_type": "Facility closure",
-      "county": "Macomb",
-      "city": "",
-      "address": "6450 Dobry Drive, Sterling Heights, MI 48314",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "HealthEdge, d/b/a as UST HealthProof",
       "notice_date": null,
       "effective_date": "2026-12-01",
@@ -40,6 +28,18 @@
       "county": "Wayne",
       "city": "",
       "address": "160 West Fort St., 5th Floor, Detroit, MI 48226",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Lear Corporation",
+      "notice_date": null,
+      "effective_date": "2026-11-09",
+      "employees": 67,
+      "layoff_type": "Facility closure",
+      "county": "Macomb",
+      "city": "",
+      "address": "6450 Dobry Drive, Sterling Heights, MI 48314",
       "industry": ""
     },
     {
@@ -260,6 +260,18 @@
     },
     {
       "state": "MI",
+      "company": "Trystar, LLC",
+      "notice_date": null,
+      "effective_date": "2026-09-04",
+      "employees": 71,
+      "layoff_type": "Facility closure",
+      "county": "Oakland",
+      "city": "",
+      "address": "1955 Stephenson Highway, Troy, MI 48083",
+      "industry": ""
+    },
+    {
+      "state": "MI",
       "company": "Daifuku Services America Corporation",
       "notice_date": null,
       "effective_date": "2026-05-31",
@@ -280,18 +292,6 @@
       "county": "Wayne",
       "city": "",
       "address": "2500 World Gateway Place, Detroit, MI 48242",
-      "industry": ""
-    },
-    {
-      "state": "MI",
-      "company": "Trystar, LLC",
-      "notice_date": null,
-      "effective_date": "2026-09-04",
-      "employees": 71,
-      "layoff_type": "Facility closure",
-      "county": "Oakland",
-      "city": "",
-      "address": "1955 Stephenson Highway, Troy, MI 48083",
       "industry": ""
     },
     {
@@ -344,18 +344,6 @@
     },
     {
       "state": "MI",
-      "company": "Siena Heights University",
-      "notice_date": null,
-      "effective_date": "2026-05-09",
-      "employees": 132,
-      "layoff_type": "Closure",
-      "county": "Lenawee",
-      "city": "Adrian",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "Compass Group USA, Inc.",
       "notice_date": null,
       "effective_date": "2026-07-01",
@@ -363,6 +351,18 @@
       "layoff_type": "Layoff",
       "county": "",
       "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Siena Heights University",
+      "notice_date": null,
+      "effective_date": "2026-05-09",
+      "employees": 132,
+      "layoff_type": "Closure",
+      "county": "Lenawee",
+      "city": "Adrian",
       "address": "",
       "industry": ""
     },
@@ -392,18 +392,6 @@
     },
     {
       "state": "MI",
-      "company": "First Brands Group, LLC",
-      "notice_date": null,
-      "effective_date": "2026-02-23",
-      "employees": 41,
-      "layoff_type": "Permanent layoff",
-      "county": "Oakland",
-      "city": "",
-      "address": "3255 West Hamlin Road, Rochester Hills, MI 48309",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "General Shale, d/b/a Michigan Brick",
       "notice_date": null,
       "effective_date": "2026-04-27",
@@ -412,6 +400,18 @@
       "county": "Shiawassee",
       "city": "Corunna",
       "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "First Brands Group, LLC",
+      "notice_date": null,
+      "effective_date": "2026-02-23",
+      "employees": 41,
+      "layoff_type": "Permanent layoff",
+      "county": "Oakland",
+      "city": "",
+      "address": "3255 West Hamlin Road, Rochester Hills, MI 48309",
       "industry": ""
     },
     {

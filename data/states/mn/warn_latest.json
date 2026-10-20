@@ -1,9 +1,9 @@
 {
-  "total_records": 702,
-  "total_employees": 18939,
+  "total_records": 708,
+  "total_employees": 19288,
   "date_range_start": "2021-01-06",
   "date_range_end": "2026-08-04",
-  "last_updated": "2026-10-20T02:51:26.233395+00:00",
+  "last_updated": "2026-10-20T16:20:22.948166+00:00",
   "source_url": "https://mn.gov/deed/programs-services/dislocated-worker-program/reports/",
   "records": [
     {
@@ -8427,6 +8427,78 @@
       "layoff_type": "Closing",
       "county": "",
       "city": "Mankato",
+      "address": "",
+      "industry": "Dining Establishments"
+    },
+    {
+      "state": "MN",
+      "company": "Cedar and Stone",
+      "notice_date": null,
+      "effective_date": "2026-10-01",
+      "employees": 14,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Superior",
+      "address": "",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "MN",
+      "company": "King Coil Spirits",
+      "notice_date": null,
+      "effective_date": "2026-09-08",
+      "employees": 1,
+      "layoff_type": "",
+      "county": "",
+      "city": "St Paul",
+      "address": "",
+      "industry": "Other Services"
+    },
+    {
+      "state": "MN",
+      "company": "Scrubs & Beyond",
+      "notice_date": null,
+      "effective_date": "2026-09-10",
+      "employees": 45,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Rochester",
+      "address": "",
+      "industry": "Retail"
+    },
+    {
+      "state": "MN",
+      "company": "New Richland Care Center",
+      "notice_date": null,
+      "effective_date": "2026-09-19",
+      "employees": 85,
+      "layoff_type": "",
+      "county": "",
+      "city": "New Richland",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MN",
+      "company": "Amazon Warehouse",
+      "notice_date": null,
+      "effective_date": null,
+      "employees": 200,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Maple Grove",
+      "address": "",
+      "industry": "Retail"
+    },
+    {
+      "state": "MN",
+      "company": "Buzz Coffee & Cafe",
+      "notice_date": null,
+      "effective_date": "2026-09-14",
+      "employees": 4,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Burnsville",
       "address": "",
       "industry": "Dining Establishments"
     }

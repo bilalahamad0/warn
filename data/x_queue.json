@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-20T02:57:05.044600+00:00",
+  "updated_at": "2026-10-20T16:26:18.733932+00:00",
   "candidates": [
     {
       "id": "680cddfa5156",
@@ -904,6 +904,42 @@
       ],
       "keys": [
         "MN:July 2026 Transdev Rochester__2026-08-31__0"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "5e3bb4bb017c",
+      "created_at": "2026-10-20T16:26:18.733915+00:00",
+      "status": "pending",
+      "company": "Amazon",
+      "display": "Amazon",
+      "employees": 200,
+      "states": [
+        "MN"
+      ],
+      "per_state": {
+        "MN": 200
+      },
+      "sites": 1,
+      "card": {
+        "place": "Maple Grove, MN",
+        "effective": null,
+        "employees": 200
+      },
+      "arm": "tech",
+      "reason": "tech brand, 200 >= 25",
+      "text": "Amazon filed a WARN notice for 200 job cuts in Maple Grove, MN.\n\nEffective date not reported.\n\n#layoffs #Minnesota",
+      "thread": [],
+      "weighted_len": 114,
+      "warnings": [],
+      "keys": [
+        "MN:Amazon Warehouse__None__200"
       ],
       "approved_by": null,
       "approved_at": null,

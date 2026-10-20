@@ -1,9 +1,9 @@
 {
-  "total_records": 4810,
-  "total_employees": 419480,
+  "total_records": 4812,
+  "total_employees": 419641,
   "date_range_start": "2016-01-04",
   "date_range_end": "2026-10-02",
-  "last_updated": "2026-10-20T02:52:49.107044+00:00",
+  "last_updated": "2026-10-20T16:21:44.552652+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -57724,6 +57724,30 @@
       "county": "New York",
       "city": "",
       "address": "36 East 57th Street Floor 1 M New York, NY, 10022",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Altera Digital Health, Inc.",
+      "notice_date": "2026-09-25",
+      "effective_date": "2026-12-31",
+      "employees": 133,
+      "layoff_type": "Layoff Permanent",
+      "county": "Suffolk",
+      "city": "",
+      "address": "3 Huntington Quadrangle 2nd Floor North Melville, NY, 11747",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Bowery F&B, LLC",
+      "notice_date": "2026-09-17",
+      "effective_date": "2026-12-21",
+      "employees": 28,
+      "layoff_type": "Closure Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "335 Bowery New York, NY, 10003",
       "industry": ""
     }
   ]

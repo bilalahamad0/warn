@@ -1,9 +1,9 @@
 {
-  "total_records": 208,
-  "total_employees": 11966,
+  "total_records": 211,
+  "total_employees": 12182,
   "date_range_start": "2026-01-06",
   "date_range_end": "2026-10-02",
-  "last_updated": "2026-10-20T02:52:49.085176+00:00",
+  "last_updated": "2026-10-20T16:21:44.527012+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -88,6 +88,18 @@
       "county": "Suffolk",
       "city": "",
       "address": "1650 Locust Ave Bohemia, NY, 11716",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Altera Digital Health, Inc.",
+      "notice_date": "2026-09-25",
+      "effective_date": "2026-12-31",
+      "employees": 133,
+      "layoff_type": "Layoff Permanent",
+      "county": "Suffolk",
+      "city": "",
+      "address": "3 Huntington Quadrangle 2nd Floor North Melville, NY, 11747",
       "industry": ""
     },
     {
@@ -184,6 +196,18 @@
       "county": "Westchester",
       "city": "",
       "address": "550 Chappaqua Road Briarcliff Manor, NY, 10510",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Bowery F&B, LLC",
+      "notice_date": "2026-09-17",
+      "effective_date": "2026-12-21",
+      "employees": 28,
+      "layoff_type": "Closure Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "335 Bowery New York, NY, 10003",
       "industry": ""
     },
     {
@@ -1960,6 +1984,18 @@
       "county": "Onondaga",
       "city": "",
       "address": "6600 New Venture Gear Drive Suite 450 East Syracuse, NY, 13057",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Resideo, LLC. D/B/A ADI",
+      "notice_date": "2026-06-12",
+      "effective_date": "2026-09-15",
+      "employees": 55,
+      "layoff_type": "Closure Permanent",
+      "county": "Albany",
+      "city": "",
+      "address": "1217 West Yard Road Unit A Feura Bush, NY, 12067",
       "industry": ""
     },
     {

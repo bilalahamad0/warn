@@ -1,9 +1,9 @@
 {
-  "total_records": 484,
-  "total_employees": 36761,
+  "total_records": 485,
+  "total_employees": 36887,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-10-15",
-  "last_updated": "2026-10-20T02:43:57.622222+00:00",
+  "date_range_end": "2026-10-16",
+  "last_updated": "2026-10-20T16:12:54.197868+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -3245,6 +3245,18 @@
       "city": "BOCA RATON",
       "address": "4700 Exchange Court, Suite 125",
       "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "FL",
+      "company": "Aetos Systems, Inc.",
+      "notice_date": "2026-10-16",
+      "effective_date": "2026-12-01",
+      "employees": 126,
+      "layoff_type": "",
+      "county": "",
+      "city": "MERRITT ISLAND",
+      "address": "Space Commerce Way",
+      "industry": "Professional, Scientific, and Technical Services"
     },
     {
       "state": "FL",

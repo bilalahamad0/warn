@@ -1,9 +1,9 @@
 {
-  "total_records": 2359,
-  "total_employees": 354144,
+  "total_records": 2360,
+  "total_employees": 354199,
   "date_range_start": "2004-02-24",
   "date_range_end": "2027-04-01",
-  "last_updated": "2026-10-20T02:52:29.646989+00:00",
+  "last_updated": "2026-10-20T16:21:26.149100+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -831,18 +831,6 @@
       "layoff_type": "",
       "county": "",
       "city": "Cumberland County",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NJ",
-      "company": "Digital Room LLC",
-      "notice_date": null,
-      "effective_date": "2026-09-16",
-      "employees": 69,
-      "layoff_type": "",
-      "county": "",
-      "city": "Saddle Brook",
       "address": "",
       "industry": ""
     },
@@ -28311,6 +28299,30 @@
       "layoff_type": "",
       "county": "",
       "city": "Hackensack",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Digital Room LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-06",
+      "employees": 69,
+      "layoff_type": "",
+      "county": "",
+      "city": "Saddle Brook",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Mars Information Services",
+      "notice_date": null,
+      "effective_date": "2027-01-31",
+      "employees": 55,
+      "layoff_type": "",
+      "county": "",
+      "city": "Newark",
       "address": "",
       "industry": ""
     }

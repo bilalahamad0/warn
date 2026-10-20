@@ -1,9 +1,9 @@
 {
-  "total_records": 476,
-  "total_employees": 35874,
+  "total_records": 477,
+  "total_employees": 36000,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-10-15",
-  "last_updated": "2026-10-20T02:43:57.627832+00:00",
+  "date_range_end": "2026-10-16",
+  "last_updated": "2026-10-20T16:12:54.204862+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -5717,6 +5717,18 @@
       "city": "SARASOTA",
       "address": "2812 Tallevast Road",
       "industry": "Manufacturing"
+    },
+    {
+      "state": "FL",
+      "company": "Aetos Systems, Inc.",
+      "notice_date": "2026-10-16",
+      "effective_date": "2026-12-01",
+      "employees": 126,
+      "layoff_type": "",
+      "county": "",
+      "city": "MERRITT ISLAND",
+      "address": "Space Commerce Way",
+      "industry": "Professional, Scientific, and Technical Services"
     }
   ]
 }

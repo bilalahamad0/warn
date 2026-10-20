@@ -1,9 +1,9 @@
 {
-  "total_records": 314,
-  "total_employees": 45896,
+  "total_records": 315,
+  "total_employees": 45944,
   "date_range_start": "2023-01-09",
   "date_range_end": "2026-12-31",
-  "last_updated": "2026-10-20T02:53:00.293560+00:00",
+  "last_updated": "2026-10-20T16:21:57.119760+00:00",
   "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
   "records": [
     {
@@ -3772,6 +3772,18 @@
       "county": "Lancaster",
       "city": "",
       "address": "124 West Airport Road, Lititz, PA  17543",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Republic Amusements",
+      "notice_date": null,
+      "effective_date": "2026-12-20",
+      "employees": 48,
+      "layoff_type": "Layoff",
+      "county": "Cumberland",
+      "city": "",
+      "address": "2450 Gettysburg Road, Camp Hill, PA  17011",
       "industry": ""
     }
   ]

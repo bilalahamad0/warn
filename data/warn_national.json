@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-20T02:56:09.626207+00:00",
+  "last_updated": "2026-10-20T16:25:10.473695+00:00",
   "states_live": 47,
-  "total_records": 60602,
-  "total_employees": 6522449,
+  "total_records": 60611,
+  "total_employees": 6522535,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -15,8 +15,8 @@
       "name": "Alabama",
       "agency": "Alabama Department of Workforce",
       "source_url": "https://workforce.alabama.gov/warn-list/",
-      "total_records": 1071,
-      "total_employees": 182830
+      "total_records": 1069,
+      "total_employees": 182177
     },
     "AZ": {
       "name": "Arizona",
@@ -64,8 +64,8 @@
       "name": "Florida",
       "agency": "Florida Department of Commerce (FloridaCommerce)",
       "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
-      "total_records": 476,
-      "total_employees": 35874
+      "total_records": 477,
+      "total_employees": 36000
     },
     "GA": {
       "name": "Georgia",
@@ -162,8 +162,8 @@
       "name": "Minnesota",
       "agency": "Minnesota Department of Employment and Economic Development",
       "source_url": "https://mn.gov/deed/programs-services/dislocated-worker-program/reports/",
-      "total_records": 702,
-      "total_employees": 18939
+      "total_records": 708,
+      "total_employees": 19288
     },
     "MS": {
       "name": "Mississippi",
@@ -204,8 +204,8 @@
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2359,
-      "total_employees": 354144
+      "total_records": 2360,
+      "total_employees": 354199
     },
     "NM": {
       "name": "New Mexico",
@@ -225,8 +225,8 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 5359,
-      "total_employees": 434409
+      "total_records": 5361,
+      "total_employees": 434570
     },
     "OH": {
       "name": "Ohio",
@@ -253,8 +253,8 @@
       "name": "Pennsylvania",
       "agency": "Pennsylvania Department of Labor & Industry",
       "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
-      "total_records": 314,
-      "total_employees": 45896
+      "total_records": 315,
+      "total_employees": 45944
     },
     "RI": {
       "name": "Rhode Island",
@@ -13945,37 +13945,13 @@
     },
     {
       "state": "AL",
-      "company": "CORIZON HEALTH",
-      "notice_date": "2018-02-05",
-      "effective_date": "2026-09-22",
-      "employees": 648,
-      "layoff_type": "Closing *",
+      "company": "DAL-TILE LLC",
+      "notice_date": "2026-10-19",
+      "effective_date": "2026-10-16",
+      "employees": 144,
+      "layoff_type": "Closure",
       "county": "",
-      "city": "State Wide",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "AL",
-      "company": "SEARS HOLDINGS",
-      "notice_date": "2009-02-28",
-      "effective_date": "2026-09-22",
-      "employees": 15,
-      "layoff_type": "Closing *",
-      "county": "",
-      "city": "Birmingham",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "AL",
-      "company": "URS CORPORATION",
-      "notice_date": "2010-01-22",
-      "effective_date": "2026-09-22",
-      "employees": 134,
-      "layoff_type": "Layoff *",
-      "county": "",
-      "city": "Birmingham",
+      "city": "Florence",
       "address": "",
       "industry": ""
     },
@@ -204686,6 +204662,18 @@
       "city": "SARASOTA",
       "address": "2812 Tallevast Road",
       "industry": "Manufacturing"
+    },
+    {
+      "state": "FL",
+      "company": "Aetos Systems, Inc.",
+      "notice_date": "2026-10-16",
+      "effective_date": "2026-12-01",
+      "employees": 126,
+      "layoff_type": "",
+      "county": "",
+      "city": "MERRITT ISLAND",
+      "address": "Space Commerce Way",
+      "industry": "Professional, Scientific, and Technical Services"
     },
     {
       "state": "GA",
@@ -405991,6 +405979,78 @@
       "industry": ""
     },
     {
+      "state": "MN",
+      "company": "Cedar and Stone",
+      "notice_date": null,
+      "effective_date": "2026-10-01",
+      "employees": 14,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Superior",
+      "address": "",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "MN",
+      "company": "King Coil Spirits",
+      "notice_date": null,
+      "effective_date": "2026-09-08",
+      "employees": 1,
+      "layoff_type": "",
+      "county": "",
+      "city": "St Paul",
+      "address": "",
+      "industry": "Other Services"
+    },
+    {
+      "state": "MN",
+      "company": "Scrubs & Beyond",
+      "notice_date": null,
+      "effective_date": "2026-09-10",
+      "employees": 45,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Rochester",
+      "address": "",
+      "industry": "Retail"
+    },
+    {
+      "state": "MN",
+      "company": "New Richland Care Center",
+      "notice_date": null,
+      "effective_date": "2026-09-19",
+      "employees": 85,
+      "layoff_type": "",
+      "county": "",
+      "city": "New Richland",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MN",
+      "company": "Amazon Warehouse",
+      "notice_date": null,
+      "effective_date": null,
+      "employees": 200,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Maple Grove",
+      "address": "",
+      "industry": "Retail"
+    },
+    {
+      "state": "MN",
+      "company": "Buzz Coffee & Cafe",
+      "notice_date": null,
+      "effective_date": "2026-09-14",
+      "employees": 4,
+      "layoff_type": "Closing",
+      "county": "",
+      "city": "Burnsville",
+      "address": "",
+      "industry": "Dining Establishments"
+    },
+    {
       "state": "MS",
       "company": "Hollywood Casino Gulf Coast Bay St. Louis (Hancock)",
       "notice_date": "2020-07-15",
@@ -426519,18 +426579,6 @@
       "layoff_type": "",
       "county": "",
       "city": "Cumberland County",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NJ",
-      "company": "Digital Room LLC",
-      "notice_date": null,
-      "effective_date": "2026-09-16",
-      "employees": 69,
-      "layoff_type": "",
-      "county": "",
-      "city": "Saddle Brook",
       "address": "",
       "industry": ""
     },
@@ -453999,6 +454047,30 @@
       "layoff_type": "",
       "county": "",
       "city": "Hackensack",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Digital Room LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-06",
+      "employees": 69,
+      "layoff_type": "",
+      "county": "",
+      "city": "Saddle Brook",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Mars Information Services",
+      "notice_date": null,
+      "effective_date": "2027-01-31",
+      "employees": 55,
+      "layoff_type": "",
+      "county": "",
+      "city": "Newark",
       "address": "",
       "industry": ""
     },
@@ -520904,6 +520976,30 @@
     },
     {
       "state": "NY",
+      "company": "Altera Digital Health, Inc.",
+      "notice_date": "2026-09-25",
+      "effective_date": "2026-12-31",
+      "employees": 133,
+      "layoff_type": "Layoff Permanent",
+      "county": "Suffolk",
+      "city": "",
+      "address": "3 Huntington Quadrangle 2nd Floor North Melville, NY, 11747",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Bowery F&B, LLC",
+      "notice_date": "2026-09-17",
+      "effective_date": "2026-12-21",
+      "employees": 28,
+      "layoff_type": "Closure Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "335 Bowery New York, NY, 10003",
+      "industry": ""
+    },
+    {
+      "state": "NY",
       "company": "Cardionet, LLC. an affiliate of Philips North America, LLC.",
       "notice_date": "2025-04-01",
       "effective_date": "2025-06-30",
@@ -564868,6 +564964,18 @@
       "county": "Lancaster",
       "city": "",
       "address": "124 West Airport Road, Lititz, PA  17543",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Republic Amusements",
+      "notice_date": null,
+      "effective_date": "2026-12-20",
+      "employees": 48,
+      "layoff_type": "Layoff",
+      "county": "Cumberland",
+      "city": "",
+      "address": "2450 Gettysburg Road, Camp Hill, PA  17011",
       "industry": ""
     },
     {
