@@ -1,56 +1,59 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-10-21 02:50:40 UTC
+**Generated:** 2026-10-21 16:41:01 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 36 | 357 | +320/+0 |
-| Total employees | 2,560 | 17,617 | +15,057 |
+| Total records | 357 | 36 | +0/+320 |
+| Total employees | 17,617 | 2,560 | -15,057 |
 
-### ✅ New Entries (320 records)
+### ✅ No new entries.
 
-| Company | Employees | Effective Date | County |
-|---------|-----------|----------------|--------|
-| Covenant Aviation Security, LLC | 1,279 | 2026-11-30 | San Francisco County |
-| 24Hr Homecare, LLC | 738 | 2026-09-15 | Los Angeles County |
-| Randstad Inhouse Services, LLC (Dreyer's) | 426 | 2026-11-19 | Kern County |
-| Jabil Inc. | 382 | 2026-11-23 | Santa Clara County |
-| Visa | 320 | 2026-10-01 | San Mateo County |
-| Oracle America, Inc. | 279 | 2026-11-13 | San Mateo County |
-| PayPal | 251 | 2026-10-30 | Santa Clara County |
-| Dreyer's Grand Ice Cream | 221 | 2026-11-19 | Kern County |
-| IPS Nationwide, Inc. | 212 | 2026-11-17 | Alameda County |
-| LeeMAH Electronics | 205 | 2026-10-16 | San Mateo County |
-| Sapporo U.S.A. (1999 Citracado Parkway) | 200 | 2026-11-13 | San Diego County |
-| Amy's Kitchen, LLC | 200 | 2026-12-18 | Sonoma County |
-| Bumble Bee Foods, LLC | 197 | 2026-11-19 | Los Angeles County |
-| Power Safety Service, LLC | 189 | 2026-11-06 | San Joaquin County |
-| Foundation for California Community Colleges | 178 | 2026-10-30 | Sacramento County |
-| Ruiz Food Products, Inc. | 176 | 2026-11-04 | Tulare County |
-| Sodexo | 164 | 2026-09-30 | Orange County |
-| ServiceNow, Inc. | 154 | 2026-09-28 | Santa Clara County |
-| Renewal by Andersen LLC | 153 | 2026-11-02 | Los Angeles County |
-| Uber Technologies, Inc. - 1655 3rd Street | 151 | 2026-11-02 | San Francisco County |
+### ❌ Removed Entries (320 records)
+
+| Company | Employees | Effective Date |
+|---------|-----------|----------------|
+| Covenant Aviation Security, LLC | 1,279 | 2026-11-30 |
+| 24Hr Homecare, LLC | 738 | 2026-09-15 |
+| Randstad Inhouse Services, LLC (Dreyer's) | 426 | 2026-11-19 |
+| Jabil Inc. | 382 | 2026-11-23 |
+| Visa | 320 | 2026-10-01 |
+| Oracle America, Inc. | 279 | 2026-11-13 |
+| PayPal | 251 | 2026-10-30 |
+| Dreyer's Grand Ice Cream | 221 | 2026-11-19 |
+| IPS Nationwide, Inc. | 212 | 2026-11-17 |
+| LeeMAH Electronics | 205 | 2026-10-16 |
+| Sapporo U.S.A. (1999 Citracado Parkway) | 200 | 2026-11-13 |
+| Amy's Kitchen, LLC | 200 | 2026-12-18 |
+| Bumble Bee Foods, LLC | 197 | 2026-11-19 |
+| Power Safety Service, LLC | 189 | 2026-11-06 |
+| Foundation for California Community Colleges | 178 | 2026-10-30 |
+| Ruiz Food Products, Inc. | 176 | 2026-11-04 |
+| Sodexo | 164 | 2026-09-30 |
+| ServiceNow, Inc. | 154 | 2026-09-28 |
+| Renewal by Andersen LLC | 153 | 2026-11-02 |
+| Uber Technologies, Inc. - 1655 3rd Street | 151 | 2026-11-02 |
 
 ---
 ## 📁 File vs Git Comparison
 
-- **Local `file.xlsx` hash:** `8a2893d1b9052b1aa10191310d3fb674`
+- **Local `file.xlsx` hash:** `2c73db1b759812982a57b17b77afa3c5`
 - **Committed hash:**          `2c73db1b759812982a57b17b77afa3c5`
-- 🔴 **Local file differs from committed version**
+- ✅ Local file matches committed version
 
 **Git status:**
 ```
 M data/changelog.jsonl
- M data/meta.json
  M data/states/ak/changelog.jsonl
+ M data/states/ak/meta.json
  M data/states/ak/warn_cumulative.json
  M data/states/ak/warn_latest.json
  M data/states/ak/warn_snapshot.json
  M data/states/al/changelog.jsonl
+ M data/states/al/raw_download
  M data/states/al/warn_cumulative.json
  M data/states/al/warn_latest.json
  M data/states/al/warn_snapshot.json
@@ -66,6 +69,7 @@ M data/changelog.jsonl
  M data/states/co/warn_snapshot.json
  M data/states/ct/changelog.jsonl
  M data/states/ct/meta.json
+ M data/states/ct/raw_download
  M data/states/ct/warn_cumulative.json
  M data/states/ct/warn_latest.json
  M data/states/ct/warn_snapshot.json
@@ -139,7 +143,6 @@ M data/changelog.jsonl
  M data/states/me/warn_snapshot.json
  M data/states/mi/changelog.jsonl
  M data/states/mi/meta.json
- M data/states/mi/raw_download
  M data/states/mi/warn_cumulative.json
  M data/states/mi/warn_latest.json
  M data/states/mi/warn_snapshot.json
@@ -149,7 +152,6 @@ M data/changelog.jsonl
  M data/states/mn/warn_latest.json
  M data/states/mn/warn_snapshot.json
  M data/states/ms/changelog.jsonl
- M data/states/ms/raw_download
  M data/states/ms/warn_cumulative.json
  M data/states/ms/warn_latest.json
  M data/states/ms/warn_snapshot.json
@@ -168,6 +170,7 @@ M data/changelog.jsonl
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
+ M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
@@ -198,6 +201,7 @@ M data/changelog.jsonl
  M data/states/or/changelog.jsonl
  M data/states/or/latest.xlsx
  M data/states/or/meta.json
+ M data/states/or/raw_download
  M data/states/or/warn_cumulative.json
  M data/states/or/warn_latest.json
  M data/states/or/warn_snapshot.json
@@ -220,24 +224,29 @@ M data/changelog.jsonl
  M data/states/sd/warn_cumulative.json
  M data/states/sd/warn_latest.json
  M data/states/sd/warn_snapshot.json
+ M data/states/tn/changelog.jsonl
+ M data/states/tn/raw_download
+ M data/states/tn/warn_cumulative.json
+ M data/states/tn/warn_latest.json
+ M data/states/tn/warn_snapshot.json
  M data/states/ut/changelog.jsonl
- M data/states/ut/meta.json
  M data/states/ut/warn_cumulative.json
  M data/states/ut/warn_latest.json
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
- M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
  M data/states/vt/changelog.jsonl
  M data/states/vt/meta.json
+ M data/states/vt/raw_download
  M data/states/vt/warn_cumulative.json
  M data/states/vt/warn_latest.json
  M data/states/vt/warn_snapshot.json
  M data/states/wa/changelog.jsonl
  M data/states/wa/meta.json
+ M data/states/wa/raw_download
  M data/states/wa/warn_cumulative.json
  M data/states/wa/warn_latest.json
  M data/states/wa/warn_snapshot.json
@@ -254,22 +263,21 @@ M data/changelog.jsonl
  M data/warn_cumulative.json
  M data/warn_latest.json
  M data/warn_snapshot.json
- M file.xlsx
-?? data/states/ms/pdfs/warn-py2026-qtr-1-jul-sep-2026.pdf
 ```
 
 **Recent commits:**
 ```
+ff7cb6a02 auto: WARN data update [skip ci]
 01a2d3009 auto: WARN data update [skip ci]
 94c41a290 auto: WARN data update [skip ci]
 699bd07f9 auto: WARN data update [skip ci]
 ee70bf62d auto: WARN data update [skip ci]
-652a23a90 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-10-21T16:26:17.880498+00:00` — +0 added, -321 removed, 0 employees (new)
 - `2026-10-21T02:34:38.328702+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-20T16:09:48.658496+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-20T02:40:37.718162+00:00` — +0 added, -0 removed, 0 employees (new)
@@ -279,4 +287,3 @@ ee70bf62d auto: WARN data update [skip ci]
 - `2026-10-18T02:08:44.890434+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-17T14:46:12.274515+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-17T02:09:45.356439+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-10-16T15:53:48.452982+00:00` — +0 added, -321 removed, 0 employees (new)

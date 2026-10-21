@@ -1,11 +1,47 @@
 {
-  "total_records": 98,
-  "total_employees": 15157,
+  "total_records": 101,
+  "total_employees": 15459,
   "date_range_start": "2025-01-21",
-  "date_range_end": "2026-09-02",
-  "last_updated": "2026-10-19T18:19:59.893335+00:00",
+  "date_range_end": "2026-10-20",
+  "last_updated": "2026-10-21T16:38:06.661740+00:00",
   "source_url": "https://www.tn.gov/workforce/general-resources/major-publications0/major-publications-redirect/reports.html",
   "records": [
+    {
+      "state": "TN",
+      "company": "Akzo Nobel",
+      "notice_date": "2026-10-20",
+      "effective_date": "2026-12-31",
+      "employees": 76,
+      "layoff_type": "",
+      "county": "Davidson",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "TN",
+      "company": "General Jackson Showboat",
+      "notice_date": "2026-10-20",
+      "effective_date": "2026-12-15",
+      "employees": 114,
+      "layoff_type": "",
+      "county": "Davidson",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "TN",
+      "company": "Pepsi Bottling Group",
+      "notice_date": "2026-10-20",
+      "effective_date": "2027-01-01",
+      "employees": 112,
+      "layoff_type": "",
+      "county": "Knox",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "TN",
       "company": "Kilgore Flares Company, LLC",

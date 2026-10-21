@@ -1,9 +1,9 @@
 {
-  "total_records": 1545,
-  "total_employees": 251403,
+  "total_records": 1546,
+  "total_employees": 251486,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-10-07",
-  "last_updated": "2026-10-21T02:50:34.611111+00:00",
+  "date_range_end": "2026-10-21",
+  "last_updated": "2026-10-21T16:40:56.234441+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -18543,6 +18543,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Seattle, Bellingham, Bothell, Vancouver, Bellevue, Kennewick, Tacoma, and Yakima",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "DSquared Hospitality Company dba Sidekicks Pub",
+      "notice_date": "2026-10-21",
+      "effective_date": "2026-12-20",
+      "employees": 83,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Bellevue",
       "address": "",
       "industry": ""
     }

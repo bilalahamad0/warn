@@ -1,9 +1,9 @@
 {
-  "total_records": 30,
-  "total_employees": 3249,
+  "total_records": 32,
+  "total_employees": 3462,
   "date_range_start": "2025-08-25",
-  "date_range_end": "2026-10-01",
-  "last_updated": "2026-10-21T02:35:06.011296+00:00",
+  "date_range_end": "2026-10-21",
+  "last_updated": "2026-10-21T16:26:42.170723+00:00",
   "source_url": "https://dolpublicdocumentlibrary.ct.gov/CsblrCategory?prefix=%2Frapid_response%2Fwarn_documents",
   "records": [
     {
@@ -363,6 +363,30 @@
       "layoff_type": "",
       "county": "",
       "city": "Bristol",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "CT",
+      "company": "Cycling Sports Group, Inc.",
+      "notice_date": "2026-10-21",
+      "effective_date": "2026-12-21",
+      "employees": 143,
+      "layoff_type": "",
+      "county": "",
+      "city": "Wilton",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "CT",
+      "company": "S and S Worldwide",
+      "notice_date": "2026-10-20",
+      "effective_date": "2026-10-20",
+      "employees": 70,
+      "layoff_type": "",
+      "county": "",
+      "city": "Colchester",
       "address": "",
       "industry": ""
     }

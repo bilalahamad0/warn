@@ -2,6 +2,34 @@
   "blobItems": [
     {
       "blobProperties": {
+        "affected_company": "Cycling Sports Group, Inc.",
+        "closing_dates_": "12/31/2027",
+        "layoff_dates": "12/21/2026 - 12/31/2027",
+        "layoff_locations__": "Wilton",
+        "number_of_impacted_workers": "143",
+        "union": "N/A",
+        "warn_document_date": "2026-10-21",
+        "warn_document_received_date": "2026-10-21"
+      },
+      "modifiedDate": "2026-10-21T14:40:16+00:00",
+      "name": "rapid_response/warn_documents/2026/Cycling Sports Group, Inc. (Wilton) 10-21-2026.pdf"
+    },
+    {
+      "blobProperties": {
+        "affected_company": "S and S Worldwide",
+        "closing_dates_": "N/A",
+        "layoff_dates": "10/20/2026 - 12/19/2026",
+        "layoff_locations__": "Colchester",
+        "number_of_impacted_workers": "70",
+        "union": "N/A",
+        "warn_document_date": "2026-10-20",
+        "warn_document_received_date": "2026-10-20"
+      },
+      "modifiedDate": "2026-10-21T14:38:26+00:00",
+      "name": "rapid_response/warn_documents/2026/S&S Worldwide (Colchester) 10-20-2026.pdf"
+    },
+    {
+      "blobProperties": {
         "affected_company": "IDEX Health and Science LLC",
         "closing_dates_": "12/31/2026",
         "layoff_dates": "12/31/2026",

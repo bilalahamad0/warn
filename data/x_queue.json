@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-21T02:52:05.488875+00:00",
+  "updated_at": "2026-10-21T16:42:14.046422+00:00",
   "candidates": [
     {
       "id": "680cddfa5156",
@@ -976,6 +976,78 @@
       "warnings": [],
       "keys": [
         "MS:Hood Industries__2026-09-05__259"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "0aed3b16a31f",
+      "created_at": "2026-10-21T16:42:14.046240+00:00",
+      "status": "pending",
+      "company": "PepsiCo",
+      "display": "PepsiCo",
+      "employees": 112,
+      "states": [
+        "TN"
+      ],
+      "per_state": {
+        "TN": 112
+      },
+      "sites": 1,
+      "card": {
+        "place": "Knox, TN",
+        "effective": "Jan 1, 2027",
+        "employees": 112
+      },
+      "arm": "brand",
+      "reason": "known brand, 112 >= 50",
+      "text": "PepsiCo filed a WARN notice for 112 job cuts in Knox, TN.\n\nEffective Jan 1, 2027.\n\n#layoffs #Tennessee",
+      "thread": [],
+      "weighted_len": 102,
+      "warnings": [],
+      "keys": [
+        "TN:Pepsi Bottling Group__2027-01-01__112"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "ffad978a8531",
+      "created_at": "2026-10-21T16:42:14.046411+00:00",
+      "status": "pending",
+      "company": "First Transit",
+      "display": "First Transit",
+      "employees": 88,
+      "states": [
+        "AL"
+      ],
+      "per_state": {
+        "AL": 88
+      },
+      "sites": 1,
+      "card": {
+        "place": "Tuscaloosa, AL",
+        "effective": "Dec 18, 2026",
+        "employees": 88
+      },
+      "arm": "brand",
+      "reason": "known brand, 88 >= 50",
+      "text": "First Transit filed a WARN notice for 88 job cuts in Tuscaloosa, AL.\n\nEffective Dec 18, 2026.\n\n#layoffs #Alabama",
+      "thread": [],
+      "weighted_len": 112,
+      "warnings": [],
+      "keys": [
+        "AL:First Transit  Inc.__2026-12-18__88"
       ],
       "approved_by": null,
       "approved_at": null,
