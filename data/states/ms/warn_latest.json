@@ -1,9 +1,9 @@
 {
-  "total_records": 133,
-  "total_employees": 12577,
+  "total_records": 136,
+  "total_employees": 12957,
   "date_range_start": "2013-02-13",
-  "date_range_end": "2026-05-11",
-  "last_updated": "2026-10-20T16:20:33.567947+00:00",
+  "date_range_end": "2026-07-21",
+  "last_updated": "2026-10-21T02:46:03.217728+00:00",
   "source_url": "https://mdes.ms.gov/information-center/warn-information/",
   "records": [
     {
@@ -1601,6 +1601,42 @@
       "city": "Olive Branch",
       "address": "",
       "industry": "811198- All Other Auto Motive Repaire and Maintenance"
+    },
+    {
+      "state": "MS",
+      "company": "Conduent Commercial Solutions, LLC",
+      "notice_date": "2026-06-29",
+      "effective_date": "2026-08-28",
+      "employees": 35,
+      "layoff_type": "Closure",
+      "county": "Remote \u2013 Statewide",
+      "city": "Remote \u2013 Statewide",
+      "address": "",
+      "industry": "561422 \u2013 Telemarketing Bureaus and Other Contact Centers"
+    },
+    {
+      "state": "MS",
+      "company": "Morrison Healthcare",
+      "notice_date": "2026-07-21",
+      "effective_date": "2026-09-30",
+      "employees": 86,
+      "layoff_type": "Closure",
+      "county": "Jackson",
+      "city": "Pascagoula and Ocean Springs",
+      "address": "",
+      "industry": "722310 \u2013 Food Service Contractors"
+    },
+    {
+      "state": "MS",
+      "company": "Hood Industries",
+      "notice_date": "2026-07-06",
+      "effective_date": "2026-09-05",
+      "employees": 259,
+      "layoff_type": "Closure",
+      "county": "Stone",
+      "city": "Wiggins",
+      "address": "",
+      "industry": "321113 \u2013 Sawmills"
     }
   ]
 }

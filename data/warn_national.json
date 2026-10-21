@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-20T16:25:10.473695+00:00",
+  "last_updated": "2026-10-21T02:50:40.674756+00:00",
   "states_live": 47,
-  "total_records": 60611,
-  "total_employees": 6522535,
+  "total_records": 60617,
+  "total_employees": 6523712,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -15,8 +15,8 @@
       "name": "Alabama",
       "agency": "Alabama Department of Workforce",
       "source_url": "https://workforce.alabama.gov/warn-list/",
-      "total_records": 1069,
-      "total_employees": 182177
+      "total_records": 1072,
+      "total_employees": 182974
     },
     "AZ": {
       "name": "Arizona",
@@ -169,8 +169,8 @@
       "name": "Mississippi",
       "agency": "Mississippi Department of Employment Security",
       "source_url": "https://mdes.ms.gov/information-center/warn-information/",
-      "total_records": 128,
-      "total_employees": 11922
+      "total_records": 131,
+      "total_employees": 12302
     },
     "MT": {
       "name": "Montana",
@@ -13952,6 +13952,42 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Florence",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "CORIZON HEALTH",
+      "notice_date": "2018-02-05",
+      "effective_date": "2026-10-20",
+      "employees": 648,
+      "layoff_type": "Closing *",
+      "county": "",
+      "city": "State Wide",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "SEARS HOLDINGS",
+      "notice_date": "2009-02-28",
+      "effective_date": "2026-10-20",
+      "employees": 15,
+      "layoff_type": "Closing *",
+      "county": "",
+      "city": "Birmingham",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "URS CORPORATION",
+      "notice_date": "2010-01-22",
+      "effective_date": "2026-10-20",
+      "employees": 134,
+      "layoff_type": "Layoff *",
+      "county": "",
+      "city": "Birmingham",
       "address": "",
       "industry": ""
     },
@@ -407585,6 +407621,42 @@
       "city": "",
       "address": "",
       "industry": ""
+    },
+    {
+      "state": "MS",
+      "company": "Conduent Commercial Solutions, LLC",
+      "notice_date": "2026-06-29",
+      "effective_date": "2026-08-28",
+      "employees": 35,
+      "layoff_type": "Closure",
+      "county": "Remote \u2013 Statewide",
+      "city": "Remote \u2013 Statewide",
+      "address": "",
+      "industry": "561422 \u2013 Telemarketing Bureaus and Other Contact Centers"
+    },
+    {
+      "state": "MS",
+      "company": "Morrison Healthcare",
+      "notice_date": "2026-07-21",
+      "effective_date": "2026-09-30",
+      "employees": 86,
+      "layoff_type": "Closure",
+      "county": "Jackson",
+      "city": "Pascagoula and Ocean Springs",
+      "address": "",
+      "industry": "722310 \u2013 Food Service Contractors"
+    },
+    {
+      "state": "MS",
+      "company": "Hood Industries",
+      "notice_date": "2026-07-06",
+      "effective_date": "2026-09-05",
+      "employees": 259,
+      "layoff_type": "Closure",
+      "county": "Stone",
+      "city": "Wiggins",
+      "address": "",
+      "industry": "321113 \u2013 Sawmills"
     },
     {
       "state": "MT",

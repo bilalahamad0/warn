@@ -1,9 +1,9 @@
 {
-  "total_records": 2385,
-  "total_employees": 356655,
+  "total_records": 2386,
+  "total_employees": 356710,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-10-20T02:52:29.622060+00:00",
+  "last_updated": "2026-10-20T16:21:26.121963+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -838,7 +838,7 @@
       "state": "NJ",
       "company": "Digital Room LLC",
       "notice_date": null,
-      "effective_date": "2026-09-16",
+      "effective_date": "2026-10-06",
       "employees": 69,
       "layoff_type": "",
       "county": "",
@@ -1383,6 +1383,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Hackensack",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Mars Information Services",
+      "notice_date": null,
+      "effective_date": "2027-01-31",
+      "employees": 55,
+      "layoff_type": "",
+      "county": "",
+      "city": "Newark",
       "address": "",
       "industry": ""
     },

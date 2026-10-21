@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-20T16:26:18.733932+00:00",
+  "updated_at": "2026-10-21T02:52:05.488875+00:00",
   "candidates": [
     {
       "id": "680cddfa5156",
@@ -940,6 +940,42 @@
       "warnings": [],
       "keys": [
         "MN:Amazon Warehouse__None__200"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "4d8043839aa4",
+      "created_at": "2026-10-21T02:52:05.488844+00:00",
+      "status": "pending",
+      "company": "hood industries",
+      "display": "Hood Industries",
+      "employees": 259,
+      "states": [
+        "MS"
+      ],
+      "per_state": {
+        "MS": 259
+      },
+      "sites": 1,
+      "card": {
+        "place": "Wiggins, Stone, MS",
+        "effective": "Sep 5, 2026",
+        "employees": 259
+      },
+      "arm": "size",
+      "reason": "259 >= 250",
+      "text": "Hood Industries filed a WARN notice for 259 job cuts in Wiggins, Stone, MS.\n\nEffective Sep 5, 2026.\n\n#layoffs #Mississippi",
+      "thread": [],
+      "weighted_len": 122,
+      "warnings": [],
+      "keys": [
+        "MS:Hood Industries__2026-09-05__259"
       ],
       "approved_by": null,
       "approved_at": null,
