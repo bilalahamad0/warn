@@ -1,43 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-10-21T16:42:14.046422+00:00",
+  "updated_at": "2026-10-22T02:47:00.560775+00:00",
   "candidates": [
-    {
-      "id": "680cddfa5156",
-      "created_at": "2026-09-22T02:42:56.927285+00:00",
-      "status": "expired",
-      "company": "Bristol Myers Squibb",
-      "display": "Bristol Myers Squibb",
-      "employees": 265,
-      "states": [
-        "NJ"
-      ],
-      "per_state": {
-        "NJ": 265
-      },
-      "sites": 1,
-      "card": {
-        "place": "Princeton, NJ",
-        "effective": "Dec 17, 2026",
-        "employees": 265
-      },
-      "arm": "size",
-      "reason": "265 >= 250",
-      "text": "Bristol Myers Squibb filed a WARN notice for 265 job cuts in Princeton, NJ.\n\nEffective Dec 17, 2026.\n\n#layoffs #NewJersey",
-      "thread": [],
-      "weighted_len": 121,
-      "warnings": [],
-      "keys": [
-        "NJ:Bristol Myers Squibb__2026-12-17__265"
-      ],
-      "approved_by": null,
-      "approved_at": null,
-      "rejected_reason": null,
-      "tweet_id": null,
-      "posted_at": null,
-      "attempts": 0,
-      "last_error": null
-    },
     {
       "id": "de849ea8569b",
       "created_at": "2026-09-22T16:25:33.726149+00:00",
@@ -1048,6 +1012,42 @@
       "warnings": [],
       "keys": [
         "AL:First Transit  Inc.__2026-12-18__88"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "1a3398ea72ed",
+      "created_at": "2026-10-22T02:47:00.560753+00:00",
+      "status": "pending",
+      "company": "dakkota integrated systems",
+      "display": "Dakkota Integrated Systems, LLC",
+      "employees": 397,
+      "states": [
+        "MI"
+      ],
+      "per_state": {
+        "MI": 397
+      },
+      "sites": 1,
+      "card": {
+        "place": "Wayne, MI",
+        "effective": "Dec 31, 2026",
+        "employees": 397
+      },
+      "arm": "size",
+      "reason": "397 >= 250",
+      "text": "Dakkota Integrated Systems, LLC filed a WARN notice for 397 job cuts in Wayne, MI.\n\nEffective Dec 31, 2026.\n\n#layoffs #Michigan",
+      "thread": [],
+      "weighted_len": 127,
+      "warnings": [],
+      "keys": [
+        "MI:Dakkota Integrated Systems, LLC__2026-12-31__397"
       ],
       "approved_by": null,
       "approved_at": null,

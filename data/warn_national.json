@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-21T16:41:01.471096+00:00",
+  "last_updated": "2026-10-22T02:46:02.081695+00:00",
   "states_live": 47,
-  "total_records": 60628,
-  "total_employees": 6523801,
+  "total_records": 60633,
+  "total_employees": 6525091,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -15,8 +15,8 @@
       "name": "Alabama",
       "agency": "Alabama Department of Workforce",
       "source_url": "https://workforce.alabama.gov/warn-list/",
-      "total_records": 1070,
-      "total_employees": 182265
+      "total_records": 1073,
+      "total_employees": 183062
     },
     "AZ": {
       "name": "Arizona",
@@ -155,8 +155,8 @@
       "name": "Michigan",
       "agency": "Michigan Department of Labor and Economic Opportunity",
       "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
-      "total_records": 792,
-      "total_employees": 122634
+      "total_records": 793,
+      "total_employees": 123031
     },
     "MN": {
       "name": "Minnesota",
@@ -253,8 +253,8 @@
       "name": "Pennsylvania",
       "agency": "Pennsylvania Department of Labor & Industry",
       "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
-      "total_records": 315,
-      "total_employees": 45944
+      "total_records": 316,
+      "total_employees": 46040
     },
     "RI": {
       "name": "Rhode Island",
@@ -13964,6 +13964,42 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Tuscaloosa",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "CORIZON HEALTH",
+      "notice_date": "2018-02-05",
+      "effective_date": "2026-10-21",
+      "employees": 648,
+      "layoff_type": "Closing *",
+      "county": "",
+      "city": "State Wide",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "SEARS HOLDINGS",
+      "notice_date": "2009-02-28",
+      "effective_date": "2026-10-21",
+      "employees": 15,
+      "layoff_type": "Closing *",
+      "county": "",
+      "city": "Birmingham",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "URS CORPORATION",
+      "notice_date": "2010-01-22",
+      "effective_date": "2026-10-21",
+      "employees": 134,
+      "layoff_type": "Layoff *",
+      "county": "",
+      "city": "Birmingham",
       "address": "",
       "industry": ""
     },
@@ -397591,6 +397627,18 @@
       "industry": ""
     },
     {
+      "state": "MI",
+      "company": "Dakkota Integrated Systems, LLC",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 397,
+      "layoff_type": "Closure",
+      "county": "Wayne",
+      "city": "",
+      "address": "5905 Van Dyke St., Detroit, MI 48312",
+      "industry": ""
+    },
+    {
       "state": "MN",
       "company": "Godiva Chocolatier Inc-Minnetonka",
       "notice_date": null,
@@ -565120,6 +565168,18 @@
       "county": "Cumberland",
       "city": "",
       "address": "2450 Gettysburg Road, Camp Hill, PA  17011",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Ask Foods, LLC",
+      "notice_date": null,
+      "effective_date": "2026-12-01",
+      "employees": 96,
+      "layoff_type": "Closure",
+      "county": "Lebanon",
+      "city": "",
+      "address": "77 North Hetrick Avenue, Palmyra, PA  17078",
       "industry": ""
     },
     {

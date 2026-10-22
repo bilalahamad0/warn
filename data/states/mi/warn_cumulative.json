@@ -1,9 +1,9 @@
 {
-  "total_records": 792,
-  "total_employees": 122634,
+  "total_records": 793,
+  "total_employees": 123031,
   "date_range_start": "2016-01-07",
   "date_range_end": "2024-11-15",
-  "last_updated": "2026-10-21T16:35:47.367815+00:00",
+  "last_updated": "2026-10-22T02:40:22.574070+00:00",
   "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
   "records": [
     {
@@ -7513,6 +7513,18 @@
       "county": "Wayne",
       "city": "",
       "address": "44044 Merrill Road, Sterling Heights, MI 48314",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Dakkota Integrated Systems, LLC",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 397,
+      "layoff_type": "Closure",
+      "county": "Wayne",
+      "city": "",
+      "address": "5905 Van Dyke St., Detroit, MI 48312",
       "industry": ""
     }
   ]

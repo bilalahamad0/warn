@@ -1,9 +1,9 @@
 {
-  "total_records": 315,
-  "total_employees": 45944,
+  "total_records": 316,
+  "total_employees": 46040,
   "date_range_start": "2023-01-09",
   "date_range_end": "2026-12-31",
-  "last_updated": "2026-10-21T16:37:51.380987+00:00",
+  "last_updated": "2026-10-22T02:42:49.463473+00:00",
   "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
   "records": [
     {
@@ -3784,6 +3784,18 @@
       "county": "Cumberland",
       "city": "",
       "address": "2450 Gettysburg Road, Camp Hill, PA  17011",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Ask Foods, LLC",
+      "notice_date": null,
+      "effective_date": "2026-12-01",
+      "employees": 96,
+      "layoff_type": "Closure",
+      "county": "Lebanon",
+      "city": "",
+      "address": "77 North Hetrick Avenue, Palmyra, PA  17078",
       "industry": ""
     }
   ]
