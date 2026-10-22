@@ -1,156 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-10-22T02:47:00.560775+00:00",
+  "updated_at": "2026-10-22T16:39:49.731382+00:00",
   "candidates": [
-    {
-      "id": "de849ea8569b",
-      "created_at": "2026-09-22T16:25:33.726149+00:00",
-      "status": "expired",
-      "company": "bm administrative services",
-      "display": "BM Administrative Services",
-      "employees": 321,
-      "states": [
-        "WA"
-      ],
-      "per_state": {
-        "WA": 321
-      },
-      "sites": 1,
-      "card": {
-        "place": "Yakima County, WA",
-        "effective": "Nov 30, 2026",
-        "employees": 321
-      },
-      "arm": "size",
-      "reason": "321 >= 250",
-      "text": "BM Administrative Services filed a WARN notice for 321 job cuts in Yakima County, WA.\n\nEffective Nov 30, 2026.\n\n#layoffs #Washington",
-      "thread": [],
-      "weighted_len": 132,
-      "warnings": [],
-      "keys": [
-        "WA:BM Administrative Services__2026-11-30__321"
-      ],
-      "approved_by": null,
-      "approved_at": null,
-      "rejected_reason": null,
-      "tweet_id": null,
-      "posted_at": null,
-      "attempts": 0,
-      "last_error": null
-    },
-    {
-      "id": "727a3b49e28e",
-      "created_at": "2026-09-22T16:25:33.726211+00:00",
-      "status": "expired",
-      "company": "ips nationwide",
-      "display": "IPS Nationwide, Inc.",
-      "employees": 262,
-      "states": [
-        "CA"
-      ],
-      "per_state": {
-        "CA": 262
-      },
-      "sites": 2,
-      "card": {
-        "place": "2 sites in California",
-        "effective": "Nov 17, 2026",
-        "employees": 262
-      },
-      "arm": "size",
-      "reason": "262 >= 250",
-      "text": "IPS Nationwide, Inc. filed WARN notices for 262 job cuts across 2 sites in California.\n\nFirst effective date Nov 17, 2026.\n\n#layoffs #California",
-      "thread": [],
-      "weighted_len": 144,
-      "warnings": [],
-      "keys": [
-        "CA:IPS Nationwide, Inc.__2026-11-17__50",
-        "CA:IPS Nationwide, Inc.__2026-11-17__212"
-      ],
-      "approved_by": null,
-      "approved_at": null,
-      "rejected_reason": null,
-      "tweet_id": null,
-      "posted_at": null,
-      "attempts": 0,
-      "last_error": null
-    },
-    {
-      "id": "35e14e0688f3",
-      "created_at": "2026-09-22T16:25:33.726254+00:00",
-      "status": "expired",
-      "company": "Intel",
-      "display": "Intel",
-      "employees": 52,
-      "states": [
-        "CA"
-      ],
-      "per_state": {
-        "CA": 52
-      },
-      "sites": 4,
-      "card": {
-        "place": "4 sites in California",
-        "effective": "Sep 30, 2026",
-        "employees": 52
-      },
-      "arm": "tech",
-      "reason": "tech brand, 52 >= 25",
-      "text": "Intel filed WARN notices for 52 job cuts across 4 sites in California.\n\nFirst effective date Sep 30, 2026.\n\n#layoffs #California",
-      "thread": [],
-      "weighted_len": 128,
-      "warnings": [],
-      "keys": [
-        "CA:Intel Corporation - Robert Noyce Building__2026-09-30__22",
-        "CA:Intel Corporation - SC-11__2026-09-30__1",
-        "CA:Intel Corporation - SC-12__2026-09-30__24",
-        "CA:Intel Corporation, Inc. - SC-9__2026-09-30__5"
-      ],
-      "approved_by": null,
-      "approved_at": null,
-      "rejected_reason": null,
-      "tweet_id": null,
-      "posted_at": null,
-      "attempts": 0,
-      "last_error": null
-    },
-    {
-      "id": "c497a92c5d4d",
-      "created_at": "2026-09-22T16:25:33.726291+00:00",
-      "status": "expired",
-      "company": "Safeway",
-      "display": "Safeway",
-      "employees": 50,
-      "states": [
-        "CA"
-      ],
-      "per_state": {
-        "CA": 50
-      },
-      "sites": 2,
-      "card": {
-        "place": "2 sites in California",
-        "effective": "Nov 20, 2026",
-        "employees": 50
-      },
-      "arm": "brand",
-      "reason": "known brand, 50 >= 50",
-      "text": "Safeway filed WARN notices for 50 job cuts across 2 sites in California.\n\nFirst effective date Nov 20, 2026.\n\n#layoffs #California",
-      "thread": [],
-      "weighted_len": 130,
-      "warnings": [],
-      "keys": [
-        "CA:Safeway, Inc. - Stoneridge Mall Road__2026-11-20__4",
-        "CA:Safeway, Inc. - Dublin Canyon Road__2026-11-20__46"
-      ],
-      "approved_by": null,
-      "approved_at": null,
-      "rejected_reason": null,
-      "tweet_id": null,
-      "posted_at": null,
-      "attempts": 0,
-      "last_error": null
-    },
     {
       "id": "b5ae4689e0ec",
       "created_at": "2026-09-23T02:44:16.227636+00:00",
@@ -1048,6 +899,42 @@
       "warnings": [],
       "keys": [
         "MI:Dakkota Integrated Systems, LLC__2026-12-31__397"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "3819be64aeca",
+      "created_at": "2026-10-22T16:39:49.731356+00:00",
+      "status": "pending",
+      "company": "dreyers grand ice cream",
+      "display": "Dreyer's Grand Ice Cream",
+      "employees": 803,
+      "states": [
+        "MD"
+      ],
+      "per_state": {
+        "MD": 803
+      },
+      "sites": 1,
+      "card": {
+        "place": "Howard County, MD",
+        "effective": "Dec 20, 2026",
+        "employees": 803
+      },
+      "arm": "size",
+      "reason": "803 >= 250",
+      "text": "Dreyer's Grand Ice Cream filed a WARN notice for 803 job cuts in Howard County, MD.\n\nEffective Dec 20, 2026.\n\n#layoffs #Maryland",
+      "thread": [],
+      "weighted_len": 128,
+      "warnings": [],
+      "keys": [
+        "MD:Dreyer\u2019s Grand Ice Cream__2026-12-20__803"
       ],
       "approved_by": null,
       "approved_at": null,

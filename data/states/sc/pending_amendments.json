@@ -1,0 +1,21 @@
+{
+  "count": 1,
+  "last_updated": "2026-10-22T16:39:49.663567+00:00",
+  "amendments": [
+    {
+      "company": "KPR US LLC",
+      "county": "Kershaw",
+      "city": "",
+      "notice_date": "2026-07-09",
+      "effective_date": "2026-12-31",
+      "employees": 3,
+      "old_effective_date": "2026-11-01",
+      "new_effective_date": "2026-12-31",
+      "old_employees": 3,
+      "new_employees": 3,
+      "key": "KPR US LLC__2026-12-31__3",
+      "held_since": "2026-10-22T16:39:49.663526+00:00",
+      "revisions": 1
+    }
+  ]
+}

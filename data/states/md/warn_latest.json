@@ -1,11 +1,23 @@
 {
-  "total_records": 1418,
-  "total_employees": 117113,
+  "total_records": 1419,
+  "total_employees": 117916,
   "date_range_start": "2010-01-07",
-  "date_range_end": "2026-10-16",
-  "last_updated": "2026-10-22T02:38:44.537998+00:00",
+  "date_range_end": "2026-10-19",
+  "last_updated": "2026-10-22T16:31:27.635190+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
+    {
+      "state": "MD",
+      "company": "Dreyer\u2019s Grand Ice Cream",
+      "notice_date": "2026-10-19",
+      "effective_date": "2026-12-20",
+      "employees": 803,
+      "layoff_type": "Temporary Mass Layoff Note: Temporary 2 week layoff for necessary maintenance",
+      "county": "Howard County",
+      "city": "",
+      "address": "9090 Whiskey Bottom Road Laurel, MD 20723",
+      "industry": "311520"
+    },
     {
       "state": "MD",
       "company": "Peraton",

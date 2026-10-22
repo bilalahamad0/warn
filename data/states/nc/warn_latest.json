@@ -1,9 +1,9 @@
 {
-  "total_records": 378,
-  "total_employees": 35213,
+  "total_records": 379,
+  "total_employees": 35306,
   "date_range_start": "2022-01-25",
-  "date_range_end": "2026-10-15",
-  "last_updated": "2026-10-22T02:41:39.156760+00:00",
+  "date_range_end": "2026-10-20",
+  "last_updated": "2026-10-22T16:34:19.524518+00:00",
   "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
   "records": [
     {
@@ -4540,6 +4540,18 @@
       "county": "Rockingham",
       "city": "Reidsville",
       "address": "310 Rockingham Dr.",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "FTGU, LLC",
+      "notice_date": "2026-10-20",
+      "effective_date": "2026-12-16",
+      "employees": 93,
+      "layoff_type": "Closure Permanent",
+      "county": "Catawba",
+      "city": "Conover",
+      "address": "103B Somerset Drive NW",
       "industry": ""
     }
   ]
