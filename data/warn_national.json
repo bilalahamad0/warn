@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-22T16:38:44.041046+00:00",
+  "last_updated": "2026-10-23T02:53:41.492586+00:00",
   "states_live": 47,
-  "total_records": 60633,
-  "total_employees": 6525254,
+  "total_records": 60661,
+  "total_employees": 6530058,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -15,8 +15,8 @@
       "name": "Alabama",
       "agency": "Alabama Department of Workforce",
       "source_url": "https://workforce.alabama.gov/warn-list/",
-      "total_records": 1071,
-      "total_employees": 182329
+      "total_records": 1074,
+      "total_employees": 183126
     },
     "AZ": {
       "name": "Arizona",
@@ -29,8 +29,8 @@
       "name": "California",
       "agency": "California Employment Development Department",
       "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
-      "total_records": 16457,
-      "total_employees": 1398028
+      "total_records": 16478,
+      "total_employees": 1401673
     },
     "CO": {
       "name": "Colorado",
@@ -71,8 +71,8 @@
       "name": "Georgia",
       "agency": "Technical College System of Georgia, Office of Workforce Development",
       "source_url": "https://www.tcsg.edu/warn-public-view/",
-      "total_records": 4740,
-      "total_employees": 606772
+      "total_records": 4741,
+      "total_employees": 606861
     },
     "HI": {
       "name": "Hawaii",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1369,
-      "total_employees": 116739
+      "total_records": 1370,
+      "total_employees": 116789
     },
     "ME": {
       "name": "Maine",
@@ -155,8 +155,8 @@
       "name": "Michigan",
       "agency": "Michigan Department of Labor and Economic Opportunity",
       "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
-      "total_records": 793,
-      "total_employees": 123031
+      "total_records": 794,
+      "total_employees": 123173
     },
     "MN": {
       "name": "Minnesota",
@@ -253,8 +253,8 @@
       "name": "Pennsylvania",
       "agency": "Pennsylvania Department of Labor & Industry",
       "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
-      "total_records": 316,
-      "total_employees": 46040
+      "total_records": 317,
+      "total_employees": 46121
     },
     "RI": {
       "name": "Rhode Island",
@@ -13976,6 +13976,42 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Montgomery",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "CORIZON HEALTH",
+      "notice_date": "2018-02-05",
+      "effective_date": "2026-10-22",
+      "employees": 648,
+      "layoff_type": "Closing *",
+      "county": "",
+      "city": "State Wide",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "SEARS HOLDINGS",
+      "notice_date": "2009-02-28",
+      "effective_date": "2026-10-22",
+      "employees": 15,
+      "layoff_type": "Closing *",
+      "county": "",
+      "city": "Birmingham",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "URS CORPORATION",
+      "notice_date": "2010-01-22",
+      "effective_date": "2026-10-22",
+      "employees": 134,
+      "layoff_type": "Layoff *",
+      "county": "",
+      "city": "Birmingham",
       "address": "",
       "industry": ""
     },
@@ -39689,7 +39725,7 @@
       "notice_date": "2026-08-19",
       "effective_date": "2026-11-02",
       "employees": 73,
-      "layoff_type": "Layoff Permanent",
+      "layoff_type": "Relocation Permanent",
       "county": "Ventura County",
       "city": "",
       "address": "2800 Sturgis Road  Oxnard CA 93030",
@@ -42250,6 +42286,258 @@
       "city": "",
       "address": "2800 Sturgis Road  Oxnard CA 93030",
       "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Netflix, Inc.",
+      "notice_date": "2026-10-16",
+      "effective_date": "2026-09-14",
+      "employees": 267,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "5808 Sunset Blvd  Los Angeles CA 90028",
+      "industry": "51 Information"
+    },
+    {
+      "state": "CA",
+      "company": "Netflix, Inc.",
+      "notice_date": "2026-10-16",
+      "effective_date": "2026-09-14",
+      "employees": 227,
+      "layoff_type": "Layoff Permanent",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "121 Albright Way  Los Gatos CA 95032",
+      "industry": "51 Information"
+    },
+    {
+      "state": "CA",
+      "company": "eBay Inc.",
+      "notice_date": "2026-10-21",
+      "effective_date": "2026-10-21",
+      "employees": 229,
+      "layoff_type": "Layoff Permanent",
+      "county": "Santa Clara County",
+      "city": "",
+      "address": "2025 Hamilton Ave  San Jose CA 95125",
+      "industry": "44-45 Retail Trade"
+    },
+    {
+      "state": "CA",
+      "company": "Baloian Farms",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-10-30",
+      "employees": 106,
+      "layoff_type": "Layoff Temporary",
+      "county": "Fresno County",
+      "city": "",
+      "address": "446 N. Blythe Ave.  Fresno CA 93706",
+      "industry": "11 Agriculture Forestry Fishing Hunting"
+    },
+    {
+      "state": "CA",
+      "company": "Fender Musical Instruments Corporation",
+      "notice_date": "2026-10-15",
+      "effective_date": "2026-12-14",
+      "employees": 533,
+      "layoff_type": "Closure Temporary",
+      "county": "Riverside County",
+      "city": "",
+      "address": "311 Cessna Circle  Corona CA 92878",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Tree Service Unlimited Inc.",
+      "notice_date": "2026-10-13",
+      "effective_date": "2026-12-14",
+      "employees": 137,
+      "layoff_type": "Layoff Permanent",
+      "county": "El Dorado County",
+      "city": "",
+      "address": "4080 Plaza Goldorado Circle Ste A  Cameron Park CA 95682",
+      "industry": "56 Administrative and Support and Waste Management and Remediation"
+    },
+    {
+      "state": "CA",
+      "company": "Myers Power Products, Inc.",
+      "notice_date": "2026-10-09",
+      "effective_date": "2026-12-15",
+      "employees": 206,
+      "layoff_type": "Closure Permanent",
+      "county": "San Bernardino County",
+      "city": "",
+      "address": "2950 East Philadelphia Street  Ontario CA 91761",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Silverado Senior Living Managment Inc.",
+      "notice_date": "2026-10-14",
+      "effective_date": "2026-12-15",
+      "employees": 7,
+      "layoff_type": "Closure Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "514 North Prospect Avenue  Redondo Beach CA 90277",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc.",
+      "notice_date": "2026-10-19",
+      "effective_date": "2026-12-18",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "Riverside County",
+      "city": "",
+      "address": "1840 California Ave.  Corona CA 92881",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc.",
+      "notice_date": "2026-10-19",
+      "effective_date": "2026-12-18",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "Marin County",
+      "city": "",
+      "address": "1650 Los Gamos Dr.  San Rafael CA 94903",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc. (One Kaiser Plaza)",
+      "notice_date": "2026-10-19",
+      "effective_date": "2026-12-18",
+      "employees": 5,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "One Kaiser Plaza  Oakland CA 94612",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc. (1800 Harrison St.)",
+      "notice_date": "2026-10-19",
+      "effective_date": "2026-12-18",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "1800 Harrison St.  Oakland CA 94612",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc. (99 S. Oakland Ave.)",
+      "notice_date": "2026-10-19",
+      "effective_date": "2026-12-18",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "99 S. Oakland Ave.  Pasadena CA 91101",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc. (75 N. Fair Oaks Ave.)",
+      "notice_date": "2026-10-19",
+      "effective_date": "2026-12-18",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "75 N. Fair Oaks Ave.  Pasadena CA 91103",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc.",
+      "notice_date": "2026-10-19",
+      "effective_date": "2026-12-18",
+      "employees": 1,
+      "layoff_type": "Layoff Permanent",
+      "county": "Sacramento County",
+      "city": "",
+      "address": "50 Iron Point Cir.  Folsom CA 95630",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Dreyer's Grand Ice Cream",
+      "notice_date": "2026-10-20",
+      "effective_date": "2026-12-19",
+      "employees": 1095,
+      "layoff_type": "Closure Temporary",
+      "county": "Kern County",
+      "city": "",
+      "address": "7301 District Boulevard  Bakersfield CA 93313",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Randstad (Dreyer's Grand Ice Cream)",
+      "notice_date": "2026-10-20",
+      "effective_date": "2026-12-19",
+      "employees": 91,
+      "layoff_type": "Closure Temporary",
+      "county": "Tulare County",
+      "city": "",
+      "address": "970 E. Continental Ave.  Tulare CA 93274",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Dreyer's Grand Ice Cream",
+      "notice_date": "2026-10-19",
+      "effective_date": "2026-12-19",
+      "employees": 448,
+      "layoff_type": "Closure Temporary",
+      "county": "Tulare County",
+      "city": "",
+      "address": "970 E Continental  Tulare CA 93274",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Safeway, Inc.",
+      "notice_date": "2026-10-20",
+      "effective_date": "2026-12-20",
+      "employees": 92,
+      "layoff_type": "Closure Permanent",
+      "county": "Contra Costa County",
+      "city": "",
+      "address": "905 South 34th Street  Richmond CA 94804",
+      "industry": "44-45 Retail Trade"
+    },
+    {
+      "state": "CA",
+      "company": "DesigneRx Pharmaceuticals, Inc.",
+      "notice_date": "2026-10-21",
+      "effective_date": "2026-12-23",
+      "employees": 6,
+      "layoff_type": "Layoff Permanent",
+      "county": "Solano County",
+      "city": "",
+      "address": "4941 Allison Parkway Suite B Vacaville CA 95688",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Formagrid Inc. dba Airtable",
+      "notice_date": "2026-10-15",
+      "effective_date": "2027-01-15",
+      "employees": 190,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Francisco County",
+      "city": "",
+      "address": "One Front Street, 28th Floor  San Francisco CA 94111",
+      "industry": "51 Information"
     },
     {
       "company": "Adventist Health St. Helena",
@@ -261604,6 +261892,18 @@
       "industry": ""
     },
     {
+      "state": "GA",
+      "company": "Duty Free Americas, Inc.",
+      "notice_date": null,
+      "effective_date": "2026-10-30",
+      "employees": 89,
+      "layoff_type": "Permanent Closure",
+      "county": "Clayton",
+      "city": "",
+      "address": "6000 N Terminal Pkwy, Atrium Suite 4000, Atlanta, Georgia",
+      "industry": ""
+    },
+    {
       "state": "HI",
       "company": "Maui Seaside Hotel",
       "notice_date": "2019-01-16",
@@ -389194,6 +389494,18 @@
       "industry": "311520"
     },
     {
+      "state": "MD",
+      "company": "*RESCINDED* Hendall Inc.",
+      "notice_date": "2026-04-14",
+      "effective_date": "2026-06-10",
+      "employees": 50,
+      "layoff_type": "Mass Layoff - No Recall Note: Temporary, may become permanent",
+      "county": "Montgomery County",
+      "city": "",
+      "address": "1803 Research Blvd, Suite 300 Rockville, MD 20850",
+      "industry": "541512"
+    },
+    {
       "state": "ME",
       "company": "SMBC-Sumitomo Mitsui Banking Corporation",
       "notice_date": "2026-01-13",
@@ -397624,6 +397936,18 @@
       "county": "Wayne",
       "city": "",
       "address": "5905 Van Dyke St., Detroit, MI 48312",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Inalfa Roof Systems, Inc.",
+      "notice_date": null,
+      "effective_date": "2026-12-14",
+      "employees": 142,
+      "layoff_type": "Closure",
+      "county": "Oakland",
+      "city": "",
+      "address": "815 Opdyke Road, Suite 500, Auburn Hills, MI 48326; 1370 Pacific Drive, Auburn Hills, MI, 48326",
       "industry": ""
     },
     {
@@ -565180,6 +565504,18 @@
       "county": "Lebanon",
       "city": "",
       "address": "77 North Hetrick Avenue, Palmyra, PA  17078",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Kenco Logistic Services, LLC",
+      "notice_date": null,
+      "effective_date": "2027-03-01",
+      "employees": 81,
+      "layoff_type": "Layoff",
+      "county": "Lebanon",
+      "city": "",
+      "address": "60 Central Boulevard, Myerstown, PA  17407",
       "industry": ""
     },
     {

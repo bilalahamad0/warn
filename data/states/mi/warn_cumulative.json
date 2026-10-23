@@ -1,9 +1,9 @@
 {
-  "total_records": 793,
-  "total_employees": 123031,
+  "total_records": 794,
+  "total_employees": 123173,
   "date_range_start": "2016-01-07",
   "date_range_end": "2024-11-15",
-  "last_updated": "2026-10-22T02:40:22.574070+00:00",
+  "last_updated": "2026-10-23T02:46:58.841958+00:00",
   "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
   "records": [
     {
@@ -7525,6 +7525,18 @@
       "county": "Wayne",
       "city": "",
       "address": "5905 Van Dyke St., Detroit, MI 48312",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Inalfa Roof Systems, Inc.",
+      "notice_date": null,
+      "effective_date": "2026-12-14",
+      "employees": 142,
+      "layoff_type": "Closure",
+      "county": "Oakland",
+      "city": "",
+      "address": "815 Opdyke Road, Suite 500, Auburn Hills, MI 48326; 1370 Pacific Drive, Auburn Hills, MI, 48326",
       "industry": ""
     }
   ]

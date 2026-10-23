@@ -1,11 +1,23 @@
 {
-  "total_records": 120,
-  "total_employees": 16037,
+  "total_records": 121,
+  "total_employees": 16179,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-10-22T02:40:22.570412+00:00",
+  "last_updated": "2026-10-23T02:46:58.838672+00:00",
   "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
   "records": [
+    {
+      "state": "MI",
+      "company": "Inalfa Roof Systems, Inc.",
+      "notice_date": null,
+      "effective_date": "2026-12-14",
+      "employees": 142,
+      "layoff_type": "Closure",
+      "county": "Oakland",
+      "city": "",
+      "address": "815 Opdyke Road, Suite 500, Auburn Hills, MI 48326; 1370 Pacific Drive, Auburn Hills, MI, 48326",
+      "industry": ""
+    },
     {
       "state": "MI",
       "company": "Dakkota Integrated Systems, LLC",

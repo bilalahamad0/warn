@@ -1,43 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-10-22T16:39:49.731382+00:00",
+  "updated_at": "2026-10-23T02:54:47.369089+00:00",
   "candidates": [
-    {
-      "id": "b5ae4689e0ec",
-      "created_at": "2026-09-23T02:44:16.227636+00:00",
-      "status": "expired",
-      "company": "Expedia",
-      "display": "Expedia",
-      "employees": 58,
-      "states": [
-        "WA"
-      ],
-      "per_state": {
-        "WA": 58
-      },
-      "sites": 1,
-      "card": {
-        "place": "Seattle, WA",
-        "effective": "Nov 21, 2026",
-        "employees": 58
-      },
-      "arm": "tech",
-      "reason": "tech brand, 58 >= 25",
-      "text": "Expedia filed a WARN notice for 58 job cuts in Seattle, WA.\n\nEffective Nov 21, 2026.\n\n#layoffs #Washington",
-      "thread": [],
-      "weighted_len": 106,
-      "warnings": [],
-      "keys": [
-        "WA:Expedia, Inc.__2026-11-21__58"
-      ],
-      "approved_by": null,
-      "approved_at": null,
-      "rejected_reason": null,
-      "tweet_id": null,
-      "posted_at": null,
-      "attempts": 0,
-      "last_error": null
-    },
     {
       "id": "5e404079cd82",
       "created_at": "2026-09-25T02:49:01.849896+00:00",
@@ -935,6 +899,188 @@
       "warnings": [],
       "keys": [
         "MD:Dreyer\u2019s Grand Ice Cream__2026-12-20__803"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "19444aa3b9b7",
+      "created_at": "2026-10-23T02:54:47.368942+00:00",
+      "status": "pending",
+      "company": "dreyers grand ice cream",
+      "display": "Dreyer's Grand Ice Cream",
+      "employees": 1543,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 1543
+      },
+      "sites": 2,
+      "card": {
+        "place": "2 sites in California",
+        "effective": "Dec 19, 2026",
+        "employees": 1543
+      },
+      "arm": "size",
+      "reason": "1,543 >= 250",
+      "text": "Dreyer's Grand Ice Cream filed WARN notices for 1,543 job cuts across 2 sites in California.\n\nFirst effective date Dec 19, 2026.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 150,
+      "warnings": [],
+      "keys": [
+        "CA:Dreyer's Grand Ice Cream__2026-12-19__1095",
+        "CA:Dreyer's Grand Ice Cream__2026-12-19__448"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "e954f5e5c43e",
+      "created_at": "2026-10-23T02:54:47.368991+00:00",
+      "status": "pending",
+      "company": "fender musical instruments",
+      "display": "Fender Musical Instruments Corporation",
+      "employees": 533,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 533
+      },
+      "sites": 1,
+      "card": {
+        "place": "Riverside County, CA",
+        "effective": "Dec 14, 2026",
+        "employees": 533
+      },
+      "arm": "size",
+      "reason": "533 >= 250",
+      "text": "Fender Musical Instruments Corporation filed a WARN notice for 533 job cuts in Riverside County, CA.\n\nEffective Dec 14, 2026.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 147,
+      "warnings": [],
+      "keys": [
+        "CA:Fender Musical Instruments Corporation__2026-12-14__533"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "2245148d1578",
+      "created_at": "2026-10-23T02:54:47.369024+00:00",
+      "status": "pending",
+      "company": "Netflix",
+      "display": "Netflix",
+      "employees": 494,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 494
+      },
+      "sites": 2,
+      "card": {
+        "place": "2 sites in California",
+        "effective": "Sep 14, 2026",
+        "employees": 494
+      },
+      "arm": "size",
+      "reason": "494 >= 250",
+      "text": "Netflix filed WARN notices for 494 job cuts across 2 sites in California.\n\nFirst effective date Sep 14, 2026.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 131,
+      "warnings": [],
+      "keys": [
+        "CA:Netflix, Inc.__2026-09-14__267",
+        "CA:Netflix, Inc.__2026-09-14__227"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "f2a0ba25f5a7",
+      "created_at": "2026-10-23T02:54:47.369052+00:00",
+      "status": "pending",
+      "company": "eBay",
+      "display": "eBay",
+      "employees": 229,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 229
+      },
+      "sites": 1,
+      "card": {
+        "place": "Santa Clara County, CA",
+        "effective": "Oct 21, 2026",
+        "employees": 229
+      },
+      "arm": "tech",
+      "reason": "tech brand, 229 >= 25",
+      "text": "eBay filed a WARN notice for 229 job cuts in Santa Clara County, CA.\n\nEffective Oct 21, 2026.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 115,
+      "warnings": [],
+      "keys": [
+        "CA:eBay Inc.__2026-10-21__229"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "6f380c0ca67a",
+      "created_at": "2026-10-23T02:54:47.369080+00:00",
+      "status": "pending",
+      "company": "Safeway",
+      "display": "Safeway",
+      "employees": 92,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 92
+      },
+      "sites": 1,
+      "card": {
+        "place": "Contra Costa County, CA",
+        "effective": "Dec 20, 2026",
+        "employees": 92
+      },
+      "arm": "brand",
+      "reason": "known brand, 92 >= 50",
+      "text": "Safeway filed a WARN notice for 92 job cuts in Contra Costa County, CA.\n\nEffective Dec 20, 2026.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 118,
+      "warnings": [],
+      "keys": [
+        "CA:Safeway, Inc.__2026-12-20__92"
       ],
       "approved_by": null,
       "approved_at": null,

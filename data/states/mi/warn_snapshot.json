@@ -1,11 +1,23 @@
 {
-  "total_records": 119,
-  "total_employees": 15640,
+  "total_records": 120,
+  "total_employees": 16037,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-10-21T16:35:47.365116+00:00",
+  "last_updated": "2026-10-22T02:40:22.570412+00:00",
   "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
   "records": [
+    {
+      "state": "MI",
+      "company": "Dakkota Integrated Systems, LLC",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 397,
+      "layoff_type": "Closure",
+      "county": "Wayne",
+      "city": "",
+      "address": "5905 Van Dyke St., Detroit, MI 48312",
+      "industry": ""
+    },
     {
       "state": "MI",
       "company": "Kern J.G. Enterprise, Inc.",
@@ -68,18 +80,6 @@
     },
     {
       "state": "MI",
-      "company": "Rugged Liner",
-      "notice_date": null,
-      "effective_date": "2027-03-19",
-      "employees": 90,
-      "layoff_type": "Company closure",
-      "county": "Shiawassee",
-      "city": "",
-      "address": "951 Aiken St., Owosso, MI 48867; 200 Universal Drive, Owosso, MI 48867",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "Trinity Health Corp.",
       "notice_date": null,
       "effective_date": "2026-10-25",
@@ -88,6 +88,18 @@
       "county": "Wayne",
       "city": "",
       "address": "20555 Victor Parkway, Livonia, MI 48152",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Rugged Liner",
+      "notice_date": null,
+      "effective_date": "2027-03-19",
+      "employees": 90,
+      "layoff_type": "Company closure",
+      "county": "Shiawassee",
+      "city": "",
+      "address": "951 Aiken St., Owosso, MI 48867; 200 Universal Drive, Owosso, MI 48867",
       "industry": ""
     },
     {
@@ -152,18 +164,6 @@
     },
     {
       "state": "MI",
-      "company": "Compass Group USA, Inc. / Morrison Healthcare",
-      "notice_date": null,
-      "effective_date": "2026-07-24",
-      "employees": 311,
-      "layoff_type": "Layoff",
-      "county": "Bay, Clare, Genesee, Huron, Isabella, Macomb, Oakland, Tuscola",
-      "city": "",
-      "address": "1100 S. Van Dyke Road, Bad Axe, MI 48413; 1900 Columbus Ave., Bay City, MI 48708; 401 N. Hopper St., Caro, MI 48723; 401 S. Ballenger Highway, Flint, MI 48532; 1000 Harrington St., Mt. Clemens, MI 48043; 1221 South Drive, Mt. Pleasant, MI 48858; 50 Perry St., Pontiac, MI 48342; 1221 Pine Grove Ave., Port Huron, Michigan 48060",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "Republic National Distributing Company (RNDC)",
       "notice_date": null,
       "effective_date": "2026-08-17",
@@ -184,6 +184,18 @@
       "county": "Oakland",
       "city": "",
       "address": "3701 Hamlin Road, Auburn Hills, MI 48326",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Compass Group USA, Inc. / Morrison Healthcare",
+      "notice_date": null,
+      "effective_date": "2026-07-24",
+      "employees": 311,
+      "layoff_type": "Layoff",
+      "county": "Bay, Clare, Genesee, Huron, Isabella, Macomb, Oakland, Tuscola",
+      "city": "",
+      "address": "1100 S. Van Dyke Road, Bad Axe, MI 48413; 1900 Columbus Ave., Bay City, MI 48708; 401 N. Hopper St., Caro, MI 48723; 401 S. Ballenger Highway, Flint, MI 48532; 1000 Harrington St., Mt. Clemens, MI 48043; 1221 South Drive, Mt. Pleasant, MI 48858; 50 Perry St., Pontiac, MI 48342; 1221 Pine Grove Ave., Port Huron, Michigan 48060",
       "industry": ""
     },
     {
@@ -272,6 +284,18 @@
     },
     {
       "state": "MI",
+      "company": "Fifth Third Bank",
+      "notice_date": null,
+      "effective_date": "2026-07-01",
+      "employees": 637,
+      "layoff_type": "Permanent layoff",
+      "county": "Oakland",
+      "city": "",
+      "address": "36455 Corporate Drive, Farmington Hills, MI 48331",
+      "industry": ""
+    },
+    {
+      "state": "MI",
       "company": "Spirit Airlines",
       "notice_date": null,
       "effective_date": "2026-05-02",
@@ -292,18 +316,6 @@
       "county": "Oakland",
       "city": "",
       "address": "1955 Stephenson Highway, Troy, MI 48083",
-      "industry": ""
-    },
-    {
-      "state": "MI",
-      "company": "Fifth Third Bank",
-      "notice_date": null,
-      "effective_date": "2026-07-01",
-      "employees": 637,
-      "layoff_type": "Permanent layoff",
-      "county": "Oakland",
-      "city": "",
-      "address": "36455 Corporate Drive, Farmington Hills, MI 48331",
       "industry": ""
     },
     {
@@ -392,18 +404,6 @@
     },
     {
       "state": "MI",
-      "company": "First Brands Group, LLC",
-      "notice_date": null,
-      "effective_date": "2026-02-23",
-      "employees": 41,
-      "layoff_type": "Permanent layoff",
-      "county": "Oakland",
-      "city": "",
-      "address": "3255 West Hamlin Road, Rochester Hills, MI 48309",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "General Shale, d/b/a Michigan Brick",
       "notice_date": null,
       "effective_date": "2026-04-27",
@@ -412,6 +412,18 @@
       "county": "Shiawassee",
       "city": "Corunna",
       "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "First Brands Group, LLC",
+      "notice_date": null,
+      "effective_date": "2026-02-23",
+      "employees": 41,
+      "layoff_type": "Permanent layoff",
+      "county": "Oakland",
+      "city": "",
+      "address": "3255 West Hamlin Road, Rochester Hills, MI 48309",
       "industry": ""
     },
     {

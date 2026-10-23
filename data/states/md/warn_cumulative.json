@@ -1,9 +1,9 @@
 {
-  "total_records": 1369,
-  "total_employees": 116739,
+  "total_records": 1370,
+  "total_employees": 116789,
   "date_range_start": "2010-01-07",
   "date_range_end": "2026-10-19",
-  "last_updated": "2026-10-22T16:31:27.650098+00:00",
+  "last_updated": "2026-10-23T02:45:20.987860+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -16433,6 +16433,18 @@
       "city": "",
       "address": "9090 Whiskey Bottom Road Laurel, MD 20723",
       "industry": "311520"
+    },
+    {
+      "state": "MD",
+      "company": "*RESCINDED* Hendall Inc.",
+      "notice_date": "2026-04-14",
+      "effective_date": "2026-06-10",
+      "employees": 50,
+      "layoff_type": "Mass Layoff - No Recall Note: Temporary, may become permanent",
+      "county": "Montgomery County",
+      "city": "",
+      "address": "1803 Research Blvd, Suite 300 Rockville, MD 20850",
+      "industry": "541512"
     }
   ]
 }

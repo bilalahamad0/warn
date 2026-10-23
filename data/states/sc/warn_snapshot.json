@@ -3,7 +3,7 @@
   "total_employees": 81887,
   "date_range_start": "2013-02-25",
   "date_range_end": "2026-10-15",
-  "last_updated": "2026-10-22T02:42:59.116937+00:00",
+  "last_updated": "2026-10-22T16:35:40.541407+00:00",
   "source_url": "https://scworks.org/employer/employer-programs/risk-closing/layoff-notification-reports",
   "records": [
     {
@@ -7186,7 +7186,7 @@
       "state": "SC",
       "company": "KPR US LLC",
       "notice_date": "2026-07-09",
-      "effective_date": "2026-11-01",
+      "effective_date": "2026-12-31",
       "employees": 3,
       "layoff_type": "Permanent Closure",
       "county": "Kershaw",
