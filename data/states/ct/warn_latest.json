@@ -1,9 +1,9 @@
 {
-  "total_records": 25,
-  "total_employees": 3175,
-  "date_range_start": "2025-10-24",
+  "total_records": 23,
+  "total_employees": 3116,
+  "date_range_start": "2025-10-28",
   "date_range_end": "2026-10-21",
-  "last_updated": "2026-10-24T02:33:29.311050+00:00",
+  "last_updated": "2026-10-24T15:12:15.974499+00:00",
   "source_url": "https://dolpublicdocumentlibrary.ct.gov/CsblrCategory?prefix=%2Frapid_response%2Fwarn_documents",
   "records": [
     {
@@ -279,30 +279,6 @@
       "layoff_type": "",
       "county": "",
       "city": "South Windsor",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "CT",
-      "company": "Baduccis",
-      "notice_date": "2025-10-24",
-      "effective_date": "2026-02-28",
-      "employees": 59,
-      "layoff_type": "",
-      "county": "",
-      "city": "Westport",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "CT",
-      "company": "PosiGen Developer LLC",
-      "notice_date": "2025-10-24",
-      "effective_date": "2025-11-02",
-      "employees": 0,
-      "layoff_type": "",
-      "county": "",
-      "city": "Shelton",
       "address": "",
       "industry": ""
     }

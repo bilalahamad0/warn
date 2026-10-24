@@ -322,32 +322,6 @@
       },
       "modifiedDate": "2025-11-04T16:21:53+00:00",
       "name": "rapid_response/warn_documents/2025/Macy's Distribution Center (South Windsor) 10-28-2025_OCR.pdf"
-    },
-    {
-      "blobProperties": {
-        "affected_company": "Baduccis",
-        "closing_dates_": "2/28/2006",
-        "layoff_dates": "2/28/2026",
-        "layoff_locations__": "Westport",
-        "number_of_impacted_workers": "59",
-        "warn_document_date": "2025-10-24",
-        "warn_document_received_date": "2025-10-24"
-      },
-      "modifiedDate": "2025-10-27T13:21:55+00:00",
-      "name": "rapid_response/warn_documents/2025/Balducci's (Westport) 10-24-2025.pdf"
-    },
-    {
-      "blobProperties": {
-        "affected_company": "PosiGen Developer LLC",
-        "closing_dates_": "11/2/2025",
-        "layoff_dates": "11/2/2025",
-        "layoff_locations__": "Shelton",
-        "number_of_impacted_workers": "Not provided",
-        "warn_document_date": "2025-10-24",
-        "warn_document_received_date": "2025-10-24"
-      },
-      "modifiedDate": "2025-10-27T13:34:04+00:00",
-      "name": "rapid_response/warn_documents/2025/PosiGen (Shelton) 10-24-2025.pdf"
     }
   ]
 }
