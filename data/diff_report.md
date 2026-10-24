@@ -1,41 +1,16 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-10-24 02:10:03 UTC
+**Generated:** 2026-10-24 02:48:16 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 378 | 36 | +0/+339 |
-| Total employees | 21,262 | 2,560 | -18,702 |
+| Total records | 36 | 36 | +0/+0 |
+| Total employees | 2,560 | 2,560 | +0 |
 
 ### ✅ No new entries.
-
-### ❌ Removed Entries (339 records)
-
-| Company | Employees | Effective Date |
-|---------|-----------|----------------|
-| Covenant Aviation Security, LLC | 1,279 | 2026-11-30 |
-| Dreyer's Grand Ice Cream | 1,095 | 2026-12-19 |
-| 24Hr Homecare, LLC | 738 | 2026-09-15 |
-| Fender Musical Instruments Corporation | 533 | 2026-12-14 |
-| Dreyer's Grand Ice Cream | 448 | 2026-12-19 |
-| Randstad Inhouse Services, LLC (Dreyer's) | 426 | 2026-11-19 |
-| Jabil Inc. | 382 | 2026-11-23 |
-| Visa | 320 | 2026-10-01 |
-| Oracle America, Inc. | 279 | 2026-11-13 |
-| Netflix, Inc. | 267 | 2026-09-14 |
-| PayPal | 251 | 2026-10-30 |
-| eBay Inc. | 229 | 2026-10-21 |
-| Netflix, Inc. | 227 | 2026-09-14 |
-| Dreyer's Grand Ice Cream | 221 | 2026-11-19 |
-| IPS Nationwide, Inc. | 212 | 2026-11-17 |
-| Myers Power Products, Inc. | 206 | 2026-12-15 |
-| LeeMAH Electronics | 205 | 2026-10-16 |
-| Sapporo U.S.A. (1999 Citracado Parkway) | 200 | 2026-11-13 |
-| Amy's Kitchen, LLC | 200 | 2026-12-18 |
-| Bumble Bee Foods, LLC | 197 | 2026-11-19 |
 
 ---
 ## 📁 File vs Git Comparison
@@ -51,6 +26,10 @@ M data/changelog.jsonl
  M data/states/ak/warn_cumulative.json
  M data/states/ak/warn_latest.json
  M data/states/ak/warn_snapshot.json
+ M data/states/al/changelog.jsonl
+ M data/states/al/warn_cumulative.json
+ M data/states/al/warn_latest.json
+ M data/states/al/warn_snapshot.json
  M data/states/az/changelog.jsonl
  M data/states/az/meta.json
  M data/states/az/warn_cumulative.json
@@ -121,7 +100,6 @@ M data/changelog.jsonl
  M data/states/la/warn_snapshot.json
  M data/states/ma/changelog.jsonl
  M data/states/ma/meta.json
- M data/states/ma/raw_download.csv
  M data/states/ma/warn_cumulative.json
  M data/states/ma/warn_latest.json
  M data/states/ma/warn_snapshot.json
@@ -137,7 +115,6 @@ M data/changelog.jsonl
  M data/states/me/warn_snapshot.json
  M data/states/mi/changelog.jsonl
  M data/states/mi/meta.json
- M data/states/mi/raw_download
  M data/states/mi/warn_cumulative.json
  M data/states/mi/warn_latest.json
  M data/states/mi/warn_snapshot.json
@@ -156,7 +133,6 @@ M data/changelog.jsonl
  M data/states/mt/warn_snapshot.json
  M data/states/nc/changelog.jsonl
  M data/states/nc/meta.json
- M data/states/nc/raw_download
  M data/states/nc/warn_cumulative.json
  M data/states/nc/warn_latest.json
  M data/states/nc/warn_snapshot.json
@@ -166,7 +142,6 @@ M data/changelog.jsonl
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
- M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
@@ -182,12 +157,10 @@ M data/changelog.jsonl
  M data/states/nm/warn_snapshot.json
  M data/states/ny/changelog.jsonl
  M data/states/ny/meta.json
- M data/states/ny/raw_download
  M data/states/ny/warn_cumulative.json
  M data/states/ny/warn_latest.json
  M data/states/ny/warn_snapshot.json
  M data/states/oh/changelog.jsonl
- M data/states/oh/raw_download
  M data/states/oh/warn_cumulative.json
  M data/states/oh/warn_latest.json
  M data/states/oh/warn_snapshot.json
@@ -222,17 +195,16 @@ M data/changelog.jsonl
  M data/states/sd/warn_latest.json
  M data/states/sd/warn_snapshot.json
  M data/states/tn/changelog.jsonl
- M data/states/tn/raw_download
  M data/states/tn/warn_cumulative.json
  M data/states/tn/warn_latest.json
  M data/states/tn/warn_snapshot.json
  M data/states/ut/changelog.jsonl
+ M data/states/ut/meta.json
  M data/states/ut/warn_cumulative.json
  M data/states/ut/warn_latest.json
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
- M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -243,7 +215,6 @@ M data/changelog.jsonl
  M data/states/vt/warn_snapshot.json
  M data/states/wa/changelog.jsonl
  M data/states/wa/meta.json
- M data/states/wa/raw_download
  M data/states/wa/warn_cumulative.json
  M data/states/wa/warn_latest.json
  M data/states/wa/warn_snapshot.json
@@ -264,16 +235,17 @@ M data/changelog.jsonl
 
 **Recent commits:**
 ```
+549ad0215 auto: WARN data update [skip ci]
 12c486856 fix(ci): retry git push on transient server errors and backfill notified ledgers
 a4927fafa auto: WARN data update [skip ci]
 37c98f51f auto: WARN data update [skip ci]
 2ec196d2e auto: WARN data update [skip ci]
-6ac060d84 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-10-24T02:33:04.716305+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-24T01:54:32.087248+00:00` — +0 added, -342 removed, 0 employees (new)
 - `2026-10-23T02:36:05.008078+00:00` — +21 added, -0 removed, 3,645 employees (new)
 - `2026-10-22T16:25:06.470313+00:00` — +0 added, -0 removed, 0 employees (new)
@@ -283,4 +255,3 @@ a4927fafa auto: WARN data update [skip ci]
 - `2026-10-20T16:09:48.658496+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-20T02:40:37.718162+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-19T18:07:14.611514+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-10-19T02:25:54.291385+00:00` — +0 added, -0 removed, 0 employees (new)

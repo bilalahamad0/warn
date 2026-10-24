@@ -1,11 +1,59 @@
 {
-  "total_records": 121,
-  "total_employees": 16179,
+  "total_records": 125,
+  "total_employees": 16414,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-10-23T02:46:58.838672+00:00",
+  "last_updated": "2026-10-24T02:04:13.457092+00:00",
   "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
   "records": [
+    {
+      "state": "MI",
+      "company": "Mariella of Lake Orion",
+      "notice_date": null,
+      "effective_date": "2026-11-20",
+      "employees": 55,
+      "layoff_type": "Closure",
+      "county": "Oakland",
+      "city": "",
+      "address": "985 N. Lapeer Road, Lake Orion, MI 48362",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "FKA Distributing Co.",
+      "notice_date": null,
+      "effective_date": "2026-10-12",
+      "employees": 34,
+      "layoff_type": "Layoff",
+      "county": "Oakland",
+      "city": "",
+      "address": "3000 N. Pontiac Trail, Walled Lake, MI 48390",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Salterra at Chesterfield",
+      "notice_date": null,
+      "effective_date": "2026-11-20",
+      "employees": 46,
+      "layoff_type": "Closure",
+      "county": "Macomb",
+      "city": "",
+      "address": "29891 23 Mile Road, New Baltimore, MI 48047",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Woodbridge Group -- Lansing",
+      "notice_date": null,
+      "effective_date": "2026-12-18",
+      "employees": 100,
+      "layoff_type": "Temporary layoff",
+      "county": "Eaton",
+      "city": "",
+      "address": "5640 Pierson Highway, Lansing, MI 48917",
+      "industry": ""
+    },
     {
       "state": "MI",
       "company": "Inalfa Roof Systems, Inc.",

@@ -1,11 +1,23 @@
 {
-  "total_records": 1419,
-  "total_employees": 117916,
+  "total_records": 1421,
+  "total_employees": 117997,
   "date_range_start": "2010-01-07",
   "date_range_end": "2026-10-19",
-  "last_updated": "2026-10-23T02:45:20.973491+00:00",
+  "last_updated": "2026-10-24T02:02:39.863358+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
+    {
+      "state": "MD",
+      "company": "Atlantic Tractor",
+      "notice_date": "2026-10-19",
+      "effective_date": "2026-11-30",
+      "employees": 9,
+      "layoff_type": "Plant Closure",
+      "county": "Anne Arundel",
+      "city": "",
+      "address": "1127 Littlestown Pike Westminster, MD 21157",
+      "industry": "444230"
+    },
     {
       "state": "MD",
       "company": "Dreyer\u2019s Grand Ice Cream",
@@ -17,6 +29,18 @@
       "city": "",
       "address": "9090 Whiskey Bottom Road Laurel, MD 20723",
       "industry": "311520"
+    },
+    {
+      "state": "MD",
+      "company": "Peraton",
+      "notice_date": "2026-10-16",
+      "effective_date": "2026-12-14",
+      "employees": 72,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Anne Arundel",
+      "city": "",
+      "address": "9800 Savage Road Fort Mead, MD 20755",
+      "industry": "541512"
     },
     {
       "state": "MD",

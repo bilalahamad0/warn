@@ -1,11 +1,23 @@
 {
-  "total_records": 812,
-  "total_employees": 119768,
+  "total_records": 813,
+  "total_employees": 119884,
   "date_range_start": "2017-01-09",
-  "date_range_end": "2026-10-09",
-  "last_updated": "2026-10-23T02:49:05.645327+00:00",
+  "date_range_end": "2026-10-26",
+  "last_updated": "2026-10-24T02:06:31.725398+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
+    {
+      "state": "OH",
+      "company": "The Blade",
+      "notice_date": "2026-10-26",
+      "effective_date": null,
+      "employees": 116,
+      "layoff_type": "Closure",
+      "county": "Wood",
+      "city": "Northwood",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "OH",
       "company": "Markdom Plastics USA Inc",
