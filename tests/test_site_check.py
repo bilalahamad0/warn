@@ -647,3 +647,15 @@ def test_watchdog_grace_outlasts_a_pipeline_publish():
     attempt's full wait), or the two race on the same build."""
     grace = int(re.search(r"--grace (\d+)", _workflow("site-watchdog.yml")).group(1))
     assert grace * 60 > 2 * warn_site_check.DEPLOY_WAIT_S
+
+
+def test_monitor_commit_step_retries_git_push():
+    """A transient GitHub 500 on git-receive-pack (e.g. run 39983480282)
+    must not fail the run: the commit step must retry git push with backoff,
+    auto-rebase, and buffer optimizations."""
+    text = _workflow("monitor.yml")
+    assert "http.postBuffer" in text
+    assert "http.version HTTP/1.1" in text
+    assert "for attempt in 1 2 3 4 5" in text
+    assert "git push" in text
+    assert "git rebase origin/main" in text
