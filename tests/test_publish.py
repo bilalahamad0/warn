@@ -796,6 +796,33 @@ def test_git_add_omits_the_unsubscribe_page_when_it_was_not_built(
     assert "docs/" in staged            # the rest is still staged as before
 
 
+def test_push_origin_main_retries_and_succeeds(monkeypatch):
+    """_push_origin_main retries on transient git push failures."""
+    calls = []
+
+    def fake_run_git(args, **kwargs):
+        calls.append(args)
+        return len(calls) > 1
+
+    monkeypatch.setattr(warn_publish, "_run_git", fake_run_git)
+    monkeypatch.setattr(warn_publish.time, "sleep", lambda _s: None)
+    assert warn_publish._push_origin_main(token="") is True
+    assert len(calls) == 2
+
+
+def test_push_origin_main_fails_after_max_retries(monkeypatch):
+    """_push_origin_main returns False if all 3 attempts fail."""
+    calls = []
+    monkeypatch.setattr(
+        warn_publish,
+        "_run_git",
+        lambda args, **kwargs: calls.append(args) or False,
+    )
+    monkeypatch.setattr(warn_publish.time, "sleep", lambda _s: None)
+    assert warn_publish._push_origin_main(token="") is False
+    assert len(calls) == 3
+
+
 # ---------------------------------------------------------------------------
 # Ledger persistence on a root-site build failure
 # ---------------------------------------------------------------------------
