@@ -26,6 +26,7 @@ import logging
 import argparse
 import os
 import subprocess
+import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urlparse
@@ -658,7 +659,17 @@ def _push_origin_main(token: str) -> bool:
             )
             url_modified = True
 
-    push_ok = _run_git(["push", "origin", "main"])
+    push_ok = False
+    for attempt in range(1, 4):
+        push_ok = _run_git(["push", "origin", "main"])
+        if push_ok:
+            break
+        if attempt < 3:
+            delay = attempt * 5
+            log.warning(
+                f"git push attempt {attempt} failed; retrying in {delay}s …"
+            )
+            time.sleep(delay)
 
     # Restore original URL if we modified it
     if url_modified:

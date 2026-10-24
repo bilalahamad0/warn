@@ -109,7 +109,45 @@ jobs:
           # Only commit/push if there are actual changes staged
           if ! git diff --cached --quiet; then
             git commit -m "$MSG"
-            git push
+
+            # Buffer settings for large pushes (hundreds of files)
+            git config --local http.postBuffer 524288000
+            git config --local http.version HTTP/1.1
+
+            # Push with retry and rebase: handles transient GitHub 500s (Internal
+            # Server Error), network glitches, or concurrent pushes during the
+            # ~30m pipeline run.
+            PUSHED=0
+            for attempt in 1 2 3 4 5; do
+              echo "Push attempt $attempt of 5..."
+              if git push; then
+                PUSHED=1
+                echo "Successfully pushed to origin/main."
+                break
+              fi
+
+              echo "Push attempt $attempt failed (exit code $?)."
+              if [ "$attempt" -lt 5 ]; then
+                echo "Checking if origin/main has advanced..."
+                git fetch origin main || true
+                BEHIND_COUNT=$(git rev-list HEAD..origin/main --count 2>/dev/null || echo 0)
+                if [ "$BEHIND_COUNT" -gt 0 ]; then
+                  echo "origin/main is ahead by $BEHIND_COUNT commit(s); rebasing..."
+                  git rebase origin/main || {
+                    echo "Rebase conflict detected; aborting rebase"
+                    git rebase --abort || true
+                  }
+                fi
+                DELAY=$((attempt * 10))
+                echo "Waiting ${DELAY}s before next push attempt..."
+                sleep $DELAY
+              fi
+            done
+
+            if [ "$PUSHED" -ne 1 ]; then
+              echo "::error::git push failed after 5 attempts."
+              exit 1
+            fi
           else
             echo "No changes to commit"
           fi
