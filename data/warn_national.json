@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-23T02:53:41.492586+00:00",
+  "last_updated": "2026-10-24T02:10:04.296704+00:00",
   "states_live": 47,
-  "total_records": 60661,
-  "total_employees": 6530058,
+  "total_records": 60675,
+  "total_employees": 6531011,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -134,15 +134,15 @@
       "name": "Massachusetts",
       "agency": "Massachusetts Executive Office of Labor and Workforce Development",
       "source_url": "https://www.mass.gov/info-details/worker-adjustment-and-retraining-notification-act-warn",
-      "total_records": 394,
-      "total_employees": 35399
+      "total_records": 396,
+      "total_employees": 35566
     },
     "MD": {
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1370,
-      "total_employees": 116789
+      "total_records": 1372,
+      "total_employees": 116870
     },
     "ME": {
       "name": "Maine",
@@ -155,8 +155,8 @@
       "name": "Michigan",
       "agency": "Michigan Department of Labor and Economic Opportunity",
       "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
-      "total_records": 794,
-      "total_employees": 123173
+      "total_records": 798,
+      "total_employees": 123408
     },
     "MN": {
       "name": "Minnesota",
@@ -183,8 +183,8 @@
       "name": "North Carolina",
       "agency": "North Carolina Department of Commerce",
       "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
-      "total_records": 378,
-      "total_employees": 35369
+      "total_records": 380,
+      "total_employees": 35550
     },
     "ND": {
       "name": "North Dakota",
@@ -225,15 +225,15 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 5361,
-      "total_employees": 434570
+      "total_records": 5363,
+      "total_employees": 434608
     },
     "OH": {
       "name": "Ohio",
       "agency": "Ohio Department of Job and Family Services",
       "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
-      "total_records": 1264,
-      "total_employees": 172380
+      "total_records": 1265,
+      "total_employees": 172496
     },
     "OK": {
       "name": "Oklahoma",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1546,
-      "total_employees": 251486
+      "total_records": 1547,
+      "total_employees": 251621
     },
     "WI": {
       "name": "Wisconsin",
@@ -373066,6 +373066,30 @@
       "industry": ""
     },
     {
+      "state": "MA",
+      "company": "EyePoint US Inc.",
+      "notice_date": "2026-10-20",
+      "effective_date": "2026-12-31",
+      "employees": 105,
+      "layoff_type": "",
+      "county": "Central and Boston",
+      "city": "Northbridge and Watertown",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "Powered by FTGU, LLC",
+      "notice_date": "2026-10-20",
+      "effective_date": "2026-12-15",
+      "employees": 62,
+      "layoff_type": "",
+      "county": "Central",
+      "city": "Fitchburg",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "MD",
       "company": "Taft Broadcasting, LLC",
       "notice_date": "2026-07-20",
@@ -389506,6 +389530,30 @@
       "industry": "541512"
     },
     {
+      "state": "MD",
+      "company": "Atlantic Tractor",
+      "notice_date": "2026-10-19",
+      "effective_date": "2026-11-30",
+      "employees": 9,
+      "layoff_type": "Plant Closure",
+      "county": "Anne Arundel",
+      "city": "",
+      "address": "1127 Littlestown Pike Westminster, MD 21157",
+      "industry": "444230"
+    },
+    {
+      "state": "MD",
+      "company": "Peraton",
+      "notice_date": "2026-10-16",
+      "effective_date": "2026-12-14",
+      "employees": 72,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Anne Arundel",
+      "city": "",
+      "address": "9800 Savage Road Fort Mead, MD 20755",
+      "industry": "541512"
+    },
+    {
       "state": "ME",
       "company": "SMBC-Sumitomo Mitsui Banking Corporation",
       "notice_date": "2026-01-13",
@@ -397948,6 +397996,54 @@
       "county": "Oakland",
       "city": "",
       "address": "815 Opdyke Road, Suite 500, Auburn Hills, MI 48326; 1370 Pacific Drive, Auburn Hills, MI, 48326",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Mariella of Lake Orion",
+      "notice_date": null,
+      "effective_date": "2026-11-20",
+      "employees": 55,
+      "layoff_type": "Closure",
+      "county": "Oakland",
+      "city": "",
+      "address": "985 N. Lapeer Road, Lake Orion, MI 48362",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "FKA Distributing Co.",
+      "notice_date": null,
+      "effective_date": "2026-10-12",
+      "employees": 34,
+      "layoff_type": "Layoff",
+      "county": "Oakland",
+      "city": "",
+      "address": "3000 N. Pontiac Trail, Walled Lake, MI 48390",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Salterra at Chesterfield",
+      "notice_date": null,
+      "effective_date": "2026-11-20",
+      "employees": 46,
+      "layoff_type": "Closure",
+      "county": "Macomb",
+      "city": "",
+      "address": "29891 23 Mile Road, New Baltimore, MI 48047",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Woodbridge Group -- Lansing",
+      "notice_date": null,
+      "effective_date": "2026-12-18",
+      "employees": 100,
+      "layoff_type": "Temporary layoff",
+      "county": "Eaton",
+      "city": "",
+      "address": "5640 Pierson Highway, Lansing, MI 48917",
       "industry": ""
     },
     {
@@ -413104,6 +413200,30 @@
       "county": "Catawba",
       "city": "Conover",
       "address": "103B Somerset Drive NW",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Foster",
+      "notice_date": "2026-10-22",
+      "effective_date": "2027-03-05",
+      "employees": 12,
+      "layoff_type": "Closure Permanent",
+      "county": "Pitt",
+      "city": "Greenville",
+      "address": "1060 Taylors Creek Dr.",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Foster",
+      "notice_date": "2026-10-22",
+      "effective_date": "2027-03-05",
+      "employees": 169,
+      "layoff_type": "Closure Permanent",
+      "county": "Forsyth",
+      "city": "Winston Salem",
+      "address": "2900 Lowery St.",
       "industry": ""
     },
     {
@@ -521444,6 +521564,30 @@
     },
     {
       "state": "NY",
+      "company": "Acme Markets, Inc.",
+      "notice_date": "2026-09-10",
+      "effective_date": "2026-12-10",
+      "employees": 38,
+      "layoff_type": "Closure Permanent",
+      "county": "Westchester",
+      "city": "",
+      "address": "144 S Ridge Street Rye Brook, NY, 10573",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Etain, LLC.",
+      "notice_date": "2026-05-05",
+      "effective_date": "2026-08-03",
+      "employees": 0,
+      "layoff_type": "Closure Permanent",
+      "county": "Warren",
+      "city": "",
+      "address": "6030-6032 US-9 Chestertown, NY, 12817",
+      "industry": ""
+    },
+    {
+      "state": "NY",
       "company": "Cardionet, LLC. an affiliate of Philips North America, LLC.",
       "notice_date": "2025-04-01",
       "effective_date": "2025-06-30",
@@ -539475,6 +539619,18 @@
       "layoff_type": "Closure",
       "county": "Sandusky",
       "city": "Bellevue",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "The Blade",
+      "notice_date": "2026-10-26",
+      "effective_date": null,
+      "employees": 116,
+      "layoff_type": "Closure",
+      "county": "Wood",
+      "city": "Northwood",
       "address": "",
       "industry": ""
     },
@@ -668048,6 +668204,18 @@
       "layoff_type": "Closure Permanent",
       "county": "",
       "city": "Bellevue",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Starbucks",
+      "notice_date": "2026-10-23",
+      "effective_date": "2026-12-31",
+      "employees": 135,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Seatac, Seattle",
       "address": "",
       "industry": ""
     },

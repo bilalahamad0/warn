@@ -1,9 +1,9 @@
 {
-  "total_records": 394,
-  "total_employees": 35399,
+  "total_records": 396,
+  "total_employees": 35566,
   "date_range_start": "2021-04-19",
-  "date_range_end": "2026-09-25",
-  "last_updated": "2026-10-23T02:44:58.947190+00:00",
+  "date_range_end": "2026-10-20",
+  "last_updated": "2026-10-24T02:02:19.087187+00:00",
   "source_url": "https://www.mass.gov/info-details/worker-adjustment-and-retraining-notification-act-warn",
   "records": [
     {
@@ -4731,6 +4731,30 @@
       "layoff_type": "",
       "county": "Metro Southwest",
       "city": "Westwood",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "EyePoint US Inc.",
+      "notice_date": "2026-10-20",
+      "effective_date": "2026-12-31",
+      "employees": 105,
+      "layoff_type": "",
+      "county": "Central and Boston",
+      "city": "Northbridge and Watertown",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "Powered by FTGU, LLC",
+      "notice_date": "2026-10-20",
+      "effective_date": "2026-12-15",
+      "employees": 62,
+      "layoff_type": "",
+      "county": "Central",
+      "city": "Fitchburg",
       "address": "",
       "industry": ""
     }

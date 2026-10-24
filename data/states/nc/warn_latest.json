@@ -1,9 +1,9 @@
 {
-  "total_records": 379,
-  "total_employees": 35306,
+  "total_records": 381,
+  "total_employees": 35487,
   "date_range_start": "2022-01-25",
-  "date_range_end": "2026-10-20",
-  "last_updated": "2026-10-23T02:48:05.135993+00:00",
+  "date_range_end": "2026-10-22",
+  "last_updated": "2026-10-24T02:05:27.268494+00:00",
   "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
   "records": [
     {
@@ -4552,6 +4552,30 @@
       "county": "Catawba",
       "city": "Conover",
       "address": "103B Somerset Drive NW",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Foster",
+      "notice_date": "2026-10-22",
+      "effective_date": "2027-03-05",
+      "employees": 12,
+      "layoff_type": "Closure Permanent",
+      "county": "Pitt",
+      "city": "Greenville",
+      "address": "1060 Taylors Creek Dr.",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Foster",
+      "notice_date": "2026-10-22",
+      "effective_date": "2027-03-05",
+      "employees": 169,
+      "layoff_type": "Closure Permanent",
+      "county": "Forsyth",
+      "city": "Winston Salem",
+      "address": "2900 Lowery St.",
       "industry": ""
     }
   ]

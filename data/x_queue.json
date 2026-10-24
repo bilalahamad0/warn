@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T02:54:47.369089+00:00",
+  "updated_at": "2026-10-24T02:11:15.217965+00:00",
   "candidates": [
     {
       "id": "5e404079cd82",
@@ -1081,6 +1081,78 @@
       "warnings": [],
       "keys": [
         "CA:Safeway, Inc.__2026-12-20__92"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "06e6847d33f7",
+      "created_at": "2026-10-24T02:11:15.217867+00:00",
+      "status": "pending",
+      "company": "Starbucks",
+      "display": "Starbucks",
+      "employees": 135,
+      "states": [
+        "WA"
+      ],
+      "per_state": {
+        "WA": 135
+      },
+      "sites": 1,
+      "card": {
+        "place": "Seatac, Seattle, WA",
+        "effective": "Dec 31, 2026",
+        "employees": 135
+      },
+      "arm": "brand",
+      "reason": "known brand, 135 >= 50",
+      "text": "Starbucks filed a WARN notice for 135 job cuts in Seatac, Seattle, WA.\n\nEffective Dec 31, 2026.\n\n#layoffs #Washington",
+      "thread": [],
+      "weighted_len": 117,
+      "warnings": [],
+      "keys": [
+        "WA:Starbucks__2026-12-31__135"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "11e3aa7b9d72",
+      "created_at": "2026-10-24T02:11:15.217945+00:00",
+      "status": "pending",
+      "company": "Peraton",
+      "display": "Peraton",
+      "employees": 72,
+      "states": [
+        "MD"
+      ],
+      "per_state": {
+        "MD": 72
+      },
+      "sites": 1,
+      "card": {
+        "place": "Anne Arundel, MD",
+        "effective": "Dec 14, 2026",
+        "employees": 72
+      },
+      "arm": "brand",
+      "reason": "known brand, 72 >= 50",
+      "text": "Peraton filed a WARN notice for 72 job cuts in Anne Arundel, MD.\n\nEffective Dec 14, 2026.\n\n#layoffs #Maryland",
+      "thread": [],
+      "weighted_len": 109,
+      "warnings": [],
+      "keys": [
+        "MD:Peraton__2026-12-14__72"
       ],
       "approved_by": null,
       "approved_at": null,

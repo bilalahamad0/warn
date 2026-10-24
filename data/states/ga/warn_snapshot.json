@@ -1,9 +1,9 @@
 {
-  "total_records": 4763,
-  "total_employees": 607967,
+  "total_records": 4764,
+  "total_employees": 608056,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-10-22T02:33:50.435446+00:00",
+  "last_updated": "2026-10-23T02:40:22.933462+00:00",
   "source_url": "https://www.tcsg.edu/warn-public-view/",
   "records": [
     {
@@ -3436,6 +3436,18 @@
       "county": "Bulloch",
       "city": "",
       "address": "8373 Zell Miller Pkwy, Statesboro, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Duty Free Americas, Inc.",
+      "notice_date": null,
+      "effective_date": "2026-10-30",
+      "employees": 89,
+      "layoff_type": "Permanent Closure",
+      "county": "Clayton",
+      "city": "",
+      "address": "6000 N Terminal Pkwy, Atrium Suite 4000, Atlanta, Georgia",
       "industry": ""
     },
     {

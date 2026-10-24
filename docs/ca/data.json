@@ -2,7 +2,7 @@
   "scope": "ca",
   "state": "CA",
   "coverage_start": "2025-01-01",
-  "last_updated": "2026-10-23T02:53:41.492586+00:00",
+  "last_updated": "2026-10-24T02:10:04.296704+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "total_records": 1960,
   "total_employees": 109884,
@@ -20,7 +20,7 @@
       "address": "2025 Hamilton Ave  San Jose CA 95125",
       "industry": "44-45 Retail Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "DesigneRx Pharmaceuticals, Inc.",
@@ -33,7 +33,7 @@
       "address": "4941 Allison Parkway Suite B Vacaville CA 95688",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Dreyer's Grand Ice Cream",
@@ -46,7 +46,7 @@
       "address": "7301 District Boulevard  Bakersfield CA 93313",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Randstad (Dreyer's Grand Ice Cream)",
@@ -59,7 +59,7 @@
       "address": "970 E. Continental Ave.  Tulare CA 93274",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Safeway, Inc.",
@@ -72,7 +72,7 @@
       "address": "905 South 34th Street  Richmond CA 94804",
       "industry": "44-45 Retail Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc.",
@@ -85,7 +85,7 @@
       "address": "1840 California Ave.  Corona CA 92881",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc.",
@@ -98,7 +98,7 @@
       "address": "1650 Los Gamos Dr.  San Rafael CA 94903",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc. (One Kaiser Plaza)",
@@ -111,7 +111,7 @@
       "address": "One Kaiser Plaza  Oakland CA 94612",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc. (1800 Harrison St.)",
@@ -124,7 +124,7 @@
       "address": "1800 Harrison St.  Oakland CA 94612",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc. (99 S. Oakland Ave.)",
@@ -137,7 +137,7 @@
       "address": "99 S. Oakland Ave.  Pasadena CA 91101",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc. (75 N. Fair Oaks Ave.)",
@@ -150,7 +150,7 @@
       "address": "75 N. Fair Oaks Ave.  Pasadena CA 91103",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc.",
@@ -163,7 +163,7 @@
       "address": "50 Iron Point Cir.  Folsom CA 95630",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Dreyer's Grand Ice Cream",
@@ -176,7 +176,7 @@
       "address": "970 E Continental  Tulare CA 93274",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Netflix, Inc.",
@@ -189,7 +189,7 @@
       "address": "5808 Sunset Blvd  Los Angeles CA 90028",
       "industry": "51 Information",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Netflix, Inc.",
@@ -202,7 +202,7 @@
       "address": "121 Albright Way  Los Gatos CA 95032",
       "industry": "51 Information",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Fender Musical Instruments Corporation",
@@ -215,7 +215,7 @@
       "address": "311 Cessna Circle  Corona CA 92878",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Formagrid Inc. dba Airtable",
@@ -228,7 +228,7 @@
       "address": "One Front Street, 28th Floor  San Francisco CA 94111",
       "industry": "51 Information",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "The Neil Jones Food Company dba Tomatek",
@@ -254,7 +254,7 @@
       "address": "514 North Prospect Avenue  Redondo Beach CA 90277",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "ServiceNow, Inc.",
@@ -293,7 +293,7 @@
       "address": "4080 Plaza Goldorado Circle Ste A  Cameron Park CA 95682",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc.",
@@ -384,7 +384,7 @@
       "address": "2950 East Philadelphia Street  Ontario CA 91761",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Jacuzzi",
@@ -592,7 +592,7 @@
       "address": "446 N. Blythe Ave.  Fresno CA 93706",
       "industry": "11 Agriculture Forestry Fishing Hunting",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "DLVR (A Corp)",

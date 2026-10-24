@@ -3,7 +3,7 @@
   "total_employees": 117916,
   "date_range_start": "2010-01-07",
   "date_range_end": "2026-10-19",
-  "last_updated": "2026-10-22T16:31:27.635190+00:00",
+  "last_updated": "2026-10-23T02:45:20.973491+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -728,7 +728,7 @@
     },
     {
       "state": "MD",
-      "company": "Hendall Inc.",
+      "company": "*RESCINDED* Hendall Inc.",
       "notice_date": "2026-04-14",
       "effective_date": "2026-06-10",
       "employees": 50,

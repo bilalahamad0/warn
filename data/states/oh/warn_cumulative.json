@@ -1,9 +1,9 @@
 {
-  "total_records": 999,
-  "total_employees": 140776,
+  "total_records": 1000,
+  "total_employees": 140892,
   "date_range_start": "2015-01-05",
-  "date_range_end": "2026-10-09",
-  "last_updated": "2026-10-23T02:49:05.653961+00:00",
+  "date_range_end": "2026-10-26",
+  "last_updated": "2026-10-24T02:06:31.735829+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
     {
@@ -11451,6 +11451,18 @@
       "layoff_type": "Closure",
       "county": "Sandusky",
       "city": "Bellevue",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "The Blade",
+      "notice_date": "2026-10-26",
+      "effective_date": null,
+      "employees": 116,
+      "layoff_type": "Closure",
+      "county": "Wood",
+      "city": "Northwood",
       "address": "",
       "industry": ""
     }

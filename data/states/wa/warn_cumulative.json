@@ -1,9 +1,9 @@
 {
-  "total_records": 1546,
-  "total_employees": 251486,
+  "total_records": 1547,
+  "total_employees": 251621,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-10-21",
-  "last_updated": "2026-10-23T02:53:35.795682+00:00",
+  "date_range_end": "2026-10-23",
+  "last_updated": "2026-10-24T02:09:58.442961+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -18555,6 +18555,18 @@
       "layoff_type": "Closure Permanent",
       "county": "",
       "city": "Bellevue",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Starbucks",
+      "notice_date": "2026-10-23",
+      "effective_date": "2026-12-31",
+      "employees": 135,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Seatac, Seattle",
       "address": "",
       "industry": ""
     }

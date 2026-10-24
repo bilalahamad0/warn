@@ -1,9 +1,9 @@
 {
-  "total_records": 1370,
-  "total_employees": 116789,
+  "total_records": 1372,
+  "total_employees": 116870,
   "date_range_start": "2010-01-07",
   "date_range_end": "2026-10-19",
-  "last_updated": "2026-10-23T02:45:20.987860+00:00",
+  "last_updated": "2026-10-24T02:02:39.881705+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -16444,6 +16444,30 @@
       "county": "Montgomery County",
       "city": "",
       "address": "1803 Research Blvd, Suite 300 Rockville, MD 20850",
+      "industry": "541512"
+    },
+    {
+      "state": "MD",
+      "company": "Atlantic Tractor",
+      "notice_date": "2026-10-19",
+      "effective_date": "2026-11-30",
+      "employees": 9,
+      "layoff_type": "Plant Closure",
+      "county": "Anne Arundel",
+      "city": "",
+      "address": "1127 Littlestown Pike Westminster, MD 21157",
+      "industry": "444230"
+    },
+    {
+      "state": "MD",
+      "company": "Peraton",
+      "notice_date": "2026-10-16",
+      "effective_date": "2026-12-14",
+      "employees": 72,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Anne Arundel",
+      "city": "",
+      "address": "9800 Savage Road Fort Mead, MD 20755",
       "industry": "541512"
     }
   ]
