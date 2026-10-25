@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-10-24 15:29:55 UTC
+**Generated:** 2026-10-25 02:36:47 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -43,7 +43,6 @@ M data/changelog.jsonl
  M data/states/co/warn_snapshot.json
  M data/states/ct/changelog.jsonl
  M data/states/ct/meta.json
- M data/states/ct/raw_download
  M data/states/ct/warn_cumulative.json
  M data/states/ct/warn_latest.json
  M data/states/ct/warn_snapshot.json
@@ -153,6 +152,11 @@ M data/changelog.jsonl
  M data/states/nj/warn_cumulative.json
  M data/states/nj/warn_latest.json
  M data/states/nj/warn_snapshot.json
+ M data/states/nm/changelog.jsonl
+ M data/states/nm/meta.json
+ M data/states/nm/warn_cumulative.json
+ M data/states/nm/warn_latest.json
+ M data/states/nm/warn_snapshot.json
  M data/states/ny/changelog.jsonl
  M data/states/ny/meta.json
  M data/states/ny/warn_cumulative.json
@@ -193,12 +197,12 @@ M data/changelog.jsonl
  M data/states/sd/warn_latest.json
  M data/states/sd/warn_snapshot.json
  M data/states/ut/changelog.jsonl
- M data/states/ut/meta.json
  M data/states/ut/warn_cumulative.json
  M data/states/ut/warn_latest.json
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
+ M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -229,16 +233,17 @@ M data/changelog.jsonl
 
 **Recent commits:**
 ```
+cee25eee8 auto: WARN data update [skip ci]
 618ac5bcc test: add regression tests for git push retry and backoff in monitor.yml and warn_publish (#27)
 3e38e7158 auto: WARN data update [skip ci]
 549ad0215 auto: WARN data update [skip ci]
 12c486856 fix(ci): retry git push on transient server errors and backfill notified ledgers
-a4927fafa auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-10-25T02:20:51.688423+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-24T15:11:56.040045+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-24T02:33:04.716305+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-24T01:54:32.087248+00:00` — +0 added, -342 removed, 0 employees (new)
@@ -248,4 +253,3 @@ a4927fafa auto: WARN data update [skip ci]
 - `2026-10-21T16:26:17.880498+00:00` — +0 added, -321 removed, 0 employees (new)
 - `2026-10-21T02:34:38.328702+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-20T16:09:48.658496+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-10-20T02:40:37.718162+00:00` — +0 added, -0 removed, 0 employees (new)
