@@ -1,9 +1,9 @@
 {
-  "total_records": 1239,
-  "total_employees": 156719,
+  "total_records": 1241,
+  "total_employees": 156874,
   "date_range_start": "1998-10-02",
-  "date_range_end": "2026-10-12",
-  "last_updated": "2026-10-26T02:29:39.051495+00:00",
+  "date_range_end": "2026-10-21",
+  "last_updated": "2026-10-26T18:09:07.639908+00:00",
   "source_url": "https://kyworks.ky.gov/Services/Pages/Rapid-Response-Layoffs-and-Closures.aspx",
   "records": [
     {
@@ -14087,6 +14087,30 @@
       "city": "",
       "address": "",
       "industry": "424820"
+    },
+    {
+      "state": "KY",
+      "company": "Leggett & Platt, Inc",
+      "notice_date": "2026-10-21",
+      "effective_date": "2026-12-21",
+      "employees": 145,
+      "layoff_type": "Closure",
+      "county": "Grayson",
+      "city": "",
+      "address": "",
+      "industry": "423210"
+    },
+    {
+      "state": "KY",
+      "company": "PARSONS CORPORATION",
+      "notice_date": "2026-10-14",
+      "effective_date": "2026-12-17",
+      "employees": 10,
+      "layoff_type": "Closure",
+      "county": "Madison",
+      "city": "",
+      "address": "",
+      "industry": "541330"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-26T02:37:40.667043+00:00",
+  "last_updated": "2026-10-26T18:17:17.179300+00:00",
   "states_live": 47,
-  "total_records": 60675,
-  "total_employees": 6531011,
+  "total_records": 60680,
+  "total_employees": 6531362,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -120,8 +120,8 @@
       "name": "Kentucky",
       "agency": "Kentucky Career Center (Education & Labor Cabinet)",
       "source_url": "https://kyworks.ky.gov/Services/Pages/Rapid-Response-Layoffs-and-Closures.aspx",
-      "total_records": 1239,
-      "total_employees": 156719
+      "total_records": 1241,
+      "total_employees": 156874
     },
     "LA": {
       "name": "Louisiana",
@@ -183,8 +183,8 @@
       "name": "North Carolina",
       "agency": "North Carolina Department of Commerce",
       "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
-      "total_records": 380,
-      "total_employees": 35550
+      "total_records": 381,
+      "total_employees": 35664
     },
     "ND": {
       "name": "North Dakota",
@@ -232,8 +232,8 @@
       "name": "Ohio",
       "agency": "Ohio Department of Job and Family Services",
       "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
-      "total_records": 1265,
-      "total_employees": 172496
+      "total_records": 1267,
+      "total_employees": 172578
     },
     "OK": {
       "name": "Oklahoma",
@@ -367882,6 +367882,30 @@
       "industry": "424820"
     },
     {
+      "state": "KY",
+      "company": "Leggett & Platt, Inc",
+      "notice_date": "2026-10-21",
+      "effective_date": "2026-12-21",
+      "employees": 145,
+      "layoff_type": "Closure",
+      "county": "Grayson",
+      "city": "",
+      "address": "",
+      "industry": "423210"
+    },
+    {
+      "state": "KY",
+      "company": "PARSONS CORPORATION",
+      "notice_date": "2026-10-14",
+      "effective_date": "2026-12-17",
+      "employees": 10,
+      "layoff_type": "Closure",
+      "county": "Madison",
+      "city": "",
+      "address": "",
+      "industry": "541330"
+    },
+    {
       "state": "LA",
       "company": "Dr. Reddy\u2019s Laboratories",
       "notice_date": "2025-01-07",
@@ -413224,6 +413248,18 @@
       "county": "Forsyth",
       "city": "Winston Salem",
       "address": "2900 Lowery St.",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Sealy Mattress Manufacturing Company",
+      "notice_date": "2026-10-23",
+      "effective_date": "2026-12-31",
+      "employees": 114,
+      "layoff_type": "Closure Permanent",
+      "county": "Randolph",
+      "city": "Trinity",
+      "address": "239 Sealy Drive",
       "industry": ""
     },
     {
@@ -539631,6 +539667,30 @@
       "layoff_type": "Closure",
       "county": "Wood",
       "city": "Northwood",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Markdom Plastics USA Inc Ohio 1 Facility",
+      "notice_date": "2026-10-23",
+      "effective_date": null,
+      "employees": 4,
+      "layoff_type": "Layoff",
+      "county": "Sandusky",
+      "city": "Bellevue",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Markdom Plastics USA Inc Ohio 2 Facility",
+      "notice_date": "2026-10-09",
+      "effective_date": null,
+      "employees": 78,
+      "layoff_type": "Closure",
+      "county": "Sandusky",
+      "city": "Bellevue",
       "address": "",
       "industry": ""
     },

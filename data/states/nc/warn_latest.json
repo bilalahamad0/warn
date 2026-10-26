@@ -1,9 +1,9 @@
 {
-  "total_records": 381,
-  "total_employees": 35487,
+  "total_records": 382,
+  "total_employees": 35601,
   "date_range_start": "2022-01-25",
-  "date_range_end": "2026-10-22",
-  "last_updated": "2026-10-26T02:33:04.578021+00:00",
+  "date_range_end": "2026-10-23",
+  "last_updated": "2026-10-26T18:12:49.290687+00:00",
   "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
   "records": [
     {
@@ -4576,6 +4576,18 @@
       "county": "Forsyth",
       "city": "Winston Salem",
       "address": "2900 Lowery St.",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Sealy Mattress Manufacturing Company",
+      "notice_date": "2026-10-23",
+      "effective_date": "2026-12-31",
+      "employees": 114,
+      "layoff_type": "Closure Permanent",
+      "county": "Randolph",
+      "city": "Trinity",
+      "address": "239 Sealy Drive",
       "industry": ""
     }
   ]

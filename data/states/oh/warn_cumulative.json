@@ -1,9 +1,9 @@
 {
-  "total_records": 1000,
-  "total_employees": 140892,
+  "total_records": 1002,
+  "total_employees": 140974,
   "date_range_start": "2015-01-05",
   "date_range_end": "2026-10-26",
-  "last_updated": "2026-10-26T02:34:08.189596+00:00",
+  "last_updated": "2026-10-26T18:13:52.129791+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
     {
@@ -11463,6 +11463,30 @@
       "layoff_type": "Closure",
       "county": "Wood",
       "city": "Northwood",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Markdom Plastics USA Inc Ohio 1 Facility",
+      "notice_date": "2026-10-23",
+      "effective_date": null,
+      "employees": 4,
+      "layoff_type": "Layoff",
+      "county": "Sandusky",
+      "city": "Bellevue",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Markdom Plastics USA Inc Ohio 2 Facility",
+      "notice_date": "2026-10-09",
+      "effective_date": null,
+      "employees": 78,
+      "layoff_type": "Closure",
+      "county": "Sandusky",
+      "city": "Bellevue",
       "address": "",
       "industry": ""
     }

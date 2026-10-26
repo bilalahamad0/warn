@@ -1,11 +1,23 @@
 {
-  "total_records": 813,
-  "total_employees": 119884,
+  "total_records": 814,
+  "total_employees": 119888,
   "date_range_start": "2017-01-09",
   "date_range_end": "2026-10-26",
-  "last_updated": "2026-10-26T02:34:08.178320+00:00",
+  "last_updated": "2026-10-26T18:13:52.119350+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
+    {
+      "state": "OH",
+      "company": "Markdom Plastics USA Inc Ohio 1 Facility",
+      "notice_date": "2026-10-23",
+      "effective_date": null,
+      "employees": 4,
+      "layoff_type": "Layoff",
+      "county": "Sandusky",
+      "city": "Bellevue",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "OH",
       "company": "The Blade",
@@ -20,7 +32,7 @@
     },
     {
       "state": "OH",
-      "company": "Markdom Plastics USA Inc",
+      "company": "Markdom Plastics USA Inc Ohio 2 Facility",
       "notice_date": "2026-10-09",
       "effective_date": null,
       "employees": 78,
