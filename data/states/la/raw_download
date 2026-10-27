@@ -330,7 +330,7 @@
   },
   {
    "company_original": "United Parcel\nService",
-   "address_original": "5700 Morrison Road, New\nOrleans, Louisiana 70126",
+   "address_original": "5700 Morrison Road,\nNew Orleans, LA 70126",
    "date_notice": "7/30/26",
    "date_action": "10/01/26",
    "affected": "172",
@@ -350,11 +350,41 @@
   },
   {
    "company_original": "Elevance Health,\nInc.",
-   "address_original": "3850 N. Causeway Blvd,\nSuite 1770, Metairie, LA\n70002",
+   "address_original": "3850 N. Causeway Blvd,\nSuite 1770,\nMetairie, LA 70002",
    "date_notice": "9/15/26",
-   "date_action": "12/31/26",
+   "date_action": "2/31/26",
    "affected": "216",
    "industry": "Insurance\nAdministration",
+   "year": 2026,
+   "file": "WarnNotices2026.pdf"
+  },
+  {
+   "company_original": "Upward Health Inc",
+   "address_original": "80 Arkay Drive,\nSuite 2320,\nHauppauge, NY, 11788",
+   "date_notice": "10/09/26",
+   "date_action": "12/08/26",
+   "affected": "2",
+   "industry": "Healthcare",
+   "year": 2026,
+   "file": "WarnNotices2026.pdf"
+  },
+  {
+   "company_original": "Denka Performance\nElastomer LLC",
+   "address_original": "560 Highway 44\nLaplace, LA 70068",
+   "date_notice": "10/06/26",
+   "date_action": "12/07/26",
+   "affected": "26",
+   "industry": "Chemical\nManufacturing",
+   "year": 2026,
+   "file": "WarnNotices2026.pdf"
+  },
+  {
+   "company_original": "Sodexo, SDH\nServices East, LLC",
+   "address_original": "4801 Ambassador Caffery\nParkway\n4600 Ambassador Caffery\nParkway\nLafayette, LA 70506",
+   "date_notice": "10/22/26",
+   "date_action": "12/31/26",
+   "affected": "189",
+   "industry": "Food Services",
    "year": 2026,
    "file": "WarnNotices2026.pdf"
   }

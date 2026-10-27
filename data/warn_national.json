@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-27T03:14:31.726613+00:00",
+  "last_updated": "2026-10-27T17:25:34.018728+00:00",
   "states_live": 47,
-  "total_records": 60683,
-  "total_employees": 6531514,
+  "total_records": 60690,
+  "total_employees": 6531284,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -15,8 +15,8 @@
       "name": "Alabama",
       "agency": "Alabama Department of Workforce",
       "source_url": "https://workforce.alabama.gov/warn-list/",
-      "total_records": 1074,
-      "total_employees": 183126
+      "total_records": 1072,
+      "total_employees": 182382
     },
     "AZ": {
       "name": "Arizona",
@@ -127,8 +127,8 @@
       "name": "Louisiana",
       "agency": "Louisiana Workforce Commission",
       "source_url": "https://www.laworks.net/Downloads/Downloads_WFD.asp",
-      "total_records": 38,
-      "total_employees": 6917
+      "total_records": 41,
+      "total_employees": 7134
     },
     "MA": {
       "name": "Massachusetts",
@@ -183,8 +183,8 @@
       "name": "North Carolina",
       "agency": "North Carolina Department of Commerce",
       "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
-      "total_records": 381,
-      "total_employees": 35664
+      "total_records": 382,
+      "total_employees": 35712
     },
     "ND": {
       "name": "North Dakota",
@@ -204,8 +204,8 @@
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2361,
-      "total_employees": 354260
+      "total_records": 2362,
+      "total_employees": 354373
     },
     "NM": {
       "name": "New Mexico",
@@ -225,21 +225,21 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 5363,
-      "total_employees": 434608
+      "total_records": 5365,
+      "total_employees": 434667
     },
     "OH": {
       "name": "Ohio",
       "agency": "Ohio Department of Job and Family Services",
       "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
-      "total_records": 1267,
-      "total_employees": 172578
+      "total_records": 1268,
+      "total_employees": 172655
     },
     "OK": {
       "name": "Oklahoma",
       "agency": "Oklahoma Employment Security Commission",
       "source_url": "https://www.employoklahoma.gov/Participants/s/warnnotices",
-      "total_records": 202,
+      "total_records": 203,
       "total_employees": 0
     },
     "OR": {
@@ -13981,37 +13981,13 @@
     },
     {
       "state": "AL",
-      "company": "CORIZON HEALTH",
-      "notice_date": "2018-02-05",
-      "effective_date": "2026-10-22",
-      "employees": 648,
-      "layoff_type": "Closing *",
+      "company": "Acme Brick Co",
+      "notice_date": "2026-10-26",
+      "effective_date": "2026-12-31",
+      "employees": 53,
+      "layoff_type": "Closure",
       "county": "",
-      "city": "State Wide",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "AL",
-      "company": "SEARS HOLDINGS",
-      "notice_date": "2009-02-28",
-      "effective_date": "2026-10-22",
-      "employees": 15,
-      "layoff_type": "Closing *",
-      "county": "",
-      "city": "Birmingham",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "AL",
-      "company": "URS CORPORATION",
-      "notice_date": "2010-01-22",
-      "effective_date": "2026-10-22",
-      "employees": 134,
-      "layoff_type": "Layoff *",
-      "county": "",
-      "city": "Birmingham",
+      "city": "Montgomery",
       "address": "",
       "industry": ""
     },
@@ -368334,7 +368310,7 @@
       "layoff_type": "",
       "county": "",
       "city": "",
-      "address": "5700 Morrison Road, New, Orleans, Louisiana 70126",
+      "address": "5700 Morrison Road, New Orleans, LA 70126",
       "industry": "Couriers and Express Delivery Services"
     },
     {
@@ -368353,13 +368329,49 @@
       "state": "LA",
       "company": "Elevance Health, Inc.",
       "notice_date": "2026-09-15",
-      "effective_date": "2026-12-31",
+      "effective_date": null,
       "employees": 216,
       "layoff_type": "",
       "county": "",
       "city": "",
-      "address": "3850 N. Causeway Blvd, Suite 1770, Metairie, LA, 70002",
+      "address": "3850 N. Causeway Blvd, Suite 1770, Metairie, LA 70002",
       "industry": "Insurance Administration"
+    },
+    {
+      "state": "LA",
+      "company": "Upward Health Inc",
+      "notice_date": "2026-10-09",
+      "effective_date": "2026-12-08",
+      "employees": 2,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "80 Arkay Drive, Suite 2320, Hauppauge, NY, 11788",
+      "industry": "Healthcare"
+    },
+    {
+      "state": "LA",
+      "company": "Denka Performance Elastomer LLC",
+      "notice_date": "2026-10-06",
+      "effective_date": "2026-12-07",
+      "employees": 26,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "560 Highway 44, Laplace, LA 70068",
+      "industry": "Chemical Manufacturing"
+    },
+    {
+      "state": "LA",
+      "company": "Sodexo, SDH Services East, LLC",
+      "notice_date": "2026-10-22",
+      "effective_date": "2026-12-31",
+      "employees": 189,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "4801 Ambassador Caffery, Parkway, 4600 Ambassador Caffery, Parkway, Lafayette, LA 70506",
+      "industry": "Food Services"
     },
     {
       "state": "MA",
@@ -389595,7 +389607,7 @@
       "notice_date": "2026-10-23",
       "effective_date": "2026-12-24",
       "employees": 46,
-      "layoff_type": "Temporary Mass Layoff- No Recall Note: Temporary (1 \u00bd - 2 \u00bd weeks layoff) for necessary maintenance",
+      "layoff_type": "Temporary Mass Layoff Note: Temporary (1 \u00bd - 2 \u00bd weeks layoff) for necessary maintenance",
       "county": "Baltimore City",
       "city": "",
       "address": "3900 E. Monument Street Baltimore, MD 21205",
@@ -413284,6 +413296,18 @@
       "county": "Randolph",
       "city": "Trinity",
       "address": "239 Sealy Drive",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Toter, LLC",
+      "notice_date": "2026-10-23",
+      "effective_date": "2026-12-22",
+      "employees": 48,
+      "layoff_type": "Closure Permanent",
+      "county": "Iredell",
+      "city": "Statesville",
+      "address": "841 Meacham Road",
       "industry": ""
     },
     {
@@ -454707,6 +454731,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Fairfield",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Conduent State & Local Solutions, Inc",
+      "notice_date": null,
+      "effective_date": "2027-01-21",
+      "employees": 113,
+      "layoff_type": "",
+      "county": "",
+      "city": "Newark",
       "address": "",
       "industry": ""
     },
@@ -521660,6 +521696,30 @@
     },
     {
       "state": "NY",
+      "company": "The Goodyear Tire and Rubber Company",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-12-30",
+      "employees": 51,
+      "layoff_type": "Closure Permanent",
+      "county": "Niagara",
+      "city": "",
+      "address": "5500 Goodyear Drive Niagara Falls, NY, 14304",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Urban Resource Institute",
+      "notice_date": "2026-04-01",
+      "effective_date": "2026-06-30",
+      "employees": 8,
+      "layoff_type": "Closure Permanent",
+      "county": "Queens",
+      "city": "",
+      "address": "38-60 13th Street Queens, NY, 11101",
+      "industry": ""
+    },
+    {
+      "state": "NY",
       "company": "Cardionet, LLC. an affiliate of Philips North America, LLC.",
       "notice_date": "2025-04-01",
       "effective_date": "2025-06-30",
@@ -539732,6 +539792,18 @@
     },
     {
       "state": "OH",
+      "company": "Morton Salt, Inc.",
+      "notice_date": "2026-10-26",
+      "effective_date": null,
+      "employees": 77,
+      "layoff_type": "Layoff",
+      "county": "Lake",
+      "city": "Painesville",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
       "company": "Marc Glassman, Inc.",
       "notice_date": "2023-01-03",
       "effective_date": "2023-03-06",
@@ -545331,6 +545403,18 @@
       "layoff_type": "Plant Closing",
       "county": "",
       "city": "Southard",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OK",
+      "company": "OU MEDICINE INC C/O THOMAS & COMPANY",
+      "notice_date": "2026-10-22",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Mass Layoff",
+      "county": "",
+      "city": "NASHVILLE",
       "address": "",
       "industry": ""
     },

@@ -1,9 +1,9 @@
 {
-  "total_records": 4814,
-  "total_employees": 419679,
+  "total_records": 4816,
+  "total_employees": 419738,
   "date_range_start": "2016-01-04",
   "date_range_end": "2026-10-02",
-  "last_updated": "2026-10-27T03:11:02.132402+00:00",
+  "last_updated": "2026-10-27T17:22:17.987318+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -57772,6 +57772,30 @@
       "county": "Warren",
       "city": "",
       "address": "6030-6032 US-9 Chestertown, NY, 12817",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "The Goodyear Tire and Rubber Company",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-12-30",
+      "employees": 51,
+      "layoff_type": "Closure Permanent",
+      "county": "Niagara",
+      "city": "",
+      "address": "5500 Goodyear Drive Niagara Falls, NY, 14304",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Urban Resource Institute",
+      "notice_date": "2026-04-01",
+      "effective_date": "2026-06-30",
+      "employees": 8,
+      "layoff_type": "Closure Permanent",
+      "county": "Queens",
+      "city": "",
+      "address": "38-60 13th Street Queens, NY, 11101",
       "industry": ""
     }
   ]

@@ -1,9 +1,9 @@
 {
-  "total_records": 2386,
-  "total_employees": 356710,
+  "total_records": 2387,
+  "total_employees": 356771,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-10-26T18:13:30.108684+00:00",
+  "last_updated": "2026-10-27T03:10:44.950358+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -1395,6 +1395,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Newark",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Teva Pharmaceuticals USA, Inc",
+      "notice_date": null,
+      "effective_date": "2027-02-01",
+      "employees": 61,
+      "layoff_type": "",
+      "county": "",
+      "city": "Fairfield",
       "address": "",
       "industry": ""
     },

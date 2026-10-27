@@ -1,9 +1,9 @@
 {
-  "total_records": 1002,
-  "total_employees": 140974,
+  "total_records": 1003,
+  "total_employees": 141051,
   "date_range_start": "2015-01-05",
   "date_range_end": "2026-10-26",
-  "last_updated": "2026-10-27T03:11:05.050470+00:00",
+  "last_updated": "2026-10-27T17:22:20.262723+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
     {
@@ -11487,6 +11487,18 @@
       "layoff_type": "Closure",
       "county": "Sandusky",
       "city": "Bellevue",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Morton Salt, Inc.",
+      "notice_date": "2026-10-26",
+      "effective_date": null,
+      "employees": 77,
+      "layoff_type": "Layoff",
+      "county": "Lake",
+      "city": "Painesville",
       "address": "",
       "industry": ""
     }

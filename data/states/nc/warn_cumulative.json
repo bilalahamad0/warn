@@ -1,9 +1,9 @@
 {
-  "total_records": 381,
-  "total_employees": 35664,
+  "total_records": 382,
+  "total_employees": 35712,
   "date_range_start": "2022-01-25",
   "date_range_end": "2026-10-23",
-  "last_updated": "2026-10-27T03:10:01.735028+00:00",
+  "last_updated": "2026-10-27T17:21:18.724302+00:00",
   "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
   "records": [
     {
@@ -4576,6 +4576,18 @@
       "county": "Randolph",
       "city": "Trinity",
       "address": "239 Sealy Drive",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Toter, LLC",
+      "notice_date": "2026-10-23",
+      "effective_date": "2026-12-22",
+      "employees": 48,
+      "layoff_type": "Closure Permanent",
+      "county": "Iredell",
+      "city": "Statesville",
+      "address": "841 Meacham Road",
       "industry": ""
     }
   ]

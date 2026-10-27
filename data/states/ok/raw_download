@@ -1927,5 +1927,15 @@
   "Launchpad__Notice_Date__c": "2026-07-16",
   "Select_Local_Workforce_Board__c": "Central",
   "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000xnp93EAA",
+  "OESC_Employer_Name__c": "OU MEDICINE INC C/O THOMAS & COMPANY",
+  "OESC_Employer_City__c": "NASHVILLE",
+  "OESC_Employer_Zip_Code__c": "37228-1197",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2026-10-22",
+  "Select_Local_Workforce_Board__c": "Central",
+  "RecordTypeId": "012cs000001OucAAAS"
  }
 ]

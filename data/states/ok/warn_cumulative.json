@@ -1,9 +1,9 @@
 {
-  "total_records": 202,
+  "total_records": 203,
   "total_employees": 0,
   "date_range_start": "2001-03-21",
-  "date_range_end": "2026-08-17",
-  "last_updated": "2026-10-27T03:11:08.169875+00:00",
+  "date_range_end": "2026-10-22",
+  "last_updated": "2026-10-27T17:22:23.150570+00:00",
   "source_url": "https://www.employoklahoma.gov/Participants/s/warnnotices",
   "records": [
     {
@@ -2427,6 +2427,18 @@
       "layoff_type": "Plant Closing",
       "county": "",
       "city": "Southard",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OK",
+      "company": "OU MEDICINE INC C/O THOMAS & COMPANY",
+      "notice_date": "2026-10-22",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Mass Layoff",
+      "county": "",
+      "city": "NASHVILLE",
       "address": "",
       "industry": ""
     }

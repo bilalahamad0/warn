@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-27T03:15:49.282503+00:00",
+  "updated_at": "2026-10-27T17:26:25.912827+00:00",
   "candidates": [
     {
       "id": "6efbe0055b68",
@@ -587,7 +587,7 @@
     {
       "id": "5e3bb4bb017c",
       "created_at": "2026-10-20T16:26:18.733915+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Amazon",
       "display": "Amazon",
       "employees": 200,
@@ -1045,6 +1045,114 @@
       "warnings": [],
       "keys": [
         "MD:Peraton__2026-12-14__72"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "2c21278bbaf5",
+      "created_at": "2026-10-27T17:26:25.912767+00:00",
+      "status": "pending",
+      "company": "Sodexo",
+      "display": "Sodexo",
+      "employees": 189,
+      "states": [
+        "LA"
+      ],
+      "per_state": {
+        "LA": 189
+      },
+      "sites": 1,
+      "card": {
+        "place": "Louisiana",
+        "effective": "Dec 31, 2026",
+        "employees": 189
+      },
+      "arm": "brand",
+      "reason": "known brand, 189 >= 50",
+      "text": "Sodexo filed a WARN notice for 189 job cuts in Louisiana.\n\nEffective Dec 31, 2026.\n\n#layoffs #Louisiana",
+      "thread": [],
+      "weighted_len": 103,
+      "warnings": [],
+      "keys": [
+        "LA:Sodexo, SDH Services East, LLC__2026-12-31__189"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "ad61c01fee2e",
+      "created_at": "2026-10-27T17:26:25.912798+00:00",
+      "status": "pending",
+      "company": "Conduent",
+      "display": "Conduent",
+      "employees": 113,
+      "states": [
+        "NJ"
+      ],
+      "per_state": {
+        "NJ": 113
+      },
+      "sites": 1,
+      "card": {
+        "place": "Newark, NJ",
+        "effective": "Jan 21, 2027",
+        "employees": 113
+      },
+      "arm": "brand",
+      "reason": "known brand, 113 >= 50",
+      "text": "Conduent filed a WARN notice for 113 job cuts in Newark, NJ.\n\nEffective Jan 21, 2027.\n\n#layoffs #NewJersey",
+      "thread": [],
+      "weighted_len": 106,
+      "warnings": [],
+      "keys": [
+        "NJ:Conduent State & Local Solutions, Inc__2027-01-21__113"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "2f84d3800ae2",
+      "created_at": "2026-10-27T17:26:25.912821+00:00",
+      "status": "pending",
+      "company": "Goodyear",
+      "display": "Goodyear",
+      "employees": 51,
+      "states": [
+        "NY"
+      ],
+      "per_state": {
+        "NY": 51
+      },
+      "sites": 1,
+      "card": {
+        "place": "Niagara, NY",
+        "effective": "Dec 30, 2026",
+        "employees": 51
+      },
+      "arm": "brand",
+      "reason": "known brand, 51 >= 50",
+      "text": "Goodyear filed a WARN notice for 51 job cuts in Niagara, NY.\n\nEffective Dec 30, 2026.\n\n#layoffs #NewYork",
+      "thread": [],
+      "weighted_len": 104,
+      "warnings": [],
+      "keys": [
+        "NY:The Goodyear Tire and Rubber Company__2026-12-30__51"
       ],
       "approved_by": null,
       "approved_at": null,
