@@ -1,9 +1,9 @@
 {
   "total_records": 2388,
-  "total_employees": 356884,
+  "total_employees": 356891,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-10-28T03:17:18.552677+00:00",
+  "last_updated": "2026-10-28T17:56:48.890934+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -827,7 +827,7 @@
       "company": "AT&T",
       "notice_date": null,
       "effective_date": "2026-09-15",
-      "employees": 138,
+      "employees": 146,
       "layoff_type": "",
       "county": "",
       "city": "Cumberland County",
@@ -1331,7 +1331,7 @@
       "company": "Sumitomo Mitsui Banking Corporation",
       "notice_date": null,
       "effective_date": "2026-10-01",
-      "employees": 75,
+      "employees": 74,
       "layoff_type": "",
       "county": "",
       "city": "Jersey City",

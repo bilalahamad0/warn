@@ -1,9 +1,9 @@
 {
-  "total_records": 1019,
-  "total_employees": 153124,
+  "total_records": 1020,
+  "total_employees": 153184,
   "date_range_start": "2008-07-10",
-  "date_range_end": "2026-10-05",
-  "last_updated": "2026-10-28T03:09:55.840760+00:00",
+  "date_range_end": "2026-10-28",
+  "last_updated": "2026-10-28T17:49:36.345822+00:00",
   "source_url": "https://www.in.gov/dwd/warn-notices/current-warn-notices/",
   "records": [
     {
@@ -12233,6 +12233,18 @@
       "city": "Gas City",
       "address": "",
       "industry": "Manufacturing"
+    },
+    {
+      "state": "IN",
+      "company": "MPL Intermediate, LLC",
+      "notice_date": "2026-10-28",
+      "effective_date": "2026-12-28",
+      "employees": 60,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Fairland",
+      "address": "",
+      "industry": "Plastics Plumbing Fixture Manufacturing"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "scope": "ca",
   "state": "CA",
   "coverage_start": "2025-01-01",
-  "last_updated": "2026-10-28T03:20:57.366239+00:00",
+  "last_updated": "2026-10-28T18:00:32.001971+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "total_records": 1967,
   "total_employees": 111213,
@@ -20,7 +20,7 @@
       "address": "4024 Grand Avenue  Chino CA 91710",
       "industry": "44-45 Retail Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Everidge Inc.",
@@ -33,7 +33,7 @@
       "address": "8886 White Oak Ave  Rancho Cucamonga CA 91730",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Conduent State & Local Solutions, Inc.",
@@ -46,7 +46,7 @@
       "address": "375 Beale Street  San Francisco CA 94105",
       "industry": "54 Professional Scientific and Technical Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "The Madrona",
@@ -59,7 +59,7 @@
       "address": "1001 Westside Road  Healdsburg CA 95448",
       "industry": "72 Accommodation and Food Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Intel Corporation",
@@ -72,7 +72,7 @@
       "address": "1900 Prairie City Road  Folsom CA 95630",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Georg Fischer Signet LLC",
@@ -85,7 +85,7 @@
       "address": "5462 North Irwindale Avenue  Baldwin Park CA 91706",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "eBay Inc.",
@@ -683,7 +683,7 @@
       "address": "200 N. Pacific Coast Highway, Suite 300  El Segundo CA 90245",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "DLVR (A Corp)",

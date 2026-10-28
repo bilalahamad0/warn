@@ -1,9 +1,9 @@
 {
-  "total_records": 1548,
-  "total_employees": 251711,
+  "total_records": 1549,
+  "total_employees": 251846,
   "date_range_start": "2004-01-12",
   "date_range_end": "2026-10-27",
-  "last_updated": "2026-10-28T03:20:52.197374+00:00",
+  "last_updated": "2026-10-28T18:00:26.704145+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -18579,6 +18579,18 @@
       "layoff_type": "Closure Permanent",
       "county": "",
       "city": "Granger",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "HMS Host",
+      "notice_date": "2026-10-23",
+      "effective_date": "2026-12-31",
+      "employees": 135,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Seatac, Seattle",
       "address": "",
       "industry": ""
     }

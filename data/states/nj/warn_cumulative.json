@@ -1,9 +1,9 @@
 {
   "total_records": 2362,
-  "total_employees": 354373,
+  "total_employees": 354380,
   "date_range_start": "2004-02-24",
   "date_range_end": "2027-04-01",
-  "last_updated": "2026-10-28T03:17:18.568525+00:00",
+  "last_updated": "2026-10-28T17:56:48.911879+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -819,18 +819,6 @@
       "layoff_type": "",
       "county": "",
       "city": "Hudson and Bergen Counties",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NJ",
-      "company": "AT&T",
-      "notice_date": null,
-      "effective_date": "2026-09-15",
-      "employees": 138,
-      "layoff_type": "",
-      "county": "",
-      "city": "Cumberland County",
       "address": "",
       "industry": ""
     },
@@ -28232,18 +28220,6 @@
     },
     {
       "state": "NJ",
-      "company": "Sumitomo Mitsui Banking Corporation",
-      "notice_date": null,
-      "effective_date": "2026-10-01",
-      "employees": 75,
-      "layoff_type": "",
-      "county": "",
-      "city": "Jersey City",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NJ",
       "company": "Acme Markets Inc.",
       "notice_date": null,
       "effective_date": "2027-01-02",
@@ -28347,6 +28323,30 @@
       "layoff_type": "",
       "county": "",
       "city": "Newark",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "AT&T",
+      "notice_date": null,
+      "effective_date": "2026-09-15",
+      "employees": 146,
+      "layoff_type": "",
+      "county": "",
+      "city": "Cumberland County",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Sumitomo Mitsui Banking Corporation",
+      "notice_date": null,
+      "effective_date": "2026-10-01",
+      "employees": 74,
+      "layoff_type": "",
+      "county": "",
+      "city": "Jersey City",
       "address": "",
       "industry": ""
     }

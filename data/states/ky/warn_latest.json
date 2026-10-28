@@ -1,11 +1,23 @@
 {
-  "total_records": 455,
-  "total_employees": 54511,
+  "total_records": 456,
+  "total_employees": 54515,
   "date_range_start": "2017-01-25",
-  "date_range_end": "2026-10-21",
-  "last_updated": "2026-10-28T03:13:16.122759+00:00",
+  "date_range_end": "2026-10-27",
+  "last_updated": "2026-10-28T17:52:57.882235+00:00",
   "source_url": "https://kyworks.ky.gov/Services/Pages/Rapid-Response-Layoffs-and-Closures.aspx",
   "records": [
+    {
+      "state": "KY",
+      "company": "Congo Brands (Alani, Prime, 3D Energy)",
+      "notice_date": "2026-10-27",
+      "effective_date": "2026-12-28",
+      "employees": 4,
+      "layoff_type": "Layoff",
+      "county": "Jefferson",
+      "city": "",
+      "address": "",
+      "industry": "312111"
+    },
     {
       "state": "KY",
       "company": "Leggett & Platt, Inc",

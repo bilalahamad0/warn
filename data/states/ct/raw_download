@@ -309,19 +309,6 @@
       },
       "modifiedDate": "2025-11-03T13:51:22+00:00",
       "name": "rapid_response/warn_documents/2025/ELG Utica Alloys (Hartford) 10-31-2025.pdf"
-    },
-    {
-      "blobProperties": {
-        "affected_company": "Macys South Windsor Distribution Center",
-        "closing_dates_": "12/28/2025",
-        "layoff_dates": "12/28/2025",
-        "layoff_locations__": "South Windsor",
-        "number_of_impacted_workers": "106",
-        "warn_document_date": "2025-10-28",
-        "warn_document_received_date": "2025-10-28"
-      },
-      "modifiedDate": "2025-11-04T16:21:53+00:00",
-      "name": "rapid_response/warn_documents/2025/Macy's Distribution Center (South Windsor) 10-28-2025_OCR.pdf"
     }
   ]
 }

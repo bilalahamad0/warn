@@ -3,7 +3,7 @@
   "total_employees": 675121,
   "date_range_start": "1987-09-01",
   "date_range_end": "2026-10-13",
-  "last_updated": "2026-10-28T03:09:54.968861+00:00",
+  "last_updated": "2026-10-28T17:49:35.322341+00:00",
   "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
   "records": [
     {
@@ -341,18 +341,6 @@
       "city": "Peoria",
       "address": "6533 N Galena Rd",
       "industry": "Manufacturing"
-    },
-    {
-      "state": "IL",
-      "company": "St. Margaret's Health-Spring Valley",
-      "notice_date": "2023-05-18",
-      "effective_date": null,
-      "employees": 671,
-      "layoff_type": "Plant Closure",
-      "county": "Bureau County",
-      "city": "Spring Valley",
-      "address": "600 E 1ST St",
-      "industry": "Health Care and Social Assistance"
     },
     {
       "state": "IL",
@@ -1204,18 +1192,6 @@
       "county": "Du Page County",
       "city": "Woodridge",
       "address": "2715 Davey Rd.",
-      "industry": "Manufacturing"
-    },
-    {
-      "state": "IL",
-      "company": "Rhinoag, LLC",
-      "notice_date": "2024-08-21",
-      "effective_date": null,
-      "employees": 79,
-      "layoff_type": "Mass Layoff",
-      "county": "Ford County",
-      "city": "Gibson City",
-      "address": "1020 S Sangamon Ave",
       "industry": "Manufacturing"
     },
     {
@@ -57728,6 +57704,18 @@
     },
     {
       "state": "IL",
+      "company": "St. Margaret's Health-Spring Valley",
+      "notice_date": "2023-05-18",
+      "effective_date": null,
+      "employees": 671,
+      "layoff_type": "Plant Closure",
+      "county": "Bureau County",
+      "city": "Spring Valley",
+      "address": "600 E 1ST St",
+      "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "IL",
       "company": "Pitney Bowes Inc.",
       "notice_date": "2023-05-18",
       "effective_date": null,
@@ -58709,6 +58697,18 @@
       "city": "Mattoon",
       "address": "5001 Lake Land Blvd",
       "industry": "Educational Services"
+    },
+    {
+      "state": "IL",
+      "company": "Rhinoag, LLC",
+      "notice_date": "2024-08-21",
+      "effective_date": null,
+      "employees": 79,
+      "layoff_type": "Mass Layoff",
+      "county": "Ford County",
+      "city": "Gibson City",
+      "address": "1020 S Sangamon Ave",
+      "industry": "Manufacturing"
     },
     {
       "state": "IL",

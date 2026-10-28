@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-28T03:20:57.366239+00:00",
+  "last_updated": "2026-10-28T18:00:32.001971+00:00",
   "states_live": 47,
-  "total_records": 60704,
-  "total_employees": 6533661,
+  "total_records": 60709,
+  "total_employees": 6534052,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -85,8 +85,8 @@
       "name": "Iowa",
       "agency": "Iowa Workforce Development",
       "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
-      "total_records": 943,
-      "total_employees": 52078
+      "total_records": 945,
+      "total_employees": 52263
     },
     "ID": {
       "name": "Idaho",
@@ -106,8 +106,8 @@
       "name": "Indiana",
       "agency": "Indiana Department of Workforce Development",
       "source_url": "https://www.in.gov/dwd/warn-notices/current-warn-notices/",
-      "total_records": 1019,
-      "total_employees": 153124
+      "total_records": 1020,
+      "total_employees": 153184
     },
     "KS": {
       "name": "Kansas",
@@ -120,8 +120,8 @@
       "name": "Kentucky",
       "agency": "Kentucky Career Center (Education & Labor Cabinet)",
       "source_url": "https://kyworks.ky.gov/Services/Pages/Rapid-Response-Layoffs-and-Closures.aspx",
-      "total_records": 1241,
-      "total_employees": 156874
+      "total_records": 1242,
+      "total_employees": 156878
     },
     "LA": {
       "name": "Louisiana",
@@ -205,7 +205,7 @@
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
       "total_records": 2362,
-      "total_employees": 354373
+      "total_employees": 354380
     },
     "NM": {
       "name": "New Mexico",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1548,
-      "total_employees": 251711
+      "total_records": 1549,
+      "total_employees": 251846
     },
     "WI": {
       "name": "Wisconsin",
@@ -267468,7 +267468,7 @@
       "layoff_type": "Closing",
       "county": "Des Moines",
       "city": "Burlington",
-      "address": "1930 Des Moines Ave",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -267480,7 +267480,7 @@
       "layoff_type": "Closing",
       "county": "Des Moines",
       "city": "Burlington",
-      "address": "1930 Des Moines Ave",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -267492,7 +267492,7 @@
       "layoff_type": "Closing",
       "county": "Des Moines",
       "city": "Burlington",
-      "address": "1930 Des Moines Ave",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -267504,7 +267504,7 @@
       "layoff_type": "Closing",
       "county": "Des Moines",
       "city": "Burlington",
-      "address": "1930 Des Moines Ave",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -267516,7 +267516,7 @@
       "layoff_type": "Closing",
       "county": "Des Moines",
       "city": "Burlington",
-      "address": "1930 Des Moines Ave",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -267528,7 +267528,7 @@
       "layoff_type": "Closing",
       "county": "Des Moines",
       "city": "Burlington",
-      "address": "1930 Des Moines Ave",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -267540,7 +267540,7 @@
       "layoff_type": "Closing",
       "county": "Des Moines",
       "city": "Burlington",
-      "address": "1930 Des Moines Ave",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -267552,7 +267552,7 @@
       "layoff_type": "Closing",
       "county": "Des Moines",
       "city": "Burlington",
-      "address": "1930 Des Moines Ave",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -267564,7 +267564,7 @@
       "layoff_type": "Closing",
       "county": "Des Moines",
       "city": "Burlington",
-      "address": "1930 Des Moines Ave",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -267576,7 +267576,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Polk",
       "city": "West Des Moines",
-      "address": "800 S Jordan Creek Parkway",
+      "address": "",
       "industry": "Finance and Insurance"
     },
     {
@@ -267588,7 +267588,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Clinton",
       "city": "Clinton",
-      "address": "1628-1774 S 21st St",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -267600,7 +267600,7 @@
       "layoff_type": "Closing",
       "county": "Wapello",
       "city": "Ottumwa",
-      "address": "522 N Hancock St",
+      "address": "",
       "industry": "Health Care and Social Assistance"
     },
     {
@@ -267612,7 +267612,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Polk",
       "city": "Des Moines",
-      "address": "1111 6th Ave",
+      "address": "",
       "industry": "Health Care and Social Assistance"
     },
     {
@@ -267624,7 +267624,7 @@
       "layoff_type": "Closing",
       "county": "Polk",
       "city": "Grimes",
-      "address": "1601 SE Gateway Suite 120",
+      "address": "",
       "industry": "Administrative and Support and Waste Management and Remediation Services"
     },
     {
@@ -267636,7 +267636,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Cerro Gordo",
       "city": "Mason City",
-      "address": "1000 4th St NW",
+      "address": "",
       "industry": "Health Care and Social Assistance"
     },
     {
@@ -267648,7 +267648,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Polk",
       "city": "West Des Moines",
-      "address": "800 S Jordan Creek Parkway",
+      "address": "",
       "industry": "Finance and Insurance"
     },
     {
@@ -267660,7 +267660,7 @@
       "layoff_type": "Closing",
       "county": "Black Hawk",
       "city": "Waterloo",
-      "address": "2637 Wagner Road",
+      "address": "",
       "industry": "Construction"
     },
     {
@@ -267672,7 +267672,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Iowa",
       "city": "Amana",
-      "address": "2800 220th Trail",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -267684,7 +267684,7 @@
       "layoff_type": "Mass Layoff - Additional Employees",
       "county": "Polk",
       "city": "West Des Moines",
-      "address": "800 S Jordan Creek Parkway",
+      "address": "",
       "industry": "Finance and Insurance"
     },
     {
@@ -267696,7 +267696,7 @@
       "layoff_type": "Amendment - Change in Number",
       "county": "Des Moines",
       "city": "Burlington",
-      "address": "1930 Des Moines Ave",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -267708,7 +267708,7 @@
       "layoff_type": "Amendment - Change in Number",
       "county": "Des Moines",
       "city": "Burlington",
-      "address": "1930 Des Moines Ave",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -267720,7 +267720,7 @@
       "layoff_type": "Amendment - Change in Number",
       "county": "Des Moines",
       "city": "Burlington",
-      "address": "1930 Des Moines Ave",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -267732,7 +267732,7 @@
       "layoff_type": "Amendment - Change in Number",
       "county": "Des Moines",
       "city": "Burlington",
-      "address": "1930 Des Moines Ave",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -267744,7 +267744,7 @@
       "layoff_type": "Amendment - Change in Number",
       "county": "Des Moines",
       "city": "Burlington",
-      "address": "1930 Des Moines Ave",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -267756,7 +267756,7 @@
       "layoff_type": "Amendment - Change in Number",
       "county": "Des Moines",
       "city": "Burlington",
-      "address": "1930 Des Moines Ave",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -267768,7 +267768,7 @@
       "layoff_type": "Amendment - Change in Number",
       "county": "Des Moines",
       "city": "Burlington",
-      "address": "1930 Des Moines Ave",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -267780,7 +267780,7 @@
       "layoff_type": "Amendment - Change in Number",
       "county": "Des Moines",
       "city": "Burlington",
-      "address": "1930 Des Moines Ave",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -267792,7 +267792,7 @@
       "layoff_type": "Amendment - Change in Number",
       "county": "Des Moines",
       "city": "Burlington",
-      "address": "1930 Des Moines Ave",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -267804,7 +267804,7 @@
       "layoff_type": "Amendment - Change in Number",
       "county": "Des Moines",
       "city": "Burlington",
-      "address": "1930 Des Moines Ave",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -267816,7 +267816,7 @@
       "layoff_type": "Amendment - Change in Number",
       "county": "Des Moines",
       "city": "Burlington",
-      "address": "1930 Des Moines Ave",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -267828,7 +267828,7 @@
       "layoff_type": "Amendment - Change in Number",
       "county": "Des Moines",
       "city": "Burlington",
-      "address": "1930 Des Moines Ave",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -267840,7 +267840,7 @@
       "layoff_type": "Amendment - Change in Number",
       "county": "Des Moines",
       "city": "Burlington",
-      "address": "1930 Des Moines Ave",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -267852,7 +267852,7 @@
       "layoff_type": "Amendment - Change in Number",
       "county": "Des Moines",
       "city": "Burlington",
-      "address": "1930 Des Moines Ave",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -267864,7 +267864,7 @@
       "layoff_type": "Amendment - Additional Employees",
       "county": "Polk",
       "city": "West Des Moines",
-      "address": "800 S Jordan Creek Parkway",
+      "address": "",
       "industry": "Finance and Insurance"
     },
     {
@@ -267876,7 +267876,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Benton",
       "city": "Newhall",
-      "address": "7300 28th Ave",
+      "address": "",
       "industry": "Retail Trade"
     },
     {
@@ -267888,7 +267888,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Linn",
       "city": "Center Point",
-      "address": "1001 Ford Lane",
+      "address": "",
       "industry": "Retail Trade"
     },
     {
@@ -267900,7 +267900,7 @@
       "layoff_type": "Amendment - Additional Employees",
       "county": "Polk",
       "city": "West Des Moines",
-      "address": "800 S Jordan Creek Parkway",
+      "address": "",
       "industry": "Finance and Insurance"
     },
     {
@@ -267912,7 +267912,7 @@
       "layoff_type": "Closing",
       "county": "Black Hawk",
       "city": "Waterloo",
-      "address": "1601 Black Hawk St",
+      "address": "",
       "industry": "Transportation and Warehouse"
     },
     {
@@ -267924,7 +267924,7 @@
       "layoff_type": "Amendment - Additional Employees",
       "county": "Black Hawk",
       "city": "Waterloo",
-      "address": "2280 NE Drive",
+      "address": "",
       "industry": "Transportation and Warehouse"
     },
     {
@@ -267936,7 +267936,7 @@
       "layoff_type": "Closing",
       "county": "Fayette",
       "city": "Oelwein",
-      "address": "200 1st Ave SE",
+      "address": "",
       "industry": "Retail Trade"
     },
     {
@@ -267948,7 +267948,7 @@
       "layoff_type": "Closing",
       "county": "Buchanan",
       "city": "Independence",
-      "address": "1200 3rd Ave SE",
+      "address": "",
       "industry": "Retail Trade"
     },
     {
@@ -267960,7 +267960,7 @@
       "layoff_type": "Closing",
       "county": "Fayette",
       "city": "West Union",
-      "address": "113 East Bradford St",
+      "address": "",
       "industry": "Retail Trade"
     },
     {
@@ -267972,7 +267972,7 @@
       "layoff_type": "Closing",
       "county": "Chickasaw",
       "city": "New Hampton",
-      "address": "419 W Milwaukee St",
+      "address": "",
       "industry": "Retail Trade"
     },
     {
@@ -267984,7 +267984,7 @@
       "layoff_type": "Closing",
       "county": "Floyd",
       "city": "Charles City",
-      "address": "1626 S Grand Ave",
+      "address": "",
       "industry": "Retail Trade"
     },
     {
@@ -267996,7 +267996,7 @@
       "layoff_type": "Closing",
       "county": "Hamilton",
       "city": "Webster City",
-      "address": "200 Red Bull Division Dr",
+      "address": "",
       "industry": "Retail Trade"
     },
     {
@@ -268008,7 +268008,7 @@
       "layoff_type": "Closing",
       "county": "Kossuth",
       "city": "Algona",
-      "address": "320 E State St",
+      "address": "",
       "industry": "Retail Trade"
     },
     {
@@ -268020,7 +268020,7 @@
       "layoff_type": "Closing",
       "county": "Allamakee",
       "city": "Waukon",
-      "address": "753 11th Ave SW",
+      "address": "",
       "industry": "Retail Trade"
     },
     {
@@ -268032,7 +268032,7 @@
       "layoff_type": "Closing",
       "county": "Delaware",
       "city": "Dyersville",
-      "address": "719 9th St SE",
+      "address": "",
       "industry": "Retail Trade"
     },
     {
@@ -268044,7 +268044,7 @@
       "layoff_type": "Amendment- Additional Employees",
       "county": "Polk",
       "city": "West Des Moines",
-      "address": "800 S Jordan Creek Parkway",
+      "address": "",
       "industry": "Finance and Insurance"
     },
     {
@@ -268056,7 +268056,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Fayette",
       "city": "Oelwein",
-      "address": "300 7th Ave NW",
+      "address": "",
       "industry": "Transportation and Warehouse"
     },
     {
@@ -268068,7 +268068,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Linn",
       "city": "Hiawatha",
-      "address": "955 Kacena Rd",
+      "address": "",
       "industry": "Management of Companies and Enterprises"
     },
     {
@@ -268080,7 +268080,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Polk",
       "city": "Des Moines",
-      "address": "1200 Pleasant St",
+      "address": "",
       "industry": "Management of Companies and Enterprises"
     },
     {
@@ -268092,7 +268092,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Polk",
       "city": "Grimes",
-      "address": "1601 SE Gateway Dr",
+      "address": "",
       "industry": "Management of Companies and Enterprises"
     },
     {
@@ -268104,7 +268104,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Pollk",
       "city": "Des Moines",
-      "address": "1776 West Lakes Pkwy Ste 400",
+      "address": "",
       "industry": "Management of Companies and Enterprises"
     },
     {
@@ -268116,7 +268116,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Black Hawk",
       "city": "Waterloo",
-      "address": "1825 Logan Ave",
+      "address": "",
       "industry": "Management of Companies and Enterprises"
     },
     {
@@ -268128,7 +268128,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Woodbury",
       "city": "Sioux City",
-      "address": "2720 Stone Park Blvd",
+      "address": "",
       "industry": "Management of Companies and Enterprises"
     },
     {
@@ -268140,7 +268140,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Dubuque",
       "city": "Dubuque",
-      "address": "350 N Grandview Ave",
+      "address": "",
       "industry": "Management of Companies and Enterprises"
     },
     {
@@ -268152,7 +268152,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Marshall",
       "city": "Marshalltown",
-      "address": "55 UnityPoint Way",
+      "address": "",
       "industry": "Management of Companies and Enterprises"
     },
     {
@@ -268164,7 +268164,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Polk",
       "city": "Des Moines",
-      "address": "6100 Thornton Ave Ste 250",
+      "address": "",
       "industry": "Management of Companies and Enterprises"
     },
     {
@@ -268176,7 +268176,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Webster",
       "city": "Fort Dodge",
-      "address": "802 Kenyon Rd",
+      "address": "",
       "industry": "Management of Companies and Enterprises"
     },
     {
@@ -268188,7 +268188,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Linn",
       "city": "Cedar Rapids",
-      "address": "855 A Ave Ne",
+      "address": "",
       "industry": "Management of Companies and Enterprises"
     },
     {
@@ -268200,7 +268200,7 @@
       "layoff_type": "Amendment - Additional Employees",
       "county": "Polk",
       "city": "West Des Moines",
-      "address": "800 S Jordan Creek Pkwy",
+      "address": "",
       "industry": "Finance and Insurance"
     },
     {
@@ -268212,7 +268212,7 @@
       "layoff_type": "Amendment - Additional Employees",
       "county": "Polk",
       "city": "West Des Moines",
-      "address": "800 S Jordan Creek Pkwy",
+      "address": "",
       "industry": "Finance and Insurance"
     },
     {
@@ -268224,7 +268224,7 @@
       "layoff_type": "Amendment - Additional Employees",
       "county": "Pollk",
       "city": "Des Moines",
-      "address": "1776 West Lakes Pkwy Ste 400",
+      "address": "",
       "industry": "Management of Companies and Enterprises"
     },
     {
@@ -268236,7 +268236,7 @@
       "layoff_type": "Closing",
       "county": "Polk",
       "city": "Clive",
-      "address": "15201 Hichman Rd",
+      "address": "",
       "industry": "Construction"
     },
     {
@@ -268248,7 +268248,7 @@
       "layoff_type": "Amendment - Additional Employees",
       "county": "Polk",
       "city": "West Des Moines",
-      "address": "800 S Jordan Creek Pkwy",
+      "address": "",
       "industry": "Finance and Insurance"
     },
     {
@@ -268260,7 +268260,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Iowa",
       "city": "Amana",
-      "address": "2800 220th Trail",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -268272,7 +268272,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Polk",
       "city": "Des Moines",
-      "address": "1007 E Grand Ave",
+      "address": "",
       "industry": "Public Administration"
     },
     {
@@ -268284,7 +268284,7 @@
       "layoff_type": "Closing",
       "county": "Cedar",
       "city": "West Branch",
-      "address": "228 Tidewater Dr",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -268296,7 +268296,7 @@
       "layoff_type": "Amendment - Additional Employees",
       "county": "Polk",
       "city": "West Des Moines",
-      "address": "800 S Jordan Creek Pkwy",
+      "address": "",
       "industry": "Finance and Insurance"
     },
     {
@@ -268308,7 +268308,7 @@
       "layoff_type": "Closing",
       "county": "Kossuth",
       "city": "Swea City",
-      "address": "405 4th Ave W",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -268320,7 +268320,7 @@
       "layoff_type": "Amendment - Additional Employees",
       "county": "Polk",
       "city": "West Des Moines",
-      "address": "800 S Jordan Creek Pkwy",
+      "address": "",
       "industry": "Finance and Insurance"
     },
     {
@@ -268332,7 +268332,7 @@
       "layoff_type": "Closing",
       "county": "Polk",
       "city": "Ankeny",
-      "address": "2805 S Ankeny Blvd",
+      "address": "",
       "industry": "Finance and Insurance"
     },
     {
@@ -268344,7 +268344,7 @@
       "layoff_type": "Closing",
       "county": "Polk",
       "city": "Pleasant Hill",
-      "address": "1290 Coper Creek Dr",
+      "address": "",
       "industry": "Finance and Insurance"
     },
     {
@@ -268356,7 +268356,7 @@
       "layoff_type": "Closing",
       "county": "Keokuk",
       "city": "Richland",
-      "address": "100 West Main St",
+      "address": "",
       "industry": "Health Care and Social Assistance"
     },
     {
@@ -268368,7 +268368,7 @@
       "layoff_type": "Closing",
       "county": "Appanoose",
       "city": "Centerville",
-      "address": "1015 N 18th St Suite C",
+      "address": "",
       "industry": "Health Care and Social Assistance"
     },
     {
@@ -278484,7 +278484,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Buchanan",
       "city": "Independence",
-      "address": "812 3rd St NE",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -278496,7 +278496,7 @@
       "layoff_type": "Amendment - Additional Employees",
       "county": "Polk",
       "city": "West Des Moines",
-      "address": "800 S Jordan Creek Pkwy",
+      "address": "",
       "industry": "Finance and Insurance"
     },
     {
@@ -278508,7 +278508,7 @@
       "layoff_type": "Closing",
       "county": "Linn",
       "city": "Cedar Rapids",
-      "address": "3110 Prairie Valley Ct. SW",
+      "address": "",
       "industry": "Transportation and Warehouse"
     },
     {
@@ -278520,7 +278520,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Polk",
       "city": "West Des Moines",
-      "address": "1776 West Lakes Pkwy Ste 400",
+      "address": "",
       "industry": "Management of Companies and Enterprises"
     },
     {
@@ -278532,7 +278532,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Dubuque",
       "city": "Dubuque",
-      "address": "350 N Grandview Ave",
+      "address": "",
       "industry": "Management of Companies and Enterprises"
     },
     {
@@ -278544,7 +278544,7 @@
       "layoff_type": "Closing",
       "county": "Winnebago",
       "city": "Lake Mills",
-      "address": "877 N Lake St",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -278556,7 +278556,7 @@
       "layoff_type": "Amendment - Additional Employees",
       "county": "Polk",
       "city": "West Des Moines",
-      "address": "800 S Jordan Creek Pkwy",
+      "address": "",
       "industry": "Finance and Insurance"
     },
     {
@@ -278568,7 +278568,7 @@
       "layoff_type": "Closing",
       "county": "Des Moines",
       "city": "Burlington",
-      "address": "1930 Des Moines Ave",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -278580,7 +278580,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Winnebago",
       "city": "Forest City",
-      "address": "605 W Crystal Lake Rd",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -278592,7 +278592,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Linn",
       "city": "Cedar Rapids",
-      "address": "400 Collins Rd NE",
+      "address": "",
       "industry": "Professional, Scientific, and Technical Services"
     },
     {
@@ -278604,7 +278604,7 @@
       "layoff_type": "Amendment - Additional Employees",
       "county": "Polk",
       "city": "West Des Moines",
-      "address": "800 S Jordan Creek Pkwy",
+      "address": "",
       "industry": "Finance and Insurance"
     },
     {
@@ -278616,7 +278616,7 @@
       "layoff_type": "Closing",
       "county": "Woodbury",
       "city": "Sioux City",
-      "address": "1401 Bluff Rd",
+      "address": "",
       "industry": "Wholesale Trade"
     },
     {
@@ -278640,7 +278640,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Woodbury",
       "city": "Sioux City",
-      "address": "1000 Cunningham Dr",
+      "address": "",
       "industry": "Administrative and Support and Waste Management and Remediation Services"
     },
     {
@@ -278652,7 +278652,7 @@
       "layoff_type": "Amendment - Additional Employees",
       "county": "Buchanan",
       "city": "Independence",
-      "address": "812 3rd St NE",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -278664,7 +278664,7 @@
       "layoff_type": "Amendment - Additional Employees",
       "county": "Polk",
       "city": "West Des Moines",
-      "address": "800 S Jordan Creek Pkwy",
+      "address": "",
       "industry": "Finance and Insurance"
     },
     {
@@ -278676,7 +278676,7 @@
       "layoff_type": "Amendment - Additional Employees",
       "county": "Polk",
       "city": "West Des Moines",
-      "address": "800 S Jordan Creek Pkwy",
+      "address": "",
       "industry": "Finance and Insurance"
     },
     {
@@ -278688,7 +278688,7 @@
       "layoff_type": "Amendment - Additional Employees",
       "county": "Linn",
       "city": "Cedar Rapids",
-      "address": "400 Collins Rd NE",
+      "address": "",
       "industry": "Professional, Scientific, and Technical Services"
     },
     {
@@ -278700,7 +278700,7 @@
       "layoff_type": "Amendment - Additional Employees",
       "county": "Polk",
       "city": "West Des Moines",
-      "address": "800 S Jordan Creek Pkwy",
+      "address": "",
       "industry": "Finance and Insurance"
     },
     {
@@ -278712,7 +278712,7 @@
       "layoff_type": "Closing",
       "county": "Harrision",
       "city": "Missouri Valley",
-      "address": "1965 Hwy 30",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -278724,7 +278724,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Winnebago",
       "city": "Forest City",
-      "address": "605 W Crystal Lake Rd",
+      "address": "",
       "industry": "Manufacturing"
     },
     {
@@ -278736,7 +278736,7 @@
       "layoff_type": "Amendment - Additional Employees",
       "county": "Polk",
       "city": "West Des Moines",
-      "address": "800 S Jordan Creek Pkwy",
+      "address": "",
       "industry": "Finance and Insurance"
     },
     {
@@ -278748,7 +278748,7 @@
       "layoff_type": "Mass Layoff",
       "county": "Jefferson",
       "city": "Fairfield",
-      "address": "1776 Pleasant Plain Rd",
+      "address": "",
       "industry": "Administrative and Support and Waste Management and Remediation Services"
     },
     {
@@ -278760,8 +278760,32 @@
       "layoff_type": "Mass Layoff",
       "county": "Linn",
       "city": "Cedar Rapids",
-      "address": "6200 76th Ave SW",
+      "address": "",
       "industry": "Professional, Scientific, and Technical Services"
+    },
+    {
+      "state": "IA",
+      "company": "Milestone Technologies",
+      "notice_date": "2026-10-13",
+      "effective_date": "2026-12-13",
+      "employees": 99,
+      "layoff_type": "Mass Layoff",
+      "county": "Polk",
+      "city": "Altoona",
+      "address": "",
+      "industry": "Professional, Scientific, and Technical Services"
+    },
+    {
+      "state": "IA",
+      "company": "Wells Fargo",
+      "notice_date": "2026-10-27",
+      "effective_date": "2026-12-26",
+      "employees": 86,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Polk",
+      "city": "West Des Moines",
+      "address": "",
+      "industry": "Finance and Insurance"
     },
     {
       "state": "ID",
@@ -352072,6 +352096,18 @@
       "industry": "Manufacturing"
     },
     {
+      "state": "IN",
+      "company": "MPL Intermediate, LLC",
+      "notice_date": "2026-10-28",
+      "effective_date": "2026-12-28",
+      "employees": 60,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Fairland",
+      "address": "",
+      "industry": "Plastics Plumbing Fixture Manufacturing"
+    },
+    {
       "state": "KS",
       "company": "First Student",
       "notice_date": "2026-05-01",
@@ -368000,6 +368036,18 @@
       "city": "",
       "address": "",
       "industry": "541330"
+    },
+    {
+      "state": "KY",
+      "company": "Congo Brands (Alani, Prime, 3D Energy)",
+      "notice_date": "2026-10-27",
+      "effective_date": "2026-12-28",
+      "employees": 4,
+      "layoff_type": "Layoff",
+      "county": "Jefferson",
+      "city": "",
+      "address": "",
+      "industry": "312111"
     },
     {
       "state": "LA",
@@ -427364,18 +427412,6 @@
     },
     {
       "state": "NJ",
-      "company": "AT&T",
-      "notice_date": null,
-      "effective_date": "2026-09-15",
-      "employees": 138,
-      "layoff_type": "",
-      "county": "",
-      "city": "Cumberland County",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NJ",
       "company": "Verizon Corp Resources Group LLC",
       "notice_date": null,
       "effective_date": "2026-09-18",
@@ -454772,18 +454808,6 @@
     },
     {
       "state": "NJ",
-      "company": "Sumitomo Mitsui Banking Corporation",
-      "notice_date": null,
-      "effective_date": "2026-10-01",
-      "employees": 75,
-      "layoff_type": "",
-      "county": "",
-      "city": "Jersey City",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "NJ",
       "company": "Acme Markets Inc.",
       "notice_date": null,
       "effective_date": "2027-01-02",
@@ -454887,6 +454911,30 @@
       "layoff_type": "",
       "county": "",
       "city": "Newark",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "AT&T",
+      "notice_date": null,
+      "effective_date": "2026-09-15",
+      "employees": 146,
+      "layoff_type": "",
+      "county": "",
+      "city": "Cumberland County",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Sumitomo Mitsui Banking Corporation",
+      "notice_date": null,
+      "effective_date": "2026-10-01",
+      "employees": 74,
+      "layoff_type": "",
+      "county": "",
+      "city": "Jersey City",
       "address": "",
       "industry": ""
     },
@@ -668564,6 +668612,18 @@
       "layoff_type": "Closure Permanent",
       "county": "",
       "city": "Granger",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "HMS Host",
+      "notice_date": "2026-10-23",
+      "effective_date": "2026-12-31",
+      "employees": 135,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Seatac, Seattle",
       "address": "",
       "industry": ""
     },
