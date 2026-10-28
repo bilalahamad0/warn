@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-27T17:26:25.912827+00:00",
+  "updated_at": "2026-10-28T03:21:55.622411+00:00",
   "candidates": [
     {
       "id": "6efbe0055b68",
@@ -623,7 +623,7 @@
     {
       "id": "4d8043839aa4",
       "created_at": "2026-10-21T02:52:05.488844+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "hood industries",
       "display": "Hood Industries",
       "employees": 259,
@@ -1153,6 +1153,114 @@
       "warnings": [],
       "keys": [
         "NY:The Goodyear Tire and Rubber Company__2026-12-30__51"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "14016b8e8fbc",
+      "created_at": "2026-10-28T03:21:55.622344+00:00",
+      "status": "pending",
+      "company": "24hr homecare",
+      "display": "24Hr Homecare",
+      "employees": 875,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 875
+      },
+      "sites": 1,
+      "card": {
+        "place": "Los Angeles County, CA",
+        "effective": "Dec 17, 2026",
+        "employees": 875
+      },
+      "arm": "size",
+      "reason": "875 >= 250",
+      "text": "24Hr Homecare filed a WARN notice for 875 job cuts in Los Angeles County, CA.\n\nEffective Dec 17, 2026.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 124,
+      "warnings": [],
+      "keys": [
+        "CA:24Hr Homecare__2026-12-17__875"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "2752949b7be3",
+      "created_at": "2026-10-28T03:21:55.622379+00:00",
+      "status": "pending",
+      "company": "Intel",
+      "display": "Intel",
+      "employees": 67,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 67
+      },
+      "sites": 1,
+      "card": {
+        "place": "Sacramento County, CA",
+        "effective": "Oct 31, 2026",
+        "employees": 67
+      },
+      "arm": "tech",
+      "reason": "tech brand, 67 >= 25",
+      "text": "Intel filed a WARN notice for 67 job cuts in Sacramento County, CA.\n\nEffective Oct 31, 2026.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 114,
+      "warnings": [],
+      "keys": [
+        "CA:Intel Corporation__2026-10-31__67"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "b34f5fa15f53",
+      "created_at": "2026-10-28T03:21:55.622404+00:00",
+      "status": "pending",
+      "company": "Conduent",
+      "display": "Conduent",
+      "employees": 64,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 64
+      },
+      "sites": 1,
+      "card": {
+        "place": "San Francisco County, CA",
+        "effective": "Dec 22, 2026",
+        "employees": 64
+      },
+      "arm": "brand",
+      "reason": "known brand, 64 >= 50",
+      "text": "Conduent filed a WARN notice for 64 job cuts in San Francisco County, CA.\n\nEffective Dec 22, 2026.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 120,
+      "warnings": [],
+      "keys": [
+        "CA:Conduent State & Local Solutions, Inc.__2026-12-22__64"
       ],
       "approved_by": null,
       "approved_at": null,

@@ -1,9 +1,9 @@
 {
-  "total_records": 382,
-  "total_employees": 35712,
+  "total_records": 384,
+  "total_employees": 35808,
   "date_range_start": "2022-01-25",
   "date_range_end": "2026-10-23",
-  "last_updated": "2026-10-27T17:21:18.724302+00:00",
+  "last_updated": "2026-10-28T03:16:38.329779+00:00",
   "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
   "records": [
     {
@@ -4584,6 +4584,30 @@
       "notice_date": "2026-10-23",
       "effective_date": "2026-12-22",
       "employees": 48,
+      "layoff_type": "Closure Permanent",
+      "county": "Iredell",
+      "city": "Statesville",
+      "address": "841 Meacham Road",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Toter, LLC",
+      "notice_date": "2026-10-23",
+      "effective_date": "2026-12-22",
+      "employees": 15,
+      "layoff_type": "Closure Permanent",
+      "county": "Iredell",
+      "city": "Statesville",
+      "address": "2220 Speedball Road",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Toter, LLC",
+      "notice_date": "2026-10-23",
+      "effective_date": "2026-12-22",
+      "employees": 81,
       "layoff_type": "Closure Permanent",
       "county": "Iredell",
       "city": "Statesville",

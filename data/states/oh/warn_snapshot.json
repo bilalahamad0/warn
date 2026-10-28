@@ -1,11 +1,23 @@
 {
-  "total_records": 814,
-  "total_employees": 119888,
+  "total_records": 815,
+  "total_employees": 119965,
   "date_range_start": "2017-01-09",
   "date_range_end": "2026-10-26",
-  "last_updated": "2026-10-27T03:11:05.039932+00:00",
+  "last_updated": "2026-10-27T17:22:20.256712+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
+    {
+      "state": "OH",
+      "company": "Morton Salt, Inc.",
+      "notice_date": "2026-10-26",
+      "effective_date": null,
+      "employees": 77,
+      "layoff_type": "Layoff",
+      "county": "Lake",
+      "city": "Painesville",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "OH",
       "company": "Markdom Plastics USA Inc Ohio 1 Facility",

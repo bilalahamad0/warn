@@ -1,9 +1,9 @@
 {
-  "total_records": 2387,
-  "total_employees": 356771,
+  "total_records": 2388,
+  "total_employees": 356884,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-10-27T03:10:44.950358+00:00",
+  "last_updated": "2026-10-27T17:21:58.846930+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -1407,6 +1407,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Fairfield",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Conduent State & Local Solutions, Inc",
+      "notice_date": null,
+      "effective_date": "2027-01-21",
+      "employees": 113,
+      "layoff_type": "",
+      "county": "",
+      "city": "Newark",
       "address": "",
       "industry": ""
     },

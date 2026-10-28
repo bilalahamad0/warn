@@ -3,7 +3,7 @@
   "total_employees": 118088,
   "date_range_start": "2010-01-07",
   "date_range_end": "2026-10-23",
-  "last_updated": "2026-10-27T03:07:03.409720+00:00",
+  "last_updated": "2026-10-27T17:18:48.304102+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -24,7 +24,7 @@
       "notice_date": "2026-10-23",
       "effective_date": "2026-12-24",
       "employees": 46,
-      "layoff_type": "Temporary Mass Layoff- No Recall Note: Temporary (1 \u00bd - 2 \u00bd weeks layoff) for necessary maintenance",
+      "layoff_type": "Temporary Mass Layoff Note: Temporary (1 \u00bd - 2 \u00bd weeks layoff) for necessary maintenance",
       "county": "Baltimore City",
       "city": "",
       "address": "3900 E. Monument Street Baltimore, MD 21205",

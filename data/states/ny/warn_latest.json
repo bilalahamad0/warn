@@ -1,9 +1,9 @@
 {
-  "total_records": 215,
-  "total_employees": 12281,
+  "total_records": 214,
+  "total_employees": 12105,
   "date_range_start": "2026-01-06",
   "date_range_end": "2026-10-02",
-  "last_updated": "2026-10-27T17:22:17.970805+00:00",
+  "last_updated": "2026-10-28T03:17:38.143189+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -1612,18 +1612,6 @@
       "county": "Broome",
       "city": "",
       "address": "970 US-11 Kirkwood, NY, 13795",
-      "industry": ""
-    },
-    {
-      "state": "NY",
-      "company": "Maximus, Inc.",
-      "notice_date": "2026-03-31",
-      "effective_date": "2026-06-30",
-      "employees": 176,
-      "layoff_type": "Layoff Permanent",
-      "county": "Monroe",
-      "city": "",
-      "address": "3750 Monroe Ave, Suite 700 Pittsford, NY, 14534",
       "industry": ""
     },
     {

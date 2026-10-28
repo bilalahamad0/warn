@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-27T17:25:34.018728+00:00",
+  "last_updated": "2026-10-28T03:20:57.366239+00:00",
   "states_live": 47,
-  "total_records": 60690,
-  "total_employees": 6531284,
+  "total_records": 60704,
+  "total_employees": 6533661,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -15,8 +15,8 @@
       "name": "Alabama",
       "agency": "Alabama Department of Workforce",
       "source_url": "https://workforce.alabama.gov/warn-list/",
-      "total_records": 1072,
-      "total_employees": 182382
+      "total_records": 1075,
+      "total_employees": 183179
     },
     "AZ": {
       "name": "Arizona",
@@ -29,8 +29,8 @@
       "name": "California",
       "agency": "California Employment Development Department",
       "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
-      "total_records": 16478,
-      "total_employees": 1401673
+      "total_records": 16485,
+      "total_employees": 1403002
     },
     "CO": {
       "name": "Colorado",
@@ -183,8 +183,8 @@
       "name": "North Carolina",
       "agency": "North Carolina Department of Commerce",
       "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
-      "total_records": 382,
-      "total_employees": 35712
+      "total_records": 384,
+      "total_employees": 35808
     },
     "ND": {
       "name": "North Dakota",
@@ -302,8 +302,8 @@
       "name": "Virginia",
       "agency": "Virginia Works (Virginia Employment Commission)",
       "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
-      "total_records": 1133,
-      "total_employees": 132082
+      "total_records": 1134,
+      "total_employees": 132147
     },
     "VT": {
       "name": "Vermont",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1547,
-      "total_employees": 251621
+      "total_records": 1548,
+      "total_employees": 251711
     },
     "WI": {
       "name": "Wisconsin",
@@ -13988,6 +13988,42 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Montgomery",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "CORIZON HEALTH",
+      "notice_date": "2018-02-05",
+      "effective_date": "2026-10-27",
+      "employees": 648,
+      "layoff_type": "Closing *",
+      "county": "",
+      "city": "State Wide",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "SEARS HOLDINGS",
+      "notice_date": "2009-02-28",
+      "effective_date": "2026-10-27",
+      "employees": 15,
+      "layoff_type": "Closing *",
+      "county": "",
+      "city": "Birmingham",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "URS CORPORATION",
+      "notice_date": "2010-01-22",
+      "effective_date": "2026-10-27",
+      "employees": 134,
+      "layoff_type": "Layoff *",
+      "county": "",
+      "city": "Birmingham",
       "address": "",
       "industry": ""
     },
@@ -42257,7 +42293,7 @@
       "notice_date": "2026-10-07",
       "effective_date": "2027-01-04",
       "employees": 74,
-      "layoff_type": "Layoff Permanent",
+      "layoff_type": "Relocation Permanent",
       "county": "Ventura County",
       "city": "",
       "address": "2800 Sturgis Road  Oxnard CA 93030",
@@ -42514,6 +42550,90 @@
       "city": "",
       "address": "One Front Street, 28th Floor  San Francisco CA 94111",
       "industry": "51 Information"
+    },
+    {
+      "state": "CA",
+      "company": "Intel Corporation",
+      "notice_date": "2026-10-22",
+      "effective_date": "2026-10-31",
+      "employees": 67,
+      "layoff_type": "Layoff Permanent",
+      "county": "Sacramento County",
+      "city": "",
+      "address": "1900 Prairie City Road  Folsom CA 95630",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Tawa, Inc. dba 99 Ranch Market",
+      "notice_date": "2026-10-26",
+      "effective_date": "2026-11-15",
+      "employees": 49,
+      "layoff_type": "Closure Permanent",
+      "county": "San Bernardino County",
+      "city": "",
+      "address": "4024 Grand Avenue  Chino CA 91710",
+      "industry": "44-45 Retail Trade"
+    },
+    {
+      "state": "CA",
+      "company": "24Hr Homecare",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-12-17",
+      "employees": 875,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "200 N. Pacific Coast Highway, Suite 300  El Segundo CA 90245",
+      "industry": "62 Healthcare and Social Assistance"
+    },
+    {
+      "state": "CA",
+      "company": "Georg Fischer Signet LLC",
+      "notice_date": "2026-10-22",
+      "effective_date": "2026-12-21",
+      "employees": 107,
+      "layoff_type": "Closure Temporary",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "5462 North Irwindale Avenue  Baldwin Park CA 91706",
+      "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Conduent State & Local Solutions, Inc.",
+      "notice_date": "2026-10-23",
+      "effective_date": "2026-12-22",
+      "employees": 64,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Francisco County",
+      "city": "",
+      "address": "375 Beale Street  San Francisco CA 94105",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "state": "CA",
+      "company": "The Madrona",
+      "notice_date": "2026-10-23",
+      "effective_date": "2027-01-03",
+      "employees": 77,
+      "layoff_type": "Closure Temporary",
+      "county": "Sonoma County",
+      "city": "",
+      "address": "1001 Westside Road  Healdsburg CA 95448",
+      "industry": "72 Accommodation and Food Services"
+    },
+    {
+      "state": "CA",
+      "company": "Everidge Inc.",
+      "notice_date": "2026-10-25",
+      "effective_date": "2027-02-26",
+      "employees": 90,
+      "layoff_type": "Closure Permanent",
+      "county": "San Bernardino County",
+      "city": "",
+      "address": "8886 White Oak Ave  Rancho Cucamonga CA 91730",
+      "industry": "31-33 Manufacturing"
     },
     {
       "company": "Adventist Health St. Helena",
@@ -413311,6 +413431,30 @@
       "industry": ""
     },
     {
+      "state": "NC",
+      "company": "Toter, LLC",
+      "notice_date": "2026-10-23",
+      "effective_date": "2026-12-22",
+      "employees": 15,
+      "layoff_type": "Closure Permanent",
+      "county": "Iredell",
+      "city": "Statesville",
+      "address": "2220 Speedball Road",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Toter, LLC",
+      "notice_date": "2026-10-23",
+      "effective_date": "2026-12-22",
+      "employees": 81,
+      "layoff_type": "Closure Permanent",
+      "county": "Iredell",
+      "city": "Statesville",
+      "address": "841 Meacham Road",
+      "industry": ""
+    },
+    {
       "state": "ND",
       "company": "EGS Customer Care Inc",
       "notice_date": "2015-07-31",
@@ -649368,6 +649512,18 @@
       "industry": ""
     },
     {
+      "state": "VA",
+      "company": "DCS Corporation",
+      "notice_date": "2026-10-23",
+      "effective_date": "2026-12-15",
+      "employees": 65,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Fort Belvoir",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "VT",
       "company": "Calmont Beverage",
       "notice_date": "2026-01-22",
@@ -668396,6 +668552,18 @@
       "layoff_type": "Closure Permanent",
       "county": "",
       "city": "Seatac, Seattle",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Henry Bosma Orchards",
+      "notice_date": "2026-10-27",
+      "effective_date": "2026-11-30",
+      "employees": 90,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Granger",
       "address": "",
       "industry": ""
     },

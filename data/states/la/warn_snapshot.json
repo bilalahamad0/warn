@@ -1,9 +1,9 @@
 {
-  "total_records": 38,
-  "total_employees": 6917,
+  "total_records": 41,
+  "total_employees": 7134,
   "date_range_start": "2025-01-07",
-  "date_range_end": "2026-09-15",
-  "last_updated": "2026-10-27T03:06:34.212824+00:00",
+  "date_range_end": "2026-10-22",
+  "last_updated": "2026-10-27T17:18:20.308084+00:00",
   "source_url": "https://www.laworks.net/Downloads/Downloads_WFD.asp",
   "records": [
     {
@@ -435,7 +435,7 @@
       "layoff_type": "",
       "county": "",
       "city": "",
-      "address": "5700 Morrison Road, New, Orleans, Louisiana 70126",
+      "address": "5700 Morrison Road, New Orleans, LA 70126",
       "industry": "Couriers and Express Delivery Services"
     },
     {
@@ -454,13 +454,49 @@
       "state": "LA",
       "company": "Elevance Health, Inc.",
       "notice_date": "2026-09-15",
-      "effective_date": "2026-12-31",
+      "effective_date": null,
       "employees": 216,
       "layoff_type": "",
       "county": "",
       "city": "",
-      "address": "3850 N. Causeway Blvd, Suite 1770, Metairie, LA, 70002",
+      "address": "3850 N. Causeway Blvd, Suite 1770, Metairie, LA 70002",
       "industry": "Insurance Administration"
+    },
+    {
+      "state": "LA",
+      "company": "Upward Health Inc",
+      "notice_date": "2026-10-09",
+      "effective_date": "2026-12-08",
+      "employees": 2,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "80 Arkay Drive, Suite 2320, Hauppauge, NY, 11788",
+      "industry": "Healthcare"
+    },
+    {
+      "state": "LA",
+      "company": "Denka Performance Elastomer LLC",
+      "notice_date": "2026-10-06",
+      "effective_date": "2026-12-07",
+      "employees": 26,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "560 Highway 44, Laplace, LA 70068",
+      "industry": "Chemical Manufacturing"
+    },
+    {
+      "state": "LA",
+      "company": "Sodexo, SDH Services East, LLC",
+      "notice_date": "2026-10-22",
+      "effective_date": "2026-12-31",
+      "employees": 189,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "4801 Ambassador Caffery, Parkway, 4600 Ambassador Caffery, Parkway, Lafayette, LA 70506",
+      "industry": "Food Services"
     }
   ]
 }
