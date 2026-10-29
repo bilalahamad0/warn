@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-28T18:00:32.001971+00:00",
+  "last_updated": "2026-10-29T03:45:05.231646+00:00",
   "states_live": 47,
-  "total_records": 60709,
+  "total_records": 60710,
   "total_employees": 6534052,
   "states": {
     "AK": {
@@ -43,7 +43,7 @@
       "name": "Connecticut",
       "agency": "Connecticut Department of Labor",
       "source_url": "https://dolpublicdocumentlibrary.ct.gov/CsblrCategory?prefix=%2Frapid_response%2Fwarn_documents",
-      "total_records": 32,
+      "total_records": 33,
       "total_employees": 3462
     },
     "DC": {
@@ -197145,6 +197145,18 @@
       "notice_date": "2026-10-20",
       "effective_date": "2026-10-20",
       "employees": 70,
+      "layoff_type": "",
+      "county": "",
+      "city": "Colchester",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "CT",
+      "company": "S and S Worldwide",
+      "notice_date": "2026-10-27",
+      "effective_date": "2026-12-26",
+      "employees": 0,
       "layoff_type": "",
       "county": "",
       "city": "Colchester",

@@ -1,43 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-10-28T18:01:15.190243+00:00",
+  "updated_at": "2026-10-29T03:46:14.238957+00:00",
   "candidates": [
-    {
-      "id": "6efbe0055b68",
-      "created_at": "2026-09-28T19:23:56.266169+00:00",
-      "status": "expired",
-      "company": "gebbers farms etal",
-      "display": "Gebbers Farms, Etal",
-      "employees": 3445,
-      "states": [
-        "WA"
-      ],
-      "per_state": {
-        "WA": 3445
-      },
-      "sites": 1,
-      "card": {
-        "place": "Brewster, WA",
-        "effective": "Nov 25, 2026",
-        "employees": 3445
-      },
-      "arm": "size",
-      "reason": "3,445 >= 250",
-      "text": "Gebbers Farms, Etal filed a WARN notice for 3,445 job cuts in Brewster, WA.\n\nEffective Nov 25, 2026.\n\n#layoffs #Washington",
-      "thread": [],
-      "weighted_len": 122,
-      "warnings": [],
-      "keys": [
-        "WA:Gebbers Farms, Etal__2026-11-25__3445"
-      ],
-      "approved_by": null,
-      "approved_at": null,
-      "rejected_reason": null,
-      "tweet_id": null,
-      "posted_at": null,
-      "attempts": 0,
-      "last_error": null
-    },
     {
       "id": "3574ff7fdb59",
       "created_at": "2026-09-29T17:50:50.703957+00:00",
@@ -731,7 +695,7 @@
     {
       "id": "1a3398ea72ed",
       "created_at": "2026-10-22T02:47:00.560753+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "dakkota integrated systems",
       "display": "Dakkota Integrated Systems, LLC",
       "employees": 397,
