@@ -3,7 +3,7 @@
   "total_employees": 675121,
   "date_range_start": "1987-09-01",
   "date_range_end": "2026-10-13",
-  "last_updated": "2026-10-28T17:49:35.322341+00:00",
+  "last_updated": "2026-10-29T03:33:15.554840+00:00",
   "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
   "records": [
     {
@@ -308,18 +308,6 @@
     },
     {
       "state": "IL",
-      "company": "Oi Glass Containers",
-      "notice_date": "2024-10-24",
-      "effective_date": null,
-      "employees": 152,
-      "layoff_type": "Mass Layoff",
-      "county": "La Salle County",
-      "city": "Streator",
-      "address": "901 N Shabbona St",
-      "industry": "Manufacturing"
-    },
-    {
-      "state": "IL",
       "company": "True Value Company, LLC",
       "notice_date": "2024-10-16",
       "effective_date": null,
@@ -329,18 +317,6 @@
       "city": "Chicago",
       "address": "8600 W Bryn Mawr Ave Ste 100S",
       "industry": "Management of Companies and Enterprises"
-    },
-    {
-      "state": "IL",
-      "company": "Natural Fiber Welding, Inc.",
-      "notice_date": "2023-04-14",
-      "effective_date": null,
-      "employees": 38,
-      "layoff_type": "Mass Layoff",
-      "county": "Peoria County",
-      "city": "Peoria",
-      "address": "6533 N Galena Rd",
-      "industry": "Manufacturing"
     },
     {
       "state": "IL",
@@ -473,18 +449,6 @@
       "city": "Warrensburg",
       "address": "970 W North St",
       "industry": "Manufacturing"
-    },
-    {
-      "state": "IL",
-      "company": "Cygnus Home Service, LLC",
-      "notice_date": "2024-10-02",
-      "effective_date": null,
-      "employees": 119,
-      "layoff_type": "Mass Layoff",
-      "county": "Not Applicable",
-      "city": "Marshall",
-      "address": "115 W College Dr",
-      "industry": "Wholesale Trade"
     },
     {
       "state": "IL",
@@ -653,18 +617,6 @@
       "city": "Oak Brook",
       "address": "2122 York Rd.",
       "industry": "Educational Services"
-    },
-    {
-      "state": "IL",
-      "company": "Superior Consolidated Industries, Inc.",
-      "notice_date": "2024-04-04",
-      "effective_date": null,
-      "employees": 106,
-      "layoff_type": "Plant Closure",
-      "county": "McLean County",
-      "city": "Normal",
-      "address": "2219 W. College",
-      "industry": "Manufacturing"
     },
     {
       "state": "IL",
@@ -860,18 +812,6 @@
     },
     {
       "state": "IL",
-      "company": "Marion Manufacturing",
-      "notice_date": "2024-05-16",
-      "effective_date": null,
-      "employees": 31,
-      "layoff_type": "Plant Closure",
-      "county": "Tazewell County",
-      "city": "Morton",
-      "address": "701 Flint Ave.",
-      "industry": "Manufacturing"
-    },
-    {
-      "state": "IL",
       "company": "The Lagunitas Brewing Company",
       "notice_date": "2024-05-23",
       "effective_date": null,
@@ -1025,18 +965,6 @@
       "city": "Oakbrook Terrace",
       "address": "17W695 Butterfield Rd., Suite G",
       "industry": "Administrative, Support, Waste Management, and Remediation Services"
-    },
-    {
-      "state": "IL",
-      "company": "Keplr Vision, LLC",
-      "notice_date": "2024-07-09",
-      "effective_date": null,
-      "employees": 100,
-      "layoff_type": "Mass Layoff",
-      "county": "McLean County",
-      "city": "Bloomington",
-      "address": "112 E Washington St Ste 1100",
-      "industry": "Health Care and Social Assistance"
     },
     {
       "state": "IL",
@@ -1304,18 +1232,6 @@
     },
     {
       "state": "IL",
-      "company": "Acuity Optical Laboratories, LLC",
-      "notice_date": "2024-10-16",
-      "effective_date": null,
-      "employees": 99,
-      "layoff_type": "Plant Closure",
-      "county": "McLean County",
-      "city": "Normal",
-      "address": "2221 W. College Ave.",
-      "industry": "Manufacturing"
-    },
-    {
-      "state": "IL",
       "company": "International Paper Company",
       "notice_date": "2024-10-18",
       "effective_date": null,
@@ -1325,18 +1241,6 @@
       "city": "Rockford",
       "address": "2100 23RD Ave",
       "industry": "Manufacturing"
-    },
-    {
-      "state": "IL",
-      "company": "Ryder Transportation Solutions, LLC",
-      "notice_date": "2024-10-25",
-      "effective_date": null,
-      "employees": 40,
-      "layoff_type": "Mass Layoff",
-      "county": "Lee County",
-      "city": "Dixon",
-      "address": "828 W Progress Dr",
-      "industry": "Real Estate and Rental and Leasing"
     },
     {
       "state": "IL",
@@ -1592,18 +1496,6 @@
     },
     {
       "state": "IL",
-      "company": "Natural Fiber Welding, Inc.",
-      "notice_date": "2024-12-10",
-      "effective_date": null,
-      "employees": 47,
-      "layoff_type": "Mass Layoff",
-      "county": "Peoria County",
-      "city": "Peoria",
-      "address": "801 SW Jefferson St.",
-      "industry": "Professional and Technical Services"
-    },
-    {
-      "state": "IL",
       "company": "Hyzon Motors Inc.",
       "notice_date": "2024-12-20",
       "effective_date": null,
@@ -1637,18 +1529,6 @@
       "city": "Chicago",
       "address": "12 S Michigan Ave",
       "industry": "Accommodation and Food Services"
-    },
-    {
-      "state": "IL",
-      "company": "Maclellan Integrated Services Inc. (at Rivian Automotive)",
-      "notice_date": "2025-01-08",
-      "effective_date": null,
-      "employees": 76,
-      "layoff_type": "Mass Layoff",
-      "county": "McLean County",
-      "city": "Normal",
-      "address": "100 Rivian Motorway",
-      "industry": "Administrative, Support, Waste Management, and Remediation Services"
     },
     {
       "state": "IL",
@@ -1805,18 +1685,6 @@
       "city": "Chicago",
       "address": "63 W Ontario St",
       "industry": "Accommodation and Food Services"
-    },
-    {
-      "state": "IL",
-      "company": "10 Roads Express, LLC",
-      "notice_date": "2025-01-23",
-      "effective_date": null,
-      "employees": 61,
-      "layoff_type": "Plant Closure",
-      "county": "Peoria County",
-      "city": "Peoria",
-      "address": "1100 SW Monarch Street",
-      "industry": "Transportation and Warehousing"
     },
     {
       "state": "IL",
@@ -2308,18 +2176,6 @@
       "county": "Carroll County",
       "city": "Savanna",
       "address": "6400 Penn Ave.",
-      "industry": "Manufacturing"
-    },
-    {
-      "state": "IL",
-      "company": "International Flavors & Fragrances Inc.",
-      "notice_date": "2025-04-22",
-      "effective_date": null,
-      "employees": 49,
-      "layoff_type": "Plant Closure",
-      "county": "Carroll County",
-      "city": "Thomson",
-      "address": "10994 Three Mile Rd",
       "industry": "Manufacturing"
     },
     {
@@ -57104,6 +56960,18 @@
     },
     {
       "state": "IL",
+      "company": "Oi Glass Containers",
+      "notice_date": "2024-10-24",
+      "effective_date": null,
+      "employees": 152,
+      "layoff_type": "Mass Layoff",
+      "county": "La Salle County",
+      "city": "Streator",
+      "address": "901 N Shabbona St",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "IL",
       "company": "Tavern on Rush",
       "notice_date": "2022-11-04",
       "effective_date": null,
@@ -57605,6 +57473,18 @@
       "city": "Elwood",
       "address": "21705 W. Mississippi Street",
       "industry": "Transportation and Warehousing"
+    },
+    {
+      "state": "IL",
+      "company": "Natural Fiber Welding, Inc.",
+      "notice_date": "2023-04-14",
+      "effective_date": null,
+      "employees": 38,
+      "layoff_type": "Mass Layoff",
+      "county": "Peoria County",
+      "city": "Peoria",
+      "address": "6533 N Galena Rd",
+      "industry": "Manufacturing"
     },
     {
       "state": "IL",
@@ -58580,6 +58460,18 @@
     },
     {
       "state": "IL",
+      "company": "Cygnus Home Service, LLC",
+      "notice_date": "2024-10-02",
+      "effective_date": null,
+      "employees": 119,
+      "layoff_type": "Mass Layoff",
+      "county": "Not Applicable",
+      "city": "Marshall",
+      "address": "115 W College Dr",
+      "industry": "Wholesale Trade"
+    },
+    {
+      "state": "IL",
       "company": "Meetings & Events International",
       "notice_date": "2024-01-26",
       "effective_date": null,
@@ -58676,6 +58568,18 @@
     },
     {
       "state": "IL",
+      "company": "Superior Consolidated Industries, Inc.",
+      "notice_date": "2024-04-04",
+      "effective_date": null,
+      "employees": 106,
+      "layoff_type": "Plant Closure",
+      "county": "McLean County",
+      "city": "Normal",
+      "address": "2219 W. College",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "IL",
       "company": "GEODIS Logistics LLC",
       "notice_date": "2024-04-30",
       "effective_date": null,
@@ -58688,6 +58592,18 @@
     },
     {
       "state": "IL",
+      "company": "Marion Manufacturing",
+      "notice_date": "2024-05-16",
+      "effective_date": null,
+      "employees": 31,
+      "layoff_type": "Plant Closure",
+      "county": "Tazewell County",
+      "city": "Morton",
+      "address": "701 Flint Ave.",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "IL",
       "company": "Lake Land College",
       "notice_date": "2024-05-31",
       "effective_date": null,
@@ -58697,6 +58613,18 @@
       "city": "Mattoon",
       "address": "5001 Lake Land Blvd",
       "industry": "Educational Services"
+    },
+    {
+      "state": "IL",
+      "company": "Keplr Vision, LLC",
+      "notice_date": "2024-07-09",
+      "effective_date": null,
+      "employees": 100,
+      "layoff_type": "Mass Layoff",
+      "county": "McLean County",
+      "city": "Bloomington",
+      "address": "112 E Washington St Ste 1100",
+      "industry": "Health Care and Social Assistance"
     },
     {
       "state": "IL",
@@ -58724,6 +58652,30 @@
     },
     {
       "state": "IL",
+      "company": "Acuity Optical Laboratories, LLC",
+      "notice_date": "2024-10-16",
+      "effective_date": null,
+      "employees": 99,
+      "layoff_type": "Plant Closure",
+      "county": "McLean County",
+      "city": "Normal",
+      "address": "2221 W. College Ave.",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "IL",
+      "company": "Ryder Transportation Solutions, LLC",
+      "notice_date": "2024-10-25",
+      "effective_date": null,
+      "employees": 40,
+      "layoff_type": "Mass Layoff",
+      "county": "Lee County",
+      "city": "Dixon",
+      "address": "828 W Progress Dr",
+      "industry": "Real Estate and Rental and Leasing"
+    },
+    {
+      "state": "IL",
       "company": "Alverno Clinical Laboratories, Inc.",
       "notice_date": "2024-11-26",
       "effective_date": null,
@@ -58745,6 +58697,54 @@
       "city": "Chicago",
       "address": "38622 Eagle Way",
       "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "IL",
+      "company": "Natural Fiber Welding, Inc.",
+      "notice_date": "2024-12-10",
+      "effective_date": null,
+      "employees": 47,
+      "layoff_type": "Mass Layoff",
+      "county": "Peoria County",
+      "city": "Peoria",
+      "address": "801 SW Jefferson St.",
+      "industry": "Professional and Technical Services"
+    },
+    {
+      "state": "IL",
+      "company": "Maclellan Integrated Services Inc. (at Rivian Automotive)",
+      "notice_date": "2025-01-08",
+      "effective_date": null,
+      "employees": 76,
+      "layoff_type": "Mass Layoff",
+      "county": "McLean County",
+      "city": "Normal",
+      "address": "100 Rivian Motorway",
+      "industry": "Administrative, Support, Waste Management, and Remediation Services"
+    },
+    {
+      "state": "IL",
+      "company": "10 Roads Express, LLC",
+      "notice_date": "2025-01-23",
+      "effective_date": null,
+      "employees": 61,
+      "layoff_type": "Plant Closure",
+      "county": "Peoria County",
+      "city": "Peoria",
+      "address": "1100 SW Monarch Street",
+      "industry": "Transportation and Warehousing"
+    },
+    {
+      "state": "IL",
+      "company": "International Flavors & Fragrances Inc.",
+      "notice_date": "2025-04-22",
+      "effective_date": null,
+      "employees": 49,
+      "layoff_type": "Plant Closure",
+      "county": "Carroll County",
+      "city": "Thomson",
+      "address": "10994 Three Mile Rd",
+      "industry": "Manufacturing"
     }
   ]
 }

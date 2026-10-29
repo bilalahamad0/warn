@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-29T03:45:05.231646+00:00",
+  "last_updated": "2026-10-29T18:13:03.417593+00:00",
   "states_live": 47,
-  "total_records": 60710,
-  "total_employees": 6534052,
+  "total_records": 60718,
+  "total_employees": 6534844,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -64,8 +64,8 @@
       "name": "Florida",
       "agency": "Florida Department of Commerce (FloridaCommerce)",
       "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
-      "total_records": 477,
-      "total_employees": 36000
+      "total_records": 479,
+      "total_employees": 36090
     },
     "GA": {
       "name": "Georgia",
@@ -155,8 +155,8 @@
       "name": "Michigan",
       "agency": "Michigan Department of Labor and Economic Opportunity",
       "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
-      "total_records": 798,
-      "total_employees": 123408
+      "total_records": 800,
+      "total_employees": 123584
     },
     "MN": {
       "name": "Minnesota",
@@ -316,15 +316,15 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1549,
-      "total_employees": 251846
+      "total_records": 1552,
+      "total_employees": 252328
     },
     "WI": {
       "name": "Wisconsin",
       "agency": "Wisconsin Department of Workforce Development",
       "source_url": "https://dwd.wisconsin.gov/dislocatedworker/warn/",
-      "total_records": 639,
-      "total_employees": 59560
+      "total_records": 640,
+      "total_employees": 59604
     },
     "WV": {
       "name": "West Virginia",
@@ -205120,6 +205120,30 @@
       "industry": "Professional, Scientific, and Technical Services"
     },
     {
+      "state": "FL",
+      "company": "Dillard\u2019s, Inc.",
+      "notice_date": "2026-10-28",
+      "effective_date": "2027-01-08",
+      "employees": 22,
+      "layoff_type": "",
+      "county": "",
+      "city": "BOYNTON BEACH",
+      "address": "801 North Congress Ave",
+      "industry": "Retail Trade"
+    },
+    {
+      "state": "FL",
+      "company": "Endeavors",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 68,
+      "layoff_type": "",
+      "county": "",
+      "city": "MULTIPLE LOCATIONS",
+      "address": "6363 De Zavala Road San Antonio, TX 78249",
+      "industry": "Other Services (except Public Administration)"
+    },
+    {
       "state": "GA",
       "company": "Dexter Axle Company",
       "notice_date": null,
@@ -398284,6 +398308,30 @@
       "county": "Eaton",
       "city": "",
       "address": "5640 Pierson Highway, Lansing, MI 48917",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Sodexo, SDH Services West, LLC",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 121,
+      "layoff_type": "Layoff",
+      "county": "Gratiot",
+      "city": "",
+      "address": "300 E. Warwick Drive, Alma, MI 48801",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "FKA Distributing Co., LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-16",
+      "employees": 55,
+      "layoff_type": "Layoff",
+      "county": "Oakland",
+      "city": "",
+      "address": "3000 N. Pontiac Trail, Walled Lake, MI 48390",
       "industry": ""
     },
     {
@@ -668640,6 +668688,42 @@
       "industry": ""
     },
     {
+      "state": "WA",
+      "company": "Comcast",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 159,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Statewide",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "NIC Global Manufacturing Solutions",
+      "notice_date": "2026-10-28",
+      "effective_date": "2027-01-18",
+      "employees": 103,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Woodinville",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Double M Orchards",
+      "notice_date": "2026-10-28",
+      "effective_date": "2026-12-18",
+      "employees": 220,
+      "layoff_type": "Layoff Temporary",
+      "county": "",
+      "city": "Quincy",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "WI",
       "company": "Semco Windows and Doors",
       "notice_date": "2020-01-02",
@@ -676306,6 +676390,18 @@
       "city": "Milwaukee",
       "address": "",
       "industry": "Steel Foundries (except Investment)"
+    },
+    {
+      "state": "WI",
+      "company": "UMOS, Inc.",
+      "notice_date": "2026-10-28",
+      "effective_date": "2026-12-31",
+      "employees": 44,
+      "layoff_type": "Workforce Reduction",
+      "county": "Milwaukee",
+      "city": "Milwaukee",
+      "address": "",
+      "industry": "Other Individual & Family Services"
     },
     {
       "state": "WV",

@@ -1,9 +1,9 @@
 {
-  "total_records": 477,
-  "total_employees": 36000,
+  "total_records": 479,
+  "total_employees": 36090,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-10-16",
-  "last_updated": "2026-10-28T17:48:27.784310+00:00",
+  "date_range_end": "2026-10-29",
+  "last_updated": "2026-10-29T18:00:20.805641+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -5729,6 +5729,30 @@
       "city": "MERRITT ISLAND",
       "address": "Space Commerce Way",
       "industry": "Professional, Scientific, and Technical Services"
+    },
+    {
+      "state": "FL",
+      "company": "Dillard\u2019s, Inc.",
+      "notice_date": "2026-10-28",
+      "effective_date": "2027-01-08",
+      "employees": 22,
+      "layoff_type": "",
+      "county": "",
+      "city": "BOYNTON BEACH",
+      "address": "801 North Congress Ave",
+      "industry": "Retail Trade"
+    },
+    {
+      "state": "FL",
+      "company": "Endeavors",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 68,
+      "layoff_type": "",
+      "county": "",
+      "city": "MULTIPLE LOCATIONS",
+      "address": "6363 De Zavala Road San Antonio, TX 78249",
+      "industry": "Other Services (except Public Administration)"
     }
   ]
 }

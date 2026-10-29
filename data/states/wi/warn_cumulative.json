@@ -1,9 +1,9 @@
 {
-  "total_records": 639,
-  "total_employees": 59560,
+  "total_records": 640,
+  "total_employees": 59604,
   "date_range_start": "2020-01-02",
-  "date_range_end": "2026-10-04",
-  "last_updated": "2026-10-29T03:45:01.938599+00:00",
+  "date_range_end": "2026-10-28",
+  "last_updated": "2026-10-29T18:12:59.845439+00:00",
   "source_url": "https://dwd.wisconsin.gov/dislocatedworker/warn/",
   "records": [
     {
@@ -7673,6 +7673,18 @@
       "city": "Milwaukee",
       "address": "",
       "industry": "Steel Foundries (except Investment)"
+    },
+    {
+      "state": "WI",
+      "company": "UMOS, Inc.",
+      "notice_date": "2026-10-28",
+      "effective_date": "2026-12-31",
+      "employees": 44,
+      "layoff_type": "Workforce Reduction",
+      "county": "Milwaukee",
+      "city": "Milwaukee",
+      "address": "",
+      "industry": "Other Individual & Family Services"
     }
   ]
 }
