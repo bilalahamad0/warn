@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-29T18:13:03.417593+00:00",
+  "last_updated": "2026-10-30T03:48:45.115557+00:00",
   "states_live": 47,
-  "total_records": 60718,
-  "total_employees": 6534844,
+  "total_records": 60731,
+  "total_employees": 6535660,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -29,8 +29,8 @@
       "name": "California",
       "agency": "California Employment Development Department",
       "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
-      "total_records": 16485,
-      "total_employees": 1403002
+      "total_records": 16492,
+      "total_employees": 1403651
     },
     "CO": {
       "name": "Colorado",
@@ -43,8 +43,8 @@
       "name": "Connecticut",
       "agency": "Connecticut Department of Labor",
       "source_url": "https://dolpublicdocumentlibrary.ct.gov/CsblrCategory?prefix=%2Frapid_response%2Fwarn_documents",
-      "total_records": 33,
-      "total_employees": 3462
+      "total_records": 34,
+      "total_employees": 3469
     },
     "DC": {
       "name": "District of Columbia",
@@ -64,15 +64,15 @@
       "name": "Florida",
       "agency": "Florida Department of Commerce (FloridaCommerce)",
       "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
-      "total_records": 479,
-      "total_employees": 36090
+      "total_records": 480,
+      "total_employees": 36151
     },
     "GA": {
       "name": "Georgia",
       "agency": "Technical College System of Georgia, Office of Workforce Development",
       "source_url": "https://www.tcsg.edu/warn-public-view/",
-      "total_records": 4741,
-      "total_employees": 606861
+      "total_records": 4743,
+      "total_employees": 606953
     },
     "HI": {
       "name": "Hawaii",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1374,
-      "total_employees": 116961
+      "total_records": 1375,
+      "total_employees": 116967
     },
     "ME": {
       "name": "Maine",
@@ -246,8 +246,8 @@
       "name": "Oregon",
       "agency": "Oregon Higher Education Coordinating Commission, Office of Community Colleges and Workforce Development",
       "source_url": "https://ccwd.hecc.oregon.gov/Layoff/WARN",
-      "total_records": 1386,
-      "total_employees": 187541
+      "total_records": 1387,
+      "total_employees": 187542
     },
     "PA": {
       "name": "Pennsylvania",
@@ -42634,6 +42634,90 @@
       "city": "",
       "address": "8886 White Oak Ave  Rancho Cucamonga CA 91730",
       "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Frontapp, Inc.",
+      "notice_date": "2026-10-27",
+      "effective_date": "2026-10-27",
+      "employees": 53,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Francisco County",
+      "city": "",
+      "address": "One Montgomery Street, Suite 1300  San Francisco CA 94104",
+      "industry": "51 Information"
+    },
+    {
+      "state": "CA",
+      "company": "Dropbox, Inc.",
+      "notice_date": "2026-10-28",
+      "effective_date": "2026-11-18",
+      "employees": 57,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Francisco County",
+      "city": "",
+      "address": "50 Hawthorne Street  San Francisco CA 94105",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "state": "CA",
+      "company": "Tawa, Inc. dba 99 Ranch Market",
+      "notice_date": "2026-10-26",
+      "effective_date": "2026-12-05",
+      "employees": 54,
+      "layoff_type": "Closure Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "4299 Rosewood Drive  Pleasanton CA 94588",
+      "industry": "44-45 Retail Trade"
+    },
+    {
+      "state": "CA",
+      "company": "Walt Disney Parks & Resorts US, Inc.",
+      "notice_date": "2026-10-27",
+      "effective_date": "2026-12-29",
+      "employees": 159,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "1401 Flower Street  Glendale CA 91201",
+      "industry": "71 Arts Entertainment and Recreation"
+    },
+    {
+      "state": "CA",
+      "company": "Levy",
+      "notice_date": "2026-10-26",
+      "effective_date": "2026-12-31",
+      "employees": 181,
+      "layoff_type": "Closure Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "7000 S Coliseum Way  Oakland CA 94621",
+      "industry": "72 Accommodation and Food Services"
+    },
+    {
+      "state": "CA",
+      "company": "Artiva Biotherapeutics, Inc.",
+      "notice_date": "2026-10-27",
+      "effective_date": "2026-12-31",
+      "employees": 131,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "5505 Morehouse Drive, Suite 100  San Diego CA 92121",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "state": "CA",
+      "company": "24 Hr Homecare",
+      "notice_date": "2026-10-28",
+      "effective_date": "2027-01-01",
+      "employees": 14,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "200 N. Pacific Coast Highway, Suite 300  El Segundo CA 90245",
+      "industry": "62 Healthcare and Social Assistance"
     },
     {
       "company": "Adventist Health St. Helena",
@@ -197164,6 +197248,18 @@
       "industry": ""
     },
     {
+      "state": "CT",
+      "company": "Endeavors, Inc.",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 7,
+      "layoff_type": "",
+      "county": "",
+      "city": "Not provided",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "DC",
       "company": "Elior North America",
       "notice_date": "2026-02-02",
@@ -205142,6 +205238,18 @@
       "city": "MULTIPLE LOCATIONS",
       "address": "6363 De Zavala Road San Antonio, TX 78249",
       "industry": "Other Services (except Public Administration)"
+    },
+    {
+      "state": "FL",
+      "company": "AmeriHealth Caritas",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 61,
+      "layoff_type": "",
+      "county": "",
+      "city": "ORLANDO",
+      "address": "2416 Lake Orange Drive",
+      "industry": "Health Care and Social Assistance"
     },
     {
       "state": "GA",
@@ -262033,6 +262141,30 @@
       "county": "Clayton",
       "city": "",
       "address": "6000 N Terminal Pkwy, Atrium Suite 4000, Atlanta, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Family Endeavors",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 19,
+      "layoff_type": "Permanent Layoff / Reduction in Force",
+      "county": "",
+      "city": "",
+      "address": "6363 De Zavala Rd, San Antonio, Texas",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Silverton Mortgage",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 73,
+      "layoff_type": "Permanent Closure",
+      "county": "Fulton",
+      "city": "",
+      "address": "1204 Peachtree St NE, Atlanta, Georgia",
       "industry": ""
     },
     {
@@ -389816,6 +389948,18 @@
       "city": "",
       "address": "3900 E. Monument Street Baltimore, MD 21205",
       "industry": "311340"
+    },
+    {
+      "state": "MD",
+      "company": "Bull, Shamz-Azar, Larkin & Cohen, PA",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 6,
+      "layoff_type": "Plant Closure",
+      "county": "Montgomery County",
+      "city": "",
+      "address": "10411 Motor City Drive, Suite 360 Bethesda, MD 20817",
+      "industry": "541211"
     },
     {
       "state": "ME",
@@ -562299,6 +562443,18 @@
       "layoff_type": "Reduction",
       "county": "",
       "city": "Hood River",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Oregon - Remote Employee(s)",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 1,
+      "layoff_type": "Reduction",
+      "county": "",
+      "city": "",
       "address": "",
       "industry": ""
     },

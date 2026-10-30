@@ -2581,5 +2581,23 @@
   "GA WARN ID": "GA202600022",
   "Total Number of Affected Employees": "89",
   "Type of Layoff or Closure": "Permanent Closure"
+ },
+ "91937": {
+  "Company Name": "Family Endeavors",
+  "County": "",
+  "First Date of Separation": "12/31/2026",
+  "First Location Address": "6363 De Zavala Rd, San Antonio, Texas",
+  "GA WARN ID": "GA202600023",
+  "Total Number of Affected Employees": "19",
+  "Type of Layoff or Closure": "Permanent Layoff / Reduction in Force"
+ },
+ "91941": {
+  "Company Name": "Silverton Mortgage",
+  "County": "Fulton County",
+  "First Date of Separation": "12/31/2026",
+  "First Location Address": "1204 Peachtree St NE, Atlanta, Georgia",
+  "GA WARN ID": "GA202600024",
+  "Total Number of Affected Employees": "73",
+  "Type of Layoff or Closure": "Permanent Closure"
  }
 }

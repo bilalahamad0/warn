@@ -1,9 +1,9 @@
 {
-  "total_records": 4741,
-  "total_employees": 606861,
+  "total_records": 4743,
+  "total_employees": 606953,
   "date_range_start": "1989-08-17",
-  "date_range_end": "2026-12-06",
-  "last_updated": "2026-10-29T18:00:31.957454+00:00",
+  "date_range_end": "2026-12-31",
+  "last_updated": "2026-10-30T03:36:53.874640+00:00",
   "source_url": "https://www.tcsg.edu/warn-public-view/",
   "records": [
     {
@@ -56896,6 +56896,30 @@
       "county": "Clayton",
       "city": "",
       "address": "6000 N Terminal Pkwy, Atrium Suite 4000, Atlanta, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Family Endeavors",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 19,
+      "layoff_type": "Permanent Layoff / Reduction in Force",
+      "county": "",
+      "city": "",
+      "address": "6363 De Zavala Rd, San Antonio, Texas",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Silverton Mortgage",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 73,
+      "layoff_type": "Permanent Closure",
+      "county": "Fulton",
+      "city": "",
+      "address": "1204 Peachtree St NE, Atlanta, Georgia",
       "industry": ""
     }
   ]

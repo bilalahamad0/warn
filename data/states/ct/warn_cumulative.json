@@ -1,9 +1,9 @@
 {
-  "total_records": 33,
-  "total_employees": 3462,
+  "total_records": 34,
+  "total_employees": 3469,
   "date_range_start": "2025-08-25",
-  "date_range_end": "2026-10-27",
-  "last_updated": "2026-10-29T17:57:39.708733+00:00",
+  "date_range_end": "2026-10-29",
+  "last_updated": "2026-10-30T03:33:52.125598+00:00",
   "source_url": "https://dolpublicdocumentlibrary.ct.gov/CsblrCategory?prefix=%2Frapid_response%2Fwarn_documents",
   "records": [
     {
@@ -399,6 +399,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Colchester",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "CT",
+      "company": "Endeavors, Inc.",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 7,
+      "layoff_type": "",
+      "county": "",
+      "city": "Not provided",
       "address": "",
       "industry": ""
     }

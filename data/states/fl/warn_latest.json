@@ -1,9 +1,9 @@
 {
-  "total_records": 487,
-  "total_employees": 36977,
+  "total_records": 488,
+  "total_employees": 37038,
   "date_range_start": "2025-01-02",
   "date_range_end": "2026-10-29",
-  "last_updated": "2026-10-29T18:00:20.799398+00:00",
+  "last_updated": "2026-10-30T03:36:33.075802+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -3269,6 +3269,18 @@
       "city": "MULTIPLE LOCATIONS",
       "address": "6363 De Zavala Road San Antonio, TX 78249",
       "industry": "Other Services (except Public Administration)"
+    },
+    {
+      "state": "FL",
+      "company": "AmeriHealth Caritas",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 61,
+      "layoff_type": "",
+      "county": "",
+      "city": "ORLANDO",
+      "address": "2416 Lake Orange Drive",
+      "industry": "Health Care and Social Assistance"
     },
     {
       "state": "FL",

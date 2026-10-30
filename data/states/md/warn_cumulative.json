@@ -1,9 +1,9 @@
 {
-  "total_records": 1374,
-  "total_employees": 116961,
+  "total_records": 1375,
+  "total_employees": 116967,
   "date_range_start": "2010-01-07",
-  "date_range_end": "2026-10-23",
-  "last_updated": "2026-10-29T18:05:46.258792+00:00",
+  "date_range_end": "2026-10-29",
+  "last_updated": "2026-10-30T03:41:41.823433+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -16493,6 +16493,18 @@
       "city": "",
       "address": "3900 E. Monument Street Baltimore, MD 21205",
       "industry": "311340"
+    },
+    {
+      "state": "MD",
+      "company": "Bull, Shamz-Azar, Larkin & Cohen, PA",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 6,
+      "layoff_type": "Plant Closure",
+      "county": "Montgomery County",
+      "city": "",
+      "address": "10411 Motor City Drive, Suite 360 Bethesda, MD 20817",
+      "industry": "541211"
     }
   ]
 }

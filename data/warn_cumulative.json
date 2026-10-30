@@ -1,9 +1,9 @@
 {
-  "total_records": 1896,
-  "total_employees": 105738,
+  "total_records": 1903,
+  "total_employees": 106387,
   "date_range_start": "2025-01-29",
-  "date_range_end": "2026-10-26",
-  "last_updated": "2026-10-29T17:57:18.841074+00:00",
+  "date_range_end": "2026-10-28",
+  "last_updated": "2026-10-30T03:33:26.518318+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "records": [
     {
@@ -22514,6 +22514,90 @@
       "city": "",
       "address": "8886 White Oak Ave  Rancho Cucamonga CA 91730",
       "industry": "31-33 Manufacturing"
+    },
+    {
+      "state": "CA",
+      "company": "Frontapp, Inc.",
+      "notice_date": "2026-10-27",
+      "effective_date": "2026-10-27",
+      "employees": 53,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Francisco County",
+      "city": "",
+      "address": "One Montgomery Street, Suite 1300  San Francisco CA 94104",
+      "industry": "51 Information"
+    },
+    {
+      "state": "CA",
+      "company": "Dropbox, Inc.",
+      "notice_date": "2026-10-28",
+      "effective_date": "2026-11-18",
+      "employees": 57,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Francisco County",
+      "city": "",
+      "address": "50 Hawthorne Street  San Francisco CA 94105",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "state": "CA",
+      "company": "Tawa, Inc. dba 99 Ranch Market",
+      "notice_date": "2026-10-26",
+      "effective_date": "2026-12-05",
+      "employees": 54,
+      "layoff_type": "Closure Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "4299 Rosewood Drive  Pleasanton CA 94588",
+      "industry": "44-45 Retail Trade"
+    },
+    {
+      "state": "CA",
+      "company": "Walt Disney Parks & Resorts US, Inc.",
+      "notice_date": "2026-10-27",
+      "effective_date": "2026-12-29",
+      "employees": 159,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "1401 Flower Street  Glendale CA 91201",
+      "industry": "71 Arts Entertainment and Recreation"
+    },
+    {
+      "state": "CA",
+      "company": "Levy",
+      "notice_date": "2026-10-26",
+      "effective_date": "2026-12-31",
+      "employees": 181,
+      "layoff_type": "Closure Permanent",
+      "county": "Alameda County",
+      "city": "",
+      "address": "7000 S Coliseum Way  Oakland CA 94621",
+      "industry": "72 Accommodation and Food Services"
+    },
+    {
+      "state": "CA",
+      "company": "Artiva Biotherapeutics, Inc.",
+      "notice_date": "2026-10-27",
+      "effective_date": "2026-12-31",
+      "employees": 131,
+      "layoff_type": "Layoff Permanent",
+      "county": "San Diego County",
+      "city": "",
+      "address": "5505 Morehouse Drive, Suite 100  San Diego CA 92121",
+      "industry": "54 Professional Scientific and Technical Services"
+    },
+    {
+      "state": "CA",
+      "company": "24 Hr Homecare",
+      "notice_date": "2026-10-28",
+      "effective_date": "2027-01-01",
+      "employees": 14,
+      "layoff_type": "Layoff Permanent",
+      "county": "Los Angeles County",
+      "city": "",
+      "address": "200 N. Pacific Coast Highway, Suite 300  El Segundo CA 90245",
+      "industry": "62 Healthcare and Social Assistance"
     }
   ]
 }

@@ -1,43 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-10-29T18:14:01.869140+00:00",
+  "updated_at": "2026-10-30T03:50:17.050929+00:00",
   "candidates": [
-    {
-      "id": "8e8fe1ea95b9",
-      "created_at": "2026-09-30T03:16:53.275923+00:00",
-      "status": "expired",
-      "company": "Leidos",
-      "display": "Leidos",
-      "employees": 84,
-      "states": [
-        "VA"
-      ],
-      "per_state": {
-        "VA": 84
-      },
-      "sites": 1,
-      "card": {
-        "place": "Ashburn, VA",
-        "effective": "Nov 23, 2026",
-        "employees": 84
-      },
-      "arm": "brand",
-      "reason": "known brand, 84 >= 50",
-      "text": "Leidos filed a WARN notice for 84 job cuts in Ashburn, VA.\n\nEffective Nov 23, 2026.\n\n#layoffs #Virginia",
-      "thread": [],
-      "weighted_len": 103,
-      "warnings": [],
-      "keys": [
-        "VA:Leidos__2026-11-23__84"
-      ],
-      "approved_by": null,
-      "approved_at": null,
-      "rejected_reason": null,
-      "tweet_id": null,
-      "posted_at": null,
-      "attempts": 0,
-      "last_error": null
-    },
     {
       "id": "9e8a891f2677",
       "created_at": "2026-09-30T17:36:34.993481+00:00",
@@ -658,7 +622,7 @@
     {
       "id": "19444aa3b9b7",
       "created_at": "2026-10-23T02:54:47.368942+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "dreyers grand ice cream",
       "display": "Dreyer's Grand Ice Cream",
       "employees": 1543,
@@ -695,7 +659,7 @@
     {
       "id": "e954f5e5c43e",
       "created_at": "2026-10-23T02:54:47.368991+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "fender musical instruments",
       "display": "Fender Musical Instruments Corporation",
       "employees": 533,
@@ -731,7 +695,7 @@
     {
       "id": "2245148d1578",
       "created_at": "2026-10-23T02:54:47.369024+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Netflix",
       "display": "Netflix",
       "employees": 494,
@@ -768,7 +732,7 @@
     {
       "id": "f2a0ba25f5a7",
       "created_at": "2026-10-23T02:54:47.369052+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "eBay",
       "display": "eBay",
       "employees": 229,
@@ -804,7 +768,7 @@
     {
       "id": "6f380c0ca67a",
       "created_at": "2026-10-23T02:54:47.369080+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Safeway",
       "display": "Safeway",
       "employees": 92,
@@ -1260,6 +1224,78 @@
       "warnings": [],
       "keys": [
         "MI:Sodexo, SDH Services West, LLC__2026-12-31__121"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "3199e8b106c9",
+      "created_at": "2026-10-30T03:50:17.050816+00:00",
+      "status": "pending",
+      "company": "Disney",
+      "display": "Disney",
+      "employees": 159,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 159
+      },
+      "sites": 1,
+      "card": {
+        "place": "Los Angeles County, CA",
+        "effective": "Dec 29, 2026",
+        "employees": 159
+      },
+      "arm": "brand",
+      "reason": "known brand, 159 >= 50",
+      "text": "Disney filed a WARN notice for 159 job cuts in Los Angeles County, CA.\n\nEffective Dec 29, 2026.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 117,
+      "warnings": [],
+      "keys": [
+        "CA:Walt Disney Parks & Resorts US, Inc.__2026-12-29__159"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "c98eba551f63",
+      "created_at": "2026-10-30T03:50:17.050910+00:00",
+      "status": "pending",
+      "company": "Dropbox",
+      "display": "Dropbox",
+      "employees": 57,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 57
+      },
+      "sites": 1,
+      "card": {
+        "place": "San Francisco County, CA",
+        "effective": "Nov 18, 2026",
+        "employees": 57
+      },
+      "arm": "tech",
+      "reason": "tech brand, 57 >= 25",
+      "text": "Dropbox filed a WARN notice for 57 job cuts in San Francisco County, CA.\n\nEffective Nov 18, 2026.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 119,
+      "warnings": [],
+      "keys": [
+        "CA:Dropbox, Inc.__2026-11-18__57"
       ],
       "approved_by": null,
       "approved_at": null,
