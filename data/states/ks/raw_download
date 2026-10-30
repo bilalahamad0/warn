@@ -1,5 +1,17 @@
 [
  {
+  "employer": "Family Endeavors, Inc.",
+  "city": "San Antonio",
+  "zip": "78249",
+  "lwib_area": "1 - Kansas WorkforceONE",
+  "notice_date": "Oct 29, 2026",
+  "warn_type": "WARN",
+  "record_number": "2312",
+  "detail_page_url": "https://www.kansasworks.com/search/warn_lookups/2312",
+  "number_of_employees_affected": "3",
+  "address": "6363 De Zavala Road; San Antonio, Texas 78249"
+ },
+ {
   "employer": "First Student",
   "city": "Cincinnati",
   "zip": "45202",

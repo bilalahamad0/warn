@@ -1,11 +1,23 @@
 {
-  "total_records": 1380,
-  "total_employees": 187396,
+  "total_records": 1381,
+  "total_employees": 187397,
   "date_range_start": "1988-11-28",
-  "date_range_end": "2026-10-20",
-  "last_updated": "2026-10-29T18:09:49.157248+00:00",
+  "date_range_end": "2026-10-29",
+  "last_updated": "2026-10-30T03:45:31.088873+00:00",
   "source_url": "https://ccwd.hecc.oregon.gov/Layoff/WARN",
   "records": [
+    {
+      "state": "OR",
+      "company": "Oregon - Remote Employee(s)",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 1,
+      "layoff_type": "Reduction",
+      "county": "",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "OR",
       "company": "Pacific Source",

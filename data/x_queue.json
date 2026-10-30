@@ -1,115 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-10-30T03:50:17.050929+00:00",
+  "updated_at": "2026-10-30T17:52:51.379731+00:00",
   "candidates": [
-    {
-      "id": "9e8a891f2677",
-      "created_at": "2026-09-30T17:36:34.993481+00:00",
-      "status": "expired",
-      "company": "masterbrand cabinets",
-      "display": "MasterBrand Cabinets LLC",
-      "employees": 391,
-      "states": [
-        "NC"
-      ],
-      "per_state": {
-        "NC": 391
-      },
-      "sites": 1,
-      "card": {
-        "place": "Kinston, Lenoir, NC",
-        "effective": "Nov 27, 2026",
-        "employees": 391
-      },
-      "arm": "size",
-      "reason": "391 >= 250",
-      "text": "MasterBrand Cabinets LLC filed a WARN notice for 391 job cuts in Kinston, Lenoir, NC.\n\nEffective Nov 27, 2026.\n\n#layoffs #NorthCarolina",
-      "thread": [],
-      "weighted_len": 135,
-      "warnings": [],
-      "keys": [
-        "NC:MasterBrand Cabinets LLC__2026-11-27__391"
-      ],
-      "approved_by": null,
-      "approved_at": null,
-      "rejected_reason": null,
-      "tweet_id": null,
-      "posted_at": null,
-      "attempts": 0,
-      "last_error": null
-    },
-    {
-      "id": "aa2ddf989a5b",
-      "created_at": "2026-09-30T17:36:34.993528+00:00",
-      "status": "expired",
-      "company": "Prudential",
-      "display": "Prudential",
-      "employees": 125,
-      "states": [
-        "NJ"
-      ],
-      "per_state": {
-        "NJ": 125
-      },
-      "sites": 1,
-      "card": {
-        "place": "Newark, NJ",
-        "effective": "Nov 28, 2026",
-        "employees": 125
-      },
-      "arm": "brand",
-      "reason": "known brand, 125 >= 50",
-      "text": "Prudential filed a WARN notice for 125 job cuts in Newark, NJ.\n\nEffective Nov 28, 2026.\n\n#layoffs #NewJersey",
-      "thread": [],
-      "weighted_len": 108,
-      "warnings": [],
-      "keys": [
-        "NJ:Prudential Insurance Company of America__2026-11-28__125"
-      ],
-      "approved_by": null,
-      "approved_at": null,
-      "rejected_reason": null,
-      "tweet_id": null,
-      "posted_at": null,
-      "attempts": 0,
-      "last_error": null
-    },
-    {
-      "id": "99e9038d45f6",
-      "created_at": "2026-09-30T17:36:34.993562+00:00",
-      "status": "expired",
-      "company": "BASF",
-      "display": "BASF",
-      "employees": 66,
-      "states": [
-        "NJ"
-      ],
-      "per_state": {
-        "NJ": 66
-      },
-      "sites": 1,
-      "card": {
-        "place": "Florham Park, NJ",
-        "effective": "Nov 1, 2026",
-        "employees": 66
-      },
-      "arm": "brand",
-      "reason": "known brand, 66 >= 50",
-      "text": "BASF filed a WARN notice for 66 job cuts in Florham Park, NJ.\n\nEffective Nov 1, 2026.\n\n#layoffs #NewJersey",
-      "thread": [],
-      "weighted_len": 106,
-      "warnings": [],
-      "keys": [
-        "NJ:BASF Corporation__2026-11-01__66"
-      ],
-      "approved_by": null,
-      "approved_at": null,
-      "rejected_reason": null,
-      "tweet_id": null,
-      "posted_at": null,
-      "attempts": 0,
-      "last_error": null
-    },
     {
       "id": "aa33c8d40efe",
       "created_at": "2026-10-02T03:25:52.384642+00:00",
@@ -1296,6 +1188,81 @@
       "warnings": [],
       "keys": [
         "CA:Dropbox, Inc.__2026-11-18__57"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "bb196af4ae2f",
+      "created_at": "2026-10-30T17:52:51.379685+00:00",
+      "status": "pending",
+      "company": "Comcast",
+      "display": "Comcast",
+      "employees": 753,
+      "states": [
+        "PA",
+        "NJ"
+      ],
+      "per_state": {
+        "NJ": 119,
+        "PA": 634
+      },
+      "sites": 2,
+      "card": {
+        "place": "PA \u00b7 NJ",
+        "effective": "Dec 31, 2026",
+        "employees": 753
+      },
+      "arm": "size",
+      "reason": "753 >= 250",
+      "text": "Comcast filed WARN notices for 753 job cuts across 2 sites in 2 states.\n\nPA 634 \u00b7 NJ 119\n\nFirst effective date Dec 31, 2026.\n\n#layoffs",
+      "thread": [],
+      "weighted_len": 134,
+      "warnings": [],
+      "keys": [
+        "NJ:Comcast__2027-01-27__119",
+        "PA:Comcast Technology Center__2026-12-31__634"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "c5d445e2eabe",
+      "created_at": "2026-10-30T17:52:51.379721+00:00",
+      "status": "pending",
+      "company": "Wells Fargo",
+      "display": "Wells Fargo",
+      "employees": 87,
+      "states": [
+        "VA"
+      ],
+      "per_state": {
+        "VA": 87
+      },
+      "sites": 1,
+      "card": {
+        "place": "Roanoke, VA",
+        "effective": "Nov 28, 2026",
+        "employees": 87
+      },
+      "arm": "brand",
+      "reason": "known brand, 87 >= 50",
+      "text": "Wells Fargo filed a WARN notice for 87 job cuts in Roanoke, VA.\n\nEffective Nov 28, 2026.\n\n#layoffs #Virginia",
+      "thread": [],
+      "weighted_len": 108,
+      "warnings": [],
+      "keys": [
+        "VA:Wells Fargo__2026-11-28__87"
       ],
       "approved_by": null,
       "approved_at": null,

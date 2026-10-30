@@ -1,11 +1,23 @@
 {
-  "total_records": 1021,
-  "total_employees": 153269,
+  "total_records": 1022,
+  "total_employees": 153320,
   "date_range_start": "2008-07-10",
-  "date_range_end": "2026-10-28",
-  "last_updated": "2026-10-30T03:37:48.998668+00:00",
+  "date_range_end": "2026-10-29",
+  "last_updated": "2026-10-30T17:40:46.477307+00:00",
   "source_url": "https://www.in.gov/dwd/warn-notices/current-warn-notices/",
   "records": [
+    {
+      "state": "IN",
+      "company": "Dexter Axle",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 51,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Elkhart",
+      "address": "",
+      "industry": "Motor Vehicle Transmission and Power Train Parts Manufacturing"
+    },
     {
       "state": "IN",
       "company": "MPL Intermediate, LLC",

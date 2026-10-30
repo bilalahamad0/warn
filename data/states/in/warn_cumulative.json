@@ -1,9 +1,9 @@
 {
-  "total_records": 1020,
-  "total_employees": 153184,
+  "total_records": 1021,
+  "total_employees": 153235,
   "date_range_start": "2008-07-10",
-  "date_range_end": "2026-10-28",
-  "last_updated": "2026-10-30T03:37:49.010824+00:00",
+  "date_range_end": "2026-10-29",
+  "last_updated": "2026-10-30T17:40:46.483732+00:00",
   "source_url": "https://www.in.gov/dwd/warn-notices/current-warn-notices/",
   "records": [
     {
@@ -12245,6 +12245,18 @@
       "city": "Fairland",
       "address": "",
       "industry": "Plastics Plumbing Fixture Manufacturing"
+    },
+    {
+      "state": "IN",
+      "company": "Dexter Axle",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 51,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Elkhart",
+      "address": "",
+      "industry": "Motor Vehicle Transmission and Power Train Parts Manufacturing"
     }
   ]
 }

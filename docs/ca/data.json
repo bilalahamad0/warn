@@ -2,7 +2,7 @@
   "scope": "ca",
   "state": "CA",
   "coverage_start": "2025-01-01",
-  "last_updated": "2026-10-30T03:48:45.115557+00:00",
+  "last_updated": "2026-10-30T17:51:53.907539+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "total_records": 1974,
   "total_employees": 111862,
@@ -20,7 +20,7 @@
       "address": "50 Hawthorne Street  San Francisco CA 94105",
       "industry": "54 Professional Scientific and Technical Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "24 Hr Homecare",
@@ -33,7 +33,7 @@
       "address": "200 N. Pacific Coast Highway, Suite 300  El Segundo CA 90245",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Frontapp, Inc.",
@@ -46,7 +46,7 @@
       "address": "One Montgomery Street, Suite 1300  San Francisco CA 94104",
       "industry": "51 Information",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Walt Disney Parks & Resorts US, Inc.",
@@ -59,7 +59,7 @@
       "address": "1401 Flower Street  Glendale CA 91201",
       "industry": "71 Arts Entertainment and Recreation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Artiva Biotherapeutics, Inc.",
@@ -72,7 +72,7 @@
       "address": "5505 Morehouse Drive, Suite 100  San Diego CA 92121",
       "industry": "54 Professional Scientific and Technical Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Tawa, Inc. dba 99 Ranch Market",
@@ -98,7 +98,7 @@
       "address": "4299 Rosewood Drive  Pleasanton CA 94588",
       "industry": "44-45 Retail Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Levy",
@@ -111,7 +111,7 @@
       "address": "7000 S Coliseum Way  Oakland CA 94621",
       "industry": "72 Accommodation and Food Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Everidge Inc.",

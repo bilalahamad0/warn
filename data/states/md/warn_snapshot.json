@@ -1,11 +1,23 @@
 {
-  "total_records": 1423,
-  "total_employees": 118088,
+  "total_records": 1424,
+  "total_employees": 118094,
   "date_range_start": "2010-01-07",
-  "date_range_end": "2026-10-23",
-  "last_updated": "2026-10-29T18:05:46.244357+00:00",
+  "date_range_end": "2026-10-29",
+  "last_updated": "2026-10-30T03:41:41.805219+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
+    {
+      "state": "MD",
+      "company": "Bull, Shamz-Azar, Larkin & Cohen, PA",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 6,
+      "layoff_type": "Plant Closure",
+      "county": "Montgomery County",
+      "city": "",
+      "address": "10411 Motor City Drive, Suite 360 Bethesda, MD 20817",
+      "industry": "541211"
+    },
     {
       "state": "MD",
       "company": "J. Alexander\u2019s Restaurant, LLC",

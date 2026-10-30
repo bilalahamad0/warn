@@ -1,9 +1,9 @@
 {
-  "total_records": 152,
-  "total_employees": 28145,
+  "total_records": 153,
+  "total_employees": 28148,
   "date_range_start": "2019-01-04",
-  "date_range_end": "2026-05-01",
-  "last_updated": "2026-10-30T03:41:03.812761+00:00",
+  "date_range_end": "2026-10-29",
+  "last_updated": "2026-10-30T17:44:00.621087+00:00",
   "source_url": "https://www.kansasworks.com/search/warn_lookups",
   "records": [
     {
@@ -1828,6 +1828,18 @@
       "county": "",
       "city": "",
       "address": "",
+      "industry": ""
+    },
+    {
+      "state": "KS",
+      "company": "Family Endeavors, Inc.",
+      "notice_date": "2026-10-29",
+      "effective_date": null,
+      "employees": 3,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "San Antonio",
+      "address": "6363 De Zavala Road; San Antonio, Texas 78249",
       "industry": ""
     }
   ]

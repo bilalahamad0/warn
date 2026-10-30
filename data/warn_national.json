@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-30T03:48:45.115557+00:00",
+  "last_updated": "2026-10-30T17:51:53.907539+00:00",
   "states_live": 47,
-  "total_records": 60731,
-  "total_employees": 6535660,
+  "total_records": 60738,
+  "total_employees": 6535971,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -15,8 +15,8 @@
       "name": "Alabama",
       "agency": "Alabama Department of Workforce",
       "source_url": "https://workforce.alabama.gov/warn-list/",
-      "total_records": 1075,
-      "total_employees": 183179
+      "total_records": 1073,
+      "total_employees": 182505
     },
     "AZ": {
       "name": "Arizona",
@@ -71,8 +71,8 @@
       "name": "Georgia",
       "agency": "Technical College System of Georgia, Office of Workforce Development",
       "source_url": "https://www.tcsg.edu/warn-public-view/",
-      "total_records": 4743,
-      "total_employees": 606953
+      "total_records": 4744,
+      "total_employees": 607020
     },
     "HI": {
       "name": "Hawaii",
@@ -106,15 +106,15 @@
       "name": "Indiana",
       "agency": "Indiana Department of Workforce Development",
       "source_url": "https://www.in.gov/dwd/warn-notices/current-warn-notices/",
-      "total_records": 1020,
-      "total_employees": 153184
+      "total_records": 1021,
+      "total_employees": 153235
     },
     "KS": {
       "name": "Kansas",
       "agency": "Kansas Department of Commerce",
       "source_url": "https://www.kansasworks.com/search/warn_lookups",
-      "total_records": 152,
-      "total_employees": 28145
+      "total_records": 153,
+      "total_employees": 28148
     },
     "KY": {
       "name": "Kentucky",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1375,
-      "total_employees": 116967
+      "total_records": 1376,
+      "total_employees": 116973
     },
     "ME": {
       "name": "Maine",
@@ -204,8 +204,8 @@
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2362,
-      "total_employees": 354380
+      "total_records": 2363,
+      "total_employees": 354499
     },
     "NM": {
       "name": "New Mexico",
@@ -246,15 +246,15 @@
       "name": "Oregon",
       "agency": "Oregon Higher Education Coordinating Commission, Office of Community Colleges and Workforce Development",
       "source_url": "https://ccwd.hecc.oregon.gov/Layoff/WARN",
-      "total_records": 1387,
-      "total_employees": 187542
+      "total_records": 1388,
+      "total_employees": 187545
     },
     "PA": {
       "name": "Pennsylvania",
       "agency": "Pennsylvania Department of Labor & Industry",
       "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
-      "total_records": 317,
-      "total_employees": 46121
+      "total_records": 319,
+      "total_employees": 46770
     },
     "RI": {
       "name": "Rhode Island",
@@ -302,8 +302,8 @@
       "name": "Virginia",
       "agency": "Virginia Works (Virginia Employment Commission)",
       "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
-      "total_records": 1134,
-      "total_employees": 132147
+      "total_records": 1135,
+      "total_employees": 132234
     },
     "VT": {
       "name": "Vermont",
@@ -13993,37 +13993,13 @@
     },
     {
       "state": "AL",
-      "company": "CORIZON HEALTH",
-      "notice_date": "2018-02-05",
-      "effective_date": "2026-10-27",
-      "employees": 648,
-      "layoff_type": "Closing *",
+      "company": "West Fraser Huguley OSB Lumber Mill",
+      "notice_date": "2026-10-29",
+      "effective_date": "2027-01-02",
+      "employees": 123,
+      "layoff_type": "Layoff",
       "county": "",
-      "city": "State Wide",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "AL",
-      "company": "SEARS HOLDINGS",
-      "notice_date": "2009-02-28",
-      "effective_date": "2026-10-27",
-      "employees": 15,
-      "layoff_type": "Closing *",
-      "county": "",
-      "city": "Birmingham",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "AL",
-      "company": "URS CORPORATION",
-      "notice_date": "2010-01-22",
-      "effective_date": "2026-10-27",
-      "employees": 134,
-      "layoff_type": "Layoff *",
-      "county": "",
-      "city": "Birmingham",
+      "city": "Lanett",
       "address": "",
       "industry": ""
     },
@@ -262168,6 +262144,18 @@
       "industry": ""
     },
     {
+      "state": "GA",
+      "company": "Asama Coldwater Manufacturing Georgia",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 67,
+      "layoff_type": "Permanent Closure",
+      "county": "Warren",
+      "city": "",
+      "address": "975 Thomson Hwy, Warrenton, Georgia",
+      "industry": ""
+    },
+    {
       "state": "HI",
       "company": "Maui Seaside Hotel",
       "notice_date": "2019-01-16",
@@ -352276,6 +352264,18 @@
       "industry": "Plastics Plumbing Fixture Manufacturing"
     },
     {
+      "state": "IN",
+      "company": "Dexter Axle",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 51,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Elkhart",
+      "address": "",
+      "industry": "Motor Vehicle Transmission and Power Train Parts Manufacturing"
+    },
+    {
       "state": "KS",
       "company": "First Student",
       "notice_date": "2026-05-01",
@@ -354097,6 +354097,18 @@
       "county": "",
       "city": "",
       "address": "",
+      "industry": ""
+    },
+    {
+      "state": "KS",
+      "company": "Family Endeavors, Inc.",
+      "notice_date": "2026-10-29",
+      "effective_date": null,
+      "employees": 3,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "San Antonio",
+      "address": "6363 De Zavala Road; San Antonio, Texas 78249",
       "industry": ""
     },
     {
@@ -389952,6 +389964,18 @@
     {
       "state": "MD",
       "company": "Bull, Shamz-Azar, Larkin & Cohen, PA",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 6,
+      "layoff_type": "Plant Closure",
+      "county": "Montgomery County",
+      "city": "",
+      "address": "10411 Motor City Drive, Suite 360 Bethesda, MD 20817",
+      "industry": "541211"
+    },
+    {
+      "state": "MD",
+      "company": "Bull, Shams-Azar, Larkin & Cohen, PA",
       "notice_date": "2026-10-29",
       "effective_date": "2026-12-31",
       "employees": 6,
@@ -455139,6 +455163,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Jersey City",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Comcast",
+      "notice_date": null,
+      "effective_date": "2027-01-27",
+      "employees": 119,
+      "layoff_type": "",
+      "county": "",
+      "city": "Atlantic, Burlington, Camden, Cumberland, Gloucester, Mercer, Monmouth, Ocean, and Union counties",
       "address": "",
       "industry": ""
     },
@@ -562459,6 +562495,18 @@
       "industry": ""
     },
     {
+      "state": "OR",
+      "company": "Endeavors, Inc.",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 3,
+      "layoff_type": "Reduction",
+      "county": "",
+      "city": "San Antonio, TX",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "PA",
       "company": "Transform Warehouse Operations, LLC",
       "notice_date": null,
@@ -566260,6 +566308,30 @@
       "county": "Lebanon",
       "city": "",
       "address": "60 Central Boulevard, Myerstown, PA  17407",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Comcast Technology Center",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 634,
+      "layoff_type": "Layoff",
+      "county": "Philadelphia",
+      "city": "",
+      "address": "1800 Arch Street, Philadelphia, PA  19103, 1701 JFK Boulevard, Philadelphia, PA  19103",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "Family Endeavors, Inc",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 15,
+      "layoff_type": "Layoff",
+      "county": "Various",
+      "city": "",
+      "address": "6363 De Zavala Road, San Antonio, TX  78249",
       "industry": ""
     },
     {
@@ -649784,6 +649856,18 @@
       "layoff_type": "Layoff",
       "county": "",
       "city": "Fort Belvoir",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "Wells Fargo",
+      "notice_date": "2026-10-28",
+      "effective_date": "2026-11-28",
+      "employees": 87,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Roanoke",
       "address": "",
       "industry": ""
     },

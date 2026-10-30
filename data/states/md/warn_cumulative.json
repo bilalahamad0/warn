@@ -1,9 +1,9 @@
 {
-  "total_records": 1375,
-  "total_employees": 116967,
+  "total_records": 1376,
+  "total_employees": 116973,
   "date_range_start": "2010-01-07",
   "date_range_end": "2026-10-29",
-  "last_updated": "2026-10-30T03:41:41.823433+00:00",
+  "last_updated": "2026-10-30T17:44:35.428368+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -16497,6 +16497,18 @@
     {
       "state": "MD",
       "company": "Bull, Shamz-Azar, Larkin & Cohen, PA",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 6,
+      "layoff_type": "Plant Closure",
+      "county": "Montgomery County",
+      "city": "",
+      "address": "10411 Motor City Drive, Suite 360 Bethesda, MD 20817",
+      "industry": "541211"
+    },
+    {
+      "state": "MD",
+      "company": "Bull, Shams-Azar, Larkin & Cohen, PA",
       "notice_date": "2026-10-29",
       "effective_date": "2026-12-31",
       "employees": 6,
