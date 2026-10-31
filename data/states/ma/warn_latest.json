@@ -1,9 +1,9 @@
 {
-  "total_records": 396,
-  "total_employees": 35566,
+  "total_records": 397,
+  "total_employees": 35576,
   "date_range_start": "2021-04-19",
-  "date_range_end": "2026-10-20",
-  "last_updated": "2026-10-30T17:44:14.694422+00:00",
+  "date_range_end": "2026-10-29",
+  "last_updated": "2026-10-31T03:25:16.135337+00:00",
   "source_url": "https://www.mass.gov/info-details/worker-adjustment-and-retraining-notification-act-warn",
   "records": [
     {
@@ -4479,6 +4479,18 @@
       "layoff_type": "",
       "county": "Southeast",
       "city": "Bridgewater",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "Family Endeavors, Inc. (aka Endeavors)",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 10,
+      "layoff_type": "",
+      "county": "Statewide",
+      "city": "Statewide",
       "address": "",
       "industry": ""
     },

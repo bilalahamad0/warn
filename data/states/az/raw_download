@@ -1,5 +1,17 @@
 [
  {
+  "employer": "Endeavors",
+  "city": "San Antonio",
+  "zip": "78249",
+  "lwib_area": "7 - ARIZONA@WORK - Maricopa County",
+  "notice_date": "Oct 29, 2026",
+  "warn_type": "WARN",
+  "record_number": "1010",
+  "detail_page_url": "https://www.azjobconnection.gov/search/warn_lookups/1010",
+  "number_of_employees_affected": "5",
+  "address": "6363 De Zavala Road; San Antonio, Texas 78249"
+ },
+ {
   "employer": "Chronicle Heritage",
   "city": "Phoenix",
   "zip": "85004",

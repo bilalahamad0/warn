@@ -1,9 +1,9 @@
 {
-  "total_records": 4766,
-  "total_employees": 608148,
+  "total_records": 4767,
+  "total_employees": 608215,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-10-30T03:36:53.804095+00:00",
+  "last_updated": "2026-10-30T17:39:55.159095+00:00",
   "source_url": "https://www.tcsg.edu/warn-public-view/",
   "records": [
     {
@@ -3472,6 +3472,18 @@
       "county": "Fulton",
       "city": "",
       "address": "1204 Peachtree St NE, Atlanta, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Asama Coldwater Manufacturing Georgia",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 67,
+      "layoff_type": "Permanent Closure",
+      "county": "Warren",
+      "city": "",
+      "address": "975 Thomson Hwy, Warrenton, Georgia",
       "industry": ""
     },
     {

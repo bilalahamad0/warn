@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-10-30T17:51:53.907539+00:00",
+  "last_updated": "2026-10-31T03:32:32.080559+00:00",
   "states_live": 47,
-  "total_records": 60738,
-  "total_employees": 6535971,
+  "total_records": 60752,
+  "total_employees": 6537387,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -15,15 +15,15 @@
       "name": "Alabama",
       "agency": "Alabama Department of Workforce",
       "source_url": "https://workforce.alabama.gov/warn-list/",
-      "total_records": 1073,
-      "total_employees": 182505
+      "total_records": 1076,
+      "total_employees": 183302
     },
     "AZ": {
       "name": "Arizona",
       "agency": "Arizona Department of Economic Security",
       "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
-      "total_records": 488,
-      "total_employees": 71900
+      "total_records": 489,
+      "total_employees": 71905
     },
     "CA": {
       "name": "California",
@@ -36,8 +36,8 @@
       "name": "Colorado",
       "agency": "Colorado Department of Labor and Employment",
       "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
-      "total_records": 863,
-      "total_employees": 87513
+      "total_records": 864,
+      "total_employees": 87518
     },
     "CT": {
       "name": "Connecticut",
@@ -85,8 +85,8 @@
       "name": "Iowa",
       "agency": "Iowa Workforce Development",
       "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
-      "total_records": 945,
-      "total_employees": 52263
+      "total_records": 948,
+      "total_employees": 52353
     },
     "ID": {
       "name": "Idaho",
@@ -134,15 +134,15 @@
       "name": "Massachusetts",
       "agency": "Massachusetts Executive Office of Labor and Workforce Development",
       "source_url": "https://www.mass.gov/info-details/worker-adjustment-and-retraining-notification-act-warn",
-      "total_records": 396,
-      "total_employees": 35566
+      "total_records": 397,
+      "total_employees": 35576
     },
     "MD": {
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1376,
-      "total_employees": 116973
+      "total_records": 1377,
+      "total_employees": 117000
     },
     "ME": {
       "name": "Maine",
@@ -260,7 +260,7 @@
       "name": "Rhode Island",
       "agency": "Rhode Island Department of Labor and Training",
       "source_url": "https://dlt.ri.gov/employers/worker-adjustment-and-retraining-notification-warn",
-      "total_records": 127,
+      "total_records": 128,
       "total_employees": 14794
     },
     "SC": {
@@ -302,8 +302,8 @@
       "name": "Virginia",
       "agency": "Virginia Works (Virginia Employment Commission)",
       "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
-      "total_records": 1135,
-      "total_employees": 132234
+      "total_records": 1137,
+      "total_employees": 132568
     },
     "VT": {
       "name": "Vermont",
@@ -323,8 +323,8 @@
       "name": "Wisconsin",
       "agency": "Wisconsin Department of Workforce Development",
       "source_url": "https://dwd.wisconsin.gov/dislocatedworker/warn/",
-      "total_records": 640,
-      "total_employees": 59604
+      "total_records": 641,
+      "total_employees": 59752
     },
     "WV": {
       "name": "West Virginia",
@@ -14004,6 +14004,42 @@
       "industry": ""
     },
     {
+      "state": "AL",
+      "company": "CORIZON HEALTH",
+      "notice_date": "2018-02-05",
+      "effective_date": "2026-10-30",
+      "employees": 648,
+      "layoff_type": "Closing *",
+      "county": "",
+      "city": "State Wide",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "SEARS HOLDINGS",
+      "notice_date": "2009-02-28",
+      "effective_date": "2026-10-30",
+      "employees": 15,
+      "layoff_type": "Closing *",
+      "county": "",
+      "city": "Birmingham",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "URS CORPORATION",
+      "notice_date": "2010-01-22",
+      "effective_date": "2026-10-30",
+      "employees": 134,
+      "layoff_type": "Layoff *",
+      "county": "",
+      "city": "Birmingham",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "AZ",
       "company": "Conduent Commercial Solutions, LLC",
       "notice_date": "2026-06-29",
@@ -19857,6 +19893,18 @@
       "county": "",
       "city": "Richmond",
       "address": "6641 W Broad Street, Ste. 300; Richmond, Virginia 23230",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Endeavors",
+      "notice_date": "2026-10-29",
+      "effective_date": null,
+      "employees": 5,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "San Antonio",
+      "address": "6363 De Zavala Road; San Antonio, Texas 78249",
       "industry": ""
     },
     {
@@ -196828,6 +196876,18 @@
       "industry": "56,2910: Remediation Services"
     },
     {
+      "state": "CO",
+      "company": "Endeavors",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 5,
+      "layoff_type": "Contract with HHS not renewed.",
+      "county": "Location of CO workers not stated",
+      "city": "",
+      "address": "",
+      "industry": "62,4190: Other Individual & Family Services"
+    },
+    {
       "state": "CT",
       "company": "Conduent Commercial Solutions, LLC",
       "notice_date": "2026-06-26",
@@ -278942,6 +279002,42 @@
       "city": "West Des Moines",
       "address": "",
       "industry": "Finance and Insurance"
+    },
+    {
+      "state": "IA",
+      "company": "CDS Global, Inc",
+      "notice_date": "2026-10-26",
+      "effective_date": "2026-10-16",
+      "employees": 51,
+      "layoff_type": "Mass Layoff",
+      "county": "Polk",
+      "city": "Des Moines",
+      "address": "",
+      "industry": "Information"
+    },
+    {
+      "state": "IA",
+      "company": "Family Endeavors, Inc",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 8,
+      "layoff_type": "Mass Layoff",
+      "county": "Johnson",
+      "city": "Coralville",
+      "address": "",
+      "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "IA",
+      "company": "Collins Aerospace",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-11-30",
+      "employees": 31,
+      "layoff_type": "Mass Layoff",
+      "county": "Linn",
+      "city": "Cedar Rapids",
+      "address": "",
+      "industry": ""
     },
     {
       "state": "ID",
@@ -373474,6 +373570,18 @@
       "industry": ""
     },
     {
+      "state": "MA",
+      "company": "Family Endeavors, Inc. (aka Endeavors)",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 10,
+      "layoff_type": "",
+      "county": "Statewide",
+      "city": "Statewide",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "MD",
       "company": "Taft Broadcasting, LLC",
       "notice_date": "2026-07-20",
@@ -389984,6 +390092,18 @@
       "city": "",
       "address": "10411 Motor City Drive, Suite 360 Bethesda, MD 20817",
       "industry": "541211"
+    },
+    {
+      "state": "MD",
+      "company": "Family Endeavors, Inc.",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 27,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Statewide",
+      "city": "",
+      "address": "6363 DeZavala Rd San Antonio, Texas 78249",
+      "industry": "624190"
     },
     {
       "state": "ME",
@@ -567859,6 +567979,18 @@
       "industry": ""
     },
     {
+      "state": "RI",
+      "company": "Endeavors",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 0,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Texas",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "SC",
       "company": "Fast Lane of Rock Hill",
       "notice_date": "2013-02-25",
@@ -649872,6 +650004,30 @@
       "industry": ""
     },
     {
+      "state": "VA",
+      "company": "Haynes Furniture Company Inc.",
+      "notice_date": "2026-10-30",
+      "effective_date": "2026-10-31",
+      "employees": 83,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Virginia",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "Buitoni",
+      "notice_date": "2026-10-28",
+      "effective_date": "2026-12-28",
+      "employees": 251,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Danville",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "VT",
       "company": "Calmont Beverage",
       "notice_date": "2026-01-22",
@@ -676642,6 +676798,18 @@
       "city": "Milwaukee",
       "address": "",
       "industry": "Other Individual & Family Services"
+    },
+    {
+      "state": "WI",
+      "company": "M.M.D., LLC d/b/a The Allstaff Group",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 148,
+      "layoff_type": "Workforce Reduction",
+      "county": "Kenosha",
+      "city": "Kenosha",
+      "address": "",
+      "industry": "Temporary Help Services"
     },
     {
       "state": "WV",

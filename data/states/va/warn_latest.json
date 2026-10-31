@@ -1,11 +1,35 @@
 {
-  "total_records": 1135,
-  "total_employees": 132234,
+  "total_records": 1137,
+  "total_employees": 132568,
   "date_range_start": "2010-07-29",
-  "date_range_end": "2026-10-28",
-  "last_updated": "2026-10-30T17:49:03.347246+00:00",
+  "date_range_end": "2026-10-30",
+  "last_updated": "2026-10-31T03:29:37.966400+00:00",
   "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
   "records": [
+    {
+      "state": "VA",
+      "company": "Haynes Furniture Company Inc.",
+      "notice_date": "2026-10-30",
+      "effective_date": "2026-10-31",
+      "employees": 83,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Virginia",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "Buitoni",
+      "notice_date": "2026-10-28",
+      "effective_date": "2026-12-28",
+      "employees": 251,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Danville",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "VA",
       "company": "Wells Fargo",

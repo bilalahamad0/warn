@@ -1,9 +1,9 @@
 {
-  "total_records": 640,
-  "total_employees": 59604,
+  "total_records": 641,
+  "total_employees": 59752,
   "date_range_start": "2020-01-02",
-  "date_range_end": "2026-10-28",
-  "last_updated": "2026-10-30T17:51:51.609260+00:00",
+  "date_range_end": "2026-10-29",
+  "last_updated": "2026-10-31T03:32:29.277664+00:00",
   "source_url": "https://dwd.wisconsin.gov/dislocatedworker/warn/",
   "records": [
     {
@@ -7685,6 +7685,18 @@
       "city": "Milwaukee",
       "address": "",
       "industry": "Other Individual & Family Services"
+    },
+    {
+      "state": "WI",
+      "company": "M.M.D., LLC d/b/a The Allstaff Group",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 148,
+      "layoff_type": "Workforce Reduction",
+      "county": "Kenosha",
+      "city": "Kenosha",
+      "address": "",
+      "industry": "Temporary Help Services"
     }
   ]
 }

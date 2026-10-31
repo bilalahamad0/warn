@@ -1,9 +1,9 @@
 {
-  "total_records": 945,
-  "total_employees": 52263,
+  "total_records": 948,
+  "total_employees": 52353,
   "date_range_start": "2011-01-13",
-  "date_range_end": "2026-10-27",
-  "last_updated": "2026-10-30T17:40:18.647583+00:00",
+  "date_range_end": "2026-10-29",
+  "last_updated": "2026-10-31T03:21:01.799934+00:00",
   "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
   "records": [
     {
@@ -11345,6 +11345,42 @@
       "city": "West Des Moines",
       "address": "",
       "industry": "Finance and Insurance"
+    },
+    {
+      "state": "IA",
+      "company": "CDS Global, Inc",
+      "notice_date": "2026-10-26",
+      "effective_date": "2026-10-16",
+      "employees": 51,
+      "layoff_type": "Mass Layoff",
+      "county": "Polk",
+      "city": "Des Moines",
+      "address": "",
+      "industry": "Information"
+    },
+    {
+      "state": "IA",
+      "company": "Family Endeavors, Inc",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 8,
+      "layoff_type": "Mass Layoff",
+      "county": "Johnson",
+      "city": "Coralville",
+      "address": "",
+      "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "IA",
+      "company": "Collins Aerospace",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-11-30",
+      "employees": 31,
+      "layoff_type": "Mass Layoff",
+      "county": "Linn",
+      "city": "Cedar Rapids",
+      "address": "",
+      "industry": ""
     }
   ]
 }

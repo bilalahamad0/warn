@@ -1,9 +1,9 @@
 {
-  "total_records": 2388,
-  "total_employees": 356891,
+  "total_records": 2389,
+  "total_employees": 357010,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-10-30T03:45:00.749402+00:00",
+  "last_updated": "2026-10-30T17:48:13.585503+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -1419,6 +1419,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Newark",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Comcast",
+      "notice_date": null,
+      "effective_date": "2027-01-27",
+      "employees": 119,
+      "layoff_type": "",
+      "county": "",
+      "city": "Atlantic, Burlington, Camden, Cumberland, Gloucester, Mercer, Monmouth, Ocean, and Union counties",
       "address": "",
       "industry": ""
     },

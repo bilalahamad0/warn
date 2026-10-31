@@ -1,11 +1,23 @@
 {
-  "total_records": 1134,
-  "total_employees": 132147,
+  "total_records": 1135,
+  "total_employees": 132234,
   "date_range_start": "2010-07-29",
-  "date_range_end": "2026-10-23",
-  "last_updated": "2026-10-30T03:45:53.352439+00:00",
+  "date_range_end": "2026-10-28",
+  "last_updated": "2026-10-30T17:49:03.347246+00:00",
   "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
   "records": [
+    {
+      "state": "VA",
+      "company": "Wells Fargo",
+      "notice_date": "2026-10-28",
+      "effective_date": "2026-11-28",
+      "employees": 87,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Roanoke",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "VA",
       "company": "DCS Corporation",

@@ -1,9 +1,9 @@
 {
-  "total_records": 1376,
-  "total_employees": 116973,
+  "total_records": 1377,
+  "total_employees": 117000,
   "date_range_start": "2010-01-07",
   "date_range_end": "2026-10-29",
-  "last_updated": "2026-10-30T17:44:35.428368+00:00",
+  "last_updated": "2026-10-31T03:25:38.634167+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -16517,6 +16517,18 @@
       "city": "",
       "address": "10411 Motor City Drive, Suite 360 Bethesda, MD 20817",
       "industry": "541211"
+    },
+    {
+      "state": "MD",
+      "company": "Family Endeavors, Inc.",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 27,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Statewide",
+      "city": "",
+      "address": "6363 DeZavala Rd San Antonio, Texas 78249",
+      "industry": "624190"
     }
   ]
 }

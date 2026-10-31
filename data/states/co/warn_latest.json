@@ -1,9 +1,9 @@
 {
-  "total_records": 866,
-  "total_employees": 88728,
+  "total_records": 867,
+  "total_employees": 88733,
   "date_range_start": "2015-01-02",
-  "date_range_end": "2026-10-08",
-  "last_updated": "2026-10-30T17:36:59.324938+00:00",
+  "date_range_end": "2026-10-29",
+  "last_updated": "2026-10-31T03:17:53.234983+00:00",
   "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
   "records": [
     {
@@ -569,6 +569,18 @@
       "city": "",
       "address": "",
       "industry": "56,2910: Remediation Services"
+    },
+    {
+      "state": "CO",
+      "company": "Endeavors",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 5,
+      "layoff_type": "Contract with HHS not renewed.",
+      "county": "Location of CO workers not stated",
+      "city": "",
+      "address": "",
+      "industry": "62,4190: Other Individual & Family Services"
     },
     {
       "state": "CO",

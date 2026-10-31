@@ -1020,6 +1020,35 @@
   "industry": "Finance and Insurance "
  },
  {
+  "company": "CDS Global, Inc ",
+  "city": "Des Moines",
+  "county": "Polk",
+  "layoff_type": "Mass Layoff ",
+  "employees": 51,
+  "notice_date": "2026-10-26 00:00:00",
+  "effective_date": "2026-10-16 00:00:00",
+  "industry": "Information "
+ },
+ {
+  "company": "Family Endeavors, Inc ",
+  "city": "Coralville",
+  "county": "Johnson",
+  "layoff_type": "Mass Layoff",
+  "employees": 8,
+  "notice_date": "2026-10-29 00:00:00",
+  "effective_date": "2026-12-31 00:00:00",
+  "industry": "Health Care and Social Assistance"
+ },
+ {
+  "company": "Collins Aerospace ",
+  "city": "Cedar Rapids ",
+  "county": "Linn",
+  "layoff_type": "Mass Layoff",
+  "employees": 31,
+  "notice_date": "2026-10-29 00:00:00",
+  "effective_date": "2026-11-30 00:00:00"
+ },
+ {
   "company": "John Deere Ottumwa Works ",
   "address": "928 E Vine St",
   "city": "Ottumwa",
