@@ -321,21 +321,6 @@
       },
       "modifiedDate": "2025-11-10T17:28:29+00:00",
       "name": "rapid_response/warn_documents/2025/Metallics, Inc. subsidiary of NSI Industries, LLC (Bristol) 11-7-2025.pdf"
-    },
-    {
-      "blobProperties": {
-        "affected_company": "ELG Utica Alloys (Harford), Inc.",
-        "layoff_dates": "12/31/2025",
-        "layoff_locations__": "Hartford",
-        "number_of_impacted_workers": "51",
-        "title": "Not Provided",
-        "union": "Yes",
-        "union_address": "Not Provided",
-        "warn_document_date": "2025-10-31",
-        "warn_document_received_date": "2025-10-31"
-      },
-      "modifiedDate": "2025-11-03T13:51:22+00:00",
-      "name": "rapid_response/warn_documents/2025/ELG Utica Alloys (Hartford) 10-31-2025.pdf"
     }
   ]
 }

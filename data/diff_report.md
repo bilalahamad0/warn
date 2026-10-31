@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-10-31 03:32:31 UTC
+**Generated:** 2026-10-31 16:55:06 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -32,19 +32,17 @@ M data/changelog.jsonl
  M data/states/al/warn_snapshot.json
  M data/states/az/changelog.jsonl
  M data/states/az/meta.json
- M data/states/az/raw_download
  M data/states/az/warn_cumulative.json
  M data/states/az/warn_latest.json
  M data/states/az/warn_snapshot.json
  M data/states/co/changelog.jsonl
  M data/states/co/meta.json
- M data/states/co/raw_download
- M data/states/co/sheet_2026.html
  M data/states/co/warn_cumulative.json
  M data/states/co/warn_latest.json
  M data/states/co/warn_snapshot.json
  M data/states/ct/changelog.jsonl
  M data/states/ct/meta.json
+ M data/states/ct/raw_download
  M data/states/ct/warn_cumulative.json
  M data/states/ct/warn_latest.json
  M data/states/ct/warn_snapshot.json
@@ -69,7 +67,6 @@ M data/changelog.jsonl
  M data/states/hi/warn_snapshot.json
  M data/states/ia/changelog.jsonl
  M data/states/ia/meta.json
- M data/states/ia/raw_download
  M data/states/ia/warn_cumulative.json
  M data/states/ia/warn_latest.json
  M data/states/ia/warn_snapshot.json
@@ -104,7 +101,6 @@ M data/changelog.jsonl
  M data/states/la/warn_snapshot.json
  M data/states/ma/changelog.jsonl
  M data/states/ma/meta.json
- M data/states/ma/raw_download.csv
  M data/states/ma/warn_cumulative.json
  M data/states/ma/warn_latest.json
  M data/states/ma/warn_snapshot.json
@@ -186,8 +182,6 @@ M data/changelog.jsonl
  M data/states/pa/warn_latest.json
  M data/states/pa/warn_snapshot.json
  M data/states/ri/changelog.jsonl
- M data/states/ri/meta.json
- M data/states/ri/raw_download.xlsx
  M data/states/ri/warn_cumulative.json
  M data/states/ri/warn_latest.json
  M data/states/ri/warn_snapshot.json
@@ -213,7 +207,6 @@ M data/changelog.jsonl
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
- M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -229,7 +222,6 @@ M data/changelog.jsonl
  M data/states/wa/warn_snapshot.json
  M data/states/wi/changelog.jsonl
  M data/states/wi/meta.json
- M data/states/wi/raw_download
  M data/states/wi/warn_cumulative.json
  M data/states/wi/warn_latest.json
  M data/states/wi/warn_snapshot.json
@@ -245,16 +237,17 @@ M data/changelog.jsonl
 
 **Recent commits:**
 ```
+4fd40b7d7 auto: WARN data update [skip ci]
 bdcd63cbd auto: WARN data update [skip ci]
 f0df58919 auto: WARN data update [skip ci]
 373042d50 auto: WARN data update [skip ci]
 e3a0359bd auto: WARN data update [skip ci]
-1e4dfe05d auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-10-31T16:39:44.593140+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-31T03:17:33.961155+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-30T17:36:36.203869+00:00` — +0 added, -356 removed, 0 employees (new)
 - `2026-10-30T03:33:26.504006+00:00` — +7 added, -0 removed, 649 employees (new)
@@ -264,4 +257,3 @@ e3a0359bd auto: WARN data update [skip ci]
 - `2026-10-28T03:05:49.678481+00:00` — +7 added, -0 removed, 1,329 employees (new)
 - `2026-10-27T17:10:35.098484+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-27T02:58:40.851413+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-10-26T18:01:44.021613+00:00` — +0 added, -0 removed, 0 employees (new)

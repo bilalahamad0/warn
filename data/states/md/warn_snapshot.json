@@ -1,11 +1,23 @@
 {
-  "total_records": 1424,
-  "total_employees": 118094,
+  "total_records": 1425,
+  "total_employees": 118121,
   "date_range_start": "2010-01-07",
   "date_range_end": "2026-10-29",
-  "last_updated": "2026-10-30T17:44:35.419433+00:00",
+  "last_updated": "2026-10-31T03:25:38.621128+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
+    {
+      "state": "MD",
+      "company": "Family Endeavors, Inc.",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 27,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Statewide",
+      "city": "",
+      "address": "6363 DeZavala Rd San Antonio, Texas 78249",
+      "industry": "624190"
+    },
     {
       "state": "MD",
       "company": "Bull, Shams-Azar, Larkin & Cohen, PA",
