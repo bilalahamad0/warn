@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-31T16:55:07.462692+00:00",
+  "last_updated": "2026-11-01T03:28:10.420853+00:00",
   "states_live": 47,
   "total_records": 60752,
   "total_employees": 6537387,
@@ -650005,18 +650005,6 @@
     },
     {
       "state": "VA",
-      "company": "Haynes Furniture Company Inc.",
-      "notice_date": "2026-10-30",
-      "effective_date": "2026-10-31",
-      "employees": 83,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Virginia",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "VA",
       "company": "Buitoni",
       "notice_date": "2026-10-28",
       "effective_date": "2026-12-28",
@@ -650024,6 +650012,18 @@
       "layoff_type": "Closure",
       "county": "",
       "city": "Danville",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "Haynes Furniture Company Inc.",
+      "notice_date": "2026-10-30",
+      "effective_date": "2026-11-01",
+      "employees": 83,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Virginia",
       "address": "",
       "industry": ""
     },

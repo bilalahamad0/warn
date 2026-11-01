@@ -1,9 +1,9 @@
 {
-  "total_records": 24,
-  "total_employees": 3017,
-  "date_range_start": "2025-10-31",
+  "total_records": 23,
+  "total_employees": 2966,
+  "date_range_start": "2025-11-07",
   "date_range_end": "2026-10-29",
-  "last_updated": "2026-10-31T03:17:56.817783+00:00",
+  "last_updated": "2026-10-31T16:40:11.738123+00:00",
   "source_url": "https://dolpublicdocumentlibrary.ct.gov/CsblrCategory?prefix=%2Frapid_response%2Fwarn_documents",
   "records": [
     {
@@ -279,18 +279,6 @@
       "layoff_type": "",
       "county": "",
       "city": "Bristol",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "CT",
-      "company": "ELG Utica Alloys (Harford), Inc.",
-      "notice_date": "2025-10-31",
-      "effective_date": "2025-12-31",
-      "employees": 51,
-      "layoff_type": "",
-      "county": "",
-      "city": "Hartford",
       "address": "",
       "industry": ""
     }
