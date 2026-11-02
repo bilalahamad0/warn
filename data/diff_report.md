@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-11-01 17:50:40 UTC
+**Generated:** 2026-11-02 03:36:57 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -144,7 +144,6 @@ M data/changelog.jsonl
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
- M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
@@ -197,17 +196,13 @@ M data/changelog.jsonl
  M data/states/sd/warn_cumulative.json
  M data/states/sd/warn_latest.json
  M data/states/sd/warn_snapshot.json
- M data/states/tn/changelog.jsonl
- M data/states/tn/raw_download
- M data/states/tn/warn_cumulative.json
- M data/states/tn/warn_latest.json
- M data/states/tn/warn_snapshot.json
  M data/states/ut/changelog.jsonl
  M data/states/ut/warn_cumulative.json
  M data/states/ut/warn_latest.json
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
+ M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -238,16 +233,17 @@ M data/changelog.jsonl
 
 **Recent commits:**
 ```
+6e403767a auto: WARN data update [skip ci]
 1a37c253f chore: weekly AI metrics update [skip actions]
 42f889b4b auto: WARN data update [skip ci]
 049679f96 auto: WARN data update [skip ci]
 4fd40b7d7 auto: WARN data update [skip ci]
-bdcd63cbd auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-11-02T03:21:40.307749+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-11-01T17:34:33.930099+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-11-01T03:12:55.328448+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-31T16:39:44.593140+00:00` — +0 added, -0 removed, 0 employees (new)
@@ -257,4 +253,3 @@ bdcd63cbd auto: WARN data update [skip ci]
 - `2026-10-29T17:57:18.830834+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-29T03:30:45.978977+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-28T17:45:28.594798+00:00` — +0 added, -349 removed, 0 employees (new)
-- `2026-10-28T03:05:49.678481+00:00` — +7 added, -0 removed, 1,329 employees (new)

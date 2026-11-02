@@ -1,43 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-11-01T17:51:47.997561+00:00",
+  "updated_at": "2026-11-02T03:38:03.679696+00:00",
   "candidates": [
-    {
-      "id": "030c063391c7",
-      "created_at": "2026-10-03T03:13:27.889509+00:00",
-      "status": "expired",
-      "company": "Aramark",
-      "display": "Aramark",
-      "employees": 174,
-      "states": [
-        "MD"
-      ],
-      "per_state": {
-        "MD": 174
-      },
-      "sites": 1,
-      "card": {
-        "place": "Baltimore County, MD",
-        "effective": "Nov 1, 2026",
-        "employees": 174
-      },
-      "arm": "brand",
-      "reason": "known brand, 174 >= 50",
-      "text": "Aramark filed a WARN notice for 174 job cuts in Baltimore County, MD.\n\nEffective Nov 1, 2026.\n\n#layoffs #Maryland",
-      "thread": [],
-      "weighted_len": 113,
-      "warnings": [],
-      "keys": [
-        "MD:Aramark Campus, LLC__2026-11-01__174"
-      ],
-      "approved_by": null,
-      "approved_at": null,
-      "rejected_reason": null,
-      "tweet_id": null,
-      "posted_at": null,
-      "attempts": 0,
-      "last_error": null
-    },
     {
       "id": "a3123e3cdc02",
       "created_at": "2026-10-06T04:16:41.081416+00:00",
