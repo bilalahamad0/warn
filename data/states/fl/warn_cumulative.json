@@ -1,9 +1,9 @@
 {
-  "total_records": 480,
-  "total_employees": 36151,
+  "total_records": 482,
+  "total_employees": 36322,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-10-29",
-  "last_updated": "2026-11-02T03:24:48.339757+00:00",
+  "date_range_end": "2026-11-02",
+  "last_updated": "2026-11-02T21:12:55.071116+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -5765,6 +5765,30 @@
       "city": "ORLANDO",
       "address": "2416 Lake Orange Drive",
       "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "FL",
+      "company": "Niagara Bottling, LLC",
+      "notice_date": "2026-10-31",
+      "effective_date": "2026-12-31",
+      "employees": 57,
+      "layoff_type": "",
+      "county": "",
+      "city": "OCALA",
+      "address": "2445 NW 42nd Street",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "FL",
+      "company": "GEICO",
+      "notice_date": "2026-11-02",
+      "effective_date": "2026-12-31",
+      "employees": 114,
+      "layoff_type": "",
+      "county": "",
+      "city": "LAKELAND",
+      "address": "3535 W Pipkin Road",
+      "industry": "Finance and Insurance"
     }
   ]
 }

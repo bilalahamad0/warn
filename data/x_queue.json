@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-02T03:38:03.679696+00:00",
+  "updated_at": "2026-11-02T21:26:21.034370+00:00",
   "candidates": [
     {
       "id": "a3123e3cdc02",
@@ -1117,6 +1117,150 @@
       "warnings": [],
       "keys": [
         "VA:Buitoni__2026-12-28__251"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "7a18493f0ba5",
+      "created_at": "2026-11-02T21:26:21.034261+00:00",
+      "status": "pending",
+      "company": "GEICO",
+      "display": "GEICO",
+      "employees": 114,
+      "states": [
+        "FL"
+      ],
+      "per_state": {
+        "FL": 114
+      },
+      "sites": 1,
+      "card": {
+        "place": "LAKELAND, FL",
+        "effective": "Dec 31, 2026",
+        "employees": 114
+      },
+      "arm": "brand",
+      "reason": "known brand, 114 >= 50",
+      "text": "GEICO filed a WARN notice for 114 job cuts in LAKELAND, FL.\n\nEffective Dec 31, 2026.\n\n#layoffs #Florida",
+      "thread": [],
+      "weighted_len": 103,
+      "warnings": [],
+      "keys": [
+        "FL:GEICO__2026-12-31__114"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "51828d01c901",
+      "created_at": "2026-11-02T21:26:21.034313+00:00",
+      "status": "pending",
+      "company": "Jabil",
+      "display": "Jabil",
+      "employees": 94,
+      "states": [
+        "MD"
+      ],
+      "per_state": {
+        "MD": 94
+      },
+      "sites": 1,
+      "card": {
+        "place": "Baltimore County, MD",
+        "effective": "Dec 29, 2026",
+        "employees": 94
+      },
+      "arm": "tech",
+      "reason": "tech brand, 94 >= 25",
+      "text": "Jabil filed a WARN notice for 94 job cuts in Baltimore County, MD.\n\nEffective Dec 29, 2026.\n\n#layoffs #Maryland",
+      "thread": [],
+      "weighted_len": 111,
+      "warnings": [],
+      "keys": [
+        "MD:Pharmaceutics International, Inc., a Jabil Inc. Company - Hunt Valley__2026-12-29__94"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "8f4faf7ebbc4",
+      "created_at": "2026-11-02T21:26:21.034340+00:00",
+      "status": "pending",
+      "company": "JPMorgan Chase",
+      "display": "JPMorgan Chase",
+      "employees": 91,
+      "states": [
+        "NJ"
+      ],
+      "per_state": {
+        "NJ": 91
+      },
+      "sites": 1,
+      "card": {
+        "place": "Jersey City, NJ",
+        "effective": "Oct 30, 2026",
+        "employees": 91
+      },
+      "arm": "brand",
+      "reason": "known brand, 91 >= 50",
+      "text": "JPMorgan Chase filed a WARN notice for 91 job cuts in Jersey City, NJ.\n\nEffective Oct 30, 2026.\n\n#layoffs #NewJersey",
+      "thread": [],
+      "weighted_len": 116,
+      "warnings": [],
+      "keys": [
+        "NJ:JP Morgan Chase__2026-10-30__91"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "8d7913f9cfff",
+      "created_at": "2026-11-02T21:26:21.034363+00:00",
+      "status": "pending",
+      "company": "Niagara Bottling",
+      "display": "Niagara Bottling",
+      "employees": 57,
+      "states": [
+        "FL"
+      ],
+      "per_state": {
+        "FL": 57
+      },
+      "sites": 1,
+      "card": {
+        "place": "OCALA, FL",
+        "effective": "Dec 31, 2026",
+        "employees": 57
+      },
+      "arm": "brand",
+      "reason": "known brand, 57 >= 50",
+      "text": "Niagara Bottling filed a WARN notice for 57 job cuts in OCALA, FL.\n\nEffective Dec 31, 2026.\n\n#layoffs #Florida",
+      "thread": [],
+      "weighted_len": 110,
+      "warnings": [],
+      "keys": [
+        "FL:Niagara Bottling, LLC__2026-12-31__57"
       ],
       "approved_by": null,
       "approved_at": null,

@@ -1,9 +1,9 @@
 {
-  "total_records": 1388,
-  "total_employees": 187545,
+  "total_records": 1390,
+  "total_employees": 187618,
   "date_range_start": "1988-11-28",
-  "date_range_end": "2026-10-29",
-  "last_updated": "2026-11-02T03:33:42.268521+00:00",
+  "date_range_end": "2026-10-30",
+  "last_updated": "2026-11-02T21:22:24.493567+00:00",
   "source_url": "https://ccwd.hecc.oregon.gov/Layoff/WARN",
   "records": [
     {
@@ -16659,6 +16659,30 @@
       "layoff_type": "Reduction",
       "county": "",
       "city": "San Antonio, TX",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "HS/PRS - Morrison Home Study and Post R",
+      "notice_date": "2026-10-30",
+      "effective_date": "2026-12-31",
+      "employees": 42,
+      "layoff_type": "Large Layoff - 10 or more workers",
+      "county": "",
+      "city": "Portland",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "LTGH - Morrison Long-Term Group Home",
+      "notice_date": "2026-10-30",
+      "effective_date": "2026-12-31",
+      "employees": 31,
+      "layoff_type": "Large Layoff - 10 or more workers",
+      "county": "",
+      "city": "Portland",
       "address": "",
       "industry": ""
     }

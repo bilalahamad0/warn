@@ -3,7 +3,7 @@
   "total_employees": 35808,
   "date_range_start": "2022-01-25",
   "date_range_end": "2026-10-23",
-  "last_updated": "2026-11-02T03:32:33.073347+00:00",
+  "last_updated": "2026-11-02T21:21:15.079356+00:00",
   "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
   "records": [
     {
@@ -3776,18 +3776,6 @@
     },
     {
       "state": "NC",
-      "company": "Thermo Fisher Scientific",
-      "notice_date": "2026-01-08",
-      "effective_date": "2027-12-31",
-      "employees": 423,
-      "layoff_type": "Closure Permanent",
-      "county": "Buncombe",
-      "city": "Asheville",
-      "address": "275 Aiken Road",
-      "industry": ""
-    },
-    {
-      "state": "NC",
       "company": "Fortrex",
       "notice_date": "2026-01-12",
       "effective_date": "2026-02-06",
@@ -4612,6 +4600,18 @@
       "county": "Iredell",
       "city": "Statesville",
       "address": "841 Meacham Road",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Thermo Fisher Scientific",
+      "notice_date": "2026-01-08",
+      "effective_date": "2028-03-31",
+      "employees": 423,
+      "layoff_type": "Closure Permanent",
+      "county": "Buncombe",
+      "city": "Asheville",
+      "address": "275 Aiken Road",
       "industry": ""
     }
   ]

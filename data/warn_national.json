@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-11-02T03:36:58.287449+00:00",
+  "last_updated": "2026-11-02T21:25:28.530659+00:00",
   "states_live": 47,
-  "total_records": 60752,
-  "total_employees": 6537387,
+  "total_records": 60760,
+  "total_employees": 6537848,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -64,8 +64,8 @@
       "name": "Florida",
       "agency": "Florida Department of Commerce (FloridaCommerce)",
       "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
-      "total_records": 480,
-      "total_employees": 36151
+      "total_records": 482,
+      "total_employees": 36322
     },
     "GA": {
       "name": "Georgia",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1377,
-      "total_employees": 117000
+      "total_records": 1378,
+      "total_employees": 117094
     },
     "ME": {
       "name": "Maine",
@@ -204,8 +204,8 @@
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2363,
-      "total_employees": 354499
+      "total_records": 2364,
+      "total_employees": 354590
     },
     "NM": {
       "name": "New Mexico",
@@ -246,8 +246,8 @@
       "name": "Oregon",
       "agency": "Oregon Higher Education Coordinating Commission, Office of Community Colleges and Workforce Development",
       "source_url": "https://ccwd.hecc.oregon.gov/Layoff/WARN",
-      "total_records": 1388,
-      "total_employees": 187545
+      "total_records": 1390,
+      "total_employees": 187618
     },
     "PA": {
       "name": "Pennsylvania",
@@ -267,8 +267,8 @@
       "name": "South Carolina",
       "agency": "South Carolina Department of Employment and Workforce",
       "source_url": "https://scworks.org/employer/employer-programs/risk-closing/layoff-notification-reports",
-      "total_records": 610,
-      "total_employees": 81887
+      "total_records": 612,
+      "total_employees": 81919
     },
     "SD": {
       "name": "South Dakota",
@@ -205288,6 +205288,30 @@
       "industry": "Health Care and Social Assistance"
     },
     {
+      "state": "FL",
+      "company": "Niagara Bottling, LLC",
+      "notice_date": "2026-10-31",
+      "effective_date": "2026-12-31",
+      "employees": 57,
+      "layoff_type": "",
+      "county": "",
+      "city": "OCALA",
+      "address": "2445 NW 42nd Street",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "FL",
+      "company": "GEICO",
+      "notice_date": "2026-11-02",
+      "effective_date": "2026-12-31",
+      "employees": 114,
+      "layoff_type": "",
+      "county": "",
+      "city": "LAKELAND",
+      "address": "3535 W Pipkin Road",
+      "industry": "Finance and Insurance"
+    },
+    {
       "state": "GA",
       "company": "Dexter Axle Company",
       "notice_date": null,
@@ -390106,6 +390130,18 @@
       "industry": "624190"
     },
     {
+      "state": "MD",
+      "company": "Pharmaceutics International, Inc., a Jabil Inc. Company - Hunt Valley",
+      "notice_date": "2026-10-30",
+      "effective_date": "2026-12-29",
+      "employees": 94,
+      "layoff_type": "Mass Layoff- No Recall",
+      "county": "Baltimore County",
+      "city": "",
+      "address": "10819 Gilroy Road Hunt Valley, MD 21031",
+      "industry": "325412"
+    },
+    {
       "state": "ME",
       "company": "SMBC-Sumitomo Mitsui Banking Corporation",
       "notice_date": "2026-01-13",
@@ -413012,18 +413048,6 @@
     },
     {
       "state": "NC",
-      "company": "Thermo Fisher Scientific",
-      "notice_date": "2026-01-08",
-      "effective_date": "2027-12-31",
-      "employees": 423,
-      "layoff_type": "Closure Permanent",
-      "county": "Buncombe",
-      "city": "Asheville",
-      "address": "275 Aiken Road",
-      "industry": ""
-    },
-    {
-      "state": "NC",
       "company": "Fortrex",
       "notice_date": "2026-01-12",
       "effective_date": "2026-02-06",
@@ -413848,6 +413872,18 @@
       "county": "Iredell",
       "city": "Statesville",
       "address": "841 Meacham Road",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Thermo Fisher Scientific",
+      "notice_date": "2026-01-08",
+      "effective_date": "2028-03-31",
+      "employees": 423,
+      "layoff_type": "Closure Permanent",
+      "county": "Buncombe",
+      "city": "Asheville",
+      "address": "275 Aiken Road",
       "industry": ""
     },
     {
@@ -455295,6 +455331,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Atlantic, Burlington, Camden, Cumberland, Gloucester, Mercer, Monmouth, Ocean, and Union counties",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "JP Morgan Chase",
+      "notice_date": null,
+      "effective_date": "2026-10-30",
+      "employees": 91,
+      "layoff_type": "",
+      "county": "",
+      "city": "Jersey City",
       "address": "",
       "industry": ""
     },
@@ -562627,6 +562675,30 @@
       "industry": ""
     },
     {
+      "state": "OR",
+      "company": "HS/PRS - Morrison Home Study and Post R",
+      "notice_date": "2026-10-30",
+      "effective_date": "2026-12-31",
+      "employees": 42,
+      "layoff_type": "Large Layoff - 10 or more workers",
+      "county": "",
+      "city": "Portland",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "LTGH - Morrison Long-Term Group Home",
+      "notice_date": "2026-10-30",
+      "effective_date": "2026-12-31",
+      "employees": 31,
+      "layoff_type": "Large Layoff - 10 or more workers",
+      "county": "",
+      "city": "Portland",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "PA",
       "company": "Transform Warehouse Operations, LLC",
       "notice_date": null,
@@ -575308,6 +575380,30 @@
       "county": "Kershaw",
       "city": "",
       "address": "90 East Hampton St., Camden, SC 29020",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "Foster",
+      "notice_date": "2026-10-21",
+      "effective_date": "2026-10-25",
+      "employees": 16,
+      "layoff_type": "Permanent Closure",
+      "county": "Horry",
+      "city": "",
+      "address": "2960 Drywall Drive, Myrtle Beach, SC 29577",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "Family Endeavors, Inc.",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 16,
+      "layoff_type": "Permanent Layoff",
+      "county": "Statewide - Multiple Counties",
+      "city": "",
+      "address": "6363 De Zavala Rd., San Antonio, TX 78249",
       "industry": ""
     },
     {
