@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-02T21:26:21.034370+00:00",
+  "updated_at": "2026-11-03T04:55:34.531396+00:00",
   "candidates": [
     {
       "id": "a3123e3cdc02",
@@ -1261,6 +1261,42 @@
       "warnings": [],
       "keys": [
         "FL:Niagara Bottling, LLC__2026-12-31__57"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "a3e591327795",
+      "created_at": "2026-11-03T04:55:34.531363+00:00",
+      "status": "pending",
+      "company": "Alaska Airlines",
+      "display": "Alaska Airlines",
+      "employees": 121,
+      "states": [
+        "WA"
+      ],
+      "per_state": {
+        "WA": 121
+      },
+      "sites": 1,
+      "card": {
+        "place": "Seattle, Spokane, Renton, WA",
+        "effective": "Dec 31, 2026",
+        "employees": 121
+      },
+      "arm": "brand",
+      "reason": "known brand, 121 >= 50",
+      "text": "Alaska Airlines filed a WARN notice for 121 job cuts in Seattle, Spokane, Renton, WA.\n\nEffective Dec 31, 2026.\n\n#layoffs #Washington",
+      "thread": [],
+      "weighted_len": 132,
+      "warnings": [],
+      "keys": [
+        "WA:Alaska Airlines__2026-12-31__121"
       ],
       "approved_by": null,
       "approved_at": null,

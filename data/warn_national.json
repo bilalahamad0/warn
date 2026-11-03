@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-11-02T21:25:28.530659+00:00",
+  "last_updated": "2026-11-03T04:54:32.354770+00:00",
   "states_live": 47,
-  "total_records": 60760,
-  "total_employees": 6537848,
+  "total_records": 60762,
+  "total_employees": 6538008,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -316,15 +316,15 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1552,
-      "total_employees": 252328
+      "total_records": 1553,
+      "total_employees": 252449
     },
     "WI": {
       "name": "Wisconsin",
       "agency": "Wisconsin Department of Workforce Development",
       "source_url": "https://dwd.wisconsin.gov/dislocatedworker/warn/",
-      "total_records": 641,
-      "total_employees": 59752
+      "total_records": 642,
+      "total_employees": 59791
     },
     "WV": {
       "name": "West Virginia",
@@ -650115,7 +650115,7 @@
       "state": "VA",
       "company": "Haynes Furniture Company Inc.",
       "notice_date": "2026-10-30",
-      "effective_date": "2026-11-02",
+      "effective_date": "2026-11-03",
       "employees": 83,
       "layoff_type": "Closure",
       "county": "",
@@ -669216,6 +669216,18 @@
       "industry": ""
     },
     {
+      "state": "WA",
+      "company": "Alaska Airlines",
+      "notice_date": "2026-10-30",
+      "effective_date": "2026-12-31",
+      "employees": 121,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Seattle, Spokane, Renton",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "WI",
       "company": "Semco Windows and Doors",
       "notice_date": "2020-01-02",
@@ -676906,6 +676918,18 @@
       "city": "Kenosha",
       "address": "",
       "industry": "Temporary Help Services"
+    },
+    {
+      "state": "WI",
+      "company": "Assist to Transport / Student Transportation of America, Inc.",
+      "notice_date": "2026-10-30",
+      "effective_date": "2026-12-31",
+      "employees": 39,
+      "layoff_type": "Facility Closure",
+      "county": "Manitowoc",
+      "city": "Manitowoc",
+      "address": "",
+      "industry": "School & Employee Bus Transportation"
     },
     {
       "state": "WV",

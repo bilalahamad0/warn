@@ -1,11 +1,23 @@
 {
-  "total_records": 1550,
-  "total_employees": 252070,
+  "total_records": 1551,
+  "total_employees": 252191,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-10-29",
-  "last_updated": "2026-11-02T21:25:23.755435+00:00",
+  "date_range_end": "2026-10-30",
+  "last_updated": "2026-11-03T04:54:26.050466+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
+    {
+      "state": "WA",
+      "company": "Alaska Airlines",
+      "notice_date": "2026-10-30",
+      "effective_date": "2026-12-31",
+      "employees": 121,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Seattle, Spokane, Renton",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "WA",
       "company": "Comcast",

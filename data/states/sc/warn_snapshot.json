@@ -1,9 +1,9 @@
 {
-  "total_records": 610,
-  "total_employees": 81887,
+  "total_records": 612,
+  "total_employees": 81919,
   "date_range_start": "2013-02-25",
-  "date_range_end": "2026-10-15",
-  "last_updated": "2026-11-02T03:33:53.518684+00:00",
+  "date_range_end": "2026-10-29",
+  "last_updated": "2026-11-02T21:22:32.769096+00:00",
   "source_url": "https://scworks.org/employer/employer-programs/risk-closing/layoff-notification-reports",
   "records": [
     {
@@ -7324,6 +7324,30 @@
       "county": "Greenville",
       "city": "",
       "address": "2000 GSP Dr., Greer, SC 29651",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "Foster",
+      "notice_date": "2026-10-21",
+      "effective_date": "2026-10-25",
+      "employees": 16,
+      "layoff_type": "Permanent Closure",
+      "county": "Horry",
+      "city": "",
+      "address": "2960 Drywall Drive, Myrtle Beach, SC 29577",
+      "industry": ""
+    },
+    {
+      "state": "SC",
+      "company": "Family Endeavors, Inc.",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 16,
+      "layoff_type": "Permanent Layoff",
+      "county": "Statewide - Multiple Counties",
+      "city": "",
+      "address": "6363 De Zavala Rd., San Antonio, TX 78249",
       "industry": ""
     }
   ]
