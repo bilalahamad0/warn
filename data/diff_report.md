@@ -1,32 +1,57 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-11-03 04:54:31 UTC
+**Generated:** 2026-11-03 19:25:52 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 36 | 36 | +0/+0 |
-| Total employees | 2,560 | 2,560 | +0 |
+| Total records | 36 | 421 | +382/+0 |
+| Total employees | 2,560 | 26,461 | +23,901 |
 
-### ✅ No new entries.
+### ✅ New Entries (382 records)
+
+| Company | Employees | Effective Date | County |
+|---------|-----------|----------------|--------|
+| AEG Management Oakland LLC | 1,605 | 2026-12-31 | Alameda County |
+| Covenant Aviation Security, LLC | 1,279 | 2026-11-30 | San Francisco County |
+| Dreyer's Grand Ice Cream | 1,095 | 2026-12-19 | Kern County |
+| 24Hr Homecare | 875 | 2026-12-17 | Los Angeles County |
+| 24Hr Homecare, LLC | 738 | 2026-09-15 | Los Angeles County |
+| Fender Musical Instruments Corporation | 533 | 2026-12-14 | Riverside County |
+| Dreyer's Grand Ice Cream | 448 | 2026-12-19 | Tulare County |
+| Randstad Inhouse Services, LLC (Dreyer's) | 426 | 2026-11-19 | Kern County |
+| Jabil Inc. | 382 | 2026-11-23 | Santa Clara County |
+| Visa | 320 | 2026-10-01 | San Mateo County |
+| Oracle America, Inc. | 279 | 2026-11-13 | San Mateo County |
+| Netflix, Inc. | 267 | 2026-09-14 | Los Angeles County |
+| PayPal | 251 | 2026-10-30 | Santa Clara County |
+| eBay Inc. | 229 | 2026-10-21 | Santa Clara County |
+| Netflix, Inc. | 227 | 2026-09-14 | Santa Clara County |
+| Dreyer's Grand Ice Cream | 221 | 2026-11-19 | Tulare County |
+| IPS Nationwide, Inc. | 212 | 2026-11-17 | Alameda County |
+| Myers Power Products, Inc. | 206 | 2026-12-15 | San Bernardino County |
+| LeeMAH Electronics | 205 | 2026-10-16 | San Mateo County |
+| Sapporo U.S.A. (1999 Citracado Parkway) | 200 | 2026-11-13 | San Diego County |
 
 ---
 ## 📁 File vs Git Comparison
 
-- **Local `file.xlsx` hash:** `2c73db1b759812982a57b17b77afa3c5`
+- **Local `file.xlsx` hash:** `ab0601ce6109e471f34e134ad12c9b9b`
 - **Committed hash:**          `2c73db1b759812982a57b17b77afa3c5`
-- ✅ Local file matches committed version
+- 🔴 **Local file differs from committed version**
 
 **Git status:**
 ```
 M data/changelog.jsonl
+ M data/meta.json
  M data/states/ak/changelog.jsonl
  M data/states/ak/warn_cumulative.json
  M data/states/ak/warn_latest.json
  M data/states/ak/warn_snapshot.json
  M data/states/al/changelog.jsonl
+ M data/states/al/raw_download
  M data/states/al/warn_cumulative.json
  M data/states/al/warn_latest.json
  M data/states/al/warn_snapshot.json
@@ -143,6 +168,7 @@ M data/changelog.jsonl
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
+ M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
@@ -201,12 +227,12 @@ M data/changelog.jsonl
  M data/states/tn/warn_latest.json
  M data/states/tn/warn_snapshot.json
  M data/states/ut/changelog.jsonl
+ M data/states/ut/meta.json
  M data/states/ut/warn_cumulative.json
  M data/states/ut/warn_latest.json
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
- M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -235,20 +261,22 @@ M data/changelog.jsonl
  M data/warn_cumulative.json
  M data/warn_latest.json
  M data/warn_snapshot.json
+ M file.xlsx
 ```
 
 **Recent commits:**
 ```
+030ae2e7f auto: WARN data update [skip ci]
 ddebc804e auto: WARN data update [skip ci]
 172c67b3e auto: WARN data update [skip ci]
 6e403767a auto: WARN data update [skip ci]
 1a37c253f chore: weekly AI metrics update [skip actions]
-42f889b4b auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-11-03T19:10:18.438065+00:00` — +29 added, -0 removed, 3,221 employees (new)
 - `2026-11-03T04:38:44.081612+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-11-02T21:10:05.377018+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-11-02T03:21:40.307749+00:00` — +0 added, -0 removed, 0 employees (new)
@@ -258,4 +286,3 @@ ddebc804e auto: WARN data update [skip ci]
 - `2026-10-31T03:17:33.961155+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-10-30T17:36:36.203869+00:00` — +0 added, -356 removed, 0 employees (new)
 - `2026-10-30T03:33:26.504006+00:00` — +7 added, -0 removed, 649 employees (new)
-- `2026-10-29T17:57:18.830834+00:00` — +0 added, -0 removed, 0 employees (new)

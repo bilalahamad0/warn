@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-03T04:55:34.531396+00:00",
+  "updated_at": "2026-11-03T19:26:39.629202+00:00",
   "candidates": [
     {
       "id": "a3123e3cdc02",
@@ -586,7 +586,7 @@
     {
       "id": "2c21278bbaf5",
       "created_at": "2026-10-27T17:26:25.912767+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Sodexo",
       "display": "Sodexo",
       "employees": 189,
@@ -622,7 +622,7 @@
     {
       "id": "ad61c01fee2e",
       "created_at": "2026-10-27T17:26:25.912798+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Conduent",
       "display": "Conduent",
       "employees": 113,
@@ -658,7 +658,7 @@
     {
       "id": "2f84d3800ae2",
       "created_at": "2026-10-27T17:26:25.912821+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Goodyear",
       "display": "Goodyear",
       "employees": 51,
@@ -1297,6 +1297,231 @@
       "warnings": [],
       "keys": [
         "WA:Alaska Airlines__2026-12-31__121"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "c3c1871d3c3e",
+      "created_at": "2026-11-03T19:26:39.629073+00:00",
+      "status": "pending",
+      "company": "aeg management oakland",
+      "display": "AEG Management Oakland LLC",
+      "employees": 1605,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 1605
+      },
+      "sites": 1,
+      "card": {
+        "place": "Alameda County, CA",
+        "effective": "Dec 31, 2026",
+        "employees": 1605
+      },
+      "arm": "size",
+      "reason": "1,605 >= 250",
+      "text": "AEG Management Oakland LLC filed a WARN notice for 1,605 job cuts in Alameda County, CA.\n\nEffective Dec 31, 2026.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 135,
+      "warnings": [],
+      "keys": [
+        "CA:AEG Management Oakland LLC__2026-12-31__1605"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "3d6da046d6f6",
+      "created_at": "2026-11-03T19:26:39.629117+00:00",
+      "status": "pending",
+      "company": "davey tree surgery",
+      "display": "Davey Tree Surgery",
+      "employees": 368,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 368
+      },
+      "sites": 10,
+      "card": {
+        "place": "10 sites in California",
+        "effective": "Dec 31, 2026",
+        "employees": 368
+      },
+      "arm": "size",
+      "reason": "368 >= 250",
+      "text": "Davey Tree Surgery filed WARN notices for 368 job cuts across 10 sites in California.\n\nFirst effective date Dec 31, 2026.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 143,
+      "warnings": [],
+      "keys": [
+        "CA:Davey Tree Surgery Company (244 Hall Road)__2026-12-31__34",
+        "CA:Davey Tree Surgery Company (132 Roache Road)__2026-12-31__22",
+        "CA:Davey Tree Surgery Company (1847 144th Street)__2026-12-31__12",
+        "CA:Davey Tree Surgery Company (2505 N Palm Drive)__2026-12-31__64",
+        "CA:Davey Tree Surgery Company (8188 Katella Avenue)__2026-12-31__37",
+        "CA:Davey Tree Surgery Company (E/O Crittenden Lane)__2026-12-31__19",
+        "CA:Davey Tree Surgery Company (12694 Los Nietos Road)__2026-12-31__39",
+        "CA:Davey Tree Surgery Company (R/O 6 Church Street)__2026-12-31__20",
+        "CA:Davey Tree Surgery Company (Remote)__2026-12-31__57",
+        "CA:Davey Tree Surgery (5843 Graham Hill Road)__2026-12-31__64"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "b06803ecd18e",
+      "created_at": "2026-11-03T19:26:39.629141+00:00",
+      "status": "pending",
+      "company": "Danone",
+      "display": "Danone",
+      "employees": 135,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 135
+      },
+      "sites": 1,
+      "card": {
+        "place": "Los Angeles County, CA",
+        "effective": "Dec 29, 2026",
+        "employees": 135
+      },
+      "arm": "brand",
+      "reason": "known brand, 135 >= 50",
+      "text": "Danone filed a WARN notice for 135 job cuts in Los Angeles County, CA.\n\nEffective Dec 29, 2026.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 117,
+      "warnings": [],
+      "keys": [
+        "CA:Danone USA PBC__2026-12-29__135"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "68082ca57159",
+      "created_at": "2026-11-03T19:26:39.629161+00:00",
+      "status": "pending",
+      "company": "Amazon",
+      "display": "Amazon",
+      "employees": 95,
+      "states": [
+        "WA"
+      ],
+      "per_state": {
+        "WA": 95
+      },
+      "sites": 1,
+      "card": {
+        "place": "Sumner, Pasco, Bellevue, Redmond, Seattle and Remote, WA",
+        "effective": "Dec 7, 2026",
+        "employees": 95
+      },
+      "arm": "tech",
+      "reason": "tech brand, 95 >= 25",
+      "text": "Amazon filed a WARN notice for 95 job cuts in Sumner, Pasco, Bellevue, Redmond, Seattle and Remote, WA.\n\nEffective Dec 7, 2026.\n\n#layoffs #Washington",
+      "thread": [],
+      "weighted_len": 149,
+      "warnings": [],
+      "keys": [
+        "WA:Amazon__2026-12-07__95"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "5bd3deb2ded5",
+      "created_at": "2026-11-03T19:26:39.629179+00:00",
+      "status": "pending",
+      "company": "Chick-fil-A",
+      "display": "Chick-fil-A",
+      "employees": 87,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 87
+      },
+      "sites": 1,
+      "card": {
+        "place": "Ventura County, CA",
+        "effective": "Dec 31, 2026",
+        "employees": 87
+      },
+      "arm": "brand",
+      "reason": "known brand, 87 >= 50",
+      "text": "Chick-fil-A filed a WARN notice for 87 job cuts in Ventura County, CA.\n\nEffective Dec 31, 2026.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 117,
+      "warnings": [],
+      "keys": [
+        "CA:Chick-fil-A - Worthy Integrated Holdings LLC__2026-12-31__87"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "6e4b05e4675c",
+      "created_at": "2026-11-03T19:26:39.629196+00:00",
+      "status": "pending",
+      "company": "Comcast",
+      "display": "Comcast",
+      "employees": 82,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 82
+      },
+      "sites": 1,
+      "card": {
+        "place": "Alameda County, CA",
+        "effective": "Dec 31, 2026",
+        "employees": 82
+      },
+      "arm": "brand",
+      "reason": "known brand, 82 >= 50",
+      "text": "Comcast filed a WARN notice for 82 job cuts in Alameda County, CA.\n\nEffective Dec 31, 2026.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 113,
+      "warnings": [],
+      "keys": [
+        "CA:Comcast__2026-12-31__82"
       ],
       "approved_by": null,
       "approved_at": null,

@@ -1,9 +1,9 @@
 {
-  "total_records": 1553,
-  "total_employees": 252449,
+  "total_records": 1554,
+  "total_employees": 252544,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-10-30",
-  "last_updated": "2026-11-03T04:54:26.069287+00:00",
+  "date_range_end": "2026-11-02",
+  "last_updated": "2026-11-03T19:25:46.964295+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -18639,6 +18639,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Seattle, Spokane, Renton",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Amazon",
+      "notice_date": "2026-11-02",
+      "effective_date": "2026-12-07",
+      "employees": 95,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Sumner, Pasco, Bellevue, Redmond, Seattle and Remote",
       "address": "",
       "industry": ""
     }
