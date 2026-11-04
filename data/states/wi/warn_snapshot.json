@@ -1,9 +1,9 @@
 {
-  "total_records": 641,
-  "total_employees": 59732,
+  "total_records": 642,
+  "total_employees": 59736,
   "date_range_start": "2020-01-02",
   "date_range_end": "2026-10-30",
-  "last_updated": "2026-11-03T04:54:28.769289+00:00",
+  "last_updated": "2026-11-03T19:25:49.745602+00:00",
   "source_url": "https://dwd.wisconsin.gov/dislocatedworker/warn/",
   "records": [
     {
@@ -7697,6 +7697,18 @@
       "city": "Manitowoc",
       "address": "",
       "industry": "School & Employee Bus Transportation"
+    },
+    {
+      "state": "WI",
+      "company": "Family Endeavors, Inc.",
+      "notice_date": "2026-10-30",
+      "effective_date": "2026-12-31",
+      "employees": 4,
+      "layoff_type": "Workforce Reduction",
+      "county": "Unknown",
+      "city": "Unknown",
+      "address": "",
+      "industry": "Civic and Social Organizations"
     }
   ]
 }

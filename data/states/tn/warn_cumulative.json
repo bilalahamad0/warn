@@ -1,9 +1,9 @@
 {
-  "total_records": 1066,
-  "total_employees": 121681,
+  "total_records": 1067,
+  "total_employees": 121733,
   "date_range_start": "2012-01-05",
-  "date_range_end": "2026-10-20",
-  "last_updated": "2026-11-03T19:22:57.127454+00:00",
+  "date_range_end": "2026-11-03",
+  "last_updated": "2026-11-04T04:09:10.501805+00:00",
   "source_url": "https://www.tn.gov/workforce/general-resources/major-publications0/major-publications-redirect/reports.html",
   "records": [
     {
@@ -10864,6 +10864,18 @@
       "employees": 112,
       "layoff_type": "",
       "county": "Knox",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "TN",
+      "company": "Del Mar Medical",
+      "notice_date": "2026-11-03",
+      "effective_date": "2026-12-31",
+      "employees": 52,
+      "layoff_type": "",
+      "county": "Wilson",
       "city": "",
       "address": "",
       "industry": ""

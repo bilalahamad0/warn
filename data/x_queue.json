@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-03T19:26:39.629202+00:00",
+  "updated_at": "2026-11-04T04:13:21.073812+00:00",
   "candidates": [
     {
       "id": "a3123e3cdc02",
@@ -694,7 +694,7 @@
     {
       "id": "14016b8e8fbc",
       "created_at": "2026-10-28T03:21:55.622344+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "24hr homecare",
       "display": "24Hr Homecare",
       "employees": 875,
@@ -730,7 +730,7 @@
     {
       "id": "2752949b7be3",
       "created_at": "2026-10-28T03:21:55.622379+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Intel",
       "display": "Intel",
       "employees": 67,
@@ -766,7 +766,7 @@
     {
       "id": "b34f5fa15f53",
       "created_at": "2026-10-28T03:21:55.622404+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Conduent",
       "display": "Conduent",
       "employees": 64,
@@ -1522,6 +1522,42 @@
       "warnings": [],
       "keys": [
         "CA:Comcast__2026-12-31__82"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "175431d419a5",
+      "created_at": "2026-11-04T04:13:21.073785+00:00",
+      "status": "pending",
+      "company": "medline industries",
+      "display": "Medline Industries, LP",
+      "employees": 304,
+      "states": [
+        "IL"
+      ],
+      "per_state": {
+        "IL": 304
+      },
+      "sites": 1,
+      "card": {
+        "place": "Northfield, Cook County, IL",
+        "effective": null,
+        "employees": 304
+      },
+      "arm": "size",
+      "reason": "304 >= 250",
+      "text": "Medline Industries, LP filed a WARN notice for 304 job cuts in Northfield, Cook County, IL.\n\nEffective date not reported.\n\n#layoffs #Illinois",
+      "thread": [],
+      "weighted_len": 141,
+      "warnings": [],
+      "keys": [
+        "IL:Medline Industries, LP__None__304"
       ],
       "approved_by": null,
       "approved_at": null,

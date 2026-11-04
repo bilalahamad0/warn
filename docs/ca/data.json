@@ -2,7 +2,7 @@
   "scope": "ca",
   "state": "CA",
   "coverage_start": "2025-01-01",
-  "last_updated": "2026-11-03T19:25:52.472853+00:00",
+  "last_updated": "2026-11-04T04:12:10.589683+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "total_records": 2003,
   "total_employees": 115083,
@@ -20,7 +20,7 @@
       "address": "2040 N. Rose Ave.  Oxnard CA 93036",
       "industry": "72 Accommodation and Food Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Coast Grill Inc.",
@@ -33,7 +33,7 @@
       "address": "2526 S Coast Hwy 101  Cardiff CA 92007",
       "industry": "72 Accommodation and Food Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Sapporo U.S.A.",
@@ -46,7 +46,7 @@
       "address": "1999 Citracado Parkway  Escondido CA 92029",
       "industry": "42 Wholesale Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Roundabout Entertainment, Inc.",
@@ -59,7 +59,7 @@
       "address": "217 South Lake Street  Burbank CA 91502",
       "industry": "51 Information",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Danone USA PBC",
@@ -72,7 +72,7 @@
       "address": "9201 Owensmouth Avenue  Chatsworth CA 91311",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Renewable Solar, Inc.",
@@ -85,7 +85,7 @@
       "address": "601 W. Grangeville Blvd  Hanford CA 93230",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "iLEAD Lancaster",
@@ -98,7 +98,7 @@
       "address": "254 E. Ave K-4  Lancaster CA 93535",
       "industry": "61 Educational Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Econolite Control Products, Inc.",
@@ -111,7 +111,7 @@
       "address": "1250 N Tustin Ave  Anaheim CA 92807",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "The Vons Companies Inc.",
@@ -124,7 +124,7 @@
       "address": "8010 E. Santa Ana Canyon Road  Anaheim Hills CA 92808",
       "industry": "44-45 Retail Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Community Tree Service, LLC",
@@ -137,7 +137,7 @@
       "address": "416 Salinas Road  Pajaro CA 95076",
       "industry": "11 Agriculture Forestry Fishing Hunting",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Davey Tree Surgery Company (244 Hall Road)",
@@ -150,7 +150,7 @@
       "address": "244 Hall Road  Royal Oaks CA 95076",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Davey Tree Surgery Company (132 Roache Road)",
@@ -163,7 +163,7 @@
       "address": "132 Roache Road  Freedom CA 95019",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Davey Tree Surgery Company (1847 144th Street)",
@@ -176,7 +176,7 @@
       "address": "1847 144th Street  Gardena CA 90249",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Comcast",
@@ -189,7 +189,7 @@
       "address": "3011 Triad Drive  Livermore CA 94551",
       "industry": "51 Information",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Davey Tree Surgery Company (2505 N Palm Drive)",
@@ -202,7 +202,7 @@
       "address": "2505 N Palm Drive  Signal Hill CA 90755",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Davey Tree Surgery Company (8188 Katella Avenue)",
@@ -215,7 +215,7 @@
       "address": "8188 Katella Avenue  Stanton CA 90680",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Davey Tree Surgery Company (E/O Crittenden Lane)",
@@ -228,7 +228,7 @@
       "address": "E/O Crittenden Lane  Mountain View CA 94043",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Davey Tree Surgery Company (12694 Los Nietos Road)",
@@ -241,7 +241,7 @@
       "address": "12694 Los Nietos Road  Santa Fe Springs CA 90670",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Davey Tree Surgery Company (R/O 6 Church Street)",
@@ -254,7 +254,7 @@
       "address": "R/O 6 Church Street  Mountain View CA 94041",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Endeavors",
@@ -267,7 +267,7 @@
       "address": "2300 Boswell Road  Chula Vista CA 91914",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Avidity Biosciences, Inc.",
@@ -280,7 +280,7 @@
       "address": "3020 Callan Road  San Diego CA 92121",
       "industry": "54 Professional Scientific and Technical Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "AEG Management Oakland LLC",
@@ -293,7 +293,7 @@
       "address": "7000 Coliseum Way  Oakland CA 94621",
       "industry": "71 Arts Entertainment and Recreation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "RTX",
@@ -306,7 +306,7 @@
       "address": "2000 E  El Segundo CA 90245",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Davey Tree Surgery Company (Remote)",
@@ -319,7 +319,7 @@
       "address": "Remote  Livermore CA 94550",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Davey Tree Surgery (5843 Graham Hill Road)",
@@ -332,7 +332,7 @@
       "address": "5843 Graham Hill Road  Felton CA 95018",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Worldwide Flight Services, Inc.",
@@ -345,7 +345,7 @@
       "address": "3225 North Harbor Drive  San Diego CA 92101",
       "industry": "48-49 Transportation and Warehousing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Dropbox, Inc.",
@@ -384,7 +384,7 @@
       "address": "157 N. McDowell Blvd  Petaluma CA 94954",
       "industry": "44-45 Retail Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Frontapp, Inc.",
@@ -514,7 +514,7 @@
       "address": "1211 McGaw Avenue, Unit B  Irvine CA 92614",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Eterna Management, LLC",
@@ -527,7 +527,7 @@
       "address": "2901 Daimler Street  Santa Ana CA 92705",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Intel Corporation",
