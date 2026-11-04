@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-11-04T04:12:10.589683+00:00",
+  "last_updated": "2026-11-04T19:26:36.792469+00:00",
   "states_live": 47,
-  "total_records": 60797,
-  "total_employees": 6541827,
+  "total_records": 60810,
+  "total_employees": 6543478,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -36,7 +36,7 @@
       "name": "Colorado",
       "agency": "Colorado Department of Labor and Employment",
       "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
-      "total_records": 864,
+      "total_records": 865,
       "total_employees": 87518
     },
     "CT": {
@@ -99,8 +99,8 @@
       "name": "Illinois",
       "agency": "Illinois Department of Commerce and Economic Opportunity",
       "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
-      "total_records": 4892,
-      "total_employees": 675476
+      "total_records": 4896,
+      "total_employees": 676350
     },
     "IN": {
       "name": "Indiana",
@@ -120,8 +120,8 @@
       "name": "Kentucky",
       "agency": "Kentucky Career Center (Education & Labor Cabinet)",
       "source_url": "https://kyworks.ky.gov/Services/Pages/Rapid-Response-Layoffs-and-Closures.aspx",
-      "total_records": 1242,
-      "total_employees": 156878
+      "total_records": 1244,
+      "total_employees": 156911
     },
     "LA": {
       "name": "Louisiana",
@@ -155,8 +155,8 @@
       "name": "Michigan",
       "agency": "Michigan Department of Labor and Economic Opportunity",
       "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
-      "total_records": 800,
-      "total_employees": 123584
+      "total_records": 804,
+      "total_employees": 124203
     },
     "MN": {
       "name": "Minnesota",
@@ -232,8 +232,8 @@
       "name": "Ohio",
       "agency": "Ohio Department of Job and Family Services",
       "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
-      "total_records": 1268,
-      "total_employees": 172655
+      "total_records": 1270,
+      "total_employees": 172780
     },
     "OK": {
       "name": "Oklahoma",
@@ -197248,6 +197248,18 @@
       "industry": "62,4190: Other Individual & Family Services"
     },
     {
+      "state": "CO",
+      "company": "Denver Rescue Mission",
+      "notice_date": "2026-10-30",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "CT",
       "company": "Conduent Commercial Solutions, LLC",
       "notice_date": "2026-06-26",
@@ -340528,6 +340540,54 @@
       "industry": "Manufacturing"
     },
     {
+      "state": "IL",
+      "company": "The Allstaff Group",
+      "notice_date": "2026-10-29",
+      "effective_date": null,
+      "employees": 659,
+      "layoff_type": "Mass Layoff",
+      "county": "Lake County",
+      "city": "Gurnee",
+      "address": "3607 Grand Ave.",
+      "industry": "Administrative, Support, Waste Management, and Remediation Services"
+    },
+    {
+      "state": "IL",
+      "company": "Cardiovascular Institute of the South, LLC",
+      "notice_date": "2026-10-28",
+      "effective_date": null,
+      "employees": 120,
+      "layoff_type": "Mass Layoff",
+      "county": "Du Page County",
+      "city": "Naperville",
+      "address": "10 W Martin Ave., Suite 200",
+      "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "IL",
+      "company": "Cardiovascular Institute of the South, LLC",
+      "notice_date": "2026-10-28",
+      "effective_date": null,
+      "employees": 62,
+      "layoff_type": "Mass Layoff",
+      "county": "Du Page County",
+      "city": "Elmhurst",
+      "address": "1100 S York St., Suite 200",
+      "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "IL",
+      "company": "Cardiovascular Institute of the South, LLC",
+      "notice_date": "2026-10-28",
+      "effective_date": null,
+      "employees": 33,
+      "layoff_type": "Mass Layoff",
+      "county": "Du Page County",
+      "city": "Warrenville",
+      "address": "4201 Winfield Rd., 4th Floor",
+      "industry": "Health Care and Social Assistance"
+    },
+    {
       "state": "IN",
       "company": "Thyssenkrupp Presta North America",
       "notice_date": "2026-06-30",
@@ -368732,6 +368792,30 @@
       "city": "",
       "address": "",
       "industry": "312111"
+    },
+    {
+      "state": "KY",
+      "company": "Family Endeavors, Inc.",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 7,
+      "layoff_type": "Layoff",
+      "county": "Jefferson",
+      "city": "",
+      "address": "",
+      "industry": "624190"
+    },
+    {
+      "state": "KY",
+      "company": "Akebono Brake Corporation",
+      "notice_date": "2026-10-28",
+      "effective_date": "2027-07-01",
+      "employees": 26,
+      "layoff_type": "Closure",
+      "county": "Hardin",
+      "city": "",
+      "address": "",
+      "industry": "336340"
     },
     {
       "state": "LA",
@@ -399040,6 +399124,54 @@
       "county": "Oakland",
       "city": "",
       "address": "3000 N. Pontiac Trail, Walled Lake, MI 48390",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Detroit Chassis, LLC",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 175,
+      "layoff_type": "Temporary layoff",
+      "county": "Wayne",
+      "city": "",
+      "address": "6501 Lynch Road, Detroit, MI 48234",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Family Endeavors, Inc.",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 8,
+      "layoff_type": "Permanent layoff",
+      "county": "Remote",
+      "city": "",
+      "address": "Remote",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Northpointe Bank",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 338,
+      "layoff_type": "Permanent layoff",
+      "county": "Clinton, Kent",
+      "city": "",
+      "address": "3333 Deposit Drive, Grand Rapids, MI 49546; 5303 28th St. Court SE, Grand Rapids, MI 49546; 124 N. Bridge St., DeWitt, MI 48820",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "ADAC Automotive",
+      "notice_date": null,
+      "effective_date": "2026-12-18",
+      "employees": 98,
+      "layoff_type": "Facility closure",
+      "county": "Ionia",
+      "city": "",
+      "address": "6138 Riverside Drive, Saranac, MI 48881",
       "industry": ""
     },
     {
@@ -540783,6 +540915,30 @@
       "layoff_type": "Layoff",
       "county": "Lake",
       "city": "Painesville",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Endeavors",
+      "notice_date": "2026-10-29",
+      "effective_date": null,
+      "employees": 9,
+      "layoff_type": "Layoff",
+      "county": "Unknown",
+      "city": "Unknown",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "The Blade",
+      "notice_date": "2026-10-23",
+      "effective_date": null,
+      "employees": 116,
+      "layoff_type": "Closure",
+      "county": "Wood",
+      "city": "Northwood",
       "address": "",
       "industry": ""
     },

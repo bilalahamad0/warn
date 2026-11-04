@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-04T04:13:21.073812+00:00",
+  "updated_at": "2026-11-04T19:27:26.686019+00:00",
   "candidates": [
     {
       "id": "a3123e3cdc02",
@@ -802,7 +802,7 @@
     {
       "id": "169c16887cfc",
       "created_at": "2026-10-28T18:01:15.190194+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "HMSHost",
       "display": "HMSHost",
       "employees": 135,
@@ -838,7 +838,7 @@
     {
       "id": "035d4297e80b",
       "created_at": "2026-10-28T18:01:15.190233+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Wells Fargo",
       "display": "Wells Fargo",
       "employees": 86,
@@ -1558,6 +1558,78 @@
       "warnings": [],
       "keys": [
         "IL:Medline Industries, LP__None__304"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "0dbc98637d36",
+      "created_at": "2026-11-04T19:27:26.685975+00:00",
+      "status": "pending",
+      "company": "allstaff group",
+      "display": "The Allstaff Group",
+      "employees": 659,
+      "states": [
+        "IL"
+      ],
+      "per_state": {
+        "IL": 659
+      },
+      "sites": 1,
+      "card": {
+        "place": "Gurnee, Lake County, IL",
+        "effective": null,
+        "employees": 659
+      },
+      "arm": "size",
+      "reason": "659 >= 250",
+      "text": "The Allstaff Group filed a WARN notice for 659 job cuts in Gurnee, Lake County, IL.\n\nEffective date not reported.\n\n#layoffs #Illinois",
+      "thread": [],
+      "weighted_len": 133,
+      "warnings": [],
+      "keys": [
+        "IL:The Allstaff Group__None__659"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "f1088a702b22",
+      "created_at": "2026-11-04T19:27:26.686007+00:00",
+      "status": "pending",
+      "company": "northpointe bank",
+      "display": "Northpointe Bank",
+      "employees": 338,
+      "states": [
+        "MI"
+      ],
+      "per_state": {
+        "MI": 338
+      },
+      "sites": 1,
+      "card": {
+        "place": "Clinton, Kent, MI",
+        "effective": "Dec 31, 2026",
+        "employees": 338
+      },
+      "arm": "size",
+      "reason": "338 >= 250",
+      "text": "Northpointe Bank filed a WARN notice for 338 job cuts in Clinton, Kent, MI.\n\nEffective Dec 31, 2026.\n\n#layoffs #Michigan",
+      "thread": [],
+      "weighted_len": 120,
+      "warnings": [],
+      "keys": [
+        "MI:Northpointe Bank__2026-12-31__338"
       ],
       "approved_by": null,
       "approved_at": null,

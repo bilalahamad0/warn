@@ -1,9 +1,9 @@
 {
-  "total_records": 4895,
-  "total_employees": 675121,
+  "total_records": 4897,
+  "total_employees": 675485,
   "date_range_start": "1987-09-01",
-  "date_range_end": "2026-10-13",
-  "last_updated": "2026-11-03T19:14:44.721206+00:00",
+  "date_range_end": "2026-10-30",
+  "last_updated": "2026-11-04T04:00:49.765950+00:00",
   "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
   "records": [
     {
@@ -4193,6 +4193,30 @@
       "city": "Springfield",
       "address": "801 Adlai Stevenson Dr",
       "industry": "Professional and Technical Services"
+    },
+    {
+      "state": "IL",
+      "company": "Koppers Carbon Materials LLC",
+      "notice_date": "2026-10-30",
+      "effective_date": null,
+      "employees": 60,
+      "layoff_type": "Plant Closure",
+      "county": "Cook County",
+      "city": "Stickney",
+      "address": "3900 S. Laramie Ave.",
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "IL",
+      "company": "Medline Industries, LP",
+      "notice_date": "2026-10-30",
+      "effective_date": null,
+      "employees": 304,
+      "layoff_type": "Mass Layoff",
+      "county": "Cook County",
+      "city": "Northfield",
+      "address": "3 Lakes Dr.",
+      "industry": "Manufacturing"
     },
     {
       "state": "IL",

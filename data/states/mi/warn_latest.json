@@ -1,11 +1,59 @@
 {
-  "total_records": 126,
-  "total_employees": 16556,
+  "total_records": 130,
+  "total_employees": 17175,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-11-04T04:06:03.689050+00:00",
+  "last_updated": "2026-11-04T19:21:14.169392+00:00",
   "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
   "records": [
+    {
+      "state": "MI",
+      "company": "Detroit Chassis, LLC",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 175,
+      "layoff_type": "Temporary layoff",
+      "county": "Wayne",
+      "city": "",
+      "address": "6501 Lynch Road, Detroit, MI 48234",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Family Endeavors, Inc.",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 8,
+      "layoff_type": "Permanent layoff",
+      "county": "Remote",
+      "city": "",
+      "address": "Remote",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Northpointe Bank",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 338,
+      "layoff_type": "Permanent layoff",
+      "county": "Clinton, Kent",
+      "city": "",
+      "address": "3333 Deposit Drive, Grand Rapids, MI 49546; 5303 28th St. Court SE, Grand Rapids, MI 49546; 124 N. Bridge St., DeWitt, MI 48820",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "ADAC Automotive",
+      "notice_date": null,
+      "effective_date": "2026-12-18",
+      "employees": 98,
+      "layoff_type": "Facility closure",
+      "county": "Ionia",
+      "city": "",
+      "address": "6138 Riverside Drive, Saranac, MI 48881",
+      "industry": ""
+    },
     {
       "state": "MI",
       "company": "Sodexo, SDH Services West, LLC",
@@ -308,18 +356,6 @@
     },
     {
       "state": "MI",
-      "company": "Menard Inc., d/b/a Menards",
-      "notice_date": null,
-      "effective_date": "2026-05-13",
-      "employees": 68,
-      "layoff_type": "Temporary layoff",
-      "county": "St. Joseph",
-      "city": "",
-      "address": "1001 Warner Drive, Three Rivers, MI 49093",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "Navitas Systems, Inc.",
       "notice_date": null,
       "effective_date": "2026-07-11",
@@ -328,6 +364,18 @@
       "county": "Washtenaw",
       "city": "",
       "address": "4880 Venture Drive #100, Ann Arbor, MI 48108; 5451 Jackson Road, Ann Arbor, MI 48108; 5949 Jackson Road, Ann Arbor, MI 48108",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Menard Inc., d/b/a Menards",
+      "notice_date": null,
+      "effective_date": "2026-05-13",
+      "employees": 68,
+      "layoff_type": "Temporary layoff",
+      "county": "St. Joseph",
+      "city": "",
+      "address": "1001 Warner Drive, Three Rivers, MI 49093",
       "industry": ""
     },
     {

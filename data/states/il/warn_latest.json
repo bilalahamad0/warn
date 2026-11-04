@@ -1,9 +1,9 @@
 {
-  "total_records": 4897,
-  "total_employees": 675485,
+  "total_records": 4901,
+  "total_employees": 676359,
   "date_range_start": "1987-09-01",
   "date_range_end": "2026-10-30",
-  "last_updated": "2026-11-04T04:00:49.765950+00:00",
+  "last_updated": "2026-11-04T19:15:33.067191+00:00",
   "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
   "records": [
     {
@@ -4217,6 +4217,54 @@
       "city": "Northfield",
       "address": "3 Lakes Dr.",
       "industry": "Manufacturing"
+    },
+    {
+      "state": "IL",
+      "company": "The Allstaff Group",
+      "notice_date": "2026-10-29",
+      "effective_date": null,
+      "employees": 659,
+      "layoff_type": "Mass Layoff",
+      "county": "Lake County",
+      "city": "Gurnee",
+      "address": "3607 Grand Ave.",
+      "industry": "Administrative, Support, Waste Management, and Remediation Services"
+    },
+    {
+      "state": "IL",
+      "company": "Cardiovascular Institute of the South, LLC",
+      "notice_date": "2026-10-28",
+      "effective_date": null,
+      "employees": 120,
+      "layoff_type": "Mass Layoff",
+      "county": "Du Page County",
+      "city": "Naperville",
+      "address": "10 W Martin Ave., Suite 200",
+      "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "IL",
+      "company": "Cardiovascular Institute of the South, LLC",
+      "notice_date": "2026-10-28",
+      "effective_date": null,
+      "employees": 62,
+      "layoff_type": "Mass Layoff",
+      "county": "Du Page County",
+      "city": "Elmhurst",
+      "address": "1100 S York St., Suite 200",
+      "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "IL",
+      "company": "Cardiovascular Institute of the South, LLC",
+      "notice_date": "2026-10-28",
+      "effective_date": null,
+      "employees": 33,
+      "layoff_type": "Mass Layoff",
+      "county": "Du Page County",
+      "city": "Warrenville",
+      "address": "4201 Winfield Rd., 4th Floor",
+      "industry": "Health Care and Social Assistance"
     },
     {
       "state": "IL",
