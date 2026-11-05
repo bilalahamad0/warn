@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-11-04T19:26:36.792469+00:00",
+  "last_updated": "2026-11-05T04:31:16.334341+00:00",
   "states_live": 47,
-  "total_records": 60810,
-  "total_employees": 6543478,
+  "total_records": 60815,
+  "total_employees": 6543854,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -36,8 +36,8 @@
       "name": "Colorado",
       "agency": "Colorado Department of Labor and Employment",
       "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
-      "total_records": 865,
-      "total_employees": 87518
+      "total_records": 866,
+      "total_employees": 87589
     },
     "CT": {
       "name": "Connecticut",
@@ -85,8 +85,8 @@
       "name": "Iowa",
       "agency": "Iowa Workforce Development",
       "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
-      "total_records": 948,
-      "total_employees": 52353
+      "total_records": 949,
+      "total_employees": 52384
     },
     "ID": {
       "name": "Idaho",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1378,
-      "total_employees": 117094
+      "total_records": 1379,
+      "total_employees": 117124
     },
     "ME": {
       "name": "Maine",
@@ -302,8 +302,8 @@
       "name": "Virginia",
       "agency": "Virginia Works (Virginia Employment Commission)",
       "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
-      "total_records": 1137,
-      "total_employees": 132568
+      "total_records": 1138,
+      "total_employees": 132721
     },
     "VT": {
       "name": "Vermont",
@@ -316,8 +316,8 @@
       "name": "Washington",
       "agency": "Washington Employment Security Department",
       "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
-      "total_records": 1554,
-      "total_employees": 252544
+      "total_records": 1555,
+      "total_employees": 252635
     },
     "WI": {
       "name": "Wisconsin",
@@ -197260,6 +197260,18 @@
       "industry": ""
     },
     {
+      "state": "CO",
+      "company": "Denver Rescue Mission",
+      "notice_date": "2026-10-30",
+      "effective_date": "2026-12-31",
+      "employees": 71,
+      "layoff_type": "Loss of Contract",
+      "county": "Denver",
+      "city": "",
+      "address": "",
+      "industry": "62,4222: Community Housing Services/Temporary Shelters"
+    },
+    {
       "state": "CT",
       "company": "Conduent Commercial Solutions, LLC",
       "notice_date": "2026-06-26",
@@ -279433,7 +279445,19 @@
       "county": "Linn",
       "city": "Cedar Rapids",
       "address": "",
-      "industry": ""
+      "industry": "Manufacturing"
+    },
+    {
+      "state": "IA",
+      "company": "Cedar Valley Medical Specialist",
+      "notice_date": "2026-11-03",
+      "effective_date": "2026-10-28",
+      "employees": 31,
+      "layoff_type": "Closing",
+      "county": "Black Hawk",
+      "city": "Waterloo",
+      "address": "",
+      "industry": "Health Care and Social Assistance"
     },
     {
       "state": "ID",
@@ -390608,6 +390632,18 @@
       "city": "",
       "address": "10819 Gilroy Road Hunt Valley, MD 21031",
       "industry": "325412"
+    },
+    {
+      "state": "MD",
+      "company": "Lion Brothers Company, Inc.",
+      "notice_date": "2026-11-03",
+      "effective_date": "2027-02-05",
+      "employees": 30,
+      "layoff_type": "Plant Closure",
+      "county": "Baltimore County",
+      "city": "",
+      "address": "11 Easter Court, Ste A-E Owings Mills, MD 21031",
+      "industry": "314999"
     },
     {
       "state": "ME",
@@ -650665,9 +650701,21 @@
     },
     {
       "state": "VA",
+      "company": "General Dynamics Information Technology",
+      "notice_date": "2026-10-30",
+      "effective_date": "2026-12-30",
+      "employees": 153,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Herdon",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
       "company": "Haynes Furniture Company Inc.",
       "notice_date": "2026-10-30",
-      "effective_date": "2026-11-04",
+      "effective_date": "2026-11-05",
       "employees": 83,
       "layoff_type": "Closure",
       "county": "",
@@ -669788,6 +669836,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Sumner, Pasco, Bellevue, Redmond, Seattle and Remote",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Seattle Marriott Redmond",
+      "notice_date": "2026-11-04",
+      "effective_date": "2027-01-05",
+      "employees": 91,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Redmond",
       "address": "",
       "industry": ""
     },

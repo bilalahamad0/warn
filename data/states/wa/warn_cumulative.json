@@ -1,9 +1,9 @@
 {
-  "total_records": 1554,
-  "total_employees": 252544,
+  "total_records": 1555,
+  "total_employees": 252635,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-11-02",
-  "last_updated": "2026-11-04T19:26:31.784244+00:00",
+  "date_range_end": "2026-11-04",
+  "last_updated": "2026-11-05T04:31:10.922489+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -18651,6 +18651,18 @@
       "layoff_type": "Layoff Permanent",
       "county": "",
       "city": "Sumner, Pasco, Bellevue, Redmond, Seattle and Remote",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "Seattle Marriott Redmond",
+      "notice_date": "2026-11-04",
+      "effective_date": "2027-01-05",
+      "employees": 91,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Redmond",
       "address": "",
       "industry": ""
     }

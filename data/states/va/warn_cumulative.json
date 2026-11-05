@@ -1,9 +1,9 @@
 {
-  "total_records": 1137,
-  "total_employees": 132568,
+  "total_records": 1138,
+  "total_employees": 132721,
   "date_range_start": "2010-07-29",
   "date_range_end": "2026-10-30",
-  "last_updated": "2026-11-04T19:23:45.077243+00:00",
+  "last_updated": "2026-11-05T04:28:25.076369+00:00",
   "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
   "records": [
     {
@@ -13640,9 +13640,21 @@
     },
     {
       "state": "VA",
+      "company": "General Dynamics Information Technology",
+      "notice_date": "2026-10-30",
+      "effective_date": "2026-12-30",
+      "employees": 153,
+      "layoff_type": "Layoff",
+      "county": "",
+      "city": "Herdon",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
       "company": "Haynes Furniture Company Inc.",
       "notice_date": "2026-10-30",
-      "effective_date": "2026-11-04",
+      "effective_date": "2026-11-05",
       "employees": 83,
       "layoff_type": "Closure",
       "county": "",

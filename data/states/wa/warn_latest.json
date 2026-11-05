@@ -1,11 +1,23 @@
 {
-  "total_records": 1552,
-  "total_employees": 252286,
+  "total_records": 1553,
+  "total_employees": 252527,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-11-02",
-  "last_updated": "2026-11-04T19:26:31.773516+00:00",
+  "date_range_end": "2026-11-04",
+  "last_updated": "2026-11-05T04:31:10.902645+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
+    {
+      "state": "WA",
+      "company": "Seattle Marriott Redmond",
+      "notice_date": "2026-11-04",
+      "effective_date": "2027-01-05",
+      "employees": 91,
+      "layoff_type": "Closure Permanent",
+      "county": "",
+      "city": "Redmond",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "WA",
       "company": "Amazon",
@@ -1076,13 +1088,13 @@
     },
     {
       "state": "WA",
-      "company": "Genie Industries, Inc. / Terex USA, LLC",
+      "company": "Republic National Distributing Company, LLC",
       "notice_date": "2026-05-21",
-      "effective_date": "2026-07-20",
-      "employees": 117,
+      "effective_date": "2026-07-17",
+      "employees": 267,
       "layoff_type": "Closure Permanent",
       "county": "",
-      "city": "North Bend",
+      "city": "4 sites",
       "address": "",
       "industry": ""
     },

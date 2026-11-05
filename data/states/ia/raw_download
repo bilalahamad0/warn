@@ -1046,7 +1046,18 @@
   "layoff_type": "Mass Layoff",
   "employees": 31,
   "notice_date": "2026-10-29 00:00:00",
-  "effective_date": "2026-11-30 00:00:00"
+  "effective_date": "2026-11-30 00:00:00",
+  "industry": "Manufacturing"
+ },
+ {
+  "company": "Cedar Valley Medical Specialist ",
+  "city": "Waterloo",
+  "county": "Black Hawk",
+  "layoff_type": "Closing ",
+  "employees": 31,
+  "notice_date": "2026-11-03 00:00:00",
+  "effective_date": "2026-10-28 00:00:00",
+  "industry": "Health Care and Social Assistance"
  },
  {
   "company": "John Deere Ottumwa Works ",

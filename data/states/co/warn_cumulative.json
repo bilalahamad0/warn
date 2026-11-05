@@ -1,9 +1,9 @@
 {
-  "total_records": 865,
-  "total_employees": 87518,
+  "total_records": 866,
+  "total_employees": 87589,
   "date_range_start": "2015-01-02",
   "date_range_end": "2026-10-30",
-  "last_updated": "2026-11-04T19:11:43.941510+00:00",
+  "last_updated": "2026-11-05T04:16:29.265399+00:00",
   "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
   "records": [
     {
@@ -10385,6 +10385,18 @@
       "city": "",
       "address": "",
       "industry": ""
+    },
+    {
+      "state": "CO",
+      "company": "Denver Rescue Mission",
+      "notice_date": "2026-10-30",
+      "effective_date": "2026-12-31",
+      "employees": 71,
+      "layoff_type": "Loss of Contract",
+      "county": "Denver",
+      "city": "",
+      "address": "",
+      "industry": "62,4222: Community Housing Services/Temporary Shelters"
     }
   ]
 }
