@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-05T04:32:22.119192+00:00",
+  "updated_at": "2026-11-05T19:40:10.515136+00:00",
   "candidates": [
     {
       "id": "1ce943c41edc",
@@ -838,7 +838,7 @@
     {
       "id": "fa4ccffb197b",
       "created_at": "2026-10-29T18:14:01.869063+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Comcast",
       "display": "Comcast",
       "employees": 159,
@@ -874,7 +874,7 @@
     {
       "id": "ed37b168d3a4",
       "created_at": "2026-10-29T18:14:01.869124+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Sodexo",
       "display": "Sodexo",
       "employees": 121,

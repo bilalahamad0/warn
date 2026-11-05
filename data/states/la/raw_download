@@ -387,6 +387,16 @@
    "industry": "Food Services",
    "year": 2026,
    "file": "WarnNotices2026.pdf"
+  },
+  {
+   "company_original": "Hurwitz Mintz\nFurniture Company",
+   "address_original": "1751 Airline Drive\nMetairie, LA 70001",
+   "date_notice": "10/31/26",
+   "date_action": "12/31/26",
+   "affected": "53",
+   "industry": "Retail",
+   "year": 2026,
+   "file": "WarnNotices2026.pdf"
   }
  ]
 }

@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-11-05T04:31:16.334341+00:00",
+  "last_updated": "2026-11-05T19:38:26.534510+00:00",
   "states_live": 47,
-  "total_records": 60815,
-  "total_employees": 6543854,
+  "total_records": 60817,
+  "total_employees": 6544000,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -127,8 +127,8 @@
       "name": "Louisiana",
       "agency": "Louisiana Workforce Commission",
       "source_url": "https://www.laworks.net/Downloads/Downloads_WFD.asp",
-      "total_records": 41,
-      "total_employees": 7134
+      "total_records": 42,
+      "total_employees": 7187
     },
     "MA": {
       "name": "Massachusetts",
@@ -197,8 +197,8 @@
       "name": "Nebraska",
       "agency": "Nebraska Department of Labor",
       "source_url": "https://dol.nebraska.gov/ReemploymentServices/LayoffServices/LayoffsAndDownsizingWARN",
-      "total_records": 1037,
-      "total_employees": 45624
+      "total_records": 1038,
+      "total_employees": 45717
     },
     "NJ": {
       "name": "New Jersey",
@@ -369334,6 +369334,18 @@
       "industry": "Food Services"
     },
     {
+      "state": "LA",
+      "company": "Hurwitz Mintz Furniture Company",
+      "notice_date": "2026-10-31",
+      "effective_date": "2026-12-31",
+      "employees": 53,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "1751 Airline Drive, Metairie, LA 70001",
+      "industry": "Retail"
+    },
+    {
       "state": "MA",
       "company": "Sodexo @ Suffolk University",
       "notice_date": "2021-07-07",
@@ -427527,6 +427539,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Madison",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Alphia , Inc",
+      "notice_date": "2026-11-04",
+      "effective_date": null,
+      "employees": 93,
+      "layoff_type": "",
+      "county": "",
+      "city": "Pawnee City",
       "address": "",
       "industry": ""
     },
