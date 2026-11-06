@@ -2,7 +2,7 @@
   "scope": "ca",
   "state": "CA",
   "coverage_start": "2025-01-01",
-  "last_updated": "2026-11-06T04:27:35.138963+00:00",
+  "last_updated": "2026-11-06T19:07:26.327991+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "total_records": 2025,
   "total_employees": 115785,
@@ -20,7 +20,7 @@
       "address": "2225 Lawson Lane  Santa Clara CA 95054",
       "industry": "54 Professional Scientific and Technical Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "ServiceNow, Inc.",
@@ -33,7 +33,7 @@
       "address": "4801 Eastgate Mall  San Diego CA 92121",
       "industry": "54 Professional Scientific and Technical Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Eclipse Advantage, LLC",
@@ -46,7 +46,7 @@
       "address": "3700 Indian Avenue  Perris CA 92571",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Crinetics Pharmaceuticals, Inc.",
@@ -59,7 +59,7 @@
       "address": "6055 Lusk Blvd.  San Diego CA 92121",
       "industry": "54 Professional Scientific and Technical Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "AES Corporation",
@@ -72,7 +72,7 @@
       "address": "21730 Newland Street  Huntington Beach CA 92646",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "AES Corporation",
@@ -85,7 +85,7 @@
       "address": "690 N Studebaker Road  Long Beach CA 90803",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "City National Bank (555 S. Flower Street)",
@@ -98,7 +98,7 @@
       "address": "555 S. Flower Street  Los Angeles CA 90012",
       "industry": "52 Finance and Insurance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Chick-fil-A - Hollins Group LLC - Orangethorpe",
@@ -111,7 +111,7 @@
       "address": "5960 Orangethorpe Ave.  Buena Park CA 90620",
       "industry": "72 Accommodation and Food Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "City National Bank (350 S. Grand Ave.)",
@@ -124,7 +124,7 @@
       "address": "350 S. Grand Ave.  Los Angeles CA 90071",
       "industry": "52 Finance and Insurance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Chick-fil-A - Hollins Group LLC - La Palma",
@@ -137,7 +137,7 @@
       "address": "8161 La Palma Ave.  Buena Park CA 90620",
       "industry": "72 Accommodation and Food Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Quince & Co, LLC",
@@ -150,7 +150,7 @@
       "address": "490 Pacific Avenue  San Francisco CA 94133",
       "industry": "72 Accommodation and Food Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Chick-fil-A - Worthy Integrated Holdings LLC",
@@ -176,7 +176,7 @@
       "address": "17 Great Oaks Boulevard  San Jose CA 95119",
       "industry": "44-45 Retail Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Amazon",
@@ -189,7 +189,7 @@
       "address": "15120 Valley Blvd.  La Puente CA 91746",
       "industry": "44-45 Retail Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Coast Grill Inc.",
@@ -566,7 +566,7 @@
       "address": "1325-1327 Chesapeake Terrace  Sunnyvale CA 94089",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Cepheid (B5)",
@@ -579,7 +579,7 @@
       "address": "1315 Chesapeake Terrace  Sunnyvale CA 94089",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Cepheid (B6)",
@@ -592,7 +592,7 @@
       "address": "914-918 Caribbean Drive  Sunnyvale CA 94089",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Cepheid (B7+)",
@@ -605,7 +605,7 @@
       "address": "1320 Chesapeake Terrace  Sunnyvale CA 94089",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Cepheid (Remote)",
@@ -618,7 +618,7 @@
       "address": "904 Caribbean Drive  Sunnyvale CA 94089",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Cepheid (B1)",
@@ -631,7 +631,7 @@
       "address": "904 Caribbean Drive  Sunnyvale CA 94089",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Cepheid (B7)",
@@ -644,7 +644,7 @@
       "address": "1324 Chesapeake Terrace  Sunnyvale CA 94089",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Frontapp, Inc.",
@@ -696,7 +696,7 @@
       "address": "1050 E. Palmdale Blvd., Suite 204  Palmdale CA 93550",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Tawa, Inc. dba 99 Ranch Market",
@@ -748,7 +748,7 @@
       "address": "4299 Rosewood Drive  Pleasanton CA 94588",
       "industry": "44-45 Retail Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Everidge Inc.",

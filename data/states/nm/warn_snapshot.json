@@ -1,9 +1,9 @@
 {
-  "total_records": 121,
-  "total_employees": 15252,
+  "total_records": 123,
+  "total_employees": 15933,
   "date_range_start": "2016-01-19",
-  "date_range_end": "2026-09-15",
-  "last_updated": "2026-11-05T19:35:01.026901+00:00",
+  "date_range_end": "2026-10-30",
+  "last_updated": "2026-11-06T04:24:07.546538+00:00",
   "source_url": "https://www.dws.state.nm.us/Rapid-Response",
   "records": [
     {
@@ -39,6 +39,30 @@
       "layoff_type": "",
       "county": "Otero",
       "city": "Alamogordo",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NM",
+      "company": "UNM Medical Group",
+      "notice_date": "2026-10-30",
+      "effective_date": "2027-01-01",
+      "employees": 678,
+      "layoff_type": "",
+      "county": "Bernalillo",
+      "city": "Albuquerque",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NM",
+      "company": "Endeavors",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 3,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
       "address": "",
       "industry": ""
     },

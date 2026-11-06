@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-11-06T04:27:35.138963+00:00",
+  "last_updated": "2026-11-06T19:07:26.327991+00:00",
   "states_live": 47,
-  "total_records": 60848,
-  "total_employees": 6546506,
+  "total_records": 60850,
+  "total_employees": 6547306,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -113,8 +113,8 @@
       "name": "Kansas",
       "agency": "Kansas Department of Commerce",
       "source_url": "https://www.kansasworks.com/search/warn_lookups",
-      "total_records": 153,
-      "total_employees": 28148
+      "total_records": 154,
+      "total_employees": 28216
     },
     "KY": {
       "name": "Kentucky",
@@ -204,8 +204,8 @@
       "name": "New Jersey",
       "agency": "New Jersey Department of Labor and Workforce Development",
       "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
-      "total_records": 2364,
-      "total_employees": 354590
+      "total_records": 2365,
+      "total_employees": 355322
     },
     "NM": {
       "name": "New Mexico",
@@ -354964,6 +354964,18 @@
       "industry": ""
     },
     {
+      "state": "KS",
+      "company": "Boston Heart Diagnostics Corporation",
+      "notice_date": "2026-11-05",
+      "effective_date": null,
+      "employees": 68,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Lenexa",
+      "address": "18000 W. 99th Street, Suite 200; Lenexa, Kansas 66219",
+      "industry": ""
+    },
+    {
       "state": "KY",
       "company": "Carrier Corporation (Franklin Operation)",
       "notice_date": "2026-06-12",
@@ -456195,6 +456207,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Jersey City",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "The Children's Place",
+      "notice_date": null,
+      "effective_date": "2027-02-04",
+      "employees": 732,
+      "layoff_type": "",
+      "county": "",
+      "city": "Atlantic, Bergen, Camden, Essex, Gloucester, Hudson, Mercer, Middlesex, Monmouth, Morris, Ocean, Passaic, Somerset, Union",
       "address": "",
       "industry": ""
     },

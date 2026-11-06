@@ -1,51 +1,52 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-11-06 04:27:34 UTC
+**Generated:** 2026-11-06 19:07:25 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 36 | 443 | +404/+0 |
-| Total employees | 2,560 | 27,163 | +24,603 |
+| Total records | 443 | 36 | +0/+404 |
+| Total employees | 27,163 | 2,560 | -24,603 |
 
-### ✅ New Entries (404 records)
+### ✅ No new entries.
 
-| Company | Employees | Effective Date | County |
-|---------|-----------|----------------|--------|
-| AEG Management Oakland LLC | 1,605 | 2026-12-31 | Alameda County |
-| Covenant Aviation Security, LLC | 1,279 | 2026-11-30 | San Francisco County |
-| Dreyer's Grand Ice Cream | 1,095 | 2026-12-19 | Kern County |
-| 24Hr Homecare | 875 | 2026-12-17 | Los Angeles County |
-| 24Hr Homecare, LLC | 738 | 2026-09-15 | Los Angeles County |
-| Fender Musical Instruments Corporation | 533 | 2026-12-14 | Riverside County |
-| Dreyer's Grand Ice Cream | 448 | 2026-12-19 | Tulare County |
-| Randstad Inhouse Services, LLC (Dreyer's) | 426 | 2026-11-19 | Kern County |
-| Jabil Inc. | 382 | 2026-11-23 | Santa Clara County |
-| Visa | 320 | 2026-10-01 | San Mateo County |
-| Oracle America, Inc. | 279 | 2026-11-13 | San Mateo County |
-| Netflix, Inc. | 267 | 2026-09-14 | Los Angeles County |
-| PayPal | 251 | 2026-10-30 | Santa Clara County |
-| eBay Inc. | 229 | 2026-10-21 | Santa Clara County |
-| Netflix, Inc. | 227 | 2026-09-14 | Santa Clara County |
-| Dreyer's Grand Ice Cream | 221 | 2026-11-19 | Tulare County |
-| IPS Nationwide, Inc. | 212 | 2026-11-17 | Alameda County |
-| Myers Power Products, Inc. | 206 | 2026-12-15 | San Bernardino County |
-| LeeMAH Electronics | 205 | 2026-10-16 | San Mateo County |
-| Sapporo U.S.A. (1999 Citracado Parkway) | 200 | 2026-11-13 | San Diego County |
+### ❌ Removed Entries (404 records)
+
+| Company | Employees | Effective Date |
+|---------|-----------|----------------|
+| AEG Management Oakland LLC | 1,605 | 2026-12-31 |
+| Covenant Aviation Security, LLC | 1,279 | 2026-11-30 |
+| Dreyer's Grand Ice Cream | 1,095 | 2026-12-19 |
+| 24Hr Homecare | 875 | 2026-12-17 |
+| 24Hr Homecare, LLC | 738 | 2026-09-15 |
+| Fender Musical Instruments Corporation | 533 | 2026-12-14 |
+| Dreyer's Grand Ice Cream | 448 | 2026-12-19 |
+| Randstad Inhouse Services, LLC (Dreyer's) | 426 | 2026-11-19 |
+| Jabil Inc. | 382 | 2026-11-23 |
+| Visa | 320 | 2026-10-01 |
+| Oracle America, Inc. | 279 | 2026-11-13 |
+| Netflix, Inc. | 267 | 2026-09-14 |
+| PayPal | 251 | 2026-10-30 |
+| eBay Inc. | 229 | 2026-10-21 |
+| Netflix, Inc. | 227 | 2026-09-14 |
+| Dreyer's Grand Ice Cream | 221 | 2026-11-19 |
+| IPS Nationwide, Inc. | 212 | 2026-11-17 |
+| Myers Power Products, Inc. | 206 | 2026-12-15 |
+| LeeMAH Electronics | 205 | 2026-10-16 |
+| Sapporo U.S.A. (1999 Citracado Parkway) | 200 | 2026-11-13 |
 
 ---
 ## 📁 File vs Git Comparison
 
-- **Local `file.xlsx` hash:** `de1f6a87a0eabc7fa000b9f45bf9f131`
+- **Local `file.xlsx` hash:** `2c73db1b759812982a57b17b77afa3c5`
 - **Committed hash:**          `2c73db1b759812982a57b17b77afa3c5`
-- 🔴 **Local file differs from committed version**
+- ✅ Local file matches committed version
 
 **Git status:**
 ```
 M data/changelog.jsonl
- M data/meta.json
  M data/states/ak/changelog.jsonl
  M data/states/ak/warn_cumulative.json
  M data/states/ak/warn_latest.json
@@ -109,6 +110,7 @@ M data/changelog.jsonl
  M data/states/in/warn_snapshot.json
  M data/states/ks/changelog.jsonl
  M data/states/ks/meta.json
+ M data/states/ks/raw_download
  M data/states/ks/warn_cumulative.json
  M data/states/ks/warn_latest.json
  M data/states/ks/warn_snapshot.json
@@ -173,12 +175,12 @@ M data/changelog.jsonl
  M data/states/ne/warn_snapshot.json
  M data/states/nj/changelog.jsonl
  M data/states/nj/meta.json
+ M data/states/nj/raw_download.xlsx
  M data/states/nj/warn_cumulative.json
  M data/states/nj/warn_latest.json
  M data/states/nj/warn_snapshot.json
  M data/states/nm/changelog.jsonl
  M data/states/nm/meta.json
- M data/states/nm/raw_download
  M data/states/nm/warn_cumulative.json
  M data/states/nm/warn_latest.json
  M data/states/nm/warn_snapshot.json
@@ -200,6 +202,7 @@ M data/changelog.jsonl
  M data/states/or/changelog.jsonl
  M data/states/or/latest.xlsx
  M data/states/or/meta.json
+ M data/states/or/raw_download
  M data/states/or/warn_cumulative.json
  M data/states/or/warn_latest.json
  M data/states/or/warn_snapshot.json
@@ -222,6 +225,11 @@ M data/changelog.jsonl
  M data/states/sd/warn_cumulative.json
  M data/states/sd/warn_latest.json
  M data/states/sd/warn_snapshot.json
+ M data/states/tn/changelog.jsonl
+ M data/states/tn/raw_download
+ M data/states/tn/warn_cumulative.json
+ M data/states/tn/warn_latest.json
+ M data/states/tn/warn_snapshot.json
  M data/states/ut/changelog.jsonl
  M data/states/ut/meta.json
  M data/states/ut/warn_cumulative.json
@@ -229,7 +237,6 @@ M data/changelog.jsonl
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
- M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -245,34 +252,32 @@ M data/changelog.jsonl
  M data/states/wa/warn_snapshot.json
  M data/states/wi/changelog.jsonl
  M data/states/wi/meta.json
- M data/states/wi/raw_download
  M data/states/wi/warn_cumulative.json
  M data/states/wi/warn_latest.json
  M data/states/wi/warn_snapshot.json
  M data/states/wv/changelog.jsonl
  M data/states/wv/meta.json
- M data/states/wv/raw_download
  M data/states/wv/warn_cumulative.json
  M data/states/wv/warn_latest.json
  M data/states/wv/warn_snapshot.json
  M data/warn_cumulative.json
  M data/warn_latest.json
  M data/warn_snapshot.json
- M file.xlsx
 ```
 
 **Recent commits:**
 ```
+eec97d3e0 auto: WARN data update [skip ci]
 df8c3d044 auto: WARN data update [skip ci]
 97b6926db auto: WARN data update [skip ci]
 93d6f884c auto: WARN data update [skip ci]
 aba8577c9 auto: WARN data update [skip ci]
-9439dcfd9 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-11-06T18:50:50.769257+00:00` — +0 added, -407 removed, 0 employees (new)
 - `2026-11-06T04:12:31.637452+00:00` — +22 added, -0 removed, 702 employees (new)
 - `2026-11-05T19:23:00.991209+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-11-05T04:16:06.671245+00:00` — +0 added, -0 removed, 0 employees (new)
@@ -282,4 +287,3 @@ aba8577c9 auto: WARN data update [skip ci]
 - `2026-11-03T04:38:44.081612+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-11-02T21:10:05.377018+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-11-02T03:21:40.307749+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-11-01T17:34:33.930099+00:00` — +0 added, -0 removed, 0 employees (new)

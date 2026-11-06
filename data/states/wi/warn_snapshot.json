@@ -1,9 +1,9 @@
 {
-  "total_records": 642,
-  "total_employees": 59736,
+  "total_records": 643,
+  "total_employees": 59814,
   "date_range_start": "2020-01-02",
-  "date_range_end": "2026-10-30",
-  "last_updated": "2026-11-05T19:38:23.858428+00:00",
+  "date_range_end": "2026-11-05",
+  "last_updated": "2026-11-06T04:27:32.115002+00:00",
   "source_url": "https://dwd.wisconsin.gov/dislocatedworker/warn/",
   "records": [
     {
@@ -7709,6 +7709,18 @@
       "city": "Unknown",
       "address": "",
       "industry": "Civic and Social Organizations"
+    },
+    {
+      "state": "WI",
+      "company": "Hy Cite Enterprises, LLC",
+      "notice_date": "2026-11-05",
+      "effective_date": "2026-11-05",
+      "employees": 78,
+      "layoff_type": "Workforce Reduction",
+      "county": "Dane",
+      "city": "Middleton",
+      "address": "",
+      "industry": "Home Furnishing Merch Wholesalers"
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
-  "total_records": 2390,
-  "total_employees": 357101,
+  "total_records": 2391,
+  "total_employees": 357833,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-11-06T04:23:52.320708+00:00",
+  "last_updated": "2026-11-06T19:03:42.663263+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -1443,6 +1443,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Jersey City",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "The Children's Place",
+      "notice_date": null,
+      "effective_date": "2027-02-04",
+      "employees": 732,
+      "layoff_type": "",
+      "county": "",
+      "city": "Atlantic, Bergen, Camden, Essex, Gloucester, Hudson, Mercer, Middlesex, Monmouth, Morris, Ocean, Passaic, Somerset, Union",
       "address": "",
       "industry": ""
     },

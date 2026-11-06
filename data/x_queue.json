@@ -1,46 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-11-06T04:28:45.033680+00:00",
+  "updated_at": "2026-11-06T19:08:21.968824+00:00",
   "candidates": [
-    {
-      "id": "1ce943c41edc",
-      "created_at": "2026-10-07T18:33:40.366027+00:00",
-      "status": "expired",
-      "company": "Starbucks",
-      "display": "Starbucks",
-      "employees": 69,
-      "states": [
-        "WA",
-        "PA"
-      ],
-      "per_state": {
-        "PA": 18,
-        "WA": 51
-      },
-      "sites": 2,
-      "card": {
-        "place": "WA \u00b7 PA",
-        "effective": "Nov 14, 2026",
-        "employees": 69
-      },
-      "arm": "brand",
-      "reason": "known brand, 69 >= 50",
-      "text": "Starbucks filed WARN notices for 69 job cuts across 2 sites in 2 states.\n\nWA 51 \u00b7 PA 18\n\nFirst effective date Nov 14, 2026.\n\n#layoffs",
-      "thread": [],
-      "weighted_len": 133,
-      "warnings": [],
-      "keys": [
-        "PA:Starbucks__2026-12-06__18",
-        "WA:Starbucks__2026-11-14__51"
-      ],
-      "approved_by": null,
-      "approved_at": null,
-      "rejected_reason": null,
-      "tweet_id": null,
-      "posted_at": null,
-      "attempts": 0,
-      "last_error": null
-    },
     {
       "id": "fdc4e78deb0a",
       "created_at": "2026-10-08T03:51:07.914024+00:00",
@@ -982,7 +943,7 @@
     {
       "id": "bb196af4ae2f",
       "created_at": "2026-10-30T17:52:51.379685+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Comcast",
       "display": "Comcast",
       "employees": 753,
@@ -1021,7 +982,7 @@
     {
       "id": "c5d445e2eabe",
       "created_at": "2026-10-30T17:52:51.379721+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Wells Fargo",
       "display": "Wells Fargo",
       "employees": 87,
@@ -1813,6 +1774,42 @@
       "keys": [
         "CA:ServiceNow, Inc.__2027-01-04__37",
         "CA:ServiceNow, Inc.__2027-01-04__25"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "75fdb50ef844",
+      "created_at": "2026-11-06T19:08:21.968801+00:00",
+      "status": "pending",
+      "company": "childrens place",
+      "display": "The Children's Place",
+      "employees": 732,
+      "states": [
+        "NJ"
+      ],
+      "per_state": {
+        "NJ": 732
+      },
+      "sites": 1,
+      "card": {
+        "place": "Atlantic, Bergen, Camden, Essex, Gloucester, Hudson, Mercer, Middlesex, Monmouth, Morris, Ocean, Passaic, Somerset, Union, NJ",
+        "effective": "Feb 4, 2027",
+        "employees": 732
+      },
+      "arm": "size",
+      "reason": "732 >= 250",
+      "text": "The Children's Place filed a WARN notice for 732 job cuts in Atlantic, Bergen, Camden, Essex, Gloucester, Hudson, Mercer, Middlesex, Monmouth, Morris, Ocean, Passaic, Somerset, Union, NJ.\n\nEffective Feb 4, 2027.\n\n#layoffs #NewJersey",
+      "thread": [],
+      "weighted_len": 232,
+      "warnings": [],
+      "keys": [
+        "NJ:The Children's Place__2027-02-04__732"
       ],
       "approved_by": null,
       "approved_at": null,
