@@ -3,12 +3,12 @@
   "total_employees": 46036,
   "date_range_start": "2009-03-09",
   "date_range_end": "2026-11-04",
-  "last_updated": "2026-11-05T19:34:44.554478+00:00",
+  "last_updated": "2026-11-06T04:23:51.878991+00:00",
   "source_url": "https://dol.nebraska.gov/ReemploymentServices/LayoffServices/LayoffsAndDownsizingWARN",
   "records": [
     {
       "state": "NE",
-      "company": "Alphia , Inc",
+      "company": "Alphia, Inc",
       "notice_date": "2026-11-04",
       "effective_date": null,
       "employees": 93,

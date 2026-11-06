@@ -1,9 +1,9 @@
 {
-  "total_records": 1038,
-  "total_employees": 45717,
+  "total_records": 1039,
+  "total_employees": 45810,
   "date_range_start": "2009-03-09",
   "date_range_end": "2026-11-04",
-  "last_updated": "2026-11-05T19:34:44.564961+00:00",
+  "last_updated": "2026-11-06T04:23:51.890716+00:00",
   "source_url": "https://dol.nebraska.gov/ReemploymentServices/LayoffServices/LayoffsAndDownsizingWARN",
   "records": [
     {
@@ -12453,6 +12453,18 @@
     {
       "state": "NE",
       "company": "Alphia , Inc",
+      "notice_date": "2026-11-04",
+      "effective_date": null,
+      "employees": 93,
+      "layoff_type": "",
+      "county": "",
+      "city": "Pawnee City",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NE",
+      "company": "Alphia, Inc",
       "notice_date": "2026-11-04",
       "effective_date": null,
       "employees": 93,

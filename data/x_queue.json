@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-05T19:40:10.515136+00:00",
+  "updated_at": "2026-11-06T04:28:45.033680+00:00",
   "candidates": [
     {
       "id": "1ce943c41edc",
@@ -910,7 +910,7 @@
     {
       "id": "3199e8b106c9",
       "created_at": "2026-10-30T03:50:17.050816+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Disney",
       "display": "Disney",
       "employees": 159,
@@ -946,7 +946,7 @@
     {
       "id": "c98eba551f63",
       "created_at": "2026-10-30T03:50:17.050910+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Dropbox",
       "display": "Dropbox",
       "employees": 57,
@@ -1666,6 +1666,153 @@
       "warnings": [],
       "keys": [
         "WA:Seattle Marriott Redmond__2027-01-05__91"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "68b2d200de9a",
+      "created_at": "2026-11-06T04:28:45.033488+00:00",
+      "status": "pending",
+      "company": "meta",
+      "display": "Meta",
+      "employees": 932,
+      "states": [
+        "NY"
+      ],
+      "per_state": {
+        "NY": 932
+      },
+      "sites": 3,
+      "card": {
+        "place": "3 sites in New York",
+        "effective": "Aug 20, 2026",
+        "employees": 932
+      },
+      "arm": "size",
+      "reason": "932 >= 250",
+      "text": "Meta filed WARN notices for 932 job cuts across 3 sites in New York.\n\nFirst effective date Aug 20, 2026.\n\n#layoffs #NewYork",
+      "thread": [],
+      "weighted_len": 123,
+      "warnings": [],
+      "keys": [
+        "NY:Meta__2026-08-20__361",
+        "NY:Meta__2026-08-20__267",
+        "NY:Meta__2026-08-20__304"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "513d4e4ab212",
+      "created_at": "2026-11-06T04:28:45.033558+00:00",
+      "status": "pending",
+      "company": "unm medical group",
+      "display": "UNM Medical Group",
+      "employees": 678,
+      "states": [
+        "NM"
+      ],
+      "per_state": {
+        "NM": 678
+      },
+      "sites": 1,
+      "card": {
+        "place": "Albuquerque, Bernalillo, NM",
+        "effective": "Jan 1, 2027",
+        "employees": 678
+      },
+      "arm": "size",
+      "reason": "678 >= 250",
+      "text": "UNM Medical Group filed a WARN notice for 678 job cuts in Albuquerque, Bernalillo, NM.\n\nEffective Jan 1, 2027.\n\n#layoffs #NewMexico",
+      "thread": [],
+      "weighted_len": 131,
+      "warnings": [],
+      "keys": [
+        "NM:UNM Medical Group__2027-01-01__678"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "9f13abcab5e2",
+      "created_at": "2026-11-06T04:28:45.033615+00:00",
+      "status": "pending",
+      "company": "Amazon",
+      "display": "Amazon",
+      "employees": 94,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 94
+      },
+      "sites": 1,
+      "card": {
+        "place": "Los Angeles County, CA",
+        "effective": "Jan 31, 2027",
+        "employees": 94
+      },
+      "arm": "tech",
+      "reason": "tech brand, 94 >= 25",
+      "text": "Amazon filed a WARN notice for 94 job cuts in Los Angeles County, CA.\n\nEffective Jan 31, 2027.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 116,
+      "warnings": [],
+      "keys": [
+        "CA:Amazon__2027-01-31__94"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "33d4d20d62dc",
+      "created_at": "2026-11-06T04:28:45.033666+00:00",
+      "status": "pending",
+      "company": "ServiceNow",
+      "display": "ServiceNow",
+      "employees": 62,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 62
+      },
+      "sites": 2,
+      "card": {
+        "place": "2 sites in California",
+        "effective": "Jan 4, 2027",
+        "employees": 62
+      },
+      "arm": "tech",
+      "reason": "tech brand, 62 >= 25",
+      "text": "ServiceNow filed WARN notices for 62 job cuts across 2 sites in California.\n\nFirst effective date Jan 4, 2027.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 132,
+      "warnings": [],
+      "keys": [
+        "CA:ServiceNow, Inc.__2027-01-04__37",
+        "CA:ServiceNow, Inc.__2027-01-04__25"
       ],
       "approved_by": null,
       "approved_at": null,

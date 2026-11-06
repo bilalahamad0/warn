@@ -1,9 +1,9 @@
 {
-  "total_records": 60,
+  "total_records": 61,
   "total_employees": 2985,
   "date_range_start": "2021-05-25",
   "date_range_end": "2026-10-07",
-  "last_updated": "2026-11-05T19:38:25.972981+00:00",
+  "last_updated": "2026-11-06T04:27:34.528987+00:00",
   "source_url": "https://workforcewv.org/job-seeker/layoffs-downsizing/warn-listing/",
   "records": [
     {
@@ -718,6 +718,18 @@
       "state": "WV",
       "company": "Panther Creek Mining",
       "notice_date": "2026-10-07",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WV",
+      "company": "Mullican Hardwood Flooring",
+      "notice_date": "2026-09-21",
       "effective_date": null,
       "employees": 0,
       "layoff_type": "",

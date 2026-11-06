@@ -28,11 +28,33 @@
    "NOTICE DATE": "9/15/26",
    "JOB SITE NAME": "Sierra Lobo",
    "COUNTY NAME": "Otero",
-   "WDA NAME": "Eastern",
+   "WDA NAME": "Eastern Region",
    "TOTAL LAYOFF NUMBER": "242",
    "LAYOFF DATE": "11/29/26",
    "RECEIVED DATE": "9/22/26",
    "CITY NAME": "Alamogordo"
+  },
+  {
+   "file": "2026_WARN.pdf",
+   "NOTICE DATE": "10/30/26",
+   "JOB SITE NAME": "UNM Medical Group",
+   "COUNTY NAME": "Bernalillo",
+   "WDA NAME": "Central Region",
+   "TOTAL LAYOFF NUMBER": "678",
+   "LAYOFF DATE": "1/1/27",
+   "RECEIVED DATE": "10/30/26",
+   "CITY NAME": "Albuquerque"
+  },
+  {
+   "file": "2026_WARN.pdf",
+   "NOTICE DATE": "10/29/26",
+   "JOB SITE NAME": "Endeavors",
+   "COUNTY NAME": "",
+   "WDA NAME": "",
+   "TOTAL LAYOFF NUMBER": "3",
+   "LAYOFF DATE": "12/31/26",
+   "RECEIVED DATE": "11/4/26",
+   "CITY NAME": ""
   },
   {
    "file": "2025_WARN.pdf",

@@ -1,9 +1,9 @@
 {
-  "total_records": 214,
-  "total_employees": 12105,
+  "total_records": 217,
+  "total_employees": 13037,
   "date_range_start": "2026-01-06",
   "date_range_end": "2026-10-02",
-  "last_updated": "2026-11-05T19:35:04.055066+00:00",
+  "last_updated": "2026-11-06T04:24:10.425358+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -1636,6 +1636,42 @@
       "county": "New York",
       "city": "",
       "address": "220 E 42nd St New York, NY, 10017",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Meta",
+      "notice_date": "2026-05-20",
+      "effective_date": "2026-08-20",
+      "employees": 361,
+      "layoff_type": "Layoff Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "380 W. 33rd Street New York, NY, 10001",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Meta",
+      "notice_date": "2026-05-20",
+      "effective_date": "2026-08-20",
+      "employees": 267,
+      "layoff_type": "Layoff Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "415 10th Ave New York, NY, 10001",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Meta",
+      "notice_date": "2026-05-20",
+      "effective_date": "2026-08-20",
+      "employees": 304,
+      "layoff_type": "Layoff Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "770 Broadway New York, NY, 10003",
       "industry": ""
     },
     {

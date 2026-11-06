@@ -1,9 +1,9 @@
 {
-  "total_records": 1138,
-  "total_employees": 132721,
+  "total_records": 1139,
+  "total_employees": 132741,
   "date_range_start": "2010-07-29",
   "date_range_end": "2026-10-30",
-  "last_updated": "2026-11-05T19:35:35.354509+00:00",
+  "last_updated": "2026-11-06T04:24:42.717345+00:00",
   "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
   "records": [
     {
@@ -13652,9 +13652,21 @@
     },
     {
       "state": "VA",
+      "company": "Endeavors",
+      "notice_date": "2026-10-29",
+      "effective_date": "2026-12-31",
+      "employees": 20,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Statewide",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
       "company": "Haynes Furniture Company Inc.",
       "notice_date": "2026-10-30",
-      "effective_date": "2026-11-05",
+      "effective_date": "2026-11-06",
       "employees": 83,
       "layoff_type": "Closure",
       "county": "",
