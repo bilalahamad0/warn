@@ -307,20 +307,6 @@
       },
       "modifiedDate": "2025-11-13T20:51:37+00:00",
       "name": "rapid_response/warn_documents/2025/Edgewell Personal Care's Schick (Milford) 11-13-2025.pdf"
-    },
-    {
-      "blobProperties": {
-        "affected_company": "Metallics, Inc",
-        "closing_dates_": "9/30/2026",
-        "layoff_dates": "5/1/2026 - 9/30/2026",
-        "layoff_locations__": "Bristol",
-        "number_of_impacted_workers": "33",
-        "union": "N/A",
-        "warn_document_date": "2025-11-07",
-        "warn_document_received_date": "2025-11-07"
-      },
-      "modifiedDate": "2025-11-10T17:28:29+00:00",
-      "name": "rapid_response/warn_documents/2025/Metallics, Inc. subsidiary of NSI Industries, LLC (Bristol) 11-7-2025.pdf"
     }
   ]
 }
