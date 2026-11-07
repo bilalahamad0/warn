@@ -1,9 +1,9 @@
 {
-  "total_records": 1379,
-  "total_employees": 117124,
+  "total_records": 1380,
+  "total_employees": 117244,
   "date_range_start": "2010-01-07",
   "date_range_end": "2026-11-03",
-  "last_updated": "2026-11-06T18:58:54.757483+00:00",
+  "last_updated": "2026-11-07T03:57:39.114113+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -16551,8 +16551,20 @@
       "layoff_type": "Plant Closure",
       "county": "Baltimore County",
       "city": "",
-      "address": "11 Easter Court, Ste A-E Owings Mills, MD 21031",
+      "address": "11 Easter Court, Ste A-E Owings Mills, MD 21117",
       "industry": "314999"
+    },
+    {
+      "state": "MD",
+      "company": "A&G Management Company, Inc.",
+      "notice_date": "2026-11-03",
+      "effective_date": "2027-01-03",
+      "employees": 120,
+      "layoff_type": "Mass Layoff - Note: Providing services at 12 locations in Maryland",
+      "county": "Anne Arundel",
+      "city": "",
+      "address": "7779 New York Lane Glen Burnie, MD 21061",
+      "industry": "531311"
     }
   ]
 }

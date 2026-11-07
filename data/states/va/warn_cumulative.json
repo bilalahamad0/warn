@@ -3,7 +3,7 @@
   "total_employees": 132741,
   "date_range_start": "2010-07-29",
   "date_range_end": "2026-10-30",
-  "last_updated": "2026-11-06T19:04:36.250452+00:00",
+  "last_updated": "2026-11-07T04:02:20.164337+00:00",
   "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
   "records": [
     {
@@ -13666,7 +13666,7 @@
       "state": "VA",
       "company": "Haynes Furniture Company Inc.",
       "notice_date": "2026-10-30",
-      "effective_date": "2026-11-06",
+      "effective_date": "2026-11-07",
       "employees": 83,
       "layoff_type": "Closure",
       "county": "",

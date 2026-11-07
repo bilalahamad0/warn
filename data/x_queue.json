@@ -1,43 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-11-06T19:08:21.968824+00:00",
+  "updated_at": "2026-11-07T04:04:26.354632+00:00",
   "candidates": [
-    {
-      "id": "fdc4e78deb0a",
-      "created_at": "2026-10-08T03:51:07.914024+00:00",
-      "status": "expired",
-      "company": "Transdev",
-      "display": "Transdev",
-      "employees": 0,
-      "states": [
-        "MN"
-      ],
-      "per_state": {},
-      "sites": 1,
-      "card": {
-        "place": "Rochester, MN",
-        "effective": "Aug 31, 2026",
-        "employees": null
-      },
-      "arm": "brand",
-      "reason": "known brand; state reports no headcount",
-      "text": "Transdev filed a WARN notice in Rochester, MN. Headcount not reported by the state.\n\n#layoffs #Minnesota",
-      "thread": [],
-      "weighted_len": 104,
-      "warnings": [
-        "employees_unknown"
-      ],
-      "keys": [
-        "MN:July 2026 Transdev Rochester__2026-08-31__0"
-      ],
-      "approved_by": null,
-      "approved_at": null,
-      "rejected_reason": null,
-      "tweet_id": null,
-      "posted_at": null,
-      "attempts": 0,
-      "last_error": null
-    },
     {
       "id": "5e3bb4bb017c",
       "created_at": "2026-10-20T16:26:18.733915+00:00",
@@ -1018,7 +982,7 @@
     {
       "id": "90cc3a6b1ebe",
       "created_at": "2026-10-31T03:33:51.597989+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "buitoni",
       "display": "Buitoni",
       "employees": 251,

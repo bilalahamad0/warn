@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-11-06T19:07:26.327991+00:00",
+  "last_updated": "2026-11-07T04:03:35.992558+00:00",
   "states_live": 47,
-  "total_records": 60850,
-  "total_employees": 6547306,
+  "total_records": 60851,
+  "total_employees": 6547426,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1379,
-      "total_employees": 117124
+      "total_records": 1380,
+      "total_employees": 117244
     },
     "ME": {
       "name": "Maine",
@@ -390930,8 +390930,20 @@
       "layoff_type": "Plant Closure",
       "county": "Baltimore County",
       "city": "",
-      "address": "11 Easter Court, Ste A-E Owings Mills, MD 21031",
+      "address": "11 Easter Court, Ste A-E Owings Mills, MD 21117",
       "industry": "314999"
+    },
+    {
+      "state": "MD",
+      "company": "A&G Management Company, Inc.",
+      "notice_date": "2026-11-03",
+      "effective_date": "2027-01-03",
+      "employees": 120,
+      "layoff_type": "Mass Layoff - Note: Providing services at 12 locations in Maryland",
+      "county": "Anne Arundel",
+      "city": "",
+      "address": "7779 New York Lane Glen Burnie, MD 21061",
+      "industry": "531311"
     },
     {
       "state": "ME",
@@ -651111,7 +651123,7 @@
       "state": "VA",
       "company": "Haynes Furniture Company Inc.",
       "notice_date": "2026-10-30",
-      "effective_date": "2026-11-06",
+      "effective_date": "2026-11-07",
       "employees": 83,
       "layoff_type": "Closure",
       "county": "",
