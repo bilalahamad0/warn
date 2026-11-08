@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-11-07 17:33:54 UTC
+**Generated:** 2026-11-08 03:36:05 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -23,6 +23,7 @@
 ```
 M data/changelog.jsonl
  M data/states/ak/changelog.jsonl
+ M data/states/ak/meta.json
  M data/states/ak/warn_cumulative.json
  M data/states/ak/warn_latest.json
  M data/states/ak/warn_snapshot.json
@@ -42,7 +43,6 @@ M data/changelog.jsonl
  M data/states/co/warn_snapshot.json
  M data/states/ct/changelog.jsonl
  M data/states/ct/meta.json
- M data/states/ct/raw_download
  M data/states/ct/warn_cumulative.json
  M data/states/ct/warn_latest.json
  M data/states/ct/warn_snapshot.json
@@ -195,18 +195,13 @@ M data/changelog.jsonl
  M data/states/sd/warn_cumulative.json
  M data/states/sd/warn_latest.json
  M data/states/sd/warn_snapshot.json
- M data/states/tn/changelog.jsonl
- M data/states/tn/raw_download
- M data/states/tn/warn_cumulative.json
- M data/states/tn/warn_latest.json
- M data/states/tn/warn_snapshot.json
  M data/states/ut/changelog.jsonl
- M data/states/ut/meta.json
  M data/states/ut/warn_cumulative.json
  M data/states/ut/warn_latest.json
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
+ M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -237,16 +232,17 @@ M data/changelog.jsonl
 
 **Recent commits:**
 ```
+62bc05a7d auto: WARN data update [skip ci]
 0ac5932df auto: WARN data update [skip ci]
 ed9740947 auto: WARN data update [skip ci]
 eec97d3e0 auto: WARN data update [skip ci]
 df8c3d044 auto: WARN data update [skip ci]
-97b6926db auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-11-08T03:20:26.890702+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-11-07T17:18:21.036301+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-11-07T03:49:05.381927+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-11-06T18:50:50.769257+00:00` — +0 added, -407 removed, 0 employees (new)
@@ -256,4 +252,3 @@ df8c3d044 auto: WARN data update [skip ci]
 - `2026-11-04T19:11:16.380745+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-11-04T03:56:38.506481+00:00` — +0 added, -385 removed, 0 employees (new)
 - `2026-11-03T19:10:18.438065+00:00` — +29 added, -0 removed, 3,221 employees (new)
-- `2026-11-03T04:38:44.081612+00:00` — +0 added, -0 removed, 0 employees (new)
