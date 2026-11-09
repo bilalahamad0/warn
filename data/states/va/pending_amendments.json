@@ -1,21 +1,21 @@
 {
   "count": 1,
-  "last_updated": "2026-11-08T03:36:58.866667+00:00",
+  "last_updated": "2026-11-09T03:59:02.106192+00:00",
   "amendments": [
     {
       "company": "Haynes Furniture Company Inc.",
       "county": "",
       "city": "Virginia",
       "notice_date": "2026-10-30",
-      "effective_date": "2026-11-08",
+      "effective_date": "2026-11-09",
       "employees": 83,
       "old_effective_date": "2026-11-06",
-      "new_effective_date": "2026-11-08",
+      "new_effective_date": "2026-11-09",
       "old_employees": 83,
       "new_employees": 83,
-      "key": "Haynes Furniture Company Inc.__2026-11-08__83",
+      "key": "Haynes Furniture Company Inc.__2026-11-09__83",
       "held_since": "2026-11-07T04:04:26.306654+00:00",
-      "revisions": 2
+      "revisions": 3
     }
   ]
 }
