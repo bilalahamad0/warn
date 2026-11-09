@@ -546,20 +546,20 @@
   {
    "report": "layoff",
    "Date": "7/17/2020",
-   "Company": "Valentino's Corporate Office",
-   "Type": "Closure",
-   "Jobs Affected": "8",
-   "City": "Lincoln",
-   "Location": "Bishop Heights"
-  },
-  {
-   "report": "layoff",
-   "Date": "7/17/2020",
    "Company": "SWBC Mortgage Corporation",
    "Type": "Layoff",
    "Jobs Affected": "",
    "City": "Scottsbluff",
    "Location": "Scottsbluff"
+  },
+  {
+   "report": "layoff",
+   "Date": "7/17/2020",
+   "Company": "Valentino's Corporate Office",
+   "Type": "Closure",
+   "Jobs Affected": "8",
+   "City": "Lincoln",
+   "Location": "Bishop Heights"
   },
   {
    "report": "layoff",
@@ -582,20 +582,20 @@
   {
    "report": "layoff",
    "Date": "7/9/2020",
-   "Company": "Marriott Corporate (Marcus)",
-   "Type": "Layoff",
-   "Jobs Affected": "",
-   "City": "Lincoln",
-   "Location": "The Lincoln Marriott Cornhusker Hotel"
-  },
-  {
-   "report": "layoff",
-   "Date": "7/9/2020",
    "Company": "Alamo Drafthouse Cinema Corp.",
    "Type": "Layoff",
    "Jobs Affected": "",
    "City": "Omaha",
    "Location": "Omaha Midtown"
+  },
+  {
+   "report": "layoff",
+   "Date": "7/9/2020",
+   "Company": "Marriott Corporate (Marcus)",
+   "Type": "Layoff",
+   "Jobs Affected": "",
+   "City": "Lincoln",
+   "Location": "The Lincoln Marriott Cornhusker Hotel"
   },
   {
    "report": "layoff",
@@ -681,6 +681,15 @@
   {
    "report": "layoff",
    "Date": "3/31/2020",
+   "Company": "Mr Movies",
+   "Type": "Closure",
+   "Jobs Affected": "1",
+   "City": "North Platte",
+   "Location": "North Platte"
+  },
+  {
+   "report": "layoff",
+   "Date": "3/31/2020",
    "Company": "Forno Omaha",
    "Type": "Layoff",
    "Jobs Affected": "20",
@@ -695,15 +704,6 @@
    "Jobs Affected": "27",
    "City": "Kearney",
    "Location": "Kearney"
-  },
-  {
-   "report": "layoff",
-   "Date": "3/31/2020",
-   "Company": "Mr Movies",
-   "Type": "Closure",
-   "Jobs Affected": "1",
-   "City": "North Platte",
-   "Location": "North Platte"
   },
   {
    "report": "layoff",
@@ -735,6 +735,15 @@
   {
    "report": "layoff",
    "Date": "3/27/2020",
+   "Company": "Allmand Brothers",
+   "Type": "Layoff",
+   "Jobs Affected": "20",
+   "City": "Holdrege",
+   "Location": "Holdrege"
+  },
+  {
+   "report": "layoff",
+   "Date": "3/27/2020",
    "Company": "Hayneedle, Inc.",
    "Type": "Closure",
    "Jobs Affected": "87",
@@ -749,15 +758,6 @@
    "Jobs Affected": "131",
    "City": "Omaha",
    "Location": "West Dodge Road"
-  },
-  {
-   "report": "layoff",
-   "Date": "3/27/2020",
-   "Company": "Allmand Brothers",
-   "Type": "Layoff",
-   "Jobs Affected": "20",
-   "City": "Holdrege",
-   "Location": "Holdrege"
   },
   {
    "report": "layoff",
@@ -845,9 +845,27 @@
    "Date": "2/28/2020",
    "Company": "Diamond Vogel Corporation",
    "Type": "Closure",
+   "Jobs Affected": "3",
+   "City": "Kearney",
+   "Location": "Kearney"
+  },
+  {
+   "report": "layoff",
+   "Date": "2/28/2020",
+   "Company": "Diamond Vogel Corporation",
+   "Type": "Closure",
+   "Jobs Affected": "5",
+   "City": "Grand Island",
+   "Location": "Grand Island"
+  },
+  {
+   "report": "layoff",
+   "Date": "2/28/2020",
+   "Company": "Diamond Vogel Corporation",
+   "Type": "Closure",
    "Jobs Affected": "2",
-   "City": "Elkhorn",
-   "Location": "Elkhorn"
+   "City": "Norfolk",
+   "Location": "Norfolk"
   },
   {
    "report": "layoff",
@@ -864,26 +882,8 @@
    "Company": "Diamond Vogel Corporation",
    "Type": "Closure",
    "Jobs Affected": "2",
-   "City": "Norfolk",
-   "Location": "Norfolk"
-  },
-  {
-   "report": "layoff",
-   "Date": "2/28/2020",
-   "Company": "Diamond Vogel Corporation",
-   "Type": "Closure",
-   "Jobs Affected": "5",
-   "City": "Grand Island",
-   "Location": "Grand Island"
-  },
-  {
-   "report": "layoff",
-   "Date": "2/28/2020",
-   "Company": "Diamond Vogel Corporation",
-   "Type": "Closure",
-   "Jobs Affected": "3",
-   "City": "Kearney",
-   "Location": "Kearney"
+   "City": "Elkhorn",
+   "Location": "Elkhorn"
   },
   {
    "report": "layoff",
@@ -933,11 +933,11 @@
   {
    "report": "layoff",
    "Date": "2/14/2020",
-   "Company": "Little Miracles Childcare",
+   "Company": "Midwest Medical Transport",
    "Type": "Closure",
-   "Jobs Affected": "7",
-   "City": "Doniphan",
-   "Location": "Child Care"
+   "Jobs Affected": "",
+   "City": "Hastings",
+   "Location": "Hastings"
   },
   {
    "report": "layoff",
@@ -951,11 +951,11 @@
   {
    "report": "layoff",
    "Date": "2/14/2020",
-   "Company": "Midwest Medical Transport",
+   "Company": "Little Miracles Childcare",
    "Type": "Closure",
-   "Jobs Affected": "",
-   "City": "Hastings",
-   "Location": "Hastings"
+   "Jobs Affected": "7",
+   "City": "Doniphan",
+   "Location": "Child Care"
   },
   {
    "report": "layoff",
@@ -1059,20 +1059,20 @@
   {
    "report": "layoff",
    "Date": "1/1/2020",
-   "Company": "Madhouse Experience",
-   "Type": "Closure",
-   "Jobs Affected": "",
-   "City": "Lincoln",
-   "Location": "Lincoln"
-  },
-  {
-   "report": "layoff",
-   "Date": "1/1/2020",
    "Company": "Kearney Cinema",
    "Type": "Closure",
    "Jobs Affected": "0",
    "City": "Kearney",
    "Location": "Hilltop 4 Theater"
+  },
+  {
+   "report": "layoff",
+   "Date": "1/1/2020",
+   "Company": "Madhouse Experience",
+   "Type": "Closure",
+   "Jobs Affected": "",
+   "City": "Lincoln",
+   "Location": "Lincoln"
   },
   {
    "report": "warn",
@@ -1231,6 +1231,15 @@
   {
    "report": "layoff",
    "Date": "12/31/2019",
+   "Company": "Land O Lakes Inc",
+   "Type": "Closure",
+   "Jobs Affected": "3",
+   "City": "McCook",
+   "Location": "McCook"
+  },
+  {
+   "report": "layoff",
+   "Date": "12/31/2019",
    "Company": "Beed Transportation Inc",
    "Type": "Closure",
    "Jobs Affected": "26",
@@ -1281,15 +1290,6 @@
    "Jobs Affected": "5",
    "City": "Lincoln",
    "Location": "Lincoln"
-  },
-  {
-   "report": "layoff",
-   "Date": "12/31/2019",
-   "Company": "Land O Lakes Inc",
-   "Type": "Closure",
-   "Jobs Affected": "3",
-   "City": "McCook",
-   "Location": "McCook"
   },
   {
    "report": "layoff",
@@ -1411,15 +1411,6 @@
   {
    "report": "layoff",
    "Date": "11/21/2019",
-   "Company": "Utica Community Center",
-   "Type": "Closure",
-   "Jobs Affected": "30",
-   "City": "Utica",
-   "Location": "Utica"
-  },
-  {
-   "report": "layoff",
-   "Date": "11/21/2019",
    "Company": "Morys Haven in Columbus",
    "Type": "Closure",
    "Jobs Affected": "62",
@@ -1428,12 +1419,12 @@
   },
   {
    "report": "layoff",
-   "Date": "11/19/2019",
-   "Company": "Jazz: A Louisiana Kitchen",
+   "Date": "11/21/2019",
+   "Company": "Utica Community Center",
    "Type": "Closure",
-   "Jobs Affected": "",
-   "City": "Omaha",
-   "Location": "Omaha"
+   "Jobs Affected": "30",
+   "City": "Utica",
+   "Location": "Utica"
   },
   {
    "report": "layoff",
@@ -1443,6 +1434,15 @@
    "Jobs Affected": "19",
    "City": "Atkinson",
    "Location": "Atkinson"
+  },
+  {
+   "report": "layoff",
+   "Date": "11/19/2019",
+   "Company": "Jazz: A Louisiana Kitchen",
+   "Type": "Closure",
+   "Jobs Affected": "",
+   "City": "Omaha",
+   "Location": "Omaha"
   },
   {
    "report": "layoff",
@@ -1654,15 +1654,6 @@
   {
    "report": "layoff",
    "Date": "9/25/2019",
-   "Company": "Kentucky Fried Chicken",
-   "Type": "Closure",
-   "Jobs Affected": "",
-   "City": "Columbus",
-   "Location": "Columbus"
-  },
-  {
-   "report": "layoff",
-   "Date": "9/25/2019",
    "Company": "Family Video",
    "Type": "Closure",
    "Jobs Affected": "4",
@@ -1677,6 +1668,15 @@
    "Jobs Affected": "17",
    "City": "S. Sioux City",
    "Location": "S. Sioux City"
+  },
+  {
+   "report": "layoff",
+   "Date": "9/25/2019",
+   "Company": "Kentucky Fried Chicken",
+   "Type": "Closure",
+   "Jobs Affected": "",
+   "City": "Columbus",
+   "Location": "Columbus"
   },
   {
    "report": "layoff",
@@ -1702,8 +1702,8 @@
    "Company": "Charming Charlie",
    "Type": "Closure",
    "Jobs Affected": "9",
-   "City": "Omaha",
-   "Location": "Omaha - L Street"
+   "City": "Lincoln",
+   "Location": "Lincoln"
   },
   {
    "report": "layoff",
@@ -1720,8 +1720,8 @@
    "Company": "Charming Charlie",
    "Type": "Closure",
    "Jobs Affected": "9",
-   "City": "Lincoln",
-   "Location": "Lincoln"
+   "City": "Omaha",
+   "Location": "Omaha - L Street"
   },
   {
    "report": "layoff",
@@ -1987,20 +1987,20 @@
   {
    "report": "layoff",
    "Date": "6/28/2019",
-   "Company": "Video Kingdom Electronics",
-   "Type": "Closure",
-   "Jobs Affected": "5",
-   "City": "Hastings",
-   "Location": "Hastings"
-  },
-  {
-   "report": "layoff",
-   "Date": "6/28/2019",
    "Company": "Highnooner's Deli",
    "Type": "Closure",
    "Jobs Affected": "4",
    "City": "Lincoln",
    "Location": "Lincoln"
+  },
+  {
+   "report": "layoff",
+   "Date": "6/28/2019",
+   "Company": "Video Kingdom Electronics",
+   "Type": "Closure",
+   "Jobs Affected": "5",
+   "City": "Hastings",
+   "Location": "Hastings"
   },
   {
    "report": "layoff",
@@ -2014,15 +2014,6 @@
   {
    "report": "layoff",
    "Date": "6/23/2019",
-   "Company": "Shopko Corporate Office",
-   "Type": "Closure",
-   "Jobs Affected": "53",
-   "City": "Omaha",
-   "Location": "Omaha - 14445 West Center Road"
-  },
-  {
-   "report": "layoff",
-   "Date": "6/23/2019",
    "Company": "Shopko Hometown xxxx",
    "Type": "Closure",
    "Jobs Affected": "53",
@@ -2031,12 +2022,12 @@
   },
   {
    "report": "layoff",
-   "Date": "6/21/2019",
-   "Company": "Werner Service & Trucking",
+   "Date": "6/23/2019",
+   "Company": "Shopko Corporate Office",
    "Type": "Closure",
-   "Jobs Affected": "24",
-   "City": "St. Edward",
-   "Location": "St. Edward"
+   "Jobs Affected": "53",
+   "City": "Omaha",
+   "Location": "Omaha - 14445 West Center Road"
   },
   {
    "report": "layoff",
@@ -2046,6 +2037,15 @@
    "Jobs Affected": "78",
    "City": "North Platte",
    "Location": "North Platte"
+  },
+  {
+   "report": "layoff",
+   "Date": "6/21/2019",
+   "Company": "Werner Service & Trucking",
+   "Type": "Closure",
+   "Jobs Affected": "24",
+   "City": "St. Edward",
+   "Location": "St. Edward"
   },
   {
    "report": "layoff",
@@ -2061,27 +2061,27 @@
    "Date": "6/16/2019",
    "Company": "Shopko Hometown xxxx",
    "Type": "Closure",
-   "Jobs Affected": "15",
-   "City": "Broken Bow",
-   "Location": "Broken Bow"
+   "Jobs Affected": "25",
+   "City": "Wayne",
+   "Location": "SHopko Hometown Wayne"
   },
   {
    "report": "layoff",
    "Date": "6/16/2019",
-   "Company": "Shopko Corporate Office",
+   "Company": "Shopko xxxx",
    "Type": "Closure",
-   "Jobs Affected": "45",
-   "City": "North Platte",
-   "Location": "North Platte"
+   "Jobs Affected": "19",
+   "City": "O.Neil",
+   "Location": "Shopko O'Neil"
   },
   {
    "report": "layoff",
    "Date": "6/16/2019",
    "Company": "Shopko Hometown xxxx",
    "Type": "Closure",
-   "Jobs Affected": "25",
-   "City": "Wayne",
-   "Location": "SHopko Hometown Wayne"
+   "Jobs Affected": "15",
+   "City": "Broken Bow",
+   "Location": "Broken Bow"
   },
   {
    "report": "layoff",
@@ -2113,34 +2113,7 @@
   {
    "report": "layoff",
    "Date": "6/16/2019",
-   "Company": "Shopko xxxx",
-   "Type": "Closure",
-   "Jobs Affected": "19",
-   "City": "O.Neil",
-   "Location": "Shopko O'Neil"
-  },
-  {
-   "report": "layoff",
-   "Date": "6/16/2019",
    "Company": "Shopko Hometown xxxx",
-   "Type": "Closure",
-   "Jobs Affected": "18",
-   "City": "Valentine",
-   "Location": "Valentine"
-  },
-  {
-   "report": "layoff",
-   "Date": "6/16/2019",
-   "Company": "Shopko Corporate Office",
-   "Type": "Closure",
-   "Jobs Affected": "19",
-   "City": "O'Neill",
-   "Location": "O'Neill"
-  },
-  {
-   "report": "layoff",
-   "Date": "6/16/2019",
-   "Company": "Shopko Corporate Office",
    "Type": "Closure",
    "Jobs Affected": "18",
    "City": "Valentine",
@@ -2160,9 +2133,27 @@
    "Date": "6/16/2019",
    "Company": "Shopko Corporate Office",
    "Type": "Closure",
-   "Jobs Affected": "15",
-   "City": "Broken Bow",
-   "Location": "Broken Bow"
+   "Jobs Affected": "18",
+   "City": "Valentine",
+   "Location": "Valentine"
+  },
+  {
+   "report": "layoff",
+   "Date": "6/16/2019",
+   "Company": "Shopko Corporate Office",
+   "Type": "Closure",
+   "Jobs Affected": "19",
+   "City": "O'Neill",
+   "Location": "O'Neill"
+  },
+  {
+   "report": "layoff",
+   "Date": "6/16/2019",
+   "Company": "Shopko Corporate Office",
+   "Type": "Closure",
+   "Jobs Affected": "45",
+   "City": "North Platte",
+   "Location": "North Platte"
   },
   {
    "report": "layoff",
@@ -2184,6 +2175,15 @@
   },
   {
    "report": "layoff",
+   "Date": "6/16/2019",
+   "Company": "Shopko Corporate Office",
+   "Type": "Closure",
+   "Jobs Affected": "15",
+   "City": "Broken Bow",
+   "Location": "Broken Bow"
+  },
+  {
+   "report": "layoff",
    "Date": "6/5/2019",
    "Company": "Wahoo Super",
    "Type": "Closure",
@@ -2194,20 +2194,20 @@
   {
    "report": "layoff",
    "Date": "5/31/2019",
-   "Company": "Bigler Motors",
-   "Type": "Closure",
-   "Jobs Affected": "12",
-   "City": "Lincoln",
-   "Location": "Lincoln"
-  },
-  {
-   "report": "layoff",
-   "Date": "5/31/2019",
    "Company": "Payless",
    "Type": "Closure",
    "Jobs Affected": "2",
    "City": "Scottsbluff",
    "Location": "Scottsbluff"
+  },
+  {
+   "report": "layoff",
+   "Date": "5/31/2019",
+   "Company": "Bigler Motors",
+   "Type": "Closure",
+   "Jobs Affected": "12",
+   "City": "Lincoln",
+   "Location": "Lincoln"
   },
   {
    "report": "layoff",
@@ -2248,20 +2248,38 @@
   {
    "report": "layoff",
    "Date": "5/12/2019",
-   "Company": "Shopko Corporate Office",
+   "Company": "Shopko xxxx",
    "Type": "Closure",
-   "Jobs Affected": "18",
+   "Jobs Affected": "15",
    "City": "Ainsworth",
    "Location": "Ainsworth"
   },
   {
    "report": "layoff",
    "Date": "5/12/2019",
-   "Company": "Shopko Hometown xxxx",
+   "Company": "Shopko Corporate Office",
+   "Type": "Closure",
+   "Jobs Affected": "15",
+   "City": "Beatrice",
+   "Location": "Beatrice"
+  },
+  {
+   "report": "layoff",
+   "Date": "5/12/2019",
+   "Company": "Shopko Corporate Office",
    "Type": "Closure",
    "Jobs Affected": "25",
    "City": "Falls City",
    "Location": "Falls City"
+  },
+  {
+   "report": "layoff",
+   "Date": "5/12/2019",
+   "Company": "Shopko Corporate Office",
+   "Type": "Closure",
+   "Jobs Affected": "18",
+   "City": "Ainsworth",
+   "Location": "Ainsworth"
   },
   {
    "report": "layoff",
@@ -2275,29 +2293,11 @@
   {
    "report": "layoff",
    "Date": "5/12/2019",
-   "Company": "Shopko Corporate Office",
+   "Company": "Shopko Hometown xxxx",
    "Type": "Closure",
    "Jobs Affected": "25",
    "City": "Falls City",
    "Location": "Falls City"
-  },
-  {
-   "report": "layoff",
-   "Date": "5/12/2019",
-   "Company": "Shopko Corporate Office",
-   "Type": "Closure",
-   "Jobs Affected": "15",
-   "City": "Beatrice",
-   "Location": "Beatrice"
-  },
-  {
-   "report": "layoff",
-   "Date": "5/12/2019",
-   "Company": "Shopko xxxx",
-   "Type": "Closure",
-   "Jobs Affected": "15",
-   "City": "Ainsworth",
-   "Location": "Ainsworth"
   },
   {
    "report": "layoff",
@@ -2320,15 +2320,6 @@
   {
    "report": "layoff",
    "Date": "5/11/2019",
-   "Company": "Norfolk Care & Rehabilitation Center",
-   "Type": "Closure",
-   "Jobs Affected": "42",
-   "City": "Norfolk",
-   "Location": "Norfolk"
-  },
-  {
-   "report": "layoff",
-   "Date": "5/11/2019",
    "Company": "Schuyler Care & Rehabilitation Center",
    "Type": "Closure",
    "Jobs Affected": "53",
@@ -2337,8 +2328,35 @@
   },
   {
    "report": "layoff",
+   "Date": "5/11/2019",
+   "Company": "Norfolk Care & Rehabilitation Center",
+   "Type": "Closure",
+   "Jobs Affected": "42",
+   "City": "Norfolk",
+   "Location": "Norfolk"
+  },
+  {
+   "report": "layoff",
    "Date": "5/5/2019",
    "Company": "Shopko xxxx",
+   "Type": "Closure",
+   "Jobs Affected": "15",
+   "City": "Gothenburg",
+   "Location": "Gothenburg"
+  },
+  {
+   "report": "layoff",
+   "Date": "5/5/2019",
+   "Company": "Shopko Corporate Office",
+   "Type": "Closure",
+   "Jobs Affected": "20",
+   "City": "Auburn",
+   "Location": "Auburn"
+  },
+  {
+   "report": "layoff",
+   "Date": "5/5/2019",
+   "Company": "Shopko Corporate Office",
    "Type": "Closure",
    "Jobs Affected": "15",
    "City": "Gothenburg",
@@ -2361,24 +2379,6 @@
    "Jobs Affected": "20",
    "City": "Auburn",
    "Location": "Auburn"
-  },
-  {
-   "report": "layoff",
-   "Date": "5/5/2019",
-   "Company": "Shopko Corporate Office",
-   "Type": "Closure",
-   "Jobs Affected": "20",
-   "City": "Auburn",
-   "Location": "Auburn"
-  },
-  {
-   "report": "layoff",
-   "Date": "5/5/2019",
-   "Company": "Shopko Corporate Office",
-   "Type": "Closure",
-   "Jobs Affected": "15",
-   "City": "Gothenburg",
-   "Location": "Gothenburg"
   },
   {
    "report": "layoff",
@@ -2457,18 +2457,9 @@
    "Date": "4/15/2019",
    "Company": "Shopko Corporate Office",
    "Type": "Closure",
-   "Jobs Affected": "42",
-   "City": "Lincoln",
-   "Location": "Lincoln - 4200 South 27th Street"
-  },
-  {
-   "report": "layoff",
-   "Date": "4/15/2019",
-   "Company": "Shopko Corporate Office",
-   "Type": "Closure",
-   "Jobs Affected": "44",
-   "City": "Lincoln",
-   "Location": "Lincoln - 100 South 66th Street"
+   "Jobs Affected": "295",
+   "City": "Omaha",
+   "Location": "Omaha - Shopko Distribution Center"
   },
   {
    "report": "layoff",
@@ -2484,18 +2475,27 @@
    "Date": "4/15/2019",
    "Company": "Shopko Corporate Office",
    "Type": "Closure",
-   "Jobs Affected": "5",
+   "Jobs Affected": "44",
    "City": "Lincoln",
-   "Location": "Lincoln - 4200 South 27th Street Optical"
+   "Location": "Lincoln - 100 South 66th Street"
   },
   {
    "report": "layoff",
    "Date": "4/15/2019",
    "Company": "Shopko Corporate Office",
    "Type": "Closure",
-   "Jobs Affected": "295",
-   "City": "Omaha",
-   "Location": "Omaha - Shopko Distribution Center"
+   "Jobs Affected": "42",
+   "City": "Lincoln",
+   "Location": "Lincoln - 4200 South 27th Street"
+  },
+  {
+   "report": "layoff",
+   "Date": "4/15/2019",
+   "Company": "Shopko Corporate Office",
+   "Type": "Closure",
+   "Jobs Affected": "5",
+   "City": "Lincoln",
+   "Location": "Lincoln - 4200 South 27th Street Optical"
   },
   {
    "report": "layoff",
@@ -2545,7 +2545,7 @@
   {
    "report": "layoff",
    "Date": "3/31/2019",
-   "Company": "Shopko Hometown xxxx",
+   "Company": "Shopko Corporate Office",
    "Type": "Closure",
    "Jobs Affected": "17",
    "City": "Albion",
@@ -2563,7 +2563,7 @@
   {
    "report": "layoff",
    "Date": "3/31/2019",
-   "Company": "Shopko Corporate Office",
+   "Company": "Shopko Hometown xxxx",
    "Type": "Closure",
    "Jobs Affected": "17",
    "City": "Albion",
@@ -2646,18 +2646,18 @@
    "Date": "3/12/2019",
    "Company": "Nebraska Commission for the Blind and Visually Impaired",
    "Type": "Layoff",
-   "Jobs Affected": "8",
-   "City": "Lincoln",
-   "Location": "Lincoln"
+   "Jobs Affected": "2",
+   "City": "Norfolk",
+   "Location": "Norfolk"
   },
   {
    "report": "layoff",
    "Date": "3/12/2019",
    "Company": "Nebraska Commission for the Blind and Visually Impaired",
    "Type": "Layoff",
-   "Jobs Affected": "2",
-   "City": "Norfolk",
-   "Location": "Norfolk"
+   "Jobs Affected": "8",
+   "City": "Lincoln",
+   "Location": "Lincoln"
   },
   {
    "report": "layoff",
@@ -2680,6 +2680,15 @@
   {
    "report": "layoff",
    "Date": "3/2/2019",
+   "Company": "Shopko Corporate Office",
+   "Type": "Closure",
+   "Jobs Affected": "48",
+   "City": "Lincoln",
+   "Location": "Lincoln - 3400 North 27th Street"
+  },
+  {
+   "report": "layoff",
+   "Date": "3/2/2019",
    "Company": "Shopko xxxx",
    "Type": "Closure",
    "Jobs Affected": "17",
@@ -2694,15 +2703,6 @@
    "Jobs Affected": "48",
    "City": "Lincoln",
    "Location": "Lincoln NW"
-  },
-  {
-   "report": "layoff",
-   "Date": "3/2/2019",
-   "Company": "Shopko Corporate Office",
-   "Type": "Closure",
-   "Jobs Affected": "48",
-   "City": "Lincoln",
-   "Location": "Lincoln - 3400 North 27th Street"
   },
   {
    "report": "layoff",
@@ -2743,6 +2743,15 @@
   {
    "report": "layoff",
    "Date": "2/28/2019",
+   "Company": "Shopko xxxx",
+   "Type": "Closure",
+   "Jobs Affected": "16",
+   "City": "Kimball",
+   "Location": "Kimball"
+  },
+  {
+   "report": "layoff",
+   "Date": "2/28/2019",
    "Company": "Corps of Discovery Welcome Center",
    "Type": "Closure",
    "Jobs Affected": "1",
@@ -2751,12 +2760,21 @@
   },
   {
    "report": "layoff",
-   "Date": "2/28/2019",
+   "Date": "2/18/2019",
+   "Company": "Shopko Corporate Office",
+   "Type": "Closure",
+   "Jobs Affected": "3",
+   "City": "Broken Bow",
+   "Location": "Broken Bow"
+  },
+  {
+   "report": "layoff",
+   "Date": "2/18/2019",
    "Company": "Shopko xxxx",
    "Type": "Closure",
-   "Jobs Affected": "16",
-   "City": "Kimball",
-   "Location": "Kimball"
+   "Jobs Affected": "3",
+   "City": "Ainsworth",
+   "Location": "Ainsworth - Pharmacy"
   },
   {
    "report": "layoff",
@@ -2775,24 +2793,6 @@
    "Jobs Affected": "0",
    "City": "Kearney",
    "Location": "Kearney"
-  },
-  {
-   "report": "layoff",
-   "Date": "2/18/2019",
-   "Company": "Shopko xxxx",
-   "Type": "Closure",
-   "Jobs Affected": "3",
-   "City": "Ainsworth",
-   "Location": "Ainsworth - Pharmacy"
-  },
-  {
-   "report": "layoff",
-   "Date": "2/18/2019",
-   "Company": "Shopko Corporate Office",
-   "Type": "Closure",
-   "Jobs Affected": "3",
-   "City": "Broken Bow",
-   "Location": "Broken Bow"
   },
   {
    "report": "layoff",
@@ -2880,15 +2880,6 @@
    "Date": "1/9/2019",
    "Company": "Shopko Corporate Office",
    "Type": "Closure",
-   "Jobs Affected": "6",
-   "City": "Lincoln",
-   "Location": "Lincoln - 4200 South 27th Street Pharmacy"
-  },
-  {
-   "report": "layoff",
-   "Date": "1/9/2019",
-   "Company": "Shopko Corporate Office",
-   "Type": "Closure",
    "Jobs Affected": "4",
    "City": "Lincoln",
    "Location": "Lincoln - 6845 South 27th Street Pharmacy"
@@ -2896,11 +2887,11 @@
   {
    "report": "layoff",
    "Date": "1/9/2019",
-   "Company": "Shopko Pharmacy xxxx",
+   "Company": "Shopko Corporate Office",
    "Type": "Closure",
    "Jobs Affected": "6",
    "City": "Lincoln",
-   "Location": "Lincoln 4200 S. 27th"
+   "Location": "Lincoln - 4200 South 27th Street Pharmacy"
   },
   {
    "report": "layoff",
@@ -2910,6 +2901,15 @@
    "Jobs Affected": "4",
    "City": "Lincoln",
    "Location": "Lincoln Pine Lake"
+  },
+  {
+   "report": "layoff",
+   "Date": "1/9/2019",
+   "Company": "Shopko Pharmacy xxxx",
+   "Type": "Closure",
+   "Jobs Affected": "6",
+   "City": "Lincoln",
+   "Location": "Lincoln 4200 S. 27th"
   },
   {
    "report": "layoff",
@@ -2941,20 +2941,20 @@
   {
    "report": "layoff",
    "Date": "1/4/2019",
-   "Company": "Diversified Foods & Seasoning",
-   "Type": "Closure",
-   "Jobs Affected": "54",
-   "City": "Nebraska City",
-   "Location": "Nebraska City"
-  },
-  {
-   "report": "layoff",
-   "Date": "1/4/2019",
    "Company": "Quad Graphics",
    "Type": "Layoff",
    "Jobs Affected": "6",
    "City": "Sidney",
    "Location": "Sidney"
+  },
+  {
+   "report": "layoff",
+   "Date": "1/4/2019",
+   "Company": "Diversified Foods & Seasoning",
+   "Type": "Closure",
+   "Jobs Affected": "54",
+   "City": "Nebraska City",
+   "Location": "Nebraska City"
   },
   {
    "report": "warn",
@@ -3015,6 +3015,15 @@
   {
    "report": "layoff",
    "Date": "12/31/2018",
+   "Company": "Allstate Insurance",
+   "Type": "Layoff",
+   "Jobs Affected": "14",
+   "City": "Lincoln",
+   "Location": "Lincoln"
+  },
+  {
+   "report": "layoff",
+   "Date": "12/31/2018",
    "Company": "PaymentSpring - Nelnet",
    "Type": "Layoff",
    "Jobs Affected": "30",
@@ -3032,15 +3041,6 @@
   },
   {
    "report": "layoff",
-   "Date": "12/31/2018",
-   "Company": "Allstate Insurance",
-   "Type": "Layoff",
-   "Jobs Affected": "14",
-   "City": "Lincoln",
-   "Location": "Lincoln"
-  },
-  {
-   "report": "layoff",
    "Date": "12/28/2018",
    "Company": "Kearney Little Learners",
    "Type": "Closure",
@@ -3051,7 +3051,16 @@
   {
    "report": "layoff",
    "Date": "12/22/2018",
-   "Company": "Shopko xxxx",
+   "Company": "Shopko Corporate Office",
+   "Type": "Closure",
+   "Jobs Affected": "12",
+   "City": "Gordon",
+   "Location": "Gordon"
+  },
+  {
+   "report": "layoff",
+   "Date": "12/22/2018",
+   "Company": "Shopko Corporate Office",
    "Type": "Closure",
    "Jobs Affected": "16",
    "City": "Ogallala",
@@ -3069,29 +3078,20 @@
   {
    "report": "layoff",
    "Date": "12/22/2018",
-   "Company": "Shopko Corporate Office",
+   "Company": "Shopko xxxx",
    "Type": "Closure",
    "Jobs Affected": "12",
    "City": "Gordon",
    "Location": "Gordon"
-  },
-  {
-   "report": "layoff",
-   "Date": "12/22/2018",
-   "Company": "Shopko Corporate Office",
-   "Type": "Closure",
-   "Jobs Affected": "16",
-   "City": "Ogallala",
-   "Location": "Ogallala"
   },
   {
    "report": "layoff",
    "Date": "12/22/2018",
    "Company": "Shopko xxxx",
    "Type": "Closure",
-   "Jobs Affected": "12",
-   "City": "Gordon",
-   "Location": "Gordon"
+   "Jobs Affected": "16",
+   "City": "Ogallala",
+   "Location": "Ogallala"
   },
   {
    "report": "layoff",
@@ -3261,8 +3261,8 @@
    "Company": "Gamers",
    "Type": "Closure",
    "Jobs Affected": "",
-   "City": "La Vista",
-   "Location": "La Vista"
+   "City": "Lincoln",
+   "Location": "Lincoln"
   },
   {
    "report": "layoff",
@@ -3270,8 +3270,8 @@
    "Company": "Gamers",
    "Type": "Closure",
    "Jobs Affected": "",
-   "City": "Lincoln",
-   "Location": "Lincoln"
+   "City": "La Vista",
+   "Location": "La Vista"
   },
   {
    "report": "layoff",
@@ -3299,6 +3299,33 @@
    "Jobs Affected": "80",
    "City": "Kearney",
    "Location": "Kearney"
+  },
+  {
+   "report": "layoff",
+   "Date": "8/31/2018",
+   "Company": "Younkers",
+   "Type": "Closure",
+   "Jobs Affected": "190",
+   "City": "Omaha",
+   "Location": "Omaha - Westroads Mall"
+  },
+  {
+   "report": "layoff",
+   "Date": "8/31/2018",
+   "Company": "Younkers",
+   "Type": "Closure",
+   "Jobs Affected": "80",
+   "City": "Grand Island",
+   "Location": "Grand Island"
+  },
+  {
+   "report": "layoff",
+   "Date": "8/31/2018",
+   "Company": "Younkers",
+   "Type": "Closure",
+   "Jobs Affected": "141",
+   "City": "Omaha",
+   "Location": "Omaha - Oakview Mall"
   },
   {
    "report": "layoff",
@@ -3344,33 +3371,6 @@
    "Jobs Affected": "8",
    "City": "Lincoln",
    "Location": "Lincoln"
-  },
-  {
-   "report": "layoff",
-   "Date": "8/31/2018",
-   "Company": "Younkers",
-   "Type": "Closure",
-   "Jobs Affected": "190",
-   "City": "Omaha",
-   "Location": "Omaha - Westroads Mall"
-  },
-  {
-   "report": "layoff",
-   "Date": "8/31/2018",
-   "Company": "Younkers",
-   "Type": "Closure",
-   "Jobs Affected": "80",
-   "City": "Grand Island",
-   "Location": "Grand Island"
-  },
-  {
-   "report": "layoff",
-   "Date": "8/31/2018",
-   "Company": "Younkers",
-   "Type": "Closure",
-   "Jobs Affected": "141",
-   "City": "Omaha",
-   "Location": "Omaha - Oakview Mall"
   },
   {
    "report": "layoff",
@@ -3483,38 +3483,20 @@
   {
    "report": "layoff",
    "Date": "6/30/2018",
+   "Company": "Shopko Corporate Office",
+   "Type": "Closure",
+   "Jobs Affected": "12",
+   "City": "Crete",
+   "Location": "Crete"
+  },
+  {
+   "report": "layoff",
+   "Date": "6/30/2018",
    "Company": "Building Healthy Futures",
    "Type": "Closure",
    "Jobs Affected": "5",
    "City": "Omaha",
    "Location": "Omaha"
-  },
-  {
-   "report": "layoff",
-   "Date": "6/30/2018",
-   "Company": "Adams County Senior Services",
-   "Type": "Closure",
-   "Jobs Affected": "9",
-   "City": "Hastings",
-   "Location": "Hastings"
-  },
-  {
-   "report": "layoff",
-   "Date": "6/30/2018",
-   "Company": "Akin's Natural Foods",
-   "Type": "Closure",
-   "Jobs Affected": "10",
-   "City": "Lincoln",
-   "Location": "Lincoln"
-  },
-  {
-   "report": "layoff",
-   "Date": "6/30/2018",
-   "Company": "Randolph Car Wash",
-   "Type": "Closure",
-   "Jobs Affected": "20",
-   "City": "Lincoln",
-   "Location": "Lincoln"
   },
   {
    "report": "layoff",
@@ -3537,11 +3519,29 @@
   {
    "report": "layoff",
    "Date": "6/30/2018",
-   "Company": "Shopko Corporate Office",
+   "Company": "Akin's Natural Foods",
    "Type": "Closure",
-   "Jobs Affected": "12",
-   "City": "Crete",
-   "Location": "Crete"
+   "Jobs Affected": "10",
+   "City": "Lincoln",
+   "Location": "Lincoln"
+  },
+  {
+   "report": "layoff",
+   "Date": "6/30/2018",
+   "Company": "Randolph Car Wash",
+   "Type": "Closure",
+   "Jobs Affected": "20",
+   "City": "Lincoln",
+   "Location": "Lincoln"
+  },
+  {
+   "report": "layoff",
+   "Date": "6/30/2018",
+   "Company": "Adams County Senior Services",
+   "Type": "Closure",
+   "Jobs Affected": "9",
+   "City": "Hastings",
+   "Location": "Hastings"
   },
   {
    "report": "layoff",
@@ -3567,26 +3567,26 @@
    "Company": "Toys-R-Us",
    "Type": "Closure",
    "Jobs Affected": "30",
-   "City": "Lincoln",
-   "Location": "Lincoln"
-  },
-  {
-   "report": "layoff",
-   "Date": "6/27/2018",
-   "Company": "Toys-R-Us",
-   "Type": "Closure",
-   "Jobs Affected": "30",
-   "City": "Lincoln",
-   "Location": "Lincoln"
-  },
-  {
-   "report": "layoff",
-   "Date": "6/27/2018",
-   "Company": "Toys-R-Us",
-   "Type": "Closure",
-   "Jobs Affected": "30",
    "City": "Omaha",
    "Location": "Omaha"
+  },
+  {
+   "report": "layoff",
+   "Date": "6/27/2018",
+   "Company": "Toys-R-Us",
+   "Type": "Closure",
+   "Jobs Affected": "30",
+   "City": "Lincoln",
+   "Location": "Lincoln"
+  },
+  {
+   "report": "layoff",
+   "Date": "6/27/2018",
+   "Company": "Toys-R-Us",
+   "Type": "Closure",
+   "Jobs Affected": "30",
+   "City": "Lincoln",
+   "Location": "Lincoln"
   },
   {
    "report": "layoff",
@@ -3618,20 +3618,20 @@
   {
    "report": "layoff",
    "Date": "6/15/2018",
-   "Company": "Good Samaritan Assisted Living",
-   "Type": "Closure",
-   "Jobs Affected": "7",
-   "City": "Scribner",
-   "Location": "Scribner"
-  },
-  {
-   "report": "layoff",
-   "Date": "6/15/2018",
    "Company": "Farner Company",
    "Type": "Closure",
    "Jobs Affected": "17",
    "City": "Norfolk",
    "Location": "Norfolk"
+  },
+  {
+   "report": "layoff",
+   "Date": "6/15/2018",
+   "Company": "Good Samaritan Assisted Living",
+   "Type": "Closure",
+   "Jobs Affected": "7",
+   "City": "Scribner",
+   "Location": "Scribner"
   },
   {
    "report": "layoff",
@@ -3645,11 +3645,11 @@
   {
    "report": "layoff",
    "Date": "5/31/2018",
-   "Company": "The Minuteman Hotel",
-   "Type": "Layoff",
-   "Jobs Affected": "4",
-   "City": "Lexington",
-   "Location": "Lexington"
+   "Company": "Grace University",
+   "Type": "Closure",
+   "Jobs Affected": "135",
+   "City": "Omaha",
+   "Location": "Omaha"
   },
   {
    "report": "layoff",
@@ -3663,18 +3663,18 @@
   {
    "report": "layoff",
    "Date": "5/31/2018",
-   "Company": "Convergys Corporation",
-   "Type": "Closure",
-   "Jobs Affected": "123",
-   "City": "Omaha",
-   "Location": "Omaha"
+   "Company": "The Minuteman Hotel",
+   "Type": "Layoff",
+   "Jobs Affected": "4",
+   "City": "Lexington",
+   "Location": "Lexington"
   },
   {
    "report": "layoff",
    "Date": "5/31/2018",
-   "Company": "Grace University",
+   "Company": "Convergys Corporation",
    "Type": "Closure",
-   "Jobs Affected": "135",
+   "Jobs Affected": "123",
    "City": "Omaha",
    "Location": "Omaha"
   },
@@ -3717,24 +3717,6 @@
   {
    "report": "layoff",
    "Date": "5/1/2018",
-   "Company": "Maaschhoff's",
-   "Type": "Layoff",
-   "Jobs Affected": "9",
-   "City": "Wolbach",
-   "Location": "Wolbach"
-  },
-  {
-   "report": "layoff",
-   "Date": "5/1/2018",
-   "Company": "Liberty Cleaners",
-   "Type": "Closure",
-   "Jobs Affected": "3",
-   "City": "Hastings",
-   "Location": "Hastings"
-  },
-  {
-   "report": "layoff",
-   "Date": "5/1/2018",
    "Company": "Liberty Cleaners",
    "Type": "Closure",
    "Jobs Affected": "3",
@@ -3749,6 +3731,24 @@
    "Jobs Affected": "3",
    "City": "York",
    "Location": "York"
+  },
+  {
+   "report": "layoff",
+   "Date": "5/1/2018",
+   "Company": "Liberty Cleaners",
+   "Type": "Closure",
+   "Jobs Affected": "3",
+   "City": "Hastings",
+   "Location": "Hastings"
+  },
+  {
+   "report": "layoff",
+   "Date": "5/1/2018",
+   "Company": "Maaschhoff's",
+   "Type": "Layoff",
+   "Jobs Affected": "9",
+   "City": "Wolbach",
+   "Location": "Wolbach"
   },
   {
    "report": "layoff",
@@ -4068,15 +4068,6 @@
   {
    "report": "layoff",
    "Date": "1/29/2018",
-   "Company": "Fair Deal Cafe",
-   "Type": "Closure",
-   "Jobs Affected": "",
-   "City": "Omaha",
-   "Location": "Omaha"
-  },
-  {
-   "report": "layoff",
-   "Date": "1/29/2018",
    "Company": "Beatrice Daily Sun",
    "Type": "Layoff",
    "Jobs Affected": "1",
@@ -4094,10 +4085,10 @@
   },
   {
    "report": "layoff",
-   "Date": "1/26/2018",
-   "Company": "Company Kitchen",
+   "Date": "1/29/2018",
+   "Company": "Fair Deal Cafe",
    "Type": "Closure",
-   "Jobs Affected": "3",
+   "Jobs Affected": "",
    "City": "Omaha",
    "Location": "Omaha"
   },
@@ -4109,6 +4100,15 @@
    "Jobs Affected": "",
    "City": "Lincoln",
    "Location": "Lincoln"
+  },
+  {
+   "report": "layoff",
+   "Date": "1/26/2018",
+   "Company": "Company Kitchen",
+   "Type": "Closure",
+   "Jobs Affected": "3",
+   "City": "Omaha",
+   "Location": "Omaha"
   },
   {
    "report": "layoff",
@@ -4276,11 +4276,11 @@
   {
    "report": "layoff",
    "Date": "12/31/2017",
-   "Company": "Good Samaritan Society",
+   "Company": "Eagle Grocery",
    "Type": "Closure",
-   "Jobs Affected": "50",
-   "City": "Alliance",
-   "Location": "Alliance"
+   "Jobs Affected": "5",
+   "City": "Eagle",
+   "Location": "Eagle"
   },
   {
    "report": "layoff",
@@ -4294,20 +4294,29 @@
   {
    "report": "layoff",
    "Date": "12/31/2017",
-   "Company": "Eagle Grocery",
-   "Type": "Closure",
-   "Jobs Affected": "5",
-   "City": "Eagle",
-   "Location": "Eagle"
-  },
-  {
-   "report": "layoff",
-   "Date": "12/31/2017",
    "Company": "Reicherts Jewelry",
    "Type": "Closure",
    "Jobs Affected": "3",
    "City": "Ogallala",
    "Location": "Ogallala"
+  },
+  {
+   "report": "layoff",
+   "Date": "12/31/2017",
+   "Company": "Good Samaritan Society",
+   "Type": "Closure",
+   "Jobs Affected": "50",
+   "City": "Alliance",
+   "Location": "Alliance"
+  },
+  {
+   "report": "layoff",
+   "Date": "12/29/2017",
+   "Company": "Black Hills Energy",
+   "Type": "Layoff",
+   "Jobs Affected": "5",
+   "City": "Lincoln",
+   "Location": "Lincoln"
   },
   {
    "report": "layoff",
@@ -4326,15 +4335,6 @@
    "Jobs Affected": "5",
    "City": "Fairbury",
    "Location": "Fairbury"
-  },
-  {
-   "report": "layoff",
-   "Date": "12/29/2017",
-   "Company": "Black Hills Energy",
-   "Type": "Layoff",
-   "Jobs Affected": "5",
-   "City": "Lincoln",
-   "Location": "Lincoln"
   },
   {
    "report": "layoff",
@@ -4393,20 +4393,20 @@
   {
    "report": "layoff",
    "Date": "12/15/2017",
-   "Company": "Buss Stop Petro",
-   "Type": "Closure",
-   "Jobs Affected": "5",
-   "City": "Beatrice",
-   "Location": "Beatrice"
-  },
-  {
-   "report": "layoff",
-   "Date": "12/15/2017",
    "Company": "Foster Lumber Company",
    "Type": "Closure",
    "Jobs Affected": "6",
    "City": "Sidney",
    "Location": "Sidney"
+  },
+  {
+   "report": "layoff",
+   "Date": "12/15/2017",
+   "Company": "Buss Stop Petro",
+   "Type": "Closure",
+   "Jobs Affected": "5",
+   "City": "Beatrice",
+   "Location": "Beatrice"
   },
   {
    "report": "layoff",
@@ -4681,20 +4681,20 @@
   {
    "report": "layoff",
    "Date": "7/15/2017",
-   "Company": "Game Cycle",
-   "Type": "Closure",
-   "Jobs Affected": "1",
-   "City": "Beatrice",
-   "Location": "Beatrice"
-  },
-  {
-   "report": "layoff",
-   "Date": "7/15/2017",
    "Company": "Doc's Place",
    "Type": "Closure",
    "Jobs Affected": "",
    "City": "Lincoln",
    "Location": "Lincoln"
+  },
+  {
+   "report": "layoff",
+   "Date": "7/15/2017",
+   "Company": "Game Cycle",
+   "Type": "Closure",
+   "Jobs Affected": "1",
+   "City": "Beatrice",
+   "Location": "Beatrice"
   },
   {
    "report": "layoff",
@@ -4726,20 +4726,20 @@
   {
    "report": "layoff",
    "Date": "6/30/2017",
-   "Company": "Integrated Life Choices",
-   "Type": "Layoff",
-   "Jobs Affected": "8",
-   "City": "Beatrice",
-   "Location": "Beatrice"
-  },
-  {
-   "report": "layoff",
-   "Date": "6/30/2017",
    "Company": "Nebraska Bull Service",
    "Type": "Layoff",
    "Jobs Affected": "14",
    "City": "McCook",
    "Location": "McCook"
+  },
+  {
+   "report": "layoff",
+   "Date": "6/30/2017",
+   "Company": "Integrated Life Choices",
+   "Type": "Layoff",
+   "Jobs Affected": "8",
+   "City": "Beatrice",
+   "Location": "Beatrice"
   },
   {
    "report": "layoff",
@@ -4789,20 +4789,20 @@
   {
    "report": "layoff",
    "Date": "4/24/2017",
-   "Company": "Good Samaritan Society",
-   "Type": "Layoff",
-   "Jobs Affected": "40",
-   "City": "Wymore",
-   "Location": "Wymore"
-  },
-  {
-   "report": "layoff",
-   "Date": "4/24/2017",
    "Company": "Da Buzz",
    "Type": "Closure",
    "Jobs Affected": "4",
    "City": "North Platte",
    "Location": "North Platte"
+  },
+  {
+   "report": "layoff",
+   "Date": "4/24/2017",
+   "Company": "Good Samaritan Society",
+   "Type": "Layoff",
+   "Jobs Affected": "40",
+   "City": "Wymore",
+   "Location": "Wymore"
   },
   {
    "report": "layoff",
@@ -4812,6 +4812,15 @@
    "Jobs Affected": "",
    "City": "Ralston",
    "Location": "Ralston"
+  },
+  {
+   "report": "layoff",
+   "Date": "4/17/2017",
+   "Company": "Epworth Village",
+   "Type": "Layoff",
+   "Jobs Affected": "13",
+   "City": "York",
+   "Location": "York"
   },
   {
    "report": "layoff",
@@ -4851,15 +4860,6 @@
   },
   {
    "report": "layoff",
-   "Date": "4/17/2017",
-   "Company": "Epworth Village",
-   "Type": "Layoff",
-   "Jobs Affected": "13",
-   "City": "York",
-   "Location": "York"
-  },
-  {
-   "report": "layoff",
    "Date": "4/7/2017",
    "Company": "Omaha Truck and Trailer",
    "Type": "Layoff",
@@ -4888,20 +4888,20 @@
   {
    "report": "layoff",
    "Date": "3/31/2017",
-   "Company": "Big Apple Bagels",
-   "Type": "Closure",
-   "Jobs Affected": "3",
-   "City": "Norfolk",
-   "Location": "Norfolk"
-  },
-  {
-   "report": "layoff",
-   "Date": "3/31/2017",
    "Company": "Resource Real Estate Management",
    "Type": "Layoff",
    "Jobs Affected": "6",
    "City": "Omaha",
    "Location": "Omaha"
+  },
+  {
+   "report": "layoff",
+   "Date": "3/31/2017",
+   "Company": "Big Apple Bagels",
+   "Type": "Closure",
+   "Jobs Affected": "3",
+   "City": "Norfolk",
+   "Location": "Norfolk"
   },
   {
    "report": "layoff",
@@ -5131,20 +5131,20 @@
   {
    "report": "layoff",
    "Date": "2/28/2017",
-   "Company": "City of Fairbury",
-   "Type": "Closure",
-   "Jobs Affected": "",
-   "City": "Fairbury",
-   "Location": "Fairbury"
-  },
-  {
-   "report": "layoff",
-   "Date": "2/28/2017",
    "Company": "Nebraska State Patrol-Communications Center",
    "Type": "Layoff",
    "Jobs Affected": "9",
    "City": "Lincoln",
    "Location": "Lincoln"
+  },
+  {
+   "report": "layoff",
+   "Date": "2/28/2017",
+   "Company": "City of Fairbury",
+   "Type": "Closure",
+   "Jobs Affected": "",
+   "City": "Fairbury",
+   "Location": "Fairbury"
   },
   {
    "report": "layoff",
@@ -5203,20 +5203,20 @@
   {
    "report": "layoff",
    "Date": "2/16/2017",
-   "Company": "Sunmart",
-   "Type": "Closure",
-   "Jobs Affected": "25",
-   "City": "Ogallala",
-   "Location": "Ogallala"
-  },
-  {
-   "report": "layoff",
-   "Date": "2/16/2017",
    "Company": "First National Bank",
    "Type": "Layoff",
    "Jobs Affected": "65",
    "City": "Omaha",
    "Location": "Omaha"
+  },
+  {
+   "report": "layoff",
+   "Date": "2/16/2017",
+   "Company": "Sunmart",
+   "Type": "Closure",
+   "Jobs Affected": "25",
+   "City": "Ogallala",
+   "Location": "Ogallala"
   },
   {
    "report": "layoff",
@@ -5347,20 +5347,20 @@
   {
    "report": "layoff",
    "Date": "1/12/2017",
-   "Company": "Brix - Village Point",
-   "Type": "Closure",
-   "Jobs Affected": "45",
-   "City": "Omaha",
-   "Location": "Village Point"
-  },
-  {
-   "report": "layoff",
-   "Date": "1/12/2017",
    "Company": "Brix - Midtown Crossing",
    "Type": "Closure",
    "Jobs Affected": "42",
    "City": "Omaha",
    "Location": "Midtown Crossing"
+  },
+  {
+   "report": "layoff",
+   "Date": "1/12/2017",
+   "Company": "Brix - Village Point",
+   "Type": "Closure",
+   "Jobs Affected": "45",
+   "City": "Omaha",
+   "Location": "Village Point"
   },
   {
    "report": "layoff",
@@ -5383,20 +5383,20 @@
   {
    "report": "layoff",
    "Date": "1/7/2017",
-   "Company": "Western Trails Sports Post",
-   "Type": "Closure",
-   "Jobs Affected": "4",
-   "City": "Scottsbluff",
-   "Location": "Scottsbluff"
-  },
-  {
-   "report": "layoff",
-   "Date": "1/7/2017",
    "Company": "Yates Motors",
    "Type": "Closure",
    "Jobs Affected": "1",
    "City": "Gering",
    "Location": "Gering"
+  },
+  {
+   "report": "layoff",
+   "Date": "1/7/2017",
+   "Company": "Western Trails Sports Post",
+   "Type": "Closure",
+   "Jobs Affected": "4",
+   "City": "Scottsbluff",
+   "Location": "Scottsbluff"
   },
   {
    "report": "layoff",
@@ -5504,7 +5504,7 @@
   {
    "report": "layoff",
    "Date": "12/11/2016",
-   "Company": "K-Mart Kearney",
+   "Company": "K-Mart",
    "Type": "Closure",
    "Jobs Affected": "35",
    "City": "Kearney",
@@ -5522,7 +5522,7 @@
   {
    "report": "layoff",
    "Date": "12/11/2016",
-   "Company": "K-Mart",
+   "Company": "K-Mart Kearney",
    "Type": "Closure",
    "Jobs Affected": "35",
    "City": "Kearney",
@@ -5549,20 +5549,20 @@
   {
    "report": "layoff",
    "Date": "12/3/2016",
-   "Company": "Lukasiewicz Furniture",
-   "Type": "Closure",
-   "Jobs Affected": "3",
-   "City": "Farwell",
-   "Location": "Farwell"
-  },
-  {
-   "report": "layoff",
-   "Date": "12/3/2016",
    "Company": "Sarpy County Landfill",
    "Type": "Closure",
    "Jobs Affected": "10",
    "City": "",
    "Location": "Sarpy County"
+  },
+  {
+   "report": "layoff",
+   "Date": "12/3/2016",
+   "Company": "Lukasiewicz Furniture",
+   "Type": "Closure",
+   "Jobs Affected": "3",
+   "City": "Farwell",
+   "Location": "Farwell"
   },
   {
    "report": "layoff",
@@ -5684,15 +5684,6 @@
   {
    "report": "layoff",
    "Date": "9/30/2016",
-   "Company": "Heartland Craft Mall",
-   "Type": "Closure",
-   "Jobs Affected": "1",
-   "City": "Nebraska City",
-   "Location": "Nebraska City"
-  },
-  {
-   "report": "layoff",
-   "Date": "9/30/2016",
    "Company": "Beacon Hills Restaurant",
    "Type": "Closure",
    "Jobs Affected": "",
@@ -5716,6 +5707,15 @@
    "Jobs Affected": "14",
    "City": "Blair",
    "Location": "Blair"
+  },
+  {
+   "report": "layoff",
+   "Date": "9/30/2016",
+   "Company": "Heartland Craft Mall",
+   "Type": "Closure",
+   "Jobs Affected": "1",
+   "City": "Nebraska City",
+   "Location": "Nebraska City"
   },
   {
    "report": "layoff",
@@ -5900,15 +5900,6 @@
   {
    "report": "layoff",
    "Date": "5/31/2016",
-   "Company": "Liberty Social Hall",
-   "Type": "Closure",
-   "Jobs Affected": "",
-   "City": "Papillion",
-   "Location": "Papillion"
-  },
-  {
-   "report": "layoff",
-   "Date": "5/31/2016",
    "Company": "Education Service Unit No-9",
    "Type": "Layoff",
    "Jobs Affected": "",
@@ -5923,6 +5914,15 @@
    "Jobs Affected": "0",
    "City": "Omaha",
    "Location": "Omaha"
+  },
+  {
+   "report": "layoff",
+   "Date": "5/31/2016",
+   "Company": "Liberty Social Hall",
+   "Type": "Closure",
+   "Jobs Affected": "",
+   "City": "Papillion",
+   "Location": "Papillion"
   },
   {
    "report": "layoff",
@@ -6008,6 +6008,15 @@
   {
    "report": "layoff",
    "Date": "4/30/2016",
+   "Company": "Athlete's Edge",
+   "Type": "Closure",
+   "Jobs Affected": "",
+   "City": "Scottsbluff",
+   "Location": "Scottsbluff"
+  },
+  {
+   "report": "layoff",
+   "Date": "4/30/2016",
    "Company": "Heartland Cash Advance",
    "Type": "Closure",
    "Jobs Affected": "2",
@@ -6022,15 +6031,6 @@
    "Jobs Affected": "1",
    "City": "Alliance",
    "Location": "Alliance"
-  },
-  {
-   "report": "layoff",
-   "Date": "4/30/2016",
-   "Company": "Athlete's Edge",
-   "Type": "Closure",
-   "Jobs Affected": "",
-   "City": "Scottsbluff",
-   "Location": "Scottsbluff"
   },
   {
    "report": "layoff",
@@ -6143,20 +6143,11 @@
   {
    "report": "layoff",
    "Date": "3/31/2016",
-   "Company": "Bag'n Save/No Frills",
+   "Company": "CommScope",
    "Type": "Closure",
-   "Jobs Affected": "",
-   "City": "Omaha",
-   "Location": "Omaha (Blondo)"
-  },
-  {
-   "report": "layoff",
-   "Date": "3/31/2016",
-   "Company": "Bag'n Save/No Frills",
-   "Type": "Closure",
-   "Jobs Affected": "",
-   "City": "Omaha",
-   "Location": "Omaha (Weir St)"
+   "Jobs Affected": "150",
+   "City": "Sidney",
+   "Location": "Sidney"
   },
   {
    "report": "layoff",
@@ -6170,11 +6161,20 @@
   {
    "report": "layoff",
    "Date": "3/31/2016",
-   "Company": "CommScope",
+   "Company": "Bag'n Save/No Frills",
    "Type": "Closure",
-   "Jobs Affected": "150",
-   "City": "Sidney",
-   "Location": "Sidney"
+   "Jobs Affected": "",
+   "City": "Omaha",
+   "Location": "Omaha (Weir St)"
+  },
+  {
+   "report": "layoff",
+   "Date": "3/31/2016",
+   "Company": "Bag'n Save/No Frills",
+   "Type": "Closure",
+   "Jobs Affected": "",
+   "City": "Omaha",
+   "Location": "Omaha (Blondo)"
   },
   {
    "report": "layoff",
@@ -6323,6 +6323,15 @@
   {
    "report": "layoff",
    "Date": "1/31/2016",
+   "Company": "Piccolo Pete's",
+   "Type": "Closure",
+   "Jobs Affected": "50",
+   "City": "Omaha",
+   "Location": "Omaha"
+  },
+  {
+   "report": "layoff",
+   "Date": "1/31/2016",
    "Company": "Sugar Bakers Gift Shop",
    "Type": "Closure",
    "Jobs Affected": "",
@@ -6341,11 +6350,11 @@
   {
    "report": "layoff",
    "Date": "1/31/2016",
-   "Company": "Piccolo Pete's",
+   "Company": "Ann Taylor Loft",
    "Type": "Closure",
-   "Jobs Affected": "50",
-   "City": "Omaha",
-   "Location": "Omaha"
+   "Jobs Affected": "",
+   "City": "Lincoln",
+   "Location": "Lincoln"
   },
   {
    "report": "layoff",
@@ -6355,15 +6364,6 @@
    "Jobs Affected": "33",
    "City": "Fremont",
    "Location": "Fremont"
-  },
-  {
-   "report": "layoff",
-   "Date": "1/31/2016",
-   "Company": "Ann Taylor Loft",
-   "Type": "Closure",
-   "Jobs Affected": "",
-   "City": "Lincoln",
-   "Location": "Lincoln"
   },
   {
    "report": "layoff",
@@ -6415,9 +6415,9 @@
    "Date": "1/1/2016",
    "Company": "Schweser's",
    "Type": "Closure",
-   "Jobs Affected": "8",
-   "City": "Beatrice",
-   "Location": "Beatrice"
+   "Jobs Affected": "10",
+   "City": "Lincoln",
+   "Location": "Lincoln"
   },
   {
    "report": "layoff",
@@ -6433,9 +6433,9 @@
    "Date": "1/1/2016",
    "Company": "Schweser's",
    "Type": "Closure",
-   "Jobs Affected": "10",
-   "City": "Lincoln",
-   "Location": "Lincoln"
+   "Jobs Affected": "8",
+   "City": "Beatrice",
+   "Location": "Beatrice"
   },
   {
    "report": "warn",
@@ -6578,20 +6578,20 @@
   {
    "report": "layoff",
    "Date": "12/31/2015",
-   "Company": "Folders Express",
-   "Type": "Closure",
-   "Jobs Affected": "57",
-   "City": "Omaha",
-   "Location": "Omaha"
-  },
-  {
-   "report": "layoff",
-   "Date": "12/31/2015",
    "Company": "Lockheed Martin",
    "Type": "Layoff",
    "Jobs Affected": "8",
    "City": "Bellevue",
    "Location": "Bellevue"
+  },
+  {
+   "report": "layoff",
+   "Date": "12/31/2015",
+   "Company": "Folders Express",
+   "Type": "Closure",
+   "Jobs Affected": "57",
+   "City": "Omaha",
+   "Location": "Omaha"
   },
   {
    "report": "layoff",
@@ -6605,20 +6605,20 @@
   {
    "report": "layoff",
    "Date": "12/18/2015",
-   "Company": "Subway Pizza Express/Auntie Anne's Pretzels",
-   "Type": "Closure",
-   "Jobs Affected": "5",
-   "City": "Lincoln",
-   "Location": "Lincoln"
-  },
-  {
-   "report": "layoff",
-   "Date": "12/18/2015",
    "Company": "Catholic Health Initiative",
    "Type": "Layoff",
    "Jobs Affected": "60",
    "City": "Omaha",
    "Location": "Omaha"
+  },
+  {
+   "report": "layoff",
+   "Date": "12/18/2015",
+   "Company": "Subway Pizza Express/Auntie Anne's Pretzels",
+   "Type": "Closure",
+   "Jobs Affected": "5",
+   "City": "Lincoln",
+   "Location": "Lincoln"
   },
   {
    "report": "layoff",
@@ -6760,27 +6760,18 @@
    "Date": "11/9/2015",
    "Company": "Alter Trading Co",
    "Type": "Layoff",
-   "Jobs Affected": "3",
-   "City": "Kearney",
-   "Location": "Kearney"
-  },
-  {
-   "report": "layoff",
-   "Date": "11/9/2015",
-   "Company": "Alter Trading Co",
-   "Type": "Closure",
-   "Jobs Affected": "2",
-   "City": "Sidney",
-   "Location": "Sidney"
+   "Jobs Affected": "1",
+   "City": "Lincoln",
+   "Location": "Lincoln"
   },
   {
    "report": "layoff",
    "Date": "11/9/2015",
    "Company": "Alter Trading Co",
    "Type": "Layoff",
-   "Jobs Affected": "2",
-   "City": "Ogallala",
-   "Location": "Ogallala"
+   "Jobs Affected": "1",
+   "City": "Omaha",
+   "Location": "Omaha"
   },
   {
    "report": "layoff",
@@ -6796,18 +6787,27 @@
    "Date": "11/9/2015",
    "Company": "Alter Trading Co",
    "Type": "Layoff",
-   "Jobs Affected": "1",
-   "City": "Omaha",
-   "Location": "Omaha"
+   "Jobs Affected": "2",
+   "City": "Ogallala",
+   "Location": "Ogallala"
+  },
+  {
+   "report": "layoff",
+   "Date": "11/9/2015",
+   "Company": "Alter Trading Co",
+   "Type": "Closure",
+   "Jobs Affected": "2",
+   "City": "Sidney",
+   "Location": "Sidney"
   },
   {
    "report": "layoff",
    "Date": "11/9/2015",
    "Company": "Alter Trading Co",
    "Type": "Layoff",
-   "Jobs Affected": "1",
-   "City": "Lincoln",
-   "Location": "Lincoln"
+   "Jobs Affected": "3",
+   "City": "Kearney",
+   "Location": "Kearney"
   },
   {
    "report": "layoff",
@@ -6821,18 +6821,18 @@
   {
    "report": "layoff",
    "Date": "11/5/2015",
-   "Company": "The Knolls",
+   "Company": "Hexagon Lincoln",
    "Type": "Layoff",
-   "Jobs Affected": "5",
+   "Jobs Affected": "45",
    "City": "Lincoln",
    "Location": "Lincoln"
   },
   {
    "report": "layoff",
    "Date": "11/5/2015",
-   "Company": "Hexagon Lincoln",
+   "Company": "The Knolls",
    "Type": "Layoff",
-   "Jobs Affected": "45",
+   "Jobs Affected": "5",
    "City": "Lincoln",
    "Location": "Lincoln"
   },
@@ -6848,20 +6848,20 @@
   {
    "report": "layoff",
    "Date": "11/1/2015",
-   "Company": "Grossenburg Implement",
-   "Type": "Closure",
-   "Jobs Affected": "14",
-   "City": "Laurel",
-   "Location": "Laurel"
-  },
-  {
-   "report": "layoff",
-   "Date": "11/1/2015",
    "Company": "Elliott Equipment Company",
    "Type": "Layoff",
    "Jobs Affected": "5",
    "City": "",
    "Location": "Omaha"
+  },
+  {
+   "report": "layoff",
+   "Date": "11/1/2015",
+   "Company": "Grossenburg Implement",
+   "Type": "Closure",
+   "Jobs Affected": "14",
+   "City": "Laurel",
+   "Location": "Laurel"
   },
   {
    "report": "layoff",
@@ -6992,6 +6992,15 @@
   {
    "report": "layoff",
    "Date": "10/1/2015",
+   "Company": "Golden Star",
+   "Type": "Closure",
+   "Jobs Affected": "15",
+   "City": "Ainsworth",
+   "Location": "Ainsworth"
+  },
+  {
+   "report": "layoff",
+   "Date": "10/1/2015",
    "Company": "Preferred Resin of Genoa",
    "Type": "Layoff",
    "Jobs Affected": "4",
@@ -7009,12 +7018,12 @@
   },
   {
    "report": "layoff",
-   "Date": "10/1/2015",
-   "Company": "Golden Star",
+   "Date": "9/30/2015",
+   "Company": "Main Street Market & Deli",
    "Type": "Closure",
-   "Jobs Affected": "15",
-   "City": "Ainsworth",
-   "Location": "Ainsworth"
+   "Jobs Affected": "8",
+   "City": "Stapleton",
+   "Location": "Stapleton"
   },
   {
    "report": "layoff",
@@ -7024,15 +7033,6 @@
    "Jobs Affected": "",
    "City": "Bloomfield",
    "Location": "Bloomfield"
-  },
-  {
-   "report": "layoff",
-   "Date": "9/30/2015",
-   "Company": "Main Street Market & Deli",
-   "Type": "Closure",
-   "Jobs Affected": "8",
-   "City": "Stapleton",
-   "Location": "Stapleton"
   },
   {
    "report": "layoff",
@@ -7073,11 +7073,11 @@
   {
    "report": "layoff",
    "Date": "9/23/2015",
-   "Company": "Cabela's Corporation",
+   "Company": "Preferred Pump",
    "Type": "Layoff",
-   "Jobs Affected": "",
-   "City": "Sidney",
-   "Location": "Cabela's Store - Sidney"
+   "Jobs Affected": "4",
+   "City": "Grand Island",
+   "Location": "Grand Island"
   },
   {
    "report": "layoff",
@@ -7091,11 +7091,11 @@
   {
    "report": "layoff",
    "Date": "9/23/2015",
-   "Company": "Preferred Pump",
+   "Company": "Cabela's Corporation",
    "Type": "Layoff",
-   "Jobs Affected": "4",
-   "City": "Grand Island",
-   "Location": "Grand Island"
+   "Jobs Affected": "",
+   "City": "Sidney",
+   "Location": "Cabela's Store - Sidney"
   },
   {
    "report": "layoff",
@@ -7109,20 +7109,20 @@
   {
    "report": "layoff",
    "Date": "9/18/2015",
-   "Company": "Depot Bar & Grill",
-   "Type": "Closure",
-   "Jobs Affected": "",
-   "City": "North Platte",
-   "Location": "North Platte"
-  },
-  {
-   "report": "layoff",
-   "Date": "9/18/2015",
    "Company": "Allmand Brothers",
    "Type": "Layoff",
    "Jobs Affected": "12",
    "City": "Holdrege",
    "Location": "Holdrege"
+  },
+  {
+   "report": "layoff",
+   "Date": "9/18/2015",
+   "Company": "Depot Bar & Grill",
+   "Type": "Closure",
+   "Jobs Affected": "",
+   "City": "North Platte",
+   "Location": "North Platte"
   },
   {
    "report": "layoff",
@@ -7208,20 +7208,20 @@
   {
    "report": "layoff",
    "Date": "7/31/2015",
-   "Company": "Libations",
-   "Type": "Closure",
-   "Jobs Affected": "3",
-   "City": "Lincoln",
-   "Location": "Lincoln"
-  },
-  {
-   "report": "layoff",
-   "Date": "7/31/2015",
    "Company": "Diana's Antiques and Gifts",
    "Type": "Closure",
    "Jobs Affected": "1",
    "City": "Ceresco",
    "Location": "Ceresco"
+  },
+  {
+   "report": "layoff",
+   "Date": "7/31/2015",
+   "Company": "Libations",
+   "Type": "Closure",
+   "Jobs Affected": "3",
+   "City": "Lincoln",
+   "Location": "Lincoln"
   },
   {
    "report": "layoff",
@@ -7300,18 +7300,18 @@
    "Date": "5/22/2015",
    "Company": "Skag-Way Discount Department Stores, Inc.",
    "Type": "Closure",
-   "Jobs Affected": "134",
+   "Jobs Affected": "92",
    "City": "Grand Island",
-   "Location": "Grand Island (State Street)"
+   "Location": "Grand Island (Locust Street)"
   },
   {
    "report": "layoff",
    "Date": "5/22/2015",
    "Company": "Skag-Way Discount Department Stores, Inc.",
    "Type": "Closure",
-   "Jobs Affected": "92",
+   "Jobs Affected": "134",
    "City": "Grand Island",
-   "Location": "Grand Island (Locust Street)"
+   "Location": "Grand Island (State Street)"
   },
   {
    "report": "layoff",
@@ -7334,20 +7334,20 @@
   {
    "report": "layoff",
    "Date": "3/31/2015",
-   "Company": "Nationstar",
-   "Type": "Closure",
-   "Jobs Affected": "114",
-   "City": "Scottsbluff",
-   "Location": "Scottsbluff"
-  },
-  {
-   "report": "layoff",
-   "Date": "3/31/2015",
    "Company": "Charter Communication",
    "Type": "Layoff",
    "Jobs Affected": "5",
    "City": "Hastings",
    "Location": "Hastings"
+  },
+  {
+   "report": "layoff",
+   "Date": "3/31/2015",
+   "Company": "Nationstar",
+   "Type": "Closure",
+   "Jobs Affected": "114",
+   "City": "Scottsbluff",
+   "Location": "Scottsbluff"
   },
   {
    "report": "layoff",
@@ -7357,15 +7357,6 @@
    "Jobs Affected": "12",
    "City": "McCook",
    "Location": "McCook"
-  },
-  {
-   "report": "layoff",
-   "Date": "2/28/2015",
-   "Company": "Alco Discount Store",
-   "Type": "Closure",
-   "Jobs Affected": "16",
-   "City": "Albion",
-   "Location": "Albion"
   },
   {
    "report": "layoff",
@@ -7387,12 +7378,12 @@
   },
   {
    "report": "layoff",
-   "Date": "2/15/2015",
+   "Date": "2/28/2015",
    "Company": "Alco Discount Store",
    "Type": "Closure",
-   "Jobs Affected": "13",
-   "City": "North Platte",
-   "Location": "North Platte"
+   "Jobs Affected": "16",
+   "City": "Albion",
+   "Location": "Albion"
   },
   {
    "report": "layoff",
@@ -7405,12 +7396,21 @@
   },
   {
    "report": "layoff",
-   "Date": "2/10/2015",
+   "Date": "2/15/2015",
    "Company": "Alco Discount Store",
    "Type": "Closure",
    "Jobs Affected": "13",
-   "City": "Broken Bow",
-   "Location": "Broken Bow"
+   "City": "North Platte",
+   "Location": "North Platte"
+  },
+  {
+   "report": "layoff",
+   "Date": "2/10/2015",
+   "Company": "Alco Discount Store",
+   "Type": "Closure",
+   "Jobs Affected": "11",
+   "City": "Ord",
+   "Location": "Ord"
   },
   {
    "report": "layoff",
@@ -7426,18 +7426,9 @@
    "Date": "2/10/2015",
    "Company": "Alco Discount Store",
    "Type": "Closure",
-   "Jobs Affected": "11",
-   "City": "Ord",
-   "Location": "Ord"
-  },
-  {
-   "report": "layoff",
-   "Date": "1/31/2015",
-   "Company": "Alco Discount Store",
-   "Type": "Closure",
-   "Jobs Affected": "15",
-   "City": "Gordon",
-   "Location": "Gordon"
+   "Jobs Affected": "13",
+   "City": "Broken Bow",
+   "Location": "Broken Bow"
   },
   {
    "report": "layoff",
@@ -7447,6 +7438,15 @@
    "Jobs Affected": "0",
    "City": "Imperial",
    "Location": "Imperial"
+  },
+  {
+   "report": "layoff",
+   "Date": "1/31/2015",
+   "Company": "Alco Discount Store",
+   "Type": "Closure",
+   "Jobs Affected": "15",
+   "City": "Gordon",
+   "Location": "Gordon"
   },
   {
    "report": "layoff",
@@ -7813,20 +7813,20 @@
   {
    "report": "layoff",
    "Date": "2/28/2014",
-   "Company": "B&D Office City",
-   "Type": "Closure",
-   "Jobs Affected": "4",
-   "City": "North Platte",
-   "Location": "North Platte"
-  },
-  {
-   "report": "layoff",
-   "Date": "2/28/2014",
    "Company": "Mallory USA, Inc.",
    "Type": "Closure",
    "Jobs Affected": "34",
    "City": "South Sioux City",
    "Location": "South Sioux City"
+  },
+  {
+   "report": "layoff",
+   "Date": "2/28/2014",
+   "Company": "B&D Office City",
+   "Type": "Closure",
+   "Jobs Affected": "4",
+   "City": "North Platte",
+   "Location": "North Platte"
   },
   {
    "report": "layoff",
@@ -7914,11 +7914,11 @@
   {
    "report": "layoff",
    "Date": "12/31/2013",
-   "Company": "Pacific Coast Feather Company",
-   "Type": "Closure",
-   "Jobs Affected": "117",
-   "City": "Wayne",
-   "Location": "Wayne"
+   "Company": "Lancaster County Community Mental Health Center",
+   "Type": "Layoff",
+   "Jobs Affected": "70",
+   "City": "Lincoln",
+   "Location": "Lincoln"
   },
   {
    "report": "layoff",
@@ -7932,11 +7932,11 @@
   {
    "report": "layoff",
    "Date": "12/31/2013",
-   "Company": "Lancaster County Community Mental Health Center",
-   "Type": "Layoff",
-   "Jobs Affected": "70",
-   "City": "Lincoln",
-   "Location": "Lincoln"
+   "Company": "Pacific Coast Feather Company",
+   "Type": "Closure",
+   "Jobs Affected": "117",
+   "City": "Wayne",
+   "Location": "Wayne"
   },
   {
    "report": "layoff",
@@ -8094,20 +8094,20 @@
   {
    "report": "layoff",
    "Date": "7/31/2013",
-   "Company": "Kayton International",
-   "Type": "Layoff",
-   "Jobs Affected": "10",
-   "City": "Norfolk",
-   "Location": "Norfolk"
-  },
-  {
-   "report": "layoff",
-   "Date": "7/31/2013",
    "Company": "Grede LLC",
    "Type": "Layoff",
    "Jobs Affected": "56",
    "City": "Omaha",
    "Location": "Omaha"
+  },
+  {
+   "report": "layoff",
+   "Date": "7/31/2013",
+   "Company": "Kayton International",
+   "Type": "Layoff",
+   "Jobs Affected": "10",
+   "City": "Norfolk",
+   "Location": "Norfolk"
   },
   {
    "report": "layoff",
@@ -8346,20 +8346,20 @@
   {
    "report": "layoff",
    "Date": "12/31/2012",
-   "Company": "Designer Blinds",
-   "Type": "Closure",
-   "Jobs Affected": "103",
-   "City": "Omaha",
-   "Location": "Omaha"
-  },
-  {
-   "report": "layoff",
-   "Date": "12/31/2012",
    "Company": "Katana Summit",
    "Type": "Closure",
    "Jobs Affected": "178",
    "City": "Columbus",
    "Location": "Columbus"
+  },
+  {
+   "report": "layoff",
+   "Date": "12/31/2012",
+   "Company": "Designer Blinds",
+   "Type": "Closure",
+   "Jobs Affected": "103",
+   "City": "Omaha",
+   "Location": "Omaha"
   },
   {
    "report": "layoff",
@@ -8384,18 +8384,9 @@
    "Date": "11/16/2012",
    "Company": "Hostess (International Brands Incorporated)",
    "Type": "Layoff",
-   "Jobs Affected": "3",
-   "City": "Norfolk",
-   "Location": "Norfolk"
-  },
-  {
-   "report": "layoff",
-   "Date": "11/16/2012",
-   "Company": "Hostess (International Brands Incorporated)",
-   "Type": "Layoff",
-   "Jobs Affected": "2",
+   "Jobs Affected": "15",
    "City": "Lincoln",
-   "Location": "Lincoln (48th Street)"
+   "Location": "Lincoln (Kimco)"
   },
   {
    "report": "layoff",
@@ -8403,8 +8394,8 @@
    "Company": "Hostess (International Brands Incorporated)",
    "Type": "Layoff",
    "Jobs Affected": "2",
-   "City": "Bellevue",
-   "Location": "Bellevue"
+   "City": "Omaha",
+   "Location": "Omaha (Plaza)"
   },
   {
    "report": "layoff",
@@ -8420,9 +8411,9 @@
    "Date": "11/16/2012",
    "Company": "Hostess (International Brands Incorporated)",
    "Type": "Layoff",
-   "Jobs Affected": "15",
-   "City": "Lincoln",
-   "Location": "Lincoln (Kimco)"
+   "Jobs Affected": "2",
+   "City": "Bellevue",
+   "Location": "Bellevue"
   },
   {
    "report": "layoff",
@@ -8430,8 +8421,17 @@
    "Company": "Hostess (International Brands Incorporated)",
    "Type": "Layoff",
    "Jobs Affected": "2",
-   "City": "Omaha",
-   "Location": "Omaha (Plaza)"
+   "City": "Lincoln",
+   "Location": "Lincoln (48th Street)"
+  },
+  {
+   "report": "layoff",
+   "Date": "11/16/2012",
+   "Company": "Hostess (International Brands Incorporated)",
+   "Type": "Layoff",
+   "Jobs Affected": "3",
+   "City": "Norfolk",
+   "Location": "Norfolk"
   },
   {
    "report": "layoff",
@@ -8679,20 +8679,20 @@
   {
    "report": "layoff",
    "Date": "2/29/2012",
-   "Company": "Rural Metro",
-   "Type": "Closure",
-   "Jobs Affected": "30",
-   "City": "Hastings",
-   "Location": "Rural Metro"
-  },
-  {
-   "report": "layoff",
-   "Date": "2/29/2012",
    "Company": "KVC Health Systems - Nebraska",
    "Type": "Layoff",
    "Jobs Affected": "490",
    "City": "Omaha",
    "Location": "KVC Health Systems - Nebraska"
+  },
+  {
+   "report": "layoff",
+   "Date": "2/29/2012",
+   "Company": "Rural Metro",
+   "Type": "Closure",
+   "Jobs Affected": "30",
+   "City": "Hastings",
+   "Location": "Rural Metro"
   },
   {
    "report": "layoff",
@@ -8906,20 +8906,20 @@
   {
    "report": "layoff",
    "Date": "8/31/2011",
-   "Company": "Intralot, Inc.",
-   "Type": "Closure",
-   "Jobs Affected": "20",
-   "City": "Lincoln",
-   "Location": "Intralot, Inc."
-  },
-  {
-   "report": "layoff",
-   "Date": "8/31/2011",
    "Company": "Connectivity Solutions Manufacturing",
    "Type": "Layoff",
    "Jobs Affected": "95",
    "City": "Omaha",
    "Location": "Omaha"
+  },
+  {
+   "report": "layoff",
+   "Date": "8/31/2011",
+   "Company": "Intralot, Inc.",
+   "Type": "Closure",
+   "Jobs Affected": "20",
+   "City": "Lincoln",
+   "Location": "Intralot, Inc."
   },
   {
    "report": "layoff",
@@ -9122,20 +9122,20 @@
   {
    "report": "layoff",
    "Date": "2/4/2011",
-   "Company": "Miller Brands of Omaha",
-   "Type": "Layoff",
-   "Jobs Affected": "50",
-   "City": "Omaha",
-   "Location": "Miller Brands of Omaha"
-  },
-  {
-   "report": "layoff",
-   "Date": "2/4/2011",
    "Company": "Boys & Girls Home of Nebraska",
    "Type": "Closure",
    "Jobs Affected": "16",
    "City": "North Platte",
    "Location": "Boys & Girls Home of Nebraska - North Platte"
+  },
+  {
+   "report": "layoff",
+   "Date": "2/4/2011",
+   "Company": "Miller Brands of Omaha",
+   "Type": "Layoff",
+   "Jobs Affected": "50",
+   "City": "Omaha",
+   "Location": "Miller Brands of Omaha"
   },
   {
    "report": "layoff",

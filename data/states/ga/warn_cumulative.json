@@ -1,9 +1,9 @@
 {
-  "total_records": 4744,
-  "total_employees": 607020,
+  "total_records": 4745,
+  "total_employees": 607077,
   "date_range_start": "1989-08-17",
-  "date_range_end": "2026-12-31",
-  "last_updated": "2026-11-09T03:45:45.129185+00:00",
+  "date_range_end": "2027-02-01",
+  "last_updated": "2026-11-09T21:58:06.080939+00:00",
   "source_url": "https://www.tcsg.edu/warn-public-view/",
   "records": [
     {
@@ -56932,6 +56932,18 @@
       "county": "Warren",
       "city": "",
       "address": "975 Thomson Hwy, Warrenton, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "H.B. Fuller",
+      "notice_date": null,
+      "effective_date": "2027-02-01",
+      "employees": 57,
+      "layoff_type": "Permanent Closure",
+      "county": "DeKalb",
+      "city": "",
+      "address": "2333 Fuller Way, Tucker, Georgia",
       "industry": ""
     }
   ]

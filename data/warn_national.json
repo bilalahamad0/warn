@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-11-09T03:57:52.022688+00:00",
+  "last_updated": "2026-11-09T22:10:09.634936+00:00",
   "states_live": 47,
-  "total_records": 60851,
-  "total_employees": 6547426,
+  "total_records": 60866,
+  "total_employees": 6548248,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -71,8 +71,8 @@
       "name": "Georgia",
       "agency": "Technical College System of Georgia, Office of Workforce Development",
       "source_url": "https://www.tcsg.edu/warn-public-view/",
-      "total_records": 4744,
-      "total_employees": 607020
+      "total_records": 4745,
+      "total_employees": 607077
     },
     "HI": {
       "name": "Hawaii",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1380,
-      "total_employees": 117244
+      "total_records": 1382,
+      "total_employees": 117253
     },
     "ME": {
       "name": "Maine",
@@ -225,15 +225,15 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 5368,
-      "total_employees": 435599
+      "total_records": 5376,
+      "total_employees": 435856
     },
     "OH": {
       "name": "Ohio",
       "agency": "Ohio Department of Job and Family Services",
       "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
-      "total_records": 1270,
-      "total_employees": 172780
+      "total_records": 1273,
+      "total_employees": 173206
     },
     "OK": {
       "name": "Oklahoma",
@@ -281,8 +281,8 @@
       "name": "Tennessee",
       "agency": "Tennessee Department of Labor and Workforce Development",
       "source_url": "https://www.tn.gov/workforce/general-resources/major-publications0/major-publications-redirect/reports.html",
-      "total_records": 1067,
-      "total_employees": 121733
+      "total_records": 1068,
+      "total_employees": 121806
     },
     "TX": {
       "name": "Texas",
@@ -262888,6 +262888,18 @@
       "industry": ""
     },
     {
+      "state": "GA",
+      "company": "H.B. Fuller",
+      "notice_date": null,
+      "effective_date": "2027-02-01",
+      "employees": 57,
+      "layoff_type": "Permanent Closure",
+      "county": "DeKalb",
+      "city": "",
+      "address": "2333 Fuller Way, Tucker, Georgia",
+      "industry": ""
+    },
+    {
       "state": "HI",
       "company": "Maui Seaside Hotel",
       "notice_date": "2019-01-16",
@@ -390944,6 +390956,30 @@
       "city": "",
       "address": "7779 New York Lane Glen Burnie, MD 21061",
       "industry": "531311"
+    },
+    {
+      "state": "MD",
+      "company": "Stearns Bank NA",
+      "notice_date": "2026-11-06",
+      "effective_date": "2026-11-05",
+      "employees": 1,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Statewide",
+      "city": "",
+      "address": "4191 2nd Street S St. Cloud, MN 56301",
+      "industry": "522110"
+    },
+    {
+      "state": "MD",
+      "company": "Apple Auto Mitsubishi",
+      "notice_date": "2026-11-01",
+      "effective_date": "2027-01-01",
+      "employees": 8,
+      "layoff_type": "Mass Layoff",
+      "county": "Susquehanna",
+      "city": "",
+      "address": "560 E. Pulaski Hwy Elkton, MD 21921",
+      "industry": "441110"
     },
     {
       "state": "ME",
@@ -523268,6 +523304,102 @@
     },
     {
       "state": "NY",
+      "company": "Cayuga Home for Children",
+      "notice_date": "2026-10-05",
+      "effective_date": "2027-01-04",
+      "employees": 34,
+      "layoff_type": "Closure Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "68 E 131 st Suite 605 & 705 New York, NY, 10037",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Cayuga Home for Children",
+      "notice_date": "2026-10-05",
+      "effective_date": "2027-01-04",
+      "employees": 4,
+      "layoff_type": "Closure Permanent",
+      "county": "Cayuga",
+      "city": "",
+      "address": "101 Hamilton Ave Auburn, NY, 13021",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "CPS 5 LLC",
+      "notice_date": "2026-10-14",
+      "effective_date": "2027-01-18",
+      "employees": 80,
+      "layoff_type": "Closure Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "770 5th Ave New York, NY, 10019",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "GU Markets, LLC.",
+      "notice_date": "2026-09-03",
+      "effective_date": "2026-12-05",
+      "employees": 19,
+      "layoff_type": "Closure Permanent",
+      "county": "Oneida",
+      "city": "",
+      "address": "87 East State St. Sherrill, NY, 13461",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "GU Markets, LLC.",
+      "notice_date": "2026-09-03",
+      "effective_date": "2026-12-05",
+      "employees": 27,
+      "layoff_type": "Closure Permanent",
+      "county": "Cortland",
+      "city": "",
+      "address": "3932 State Route 281 Cortland, NY, 13045",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Old Navy LLC",
+      "notice_date": "2026-10-19",
+      "effective_date": "2027-01-22",
+      "employees": 44,
+      "layoff_type": "Closure Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "610 6th Ave New York, NY, 10011",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "S.S. Delivery Systems LLC",
+      "notice_date": "2026-02-26",
+      "effective_date": "2026-03-31",
+      "employees": 4,
+      "layoff_type": "Closure Permanent",
+      "county": "Monroe",
+      "city": "",
+      "address": "103 Canal Landing Blvd. Suite 11 Rochester, NY, 14626",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "S.S. Delivery Systems LLC",
+      "notice_date": "2026-02-26",
+      "effective_date": "2026-03-31",
+      "employees": 45,
+      "layoff_type": "Closure Permanent",
+      "county": "Monroe",
+      "city": "",
+      "address": "1200 Lexington Avenue Rochester, NY, 14615",
+      "industry": ""
+    },
+    {
+      "state": "NY",
       "company": "Cardionet, LLC. an affiliate of Philips North America, LLC.",
       "notice_date": "2025-04-01",
       "effective_date": "2025-06-30",
@@ -541371,6 +541503,42 @@
       "layoff_type": "Closure",
       "county": "Wood",
       "city": "Northwood",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "CEVA Supply Chain",
+      "notice_date": "2026-11-09",
+      "effective_date": null,
+      "employees": 120,
+      "layoff_type": "Layoff",
+      "county": "Franklin",
+      "city": "Lockbourne",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Faurecia Clean Mobility",
+      "notice_date": "2026-11-06",
+      "effective_date": null,
+      "employees": 180,
+      "layoff_type": "Closure",
+      "county": "Warren",
+      "city": "Franklin",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "National Distribution Centers",
+      "notice_date": "2026-11-05",
+      "effective_date": null,
+      "employees": 126,
+      "layoff_type": "Layoff",
+      "county": "Franklin",
+      "city": "Groveport",
       "address": "",
       "industry": ""
     },
@@ -588208,6 +588376,18 @@
       "employees": 52,
       "layoff_type": "",
       "county": "Wilson",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "TN",
+      "company": "Tsubaki Nakashima",
+      "notice_date": "2026-11-09",
+      "effective_date": "2027-12-17",
+      "employees": 73,
+      "layoff_type": "",
+      "county": "Johnson",
       "city": "",
       "address": "",
       "industry": ""

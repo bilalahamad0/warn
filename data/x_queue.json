@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-09T03:59:02.150432+00:00",
+  "updated_at": "2026-11-09T22:10:53.542108+00:00",
   "candidates": [
     {
       "id": "5e3bb4bb017c",
@@ -1018,7 +1018,7 @@
     {
       "id": "7a18493f0ba5",
       "created_at": "2026-11-02T21:26:21.034261+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "GEICO",
       "display": "GEICO",
       "employees": 114,
@@ -1054,7 +1054,7 @@
     {
       "id": "51828d01c901",
       "created_at": "2026-11-02T21:26:21.034313+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Jabil",
       "display": "Jabil",
       "employees": 94,
@@ -1090,7 +1090,7 @@
     {
       "id": "8f4faf7ebbc4",
       "created_at": "2026-11-02T21:26:21.034340+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "JPMorgan Chase",
       "display": "JPMorgan Chase",
       "employees": 91,
@@ -1126,7 +1126,7 @@
     {
       "id": "8d7913f9cfff",
       "created_at": "2026-11-02T21:26:21.034363+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Niagara Bottling",
       "display": "Niagara Bottling",
       "employees": 57,

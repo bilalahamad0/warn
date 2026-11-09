@@ -1,11 +1,47 @@
 {
-  "total_records": 816,
-  "total_employees": 119974,
+  "total_records": 819,
+  "total_employees": 120400,
   "date_range_start": "2017-01-09",
-  "date_range_end": "2026-10-29",
-  "last_updated": "2026-11-09T03:54:31.674701+00:00",
+  "date_range_end": "2026-11-09",
+  "last_updated": "2026-11-09T22:06:53.832879+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
+    {
+      "state": "OH",
+      "company": "CEVA Supply Chain",
+      "notice_date": "2026-11-09",
+      "effective_date": null,
+      "employees": 120,
+      "layoff_type": "Layoff",
+      "county": "Franklin",
+      "city": "Lockbourne",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Faurecia Clean Mobility",
+      "notice_date": "2026-11-06",
+      "effective_date": null,
+      "employees": 180,
+      "layoff_type": "Closure",
+      "county": "Warren",
+      "city": "Franklin",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "National Distribution Centers",
+      "notice_date": "2026-11-05",
+      "effective_date": null,
+      "employees": 126,
+      "layoff_type": "Layoff",
+      "county": "Franklin",
+      "city": "Groveport",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "OH",
       "company": "Endeavors",
