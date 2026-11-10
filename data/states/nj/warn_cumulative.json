@@ -1,9 +1,9 @@
 {
-  "total_records": 2365,
-  "total_employees": 355322,
+  "total_records": 2367,
+  "total_employees": 355411,
   "date_range_start": "2004-02-24",
   "date_range_end": "2027-04-01",
-  "last_updated": "2026-11-10T05:25:41.935274+00:00",
+  "last_updated": "2026-11-10T19:24:54.127934+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -28383,6 +28383,30 @@
       "layoff_type": "",
       "county": "",
       "city": "Atlantic, Bergen, Camden, Essex, Gloucester, Hudson, Mercer, Middlesex, Monmouth, Morris, Ocean, Passaic, Somerset, Union",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "AT&T",
+      "notice_date": null,
+      "effective_date": "2027-01-31",
+      "employees": 50,
+      "layoff_type": "",
+      "county": "",
+      "city": "Monmouth and Somerset Counties",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "UBS",
+      "notice_date": null,
+      "effective_date": "2027-02-02",
+      "employees": 39,
+      "layoff_type": "",
+      "county": "",
+      "city": "Weehawken",
       "address": "",
       "industry": ""
     }

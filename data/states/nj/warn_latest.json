@@ -1,9 +1,9 @@
 {
-  "total_records": 2391,
-  "total_employees": 357833,
+  "total_records": 2393,
+  "total_employees": 357922,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-11-10T05:25:41.915160+00:00",
+  "last_updated": "2026-11-10T19:24:54.111319+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -1448,6 +1448,18 @@
     },
     {
       "state": "NJ",
+      "company": "AT&T",
+      "notice_date": null,
+      "effective_date": "2027-01-31",
+      "employees": 50,
+      "layoff_type": "",
+      "county": "",
+      "city": "Monmouth and Somerset Counties",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
       "company": "The Children's Place",
       "notice_date": null,
       "effective_date": "2027-02-04",
@@ -1455,6 +1467,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Atlantic, Bergen, Camden, Essex, Gloucester, Hudson, Mercer, Middlesex, Monmouth, Morris, Ocean, Passaic, Somerset, Union",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "UBS",
+      "notice_date": null,
+      "effective_date": "2027-02-02",
+      "employees": 39,
+      "layoff_type": "",
+      "county": "",
+      "city": "Weehawken",
       "address": "",
       "industry": ""
     },

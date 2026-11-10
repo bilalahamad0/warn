@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-10T05:29:56.643583+00:00",
+  "updated_at": "2026-11-10T19:32:13.207966+00:00",
   "candidates": [
     {
       "id": "5e3bb4bb017c",
@@ -1198,7 +1198,7 @@
     {
       "id": "c3c1871d3c3e",
       "created_at": "2026-11-03T19:26:39.629073+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "aeg management oakland",
       "display": "AEG Management Oakland LLC",
       "employees": 1605,
@@ -1234,7 +1234,7 @@
     {
       "id": "3d6da046d6f6",
       "created_at": "2026-11-03T19:26:39.629117+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "davey tree surgery",
       "display": "Davey Tree Surgery",
       "employees": 368,
@@ -1279,7 +1279,7 @@
     {
       "id": "b06803ecd18e",
       "created_at": "2026-11-03T19:26:39.629141+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Danone",
       "display": "Danone",
       "employees": 135,
@@ -1315,7 +1315,7 @@
     {
       "id": "68082ca57159",
       "created_at": "2026-11-03T19:26:39.629161+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Amazon",
       "display": "Amazon",
       "employees": 95,
@@ -1351,7 +1351,7 @@
     {
       "id": "5bd3deb2ded5",
       "created_at": "2026-11-03T19:26:39.629179+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Chick-fil-A",
       "display": "Chick-fil-A",
       "employees": 87,
@@ -1387,7 +1387,7 @@
     {
       "id": "6e4b05e4675c",
       "created_at": "2026-11-03T19:26:39.629196+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Comcast",
       "display": "Comcast",
       "employees": 82,
@@ -1810,6 +1810,78 @@
       "warnings": [],
       "keys": [
         "IL:Ferrara Candy Company__None__154"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "95a1d38a24cb",
+      "created_at": "2026-11-10T19:32:13.207920+00:00",
+      "status": "pending",
+      "company": "ojai valley inn",
+      "display": "Ojai Valley Inn",
+      "employees": 751,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 751
+      },
+      "sites": 1,
+      "card": {
+        "place": "Ventura County, CA",
+        "effective": "Jan 4, 2027",
+        "employees": 751
+      },
+      "arm": "size",
+      "reason": "751 >= 250",
+      "text": "Ojai Valley Inn filed a WARN notice for 751 job cuts in Ventura County, CA.\n\nEffective Jan 4, 2027.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 121,
+      "warnings": [],
+      "keys": [
+        "CA:Ojai Valley Inn__2027-01-04__751"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "2dac9b74d29d",
+      "created_at": "2026-11-10T19:32:13.207956+00:00",
+      "status": "pending",
+      "company": "AT&T",
+      "display": "AT&T",
+      "employees": 50,
+      "states": [
+        "NJ"
+      ],
+      "per_state": {
+        "NJ": 50
+      },
+      "sites": 1,
+      "card": {
+        "place": "Monmouth and Somerset Counties, NJ",
+        "effective": "Jan 31, 2027",
+        "employees": 50
+      },
+      "arm": "brand",
+      "reason": "known brand, 50 >= 50",
+      "text": "AT&T filed a WARN notice for 50 job cuts in Monmouth and Somerset Counties, NJ.\n\nEffective Jan 31, 2027.\n\n#layoffs #NewJersey",
+      "thread": [],
+      "weighted_len": 125,
+      "warnings": [],
+      "keys": [
+        "NJ:AT&T__2027-01-31__50"
       ],
       "approved_by": null,
       "approved_at": null,

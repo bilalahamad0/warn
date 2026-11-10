@@ -1,9 +1,9 @@
 {
-  "total_records": 4768,
-  "total_employees": 608272,
+  "total_records": 4769,
+  "total_employees": 608338,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-11-10T05:17:41.280010+00:00",
+  "last_updated": "2026-11-10T19:16:05.179258+00:00",
   "source_url": "https://www.tcsg.edu/warn-public-view/",
   "records": [
     {
@@ -3496,6 +3496,18 @@
       "county": "DeKalb",
       "city": "",
       "address": "2333 Fuller Way, Tucker, Georgia",
+      "industry": ""
+    },
+    {
+      "state": "GA",
+      "company": "Mueller Water Products",
+      "notice_date": null,
+      "effective_date": "2027-01-03",
+      "employees": 66,
+      "layoff_type": "Permanent Layoff / Reduction in Force",
+      "county": "Fulton",
+      "city": "",
+      "address": "1200 Abernathy Rd NE, Atlanta, Georgia",
       "industry": ""
     },
     {

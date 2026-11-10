@@ -1937,5 +1937,15 @@
   "Launchpad__Notice_Date__c": "2026-10-22",
   "Select_Local_Workforce_Board__c": "Central",
   "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00000z3MDlEAM",
+  "OESC_Employer_Name__c": "Dayton Parts, LLC dba Dorman Products",
+  "OESC_Employer_City__c": "Durant",
+  "OESC_Employer_Zip_Code__c": "74701",
+  "Launchpad__Layoff_Closure_Type__c": "Mass Layoff",
+  "Launchpad__Notice_Date__c": "2026-11-09",
+  "Select_Local_Workforce_Board__c": "Southern",
+  "RecordTypeId": "012cs000001OucAAAS"
  }
 ]
