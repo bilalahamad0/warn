@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-11-09T22:10:09.634936+00:00",
+  "last_updated": "2026-11-10T05:29:18.555434+00:00",
   "states_live": 47,
-  "total_records": 60866,
-  "total_employees": 6548248,
+  "total_records": 60867,
+  "total_employees": 6548402,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -99,8 +99,8 @@
       "name": "Illinois",
       "agency": "Illinois Department of Commerce and Economic Opportunity",
       "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
-      "total_records": 4896,
-      "total_employees": 676350
+      "total_records": 4897,
+      "total_employees": 676504
     },
     "IN": {
       "name": "Indiana",
@@ -340888,6 +340888,18 @@
       "industry": "Health Care and Social Assistance"
     },
     {
+      "state": "IL",
+      "company": "Ferrara Candy Company",
+      "notice_date": "2026-11-09",
+      "effective_date": null,
+      "employees": 154,
+      "layoff_type": "Plant Closure",
+      "county": "Cook County",
+      "city": "Chicago",
+      "address": "2945 W 31ST St",
+      "industry": "Manufacturing"
+    },
+    {
       "state": "IN",
       "company": "Thyssenkrupp Presta North America",
       "notice_date": "2026-06-30",
@@ -651303,7 +651315,7 @@
       "state": "VA",
       "company": "Haynes Furniture Company Inc.",
       "notice_date": "2026-10-30",
-      "effective_date": "2026-11-09",
+      "effective_date": "2026-11-10",
       "employees": 83,
       "layoff_type": "Closure",
       "county": "",

@@ -1,11 +1,23 @@
 {
-  "total_records": 1428,
-  "total_employees": 118365,
+  "total_records": 1430,
+  "total_employees": 118374,
   "date_range_start": "2010-01-07",
-  "date_range_end": "2026-11-03",
-  "last_updated": "2026-11-09T03:50:37.940045+00:00",
+  "date_range_end": "2026-11-06",
+  "last_updated": "2026-11-09T22:03:04.315990+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
+    {
+      "state": "MD",
+      "company": "Stearns Bank NA",
+      "notice_date": "2026-11-06",
+      "effective_date": "2026-11-05",
+      "employees": 1,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Statewide",
+      "city": "",
+      "address": "4191 2nd Street S St. Cloud, MN 56301",
+      "industry": "522110"
+    },
     {
       "state": "MD",
       "company": "A&G Management Company, Inc.",
@@ -29,6 +41,18 @@
       "city": "",
       "address": "11 Easter Court, Ste A-E Owings Mills, MD 21117",
       "industry": "314999"
+    },
+    {
+      "state": "MD",
+      "company": "Apple Auto Mitsubishi",
+      "notice_date": "2026-11-01",
+      "effective_date": "2027-01-01",
+      "employees": 8,
+      "layoff_type": "Mass Layoff",
+      "county": "Susquehanna",
+      "city": "",
+      "address": "560 E. Pulaski Hwy Elkton, MD 21921",
+      "industry": "441110"
     },
     {
       "state": "MD",

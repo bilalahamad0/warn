@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-09T22:10:53.542108+00:00",
+  "updated_at": "2026-11-10T05:29:56.643583+00:00",
   "candidates": [
     {
       "id": "5e3bb4bb017c",
@@ -1162,7 +1162,7 @@
     {
       "id": "a3e591327795",
       "created_at": "2026-11-03T04:55:34.531363+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Alaska Airlines",
       "display": "Alaska Airlines",
       "employees": 121,
@@ -1774,6 +1774,42 @@
       "warnings": [],
       "keys": [
         "NJ:The Children's Place__2027-02-04__732"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "d4dc546c9d0a",
+      "created_at": "2026-11-10T05:29:56.643570+00:00",
+      "status": "pending",
+      "company": "Ferrara Candy",
+      "display": "Ferrara Candy",
+      "employees": 154,
+      "states": [
+        "IL"
+      ],
+      "per_state": {
+        "IL": 154
+      },
+      "sites": 1,
+      "card": {
+        "place": "Chicago, Cook County, IL",
+        "effective": null,
+        "employees": 154
+      },
+      "arm": "brand",
+      "reason": "known brand, 154 >= 50",
+      "text": "Ferrara Candy filed a WARN notice for 154 job cuts in Chicago, Cook County, IL.\n\nEffective date not reported.\n\n#layoffs #Illinois",
+      "thread": [],
+      "weighted_len": 129,
+      "warnings": [],
+      "keys": [
+        "IL:Ferrara Candy Company__None__154"
       ],
       "approved_by": null,
       "approved_at": null,

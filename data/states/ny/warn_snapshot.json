@@ -1,9 +1,9 @@
 {
-  "total_records": 217,
-  "total_employees": 13037,
+  "total_records": 225,
+  "total_employees": 13294,
   "date_range_start": "2026-01-06",
-  "date_range_end": "2026-10-02",
-  "last_updated": "2026-11-09T03:54:29.188645+00:00",
+  "date_range_end": "2026-10-19",
+  "last_updated": "2026-11-09T22:06:51.014923+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -369,6 +369,18 @@
     {
       "state": "NY",
       "company": "Cayuga Home for Children",
+      "notice_date": "2026-10-05",
+      "effective_date": "2027-01-04",
+      "employees": 34,
+      "layoff_type": "Closure Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "68 E 131 st Suite 605 & 705 New York, NY, 10037",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Cayuga Home for Children",
       "notice_date": "2026-04-01",
       "effective_date": "2026-06-30",
       "employees": 14,
@@ -376,6 +388,18 @@
       "county": "Cayuga",
       "city": "",
       "address": "101 Hamilton Auburn, NY, 13021",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Cayuga Home for Children",
+      "notice_date": "2026-10-05",
+      "effective_date": "2027-01-04",
+      "employees": 4,
+      "layoff_type": "Closure Permanent",
+      "county": "Cayuga",
+      "city": "",
+      "address": "101 Hamilton Ave Auburn, NY, 13021",
       "industry": ""
     },
     {
@@ -472,6 +496,18 @@
       "county": "Delaware",
       "city": "",
       "address": "454 Delhi Drive Delhi, NY, 13753",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "CPS 5 LLC",
+      "notice_date": "2026-10-14",
+      "effective_date": "2027-01-18",
+      "employees": 80,
+      "layoff_type": "Closure Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "770 5th Ave New York, NY, 10019",
       "industry": ""
     },
     {
@@ -760,6 +796,30 @@
       "county": "New York",
       "city": "",
       "address": "686 Broadway New York, NY, 10012",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "GU Markets, LLC.",
+      "notice_date": "2026-09-03",
+      "effective_date": "2026-12-05",
+      "employees": 19,
+      "layoff_type": "Closure Permanent",
+      "county": "Oneida",
+      "city": "",
+      "address": "87 East State St. Sherrill, NY, 13461",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "GU Markets, LLC.",
+      "notice_date": "2026-09-03",
+      "effective_date": "2026-12-05",
+      "employees": 27,
+      "layoff_type": "Closure Permanent",
+      "county": "Cortland",
+      "city": "",
+      "address": "3932 State Route 281 Cortland, NY, 13045",
       "industry": ""
     },
     {
@@ -1892,6 +1952,18 @@
     },
     {
       "state": "NY",
+      "company": "Old Navy LLC",
+      "notice_date": "2026-10-19",
+      "effective_date": "2027-01-22",
+      "employees": 44,
+      "layoff_type": "Closure Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "610 6th Ave New York, NY, 10011",
+      "industry": ""
+    },
+    {
+      "state": "NY",
       "company": "One Moment Logistics Inc.",
       "notice_date": "2026-07-07",
       "effective_date": "2026-07-17",
@@ -2152,6 +2224,30 @@
       "county": "Bronx",
       "city": "",
       "address": "4433 Third Avenue Bronx, NY, 10457",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "S.S. Delivery Systems LLC",
+      "notice_date": "2026-02-26",
+      "effective_date": "2026-03-31",
+      "employees": 4,
+      "layoff_type": "Closure Permanent",
+      "county": "Monroe",
+      "city": "",
+      "address": "103 Canal Landing Blvd. Suite 11 Rochester, NY, 14626",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "S.S. Delivery Systems LLC",
+      "notice_date": "2026-02-26",
+      "effective_date": "2026-03-31",
+      "employees": 45,
+      "layoff_type": "Closure Permanent",
+      "county": "Monroe",
+      "city": "",
+      "address": "1200 Lexington Avenue Rochester, NY, 14615",
       "industry": ""
     },
     {
