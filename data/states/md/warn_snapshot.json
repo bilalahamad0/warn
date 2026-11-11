@@ -1,11 +1,23 @@
 {
-  "total_records": 1430,
-  "total_employees": 118374,
+  "total_records": 1431,
+  "total_employees": 118557,
   "date_range_start": "2010-01-07",
   "date_range_end": "2026-11-06",
-  "last_updated": "2026-11-10T19:21:06.094121+00:00",
+  "last_updated": "2026-11-11T03:56:11.484004+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
+    {
+      "state": "MD",
+      "company": "The Container Store, Inc.",
+      "notice_date": "2026-11-06",
+      "effective_date": "2027-01-15",
+      "employees": 183,
+      "layoff_type": "Plant Closure",
+      "county": "Susquehanna",
+      "city": "",
+      "address": "1000 Woodley Road Aberdeen, MD 21001",
+      "industry": "455219"
+    },
     {
       "state": "MD",
       "company": "Stearns Bank NA",

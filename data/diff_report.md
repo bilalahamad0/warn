@@ -1,41 +1,16 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-11-11 04:03:22 UTC
+**Generated:** 2026-11-11 19:25:09 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
 
 | Metric | Snapshot | Latest | Δ |
 |--------|----------|--------|---|
-| Total records | 464 | 36 | +0/+425 |
-| Total employees | 28,489 | 2,560 | -25,929 |
+| Total records | 36 | 36 | +0/+0 |
+| Total employees | 2,560 | 2,560 | +0 |
 
 ### ✅ No new entries.
-
-### ❌ Removed Entries (425 records)
-
-| Company | Employees | Effective Date |
-|---------|-----------|----------------|
-| AEG Management Oakland LLC | 1,605 | 2026-12-31 |
-| Covenant Aviation Security, LLC | 1,279 | 2026-11-30 |
-| Dreyer's Grand Ice Cream | 1,095 | 2026-12-19 |
-| 24Hr Homecare | 875 | 2026-12-17 |
-| Ojai Valley Inn | 751 | 2027-01-04 |
-| 24Hr Homecare, LLC | 738 | 2026-09-15 |
-| Fender Musical Instruments Corporation | 533 | 2026-12-14 |
-| Dreyer's Grand Ice Cream | 448 | 2026-12-19 |
-| Randstad Inhouse Services, LLC (Dreyer's) | 426 | 2026-11-19 |
-| Jabil Inc. | 382 | 2026-11-23 |
-| Visa | 320 | 2026-10-01 |
-| Oracle America, Inc. | 279 | 2026-11-13 |
-| Netflix, Inc. | 267 | 2026-09-14 |
-| PayPal | 251 | 2026-10-30 |
-| eBay Inc. | 229 | 2026-10-21 |
-| Netflix, Inc. | 227 | 2026-09-14 |
-| Dreyer's Grand Ice Cream | 221 | 2026-11-19 |
-| IPS Nationwide, Inc. | 212 | 2026-11-17 |
-| Myers Power Products, Inc. | 206 | 2026-12-15 |
-| LeeMAH Electronics | 205 | 2026-10-16 |
 
 ---
 ## 📁 File vs Git Comparison
@@ -48,10 +23,12 @@
 ```
 M data/changelog.jsonl
  M data/states/ak/changelog.jsonl
+ M data/states/ak/meta.json
  M data/states/ak/warn_cumulative.json
  M data/states/ak/warn_latest.json
  M data/states/ak/warn_snapshot.json
  M data/states/al/changelog.jsonl
+ M data/states/al/raw_download
  M data/states/al/warn_cumulative.json
  M data/states/al/warn_latest.json
  M data/states/al/warn_snapshot.json
@@ -110,7 +87,6 @@ M data/changelog.jsonl
  M data/states/in/warn_snapshot.json
  M data/states/ks/changelog.jsonl
  M data/states/ks/meta.json
- M data/states/ks/raw_download
  M data/states/ks/warn_cumulative.json
  M data/states/ks/warn_latest.json
  M data/states/ks/warn_snapshot.json
@@ -168,6 +144,7 @@ M data/changelog.jsonl
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
+ M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
@@ -183,7 +160,6 @@ M data/changelog.jsonl
  M data/states/nm/warn_snapshot.json
  M data/states/ny/changelog.jsonl
  M data/states/ny/meta.json
- M data/states/ny/raw_download
  M data/states/ny/warn_cumulative.json
  M data/states/ny/warn_latest.json
  M data/states/ny/warn_snapshot.json
@@ -233,7 +209,6 @@ M data/changelog.jsonl
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
- M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -264,16 +239,17 @@ M data/changelog.jsonl
 
 **Recent commits:**
 ```
+54dacd4f3 auto: WARN data update [skip ci]
 a4dca5fda auto: WARN data update [skip ci]
 be4c9bbea auto: WARN data update [skip ci]
 89d835b36 auto: WARN data update [skip ci]
 94e2e5878 auto: WARN data update [skip ci]
-dfbf92b2a auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-11-11T19:09:38.945140+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-11-11T03:48:37.394496+00:00` — +0 added, -428 removed, 0 employees (new)
 - `2026-11-10T19:12:06.480244+00:00` — +22 added, -0 removed, 1,404 employees (new)
 - `2026-11-10T05:14:22.474396+00:00` — +0 added, -0 removed, 0 employees (new)
@@ -283,4 +259,3 @@ dfbf92b2a auto: WARN data update [skip ci]
 - `2026-11-08T03:20:26.890702+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-11-07T17:18:21.036301+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-11-07T03:49:05.381927+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-11-06T18:50:50.769257+00:00` — +0 added, -407 removed, 0 employees (new)

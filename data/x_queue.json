@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-11T04:04:25.837197+00:00",
+  "updated_at": "2026-11-11T19:26:01.261132+00:00",
   "candidates": [
     {
       "id": "5e3bb4bb017c",
@@ -1423,7 +1423,7 @@
     {
       "id": "175431d419a5",
       "created_at": "2026-11-04T04:13:21.073785+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "medline industries",
       "display": "Medline Industries, LP",
       "employees": 304,
@@ -1918,6 +1918,42 @@
       "warnings": [],
       "keys": [
         "NY:Health Research Inc.__2026-12-24__760"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "faebba0e2be6",
+      "created_at": "2026-11-11T19:26:01.261108+00:00",
+      "status": "pending",
+      "company": "childrens place distribution",
+      "display": "Children's Place Distribution",
+      "employees": 593,
+      "states": [
+        "AL"
+      ],
+      "per_state": {
+        "AL": 593
+      },
+      "sites": 1,
+      "card": {
+        "place": "Fort Payne, AL",
+        "effective": "Jan 5, 2027",
+        "employees": 593
+      },
+      "arm": "size",
+      "reason": "593 >= 250",
+      "text": "Children's Place Distribution filed a WARN notice for 593 job cuts in Fort Payne, AL.\n\nEffective Jan 5, 2027.\n\n#layoffs #Alabama",
+      "thread": [],
+      "weighted_len": 128,
+      "warnings": [],
+      "keys": [
+        "AL:Children's Place Distribution__2027-01-05__593"
       ],
       "approved_by": null,
       "approved_at": null,
