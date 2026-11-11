@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-10T19:32:13.207966+00:00",
+  "updated_at": "2026-11-11T04:04:25.837197+00:00",
   "candidates": [
     {
       "id": "5e3bb4bb017c",
@@ -1882,6 +1882,42 @@
       "warnings": [],
       "keys": [
         "NJ:AT&T__2027-01-31__50"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "4c01fcde0c6e",
+      "created_at": "2026-11-11T04:04:25.837167+00:00",
+      "status": "pending",
+      "company": "health research",
+      "display": "Health Research Inc.",
+      "employees": 760,
+      "states": [
+        "NY"
+      ],
+      "per_state": {
+        "NY": 760
+      },
+      "sites": 1,
+      "card": {
+        "place": "Erie, NY",
+        "effective": "Dec 24, 2026",
+        "employees": 760
+      },
+      "arm": "size",
+      "reason": "760 >= 250",
+      "text": "Health Research Inc. filed a WARN notice for 760 job cuts in Erie, NY.\n\nEffective Dec 24, 2026.\n\n#layoffs #NewYork",
+      "thread": [],
+      "weighted_len": 114,
+      "warnings": [],
+      "keys": [
+        "NY:Health Research Inc.__2026-12-24__760"
       ],
       "approved_by": null,
       "approved_at": null,

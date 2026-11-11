@@ -1,17 +1,5 @@
 [
  {
-  "employer": "Boston Heart Diagnostics Corporation",
-  "city": "Lenexa",
-  "zip": "66219",
-  "lwib_area": "3 - Workforce Partnership",
-  "notice_date": "Nov 05, 2026",
-  "warn_type": "WARN",
-  "record_number": "2315",
-  "detail_page_url": "https://www.kansasworks.com/search/warn_lookups/2315",
-  "number_of_employees_affected": "68",
-  "address": "18000 W. 99th Street, Suite 200; Lenexa, Kansas 66219"
- },
- {
   "employer": "Family Endeavors, Inc.",
   "city": "San Antonio",
   "zip": "78249",

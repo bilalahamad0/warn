@@ -1,9 +1,9 @@
 {
-  "total_records": 4827,
-  "total_employees": 420927,
+  "total_records": 4829,
+  "total_employees": 421736,
   "date_range_start": "2016-01-04",
-  "date_range_end": "2026-10-19",
-  "last_updated": "2026-11-10T19:25:11.385495+00:00",
+  "date_range_end": "2026-10-23",
+  "last_updated": "2026-11-11T04:00:00.562690+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -57928,6 +57928,30 @@
       "county": "Monroe",
       "city": "",
       "address": "1200 Lexington Avenue Rochester, NY, 14615",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Conduent State & Local Solutions, Inc.",
+      "notice_date": "2026-10-23",
+      "effective_date": "2027-01-21",
+      "employees": 49,
+      "layoff_type": "Closure Permanent",
+      "county": "Broome",
+      "city": "",
+      "address": "15 Oak Hill Avenue Endicott, NY, 13760",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Health Research Inc.",
+      "notice_date": "2026-09-24",
+      "effective_date": "2026-12-24",
+      "employees": 760,
+      "layoff_type": "Closure Permanent",
+      "county": "Erie",
+      "city": "",
+      "address": "Elm & Carlton Sts Buffalo, NY, 14263",
       "industry": ""
     }
   ]

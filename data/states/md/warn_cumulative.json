@@ -1,9 +1,9 @@
 {
-  "total_records": 1382,
-  "total_employees": 117253,
+  "total_records": 1383,
+  "total_employees": 117436,
   "date_range_start": "2010-01-07",
   "date_range_end": "2026-11-06",
-  "last_updated": "2026-11-10T19:21:06.102983+00:00",
+  "last_updated": "2026-11-11T03:56:11.498500+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -16589,6 +16589,18 @@
       "city": "",
       "address": "560 E. Pulaski Hwy Elkton, MD 21921",
       "industry": "441110"
+    },
+    {
+      "state": "MD",
+      "company": "The Container Store, Inc.",
+      "notice_date": "2026-11-06",
+      "effective_date": "2027-01-15",
+      "employees": 183,
+      "layoff_type": "Plant Closure",
+      "county": "Susquehanna",
+      "city": "",
+      "address": "1000 Woodley Road Aberdeen, MD 21001",
+      "industry": "455219"
     }
   ]
 }

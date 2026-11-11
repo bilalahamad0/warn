@@ -1,9 +1,9 @@
 {
-  "total_records": 221,
+  "total_records": 222,
   "total_employees": 0,
   "date_range_start": "2001-03-21",
-  "date_range_end": "2026-10-22",
-  "last_updated": "2026-11-10T05:26:05.592899+00:00",
+  "date_range_end": "2026-11-09",
+  "last_updated": "2026-11-10T19:25:16.856608+00:00",
   "source_url": "https://www.employoklahoma.gov/Participants/s/warnnotices",
   "records": [
     {
@@ -2655,6 +2655,18 @@
       "layoff_type": "Mass Layoff",
       "county": "",
       "city": "NASHVILLE",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OK",
+      "company": "Dayton Parts, LLC dba Dorman Products",
+      "notice_date": "2026-11-09",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Mass Layoff",
+      "county": "",
+      "city": "Durant",
       "address": "",
       "industry": ""
     }

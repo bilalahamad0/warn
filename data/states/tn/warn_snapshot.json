@@ -1,11 +1,23 @@
 {
-  "total_records": 102,
-  "total_employees": 15511,
+  "total_records": 103,
+  "total_employees": 15584,
   "date_range_start": "2025-01-21",
-  "date_range_end": "2026-11-03",
-  "last_updated": "2026-11-07T17:30:57.879106+00:00",
+  "date_range_end": "2026-11-09",
+  "last_updated": "2026-11-09T22:07:13.991969+00:00",
   "source_url": "https://www.tn.gov/workforce/general-resources/major-publications0/major-publications-redirect/reports.html",
   "records": [
+    {
+      "state": "TN",
+      "company": "Tsubaki Nakashima",
+      "notice_date": "2026-11-09",
+      "effective_date": "2027-12-17",
+      "employees": 73,
+      "layoff_type": "",
+      "county": "Johnson",
+      "city": "",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "TN",
       "company": "Del Mar Medical",
