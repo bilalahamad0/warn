@@ -1,9 +1,9 @@
 {
-  "total_records": 384,
-  "total_employees": 35808,
+  "total_records": 385,
+  "total_employees": 35878,
   "date_range_start": "2022-01-25",
-  "date_range_end": "2026-10-23",
-  "last_updated": "2026-11-11T19:20:50.325159+00:00",
+  "date_range_end": "2026-11-10",
+  "last_updated": "2026-11-12T05:06:43.161868+00:00",
   "source_url": "https://www.commerce.nc.gov/data-tools-reports/labor-market-data-tools/workforce-warn-reports",
   "records": [
     {
@@ -4612,6 +4612,18 @@
       "county": "Buncombe",
       "city": "Asheville",
       "address": "275 Aiken Road",
+      "industry": ""
+    },
+    {
+      "state": "NC",
+      "company": "Mueller Systems, LLC",
+      "notice_date": "2026-11-10",
+      "effective_date": "2028-03-31",
+      "employees": 70,
+      "layoff_type": "Closure Permanent",
+      "county": "Rowan",
+      "city": "Cleveland",
+      "address": "10210 Statesville Blvd.",
       "industry": ""
     }
   ]

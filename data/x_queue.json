@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-11T19:26:01.261132+00:00",
+  "updated_at": "2026-11-12T05:12:00.791843+00:00",
   "candidates": [
     {
       "id": "5e3bb4bb017c",
@@ -1459,7 +1459,7 @@
     {
       "id": "0dbc98637d36",
       "created_at": "2026-11-04T19:27:26.685975+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "allstaff group",
       "display": "The Allstaff Group",
       "employees": 659,
@@ -1495,7 +1495,7 @@
     {
       "id": "f1088a702b22",
       "created_at": "2026-11-04T19:27:26.686007+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "northpointe bank",
       "display": "Northpointe Bank",
       "employees": 338,
@@ -1531,7 +1531,7 @@
     {
       "id": "89d52c81f47d",
       "created_at": "2026-11-05T04:32:22.119107+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "General Dynamics",
       "display": "General Dynamics",
       "employees": 153,
@@ -1567,7 +1567,7 @@
     {
       "id": "d594a47d7373",
       "created_at": "2026-11-05T04:32:22.119173+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Marriott",
       "display": "Marriott",
       "employees": 91,
