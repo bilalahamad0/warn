@@ -1,9 +1,9 @@
 {
-  "total_records": 228,
-  "total_employees": 14188,
+  "total_records": 229,
+  "total_employees": 14279,
   "date_range_start": "2026-01-06",
-  "date_range_end": "2026-10-23",
-  "last_updated": "2026-11-12T05:07:41.980301+00:00",
+  "date_range_end": "2026-10-30",
+  "last_updated": "2026-11-12T19:38:59.898000+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -532,6 +532,18 @@
       "county": "New York",
       "city": "",
       "address": "770 5th Ave New York, NY, 10019",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Craft Beer Guild Distributing of New York, LLC.",
+      "notice_date": "2026-10-30",
+      "effective_date": "2027-01-28",
+      "employees": 91,
+      "layoff_type": "Closure Permanent",
+      "county": "Ulster",
+      "city": "",
+      "address": "12-14 South Putts Corners Road New Paltz, NY, 12561",
       "industry": ""
     },
     {
