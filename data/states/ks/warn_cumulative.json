@@ -1,9 +1,9 @@
 {
-  "total_records": 154,
-  "total_employees": 28216,
+  "total_records": 155,
+  "total_employees": 28722,
   "date_range_start": "2019-01-04",
-  "date_range_end": "2026-11-05",
-  "last_updated": "2026-11-12T19:35:03.030503+00:00",
+  "date_range_end": "2026-11-10",
+  "last_updated": "2026-11-13T04:16:15.828410+00:00",
   "source_url": "https://www.kansasworks.com/search/warn_lookups",
   "records": [
     {
@@ -1852,6 +1852,18 @@
       "county": "",
       "city": "Lenexa",
       "address": "18000 W. 99th Street, Suite 200; Lenexa, Kansas 66219",
+      "industry": ""
+    },
+    {
+      "state": "KS",
+      "company": "General Motors",
+      "notice_date": "2026-11-10",
+      "effective_date": null,
+      "employees": 506,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Kansas City",
+      "address": "3201 Fairfax Trafficway; Kansas City, Kansas 66115",
       "industry": ""
     }
   ]

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-12T19:42:53.934201+00:00",
+  "updated_at": "2026-11-13T04:25:22.708680+00:00",
   "candidates": [
     {
       "id": "5e3bb4bb017c",
@@ -1954,6 +1954,42 @@
       "warnings": [],
       "keys": [
         "AL:Children's Place Distribution__2027-01-05__593"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "af236b50e1f7",
+      "created_at": "2026-11-13T04:25:22.708662+00:00",
+      "status": "pending",
+      "company": "General Motors",
+      "display": "General Motors",
+      "employees": 506,
+      "states": [
+        "KS"
+      ],
+      "per_state": {
+        "KS": 506
+      },
+      "sites": 1,
+      "card": {
+        "place": "Kansas City, KS",
+        "effective": null,
+        "employees": 506
+      },
+      "arm": "size",
+      "reason": "506 >= 250",
+      "text": "General Motors filed a WARN notice for 506 job cuts in Kansas City, KS.\n\nEffective date not reported.\n\n#layoffs #Kansas",
+      "thread": [],
+      "weighted_len": 119,
+      "warnings": [],
+      "keys": [
+        "KS:General Motors__None__506"
       ],
       "approved_by": null,
       "approved_at": null,

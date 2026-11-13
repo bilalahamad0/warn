@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-11-12T19:42:18.882158+00:00",
+  "last_updated": "2026-11-13T04:24:03.271552+00:00",
   "states_live": 47,
-  "total_records": 60900,
-  "total_employees": 6551790,
+  "total_records": 60916,
+  "total_employees": 6552776,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -22,8 +22,8 @@
       "name": "Arizona",
       "agency": "Arizona Department of Economic Security",
       "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
-      "total_records": 489,
-      "total_employees": 71905
+      "total_records": 490,
+      "total_employees": 72027
     },
     "CA": {
       "name": "California",
@@ -99,22 +99,22 @@
       "name": "Illinois",
       "agency": "Illinois Department of Commerce and Economic Opportunity",
       "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
-      "total_records": 4897,
-      "total_employees": 676504
+      "total_records": 4898,
+      "total_employees": 676658
     },
     "IN": {
       "name": "Indiana",
       "agency": "Indiana Department of Workforce Development",
       "source_url": "https://www.in.gov/dwd/warn-notices/current-warn-notices/",
-      "total_records": 1021,
-      "total_employees": 153235
+      "total_records": 1022,
+      "total_employees": 153334
     },
     "KS": {
       "name": "Kansas",
       "agency": "Kansas Department of Commerce",
       "source_url": "https://www.kansasworks.com/search/warn_lookups",
-      "total_records": 154,
-      "total_employees": 28216
+      "total_records": 155,
+      "total_employees": 28722
     },
     "KY": {
       "name": "Kentucky",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1383,
-      "total_employees": 117436
+      "total_records": 1384,
+      "total_employees": 117456
     },
     "ME": {
       "name": "Maine",
@@ -225,8 +225,8 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 5379,
-      "total_employees": 436756
+      "total_records": 5390,
+      "total_employees": 436841
     },
     "OH": {
       "name": "Ohio",
@@ -19929,6 +19929,18 @@
       "county": "",
       "city": "San Antonio",
       "address": "6363 De Zavala Road; San Antonio, Texas 78249",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Isagenix International, LLC",
+      "notice_date": "2026-11-10",
+      "effective_date": null,
+      "employees": 122,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Gilbert",
+      "address": "155 E. Rivulon Blvd., Ste. 101; Gilbert, Arizona 85297",
       "industry": ""
     },
     {
@@ -341188,6 +341200,18 @@
       "industry": "Manufacturing"
     },
     {
+      "state": "IL",
+      "company": "Ferrara Candy Company",
+      "notice_date": "2026-11-05",
+      "effective_date": null,
+      "employees": 154,
+      "layoff_type": "Plant Closure",
+      "county": "Cook County",
+      "city": "Chicago",
+      "address": "2945 W 31ST St",
+      "industry": "Manufacturing"
+    },
+    {
       "state": "IN",
       "company": "Thyssenkrupp Presta North America",
       "notice_date": "2026-06-30",
@@ -353440,6 +353464,18 @@
       "industry": "Motor Vehicle Transmission and Power Train Parts Manufacturing"
     },
     {
+      "state": "IN",
+      "company": "Matthew Warren, LLC",
+      "notice_date": "2026-11-12",
+      "effective_date": "2027-01-15",
+      "employees": 99,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Logansport",
+      "address": "",
+      "industry": "Manufacturing"
+    },
+    {
       "state": "KS",
       "company": "First Student",
       "notice_date": "2026-05-01",
@@ -355285,6 +355321,18 @@
       "county": "",
       "city": "Lenexa",
       "address": "18000 W. 99th Street, Suite 200; Lenexa, Kansas 66219",
+      "industry": ""
+    },
+    {
+      "state": "KS",
+      "company": "General Motors",
+      "notice_date": "2026-11-10",
+      "effective_date": null,
+      "employees": 506,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Kansas City",
+      "address": "3201 Fairfax Trafficway; Kansas City, Kansas 66115",
       "industry": ""
     },
     {
@@ -391292,6 +391340,18 @@
       "city": "",
       "address": "1000 Woodley Road Aberdeen, MD 21001",
       "industry": "455219"
+    },
+    {
+      "state": "MD",
+      "company": "Americold Logistics, LLC",
+      "notice_date": "2026-11-02",
+      "effective_date": "2027-01-01",
+      "employees": 20,
+      "layoff_type": "Plant Closure",
+      "county": "Susquehanna",
+      "city": "",
+      "address": "300 Belvidere Road Perryville, MD 21903",
+      "industry": "493120"
     },
     {
       "state": "ME",
@@ -523784,6 +523844,138 @@
     },
     {
       "state": "NY",
+      "company": "Ambulnz NY2, LLC.",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-12-31",
+      "employees": 7,
+      "layoff_type": "Closure Permanent",
+      "county": "Delaware",
+      "city": "",
+      "address": "11 William St Walton, NY, 13856",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Ambulnz NY2, LLC.",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-12-31",
+      "employees": 4,
+      "layoff_type": "Closure Permanent",
+      "county": "Dutchess",
+      "city": "",
+      "address": "13 South Ave Beacon, NY, 12508",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Ambulnz NY2, LLC.",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-12-31",
+      "employees": 0,
+      "layoff_type": "Closure Permanent",
+      "county": "Albany",
+      "city": "",
+      "address": "25 Central Ave Cohoes, NY, 12047",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Ambulnz NY2, LLC.",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-12-31",
+      "employees": 3,
+      "layoff_type": "Closure Permanent",
+      "county": "Warren",
+      "city": "",
+      "address": "100 Park St Glens Falls, NY, 12801",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Ambulnz NY2, LLC.",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-12-31",
+      "employees": 1,
+      "layoff_type": "Closure Permanent",
+      "county": "Rockland",
+      "city": "",
+      "address": "160 N Midland Ave Nyack, NY, 10960",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Ambulnz NY2, LLC.",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-12-31",
+      "employees": 0,
+      "layoff_type": "Closure Permanent",
+      "county": "Saratoga",
+      "city": "",
+      "address": "211 Church St Saratoga Springs, NY, 12866",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Ambulnz NY2, LLC.",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-12-31",
+      "employees": 6,
+      "layoff_type": "Closure Permanent",
+      "county": "Orange",
+      "city": "",
+      "address": "239 Wisner Ave Middletown, NY, 10940",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Ambulnz NY2, LLC.",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-12-31",
+      "employees": 36,
+      "layoff_type": "Closure Permanent",
+      "county": "Orange",
+      "city": "",
+      "address": "263 Route 17K Newburgh, NY, 12550",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Ambulnz NY2, LLC.",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-12-31",
+      "employees": 20,
+      "layoff_type": "Closure Permanent",
+      "county": "Rensselaer",
+      "city": "",
+      "address": "901 3rd St Rensselaer, NY, 12144",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Ambulnz NY2, LLC.",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-12-31",
+      "employees": 7,
+      "layoff_type": "Closure Permanent",
+      "county": "Ulster",
+      "city": "",
+      "address": "1650 Route 9W Milton, NY, 12547",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Ambulnz NY2, LLC.",
+      "notice_date": "2026-10-01",
+      "effective_date": "2026-12-31",
+      "employees": 1,
+      "layoff_type": "Closure Permanent",
+      "county": "Delaware",
+      "city": "",
+      "address": "60185 State Hwy 10 Hobart, NY, 13788",
+      "industry": ""
+    },
+    {
+      "state": "NY",
       "company": "Cardionet, LLC. an affiliate of Philips North America, LLC.",
       "notice_date": "2025-04-01",
       "effective_date": "2025-06-30",
@@ -651711,7 +651903,7 @@
       "state": "VA",
       "company": "Haynes Furniture Company Inc.",
       "notice_date": "2026-10-30",
-      "effective_date": "2026-11-12",
+      "effective_date": "2026-11-13",
       "employees": 83,
       "layoff_type": "Closure",
       "county": "",

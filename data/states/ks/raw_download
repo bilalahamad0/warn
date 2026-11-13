@@ -1,5 +1,17 @@
 [
  {
+  "employer": "General Motors",
+  "city": "Kansas City",
+  "zip": "66115",
+  "lwib_area": "3 - Workforce Partnership",
+  "notice_date": "Nov 10, 2026",
+  "warn_type": "WARN",
+  "record_number": "2316",
+  "detail_page_url": "https://www.kansasworks.com/search/warn_lookups/2316",
+  "number_of_employees_affected": "506",
+  "address": "3201 Fairfax Trafficway; Kansas City, Kansas 66115"
+ },
+ {
   "employer": "Family Endeavors, Inc.",
   "city": "San Antonio",
   "zip": "78249",

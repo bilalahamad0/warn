@@ -1,9 +1,9 @@
 {
-  "total_records": 1021,
-  "total_employees": 153235,
+  "total_records": 1022,
+  "total_employees": 153334,
   "date_range_start": "2008-07-10",
-  "date_range_end": "2026-10-29",
-  "last_updated": "2026-11-12T19:31:48.954563+00:00",
+  "date_range_end": "2026-11-12",
+  "last_updated": "2026-11-13T04:13:10.703987+00:00",
   "source_url": "https://www.in.gov/dwd/warn-notices/current-warn-notices/",
   "records": [
     {
@@ -12257,6 +12257,18 @@
       "city": "Elkhart",
       "address": "",
       "industry": "Motor Vehicle Transmission and Power Train Parts Manufacturing"
+    },
+    {
+      "state": "IN",
+      "company": "Matthew Warren, LLC",
+      "notice_date": "2026-11-12",
+      "effective_date": "2027-01-15",
+      "employees": 99,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Logansport",
+      "address": "",
+      "industry": "Manufacturing"
     }
   ]
 }

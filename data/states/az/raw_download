@@ -1,5 +1,17 @@
 [
  {
+  "employer": "Isagenix International, LLC",
+  "city": "Gilbert",
+  "zip": "85297",
+  "lwib_area": "7 - ARIZONA@WORK - Maricopa County",
+  "notice_date": "Nov 10, 2026",
+  "warn_type": "WARN",
+  "record_number": "1012",
+  "detail_page_url": "https://www.azjobconnection.gov/search/warn_lookups/1012",
+  "number_of_employees_affected": "122",
+  "address": "155 E. Rivulon Blvd., Ste. 101; Gilbert, Arizona 85297"
+ },
+ {
   "employer": "Endeavors",
   "city": "San Antonio",
   "zip": "78249",
