@@ -1,9 +1,9 @@
 {
-  "total_records": 1431,
-  "total_employees": 118557,
+  "total_records": 1432,
+  "total_employees": 118577,
   "date_range_start": "2010-01-07",
   "date_range_end": "2026-11-06",
-  "last_updated": "2026-11-12T19:35:36.621908+00:00",
+  "last_updated": "2026-11-13T04:16:50.699936+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -53,6 +53,18 @@
       "city": "",
       "address": "11 Easter Court, Ste A-E Owings Mills, MD 21117",
       "industry": "314999"
+    },
+    {
+      "state": "MD",
+      "company": "Americold Logistics, LLC",
+      "notice_date": "2026-11-02",
+      "effective_date": "2027-01-01",
+      "employees": 20,
+      "layoff_type": "Plant Closure",
+      "county": "Susquehanna",
+      "city": "",
+      "address": "300 Belvidere Road Perryville, MD 21903",
+      "industry": "493120"
     },
     {
       "state": "MD",

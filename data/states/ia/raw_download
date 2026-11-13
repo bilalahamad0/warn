@@ -1060,6 +1060,16 @@
   "industry": "Health Care and Social Assistance"
  },
  {
+  "company": "Wells Fargo",
+  "city": "West Des Moines",
+  "county": "Polk",
+  "layoff_type": "Amendment - Additional Employees",
+  "employees": 24,
+  "notice_date": "2026-11-10 00:00:00",
+  "effective_date": "2027-01-09 00:00:00",
+  "industry": "Finance and Insurance "
+ },
+ {
   "company": "John Deere Ottumwa Works ",
   "address": "928 E Vine St",
   "city": "Ottumwa",

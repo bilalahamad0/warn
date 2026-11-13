@@ -1,9 +1,9 @@
 {
-  "total_records": 22,
-  "total_employees": 2933,
-  "date_range_start": "2025-11-13",
+  "total_records": 21,
+  "total_employees": 2640,
+  "date_range_start": "2025-11-14",
   "date_range_end": "2026-10-29",
-  "last_updated": "2026-11-13T04:09:30.971174+00:00",
+  "last_updated": "2026-11-13T19:05:27.990729+00:00",
   "source_url": "https://dolpublicdocumentlibrary.ct.gov/CsblrCategory?prefix=%2Frapid_response%2Fwarn_documents",
   "records": [
     {
@@ -255,18 +255,6 @@
       "layoff_type": "",
       "county": "",
       "city": "Shelton",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "CT",
-      "company": "Edgewell Personal Care/Schick",
-      "notice_date": "2025-11-13",
-      "effective_date": "2026-03-02",
-      "employees": 293,
-      "layoff_type": "",
-      "county": "",
-      "city": "Milford",
       "address": "",
       "industry": ""
     }

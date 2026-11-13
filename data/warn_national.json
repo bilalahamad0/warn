@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-11-13T04:24:03.271552+00:00",
+  "last_updated": "2026-11-13T19:20:55.269170+00:00",
   "states_live": 47,
-  "total_records": 60916,
-  "total_employees": 6552776,
+  "total_records": 60918,
+  "total_employees": 6552805,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -85,8 +85,8 @@
       "name": "Iowa",
       "agency": "Iowa Workforce Development",
       "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
-      "total_records": 949,
-      "total_employees": 52384
+      "total_records": 950,
+      "total_employees": 52408
     },
     "ID": {
       "name": "Idaho",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1384,
-      "total_employees": 117456
+      "total_records": 1385,
+      "total_employees": 117461
     },
     "ME": {
       "name": "Maine",
@@ -280036,6 +280036,18 @@
       "industry": "Health Care and Social Assistance"
     },
     {
+      "state": "IA",
+      "company": "Wells Fargo",
+      "notice_date": "2026-11-10",
+      "effective_date": "2027-01-09",
+      "employees": 24,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Polk",
+      "city": "West Des Moines",
+      "address": "",
+      "industry": "Finance and Insurance"
+    },
+    {
       "state": "ID",
       "company": "Fortrex",
       "notice_date": "2026-07-01",
@@ -391352,6 +391364,18 @@
       "city": "",
       "address": "300 Belvidere Road Perryville, MD 21903",
       "industry": "493120"
+    },
+    {
+      "state": "MD",
+      "company": "TidalHealth Primary Care",
+      "notice_date": "2026-11-12",
+      "effective_date": "2026-11-15",
+      "employees": 5,
+      "layoff_type": "Plant Closure",
+      "county": "Upper Shore",
+      "city": "",
+      "address": "3304 Hayman Drive, Federalsburg, MD 21629",
+      "industry": "621111"
     },
     {
       "state": "ME",

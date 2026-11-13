@@ -293,20 +293,6 @@
       },
       "modifiedDate": "2025-11-20T12:46:44+00:00",
       "name": "rapid_response/warn_documents/2025/PosiGen (Shelton) 11-14-2025.pdf"
-    },
-    {
-      "blobProperties": {
-        "affected_company": "Edgewell Personal Care/Schick",
-        "closing_dates_": "12/31/2027",
-        "layoff_dates": "3/2/2026 - 12/31/2027",
-        "layoff_locations__": "Milford",
-        "number_of_impacted_workers": "293",
-        "union": "N/A",
-        "warn_document_date": "2025-11-13",
-        "warn_document_received_date": "2025-11-13"
-      },
-      "modifiedDate": "2025-11-13T20:51:37+00:00",
-      "name": "rapid_response/warn_documents/2025/Edgewell Personal Care's Schick (Milford) 11-13-2025.pdf"
     }
   ]
 }

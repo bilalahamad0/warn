@@ -1,11 +1,23 @@
 {
-  "total_records": 1432,
-  "total_employees": 118577,
+  "total_records": 1433,
+  "total_employees": 118582,
   "date_range_start": "2010-01-07",
-  "date_range_end": "2026-11-06",
-  "last_updated": "2026-11-13T04:16:50.699936+00:00",
+  "date_range_end": "2026-11-12",
+  "last_updated": "2026-11-13T19:12:58.731459+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
+    {
+      "state": "MD",
+      "company": "TidalHealth Primary Care",
+      "notice_date": "2026-11-12",
+      "effective_date": "2026-11-15",
+      "employees": 5,
+      "layoff_type": "Plant Closure",
+      "county": "Upper Shore",
+      "city": "",
+      "address": "3304 Hayman Drive, Federalsburg, MD 21629",
+      "industry": "621111"
+    },
     {
       "state": "MD",
       "company": "The Container Store, Inc.",

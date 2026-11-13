@@ -1,9 +1,9 @@
 {
-  "total_records": 949,
-  "total_employees": 52384,
+  "total_records": 950,
+  "total_employees": 52408,
   "date_range_start": "2011-01-13",
-  "date_range_end": "2026-11-03",
-  "last_updated": "2026-11-13T04:12:41.721426+00:00",
+  "date_range_end": "2026-11-10",
+  "last_updated": "2026-11-13T19:08:43.131951+00:00",
   "source_url": "https://workforce.iowa.gov/employers/business-resources/warn",
   "records": [
     {
@@ -11393,6 +11393,18 @@
       "city": "Waterloo",
       "address": "",
       "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "IA",
+      "company": "Wells Fargo",
+      "notice_date": "2026-11-10",
+      "effective_date": "2027-01-09",
+      "employees": 24,
+      "layoff_type": "Amendment - Additional Employees",
+      "county": "Polk",
+      "city": "West Des Moines",
+      "address": "",
+      "industry": "Finance and Insurance"
     }
   ]
 }

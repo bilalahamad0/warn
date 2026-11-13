@@ -1,9 +1,9 @@
 {
-  "total_records": 1384,
-  "total_employees": 117456,
+  "total_records": 1385,
+  "total_employees": 117461,
   "date_range_start": "2010-01-07",
-  "date_range_end": "2026-11-06",
-  "last_updated": "2026-11-13T04:16:50.716354+00:00",
+  "date_range_end": "2026-11-12",
+  "last_updated": "2026-11-13T19:12:58.743681+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -16613,6 +16613,18 @@
       "city": "",
       "address": "300 Belvidere Road Perryville, MD 21903",
       "industry": "493120"
+    },
+    {
+      "state": "MD",
+      "company": "TidalHealth Primary Care",
+      "notice_date": "2026-11-12",
+      "effective_date": "2026-11-15",
+      "employees": 5,
+      "layoff_type": "Plant Closure",
+      "county": "Upper Shore",
+      "city": "",
+      "address": "3304 Hayman Drive, Federalsburg, MD 21629",
+      "industry": "621111"
     }
   ]
 }
