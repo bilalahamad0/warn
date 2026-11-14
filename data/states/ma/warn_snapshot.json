@@ -1,9 +1,9 @@
 {
-  "total_records": 397,
-  "total_employees": 35576,
+  "total_records": 398,
+  "total_employees": 35578,
   "date_range_start": "2021-04-19",
-  "date_range_end": "2026-10-29",
-  "last_updated": "2026-11-13T19:12:38.223616+00:00",
+  "date_range_end": "2026-11-10",
+  "last_updated": "2026-11-14T04:14:13.860410+00:00",
   "source_url": "https://www.mass.gov/info-details/worker-adjustment-and-retraining-notification-act-warn",
   "records": [
     {
@@ -4479,6 +4479,18 @@
       "layoff_type": "",
       "county": "Southeast",
       "city": "Bridgewater",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "Charles River Laboratories, Inc.",
+      "notice_date": "2026-11-10",
+      "effective_date": "2027-01-31",
+      "employees": 2,
+      "layoff_type": "",
+      "county": "Central",
+      "city": "Worcester",
       "address": "",
       "industry": ""
     },

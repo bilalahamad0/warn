@@ -1,11 +1,23 @@
 {
-  "total_records": 819,
-  "total_employees": 120400,
+  "total_records": 820,
+  "total_employees": 120550,
   "date_range_start": "2017-01-09",
-  "date_range_end": "2026-11-09",
-  "last_updated": "2026-11-13T19:17:32.919429+00:00",
+  "date_range_end": "2026-11-13",
+  "last_updated": "2026-11-14T04:18:19.709434+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
+    {
+      "state": "OH",
+      "company": "Saddle Creek Corporation",
+      "notice_date": "2026-11-13",
+      "effective_date": null,
+      "employees": 150,
+      "layoff_type": "Closure",
+      "county": "Franklin",
+      "city": "Groveport",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "OH",
       "company": "CEVA Supply Chain",

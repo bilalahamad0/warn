@@ -279,20 +279,6 @@
       },
       "modifiedDate": "2025-12-08T19:42:13+00:00",
       "name": "rapid_response/warn_documents/2025/Connecticut  Custom Car (Enfield) 11-26-2025.pdf"
-    },
-    {
-      "blobProperties": {
-        "affected_company": "PosiGen Developer LLC",
-        "closing_dates_": "12/6/2025",
-        "layoff_dates": "11-23-2025 - 12-6-2025",
-        "layoff_locations__": "Shelton",
-        "number_of_impacted_workers": "Not provided",
-        "union": "N/A",
-        "warn_document_date": "2025-11-14",
-        "warn_document_received_date": "2025-11-14"
-      },
-      "modifiedDate": "2025-11-20T12:46:44+00:00",
-      "name": "rapid_response/warn_documents/2025/PosiGen (Shelton) 11-14-2025.pdf"
     }
   ]
 }
