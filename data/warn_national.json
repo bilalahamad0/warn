@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-11-13T19:20:55.269170+00:00",
+  "last_updated": "2026-11-14T04:21:38.856290+00:00",
   "states_live": 47,
-  "total_records": 60918,
-  "total_employees": 6552805,
+  "total_records": 60921,
+  "total_employees": 6552970,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -36,8 +36,8 @@
       "name": "Colorado",
       "agency": "Colorado Department of Labor and Employment",
       "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
-      "total_records": 866,
-      "total_employees": 87589
+      "total_records": 867,
+      "total_employees": 87604
     },
     "CT": {
       "name": "Connecticut",
@@ -100,7 +100,7 @@
       "agency": "Illinois Department of Commerce and Economic Opportunity",
       "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
       "total_records": 4898,
-      "total_employees": 676658
+      "total_employees": 676656
     },
     "IN": {
       "name": "Indiana",
@@ -134,8 +134,8 @@
       "name": "Massachusetts",
       "agency": "Massachusetts Executive Office of Labor and Workforce Development",
       "source_url": "https://www.mass.gov/info-details/worker-adjustment-and-retraining-notification-act-warn",
-      "total_records": 397,
-      "total_employees": 35576
+      "total_records": 398,
+      "total_employees": 35578
     },
     "MD": {
       "name": "Maryland",
@@ -232,8 +232,8 @@
       "name": "Ohio",
       "agency": "Ohio Department of Job and Family Services",
       "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
-      "total_records": 1273,
-      "total_employees": 173206
+      "total_records": 1274,
+      "total_employees": 173356
     },
     "OK": {
       "name": "Oklahoma",
@@ -197824,6 +197824,18 @@
       "industry": "62,4222: Community Housing Services/Temporary Shelters"
     },
     {
+      "state": "CO",
+      "company": "Battelle",
+      "notice_date": "2026-11-12",
+      "effective_date": "2027-01-11",
+      "employees": 15,
+      "layoff_type": "Permanent Facility closure/Completion of Contractual Milestone",
+      "county": "Rural Alliance (Pueblo)",
+      "city": "",
+      "address": "",
+      "industry": "56,2910: Remediation Services"
+    },
+    {
       "state": "CT",
       "company": "Conduent Commercial Solutions, LLC",
       "notice_date": "2026-06-26",
@@ -340793,18 +340805,6 @@
     },
     {
       "state": "IL",
-      "company": "GreenWood, Inc.",
-      "notice_date": "2026-08-04",
-      "effective_date": null,
-      "employees": 28,
-      "layoff_type": "Plant Closure",
-      "county": "Du Page County",
-      "city": "Hanover Park",
-      "address": "850 Central Ave.",
-      "industry": "Other Services (except Public Administration)"
-    },
-    {
-      "state": "IL",
       "company": "Essendant Co.",
       "notice_date": "2026-08-03",
       "effective_date": null,
@@ -341222,6 +341222,18 @@
       "city": "Chicago",
       "address": "2945 W 31ST St",
       "industry": "Manufacturing"
+    },
+    {
+      "state": "IL",
+      "company": "GreenWood, Inc.",
+      "notice_date": "2026-08-04",
+      "effective_date": null,
+      "employees": 26,
+      "layoff_type": "Plant Closure",
+      "county": "Du Page County",
+      "city": "Hanover Park",
+      "address": "850 Central Ave.",
+      "industry": "Other Services (except Public Administration)"
     },
     {
       "state": "IN",
@@ -374754,6 +374766,18 @@
       "layoff_type": "",
       "county": "Statewide",
       "city": "Statewide",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MA",
+      "company": "Charles River Laboratories, Inc.",
+      "notice_date": "2026-11-10",
+      "effective_date": "2027-01-31",
+      "employees": 2,
+      "layoff_type": "",
+      "county": "Central",
+      "city": "Worcester",
       "address": "",
       "industry": ""
     },
@@ -542144,6 +542168,18 @@
     },
     {
       "state": "OH",
+      "company": "Saddle Creek Corporation",
+      "notice_date": "2026-11-13",
+      "effective_date": null,
+      "employees": 150,
+      "layoff_type": "Closure",
+      "county": "Franklin",
+      "city": "Groveport",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
       "company": "Marc Glassman, Inc.",
       "notice_date": "2023-01-03",
       "effective_date": "2023-03-06",
@@ -651927,7 +651963,7 @@
       "state": "VA",
       "company": "Haynes Furniture Company Inc.",
       "notice_date": "2026-10-30",
-      "effective_date": "2026-11-13",
+      "effective_date": "2026-11-14",
       "employees": 83,
       "layoff_type": "Closure",
       "county": "",

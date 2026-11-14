@@ -1,0 +1,21 @@
+{
+  "count": 1,
+  "last_updated": "2026-11-14T04:22:55.274579+00:00",
+  "amendments": [
+    {
+      "company": "GreenWood, Inc.",
+      "county": "Du Page County",
+      "city": "Hanover Park",
+      "notice_date": "2026-08-04",
+      "effective_date": null,
+      "employees": 26,
+      "old_effective_date": null,
+      "new_effective_date": null,
+      "old_employees": 28,
+      "new_employees": 26,
+      "key": "GreenWood, Inc.__None__26",
+      "held_since": "2026-11-14T04:22:55.274539+00:00",
+      "revisions": 1
+    }
+  ]
+}

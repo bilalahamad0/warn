@@ -1,9 +1,9 @@
 {
-  "total_records": 1008,
-  "total_employees": 141602,
+  "total_records": 1009,
+  "total_employees": 141752,
   "date_range_start": "2015-01-05",
-  "date_range_end": "2026-11-09",
-  "last_updated": "2026-11-13T19:17:32.928390+00:00",
+  "date_range_end": "2026-11-13",
+  "last_updated": "2026-11-14T04:18:19.718273+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
     {
@@ -11557,6 +11557,18 @@
       "effective_date": null,
       "employees": 126,
       "layoff_type": "Layoff",
+      "county": "Franklin",
+      "city": "Groveport",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Saddle Creek Corporation",
+      "notice_date": "2026-11-13",
+      "effective_date": null,
+      "employees": 150,
+      "layoff_type": "Closure",
       "county": "Franklin",
       "city": "Groveport",
       "address": "",

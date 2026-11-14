@@ -1,9 +1,9 @@
 {
   "total_records": 4898,
-  "total_employees": 676658,
+  "total_employees": 676656,
   "date_range_start": "1987-09-01",
   "date_range_end": "2026-11-09",
-  "last_updated": "2026-11-13T19:09:09.244609+00:00",
+  "last_updated": "2026-11-14T04:10:51.517820+00:00",
   "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
   "records": [
     {
@@ -58352,18 +58352,6 @@
     },
     {
       "state": "IL",
-      "company": "GreenWood, Inc.",
-      "notice_date": "2026-08-04",
-      "effective_date": null,
-      "employees": 28,
-      "layoff_type": "Plant Closure",
-      "county": "Du Page County",
-      "city": "Hanover Park",
-      "address": "850 Central Ave.",
-      "industry": "Other Services (except Public Administration)"
-    },
-    {
-      "state": "IL",
       "company": "Essendant Co.",
       "notice_date": "2026-08-03",
       "effective_date": null,
@@ -58781,6 +58769,18 @@
       "city": "Chicago",
       "address": "2945 W 31ST St",
       "industry": "Manufacturing"
+    },
+    {
+      "state": "IL",
+      "company": "GreenWood, Inc.",
+      "notice_date": "2026-08-04",
+      "effective_date": null,
+      "employees": 26,
+      "layoff_type": "Plant Closure",
+      "county": "Du Page County",
+      "city": "Hanover Park",
+      "address": "850 Central Ave.",
+      "industry": "Other Services (except Public Administration)"
     }
   ]
 }

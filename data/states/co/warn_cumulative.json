@@ -1,9 +1,9 @@
 {
-  "total_records": 866,
-  "total_employees": 87589,
+  "total_records": 867,
+  "total_employees": 87604,
   "date_range_start": "2015-01-02",
-  "date_range_end": "2026-10-30",
-  "last_updated": "2026-11-13T19:05:25.426487+00:00",
+  "date_range_end": "2026-11-12",
+  "last_updated": "2026-11-14T04:07:18.568324+00:00",
   "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
   "records": [
     {
@@ -10397,6 +10397,18 @@
       "city": "",
       "address": "",
       "industry": "62,4222: Community Housing Services/Temporary Shelters"
+    },
+    {
+      "state": "CO",
+      "company": "Battelle",
+      "notice_date": "2026-11-12",
+      "effective_date": "2027-01-11",
+      "employees": 15,
+      "layoff_type": "Permanent Facility closure/Completion of Contractual Milestone",
+      "county": "Rural Alliance (Pueblo)",
+      "city": "",
+      "address": "",
+      "industry": "56,2910: Remediation Services"
     }
   ]
 }

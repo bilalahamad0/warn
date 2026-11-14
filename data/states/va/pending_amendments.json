@@ -1,6 +1,6 @@
 {
   "count": 2,
-  "last_updated": "2026-11-13T04:25:22.637776+00:00",
+  "last_updated": "2026-11-14T04:22:57.752554+00:00",
   "amendments": [
     {
       "company": "Haynes Furniture Company Inc.",
@@ -22,15 +22,15 @@
       "county": "",
       "city": "Virginia Beach",
       "notice_date": "2026-10-30",
-      "effective_date": "2026-11-13",
+      "effective_date": "2026-11-14",
       "employees": 83,
       "old_effective_date": "2026-11-10",
-      "new_effective_date": "2026-11-13",
+      "new_effective_date": "2026-11-14",
       "old_employees": 83,
       "new_employees": 83,
-      "key": "Haynes Furniture Company Inc.__2026-11-13__83",
+      "key": "Haynes Furniture Company Inc.__2026-11-14__83",
       "held_since": "2026-11-11T04:04:25.770936+00:00",
-      "revisions": 3
+      "revisions": 4
     }
   ]
 }
