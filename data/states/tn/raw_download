@@ -212,7 +212,7 @@ import {loadContextActions, buildTab} from 'https://static.cloud.coveo.com/atomi
     const orgId = "tennesseestategovernmentproduction6po4m5b2".trim();
 
     await searchInterface.initialize({
-        accessToken: "eyJhbGciOiJIUzI1NiJ9.eyJzZWFyY2hIdWIiOiJUTkdvdiIsInY4Ijp0cnVlLCJ0b2tlbklkIjoidmxueWt6aW02cnI3dDdteWhycDI2YWtpc3kiLCJvcmdhbml6YXRpb24iOiJ0ZW5uZXNzZWVzdGF0ZWdvdmVybm1lbnRwcm9kdWN0aW9uNnBvNG01YjIiLCJ1c2VySWRzIjpbeyJ0eXBlIjoiVXNlciIsIm5hbWUiOiJhbm9ueW1vdXNfdXNlckBhbm9ueW1vdXMuY292ZW8uY29tIiwicHJvdmlkZXIiOiJFbWFpbCBTZWN1cml0eSBQcm92aWRlciJ9XSwicm9sZXMiOlsicXVlcnlFeGVjdXRvciJdLCJpc3MiOiJTZWFyY2hBcGkiLCJleHAiOjE3OTQ4ODQ5NTYsImlhdCI6MTc5NDc5ODU1Nn0.5ZO1cKpkbXQVnuvA5hQect7HIpdoTv9OKrcoaQjtNlY".trim(),
+        accessToken: "eyJhbGciOiJIUzI1NiJ9.eyJzZWFyY2hIdWIiOiJUTkdvdiIsInY4Ijp0cnVlLCJ0b2tlbklkIjoieHl2M2ZmM2ttdDU0YWxhM2Q1enF1bWtmNGUiLCJvcmdhbml6YXRpb24iOiJ0ZW5uZXNzZWVzdGF0ZWdvdmVybm1lbnRwcm9kdWN0aW9uNnBvNG01YjIiLCJ1c2VySWRzIjpbeyJ0eXBlIjoiVXNlciIsIm5hbWUiOiJhbm9ueW1vdXNfdXNlckBhbm9ueW1vdXMuY292ZW8uY29tIiwicHJvdmlkZXIiOiJFbWFpbCBTZWN1cml0eSBQcm92aWRlciJ9XSwicm9sZXMiOlsicXVlcnlFeGVjdXRvciJdLCJpc3MiOiJTZWFyY2hBcGkiLCJleHAiOjE3OTQ5MzUzNzIsImlhdCI6MTc5NDg0ODk3Mn0.knt2x66QCxYLSyOqjKbh1mA3k47X-E-_Fnn2IQiENIQ".trim(),
         organizationId: orgId,
         organizationEndpoints: await searchInterface.getOrganizationEndpoints(orgId),
         renewAccessToken: function() {

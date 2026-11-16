@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-16T04:07:23.990800+00:00",
+  "updated_at": "2026-11-16T21:50:20.331724+00:00",
   "candidates": [
     {
       "id": "5e3bb4bb017c",
@@ -1990,6 +1990,156 @@
       "warnings": [],
       "keys": [
         "KS:General Motors__None__506"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "eb1c37dd5346",
+      "created_at": "2026-11-16T21:50:20.331562+00:00",
+      "status": "pending",
+      "company": "davey tree surgery",
+      "display": "Davey Tree Surgery",
+      "employees": 368,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 368
+      },
+      "sites": 7,
+      "card": {
+        "place": "7 sites in California",
+        "effective": "Dec 31, 2026",
+        "employees": 368
+      },
+      "arm": "size",
+      "reason": "368 >= 250",
+      "text": "Davey Tree Surgery filed WARN notices for 368 job cuts across 7 sites in California.\n\nFirst effective date Dec 31, 2026.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 142,
+      "warnings": [],
+      "keys": [
+        "CA:Davey Tree Surgery Company__2026-12-31__39",
+        "CA:Davey Tree Surgery Company__2026-12-31__115",
+        "CA:Davey Tree Surgery Company__2026-12-31__57",
+        "CA:Davey Tree Surgery__2026-12-31__64",
+        "CA:Davey Tree Surgery Company__2026-12-31__22",
+        "CA:Davey Tree Surgery Company__2026-12-31__37",
+        "CA:Davey Tree Surgery Company__2026-12-31__34"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "0bb44af23923",
+      "created_at": "2026-11-16T21:50:20.331618+00:00",
+      "status": "pending",
+      "company": "Barclays",
+      "display": "Barclays",
+      "employees": 75,
+      "states": [
+        "NJ"
+      ],
+      "per_state": {
+        "NJ": 75
+      },
+      "sites": 1,
+      "card": {
+        "place": "Whippany, NJ",
+        "effective": "Feb 14, 2027",
+        "employees": 75
+      },
+      "arm": "brand",
+      "reason": "known brand, 75 >= 50",
+      "text": "Barclays filed a WARN notice for 75 job cuts in Whippany, NJ.\n\nEffective Feb 14, 2027.\n\n#layoffs #NewJersey",
+      "thread": [],
+      "weighted_len": 107,
+      "warnings": [],
+      "keys": [
+        "NJ:Barclays Services Corporation__2027-02-14__75"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "67325c140bf6",
+      "created_at": "2026-11-16T21:50:20.331674+00:00",
+      "status": "pending",
+      "company": "Illumina",
+      "display": "Illumina",
+      "employees": 51,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 51
+      },
+      "sites": 1,
+      "card": {
+        "place": "San Diego County, CA",
+        "effective": "Jan 8, 2027",
+        "employees": 51
+      },
+      "arm": "tech",
+      "reason": "tech brand, 51 >= 25",
+      "text": "Illumina filed a WARN notice for 51 job cuts in San Diego County, CA.\n\nEffective Jan 8, 2027.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 115,
+      "warnings": [],
+      "keys": [
+        "CA:Illumina, Inc. Worldwide Headquarters__2027-01-08__51"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "1abe7806972f",
+      "created_at": "2026-11-16T21:50:20.331713+00:00",
+      "status": "pending",
+      "company": "Uber",
+      "display": "Uber",
+      "employees": 26,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 26
+      },
+      "sites": 1,
+      "card": {
+        "place": "San Francisco County, CA",
+        "effective": "Sep 21, 2026",
+        "employees": 26
+      },
+      "arm": "tech",
+      "reason": "tech brand, 26 >= 25",
+      "text": "Uber filed a WARN notice for 26 job cuts in San Francisco County, CA.\n\nEffective Sep 21, 2026.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 116,
+      "warnings": [],
+      "keys": [
+        "CA:Uber Technologies, Inc.__2026-09-21__26"
       ],
       "approved_by": null,
       "approved_at": null,

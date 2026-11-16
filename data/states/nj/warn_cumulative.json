@@ -1,9 +1,9 @@
 {
-  "total_records": 2367,
-  "total_employees": 355411,
+  "total_records": 2368,
+  "total_employees": 355486,
   "date_range_start": "2004-02-24",
   "date_range_end": "2027-04-01",
-  "last_updated": "2026-11-16T04:02:59.189647+00:00",
+  "last_updated": "2026-11-16T21:45:29.981843+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -28407,6 +28407,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Weehawken",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Barclays Services Corporation",
+      "notice_date": null,
+      "effective_date": "2027-02-14",
+      "employees": 75,
+      "layoff_type": "",
+      "county": "",
+      "city": "Whippany",
       "address": "",
       "industry": ""
     }

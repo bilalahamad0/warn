@@ -1,9 +1,9 @@
 {
   "total_records": 4898,
-  "total_employees": 676656,
+  "total_employees": 676660,
   "date_range_start": "1987-09-01",
   "date_range_end": "2026-11-09",
-  "last_updated": "2026-11-16T03:55:05.022118+00:00",
+  "last_updated": "2026-11-16T21:38:22.212366+00:00",
   "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
   "records": [
     {
@@ -58568,18 +58568,6 @@
     },
     {
       "state": "IL",
-      "company": "Volante of Arlington Heights (at Mariella of Arlington Heights)",
-      "notice_date": "2026-09-25",
-      "effective_date": null,
-      "employees": 61,
-      "layoff_type": "Mass Layoff",
-      "county": "Cook County",
-      "city": "Arlington Heights",
-      "address": "1625 S Arlington Heights Rd",
-      "industry": "Health Care and Social Assistance"
-    },
-    {
-      "state": "IL",
       "company": "INEOS Joliet, LLC",
       "notice_date": "2024-04-03",
       "effective_date": null,
@@ -58781,6 +58769,18 @@
       "city": "Hanover Park",
       "address": "850 Central Ave.",
       "industry": "Other Services (except Public Administration)"
+    },
+    {
+      "state": "IL",
+      "company": "Volante of Arlington Heights (at Mariella of Arlington Heights)",
+      "notice_date": "2026-09-25",
+      "effective_date": null,
+      "employees": 65,
+      "layoff_type": "Mass Layoff",
+      "county": "Cook County",
+      "city": "Arlington Heights",
+      "address": "1625 S Arlington Heights Rd",
+      "industry": "Health Care and Social Assistance"
     }
   ]
 }

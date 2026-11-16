@@ -1,9 +1,9 @@
 {
-  "total_records": 482,
-  "total_employees": 36322,
+  "total_records": 483,
+  "total_employees": 36487,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-11-02",
-  "last_updated": "2026-11-16T03:54:03.455857+00:00",
+  "date_range_end": "2026-11-16",
+  "last_updated": "2026-11-16T21:37:31.778632+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -5789,6 +5789,18 @@
       "city": "LAKELAND",
       "address": "3535 W Pipkin Road",
       "industry": "Finance and Insurance"
+    },
+    {
+      "state": "FL",
+      "company": "Ideal Cabinetry",
+      "notice_date": "2026-11-16",
+      "effective_date": "2026-11-16",
+      "employees": 165,
+      "layoff_type": "",
+      "county": "",
+      "city": "BARTOW",
+      "address": "210 Century Blvd.",
+      "industry": "Transportation and Warehousing"
     }
   ]
 }

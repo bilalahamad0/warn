@@ -1,9 +1,9 @@
 {
-  "total_records": 490,
-  "total_employees": 37209,
+  "total_records": 491,
+  "total_employees": 37374,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-11-02",
-  "last_updated": "2026-11-16T03:54:03.450759+00:00",
+  "date_range_end": "2026-11-16",
+  "last_updated": "2026-11-16T21:37:31.772741+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -3245,6 +3245,18 @@
       "city": "BOCA RATON",
       "address": "4700 Exchange Court, Suite 125",
       "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "FL",
+      "company": "Ideal Cabinetry",
+      "notice_date": "2026-11-16",
+      "effective_date": "2026-11-16",
+      "employees": 165,
+      "layoff_type": "",
+      "county": "",
+      "city": "BARTOW",
+      "address": "210 Century Blvd.",
+      "industry": "Transportation and Warehousing"
     },
     {
       "state": "FL",
