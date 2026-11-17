@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-17T06:01:58.158914+00:00",
+  "updated_at": "2026-11-17T20:40:13.406780+00:00",
   "candidates": [
     {
       "id": "5e3bb4bb017c",
@@ -1822,7 +1822,7 @@
     {
       "id": "95a1d38a24cb",
       "created_at": "2026-11-10T19:32:13.207920+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "ojai valley inn",
       "display": "Ojai Valley Inn",
       "employees": 751,
@@ -1858,7 +1858,7 @@
     {
       "id": "2dac9b74d29d",
       "created_at": "2026-11-10T19:32:13.207956+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "AT&T",
       "display": "AT&T",
       "employees": 50,
@@ -2140,6 +2140,293 @@
       "warnings": [],
       "keys": [
         "CA:Uber Technologies, Inc.__2026-09-21__26"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "fecd795d2bca",
+      "created_at": "2026-11-17T20:40:13.406471+00:00",
+      "status": "pending",
+      "company": "AstraZeneca",
+      "display": "AstraZeneca",
+      "employees": 626,
+      "states": [
+        "DE"
+      ],
+      "per_state": {
+        "DE": 626
+      },
+      "sites": 1,
+      "card": {
+        "place": "Wilmington, DE",
+        "effective": null,
+        "employees": 626
+      },
+      "arm": "size",
+      "reason": "626 >= 250",
+      "text": "AstraZeneca filed a WARN notice for 626 job cuts in Wilmington, DE.\n\nEffective date not reported.\n\n#layoffs #Delaware",
+      "thread": [],
+      "weighted_len": 117,
+      "warnings": [],
+      "keys": [
+        "DE:AstraZeneca__None__626"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "bd5fd8b50a4c",
+      "created_at": "2026-11-17T20:40:13.406544+00:00",
+      "status": "pending",
+      "company": "Qualcomm",
+      "display": "Qualcomm",
+      "employees": 517,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 517
+      },
+      "sites": 10,
+      "card": {
+        "place": "10 sites in California",
+        "effective": "Jan 12, 2026",
+        "employees": 517
+      },
+      "arm": "size",
+      "reason": "517 >= 250",
+      "text": "Qualcomm filed WARN notices for 517 job cuts across 10 sites in California.\n\nFirst effective date Jan 12, 2026.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 133,
+      "warnings": [],
+      "keys": [
+        "CA:Qualcomm Incorporated (3000 Oakmead Village Court)__2026-01-12__2",
+        "CA:Qualcomm Incorporated (3001 Oakmead Village Drive)__2027-01-12__3",
+        "CA:Qualcomm Incorporated (3050 Oakmead Village Drive)__2027-01-12__2",
+        "CA:Qualcomm Incorporated (3135 Kifer Road)__2027-01-12__15",
+        "CA:Qualcomm Incorporated (3150 Central Expressway)__2027-01-12__12",
+        "CA:Qualcomm Incorporated (3165 Kifer Road)__2027-01-12__13",
+        "CA:Qualcomm Incorporated (3195 Kifer Road)__2027-01-12__15",
+        "CA:Qualcomm Incorporated (1730 North First Street, Suites 650 & 500)__2027-01-12__6",
+        "CA:Qualcomm Incorporated__2027-01-12__442",
+        "CA:Qualcomm Incorporated (3090 Oakmead Village Drive)__2027-01-12__7"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "6860675849b8",
+      "created_at": "2026-11-17T20:40:13.406625+00:00",
+      "status": "pending",
+      "company": "PG&E",
+      "display": "PG&E",
+      "employees": 205,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 205
+      },
+      "sites": 61,
+      "card": {
+        "place": "61 sites in California",
+        "effective": "Nov 2, 2026",
+        "employees": 205
+      },
+      "arm": "brand",
+      "reason": "known brand, 205 >= 50",
+      "text": "PG&E filed WARN notices for 205 job cuts across 61 sites in California.\n\nFirst effective date Nov 2, 2026.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 128,
+      "warnings": [],
+      "keys": [
+        "CA:Pacific Gas and Electric Company - Fremont__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - Gardner field Rd, Taft__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - Fulton__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - Grass Valley__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - Auburn__2026-11-02__5",
+        "CA:Pacific Gas and Electric Company - Florin-Perkins Road, Sacramento__2026-11-02__10",
+        "CA:Pacific Gas and Electric Company - Bakersfield__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - Bay Point__2026-11-02__1",
+        "CA:PAcific Gas and Electric Company - Wible Road, Bakersfield__2026-11-02__2",
+        "CA:PAcific Gas and Electric Company - Rocklin__2026-11-02__8",
+        "CA:Pacific Gas and Electric Company - Chico__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - Concord__2026-11-02__2",
+        "CA:Pacific Gas and Electric Company - Cupertino__2026-11-02__2",
+        "CA:Pacific Gas and Electric Company - Danville__2026-11-02__4",
+        "CA:Pacific Gas and Electric Company - Dinuba__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - Dublin__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - East CA Ave, Fresno__2026-11-02__3",
+        "CA:Pacific Gas and Electric Company - East River Park Place West, Fresno__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - Embarcadero, W. Sacramento__2026-11-02__2",
+        "CA:Pacific Gas and Electric Company - Eureka__2026-11-02__3",
+        "CA:Pacific Gas and Electric Company - Fairfield__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - Folsom Blvd, Sacramento__2026-11-02__2",
+        "CA:Pacific Gas and Electric Company - Dado street, San Jose__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - San Luis Obispo__2026-11-02__6",
+        "CA:Pacific Gas and Electric Company - Livermore__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - Hegan Ln, Chico__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - West Lane, Stockton__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - Woodland__2026-11-02__2",
+        "CA:Pacific Gas and Electric Company Allison Parkway, Vacaville__2026-11-02__4",
+        "CA:Pacific Gas and Electric Company- Antioch__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company- Quincy__2026-11-02__1",
+        "CA:Pacific Gas and Electric Morgan Hill__2026-11-02__1",
+        "CA:Pacific gas and Electric Company - Adobe Rd, Petaluma__2026-11-02__1",
+        "CA:Pacific gas and Electric Company - Beale Street, San Francisco__2026-11-02__1",
+        "CA:Pacific gas and Electric Company - Morrison Creek Drive, Sacramento__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - Vallejo__2026-11-02__2",
+        "CA:Pacific Gas and Electric Company - Vacaville__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - W. Sacramento__2026-11-02__4",
+        "CA:Pacific Gas and Electric Company - Stockton__2026-11-02__4",
+        "CA:Pacific Gas and Electric Company - Lodi__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - Marysville__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - Modesto__2026-11-02__3",
+        "CA:Pacific Gas and Electric Company - Morrison Creek Drive, Sacramento__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - Napa__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - Oakland__2026-11-02__73",
+        "CA:Pacific Gas and Electric Company - Oakport Street, Oakland__2026-11-02__2",
+        "CA:Pacific Gas and Electric Company - Ukiah__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - Petaluma__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - Pismo Beach__2026-11-02__2",
+        "CA:Pacific Gas and Electric Company - P Street, Fresno__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - Salida__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - Salinas__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - San Carlos__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - San Jose__2026-11-02__2",
+        "CA:Pacific Gas and Electric - Rio Lindo Ave, Chico__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - San Rafael__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - San Ramon__2026-11-02__15",
+        "CA:Pacific Gas and Electric Company - Santa Rosa__2026-11-02__3",
+        "CA:Pacific Gas and Electric Company - Shaw Ave, Fresno__2026-11-02__4",
+        "CA:Pacific Gas and Electric Company - Sacramento__2026-11-02__1",
+        "CA:Pacific Gas and Electric Company - Avila Beach__2026-11-02__1"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "c6ac6a57149f",
+      "created_at": "2026-11-17T20:40:13.406674+00:00",
+      "status": "pending",
+      "company": "TJX Companies",
+      "display": "TJX Companies",
+      "employees": 139,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 139
+      },
+      "sites": 2,
+      "card": {
+        "place": "2 sites in California",
+        "effective": "Jan 9, 2027",
+        "employees": 139
+      },
+      "arm": "brand",
+      "reason": "known brand, 139 >= 50",
+      "text": "TJX Companies filed WARN notices for 139 job cuts across 2 sites in California.\n\nFirst effective date Jan 9, 2027.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 136,
+      "warnings": [],
+      "keys": [
+        "CA:TJX Companies, Inc. dba T.J. Maxx__2027-01-09__77",
+        "CA:TJX Companies, Inc. dba T.J.Maxx__2027-01-09__62"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "66659b4c7fb6",
+      "created_at": "2026-11-17T20:40:13.406721+00:00",
+      "status": "pending",
+      "company": "Ryder",
+      "display": "Ryder",
+      "employees": 83,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 83
+      },
+      "sites": 2,
+      "card": {
+        "place": "2 sites in California",
+        "effective": "Jan 10, 2026",
+        "employees": 83
+      },
+      "arm": "brand",
+      "reason": "known brand, 83 >= 50",
+      "text": "Ryder filed WARN notices for 83 job cuts across 2 sites in California.\n\nFirst effective date Jan 10, 2026.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 128,
+      "warnings": [],
+      "keys": [
+        "CA:Ryder - 500 E. Louise Ave.__2026-01-10__10",
+        "CA:Ryder - 980 E Louise__2027-01-10__73"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "455de21ec767",
+      "created_at": "2026-11-17T20:40:13.406765+00:00",
+      "status": "pending",
+      "company": "Huntington Ingalls",
+      "display": "Huntington Ingalls",
+      "employees": 58,
+      "states": [
+        "VA"
+      ],
+      "per_state": {
+        "VA": 58
+      },
+      "sites": 1,
+      "card": {
+        "place": "Virginia Beach, VA",
+        "effective": "Jan 5, 2027",
+        "employees": 58
+      },
+      "arm": "brand",
+      "reason": "known brand, 58 >= 50",
+      "text": "Huntington Ingalls filed a WARN notice for 58 job cuts in Virginia Beach, VA.\n\nEffective Jan 5, 2027.\n\n#layoffs #Virginia",
+      "thread": [],
+      "weighted_len": 121,
+      "warnings": [],
+      "keys": [
+        "VA:Huntington Ingalls Mission Technologies__2027-01-05__58"
       ],
       "approved_by": null,
       "approved_at": null,
