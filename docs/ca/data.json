@@ -2,7 +2,7 @@
   "scope": "ca",
   "state": "CA",
   "coverage_start": "2025-01-01",
-  "last_updated": "2026-11-16T21:49:12.493299+00:00",
+  "last_updated": "2026-11-17T06:01:16.619794+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "total_records": 2071,
   "total_employees": 118244,
@@ -20,7 +20,7 @@
       "address": "6060 Center Drive, 10th Floor  Los Angeles CA 90045",
       "industry": "72 Accommodation and Food Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Wright Tree Service of the West, Inc. (270 N See Vee Ln)",
@@ -111,7 +111,7 @@
       "address": "32134 Auberry Rd.  Auberry CA 93602",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Wright Tree Service of the West, Inc.",
@@ -124,7 +124,7 @@
       "address": "270 N See Vee Ln  Bishop CA 93514",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Wright Tree Service of the West, Inc.",
@@ -137,7 +137,7 @@
       "address": "13426 Avenue 232  Tulare CA 93274",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Wright Tree Service of the West, Inc.",
@@ -150,7 +150,7 @@
       "address": "4571 Lake Isabella Blvd  Lake Isabella CA 93240",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Wright Tree Service of the West, Inc.",
@@ -163,7 +163,7 @@
       "address": "430 Sherwin Creek Rd  Mammoth Lakes CA 93546",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "University of Southern California",
@@ -176,7 +176,7 @@
       "address": "1500 & 1510 San Pablo St.  Los Angeles CA 90033",
       "industry": "61 Educational Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Illumina, Inc. Worldwide Headquarters",
@@ -189,7 +189,7 @@
       "address": "5200 Illumina Way  San Diego CA 92122",
       "industry": "54 Professional Scientific and Technical Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "VCA Corporate Support Office",
@@ -501,7 +501,7 @@
       "address": "555 S. Flower Street  Los Angeles CA 90012",
       "industry": "52 Finance and Insurance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Chick-fil-A - Worthy Integrated Holdings LLC",
@@ -904,7 +904,7 @@
       "address": "R/O 6 Church Street  Mountain View CA 94041",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Davey Tree Surgery Company",
@@ -917,7 +917,7 @@
       "address": "2505 N Palm Drive  Signal Hill CA 90755",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Davey Tree Surgery Company",
@@ -930,7 +930,7 @@
       "address": "Remote  Livermore CA 94550",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Davey Tree Surgery",
@@ -943,7 +943,7 @@
       "address": "5843 Graham Hill Road  Felton CA 95018",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Davey Tree Surgery Company",
@@ -956,7 +956,7 @@
       "address": "132 Roache Road  Freedom CA 95019",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Davey Tree Surgery Company",
@@ -969,7 +969,7 @@
       "address": "8188 Katella Avenue  Stanton CA 90680",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Collins Aerospace",
@@ -982,7 +982,7 @@
       "address": "2000 E El Segundo Blvd  El Segundo CA 90245",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Davey Tree Surgery Company",
@@ -995,7 +995,7 @@
       "address": "244 Hall Road  Royal Oaks CA 95076",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Dropbox, Inc.",
@@ -1255,7 +1255,7 @@
       "address": "4299 Rosewood Drive  Pleasanton CA 94588",
       "industry": "44-45 Retail Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Everidge Inc.",
@@ -1333,7 +1333,7 @@
       "address": "2395 Bert Drive  Hollister CA 95023",
       "industry": "42 Wholesale Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Intel Corporation",
@@ -1554,7 +1554,7 @@
       "address": "75 N. Fair Oaks Ave.  Pasadena CA 91103",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Kaiser Foundation Hospitals and Kaiser Foundation Health Plan, Inc.",
@@ -1567,7 +1567,7 @@
       "address": "1800 Harrison St.  Oakland CA 94612",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Netflix, Inc.",
@@ -1931,7 +1931,7 @@
       "address": "74 N. Pasadena Ave.  Pasadena CA 91103",
       "industry": "62 Healthcare and Social Assistance",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Blue Diamond Growers",
@@ -5909,7 +5909,7 @@
       "address": "2330 Circadian Way  Santa Rosa CA 95407",
       "industry": "56 Administrative and Support and Waste Management and Remediation",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Uber Technologies, Inc.",
@@ -5922,7 +5922,7 @@
       "address": "1655 3rd Street  San Francisco CA 94158",
       "industry": "48-49 Transportation and Warehousing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "New Leaf Community Markets, Inc.",
