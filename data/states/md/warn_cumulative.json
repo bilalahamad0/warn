@@ -1,9 +1,9 @@
 {
-  "total_records": 1385,
-  "total_employees": 117461,
+  "total_records": 1386,
+  "total_employees": 117818,
   "date_range_start": "2010-01-07",
-  "date_range_end": "2026-11-12",
-  "last_updated": "2026-11-17T20:31:52.852821+00:00",
+  "date_range_end": "2026-11-17",
+  "last_updated": "2026-11-18T05:20:18.173145+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
     {
@@ -16625,6 +16625,18 @@
       "city": "",
       "address": "3304 Hayman Drive, Federalsburg, MD 21629",
       "industry": "621111"
+    },
+    {
+      "state": "MD",
+      "company": "Full Steam Staffing, LLC",
+      "notice_date": "2026-11-17",
+      "effective_date": "2026-12-20",
+      "employees": 357,
+      "layoff_type": "Temporary Mass Layoff- Note: Temporary 2 week layoff for necessary maintenance",
+      "county": "Howard County",
+      "city": "",
+      "address": "9090 Whiskey Bottom Road Laurel, MD 20723",
+      "industry": "561320"
     }
   ]
 }

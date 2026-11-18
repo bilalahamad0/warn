@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-17T20:40:13.406780+00:00",
+  "updated_at": "2026-11-18T05:28:42.524783+00:00",
   "candidates": [
     {
       "id": "5e3bb4bb017c",
@@ -1894,7 +1894,7 @@
     {
       "id": "4c01fcde0c6e",
       "created_at": "2026-11-11T04:04:25.837167+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "health research",
       "display": "Health Research Inc.",
       "employees": 760,
@@ -2427,6 +2427,42 @@
       "warnings": [],
       "keys": [
         "VA:Huntington Ingalls Mission Technologies__2027-01-05__58"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "29b07db17b56",
+      "created_at": "2026-11-18T05:28:42.524759+00:00",
+      "status": "pending",
+      "company": "full steam staffing",
+      "display": "Full Steam Staffing, LLC",
+      "employees": 357,
+      "states": [
+        "MD"
+      ],
+      "per_state": {
+        "MD": 357
+      },
+      "sites": 1,
+      "card": {
+        "place": "Howard County, MD",
+        "effective": "Dec 20, 2026",
+        "employees": 357
+      },
+      "arm": "size",
+      "reason": "357 >= 250",
+      "text": "Full Steam Staffing, LLC filed a WARN notice for 357 job cuts in Howard County, MD.\n\nEffective Dec 20, 2026.\n\n#layoffs #Maryland",
+      "thread": [],
+      "weighted_len": 128,
+      "warnings": [],
+      "keys": [
+        "MD:Full Steam Staffing, LLC__2026-12-20__357"
       ],
       "approved_by": null,
       "approved_at": null,

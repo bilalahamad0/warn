@@ -3,7 +3,7 @@
   "total_employees": 132883,
   "date_range_start": "2010-07-29",
   "date_range_end": "2026-11-13",
-  "last_updated": "2026-11-17T20:36:07.078079+00:00",
+  "last_updated": "2026-11-18T05:24:58.294173+00:00",
   "source_url": "https://virginiaworks.gov/im-an-employer/retain-and-grow/warn-notices/",
   "records": [
     {
@@ -13664,18 +13664,6 @@
     },
     {
       "state": "VA",
-      "company": "Haynes Furniture Company Inc.",
-      "notice_date": "2026-10-30",
-      "effective_date": "2026-11-17",
-      "employees": 83,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Virginia Beach",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "VA",
       "company": "Huntington Ingalls Mission Technologies",
       "notice_date": "2026-11-13",
       "effective_date": "2027-01-05",
@@ -13695,6 +13683,18 @@
       "layoff_type": "Layoff",
       "county": "",
       "city": "Roanoke",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "Haynes Furniture Company Inc.",
+      "notice_date": "2026-10-30",
+      "effective_date": "2026-11-18",
+      "employees": 83,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Virginia Beach",
       "address": "",
       "industry": ""
     }

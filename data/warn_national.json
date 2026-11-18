@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-11-17T20:38:59.004020+00:00",
+  "last_updated": "2026-11-18T05:27:51.104143+00:00",
   "states_live": 47,
-  "total_records": 61050,
-  "total_employees": 6556744,
+  "total_records": 61051,
+  "total_employees": 6557101,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1385,
-      "total_employees": 117461
+      "total_records": 1386,
+      "total_employees": 117818
     },
     "ME": {
       "name": "Maine",
@@ -392890,6 +392890,18 @@
       "industry": "621111"
     },
     {
+      "state": "MD",
+      "company": "Full Steam Staffing, LLC",
+      "notice_date": "2026-11-17",
+      "effective_date": "2026-12-20",
+      "employees": 357,
+      "layoff_type": "Temporary Mass Layoff- Note: Temporary 2 week layoff for necessary maintenance",
+      "county": "Howard County",
+      "city": "",
+      "address": "9090 Whiskey Bottom Road Laurel, MD 20723",
+      "industry": "561320"
+    },
+    {
       "state": "ME",
       "company": "SMBC-Sumitomo Mitsui Banking Corporation",
       "notice_date": "2026-01-13",
@@ -653485,18 +653497,6 @@
     },
     {
       "state": "VA",
-      "company": "Haynes Furniture Company Inc.",
-      "notice_date": "2026-10-30",
-      "effective_date": "2026-11-17",
-      "employees": 83,
-      "layoff_type": "Closure",
-      "county": "",
-      "city": "Virginia Beach",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "VA",
       "company": "Huntington Ingalls Mission Technologies",
       "notice_date": "2026-11-13",
       "effective_date": "2027-01-05",
@@ -653516,6 +653516,18 @@
       "layoff_type": "Layoff",
       "county": "",
       "city": "Roanoke",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "VA",
+      "company": "Haynes Furniture Company Inc.",
+      "notice_date": "2026-10-30",
+      "effective_date": "2026-11-18",
+      "employees": 83,
+      "layoff_type": "Closure",
+      "county": "",
+      "city": "Virginia Beach",
       "address": "",
       "industry": ""
     },

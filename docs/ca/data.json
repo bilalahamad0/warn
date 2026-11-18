@@ -2,7 +2,7 @@
   "scope": "ca",
   "state": "CA",
   "coverage_start": "2025-01-01",
-  "last_updated": "2026-11-17T20:38:59.004020+00:00",
+  "last_updated": "2026-11-18T05:27:51.104143+00:00",
   "source_url": "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx",
   "total_records": 2166,
   "total_employees": 119747,
@@ -20,7 +20,7 @@
       "address": "721 E Central Ave  Monrovia CA 91016",
       "industry": "44-45 Retail Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Sierra Monrovia CDJR, LLC",
@@ -33,7 +33,7 @@
       "address": "1450 S Shamrock Ave  Monrovia CA 91016",
       "industry": "44-45 Retail Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Sierra Monrovia Sub, LLC",
@@ -46,7 +46,7 @@
       "address": "735 E Central Ave.  Monrovia CA 91016",
       "industry": "44-45 Retail Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Renewable Solar, Inc.",
@@ -59,7 +59,7 @@
       "address": "601 W. Grangeville Blvd.  Hanford CA 93230",
       "industry": "23 Construction",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Qualcomm Incorporated (3000 Oakmead Village Court)",
@@ -72,7 +72,7 @@
       "address": "3000 Oakmead Village Court  Santa Clara CA 95051",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "HII Mission Technologies",
@@ -85,7 +85,7 @@
       "address": "NAS North Island, Bldg 1479  San Diego CA 92135",
       "industry": "54 Professional Scientific and Technical Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Qualcomm Incorporated (3001 Oakmead Village Drive)",
@@ -98,7 +98,7 @@
       "address": "3001 Oakmead Village Drive  Santa Clara CA 95051",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Qualcomm Incorporated (3050 Oakmead Village Drive)",
@@ -111,7 +111,7 @@
       "address": "3050 Oakmead Village Drive  Santa Clara CA 95051",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Qualcomm Incorporated (3135 Kifer Road)",
@@ -124,7 +124,7 @@
       "address": "3135 Kifer Road  Santa Clara CA 95051",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Qualcomm Incorporated (3150 Central Expressway)",
@@ -137,7 +137,7 @@
       "address": "3150 Central Expressway  Santa Clara CA 95051",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Qualcomm Incorporated (3165 Kifer Road)",
@@ -150,7 +150,7 @@
       "address": "3165 Kifer Road  Santa Clara CA 95051",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Qualcomm Incorporated (3195 Kifer Road)",
@@ -163,7 +163,7 @@
       "address": "3195 Kifer Road  Santa Clara CA 95051",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Qualcomm Incorporated (1730 North First Street, Suites 650 & 500)",
@@ -176,7 +176,7 @@
       "address": "1730 North First Street, Suites 650 & 500  San Jose CA 95112",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Qualcomm Incorporated",
@@ -189,7 +189,7 @@
       "address": "5775 Morehouse Dr  San Diego CA 92121",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Qualcomm Incorporated (3090 Oakmead Village Drive)",
@@ -202,7 +202,7 @@
       "address": "3090 Oakmead Village Drive  Santa Clara CA 95051",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "HD Supply",
@@ -215,7 +215,7 @@
       "address": "1110 E Mill Street  San Bernardino CA 92408",
       "industry": "42 Wholesale Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Gainsight, Inc.",
@@ -228,7 +228,7 @@
       "address": "350 Bay Street, Suite 100  San Francisco CA 94133",
       "industry": "51 Information",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Corteva Agriscience LLC",
@@ -241,7 +241,7 @@
       "address": "901 Loveridge Road  Pittsburg CA 94565",
       "industry": "31-33 Manufacturing",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Black Tie Event Services, Inc. dba StaffworkX",
@@ -267,7 +267,7 @@
       "address": "18700 Ventura Boulevard, Suite 170  Tarzana CA 91356",
       "industry": "44-45 Retail Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "TJX Companies, Inc. dba T.J.Maxx",
@@ -280,7 +280,7 @@
       "address": "1850 South Grant Street  San Mateo CA 94402",
       "industry": "44-45 Retail Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Weil, Gotshal & Manges LLP",
@@ -293,7 +293,7 @@
       "address": "201 Redwood Shores Parkway, 5th floor  Redwood Shores CA 94065",
       "industry": "54 Professional Scientific and Technical Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Weil, Gotshal & Manges LLP",
@@ -306,7 +306,7 @@
       "address": "1999 Avenue of the Stars  Los Angeles CA 90067",
       "industry": "54 Professional Scientific and Technical Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Weil, Gotshal & Manges LLP",
@@ -319,7 +319,7 @@
       "address": "600 Montgomery Street, 32nd Floor  San Francisco CA 94111",
       "industry": "54 Professional Scientific and Technical Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Wright Tree Service of the West, Inc. (270 N See Vee Ln)",
@@ -501,7 +501,7 @@
       "address": "1516 San Pablo St.  Los Angeles CA 90033",
       "industry": "61 Educational Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "University of Southern California (USC Norris Cancer Hospital)",
@@ -514,7 +514,7 @@
       "address": "1441 Eastlake Ave  Los Angeles CA 90033",
       "industry": "61 Educational Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "University of Southern California (Soto II)",
@@ -527,7 +527,7 @@
       "address": "1509 San Pablo St  Los Angeles CA 90033",
       "industry": "61 Educational Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "University of Southern California (HC1)",
@@ -540,7 +540,7 @@
       "address": "1510 San Pablo St.  Los Angeles CA 90033",
       "industry": "61 Educational Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "University of Southern California (Health Sciences Campus)",
@@ -553,7 +553,7 @@
       "address": "1500 & 1510 San Pablo St.  Los Angeles CA 90033",
       "industry": "61 Educational Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "University of Southern California (HC4)",
@@ -566,7 +566,7 @@
       "address": "1450 San Pablo St.  Los Angeles CA 90033",
       "industry": "61 Educational Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "University of Southern California (HC2)",
@@ -579,7 +579,7 @@
       "address": "1520 San Pablo St.  Los Angeles CA 90033",
       "industry": "61 Educational Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "University of Southern California (Keck Hospital)",
@@ -592,7 +592,7 @@
       "address": "1500 San Pablo Street  Los Angeles CA 90033",
       "industry": "61 Educational Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "VCA Corporate Support Office",
@@ -917,7 +917,7 @@
       "address": "42105 Boyce Road  Fremont CA 94538",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Gardner field Rd, Taft",
@@ -930,7 +930,7 @@
       "address": "550 Gardner Field Road  Taft CA 93268",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Fulton",
@@ -943,7 +943,7 @@
       "address": "605 River Road  Fulton CA 95439",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Grass Valley",
@@ -956,7 +956,7 @@
       "address": "127 East Main Street  Grass Valley CA 95945",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Auburn",
@@ -969,7 +969,7 @@
       "address": "12840 Bill Clark Way  Auburn CA 95602",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Florin-Perkins Road, Sacramento",
@@ -982,7 +982,7 @@
       "address": "555 Florin-Perkins Road  Sacramento CA 95826",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Bakersfield",
@@ -995,7 +995,7 @@
       "address": "3551 Pegasus Drive  Bakersfield CA 93308",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacifc Gas and Electric Company - Orange Ave., Fresno",
@@ -1008,7 +1008,7 @@
       "address": "2141 S. Orange Ave.  Fresno CA 93725",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacif Gas and Electric Company - Redding",
@@ -1021,7 +1021,7 @@
       "address": "3600 Meadow view Ave.  Redding CA 96002",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Bay Point",
@@ -1034,7 +1034,7 @@
       "address": "4800 Evora Road  Bay Point CA 94565",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "PAcific Gas and Electric Company - Wible Road, Bakersfield",
@@ -1047,7 +1047,7 @@
       "address": "4101 Wible Road  Bakersfield CA 93313",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "PAcific Gas and Electric Company - Rocklin",
@@ -1060,7 +1060,7 @@
       "address": "6030 West Oaks Blvd.  Rocklin CA 95765",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Chico",
@@ -1073,7 +1073,7 @@
       "address": "11239 Midway Street  Chico CA 95928",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Concord",
@@ -1086,7 +1086,7 @@
       "address": "1030 Detroit Avenue  Concord CA 94518",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Cupertino",
@@ -1099,7 +1099,7 @@
       "address": "10900 N Blaney Ave  Cupertino CA 95014",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Danville",
@@ -1112,7 +1112,7 @@
       "address": "3400 Crow Canyon Road  Danville CA 94583",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Dinuba",
@@ -1125,7 +1125,7 @@
       "address": "8058 Union Drive  Dinuba CA 93618",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Dublin",
@@ -1138,7 +1138,7 @@
       "address": "5875 Arnold Rd., Suite 300  Dublin CA 94568",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - East CA Ave, Fresno",
@@ -1151,7 +1151,7 @@
       "address": "3580 East California Ave.  Fresno CA 93702",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - East River Park Place West, Fresno",
@@ -1164,7 +1164,7 @@
       "address": "8 East River Park Place West  Fresno CA 93720",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Embarcadero, W. Sacramento",
@@ -1177,7 +1177,7 @@
       "address": "855 Embarcadero  West Sacramento CA 95605",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Eureka",
@@ -1190,7 +1190,7 @@
       "address": "2475 Myrtle Avenue  Eureka CA 95501",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Fairfield",
@@ -1203,7 +1203,7 @@
       "address": "425 Beck Avenue  Fairfield CA 94533",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Folsom Blvd, Sacramento",
@@ -1216,7 +1216,7 @@
       "address": "8180 Folsom Blvd.  Sacramento CA 95826",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Dado street, San Jose",
@@ -1229,7 +1229,7 @@
       "address": "680 Dado Street  San Jose CA 95131",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - San Luis Obispo",
@@ -1242,7 +1242,7 @@
       "address": "4325 S Higuera Street  San Luis Obispo CA 93401",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Livermore",
@@ -1255,7 +1255,7 @@
       "address": "3797 1st Street  Livermore CA 94550",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Hegan Ln, Chico",
@@ -1268,7 +1268,7 @@
       "address": "2642 Hegan Ln  Chico CA 95928",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - West Lane, Stockton",
@@ -1281,7 +1281,7 @@
       "address": "4040 West Lane  Stockton CA 95204",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Woodland",
@@ -1294,7 +1294,7 @@
       "address": "50 Kentucky Ave.  Woodland CA 95695",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company Allison Parkway, Vacaville",
@@ -1307,7 +1307,7 @@
       "address": "4940 Allison Parkway  Vacaville CA 95688",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company- Antioch",
@@ -1320,7 +1320,7 @@
       "address": "2111 Hillcrest Ave.  Antioch CA 94509",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company- Quincy",
@@ -1333,7 +1333,7 @@
       "address": "205 Railway  Quincy CA 95971",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Morgan Hill",
@@ -1346,7 +1346,7 @@
       "address": "360 Cochrane Circle  Morgan Hill CA 95037",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific gas and Electric Company - Adobe Rd, Petaluma",
@@ -1359,7 +1359,7 @@
       "address": "3600 Adobe Road  Petaluma CA 94954",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific gas and Electric Company - Beale Street, San Francisco",
@@ -1372,7 +1372,7 @@
       "address": "77 Beale Street  San Francisco CA 94105",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Morrison Creek Drive, Sacramento",
@@ -1385,7 +1385,7 @@
       "address": "8651 Morrison Creek Drive  Sacramento CA 95828",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Vallejo",
@@ -1398,7 +1398,7 @@
       "address": "303 Carlson Street  Vallejo CA 94590",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Vacaville",
@@ -1411,7 +1411,7 @@
       "address": "158 Peabody Road  Vacaville CA 95687",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - W. Sacramento",
@@ -1424,7 +1424,7 @@
       "address": "850 Stillwater Road  West Sacramento CA 95605",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Stockton",
@@ -1437,7 +1437,7 @@
       "address": "3136 Boeing Way  Stockton CA 95206",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Lodi",
@@ -1450,7 +1450,7 @@
       "address": "9575 East Victor Road  Lodi CA 95240",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Marysville",
@@ -1463,7 +1463,7 @@
       "address": "29 4th Street  Marysville CA 95901",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Modesto",
@@ -1476,7 +1476,7 @@
       "address": "1524 N. Carpenter Road  Modesto CA 95351",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Napa",
@@ -1489,7 +1489,7 @@
       "address": "300 Burnell St.  Napa CA 94559",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Oakland",
@@ -1502,7 +1502,7 @@
       "address": "300 Lakeside Dr.  Oakland CA 94612",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Oakport Street, Oakland",
@@ -1515,7 +1515,7 @@
       "address": "4801 Oakport Street  Oakland CA 94601",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Ukiah",
@@ -1528,7 +1528,7 @@
       "address": "2641 North State Street  Ukiah CA 95482",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Petaluma",
@@ -1541,7 +1541,7 @@
       "address": "2455 Frates Road  Petaluma CA 94954",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Pismo Beach",
@@ -1554,7 +1554,7 @@
       "address": "800 Price Canyon Road  Pismo Beach CA 93449",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - P Street, Fresno",
@@ -1567,7 +1567,7 @@
       "address": "705 P Street  Fresno CA 93721",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Salida",
@@ -1580,7 +1580,7 @@
       "address": "4548 Hope Ln  Salida CA 95368",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Salinas",
@@ -1593,7 +1593,7 @@
       "address": "356 East Alisal Street  Salinas CA 93901",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - San Carlos",
@@ -1606,7 +1606,7 @@
       "address": "275 Industrial Road  San Carlos CA 94070",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - San Jose",
@@ -1619,7 +1619,7 @@
       "address": "111 Almaden Blvd.  San Jose CA 95113",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric - Rio Lindo Ave, Chico",
@@ -1632,7 +1632,7 @@
       "address": "460 Rio Lindo Avenue  Chico CA 95926",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - San Rafael",
@@ -1645,7 +1645,7 @@
       "address": "1220 Andersen Drive  San Rafael CA 94901",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - San Ramon",
@@ -1658,7 +1658,7 @@
       "address": "3301 Crow Canyon Road  San Ramon CA 94583",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Santa Rosa",
@@ -1671,7 +1671,7 @@
       "address": "111 Stony Circle  Santa Rosa CA 95401",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Shaw Ave, Fresno",
@@ -1684,7 +1684,7 @@
       "address": "1385 E Shaw Avenue  Fresno CA 93710",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Sacramento",
@@ -1697,7 +1697,7 @@
       "address": "2740 Gateway Oaks Drive  Sacramento CA 95833",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Pacific Gas and Electric Company - Avila Beach",
@@ -1710,7 +1710,7 @@
       "address": "Diablo Canyon Road  Avila Beach CA 93424",
       "industry": "22 Utilities",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Chick-fil-A - Worthy Integrated Holdings LLC",
@@ -1905,7 +1905,7 @@
       "address": "2526 S Coast Hwy 101  Cardiff CA 92007",
       "industry": "72 Accommodation and Food Services",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Davey Tree Surgery Company (244 Hall Road)",
@@ -6975,7 +6975,7 @@
       "address": "839 W. Roseburg Avenue  Modesto CA 95350",
       "industry": "44-45 Retail Trade",
       "state": "CA",
-      "_is_new": true
+      "_is_new": false
     },
     {
       "company": "Intel Corporation - SC-9",
