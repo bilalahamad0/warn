@@ -1,9 +1,9 @@
 {
-  "total_records": 483,
-  "total_employees": 36487,
+  "total_records": 484,
+  "total_employees": 36546,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-11-16",
-  "last_updated": "2026-11-18T05:15:14.206617+00:00",
+  "date_range_end": "2026-11-17",
+  "last_updated": "2026-11-18T19:57:03.812716+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -5801,6 +5801,18 @@
       "city": "BARTOW",
       "address": "210 Century Blvd.",
       "industry": "Transportation and Warehousing"
+    },
+    {
+      "state": "FL",
+      "company": "Convey Health Solutions",
+      "notice_date": "2026-11-17",
+      "effective_date": "2026-12-01",
+      "employees": 59,
+      "layoff_type": "",
+      "county": "",
+      "city": "MULTIPLE LOCATIONS",
+      "address": "100 SE 3rd Ave, Suite 2600 (26th Floor), Fort Lauderdale",
+      "industry": "Health Care and Social Assistance"
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
-  "total_records": 319,
-  "total_employees": 46770,
+  "total_records": 320,
+  "total_employees": 46804,
   "date_range_start": "2023-01-09",
   "date_range_end": "2027-03-01",
-  "last_updated": "2026-11-18T05:24:36.930536+00:00",
+  "last_updated": "2026-11-18T20:05:24.700237+00:00",
   "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
   "records": [
     {
@@ -3832,6 +3832,18 @@
       "county": "Various",
       "city": "",
       "address": "6363 De Zavala Road, San Antonio, TX  78249",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "J. L. Clark LLC",
+      "notice_date": null,
+      "effective_date": "2027-01-18",
+      "employees": 34,
+      "layoff_type": "Closure",
+      "county": "Lancaster",
+      "city": "",
+      "address": "303 North Plum Street, Lancaster, PA  17602",
       "industry": ""
     }
   ]

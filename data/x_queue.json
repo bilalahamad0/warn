@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-18T05:28:42.524783+00:00",
+  "updated_at": "2026-11-18T20:09:30.286601+00:00",
   "candidates": [
     {
       "id": "5e3bb4bb017c",
@@ -1930,7 +1930,7 @@
     {
       "id": "faebba0e2be6",
       "created_at": "2026-11-11T19:26:01.261108+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "childrens place distribution",
       "display": "Children's Place Distribution",
       "employees": 593,
@@ -2463,6 +2463,78 @@
       "warnings": [],
       "keys": [
         "MD:Full Steam Staffing, LLC__2026-12-20__357"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "b3fb1d6b4648",
+      "created_at": "2026-11-18T20:09:30.286542+00:00",
+      "status": "pending",
+      "company": "Sysco",
+      "display": "Sysco",
+      "employees": 112,
+      "states": [
+        "LA"
+      ],
+      "per_state": {
+        "LA": 112
+      },
+      "sites": 1,
+      "card": {
+        "place": "Louisiana",
+        "effective": "Feb 28, 2027",
+        "employees": 112
+      },
+      "arm": "brand",
+      "reason": "known brand, 112 >= 50",
+      "text": "Sysco filed a WARN notice for 112 job cuts in Louisiana.\n\nEffective Feb 28, 2027.\n\n#layoffs #Louisiana",
+      "thread": [],
+      "weighted_len": 102,
+      "warnings": [],
+      "keys": [
+        "LA:Sysco Acadiana__2027-02-28__112"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "6131281be9a9",
+      "created_at": "2026-11-18T20:09:30.286589+00:00",
+      "status": "pending",
+      "company": "Sodexo",
+      "display": "Sodexo",
+      "employees": 89,
+      "states": [
+        "LA"
+      ],
+      "per_state": {
+        "LA": 89
+      },
+      "sites": 1,
+      "card": {
+        "place": "Louisiana",
+        "effective": "Dec 31, 2026",
+        "employees": 89
+      },
+      "arm": "brand",
+      "reason": "known brand, 89 >= 50",
+      "text": "Sodexo filed a WARN notice for 89 job cuts in Louisiana.\n\nEffective Dec 31, 2026.\n\n#layoffs #Louisiana",
+      "thread": [],
+      "weighted_len": 102,
+      "warnings": [],
+      "keys": [
+        "LA:Sodexo, SDH Services East, LLC__2026-12-31__89"
       ],
       "approved_by": null,
       "approved_at": null,

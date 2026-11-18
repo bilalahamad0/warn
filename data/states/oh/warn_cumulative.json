@@ -1,9 +1,9 @@
 {
-  "total_records": 1009,
-  "total_employees": 141752,
+  "total_records": 1010,
+  "total_employees": 141901,
   "date_range_start": "2015-01-05",
-  "date_range_end": "2026-11-13",
-  "last_updated": "2026-11-18T05:24:27.378066+00:00",
+  "date_range_end": "2026-11-17",
+  "last_updated": "2026-11-18T20:05:14.610362+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
     {
@@ -11569,6 +11569,18 @@
       "effective_date": null,
       "employees": 150,
       "layoff_type": "Closure",
+      "county": "Franklin",
+      "city": "Groveport",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "UPDATE National Distribution Centers",
+      "notice_date": "2026-11-17",
+      "effective_date": null,
+      "employees": 149,
+      "layoff_type": "Layoff",
       "county": "Franklin",
       "city": "Groveport",
       "address": "",

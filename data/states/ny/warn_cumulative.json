@@ -1,9 +1,9 @@
 {
-  "total_records": 4842,
-  "total_employees": 421954,
+  "total_records": 4843,
+  "total_employees": 421906,
   "date_range_start": "2016-01-04",
   "date_range_end": "2026-10-30",
-  "last_updated": "2026-11-18T05:24:24.969995+00:00",
+  "last_updated": "2026-11-18T20:05:12.734190+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -57344,18 +57344,6 @@
     },
     {
       "state": "NY",
-      "company": "Sky Chefs, LLC",
-      "notice_date": "2026-08-04",
-      "effective_date": "2026-10-07",
-      "employees": 471,
-      "layoff_type": "Layoff Permanent",
-      "county": "Queens",
-      "city": "",
-      "address": "JFK International Airport 139 West Hangar Road Jamaica, NY, 11430",
-      "industry": ""
-    },
-    {
-      "state": "NY",
       "company": "Cazar Logistics",
       "notice_date": "2026-01-31",
       "effective_date": "2026-05-03",
@@ -58108,6 +58096,30 @@
       "county": "New York",
       "city": "",
       "address": "Remote Workers in NY New York, NY, 10029",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Restaurant Associates, LLC",
+      "notice_date": "2026-09-08",
+      "effective_date": "2026-09-08",
+      "employees": 30,
+      "layoff_type": "Closure Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "40A 10th Ave. New York, NY, 10014",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Sky Chefs, LLC",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-10-07",
+      "employees": 393,
+      "layoff_type": "Layoff Permanent",
+      "county": "Queens",
+      "city": "",
+      "address": "JFK International Airport 139 West Hangar Road Jamaica, NY, 11430",
       "industry": ""
     }
   ]

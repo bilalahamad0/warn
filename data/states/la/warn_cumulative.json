@@ -1,9 +1,9 @@
 {
-  "total_records": 42,
-  "total_employees": 7187,
+  "total_records": 45,
+  "total_employees": 7537,
   "date_range_start": "2025-01-07",
-  "date_range_end": "2026-10-31",
-  "last_updated": "2026-11-18T05:19:49.594650+00:00",
+  "date_range_end": "2026-11-10",
+  "last_updated": "2026-11-18T20:01:15.857560+00:00",
   "source_url": "https://www.laworks.net/Downloads/Downloads_WFD.asp",
   "records": [
     {
@@ -471,7 +471,7 @@
       "layoff_type": "",
       "county": "",
       "city": "",
-      "address": "80 Arkay Drive, Suite 2320, Hauppauge, NY, 11788",
+      "address": "80 Arkay Drive, Suite 2320, Hauppauge, NY 11788",
       "industry": "Healthcare"
     },
     {
@@ -509,6 +509,42 @@
       "city": "",
       "address": "1751 Airline Drive, Metairie, LA 70001",
       "industry": "Retail"
+    },
+    {
+      "state": "LA",
+      "company": "Sodexo, SDH Services East, LLC",
+      "notice_date": "2026-10-28",
+      "effective_date": "2026-12-31",
+      "employees": 89,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "309 Jackson Street, Monroe, LA 71201",
+      "industry": "Food Services"
+    },
+    {
+      "state": "LA",
+      "company": "New Dairy Texas, LLC",
+      "notice_date": "2026-11-10",
+      "effective_date": "2027-01-09",
+      "employees": 149,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "1308 Bertrand Drive, Lafayette, LA 70506",
+      "industry": "Food Manufacturing"
+    },
+    {
+      "state": "LA",
+      "company": "Sysco Acadiana",
+      "notice_date": "2026-11-10",
+      "effective_date": "2027-02-28",
+      "employees": 112,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "113 Kol Dr., Broussard, LA 70518",
+      "industry": "Food Service Delivery"
     }
   ]
 }

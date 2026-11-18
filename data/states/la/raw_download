@@ -360,7 +360,7 @@
   },
   {
    "company_original": "Upward Health Inc",
-   "address_original": "80 Arkay Drive,\nSuite 2320,\nHauppauge, NY, 11788",
+   "address_original": "80 Arkay Drive,\nSuite 2320,\nHauppauge, NY 11788",
    "date_notice": "10/09/26",
    "date_action": "12/08/26",
    "affected": "2",
@@ -389,12 +389,42 @@
    "file": "WarnNotices2026.pdf"
   },
   {
+   "company_original": "Sodexo, SDH\nServices East, LLC",
+   "address_original": "309 Jackson Street\nMonroe, LA 71201",
+   "date_notice": "10/28/26",
+   "date_action": "12/31/26",
+   "affected": "89",
+   "industry": "Food Services",
+   "year": 2026,
+   "file": "WarnNotices2026.pdf"
+  },
+  {
    "company_original": "Hurwitz Mintz\nFurniture Company",
    "address_original": "1751 Airline Drive\nMetairie, LA 70001",
    "date_notice": "10/31/26",
    "date_action": "12/31/26",
    "affected": "53",
    "industry": "Retail",
+   "year": 2026,
+   "file": "WarnNotices2026.pdf"
+  },
+  {
+   "company_original": "New Dairy Texas,\nLLC",
+   "address_original": "1308 Bertrand Drive\nLafayette, LA 70506",
+   "date_notice": "11/10/26",
+   "date_action": "1/9/27",
+   "affected": "149",
+   "industry": "Food\nManufacturing",
+   "year": 2026,
+   "file": "WarnNotices2026.pdf"
+  },
+  {
+   "company_original": "Sysco Acadiana",
+   "address_original": "113 Kol Dr.\nBroussard, LA 70518",
+   "date_notice": "11/10/26",
+   "date_action": "2/28/27",
+   "affected": "112",
+   "industry": "Food Service\nDelivery",
    "year": 2026,
    "file": "WarnNotices2026.pdf"
   }

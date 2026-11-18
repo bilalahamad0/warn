@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-11-18T05:27:51.104143+00:00",
+  "last_updated": "2026-11-18T20:08:37.070607+00:00",
   "states_live": 47,
-  "total_records": 61051,
-  "total_employees": 6557101,
+  "total_records": 61058,
+  "total_employees": 6557645,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -64,8 +64,8 @@
       "name": "Florida",
       "agency": "Florida Department of Commerce (FloridaCommerce)",
       "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
-      "total_records": 483,
-      "total_employees": 36487
+      "total_records": 484,
+      "total_employees": 36546
     },
     "GA": {
       "name": "Georgia",
@@ -127,8 +127,8 @@
       "name": "Louisiana",
       "agency": "Louisiana Workforce Commission",
       "source_url": "https://www.laworks.net/Downloads/Downloads_WFD.asp",
-      "total_records": 42,
-      "total_employees": 7187
+      "total_records": 45,
+      "total_employees": 7537
     },
     "MA": {
       "name": "Massachusetts",
@@ -225,15 +225,15 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 5391,
-      "total_employees": 436883
+      "total_records": 5392,
+      "total_employees": 436835
     },
     "OH": {
       "name": "Ohio",
       "agency": "Ohio Department of Job and Family Services",
       "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
-      "total_records": 1274,
-      "total_employees": 173356
+      "total_records": 1275,
+      "total_employees": 173505
     },
     "OK": {
       "name": "Oklahoma",
@@ -253,8 +253,8 @@
       "name": "Pennsylvania",
       "agency": "Pennsylvania Department of Labor & Industry",
       "source_url": "https://www.pa.gov/agencies/dli/programs-services/workforce-development-home/warn-requirements/warn-notices",
-      "total_records": 319,
-      "total_employees": 46770
+      "total_records": 320,
+      "total_employees": 46804
     },
     "RI": {
       "name": "Rhode Island",
@@ -207748,6 +207748,18 @@
       "industry": "Transportation and Warehousing"
     },
     {
+      "state": "FL",
+      "company": "Convey Health Solutions",
+      "notice_date": "2026-11-17",
+      "effective_date": "2026-12-01",
+      "employees": 59,
+      "layoff_type": "",
+      "county": "",
+      "city": "MULTIPLE LOCATIONS",
+      "address": "100 SE 3rd Ave, Suite 2600 (26th Floor), Fort Lauderdale",
+      "industry": "Health Care and Social Assistance"
+    },
+    {
       "state": "GA",
       "company": "Dexter Axle Company",
       "notice_date": null,
@@ -371454,7 +371466,7 @@
       "layoff_type": "",
       "county": "",
       "city": "",
-      "address": "80 Arkay Drive, Suite 2320, Hauppauge, NY, 11788",
+      "address": "80 Arkay Drive, Suite 2320, Hauppauge, NY 11788",
       "industry": "Healthcare"
     },
     {
@@ -371492,6 +371504,42 @@
       "city": "",
       "address": "1751 Airline Drive, Metairie, LA 70001",
       "industry": "Retail"
+    },
+    {
+      "state": "LA",
+      "company": "Sodexo, SDH Services East, LLC",
+      "notice_date": "2026-10-28",
+      "effective_date": "2026-12-31",
+      "employees": 89,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "309 Jackson Street, Monroe, LA 71201",
+      "industry": "Food Services"
+    },
+    {
+      "state": "LA",
+      "company": "New Dairy Texas, LLC",
+      "notice_date": "2026-11-10",
+      "effective_date": "2027-01-09",
+      "employees": 149,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "1308 Bertrand Drive, Lafayette, LA 70506",
+      "industry": "Food Manufacturing"
+    },
+    {
+      "state": "LA",
+      "company": "Sysco Acadiana",
+      "notice_date": "2026-11-10",
+      "effective_date": "2027-02-28",
+      "employees": 112,
+      "layoff_type": "",
+      "county": "",
+      "city": "",
+      "address": "113 Kol Dr., Broussard, LA 70518",
+      "industry": "Food Service Delivery"
     },
     {
       "state": "MA",
@@ -524804,18 +524852,6 @@
     },
     {
       "state": "NY",
-      "company": "Sky Chefs, LLC",
-      "notice_date": "2026-08-04",
-      "effective_date": "2026-10-07",
-      "employees": 471,
-      "layoff_type": "Layoff Permanent",
-      "county": "Queens",
-      "city": "",
-      "address": "JFK International Airport 139 West Hangar Road Jamaica, NY, 11430",
-      "industry": ""
-    },
-    {
-      "state": "NY",
       "company": "Cazar Logistics",
       "notice_date": "2026-01-31",
       "effective_date": "2026-05-03",
@@ -525568,6 +525604,30 @@
       "county": "New York",
       "city": "",
       "address": "Remote Workers in NY New York, NY, 10029",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Restaurant Associates, LLC",
+      "notice_date": "2026-09-08",
+      "effective_date": "2026-09-08",
+      "employees": 30,
+      "layoff_type": "Closure Permanent",
+      "county": "New York",
+      "city": "",
+      "address": "40A 10th Ave. New York, NY, 10014",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Sky Chefs, LLC",
+      "notice_date": "2026-08-04",
+      "effective_date": "2026-10-07",
+      "employees": 393,
+      "layoff_type": "Layoff Permanent",
+      "county": "Queens",
+      "city": "",
+      "address": "JFK International Airport 139 West Hangar Road Jamaica, NY, 11430",
       "industry": ""
     },
     {
@@ -543721,6 +543781,18 @@
       "effective_date": null,
       "employees": 150,
       "layoff_type": "Closure",
+      "county": "Franklin",
+      "city": "Groveport",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "UPDATE National Distribution Centers",
+      "notice_date": "2026-11-17",
+      "effective_date": null,
+      "employees": 149,
+      "layoff_type": "Layoff",
       "county": "Franklin",
       "city": "Groveport",
       "address": "",
@@ -569860,6 +569932,18 @@
       "county": "Various",
       "city": "",
       "address": "6363 De Zavala Road, San Antonio, TX  78249",
+      "industry": ""
+    },
+    {
+      "state": "PA",
+      "company": "J. L. Clark LLC",
+      "notice_date": null,
+      "effective_date": "2027-01-18",
+      "employees": 34,
+      "layoff_type": "Closure",
+      "county": "Lancaster",
+      "city": "",
+      "address": "303 North Plum Street, Lancaster, PA  17602",
       "industry": ""
     },
     {

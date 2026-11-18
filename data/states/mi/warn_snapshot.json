@@ -3,7 +3,7 @@
   "total_employees": 17175,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-11-17T20:33:31.665979+00:00",
+  "last_updated": "2026-11-18T05:21:58.020885+00:00",
   "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
   "records": [
     {
@@ -524,18 +524,6 @@
     },
     {
       "state": "MI",
-      "company": "General Shale, d/b/a Michigan Brick",
-      "notice_date": null,
-      "effective_date": "2026-04-27",
-      "employees": 48,
-      "layoff_type": "Facility closure",
-      "county": "Shiawassee",
-      "city": "Corunna",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "First Brands Group, LLC",
       "notice_date": null,
       "effective_date": "2026-02-23",
@@ -544,6 +532,18 @@
       "county": "Oakland",
       "city": "",
       "address": "3255 West Hamlin Road, Rochester Hills, MI 48309",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "General Shale, d/b/a Michigan Brick",
+      "notice_date": null,
+      "effective_date": "2026-04-27",
+      "employees": 48,
+      "layoff_type": "Facility closure",
+      "county": "Shiawassee",
+      "city": "Corunna",
+      "address": "",
       "industry": ""
     },
     {
