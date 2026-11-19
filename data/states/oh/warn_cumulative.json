@@ -1,9 +1,9 @@
 {
-  "total_records": 1010,
-  "total_employees": 141901,
+  "total_records": 1011,
+  "total_employees": 141974,
   "date_range_start": "2015-01-05",
-  "date_range_end": "2026-11-17",
-  "last_updated": "2026-11-19T05:16:52.626795+00:00",
+  "date_range_end": "2026-11-18",
+  "last_updated": "2026-11-19T20:08:13.245545+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
     {
@@ -11583,6 +11583,18 @@
       "layoff_type": "Layoff",
       "county": "Franklin",
       "city": "Groveport",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "Morgan Truck Body, LLC",
+      "notice_date": "2026-11-18",
+      "effective_date": null,
+      "employees": 73,
+      "layoff_type": "Closure",
+      "county": "Wayne",
+      "city": "Orrville",
       "address": "",
       "industry": ""
     }

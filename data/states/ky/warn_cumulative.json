@@ -1,9 +1,9 @@
 {
-  "total_records": 1244,
-  "total_employees": 156911,
+  "total_records": 1245,
+  "total_employees": 157459,
   "date_range_start": "1998-10-02",
-  "date_range_end": "2026-10-29",
-  "last_updated": "2026-11-19T05:12:32.709308+00:00",
+  "date_range_end": "2026-11-13",
+  "last_updated": "2026-11-19T20:03:33.596186+00:00",
   "source_url": "https://kyworks.ky.gov/Services/Pages/Rapid-Response-Layoffs-and-Closures.aspx",
   "records": [
     {
@@ -14147,6 +14147,18 @@
       "city": "",
       "address": "",
       "industry": "336340"
+    },
+    {
+      "state": "KY",
+      "company": "Wellpath Corporate Office",
+      "notice_date": "2026-11-13",
+      "effective_date": "2027-01-13",
+      "employees": 548,
+      "layoff_type": "",
+      "county": "Out of the State County",
+      "city": "",
+      "address": "",
+      "industry": "622110"
     }
   ]
 }

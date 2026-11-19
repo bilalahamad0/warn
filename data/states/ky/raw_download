@@ -1,5 +1,18 @@
 [
  {
+  "date_received": "2026-11-13 00:00:00",
+  "region": "Out of State",
+  "county": "Out of the State County",
+  "company": "Wellpath Corporate Office",
+  "NAICS": 622110,
+  "employees": 548,
+  "date_effective": "2027-01-13 00:00:00",
+  "union_affected": "Non-Union",
+  "source": "WARN Notice",
+  "notice_url": "https://kydev.my.salesforce.com/sfc/p/t00000004X3h/a/eq00000aJZdF/Gs6JgbU9NGTdwTmO1B8r2ngxb.fqA9fMdyru99WWGjo",
+  "notice_number": "Notice 2866"
+ },
+ {
   "date_received": "2026-10-29 00:00:00",
   "region": "Kentuckiana Works",
   "county": "Jefferson",

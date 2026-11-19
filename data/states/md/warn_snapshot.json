@@ -1,11 +1,23 @@
 {
-  "total_records": 1434,
-  "total_employees": 118939,
+  "total_records": 1435,
+  "total_employees": 118976,
   "date_range_start": "2010-01-07",
   "date_range_end": "2026-11-17",
-  "last_updated": "2026-11-18T20:01:46.364258+00:00",
+  "last_updated": "2026-11-19T05:13:04.414495+00:00",
   "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
   "records": [
+    {
+      "state": "MD",
+      "company": "Firaxis Games, Inc.",
+      "notice_date": "2026-11-17",
+      "effective_date": "2026-01-19",
+      "employees": 37,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Baltimore County",
+      "city": "",
+      "address": "10 Loveton Circle Sparks, MD 21152",
+      "industry": "513210"
+    },
     {
       "state": "MD",
       "company": "Full Steam Staffing, LLC",

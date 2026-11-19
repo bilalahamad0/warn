@@ -1,9 +1,9 @@
 {
-  "total_records": 1555,
-  "total_employees": 252635,
+  "total_records": 1556,
+  "total_employees": 253058,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-11-04",
-  "last_updated": "2026-11-19T05:20:10.568110+00:00",
+  "date_range_end": "2026-11-18",
+  "last_updated": "2026-11-19T20:11:26.311393+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
     {
@@ -18663,6 +18663,18 @@
       "layoff_type": "Closure Permanent",
       "county": "",
       "city": "Redmond",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "WA",
+      "company": "WHC Payroll Company, dba The Westin Seattle",
+      "notice_date": "2026-11-18",
+      "effective_date": "2027-01-26",
+      "employees": 423,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Seattle",
       "address": "",
       "industry": ""
     }

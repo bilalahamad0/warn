@@ -1,11 +1,23 @@
 {
-  "total_records": 1553,
-  "total_employees": 252527,
+  "total_records": 1554,
+  "total_employees": 252800,
   "date_range_start": "2004-01-12",
-  "date_range_end": "2026-11-04",
-  "last_updated": "2026-11-19T05:20:10.549029+00:00",
+  "date_range_end": "2026-11-18",
+  "last_updated": "2026-11-19T20:11:26.290493+00:00",
   "source_url": "https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.aspx",
   "records": [
+    {
+      "state": "WA",
+      "company": "WHC Payroll Company, dba The Westin Seattle",
+      "notice_date": "2026-11-18",
+      "effective_date": "2027-01-26",
+      "employees": 423,
+      "layoff_type": "Layoff Permanent",
+      "county": "",
+      "city": "Seattle",
+      "address": "",
+      "industry": ""
+    },
     {
       "state": "WA",
       "company": "Seattle Marriott Redmond",
@@ -1076,13 +1088,13 @@
     },
     {
       "state": "WA",
-      "company": "Republic National Distributing Company, LLC",
+      "company": "Genie Industries, Inc. / Terex USA, LLC",
       "notice_date": "2026-05-21",
-      "effective_date": "2026-07-17",
-      "employees": 267,
+      "effective_date": "2026-07-20",
+      "employees": 117,
       "layoff_type": "Closure Permanent",
       "county": "",
-      "city": "4 sites",
+      "city": "North Bend",
       "address": "",
       "industry": ""
     },

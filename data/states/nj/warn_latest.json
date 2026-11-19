@@ -1,9 +1,9 @@
 {
-  "total_records": 2396,
-  "total_employees": 358156,
+  "total_records": 2398,
+  "total_employees": 358477,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-11-19T05:16:31.811119+00:00",
+  "last_updated": "2026-11-19T20:07:54.905180+00:00",
   "source_url": "https://www.nj.gov/labor/assets/PDFs/WARN/WARN_Notice_Archive.xlsx",
   "records": [
     {
@@ -1515,6 +1515,30 @@
       "layoff_type": "",
       "county": "",
       "city": "Mays Landing",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "RWJ Barnabas Health, Inc",
+      "notice_date": null,
+      "effective_date": "2027-02-16",
+      "employees": 106,
+      "layoff_type": "",
+      "county": "",
+      "city": "West Orange",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "NJ",
+      "company": "Novo Nordisk",
+      "notice_date": null,
+      "effective_date": "2027-02-17",
+      "employees": 215,
+      "layoff_type": "",
+      "county": "",
+      "city": "Plainsboro",
       "address": "",
       "industry": ""
     },

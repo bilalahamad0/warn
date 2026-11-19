@@ -1,43 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-11-19T05:21:25.968467+00:00",
+  "updated_at": "2026-11-19T20:12:44.963809+00:00",
   "candidates": [
-    {
-      "id": "5e3bb4bb017c",
-      "created_at": "2026-10-20T16:26:18.733915+00:00",
-      "status": "expired",
-      "company": "Amazon",
-      "display": "Amazon",
-      "employees": 200,
-      "states": [
-        "MN"
-      ],
-      "per_state": {
-        "MN": 200
-      },
-      "sites": 1,
-      "card": {
-        "place": "Maple Grove, MN",
-        "effective": null,
-        "employees": 200
-      },
-      "arm": "tech",
-      "reason": "tech brand, 200 >= 25",
-      "text": "Amazon filed a WARN notice for 200 job cuts in Maple Grove, MN.\n\nEffective date not reported.\n\n#layoffs #Minnesota",
-      "thread": [],
-      "weighted_len": 114,
-      "warnings": [],
-      "keys": [
-        "MN:Amazon Warehouse__None__200"
-      ],
-      "approved_by": null,
-      "approved_at": null,
-      "rejected_reason": null,
-      "tweet_id": null,
-      "posted_at": null,
-      "attempts": 0,
-      "last_error": null
-    },
     {
       "id": "4d8043839aa4",
       "created_at": "2026-10-21T02:52:05.488844+00:00",
@@ -2535,6 +2499,153 @@
       "warnings": [],
       "keys": [
         "LA:Sodexo, SDH Services East, LLC__2026-12-31__89"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "443b50ba894f",
+      "created_at": "2026-11-19T20:12:44.963626+00:00",
+      "status": "pending",
+      "company": "wellpath corporate office",
+      "display": "Wellpath Corporate Office",
+      "employees": 548,
+      "states": [
+        "KY"
+      ],
+      "per_state": {
+        "KY": 548
+      },
+      "sites": 1,
+      "card": {
+        "place": "Out of the State County, KY",
+        "effective": "Jan 13, 2027",
+        "employees": 548
+      },
+      "arm": "size",
+      "reason": "548 >= 250",
+      "text": "Wellpath Corporate Office filed a WARN notice for 548 job cuts in Out of the State County, KY.\n\nEffective Jan 13, 2027.\n\n#layoffs #Kentucky",
+      "thread": [],
+      "weighted_len": 139,
+      "warnings": [],
+      "keys": [
+        "KY:Wellpath Corporate Office__2027-01-13__548"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "7163fa6c41dd",
+      "created_at": "2026-11-19T20:12:44.963694+00:00",
+      "status": "pending",
+      "company": "whc payroll",
+      "display": "WHC Payroll Company",
+      "employees": 423,
+      "states": [
+        "WA"
+      ],
+      "per_state": {
+        "WA": 423
+      },
+      "sites": 1,
+      "card": {
+        "place": "Seattle, WA",
+        "effective": "Jan 26, 2027",
+        "employees": 423
+      },
+      "arm": "size",
+      "reason": "423 >= 250",
+      "text": "WHC Payroll Company filed a WARN notice for 423 job cuts in Seattle, WA.\n\nEffective Jan 26, 2027.\n\n#layoffs #Washington",
+      "thread": [],
+      "weighted_len": 119,
+      "warnings": [],
+      "keys": [
+        "WA:WHC Payroll Company, dba The Westin Seattle__2027-01-26__423"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "81b7b3313a0d",
+      "created_at": "2026-11-19T20:12:44.963746+00:00",
+      "status": "pending",
+      "company": "Dole",
+      "display": "Dole",
+      "employees": 404,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 404
+      },
+      "sites": 1,
+      "card": {
+        "place": "Merced County, CA",
+        "effective": "Jan 20, 2027",
+        "employees": 404
+      },
+      "arm": "size",
+      "reason": "404 >= 250",
+      "text": "Dole filed a WARN notice for 404 job cuts in Merced County, CA.\n\nEffective Jan 20, 2027.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 110,
+      "warnings": [],
+      "keys": [
+        "CA:Dole Packaged Foods LLC__2027-01-20__404"
+      ],
+      "approved_by": null,
+      "approved_at": null,
+      "rejected_reason": null,
+      "tweet_id": null,
+      "posted_at": null,
+      "attempts": 0,
+      "last_error": null
+    },
+    {
+      "id": "dbaccd5c8f87",
+      "created_at": "2026-11-19T20:12:44.963794+00:00",
+      "status": "pending",
+      "company": "Intel",
+      "display": "Intel",
+      "employees": 57,
+      "states": [
+        "CA"
+      ],
+      "per_state": {
+        "CA": 57
+      },
+      "sites": 4,
+      "card": {
+        "place": "4 sites in California",
+        "effective": "Nov 15, 2026",
+        "employees": 57
+      },
+      "arm": "tech",
+      "reason": "tech brand, 57 >= 25",
+      "text": "Intel filed WARN notices for 57 job cuts across 4 sites in California.\n\nFirst effective date Nov 15, 2026.\n\n#layoffs #California",
+      "thread": [],
+      "weighted_len": 128,
+      "warnings": [],
+      "keys": [
+        "CA:Intel Corporation (Robert Noyce Building)__2026-11-15__33",
+        "CA:Intel Corporation (SC-12)__2026-11-15__19",
+        "CA:Intel Corporation (SC-9)__2026-11-15__4",
+        "CA:Intel Corporation (SC-11)__2026-11-15__1"
       ],
       "approved_by": null,
       "approved_at": null,
