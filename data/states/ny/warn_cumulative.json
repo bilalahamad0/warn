@@ -1,9 +1,9 @@
 {
-  "total_records": 4843,
-  "total_employees": 421906,
+  "total_records": 4844,
+  "total_employees": 421935,
   "date_range_start": "2016-01-04",
-  "date_range_end": "2026-10-30",
-  "last_updated": "2026-11-18T20:05:12.734190+00:00",
+  "date_range_end": "2026-11-04",
+  "last_updated": "2026-11-19T05:16:50.433011+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -58120,6 +58120,18 @@
       "county": "Queens",
       "city": "",
       "address": "JFK International Airport 139 West Hangar Road Jamaica, NY, 11430",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Watermark Retirement Communities LLC",
+      "notice_date": "2026-11-04",
+      "effective_date": "2026-12-01",
+      "employees": 29,
+      "layoff_type": "Closure Permanent",
+      "county": "Monroe",
+      "city": "",
+      "address": "100 McAuley Drive Rochester, NY, 14610",
       "industry": ""
     }
   ]

@@ -1,9 +1,9 @@
 {
-  "total_records": 242,
-  "total_employees": 14358,
+  "total_records": 243,
+  "total_employees": 14387,
   "date_range_start": "2026-01-06",
-  "date_range_end": "2026-10-30",
-  "last_updated": "2026-11-18T20:05:12.710617+00:00",
+  "date_range_end": "2026-11-04",
+  "last_updated": "2026-11-19T05:16:50.404564+00:00",
   "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
   "records": [
     {
@@ -2884,6 +2884,18 @@
       "county": "New York",
       "city": "",
       "address": "330 W. 34th Street 10th Floor New York, NY, 10001",
+      "industry": ""
+    },
+    {
+      "state": "NY",
+      "company": "Watermark Retirement Communities LLC",
+      "notice_date": "2026-11-04",
+      "effective_date": "2026-12-01",
+      "employees": 29,
+      "layoff_type": "Closure Permanent",
+      "county": "Monroe",
+      "city": "",
+      "address": "100 McAuley Drive Rochester, NY, 14610",
       "industry": ""
     },
     {

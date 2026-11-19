@@ -1,9 +1,9 @@
 {
-  "total_records": 491,
-  "total_employees": 37374,
+  "total_records": 492,
+  "total_employees": 37433,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-11-16",
-  "last_updated": "2026-11-18T05:15:14.201319+00:00",
+  "date_range_end": "2026-11-17",
+  "last_updated": "2026-11-18T19:57:03.807907+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -3244,6 +3244,18 @@
       "county": "",
       "city": "BOCA RATON",
       "address": "4700 Exchange Court, Suite 125",
+      "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "FL",
+      "company": "Convey Health Solutions",
+      "notice_date": "2026-11-17",
+      "effective_date": "2026-12-01",
+      "employees": 59,
+      "layoff_type": "",
+      "county": "",
+      "city": "MULTIPLE LOCATIONS",
+      "address": "100 SE 3rd Ave, Suite 2600 (26th Floor), Fort Lauderdale",
       "industry": "Health Care and Social Assistance"
     },
     {

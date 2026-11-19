@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-11-18 20:08:36 UTC
+**Generated:** 2026-11-19 05:20:15 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -51,7 +51,6 @@ M data/changelog.jsonl
  M data/states/de/warn_latest.json
  M data/states/de/warn_snapshot.json
  M data/states/fl/changelog.jsonl
- M data/states/fl/raw_download
  M data/states/fl/warn_cumulative.json
  M data/states/fl/warn_latest.json
  M data/states/fl/warn_snapshot.json
@@ -86,7 +85,6 @@ M data/changelog.jsonl
  M data/states/ky/warn_snapshot.json
  M data/states/la/changelog.jsonl
  M data/states/la/meta.json
- M data/states/la/raw_download
  M data/states/la/warn_cumulative.json
  M data/states/la/warn_latest.json
  M data/states/la/warn_snapshot.json
@@ -107,6 +105,7 @@ M data/changelog.jsonl
  M data/states/me/warn_snapshot.json
  M data/states/mi/changelog.jsonl
  M data/states/mi/meta.json
+ M data/states/mi/raw_download
  M data/states/mi/warn_cumulative.json
  M data/states/mi/warn_latest.json
  M data/states/mi/warn_snapshot.json
@@ -134,7 +133,6 @@ M data/changelog.jsonl
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
- M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
@@ -155,7 +153,6 @@ M data/changelog.jsonl
  M data/states/ny/warn_latest.json
  M data/states/ny/warn_snapshot.json
  M data/states/oh/changelog.jsonl
- M data/states/oh/raw_download
  M data/states/oh/warn_cumulative.json
  M data/states/oh/warn_latest.json
  M data/states/oh/warn_snapshot.json
@@ -197,6 +194,7 @@ M data/changelog.jsonl
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
+ M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -227,16 +225,17 @@ M data/changelog.jsonl
 
 **Recent commits:**
 ```
+2b7117497 auto: WARN data update [skip ci]
 9a4e9fb21 auto: WARN data update [skip ci]
 6cc615717 auto: WARN data update [skip ci]
 cdf55945e auto: WARN data update [skip ci]
 0efe2a9e1 auto: WARN data update [skip ci]
-5fcdfd116 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-11-19T05:05:37.434445+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-11-18T19:53:56.762158+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-11-18T05:12:12.269344+00:00` — +0 added, -528 removed, 0 employees (new)
 - `2026-11-17T20:23:46.644961+00:00` — +98 added, -0 removed, 1,587 employees (new)
@@ -246,4 +245,3 @@ cdf55945e auto: WARN data update [skip ci]
 - `2026-11-15T18:20:05.293111+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-11-15T03:51:07.233563+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-11-14T17:37:34.731098+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-11-14T04:06:57.062095+00:00` — +0 added, -0 removed, 0 employees (new)

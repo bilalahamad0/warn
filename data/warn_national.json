@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-11-18T20:08:37.070607+00:00",
+  "last_updated": "2026-11-19T05:20:16.193995+00:00",
   "states_live": 47,
-  "total_records": 61058,
-  "total_employees": 6557645,
+  "total_records": 61060,
+  "total_employees": 6557711,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -141,8 +141,8 @@
       "name": "Maryland",
       "agency": "Maryland Department of Labor",
       "source_url": "https://www.dllr.state.md.us/employment/warn.shtml",
-      "total_records": 1386,
-      "total_employees": 117818
+      "total_records": 1387,
+      "total_employees": 117855
     },
     "ME": {
       "name": "Maine",
@@ -225,8 +225,8 @@
       "name": "New York",
       "agency": "New York State Department of Labor",
       "source_url": "https://public.tableau.com/views/WorkerAdjustmentRetrainingNotificationWARN/WARN.csv?%3Adisplay_static_image=y&%3AbootstrapWhenNotified=true&%3Aembed=true&%3Alanguage=en-US&:embed=y&:showVizHome=n&:apiID=host0",
-      "total_records": 5392,
-      "total_employees": 436835
+      "total_records": 5393,
+      "total_employees": 436864
     },
     "OH": {
       "name": "Ohio",
@@ -392950,6 +392950,18 @@
       "industry": "561320"
     },
     {
+      "state": "MD",
+      "company": "Firaxis Games, Inc.",
+      "notice_date": "2026-11-17",
+      "effective_date": "2026-01-19",
+      "employees": 37,
+      "layoff_type": "Mass Layoff - No Recall",
+      "county": "Baltimore County",
+      "city": "",
+      "address": "10 Loveton Circle Sparks, MD 21152",
+      "industry": "513210"
+    },
+    {
       "state": "ME",
       "company": "SMBC-Sumitomo Mitsui Banking Corporation",
       "notice_date": "2026-01-13",
@@ -525632,6 +525644,18 @@
     },
     {
       "state": "NY",
+      "company": "Watermark Retirement Communities LLC",
+      "notice_date": "2026-11-04",
+      "effective_date": "2026-12-01",
+      "employees": 29,
+      "layoff_type": "Closure Permanent",
+      "county": "Monroe",
+      "city": "",
+      "address": "100 McAuley Drive Rochester, NY, 14610",
+      "industry": ""
+    },
+    {
+      "state": "NY",
       "company": "Cardionet, LLC. an affiliate of Philips North America, LLC.",
       "notice_date": "2025-04-01",
       "effective_date": "2025-06-30",
@@ -653607,7 +653631,7 @@
       "state": "VA",
       "company": "Haynes Furniture Company Inc.",
       "notice_date": "2026-10-30",
-      "effective_date": "2026-11-18",
+      "effective_date": "2026-11-19",
       "employees": 83,
       "layoff_type": "Closure",
       "county": "",
