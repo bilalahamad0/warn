@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-11-19T20:11:32.343765+00:00",
+  "last_updated": "2026-11-20T05:11:21.128850+00:00",
   "states_live": 47,
-  "total_records": 61080,
-  "total_employees": 6560148,
+  "total_records": 61083,
+  "total_employees": 6560236,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -22,8 +22,8 @@
       "name": "Arizona",
       "agency": "Arizona Department of Economic Security",
       "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
-      "total_records": 490,
-      "total_employees": 72027
+      "total_records": 491,
+      "total_employees": 72102
     },
     "CA": {
       "name": "California",
@@ -246,8 +246,8 @@
       "name": "Oregon",
       "agency": "Oregon Higher Education Coordinating Commission, Office of Community Colleges and Workforce Development",
       "source_url": "https://ccwd.hecc.oregon.gov/Layoff/WARN",
-      "total_records": 1390,
-      "total_employees": 187618
+      "total_records": 1392,
+      "total_employees": 187631
     },
     "PA": {
       "name": "Pennsylvania",
@@ -19941,6 +19941,18 @@
       "county": "",
       "city": "Gilbert",
       "address": "155 E. Rivulon Blvd., Ste. 101; Gilbert, Arizona 85297",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Convey Health Solutions",
+      "notice_date": "2026-11-18",
+      "effective_date": null,
+      "employees": 75,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Fort Lauderdale",
+      "address": "100 SE 3rd Ave, Suite 2600; Fort Lauderdale, Florida 33394",
       "industry": ""
     },
     {
@@ -566359,6 +566371,30 @@
       "industry": ""
     },
     {
+      "state": "OR",
+      "company": "Portland Facility",
+      "notice_date": "2026-05-18",
+      "effective_date": "2026-11-30",
+      "employees": 9,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Portland",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Portland Facility",
+      "notice_date": "2026-05-18",
+      "effective_date": "2026-11-07",
+      "employees": 4,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Portland",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "PA",
       "company": "Transform Warehouse Operations, LLC",
       "notice_date": null,
@@ -653859,7 +653895,7 @@
       "state": "VA",
       "company": "Haynes Furniture Company Inc.",
       "notice_date": "2026-10-30",
-      "effective_date": "2026-11-19",
+      "effective_date": "2026-11-20",
       "employees": 83,
       "layoff_type": "Closure",
       "county": "",

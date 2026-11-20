@@ -3,33 +3,9 @@
   "total_employees": 17175,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-11-19T05:14:38.796679+00:00",
+  "last_updated": "2026-11-19T20:05:51.258519+00:00",
   "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
   "records": [
-    {
-      "state": "MI",
-      "company": "Detroit Chassis, LLC",
-      "notice_date": null,
-      "effective_date": "2026-12-31",
-      "employees": 175,
-      "layoff_type": "Temporary layoff",
-      "county": "Wayne",
-      "city": "",
-      "address": "6501 Lynch Road, Detroit, MI 48234",
-      "industry": ""
-    },
-    {
-      "state": "MI",
-      "company": "ADAC Automotive",
-      "notice_date": null,
-      "effective_date": "2026-12-18",
-      "employees": 98,
-      "layoff_type": "Facility closure",
-      "county": "Ionia",
-      "city": "",
-      "address": "6138 Riverside Drive, Saranac, MI 48881",
-      "industry": ""
-    },
     {
       "state": "MI",
       "company": "Family Endeavors, Inc.",
@@ -56,6 +32,30 @@
     },
     {
       "state": "MI",
+      "company": "ADAC Automotive",
+      "notice_date": null,
+      "effective_date": "2026-12-18",
+      "employees": 98,
+      "layoff_type": "Facility closure",
+      "county": "Ionia",
+      "city": "",
+      "address": "6138 Riverside Drive, Saranac, MI 48881",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Detroit Chassis, LLC",
+      "notice_date": null,
+      "effective_date": "2026-12-31",
+      "employees": 175,
+      "layoff_type": "Temporary layoff",
+      "county": "Wayne",
+      "city": "",
+      "address": "6501 Lynch Road, Detroit, MI 48234",
+      "industry": ""
+    },
+    {
+      "state": "MI",
       "company": "Sodexo, SDH Services West, LLC",
       "notice_date": null,
       "effective_date": "2026-12-31",
@@ -68,26 +68,14 @@
     },
     {
       "state": "MI",
-      "company": "FKA Distributing Co., LLC",
+      "company": "Salterra at Chesterfield",
       "notice_date": null,
-      "effective_date": "2026-10-16",
-      "employees": 55,
-      "layoff_type": "Layoff",
-      "county": "Oakland",
+      "effective_date": "2026-11-20",
+      "employees": 46,
+      "layoff_type": "Closure",
+      "county": "Macomb",
       "city": "",
-      "address": "3000 N. Pontiac Trail, Walled Lake, MI 48390",
-      "industry": ""
-    },
-    {
-      "state": "MI",
-      "company": "Woodbridge Group -- Lansing",
-      "notice_date": null,
-      "effective_date": "2026-12-18",
-      "employees": 100,
-      "layoff_type": "Temporary layoff",
-      "county": "Eaton",
-      "city": "",
-      "address": "5640 Pierson Highway, Lansing, MI 48917",
+      "address": "29891 23 Mile Road, New Baltimore, MI 48047",
       "industry": ""
     },
     {
@@ -104,14 +92,26 @@
     },
     {
       "state": "MI",
-      "company": "Salterra at Chesterfield",
+      "company": "Woodbridge Group -- Lansing",
       "notice_date": null,
-      "effective_date": "2026-11-20",
-      "employees": 46,
-      "layoff_type": "Closure",
-      "county": "Macomb",
+      "effective_date": "2026-12-18",
+      "employees": 100,
+      "layoff_type": "Temporary layoff",
+      "county": "Eaton",
       "city": "",
-      "address": "29891 23 Mile Road, New Baltimore, MI 48047",
+      "address": "5640 Pierson Highway, Lansing, MI 48917",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "FKA Distributing Co., LLC",
+      "notice_date": null,
+      "effective_date": "2026-10-16",
+      "employees": 55,
+      "layoff_type": "Layoff",
+      "county": "Oakland",
+      "city": "",
+      "address": "3000 N. Pontiac Trail, Walled Lake, MI 48390",
       "industry": ""
     },
     {
@@ -152,18 +152,6 @@
     },
     {
       "state": "MI",
-      "company": "HealthEdge, d/b/a as UST HealthProof",
-      "notice_date": null,
-      "effective_date": "2026-12-01",
-      "employees": 53,
-      "layoff_type": "Permanent layoff",
-      "county": "Wayne",
-      "city": "",
-      "address": "160 West Fort St., 5th Floor, Detroit, MI 48226",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "Lear Corporation",
       "notice_date": null,
       "effective_date": "2026-11-09",
@@ -172,6 +160,18 @@
       "county": "Macomb",
       "city": "",
       "address": "6450 Dobry Drive, Sterling Heights, MI 48314",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "HealthEdge, d/b/a as UST HealthProof",
+      "notice_date": null,
+      "effective_date": "2026-12-01",
+      "employees": 53,
+      "layoff_type": "Permanent layoff",
+      "county": "Wayne",
+      "city": "",
+      "address": "160 West Fort St., 5th Floor, Detroit, MI 48226",
       "industry": ""
     },
     {
@@ -476,18 +476,6 @@
     },
     {
       "state": "MI",
-      "company": "Siena Heights University",
-      "notice_date": null,
-      "effective_date": "2026-05-09",
-      "employees": 132,
-      "layoff_type": "Closure",
-      "county": "Lenawee",
-      "city": "Adrian",
-      "address": "",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "Compass Group USA, Inc.",
       "notice_date": null,
       "effective_date": "2026-07-01",
@@ -495,6 +483,18 @@
       "layoff_type": "Layoff",
       "county": "",
       "city": "",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Siena Heights University",
+      "notice_date": null,
+      "effective_date": "2026-05-09",
+      "employees": 132,
+      "layoff_type": "Closure",
+      "county": "Lenawee",
+      "city": "Adrian",
       "address": "",
       "industry": ""
     },

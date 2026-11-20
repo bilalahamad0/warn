@@ -1,5 +1,17 @@
 [
  {
+  "employer": "Convey Health Solutions",
+  "city": "Fort Lauderdale",
+  "zip": "33394",
+  "lwib_area": "7 - ARIZONA@WORK - Maricopa County",
+  "notice_date": "Nov 18, 2026",
+  "warn_type": "WARN",
+  "record_number": "1014",
+  "detail_page_url": "https://www.azjobconnection.gov/search/warn_lookups/1014",
+  "number_of_employees_affected": "75",
+  "address": "100 SE 3rd Ave, Suite 2600; Fort Lauderdale, Florida 33394"
+ },
+ {
   "employer": "Isagenix International, LLC",
   "city": "Gilbert",
   "zip": "85297",

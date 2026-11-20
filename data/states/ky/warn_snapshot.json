@@ -1,11 +1,23 @@
 {
-  "total_records": 458,
-  "total_employees": 54548,
+  "total_records": 459,
+  "total_employees": 55096,
   "date_range_start": "2017-01-25",
-  "date_range_end": "2026-10-29",
-  "last_updated": "2026-11-19T05:12:32.701707+00:00",
+  "date_range_end": "2026-11-13",
+  "last_updated": "2026-11-19T20:03:33.589019+00:00",
   "source_url": "https://kyworks.ky.gov/Services/Pages/Rapid-Response-Layoffs-and-Closures.aspx",
   "records": [
+    {
+      "state": "KY",
+      "company": "Wellpath Corporate Office",
+      "notice_date": "2026-11-13",
+      "effective_date": "2027-01-13",
+      "employees": 548,
+      "layoff_type": "",
+      "county": "Out of the State County",
+      "city": "",
+      "address": "",
+      "industry": "622110"
+    },
     {
       "state": "KY",
       "company": "Family Endeavors, Inc.",

@@ -1,43 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-11-19T20:12:44.963809+00:00",
+  "updated_at": "2026-11-20T05:12:34.243084+00:00",
   "candidates": [
-    {
-      "id": "4d8043839aa4",
-      "created_at": "2026-10-21T02:52:05.488844+00:00",
-      "status": "expired",
-      "company": "hood industries",
-      "display": "Hood Industries",
-      "employees": 259,
-      "states": [
-        "MS"
-      ],
-      "per_state": {
-        "MS": 259
-      },
-      "sites": 1,
-      "card": {
-        "place": "Wiggins, Stone, MS",
-        "effective": "Sep 5, 2026",
-        "employees": 259
-      },
-      "arm": "size",
-      "reason": "259 >= 250",
-      "text": "Hood Industries filed a WARN notice for 259 job cuts in Wiggins, Stone, MS.\n\nEffective Sep 5, 2026.\n\n#layoffs #Mississippi",
-      "thread": [],
-      "weighted_len": 122,
-      "warnings": [],
-      "keys": [
-        "MS:Hood Industries__2026-09-05__259"
-      ],
-      "approved_by": null,
-      "approved_at": null,
-      "rejected_reason": null,
-      "tweet_id": null,
-      "posted_at": null,
-      "attempts": 0,
-      "last_error": null
-    },
     {
       "id": "0aed3b16a31f",
       "created_at": "2026-10-21T16:42:14.046240+00:00",
@@ -1930,7 +1894,7 @@
     {
       "id": "af236b50e1f7",
       "created_at": "2026-11-13T04:25:22.708662+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "General Motors",
       "display": "General Motors",
       "employees": 506,

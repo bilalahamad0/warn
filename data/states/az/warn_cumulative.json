@@ -1,9 +1,9 @@
 {
-  "total_records": 490,
-  "total_employees": 72027,
+  "total_records": 491,
+  "total_employees": 72102,
   "date_range_start": "2019-01-04",
-  "date_range_end": "2026-11-10",
-  "last_updated": "2026-11-19T19:55:38.479242+00:00",
+  "date_range_end": "2026-11-18",
+  "last_updated": "2026-11-20T04:56:14.975300+00:00",
   "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
   "records": [
     {
@@ -5884,6 +5884,18 @@
       "county": "",
       "city": "Gilbert",
       "address": "155 E. Rivulon Blvd., Ste. 101; Gilbert, Arizona 85297",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "Convey Health Solutions",
+      "notice_date": "2026-11-18",
+      "effective_date": null,
+      "employees": 75,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Fort Lauderdale",
+      "address": "100 SE 3rd Ave, Suite 2600; Fort Lauderdale, Florida 33394",
       "industry": ""
     }
   ]
