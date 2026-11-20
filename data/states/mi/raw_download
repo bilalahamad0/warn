@@ -1,6 +1,14 @@
 {
   "Results": [
     {
+      "Html": "<div class=\"com-wrapper search-results__section\"><div class=\"p-1\">\r\n<div class=\"row\">\r\n    <div class=\"col-12 col-md-12 col-lg-12\">\r\n        <div class=\"search-results__section-content\">\r\n            <div><a class=\"content-title-link\" href=\"\" target=\"_blank\" rel=\"noopener noreferrer\"></a></div>\r\n            <div><h3>AUTOKINITON (Euclid Manufacturing Co.)</h3>\n<ul class=\"disc\">\n    <li><strong>Site address: </strong>1500 Euclid Ave., Detroit, MI 48211</li>\n    <li><strong>County:</strong> Wayne</li>\n    <li><strong>Type of company action:</strong> Facility closure</li>\n    <li><strong>Reason for company action: </strong>Not reported</li>\n    <li><strong>First layoff date:</strong> 1/18/2027</li>\n    <li><strong>Closure date:</strong> Not reported</li>\n    <li><strong>Number of jobs impacted:</strong> 136</li>\n</ul></div>\r\n            <div>\r\n                \r\n                                    Closure\r\n                                \r\n                                    2026\r\n                                \r\n                                    Wayne\r\n                                \r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n</div></div>",
+      "Id": "62f39d52-2e48-48b2-bdb9-9e3fce32b76b",
+      "Language": "en",
+      "Name": null,
+      "Path": "/sitecore/content/Websites/leo/Home/bureaus-agencies/wd/data-public-notices/Warn Notices/SearchData/2026/11/20/13/47/Autokiniton-Euclid-Manufacturing",
+      "Url": "/leo/bureaus-agencies/wd/data-public-notices/warn-notices/searchdata/2026/11/20/13/47/autokiniton-euclid-manufacturing"
+    },
+    {
       "Html": "<div class=\"com-wrapper search-results__section\"><div class=\"p-1\">\r\n<div class=\"row\">\r\n    <div class=\"col-12 col-md-12 col-lg-12\">\r\n        <div class=\"search-results__section-content\">\r\n            <div><a class=\"content-title-link\" href=\"\" target=\"_blank\" rel=\"noopener noreferrer\"></a></div>\r\n            <div><h3>Detroit Chassis, LLC</h3>\n<ul class=\"disc\">\n    <li><strong>Site address: </strong>6501 Lynch Road, Detroit, MI 48234</li>\n    <li><strong>County:</strong> Wayne</li>\n    <li><strong>Type of company action:</strong> Temporary layoff</li>\n    <li><strong>Reason for company action:</strong>&nbsp;Reduction in work</li>\n    <li><strong>Layoff date:</strong>&nbsp;12/31/2026</li>\n    <li><strong>Number of jobs impacted:</strong> 175</li>\n</ul></div>\r\n            <div>\r\n                \r\n                                    Layoff\r\n                                \r\n                                    2026\r\n                                \r\n                                    Wayne\r\n                                \r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n</div></div>",
       "Id": "0aa56cc8-c1d6-4b8a-91aa-542696fda2cd",
       "Language": "en",

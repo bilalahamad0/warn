@@ -1,9 +1,9 @@
 {
-  "total_records": 804,
-  "total_employees": 124203,
+  "total_records": 805,
+  "total_employees": 124339,
   "date_range_start": "2016-01-07",
   "date_range_end": "2024-11-15",
-  "last_updated": "2026-11-20T05:05:38.028515+00:00",
+  "last_updated": "2026-11-20T19:42:54.814416+00:00",
   "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
   "records": [
     {
@@ -7657,6 +7657,18 @@
       "county": "Ionia",
       "city": "",
       "address": "6138 Riverside Drive, Saranac, MI 48881",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "AUTOKINITON (Euclid Manufacturing Co.)",
+      "notice_date": null,
+      "effective_date": null,
+      "employees": 136,
+      "layoff_type": "Facility closure",
+      "county": "Wayne",
+      "city": "",
+      "address": "1500 Euclid Ave., Detroit, MI 48211",
       "industry": ""
     }
   ]

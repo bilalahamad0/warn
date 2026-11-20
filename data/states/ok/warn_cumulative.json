@@ -1,9 +1,9 @@
 {
-  "total_records": 204,
+  "total_records": 205,
   "total_employees": 0,
   "date_range_start": "2001-03-21",
   "date_range_end": "2026-11-09",
-  "last_updated": "2026-11-20T05:08:01.598393+00:00",
+  "last_updated": "2026-11-20T19:45:12.097658+00:00",
   "source_url": "https://www.employoklahoma.gov/Participants/s/warnnotices",
   "records": [
     {
@@ -2451,6 +2451,18 @@
       "layoff_type": "Mass Layoff",
       "county": "",
       "city": "Durant",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OK",
+      "company": "DW-NATIONAL STANDARD-STILLWATER LLC NATIONAL STANDARD HUMAN RESOURCES",
+      "notice_date": "2026-08-05",
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "Plant Closing",
+      "county": "",
+      "city": "STILLWATER",
       "address": "",
       "industry": ""
     }

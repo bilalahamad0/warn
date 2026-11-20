@@ -1947,5 +1947,15 @@
   "Launchpad__Notice_Date__c": "2026-11-09",
   "Select_Local_Workforce_Board__c": "Southern",
   "RecordTypeId": "012cs000001OucAAAS"
+ },
+ {
+  "Id": "a1Acs00001039MPEAY",
+  "OESC_Employer_Name__c": "DW-NATIONAL STANDARD-STILLWATER LLC NATIONAL STANDARD HUMAN RESOURCES",
+  "OESC_Employer_City__c": "STILLWATER",
+  "OESC_Employer_Zip_Code__c": "74075-2000",
+  "Launchpad__Layoff_Closure_Type__c": "Plant Closing",
+  "Launchpad__Notice_Date__c": "2026-08-05",
+  "Select_Local_Workforce_Board__c": "Central",
+  "RecordTypeId": "012cs000001OucAAAS"
  }
 ]

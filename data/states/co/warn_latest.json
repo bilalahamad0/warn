@@ -1,9 +1,9 @@
 {
-  "total_records": 869,
-  "total_employees": 88819,
+  "total_records": 870,
+  "total_employees": 88860,
   "date_range_start": "2015-01-02",
-  "date_range_end": "2026-11-12",
-  "last_updated": "2026-11-20T04:56:36.815188+00:00",
+  "date_range_end": "2026-11-19",
+  "last_updated": "2026-11-20T19:34:14.786352+00:00",
   "source_url": "https://cdle.colorado.gov/employers/layoff-separations/layoff-warn-list",
   "records": [
     {
@@ -600,6 +600,18 @@
       "notice_date": "2026-11-12",
       "effective_date": "2027-01-11",
       "employees": 15,
+      "layoff_type": "Permanent Facility closure/Completion of Contractual Milestone",
+      "county": "Rural Alliance (Pueblo)",
+      "city": "",
+      "address": "",
+      "industry": "56,2910: Remediation Services"
+    },
+    {
+      "state": "CO",
+      "company": "Amentum",
+      "notice_date": "2026-11-19",
+      "effective_date": "2027-01-01",
+      "employees": 41,
       "layoff_type": "Permanent Facility closure/Completion of Contractual Milestone",
       "county": "Rural Alliance (Pueblo)",
       "city": "",

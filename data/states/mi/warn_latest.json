@@ -1,11 +1,23 @@
 {
-  "total_records": 130,
-  "total_employees": 17175,
+  "total_records": 131,
+  "total_employees": 17311,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-11-20T05:05:38.024440+00:00",
+  "last_updated": "2026-11-20T19:42:54.810384+00:00",
   "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
   "records": [
+    {
+      "state": "MI",
+      "company": "AUTOKINITON (Euclid Manufacturing Co.)",
+      "notice_date": null,
+      "effective_date": null,
+      "employees": 136,
+      "layoff_type": "Facility closure",
+      "county": "Wayne",
+      "city": "",
+      "address": "1500 Euclid Ave., Detroit, MI 48211",
+      "industry": ""
+    },
     {
       "state": "MI",
       "company": "Detroit Chassis, LLC",
