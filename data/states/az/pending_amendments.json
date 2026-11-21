@@ -1,0 +1,21 @@
+{
+  "count": 1,
+  "last_updated": "2026-11-21T05:07:10.231499+00:00",
+  "amendments": [
+    {
+      "company": "Convey Health Solutions",
+      "county": "",
+      "city": "Fort Lauderdale",
+      "notice_date": "2026-11-18",
+      "effective_date": null,
+      "employees": 126,
+      "old_effective_date": null,
+      "new_effective_date": null,
+      "old_employees": 75,
+      "new_employees": 126,
+      "key": "Convey Health Solutions__None__126",
+      "held_since": "2026-11-21T05:07:10.231456+00:00",
+      "revisions": 1
+    }
+  ]
+}
