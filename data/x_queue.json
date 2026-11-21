@@ -1,43 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-11-21T05:07:10.297293+00:00",
+  "updated_at": "2026-11-21T18:51:14.522308+00:00",
   "candidates": [
-    {
-      "id": "3819be64aeca",
-      "created_at": "2026-10-22T16:39:49.731356+00:00",
-      "status": "expired",
-      "company": "dreyers grand ice cream",
-      "display": "Dreyer's Grand Ice Cream",
-      "employees": 803,
-      "states": [
-        "MD"
-      ],
-      "per_state": {
-        "MD": 803
-      },
-      "sites": 1,
-      "card": {
-        "place": "Howard County, MD",
-        "effective": "Dec 20, 2026",
-        "employees": 803
-      },
-      "arm": "size",
-      "reason": "803 >= 250",
-      "text": "Dreyer's Grand Ice Cream filed a WARN notice for 803 job cuts in Howard County, MD.\n\nEffective Dec 20, 2026.\n\n#layoffs #Maryland",
-      "thread": [],
-      "weighted_len": 128,
-      "warnings": [],
-      "keys": [
-        "MD:Dreyer\u2019s Grand Ice Cream__2026-12-20__803"
-      ],
-      "approved_by": null,
-      "approved_at": null,
-      "rejected_reason": null,
-      "tweet_id": null,
-      "posted_at": null,
-      "attempts": 0,
-      "last_error": null
-    },
     {
       "id": "19444aa3b9b7",
       "created_at": "2026-10-23T02:54:47.368942+00:00",
