@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-21T18:50:08.843139+00:00",
+  "last_updated": "2026-11-22T04:23:42.273195+00:00",
   "states_live": 47,
   "total_records": 61086,
   "total_employees": 6560464,
@@ -653931,7 +653931,7 @@
       "state": "VA",
       "company": "Haynes Furniture Company Inc.",
       "notice_date": "2026-10-30",
-      "effective_date": "2026-11-21",
+      "effective_date": "2026-11-22",
       "employees": 83,
       "layoff_type": "Closure",
       "county": "",
