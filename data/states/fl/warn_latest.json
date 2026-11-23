@@ -1,9 +1,9 @@
 {
-  "total_records": 492,
-  "total_employees": 37433,
+  "total_records": 493,
+  "total_employees": 37513,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-11-17",
-  "last_updated": "2026-11-23T04:48:00.565374+00:00",
+  "date_range_end": "2026-11-20",
+  "last_updated": "2026-11-23T23:22:51.407229+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -3245,6 +3245,18 @@
       "city": "BOCA RATON",
       "address": "4700 Exchange Court, Suite 125",
       "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "FL",
+      "company": "Assembly Components Group/FRS.",
+      "notice_date": "2026-11-20",
+      "effective_date": "2027-01-25",
+      "employees": 80,
+      "layoff_type": "",
+      "county": "",
+      "city": "OCALA",
+      "address": "3100 SE. Maricamp Road",
+      "industry": "Manufacturing"
     },
     {
       "state": "FL",

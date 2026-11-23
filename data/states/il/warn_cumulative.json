@@ -1,9 +1,9 @@
 {
-  "total_records": 4898,
-  "total_employees": 676660,
+  "total_records": 4899,
+  "total_employees": 676807,
   "date_range_start": "1987-09-01",
   "date_range_end": "2026-11-09",
-  "last_updated": "2026-11-23T04:48:44.485692+00:00",
+  "last_updated": "2026-11-23T23:23:38.056293+00:00",
   "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
   "records": [
     {
@@ -58520,18 +58520,6 @@
     },
     {
       "state": "IL",
-      "company": "Heartland Human Care Services (Child Welfare Agency)",
-      "notice_date": "2026-02-17",
-      "effective_date": null,
-      "employees": 120,
-      "layoff_type": "Mass Layoff",
-      "county": "Cook County",
-      "city": "Chicago",
-      "address": "4822 N Broadway Ave.",
-      "industry": "Other Services (except Public Administration)"
-    },
-    {
-      "state": "IL",
       "company": "Norvax, LLC/GoHealth, LLC",
       "notice_date": "2025-11-03",
       "effective_date": null,
@@ -58781,6 +58769,30 @@
       "city": "Arlington Heights",
       "address": "1625 S Arlington Heights Rd",
       "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "IL",
+      "company": "Heartland Human Care Services (Child Welfare Agency)",
+      "notice_date": "2026-02-17",
+      "effective_date": null,
+      "employees": 241,
+      "layoff_type": "Mass Layoff",
+      "county": "Cook County",
+      "city": "Chicago",
+      "address": "4822 N Broadway Ave.",
+      "industry": "Other Services (except Public Administration)"
+    },
+    {
+      "state": "IL",
+      "company": "Heartland Human Care Services",
+      "notice_date": "2026-06-01",
+      "effective_date": null,
+      "employees": 26,
+      "layoff_type": "Layoff",
+      "county": "Cook County",
+      "city": "Chicago",
+      "address": "5715 W Belmont",
+      "industry": "Other Services (except Public Administration)"
     }
   ]
 }

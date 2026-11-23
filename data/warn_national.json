@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-11-23T04:59:38.143751+00:00",
+  "last_updated": "2026-11-23T23:35:29.350488+00:00",
   "states_live": 47,
-  "total_records": 61086,
-  "total_employees": 6560464,
+  "total_records": 61089,
+  "total_employees": 6560811,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -64,8 +64,8 @@
       "name": "Florida",
       "agency": "Florida Department of Commerce (FloridaCommerce)",
       "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
-      "total_records": 484,
-      "total_employees": 36546
+      "total_records": 485,
+      "total_employees": 36626
     },
     "GA": {
       "name": "Georgia",
@@ -99,8 +99,8 @@
       "name": "Illinois",
       "agency": "Illinois Department of Commerce and Economic Opportunity",
       "source_url": "https://apps.illinoisworknet.com/iebs/api/public/export?search=&layoffTypes=&trade=0&dateReportedStart=Invalid%20Date&dateReportedEnd=Invalid%20Date&statuses=4&reasons=&eventCauses=&naicsCodes=1&naicIndustries=&naics=&unionsInvolved=0&geolocation=1&cities=&counties=&lwias=&includeAdditionalLwias=false&edrs=&lat=0&lng=0&distance=.5&memberType=1&users=&accessList=&bookmarked=false",
-      "total_records": 4898,
-      "total_employees": 676660
+      "total_records": 4899,
+      "total_employees": 676807
     },
     "IN": {
       "name": "Indiana",
@@ -232,8 +232,8 @@
       "name": "Ohio",
       "agency": "Ohio Department of Job and Family Services",
       "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
-      "total_records": 1276,
-      "total_employees": 173578
+      "total_records": 1277,
+      "total_employees": 173698
     },
     "OK": {
       "name": "Oklahoma",
@@ -207964,6 +207964,18 @@
       "industry": "Health Care and Social Assistance"
     },
     {
+      "state": "FL",
+      "company": "Assembly Components Group/FRS.",
+      "notice_date": "2026-11-20",
+      "effective_date": "2027-01-25",
+      "employees": 80,
+      "layoff_type": "",
+      "county": "",
+      "city": "OCALA",
+      "address": "3100 SE. Maricamp Road",
+      "industry": "Manufacturing"
+    },
+    {
       "state": "GA",
       "company": "Dexter Axle Company",
       "notice_date": null,
@@ -342677,18 +342689,6 @@
     },
     {
       "state": "IL",
-      "company": "Heartland Human Care Services (Child Welfare Agency)",
-      "notice_date": "2026-02-17",
-      "effective_date": null,
-      "employees": 120,
-      "layoff_type": "Mass Layoff",
-      "county": "Cook County",
-      "city": "Chicago",
-      "address": "4822 N Broadway Ave.",
-      "industry": "Other Services (except Public Administration)"
-    },
-    {
-      "state": "IL",
       "company": "Norvax, LLC/GoHealth, LLC",
       "notice_date": "2025-11-03",
       "effective_date": null,
@@ -342938,6 +342938,30 @@
       "city": "Arlington Heights",
       "address": "1625 S Arlington Heights Rd",
       "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "IL",
+      "company": "Heartland Human Care Services (Child Welfare Agency)",
+      "notice_date": "2026-02-17",
+      "effective_date": null,
+      "employees": 241,
+      "layoff_type": "Mass Layoff",
+      "county": "Cook County",
+      "city": "Chicago",
+      "address": "4822 N Broadway Ave.",
+      "industry": "Other Services (except Public Administration)"
+    },
+    {
+      "state": "IL",
+      "company": "Heartland Human Care Services",
+      "notice_date": "2026-06-01",
+      "effective_date": null,
+      "employees": 26,
+      "layoff_type": "Layoff",
+      "county": "Cook County",
+      "city": "Chicago",
+      "address": "5715 W Belmont",
+      "industry": "Other Services (except Public Administration)"
     },
     {
       "state": "IN",
@@ -544083,6 +544107,18 @@
       "layoff_type": "Closure",
       "county": "Wayne",
       "city": "Orrville",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "CEVA Supply Chain",
+      "notice_date": "2026-11-09",
+      "effective_date": null,
+      "employees": 120,
+      "layoff_type": "Layoff",
+      "county": "Pickaway",
+      "city": "Lockbourne",
       "address": "",
       "industry": ""
     },

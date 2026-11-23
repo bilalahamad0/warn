@@ -1,9 +1,9 @@
 {
-  "total_records": 1011,
-  "total_employees": 141974,
+  "total_records": 1012,
+  "total_employees": 142094,
   "date_range_start": "2015-01-05",
   "date_range_end": "2026-11-18",
-  "last_updated": "2026-11-23T04:56:22.877459+00:00",
+  "last_updated": "2026-11-23T23:32:07.620383+00:00",
   "source_url": "https://jfs.ohio.gov/job-workforce-services/job-programs-and-services/submit-a-warn-notice/current-public-notices-of-layoffs-and-closures",
   "records": [
     {
@@ -11595,6 +11595,18 @@
       "layoff_type": "Closure",
       "county": "Wayne",
       "city": "Orrville",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OH",
+      "company": "CEVA Supply Chain",
+      "notice_date": "2026-11-09",
+      "effective_date": null,
+      "employees": 120,
+      "layoff_type": "Layoff",
+      "county": "Pickaway",
+      "city": "Lockbourne",
       "address": "",
       "industry": ""
     }

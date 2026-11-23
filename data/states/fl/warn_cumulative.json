@@ -1,9 +1,9 @@
 {
-  "total_records": 484,
-  "total_employees": 36546,
+  "total_records": 485,
+  "total_employees": 36626,
   "date_range_start": "2025-01-02",
-  "date_range_end": "2026-11-17",
-  "last_updated": "2026-11-23T04:48:00.571170+00:00",
+  "date_range_end": "2026-11-20",
+  "last_updated": "2026-11-23T23:22:51.413172+00:00",
   "source_url": "https://reactwarn.floridajobs.org/WarnList/Records",
   "records": [
     {
@@ -5813,6 +5813,18 @@
       "city": "MULTIPLE LOCATIONS",
       "address": "100 SE 3rd Ave, Suite 2600 (26th Floor), Fort Lauderdale",
       "industry": "Health Care and Social Assistance"
+    },
+    {
+      "state": "FL",
+      "company": "Assembly Components Group/FRS.",
+      "notice_date": "2026-11-20",
+      "effective_date": "2027-01-25",
+      "employees": 80,
+      "layoff_type": "",
+      "county": "",
+      "city": "OCALA",
+      "address": "3100 SE. Maricamp Road",
+      "industry": "Manufacturing"
     }
   ]
 }
