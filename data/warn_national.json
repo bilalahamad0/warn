@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-11-24T07:55:13.873678+00:00",
+  "last_updated": "2026-11-24T22:06:15.516586+00:00",
   "states_live": 47,
-  "total_records": 61089,
-  "total_employees": 6560811,
+  "total_records": 61090,
+  "total_employees": 6560895,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -43,8 +43,8 @@
       "name": "Connecticut",
       "agency": "Connecticut Department of Labor",
       "source_url": "https://dolpublicdocumentlibrary.ct.gov/CsblrCategory?prefix=%2Frapid_response%2Fwarn_documents",
-      "total_records": 34,
-      "total_employees": 3469
+      "total_records": 35,
+      "total_employees": 3538
     },
     "DC": {
       "name": "District of Columbia",
@@ -156,7 +156,7 @@
       "agency": "Michigan Department of Labor and Economic Opportunity",
       "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
       "total_records": 805,
-      "total_employees": 124339
+      "total_employees": 124354
     },
     "MN": {
       "name": "Minnesota",
@@ -199896,6 +199896,18 @@
       "layoff_type": "",
       "county": "",
       "city": "Not provided",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "CT",
+      "company": "CPC Special Logistics East, LLC",
+      "notice_date": "2026-11-23",
+      "effective_date": "2027-01-30",
+      "employees": 69,
+      "layoff_type": "",
+      "county": "",
+      "city": "Windsor",
       "address": "",
       "industry": ""
     },
@@ -401636,18 +401648,6 @@
     },
     {
       "state": "MI",
-      "company": "Inalfa Roof Systems, Inc.",
-      "notice_date": null,
-      "effective_date": "2026-12-14",
-      "employees": 142,
-      "layoff_type": "Closure",
-      "county": "Oakland",
-      "city": "",
-      "address": "815 Opdyke Road, Suite 500, Auburn Hills, MI 48326; 1370 Pacific Drive, Auburn Hills, MI, 48326",
-      "industry": ""
-    },
-    {
-      "state": "MI",
       "company": "Mariella of Lake Orion",
       "notice_date": null,
       "effective_date": "2026-11-20",
@@ -401776,6 +401776,18 @@
       "county": "Wayne",
       "city": "",
       "address": "1500 Euclid Ave., Detroit, MI 48211",
+      "industry": ""
+    },
+    {
+      "state": "MI",
+      "company": "Inalfa Roof Systems, Inc.",
+      "notice_date": null,
+      "effective_date": "2026-12-14",
+      "employees": 157,
+      "layoff_type": "Closure",
+      "county": "Oakland",
+      "city": "",
+      "address": "815 Opdyke Road, Suite 500, Auburn Hills, MI 48326; 1370 Pacific Drive, Auburn Hills, MI, 48326",
       "industry": ""
     },
     {

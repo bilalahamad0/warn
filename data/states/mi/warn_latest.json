@@ -1,9 +1,9 @@
 {
   "total_records": 131,
-  "total_employees": 17311,
+  "total_employees": 17326,
   "date_range_start": NaN,
   "date_range_end": NaN,
-  "last_updated": "2026-11-24T07:49:17.641348+00:00",
+  "last_updated": "2026-11-24T22:00:11.178673+00:00",
   "source_url": "https://www.michigan.gov/leo/bureaus-agencies/wd/data-public-notices/warn-notices",
   "records": [
     {
@@ -131,7 +131,7 @@
       "company": "Inalfa Roof Systems, Inc.",
       "notice_date": null,
       "effective_date": "2026-12-14",
-      "employees": 142,
+      "employees": 157,
       "layoff_type": "Closure",
       "county": "Oakland",
       "city": "",

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-24T07:56:08.379889+00:00",
+  "updated_at": "2026-11-24T22:07:07.104321+00:00",
   "candidates": [
     {
       "id": "2c21278bbaf5",
@@ -1682,7 +1682,7 @@
     {
       "id": "fecd795d2bca",
       "created_at": "2026-11-17T20:40:13.406471+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "AstraZeneca",
       "display": "AstraZeneca",
       "employees": 626,
@@ -1718,7 +1718,7 @@
     {
       "id": "bd5fd8b50a4c",
       "created_at": "2026-11-17T20:40:13.406544+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Qualcomm",
       "display": "Qualcomm",
       "employees": 517,
@@ -1763,7 +1763,7 @@
     {
       "id": "6860675849b8",
       "created_at": "2026-11-17T20:40:13.406625+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "PG&E",
       "display": "PG&E",
       "employees": 205,
@@ -1859,7 +1859,7 @@
     {
       "id": "c6ac6a57149f",
       "created_at": "2026-11-17T20:40:13.406674+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "TJX Companies",
       "display": "TJX Companies",
       "employees": 139,
@@ -1896,7 +1896,7 @@
     {
       "id": "66659b4c7fb6",
       "created_at": "2026-11-17T20:40:13.406721+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Ryder",
       "display": "Ryder",
       "employees": 83,
@@ -1933,7 +1933,7 @@
     {
       "id": "455de21ec767",
       "created_at": "2026-11-17T20:40:13.406765+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Huntington Ingalls",
       "display": "Huntington Ingalls",
       "employees": 58,

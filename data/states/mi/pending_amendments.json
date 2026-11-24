@@ -1,0 +1,21 @@
+{
+  "count": 1,
+  "last_updated": "2026-11-24T22:07:07.060477+00:00",
+  "amendments": [
+    {
+      "company": "Inalfa Roof Systems, Inc.",
+      "county": "Oakland",
+      "city": "",
+      "notice_date": null,
+      "effective_date": "2026-12-14",
+      "employees": 157,
+      "old_effective_date": "2026-12-14",
+      "new_effective_date": "2026-12-14",
+      "old_employees": 142,
+      "new_employees": 157,
+      "key": "Inalfa Roof Systems, Inc.__2026-12-14__157",
+      "held_since": "2026-11-24T22:07:07.060441+00:00",
+      "revisions": 1
+    }
+  ]
+}
