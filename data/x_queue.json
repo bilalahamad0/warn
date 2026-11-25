@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-25T06:25:44.062713+00:00",
+  "updated_at": "2026-11-25T21:17:52.285159+00:00",
   "candidates": [
     {
       "id": "2c21278bbaf5",
@@ -2005,7 +2005,7 @@
     {
       "id": "b3fb1d6b4648",
       "created_at": "2026-11-18T20:09:30.286542+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Sysco",
       "display": "Sysco",
       "employees": 112,
@@ -2041,7 +2041,7 @@
     {
       "id": "6131281be9a9",
       "created_at": "2026-11-18T20:09:30.286589+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Sodexo",
       "display": "Sodexo",
       "employees": 89,
