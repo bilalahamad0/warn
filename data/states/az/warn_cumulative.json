@@ -1,9 +1,9 @@
 {
-  "total_records": 491,
-  "total_employees": 72153,
+  "total_records": 493,
+  "total_employees": 72259,
   "date_range_start": "2019-01-04",
   "date_range_end": "2026-11-18",
-  "last_updated": "2026-11-24T21:51:05.909567+00:00",
+  "last_updated": "2026-11-25T06:09:49.207900+00:00",
   "source_url": "https://www.azjobconnection.gov/search/warn_lookups",
   "records": [
     {
@@ -5896,6 +5896,30 @@
       "county": "",
       "city": "Fort Lauderdale",
       "address": "100 SE 3rd Ave, Suite 2600; Fort Lauderdale, Florida 33394",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "ISS Action, Inc.",
+      "notice_date": "2026-11-16",
+      "effective_date": null,
+      "employees": 75,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Tucson",
+      "address": "3594 E Lincoln Street; Tucson, Arizona 85714",
+      "industry": ""
+    },
+    {
+      "state": "AZ",
+      "company": "ISS Action, Inc.",
+      "notice_date": "2026-11-16",
+      "effective_date": null,
+      "employees": 31,
+      "layoff_type": "WARN",
+      "county": "",
+      "city": "Yuma",
+      "address": "14165 S Ave 3E; Yuma, Arizona 85365",
       "industry": ""
     }
   ]

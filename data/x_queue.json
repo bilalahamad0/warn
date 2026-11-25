@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-24T22:07:07.104321+00:00",
+  "updated_at": "2026-11-25T06:25:44.062713+00:00",
   "candidates": [
     {
       "id": "2c21278bbaf5",
@@ -1969,7 +1969,7 @@
     {
       "id": "29b07db17b56",
       "created_at": "2026-11-18T05:28:42.524759+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "full steam staffing",
       "display": "Full Steam Staffing, LLC",
       "employees": 357,
