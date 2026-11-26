@@ -1,115 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-11-26T06:17:14.393518+00:00",
+  "updated_at": "2026-11-26T21:07:49.124058+00:00",
   "candidates": [
-    {
-      "id": "2c21278bbaf5",
-      "created_at": "2026-10-27T17:26:25.912767+00:00",
-      "status": "expired",
-      "company": "Sodexo",
-      "display": "Sodexo",
-      "employees": 189,
-      "states": [
-        "LA"
-      ],
-      "per_state": {
-        "LA": 189
-      },
-      "sites": 1,
-      "card": {
-        "place": "Louisiana",
-        "effective": "Dec 31, 2026",
-        "employees": 189
-      },
-      "arm": "brand",
-      "reason": "known brand, 189 >= 50",
-      "text": "Sodexo filed a WARN notice for 189 job cuts in Louisiana.\n\nEffective Dec 31, 2026.\n\n#layoffs #Louisiana",
-      "thread": [],
-      "weighted_len": 103,
-      "warnings": [],
-      "keys": [
-        "LA:Sodexo, SDH Services East, LLC__2026-12-31__189"
-      ],
-      "approved_by": null,
-      "approved_at": null,
-      "rejected_reason": null,
-      "tweet_id": null,
-      "posted_at": null,
-      "attempts": 0,
-      "last_error": null
-    },
-    {
-      "id": "ad61c01fee2e",
-      "created_at": "2026-10-27T17:26:25.912798+00:00",
-      "status": "expired",
-      "company": "Conduent",
-      "display": "Conduent",
-      "employees": 113,
-      "states": [
-        "NJ"
-      ],
-      "per_state": {
-        "NJ": 113
-      },
-      "sites": 1,
-      "card": {
-        "place": "Newark, NJ",
-        "effective": "Jan 21, 2027",
-        "employees": 113
-      },
-      "arm": "brand",
-      "reason": "known brand, 113 >= 50",
-      "text": "Conduent filed a WARN notice for 113 job cuts in Newark, NJ.\n\nEffective Jan 21, 2027.\n\n#layoffs #NewJersey",
-      "thread": [],
-      "weighted_len": 106,
-      "warnings": [],
-      "keys": [
-        "NJ:Conduent State & Local Solutions, Inc__2027-01-21__113"
-      ],
-      "approved_by": null,
-      "approved_at": null,
-      "rejected_reason": null,
-      "tweet_id": null,
-      "posted_at": null,
-      "attempts": 0,
-      "last_error": null
-    },
-    {
-      "id": "2f84d3800ae2",
-      "created_at": "2026-10-27T17:26:25.912821+00:00",
-      "status": "expired",
-      "company": "Goodyear",
-      "display": "Goodyear",
-      "employees": 51,
-      "states": [
-        "NY"
-      ],
-      "per_state": {
-        "NY": 51
-      },
-      "sites": 1,
-      "card": {
-        "place": "Niagara, NY",
-        "effective": "Dec 30, 2026",
-        "employees": 51
-      },
-      "arm": "brand",
-      "reason": "known brand, 51 >= 50",
-      "text": "Goodyear filed a WARN notice for 51 job cuts in Niagara, NY.\n\nEffective Dec 30, 2026.\n\n#layoffs #NewYork",
-      "thread": [],
-      "weighted_len": 104,
-      "warnings": [],
-      "keys": [
-        "NY:The Goodyear Tire and Rubber Company__2026-12-30__51"
-      ],
-      "approved_by": null,
-      "approved_at": null,
-      "rejected_reason": null,
-      "tweet_id": null,
-      "posted_at": null,
-      "attempts": 0,
-      "last_error": null
-    },
     {
       "id": "14016b8e8fbc",
       "created_at": "2026-10-28T03:21:55.622344+00:00",
@@ -2077,7 +1969,7 @@
     {
       "id": "443b50ba894f",
       "created_at": "2026-11-19T20:12:44.963626+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "wellpath corporate office",
       "display": "Wellpath Corporate Office",
       "employees": 548,
@@ -2113,7 +2005,7 @@
     {
       "id": "7163fa6c41dd",
       "created_at": "2026-11-19T20:12:44.963694+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "whc payroll",
       "display": "WHC Payroll Company",
       "employees": 423,
@@ -2149,7 +2041,7 @@
     {
       "id": "81b7b3313a0d",
       "created_at": "2026-11-19T20:12:44.963746+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Dole",
       "display": "Dole",
       "employees": 404,
@@ -2185,7 +2077,7 @@
     {
       "id": "dbaccd5c8f87",
       "created_at": "2026-11-19T20:12:44.963794+00:00",
-      "status": "pending",
+      "status": "expired",
       "company": "Intel",
       "display": "Intel",
       "employees": 57,

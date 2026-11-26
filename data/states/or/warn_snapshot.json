@@ -3,7 +3,7 @@
   "total_employees": 187473,
   "date_range_start": "1988-11-28",
   "date_range_end": "2026-10-30",
-  "last_updated": "2026-11-25T21:13:40.822588+00:00",
+  "last_updated": "2026-11-26T06:13:18.889522+00:00",
   "source_url": "https://ccwd.hecc.oregon.gov/Layoff/WARN",
   "records": [
     {
@@ -503,7 +503,7 @@
       "company": "Portland Facility",
       "notice_date": "2026-05-18",
       "effective_date": "2026-11-30",
-      "employees": 9,
+      "employees": 10,
       "layoff_type": "Permanent closure",
       "county": "",
       "city": "Portland",
@@ -575,7 +575,7 @@
       "company": "Portland Facility",
       "notice_date": "2026-05-18",
       "effective_date": "2026-07-31",
-      "employees": 89,
+      "employees": 88,
       "layoff_type": "Large Layoff - 10 or more workers",
       "county": "",
       "city": "Portland",
