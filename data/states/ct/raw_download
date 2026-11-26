@@ -279,20 +279,6 @@
       },
       "modifiedDate": "2026-01-08T20:31:23+00:00",
       "name": "rapid_response/warn_documents/2026/Tessera Therapeutics, Inc. (Remote) 1-7-2026.pdf"
-    },
-    {
-      "blobProperties": {
-        "affected_company": "Connecticut Custom Car",
-        "closing_dates_": "11/26/2025",
-        "layoff_dates": "11/26/2025",
-        "layoff_locations__": "Enfield",
-        "number_of_impacted_workers": "5",
-        "union": "N/A",
-        "warn_document_date": "2025-11-26",
-        "warn_document_received_date": "2025-12-08"
-      },
-      "modifiedDate": "2025-12-08T19:42:13+00:00",
-      "name": "rapid_response/warn_documents/2025/Connecticut  Custom Car (Enfield) 11-26-2025.pdf"
     }
   ]
 }

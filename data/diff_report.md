@@ -1,6 +1,6 @@
 # WARN Layoff Monitor — Diff Report
 
-**Generated:** 2026-11-25 21:16:54 UTC
+**Generated:** 2026-11-26 06:16:32 UTC
 
 ---
 ## 📊 Data Comparison (Latest vs Snapshot)
@@ -42,6 +42,7 @@ M data/changelog.jsonl
  M data/states/co/warn_snapshot.json
  M data/states/ct/changelog.jsonl
  M data/states/ct/meta.json
+ M data/states/ct/raw_download
  M data/states/ct/warn_cumulative.json
  M data/states/ct/warn_latest.json
  M data/states/ct/warn_snapshot.json
@@ -127,7 +128,6 @@ M data/changelog.jsonl
  M data/states/nd/warn_snapshot.json
  M data/states/ne/changelog.jsonl
  M data/states/ne/meta.json
- M data/states/ne/raw_download
  M data/states/ne/warn_cumulative.json
  M data/states/ne/warn_latest.json
  M data/states/ne/warn_snapshot.json
@@ -153,6 +153,7 @@ M data/changelog.jsonl
  M data/states/or/changelog.jsonl
  M data/states/or/latest.xlsx
  M data/states/or/meta.json
+ M data/states/or/raw_download
  M data/states/or/warn_cumulative.json
  M data/states/or/warn_latest.json
  M data/states/or/warn_snapshot.json
@@ -175,18 +176,13 @@ M data/changelog.jsonl
  M data/states/sd/warn_cumulative.json
  M data/states/sd/warn_latest.json
  M data/states/sd/warn_snapshot.json
- M data/states/tn/changelog.jsonl
- M data/states/tn/raw_download
- M data/states/tn/warn_cumulative.json
- M data/states/tn/warn_latest.json
- M data/states/tn/warn_snapshot.json
  M data/states/ut/changelog.jsonl
- M data/states/ut/meta.json
  M data/states/ut/warn_cumulative.json
  M data/states/ut/warn_latest.json
  M data/states/ut/warn_snapshot.json
  M data/states/va/changelog.jsonl
  M data/states/va/meta.json
+ M data/states/va/raw_download
  M data/states/va/warn_cumulative.json
  M data/states/va/warn_latest.json
  M data/states/va/warn_snapshot.json
@@ -217,16 +213,17 @@ M data/changelog.jsonl
 
 **Recent commits:**
 ```
+75750117d auto: WARN data update [skip ci]
 7d0555816 auto: WARN data update [skip ci]
 137a55af8 auto: WARN data update [skip ci]
 6ea4b47eb auto: WARN data update [skip ci]
 d5188832d auto: WARN data update [skip ci]
-819c5bf34 auto: WARN data update [skip ci]
 ```
 
 ---
 ## 📋 Recent Changelog (last 10 runs)
 
+- `2026-11-26T06:00:42.815670+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-11-25T21:01:22.030500+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-11-25T06:09:49.289220+00:00` — +0 added, -541 removed, 0 employees (new)
 - `2026-11-24T21:51:06.118794+00:00` — +0 added, -0 removed, 0 employees (new)
@@ -236,4 +233,3 @@ d5188832d auto: WARN data update [skip ci]
 - `2026-11-22T18:58:34.156155+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-11-22T04:07:17.505460+00:00` — +0 added, -0 removed, 0 employees (new)
 - `2026-11-21T18:35:52.956686+00:00` — +0 added, -0 removed, 0 employees (new)
-- `2026-11-21T04:51:08.934989+00:00` — +0 added, -0 removed, 0 employees (new)

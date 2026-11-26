@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-11-25T21:16:55.122085+00:00",
+  "last_updated": "2026-11-26T06:16:32.490064+00:00",
   "states_live": 47,
-  "total_records": 61092,
-  "total_employees": 6561001,
+  "total_records": 61094,
+  "total_employees": 6561099,
   "states": {
     "AK": {
       "name": "Alaska",
@@ -246,8 +246,8 @@
       "name": "Oregon",
       "agency": "Oregon Higher Education Coordinating Commission, Office of Community Colleges and Workforce Development",
       "source_url": "https://ccwd.hecc.oregon.gov/Layoff/WARN",
-      "total_records": 1392,
-      "total_employees": 187631
+      "total_records": 1394,
+      "total_employees": 187729
     },
     "PA": {
       "name": "Pennsylvania",
@@ -566503,6 +566503,30 @@
       "industry": ""
     },
     {
+      "state": "OR",
+      "company": "Portland Facility",
+      "notice_date": "2026-05-18",
+      "effective_date": "2026-11-30",
+      "employees": 10,
+      "layoff_type": "Permanent closure",
+      "county": "",
+      "city": "Portland",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "OR",
+      "company": "Portland Facility",
+      "notice_date": "2026-05-18",
+      "effective_date": "2026-07-31",
+      "employees": 88,
+      "layoff_type": "Large Layoff - 10 or more workers",
+      "county": "",
+      "city": "Portland",
+      "address": "",
+      "industry": ""
+    },
+    {
       "state": "PA",
       "company": "Transform Warehouse Operations, LLC",
       "notice_date": null,
@@ -654003,7 +654027,7 @@
       "state": "VA",
       "company": "Haynes Furniture Company Inc.",
       "notice_date": "2026-10-30",
-      "effective_date": "2026-11-25",
+      "effective_date": "2026-11-26",
       "employees": 83,
       "layoff_type": "Closure",
       "county": "",
