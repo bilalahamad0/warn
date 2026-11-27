@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-27T06:10:06.206118+00:00",
+  "last_updated": "2026-11-27T20:52:43.074720+00:00",
   "states_live": 47,
-  "total_records": 61094,
+  "total_records": 61095,
   "total_employees": 6561099,
   "states": {
     "AK": {
@@ -15,7 +15,7 @@
       "name": "Alabama",
       "agency": "Alabama Department of Workforce",
       "source_url": "https://workforce.alabama.gov/warn-list/",
-      "total_records": 1078,
+      "total_records": 1079,
       "total_employees": 183978
     },
     "AZ": {
@@ -14060,6 +14060,18 @@
       "layoff_type": "Layoff *",
       "county": "",
       "city": "Birmingham",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "S:0x200}",
+      "notice_date": null,
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "V){var a0Q={H:0x214",
+      "county": "",
+      "city": "r=a0S",
       "address": "",
       "industry": ""
     },

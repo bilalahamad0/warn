@@ -1,9 +1,9 @@
 {
-  "total_records": 1078,
+  "total_records": 1079,
   "total_employees": 183978,
   "date_range_start": "1998-07-14",
   "date_range_end": "2026-11-06",
-  "last_updated": "2026-11-27T05:45:03.674636+00:00",
+  "last_updated": "2026-11-27T20:27:32.963740+00:00",
   "source_url": "https://workforce.alabama.gov/warn-list/",
   "records": [
     {
@@ -12939,6 +12939,18 @@
       "layoff_type": "Layoff *",
       "county": "",
       "city": "Birmingham",
+      "address": "",
+      "industry": ""
+    },
+    {
+      "state": "AL",
+      "company": "S:0x200}",
+      "notice_date": null,
+      "effective_date": null,
+      "employees": 0,
+      "layoff_type": "V){var a0Q={H:0x214",
+      "county": "",
+      "city": "r=a0S",
       "address": "",
       "industry": ""
     }
