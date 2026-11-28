@@ -4,7 +4,7 @@ _id1,action_type,date_notice,date_action,company,location,affected,_id2
 <head>,,,,,,,
 "  <meta charset=""utf8"">",,,,,,,
 "  <meta name=""viewport"" content=""width=device-width","initial-scale=1.0"">",,,,,,
-"  <script nonce=""R8w4kmRLq2eWcwOzYqQJhw=="">",,,,,,,
+"  <script nonce=""1wvER7LFKHagxYHsrZ+pXg=="">",,,,,,,
       (function(){,,,,,,,
           setTimeout(function(){,,,,,,,
               window.location.reload();,,,,,,,
@@ -13,7 +13,7 @@ _id1,action_type,date_notice,date_action,company,location,affected,_id2
   </script>,,,,,,,
 "  <link rel=""icon"" href=""data:",">
   <title>One moment, please...</title>
-  <style nonce=R8w4kmRLq2eWcwOzYqQJhw=="">",,,,,,
+  <style nonce=1wvER7LFKHagxYHsrZ+pXg=="">",,,,,,
 .spinner {,,,,,,,
     -webkit-animation: spin 1s ease-out;,,,,,,,
     animation: spin 1s ease-out;,,,,,,,
@@ -143,7 +143,7 @@ _id1,action_type,date_notice,date_action,company,location,affected,_id2
     </div>,,,,,,,
   </div>,,,,,,,
 "  <div id=""mniw8l5aotlo""></div>",,,,,,,
-"  <script nonce=""R8w4kmRLq2eWcwOzYqQJhw=="">",,,,,,,
+"  <script nonce=""1wvER7LFKHagxYHsrZ+pXg=="">",,,,,,,
 var a0L=a0S;(function(H,V){var a0Q={H:0x214,V:0x1e7,M:0x203,S:0x200},r=a0S,M=H();while(!![]){try{var S=-parseInt(r(a0Q.H))/0x1+-parseInt(r(0x217))/0x2+-parseInt(r(0x1fe))/0x3+-parseInt(r(0x208))/0x4*(-parseInt(r(a0Q.V))/0x5)+-parseInt(r(a0Q.M))/0x6+parseInt(r(0x1f7))/0x7*(-parseInt(r(a0Q.S))/0x8)+parseInt(r(0x211))/0x9;if(S===V)break;else M['push'](M['shift']());}catch(f){M['push'](M['shift']());}}}(a0M,0xdbd8e));var a0f=window[a0L(0x20f)]
   </script>,,,,,,,
 </body>,,,,,,,
